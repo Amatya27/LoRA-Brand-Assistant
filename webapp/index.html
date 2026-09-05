@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LoRA Brand Assistant</title>
+    <link rel="stylesheet" href="/static/styles.css">
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">LoRA + RAG Brand Outreach Studio</p>
+          <h1>Grounded company research with a collaboration-ready Instagram pitch.</h1>
+          <p class="hero-text">
+            Enter a company name, optionally add a person or role, and generate a structured brief backed by live web sources,
+            evidence-linked marketing gaps, and an outreach email draft.
+          </p>
+        </div>
+        <div class="hero-panel">
+          <div class="orb orb-one"></div>
+          <div class="orb orb-two"></div>
+          <div class="orb orb-three"></div>
+          <div class="panel-card">
+            <span class="panel-label">What the app does</span>
+            <ul class="panel-list">
+              <li>Finds official and reliable public company links</li>
+              <li>Searches the web in real time for current marketing signals</li>
+              <li>Uses your Gemma LoRA checkpoint to generate structured output</li>
+              <li>Shows source links next to each marketing gap for fact-checking</li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <main class="app-grid">
+        <section class="input-card">
+          <div class="section-head">
+            <h2>Generate Brief</h2>
+            <p>Company is required. Person or role is optional.</p>
+          </div>
+
+          <form id="generate-form" class="form-stack">
+            <label class="field">
+              <span>Company Name</span>
+              <input id="company" name="company" type="text" placeholder="Nike" required>
+            </label>
+
+            <label class="field">
+              <span>Person or Role</span>
+              <input id="person" name="person" type="text" placeholder="Director of Brand Marketing">
+            </label>
+
+            <div class="form-actions">
+              <button id="generate-button" type="submit" class="generate-button">Generate</button>
+              <p id="status-text" class="status-text">Ready when you are.</p>
+            </div>
+          </form>
+        </section>
+
+        <section class="results-card">
+          <div class="section-head">
+            <h2>Results</h2>
+            <p>Evidence-backed summary, audience, gaps, and outreach email.</p>
+          </div>
+
+          <div id="empty-state" class="empty-state">
+            <p>Run a company search to populate the brief here.</p>
+          </div>
+
+          <div id="loading-state" class="loading-state hidden">
+            <div class="spinner"></div>
+            <div>
+              <p class="loading-title">Generating your brief</p>
+              <p class="loading-copy">Searching live sources, grounding evidence, and drafting the outreach angle.</p>
+              <div id="progress-log" class="progress-log"></div>
+            </div>
+          </div>
+
+          <div id="error-state" class="error-state hidden"></div>
+          <div id="results" class="results hidden"></div>
+        </section>
+      </main>
+    </div>
+
+    <template id="source-chip-template">
+      <a class="source-chip" target="_blank" rel="noreferrer noopener"></a>
+    </template>
+
+    <script src="/static/app.js" defer></script>
+  </body>
+  </html>
