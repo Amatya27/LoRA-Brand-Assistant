@@ -89,7 +89,6 @@ conda activate lora-brand-assistant
 ### Option B: Standard venv
 
 ```bash
-cd /Users/amatyakatyayan/Downloads/LoRA-Brand-Assistant
 python3.11 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
