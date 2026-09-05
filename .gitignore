@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+env/
+
+# Environment and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+kaggle.json
+
+# Model weights and checkpoints
+*.h5
+*.keras
+*.safetensors
+*.gguf
+*.bin
+*.pt
+*.pth
+weights/
+checkpoints/
+adapters/
+
+# Generated/cache files
+.cache/
+outputs/
+*.log
+
+# OS/editor files
+.DS_Store
+.vscode/
+.idea/
