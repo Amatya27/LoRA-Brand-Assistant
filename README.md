@@ -12,6 +12,15 @@ The goal is:
 - keep LoRA for structure and style
 - keep RAG for current facts
 
+## Phase 3: baseline inference and run records
+
+Run modes (`research-only`, untuned `fixed-generation`, future `adapter-generation`,
+and the separately labelled `keras-checkpoint-legacy`), saved-packet replay
+(`--packet-input`), honest run statuses, and per-run directories under
+`outputs/runs/` are documented in [docs/phase3_inference.md](docs/phase3_inference.md).
+Generated drafts are **unverified and require human review**; nothing here marks
+an email as ready to send. Trained-adapter inference is pending Phase 2.
+
 ## What is in this repo now
 
 - `run_brand_assistant.py`

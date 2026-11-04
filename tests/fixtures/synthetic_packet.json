@@ -1,0 +1,61 @@
+{
+  "_fixture_note": "SYNTHETIC test fixture. Fictional company and example.* URLs; not real web evidence. Nothing here was verified against real websites.",
+  "company": "Synthetic Trailworks Co",
+  "person": "Head of Brand",
+  "profiles": {
+    "website": {
+      "url": "https://synthetic-trailworks.example/",
+      "domain": "synthetic-trailworks.example"
+    }
+  },
+  "queries": [
+    "Synthetic Trailworks Co marketing"
+  ],
+  "sources": [
+    {
+      "query": "Synthetic Trailworks Co marketing",
+      "title": "About Synthetic Trailworks Co (SYNTHETIC FIXTURE)",
+      "url": "https://synthetic-trailworks.example/about",
+      "domain": "synthetic-trailworks.example",
+      "snippet": "SYNTHETIC TEST TEXT. Synthetic Trailworks Co is a fictional outdoor-gear brand used only for software tests. Its fiction"
+    },
+    {
+      "query": "Synthetic Trailworks Co marketing",
+      "title": "Synthetic Trailworks Co spring campaign (SYNTHETIC FIXTURE)",
+      "url": "https://synthetic-trailworks.example/news/spring-campaign",
+      "domain": "synthetic-trailworks.example",
+      "snippet": "SYNTHETIC TEST TEXT. The fictional spring campaign from Synthetic Trailworks Co features product photography of trail sh"
+    },
+    {
+      "query": "Synthetic Trailworks Co marketing",
+      "title": "Profile of Synthetic Trailworks Co (SYNTHETIC FIXTURE)",
+      "url": "https://synthetic-news.example/trailworks-profile",
+      "domain": "synthetic-news.example",
+      "snippet": "SYNTHETIC TEST TEXT. A fictional article says Synthetic Trailworks Co sells mainly through its own online store and part"
+    }
+  ],
+  "evidence_passages": [
+    {
+      "url": "https://synthetic-trailworks.example/about",
+      "title": "About Synthetic Trailworks Co (SYNTHETIC FIXTURE)",
+      "score": 40,
+      "text": "SYNTHETIC TEST TEXT. Synthetic Trailworks Co is a fictional outdoor-gear brand used only for software tests. Its fictional website describes trail-running shoes and a members' run club."
+    },
+    {
+      "url": "https://synthetic-trailworks.example/news/spring-campaign",
+      "title": "Synthetic Trailworks Co spring campaign (SYNTHETIC FIXTURE)",
+      "score": 32,
+      "text": "SYNTHETIC TEST TEXT. The fictional spring campaign from Synthetic Trailworks Co features product photography of trail shoes and short athlete quotes on Instagram."
+    },
+    {
+      "url": "https://synthetic-news.example/trailworks-profile",
+      "title": "Profile of Synthetic Trailworks Co (SYNTHETIC FIXTURE)",
+      "score": 21,
+      "text": "SYNTHETIC TEST TEXT. A fictional article says Synthetic Trailworks Co sells mainly through its own online store and partners with local running groups."
+    }
+  ],
+  "grounded_prompt": "You are a grounded brand-outreach assistant.\nUse only the evidence below.\nIf a fact is not supported by evidence, say it is uncertain.\nReturn valid JSON only.\n\nCompany: Synthetic Trailworks Co\nPerson: Head of Brand\n\nKnown company links:\n- Website: https://synthetic-trailworks.example/\n\nRules:\n- Keep the answer concise, specific, and evidence-based.\n- List 3 to 5 current marketing strategy points.\n- List exactly 2 or 3 marketing gaps as missed opportunities, not generic channel names.\n- The email must be an outreach email from our team to the company proposing a collaborative Instagram post.\n- Explain how the proposed post helps the brand reach a wider audience or address one identified gap.\n- Use citations like [1] and [2] that refer to the evidence block.\n\nRequired JSON schema:\n{\n  \"brand_summary\": \"string\",\n  \"likely_target_audience\": \"string\",\n  \"current_marketing_strategy\": [\"string\", \"string\", \"string\"],\n  \"marketing_gaps\": [\"string\", \"string\"],\n  \"instagram_post_idea\": {\n    \"hook\": \"string\",\n    \"concept\": \"string\",\n    \"why_it_closes_the_gap\": \"string\"\n  },\n  \"email_subject\": \"string\",\n  \"email_body\": \"string\",\n  \"citations\": [\"[1]\", \"[2]\"]\n}\n\nEvidence:\n[1] About Synthetic Trailworks Co (SYNTHETIC FIXTURE)\nURL: https://synthetic-trailworks.example/about\nExcerpt: SYNTHETIC TEST TEXT. Synthetic Trailworks Co is a fictional outdoor-gear brand used only for software tests. Its fictional website describes trail-running shoes and a members' run club.\n\n[2] Synthetic Trailworks Co spring campaign (SYNTHETIC FIXTURE)\nURL: https://synthetic-trailworks.example/news/spring-campaign\nExcerpt: SYNTHETIC TEST TEXT. The fictional spring campaign from Synthetic Trailworks Co features product photography of trail shoes and short athlete quotes on Instagram.\n\n[3] Profile of Synthetic Trailworks Co (SYNTHETIC FIXTURE)\nURL: https://synthetic-news.example/trailworks-profile\nExcerpt: SYNTHETIC TEST TEXT. A fictional article says Synthetic Trailworks Co sells mainly through its own online store and partners with local running groups.\n",
+  "cache_dir": ".cache/brand_assistant",
+  "packet_built_at": "2026-11-01T12:00:00+00:00",
+  "packet_schema_version": "phase3-v1"
+}

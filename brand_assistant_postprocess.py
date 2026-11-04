@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import copy
 from datetime import datetime, timezone
 import re
 from typing import Any
@@ -486,7 +487,13 @@ def infer_brand_summary(company: str, packet: dict[str, Any], strategy_items: li
 
 
 def fill_missing_analysis(structured: dict[str, Any], company: str, person: str, packet: dict[str, Any]) -> dict[str, Any]:
-    structured = dict(structured)
+    """LEGACY presentation repair: synthesizes analysis from templates/keywords.
+
+    Output of this function is not model output and not verified. It is only
+    applied when ``build_app_result(..., legacy_repair=True)`` and is then
+    recorded under ``presentation.transformations``.
+    """
+    structured = copy.deepcopy(structured)
     strategy_items = normalize_string_list(structured.get("current_marketing_strategy"), max_items=4)
     if not strategy_items or len(strategy_items) < 2 or any(len(item) > 180 for item in strategy_items):
         strategy_items = infer_strategy_from_evidence(packet)
@@ -691,6 +698,28 @@ def build_source_library(packet: dict[str, Any]) -> list[dict[str, Any]]:
     return library
 
 
+SOURCE_LINKING_NOTE = (
+    "Source chips are attached by keyword overlap between the text and retrieved passages. "
+    "This is a heuristic display aid, not semantic verification of the claim."
+)
+
+
+def _derive_status(generation: dict[str, Any], run_record: dict[str, Any] | None) -> dict[str, Any]:
+    if run_record and isinstance(run_record.get("status"), dict):
+        return dict(run_record["status"])
+    parsed = generation.get("parsed_output")
+    errors = generation.get("validation_errors") or []
+    return {
+        "execution_status": "completed" if parsed and not errors else "incomplete",
+        "incomplete_reason": None if parsed and not errors else "validation_errors_or_missing_output",
+        "structural_validation": "pass" if parsed and not errors else "fail",
+        "citation_validation": "not_applicable",
+        "semantic_verification": "not_run",
+        "human_review": "pending" if parsed else "not_applicable",
+        "send_ready": False,
+    }
+
+
 def build_app_result(
     *,
     company: str,
@@ -699,62 +728,91 @@ def build_app_result(
     generation: dict[str, Any],
     model_metadata: dict[str, Any],
     backend: str,
+    run_record: dict[str, Any] | None = None,
+    legacy_repair: bool = False,
 ) -> dict[str, Any]:
-    structured = generation.get("parsed_output") or {}
-    structured = fill_missing_analysis(structured, company, person, packet)
+    """Build the UI payload. Never mutates ``generation`` or ``packet``.
 
+    By default the analysis shows the parsed model output as-is (fields may be
+    empty). ``legacy_repair=True`` re-enables the inherited template filling and
+    email rewriting; every changed field is then listed under
+    ``presentation.transformations`` and ``presentation.model_output_modified``.
+    """
+    generation = copy.deepcopy(generation)
+    packet = copy.deepcopy(packet)
+    parsed = generation.get("parsed_output")
+    structured = copy.deepcopy(parsed) if isinstance(parsed, dict) else {}
+    original = copy.deepcopy(structured)
+    transformations: list[dict[str, str]] = []
+
+    if legacy_repair:
+        structured = fill_missing_analysis(structured, company, person, packet)
     strategy_items = normalize_string_list(structured.get("current_marketing_strategy"), max_items=4)
     gap_items = normalize_string_list(structured.get("marketing_gaps"), max_items=3)
-
     gap_cards = build_gap_cards(gap_items, packet)
     strategy_cards = build_strategy_cards(strategy_items, packet)
-
-    if needs_email_repair(structured):
+    if legacy_repair and needs_email_repair(structured):
         structured.update(repaired_email(company, person, structured, gap_cards))
+    if legacy_repair:
+        for key in sorted(set(original) | set(structured)):
+            if original.get(key) != structured.get(key):
+                transformations.append({"field": key, "method": "legacy_template_repair"})
+        if generation.get("output_conversion"):
+            transformations.insert(0, {"field": "*", "method": "legacy_text_to_structured_json"})
 
+    post_idea = structured.get("instagram_post_idea") if isinstance(structured.get("instagram_post_idea"), dict) else {}
     overall_citation_sources = []
     for citation in normalize_string_list(structured.get("citations"), max_items=6):
         overall_citation_sources.extend(select_supporting_sources(citation, packet, top_k=1))
 
+    status = _derive_status(generation, run_record)
     return {
-        "status": "success",
+        # Execution status of the run, never an unconditional "success".
+        "status": status.get("execution_status", "incomplete"),
+        "run_status": status,
+        "draft_notice": (
+            "Unverified draft: factual claims have not been semantically verified. Human review is required; "
+            "this draft is not send-ready."
+        ),
         "generated_at": now_iso(),
         "backend": backend,
+        "mode": (run_record or {}).get("mode"),
+        "run_id": (run_record or {}).get("run_id"),
         "company": company,
         "person": person,
         "profiles": normalize_profiles(packet),
         "analysis": {
-            "brand_summary": str(structured.get("brand_summary", "")).strip(),
-            "likely_target_audience": str(structured.get("likely_target_audience", "")).strip(),
+            "brand_summary": str(structured.get("brand_summary", "") or "").strip(),
+            "likely_target_audience": str(structured.get("likely_target_audience", "") or "").strip(),
             "current_marketing_strategy": strategy_cards,
             "marketing_gaps": gap_cards,
             "instagram_post_idea": {
-                "hook": str((structured.get("instagram_post_idea") or {}).get("hook", "")).strip(),
-                "concept": str((structured.get("instagram_post_idea") or {}).get("concept", "")).strip(),
-                "why_it_closes_the_gap": str(
-                    (structured.get("instagram_post_idea") or {}).get("why_it_closes_the_gap", "")
-                ).strip(),
+                "hook": str(post_idea.get("hook", "") or "").strip(),
+                "concept": str(post_idea.get("concept", "") or "").strip(),
+                "why_it_closes_the_gap": str(post_idea.get("why_it_closes_the_gap", "") or "").strip(),
                 "sources": select_supporting_sources(
-                    " ".join(
-                        [
-                            str((structured.get("instagram_post_idea") or {}).get("hook", "")),
-                            str((structured.get("instagram_post_idea") or {}).get("concept", "")),
-                            str((structured.get("instagram_post_idea") or {}).get("why_it_closes_the_gap", "")),
-                        ]
-                    ),
+                    " ".join(str(post_idea.get(k, "")) for k in ("hook", "concept", "why_it_closes_the_gap")),
                     packet,
                     top_k=2,
-                ),
+                ) if post_idea else [],
             },
             "outreach_email": {
-                "subject": str(structured.get("email_subject", "")).strip(),
-                "body": str(structured.get("email_body", "")).strip(),
+                "subject": str(structured.get("email_subject", "") or "").strip(),
+                "body": str(structured.get("email_body", "") or "").strip(),
             },
+        },
+        "presentation": {
+            "legacy_repair_enabled": legacy_repair,
+            "model_output_modified": bool(transformations),
+            "transformations": transformations,
+            "source_linking_method": "heuristic_keyword_overlap",
+            "source_linking_note": SOURCE_LINKING_NOTE,
         },
         "source_library": build_source_library(packet),
         "model_info": model_metadata,
         "debug": {
-            "validation_errors": generation.get("validation_errors") or [],
+            "validation_errors": list(generation.get("validation_errors") or []),
+            "run_validation": (run_record or {}).get("validation"),
             "citations": normalize_string_list(structured.get("citations"), max_items=6),
             "overall_citation_sources": overall_citation_sources[:4],
         },

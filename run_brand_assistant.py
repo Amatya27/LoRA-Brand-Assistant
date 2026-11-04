@@ -1,165 +1,255 @@
 #!/usr/bin/env python3
-"""Run the LoRA + RAG brand assistant end-to-end."""
+"""Run the LoRA + RAG brand assistant end-to-end.
+
+Every run writes a fresh directory under ``--runs-root`` (default
+``outputs/runs/``) containing the evidence packet, exact prompt, raw response,
+parsed output, validation/verification status and run metadata. See
+``docs/phase3_inference.md``.
+
+Exit codes: 0 completed, 3 incomplete (e.g. insufficient evidence, malformed or
+invalid output), 1 failed (execution error), 2 usage/configuration error.
+"""
 
 from __future__ import annotations
 
 import argparse
 import json
+import shutil
+import sys
 from pathlib import Path
 
-from brand_assistant_checkpoint import choose_default_checkpoint
-from brand_assistant_keras_backend import KerasBackendConfig, generate_from_packet, load_model
-from brand_assistant_openai_backend import OpenAICompatibleConfig, generate_from_prompt
-from brand_assistant_rag import build_packet, default_packet_path, slugify
+from brand_assistant_openai_backend import OpenAICompatibleConfig
+from brand_assistant_rag import PROMPT_VERSION_INHERITED, PROMPT_VERSIONS
+from brand_assistant_runs import (
+    EXIT_CODES,
+    MODE_DESCRIPTIONS,
+    ModeError,
+    RunOptions,
+    backend_for_mode,
+    json_safe,
+    resolve_mode,
+    run_pipeline,
+)
 
 
-def make_json_safe(value):
-    if isinstance(value, Path):
-        return str(value)
-    if isinstance(value, dict):
-        return {str(key): make_json_safe(item) for key, item in value.items()}
-    if isinstance(value, list):
-        return [make_json_safe(item) for item in value]
-    if isinstance(value, tuple):
-        return [make_json_safe(item) for item in value]
-    return value
+def make_json_safe(value):  # kept for backward compatibility
+    return json_safe(value)
 
 
-def parse_args() -> argparse.Namespace:
+def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Run the brand assistant with retrieval and generation.")
-    parser.add_argument("--company", required=True, help="Company to research.")
-    parser.add_argument("--person", default="", help="Optional person to target at the company.")
+    parser.add_argument("--company", default=None, help="Company to research (optional with --packet-input).")
+    parser.add_argument("--person", default=None, help="Optional person/role to target at the company.")
     parser.add_argument(
         "--backend",
         choices=("rag-only", "keras", "openai-compatible"),
-        default="rag-only",
-        help="Which generator backend to use after retrieval.",
+        default=None,
+        help="Generator backend (legacy flag). Default: rag-only, or derived from --mode.",
     )
     parser.add_argument(
-        "--packet-output",
-        type=Path,
+        "--mode",
+        choices=tuple(MODE_DESCRIPTIONS),
         default=None,
-        help="Optional explicit path for the saved research packet.",
+        help="Explicit run mode. Derived from --backend/--adapter-path when omitted.",
     )
     parser.add_argument(
-        "--output",
+        "--packet-input",
         type=Path,
         default=None,
-        help="Optional explicit path for the final result JSON.",
+        help="Replay a saved evidence packet: skips all live retrieval and uses its grounded_prompt unchanged.",
     )
+    parser.add_argument(
+        "--prompt-version",
+        choices=PROMPT_VERSIONS,
+        default=PROMPT_VERSION_INHERITED,
+        help="Prompt instructions for OpenAI-compatible generation. inherited-v0 (default) is the frozen "
+        "baseline prompt; evidence-linked-v1 is experimental and not baseline-comparable.",
+    )
+    parser.add_argument("--packet-output", type=Path, default=None, help="Also copy the evidence packet to this path.")
+    parser.add_argument("--output", type=Path, default=None, help="Also write the combined result JSON to this path.")
+    parser.add_argument("--runs-root", type=Path, default=Path("outputs/runs"), help="Parent dir for unique run dirs.")
+    parser.add_argument("--run-dir", type=Path, default=None, help="Explicit run directory (must not exist).")
     parser.add_argument("--weights", type=Path, default=None, help="Keras checkpoint path.")
     parser.add_argument("--lora-rank", type=int, default=None, help="Override inferred LoRA rank.")
     parser.add_argument(
         "--sequence-length",
         type=int,
         default=1536,
-        help="Total sequence length for the Keras backend.",
+        help="Total sequence length for the Keras backend only (prompt + completion). Not an MLX setting.",
     )
     parser.add_argument(
         "--response-token-budget",
         type=int,
         default=650,
-        help="Approximate completion budget for the Keras backend.",
+        help="Completion budget: max_tokens for the OpenAI-compatible backend; response budget for Keras.",
     )
+    parser.add_argument("--temperature", type=float, default=0.0, help="Sampling temperature (OpenAI-compatible).")
+    parser.add_argument("--timeout", type=float, default=300.0, help="Request timeout in seconds (OpenAI-compatible).")
     parser.add_argument(
         "--api-base",
-        default="http://localhost:8080/v1",
+        default="http://127.0.0.1:8080/v1",
         help="Base URL for the OpenAI-compatible server backend.",
     )
     parser.add_argument(
         "--model",
         default="mlx-community/gemma-3-1b-it-qat-4bit",
-        help="Model name for the OpenAI-compatible server backend.",
+        help="Model name sent to the server. Must match the model the server was started with.",
     )
     parser.add_argument(
         "--adapter-path",
         default=None,
-        help="Adapter path to pass to the OpenAI-compatible backend.",
+        help="Adapter path forwarded to the server (resolved on the SERVER's filesystem/working dir).",
+    )
+    parser.add_argument(
+        "--adapter-path-is-local",
+        action="store_true",
+        help="Declare that the server shares this filesystem and cwd, enabling local adapter path checks.",
     )
     parser.add_argument(
         "--cache-dir",
         type=Path,
         default=Path(".cache/brand_assistant"),
-        help="Cache directory for extracted web pages.",
+        help="Cache directory for extracted web pages (live runs only).",
     )
-    return parser.parse_args()
+    return parser.parse_args(argv)
 
 
-def default_output_path(company: str, person: str) -> Path:
-    stem = slugify(company)
-    if person.strip():
-        stem += "-" + slugify(person)
-    return Path("outputs") / f"{stem}-result.json"
+def _is_within(path: Path, root: Path) -> bool:
+    try:
+        path.relative_to(root)
+        return True
+    except ValueError:
+        return False
 
 
-def main() -> int:
-    args = parse_args()
+def check_output_destinations(args: argparse.Namespace) -> str | None:
+    """Reject --output/--packet-output paths that would overwrite protected files.
 
-    packet = build_packet(
-        args.company,
-        args.person,
-        cache_dir=args.cache_dir,
-    )
+    Protected: the replay input packet, anything under --runs-root (every run's
+    artifacts), anything under an explicit --run-dir, and each other. Paths are
+    compared after resolving symlinks and relative components.
+    """
+    destinations = {"--output": args.output, "--packet-output": args.packet_output}
+    resolved = {flag: path.expanduser().resolve() for flag, path in destinations.items() if path is not None}
+    protected_roots = [("--runs-root", args.runs_root.expanduser().resolve())]
+    if args.run_dir is not None:
+        protected_roots.append(("--run-dir", args.run_dir.expanduser().resolve()))
+    for flag, path in resolved.items():
+        if args.packet_input is not None and path == args.packet_input.expanduser().resolve():
+            return f"{flag} must not overwrite the replay input --packet-input ({path})."
+        for root_flag, root in protected_roots:
+            if path == root or _is_within(path, root):
+                return f"{flag} ({path}) is inside {root_flag} ({root}); run artifacts are protected."
+    if len(resolved) == 2 and resolved["--output"] == resolved["--packet-output"]:
+        return "--output and --packet-output must be different files."
+    return None
 
-    packet_path = args.packet_output or default_packet_path(args.company, args.person)
-    packet_path.parent.mkdir(parents=True, exist_ok=True)
-    packet_path.write_text(json.dumps(packet, indent=2, ensure_ascii=False), encoding="utf-8")
 
-    result = {
-        "company": args.company,
-        "person": args.person,
-        "backend": args.backend,
-        "packet_path": str(packet_path),
-        "research_packet": packet,
-    }
+def main(argv: list[str] | None = None) -> int:
+    args = parse_args(argv)
+    backend = args.backend or (backend_for_mode(args.mode) if args.mode else "rag-only")
+    try:
+        mode = resolve_mode(backend, args.adapter_path, args.mode)
+    except ModeError as exc:
+        print(f"Configuration error: {exc}", file=sys.stderr)
+        return 2
+    if args.packet_input is None and not args.company:
+        print("Configuration error: --company is required unless --packet-input is supplied.", file=sys.stderr)
+        return 2
+    if args.prompt_version != PROMPT_VERSION_INHERITED and mode not in {"fixed-generation", "adapter-generation"}:
+        print("Configuration error: --prompt-version applies only to OpenAI-compatible generation modes.", file=sys.stderr)
+        return 2
+    destination_error = check_output_destinations(args)
+    if destination_error:
+        print(f"Configuration error: {destination_error}", file=sys.stderr)
+        return 2
 
-    if args.backend == "rag-only":
-        result["message"] = "Research packet created successfully. No generation backend was run."
+    keras_generate = None
+    if mode == "keras-checkpoint-legacy":
+        from brand_assistant_checkpoint import choose_default_checkpoint
+        from brand_assistant_keras_backend import KerasBackendConfig, generate_from_packet, load_model
 
-    elif args.backend == "keras":
-        checkpoint_path = args.weights or choose_default_checkpoint(".")
-        backend_config = KerasBackendConfig(
-            checkpoint_path=checkpoint_path,
+        keras_config = KerasBackendConfig(
+            checkpoint_path=args.weights or choose_default_checkpoint("."),
             lora_rank=args.lora_rank,
             sequence_length=args.sequence_length,
             response_token_budget=args.response_token_budget,
         )
-        model, metadata = load_model(backend_config)
-        generation = generate_from_packet(model, packet, backend_config)
-        result["model_metadata"] = metadata
-        result["generation"] = generation
 
-    elif args.backend == "openai-compatible":
-        backend_config = OpenAICompatibleConfig(
+        def keras_generate(packet):
+            model, metadata = load_model(keras_config)
+            return generate_from_packet(model, packet, keras_config), metadata
+
+    options = RunOptions(
+        mode=mode,
+        company=args.company,
+        person=args.person,
+        packet_input=args.packet_input,
+        runs_root=args.runs_root,
+        run_dir=args.run_dir,
+        cache_dir=args.cache_dir,
+        openai_config=OpenAICompatibleConfig(
             api_base=args.api_base,
             model=args.model,
             adapter_path=args.adapter_path,
             max_tokens=args.response_token_budget,
-        )
-        generation = generate_from_prompt(packet["grounded_prompt"], backend_config)
-        result["model_metadata"] = {
-            "api_base": args.api_base,
-            "model": args.model,
-            "adapter_path": args.adapter_path,
+            temperature=args.temperature,
+            timeout_s=args.timeout,
+        ),
+        adapter_path_is_local=args.adapter_path_is_local,
+        prompt_version=args.prompt_version,
+    )
+    try:
+        record = run_pipeline(options, keras_generate=keras_generate)
+    except FileExistsError as exc:
+        print(f"Configuration error: run directory already exists: {exc.filename}", file=sys.stderr)
+        return 2
+
+    run_dir = Path(record["run_dir"])
+    packet_file = run_dir / "evidence_packet.json"
+    if args.packet_output and packet_file.exists():
+        args.packet_output.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(packet_file, args.packet_output)
+        print(f"Copied evidence packet to: {args.packet_output}")
+    if args.output:
+        combined = {
+            "company": record["identity"]["company"],
+            "person": record["identity"]["person"],
+            "backend": record["backend"],
+            "mode": record["mode"],
+            "packet_path": str(packet_file),
+            "research_packet": json.loads(packet_file.read_text(encoding="utf-8")) if packet_file.exists() else None,
+            "generation": {
+                "raw_text": (run_dir / "raw_output.txt").read_text(encoding="utf-8")
+                if (run_dir / "raw_output.txt").exists() else None,
+                "parsed_output": json.loads((run_dir / "parsed_output.json").read_text(encoding="utf-8"))
+                if (run_dir / "parsed_output.json").exists() else None,
+            },
+            "run": record,
         }
-        result["generation"] = generation
+        args.output.parent.mkdir(parents=True, exist_ok=True)
+        args.output.write_text(json.dumps(json_safe(combined), indent=2, ensure_ascii=False), encoding="utf-8")
+        print(f"Saved combined result to: {args.output}")
 
-    output_path = args.output or default_output_path(args.company, args.person)
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    safe_result = make_json_safe(result)
-    output_path.write_text(json.dumps(safe_result, indent=2, ensure_ascii=False), encoding="utf-8")
-
-    print(f"Saved research packet to: {packet_path}")
-    print(f"Saved final result to: {output_path}")
-
-    generation = safe_result.get("generation")
-    if isinstance(generation, dict):
-        errors = generation.get("validation_errors") or []
-        print(f"Validation errors: {len(errors)}")
-        if generation.get("parsed_output"):
-            print("Structured output parsed successfully.")
-
-    return 0
+    status = record["status"]
+    print(f"Run directory: {run_dir}")
+    print(
+        f"Mode: {record['mode']} | evidence: {record['evidence'].get('evidence_source', 'n/a')}"
+        f" | prompt: {record['generation'].get('prompt_version', 'n/a')}"
+    )
+    print(
+        "Status: execution={execution_status} structural={structural_validation} "
+        "citations={citation_validation} semantic={semantic_verification} human_review={human_review}".format(**status)
+    )
+    if status.get("incomplete_reason"):
+        print(f"Incomplete reason: {status['incomplete_reason']}")
+    for error in record.get("errors") or []:
+        print(f"Error [{error['type']}]: {error['message']}", file=sys.stderr)
+    for problem in (record.get("validation") or {}).get("structural_errors") or []:
+        print(f"Validation: {problem}")
+    if status.get("draft_label"):
+        print(status["draft_label"])
+    return EXIT_CODES.get(status["execution_status"], 1)
 
 
 if __name__ == "__main__":

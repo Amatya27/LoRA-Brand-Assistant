@@ -185,15 +185,25 @@ def generate_from_packet(model: Any, packet: dict[str, Any], config: KerasBacken
 
     parsed = None
     validation_errors: list[str] = []
+    output_conversion = None
     if config.prompt_style == "legacy_sections":
         try:
             parsed = parse_model_json(raw_text)
             validation_errors = validate_output(parsed)
             if is_effectively_empty_output(parsed):
                 raise ValueError("JSON output was structurally present but effectively empty.")
-        except Exception:
+        except Exception as exc:
+            # Legacy behaviour, preserved but labelled: the section-text conversion
+            # synthesizes instagram_post_idea and placeholder citations, so the
+            # result is NOT validated model output.
             parsed = legacy_text_to_structured_json(raw_text)
-            validation_errors = []
+            output_conversion = {
+                "method": "legacy_text_to_structured_json",
+                "reason": str(exc),
+                "synthesized_fields": ["instagram_post_idea", "citations"],
+                "note": "Converted object is presentation-only; validation_errors below describe the conversion, not model JSON.",
+            }
+            validation_errors = [f"legacy_conversion_applied: {exc}"]
     else:
         try:
             parsed = parse_model_json(raw_text)
@@ -209,4 +219,5 @@ def generate_from_packet(model: Any, packet: dict[str, Any], config: KerasBacken
         "validation_errors": validation_errors,
         "generation_max_length": total_max_length,
         "backend_config": asdict(config),
+        "output_conversion": output_conversion,
     }

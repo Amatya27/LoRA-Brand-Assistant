@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import os
 from pathlib import Path
 from threading import Lock
 from typing import Any, Callable
@@ -12,6 +13,7 @@ from brand_assistant_keras_backend import KerasBackendConfig, generate_from_pack
 from brand_assistant_openai_backend import OpenAICompatibleConfig, generate_from_prompt
 from brand_assistant_postprocess import build_app_result
 from brand_assistant_rag import build_packet, slugify
+from brand_assistant_runs import RunOptions, resolve_mode, run_pipeline
 
 
 def json_safe(value: Any) -> Any:
@@ -44,6 +46,9 @@ class BrandAssistantService:
         self._model = None
         self._model_metadata: dict[str, Any] | None = None
         self._model_lock = Lock()
+        # One model server, sequential generation: every generation request from
+        # this service (any thread) holds this lock. Retrieval may still overlap.
+        self._generation_lock = Lock()
         self.packet_options = {
             "max_sources": 5,
             "max_passages": 6,
@@ -99,51 +104,80 @@ class BrandAssistantService:
             "backend_path": str(backend_path),
         }
 
+    def _keras_generate(self, packet: dict[str, Any]) -> tuple[dict[str, Any], dict[str, Any]]:
+        with self._model_lock:
+            if self._model is None or self._model_metadata is None:
+                self._model, self._model_metadata = load_model(self.keras_config)
+            generation = generate_from_packet(self._model, packet, self.keras_config)
+            return generation, dict(self._model_metadata)
+
     def generate(
         self,
         company: str,
         person: str = "",
         progress_callback: Callable[[str, str], None] | None = None,
     ) -> dict[str, Any]:
-        packet = build_packet(
-            company,
-            person,
-            cache_dir=self.cache_dir,
+        """Run one Phase 3 pipeline pass and return the UI payload.
+
+        The returned ``status`` is the run's execution status (completed /
+        incomplete / failed); generation failures are reported, not hidden.
+        Legacy template repair is off unless BRAND_ASSISTANT_LEGACY_REPAIR=1.
+        """
+        mode = resolve_mode(self.backend, self.openai_config.adapter_path)
+        if progress_callback and mode == "keras-checkpoint-legacy":
+            progress_callback("model", "Using inherited Keras LoRA checkpoint (legacy path)")
+        record = run_pipeline(
+            RunOptions(
+                mode=mode,
+                company=company,
+                person=person,
+                runs_root=self.output_dir / "runs",
+                cache_dir=self.cache_dir,
+                packet_options=dict(self.packet_options),
+                openai_config=self.openai_config,
+            ),
+            retrieve=build_packet,
+            keras_generate=self._keras_generate,
             progress_callback=progress_callback,
-            **self.packet_options,
+            generation_lock=self._generation_lock,
         )
-        if progress_callback:
-            if self.backend == "keras":
-                if self._model is None:
-                    progress_callback("model", "Loading Gemma + LoRA model")
-                else:
-                    progress_callback("model", "Gemma + LoRA model ready")
-                progress_callback("analysis", "Analyzing evidence with Gemma")
-            else:
-                progress_callback("analysis", "Generating structured answer")
-        generation, model_metadata = self._run_generation(packet)
+        run_dir = Path(record["run_dir"])
+
+        def load(name: str) -> Any:
+            path = run_dir / name
+            return json.loads(path.read_text(encoding="utf-8")) if path.exists() else None
+
+        packet = load("evidence_packet.json") or {}
+        validation = record.get("validation") or {}
+        generation = {
+            "parsed_output": load("legacy_converted_output.json") or load("parsed_output.json"),
+            "validation_errors": list(validation.get("structural_errors") or [])
+            + list(validation.get("citation_errors") or []),
+            "output_conversion": (record.get("generation") or {}).get("output_conversion"),
+        }
         if progress_callback:
             progress_callback("finalizing", "Finalizing answer and linking sources")
         app_result = build_app_result(
-            company=company,
-            person=person,
+            company=record["identity"]["company"] or company,
+            person=record["identity"]["person"] or person,
             packet=packet,
             generation=generation,
-            model_metadata=model_metadata,
+            model_metadata=record.get("generation", {}).get("model_metadata")
+            or record.get("generation", {}).get("settings")
+            or {},
             backend=self.backend,
+            run_record=record,
+            legacy_repair=os.environ.get("BRAND_ASSISTANT_LEGACY_REPAIR") == "1",
         )
-
-        slug = slugify(company)
-        if person.strip():
-            slug += "-" + slugify(person)
-
-        saved_paths = self._save_run(
-            slug=slug,
-            packet=packet,
-            app_result=app_result,
-            generation=generation,
-        )
-        app_result["saved_paths"] = saved_paths
+        app_result["errors"] = record.get("errors") or []
+        app_result["saved_paths"] = {
+            "run_dir": str(run_dir),
+            "packet_path": str(run_dir / "evidence_packet.json"),
+            "run_record_path": str(run_dir / "run.json"),
+            "result_path": str(run_dir / "app_result.json"),
+        }
+        with open(run_dir / "app_result.json", "x", encoding="utf-8") as handle:
+            json.dump(json_safe(app_result), handle, indent=2, ensure_ascii=False)
         if progress_callback:
-            progress_callback("completed", "Done")
+            progress_callback(record["status"]["execution_status"], "Done")
         return json_safe(app_result)

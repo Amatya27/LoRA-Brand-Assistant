@@ -167,9 +167,30 @@ function renderSources(sourceLibrary) {
   `;
 }
 
+function escapeText(value) {
+  return String(value ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+}
+
+function renderRunStatus(payload) {
+  const s = payload.run_status || {};
+  const errors = (payload.debug && payload.debug.validation_errors) || [];
+  return `
+    <section class="results-section">
+      <h3>Run Status</h3>
+      <p><strong>${escapeText(payload.draft_notice || "")}</strong></p>
+      <p class="support-note">execution: ${escapeText(s.execution_status)}${s.incomplete_reason ? ` (${escapeText(s.incomplete_reason)})` : ""}
+        · structure: ${escapeText(s.structural_validation)} · citations: ${escapeText(s.citation_validation)}
+        · semantic verification: ${escapeText(s.semantic_verification)} · human review: ${escapeText(s.human_review)}</p>
+      ${errors.length ? `<p class="support-note">Validation issues: ${errors.map(escapeText).join("; ")}</p>` : ""}
+      ${payload.presentation && payload.presentation.model_output_modified ? `<p class="support-note">Legacy repair modified the model output for display.</p>` : ""}
+    </section>
+  `;
+}
+
 function renderResult(payload) {
   const analysis = payload.analysis;
   resultsContainer.innerHTML = `
+    ${renderRunStatus(payload)}
     ${renderProfiles(payload.profiles)}
     <section class="results-section">
       <h3>Brand Summary</h3>
@@ -224,7 +245,19 @@ async function pollJob(jobId) {
     setLoading(false);
     emptyState.classList.add("hidden");
     renderResult(payload.result);
-    statusText.textContent = `Completed using the ${payload.result.backend} backend.`;
+    statusText.textContent = `Unverified draft from the ${payload.result.backend} backend - human review required.`;
+    return;
+  }
+
+  if (payload.status === "incomplete") {
+    if (pollTimer) {
+      clearInterval(pollTimer);
+      pollTimer = null;
+    }
+    setLoading(false);
+    emptyState.classList.add("hidden");
+    renderResult(payload.result);
+    statusText.textContent = payload.message || "Run incomplete.";
     return;
   }
 

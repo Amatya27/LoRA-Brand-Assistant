@@ -43,12 +43,16 @@ service = BrandAssistantService(
         prompt_style=os.environ.get("BRAND_ASSISTANT_PROMPT_STYLE", "legacy_sections"),
     ),
     openai_config=OpenAICompatibleConfig(
-        api_base=os.environ.get("BRAND_ASSISTANT_API_BASE", "http://localhost:8080/v1"),
+        api_base=os.environ.get("BRAND_ASSISTANT_API_BASE", "http://127.0.0.1:8080/v1"),
         model=os.environ.get("BRAND_ASSISTANT_MODEL", "mlx-community/gemma-3-1b-it-qat-4bit"),
         adapter_path=os.environ.get("BRAND_ASSISTANT_ADAPTER_PATH") or None,
         max_tokens=int(os.environ.get("BRAND_ASSISTANT_RESPONSE_BUDGET", "650")),
+        temperature=float(os.environ.get("BRAND_ASSISTANT_TEMPERATURE", "0.0")),
+        timeout_s=float(os.environ.get("BRAND_ASSISTANT_TIMEOUT_S", "300")),
     ),
 )
+# Two workers let retrieval overlap; BrandAssistantService serializes every
+# generation request with a shared lock (one model server, sequential requests).
 executor = ThreadPoolExecutor(max_workers=2)
 job_lock = Lock()
 jobs: dict[str, dict] = {}
@@ -96,7 +100,16 @@ def run_generation_job(job_id: str, company: str, person: str) -> None:
             update_job(job_id, status="running", message=message)
 
         result = service.generate(company, person, progress_callback=progress)
-        update_job(job_id, status="completed", message="Generation completed", result=result)
+        run_status = result.get("status")
+        if run_status == "completed":
+            update_job(job_id, status="completed", message="Draft generated (unverified; human review required)", result=result)
+        elif run_status == "incomplete":
+            reason = (result.get("run_status") or {}).get("incomplete_reason") or "unknown"
+            update_job(job_id, status="incomplete", message=f"Run incomplete: {reason}", result=result)
+        else:
+            errors = result.get("errors") or []
+            detail = "; ".join(f"{e.get('type')}: {e.get('message')}" for e in errors) or "Generation failed."
+            update_job(job_id, status="failed", message="Generation failed", result=result, error=detail)
     except Exception as exc:
         update_job(job_id, status="failed", message="Generation failed", error=str(exc))
 
