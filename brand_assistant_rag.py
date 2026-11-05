@@ -16,6 +16,7 @@ The generator is intentionally separate so this module can be used with:
 from __future__ import annotations
 
 import argparse
+import contextvars
 import hashlib
 import json
 import re
@@ -288,12 +289,21 @@ def build_queries(company: str, person: str) -> list[str]:
     return queries
 
 
+# Per-packet record of search calls, so an empty packet can be told apart from
+# a search outage. A failed or empty search is never evidence that a company
+# lacks a marketing strategy.
+_SEARCH_LOG: contextvars.ContextVar[list[dict[str, str]] | None] = contextvars.ContextVar(
+    "brand_assistant_search_log", default=None
+)
+
+
 def _search_with_client(
     client: DDGS,
     query: str,
     *,
     max_results: int = MAX_SEARCH_RESULTS_PER_QUERY,
 ) -> list[dict[str, str]]:
+    log = _SEARCH_LOG.get()
     try:
         results = client.text(
             query,
@@ -302,9 +312,30 @@ def _search_with_client(
             max_results=max_results,
             backend="auto",
         )
-    except Exception:
+    except Exception as exc:
+        if log is not None:
+            log.append({"query": query, "outcome": "raised", "error": f"{type(exc).__name__}: {exc}"[:300]})
         return []
-    return list(results or [])
+    results = list(results or [])
+    if log is not None:
+        log.append({"query": query, "outcome": "ok", "result_count": str(len(results))})
+    return results
+
+
+def summarize_search_log(log: list[dict[str, str]]) -> dict[str, object]:
+    raised = [entry for entry in log if entry.get("outcome") == "raised"]
+    return {
+        "search_calls": len(log),
+        "search_calls_raised": len(raised),
+        "search_calls_with_results": sum(
+            1 for entry in log if entry.get("outcome") == "ok" and entry.get("result_count") != "0"
+        ),
+        "errors": raised[:20],
+        "note": (
+            "Search calls that raised (including the backend's 'No results found') return nothing. "
+            "An empty or failed search does not show that the company lacks any marketing activity."
+        ),
+    }
 
 
 def chunk_text(text: str, size: int = CHUNK_SIZE, overlap: int = CHUNK_OVERLAP) -> Iterable[str]:
@@ -1159,6 +1190,36 @@ def build_packet(
     passage_char_budget: int = DEFAULT_PASSAGE_CHAR_BUDGET,
     progress_callback: Callable[[str, str], None] | None = None,
 ) -> dict[str, object]:
+    search_log: list[dict[str, str]] = []
+    token = _SEARCH_LOG.set(search_log)
+    try:
+        return _build_packet(
+            company,
+            person,
+            search_log,
+            cache_dir=cache_dir,
+            max_sources=max_sources,
+            max_passages=max_passages,
+            prompt_passages=prompt_passages,
+            passage_char_budget=passage_char_budget,
+            progress_callback=progress_callback,
+        )
+    finally:
+        _SEARCH_LOG.reset(token)
+
+
+def _build_packet(
+    company: str,
+    person: str,
+    search_log: list[dict[str, str]],
+    *,
+    cache_dir: Path,
+    max_sources: int,
+    max_passages: int,
+    prompt_passages: int,
+    passage_char_budget: int,
+    progress_callback: Callable[[str, str], None] | None,
+) -> dict[str, object]:
     queries = build_queries(company, person)
     if progress_callback:
         progress_callback("profiles", "Searching official website and social links")
@@ -1201,6 +1262,8 @@ def build_packet(
         # cache and be older; publication dates are not collected (unknown).
         "packet_built_at": datetime.now(timezone.utc).isoformat(),
         "packet_schema_version": PACKET_SCHEMA_VERSION,
+        # Optional, additive field: how the search calls behind this packet went.
+        "search_diagnostics": summarize_search_log(search_log),
     }
 
 

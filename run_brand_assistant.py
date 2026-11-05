@@ -106,6 +106,16 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         help="Declare that the server shares this filesystem and cwd, enabling local adapter path checks.",
     )
     parser.add_argument(
+        "--server-load-ledger",
+        type=Path,
+        default=None,
+        help=(
+            "JSONL ledger written by scripts/serve_mlx_with_load_ledger.py. When given, the run checks "
+            "runtime evidence of which adapter (or none) served this request; adapter_load_verified "
+            "is set only when every check passes."
+        ),
+    )
+    parser.add_argument(
         "--cache-dir",
         type=Path,
         default=Path(".cache/brand_assistant"),
@@ -197,6 +207,7 @@ def main(argv: list[str] | None = None) -> int:
             timeout_s=args.timeout,
         ),
         adapter_path_is_local=args.adapter_path_is_local,
+        server_load_ledger=args.server_load_ledger,
         prompt_version=args.prompt_version,
     )
     try:

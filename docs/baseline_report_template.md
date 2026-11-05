@@ -24,7 +24,8 @@
 | Model ID | |
 | Model revision (and method/caveat) | |
 | Adapter requested | none / path |
-| Adapter load verified | false (until a dedicated Phase 2 check exists) |
+| Adapter load verified (`generation.adapter.adapter_load_verified`) and failed checks (`generation.runtime_verification.checks`) | |
+| Base run had no adapter loaded (`generation.base_model_runtime_check`) | |
 | API base | |
 | max_tokens | |
 | temperature | |
@@ -65,4 +66,4 @@ relevant artifact (`raw_output.txt`, `raw_response.json`).
 
 - Semantic groundedness / claim support (verifier not implemented; Phase 4).
 - Gap validity, send-readiness, preference (human/judge evaluation; Phase 4).
-- Adapter effect (Phase 2 adapter not available).
+- Adapter effect beyond the paired development packets (no held-out evaluation; Phase 4).

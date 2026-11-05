@@ -7,8 +7,10 @@ Modes
 ``fixed-generation``         fixed retrieval (or a replayed packet) followed by at most one
                              untuned-Gemma request through an OpenAI-compatible server.
                              No adapter, no adaptive retrieval, no regeneration.
-``adapter-generation``       same single-request path with an explicitly supplied adapter.
-                             Real adapter loading is *not* verified until Phase 2 weights exist.
+``adapter-generation``       same single-request path with an explicitly supplied LoRA adapter
+                             (Phase 2: ``adapters/brand_assistant_best``). ``adapter_load_verified``
+                             is true only with runtime evidence from the serving process
+                             (``--server-load-ledger``; see ``brand_assistant_load_ledger``).
 ``keras-checkpoint-legacy``  the inherited Keras ``.h5`` LoRA checkpoint workflow. It is a trained
                              checkpoint, not the untuned baseline, and is labelled separately.
 
@@ -42,6 +44,7 @@ from importlib import metadata as importlib_metadata
 from pathlib import Path
 from typing import Any, Callable
 
+from brand_assistant_load_ledger import verification_record
 from brand_assistant_openai_backend import OpenAICompatibleConfig, build_messages, chat_completion
 from brand_assistant_rag import (
     PROMPT_VERSION_INHERITED,
@@ -74,7 +77,7 @@ REPO_DIR = Path(__file__).resolve().parent
 MODE_DESCRIPTIONS = {
     "research-only": "Baseline A: fixed retrieval, evidence packet only, no email. Excluded from email-preference comparisons.",
     "fixed-generation": "Baseline B: fixed retrieval + exactly one untuned Gemma generation. No adapter, no adaptive retrieval, no regeneration.",
-    "adapter-generation": "Future C: same single-generation interface with an explicitly requested adapter. Real adapter loading pending Phase 2.",
+    "adapter-generation": "C: same single-generation interface and evidence, with an explicitly requested LoRA adapter. No base-model fallback.",
     "keras-checkpoint-legacy": "Inherited Keras .h5 LoRA checkpoint workflow. Trained checkpoint; NOT the untuned baseline.",
 }
 GENERATION_MODES = {"fixed-generation", "adapter-generation", "keras-checkpoint-legacy"}
@@ -192,20 +195,28 @@ def sha256_bytes(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
 
-def adapter_record(adapter_path: str | None, path_is_local: bool) -> tuple[dict[str, Any], list[str]]:
-    """Describe the requested adapter. Returns (record, blocking_errors)."""
+def adapter_record(
+    adapter_path: str | None,
+    path_is_local: bool,
+    base_model: str | None = None,
+) -> tuple[dict[str, Any], list[str], str | None]:
+    """Describe the requested adapter. Returns (record, blocking_errors, error_type).
+
+    With ``path_is_local`` the client and server share a filesystem, so the
+    adapter directory is checked here *before* any request: files present,
+    SHA-256 of each, and the adapter's training base model must equal the
+    requested base model. File checks only show what is on disk; they do not
+    show what the server loaded (that is ``runtime_verification``).
+    """
     if not adapter_path:
-        return {"adapter_requested": None, "adapter_load_verified": False}, []
+        return {"adapter_requested": None, "adapter_load_verified": False}, [], None
     record: dict[str, Any] = {
         "adapter_requested": adapter_path,
         "forwarded_as": "request field 'adapters' (mlx_lm.server)",
         "path_resolution": "Server-side filesystem, relative to the server's working directory.",
         "server_accepted_request": None,
         "adapter_load_verified": False,
-        "adapter_load_verification_note": (
-            "Not verified. A successful response or a mocked payload only shows the adapter was "
-            "forwarded; verifying real loading needs Phase 2 weights and a dedicated check."
-        ),
+        "adapter_load_verification_note": "Not yet checked against runtime evidence.",
     }
     errors: list[str] = []
     if not path_is_local:
@@ -213,19 +224,51 @@ def adapter_record(adapter_path: str | None, path_is_local: bool) -> tuple[dict[
             "performed": False,
             "reason": "Server filesystem not declared shared (--adapter-path-is-local not set).",
         }
-        return record, errors
+        return record, errors, None
     path = Path(adapter_path)
     expected = ["adapter_config.json", "adapters.safetensors"]
     present = [name for name in expected if (path / name).is_file()]
-    local = {"performed": True, "resolved_path": str(path.resolve()), "exists": path.is_dir(), "files_present": present}
+    local: dict[str, Any] = {
+        "performed": True,
+        "resolved_path": str(path.resolve()),
+        "exists": path.is_dir(),
+        "files_present": present,
+    }
     for name in present:
         local[f"{name}_sha256"] = sha256_bytes((path / name).read_bytes())
     record["local_validation"] = local
     if not path.is_dir():
         errors.append(f"Adapter directory not found on the shared filesystem: {path}")
-    elif len(present) != len(expected):
+        return record, errors, "adapter_path_invalid"
+    if len(present) != len(expected):
         errors.append(f"Adapter directory {path} is missing {sorted(set(expected) - set(present))}")
-    return record, errors
+        return record, errors, "adapter_path_invalid"
+    try:
+        adapter_config = json.loads((path / "adapter_config.json").read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        errors.append(f"adapter_config.json is unreadable: {exc}")
+        return record, errors, "adapter_incompatible"
+    lora = adapter_config.get("lora_parameters") if isinstance(adapter_config, dict) else None
+    local["adapter_config"] = {
+        "model": adapter_config.get("model"),
+        "fine_tune_type": adapter_config.get("fine_tune_type"),
+        "num_layers": adapter_config.get("num_layers"),
+        "lora_parameters": lora,
+        "max_seq_length": adapter_config.get("max_seq_length"),
+        "iters_in_training_config": adapter_config.get("iters"),
+        "training_output_path_in_config": adapter_config.get("adapter_path"),
+        "note": (
+            "adapter_config.json is the training run's config. Its 'iters' and 'adapter_path' describe "
+            "the original training output, not necessarily the delivered checkpoint directory."
+        ),
+    }
+    if base_model and adapter_config.get("model") and adapter_config.get("model") != base_model:
+        errors.append(
+            f"Adapter was trained on {adapter_config.get('model')!r} but the requested base model is "
+            f"{base_model!r}; refusing to send an incompatible adapter."
+        )
+        return record, errors, "adapter_incompatible"
+    return record, errors, None
 
 
 # ---------------------------------------------------------------------------
@@ -290,6 +333,7 @@ class RunOptions:
     openai_config: OpenAICompatibleConfig = field(default_factory=OpenAICompatibleConfig)
     adapter_path_is_local: bool = False
     prompt_version: str = PROMPT_VERSION_INHERITED
+    server_load_ledger: Path | None = None
 
 
 class RunRecorder:
@@ -487,6 +531,8 @@ def run_pipeline(
             ),
             "packet_options": options.packet_options,
         }
+    if isinstance(packet.get("search_diagnostics"), dict):
+        record["evidence"]["search_diagnostics"] = packet["search_diagnostics"]
 
     company = str(packet.get("company") or options.company or "")
     person = str(packet.get("person") or options.person or "")
@@ -511,6 +557,10 @@ def run_pipeline(
     if mode == "research-only":
         if not passages:
             record["status"] = _status_block(execution_status="incomplete", incomplete_reason="insufficient_evidence")
+            record["evidence"]["insufficient_evidence_note"] = (
+                "No evidence passages were collected. This is a retrieval outcome, not a finding that the "
+                "company lacks any strategy or activity."
+            )
         else:
             record["status"] = _status_block(execution_status="completed")
         return finish()
@@ -520,7 +570,9 @@ def run_pipeline(
         return _run_keras_legacy(record, recorder, packet, keras_generate, verifier, finish, fail, generation_lock)
 
     config = copy.copy(options.openai_config)
-    adapter_info, adapter_errors = adapter_record(config.adapter_path, options.adapter_path_is_local)
+    adapter_info, adapter_errors, adapter_error_type = adapter_record(
+        config.adapter_path, options.adapter_path_is_local, config.model
+    )
     record["generation"].update(
         {
             "settings": config.to_record(),
@@ -533,7 +585,7 @@ def run_pipeline(
     if mode == "fixed-generation" and config.adapter_path:
         return fail("adapter_not_allowed", "fixed-generation must not use an adapter.")
     if adapter_errors:
-        return fail("adapter_path_invalid", " ".join(adapter_errors))
+        return fail(adapter_error_type or "adapter_path_invalid", " ".join(adapter_errors))
 
     try:
         prompt = build_prompt_version(packet, options.prompt_version)
@@ -576,6 +628,7 @@ def run_pipeline(
     if progress_callback:
         progress_callback("analysis", "Generating structured answer (single request)")
     with generation_lock:
+        request_began = time.time()
         response = chat_completion(messages, config, opener=opener)
     record["generation"].update(
         {
@@ -602,8 +655,42 @@ def run_pipeline(
             "note": "Verbatim server response body (text) as received.",
         },
     )
+    expected_sha = None
     if config.adapter_path:
         record["generation"]["adapter"]["server_accepted_request"] = bool(response["ok"])
+        expected_sha = (record["generation"]["adapter"].get("local_validation") or {}).get(
+            "adapters.safetensors_sha256"
+        )
+    runtime = verification_record(
+        options.server_load_ledger,
+        messages=messages,
+        requested_model=config.model,
+        requested_adapter=config.adapter_path,
+        expected_adapter_sha256=expected_sha,
+        not_before=request_began,
+    )
+    record["generation"]["runtime_verification"] = runtime
+    if config.adapter_path:
+        adapter = record["generation"]["adapter"]
+        adapter["adapter_load_verified"] = bool(response["ok"] and runtime.get("verified"))
+        if adapter["adapter_load_verified"]:
+            adapter["adapter_load_verification_note"] = (
+                "Verified from the serving process's load ledger: this request's messages hash was served "
+                "with this adapter loaded, the adapter file the server opened has the expected SHA-256, "
+                "and every adapter tensor matched the loaded model parameters."
+            )
+        else:
+            failed_checks = [k for k, v in (runtime.get("checks") or {}).items() if v is not True]
+            adapter["adapter_load_verification_note"] = (
+                "Not verified. Observed: HTTP status "
+                f"{response['http_status']}; runtime method {runtime.get('method')}; "
+                f"checks not passed: {failed_checks or runtime.get('note')}."
+            )
+    else:
+        record["generation"]["base_model_runtime_check"] = {
+            "no_adapter_loaded_verified": bool(response["ok"] and runtime.get("verified")),
+            "note": "True only when the serving process's ledger shows this request served with no adapter.",
+        }
 
     if not response["ok"]:
         # Keep the server's reply in run.json itself, not only in raw_response.json.
@@ -659,6 +746,8 @@ def _finalise_generation(
             reason = "truncated_output"
         elif not structural_ok:
             reason = "structural_validation_failed"
+        elif evaluation["unknown_citation_ids"]:
+            reason = "unknown_citation_ids"
         else:
             reason = "citation_validation_failed"
 

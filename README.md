@@ -12,14 +12,45 @@ The goal is:
 - keep LoRA for structure and style
 - keep RAG for current facts
 
-## Phase 3: baseline inference and run records
+## Project phases
 
-Run modes (`research-only`, untuned `fixed-generation`, future `adapter-generation`,
+| Phase | Status | Where |
+|---|---|---|
+| 0–1: setup, teacher labelling, 148-company dataset | merged | [SETUP.md](SETUP.md), [DATASET_PIPELINE.md](DATASET_PIPELINE.md), `data/` |
+| 2: Gemma 3 1B LoRA adapter (iteration 200) | merged | [PHASE2_RESULTS.md](PHASE2_RESULTS.md), `adapters/brand_assistant_best/` |
+| 3: post-training inference, packet replay, run records | this branch | [docs/phase3_inference.md](docs/phase3_inference.md) |
+| 4: verification, agentic controller, held-out evaluation | not started | the 33 test examples stay sealed |
+
+## Phase 3: post-training inference and run records
+
+Run modes (`research-only`, untuned `fixed-generation`, LoRA `adapter-generation`,
 and the separately labelled `keras-checkpoint-legacy`), saved-packet replay
-(`--packet-input`), honest run statuses, and per-run directories under
-`outputs/runs/` are documented in [docs/phase3_inference.md](docs/phase3_inference.md).
-Generated drafts are **unverified and require human review**; nothing here marks
-an email as ready to send. Trained-adapter inference is pending Phase 2.
+(`--packet-input`), runtime adapter-load verification, honest run statuses, and
+per-run directories under `outputs/runs/` are documented in
+[docs/phase3_inference.md](docs/phase3_inference.md). The base-versus-adapter
+results are in section 11 there. Generated drafts are **unverified and require
+human review**; nothing here marks an email as ready to send.
+
+Quick start on an Apple Silicon Mac (two terminals, from the repo root):
+
+```bash
+# Terminal 1: one model server with a runtime load ledger (no startup adapter)
+BRAND_ASSISTANT_LOAD_LEDGER=outputs/server_load_ledger.jsonl \
+  python scripts/serve_mlx_with_load_ledger.py \
+  --model mlx-community/gemma-3-1b-it-qat-4bit --host 127.0.0.1 --port 8080
+```
+
+```bash
+# Terminal 2: replay the same evidence through the base model and the adapter
+python run_brand_assistant.py --mode fixed-generation \
+  --packet-input tests/fixtures/synthetic_packet.json \
+  --server-load-ledger outputs/server_load_ledger.jsonl
+python run_brand_assistant.py --mode adapter-generation \
+  --packet-input tests/fixtures/synthetic_packet.json \
+  --model mlx-community/gemma-3-1b-it-qat-4bit \
+  --adapter-path adapters/brand_assistant_best --adapter-path-is-local \
+  --server-load-ledger outputs/server_load_ledger.jsonl
+```
 
 ## What is in this repo now
 
@@ -254,7 +285,7 @@ Or for an OpenAI-compatible local server:
 
 ```bash
 export BRAND_ASSISTANT_BACKEND=openai-compatible
-export BRAND_ASSISTANT_API_BASE=http://localhost:8080/v1
+export BRAND_ASSISTANT_API_BASE=http://127.0.0.1:8080/v1
 export BRAND_ASSISTANT_MODEL=mlx-community/gemma-3-1b-it-qat-4bit
 ./run_app.sh
 ```
@@ -304,20 +335,26 @@ What this does:
 - uses a 4-bit Gemma 3 1B base model
 - trains a QLoRA adapter
 - computes loss on the completion instead of the prompt
-- saves adapters into `adapters/brand_assistant_1b_qat`
+- saves adapters into `adapters/brand_assistant_1b_qat` (the training output path)
+
+The checkpoint delivered by Phase 2 for inference is the iteration-200 copy in
+`adapters/brand_assistant_best/` (see [PHASE2_RESULTS.md](PHASE2_RESULTS.md)).
 
 ### 5D. Start a local MLX server
 
-Open a second terminal window:
+Open a second terminal window in the repo root:
 
 ```bash
 source .venv/bin/activate
-mlx_lm.server --model mlx-community/gemma-3-1b-it-qat-4bit
+BRAND_ASSISTANT_LOAD_LEDGER=outputs/server_load_ledger.jsonl \
+  python scripts/serve_mlx_with_load_ledger.py \
+  --model mlx-community/gemma-3-1b-it-qat-4bit --host 127.0.0.1 --port 8080
 ```
 
-By default the server runs at `http://localhost:8080/v1`.
-
-Use the same working directory when you later pass `--adapter-path`, because the MLX server expects that adapter path to be relative to where the server was started.
+The server runs at `http://127.0.0.1:8080/v1`. Start it from the repo root,
+because the MLX server resolves adapter paths relative to where it was started.
+Plain `mlx_lm.server` also works, but then the run cannot confirm that the
+adapter was loaded.
 
 ### 5E. Run the assistant against your local MLX server
 
@@ -325,10 +362,11 @@ Back in your first terminal:
 
 ```bash
 python run_brand_assistant.py \
-  --backend openai-compatible \
-  --api-base http://localhost:8080/v1 \
+  --mode adapter-generation \
+  --api-base http://127.0.0.1:8080/v1 \
   --model mlx-community/gemma-3-1b-it-qat-4bit \
-  --adapter-path adapters/brand_assistant_1b_qat \
+  --adapter-path adapters/brand_assistant_best --adapter-path-is-local \
+  --server-load-ledger outputs/server_load_ledger.jsonl \
   --company "Nike" \
   --person "Director of Brand Marketing"
 ```
@@ -336,7 +374,7 @@ python run_brand_assistant.py \
 This uses:
 
 - free public-web retrieval from `ddgs`
-- your local Gemma 3 1B QLoRA adapter for generation
+- the Phase 2 Gemma 3 1B LoRA adapter for generation (run record states whether loading was verified)
 
 ## Output format
 
@@ -366,14 +404,13 @@ The new code improves this by:
 
 ## Important reality check
 
-This repo is now much closer to a runnable software project than the original notebook, but there are still two practical limits:
-
-1. I did not fully run Gemma inference in this environment.
-   This machine does not already have the full Gemma runtime and credentials configured here.
-2. Your existing `.h5` checkpoints are Keras checkpoints, not MLX adapters.
-   So the best local Mac path still means retraining LoRA in MLX-LM from your dataset.
-
-That is the cleanest path if your goal is a strong local Mac M4 deployment.
+- Base and adapter Gemma inference have been run locally on a Mac M3 (8 GB) with
+  MLX. See [docs/phase3_inference.md](docs/phase3_inference.md), section 11.
+  Those are development observations on three packets, not an evaluation.
+- The adapter changes the email's voice and form; it does not make claims
+  grounded. Drafts need verification (Phase 4) and human review.
+- The `.h5` files are Keras checkpoints, not MLX adapters. The MLX adapter is
+  `adapters/brand_assistant_best/`.
 
 ## Useful commands
 
@@ -395,16 +432,19 @@ Use the interactive web app:
 python -m uvicorn app:app --host 127.0.0.1 --port 8010
 ```
 
-Use your local MLX server and adapter:
+Use your local MLX server and the Phase 2 adapter:
 
 ```bash
 python run_brand_assistant.py \
-  --backend openai-compatible \
-  --api-base http://localhost:8080/v1 \
+  --mode adapter-generation \
+  --api-base http://127.0.0.1:8080/v1 \
   --model mlx-community/gemma-3-1b-it-qat-4bit \
-  --adapter-path adapters/brand_assistant_1b_qat \
+  --adapter-path adapters/brand_assistant_best --adapter-path-is-local \
+  --server-load-ledger outputs/server_load_ledger.jsonl \
   --company "Airbnb"
 ```
 ## Guides
 - [SETUP.md](SETUP.md) — environment setup (Phase 0)
 - [DATASET_PIPELINE.md](DATASET_PIPELINE.md) — building the training dataset (Phase 1)
+- [PHASE2_RESULTS.md](PHASE2_RESULTS.md) — LoRA training results (Phase 2)
+- [docs/phase3_inference.md](docs/phase3_inference.md) — inference, run records, base vs adapter (Phase 3)
