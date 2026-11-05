@@ -798,7 +798,10 @@ def _finalise_generation(
     record["validation"]["note"] = "Structural and citation-ID checks do not establish factual support."
     record["verification"] = verification.to_record()
     record["recovery"]["suggested_action"] = suggestion.value
-    if has_draft:
+    export_allowed = bool(has_draft and structural_ok and citation_status != "fail"
+                          and (verifier is None or verification.status.value == "pass"))
+    record["status"]["reviewable_email_exported"] = export_allowed
+    if export_allowed:
         draft = render_email_draft(parsed, record["status"], recorder.run_id)
         if draft:
             recorder.write_text("email_draft_UNVERIFIED.md", draft)
