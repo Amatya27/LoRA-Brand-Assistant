@@ -1,7 +1,9 @@
 # Phase 4 validation handoff
 
-Owner: Thushar Reddy Vemula  
-Date: November 5, 2026  
+Owner: Thushar Reddy Vemula
+
+Date: November 5, 2026
+
 Integration baseline: Phase 3 commit `e2d0e0f`, `inference-pipeline-varshini`
 
 ## Completed work
