@@ -405,3 +405,6 @@ python run_brand_assistant.py \
   --adapter-path adapters/brand_assistant_1b_qat \
   --company "Airbnb"
 ```
+## Guides
+- [SETUP.md](SETUP.md) — environment setup (Phase 0)
+- [DATASET_PIPELINE.md](DATASET_PIPELINE.md) — building the training dataset (Phase 1)
