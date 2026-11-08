@@ -448,3 +448,5 @@ python run_brand_assistant.py \
 - [DATASET_PIPELINE.md](DATASET_PIPELINE.md) — building the training dataset (Phase 1)
 - [PHASE2_RESULTS.md](PHASE2_RESULTS.md) — LoRA training results (Phase 2)
 - [docs/phase3_inference.md](docs/phase3_inference.md) — inference, run records, base vs adapter (Phase 3)
+
+Phase 5: [reviewed training labels, adapter continuation, and validation replay](phase5/README.md).

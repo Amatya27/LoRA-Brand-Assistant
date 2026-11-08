@@ -1,0 +1,20 @@
+{
+  "source_adapter_sha256": "4fbc4b787f6eb585b3540dbe1f242d818f77f6953199b2910f4dd9a2eb57af52",
+  "candidate_adapter_sha256": "dbd9e2422514954573f7c559a11d55dab1bed1d43f9cd64a7ddb459c58a30573",
+  "all_finite": true,
+  "changed_tensors": 224,
+  "total_tensors": 224,
+  "model_revision": "15fed4eafb456c6fcb2a1165f19ac609670ed14b",
+  "source_model_sha256": "b6010f6b03a83f973ca8708eb5784d5b0f80c0e7e9143dbb4c95d0eefe39c837",
+  "runtime_model_sha256": "2e5032698a907d229da4214ece7a8d730c482cb63cbe181be123c39eb03523fb",
+  "trainable_parameters": 4014080,
+  "train_loss_by_step": [
+    2.902,
+    2.507,
+    2.178,
+    2.278
+  ],
+  "validation_batches_per_check": 1,
+  "validation_loss_at_step_1": 0.652,
+  "validation_loss_at_step_4": 0.997
+}
