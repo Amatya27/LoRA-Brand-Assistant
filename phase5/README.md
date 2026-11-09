@@ -1,5 +1,7 @@
 # Phase 5 — training-label revision and paired adapter replay
 
+Phase 5 owner: [Suhas Gajula](https://github.com/suhasgajula24).
+
 This experiment continues YJ's published iteration-200 adapter from Thushar's Phase 4 commit `854071d`. The question was whether four supervised corrections would change the marketing-gap claims in real validation drafts. The team-reported iteration-150 adapter was not on any of the five published branches at the start of this run. No held-out test example was used for training, inference or scoring here.
 
 [Measured results and checkpoint decision](RESULTS.md)
