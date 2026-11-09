@@ -1,0 +1,45 @@
+{
+  "company": "Ilia Beauty",
+  "prompt_sha256": "4e78604ffa1e85f531226f8f3294daeaf51bdd18e1a9e188f804c705a09c9133",
+  "finish_reason": "stop",
+  "tokens": 317,
+  "seconds": 67.926,
+  "raw_text": "{\"brand_summary\": \"Ilia Beauty is a brand known for its clean beauty products, which are described as safe and effective. The brand has a product launch in 2026.\", \"likely_target_audience\": \"The target audience for Ilia Beauty includes those interested in clean beauty products and those who are looking for makeup products that are safe and effective.\", \"current_marketing_strategy\": [\"The brand has a product launch in 2026\", \"The brand has a product launch in 2026\", \"The brand has a product launch in 2026\"], \"marketing_gaps\": [\"The brand has a product launch in 2026\", \"The brand has a product launch in 2026\"], \"instagram_post_idea\": {\"hook\": \"A behind-the-scenes look at the product launch\", \"concept\": \"A video showcasing the creation of the new product line\", \"why_it_closes_the_gap\": \"This post would help to increase brand awareness and engagement by showcasing the behind-the-scenes process of a new product launch.\"}, \"email_subject\": \"A behind-the-scenes look at the product launch\", \"email_body\": \"We are excited to share a behind-the-scenes look at the creation of our new product line. This video showcases the behind-the-scenes process of a new product launch. Let us know what you think in the comments below!\", \"citations\": [\"[1]\", \"[2]\"]}",
+  "validation": {
+    "parsed_output": {
+      "brand_summary": "Ilia Beauty is a brand known for its clean beauty products, which are described as safe and effective. The brand has a product launch in 2026.",
+      "likely_target_audience": "The target audience for Ilia Beauty includes those interested in clean beauty products and those who are looking for makeup products that are safe and effective.",
+      "current_marketing_strategy": [
+        "The brand has a product launch in 2026",
+        "The brand has a product launch in 2026",
+        "The brand has a product launch in 2026"
+      ],
+      "marketing_gaps": [
+        "The brand has a product launch in 2026",
+        "The brand has a product launch in 2026"
+      ],
+      "instagram_post_idea": {
+        "hook": "A behind-the-scenes look at the product launch",
+        "concept": "A video showcasing the creation of the new product line",
+        "why_it_closes_the_gap": "This post would help to increase brand awareness and engagement by showcasing the behind-the-scenes process of a new product launch."
+      },
+      "email_subject": "A behind-the-scenes look at the product launch",
+      "email_body": "We are excited to share a behind-the-scenes look at the creation of our new product line. This video showcases the behind-the-scenes process of a new product launch. Let us know what you think in the comments below!",
+      "citations": [
+        "[1]",
+        "[2]"
+      ]
+    },
+    "parse_error": null,
+    "truncated": false,
+    "structural_validation": "pass",
+    "structural_errors": [],
+    "citation_validation": "pass",
+    "citation_errors": [],
+    "unknown_citation_ids": [],
+    "claimed_citation_ids": [
+      "[1]",
+      "[2]"
+    ]
+  }
+}

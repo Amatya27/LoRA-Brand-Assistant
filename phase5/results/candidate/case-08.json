@@ -1,0 +1,45 @@
+{
+  "company": "Hu Kitchen",
+  "prompt_sha256": "0eb8d5f4f273f5623fbf0b480438b9258dab2df3c90ef0547537ba57734a4f4c",
+  "finish_reason": "stop",
+  "tokens": 312,
+  "seconds": 67.097,
+  "raw_text": "{\"brand_summary\": \"Hu Kitchen is a paleo-inspired fast-casual restaurant in New York City founded in 2012 by three family members, Jordan Brown, Jason Karp, and Jessica Karp. Inspired by early wellness pioneers and their own health journeys, Hu Kitchen offers a unique concept of paleo-inspired fast food.\", \"likely_target_audience\": \"Hu Kitchen targets health-conscious individuals seeking paleo-inspired fast food options in New York City.\", \"current_marketing_strategy\": [\"Hu Kitchen offers a unique concept of paleo-inspired fast food\", \"Hu Kitchen offers a unique concept of paleo-inspired fast food\", \"Hu Kitchen offers a unique concept of paleo-inspired fast food\"], \"marketing_gaps\": [\"Hu Kitchen has not mentioned a specific social media platform for direct engagement\", \"Hu Kitchen has not mentioned a specific email marketing platform for direct engagement\"], \"instagram_post_idea\": {\"hook\": \"A behind-the-scenes look at Hu Kitchen\", \"concept\": \"A video showcasing the process of making a popular dish\", \"why_it_closes_the_gap\": \"This post would help Hu Kitchen reach a wider audience by sharing a unique aspect of their business, such as their process of making a popular dish.\"}, \"email_subject\": \"A behind-the-scenes look at Hu Kitchen\", \"email_body\": \"We have a unique process of making a popular dish, and we would like to share it with you!\", \"citations\": [\"[1]\", \"[2]\"]}",
+  "validation": {
+    "parsed_output": {
+      "brand_summary": "Hu Kitchen is a paleo-inspired fast-casual restaurant in New York City founded in 2012 by three family members, Jordan Brown, Jason Karp, and Jessica Karp. Inspired by early wellness pioneers and their own health journeys, Hu Kitchen offers a unique concept of paleo-inspired fast food.",
+      "likely_target_audience": "Hu Kitchen targets health-conscious individuals seeking paleo-inspired fast food options in New York City.",
+      "current_marketing_strategy": [
+        "Hu Kitchen offers a unique concept of paleo-inspired fast food",
+        "Hu Kitchen offers a unique concept of paleo-inspired fast food",
+        "Hu Kitchen offers a unique concept of paleo-inspired fast food"
+      ],
+      "marketing_gaps": [
+        "Hu Kitchen has not mentioned a specific social media platform for direct engagement",
+        "Hu Kitchen has not mentioned a specific email marketing platform for direct engagement"
+      ],
+      "instagram_post_idea": {
+        "hook": "A behind-the-scenes look at Hu Kitchen",
+        "concept": "A video showcasing the process of making a popular dish",
+        "why_it_closes_the_gap": "This post would help Hu Kitchen reach a wider audience by sharing a unique aspect of their business, such as their process of making a popular dish."
+      },
+      "email_subject": "A behind-the-scenes look at Hu Kitchen",
+      "email_body": "We have a unique process of making a popular dish, and we would like to share it with you!",
+      "citations": [
+        "[1]",
+        "[2]"
+      ]
+    },
+    "parse_error": null,
+    "truncated": false,
+    "structural_validation": "pass",
+    "structural_errors": [],
+    "citation_validation": "pass",
+    "citation_errors": [],
+    "unknown_citation_ids": [],
+    "claimed_citation_ids": [
+      "[1]",
+      "[2]"
+    ]
+  }
+}

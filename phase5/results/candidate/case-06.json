@@ -1,0 +1,45 @@
+{
+  "company": "Floyd Home",
+  "prompt_sha256": "8465dd312d2ed3ea10606a73c3bee320bd103884d835a75deac36e4baa53e043",
+  "finish_reason": "stop",
+  "tokens": 270,
+  "seconds": 64.981,
+  "raw_text": "{\"brand_summary\": \"Floyd Home is a brand that offers a variety of products, including beds and mattresses, with a focus on comfort and quality.\", \"likely_target_audience\": \"The target audience for Floyd Home includes individuals seeking comfortable and high-quality beds and mattresses. This includes those interested in home decor and furniture.\", \"current_marketing_strategy\": [\"The brand has a newsletter that shares product updates and promotions\", \"The brand has a PR and influencer marketing strategy\", \"The brand has a product launch strategy\"], \"marketing_gaps\": [\"The brand has not yet launched a product in a new market\", \"The brand has not yet launched a product in a new market\"], \"instagram_post_idea\": {\"hook\": \"A new product launch\", \"concept\": \"A product launch event\", \"why_it_closes_the_gap\": \"The product launch event will help the brand reach a wider audience and increase brand awareness.\"}, \"email_subject\": \"Floyd Home Product Launch Event\", \"email_body\": \"We are excited to announce a new product launch event that will help us reach a wider audience and increase brand awareness. Join us for a product launch event where you can learn more about our new products and meet our team.\", \"citations\": [\"[1]\", \"[2]\"]}",
+  "validation": {
+    "parsed_output": {
+      "brand_summary": "Floyd Home is a brand that offers a variety of products, including beds and mattresses, with a focus on comfort and quality.",
+      "likely_target_audience": "The target audience for Floyd Home includes individuals seeking comfortable and high-quality beds and mattresses. This includes those interested in home decor and furniture.",
+      "current_marketing_strategy": [
+        "The brand has a newsletter that shares product updates and promotions",
+        "The brand has a PR and influencer marketing strategy",
+        "The brand has a product launch strategy"
+      ],
+      "marketing_gaps": [
+        "The brand has not yet launched a product in a new market",
+        "The brand has not yet launched a product in a new market"
+      ],
+      "instagram_post_idea": {
+        "hook": "A new product launch",
+        "concept": "A product launch event",
+        "why_it_closes_the_gap": "The product launch event will help the brand reach a wider audience and increase brand awareness."
+      },
+      "email_subject": "Floyd Home Product Launch Event",
+      "email_body": "We are excited to announce a new product launch event that will help us reach a wider audience and increase brand awareness. Join us for a product launch event where you can learn more about our new products and meet our team.",
+      "citations": [
+        "[1]",
+        "[2]"
+      ]
+    },
+    "parse_error": null,
+    "truncated": false,
+    "structural_validation": "pass",
+    "structural_errors": [],
+    "citation_validation": "pass",
+    "citation_errors": [],
+    "unknown_citation_ids": [],
+    "claimed_citation_ids": [
+      "[1]",
+      "[2]"
+    ]
+  }
+}

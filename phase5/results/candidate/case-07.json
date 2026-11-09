@@ -1,0 +1,27 @@
+{
+  "company": "Hoka",
+  "prompt_sha256": "242e1df065f1934481b1306e742e9f6c955628fd8279daf572105d236efff57a",
+  "finish_reason": "stop",
+  "tokens": 322,
+  "seconds": 66.527,
+  "raw_text": "{\"brand_summary\": \"HOKA is a brand that emphasizes accessibility and equity in movement. The company aims to make all forms of movement accessible, inviting, and equitable.\", \"likely_target_audience\": \"The target audience includes athletes of all levels, from beginners to advanced runners, who value comfort and inclusivity.\", \"current_marketing_strategy\": [\"HOKA uses email and social media to share training content, event recaps, and product updates tied to user intent\", \"HOKA uses email and social media to share training content, event recaps, and product updates tied to user intent\", \"HOKA uses email and social media to share training content, event recaps, and product updates tied to user intent\"], \"marketing_gaps\": [\"HOKA's email marketing has not yet included a call to action for a product launch or a new product release\", \"HOKA's social media content has not yet included a call to action for a product launch or a new product release\"], \"instagram_post_idea\": {\"hook\": \"A new product release\", \"concept\": \"A product launch event\", \"why_it_closes_the_gap\": \"The post would encourage followers to visit the HOKA website to learn more about the new product release and purchase it directly from the website\", \"email_subject\": \"New Product Launch\", \"email_body\": \"We have a new product launch coming soon! Visit our website to learn more about the new product release and purchase it directly from the website\", \"citations\": [\"[1]\", \"[2]\"]}",
+  "validation": {
+    "parsed_output": null,
+    "parse_error": {
+      "error_type": "truncated_output",
+      "truncated": true,
+      "finish_reason": "stop",
+      "unbalanced_braces": true,
+      "message": "Outermost JSON object is malformed or incomplete: Expecting ',' delimiter: line 1 column 1456 (char 1455)"
+    },
+    "truncated": true,
+    "structural_validation": "fail",
+    "structural_errors": [
+      "truncated_output: Outermost JSON object is malformed or incomplete: Expecting ',' delimiter: line 1 column 1456 (char 1455)"
+    ],
+    "citation_validation": "not_applicable",
+    "citation_errors": [],
+    "unknown_citation_ids": [],
+    "claimed_citation_ids": []
+  }
+}

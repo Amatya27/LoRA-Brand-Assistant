@@ -1,0 +1,45 @@
+{
+  "company": "Bones Coffee",
+  "prompt_sha256": "2755f0a3b36b159b129e7ce5e4851df6af19e2a56b9e749da3e81885cbc6d2d1",
+  "finish_reason": "stop",
+  "tokens": 216,
+  "seconds": 52.44,
+  "raw_text": "{\"brand_summary\": \"Bones Coffee is a brand that uses a mix of paid social media and search ads to reach its audience [1].\", \"likely_target_audience\": \"The target audience for Bones Coffee includes those who have been reached through paid social media and search ads [1].\", \"current_marketing_strategy\": [\"Paid social media ads\", \"Search ads\", \"Email marketing\"], \"marketing_gaps\": [\"Limited engagement with creators\", \"Lack of a creator marketplace\"], \"instagram_post_idea\": {\"hook\": \"A creator marketplace\", \"concept\": \"A creator marketplace where creators can find and engage with brands\", \"why_it_closes_the_gap\": \"A creator marketplace would help Bones Coffee reach a wider audience and address the lack of a creator marketplace [2].\"}, \"email_subject\": \"A creator marketplace\", \"email_body\": \"A creator marketplace would help reach a wider audience and address the lack of a creator marketplace [2].\", \"citations\": [\"[1]\", \"[2]\"]}",
+  "validation": {
+    "parsed_output": {
+      "brand_summary": "Bones Coffee is a brand that uses a mix of paid social media and search ads to reach its audience [1].",
+      "likely_target_audience": "The target audience for Bones Coffee includes those who have been reached through paid social media and search ads [1].",
+      "current_marketing_strategy": [
+        "Paid social media ads",
+        "Search ads",
+        "Email marketing"
+      ],
+      "marketing_gaps": [
+        "Limited engagement with creators",
+        "Lack of a creator marketplace"
+      ],
+      "instagram_post_idea": {
+        "hook": "A creator marketplace",
+        "concept": "A creator marketplace where creators can find and engage with brands",
+        "why_it_closes_the_gap": "A creator marketplace would help Bones Coffee reach a wider audience and address the lack of a creator marketplace [2]."
+      },
+      "email_subject": "A creator marketplace",
+      "email_body": "A creator marketplace would help reach a wider audience and address the lack of a creator marketplace [2].",
+      "citations": [
+        "[1]",
+        "[2]"
+      ]
+    },
+    "parse_error": null,
+    "truncated": false,
+    "structural_validation": "pass",
+    "structural_errors": [],
+    "citation_validation": "pass",
+    "citation_errors": [],
+    "unknown_citation_ids": [],
+    "claimed_citation_ids": [
+      "[1]",
+      "[2]"
+    ]
+  }
+}

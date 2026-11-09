@@ -1,0 +1,49 @@
+{
+  "company": "Merit Beauty",
+  "prompt_sha256": "9686864c86c22bd496e68c1f70475bcc8a8c95aaa3f41268765bd1ac249b581c",
+  "finish_reason": "stop",
+  "tokens": 268,
+  "seconds": 60.566,
+  "raw_text": "{\"brand_summary\": \"Merit Beauty is a clean beauty brand that emphasizes a timeless perspective on beauty and a commitment to uncompromising quality [1].\", \"likely_target_audience\": \"The target audience for MERIT Beauty includes a diverse group of consumers, including those who value clean beauty products [1].\", \"current_marketing_strategy\": [\"A clean beauty brand with a timeless perspective on beauty [1].\", \"A brand that emphasizes a clean beauty product [1].\", \"A brand that emphasizes a clean beauty product [1].\", \"A brand that emphasizes a clean beauty product [1].\", \"A brand that emphasizes a clean beauty product [1].\"], \"marketing_gaps\": [\"A brand that emphasizes a clean beauty product [1].\", \"A brand that emphasizes a clean beauty product [1].\"], \"instagram_post_idea\": {\"hook\": \"A clean beauty product\", \"concept\": \"A clean beauty product\", \"why_it_closes_the_gap\": \"Merit Beauty's clean beauty products are designed to be a time-consuming product, but not a heavy one. [1].\"}, \"email_subject\": \"A clean beauty product\", \"email_body\": \"A clean beauty product\", \"citations\": [\"[1]\", \"[2]\"]}",
+  "validation": {
+    "parsed_output": {
+      "brand_summary": "Merit Beauty is a clean beauty brand that emphasizes a timeless perspective on beauty and a commitment to uncompromising quality [1].",
+      "likely_target_audience": "The target audience for MERIT Beauty includes a diverse group of consumers, including those who value clean beauty products [1].",
+      "current_marketing_strategy": [
+        "A clean beauty brand with a timeless perspective on beauty [1].",
+        "A brand that emphasizes a clean beauty product [1].",
+        "A brand that emphasizes a clean beauty product [1].",
+        "A brand that emphasizes a clean beauty product [1].",
+        "A brand that emphasizes a clean beauty product [1]."
+      ],
+      "marketing_gaps": [
+        "A brand that emphasizes a clean beauty product [1].",
+        "A brand that emphasizes a clean beauty product [1]."
+      ],
+      "instagram_post_idea": {
+        "hook": "A clean beauty product",
+        "concept": "A clean beauty product",
+        "why_it_closes_the_gap": "Merit Beauty's clean beauty products are designed to be a time-consuming product, but not a heavy one. [1]."
+      },
+      "email_subject": "A clean beauty product",
+      "email_body": "A clean beauty product",
+      "citations": [
+        "[1]",
+        "[2]"
+      ]
+    },
+    "parse_error": null,
+    "truncated": false,
+    "structural_validation": "fail",
+    "structural_errors": [
+      "email_body must be a non-empty string of at least 80 characters"
+    ],
+    "citation_validation": "pass",
+    "citation_errors": [],
+    "unknown_citation_ids": [],
+    "claimed_citation_ids": [
+      "[1]",
+      "[2]"
+    ]
+  }
+}

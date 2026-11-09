@@ -1,0 +1,18 @@
+{
+  "model_sha256": "2e5032698a907d229da4214ece7a8d730c482cb63cbe181be123c39eb03523fb",
+  "adapter_sha256": "4fbc4b787f6eb585b3540dbe1f242d818f77f6953199b2910f4dd9a2eb57af52",
+  "dataset_sha256": "a61ebb2d813d8915fa06d11c5ff6c3528951d59b443cb2382f2c6744d5da9305",
+  "device": "Device(cpu, 0)",
+  "temperature": 0,
+  "max_tokens": 1536,
+  "load_check": {
+    "file_tensor_count": 224,
+    "matched_tensor_count": 224,
+    "model_lora_param_count": 224,
+    "missing_in_model": [],
+    "shape_mismatch": [],
+    "value_mismatch": [],
+    "lora_params_not_in_file": [],
+    "all_tensors_match": true
+  }
+}

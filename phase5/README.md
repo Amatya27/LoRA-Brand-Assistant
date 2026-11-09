@@ -2,6 +2,8 @@
 
 This experiment continues YJ's published iteration-200 adapter from Thushar's Phase 4 commit `854071d`. The question was whether four supervised corrections would change the marketing-gap claims in real validation drafts. The team-reported iteration-150 adapter was not on any of the five published branches at the start of this run. No held-out test example was used for training, inference or scoring here.
 
+[Measured results and checkpoint decision](RESULTS.md)
+
 ## Curation and training
 
 A lexical audit of all 99 original training records found structurally valid labels throughout. All 99 had at least one marketing-gap sentence containing a term such as “limited” or “lack”; 29 contained at least one evidence excerpt with potential privacy, cookie or legal boilerplate. These are screening counts, not judgments of factual error or automatic exclusions. See [company-level audit](training_audit.json), reproduced with `python -m phase5.audit`.

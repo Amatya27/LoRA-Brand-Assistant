@@ -1,0 +1,46 @@
+{
+  "company": "Jones Road Beauty",
+  "prompt_sha256": "da250b1d6ee8e6115c71a219a8cd9fb9cb8addf4248c5ed151a34c34b4347b0a",
+  "finish_reason": "stop",
+  "tokens": 230,
+  "seconds": 51.357,
+  "raw_text": "{\"brand_summary\": \"Jones Road Beauty is a cosmetics brand that has shifted from a wholesale business to a direct-to-consumer model, focusing on self-funding and avoiding retail partnerships [1].\", \"likely_target_audience\": \"The brand is likely targeting a female audience, with a focus on cosmetics products [1].\", \"current_marketing_strategy\": [\"Partner Program\", \"Affiliate Program\", \"Influencer Marketing Certification\", \"Careers For Creators\"], \"marketing_gaps\": [\"No verified profile links found\", \"Uncertain gender distribution\"], \"instagram_post_idea\": {\"hook\": \"A collaboration with a popular female influencer\", \"concept\": \"A joint Instagram post featuring the influencer and Jones Road Beauty products\", \"why_it_closes_the_gap\": \"This post would help reach a wider audience of female consumers interested in cosmetics products [1].\"}, \"email_subject\": \"A potential Instagram post to reach a wider audience\", \"email_body\": \"A joint Instagram post featuring a popular female influencer and Jones Road Beauty products\", \"citations\": [\"[1]\", \"[2]\"]}",
+  "validation": {
+    "parsed_output": {
+      "brand_summary": "Jones Road Beauty is a cosmetics brand that has shifted from a wholesale business to a direct-to-consumer model, focusing on self-funding and avoiding retail partnerships [1].",
+      "likely_target_audience": "The brand is likely targeting a female audience, with a focus on cosmetics products [1].",
+      "current_marketing_strategy": [
+        "Partner Program",
+        "Affiliate Program",
+        "Influencer Marketing Certification",
+        "Careers For Creators"
+      ],
+      "marketing_gaps": [
+        "No verified profile links found",
+        "Uncertain gender distribution"
+      ],
+      "instagram_post_idea": {
+        "hook": "A collaboration with a popular female influencer",
+        "concept": "A joint Instagram post featuring the influencer and Jones Road Beauty products",
+        "why_it_closes_the_gap": "This post would help reach a wider audience of female consumers interested in cosmetics products [1]."
+      },
+      "email_subject": "A potential Instagram post to reach a wider audience",
+      "email_body": "A joint Instagram post featuring a popular female influencer and Jones Road Beauty products",
+      "citations": [
+        "[1]",
+        "[2]"
+      ]
+    },
+    "parse_error": null,
+    "truncated": false,
+    "structural_validation": "pass",
+    "structural_errors": [],
+    "citation_validation": "pass",
+    "citation_errors": [],
+    "unknown_citation_ids": [],
+    "claimed_citation_ids": [
+      "[1]",
+      "[2]"
+    ]
+  }
+}
