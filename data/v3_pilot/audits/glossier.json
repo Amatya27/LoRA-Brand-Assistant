@@ -1,0 +1,87 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "glossier",
+  "bound_to": {
+    "packet_sha256": "054a85629ea4920bf01ce490433c30ff24a33b5a8dbb003cf10df9a7cf398775",
+    "prompt_sha256": "6ec2eaf08831063ca83aca3f5ed920c4e84bec69b10c674bd57d80de6c3eff4b",
+    "completion_sha256": "1ddcff17b3b8f282e3ef28b78ee76c4348c501a830666c0f7eafdcc381092ce2",
+    "reviewer_config_sha256": "9f7ee1a8c1d24c79cf6d0eba44a592ea76faa8d5a857316202226e85859bc3e2"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/Qwen2.5-14B-Instruct-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 2000
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": []
+  },
+  "raw_response_sha256": "a599fa83b861dbc08e06ff64556acd2276afe37dbce6c589fcb379e91406ad68",
+  "raw_response": "{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\"P1\", \"P2\"],\n      \"quote\": \"Skin First. Makeup Second™\",\n      \"issues\": [],\n      \"reason\": \"The cited passages clearly state that Glossier prioritizes skincare over makeup.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\"P4\"],\n      \"quote\": \"Glossier’s marketing runs on community\",\n      \"issues\": [],\n      \"reason\": \"The cited passage states that Glossier’s marketing strategy is community-driven.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\"P10\"],\n      \"quote\": \"By incorporating user-generated content, Glossier encourages customers to become brand advocates\",\n      \"issues\": [],\n      \"reason\": \"The cited passage confirms that Glossier uses user-generated content and collaborates with influencers.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\"P7\"],\n      \"quote\": \"A community of over 2.8 million followers (2024) engages with carousels, UGC spotlights, and routine breakdowns\",\n      \"issues\": [],\n      \"reason\": \"The cited passage states that Glossier has a large Instagram following.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [\n    {\n      \"field\": \"email_body\",\n      \"text\": \"This aligns with your focus on skincare and community engagement\"\n    }\n  ],\n  \"absence_as_weakness\": []\n}",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1",
+          "P2"
+        ],
+        "quote": "Skin First. Makeup Second™",
+        "issues": [],
+        "reason": "The cited passages clearly state that Glossier prioritizes skincare over makeup."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "Glossier’s marketing runs on community",
+        "issues": [],
+        "reason": "The cited passage states that Glossier’s marketing strategy is community-driven."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P10"
+        ],
+        "quote": "By incorporating user-generated content, Glossier encourages customers to become brand advocates",
+        "issues": [],
+        "reason": "The cited passage confirms that Glossier uses user-generated content and collaborates with influencers."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "A community of over 2.8 million followers (2024) engages with carousels, UGC spotlights, and routine breakdowns",
+        "issues": [],
+        "reason": "The cited passage states that Glossier has a large Instagram following."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-22T09:19:35+00:00",
+  "audit_sha256": "1d4c91644b846a3cfaaaa20c216546b2619d1cb1ca5d86f26d80934d5bc08179",
+  "dismissed_reviewer_flags": [
+    {
+      "flag": {
+        "field": "email_body",
+        "text": "This aligns with your focus on skincare and community engagement"
+      },
+      "reason": "sentence in email_body carries a claim marker; judged via its claim",
+      "matched_sentence": "this aligns with your focus on skincare and community engagement"
+    }
+  ]
+}
