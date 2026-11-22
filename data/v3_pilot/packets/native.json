@@ -1,0 +1,1628 @@
+{
+  "schema_version": "brandpilot.packet.v3",
+  "company": {
+    "company_id": "native",
+    "display_name": "Native",
+    "legacy_name": "Native",
+    "category": "personal care (deodorant, body wash, hair care)",
+    "official_domains": [
+      "nativecos.com"
+    ],
+    "identity_status": "verified",
+    "registry_version": "2026-11-21.v1",
+    "registry_sha256": "30ef3cd9bf05bcad5ca5c1e00110b3252c8aa7b1715374cbddb5f6bb1f090a23"
+  },
+  "collection": {
+    "mode": "legacy_cache_replay",
+    "collector_version": "brandpilot-collector-0.3",
+    "created_at": "2026-11-22T03:51:09+00:00",
+    "queries": [
+      "\"Native\" instagram marketing campaign target audience",
+      "\"Native\" social media strategy brand positioning",
+      "\"Native\" marketing campaign press release instagram",
+      "\"Native\" customer audience brand story",
+      "\"Native\" about us brand values audience",
+      "\"Native\" newsroom marketing campaign",
+      "\"Native\" brand campaign case study"
+    ],
+    "notes": [
+      "replayed from legacy packet native-research-packet.json (sha256 9a550181c307fa06)",
+      "documents are legacy cached extractions; no new fetches were made"
+    ]
+  },
+  "leads": [
+    {
+      "company_id": "native",
+      "query": "\"Native\" social media strategy brand positioning",
+      "url": "https://native-marketing.com/brand",
+      "title": "Brand Strategy — Native MarketingSocial Native AI — Predict What Works Before You SpendNative Content: The Social Media Giants’ Fight to...",
+      "snippet": "At Native, our first step is to identify the intrinsic brand truth that will define and frame your marketing position. Your brand truth is your North Star for all marketing, communications and experiences. Social Native predicts which creative ideas, creators, and platforms will win for your brand — so you stop guessing and start knowing. May 9, 2022 · Discover how Passion Digital is navigating the social media landscape with native content. Elevate your strategy and stay ahead. Click to learn more! Apr 16, 2023 · Native marketing content can also improve the way that consumers perceive your brand. Because these ads are designed to provide value to the reader, rather than just pushing a product or service, they can create a positive association with your brand in the mind of the consumer.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "native",
+      "query": "\"Native\" about us brand values audience",
+      "url": "https://www.nativebrands.co/about",
+      "title": "About Us | Nativebrands Digital Agency",
+      "snippet": "Meet the passionate team behind one of Africa's most innovative digital agencies. Discover our mission, values, and commitment to delivering exceptional digital solutions that drive real business growth for clients worldwide.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "native",
+      "query": "\"Native\" customer audience brand story",
+      "url": "https://www.nativecos.com/pages/about-us",
+      "title": "About Us | Native",
+      "snippet": "Learn about why Native makes daily staples like deodorant, body wash, hair care, and lotion that are clean, simple, effective, and cruelty free.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "native",
+      "query": "\"Native\" instagram marketing campaign target audience",
+      "url": "https://whynative.com/how-to-target-audiences-on-native-ads/",
+      "title": "How To Target Audiences On Native Ads",
+      "snippet": "If you’re new to native ads, you might be wondering why targeting audiences isn’t as robust as social platforms, such as Meta. While the options for targeting are lacking, there are still several ways to hone in on the types of people you want.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "native",
+      "query": "\"Native\" social media strategy brand positioning",
+      "url": "https://www.nativeadvertisinginstitute.com/blog/native-advertising-social-media",
+      "title": "How to use native advertising on social media",
+      "snippet": "Jan 22, 2024 · There are literally billions of people using social media every day and the platforms themselves have powerful native advertising tools that will allow you to design, target, monitor and adjust your native advertising campaigns.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "native",
+      "query": "\"Native\" social media strategy brand positioning",
+      "url": "https://www.socialnative.ai/",
+      "title": "Social Native AI — Predict What Works Before You Spend",
+      "snippet": "Social Native predicts which creative ideas, creators, and platforms will win for your brand — so you stop guessing and start knowing.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "native",
+      "query": "\"Native\" customer audience brand story",
+      "url": "https://www.nativeadvertisinginstitute.com/native-advertising-glossary/brand-storytelling",
+      "title": "What Is Brand Storytelling in Native Advertising?",
+      "snippet": "Understand brand storytelling in native advertising, why it matters, and how brands use storytelling to build stronger audience connections.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "native",
+      "query": "\"Native\" newsroom marketing campaign",
+      "url": "https://native-marketing.com/",
+      "title": "Native Marketing",
+      "snippet": "Our process will elevate your native brand story and harmonize your marketing to create true engagement. With over 20 years of experience, we know how to add value at key strategic and creative steps across the marketing process.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    }
+  ],
+  "documents": [
+    {
+      "source_id": "S-427702220c1a",
+      "company_id": "native",
+      "requested_url": "https://native-marketing.com/brand",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "b2f3826dd7df0034e9784fdc2b623031b81085487af30a72bad0796b380f5ed5",
+      "text_path": "text/b2f3826dd7df0034e9784fdc2b623031b81085487af30a72bad0796b380f5ed5.txt",
+      "raw_path": null,
+      "text_chars": 1980,
+      "redirect_chain": [],
+      "identity_decision": "conflicting_entity_domain",
+      "identity_reason": "host native-marketing.com belongs to Native Marketing",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 2862ca68ac42ca52f594c96102e357df434cb37ff710b95fd1c2cc0ba0720561.json sha256=de0b8aeadd3d3412629916efc71e7e99d1ad04f16ed1b240ccf49282981769d1",
+        "cache file last modified 2026-11-17T08:02:47.687000+00:00 (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-ae36bfe2a292",
+      "company_id": "native",
+      "requested_url": "https://www.nativebrands.co/about",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "77d252bdb1ae73d8c74fe42ba1318ccdc7f5973e72d222bd78d810f6dc1cfd4a",
+      "text_path": "text/77d252bdb1ae73d8c74fe42ba1318ccdc7f5973e72d222bd78d810f6dc1cfd4a.txt",
+      "raw_path": null,
+      "text_chars": 3990,
+      "redirect_chain": [],
+      "identity_decision": "conflicting_entity_domain",
+      "identity_reason": "host nativebrands.co belongs to Native Brands",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 675f92d0aef221ea3c74f78d495579ab92cc131ea08f522c547be4af320783ec.json sha256=42e0ed52d9ab33db383fff7f03a2c51aaf2639b3f2818152ceaf69ce61c0fa0f",
+        "cache file last modified 2026-11-17T08:02:47.672000+00:00 (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-d9c195464ff3",
+      "company_id": "native",
+      "requested_url": "https://www.nativecos.com/pages/about-us",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "105dac20f33a70f294a517c0bf63204b3dd7c2eb7a7ddef99238576d7b20b934",
+      "text_path": "text/105dac20f33a70f294a517c0bf63204b3dd7c2eb7a7ddef99238576d7b20b934.txt",
+      "raw_path": null,
+      "text_chars": 5261,
+      "redirect_chain": [],
+      "identity_decision": "official_domain",
+      "identity_reason": "host nativecos.com is an official domain",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 18d1ccce5e76c2fb40880b66215ef0814108d013e4455ff3b853ed12f85a5a42.json sha256=8e312f5a0897a6748bf185772238ad9e740f0ff43d7982cd2de35778487cb341",
+        "cache file last modified 2026-11-04T00:26:12.090000+00:00 (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-f6c08f285142",
+      "company_id": "native",
+      "requested_url": "https://whynative.com/how-to-target-audiences-on-native-ads/",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "7910d1a6ac699bac5547402fb515dac0507d233496050520445d1138d64f7b9d",
+      "text_path": "text/7910d1a6ac699bac5547402fb515dac0507d233496050520445d1138d64f7b9d.txt",
+      "raw_path": null,
+      "text_chars": 3418,
+      "redirect_chain": [],
+      "identity_decision": "conflicting_entity_domain",
+      "identity_reason": "host whynative.com belongs to native advertising",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file d96bb41a18a8245656d02d7f4b6512ac5a1d3f0fd8d3db6e575406a96bf812ff.json sha256=f6be975eb84f885a7307df7318f98c4e700d45883138db88fb3a400502ae1f02",
+        "cache file last modified 2026-11-04T00:26:12.563000+00:00 (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-4b282d834115",
+      "company_id": "native",
+      "requested_url": "https://www.nativeadvertisinginstitute.com/blog/native-advertising-social-media",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "a176d82b6208b6b7910a83121eec8e8b27eede205cc38cc87d9f4eb8dcbccfc0",
+      "text_path": "text/a176d82b6208b6b7910a83121eec8e8b27eede205cc38cc87d9f4eb8dcbccfc0.txt",
+      "raw_path": null,
+      "text_chars": 15837,
+      "redirect_chain": [],
+      "identity_decision": "conflicting_entity_domain",
+      "identity_reason": "host nativeadvertisinginstitute.com belongs to Native Advertising Institute",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file d228c8daca2385807d911a3ee5f41c3d97719f4013b87972e3e499e74088cdd6.json sha256=dcdf62977591e4e055ba4c321f9c917fd3a07411e649ad63babf8c63ee669f17",
+        "cache file last modified 2026-11-17T08:02:48.161000+00:00 (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-3284a0aec597",
+      "company_id": "native",
+      "requested_url": "https://www.socialnative.ai/",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "ecc57cc0ff27a1be16840a134c67e9158066e80088379ce2774276d3cd60d50b",
+      "text_path": "text/ecc57cc0ff27a1be16840a134c67e9158066e80088379ce2774276d3cd60d50b.txt",
+      "raw_path": null,
+      "text_chars": 11489,
+      "redirect_chain": [],
+      "identity_decision": "conflicting_entity_domain",
+      "identity_reason": "host socialnative.ai belongs to Social Native",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 9128a0ed5966fdc0f01ecbf8ed36216cef8bfc086ba81e7fd6590fda8c40a742.json sha256=3508ac7094115ba77dde8ad442d9facab11b3acfc5a027cc607735e8e82ee3a6",
+        "cache file last modified 2026-11-17T08:02:47.432000+00:00 (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-5491c0602a97",
+      "company_id": "native",
+      "requested_url": "https://www.nativeadvertisinginstitute.com/native-advertising-glossary/brand-storytelling",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "bc1012ad9202215b1e46f86b5a3b80cb2bb2ea18a83c0dcf5a6f3d3d0f26725b",
+      "text_path": "text/bc1012ad9202215b1e46f86b5a3b80cb2bb2ea18a83c0dcf5a6f3d3d0f26725b.txt",
+      "raw_path": null,
+      "text_chars": 2858,
+      "redirect_chain": [],
+      "identity_decision": "conflicting_entity_domain",
+      "identity_reason": "host nativeadvertisinginstitute.com belongs to Native Advertising Institute",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file eda77a9f78ba2ef1c5dbfeb40187ebc2e1c26ea4640df798354f8adf30b27dc4.json sha256=3bf342882772ff6c7c1563854bfdf6586cb313b283f798f73407d6943e966d64",
+        "cache file last modified 2026-11-04T00:26:13.198000+00:00 (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-60f5aee8cf69",
+      "company_id": "native",
+      "requested_url": "https://native-marketing.com/",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "b176d193ad758e5a062aa7ce9431398276c3c507ff80280b8556a42d6b67761c",
+      "text_path": "text/b176d193ad758e5a062aa7ce9431398276c3c507ff80280b8556a42d6b67761c.txt",
+      "raw_path": null,
+      "text_chars": 6095,
+      "redirect_chain": [],
+      "identity_decision": "conflicting_entity_domain",
+      "identity_reason": "host native-marketing.com belongs to Native Marketing",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file e6be338fffb8c2b51a0305c544b0508aa2d39b932d365b9ea000f14e588f797e.json sha256=7ec808461d608412a2acb0fc774e7e958daf2043ddb26dc84d3153126b32b733",
+        "cache file last modified 2026-11-04T00:26:12.424000+00:00 (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "passage_uid": "PU-93bb28c28f4242d4",
+      "source_id": "S-d9c195464ff3",
+      "char_start": 1518,
+      "char_end": 1833,
+      "text": "For us, it’s personal. ## Clean No parabens. No sulfates. No animal testing. No gray area. Our ingredients come from nature, are barely processed, and are 100% vegan. You always know what you’re putting on your body. Native signifies our focus on harnessing nature’s power through clean, simple, effective products.",
+      "text_sha256": "2d6c7900ddfd3b813873ee7acf99ba8e074fb50447625cc3f059929a6a9fb3c9",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [],
+      "score": 10,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P1",
+      "source_url": "https://www.nativecos.com/pages/about-us",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-0c77944f7f8f9f7d",
+      "source_id": "S-d9c195464ff3",
+      "char_start": 1857,
+      "char_end": 2043,
+      "text": "Craveable Self-care should feel delightful. Our award-winning formulas are known for their irresistible scents. Don’t be surprised if you want to sniff them all day and crave them later.",
+      "text_sha256": "25dc5cc92b5f6b014a18d1c288f4dd10da481866fd83578236468aea469b8c34",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [],
+      "score": 10,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P2",
+      "source_url": "https://www.nativecos.com/pages/about-us",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-fc074dda085a5e21",
+      "source_id": "S-d9c195464ff3",
+      "char_start": 2067,
+      "char_end": 2252,
+      "text": "Effective Our dermatologist-tested products are designed to deliver benefits you want and your body needs. Moisturizing, cleansing, scrubbing, protecting — we do it all (and then some).",
+      "text_sha256": "8932908e833c6023324db3eddee2a40b6528ea5be867cad70aac0484c6844f1b",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [],
+      "score": 10,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P3",
+      "source_url": "https://www.nativecos.com/pages/about-us",
+      "document_identity": "official_domain",
+      "publication_date": null
+    }
+  ],
+  "rejected_passages": [
+    {
+      "passage_uid": "PU-e4ae73002eca92d4",
+      "source_id": "S-4b282d834115",
+      "char_start": 11473,
+      "char_end": 12033,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "actual_activity",
+      "preview": "Example of native advertising campaign on LinkedIn To get an idea of how native advertising on LinkedIn can produce real results, let’s look at one of three great examples of native advertising on Lin"
+    },
+    {
+      "passage_uid": "PU-92ca4546514b7718",
+      "source_id": "S-4b282d834115",
+      "char_start": 3476,
+      "char_end": 4081,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "actual_activity",
+      "preview": "In fact, research has found that users are ten times as likely to engage with brands on Instagram ten times more than they are on Facebook. So, how do you reach and engage audiences with native ads on"
+    },
+    {
+      "passage_uid": "PU-ff4a6feae825c910",
+      "source_id": "S-4b282d834115",
+      "char_start": 4454,
+      "char_end": 4754,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Teaming up with Instagram influencers for your native ads Paid sponsorships on Instagram leverage the popularity of creators to reach new audiences. In this form of native advertising on social media,"
+    },
+    {
+      "passage_uid": "PU-a56bb63734696581",
+      "source_id": "S-4b282d834115",
+      "char_start": 10950,
+      "char_end": 11468,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "actual_activity",
+      "preview": "LinkedIn has a lot of information on the users’ jobs, titles, locations, education levels and companies, which all make for good filtering when choosing your audience. Sponsored content can be created"
+    },
+    {
+      "passage_uid": "PU-cfdf548249312c5c",
+      "source_id": "S-3284a0aec597",
+      "char_start": 5316,
+      "char_end": 5874,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "The winning content doesn't stop at organic. We plug directly into Meta, TikTok, YouTube, and the platforms where paid media actually lives — predicting which creative will perform as paid spend, on w"
+    },
+    {
+      "passage_uid": "PU-7f730a77543e4267",
+      "source_id": "S-4b282d834115",
+      "char_start": 4082,
+      "char_end": 4449,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "actual_activity",
+      "preview": "Whichever form your native advertising on Instagram takes, the idea is to present the sponsored content in a way users already know and enjoy. Instagram has powerful advertiser tools that allow variou"
+    },
+    {
+      "passage_uid": "PU-5e8164747dd604bd",
+      "source_id": "S-4b282d834115",
+      "char_start": 5244,
+      "char_end": 5899,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "actual_activity",
+      "preview": "Example of using influencers for native ads on Instagram When fast food giant McDonald’s was looking for a way to connect with a younger audience in Denmark, it teamed up with Anders Hemmingsen, a wel"
+    },
+    {
+      "passage_uid": "PU-ff4b258fb5cb6345",
+      "source_id": "S-4b282d834115",
+      "char_start": 9187,
+      "char_end": 9791,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "actual_activity",
+      "preview": "Example of Native Advertising on TikTok TikTok is incredibly popular with Gen Z and is thus a go-to platform for brands that want to engage a younger audience. For an award-winning example of how this"
+    },
+    {
+      "passage_uid": "PU-4d3aabffd096d227",
+      "source_id": "S-4b282d834115",
+      "char_start": 10415,
+      "char_end": 10949,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "actual_activity",
+      "preview": "Native Ads on LinkedIn: Sponsored updates LI-Logo Native advertising on LinkedIn exists in the option of sponsored updates. With a sponsored update on LinkedIn, your company can easily promote any pos"
+    },
+    {
+      "passage_uid": "PU-56e58868eec76c5f",
+      "source_id": "S-3284a0aec597",
+      "char_start": 911,
+      "char_end": 1568,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Articles Strategy, trends, and how-tos. Events and webinars Live and on-demand sessions. Partners Meta, TikTok, YouTube, and more. What's new New in the platform. FAQs Common questions, answered. Comp"
+    },
+    {
+      "passage_uid": "PU-e4316c1c3873adc3",
+      "source_id": "S-4b282d834115",
+      "char_start": 6593,
+      "char_end": 7234,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "actual_activity",
+      "preview": "In short, if you can post it to Facebook, you can also boost it. With organic reach on the platform on a steep decline, it has become increasingly important for brands and marketers to leverage paid c"
+    },
+    {
+      "passage_uid": "PU-0e4552eabca7a649",
+      "source_id": "S-4b282d834115",
+      "char_start": 2911,
+      "char_end": 3475,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "provider_reported_result",
+      "preview": "Native Ads on Instagram: Sponsored content instagram-1675670_1280 Sponsored photos and videos on Instagram can be a great way to connect with your target audience with your native ads. A whopping 1.32"
+    },
+    {
+      "passage_uid": "PU-bed86104596f8e5b",
+      "source_id": "S-4b282d834115",
+      "char_start": 9792,
+      "char_end": 10411,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "provider_reported_result",
+      "preview": "Those TikTok videos were then aired as an episodic talent show on YouTube that invited viewers to choose the winner at the finale. The campaign set the Croatian internet on fire. It was everywhere – c"
+    },
+    {
+      "passage_uid": "PU-bc204af3ac81c268",
+      "source_id": "S-3284a0aec597",
+      "char_start": 3950,
+      "char_end": 4642,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Social Native has the formula for winning. Most brands lose time and money for one reason: they guessed. We don't have to — we've run this 1.8 million times. Results train the predictions; predictions"
+    },
+    {
+      "passage_uid": "PU-369350b5dcbc7450",
+      "source_id": "S-3284a0aec597",
+      "char_start": 4643,
+      "char_end": 5315,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Not the biggest. The ones who'll actually win. Powered by the best models in the world, trained on the data they don't have. Built on ClaudeGeminiChatGPT 02 Create Prediction at scale. Because scale i"
+    },
+    {
+      "passage_uid": "PU-fff94e68e439cd90",
+      "source_id": "S-3284a0aec597",
+      "char_start": 8148,
+      "char_end": 8847,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Real creators. Real brands. Real content. Every shortlist turns into work that ships — 1.8M+ creator collaborations and counting, across the brands you just saw. CliniqueClinique CrocsCrocs The North "
+    },
+    {
+      "passage_uid": "PU-65304802cbd62db0",
+      "source_id": "S-4b282d834115",
+      "char_start": 1721,
+      "char_end": 2296,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "author_recommendation",
+      "preview": "Which social media channel should you use for your native ads? customer-563967_1280 One of the main goals of native advertising is to be present where your target group is hanging out. Native ads take"
+    },
+    {
+      "passage_uid": "PU-77c8e5f42784b3bf",
+      "source_id": "S-4b282d834115",
+      "char_start": 14390,
+      "char_end": 15025,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "author_recommendation",
+      "preview": "Conclusion As you can see, there are many ways to utilise social media in your next native advertising campaign to reach a wider audience and engage with potential customers in a more organic way. The"
+    },
+    {
+      "passage_uid": "PU-66e7016bc6cd9540",
+      "source_id": "S-5491c0602a97",
+      "char_start": 645,
+      "char_end": 994,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "What Is Brand Storytelling in Native Advertising? Brand storytelling is the practice of using narratives, emotions, and relatable experiences to communicate a brand’s message in a more engaging and au"
+    },
+    {
+      "passage_uid": "PU-d884a8cef8e4cf8b",
+      "source_id": "S-5491c0602a97",
+      "char_start": 999,
+      "char_end": 1382,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Examples of Brand Storytelling Customer Success Stories: A company shares real customer experiences through articles or videos. Lifestyle Content: A travel brand creates inspiring stories about destin"
+    },
+    {
+      "passage_uid": "PU-ca7103fa364a4d4b",
+      "source_id": "S-5491c0602a97",
+      "char_start": 2397,
+      "char_end": 2522,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "actual_activity",
+      "preview": "Four Great Examples of Sponsored Content from the Past Month ## 16 Innovative Content Formats That'll Give Your Brand an Edge"
+    },
+    {
+      "passage_uid": "PU-683dd7ef69adfdc5",
+      "source_id": "S-ae36bfe2a292",
+      "char_start": 344,
+      "char_end": 1034,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "brand_positioning",
+      "preview": "building for millions of users. Nativebrands was born from a simple belief: exceptional digital experiences come from people who invest passion and craftsmanship into their work. We started as a team "
+    },
+    {
+      "passage_uid": "PU-b61d81bfa2562d98",
+      "source_id": "S-3284a0aec597",
+      "char_start": 1589,
+      "char_end": 2140,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "We tell you which influencer strategy will work — before you spend a dollar. Powered by AI trained on 1.8M+ creator collaborations and $8B in paid media. Every brief, creator, and platform is backed b"
+    },
+    {
+      "passage_uid": "PU-117e4f9c2361762c",
+      "source_id": "S-4b282d834115",
+      "char_start": 8014,
+      "char_end": 8571,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "The company says that advertisers could reach 1.051 billion users aged 18 and above on TikTok as of January 2023 but TikTok only reports advertising audience data for users aged 18 and above in some c"
+    },
+    {
+      "passage_uid": "PU-b96e406e849e3e16",
+      "source_id": "S-4b282d834115",
+      "char_start": 8572,
+      "char_end": 9182,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "TikTok's ad tools let brands target relevant segments, select specific ad placements and plan the scheduling and budgets of their ads on several levels. TikTok offers several ad formats such as TopVie"
+    },
+    {
+      "passage_uid": "PU-e9529a61af7322b0",
+      "source_id": "S-4b282d834115",
+      "char_start": 12034,
+      "char_end": 12559,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "actual_activity",
+      "preview": "The focus was on organic geo-targeted posts on Lenovo’s LinkedIn company page and promoting only the top-performing organic content using Sponsored Content ads. They also optimized for mobile with vis"
+    },
+    {
+      "passage_uid": "PU-f0bc447d0786ef1c",
+      "source_id": "S-4b282d834115",
+      "char_start": 15067,
+      "char_end": 15242,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Don’t Make Ads. Make TikToks': A guide to native advertising on the mega-popular platform ## Learn From 5 Examples of Native Ads & Content Marketing on Facebook NAI+ EXCLUSIVE"
+    },
+    {
+      "passage_uid": "PU-e0804d774834fff6",
+      "source_id": "S-5491c0602a97",
+      "char_start": 469,
+      "char_end": 612,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Understand brand storytelling in native advertising, why it matters, and how brands use ## storytelling to build stronger audience connections."
+    },
+    {
+      "passage_uid": "PU-a871434d89bfaca9",
+      "source_id": "S-60f5aee8cf69",
+      "char_start": 4375,
+      "char_end": 4994,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "A collaborative team leader, Ian works tirelessly to help clients and partners succeed. Ian is an avid reader, fitness enthusiast and has a dual major in psychology and Spanish literature. Allyson Cum"
+    },
+    {
+      "passage_uid": "PU-8e6d99889c1699bc",
+      "source_id": "S-3284a0aec597",
+      "char_start": 3440,
+      "char_end": 3934,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "provider_reported_result",
+      "preview": "The creator economy,right now. Speed 5 days is all it takes for half of TikTok trends to die. Campaigns average 6+ weeks to launch. Trends move faster than campaigns can. Algorithms 87% of social medi"
+    },
+    {
+      "passage_uid": "PU-6ad13c62520e3c75",
+      "source_id": "S-ae36bfe2a292",
+      "char_start": 1035,
+      "char_end": 1204,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "historical_activity",
+      "preview": "Team member working on digital solutions ### 2018 founded as an independently owned agency in 2018 ### 90+ projects launched over the years (web, mobile, branding, etc.)"
+    },
+    {
+      "passage_uid": "PU-a4ea12ccbc5bda2a",
+      "source_id": "S-3284a0aec597",
+      "char_start": 0,
+      "char_end": 676,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Social Native Talk to usSign inHome Platform Platform overview Everything, handled. PREDICT Predict Know what'll work before you spend. Try the platform Create a brand account, run a real brief. CAPAB"
+    },
+    {
+      "passage_uid": "PU-89991e5f4182e664",
+      "source_id": "S-3284a0aec597",
+      "char_start": 677,
+      "char_end": 865,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Case studies Real brands, real numbers. Industries Fashion, CPG, beauty, retail, travel. Use cases Ecommerce, social, paid media, email. Inspiration Browse content by industry and channel."
+    },
+    {
+      "passage_uid": "PU-37635f07e94e42d5",
+      "source_id": "S-3284a0aec597",
+      "char_start": 5878,
+      "char_end": 6343,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "The brands already playing the new game. Social Native has powered creator marketing for 1,500+ brands globally. These aren't just wins — they're training data. Every result below feeds the model that"
+    },
+    {
+      "passage_uid": "PU-237feb36e74de5f7",
+      "source_id": "S-4b282d834115",
+      "char_start": 2297,
+      "char_end": 2725,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "That is why defining your target group will lead you to the best social media platform for you to reach them with your native advertising. Your choice of social media for native advertising will depen"
+    },
+    {
+      "passage_uid": "PU-dbcfc3dbacb0256d",
+      "source_id": "S-4b282d834115",
+      "char_start": 5903,
+      "char_end": 6592,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "actual_activity",
+      "preview": "Native Ads on Facebook: Sponsored Posts and Ads facebook-76536_1280 A Facebook sponsored post is a post that businesses pay for, in order to reach a larger audience than they otherwise would be able t"
+    },
+    {
+      "passage_uid": "PU-bec31562da743682",
+      "source_id": "S-4b282d834115",
+      "char_start": 7571,
+      "char_end": 8013,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Native Advertising on TikTok TikTok is an absolute juggernaut, especially when it comes to younger audiences. Exactly how many users advertisers can reach on the platform is difficult to say with cert"
+    },
+    {
+      "passage_uid": "PU-e73becf5069703f6",
+      "source_id": "S-4b282d834115",
+      "char_start": 13224,
+      "char_end": 13902,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Use the promoted tweet in whatever form makes sense to you, but if it is part of a native ad campaign, remember to promote content instead of offers, deals or discounts. Whatever the Promoted Ad conta"
+    },
+    {
+      "passage_uid": "PU-53e48accded0b077",
+      "source_id": "S-5491c0602a97",
+      "char_start": 1425,
+      "char_end": 1598,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Builds emotional connections between brands and audiences. * Makes native advertising feel less intrusive and more engaging. * Helps improve brand recall and audience trust."
+    },
+    {
+      "passage_uid": "PU-35df00bdd0ecd65c",
+      "source_id": "S-5491c0602a97",
+      "char_start": 1839,
+      "char_end": 2045,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Overly promotional storytelling can reduce credibility. * Stories should align with the brand’s identity and audience expectations. * Measuring storytelling impact may require long-term engagement ana"
+    },
+    {
+      "passage_uid": "PU-c02dbe2cd2c566e3",
+      "source_id": "S-60f5aee8cf69",
+      "char_start": 547,
+      "char_end": 741,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Native is a boutique brand & marketing agency that seeks what is vital and natural about your # brand, then brings it to life for your customers. Our process will elevate your native brand story"
+    },
+    {
+      "passage_uid": "PU-2c73684ef4216582",
+      "source_id": "S-60f5aee8cf69",
+      "char_start": 1880,
+      "char_end": 2383,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Native Marketing Team Craig McAnsh Founder | Strategist — Craig McAnsh is an experienced leader in the advertising, marketing and media industries. He has been widely recognized for his strategic, non"
+    },
+    {
+      "passage_uid": "PU-5d64c86923cf94cd",
+      "source_id": "S-60f5aee8cf69",
+      "char_start": 3677,
+      "char_end": 4374,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Noah Vertefeuille Digital Media — Noah Vertefeuille is a seasoned expert in the domains of digital marketing, digital strategy, and brand automation. Known for a pragmatic approach combined with innov"
+    },
+    {
+      "passage_uid": "PU-24e76e76c5112b3d",
+      "source_id": "S-f6c08f285142",
+      "char_start": 153,
+      "char_end": 725,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Careers Native Ad Buyers Join Our Community ## How To Target Audiences On Native Ads ##### March 6, 2025 Is your product or service designed for a specific demographic? It’s common for advertisers to "
+    },
+    {
+      "passage_uid": "PU-4cfefc8dc5546094",
+      "source_id": "S-3284a0aec597",
+      "char_start": 7005,
+      "char_end": 7630,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "provider_reported_result",
+      "preview": "Authentic UGC scaled across the funnel, from organic discovery to paid. Read the case study Nespresso 19%higher interaction rate per conversion. Plus a 6.5% lift in ad recall versus standard brand cre"
+    },
+    {
+      "passage_uid": "PU-fa6f9a2fd6a486f6",
+      "source_id": "S-3284a0aec597",
+      "char_start": 7631,
+      "char_end": 8144,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "provider_reported_result",
+      "preview": "Read the case study > “The impact of user-generated content on our conversion rates has been remarkable.” IKEAJason Black · Web Communications Manager, IKEA > “The platform helps us close a gap for pr"
+    },
+    {
+      "passage_uid": "PU-be82396cf7c780fc",
+      "source_id": "S-3284a0aec597",
+      "char_start": 8848,
+      "char_end": 9185,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Jart GladGlad PerrierPerrier InvisalignInvisalign How we compare ## They have a database. We have a track record. Anyone can build a list of creators. We've actually worked with 1.8 million of them — "
+    },
+    {
+      "passage_uid": "PU-d9051b6e90d6ec18",
+      "source_id": "S-3284a0aec597",
+      "char_start": 10676,
+      "char_end": 10803,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Stop guessing. ## Start winning. The next campaign you greenlight could be the first one you launch already knowing it'll land."
+    },
+    {
+      "passage_uid": "PU-b9eee0bdac5fa803",
+      "source_id": "S-427702220c1a",
+      "char_start": 515,
+      "char_end": 1019,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Is your brand alive? At Native, our first step is to identify the intrinsic brand truth that will define and frame your marketing position. Your brand truth is your North Star for all marketing, commu"
+    },
+    {
+      "passage_uid": "PU-9042e39340562d27",
+      "source_id": "S-4b282d834115",
+      "char_start": 467,
+      "char_end": 1095,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "How to use native advertising on social media ## Details Author Native Advertising Institute Date January 22, 2024 Native advertising on social media can seem overwhelming. The various social media pl"
+    },
+    {
+      "passage_uid": "PU-8d9f2776b6632546",
+      "source_id": "S-4b282d834115",
+      "char_start": 1096,
+      "char_end": 1717,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "We probably not breaking any news by saying that people spend a lot of time on social media. A lot! As of 2022, the average social media usage worldwide was 2 hours and 27 minutes. But remember, that’"
+    },
+    {
+      "passage_uid": "PU-a3ec85d676f13a83",
+      "source_id": "S-4b282d834115",
+      "char_start": 13903,
+      "char_end": 14386,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Many advertisers, including 50 of Twitter’s top 100 advertisers, paused their efforts on the platform and a flood of “irrelevant & annoying ads” (in Musk’s own words) have filled the void. But there’s"
+    },
+    {
+      "passage_uid": "PU-4b2455cc7848c9ea",
+      "source_id": "S-60f5aee8cf69",
+      "char_start": 1325,
+      "char_end": 1467,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Branding PureLife+Naturals+Logo Your brand is your center. We discover the intrinsic brand truths to define and frame your marketing position."
+    },
+    {
+      "passage_uid": "PU-302f5c668ba3db76",
+      "source_id": "S-60f5aee8cf69",
+      "char_start": 1482,
+      "char_end": 1637,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Strategy & Planning SylvanSport_Planning.png We create strategically impactful marketing and communication plans that keep your brand on track for success."
+    },
+    {
+      "passage_uid": "PU-07be3eba986b0f07",
+      "source_id": "S-60f5aee8cf69",
+      "char_start": 3078,
+      "char_end": 3676,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Jay’s passion for creative is insatiable. It extends into his personal life as an accomplished fine artist. He paints under the pen-name, O.M. Norling. Brody Hartman Brody has 25+ years experience fac"
+    },
+    {
+      "passage_uid": "PU-1144d03e8717bee3",
+      "source_id": "S-ae36bfe2a292",
+      "char_start": 3556,
+      "char_end": 3757,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "this could be the start of a great partnership. contact usour engagement types hello@nativebrands.co +234 803 303 8540 start a project Location 14 Adeshina Street off Awolowo Way, Ikeja, Lagos, Nigeri"
+    },
+    {
+      "passage_uid": "PU-252b7a91833eb9bc",
+      "source_id": "S-f6c08f285142",
+      "char_start": 2998,
+      "char_end": 3215,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Our Team Will Grow Your Brand ## Using Native Ads Book your free discovery call now 🚀 Native advertising to scale your ecom brand Why Native. We grow ecom and DTC businesses by creating demand with na"
+    },
+    {
+      "passage_uid": "PU-6ebf8b900a8c0ce7",
+      "source_id": "S-427702220c1a",
+      "char_start": 1020,
+      "char_end": 1667,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Give my brand a new life InstaLogo_150.png 💜 Today is World Pancreatic Cancer Day &mdash; a day when people around the globe unite in purple to shine a light on one of the world&rsquo;s deadliest canc"
+    },
+    {
+      "passage_uid": "PU-6753587158cd7e09",
+      "source_id": "S-427702220c1a",
+      "char_start": 1668,
+      "char_end": 1967,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Does it reflect the continuing trend of younger Americans opting out of driving? #trendstories #mobility #optimism Thankful for @ashevillebrewingco support of the Mojo Coworking + @aigaasheville Holid"
+    },
+    {
+      "passage_uid": "PU-08d0ee795af43932",
+      "source_id": "S-5491c0602a97",
+      "char_start": 1639,
+      "char_end": 1817,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Focus on authentic and relatable narratives. * Keep the audience’s interests at the centre of the story. * Use visuals, videos, and personal experiences to strengthen engagement."
+    },
+    {
+      "passage_uid": "PU-07f19e4ef70a8270",
+      "source_id": "S-60f5aee8cf69",
+      "char_start": 744,
+      "char_end": 917,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "and harmonize your marketing to create true engagement. tree-with-roots.png ## With over 20 years of experience, we know how to add value at key strategic and creative steps"
+    },
+    {
+      "passage_uid": "PU-6f4a003a4e0c329e",
+      "source_id": "S-60f5aee8cf69",
+      "char_start": 921,
+      "char_end": 1114,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "across the marketing process. During our initial consultation we will discuss how Native can be ## most essential to your success. Then we’ll put together a plan that gives you a range of ideas"
+    },
+    {
+      "passage_uid": "PU-19f6e08233c8ddd1",
+      "source_id": "S-60f5aee8cf69",
+      "char_start": 1118,
+      "char_end": 1310,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "for how we can work together to achieve your goals. Clarity Sprint An accelerated process to discover transformational solution pathways that can push your business or brand to the next level."
+    },
+    {
+      "passage_uid": "PU-17dc3c5646ea4d4e",
+      "source_id": "S-60f5aee8cf69",
+      "char_start": 1652,
+      "char_end": 1877,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Ideas & Concepts McDonalds_Ideas.png We design and activate ideas with imagination and experience to integrate your brand into cultural & media environments. Learn more > “Great art picks up where nat"
+    },
+    {
+      "passage_uid": "PU-adc3a8591465ff98",
+      "source_id": "S-60f5aee8cf69",
+      "char_start": 2384,
+      "char_end": 3077,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Craig has experience working with client brands who are making a difference in the world including the YMCA of WNC, Maple Hill Creamery, World Pancreatic Cancer Coalition, Hickory Nut Gap, The Good Me"
+    },
+    {
+      "passage_uid": "PU-54b11a9d5f3332ab",
+      "source_id": "S-60f5aee8cf69",
+      "char_start": 4995,
+      "char_end": 5584,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Outside of work, she’s a devoted mom of three, a proud English Bulldog owner, an avid traveler, and a dedicated podcast listener—always curious and always learning. InstaLogo_150.png 💜 Today is World "
+    },
+    {
+      "passage_uid": "PU-3a2b7b42be67754d",
+      "source_id": "S-60f5aee8cf69",
+      "char_start": 5585,
+      "char_end": 6082,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "There are no early detection screenings - so it&rsquo;s critical to know your family history #gogastonunity #GoGastonUnity Will travel by train become a thing in the US? Why has this taken so long? Do"
+    },
+    {
+      "passage_uid": "PU-0c046883af47ac63",
+      "source_id": "S-ae36bfe2a292",
+      "char_start": 93,
+      "char_end": 340,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "we build like it's our own business. We're a team of passionate designers, strategists, and developers who believe that exceptional digital experiences come from people who invest their heart and soul"
+    },
+    {
+      "passage_uid": "PU-a566cb3a6d172e85",
+      "source_id": "S-ae36bfe2a292",
+      "char_start": 1209,
+      "char_end": 1417,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "$33.8m raised by our partners following our engagement impacts ### 5+ international client base including Australia, Netherlands, United States, and United Kingdom see our engagement types Team member"
+    },
+    {
+      "passage_uid": "PU-8e8dc13b2ef56481",
+      "source_id": "S-ae36bfe2a292",
+      "char_start": 1420,
+      "char_end": 1631,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "brand_positioning",
+      "preview": "what we believe in. ### Passion We believe that exceptional work comes from people who truly care about what they create. Every project we build is crafted with the same dedication we'd give to our ow"
+    },
+    {
+      "passage_uid": "PU-ae261eb39eeee21b",
+      "source_id": "S-ae36bfe2a292",
+      "char_start": 1636,
+      "char_end": 1794,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Partnership We don't just deliver projects—we build lasting relationships. We immerse ourselves in your business goals and work alongside you to achieve them."
+    },
+    {
+      "passage_uid": "PU-6d4711244c738cd9",
+      "source_id": "S-ae36bfe2a292",
+      "char_start": 2283,
+      "char_end": 2534,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "stellar partnerships. #### 5+ Years Partnership Access Holdings, The Bank, Subsidiaries, Verticals, and SBUs, we've built a remarkable relationship with the most respected African financial powerhouse"
+    },
+    {
+      "passage_uid": "PU-cc286f1356de5b70",
+      "source_id": "S-ae36bfe2a292",
+      "char_start": 3135,
+      "char_end": 3315,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Multiple Countries Expansion Following our partnership, AfrOganiks (Formerly GreenPower Healthcare) expanded into multiple African and International countries, including US and UK."
+    },
+    {
+      "passage_uid": "PU-9fde6e3812ca1fb1",
+      "source_id": "S-ae36bfe2a292",
+      "char_start": 3351,
+      "char_end": 3527,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "join and make a difference. Join a team of passionate creators who believe exceptional work comes from investing heart and soul into every project we touch. see open positions."
+    },
+    {
+      "passage_uid": "PU-d2756c8a6c4f85d2",
+      "source_id": "S-f6c08f285142",
+      "char_start": 729,
+      "char_end": 1185,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Calling Out By Headline/Image The easiest and simplest way to target an audience is to use the headline. This method is preferable for starting out. How to do it? By adding the type of audience you wa"
+    },
+    {
+      "passage_uid": "PU-d1cee1d9a571e044",
+      "source_id": "S-f6c08f285142",
+      "char_start": 1189,
+      "char_end": 1583,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Using 3rd-Party Tools Some native ad platforms, such as Taboola and Outbrain, allow you to access third-party tools. These methods are not as reliable as first-party data, such as what you’d find on M"
+    },
+    {
+      "passage_uid": "PU-f9413a280ffa8335",
+      "source_id": "S-f6c08f285142",
+      "char_start": 1587,
+      "char_end": 1804,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Lookalike Audiences Last but not least, uploading your own data, such as emails or phone numbers, is the final step. It’s not recommended to use this method unless you have tens if not hundreds of tho"
+    },
+    {
+      "passage_uid": "PU-d0eb419e2f91281e",
+      "source_id": "S-f6c08f285142",
+      "char_start": 1808,
+      "char_end": 2190,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Final Thoughts It’s possible to target an audience on native ads, but it’s not usually easy. The best approach for most people is the first method. Without the help of a rep, methods two and three wil"
+    },
+    {
+      "passage_uid": "PU-32fd4522855c6289",
+      "source_id": "S-f6c08f285142",
+      "char_start": 2232,
+      "char_end": 2417,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Which Types of Native Ad Bidding Types Should You Use? If you’re new to native ads, you might be overwhelmed with all of the options there are in setting up a campaign. Some of them…..."
+    },
+    {
+      "passage_uid": "PU-64aec3046c24d2c6",
+      "source_id": "S-3284a0aec597",
+      "char_start": 6344,
+      "char_end": 7004,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "provider_reported_result",
+      "preview": "MartensRead the story → Calvin Klein Airbnb National Geographic Sephora Rakuten ZillowRead the story → Fox SonyRead the story → Amazon Fila Geico Golden Goose Kérastase Kiehl's New Balance UniqloRead "
+    },
+    {
+      "passage_uid": "PU-d7a6f4d78c04df5a",
+      "source_id": "S-ae36bfe2a292",
+      "char_start": 2540,
+      "char_end": 2767,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "provider_reported_result",
+      "preview": "6X MoM Growth \"Nativebrands helped us fix our backend issues and make our app run smoother. Their work on our infrastructure and performance optimization was key to supporting our growing user base an"
+    },
+    {
+      "passage_uid": "PU-87a83e19c541c2da",
+      "source_id": "S-ae36bfe2a292",
+      "char_start": 2954,
+      "char_end": 3115,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "provider_reported_result",
+      "preview": "Customer Growth & Partnerships 80% boost in customer satisfaction after revamping a defunct app; recently secured an Amex license and partnered with Booking.com."
+    },
+    {
+      "passage_uid": "PU-7a79a043810b2152",
+      "source_id": "S-3284a0aec597",
+      "char_start": 2141,
+      "char_end": 2984,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Jart @drjart Alo @aloyoga Kiehl's @kiehls Into Trends @into.trends Caraway @carawayhome New Balance @newbalance Philadelphia @philadelphia Frescados @halfghankitchen Chips Ahoy! @shewearslove Vega @ta"
+    },
+    {
+      "passage_uid": "PU-6c9da202426539ec",
+      "source_id": "S-3284a0aec597",
+      "char_start": 2985,
+      "char_end": 3436,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Martens @drmartens Primark @primarkbeauty Pyrex @pyrex Aquaphor @aquaphor Kérastase @kerastase Pedialyte @mikespinosa Patak's @sidaroundtown KISS @glamwithsuzan Keurig @hypegirlhealth Ritual @slaymama"
+    },
+    {
+      "passage_uid": "PU-fea9e216d5947ff5",
+      "source_id": "S-4b282d834115",
+      "char_start": 15246,
+      "char_end": 15394,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Talk: The Bigger Picture: Why A Holistic Approach Wins Business ## Research on Mobile News Apps - The 4 Key Factors Influencing Native Ad Perception"
+    },
+    {
+      "passage_uid": "PU-ff0ec7e4fbd96735",
+      "source_id": "S-ae36bfe2a292",
+      "char_start": 1799,
+      "char_end": 1939,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Craftsmanship Quality isn't an afterthought—it's built into every line of code, every design decision, and every user interaction we create."
+    },
+    {
+      "passage_uid": "PU-ea957ef23ed3c17f",
+      "source_id": "S-ae36bfe2a292",
+      "char_start": 1944,
+      "char_end": 2102,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Innovation We stay ahead of digital trends and technologies to ensure your business has the competitive edge it needs in today's fast-paced digital landscape."
+    },
+    {
+      "passage_uid": "PU-59b227995a7ef1e3",
+      "source_id": "S-ae36bfe2a292",
+      "char_start": 2107,
+      "char_end": 2238,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Impact We measure success not just by beautiful designs, but by the real business results and user experiences we help you achieve."
+    },
+    {
+      "passage_uid": "PU-5df1fb64c97726aa",
+      "source_id": "S-f6c08f285142",
+      "char_start": 2461,
+      "char_end": 2629,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Finding Native Ad Images That Convert If you’re not testing multiple images per headline, you’re missing out on a potential windfall of profits. But where to find i…..."
+    },
+    {
+      "passage_uid": "PU-ea04b904131e0d03",
+      "source_id": "S-f6c08f285142",
+      "char_start": 2673,
+      "char_end": 2843,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Native Ad Review: Relieve Your Prostate No matter what season it is, or how the economy is doing, it’s common to see these several go-to niches for native ads. Today …..."
+    },
+    {
+      "passage_uid": "PU-f81ab6b41dd171d1",
+      "source_id": "S-4b282d834115",
+      "char_start": 7235,
+      "char_end": 7567,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected",
+        "statement_type:proposed_or_mock_work"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "proposed_or_mock_work",
+      "preview": "Unlike sponsored/boosted posts, they can run for as long as you’d like. Meta also offers Facebook Automated Ads, in which the platform will ask a series of questions about a brand’s business and goals"
+    },
+    {
+      "passage_uid": "PU-b8300c1788564a7a",
+      "source_id": "S-4b282d834115",
+      "char_start": 12563,
+      "char_end": 13223,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "author_recommendation",
+      "preview": "Native Ads on X (Previously Known as Twitter): Promoted tweets twitter-2430933_1280 Promoted Tweets are the type of native advertising you can use on X, previously Twitter. Promoted Tweets on X can he"
+    }
+  ],
+  "status": "ok",
+  "status_reasons": [],
+  "packet_sha256": "187c02039c7f56d67e99a98f606e91b6128d03075b0b5c63c0adebfa8ea3d185"
+}

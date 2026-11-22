@@ -1,0 +1,85 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "purple",
+  "bound_to": {
+    "packet_sha256": "29c0c0546cc447cf2ab2873080fce11d8e1bc1fe3cdad4dbd78a0e45cb4c3754",
+    "prompt_sha256": "46eb5e9303ce10382b3f5ecd98288c8be89543e50a4c291d9edd9fd12488e682",
+    "completion_sha256": "6af65dbe27d803d2c3ff2b3c95073fa330a78dbbe314a6639f553d4c50f843a8",
+    "reviewer_config_sha256": "9f7ee1a8c1d24c79cf6d0eba44a592ea76faa8d5a857316202226e85859bc3e2"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/Qwen2.5-14B-Instruct-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 2000
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": []
+  },
+  "raw_response_sha256": "0dffda9f27d52ef384bf55682823063e3da8ee5d66a28809897b2ac8e510ca62",
+  "raw_response": "{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\"P1\"],\n      \"quote\": \"Purple has partnered with mattress and furniture retailers to achieve its mission of bringing its comfort products to customers however, whenever and wherever they want them.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that Purple has partnered with mattress and furniture retailers to bring its comfort products to customers.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\"P2\"],\n      \"quote\": \"Grid Day turns that passion into an occasion, serving as a dedicated day to celebrate existing owners, giving them a platform to share how Purple has changed their lives for the better\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Grid Day is dedicated to celebrating existing owners and giving them a platform to share how Purple has changed their lives.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\"P3\"],\n      \"quote\": \"This partnership will help us offer customers in the Northeast a high-touch experience when shopping for a Purple mattress\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Purple partnered with Raymour & Flanigan to offer customers in the Northeast a high-touch experience.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\"P9\"],\n      \"quote\": \"We are thrilled to celebrate Grid Day by gifting and discounting hundreds of our next-generation mattresses to our most loyal customers and the people in their corners who deserve a better night's rest\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Purple gifts and discounts mattresses to loyal customers as part of the Grid It Forward campaign.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [\n    {\n      \"field\": \"email_body\",\n      \"text\": \"Purple has an annual campaign called Grid It Forward, which aims to gift and discount mattresses to loyal customers.\"\n    }\n  ],\n  \"absence_as_weakness\": []\n}",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Purple has partnered with mattress and furniture retailers to achieve its mission of bringing its comfort products to customers however, whenever and wherever they want them.",
+        "issues": [],
+        "reason": "The passage directly states that Purple has partnered with mattress and furniture retailers to bring its comfort products to customers."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "Grid Day turns that passion into an occasion, serving as a dedicated day to celebrate existing owners, giving them a platform to share how Purple has changed their lives for the better",
+        "issues": [],
+        "reason": "The passage states that Grid Day is dedicated to celebrating existing owners and giving them a platform to share how Purple has changed their lives."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "This partnership will help us offer customers in the Northeast a high-touch experience when shopping for a Purple mattress",
+        "issues": [],
+        "reason": "The passage states that Purple partnered with Raymour & Flanigan to offer customers in the Northeast a high-touch experience."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P9"
+        ],
+        "quote": "We are thrilled to celebrate Grid Day by gifting and discounting hundreds of our next-generation mattresses to our most loyal customers and the people in their corners who deserve a better night's rest",
+        "issues": [],
+        "reason": "The passage states that Purple gifts and discounts mattresses to loyal customers as part of the Grid It Forward campaign."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-22T09:07:51+00:00",
+  "audit_sha256": "fda291afdace19d05ef78f3709cd3133eb45be3fc62c4e6b878ff2bfdd4e1338",
+  "dismissed_reviewer_flags": [
+    {
+      "flag": {
+        "field": "email_body",
+        "text": "Purple has an annual campaign called Grid It Forward, which aims to gift and discount mattresses to loyal customers."
+      },
+      "reason": "text is the statement of claim C5; judged via its verdict"
+    }
+  ]
+}
