@@ -1,0 +1,79 @@
+You are a grounded brand-outreach assistant for our team. Use only the evidence passages below.
+Never use outside knowledge. Return valid JSON only.
+
+Separate three things:
+1. OBSERVED FACTS - things a passage actually states about this company. Each fact is a claim with an id (C1, C2, ...),
+   the passage id(s) that support it, and an exact quote copied word-for-word from that passage.
+2. UNKNOWNS - things the evidence does not tell us (put them in "unknowns"). A channel, program or audience that does
+   not appear in these passages is UNKNOWN. It is never a weakness, never a "gap", and never a reason for outreach.
+3. PROPOSALS - collaboration ideas from our team. Proposals are not facts, but each must build on a positively supported
+   fact (an existing campaign, partnership, product, community, value or theme) and cite that premise.
+
+Rules:
+- Put a claim marker like {C1} right after every factual statement in every field, including the email and Instagram idea.
+  Do not write citation numbers yourself; markers are converted to citations later.
+- Respect passage types. "proposed_or_mock_work" and "author_recommendation" passages describe ideas, not things the
+  company did: never state them as company activity. "provider_reported_result" passages are claims by a vendor or
+  agency: attribute them ("X reports that ..."). "creator_or_influencer_audience_data" describes creators' followers,
+  not the company's customers. "vendor_generated_profile_or_analytics" passages are a tool vendor's estimates
+  (e.g. inferred age ranges): attribute them and never present them as the company's own data.
+  "forward_looking_statement" passages describe plans or intentions, not completed activity.
+- Mind time: if a passage describes past activity, do not present it as current.
+- "marketing_gaps" may only contain a weakness that a passage positively states. Usually it is [].
+- Never promise results. Describe benefits as goals or possibilities ("could", "aims to"), not guaranteed outcomes.
+- Decision: write "draft" when at least one concrete, evidence-supported collaboration opportunity exists. Otherwise write
+  "abstain", give an abstain_reason, set pitch fields to INSUFFICIENT_EVIDENCE and leave collaboration_opportunities empty.
+- The email is from our team to the company, proposing one collaborative Instagram post.
+
+Required JSON:
+{
+  "decision": "draft" or "abstain",
+  "abstain_reason": "string or empty",
+  "claims": [{"id": "C1", "kind": "fact | provider_reported | premise", "statement": "string",
+              "passage_ids": ["P1"], "quote": "exact words from the passage"}],
+  "brand_summary": "text with markers, or INSUFFICIENT_EVIDENCE",
+  "likely_target_audience": "text with markers, or INSUFFICIENT_EVIDENCE",
+  "current_marketing_strategy": ["text with markers"],
+  "unknowns": ["what the evidence does not show"],
+  "marketing_gaps": [],
+  "collaboration_opportunities": ["proposal that builds on a cited fact {C2}"],
+  "instagram_post_idea": {"hook": "string", "concept": "string", "why_it_fits": "string"},
+  "email_subject": "string",
+  "email_body": "string"
+}
+
+Company: Athletic Brewing (company_id athletic-brewing; category: non-alcoholic craft beer)
+Official domains: athleticbrewing.com
+Recipient: the marketing team
+Packet status: ok
+
+Evidence passages:
+[P1] source: https://athleticbrewing.com/pages/values | document: official_domain | type: brand_positioning | dates in text: none | published: unknown
+"a force of good. * ### community We are bound by a shared passion for using our business as a force for good. Open communication and collaboration are foundational to our team. We believe in the power of every voice and actively embrace customer feedback, using it as fuel to collectively make a positive impact."
+
+[P2] source: https://athleticbrewing.com/pages/values | document: official_domain | type: brand_positioning | dates in text: none | published: unknown
+"inclusion Building a respectful and encompassing community inside and outside of our walls is core to our values. We are open-minded and accepting. We welcome diverse perspectives and treat everyone with fairness and respect. We are collaborative and incorporate ideas from all team members."
+
+[P3] source: https://athleticbrewing.com/pages/about | document: official_domain | type: descriptive | dates in text: none | published: unknown
+"Our Brews We brew loads of styles throughout the year so that anyone seeking a non-alcoholic option can experience the best in craft brewing, in as many ways as possible. You can get our essential Athletic brews like Run Wild, Upside Dawn, Free Wave, Cerveza Atletica and Athletic Lite in store year round. We also regularly release experimental batches, limited-edition styles and collaborative brews crafted with our favorite brands on our website. Check ‘Em Out Athletic cans and brewery office Athletic A icon"
+
+[P4] source: https://www.optimonk.com/athletic-brewing-marketing-breakdown | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown
+"Step 4: Form partnerships with influencers When you’re starting a new company, you probably have low influence and credibility. One of the fastest ways to bridge this gap is through influencer marketing. When it comes to influencer marketing campaigns in general, the importance of finding people whose content resonates with your brand’s values and who your target audience loves and respects cannot be overemphasized. Athletic Brewing did a great job at that. And they formed long-term partnerships with these influencers. For example, pro football player J.J."
+
+[P5] source: https://forum3.com/case-studies/athletic-brewing | document: third_party_confirmed | type: actual_activity | dates in text: none | published: unknown
+"What we did The marketing team at Athletic Brewing participated in a two-hour AI Bootcamp that provided a clear understanding of AI's potential, as well as practical ways to start applying AI immediately. While every bootcamp introduces key AI concepts, examples and insights from industry leaders, and best practices, each bootcamp ends with customized activity. For Athletic Brewing, participants were broken into teams and challenged to research, plan, and pitch a new product line within 45 minutes. Each pitch had to include a new product concept, name, branding, a well-defined audience segment, and an AI-generated marketing campaign."
+
+[P6] source: https://athleticbrewing.com/pages/values | document: official_domain | type: brand_positioning | dates in text: none | published: unknown
+"quality We believe that everything we do, whether it is in the workplace or in the community, should be held to the highest quality standards. Our customers expect the best and we do not settle for anything other than perfection in our products. We strive to put our best foot forward in everything we do. How you do anything is how you do everything."
+
+[P7] source: https://www.optimonk.com/athletic-brewing-marketing-breakdown | document: third_party_confirmed | type: historical_activity | dates in text: 2018 | published: unknown
+"Learn key marketing strategies that fueled their rapid growth in the non-alcoholic beer market and how they effectively utilized website optimization to boost sales and brand loyalty. While most business owners dream of breaking even in their first or second year, this little company spent their first year struggling to keep up with demand for their product! Who are they and how did they do it? Chances are that if you’ve recently heard of a trendy non-alcoholic beer brewer, you already know Athletic Brewing Co. This company, launched in 2018, has been on a growth trajectory that most could only wish for."
+
+[P8] source: https://www.optimonk.com/athletic-brewing-marketing-breakdown | document: third_party_confirmed | type: provider_reported_result | dates in text: none | published: unknown
+"Watt and pro surfer Malia Manuel are just a couple of the influencers the brand is working with, but these relationships are clearly important for the brand as they even highlight them on their homepage: Illustration for: Athletic Brewing Co. Marketing Breakdown: How They Achieved a $300M Valuation You’ll see these people appearing in Athletic Brewing campaigns, like in this Fit For All Times campaign: And scrolling through their social posts, you’ll see that they regularly post about the brand: The brand also formed partnerships with college athletes, since these athletes appeal to a lot of Gen Z, millennials and sports fans."
+
+[P9] source: https://uk.athleticbrewing.com/pages/values | document: official_domain | type: brand_positioning | dates in text: none | published: unknown
+"GIVING BACK UP TO $2 MILLION ANNUALLY TO PROTECT AND RESTORE LOCAL TRAILS $ 8 , 4 1 1 , 7 6 0 ~ Raised for Local Trails ~ Our Mission Athletic Brewing Company UK Shop Online Find Us In Stores Athletic Brewing Company UK Search Mission"
+
+[P10] source: https://uk.athleticbrewing.com/pages/values | document: official_domain | type: descriptive | dates in text: none | published: unknown
+"What we are on the inside of our company is the impact we will have on the outside world at ### large. Let's be positive, inclusive, and encouraging collaborators and people who are known to"

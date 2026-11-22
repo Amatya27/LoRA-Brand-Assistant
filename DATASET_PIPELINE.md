@@ -1,3 +1,7 @@
+> **Paused (21 Nov 2026).** The v2 export in `data/mlx_brand_assistant/` contains wrong-company and
+> untraceable evidence and must not be used for retraining. It is preserved as a baseline.
+> The repaired pipeline is documented in `PHASE1_V3.md`; pilot results are in `PHASE1_V3_PILOT_REPORT.md`.
+
 # DATASET_PIPELINE.md: Building the Dataset (Phase 1)
 
 How to turn a list of companies into a train/valid/test dataset for LoRA

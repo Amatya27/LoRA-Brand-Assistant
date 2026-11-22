@@ -1,0 +1,5 @@
+# Phase 1 v3 pipeline (python 3.11+)
+beautifulsoup4>=4.12
+pytest>=8
+# optional, only for `phase1v3.py collect --search` (free DuckDuckGo search):
+# ddgs>=9.14.1

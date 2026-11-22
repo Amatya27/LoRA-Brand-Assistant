@@ -1,0 +1,79 @@
+You are a grounded brand-outreach assistant for our team. Use only the evidence passages below.
+Never use outside knowledge. Return valid JSON only.
+
+Separate three things:
+1. OBSERVED FACTS - things a passage actually states about this company. Each fact is a claim with an id (C1, C2, ...),
+   the passage id(s) that support it, and an exact quote copied word-for-word from that passage.
+2. UNKNOWNS - things the evidence does not tell us (put them in "unknowns"). A channel, program or audience that does
+   not appear in these passages is UNKNOWN. It is never a weakness, never a "gap", and never a reason for outreach.
+3. PROPOSALS - collaboration ideas from our team. Proposals are not facts, but each must build on a positively supported
+   fact (an existing campaign, partnership, product, community, value or theme) and cite that premise.
+
+Rules:
+- Put a claim marker like {C1} right after every factual statement in every field, including the email and Instagram idea.
+  Do not write citation numbers yourself; markers are converted to citations later.
+- Respect passage types. "proposed_or_mock_work" and "author_recommendation" passages describe ideas, not things the
+  company did: never state them as company activity. "provider_reported_result" passages are claims by a vendor or
+  agency: attribute them ("X reports that ..."). "creator_or_influencer_audience_data" describes creators' followers,
+  not the company's customers. "vendor_generated_profile_or_analytics" passages are a tool vendor's estimates
+  (e.g. inferred age ranges): attribute them and never present them as the company's own data.
+  "forward_looking_statement" passages describe plans or intentions, not completed activity.
+- Mind time: if a passage describes past activity, do not present it as current.
+- "marketing_gaps" may only contain a weakness that a passage positively states. Usually it is [].
+- Never promise results. Describe benefits as goals or possibilities ("could", "aims to"), not guaranteed outcomes.
+- Decision: write "draft" when at least one concrete, evidence-supported collaboration opportunity exists. Otherwise write
+  "abstain", give an abstain_reason, set pitch fields to INSUFFICIENT_EVIDENCE and leave collaboration_opportunities empty.
+- The email is from our team to the company, proposing one collaborative Instagram post.
+
+Required JSON:
+{
+  "decision": "draft" or "abstain",
+  "abstain_reason": "string or empty",
+  "claims": [{"id": "C1", "kind": "fact | provider_reported | premise", "statement": "string",
+              "passage_ids": ["P1"], "quote": "exact words from the passage"}],
+  "brand_summary": "text with markers, or INSUFFICIENT_EVIDENCE",
+  "likely_target_audience": "text with markers, or INSUFFICIENT_EVIDENCE",
+  "current_marketing_strategy": ["text with markers"],
+  "unknowns": ["what the evidence does not show"],
+  "marketing_gaps": [],
+  "collaboration_opportunities": ["proposal that builds on a cited fact {C2}"],
+  "instagram_post_idea": {"hook": "string", "concept": "string", "why_it_fits": "string"},
+  "email_subject": "string",
+  "email_body": "string"
+}
+
+Company: Liquid Death (company_id liquid-death; category: canned water and beverages)
+Official domains: liquiddeath.com
+Recipient: the marketing team
+Packet status: ok
+
+Evidence passages:
+[P1] source: https://liquiddeath.com/pages/manifesto | document: official_domain | type: descriptive | dates in text: none | published: unknown
+"ABOUT US Liquid Death will not kill you. But make no mistake, our infinitely recyclable cans of premium low-calorie beverages will absolutely murder your thirst. And it doesn't stop there. After twerking on your thirst's grave, these ruthless cans will actually donate a portion of the proceeds to help kill plastic pollution. Why? For centuries, all the funniest and coolest marketing and branding was only done for unhealthy products like beer, fast food, candy, and junk food. But those days are over. Soon, Liquid Death will use health and humor to conquer the world and make all beverages Liquid Death for eternity."
+
+[P2] source: https://liquiddeath.com/pages/manifesto | document: official_domain | type: descriptive | dates in text: none | published: unknown
+"At which point we'll finally begin turning the human race into flesh batteries to power our giant marketing robots. But enough about us and our boring story. Tell us about you: Liquid Death will not kill you. But make no mistake, our infinitely recyclable cans of premium low-calorie beverages will absolutely murder your thirst. And it doesn't stop there. After twerking on your thirst's grave, these ruthless cans will actually donate a portion of the proceeds to help kill plastic pollution. Why? For centuries, all the funniest and coolest marketing and branding was only done for unhealthy products like beer, fast food, candy, and junk food. But those days are over."
+
+[P3] source: https://blog.osum.com/liquid-death-target-audience/ | document: third_party_confirmed | type: descriptive | flags: creator_or_influencer_audience_data | dates in text: none | published: unknown
+"Social Media Engagement Liquid Death has effectively utilized social media platforms to engage with its target audience. By leveraging platforms like Instagram and Twitter, the brand has cultivated a strong online presence and fostered a sense of community among its followers. The brand’s irreverent and humorous content, including parodying traditional bottled water marketing tropes, has captured the attention of their target audience and garnered media coverage (Eater). Through influencer partnerships and engaging marketing campaigns, Liquid Death has successfully connected with its customers on a deeper level, enhancing brand loyalty and fostering a sense of belonging."
+
+[P4] source: https://blog.osum.com/liquid-death-target-audience/ | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown
+"Community Engagement and Exclusivity Liquid Death excels in community engagement, fostering a sense of exclusivity among its customers. The brand actively engages with its audience through social media platforms and events. By creating a space for like-minded individuals to connect and share their passion for the brand, Liquid Death strengthens its community and encourages customer loyalty. Moreover, Liquid Death leverages exclusivity as a strategy to deepen customer loyalty. The brand offers limited edition releases and collaborations, creating a sense of scarcity and exclusivity among its customers."
+
+[P5] source: https://www.projectpractical.com/liquid-death-marketing-strategy/ | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown
+"Liquid Death has successfully positioned itself as an edgy and captivating brand in the beverage industry through its unique marketing strategy * The brand’s unconventional branding, entertaining content, and commitment to sustainability have captured the attention and loyalty of its target audience * Liquid Death’s marketing tactics encompass online marketing, digital advertising, and a powerful social media strategy * The brand’s promotional tactics, including shocking statistics and Super Bowl commercials, have been highly effective in generating buzz and attracting consumers"
+
+[P6] source: https://www.projectpractical.com/liquid-death-marketing-strategy/ | document: third_party_confirmed | type: provider_reported_result | dates in text: none | published: unknown
+"Building a Loyal Community Liquid Death’s success is also attributed to their ability to engage with their audience and build a strong community. Through social media platforms and collaborations with popular personalities, they have created a sense of belonging among their fans. This engagement fosters brand loyalty and amplifies their marketing efforts. To sum it up, Liquid Death’s case study offers invaluable insights for brands looking to create a unique and impactful marketing strategy."
+
+[P7] source: https://www.optimonk.com/liquid-death-marketing-breakdown | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown
+"Step 3: Focus on social media and viral marketing Liquid Death is a social media master. Their presence on Instagram, TikTok, and YouTube has been instrumental in captivating their target audience of millennials and Gen Z consumers. One of the brand’s big wins is their ability to create engaging, often dark and humorous content that speaks to their audience’s love of authenticity and irreverence. Liquid Death’s social channels are a treasure trove of viral videos, mockumentaries and parodies that poke fun at bottled water marketing and consumer habits."
+
+[P8] source: https://www.optimonk.com/liquid-death-marketing-breakdown | document: third_party_confirmed | type: actual_activity | dates in text: none | published: unknown
+"Step 5: Employ a multi-channel distribution strategy At the heart of Liquid Death’s distribution is a direct-to-consumer (DTC) model which allows them to control their brand image and connect with their customers. Through their ecommerce platform, Liquid Death builds a loyal following and community around their brand. But they know a physical retail presence is important to reach more people and more places. They’ve partnered with big retailers like 7-Eleven, Target, and Bevmo, ensuring their products are in the places their target audience goes."
+
+[P9] source: https://www.optimonk.com/liquid-death-marketing-breakdown | document: third_party_confirmed | type: actual_activity | dates in text: none | published: unknown
+"Step 6: Partner with influencers Liquid Death has partnered with influencers and celebrities to tap into their audience and credibility. They’ve partnered with professional skateboarder Tony Hawk…: Musician Travis Barker… And comedian Whitney Cummings… These influencer collaborations go beyond traditional endorsements. Liquid Death co-creates content with these tastemakers, infusing it with the raw energy and authenticity of their respective worlds."
+
+[P10] source: https://www.projectpractical.com/liquid-death-marketing-strategy/ | document: third_party_confirmed | type: descriptive | flags: creator_or_influencer_audience_data | dates in text: none | published: unknown
+"Social Media and Influencer Collaborations Liquid Death takes its social media strategy to a whole new level, leveraging the power of platforms like TikTok and Instagram to connect with its audience. With a bold and distinctive presence, they capture attention and engage followers through their unique content, skits, and logo redesigns. One of the key elements of Liquid Death’s social media strategy is its use of collaborations with popular personalities. By enlisting influencers and experts in various fields, the brand extends its reach and credibility. These collaborations help create engaging and relatable content that resonates with their target audience."

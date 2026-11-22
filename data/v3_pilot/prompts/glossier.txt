@@ -1,0 +1,79 @@
+You are a grounded brand-outreach assistant for our team. Use only the evidence passages below.
+Never use outside knowledge. Return valid JSON only.
+
+Separate three things:
+1. OBSERVED FACTS - things a passage actually states about this company. Each fact is a claim with an id (C1, C2, ...),
+   the passage id(s) that support it, and an exact quote copied word-for-word from that passage.
+2. UNKNOWNS - things the evidence does not tell us (put them in "unknowns"). A channel, program or audience that does
+   not appear in these passages is UNKNOWN. It is never a weakness, never a "gap", and never a reason for outreach.
+3. PROPOSALS - collaboration ideas from our team. Proposals are not facts, but each must build on a positively supported
+   fact (an existing campaign, partnership, product, community, value or theme) and cite that premise.
+
+Rules:
+- Put a claim marker like {C1} right after every factual statement in every field, including the email and Instagram idea.
+  Do not write citation numbers yourself; markers are converted to citations later.
+- Respect passage types. "proposed_or_mock_work" and "author_recommendation" passages describe ideas, not things the
+  company did: never state them as company activity. "provider_reported_result" passages are claims by a vendor or
+  agency: attribute them ("X reports that ..."). "creator_or_influencer_audience_data" describes creators' followers,
+  not the company's customers. "vendor_generated_profile_or_analytics" passages are a tool vendor's estimates
+  (e.g. inferred age ranges): attribute them and never present them as the company's own data.
+  "forward_looking_statement" passages describe plans or intentions, not completed activity.
+- Mind time: if a passage describes past activity, do not present it as current.
+- "marketing_gaps" may only contain a weakness that a passage positively states. Usually it is [].
+- Never promise results. Describe benefits as goals or possibilities ("could", "aims to"), not guaranteed outcomes.
+- Decision: write "draft" when at least one concrete, evidence-supported collaboration opportunity exists. Otherwise write
+  "abstain", give an abstain_reason, set pitch fields to INSUFFICIENT_EVIDENCE and leave collaboration_opportunities empty.
+- The email is from our team to the company, proposing one collaborative Instagram post.
+
+Required JSON:
+{
+  "decision": "draft" or "abstain",
+  "abstain_reason": "string or empty",
+  "claims": [{"id": "C1", "kind": "fact | provider_reported | premise", "statement": "string",
+              "passage_ids": ["P1"], "quote": "exact words from the passage"}],
+  "brand_summary": "text with markers, or INSUFFICIENT_EVIDENCE",
+  "likely_target_audience": "text with markers, or INSUFFICIENT_EVIDENCE",
+  "current_marketing_strategy": ["text with markers"],
+  "unknowns": ["what the evidence does not show"],
+  "marketing_gaps": [],
+  "collaboration_opportunities": ["proposal that builds on a cited fact {C2}"],
+  "instagram_post_idea": {"hook": "string", "concept": "string", "why_it_fits": "string"},
+  "email_subject": "string",
+  "email_body": "string"
+}
+
+Company: Glossier (company_id glossier; category: beauty and skincare)
+Official domains: glossier.com
+Recipient: the marketing team
+Packet status: ok
+
+Evidence passages:
+[P1] source: https://www.glossier.com/pages/about | document: official_domain | type: historical_activity | dates in text: 2014 | published: unknown
+"Welcome to Glossier You Look Good Here at Glossier, beauty is about you. From our formulas to packaging, playful shades to seriously-great skincare—Glossier was built to make beauty accessible and uncomplicated. Before we launched Glossier in 2014, we started as Into The Gloss. A beauty website and community devoted to sharing real information with real people, about really amazing products. It’s where we realized that beauty shouldn’t be built in a boardroom—it should be built by you. This ethos gave birth to our philosophy: Skin First. Makeup Second™. We prioritize skincare because we believe that healthy skin is the best foundation."
+
+[P2] source: https://www.glossier.com/pages/about | document: official_domain | type: brand_positioning | dates in text: none | published: unknown
+"We believe in thoughtful design and cultivating conversations. It’s at the core of everything we do—the starting point of all our makeup, skincare, bodycare, and fragrance products. At Glossier, beauty is about celebrating freedom of expression, individuality , and having fun. Our Skin First. Makeup Second™ approach ensures that every product supports your skin’s health, allowing your makeup to enhance rather than mask your natural beauty."
+
+[P3] source: https://www.latterly.org/glossier-marketing-strategy/ | document: third_party_confirmed | type: descriptive | dates in text: 2021 | published: unknown
+"Influencer Partnerships and Community Engagement Influencer marketing matured rapidly, yet Glossier’s advantage remains its everyday creator network and participatory brand culture. The brand pairs micro-influencers with selective celebrity reach to keep credibility while expanding audiences. Product seeding, early access, and collaborative storytelling invite customers to contribute, not just consume. * Tiered creator mix: Nano and micro creators drive trust and depth; mid-tier partners scale reach; celebrity moments spark cultural relevance. * Ambassador impact: Olivia Rodrigo collaborations since 2021 maintain strong Gen Z affinity without overshadowing community voices."
+
+[P4] source: https://www.youngurbanproject.com/glossier-case-study/ | document: third_party_confirmed | type: provider_reported_result | dates in text: none | published: unknown
+"What is Glossier’s core marketing strategy? Glossier’s marketing runs on community. Around 70% of its online sales came through peer referrals, and roughly 80% of customers were referred by a friend rather than acquired through paid advertising. The brand built that through user-generated content, a micro-influencer ambassador program called Generation Glossier, consistent social media storytelling, and a product development process that made customers feel like co-creators, not just buyers."
+
+[P5] source: https://www.brandvm.com/post/glossier-marketing | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown
+"That is where Glossier's community content can complement its own campaigns. ### 3. Make Retail Part of the Brand Experience Glossier's physical retail spaces translate the brand into real life. Pop-ups and stores create a sensory layer that DTC cannot fully replicate, and they generate content that customers want to share because the environment is designed for it. Retail becomes both distribution and media. Experiential marketing works best when it has a clear purpose: * A reason to visit that feels time-sensitive, like a launch or limited drop. * A store flow that encourages discovery and trial. * A photo moment that is tasteful and intentional, not forced."
+
+[P6] source: https://www.youngurbanproject.com/glossier-case-study/ | document: third_party_confirmed | type: provider_reported_result | dates in text: none | published: unknown
+"What is Generation Glossier? Generation Glossier is the brand’s affiliate and ambassador program. Existing customers and smaller content creators can apply to join, and once accepted, they receive a unique promo code and earn commission on sales they drive. The program is specifically designed around real fans rather than large-scale influencers, which is why it works. 8% of Glossier’s online sales were directly tied to Instagram ambassador activity alone, which is a significant number for what is essentially a formalized word-of-mouth program."
+
+[P7] source: https://www.latterly.org/glossier-marketing-strategy/ | document: third_party_confirmed | type: provider_reported_result | flags: creator_or_influencer_audience_data | dates in text: 2024 | published: unknown
+"Digital Marketing and Social Media Strategy Glossier grew from the editorial roots of Into The Gloss, so content remains the center of its digital system. The brand balances education, inspiration, and social proof across Instagram, TikTok, and email to move customers from discovery to repurchase. Owned and partner channels align around product outcomes, not just aesthetics, which strengthens conversion and loyalty. * Instagram: A community of over 2.8 million followers (2024) engages with carousels, UGC spotlights, and routine breakdowns that drive saves and shares."
+
+[P8] source: https://www.brandvm.com/post/glossier-marketing | document: third_party_confirmed | type: actual_activity | dates in text: none | published: unknown
+"5 Marketing Strategies Behind Glossier's Growth Glossier's marketing strategy is built around five repeatable levers: consumer-centric decision making, word of mouth momentum, experiential retail, content that drives trust, and a shopping experience that removes friction. Those levers show up across launches, community engagement, and how the brand earns attention without constant reinvention."
+
+[P9] source: https://www.projectpractical.com/glossier-marketing-strategy/ | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown
+"Glossier’s marketing strategy is built on influencer partnerships, social media advertising, and customer engagement strategies. * The brand leverages user-generated content and memes to foster a strong sense of community. * Authenticity and approachability are central to Glossier’s brand identity. * The transition from direct-to-consumer to brick-and-mortar stores presented challenges, but Glossier overcame them. * Other DTC brands can learn from Glossier’s strategies to successfully transition into brick-and-mortar."
+
+[P10] source: https://www.projectpractical.com/glossier-marketing-strategy/ | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown
+"By incorporating user-generated content, Glossier encourages customers to become brand advocates and drives transactions through organic social proof. One of the key elements of Glossier’s social media and customer engagement strategy is the collaboration with influencers and leveraging their fan base. Glossier understands the power of leveraging influencers to create buzz and excitement around their products. By partnering with influencers who align with their brand values and have an engaged following, Glossier maximizes their reach and taps into new customer segments."

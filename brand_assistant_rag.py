@@ -335,20 +335,36 @@ def _search_with_client(
     return list(results or [])
 
 
+_SENTENCE_BOUNDARY = re.compile(r"(?<=[.!?])[\"')\]]*\s+(?=[A-Z0-9\"(])")
+
+
 def chunk_text(text: str, size: int = CHUNK_SIZE, overlap: int = CHUNK_OVERLAP) -> Iterable[str]:
+    """Split text into chunks made of whole sentences (never mid-word or mid-sentence).
+
+    `overlap` is honoured approximately by repeating the last sentence(s) of the previous
+    chunk when they fit within `overlap` characters. A single sentence longer than `size`
+    is kept whole rather than cut.
+    """
     clean = normalize_whitespace(text)
     if not clean:
         return []
-
+    sentences = [s for s in _SENTENCE_BOUNDARY.split(clean) if s.strip()]
     chunks: list[str] = []
-    start = 0
-    text_length = len(clean)
-    while start < text_length:
-        end = min(text_length, start + size)
-        chunks.append(clean[start:end])
-        if end >= text_length:
-            break
-        start = max(end - overlap, start + 1)
+    current: list[str] = []
+    for sentence in sentences:
+        candidate = " ".join(current + [sentence])
+        if current and len(candidate) > size:
+            chunks.append(" ".join(current))
+            carry: list[str] = []
+            for prev in reversed(current):
+                if len(" ".join([prev] + carry)) > overlap:
+                    break
+                carry.insert(0, prev)
+            current = carry + [sentence] if len(" ".join(carry + [sentence])) <= size else [sentence]
+        else:
+            current.append(sentence)
+    if current:
+        chunks.append(" ".join(current))
     return chunks
 
 
@@ -863,7 +879,10 @@ def evidence_quality_score(
     company: str,
     profiles: dict[str, dict[str, str] | None] | None = None,
 ) -> int:
-    combined = " ".join([hit.title, hit.snippet, chunk, hit.url])
+    # Only the passage text is judged. Title/snippet/URL metadata must not add marketing
+    # keywords that rescue an irrelevant passage (e.g. a privacy section under a
+    # "marketing campaign" headline), nor company mentions the page body never makes.
+    combined = chunk
     url_lower = hit.url.lower()
     domain = hit.source_domain.lower()
     score = keyword_score(chunk, company, "")
@@ -891,7 +910,7 @@ def evidence_quality_score(
 
     # Grounding fix: privacy/legal/cookie boilerplate is not marketing evidence.
     # Passages scoring <= 0 are discarded by collect_evidence, so these never reach a packet.
-    lowered = combined.lower()
+    lowered = chunk.lower()
     privacy_hits = sum(1 for token in PRIVACY_BOILERPLATE_TOKENS if token in lowered)
     marketing_hits = sum(1 for token in MARKETING_SIGNAL_TOKENS if token in lowered)
     if privacy_hits >= 2 and marketing_hits == 0:
@@ -926,10 +945,13 @@ def collect_evidence(
             completed += 1
             if progress_callback:
                 progress_callback("evidence", f"Reviewing source {completed}/{total}")
-            combined = f"{hit.title}\n{hit.snippet}\n{extracted}".strip()
-            if not combined:
+            # Provenance fix: passages come from the fetched page body only. The search
+            # title/snippet is a discovery lead; it is never attributed to hit.url as page
+            # text, and a failed extraction yields no passages for that URL.
+            page_text = (extracted or "").strip()
+            if not page_text:
                 continue
-            for chunk in chunk_text(combined):
+            for chunk in chunk_text(page_text):
                 score = evidence_quality_score(hit=hit, chunk=chunk, company=company, profiles=profiles)
                 if score <= 0:
                     continue

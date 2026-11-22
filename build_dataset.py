@@ -57,7 +57,12 @@ def stratified_splits(items: list[tuple[str, bool]]) -> dict[str, str]:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--no-audit-gate", action="store_true", help="include labels without a passing audit (not recommended)")
+    parser.add_argument("--force", action="store_true", help="overwrite an existing data/mlx_brand_assistant export")
     args = parser.parse_args()
+    if any((OUT / f"{name}.jsonl").exists() for name in ("train", "valid", "test")) and not args.force:
+        print(f"{OUT}/ already holds an exported dataset (the preserved v2 baseline). Refusing to overwrite it.\n"
+              "Use the versioned v3 pipeline (python phase1v3.py export --version ...) or pass --force deliberately.")
+        return 1
 
     files = sorted(glob.glob(str(LABELED / "*.json")))
     if not files:
@@ -88,8 +93,12 @@ def main() -> int:
             if not audit_path.exists():
                 reason = "not audited"
             else:
-                verdict = json.loads(audit_path.read_text()).get("overall")
-                if verdict not in PASSING_AUDIT:
+                from audit_labels import input_hash  # local import: audit_labels has no side effects at import
+                audit = json.loads(audit_path.read_text())
+                verdict = audit.get("overall")
+                if audit.get("input_sha256") != input_hash(rec):
+                    reason = "audit: stale or unbound (input hash mismatch)"
+                elif verdict not in PASSING_AUDIT:
                     reason = f"audit: {verdict}"
         if reason is None and not rec.get("approved", False):
             reason = "not approved"

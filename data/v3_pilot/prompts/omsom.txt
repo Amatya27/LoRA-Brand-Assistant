@@ -1,0 +1,73 @@
+You are a grounded brand-outreach assistant for our team. Use only the evidence passages below.
+Never use outside knowledge. Return valid JSON only.
+
+Separate three things:
+1. OBSERVED FACTS - things a passage actually states about this company. Each fact is a claim with an id (C1, C2, ...),
+   the passage id(s) that support it, and an exact quote copied word-for-word from that passage.
+2. UNKNOWNS - things the evidence does not tell us (put them in "unknowns"). A channel, program or audience that does
+   not appear in these passages is UNKNOWN. It is never a weakness, never a "gap", and never a reason for outreach.
+3. PROPOSALS - collaboration ideas from our team. Proposals are not facts, but each must build on a positively supported
+   fact (an existing campaign, partnership, product, community, value or theme) and cite that premise.
+
+Rules:
+- Put a claim marker like {C1} right after every factual statement in every field, including the email and Instagram idea.
+  Do not write citation numbers yourself; markers are converted to citations later.
+- Respect passage types. "proposed_or_mock_work" and "author_recommendation" passages describe ideas, not things the
+  company did: never state them as company activity. "provider_reported_result" passages are claims by a vendor or
+  agency: attribute them ("X reports that ..."). "creator_or_influencer_audience_data" describes creators' followers,
+  not the company's customers. "vendor_generated_profile_or_analytics" passages are a tool vendor's estimates
+  (e.g. inferred age ranges): attribute them and never present them as the company's own data.
+  "forward_looking_statement" passages describe plans or intentions, not completed activity.
+- Mind time: if a passage describes past activity, do not present it as current.
+- "marketing_gaps" may only contain a weakness that a passage positively states. Usually it is [].
+- Never promise results. Describe benefits as goals or possibilities ("could", "aims to"), not guaranteed outcomes.
+- Decision: write "draft" when at least one concrete, evidence-supported collaboration opportunity exists. Otherwise write
+  "abstain", give an abstain_reason, set pitch fields to INSUFFICIENT_EVIDENCE and leave collaboration_opportunities empty.
+- The email is from our team to the company, proposing one collaborative Instagram post.
+
+Required JSON:
+{
+  "decision": "draft" or "abstain",
+  "abstain_reason": "string or empty",
+  "claims": [{"id": "C1", "kind": "fact | provider_reported | premise", "statement": "string",
+              "passage_ids": ["P1"], "quote": "exact words from the passage"}],
+  "brand_summary": "text with markers, or INSUFFICIENT_EVIDENCE",
+  "likely_target_audience": "text with markers, or INSUFFICIENT_EVIDENCE",
+  "current_marketing_strategy": ["text with markers"],
+  "unknowns": ["what the evidence does not show"],
+  "marketing_gaps": [],
+  "collaboration_opportunities": ["proposal that builds on a cited fact {C2}"],
+  "instagram_post_idea": {"hook": "string", "concept": "string", "why_it_fits": "string"},
+  "email_subject": "string",
+  "email_body": "string"
+}
+
+Company: Omsom (company_id omsom; category: Asian-American sauces and pantry food)
+Official domains: omsom.com
+Recipient: the marketing team
+Packet status: ok
+
+Evidence passages:
+[P1] source: https://adlibrary.com/brands/omsom | document: third_party_confirmed | type: provider_reported_result | flags: vendor_generated_profile_or_analytics | dates in text: none | published: unknown
+"Omsom Ads Strategy: What Makes Omsom Ads Effective Omsom's advertising is built on cultural identity as brand substance, not marketing decoration. The Pham sisters' personal Vietnamese-American story, their pride in Asian food culture, and their frustration with inauthentic 'Asian-inspired' products drives every piece of content. Their collaborations with Asian-American chefs and the Chrissy Teigen partnership amplified reach while maintaining cultural authenticity. Browse Omsom ads on AdLibrary."
+
+[P2] source: https://adlibrary.com/brands/omsom | document: third_party_confirmed | type: provider_reported_result | flags: vendor_generated_profile_or_analytics | dates in text: none | published: unknown
+"Browse Omsom's ad creatives on AdLibrary at adlibrary.com. What platforms does Omsom advertise on? Omsom advertises primarily on Instagram and TikTok, with significant organic reach from the Pham sisters' personal content and community engagement. Who are Omsom's main competitors? Omsom competes with Fly By Jing, Momofuku Goods, and mainstream Asian sauce brands like Simply Asia and Thai Kitchen — though Omsom's cultural identity positioning is largely uncontested. What makes Omsom's ads effective? Omsom's ads work because cultural authenticity is impossible to fake — consumers can tell the difference between a brand that is Asian-American and one that is performing Asian-inspired."
+
+[P3] source: https://www.shopify.com/blog/omsom-storytelling | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown
+"“Having lived a lifetime of being constrained by this model minority myth, we felt like embodying this noisy, loud, and proud energy was so true to us and is the way that we wanted to show up in the world through our company,” Vanessa says. Vanessa attributes Omsom’s success to great storytelling, which has led to tons of press coverage, selling out of their products at launch, and eventually securing retail partners. Here are Vanessa’s tips for successful brand storytelling. Don't miss an episode!"
+
+[P4] source: https://adlibrary.com/brands/omsom | document: third_party_confirmed | type: provider_reported_result | flags: vendor_generated_profile_or_analytics | dates in text: none | published: unknown
+"Omsom Meta Ads (Facebook & Instagram): Platform Analysis Omsom's social advertising blends founder storytelling with vibrant food content and cultural commentary. Their Instagram and TikTok presence is among the most engaged in the food DTC space, driven by the Pham sisters' authentic personalities. Paid social amplifies organic viral moments and recipe videos. The brand targets both Asian-American consumers and non-Asian consumers curious about bold Asian flavors."
+
+[P5] source: https://www.shopify.com/blog/omsom-storytelling | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown
+"1. Narrow your focus Vanessa believes many brands dilute their message when they try to appeal to everyone. Instead, she recommends narrowing your audience, which makes it easier to create more meaningful content. “We really centered the first- and second-generation Asian American community at a time where many brands were overlooking this audience,” Vanessa explains. Existing food brands often used either the same packaging as the products in Asia or they were aimed at non-Asian consumers with slogans like “travel the world through food.” Omsom means noisy or rambunctious in Vietnamese."
+
+[P6] source: https://www.shopify.com/blog/omsom-storytelling | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown
+"2. Make storytelling a daily habit “If you are not dedicating time and energy to storytelling, then the media doesn't have a story to tell,” Vanessa says. Omsom has made it a priority to create a daily habit around creating content, whether that’s sharing what’s going on behind the scenes or commenting on current events. That’s helped them develop good relationships with journalists and more impactful press coverage."
+
+[P7] source: https://adlibrary.com/brands/omsom-instagram-ads | document: third_party_confirmed | type: provider_reported_result | flags: vendor_generated_profile_or_analytics | dates in text: 2020 | published: unknown
+"About Omsom Omsom was founded in 2020 by sisters Vanessa and Kim Pham to create bold, authentic Asian starter sauces that make it easy to cook Asian meals at home without compromise. The brand's identity is explicitly Asian-American — the name means 'rambunctious' in Vietnamese — and their marketing embraces cultural pride as the primary brand driver."
+
+[P8] source: https://www.facebook.com/business/inspiration/video/making-progress/using-instagram-to-connect-with-chefs-omsom/ | document: third_party_confirmed | type: descriptive | dates in text: July 2021 | published: unknown
+"July 2021• 6 min “Growing up, we didn’t really feel represented in the mainstream grocery store,” says Omsom co-founder Kim Phạm. “Even when Asian flavors did show up, they were oftentimes super stereotypical in branding or super diluted in flavor.” In this episode, Kim and Vanessa share how they built their beloved direct-to-consumer pantry shortcut brand from scratch. Share to Facebook Share with Email Share to Twitter Share to LinkedIn Play Icon"
