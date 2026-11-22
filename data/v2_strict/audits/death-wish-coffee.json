@@ -1,0 +1,62 @@
+{
+  "company": "Death Wish Coffee",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain detailed information about Death Wish Coffee's marketing strategies and successes.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[3]",
+        "[4]",
+        "[5]"
+      ],
+      "reason": "Passages indicate Death Wish Coffee's unique marketing strategy, strong online presence, and significant PR success.",
+      "field": "brand_summary",
+      "claim": "Death Wish Coffee is known for its strong coffee and has a unique marketing strategy that includes bold and humorous content, community engagement, and a strong online presence. They have achieved significant PR success and have a dedicated customer base."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "Passages mention that Death Wish Coffee targets people who need strong coffee, such as those who work long hours or stay up all night.",
+      "field": "likely_target_audience",
+      "claim": "People who need a strong coffee, such as those who work long hours or stay up all night."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "Passages indicate the use of bold and humorous content on social media to engage with their audience.",
+      "field": "current_marketing_strategy",
+      "claim": "Use bold and humorous content on social media to engage with their audience."
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "Passages mention creating a fun and active online community through memes and office moments.",
+      "field": "current_marketing_strategy",
+      "claim": "Create a fun and active online community through memes and office moments."
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passages indicate control of their business through their website, offering one-click subscriptions and time-sensitive offers.",
+      "field": "current_marketing_strategy",
+      "claim": "Control their business through their website, offering one-click subscriptions and time-sensitive offers."
+    }
+  ]
+}

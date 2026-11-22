@@ -1,0 +1,64 @@
+{
+  "company": "Magic Spoon",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages provide detailed insights into Magic Spoon's marketing strategies and growth, focusing on their use of nostalgia, influencer marketing, and retail expansion.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[3]",
+        "[4]"
+      ],
+      "reason": "The passages confirm that Magic Spoon targets adults with healthier versions of nostalgic cereals and has achieved rapid growth through marketing strategies including nostalgia, influencer marketing, and retail expansion.",
+      "field": "brand_summary",
+      "claim": "Magic Spoon is a cereal brand that offers healthier alternatives to nostalgic cereal flavors, targeting adults who remember these flavors from their childhood. They have achieved rapid growth through a combination of marketing strategies, including tapping into nostalgia, using influencer marketing, and expanding into retail."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[3]"
+      ],
+      "reason": "The passages indicate that Magic Spoon targets adults who remember nostalgic cereal flavors from their childhood and are interested in healthier food options.",
+      "field": "likely_target_audience",
+      "claim": "Adults who remember nostalgic cereal flavors from their childhood and are interested in healthier food options."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[3]"
+      ],
+      "reason": "The passages confirm that Magic Spoon taps into nostalgia by offering healthier versions of classic cereal flavors.",
+      "field": "current_marketing_strategy",
+      "claim": "Tapping into nostalgia by offering healthier versions of classic cereal flavors"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[4]",
+        "[5]"
+      ],
+      "reason": "The passages confirm that Magic Spoon uses influencer marketing at scale to reach a wider audience.",
+      "field": "current_marketing_strategy",
+      "claim": "Using influencer marketing at scale to reach a wider audience"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "The passages confirm that Magic Spoon has expanded into retail by partnering with stores like Whole Foods, Wegmans, and Target.",
+      "field": "current_marketing_strategy",
+      "claim": "Expanding into retail by partnering with stores like Whole Foods, Wegmans, and Target"
+    }
+  ]
+}

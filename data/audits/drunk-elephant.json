@@ -1,0 +1,60 @@
+{
+  "company": "Drunk Elephant",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain marketing-related information about Drunk Elephant's strategies and audience.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]"
+      ],
+      "reason": "The passages mention Drunk Elephant's focus on clean skincare and radical clarity in a complex market, as well as their six effective marketing tactics.",
+      "field": "brand_summary",
+      "claim": "Drunk Elephant is a skincare brand known for its clean and stripped-back formulations, focusing on radical clarity in a market defined by complex routines. The brand's success is attributed to its six effective marketing tactics, including word-of-mouth, influencer collaborations, social media presence, educational content, and website optimization."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage states that Drunk Elephant's success is linked to media mentions and social media presence.",
+      "field": "likely_target_audience",
+      "claim": "The target audience includes consumers who value clean skincare products and are likely influenced by media mentions and social media presence."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage explicitly mentions the use of influencer collaborations as part of their marketing strategy.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing influencer collaborations to create a robust online presence"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage mentions the creation of educational content as part of their marketing strategy.",
+      "field": "current_marketing_strategy",
+      "claim": "Focusing on educational content to inform consumers about their products"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage mentions website optimization as part of their marketing strategy.",
+      "field": "current_marketing_strategy",
+      "claim": "Optimizing their website to enhance consumer trust and engagement"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "company": "Hims",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided evidence includes marketing strategies and initiatives that directly support the claims about Hims' marketing efforts.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[6]"
+      ],
+      "reason": "The passage states that Hims & Hers offers personalized treatment plans for various health conditions through telemedicine and AI-driven recommendations.",
+      "field": "brand_summary",
+      "claim": "Hims is a telehealth company that offers personalized treatment plans for various health conditions through telemedicine and AI-driven recommendations."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[6]"
+      ],
+      "reason": "The passage mentions that Hims & Hers provides access to personalized treatment plans for hair loss, erectile dysfunction, weight loss, anxiety, depression, and more.",
+      "field": "likely_target_audience",
+      "claim": "Individuals seeking treatment for hair loss, erectile dysfunction, weight loss, anxiety, depression, and other health conditions."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage mentions that Hims uses targeted email campaigns to deliver personalized content and convert leads into loyal customers.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizes targeted email campaigns to engage with potential customers and convert leads into loyal customers."
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage states that social media forms a vital component of Hims’ marketing strategy, allowing direct engagement with customers and enhancing brand recognition.",
+      "field": "current_marketing_strategy",
+      "claim": "Engages in social media presence to enhance brand recognition and directly interact with customers."
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage mentions that Hims & Hers participated in the Super Bowl to increase brand visibility and start conversations around health equity.",
+      "field": "current_marketing_strategy",
+      "claim": "Participates in high-profile events like the Super Bowl to increase brand visibility and start conversations around health equity."
+    }
+  ]
+}

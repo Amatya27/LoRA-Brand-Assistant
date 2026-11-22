@@ -1,0 +1,50 @@
+{
+  "company": "Bombas",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The evidence provided includes marketing strategies and target audience information.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The passage mentions that Bombas targets millennials and individuals interested in socially responsible products.",
+      "field": "likely_target_audience",
+      "claim": "Millennials and individuals interested in socially responsible products"
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[3]",
+        "[4]"
+      ],
+      "reason": "The passages mention Bombas' 'One for One' giving strategy as a key driver of loyalty and social impact.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizes a 'One for One' giving strategy to drive loyalty and social impact"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The passage states that Bombas uses social media platforms like Instagram and Facebook to showcase its products and philanthropic efforts.",
+      "field": "current_marketing_strategy",
+      "claim": "Leverages social media platforms like Instagram and Facebook for product and philanthropic content"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "The passage mentions that Bombas focuses on measurable reach and clear communication through performance media and brand storytelling.",
+      "field": "current_marketing_strategy",
+      "claim": "Focuses on measurable reach and clear communication through performance media and brand storytelling"
+    }
+  ]
+}

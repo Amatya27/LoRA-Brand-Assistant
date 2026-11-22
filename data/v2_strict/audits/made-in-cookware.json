@@ -1,0 +1,52 @@
+{
+  "company": "Made In Cookware",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages provide detailed information about Made In Cookware's marketing strategies, including AI-driven SMS campaigns, video content, and educational messaging.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[4]",
+        "[5]"
+      ],
+      "reason": "Passages [2] and [4] mention Made In Cookware's focus on storytelling and authentic supply chains, while passage [5] discusses their educational messaging.",
+      "field": "brand_summary",
+      "claim": "Made In Cookware is a direct-to-consumer cookware brand that emphasizes storytelling and authentic supply chains to differentiate itself from competitors. They use AI-driven SMS campaigns and video content to engage with their audience and educate them on product usage and benefits."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[5]"
+      ],
+      "reason": "Passages [1] and [5] mention the use of AI-driven SMS campaigns to optimize marketing messages and increase ROI.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing AI-driven SMS campaigns to optimize marketing messages and increase ROI"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passage [4] mentions the use of video content to showcase the craftsmanship and heritage of their products.",
+      "field": "current_marketing_strategy",
+      "claim": "Focusing on storytelling through video content to showcase the craftsmanship and heritage of their products"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "Passage [5] discusses educating customers through how-to content and chef storytelling to build confidence in product usage.",
+      "field": "current_marketing_strategy",
+      "claim": "Educating customers through how-to content and chef storytelling to build confidence in product usage"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "company": "Madewell",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages provide detailed information about Madewell's marketing strategies, including its focus on denim expertise, sustainability initiatives, community engagement, digital marketing, and paid media mix.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[3]",
+        "[4]",
+        "[5]"
+      ],
+      "reason": "The passages detail Madewell's focus on denim expertise, expansion into lifestyle categories, sustainability initiatives, community engagement, and digital marketing strategies.",
+      "field": "brand_summary",
+      "claim": "Madewell is a brand known for its denim expertise, expanding into lifestyle categories while maintaining a strong focus on sustainability and community engagement. The brand leverages digital marketing, social media, and in-store experiences to engage with its audience."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage mentions Madewell's Denim Bar services and editorial content as part of its denim authority.",
+      "field": "current_marketing_strategy",
+      "claim": "Denim authority through in-store Denim Bar services and editorial content"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage highlights Madewell's sustainability initiatives, including recycled fibers and resale through Madewell Forever.",
+      "field": "current_marketing_strategy",
+      "claim": "Sustainability initiatives like recycled fibers and resale through Madewell Forever"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage mentions Madewell's Community Spotlight initiative, which showcases local makers.",
+      "field": "current_marketing_strategy",
+      "claim": "Community engagement through local maker spotlights"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "The passage discusses Madewell's seasonal lookbooks and SEO-optimized content.",
+      "field": "current_marketing_strategy",
+      "claim": "Digital marketing with seasonal lookbooks and SEO-optimized content"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The passage mentions Madewell's paid media mix optimizing for cost-per-acquisition and return-on-ad-spend.",
+      "field": "current_marketing_strategy",
+      "claim": "Paid media mix optimizing for cost-per-acquisition and return-on-ad-spend"
+    }
+  ]
+}

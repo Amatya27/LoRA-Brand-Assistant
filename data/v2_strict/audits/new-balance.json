@@ -1,0 +1,60 @@
+{
+  "company": "New Balance",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain detailed information about New Balance's marketing strategies, including athlete partnerships, limited collaborations, regional manufacturing narratives, and performance-driven marketing.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]"
+      ],
+      "reason": "Passages [1] and [2] explicitly mention New Balance's focus on heritage craft, athlete partnerships, limited collaborations, regional manufacturing narratives, and performance-driven marketing. They also highlight the importance of storytelling and distribution precision.",
+      "field": "brand_summary",
+      "claim": "New Balance focuses on heritage craft, athlete partnerships, limited collaborations, regional manufacturing narratives, and performance-driven marketing. The brand emphasizes storytelling and distribution precision to scale results without diluting equity."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] mentions that New Balance targets runners, basketball players, tennis players, baseball players, and global streetwear enthusiasts. It also notes that the brand scales in EMEA and APAC regions with athlete-aligned assortments.",
+      "field": "likely_target_audience",
+      "claim": "Runners, basketball players, tennis players, baseball players, global streetwear enthusiasts, and sports fans in EMEA and APAC regions."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] states that New Balance leverages athlete partnerships and limited collaborations to create distinction in the sneaker market.",
+      "field": "current_marketing_strategy",
+      "claim": "Leverages athlete partnerships and limited collaborations to create distinction in the sneaker market."
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] mentions that regional manufacturing narratives and athlete-aligned assortments create targeted relevance.",
+      "field": "current_marketing_strategy",
+      "claim": "Regional manufacturing narratives and athlete-aligned assortments for targeted relevance."
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] explicitly mentions that New Balance emphasizes performance-driven marketing and storytelling to scale results without diluting equity.",
+      "field": "current_marketing_strategy",
+      "claim": "Emphasizes performance-driven marketing and storytelling to scale results without diluting equity."
+    }
+  ]
+}

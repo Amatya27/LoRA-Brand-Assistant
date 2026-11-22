@@ -1,0 +1,54 @@
+{
+  "company": "Marine Layer",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages provide detailed information about Marine Layer's marketing strategies and brand identity.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[3]",
+        "[4]",
+        "[5]",
+        "[6]"
+      ],
+      "reason": "The passages confirm that Marine Layer has scaled its revenue and store count while maintaining a laid-back, premium brand identity. They also detail the use of cohort-based personalization and unified omnichannel data to increase email frequency and automation revenue without eroding customer trust.",
+      "field": "brand_summary",
+      "claim": "Marine Layer is a fashion brand that has scaled its revenue and store count while maintaining a laid-back, premium brand identity. They use cohort-based personalization and unified omnichannel data to increase email frequency and automation revenue without eroding customer trust."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "The passage states that Marine Layer segments customers by factors like signup channel and gender category to increase email relevance and frequency without feeling invasive.",
+      "field": "current_marketing_strategy",
+      "claim": "Use of cohort-based personalization to increase email relevance and frequency"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "The passage mentions that Marine Layer consolidates email, SMS, ecommerce, and retail POS data in Klaviyo to unify omnichannel data.",
+      "field": "current_marketing_strategy",
+      "claim": "Unified omnichannel data consolidation for better customer engagement"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[4]",
+        "[5]"
+      ],
+      "reason": "The passages confirm that Marine Layer is sending more emails than ever before through automated flows and segmented campaigns without seeing any major engagement losses or increases in unsubscribes.",
+      "field": "current_marketing_strategy",
+      "claim": "Increased email frequency through automated flows and segmented campaigns"
+    }
+  ]
+}

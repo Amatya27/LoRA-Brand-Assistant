@@ -1,0 +1,51 @@
+{
+  "company": "Lululemon",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain detailed information about Lululemon's target market and marketing strategies.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]"
+      ],
+      "reason": "Passages indicate Lululemon targets active individuals, particularly women, interested in fitness and wellness, with a focus on yoga and running.",
+      "field": "likely_target_audience",
+      "claim": "Active individuals, particularly women, interested in fitness and wellness, with a focus on yoga and running."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passages indicate Lululemon uses physical stores as community hubs with events like yoga classes and run clubs.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing physical stores as community hubs with events like yoga classes and run clubs."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "Passages indicate Lululemon partners with local fitness instructors and wellness coaches as part of their micro-influencer strategy.",
+      "field": "current_marketing_strategy",
+      "claim": "Implementing a micro-influencer strategy with local fitness instructors and wellness coaches."
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[4]"
+      ],
+      "reason": "Passages indicate Lululemon focuses on product quality and social identity rather than mass advertising.",
+      "field": "current_marketing_strategy",
+      "claim": "Focusing on product quality and social identity rather than mass advertising."
+    }
+  ]
+}

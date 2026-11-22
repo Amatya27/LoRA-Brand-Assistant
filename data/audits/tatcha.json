@@ -1,0 +1,65 @@
+{
+  "company": "Tatcha",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages focus on Tatcha's marketing strategies and audience analytics, primarily through Instagram and influencer marketing.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[6]"
+      ],
+      "reason": "Passages [2] and [6] indicate Tatcha uses influencer marketing and Instagram ads to reach its target audience.",
+      "field": "brand_summary",
+      "claim": "Tatcha is a luxury skincare brand that uses influencer marketing and Instagram ads to reach its target audience."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] states Tatcha uses influencer marketing to amplify its message and create trust.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizes influencer marketing to amplify its message and create a sense of trust and relatability with its audience [2]"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[6]"
+      ],
+      "reason": "Passage [6] shows Tatcha uses Instagram ads to promote its products.",
+      "field": "current_marketing_strategy",
+      "claim": "Uses Instagram ads to promote its products and increase engagement [6]"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] mentions Tatcha collaborates with content creators to generate demand.",
+      "field": "current_marketing_strategy",
+      "claim": "Collaborates with content creators to generate demand and reach a wider audience [2]"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]",
+        "[3]",
+        "[4]",
+        "[5]",
+        "[6]"
+      ],
+      "reason": "None of the provided passages mention TikTok or other social media platforms besides Instagram.",
+      "field": "marketing_gaps",
+      "claim": "No mention of TikTok or other social media platforms besides Instagram in the provided evidence [1,2,3,4,5,6]"
+    }
+  ]
+}

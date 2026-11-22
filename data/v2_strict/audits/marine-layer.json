@@ -1,0 +1,55 @@
+{
+  "company": "Marine Layer",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The evidence provided focuses on the marketing strategies and growth of Marine Layer, including their use of personalized marketing and omnichannel data integration.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]",
+        "[3]",
+        "[4]",
+        "[5]",
+        "[6]"
+      ],
+      "reason": "The evidence supports the claim that Marine Layer is a fashion brand known for its laid-back, premium clothing and has scaled its business through personalized marketing and omnichannel data integration.",
+      "field": "brand_summary",
+      "claim": "Marine Layer is a fashion brand known for its laid-back, premium clothing. They have scaled their business by increasing revenue and store count while maintaining a consistent brand identity through personalized marketing and omnichannel data integration."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "The evidence states that Marine Layer uses cohort-based personalization to increase email relevance and frequency.",
+      "field": "current_marketing_strategy",
+      "claim": "Use of cohort-based personalization to increase email relevance and frequency"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "The evidence states that Marine Layer consolidates omnichannel data to enhance customer engagement.",
+      "field": "current_marketing_strategy",
+      "claim": "Consolidation of omnichannel data to enhance customer engagement"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[4]",
+        "[5]"
+      ],
+      "reason": "The evidence states that Marine Layer has increased email frequency through automated flows and segmented campaigns.",
+      "field": "current_marketing_strategy",
+      "claim": "Increased email frequency through automated flows and segmented campaigns"
+    }
+  ]
+}

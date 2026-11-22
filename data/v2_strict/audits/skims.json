@@ -1,0 +1,86 @@
+{
+  "company": "Skims",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain detailed information about Skims' marketing strategies, including their use of Instagram, TikTok, influencers, celebrities, and user-generated content.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]",
+        "[4]",
+        "[6]"
+      ],
+      "reason": "The passages indicate that Skims builds its marketing strategy through Instagram, focusing on inclusivity, storytelling, collaborations with influencers and celebrities, and using UGC and scarcity tactics.",
+      "field": "brand_summary",
+      "claim": "Skims is a brand that builds its marketing strategy primarily through Instagram, focusing on inclusivity, storytelling, and collaborations with influencers and celebrities. They also use user-generated content (UGC) and scarcity tactics to drive engagement and perceived exclusivity."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]",
+        "[3]"
+      ],
+      "reason": "The target audience is described as fashion-conscious individuals valuing comfort, luxury, and accessibility, spanning from Gen Z to Gen X, and active on Instagram and TikTok.",
+      "field": "likely_target_audience",
+      "claim": "The target audience includes fashion-conscious individuals who value comfort, luxury, and accessibility, spanning from Gen Z to Gen X. They are active on Instagram and TikTok, with a focus on social-first shoppers."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[4]"
+      ],
+      "reason": "Collaborations with influencers and celebrities are mentioned as part of their strategy to generate early demand and social proof.",
+      "field": "current_marketing_strategy",
+      "claim": "Collaborations with influencers and celebrities to generate early demand and social proof"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[6]"
+      ],
+      "reason": "User-generated content is used to build familiarity and social proof.",
+      "field": "current_marketing_strategy",
+      "claim": "Use of user-generated content (UGC) to build familiarity and social proof"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Product launches are aligned with cultural events to maximize relevance and brand exposure.",
+      "field": "current_marketing_strategy",
+      "claim": "Strategic product launches aligned with cultural events to maximize relevance and brand exposure"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[6]"
+      ],
+      "reason": "High-quality visuals and community-building initiatives are mentioned on Instagram and TikTok.",
+      "field": "current_marketing_strategy",
+      "claim": "High-quality visuals and community-building initiatives on Instagram and TikTok"
+    },
+    {
+      "n": 7,
+      "verdict": "supported",
+      "evidence": [
+        "[6]"
+      ],
+      "reason": "Scarcity tactics like waitlists are used to boost perceived exclusivity.",
+      "field": "current_marketing_strategy",
+      "claim": "Scarcity tactics like waitlists to boost perceived exclusivity"
+    }
+  ]
+}

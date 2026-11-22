@@ -1,0 +1,61 @@
+{
+  "company": "Ritual",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The evidence provided focuses on Ritual's marketing strategies and influencer partnerships.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[3]",
+        "[4]",
+        "[5]"
+      ],
+      "reason": "Passages [3], [4], and [5] all indicate that Ritual focuses on educating their audience about the science behind their supplements through influencer partnerships and content creation on multiple platforms.",
+      "field": "brand_summary",
+      "claim": "Ritual focuses on educating their audience about the science behind their supplements through influencer partnerships and content creation on multiple platforms."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passage [4] explicitly states that Ritual prioritizes education over promotional messaging.",
+      "field": "current_marketing_strategy",
+      "claim": "Prioritizing education over promotional messaging"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passage [4] mentions that Ritual distributes creator-led content across multiple platforms.",
+      "field": "current_marketing_strategy",
+      "claim": "Distributing creator-led content across multiple platforms"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "Passage [5] indicates that Ritual prioritizes diverse, long-term partnerships to sustain visibility and representation over time.",
+      "field": "current_marketing_strategy",
+      "claim": "Sustaining visibility and representation through diverse, long-term partnerships"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "Passage [5] states that Ritual provides credible ingredient and sourcing information to influencers.",
+      "field": "current_marketing_strategy",
+      "claim": "Providing credible ingredient and sourcing information to influencers"
+    }
+  ]
+}

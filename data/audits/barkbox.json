@@ -1,0 +1,51 @@
+{
+  "company": "BarkBox",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain detailed information about BarkBox's marketing strategies, including social media campaigns and influencer partnerships.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]",
+        "[5]"
+      ],
+      "reason": "Passages [1] and [2] confirm BarkBox's use of humor and dog-centric themes on social media, and passage [5] confirms their use of influencer partnerships.",
+      "field": "brand_summary",
+      "claim": "BarkBox uses humor and dog-centric themes to engage their audience on social media, focusing on Instagram and Facebook. They run annual social campaigns, such as the 'squirrel hack' campaign, and leverage influencer partnerships to grow their subscriber base."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] mentions BarkBox's annual social campaign involving a 'squirrel hack' on their Instagram and Facebook accounts.",
+      "field": "current_marketing_strategy",
+      "claim": "Annual social media campaigns, such as the 'squirrel hack' campaign [1]"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "Passage [5] confirms BarkBox's use of influencer partnerships to generate authentic content and drive subscriptions.",
+      "field": "current_marketing_strategy",
+      "claim": "Influencer partnerships to generate authentic content and drive subscriptions [5]"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] mentions BarkBox's use of social unboxings to engage their audience and seed content.",
+      "field": "current_marketing_strategy",
+      "claim": "Engaging unboxing videos and photos shared by customers and influencers [2]"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "company": "Peak Design",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "Passages provide insights into the company's marketing strategies and product philosophy.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage states that Peak Design uses crowdfunding platforms like Kickstarter for both financing and marketing, and emphasizes direct-to-consumer engagement to build a loyal community and incorporate user feedback into product development.",
+      "field": "brand_summary",
+      "claim": "Peak Design is a privately held American design and manufacturing company founded in 2010, specializing in producing travel gear, camera accessories, and lifestyle products. The company uses crowdfunding platforms like Kickstarter for both financing and marketing, and emphasizes direct-to-consumer engagement to build a loyal community and incorporate user feedback into product development."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage mentions that Peak Design uses crowdfunding platforms like Kickstarter for both financing and marketing.",
+      "field": "current_marketing_strategy",
+      "claim": "Crowdfunding on platforms like Kickstarter for both financing and marketing"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage states that the company builds a loyal community through direct-to-consumer engagement.",
+      "field": "current_marketing_strategy",
+      "claim": "Building a loyal community through direct-to-consumer engagement"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage mentions that the product design philosophy emphasizes creating innovative, highly functional, and aesthetically minimalist gear.",
+      "field": "current_marketing_strategy",
+      "claim": "Creating minimalist and highly functional products"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[6]"
+      ],
+      "reason": "The passage mentions exclusive product lines available only through their official website and stores.",
+      "field": "current_marketing_strategy",
+      "claim": "Exclusive product lines available only through their official website and stores"
+    }
+  ]
+}

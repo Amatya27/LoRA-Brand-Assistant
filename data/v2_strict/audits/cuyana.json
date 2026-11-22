@@ -1,0 +1,70 @@
+{
+  "company": "Cuyana",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The evidence provided includes detailed information about Cuyana's marketing strategies and target audience.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage states that Cuyana's anti-consumption positioning builds deep customer loyalty and attracts higher-LTV customers by framing purchases as deliberate investments.",
+      "field": "brand_summary",
+      "claim": "Cuyana is a brand that emphasizes values-based positioning, focusing on longevity and intentionality in their marketing. They attract higher-LTV customers by framing purchases as deliberate investments rather than impulse buys. Their marketing strategy includes paid social media on Instagram and Facebook, SEO-rich content, and email marketing."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage mentions that Cuyana attracts buyers who have opted out of fast fashion and are aligned with the brand's values.",
+      "field": "likely_target_audience",
+      "claim": "Buyers who have opted out of fast fashion and are looking for premium, durable basics and accessories."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage states that Instagram is Cuyana's primary paid channel, featuring editorial photography of signature leather bags and cashmere basics.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizes Instagram as the primary paid channel with editorial photography of signature products."
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage mentions that Facebook retargeting promotes hero products.",
+      "field": "current_marketing_strategy",
+      "claim": "Runs Facebook retargeting campaigns."
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage states that Cuyana's SEO-rich content attracts customers already aligned with the brand's values.",
+      "field": "current_marketing_strategy",
+      "claim": "Uses SEO-rich content to attract customers already aligned with the brand's values."
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[5]",
+        "[6]"
+      ],
+      "reason": "The passages show examples of Cuyana's email newsletters with promotions and new product releases.",
+      "field": "current_marketing_strategy",
+      "claim": "Sends email newsletters with promotions and new product releases."
+    }
+  ]
+}

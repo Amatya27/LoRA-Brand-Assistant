@@ -1,0 +1,50 @@
+{
+  "company": "Curology",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "Passages provide insights into Curology's marketing strategies and audience demographics.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[5]"
+      ],
+      "reason": "Passage [2] mentions Curology's focus on inclusive marketing efforts, and passage [5] confirms Curology as a skincare brand using personalized dermatology services.",
+      "field": "brand_summary",
+      "claim": "Curology is a skincare brand that uses personalized dermatology services and has been focusing on inclusive marketing efforts."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "Passage [5] states that the target audience is females aged 25-44 with an average income over $75,000.",
+      "field": "likely_target_audience",
+      "claim": "Females aged 25-44 with an average income over $75,000, interested in skincare and dermatology services."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] mentions partnering with Black-owned agencies and influencers to prioritize inclusion.",
+      "field": "current_marketing_strategy",
+      "claim": "Prioritizing inclusion in marketing efforts by partnering with Black-owned agencies and influencers."
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[6]"
+      ],
+      "reason": "Passage [6] discusses personalizing marketing content and communications to match the personalized skincare service.",
+      "field": "current_marketing_strategy",
+      "claim": "Personalizing marketing content and communications to match the personalized skincare service."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "company": "Lalo",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The evidence includes marketing strategies and campaigns for both the baby furniture and tequila brands.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "Passage [3] explicitly mentions the launch of a national campaign for LALO Tequila.",
+      "field": "current_marketing_strategy",
+      "claim": "Launching a national campaign for their tequila brand"
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[3]"
+      ],
+      "reason": "Passages [2] and [3] both indicate the use of digital and social media advertising for marketing.",
+      "field": "current_marketing_strategy",
+      "claim": "Using digital and social media advertising"
+    }
+  ]
+}

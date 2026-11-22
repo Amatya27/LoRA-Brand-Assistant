@@ -1,0 +1,83 @@
+{
+  "company": "Pela",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The evidence provided includes detailed information about Pela Case's marketing strategies and target audience.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "The passage states that Pela Case is an eco-friendly brand that creates compostable phone cases and was founded in 2010 by Jeremy Lang.",
+      "field": "brand_summary",
+      "claim": "Pela Case is an eco-friendly brand that creates compostable phone cases, aiming to contribute to a waste-free future. Founded in 2010 by Jeremy Lang, the company has grown its community through eco-conscious marketing and influencer partnerships."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "The passage mentions that Pela Case's audience is 72.75% female and the largest age group is 25-34.",
+      "field": "likely_target_audience",
+      "claim": "The target audience includes eco-conscious consumers, particularly those aged 25-34, with a majority being female."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage mentions that Pela Case uses BrandChamp to manage its influencer and ambassador programs.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing influencer and ambassador programs to promote their eco-friendly phone cases."
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The passage states that Pela Case pairs environmental messaging with style positioning to appeal to eco-conscious consumers.",
+      "field": "current_marketing_strategy",
+      "claim": "Focusing on aesthetics and environmental messaging to appeal to eco-conscious consumers."
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The passage mentions that Pela Case runs conversion campaigns on Facebook targeting eco-conscious consumers and iPhone upgrade cycles.",
+      "field": "current_marketing_strategy",
+      "claim": "Running conversion campaigns on Facebook targeting eco-conscious consumers and iPhone upgrade cycles."
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]",
+        "[5]"
+      ],
+      "reason": "The evidence does not mention TikTok marketing efforts, while it does mention Instagram and Facebook campaigns.",
+      "field": "marketing_gaps",
+      "claim": "No mention of TikTok marketing efforts despite active Instagram and Facebook campaigns [1,2,5]."
+    },
+    {
+      "n": 7,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]",
+        "[5]"
+      ],
+      "reason": "The provided evidence does not mention any gaps in other marketing channels or strategies beyond Instagram and Facebook.",
+      "field": "marketing_gaps",
+      "claim": "Insufficient evidence to identify gaps in other marketing channels or strategies."
+    }
+  ]
+}

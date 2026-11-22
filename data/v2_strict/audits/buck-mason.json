@@ -1,0 +1,60 @@
+{
+  "company": "Buck Mason",
+  "overall": "fix",
+  "groundedness": 0.8,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The evidence provided includes specific details about Buck Mason's marketing strategies and target audience.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "partial",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "The evidence shows that Buck Mason targets men aged 25-54 in the US, but does not explicitly state their interest in American-made, high-quality menswear.",
+      "field": "likely_target_audience",
+      "claim": "Men aged 25-54 in the US, interested in American-made, high-quality menswear."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[4]"
+      ],
+      "reason": "The evidence clearly states that Buck Mason targets video ads in Instagram Stories to a 1% lookalike audience.",
+      "field": "current_marketing_strategy",
+      "claim": "Targeting video ads in Instagram Stories to a 1% lookalike audience"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The evidence indicates that Buck Mason uses seasonal wardrobe essentials campaigns.",
+      "field": "current_marketing_strategy",
+      "claim": "Using seasonal wardrobe essentials campaigns"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The evidence mentions that Buck Mason positions products as gift-for-him items.",
+      "field": "current_marketing_strategy",
+      "claim": "Positioning products as gift-for-him items"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The evidence shows that Buck Mason focuses on American craftsmanship in ad copy and imagery.",
+      "field": "current_marketing_strategy",
+      "claim": "Focusing on American craftsmanship in ad copy and imagery"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "company": "Outdoor Voices",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages provide insights into the target market and marketing strategies of Outdoor Voices, including influencer collaborations and community engagement.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage states that younger generations are influenced by social media trends and brand partnerships, aligning with the claim.",
+      "field": "likely_target_audience",
+      "claim": "Younger generations who are active and interested in fitness and fashion, likely influenced by social media trends and brand partnerships."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]"
+      ],
+      "reason": "Both passages mention that Outdoor Voices collaborates with influencers to promote their products on social media platforms.",
+      "field": "current_marketing_strategy",
+      "claim": "Collaborating with influencers to promote their products on platforms like Instagram and TikTok."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The passage mentions that Outdoor Voices organizes fun events to engage with their community and encourage active lifestyles.",
+      "field": "current_marketing_strategy",
+      "claim": "Hosting events to engage with their community and encourage active lifestyles."
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The passage states that Outdoor Voices has a distinct style present across all its marketing channels, indicating distinctive digital content.",
+      "field": "current_marketing_strategy",
+      "claim": "Creating distinctive digital content that stands out and aligns with their brand identity."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "company": "Poppi",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain detailed information about Poppi's marketing strategies and target audience.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[3]",
+        "[4]",
+        "[5]"
+      ],
+      "reason": "The passages confirm Poppi's rebranding, target audience, digital marketing focus, and cultural engagement.",
+      "field": "brand_summary",
+      "claim": "Poppi is a prebiotic soda brand that has rebranded and refined its positioning to appeal to a younger, wellness-focused audience. They use digital channels, particularly TikTok, for influencer collaborations and short-form creative content aligned with wellness aesthetics. Poppi also engages in culture through trending social conversations and major cultural moments, maintaining strong community engagement and creator-led storytelling."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "The passage states Poppi appeals to a younger, wellness-focused audience.",
+      "field": "likely_target_audience",
+      "claim": "Younger, wellness-focused audience"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[4]"
+      ],
+      "reason": "The passages mention TikTok influencer collaborations and short-form creative content.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing TikTok influencer collaborations and short-form creative content"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage mentions segmented email campaigns for limited-edition drops.",
+      "field": "current_marketing_strategy",
+      "claim": "Segmented email campaigns for limited-edition drops"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "The passage confirms Poppi's participation in cultural moments and trending social conversations.",
+      "field": "current_marketing_strategy",
+      "claim": "Participation in cultural moments and trending social conversations"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The passage mentions Poppi's product-seeding and creator-management programs.",
+      "field": "current_marketing_strategy",
+      "claim": "Building relationships with creators through product-seeding and creator-management programs"
+    }
+  ]
+}

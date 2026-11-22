@@ -1,0 +1,40 @@
+{
+  "company": "Whoop",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain marketing-related information about WHOOP's brand campaign and subscription approach.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]"
+      ],
+      "reason": "Passage [1] confirms the brand campaign 'The Best Obsess' featuring legendary athletes, and passage [2] confirms the subscription-first approach to scaling membership.",
+      "field": "brand_summary",
+      "claim": "WHOOP is a wearable technology company that focuses on health and fitness tracking. They have a brand campaign called 'The Best Obsess' featuring legendary athletes and have a subscription-first approach to scaling membership."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] confirms the brand campaign 'The Best Obsess' featuring legendary athletes.",
+      "field": "current_marketing_strategy",
+      "claim": "Produced a brand campaign called 'The Best Obsess' featuring legendary athletes"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] confirms the subscription-first approach to scaling membership.",
+      "field": "current_marketing_strategy",
+      "claim": "Uses a subscription-first approach to scale membership"
+    }
+  ]
+}

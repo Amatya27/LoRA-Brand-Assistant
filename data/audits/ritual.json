@@ -1,0 +1,86 @@
+{
+  "company": "Ritual",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages provide detailed information about Ritual's marketing strategies and target audience.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[3]",
+        "[4]",
+        "[5]"
+      ],
+      "reason": "Passages [3], [4], and [5] explicitly mention Ritual's focus on educating consumers about supplement science through creator-led content on multiple platforms, emphasizing transparency in sourcing and formulation.",
+      "field": "brand_summary",
+      "claim": "Ritual Vitamins focuses on educating consumers about their supplement science through creator-led content on multiple platforms, emphasizing transparency in sourcing and formulation."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[3]",
+        "[4]"
+      ],
+      "reason": "Passages [3] and [4] indicate that Ritual targets consumers interested in wellness, health supplements, and credible scientific information translated into daily routines.",
+      "field": "likely_target_audience",
+      "claim": "Consumers interested in wellness, health supplements, and credible scientific information translated into daily routines."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[3]",
+        "[4]"
+      ],
+      "reason": "Passages [3] and [4] confirm that Ritual's current marketing strategy is to educate consumers about supplement science through creator-led content.",
+      "field": "current_marketing_strategy",
+      "claim": "Educate consumers about supplement science through creator-led content"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[4]",
+        "[5]"
+      ],
+      "reason": "Passages [4] and [5] state that Ritual distributes content across multiple platforms including Instagram, YouTube, TikTok, podcasts, and communities.",
+      "field": "current_marketing_strategy",
+      "claim": "Distribute content across multiple platforms including Instagram, YouTube, TikTok, podcasts, and communities"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "Passage [5] explicitly mentions that Ritual prioritizes diverse and long-term partnerships with creators.",
+      "field": "current_marketing_strategy",
+      "claim": "Prioritize diverse and long-term partnerships with creators"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]"
+      ],
+      "reason": "Passages [1] and [2] do not mention email marketing campaigns, indicating a marketing gap.",
+      "field": "marketing_gaps",
+      "claim": "No mention of email marketing campaigns [1]"
+    },
+    {
+      "n": 7,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]"
+      ],
+      "reason": "Passages [1] and [2] do not mention direct-to-consumer advertising on television or radio, indicating a marketing gap.",
+      "field": "marketing_gaps",
+      "claim": "No evidence of direct-to-consumer advertising on television or radio [1]"
+    }
+  ]
+}

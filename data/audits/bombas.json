@@ -1,0 +1,39 @@
+{
+  "company": "Bombas",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain marketing-related information about Bombas' strategies and activities.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "The passage explicitly mentions Bombas' One for One giving model as a key driver of social impact and customer loyalty.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizes a 'One for One' giving model to drive social impact and customer loyalty [3]"
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "The passage states that Bombas prioritizes measurable reach and clear communication through a mix of performance channels and brand storytelling.",
+      "field": "current_marketing_strategy",
+      "claim": "Prioritizes measurable reach and clear communication through a mix of performance channels and brand storytelling [4]"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The passage indicates that Bombas leverages social media platforms like Instagram and Facebook to showcase its products and philanthropic efforts.",
+      "field": "current_marketing_strategy",
+      "claim": "Leverages social media platforms like Instagram and Facebook to showcase products and philanthropic efforts [5]"
+    }
+  ]
+}

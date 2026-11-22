@@ -1,0 +1,59 @@
+{
+  "company": "Spindrift",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The evidence provided focuses on Spindrift's marketing strategy, particularly their use of influencers and social media.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]",
+        "[3]",
+        "[4]",
+        "[5]",
+        "[6]"
+      ],
+      "reason": "The evidence shows Spindrift's focus on influencer partnerships, social media presence, targeting millennials and Gen Z, and emphasizing ethical and healthy products.",
+      "field": "brand_summary",
+      "claim": "Spindrift focuses on leveraging influencer partnerships and social media to reach their target audience, particularly millennials and Gen Z, with a focus on ethical and healthy products."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[5]",
+        "[6]"
+      ],
+      "reason": "The evidence indicates that Spindrift targets millennials and Gen Z as their primary audience.",
+      "field": "likely_target_audience",
+      "claim": "Millennials and Gen Z"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]",
+        "[3]",
+        "[4]"
+      ],
+      "reason": "The evidence shows Spindrift's use of Instagram and Twitter for influencer marketing.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing influencer marketing to promote their brand through Instagram and Twitter"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[4]"
+      ],
+      "reason": "The evidence confirms that Spindrift creates original content for their social media posts.",
+      "field": "current_marketing_strategy",
+      "claim": "Creating original content for social media posts"
+    }
+  ]
+}

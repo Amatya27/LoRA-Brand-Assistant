@@ -1,0 +1,54 @@
+{
+  "company": "Jones Road Beauty",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages provide specific details about Jones Road Beauty's marketing strategy, including targeting female audiences and using Reels as a preferred media type.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[4]",
+        "[6]"
+      ],
+      "reason": "Passages [1], [4], and [6] indicate that Jones Road Beauty uses influencer marketing to drive engagement and sales, focusing on female audiences and using Reels as a preferred media type.",
+      "field": "brand_summary",
+      "claim": "Jones Road Beauty utilizes influencer marketing to drive engagement and sales, focusing on female audiences and using Reels as a preferred media type."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[4]"
+      ],
+      "reason": "Passages [2] and [4] mention the significant female presence among the influencer pool and the geographical dispersion among creators, including a notable number from the United States, Canada, and Ireland.",
+      "field": "likely_target_audience",
+      "claim": "Primarily women, with a significant presence in the United States, Canada, and Ireland."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[4]",
+        "[6]"
+      ],
+      "reason": "Passages [4] and [6] indicate that Jones Road Beauty targets a female audience through its influencer marketing strategy.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizes influencer marketing to target a female audience."
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[6]"
+      ],
+      "reason": "Passages [1] and [6] mention that Reels are the preferred media type for content, with 73.53% of content being reels.",
+      "field": "current_marketing_strategy",
+      "claim": "Focuses on Reels as the preferred media type for content."
+    }
+  ]
+}

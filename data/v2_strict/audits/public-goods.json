@@ -1,0 +1,39 @@
+{
+  "company": "Public Goods",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "Passages provide specific details about marketing strategies used by Public Goods.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "Passage [3] explicitly mentions the use of email marketing for personalized messaging and promotions.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing email marketing for personalized messaging and promotions [3]"
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] describes Public Goods collaborating with creators to produce content for product launches and brand storytelling.",
+      "field": "current_marketing_strategy",
+      "claim": "Collaborating with creators to produce content for product launches and brand storytelling [2]"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] indicates that Public Goods publishes news and tips related to sustainable living on their website.",
+      "field": "current_marketing_strategy",
+      "claim": "Publishing news and tips related to sustainable living on their website [1]"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "company": "Warby Parker",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages provide detailed information about Warby Parker's marketing strategies, including home try-on services, AR preview features, online eye exam booking, and social media engagement.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage states that Warby Parker uses data-led merchandising, platform-specific content, and service innovation to drive customer acquisition, and mentions home try-on services, AR preview features, and online eye exam booking.",
+      "field": "brand_summary",
+      "claim": "Warby Parker is known for its innovative marketing strategy that includes home try-on services, AR preview features, and online eye exam booking. The brand emphasizes quality and social impact, using data-led merchandising and platform-specific content to drive customer acquisition."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage explicitly mentions the home try-on service with five frames.",
+      "field": "current_marketing_strategy",
+      "claim": "Home try-on service with five frames"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage mentions the AR preview feature for customers.",
+      "field": "current_marketing_strategy",
+      "claim": "AR preview feature for customers"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage mentions online eye exam booking.",
+      "field": "current_marketing_strategy",
+      "claim": "Online eye exam booking"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[4]"
+      ],
+      "reason": "The passages mention influencer partnerships and community engagement as part of their marketing strategy.",
+      "field": "current_marketing_strategy",
+      "claim": "Influencer partnerships and community engagement"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The passage mentions user-generated content campaigns, such as the #WarbyBarker campaign.",
+      "field": "current_marketing_strategy",
+      "claim": "User-generated content campaigns"
+    }
+  ]
+}

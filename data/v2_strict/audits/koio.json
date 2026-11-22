@@ -1,0 +1,30 @@
+{
+  "company": "Koio",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The evidence shows active marketing strategies through newsletters and email campaigns.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[5]"
+      ],
+      "reason": "Passages [1] and [5] show newsletters providing styling tips and showcasing new releases.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing newsletters to provide styling tips and showcase new releases [1,5]"
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passage [4] indicates targeted email marketing for in-store events.",
+      "field": "current_marketing_strategy",
+      "claim": "Implementing targeted email marketing campaigns for in-store events [4]"
+    }
+  ]
+}

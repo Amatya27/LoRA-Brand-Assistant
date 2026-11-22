@@ -1,68 +1,90 @@
 #!/usr/bin/env python3
-"""Phase 1.3 - Review and approve labels one at a time."""
+"""
+Phase 1.3b - Human review. Shows each label next to its evidence and its audit
+verdict, then asks for a decision. Labels the audit rejected are not offered.
+
+  python review_labels.py           # review labels that passed or need a fix
+Keys:  y/enter approve   n skip   o show file path   q quit (progress is saved)
+"""
 from __future__ import annotations
 
-import json
 import glob
+import json
+import re
 from pathlib import Path
 
 LABELED = Path("data/labeled")
+AUDITS = Path("data/audits")
 
 
-def show(company, c, errors):
-    line = "=" * 70
-    print(f"\n{line}\n{company}\n{line}")
-    if errors:
-        print(f"  !! schema issues: {errors}")
-    print(f"\nSummary:  {c.get('brand_summary','')}")
-    print(f"Audience: {c.get('likely_target_audience','')}")
-    print("\nCurrent strategy:")
-    for s in c.get("current_marketing_strategy", []):
-        print(f"   - {s}")
-    print("\nMarketing gaps  (check: evidence-backed? fairly framed?):")
-    for g in c.get("marketing_gaps", []):
-        print(f"   - {g}")
-    idea = c.get("instagram_post_idea", {}) or {}
-    print("\nInstagram idea:")
-    print(f"   hook:    {idea.get('hook','')}")
-    print(f"   concept: {idea.get('concept','')}")
-    print(f"   closes:  {idea.get('why_it_closes_the_gap','')}")
-    print(f"\nEmail subject: {c.get('email_subject','')}")
-    print("Email body:")
-    for ln in (c.get("email_body", "") or "").split("\n"):
-        print(f"   {ln}")
-    print(f"\nCitations: {c.get('citations', [])}")
+def evidence_items(grounded_prompt: str) -> list[str]:
+    start = grounded_prompt.find("Evidence:")
+    if start == -1:
+        return []
+    block = grounded_prompt[start + len("Evidence:"):].strip()
+    return [" ".join(item.split())[:330] for item in re.split(r"\n(?=\[\d+\])", block) if item.strip()]
 
 
-def main():
+def show(rec: dict, completion: dict, audit: dict | None) -> None:
+    line = "=" * 74
+    print(f"\n{line}\n{rec.get('company', '?')}\n{line}")
+    if rec.get("validation_errors"):
+        print(f"  !! issues: {rec['validation_errors']}")
+    if audit:
+        g = audit.get("groundedness")
+        print(f"AUDIT: {audit.get('overall')} | groundedness={'-' if g is None else g} | evidence={audit.get('evidence_quality')}")
+        for claim in audit.get("claims", []):
+            if claim.get("verdict") != "supported":
+                print(f"   {claim.get('verdict', '?').upper()}: {claim.get('claim', '')[:110]}  ({claim.get('reason', '')})")
+    else:
+        print("AUDIT: not run yet (python audit_labels.py)")
+    print(f"\nevidence_status: {completion.get('evidence_status', 'sufficient')}   abstained fields: {completion.get('insufficient_fields', [])}")
+    print(f"Summary:  {completion.get('brand_summary', '')}")
+    print(f"Audience: {completion.get('likely_target_audience', '')}")
+    print("Strategy:")
+    for item in completion.get("current_marketing_strategy", []):
+        print(f"   - {item}")
+    print("Gaps:")
+    for item in completion.get("marketing_gaps", []):
+        print(f"   - {item}")
+    idea = completion.get("instagram_post_idea", {}) or {}
+    print(f"Instagram: {idea.get('hook', '')} / {idea.get('concept', '')}")
+    print(f"Email subject: {completion.get('email_subject', '')}")
+    for text in (completion.get("email_body", "") or "").split("\n"):
+        print(f"   {text}")
+    print(f"Citations: {completion.get('citations', [])}")
+    print("\nEVIDENCE the label must come from:")
+    for item in evidence_items(rec.get("grounded_prompt", "")):
+        print(f"   {item}")
+
+
+def main() -> int:
     files = sorted(glob.glob(str(LABELED / "*.json")))
     if not files:
         print(f"No labels in {LABELED}/.")
         return 1
-
-    total = len(files)
-    approved_already = 0
-    to_review = []
-    for p in files:
-        rec = json.loads(Path(p).read_text(encoding="utf-8"))
+    queue, approved, rejected = [], 0, []
+    for path in files:
+        rec = json.loads(Path(path).read_text(encoding="utf-8"))
+        audit_path = AUDITS / Path(path).name
+        audit = json.loads(audit_path.read_text()) if audit_path.exists() else None
         if rec.get("approved"):
-            approved_already += 1
+            approved += 1
+        elif audit and audit.get("overall") == "reject":
+            rejected.append(rec.get("company", path))
         else:
-            to_review.append(p)
+            queue.append((path, audit))
+    print(f"{len(files)} labels | {approved} approved | {len(queue)} to review | {len(rejected)} rejected by audit (not offered)")
 
-    print(f"{total} labels total | {approved_already} already approved | {len(to_review)} to review")
-    print("Keys: [y/enter]=approve  [n]=skip  [o]=show file path  [q]=quit\n")
-
-    newly_approved = 0
-    for i, p in enumerate(to_review, 1):
-        rec = json.loads(Path(p).read_text(encoding="utf-8"))
+    done = 0
+    for index, (path, audit) in enumerate(queue, 1):
+        rec = json.loads(Path(path).read_text(encoding="utf-8"))
         try:
-            c = json.loads(rec.get("completion", "{}"))
+            completion = json.loads(rec.get("completion", "{}"))
         except Exception:
-            c = {}
-        print(f"\n[{i}/{len(to_review)}]", end=" ")
-        show(rec.get("company", Path(p).stem), c, rec.get("validation_errors", []))
-
+            completion = {}
+        print(f"\n[{index}/{len(queue)}]", end="")
+        show(rec, completion, audit)
         while True:
             try:
                 choice = input("\napprove? [y/n/o/q] ").strip().lower()
@@ -71,21 +93,20 @@ def main():
                 return 0
             if choice in ("", "y"):
                 rec["approved"] = True
-                Path(p).write_text(json.dumps(rec, indent=2, ensure_ascii=False), encoding="utf-8")
-                newly_approved += 1
+                Path(path).write_text(json.dumps(rec, indent=2, ensure_ascii=False), encoding="utf-8")
+                done += 1
                 break
             if choice == "n":
                 break
             if choice == "o":
-                print(f"   file: {p}")
+                print(f"   file: {path}")
                 continue
             if choice == "q":
-                print(f"\nStopped. Approved {newly_approved} this session; progress saved.")
+                print(f"\nStopped. Approved {done} this session.")
                 return 0
-            print("   (y=approve, n=skip, o=path, q=quit)")
-
-    approved_total = approved_already + newly_approved
-    print(f"\nDone. Approved {newly_approved} this session; {approved_total}/{total} approved overall.")
+    print(f"\nDone. Approved {done} this session; {approved + done}/{len(files)} approved overall.")
+    if rejected:
+        print(f"Rejected by audit and excluded: {', '.join(rejected)}")
     print("Next: python build_dataset.py")
     return 0
 

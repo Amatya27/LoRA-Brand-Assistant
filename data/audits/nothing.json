@@ -1,0 +1,50 @@
+{
+  "company": "Nothing",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain marketing-related information about Nothing's community involvement and product development.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The passage states that Nothing builds smartphones, audio products, and AI tools that look good and make life easier, and they have a global community of over six million.",
+      "field": "brand_summary",
+      "claim": "Nothing builds smartphones, audio products, and AI tools that look good and make life easier. They have a global community of over six million and are creating the most loved tech brand for the next generation of creatives."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]"
+      ],
+      "reason": "Passages indicate co-creation with the community for product development and marketing campaigns.",
+      "field": "current_marketing_strategy",
+      "claim": "Co-creation with the community for product development and marketing campaigns [1][2]"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passages indicate the use of community-generated content and taglines in marketing campaigns.",
+      "field": "current_marketing_strategy",
+      "claim": "Use of community-generated content and taglines in marketing campaigns [2]"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passages indicate fusing mechanical codes with local culture in flagship stores.",
+      "field": "current_marketing_strategy",
+      "claim": "Fusing mechanical codes with local culture in flagship stores [1]"
+    }
+  ]
+}

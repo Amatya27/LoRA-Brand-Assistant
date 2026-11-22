@@ -1,0 +1,80 @@
+{
+  "company": "Hims",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain marketing-related information about Hims' activities and strategies.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[6]"
+      ],
+      "reason": "Passages [1] and [6] describe Hims as a telehealth company connecting consumers with medical professionals and providing personalized treatment plans for various health conditions. They also mention email campaigns and social media presence.",
+      "field": "brand_summary",
+      "claim": "Hims is a telehealth company that connects consumers with licensed medical professionals and provides access to personalized treatment plans for various health conditions such as hair loss, erectile dysfunction, weight loss, anxiety, depression, and more. They use targeted email campaigns and social media presence to engage with their audience and enhance brand recognition."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] describes the target audience as consumers seeking personalized treatment plans for health conditions.",
+      "field": "likely_target_audience",
+      "claim": "Consumers seeking personalized treatment plans for health conditions such as hair loss, erectile dysfunction, weight loss, anxiety, depression, and more."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] mentions targeted email campaigns to deliver personalized content and convert leads into loyal customers.",
+      "field": "current_marketing_strategy",
+      "claim": "Targeted email campaigns to deliver personalized content and convert leads into loyal customers."
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] states that social media forms a vital component of Hims’ marketing strategy to engage with customers and enhance brand recognition.",
+      "field": "current_marketing_strategy",
+      "claim": "Social media presence to engage with customers and enhance brand recognition."
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] mentions Hims' participation in the Super Bowl to start conversations and bridge the information gap in healthcare.",
+      "field": "current_marketing_strategy",
+      "claim": "Participation in major events like the Super Bowl to start conversations and bridge the information gap in healthcare."
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] does not mention TikTok activity, which is not shown in any of the provided passages.",
+      "field": "marketing_gaps",
+      "claim": "No mention of TikTok activity in the sources reviewed [1]."
+    },
+    {
+      "n": 7,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] does not mention any specific Instagram influencer programs aimed at a particular audience.",
+      "field": "marketing_gaps",
+      "claim": "No specific mention of Instagram influencer programs aimed at a particular audience [1]."
+    }
+  ]
+}

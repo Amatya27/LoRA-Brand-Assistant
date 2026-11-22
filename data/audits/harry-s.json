@@ -1,0 +1,49 @@
+{
+  "company": "Harry's",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages provide insights into Harry's marketing strategies and target audience.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage explicitly states that Harry's targets urban men aged 18-34.",
+      "field": "likely_target_audience",
+      "claim": "Men aged 18-34"
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage mentions partnerships with charitable organizations as part of their marketing strategy.",
+      "field": "current_marketing_strategy",
+      "claim": "Partnerships with charitable organizations"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "The passage explicitly mentions that Harry's used creative storytelling and content marketing to connect with their audience.",
+      "field": "current_marketing_strategy",
+      "claim": "Creative storytelling and content marketing"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[6]"
+      ],
+      "reason": "The passage mentions that Harry's built a fully-automated word-of-mouth referral engine to encourage customer referrals.",
+      "field": "current_marketing_strategy",
+      "claim": "Building a referral system to encourage customer referrals"
+    }
+  ]
+}

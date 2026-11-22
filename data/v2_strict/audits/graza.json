@@ -1,0 +1,51 @@
+{
+  "company": "Graza",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The evidence provided focuses on Graza's marketing strategies and activities, including influencer marketing and product seeding.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]",
+        "[6]"
+      ],
+      "reason": "Passages [1] and [2] confirm Graza's use of influencer marketing and product seeding before launch, and passage [2] also mentions the focus on online visibility and engagement.",
+      "field": "brand_summary",
+      "claim": "Graza is an olive oil brand that has grown quickly through influencer marketing and product seeding before its launch. They focus on online visibility and engagement, using bold packaging and colors to stand out in social media feeds."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] explicitly states that Graza used pre-launch product seeding and influencer gifting to build buzz organically.",
+      "field": "current_marketing_strategy",
+      "claim": "Pre-launch product seeding and influencer gifting to build buzz organically [1]"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] confirms that Graza designed its packaging for online visibility rather than just shelf presence.",
+      "field": "current_marketing_strategy",
+      "claim": "Designing packaging for online visibility rather than just shelf presence [2]"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[6]"
+      ],
+      "reason": "Passage [6] indicates that Graza has grown the brand without significant paid marketing, relying heavily on influencer marketing.",
+      "field": "current_marketing_strategy",
+      "claim": "Leveraging influencer marketing to grow the brand without significant paid marketing [6]"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "company": "Stumptown Coffee",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "Passages provide insights into Stumptown's marketing strategies and visual identity.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]"
+      ],
+      "reason": "Passages [1] and [2] both support the claim about Stumptown's marketing approach and visual identity.",
+      "field": "brand_summary",
+      "claim": "Stumptown Coffee focuses on a targeted and dynamic approach to paid media, emphasizing their distinct personality and leveraging their strong creative content. They also reinforce their brand equity through direct-to-consumer (DTC) advertising and maintain a visual identity that aligns with the Portland outdoor/craft lifestyle."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] explicitly states the targeted and dynamic approach to paid media.",
+      "field": "current_marketing_strategy",
+      "claim": "Targeted and dynamic approach to paid media"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] mentions that DTC advertising reinforces existing brand equity.",
+      "field": "current_marketing_strategy",
+      "claim": "Reinforcement of existing brand equity through DTC advertising"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] indicates that Stumptown's visual identity aligns with the Portland outdoor/craft lifestyle.",
+      "field": "current_marketing_strategy",
+      "claim": "Visual identity that aligns with the Portland outdoor/craft lifestyle"
+    }
+  ]
+}

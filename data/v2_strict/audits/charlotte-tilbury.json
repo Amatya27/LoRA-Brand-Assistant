@@ -1,0 +1,49 @@
+{
+  "company": "Charlotte Tilbury",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The evidence provided focuses on Charlotte Tilbury's Instagram marketing strategy, including content types and collaborations.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The passage states that Charlotte Tilbury uses various types of content for a full-funnel Instagram launch campaign, including Reels, feed posts, Stories, Highlights, and leverages celebrity MUA content or creator tutorials.",
+      "field": "brand_summary",
+      "claim": "Charlotte Tilbury uses Instagram to launch products through a variety of content types, including Reels, feed posts, Stories, Highlights, and Collab posts. They also leverage celebrity makeup artists and creator tutorials to amplify reach and resonance."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The passage mentions the use of Reels, feed posts, Stories, and Highlights for product launches.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing Instagram Reels, feed posts, Stories, and Highlights for product launches"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The passage mentions leveraging celebrity makeup artists and creator tutorials.",
+      "field": "current_marketing_strategy",
+      "claim": "Collaborating with celebrity makeup artists and creators"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[6]"
+      ],
+      "reason": "The passage mentions using Instagram Collab posts to expand reach and drive engagement.",
+      "field": "current_marketing_strategy",
+      "claim": "Using Instagram Collab posts to expand reach and drive engagement"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "company": "Fly By Jing",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages provide insights into Fly By Jing's marketing strategies, including social media and influencer partnerships, as well as the importance of storytelling and personal connection to the brand.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[3]",
+        "[4]"
+      ],
+      "reason": "Passages [2], [3], and [4] collectively support the claim that Fly By Jing has successfully marketed a traditional Chinese condiment in the U.S. market, using social media and influencer marketing to build a strong brand presence and achieve significant sales growth.",
+      "field": "brand_summary",
+      "claim": "Fly By Jing is a brand that has successfully turned a traditional Chinese condiment into a popular product in the U.S. market, leveraging social media and influencer marketing to build a cult following and achieve significant sales growth."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "Passage [3] explicitly mentions the use of social media platforms like TikTok and Instagram for product seeding and influencer partnerships.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing social media platforms like Instagram and TikTok for product seeding and influencer partnerships [3]"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] highlights the importance of Jing Gao's personal story and connection to the brand in connecting with customers.",
+      "field": "current_marketing_strategy",
+      "claim": "Focusing on storytelling and personal connection to the brand through founder Jing Gao's narrative [2]"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passage [4] mentions that the company has learned lessons about handling demand surges through social advertising and influencer marketing.",
+      "field": "current_marketing_strategy",
+      "claim": "Leveraging social advertising and influencer marketing to drive sales and build brand awareness [4]"
+    }
+  ]
+}

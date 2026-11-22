@@ -1,0 +1,62 @@
+{
+  "company": "Rare Beauty",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The evidence provided includes multiple passages that detail Rare Beauty's marketing strategy, focusing on creator content, AI-supported advertising, and specific platforms like TikTok and YouTube.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[3]",
+        "[4]"
+      ],
+      "reason": "Passages [2], [3], and [4] all mention Rare Beauty's use of creator content, AI-supported advertising, and their focus on TikTok and YouTube for product demonstrations and community building.",
+      "field": "brand_summary",
+      "claim": "Rare Beauty leverages creator content and AI-supported advertising to drive its marketing strategy, focusing on TikTok and YouTube for product demonstrations and community building."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "Passage [3] explicitly states that Rare Beauty targets Gen Z beauty consumers who value self-expression and product discovery through relatable demonstrations and creator-led content.",
+      "field": "likely_target_audience",
+      "claim": "Gen Z beauty consumers who value self-expression and product discovery through relatable demonstrations and creator-led content."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] mentions that Rare Beauty reports creator-led TikTok content produces longer watch times and helps deepen community connections.",
+      "field": "current_marketing_strategy",
+      "claim": "Uses creator-led content to build trust and deepen community connections."
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] states that Rare Beauty has used Google’s AI-powered Search and YouTube tools to improve the relevance of their advertising.",
+      "field": "current_marketing_strategy",
+      "claim": "Employs AI-supported advertising to improve ad relevance."
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[3]"
+      ],
+      "reason": "Passages [2] and [3] both indicate that Rare Beauty focuses on TikTok and YouTube for product demonstrations and community engagement.",
+      "field": "current_marketing_strategy",
+      "claim": "Focuses on TikTok and YouTube for product demonstrations and community engagement."
+    }
+  ]
+}

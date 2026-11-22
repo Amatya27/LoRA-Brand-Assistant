@@ -1,0 +1,53 @@
+{
+  "company": "Liquid I.V.",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages detail Liquid I.V.'s marketing efforts, including seasonal campaigns and an omni-channel strategy.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]",
+        "[3]",
+        "[4]"
+      ],
+      "reason": "Passages indicate successful seasonal campaigns and an omni-channel strategy.",
+      "field": "brand_summary",
+      "claim": "Liquid I.V. has successfully used seasonal campaigns and an omni-channel strategy to increase brand preference and reach audiences across various platforms."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] mentions seasonal campaigns boosting brand preference.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing seasonal campaigns to boost brand preference during challenging months [1]"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[3]",
+        "[4]"
+      ],
+      "reason": "Passages [3] and [4] detail the diversification of marketing efforts.",
+      "field": "current_marketing_strategy",
+      "claim": "Implementing an omni-channel strategy to diversify marketing efforts [2][3]"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] mentions AR lenses and bite-sized videos.",
+      "field": "current_marketing_strategy",
+      "claim": "Creating engaging content through AR lenses and bite-sized videos [2]"
+    }
+  ]
+}

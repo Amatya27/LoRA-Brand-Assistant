@@ -1,0 +1,49 @@
+{
+  "company": "Prose",
+  "overall": "fix",
+  "groundedness": 0.75,
+  "evidence_quality": "marketing",
+  "evidence_reason": "Passages provide insights into Prose's marketing strategies and target audience.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "Passage [3] mentions Prose's work in various industries such as CPG, retail, healthcare, B2B tech, telecom, auto, and hospitality.",
+      "field": "likely_target_audience",
+      "claim": "Prose likely targets a diverse audience across various industries, including CPG, retail, healthcare, B2B tech, telecom, auto, and hospitality. They also focus on niche micro-communities for specific interests."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] states Prose's focus on trend-led content and luxury-focused creator collaborations.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing influencer marketing with trend-led content and luxury-focused creator collaborations"
+    },
+    {
+      "n": 3,
+      "verdict": "partial",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] mentions hyperlocal storytelling but does not provide extensive detail.",
+      "field": "current_marketing_strategy",
+      "claim": "Focusing on hyperlocal storytelling"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "Passage [5] discusses targeting micro-communities with niche interests for maximum engagement.",
+      "field": "current_marketing_strategy",
+      "claim": "Targeting micro-communities with niche interests for maximum engagement"
+    }
+  ]
+}

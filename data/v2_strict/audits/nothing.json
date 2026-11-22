@@ -1,0 +1,40 @@
+{
+  "company": "Nothing",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain specific details about Nothing's marketing strategy involving community engagement and product development.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]"
+      ],
+      "reason": "Passages [1] and [2] both indicate that Nothing involves its community in product development and marketing campaigns.",
+      "field": "current_marketing_strategy",
+      "claim": "Co-creation with the community for product development and marketing campaigns [1][2]"
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] explicitly mentions the use of a community-generated tagline 'Find your light. Capture your light…' for marketing campaigns.",
+      "field": "current_marketing_strategy",
+      "claim": "Use of community-generated content and taglines, such as 'Find your light. Capture your light…' [2]"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] states that flagship stores fuse mechanical codes with local culture.",
+      "field": "current_marketing_strategy",
+      "claim": "Fusing mechanical codes with local culture in flagship stores [1]"
+    }
+  ]
+}

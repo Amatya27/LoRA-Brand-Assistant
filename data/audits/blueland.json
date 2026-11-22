@@ -1,0 +1,51 @@
+{
+  "company": "Blueland",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain marketing-related information about Blueland's product offerings and social media strategy.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[3]",
+        "[5]"
+      ],
+      "reason": "Passages [1] and [5] describe Blueland's product offerings and sustainability focus, while passage [3] mentions their social media engagement.",
+      "field": "brand_summary",
+      "claim": "Blueland is a cleaning product startup that emphasizes sustainability by offering reusable bottles and solution tablets. They educate customers on how to use their products and engage with their audience through social media."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] explicitly states that Blueland's marketing campaigns educate potential customers on how to use their unique cleaning solutions.",
+      "field": "current_marketing_strategy",
+      "claim": "Educating potential customers on how to use their unique cleaning solutions"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "Passage [3] mentions that Blueland engages with customers through social media.",
+      "field": "current_marketing_strategy",
+      "claim": "Engaging with customers through social media"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "Passage [5] describes how Blueland collaborates with celebrities for endorsements and promotions.",
+      "field": "current_marketing_strategy",
+      "claim": "Collaborating with celebrities for endorsements and promotions"
+    }
+  ]
+}

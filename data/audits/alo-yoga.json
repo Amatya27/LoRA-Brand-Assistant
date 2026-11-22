@@ -1,0 +1,70 @@
+{
+  "company": "Alo Yoga",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain detailed information about Alo Yoga's marketing strategies, including social commerce, influencer partnerships, and diversified media mix.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage explicitly states that Alo Yoga uses a diversified media mix, combining high-gloss brand storytelling with measurable performance media, linking creator-driven awareness to shoppable experiences.",
+      "field": "brand_summary",
+      "claim": "Alo Yoga uses a diversified media mix, combining high-gloss brand storytelling with measurable performance media, linking creator-driven awareness to shoppable experiences. The brand leverages social commerce, influencers, and community experiences to move audiences from aspiration to purchase."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage mentions that Alo Yoga utilizes social commerce through Instagram and TikTok.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing social commerce through Instagram and TikTok"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage states that Alo Yoga deploys a diversified media mix including paid social, connected TV, out-of-home, and experiential activations.",
+      "field": "current_marketing_strategy",
+      "claim": "Deploying a diversified media mix including paid social, connected TV, out-of-home, and experiential activations"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[4]"
+      ],
+      "reason": "Both passages mention that Alo Yoga builds a community through ambassador and influencer partnerships.",
+      "field": "current_marketing_strategy",
+      "claim": "Building a community through ambassador and influencer partnerships"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage does not mention email marketing campaigns, which aligns with the claim.",
+      "field": "marketing_gaps",
+      "claim": "No mention of email marketing campaigns [1]"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage does not mention direct-to-consumer (DTC) marketing strategies, which aligns with the claim.",
+      "field": "marketing_gaps",
+      "claim": "No specific mention of direct-to-consumer (DTC) marketing strategies [1]"
+    }
+  ]
+}

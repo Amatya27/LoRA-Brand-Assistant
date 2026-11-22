@@ -1,0 +1,81 @@
+{
+  "company": "Thrive Market",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The evidence provided includes detailed information about Thrive Market's marketing strategies and activities.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]",
+        "[4]"
+      ],
+      "reason": "Passages [1] and [2] indicate Thrive Market's focus on healthy living and their multi-channel content strategy, while passage [4] confirms their socially and environmentally conscious mission.",
+      "field": "brand_summary",
+      "claim": "Thrive Market is a socially and environmentally conscious e-commerce platform that focuses on healthy living. They use a multi-channel content strategy, including influencer marketing, email marketing, and content marketing to drive brand awareness and sales."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] mentions leveraging influencers to share content with their audiences.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing influencer marketing to share content with their audiences"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] states that they create recipes and DIY content that leads to specific funnels.",
+      "field": "current_marketing_strategy",
+      "claim": "Creating recipes and DIY content to drive specific funnels"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passage [4] confirms that Thrive Market segments users by website behavior and preferences for targeted marketing.",
+      "field": "current_marketing_strategy",
+      "claim": "Segmenting users by website behavior and preferences for targeted marketing campaigns"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passage [4] states that the majority of Thrive Market’s marketing dollars went to Meta, TikTok, and search.",
+      "field": "current_marketing_strategy",
+      "claim": "Focusing marketing dollars on Meta, TikTok, and search"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passage [4] mentions that Thrive Market acquires new subscribers and retains existing members through targeted marketing campaigns.",
+      "field": "current_marketing_strategy",
+      "claim": "Running campaigns to acquire new subscribers and retain existing members"
+    },
+    {
+      "n": 7,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "Passage [3] explicitly states that Thrive Market did not launch its blog or any other brand content for the first nine months after launching their core e-commerce product.",
+      "field": "marketing_gaps",
+      "claim": "Insufficient evidence of direct brand content creation for the first nine months after launching their core e-commerce product"
+    }
+  ]
+}

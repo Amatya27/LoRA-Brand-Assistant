@@ -1,0 +1,50 @@
+{
+  "company": "Baboon to the Moon",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The evidence provided focuses on the marketing strategies and community building efforts of Baboon to the Moon.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[3]"
+      ],
+      "reason": "Passages [2] and [3] confirm that Baboon to the Moon is an accessories ecommerce brand that focuses on high-quality travel gear designed for life's adventures. They use social media to showcase their products, build a community, and provide social proof through influencer collaborations and user-generated content.",
+      "field": "brand_summary",
+      "claim": "Baboon to the Moon is an accessories ecommerce brand that focuses on high-quality travel gear designed for life's adventures. They use social media to showcase their products, build a community, and provide social proof through influencer collaborations and user-generated content."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] indicates that Baboon to the Moon uses social media to showcase their products and build a community.",
+      "field": "current_marketing_strategy",
+      "claim": "Showcasing products on social media to build a community and encourage engagement."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "Passage [3] confirms that Baboon to the Moon collaborates with influencers to demonstrate product usage in real-life scenarios.",
+      "field": "current_marketing_strategy",
+      "claim": "Collaborating with influencers to demonstrate product usage in real-life scenarios."
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passage [4] shows that Baboon to the Moon creates video content that highlights product features and benefits.",
+      "field": "current_marketing_strategy",
+      "claim": "Creating video content that highlights product features and benefits."
+    }
+  ]
+}

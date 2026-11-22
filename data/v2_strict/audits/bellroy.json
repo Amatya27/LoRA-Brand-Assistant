@@ -1,0 +1,39 @@
+{
+  "company": "Bellroy",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "Passages provide insights into Bellroy's marketing strategies, including analysis for personalized campaigns, content creation, and partnerships.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] explicitly mentions Bellroy conducts in-depth demographic and psychographic analysis for personalized marketing.",
+      "field": "current_marketing_strategy",
+      "claim": "Conducting demographic and psychographic analysis for personalized marketing campaigns"
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passage [4] discusses crafting compelling content that aligns with Bellroy's brand voice and values.",
+      "field": "current_marketing_strategy",
+      "claim": "Creating engaging narratives that align with the brand voice and values"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "Passage [3] mentions Bellroy has grown their reach through strategic partnerships.",
+      "field": "current_marketing_strategy",
+      "claim": "Recruiting partners to tap into new markets"
+    }
+  ]
+}

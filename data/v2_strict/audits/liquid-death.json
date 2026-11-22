@@ -1,0 +1,81 @@
+{
+  "company": "Liquid Death",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain detailed information about Liquid Death's marketing strategies and successes, indicating a strong focus on marketing content.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[3]"
+      ],
+      "reason": "Passages [1] and [3] both support the claim about Liquid Death's unique marketing approach and the success of the 'Small Cans' campaign.",
+      "field": "brand_summary",
+      "claim": "Liquid Death has carved out a unique position in the market with a bold and edgy marketing approach, using humor and creativity to redefine traditional water advertising. They have successfully engaged their target audience through unconventional brand identity and campaigns like 'Small Cans', which leverages innuendo and humor to generate high engagement on social media platforms."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "Passage [5] indicates that Liquid Death's target audience appreciates humor and irreverent content, aligning with the claim.",
+      "field": "likely_target_audience",
+      "claim": "The target audience for Liquid Death includes young adults who appreciate humor, irreverent content, and unconventional marketing approaches. They are likely to be active on social media platforms like Instagram and TikTok, where Liquid Death's content resonates well."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] explicitly states that Liquid Death uses humor and creativity to redefine traditional water advertising.",
+      "field": "current_marketing_strategy",
+      "claim": "Uses humor and creativity to redefine traditional water advertising"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "Passage [3] mentions the success of the 'Small Cans' campaign in generating high engagement on social media.",
+      "field": "current_marketing_strategy",
+      "claim": "Runs campaigns like 'Small Cans' that generate high engagement on social media"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[6]"
+      ],
+      "reason": "Passage [6] mentions Liquid Death's collaborations with artists and designers to keep the brand fresh and relevant.",
+      "field": "current_marketing_strategy",
+      "claim": "Collaborates with influencers and artists to keep the brand fresh and relevant"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passage [4] discusses Liquid Death's direct-to-consumer distribution model and strong online presence.",
+      "field": "current_marketing_strategy",
+      "claim": "Employs a direct-to-consumer distribution model with a strong online presence"
+    },
+    {
+      "n": 7,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[3]"
+      ],
+      "reason": "Passages [1] and [3] both indicate that Liquid Death leverages social media platforms like Instagram and TikTok for brand promotion.",
+      "field": "current_marketing_strategy",
+      "claim": "Leverages social media platforms like Instagram and TikTok for brand promotion"
+    }
+  ]
+}

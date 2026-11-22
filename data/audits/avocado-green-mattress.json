@@ -1,0 +1,21 @@
+{
+  "company": "Avocado Green Mattress",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages provide information about the company's commitment to sustainability and ethical practices, but they are primarily promotional in nature.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]",
+        "[5]"
+      ],
+      "reason": "Passages [1] and [2] confirm that Avocado Green Mattress produces organic mattresses and related products, emphasizing sustainability and ethical practices. Passage [5] confirms the publication of an annual Impact Report.",
+      "field": "brand_summary",
+      "claim": "Avocado Green Mattress is a company that produces organic mattresses and related products, emphasizing sustainability and ethical practices. They are certified by GOTS and publish an annual Impact Report."
+    }
+  ]
+}

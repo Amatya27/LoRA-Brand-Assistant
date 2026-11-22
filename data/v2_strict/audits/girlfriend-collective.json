@@ -1,0 +1,80 @@
+{
+  "company": "Girlfriend Collective",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The evidence provided focuses on the marketing and sustainability efforts of Girlfriend Collective, which aligns with the claims about their marketing strategy and brand ethos.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[3]"
+      ],
+      "reason": "Passages [2] and [3] confirm that Girlfriend Collective emphasizes sustainability with recycled materials and is SA8000 certified for labor standards.",
+      "field": "brand_summary",
+      "claim": "Girlfriend Collective is an eco-friendly activewear brand that emphasizes sustainability and ethical labor practices. They use recycled materials and are SA8000 certified for labor standards."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passage [4] indicates that Girlfriend Collective has a highly engaged millennial audience interested in eco-friendly and ethical fashion.",
+      "field": "likely_target_audience",
+      "claim": "Highly engaged millennial women interested in eco-friendly and ethical fashion."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] states that Girlfriend Collective distinguishes itself with its focus on eco-friendly products.",
+      "field": "current_marketing_strategy",
+      "claim": "Focus on eco-friendly and sustainable products"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] mentions that social media is essential for promoting their environmentally-conscious ethos.",
+      "field": "current_marketing_strategy",
+      "claim": "Use social media to promote their environmental ethos"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passage [4] highlights that Girlfriend Collective has a highly engaged millennial audience on Instagram.",
+      "field": "current_marketing_strategy",
+      "claim": "Engage with a highly engaged millennial audience on Instagram"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] confirms that nearly 70% of their fabrics are recycled.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilize recycled materials in their products"
+    },
+    {
+      "n": 7,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "Passage [3] confirms that their factory is SA8000 certified for labor standards.",
+      "field": "current_marketing_strategy",
+      "claim": "Certified for ethical labor practices"
+    }
+  ]
+}

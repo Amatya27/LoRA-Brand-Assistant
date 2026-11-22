@@ -1,0 +1,106 @@
+{
+  "company": "Athletic Greens",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain detailed information about Athletic Greens' marketing strategies and activities.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[3]",
+        "[4]"
+      ],
+      "reason": "Passages [2], [3], and [4] collectively describe Athletic Greens' focus on foundational nutrition, product simplicity, and scalable creator-led demand, as well as their use of podcasts, user-generated content, and partnerships with prominent figures.",
+      "field": "brand_summary",
+      "claim": "Athletic Greens is a health and nutrition brand that focuses on foundational nutrition, product simplicity, and scalable creator-led demand. They use podcasts, user-generated content, and partnerships with prominent figures to build trust and credibility."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] explicitly mentions that Athletic Greens targets busy professionals and performance-minded consumers.",
+      "field": "likely_target_audience",
+      "claim": "Busy professionals and performance-minded consumers"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] discusses how Athletic Greens uses podcasts to reach their target audience.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing podcasts to reach their target audience"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "Passage [3] highlights the use of user-generated content on social media by Athletic Greens.",
+      "field": "current_marketing_strategy",
+      "claim": "Encouraging user-generated content on social media"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passage [4] mentions partnerships with prominent figures like Tim Ferriss.",
+      "field": "current_marketing_strategy",
+      "claim": "Forming brand partnerships with prominent figures"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[6]"
+      ],
+      "reason": "Passage [6] states that Athletic Greens focuses on trust, convenience, and science-backed clarity.",
+      "field": "current_marketing_strategy",
+      "claim": "Focusing on trust, convenience, and science-backed clarity"
+    },
+    {
+      "n": 7,
+      "verdict": "supported",
+      "evidence": [
+        "[6]"
+      ],
+      "reason": "Passage [6] mentions that Athletic Greens amplifies their brand pillars through content, affiliates, and SEO.",
+      "field": "current_marketing_strategy",
+      "claim": "Amplifying brand pillars through content, affiliates, and SEO"
+    },
+    {
+      "n": 8,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[3]",
+        "[4]",
+        "[5]",
+        "[6]"
+      ],
+      "reason": "None of the provided passages mention TikTok activity, indicating a marketing gap.",
+      "field": "marketing_gaps",
+      "claim": "No mention of TikTok activity in the sources reviewed [1]"
+    },
+    {
+      "n": 9,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[6]"
+      ],
+      "reason": "Passages [2] and [6] do not mention email marketing campaigns, indicating a marketing gap.",
+      "field": "marketing_gaps",
+      "claim": "No specific mention of email marketing campaigns [2]"
+    }
+  ]
+}

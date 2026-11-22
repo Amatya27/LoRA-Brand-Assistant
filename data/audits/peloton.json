@@ -1,0 +1,75 @@
+{
+  "company": "Peloton",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The evidence provided focuses on Peloton's marketing strategies and activities on social media platforms, community engagement, and influencer partnerships.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage states that Peloton's marketing strategy includes leveraging social media platforms, community engagement, content creation, personalization, and influencer partnerships.",
+      "field": "brand_summary",
+      "claim": "Peloton employs a multifaceted marketing strategy that includes leveraging social media platforms like Instagram and Facebook, community engagement, content creation, personalization, and influencer partnerships to drive engagement and brand loyalty."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "The passage mentions that Peloton targets specific segments like millennials and women, while also expanding to underrepresented groups like millennial men.",
+      "field": "likely_target_audience",
+      "claim": "Specific segments such as millennials and women, while expanding to underrepresented groups like millennial men."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[4]"
+      ],
+      "reason": "Both passages indicate that Peloton uses social media platforms like Instagram and Facebook for campaigns that resonate with its target audience.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizes social media platforms like Instagram and Facebook for campaigns that resonate with its target audience."
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "The passage states that Peloton posts regularly on social media, providing tips and guidance from instructors to add value to their content.",
+      "field": "current_marketing_strategy",
+      "claim": "Posts regularly on social media, providing tips and guidance from instructors to add value to their content."
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage mentions that Peloton collaborates with fitness influencers to enhance brand loyalty and engagement.",
+      "field": "current_marketing_strategy",
+      "claim": "Collaborates with fitness influencers to enhance brand loyalty and engagement."
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]",
+        "[3]",
+        "[4]",
+        "[5]",
+        "[6]"
+      ],
+      "reason": "None of the provided passages mention any TikTok activity by Peloton.",
+      "field": "marketing_gaps",
+      "claim": "No mention of TikTok activity in the sources reviewed [1][2][3][4][5][6]."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "company": "Vuori",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain detailed information about Vuori's marketing strategies, including digital presence, retail expansion, and influencer marketing.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[3]",
+        "[2]",
+        "[4]",
+        "[5]"
+      ],
+      "reason": "The passages indicate Vuori's focus on community engagement, data-driven marketing, digital presence, retail expansion, and influencer marketing.",
+      "field": "brand_summary",
+      "claim": "Vuori is a premium activewear brand that focuses on community engagement and high-quality data-driven marketing. They have a strong digital presence and invest in influencer marketing, retail expansion, and community-led experiences."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "Vuori uses visually compelling and authentic campaigns to capture brand awareness.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizes visually compelling and authentic campaigns to capture brand awareness"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Vuori rapidly expands physical retail stores in key metropolitan and coastal areas.",
+      "field": "current_marketing_strategy",
+      "claim": "Expands retail presence in key metropolitan and coastal areas"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Vuori collaborates with high-end retailers like Nordstrom and REI.",
+      "field": "current_marketing_strategy",
+      "claim": "Collaborates with high-end retailers to enhance brand visibility"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Vuori invests in influencer and ambassador marketing to build brand credibility.",
+      "field": "current_marketing_strategy",
+      "claim": "Invests in influencer and ambassador marketing to build brand credibility"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[6]"
+      ],
+      "reason": "Vuori leverages social media and unconventional channels like Bumble and Spotify playlists for brand growth.",
+      "field": "current_marketing_strategy",
+      "claim": "Leverages social media and unconventional channels like Bumble and Spotify playlists for brand growth"
+    }
+  ]
+}

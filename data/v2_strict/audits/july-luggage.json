@@ -1,0 +1,70 @@
+{
+  "company": "July Luggage",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The evidence provided includes detailed information about July Luggage's marketing strategies and target audience.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[3]"
+      ],
+      "reason": "The passages mention July Luggage's focus on style-conscious millennials, customizable mid-priced luggage, and their use of Instagram, Facebook, TikTok, gifted influencers, and podcasts.",
+      "field": "brand_summary",
+      "claim": "July Luggage is a brand that focuses on customizable mid-priced luggage, targeting style-conscious millennials. They use Instagram and Facebook ads, and have expanded into TikTok. They also use gifted influencers and podcasts for brand awareness."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage states that July Luggage targets style-conscious millennials who want customizable mid-priced luggage.",
+      "field": "likely_target_audience",
+      "claim": "Style-conscious millennials who want customizable mid-priced luggage"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "The passage mentions that July Luggage uses Instagram and Facebook ads with color customization carousels.",
+      "field": "current_marketing_strategy",
+      "claim": "Using Instagram and Facebook ads with color customization carousels"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage mentions that July Luggage uses gifted influencers and podcasts for brand awareness.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing gifted influencers and podcasts for brand awareness"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "The passage states that July Luggage has expanded into TikTok as they enter global markets.",
+      "field": "current_marketing_strategy",
+      "claim": "Expanding into TikTok as they enter global markets"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage mentions that July Luggage analyzes competitor reviews to improve their product.",
+      "field": "current_marketing_strategy",
+      "claim": "Analyzing competitor reviews to improve their product"
+    }
+  ]
+}

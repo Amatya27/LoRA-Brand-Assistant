@@ -1,0 +1,60 @@
+{
+  "company": "Thursday Boots",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The evidence provided includes marketing strategies and ad creatives that support the claims about Thursday Boots' marketing approach.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]"
+      ],
+      "reason": "Passages [1] and [2] confirm the company started with a Kickstarter campaign in 2014 and focuses on producing high-quality boots at an honest price point with product-led marketing.",
+      "field": "brand_summary",
+      "claim": "Thursday Boots is a company that started with a Kickstarter campaign in 2014 and focuses on producing high-quality boots at an honest price point. They emphasize product-led marketing with a focus on quality construction and affordability."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] mentions product-led creative showcasing the signature boots such as the Captain, Legend, and Wingtip.",
+      "field": "current_marketing_strategy",
+      "claim": "Product-led creative showcasing the signature boots such as the Captain, Legend, and Wingtip."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] states that their paid social is built around the value claim of quality construction at a price below traditional retail.",
+      "field": "current_marketing_strategy",
+      "claim": "Value proposition highlighting quality construction at a price below traditional retail."
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] indicates that Thursday Boots uses clean lifestyle imagery and close-ups in their social media ads.",
+      "field": "current_marketing_strategy",
+      "claim": "Use of clean lifestyle imagery and close-ups in their social media ads."
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "Passage [5] confirms that Thursday Boots favors plain-spoken value claims over luxury language in their marketing materials.",
+      "field": "marketing_gaps",
+      "claim": "Lack of emphasis on luxury language or premium positioning in their marketing materials."
+    }
+  ]
+}

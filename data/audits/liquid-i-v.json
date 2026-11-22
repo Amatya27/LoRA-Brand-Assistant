@@ -1,0 +1,55 @@
+{
+  "company": "Liquid I.V.",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages provide evidence of marketing strategies and activities that support the claims about Liquid I.V.'s marketing efforts.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]",
+        "[4]",
+        "[6]"
+      ],
+      "reason": "Passages [1] and [5] mention the significant growth through seasonal campaigns. Passages [2] and [4] detail the omni-channel strategy on platforms like Snapchat, TikTok, Reddit, and YouTube. Passage [6] mentions in-stadium AR activations and Spotify mobile homepage takeovers.",
+      "field": "brand_summary",
+      "claim": "Liquid I.V. has seen significant growth through targeted seasonal campaigns and an omni-channel marketing strategy, including social media platforms like Snapchat, TikTok, Reddit, and YouTube. They have also utilized in-stadium AR activations and Spotify mobile homepage takeovers."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[5]"
+      ],
+      "reason": "Passages [1] and [5] mention the significant growth through seasonal campaigns.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing seasonal campaigns to drive brand preference"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[4]"
+      ],
+      "reason": "Passages [2] and [4] detail the omni-channel strategy on platforms like Snapchat, TikTok, Reddit, and YouTube.",
+      "field": "current_marketing_strategy",
+      "claim": "Implementing an omni-channel marketing approach"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[6]"
+      ],
+      "reason": "Passages [2] and [6] mention engaging with audiences through AR and social media activations.",
+      "field": "current_marketing_strategy",
+      "claim": "Engaging with audiences through AR and social media activations"
+    }
+  ]
+}

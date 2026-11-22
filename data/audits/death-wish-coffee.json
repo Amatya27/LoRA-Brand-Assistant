@@ -1,0 +1,52 @@
+{
+  "company": "Death Wish Coffee",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain marketing-related information about Death Wish Coffee's strategies and successes.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[3]",
+        "[4]",
+        "[5]"
+      ],
+      "reason": "Passages indicate Death Wish Coffee's focus on strong coffee, bold and humorous content, community engagement, and ecommerce website as the core of their business.",
+      "field": "brand_summary",
+      "claim": "Death Wish Coffee is known for its strong coffee and has a unique marketing strategy that includes bold and humorous content, community engagement, and a strong online presence. They have achieved significant PR success and focus on their ecommerce website for sales and customer engagement."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "Passages indicate the use of bold and humorous content on social media platforms.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizes bold and humorous content on social media platforms."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "Passages indicate engagement with a fun and active online community.",
+      "field": "current_marketing_strategy",
+      "claim": "Engages with a fun and active online community."
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passages indicate focus on ecommerce website for sales and customer engagement.",
+      "field": "current_marketing_strategy",
+      "claim": "Focuses on ecommerce website for sales and customer engagement."
+    }
+  ]
+}

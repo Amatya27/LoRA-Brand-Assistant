@@ -1,0 +1,84 @@
+{
+  "company": "Away",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages focus on Away's marketing strategies and brand identity, which are directly related to the claims.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]",
+        "[4]",
+        "[5]"
+      ],
+      "reason": "Passages indicate Away uses visual storytelling, user-generated content, and collaborations with influencers and celebrities to build a travel lifestyle brand and community.",
+      "field": "brand_summary",
+      "claim": "Away is a travel lifestyle brand that uses visual storytelling and user-generated content to build a strong brand identity and community. They have achieved significant growth through Instagram and collaborations with influencers and celebrities."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[6]"
+      ],
+      "reason": "Passages mention Away targets modern travelers who value aesthetics and functionality.",
+      "field": "likely_target_audience",
+      "claim": "Modern travelers who value aesthetics and functionality in their travel gear"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]"
+      ],
+      "reason": "Passages highlight Away's use of visual storytelling and user-generated content.",
+      "field": "current_marketing_strategy",
+      "claim": "Visual storytelling and user-generated content"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passages mention Away collaborates with influencers and celebrities.",
+      "field": "current_marketing_strategy",
+      "claim": "Collaborations with influencers and celebrities"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "Passages indicate Away has a community of brand ambassadors.",
+      "field": "current_marketing_strategy",
+      "claim": "Building a community of brand ambassadors"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "Passages mention Away's robust SEO strategy.",
+      "field": "current_marketing_strategy",
+      "claim": "SEO strategy to ensure visibility in competitive market"
+    },
+    {
+      "n": 7,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[6]"
+      ],
+      "reason": "Passages indicate Away uses aspirational branding to transform luggage into a lifestyle symbol.",
+      "field": "current_marketing_strategy",
+      "claim": "Aspirational branding to transform luggage into a lifestyle symbol"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "company": "Oura",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages provide details about Oura's brand campaigns and marketing strategies, focusing on emotional engagement and retail expansion.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[6]"
+      ],
+      "reason": "Passages [2] and [6] indicate that Oura's campaigns aim to create an emotional and engaging experience for their audience, emphasizing wellness and personal health improvement.",
+      "field": "brand_summary",
+      "claim": "Oura focuses on creating emotional and engaging brand campaigns that resonate with their audience, emphasizing wellness and personal health improvement. Their campaigns aim to build a community and provide context for health metrics like VO2 Max."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[6]"
+      ],
+      "reason": "Passages [2] and [6] highlight that Oura's marketing strategy involves creating emotional and engaging brand campaigns that resonate with their audience.",
+      "field": "current_marketing_strategy",
+      "claim": "Creating emotional and engaging brand campaigns that resonate with their audience"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] mentions that Oura's campaigns aim to build a community through various platforms including social media and retail environments.",
+      "field": "current_marketing_strategy",
+      "claim": "Building a community through social media and retail environments"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] states that Oura provides context for health metrics like VO2 Max.",
+      "field": "current_marketing_strategy",
+      "claim": "Providing context for health metrics like VO2 Max"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[6]"
+      ],
+      "reason": "Passage [6] mentions that Oura collaborates with sports events like NBA Playoffs.",
+      "field": "current_marketing_strategy",
+      "claim": "Collaborating with sports events like NBA Playoffs"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passage [4] indicates that Oura has expanded its retail presence, such as in John Lewis stores.",
+      "field": "current_marketing_strategy",
+      "claim": "Expanding retail presence, such as in John Lewis stores"
+    }
+  ]
+}

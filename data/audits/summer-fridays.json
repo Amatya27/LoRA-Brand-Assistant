@@ -1,0 +1,60 @@
+{
+  "company": "Summer Fridays",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain marketing-related information about Summer Fridays' strategies and audience.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]"
+      ],
+      "reason": "The first passage states that Summer Fridays uses AI to engage with skincare enthusiasts and build a loyal community, while the second passage mentions extending the brand through merchandise and collaborations.",
+      "field": "brand_summary",
+      "claim": "Summer Fridays is a beauty brand that leverages AI-powered social listening to engage with skincare enthusiasts and build a loyal community. They extend their brand beyond skincare through merchandise and collaborations, reinforcing their brand identity and emotional loyalty with customers."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage indicates that Summer Fridays targets skincare enthusiasts and individuals who resonate with the brand's aspirational yet approachable tone.",
+      "field": "likely_target_audience",
+      "claim": "Skincare enthusiasts, beauty consumers seeking lifestyle extensions, and individuals who resonate with the brand's aspirational yet approachable tone."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage explicitly states that Summer Fridays uses AI-powered social listening to engage with customers and craft authentic marketing strategies.",
+      "field": "current_marketing_strategy",
+      "claim": "Uses AI-powered social listening to engage with customers and craft authentic marketing strategies [1]"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage mentions that Summer Fridays turns merchandise into a lifestyle brand extension to reinforce brand identity and emotional loyalty.",
+      "field": "current_marketing_strategy",
+      "claim": "Turns merchandise into a lifestyle brand extension, reinforcing brand identity and emotional loyalty [2]"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage indicates that Summer Fridays collaborates with influencers and community-driven initiatives to build brand loyalty.",
+      "field": "current_marketing_strategy",
+      "claim": "Collaborates with influencers and community-driven initiatives to build brand loyalty [2]"
+    }
+  ]
+}

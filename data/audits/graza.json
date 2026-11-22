@@ -1,0 +1,51 @@
+{
+  "company": "Graza",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages provide detailed information about Graza's marketing strategies, focusing on influencer marketing and product seeding.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]",
+        "[6]"
+      ],
+      "reason": "The passages confirm that Graza is an olive oil brand that has grown quickly through influencer marketing and product seeding before its launch. They also focus on online visibility and engagement through social media platforms like Instagram and TikTok.",
+      "field": "brand_summary",
+      "claim": "Graza is an olive oil brand that has grown quickly through influencer marketing and product seeding before its launch. They focus on online visibility and engagement through social media platforms like Instagram and TikTok."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage states that Graza used pre-launch product seeding and influencer gifting to build buzz organically.",
+      "field": "current_marketing_strategy",
+      "claim": "Pre-launch product seeding and influencer gifting to build buzz organically [1]"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage confirms that Graza designed its packaging for online visibility rather than just shelf presence.",
+      "field": "current_marketing_strategy",
+      "claim": "Designing packaging for online visibility rather than just shelf presence [2]"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[6]"
+      ],
+      "reason": "The passage states that Graza leveraged influencer marketing to grow the brand without significant paid marketing.",
+      "field": "current_marketing_strategy",
+      "claim": "Leveraging influencer marketing to grow the brand without significant paid marketing [6]"
+    }
+  ]
+}

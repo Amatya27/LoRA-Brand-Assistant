@@ -1,0 +1,78 @@
+{
+  "company": "Zenni Optical",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The evidence provided includes details about Zenni Optical's use of Instagram ads and influencer marketing, as well as their use of the Upfluence platform to track influencer performance and analyze geographic metrics.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]",
+        "[3]",
+        "[4]",
+        "[5]",
+        "[6]"
+      ],
+      "reason": "Passages indicate Zenni Optical uses Instagram ads and influencer marketing.",
+      "field": "brand_summary",
+      "claim": "Zenni Optical uses Instagram ads and influencer marketing to reach its audience."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage indicates Zenni Optical uses Instagram ads.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizes Instagram ads for marketing"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[3]",
+        "[5]"
+      ],
+      "reason": "Passages indicate Zenni Optical engages in influencer marketing.",
+      "field": "current_marketing_strategy",
+      "claim": "Engages in influencer marketing"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[3]",
+        "[5]"
+      ],
+      "reason": "Passages indicate Zenni Optical uses Upfluence to track influencer performance.",
+      "field": "current_marketing_strategy",
+      "claim": "Tracks influencer performance using Upfluence platform"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "Passage indicates Zenni Optical focuses on US-based creators and engagement.",
+      "field": "current_marketing_strategy",
+      "claim": "Focuses on US-based creators and engagement"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "Passage indicates Zenni Optical analyzes geographic performance metrics.",
+      "field": "current_marketing_strategy",
+      "claim": "Analyzes geographic performance metrics"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "company": "Warby Parker",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages provide detailed information about Warby Parker's marketing strategies, including home try-on services, AR preview features, online eye exam booking, user-generated content, influencer collaborations, and community engagement.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[4]"
+      ],
+      "reason": "Passages [1] and [4] confirm the brand's emphasis on innovative marketing strategies, including home try-on services, AR preview features, online eye exam booking, data-led merchandising, platform-specific content, and community engagement.",
+      "field": "brand_summary",
+      "claim": "Warby Parker is known for its innovative marketing strategy that includes home try-on services, AR preview features, and online eye exam booking. The brand emphasizes quality and social impact, leveraging data-led merchandising and platform-specific content to drive customer acquisition."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] explicitly mentions the home try-on service with five frames.",
+      "field": "current_marketing_strategy",
+      "claim": "Home try-on service with five frames"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] confirms the availability of AR preview features.",
+      "field": "current_marketing_strategy",
+      "claim": "AR preview feature for virtual try-on"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] mentions online eye exam booking.",
+      "field": "current_marketing_strategy",
+      "claim": "Online eye exam booking"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[4]"
+      ],
+      "reason": "Passages [2] and [4] confirm the use of user-generated content and influencer collaborations.",
+      "field": "current_marketing_strategy",
+      "claim": "User-generated content and influencer collaborations"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passage [4] mentions community engagement through local activations.",
+      "field": "current_marketing_strategy",
+      "claim": "Community engagement through local activations"
+    }
+  ]
+}

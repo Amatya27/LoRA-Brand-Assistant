@@ -1,0 +1,80 @@
+{
+  "company": "Gymshark",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages provide detailed insights into Gymshark's marketing strategies and target audience.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[3]"
+      ],
+      "reason": "Passages [2] and [3] explicitly mention Gymshark's focus on community engagement, authenticity through partnerships with influencers and athletes, and their use of social media platforms like Instagram, TikTok, and YouTube.",
+      "field": "brand_summary",
+      "claim": "Gymshark is a fitness apparel brand that focuses on community engagement and authenticity through partnerships with influencers and athletes. They use social media platforms like Instagram, TikTok, and YouTube to reach their audience and track social media conversations to identify emerging fitness trends."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "Passage [3] states that Gymshark targets young adults and teenagers, particularly women, who seek authentic experiences and community engagement.",
+      "field": "likely_target_audience",
+      "claim": "Young adults and teenagers, particularly women, who are interested in fitness and seek authentic experiences and community engagement."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "Passage [3] mentions that Gymshark's success is due to their influencer and athlete-driven marketing strategy.",
+      "field": "current_marketing_strategy",
+      "claim": "Influencer and athlete-driven marketing"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passage [4] discusses platform-specific strategies on social media, indicating that Gymshark tailors its approach to different platforms.",
+      "field": "current_marketing_strategy",
+      "claim": "Platform-specific strategies on social media"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passage [4] mentions the use of user-generated content and hashtag campaigns as part of their marketing strategy.",
+      "field": "current_marketing_strategy",
+      "claim": "User-generated content and hashtag campaigns"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passage [4] discusses collaborations with affiliate partners to amplify reach.",
+      "field": "current_marketing_strategy",
+      "claim": "Collaborations with affiliate partners"
+    },
+    {
+      "n": 7,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passage [4] mentions strategic product launches and limited-edition releases as part of their marketing strategy.",
+      "field": "current_marketing_strategy",
+      "claim": "Strategic product launches and limited-edition releases"
+    }
+  ]
+}

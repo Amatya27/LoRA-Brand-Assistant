@@ -1,0 +1,60 @@
+{
+  "company": "Olaplex",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain specific details about Olaplex's marketing strategies, including ad formats, influencer collaborations, and social media engagement.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage explicitly states that Olaplex uses carousel ads and video content on Facebook to build trust and drive engagement.",
+      "field": "current_marketing_strategy",
+      "claim": "Leverages high-impact formats like carousel ads and video content on Facebook to build trust and drive engagement."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "The passage mentions that Olaplex collaborates with haircare professionals and influencers to extend reach and credibility.",
+      "field": "current_marketing_strategy",
+      "claim": "Collaborates with influencers and haircare professionals to extend reach and credibility."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[5]",
+        "[6]"
+      ],
+      "reason": "The passages indicate that Olaplex uses TikTok for brand awareness and top-of-the-funnel engagement.",
+      "field": "current_marketing_strategy",
+      "claim": "Uses TikTok for brand awareness and top-of-the-funnel engagement."
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "The passage states that Olaplex monitors social media conversations to shape its marketing efforts and resonate with the target audience.",
+      "field": "current_marketing_strategy",
+      "claim": "Monitors social media conversations to shape marketing efforts and resonate with the target audience."
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage describes a microsite campaign that created a buzz and generated intrigue among consumers.",
+      "field": "current_marketing_strategy",
+      "claim": "Creates surprise elements and microsite campaigns to generate buzz and intrigue."
+    }
+  ]
+}

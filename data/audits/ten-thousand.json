@@ -1,0 +1,104 @@
+{
+  "company": "Ten Thousand",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages provide detailed information about Ten Thousand Villages' marketing strategies, including digital marketing techniques, storytelling, and community engagement.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]",
+        "[4]",
+        "[5]"
+      ],
+      "reason": "The passages explicitly state that Ten Thousand Villages uses ethical branding, storytelling, and community engagement to promote fair trade products and build trust with conscious consumers. They also use digital marketing techniques, including social media campaigns and interactive multimedia.",
+      "field": "brand_summary",
+      "claim": "Ten Thousand Villages combines ethical branding, storytelling, and community engagement to promote fair trade products and build trust with conscious consumers. They use digital marketing techniques, including social media campaigns and interactive multimedia, to share artisans' stories and highlight the social and environmental impact of their products."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]"
+      ],
+      "reason": "The passages indicate that Ten Thousand Villages targets consumers who value ethical consumption and are interested in fair trade products.",
+      "field": "likely_target_audience",
+      "claim": "Consumers who value ethical consumption and are interested in fair trade products"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]"
+      ],
+      "reason": "The passages mention that Ten Thousand Villages leverages modern digital marketing techniques, including social media campaigns and interactive multimedia.",
+      "field": "current_marketing_strategy",
+      "claim": "Leverages modern digital marketing techniques, including social media campaigns and interactive multimedia"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passages state that Ten Thousand Villages shares artisans' stories to foster emotional connections.",
+      "field": "current_marketing_strategy",
+      "claim": "Shares artisans' stories to foster emotional connections"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passages mention that Ten Thousand Villages encourages consumer involvement via volunteering, festivals, and shopping with intention.",
+      "field": "current_marketing_strategy",
+      "claim": "Engages in community building through volunteering, festivals, and shopping with intention"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passages indicate that Ten Thousand Villages uses storytelling and branding to promote fair trade principles.",
+      "field": "current_marketing_strategy",
+      "claim": "Uses storytelling and branding to promote fair trade principles"
+    },
+    {
+      "n": 7,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The passages mention that Ten Thousand Villages participates in craft fairs, sales, and educational events to broaden their reach.",
+      "field": "current_marketing_strategy",
+      "claim": "Participates in craft fairs, sales, and educational events to broaden their reach"
+    },
+    {
+      "n": 8,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passages do not mention TikTok activity, which is not present in the provided evidence.",
+      "field": "marketing_gaps",
+      "claim": "No mention of TikTok activity [1]"
+    },
+    {
+      "n": 9,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passages do not mention email marketing campaigns, which is not present in the provided evidence.",
+      "field": "marketing_gaps",
+      "claim": "No specific mention of email marketing campaigns [1]"
+    }
+  ]
+}

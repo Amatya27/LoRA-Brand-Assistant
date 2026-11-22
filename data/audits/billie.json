@@ -1,0 +1,59 @@
+{
+  "company": "Billie",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages provide insights into Billie's marketing strategies and target audience, focusing on body positivity and individual choice.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage mentions Billie's use of photography and artwork to tell adapted stories that empower women and the LGBTQIA+ community.",
+      "field": "brand_summary",
+      "claim": "Billie is a body-positive razor brand that champions individual choice and creativity in its marketing campaigns, often using photography and artwork to tell adapted stories that empower women and the LGBTQIA+ community."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage indicates that Billie targets women and LGBTQIA+ individuals who value body positivity and individual expression.",
+      "field": "likely_target_audience",
+      "claim": "Women and LGBTQIA+ individuals who value body positivity and individual expression in their grooming routines."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage explicitly mentions Billie's use of personalized email campaigns with targeted segmentation and exclusive content.",
+      "field": "current_marketing_strategy",
+      "claim": "Personalized email campaigns with targeted segmentation and exclusive content [2]"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage mentions Billie's use of photography and artwork to tell adapted stories that empower women and the LGBTQIA+ community.",
+      "field": "current_marketing_strategy",
+      "claim": "Creative storytelling through photography and artwork to empower women and the LGBTQIA+ community [1]"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The passage states that Billie aims to celebrate and broaden women-identifying representation in their imagery.",
+      "field": "current_marketing_strategy",
+      "claim": "Celebrating and broadening women-identifying representation in their imagery [5]"
+    }
+  ]
+}

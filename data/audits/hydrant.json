@@ -1,0 +1,83 @@
+{
+  "company": "Hydrant",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages provide details on Hydrant's marketing strategies, including digital marketing on Facebook and Instagram, SMS and email marketing, and the testing of different value propositions, audiences, and creatives.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]",
+        "[3]"
+      ],
+      "reason": "The passages confirm Hydrant's use of digital marketing on Facebook and Instagram, SMS and email marketing for customer retention, and their rapid growth through these strategies.",
+      "field": "brand_summary",
+      "claim": "Hydrant is a hydration startup that has grown rapidly through digital marketing on platforms like Facebook and Instagram. They also use SMS and email marketing to retain customers and encourage repeat purchases."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[3]"
+      ],
+      "reason": "The passages confirm Hydrant's utilization of digital marketing on Facebook and Instagram.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing digital marketing on Facebook and Instagram"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[3]"
+      ],
+      "reason": "The passages confirm Hydrant's testing of different value propositions, audiences, and creatives.",
+      "field": "current_marketing_strategy",
+      "claim": "Testing different value propositions, audiences, and creatives"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage confirms Hydrant's use of SMS and email marketing to retain customers.",
+      "field": "current_marketing_strategy",
+      "claim": "Using SMS and email marketing to retain customers"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]",
+        "[3]",
+        "[4]",
+        "[5]",
+        "[6]"
+      ],
+      "reason": "None of the passages mention TikTok or other emerging social media platforms.",
+      "field": "marketing_gaps",
+      "claim": "No mention of TikTok or other emerging social media platforms [1]"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]",
+        "[3]",
+        "[4]",
+        "[5]",
+        "[6]"
+      ],
+      "reason": "None of the passages mention influencer partnerships or collaborations.",
+      "field": "marketing_gaps",
+      "claim": "No indication of influencer partnerships or collaborations [1]"
+    }
+  ]
+}

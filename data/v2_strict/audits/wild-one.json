@@ -1,0 +1,49 @@
+{
+  "company": "Wild One",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The evidence provided includes details about Wild One's target audience and marketing strategies, which are directly related to the claims.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage explicitly states that Wild One's core user is 25-40 year-old women who prioritize design and quality in pet products.",
+      "field": "likely_target_audience",
+      "claim": "25-40 year-old women who prioritize design and quality in pet products"
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage mentions that Wild One has launched their products in popular stores, indicating an omnichannel retail presence.",
+      "field": "current_marketing_strategy",
+      "claim": "Omnichannel retail presence in popular stores"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage states that Wild One has gained partnerships with major retailers and independent retailers.",
+      "field": "current_marketing_strategy",
+      "claim": "Partnerships with major and independent retailers"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[6]"
+      ],
+      "reason": "The passage mentions that Wild One's products are designed with a function-first perspective.",
+      "field": "current_marketing_strategy",
+      "claim": "Function-first design of pet products"
+    }
+  ]
+}

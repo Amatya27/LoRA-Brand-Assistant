@@ -1,0 +1,96 @@
+{
+  "company": "Spindrift",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The evidence provided focuses on Spindrift's marketing strategy, particularly their use of influencers and social media.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]",
+        "[3]",
+        "[4]",
+        "[5]",
+        "[6]"
+      ],
+      "reason": "The evidence shows Spindrift's focus on influencer partnerships, social media posts, targeting millennials and Gen Z, and emphasizing health and ethical practices.",
+      "field": "brand_summary",
+      "claim": "Spindrift focuses on creating a strong brand presence through influencer partnerships and social media posts, targeting millennials and Gen Z with a focus on health and ethical practices."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[5]",
+        "[6]"
+      ],
+      "reason": "The evidence mentions that Spindrift targets millennials and Gen Z.",
+      "field": "likely_target_audience",
+      "claim": "Millennials and Gen Z"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The evidence states that Instagram will be the primary source for main posts, with potential alternative platforms selected based on higher engagement.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing influencer marketing on Instagram and potentially other platforms based on higher engagement"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The evidence mentions that all copy for the campaign is original.",
+      "field": "current_marketing_strategy",
+      "claim": "Creating original content for social media posts"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The evidence mentions pop-up events with influencers present.",
+      "field": "current_marketing_strategy",
+      "claim": "Participating in pop-up events with influencers present"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[5]",
+        "[6]"
+      ],
+      "reason": "The evidence mentions Spindrift's focus on health-conscious and ethically sound practices.",
+      "field": "current_marketing_strategy",
+      "claim": "Focusing on health-conscious and ethically sound practices"
+    },
+    {
+      "n": 7,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The evidence does not mention TikTok as a platform for marketing efforts.",
+      "field": "marketing_gaps",
+      "claim": "No mention of TikTok as a platform for marketing efforts [1]"
+    },
+    {
+      "n": 8,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The evidence does not mention email marketing campaigns.",
+      "field": "marketing_gaps",
+      "claim": "No specific mention of email marketing campaigns [1]"
+    }
+  ]
+}

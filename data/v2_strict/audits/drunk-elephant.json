@@ -1,0 +1,39 @@
+{
+  "company": "Drunk Elephant",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain specific details about Drunk Elephant's marketing strategies, including influencer collaborations, educational content, and brand philosophy.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage explicitly mentions the use of influencers to create a robust online presence.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing influencer collaborations to build a robust online presence [1]"
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage states that Drunk Elephant focuses on educational content as part of their marketing strategy.",
+      "field": "current_marketing_strategy",
+      "claim": "Focusing on educational content to inform consumers about skincare [1]"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "The passage mentions that Drunk Elephant's brand philosophy resonates with consumers, focusing on clean and stripped-back skincare.",
+      "field": "current_marketing_strategy",
+      "claim": "Creating a clear and straightforward brand philosophy that resonates with consumers [3]"
+    }
+  ]
+}

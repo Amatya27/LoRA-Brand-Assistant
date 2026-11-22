@@ -1,0 +1,69 @@
+{
+  "company": "The Farmer's Dog",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain detailed information about The Farmer's Dog's marketing strategies and tactics.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage states that The Farmer's Dog uses a blend of data-driven performance marketing and brand-building strategies, focusing on SEO, paid search, and social media campaigns. It also mentions the use of UGC and influencers on Instagram and TikTok.",
+      "field": "brand_summary",
+      "claim": "The Farmer's Dog uses a blend of data-driven performance marketing and brand-building strategies, focusing on SEO, paid search, and social media campaigns. They also utilize user-generated content (UGC) and influencers on Instagram and TikTok to amplify their reach and credibility."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage explicitly mentions heavy investment in SEO and paid search targeting keywords like 'fresh dog food' and 'kibble alternatives.'",
+      "field": "current_marketing_strategy",
+      "claim": "Heavy investment in SEO and paid search targeting keywords like 'fresh dog food' and 'kibble alternatives'"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage states that Instagram and TikTok campaigns amplify UGC and influencer-driven content.",
+      "field": "current_marketing_strategy",
+      "claim": "Use of Instagram and TikTok for amplifying UGC and influencer-driven content"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage mentions an onboarding quiz that captures granular pet data to create personalized journeys.",
+      "field": "current_marketing_strategy",
+      "claim": "Onboarding quiz to capture granular pet data for personalized journeys"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "The passage mentions targeted campaigns using standard display ads for mobile, tablet, and desktop devices.",
+      "field": "current_marketing_strategy",
+      "claim": "Targeted campaigns using standard display ads for mobile, tablet, and desktop devices"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The passage mentions a Super Bowl ad campaign called 'Forever' that drove mainstream awareness and subscriptions.",
+      "field": "current_marketing_strategy",
+      "claim": "Super Bowl ad campaign to drive mainstream awareness and subscriptions"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "company": "Baboon to the Moon",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages provide insights into Baboon to the Moon's marketing strategies, including product showcasing and community building through social media.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage explicitly states Baboon to the Moon's design philosophy and their use of Instagram to showcase products and build a community.",
+      "field": "brand_summary",
+      "claim": "Baboon to the Moon designs for life's adventures by providing high-quality gear made to last. They use their Instagram account to showcase products, build a community, and show their products in use."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage mentions that Baboon to the Moon uses Instagram to showcase their products in use.",
+      "field": "current_marketing_strategy",
+      "claim": "Showcasing products in use through social media"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage indicates that Baboon to the Moon builds a community through social media engagement.",
+      "field": "current_marketing_strategy",
+      "claim": "Building a community through social media engagement"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "The passage mentions that Baboon to the Moon collaborates with influencers to highlight product features.",
+      "field": "current_marketing_strategy",
+      "claim": "Collaborating with influencers to highlight product features"
+    }
+  ]
+}

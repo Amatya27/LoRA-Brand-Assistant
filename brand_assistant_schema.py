@@ -74,39 +74,70 @@ def parse_model_json(text: str) -> dict[str, Any]:
     return payload
 
 
+INSUFFICIENT_EVIDENCE = "INSUFFICIENT_EVIDENCE"
+INSUFF = INSUFFICIENT_EVIDENCE
+EVIDENCE_STATUSES = ("sufficient", "insufficient")
+
+
+def is_abstained(value: Any) -> bool:
+    """True when a field honestly reports that the evidence did not support it."""
+    if isinstance(value, str):
+        return value.strip() == INSUFFICIENT_EVIDENCE
+    if isinstance(value, list):
+        return len(value) == 0 or all(is_abstained(item) for item in value)
+    if isinstance(value, dict):
+        return all(is_abstained(item) for item in value.values())
+    return False
+
+
 def validate_output(payload: dict[str, Any]) -> list[str]:
+    """Structural validation.
+
+    Abstention is valid: a field may be the INSUFFICIENT_EVIDENCE sentinel (or an
+    empty list) when evidence_status is "insufficient". Nothing here requires the
+    model to produce marketing content that the evidence does not contain.
+    """
     errors: list[str] = []
     for key in REQUIRED_KEYS:
         if key not in payload:
             errors.append(f"Missing required key: {key}")
 
-    if not isinstance(payload.get("brand_summary"), str) or not payload.get("brand_summary", "").strip():
-        errors.append("brand_summary must be a non-empty string")
+    status = payload.get("evidence_status", "sufficient")
+    if status not in EVIDENCE_STATUSES:
+        errors.append("evidence_status must be 'sufficient' or 'insufficient'")
+    abstaining = status == "insufficient"
 
-    if not isinstance(payload.get("likely_target_audience"), str) or not payload.get(
-        "likely_target_audience", ""
-    ).strip():
-        errors.append("likely_target_audience must be a non-empty string")
+    def check_string(label: str, value: Any, min_len: int = 1) -> None:
+        if not isinstance(value, str) or not value.strip():
+            errors.append(f"{label} must be a non-empty string or {INSUFFICIENT_EVIDENCE}")
+        elif value.strip() == INSUFFICIENT_EVIDENCE:
+            if not abstaining:
+                errors.append(f"{label} is {INSUFFICIENT_EVIDENCE} but evidence_status is not 'insufficient'")
+        elif len(value.strip()) < min_len:
+            errors.append(f"{label} must be at least {min_len} characters or {INSUFFICIENT_EVIDENCE}")
+
+    check_string("brand_summary", payload.get("brand_summary"))
+    check_string("likely_target_audience", payload.get("likely_target_audience"))
 
     for key in ("current_marketing_strategy", "marketing_gaps", "citations"):
         value = payload.get(key)
-        if not isinstance(value, list) or not value:
-            errors.append(f"{key} must be a non-empty list")
+        if not isinstance(value, list):
+            errors.append(f"{key} must be a list")
+        elif not value and not abstaining:
+            errors.append(f"{key} must be a non-empty list unless evidence_status is 'insufficient'")
 
     post_idea = payload.get("instagram_post_idea")
     if not isinstance(post_idea, dict):
         errors.append("instagram_post_idea must be an object")
     else:
         for key in ("hook", "concept", "why_it_closes_the_gap"):
-            if not isinstance(post_idea.get(key), str) or not post_idea.get(key, "").strip():
-                errors.append(f"instagram_post_idea.{key} must be a non-empty string")
+            check_string(f"instagram_post_idea.{key}", post_idea.get(key))
 
-    if not isinstance(payload.get("email_subject"), str) or not payload.get("email_subject", "").strip():
-        errors.append("email_subject must be a non-empty string")
+    check_string("email_subject", payload.get("email_subject"))
+    check_string("email_body", payload.get("email_body"), min_len=80)
 
-    email_body = payload.get("email_body")
-    if not isinstance(email_body, str) or len(email_body.strip()) < 80:
-        errors.append("email_body must be a non-empty string of at least 80 characters")
+    if abstaining and not is_abstained(payload.get("marketing_gaps")) and is_abstained(payload.get("citations")):
+        errors.append("marketing_gaps are stated but there are no citations to support them")
 
     return errors
 

@@ -1,0 +1,51 @@
+{
+  "company": "Omsom",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The evidence shows Omsom's marketing efforts through partnerships and digital strategies, indicating a focus on storytelling and heritage.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[3]",
+        "[6]"
+      ],
+      "reason": "The evidence supports Omsom's emphasis on storytelling and heritage, its partnership with Kirati Kreations, and its focus on digital marketing.",
+      "field": "brand_summary",
+      "claim": "Omsom is an Asian-American sauce brand that emphasizes storytelling and heritage in its marketing. It has partnered with Kirati Kreations for digital marketing services, focusing on PPC campaigns, social media marketing, and content creation."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The evidence shows Omsom's use of PPC campaigns to increase product visibility and sales.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing PPC campaigns to increase product visibility and sales."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[6]"
+      ],
+      "reason": "The evidence shows Omsom's development of engaging social media content for platforms like Facebook and Instagram.",
+      "field": "current_marketing_strategy",
+      "claim": "Developing engaging social media content for platforms like Facebook and Instagram."
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[6]"
+      ],
+      "reason": "The evidence shows Omsom's creation of educational posts and recipe-based content to enhance brand awareness.",
+      "field": "current_marketing_strategy",
+      "claim": "Creating educational posts and recipe-based content to enhance brand awareness."
+    }
+  ]
+}

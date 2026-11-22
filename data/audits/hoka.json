@@ -1,0 +1,80 @@
+{
+  "company": "Hoka",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages provide detailed insights into Hoka's marketing strategies, including product innovation, athlete-driven authenticity, and various marketing channels.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[4]"
+      ],
+      "reason": "Passages [1] and [4] mention Max-Cushion Storytelling, product innovation, athlete-driven authenticity, and bold creative content. They also indicate targeting a wide audience including runners, hikers, and comfort seekers.",
+      "field": "brand_summary",
+      "claim": "Hoka is known for its Max-Cushion Storytelling, which emphasizes product innovation, athlete-driven authenticity, and bold creative content. The brand targets a wide audience including runners, hikers, and comfort seekers, and uses various marketing channels to engage with its audience."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] explicitly mentions runners, hikers, and comfort seekers as part of the target audience.",
+      "field": "likely_target_audience",
+      "claim": "Runners, hikers, and comfort seekers"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] states that Hoka is known for Max-Cushion Storytelling.",
+      "field": "current_marketing_strategy",
+      "claim": "Max-Cushion Storytelling"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] mentions disciplined distribution and specialty-run credibility.",
+      "field": "current_marketing_strategy",
+      "claim": "Disciplined distribution and specialty-run credibility"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] mentions athlete-driven authenticity and retailer community programs.",
+      "field": "current_marketing_strategy",
+      "claim": "Athlete-driven authenticity and retailer community programs"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "Passage [3] mentions email and SMS nurturing for repeat purchases.",
+      "field": "current_marketing_strategy",
+      "claim": "Email and SMS nurturing for repeat purchases"
+    },
+    {
+      "n": 7,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passage [4] mentions visible design and inclusive performance as part of Hoka's marketing strategy.",
+      "field": "current_marketing_strategy",
+      "claim": "Visible design and inclusive performance"
+    }
+  ]
+}

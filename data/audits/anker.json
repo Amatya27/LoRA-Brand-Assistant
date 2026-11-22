@@ -1,0 +1,49 @@
+{
+  "company": "Anker",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain marketing-related information about Anker's brand and marketing strategies.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage explicitly states that Anker is a leading global brand in phone and home technology, known for providing high-quality accessories.",
+      "field": "brand_summary",
+      "claim": "Anker is a leading global brand in phone and home technology, known for providing high-quality accessories to charge a range of different tech products from phones to off-grid living appliances."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage mentions that influencers produced detailed content highlighting the features and benefits of Anker's products.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing influencer marketing to highlight product features and benefits [1]"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage indicates that the campaign aimed to increase brand awareness and engagement through detailed content creation.",
+      "field": "current_marketing_strategy",
+      "claim": "Aiming to increase brand awareness and engagement through detailed content creation [1]"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage mentions that Anker has been a long-term client of Stride Social, indicating a collaboration for marketing objectives.",
+      "field": "current_marketing_strategy",
+      "claim": "Collaborating with Stride Social for long-term marketing objectives [2]"
+    }
+  ]
+}

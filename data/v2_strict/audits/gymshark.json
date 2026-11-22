@@ -1,0 +1,82 @@
+{
+  "company": "Gymshark",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages provide detailed information about Gymshark's marketing strategies and target audience.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[3]",
+        "[4]"
+      ],
+      "reason": "Passages [2], [3], and [4] all support the claim about Gymshark's focus on community engagement, influencer and athlete-driven marketing, trend adaptation, and use of social media platforms.",
+      "field": "brand_summary",
+      "claim": "Gymshark is a fitness apparel brand that focuses on community engagement, influencer and athlete-driven marketing, and trend adaptation. They use social media platforms like Instagram, TikTok, and YouTube to reach their audience and track social media conversations to identify emerging fitness movements."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[3]",
+        "[5]"
+      ],
+      "reason": "Passages [3] and [5] indicate that Gymshark targets fitness enthusiasts, particularly young adults and teenagers, and that women's apparel accounts for over two-thirds of total sales.",
+      "field": "likely_target_audience",
+      "claim": "Fitness enthusiasts, particularly young adults and teenagers, with a focus on women's apparel sales"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "Passage [3] mentions that Gymshark allocates significant resources to collaborating with fitness influencers and athletes.",
+      "field": "current_marketing_strategy",
+      "claim": "Influencer and athlete-driven marketing"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passage [4] states that Gymshark leverages user-generated content from affiliate partners to amplify reach.",
+      "field": "current_marketing_strategy",
+      "claim": "User-generated content and hashtag campaigns"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passage [4] mentions that Gymshark collaborates with affiliate partners.",
+      "field": "current_marketing_strategy",
+      "claim": "Collaborations with affiliate partners"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] mentions that Gymshark adapts to trends through mental health awareness campaigns and sustainable fitness apparel development initiatives.",
+      "field": "current_marketing_strategy",
+      "claim": "Trend adaptation through mental health awareness campaigns and sustainable fitness apparel"
+    },
+    {
+      "n": 7,
+      "verdict": "supported",
+      "evidence": [
+        "[6]"
+      ],
+      "reason": "Passage [6] indicates that Gymshark creates mobile-first content on Instagram Reels.",
+      "field": "current_marketing_strategy",
+      "claim": "Mobile-first content creation on Instagram Reels"
+    }
+  ]
+}

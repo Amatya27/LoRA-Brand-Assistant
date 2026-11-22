@@ -1,0 +1,49 @@
+{
+  "company": "MeUndies",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages provide details about MeUndies' marketing strategies and campaigns, indicating a focus on playful and engaging content across multiple channels.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage states that MeUndies is a DTC brand that disrupted the intimate apparel sector with playful marketing campaigns and engagement through multiple media channels.",
+      "field": "brand_summary",
+      "claim": "MeUndies is a direct-to-consumer (DTC) brand that has disrupted the intimate apparel sector with playful marketing campaigns and a focus on engaging with their audience through multiple media channels."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage mentions the launch of the 'Welcome to the Underworld' campaign, which is described as playful and new.",
+      "field": "current_marketing_strategy",
+      "claim": "Unveiling new playful marketing campaigns such as 'Welcome to the Underworld' [1]"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage indicates that the campaign will be seen on their website and across multiple media channels.",
+      "field": "current_marketing_strategy",
+      "claim": "Promoting products through multiple media channels including their website and social media platforms [1]"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage mentions the use of email newsletters and onboarding emails to target subscribers and convert them into repeat buyers.",
+      "field": "current_marketing_strategy",
+      "claim": "Using email newsletters and onboarding emails to target subscribers and convert them into repeat buyers [2]"
+    }
+  ]
+}

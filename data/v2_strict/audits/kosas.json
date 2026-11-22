@@ -1,0 +1,69 @@
+{
+  "company": "Kosas",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The evidence provided includes marketing strategies and gaps, but lacks detailed insights into the company's operations or financials.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage mentions Kosas' focus on rebranding, new products, and customer base expansion through collaborations and events.",
+      "field": "brand_summary",
+      "claim": "Kosas is a beauty brand that focuses on rebranding, new product launches, and expanding its customer base through collaborations with influencers and events."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage states that Kosas collaborates with influencers like Rob Rausch.",
+      "field": "current_marketing_strategy",
+      "claim": "Collaborating with influencers like Rob Rausch to reach a wider audience [1]"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The passage mentions that Kosas uses TikTok for customer engagement and product unboxing experiences.",
+      "field": "current_marketing_strategy",
+      "claim": "Using TikTok for customer engagement and product unboxing experiences [5]"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[6]"
+      ],
+      "reason": "The passage mentions Kosas' participation in the Sephoria parade to reach urban audiences.",
+      "field": "current_marketing_strategy",
+      "claim": "Participating in events like the Sephoria parade to reach urban audiences [6]"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "The passage notes the lack of customer-generated photos and candid images on social media.",
+      "field": "marketing_gaps",
+      "claim": "Lack of customer-generated photos and candid images on social media [3]"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "The passage mentions that Kosas does not offer retinol products which are popular among competitors.",
+      "field": "marketing_gaps",
+      "claim": "Not offering retinol products which are popular among competitors [4]"
+    }
+  ]
+}

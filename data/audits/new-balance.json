@@ -1,0 +1,50 @@
+{
+  "company": "New Balance",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages provided detail New Balance's marketing strategies, including athlete partnerships, limited collaborations, regional manufacturing narratives, and performance-driven marketing.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]"
+      ],
+      "reason": "Passages [1] and [2] explicitly mention athlete partnerships, limited collaborations, regional manufacturing narratives, performance-driven marketing, and the emphasis on heritage, craft, and scarcity through premium and limited releases.",
+      "field": "brand_summary",
+      "claim": "New Balance leverages athlete partnerships, limited collaborations, regional manufacturing narratives, and performance-driven marketing to create distinction in the sneaker market. The brand emphasizes heritage, craft, and scarcity through premium and limited releases, while also focusing on regional specialties and athlete-aligned assortments."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] states that New Balance leverages athlete partnerships and collaborations to enhance brand visibility and credibility.",
+      "field": "current_marketing_strategy",
+      "claim": "Leverages athlete partnerships and collaborations to enhance brand visibility and credibility."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] mentions that regional manufacturing narratives and athlete-aligned assortments create targeted relevance.",
+      "field": "current_marketing_strategy",
+      "claim": "Focuses on regional manufacturing narratives and athlete-aligned assortments to create targeted relevance."
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] explicitly states that premium and limited releases reinforce craft and scarcity at higher price points.",
+      "field": "current_marketing_strategy",
+      "claim": "Emphasizes heritage and craft through premium and limited releases, reinforcing brand equity."
+    }
+  ]
+}

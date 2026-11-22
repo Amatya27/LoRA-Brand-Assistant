@@ -1,0 +1,74 @@
+{
+  "company": "Madewell",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages provide detailed information about Madewell's marketing strategies, including its focus on denim, sustainability, and community engagement.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]",
+        "[3]",
+        "[6]"
+      ],
+      "reason": "The passages indicate Madewell is a denim-focused brand that emphasizes sustainability, community engagement, and a curated shopping experience. They also use unique collaborations and limited-edition collections to create exclusivity.",
+      "field": "brand_summary",
+      "claim": "Madewell is a denim-focused brand that emphasizes sustainability, community engagement, and a curated shopping experience. They use unique collaborations and limited-edition collections to create exclusivity and capture consumer interest."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]",
+        "[3]"
+      ],
+      "reason": "The passages suggest that Madewell targets shoppers interested in sustainable fashion, denim enthusiasts, and those seeking a curated shopping experience.",
+      "field": "likely_target_audience",
+      "claim": "Shoppers interested in sustainable fashion, denim enthusiasts, and those seeking a curated shopping experience."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage states that Madewell emphasizes its Denim Authority through editorial fit guides, in-store Denim Bar services, and a broad size run.",
+      "field": "current_marketing_strategy",
+      "claim": "Denim Authority: Editorial fit guides, in-store Denim Bar services, and a broad size run."
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage mentions that Madewell highlights its sustainability through stories about recycled fibers, better cotton choices, and resale through Madewell Forever with ThredUp.",
+      "field": "current_marketing_strategy",
+      "claim": "Do Well Platform: Sustainability stories highlight recycled fibers, better cotton choices, and resale through Madewell Forever with ThredUp."
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage indicates that Madewell showcases local makers through its Hometown Heroes initiative.",
+      "field": "current_marketing_strategy",
+      "claim": "Community Spotlight: Hometown Heroes showcases local makers online and in select stores."
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage does not mention any TikTok activity, indicating a marketing gap in this area.",
+      "field": "marketing_gaps",
+      "claim": "No TikTok activity appeared in the sources reviewed [1]."
+    }
+  ]
+}

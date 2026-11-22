@@ -1,0 +1,69 @@
+{
+  "company": "Universal Standard",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The evidence provided includes marketing-related information about Universal Standard's target audience and strategies.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The passage states that Universal Standard creates apparel for women sizes 00-40 with a focus on inclusivity and quality fit.",
+      "field": "likely_target_audience",
+      "claim": "Women sizes 00-40, with a focus on inclusivity and quality fit"
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage explicitly mentions that Universal Standard prioritizes design and fit.",
+      "field": "current_marketing_strategy",
+      "claim": "Prioritizing design and fit"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage mentions the addition of localized payment options for each global market.",
+      "field": "current_marketing_strategy",
+      "claim": "Localized payment options for global markets"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The passage states that Universal Standard launches new products weekly.",
+      "field": "current_marketing_strategy",
+      "claim": "Weekly product launches"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The passage mentions engagement from global consumers on their social media properties.",
+      "field": "current_marketing_strategy",
+      "claim": "Social media engagement"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The passage mentions Universal Standard's first brick-and-mortar retail location in Seattle.",
+      "field": "current_marketing_strategy",
+      "claim": "Brick-and-mortar retail locations"
+    }
+  ]
+}

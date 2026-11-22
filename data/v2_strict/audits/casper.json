@@ -1,0 +1,50 @@
+{
+  "company": "Casper",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain detailed information about Casper's marketing strategies and target audience.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[3]"
+      ],
+      "reason": "Passages [1] and [3] both mention Casper's target audience, marketing strategies, and collaborations with film partnerships.",
+      "field": "brand_summary",
+      "claim": "Casper is a mattress startup that targets young adults with appealing visuals and a comedic persona on platforms like Twitter and Instagram. They focus on building brand awareness through engaging narratives and experiences like nap pods on college campuses. Casper also collaborates with film partnerships to enhance their marketing strategies."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] explicitly states that Casper targets young adults.",
+      "field": "likely_target_audience",
+      "claim": "Young adults"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] mentions Casper's focus on building brand awareness through engaging narratives and experiences.",
+      "field": "current_marketing_strategy",
+      "claim": "Building brand awareness through engaging narratives and experiences"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "Passage [3] discusses Casper's collaboration with film partnerships to enhance their marketing strategies.",
+      "field": "current_marketing_strategy",
+      "claim": "Collaborating with film partnerships"
+    }
+  ]
+}

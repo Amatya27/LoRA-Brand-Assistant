@@ -1,0 +1,80 @@
+{
+  "company": "Brooklinen",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages detail Brooklinen's influencer marketing strategy and its use of Upfluence to analyze content types and demographic insights.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]"
+      ],
+      "reason": "Passages [1] and [2] explicitly mention Brooklinen's use of structured creator campaigns, product collaborations, paid social testing, and celebrity-led advertising. They also discuss the analysis of content types and demographic insights.",
+      "field": "brand_summary",
+      "claim": "Brooklinen has developed an influencer marketing strategy that includes structured creator campaigns, product collaborations, paid social testing, and celebrity-led advertising. They analyze content types and demographic insights to maximize audience engagement."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] states the gender breakdown of influencer collaborators is 93.60% female and 6.40% male.",
+      "field": "likely_target_audience",
+      "claim": "Based on the gender breakdown of influencer collaborators, the target audience is predominantly female (93.60%) with a smaller male audience (6.40%)."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] mentions structured creator campaigns.",
+      "field": "current_marketing_strategy",
+      "claim": "Structured creator campaigns"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] mentions product collaborations.",
+      "field": "current_marketing_strategy",
+      "claim": "Product collaborations"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] mentions paid social testing.",
+      "field": "current_marketing_strategy",
+      "claim": "Paid social testing"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] mentions celebrity-led advertising.",
+      "field": "current_marketing_strategy",
+      "claim": "Celebrity-led advertising"
+    },
+    {
+      "n": 7,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] mentions carousel posts making up 28.44% and reels dominating the content type at 61.78%.",
+      "field": "current_marketing_strategy",
+      "claim": "Carousel posts and Reels content types"
+    }
+  ]
+}

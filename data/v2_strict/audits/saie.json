@@ -1,0 +1,42 @@
+{
+  "company": "Saie",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages highlight Saie's marketing strategies involving collaborations with creators and influencers, as well as partnerships with sports teams.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[4]",
+        "[6]"
+      ],
+      "reason": "Passages [1], [4], and [6] all mention Saie's collaborations with creators and influencers, as well as their partnerships with sports teams.",
+      "field": "brand_summary",
+      "claim": "Saie is a beauty brand that collaborates with creators and influencers to develop products and engage with their audience. They also partner with sports teams to integrate their brand into cultural moments."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[4]"
+      ],
+      "reason": "Passages [1] and [4] indicate that Saie collaborates with creators and influencers to develop products and engage with their audience.",
+      "field": "current_marketing_strategy",
+      "claim": "Collaborating with creators and influencers to develop products"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[6]"
+      ],
+      "reason": "Passage [6] mentions Saie's partnerships with sports teams to integrate their brand into cultural moments.",
+      "field": "current_marketing_strategy",
+      "claim": "Partnering with sports teams to integrate into cultural moments"
+    }
+  ]
+}

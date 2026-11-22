@@ -1,0 +1,51 @@
+{
+  "company": "Health-Ade",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided evidence includes multiple passages discussing Health-Ade's marketing strategy and its success in promoting gut health and positioning the brand as a leader in the kombucha category.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[3]"
+      ],
+      "reason": "Passages [2] and [3] confirm that Health-Ade used the 'Get That Good Gut Feeling' campaign to raise awareness about gut health and position themselves as a leader in the kombucha category.",
+      "field": "brand_summary",
+      "claim": "Health-Ade Kombucha has a marketing strategy focused on promoting the benefits of gut health through fun and playful messaging. They have successfully used campaigns like 'Get That Good Gut Feeling' to raise awareness and position themselves as a leader in the kombucha category."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[3]"
+      ],
+      "reason": "Passages [2] and [3] indicate that Health-Ade promotes the benefits of their kombucha with fun and playful messaging.",
+      "field": "current_marketing_strategy",
+      "claim": "Promoting the benefits of Health-Ade Kombucha with fun and playful messaging."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "Passage [3] states that Health-Ade aims to educate consumers about the importance of gut health.",
+      "field": "current_marketing_strategy",
+      "claim": "Educating consumers about the importance of gut health."
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] explicitly mentions that the campaign helped position Health-Ade as a leader in the kombucha category.",
+      "field": "current_marketing_strategy",
+      "claim": "Positioning Health-Ade as a leader in the kombucha category."
+    }
+  ]
+}

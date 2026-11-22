@@ -1,0 +1,49 @@
+{
+  "company": "Youth to the People",
+  "overall": "fix",
+  "groundedness": 0.75,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The evidence provided includes details about the company's marketing strategy, specifically focusing on influencer marketing and content creation.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "partial",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The evidence supports the target audience's interest in innovative and scientifically-backed skincare solutions but does not explicitly state the focus on engagement in top-performing countries like Canada.",
+      "field": "likely_target_audience",
+      "claim": "The target audience includes individuals interested in innovative and scientifically-backed skincare solutions, with a focus on engagement in top-performing countries like Canada."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage explicitly mentions using influencer marketing to enhance brand visibility and affinity.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing influencer marketing to enhance brand visibility and affinity [1]"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage mentions expanding reach in top-performing countries, with Canada having the highest engagement rate.",
+      "field": "current_marketing_strategy",
+      "claim": "Expanding reach in top-performing countries, such as Canada [1]"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage suggests creating more video-focused content to boost engagement.",
+      "field": "current_marketing_strategy",
+      "claim": "Creating more video-focused content to boost engagement [2]"
+    }
+  ]
+}

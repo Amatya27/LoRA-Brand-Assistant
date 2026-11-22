@@ -1,0 +1,43 @@
+{
+  "company": "Fly By Jing",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The evidence provided focuses on the marketing strategies and success of Fly By Jing, including personal storytelling, influencer seeding, and social media advertising.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[3]",
+        "[4]",
+        "[5]"
+      ],
+      "reason": "Passages [2] and [4] mention the founder's personal story and cultural connection to the product, while passages [3] and [5] highlight the use of influencer seeding and social media advertising.",
+      "field": "brand_summary",
+      "claim": "Fly By Jing is a brand that has successfully turned a traditional Sichuan recipe into a popular product, leveraging personal storytelling and social media to build a strong brand presence. The brand's founder, Jing Gao, emphasizes the cultural significance and personal connection to the product, which has helped in connecting with customers on a deeper level. The brand has also used influencer seeding and social advertising to increase its reach and sales."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] explicitly states that keeping the founder's personal story and connection to the brand front and center has been key to connecting with customers.",
+      "field": "current_marketing_strategy",
+      "claim": "Emphasizing the personal story and cultural background of the founder and the product"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[3]",
+        "[5]"
+      ],
+      "reason": "Passages [3] and [5] detail the use of influencer seeding and social media advertising as part of the brand's marketing strategy.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing influencer seeding and social media advertising to increase brand awareness and sales"
+    }
+  ]
+}

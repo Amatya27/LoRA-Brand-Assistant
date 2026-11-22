@@ -1,0 +1,60 @@
+{
+  "company": "Fenty Beauty",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages provide detailed insights into Fenty Beauty's marketing strategies, including inclusivity, social media engagement, and influencer collaborations.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[6]"
+      ],
+      "reason": "Passages [2] and [6] both mention Fenty Beauty's inclusive marketing strategy and its engagement with its audience through social media.",
+      "field": "brand_summary",
+      "claim": "Fenty Beauty is known for its inclusive marketing strategy, featuring diverse models and ambassadors in its campaigns. The brand actively engages with its audience through social media, reposting user-generated content and collaborating with creators to foster a sense of community and authenticity."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[6]"
+      ],
+      "reason": "Passage [6] explicitly states that Fenty Beauty features a diverse range of models and ambassadors in its campaigns.",
+      "field": "likely_target_audience",
+      "claim": "Diverse audience, including various ethnicities, genders, and body types, with a focus on inclusivity and representation."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] mentions that Fenty Beauty actively interacts with followers and reposts user-generated content.",
+      "field": "current_marketing_strategy",
+      "claim": "Actively interacting with followers and reposting user-generated content to create a sense of community and authenticity."
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] indicates that Fenty Beauty collaborates with micro to macro influencers to maximize reach and impact.",
+      "field": "current_marketing_strategy",
+      "claim": "Collaborating with micro to macro influencers to maximize reach and impact."
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "Passage [3] outlines how Fenty Beauty uses social media platforms like Instagram, TikTok, and YouTube for various marketing activities.",
+      "field": "current_marketing_strategy",
+      "claim": "Using social media platforms like Instagram, TikTok, and YouTube for product announcements, tutorials, and demonstrations."
+    }
+  ]
+}

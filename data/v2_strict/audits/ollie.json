@@ -1,0 +1,51 @@
+{
+  "company": "Ollie",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain marketing-related information about Ollie's rebranding efforts, content management tools, and social media activities.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]"
+      ],
+      "reason": "Passage [1] confirms Ollie's use of Storyblok for rebranding and content management, and passage [2] mentions their sponsorship of dog adoption events.",
+      "field": "brand_summary",
+      "claim": "Ollie is a company that focuses on rebranding and content management, using tools like Storyblok to enable independent content creation and improve collaboration across departments. They also engage in social media marketing and sponsor adoption events for dogs."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] explicitly states that Ollie uses Storyblok for content creation and management.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing Storyblok for content creation and management"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] mentions that Ollie sponsors adoption events for dogs.",
+      "field": "current_marketing_strategy",
+      "claim": "Sponsoring adoption events for dogs"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[3]",
+        "[5]"
+      ],
+      "reason": "Passages [3] and [5] indicate that Ollie engages in social media marketing through various platforms.",
+      "field": "current_marketing_strategy",
+      "claim": "Engaging in social media marketing"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "company": "Great Jones",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The evidence provided focuses on the marketing strategies and content creation of Great Jones, including their use of food media networks and social media presence.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]"
+      ],
+      "reason": "Passages [1] and [2] confirm that Great Jones leverages the founders' food media networks to create content that emphasizes cookware as a tool for restaurant-quality food preparation and focuses on editorial credibility and social media presence.",
+      "field": "brand_summary",
+      "claim": "Great Jones is a New York-based kitchenware company that leverages the founders' food media networks to create content that emphasizes cookware as a tool for restaurant-quality food preparation. The brand's marketing strategy focuses on editorial credibility and social media presence, particularly on Instagram, to connect with its target audience."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "Passage [3] indicates that the company focuses on millennials as its target audience.",
+      "field": "likely_target_audience",
+      "claim": "Millennials interested in high-quality kitchenware and food culture"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] confirms that Great Jones utilizes food media networks for editorial coverage and credibility.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizes food media networks for editorial coverage and credibility"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] states that Great Jones runs ads on Facebook and Instagram featuring restaurant-quality food photography with the cookware as the hero prop.",
+      "field": "current_marketing_strategy",
+      "claim": "Focuses on Instagram and Facebook ads featuring restaurant-quality food photography"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]"
+      ],
+      "reason": "Passages [1] and [2] confirm that the brand emphasizes the intersection of cookware and food culture content.",
+      "field": "current_marketing_strategy",
+      "claim": "Emphasizes the intersection of cookware and food culture content"
+    }
+  ]
+}

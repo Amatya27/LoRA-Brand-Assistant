@@ -1,0 +1,90 @@
+{
+  "company": "Birdies",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages provide details on Birdies' marketing strategies, including social media and influencer marketing.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "The passage states that Birdies is a San Francisco-based shoe brand that has seen significant growth through a focused social media strategy, including influencer marketing and user-generated content.",
+      "field": "brand_summary",
+      "claim": "Birdies Shoes is a San Francisco-based shoe brand that has seen significant growth through a focused social media strategy, including influencer marketing and user-generated content."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[4]"
+      ],
+      "reason": "Passages [1] and [4] mention that Birdies partners with influencers for product promotion.",
+      "field": "current_marketing_strategy",
+      "claim": "Partnering with influencers for product promotion"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "The passage states that Birdies uses branded hashtags for marketing campaigns.",
+      "field": "current_marketing_strategy",
+      "claim": "Creating a branded hashtag campaign"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "The passage mentions that Birdies makes use of user-generated content.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing user-generated content"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage states that influencers chosen by Birdies gain early access to promotions and special product discounts.",
+      "field": "current_marketing_strategy",
+      "claim": "Offering early access to promotions and discounts to influencers"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage mentions that only influencers with a good brand fit are chosen by Birdies.",
+      "field": "current_marketing_strategy",
+      "claim": "Selecting influencers with a good brand fit"
+    },
+    {
+      "n": 7,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage does not mention any TikTok activity, making this a valid marketing gap.",
+      "field": "marketing_gaps",
+      "claim": "No mention of TikTok activity [1]"
+    },
+    {
+      "n": 8,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage does not mention any email marketing campaigns, making this a valid marketing gap.",
+      "field": "marketing_gaps",
+      "claim": "No mention of email marketing campaigns [1]"
+    }
+  ]
+}

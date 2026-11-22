@@ -1,0 +1,80 @@
+{
+  "company": "Trade Coffee",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The evidence provided includes details about Trade Coffee's marketing strategies and partnerships, which are directly related to the claims.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[1]"
+      ],
+      "reason": "Passages [2] and [1] both confirm that Trade Coffee is a coffee subscription brand connecting customers with craft coffee roasters and using paid social retargeting and earned media to build credibility and retain customers.",
+      "field": "brand_summary",
+      "claim": "Trade Coffee is a coffee subscription brand that connects customers with craft coffee roasters. They use paid social retargeting and earned media to build credibility and retain customers. They have partnerships with podcast audiences and Wirecutter for earned media."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] indicates that Trade Coffee targets podcast listeners and Wirecutter readers.",
+      "field": "likely_target_audience",
+      "claim": "Coffee enthusiasts, podcast listeners, and Wirecutter readers"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] confirms that Trade Coffee uses paid social retargeting of podcast audiences and Wirecutter readers.",
+      "field": "current_marketing_strategy",
+      "claim": "Paid social retargeting of podcast audiences and Wirecutter readers"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] confirms that Trade Coffee has partnerships with Wirecutter for earned media.",
+      "field": "current_marketing_strategy",
+      "claim": "Earned media through partnerships with Wirecutter"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] confirms the use of taste-match quizzes to personalize value propositions.",
+      "field": "current_marketing_strategy",
+      "claim": "Use of taste-match quizzes to personalize value propositions"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] confirms that Trade Coffee has high retention rates after the first order.",
+      "field": "current_marketing_strategy",
+      "claim": "Subscription model with high retention rates"
+    },
+    {
+      "n": 7,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] confirms that Trade Coffee connects customers with craft coffee roasters.",
+      "field": "current_marketing_strategy",
+      "claim": "Partnerships with craft coffee roasters"
+    }
+  ]
+}

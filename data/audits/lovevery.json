@@ -1,0 +1,59 @@
+{
+  "company": "Lovevery",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages contain marketing-related information about Lovevery's partnerships and content creation.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage states that Lovevery designs stage-based play products and content to help children reach their full potential and give parents confidence in guiding them. It also mentions partnering with mission-aligned brands, organizations, creators, and experts.",
+      "field": "brand_summary",
+      "claim": "Lovevery designs stage-based play products and content to help children reach their full potential and give parents confidence in guiding them. They partner with mission-aligned brands, organizations, creators, and experts who share their commitment to early childhood development."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage explicitly mentions partnering with mission-aligned brands, organizations, creators, and experts.",
+      "field": "current_marketing_strategy",
+      "claim": "Partnering with mission-aligned brands, organizations, creators, and experts"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "The passage mentions that influencers continue to publish Lovevery content on their own channels.",
+      "field": "current_marketing_strategy",
+      "claim": "Collaborating with influencers to publish Lovevery content on their channels"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "The passage states that Lovevery develops a consistent voice around topics such as tummy time, toddler meals, and emotional regulation.",
+      "field": "current_marketing_strategy",
+      "claim": "Developing a consistent voice around topics such as tummy time, toddler meals, and emotional regulation"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The passage mentions that Lovevery has a UGC campaign framework to help families find value beyond their first purchase.",
+      "field": "current_marketing_strategy",
+      "claim": "Creating a UGC campaign framework to help families find value beyond their first purchase"
+    }
+  ]
+}

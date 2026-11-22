@@ -1,0 +1,50 @@
+{
+  "company": "The Farmer's Dog",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided evidence includes detailed marketing strategies and tactics used by The Farmer's Dog, covering SEO, paid search, social media campaigns, and quizzes.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]"
+      ],
+      "reason": "Passages [1] and [2] explicitly mention the use of data-driven performance marketing and brand-building strategies, including SEO, paid search, social media campaigns, UGC, influencers, and quizzes.",
+      "field": "brand_summary",
+      "claim": "The Farmer's Dog uses a blend of data-driven performance marketing and brand-building strategies, focusing on SEO, paid search, and social media campaigns. They leverage user-generated content (UGC) and influencers, including veterinarians and animal nutritionists, to enhance credibility and reach. They also use quizzes to capture detailed pet data for personalized journeys and have a strong presence on Instagram and TikTok."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] states that The Farmer's Dog heavily invests in SEO and paid search targeting keywords like 'fresh dog food' and 'kibble alternatives.'",
+      "field": "current_marketing_strategy",
+      "claim": "Heavy investment in SEO and paid search targeting keywords like 'fresh dog food' and 'kibble alternatives'."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] mentions that Instagram and TikTok campaigns amplify UGC and influencer-driven content.",
+      "field": "current_marketing_strategy",
+      "claim": "Use of Instagram and TikTok for amplifying UGC and influencer-driven content."
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] indicates that an onboarding quiz captures granular pet data to create personalized journeys.",
+      "field": "current_marketing_strategy",
+      "claim": "Onboarding quiz to capture granular pet data for personalized customer journeys."
+    }
+  ]
+}

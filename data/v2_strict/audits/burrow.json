@@ -1,0 +1,60 @@
+{
+  "company": "Burrow",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The evidence provided includes detailed information about Burrow's marketing strategies and product features.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[6]"
+      ],
+      "reason": "Passages [1] and [6] confirm that Burrow emphasizes modular furniture design and delivery logistics, and uses social media platforms like Facebook and Instagram to showcase their products and address common consumer concerns such as spills and assembly.",
+      "field": "brand_summary",
+      "claim": "Burrow is a furniture company that emphasizes modular furniture design and delivery logistics, using social media platforms like Facebook and Instagram to showcase their products and address common consumer concerns such as spills and assembly."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] states that seasonal promotions use 'refresh your living room' framing rather than discount-led messaging.",
+      "field": "current_marketing_strategy",
+      "claim": "Use seasonal promotions to encourage customers to 'refresh their living room' rather than relying on discount-led messaging."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] mentions that performance fabric variants address the 'what about spills?' objection.",
+      "field": "current_marketing_strategy",
+      "claim": "Highlight the quality of their fabric with performance features that address common concerns like spills."
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] confirms that Burrow solved a logistics problem (sofa delivery in apartment buildings) and made that solution the centerpiece of its marketing.",
+      "field": "current_marketing_strategy",
+      "claim": "Focus on the logistics of sofa delivery in apartment buildings as a key selling point."
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] states that configuration demos and 'add a piece later' modularity messaging support upsells.",
+      "field": "current_marketing_strategy",
+      "claim": "Showcase the modularity of their furniture through configuration demos and 'add a piece later' messaging to support upselling."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "company": "MeUndies",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages provide evidence of MeUndies' marketing strategies and campaigns.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]"
+      ],
+      "reason": "Passages [1] and [2] indicate that MeUndies is a DTC brand that has disrupted the intimate apparel sector with playful marketing campaigns and engages with their audience through multiple media channels and email newsletters.",
+      "field": "brand_summary",
+      "claim": "MeUndies is a direct-to-consumer (DTC) brand that has disrupted the intimate apparel sector with playful marketing campaigns and a focus on engaging with their audience through multiple media channels and email newsletters."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] states that MeUndies' campaign aims to redefine the role of underwear in people’s lives.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing playful and engaging marketing campaigns to redefine the role of underwear in people’s lives [1]"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] mentions that MeUndies promotes new prints and designs through email newsletters and social media ads.",
+      "field": "current_marketing_strategy",
+      "claim": "Promoting new prints and designs through email newsletters and social media ads [2]"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "company": "Misfits Market",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain detailed information about Misfits Market's marketing strategies, including paid advertising and email marketing.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage explicitly states that Misfits Market uses paid advertising on search and social platforms to target consumers at different stages of awareness and intent.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizes paid advertising on search and social platforms to target consumers at different stages of awareness and intent."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The passage mentions that Misfits Market uses email marketing for lifecycle management, keeping users informed about upcoming deliveries, product availability, and savings opportunities, which reinforces the brand’s value proposition with helpful communications.",
+      "field": "current_marketing_strategy",
+      "claim": "Leverages email marketing for lifecycle management, reinforcing the brand’s value proposition with helpful communications."
+    }
+  ]
+}

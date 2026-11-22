@@ -1,0 +1,79 @@
+{
+  "company": "Chobani",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain detailed information about Chobani's marketing strategies across various platforms and channels.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "Passage [3] mentions Chobani's purpose-driven marketing with community impact and athlete endorsements.",
+      "field": "current_marketing_strategy",
+      "claim": "Purpose-driven marketing with community impact and athlete endorsements [3]"
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] states that Chobani shifts spend toward audiences showing high conversion potential.",
+      "field": "current_marketing_strategy",
+      "claim": "Efficient CPMs for reach, shifting spend toward high-conversion audiences [1]"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] mentions Household-targeted video aligned to breakfast and coffee content on Connected TV.",
+      "field": "current_marketing_strategy",
+      "claim": "Connected TV and YouTube video content aligned to breakfast and coffee content [1]"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] mentions TikTok and Instagram Reels for recipe, barista, and high-protein snacking content.",
+      "field": "current_marketing_strategy",
+      "claim": "TikTok and Instagram Reels for recipe, barista, and high-protein snacking content [1]"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passage [4] mentions Amazon Ads campaigns linking ad exposure to basket-level conversion and protecting brand terms.",
+      "field": "current_marketing_strategy",
+      "claim": "Search ads and retail media campaigns linked to sales [4]"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] does not mention email marketing campaigns.",
+      "field": "marketing_gaps",
+      "claim": "No mention of email marketing campaigns [1]"
+    },
+    {
+      "n": 7,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] does not mention a specific Facebook content strategy.",
+      "field": "marketing_gaps",
+      "claim": "No specific mention of Facebook content strategy [2]"
+    }
+  ]
+}

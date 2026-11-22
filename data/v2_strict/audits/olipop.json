@@ -1,0 +1,68 @@
+{
+  "company": "Olipop",
+  "overall": "fix",
+  "groundedness": 0.83,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain detailed information about Olipop's marketing strategies, including influencer marketing, content creation, and promotional investment.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[4]"
+      ],
+      "reason": "Passages indicate Olipop prioritizes organic content and subtle product promotion from influencers on TikTok.",
+      "field": "current_marketing_strategy",
+      "claim": "Prioritizing organic content and subtle product promotion from influencers on TikTok"
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "Passages indicate Olipop creates in-house produced videos with aesthetic appeal on Instagram.",
+      "field": "current_marketing_strategy",
+      "claim": "Creating in-house produced videos with aesthetic appeal on Instagram"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passages indicate Olipop prioritizes category education, cross-merchandising with better-for-you snacks, and frequent shopper marketing programs.",
+      "field": "current_marketing_strategy",
+      "claim": "Focusing on category education, cross-merchandising with better-for-you snacks, and frequent shopper marketing programs"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passages indicate Olipop adopts a balanced, performance-minded promotional investment model.",
+      "field": "current_marketing_strategy",
+      "claim": "Adopting a balanced, performance-minded promotional investment model"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "Passages indicate Olipop positions itself as a healthy soda to improve gut health.",
+      "field": "current_marketing_strategy",
+      "claim": "Positioning as a healthy soda to improve gut health"
+    },
+    {
+      "n": 6,
+      "verdict": "unsupported",
+      "evidence": [],
+      "reason": "Passages indicate Olipop has recently started using TV ads and out-of-home campaigns, contradicting the claim that there is no mention of traditional advertising methods.",
+      "field": "marketing_gaps",
+      "claim": "No mention of traditional advertising methods such as TV ads or out-of-home campaigns"
+    }
+  ]
+}

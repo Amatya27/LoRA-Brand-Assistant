@@ -1,0 +1,50 @@
+{
+  "company": "Supergoop",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages contain marketing-focused content about Supergoop's brand goals and social media strategies.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]"
+      ],
+      "reason": "Passages [1] and [2] both support the claim that Supergoop aims to make sunscreen a daily essential and use social media and influencer marketing to increase brand awareness and educate consumers.",
+      "field": "brand_summary",
+      "claim": "Supergoop aims to make sunscreen a daily essential by offering high-quality, versatile SPF products. They use social media and influencer marketing to increase brand awareness and educate consumers."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] states that Supergoop aims to pioneer a new category of beauty that emphasizes exciting, high-quality SPF products.",
+      "field": "current_marketing_strategy",
+      "claim": "Pioneering a new category of beauty that emphasizes exciting, high-quality SPF products"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] mentions that Supergoop uses social media to increase brand awareness and educate consumers.",
+      "field": "current_marketing_strategy",
+      "claim": "Using social media to increase brand awareness and educate consumers"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] indicates that Supergoop collaborates with influencers on TikTok, Instagram, and YouTube to create relatable and educational content.",
+      "field": "current_marketing_strategy",
+      "claim": "Collaborating with influencers on TikTok, Instagram, and YouTube to create relatable and educational content"
+    }
+  ]
+}

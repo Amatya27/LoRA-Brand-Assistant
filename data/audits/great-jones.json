@@ -1,0 +1,49 @@
+{
+  "company": "Great Jones",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The evidence provided includes marketing strategies and target audience information.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "The passage states that the company focuses on millennials as its target audience.",
+      "field": "likely_target_audience",
+      "claim": "Millennials"
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage mentions that ads feature restaurant-quality food photography with the cookware as the hero prop.",
+      "field": "current_marketing_strategy",
+      "claim": "Uses food media networks to create content that emphasizes cookware as a tool for restaurant-quality food photography"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage states that the editorial credibility of the founders drives earned media and reduces paid acquisition costs.",
+      "field": "current_marketing_strategy",
+      "claim": "Focuses on editorial credibility to drive earned media and reduce paid acquisition costs"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage mentions that founder expertise in adjacent content fields can substitute for paid media at launch and serves as a marketing asset.",
+      "field": "current_marketing_strategy",
+      "claim": "Builds product in the context of adjacent content fields to leverage founder expertise as a marketing asset"
+    }
+  ]
+}

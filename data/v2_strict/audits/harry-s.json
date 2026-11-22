@@ -1,0 +1,51 @@
+{
+  "company": "Harry's",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain detailed information about Harry's marketing strategies and target audience.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage states that Harry's targets urban men aged 18-34 and emphasizes authenticity and social responsibility.",
+      "field": "likely_target_audience",
+      "claim": "Men aged 18-34 who value affordability, authenticity, and social responsibility in their grooming products."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[3]"
+      ],
+      "reason": "Passages indicate that Harry's uses social media and content marketing to highlight their authenticity and vintage appeal.",
+      "field": "current_marketing_strategy",
+      "claim": "Highlighting authenticity and vintage appeal through social media and content marketing."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[4]",
+        "[5]"
+      ],
+      "reason": "Passages mention Harry's positioning themselves as an underdog against larger brands like Gillette.",
+      "field": "current_marketing_strategy",
+      "claim": "Positioning themselves as an underdog against larger brands like Gillette."
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[6]"
+      ],
+      "reason": "Passages indicate that Harry's built a referral system to encourage customer loyalty and word-of-mouth marketing.",
+      "field": "current_marketing_strategy",
+      "claim": "Building a referral system to encourage customer loyalty and word-of-mouth marketing."
+    }
+  ]
+}

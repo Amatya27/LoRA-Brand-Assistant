@@ -1,0 +1,52 @@
+{
+  "company": "Blueland",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The evidence provided includes detailed information about Blueland's marketing strategies and social media engagement.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[3]",
+        "[5]"
+      ],
+      "reason": "Passages [1] and [5] describe Blueland's product and marketing strategy, while passage [3] elaborates on their social media engagement.",
+      "field": "brand_summary",
+      "claim": "Blueland is a cleaning product startup that emphasizes sustainability by offering reusable bottles and tablet-based cleaning solutions. They use social media to educate customers on how to use their products and engage with both regular customers and celebrities."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] explicitly states that Blueland uses social media to educate customers on how to use their unique product.",
+      "field": "current_marketing_strategy",
+      "claim": "Educating customers on how to use their unique product through social media"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[3]",
+        "[5]"
+      ],
+      "reason": "Passages [3] and [5] indicate that Blueland engages with both regular customers and celebrities on Instagram.",
+      "field": "current_marketing_strategy",
+      "claim": "Engaging with both regular customers and celebrities on Instagram"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "Passage [3] mentions that Blueland's success is credited to their hyper-involved social media marketing strategy, which includes creative storytelling and detailed engagement.",
+      "field": "current_marketing_strategy",
+      "claim": "Focusing on creative storytelling and detailed engagement on social media"
+    }
+  ]
+}

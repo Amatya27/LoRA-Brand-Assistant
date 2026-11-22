@@ -1,0 +1,51 @@
+{
+  "company": "Outdoor Voices",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain marketing-related information about Outdoor Voices' target audience and marketing strategies.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]"
+      ],
+      "reason": "Passages [1] and [2] indicate that younger generations who are active and interested in fitness and fashion, and are influenced by social media trends and brand partnerships, are part of Outdoor Voices' target market.",
+      "field": "likely_target_audience",
+      "claim": "Younger generations who are active and interested in fitness and fashion, influenced by social media trends and brand partnerships."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]"
+      ],
+      "reason": "Passages [1] and [2] mention that Outdoor Voices collaborates with influencers to promote a lifestyle of fitness and fashion.",
+      "field": "current_marketing_strategy",
+      "claim": "Collaborating with influencers to promote a lifestyle of fitness and fashion [1]"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "Passage [5] states that Outdoor Voices organizes fun events in physical locations to engage the community.",
+      "field": "current_marketing_strategy",
+      "claim": "Organizing fun events in physical locations to engage the community [5]"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "Passage [5] mentions that Outdoor Voices has a distinct style present across all its marketing channels, making its digital content stand out.",
+      "field": "current_marketing_strategy",
+      "claim": "Creating distinct digital content that stands out across all marketing channels [5]"
+    }
+  ]
+}

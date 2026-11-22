@@ -1,0 +1,79 @@
+{
+  "company": "RXBAR",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The evidence provided includes marketing strategies and product launches which support the claims about RXBAR's marketing approach.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage mentions RXBAR's focus on simple ingredients, social media engagement, and influencer marketing to target millennials, and also mentions seasonal flavors and product diversification.",
+      "field": "brand_summary",
+      "claim": "RXBAR is known for its simple ingredient list and focus on authenticity in its marketing. The brand has utilized social media engagement and influencer marketing to target millennials and has expanded its product line with seasonal flavors and new product types like RXBAR Minis and RXBAR Oats."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage states that RXBAR's marketing caters to millennials’ desire for authentic, meaningful experiences.",
+      "field": "likely_target_audience",
+      "claim": "Millennials who value authentic, meaningful experiences and are health-conscious."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage mentions RXBAR's focus on simple ingredients and clear labeling.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing simple ingredients and clear labeling"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage mentions RXBAR's use of social media engagement.",
+      "field": "current_marketing_strategy",
+      "claim": "Engaging with customers through social media"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage mentions RXBAR's use of influencer marketing.",
+      "field": "current_marketing_strategy",
+      "claim": "Influencer marketing"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "The passage mentions seasonal product launches such as RXBAR Minis and limited edition flavors.",
+      "field": "current_marketing_strategy",
+      "claim": "Seasonal product launches"
+    },
+    {
+      "n": 7,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "The passage mentions product diversification with the introduction of new flavors and product types like RXBAR Minis and RXBAR Oats.",
+      "field": "current_marketing_strategy",
+      "claim": "Product diversification"
+    }
+  ]
+}

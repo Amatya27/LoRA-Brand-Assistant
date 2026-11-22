@@ -1,0 +1,49 @@
+{
+  "company": "Faherty",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "Passages provide specific marketing details and brand philosophy.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "Passage [5] states Faherty's philosophy and commitment to social and environmental responsibility, including B Corporation certification.",
+      "field": "brand_summary",
+      "claim": "Faherty is a sustainable fashion brand that focuses on creating high-quality, comfortable clothing with a relaxed, coastal-inspired aesthetic. The brand emphasizes purpose, authenticity, and social and environmental responsibility, as evidenced by its B Corporation certification and commitment to using responsibly sourced materials."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] mentions retargeting campaigns contributing to sales.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing retargeting campaigns to drive sales [1]"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] describes a mock campaign focused on women's and men's collections.",
+      "field": "current_marketing_strategy",
+      "claim": "Creating seasonal campaigns focused on women's and men's collections [2]"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[6]"
+      ],
+      "reason": "Passage [6] details Faherty's use of data-driven retail strategy to guide product development and reduce over-assortment.",
+      "field": "current_marketing_strategy",
+      "claim": "Employing a data-driven approach to guide product development and reduce over-assortment [6]"
+    }
+  ]
+}

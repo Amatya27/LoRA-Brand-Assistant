@@ -1,0 +1,70 @@
+{
+  "company": "Peloton",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided evidence focuses on Peloton's marketing strategies and activities, including social media usage, content creation, and influencer partnerships.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage explicitly states that Peloton's marketing strategy blends community, content, personalization, and influencer partnerships.",
+      "field": "brand_summary",
+      "claim": "Peloton employs a multifaceted marketing strategy that includes leveraging social media platforms, community engagement, content creation, personalization, and influencer partnerships to drive engagement and brand loyalty."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "The passage mentions that Peloton targets specific segments like millennials and women, while also expanding to underrepresented groups like millennial men.",
+      "field": "likely_target_audience",
+      "claim": "Specific segments such as millennials and women, while also expanding to underrepresented groups like millennial men."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[4]"
+      ],
+      "reason": "Both passages indicate that Peloton uses social media platforms like Instagram and Facebook to resonate with its target audience.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing social media platforms like Instagram and Facebook to execute campaigns that resonate with its target audience."
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "The passage mentions that Peloton posts a lot of tips and guidance from its instructors, adding value to their content.",
+      "field": "current_marketing_strategy",
+      "claim": "Creating value-added content through tips and guidance from instructors."
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "The passage explicitly states that Peloton is expanding to underrepresented groups like millennial men.",
+      "field": "current_marketing_strategy",
+      "claim": "Expanding its reach to underrepresented groups like millennial men."
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "The passage mentions that Peloton collaborates with influencers to enhance brand loyalty and engagement.",
+      "field": "current_marketing_strategy",
+      "claim": "Collaborating with influencers to enhance brand loyalty and engagement."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "company": "The Ordinary",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages provide insights into The Ordinary's marketing strategies, including OOH marketing, transparency in content, and social media engagement.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage explicitly mentions The Ordinary's use of OOH marketing to reintroduce its philosophy.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing out-of-home (OOH) marketing to reintroduce its philosophy [1]"
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "The passage states that The Ordinary fosters transparency by showing behind-the-scenes processes and teams.",
+      "field": "current_marketing_strategy",
+      "claim": "Fostering transparency through content that shows behind-the-scenes processes and teams [3]"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The passage indicates that The Ordinary creates engaging and informational content on social media platforms like Instagram.",
+      "field": "current_marketing_strategy",
+      "claim": "Creating engaging and informational content on social media platforms like Instagram and TikTok [5]"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "company": "Dollar Shave Club",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages provide detailed information about Dollar Shave Club's marketing strategy and target audience.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage states that Dollar Shave Club targets men aged 18-35 and uses social media platforms like Instagram, Twitter, and Facebook.",
+      "field": "brand_summary",
+      "claim": "Dollar Shave Club focuses on creating affordable and convenient shaving solutions for men aged 18-35, using social media platforms like Instagram, Twitter, and Facebook to engage their target audience."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage defines the target audience as men aged 18-35 who seek affordability.",
+      "field": "likely_target_audience",
+      "claim": "Men aged 18-35 who seek affordability and convenience in their shaving products."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The passage mentions that Dollar Shave Club utilizes social media for brand awareness.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing social media for brand awareness"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The passage states that Dollar Shave Club creates compelling content to engage their target audience.",
+      "field": "current_marketing_strategy",
+      "claim": "Creating compelling content to engage the target audience"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The passage mentions that Dollar Shave Club partners with influencers to expand their reach.",
+      "field": "current_marketing_strategy",
+      "claim": "Partnering with influencers to expand reach"
+    }
+  ]
+}

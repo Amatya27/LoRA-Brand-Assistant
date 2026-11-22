@@ -1,0 +1,83 @@
+{
+  "company": "Ten Thousand",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The evidence provided focuses on the marketing strategies and activities of Ten Thousand Villages, including digital marketing, storytelling, and community engagement.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]",
+        "[4]",
+        "[5]"
+      ],
+      "reason": "Passages [1] and [2] explicitly state the use of ethical branding, storytelling, and community engagement to promote fair trade products and build trust with conscious consumers. Passages [4] and [5] further support the use of digital marketing techniques and the promotion of fair trade principles.",
+      "field": "brand_summary",
+      "claim": "Ten Thousand Villages uses ethical branding, storytelling, and community engagement to promote fair trade products and build trust with conscious consumers. They leverage digital marketing techniques, including social media campaigns and interactive multimedia, to share artisans' stories and highlight the social and environmental impact of each purchase."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]"
+      ],
+      "reason": "Passages [1] and [2] indicate that Ten Thousand Villages targets consumers who value ethical consumption and are interested in fair trade products.",
+      "field": "likely_target_audience",
+      "claim": "Consumers who value ethical consumption and are interested in fair trade products"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] explicitly mentions the use of digital marketing techniques, including social media campaigns and interactive multimedia.",
+      "field": "current_marketing_strategy",
+      "claim": "Leverages modern digital marketing techniques, including social media campaigns and interactive multimedia"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] states that they share artisans' stories to foster emotional connections.",
+      "field": "current_marketing_strategy",
+      "claim": "Shares artisans' stories to foster emotional connections"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] mentions that their website explains fair trade principles, including fair wages, microfinancing, and safe working conditions.",
+      "field": "current_marketing_strategy",
+      "claim": "Promotes fair trade principles, including fair wages, microfinancing, and safe working conditions"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passage [4] states that Ten Thousand Villages participates actively in fair trade governance and supports community development.",
+      "field": "current_marketing_strategy",
+      "claim": "Participates in fair trade governance and supports community development"
+    },
+    {
+      "n": 7,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "Passage [5] mentions participation in craft fairs, sales, and educational events to broaden their reach.",
+      "field": "current_marketing_strategy",
+      "claim": "Engages in events and local presence through craft fairs, sales, and educational events"
+    }
+  ]
+}

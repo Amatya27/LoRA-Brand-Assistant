@@ -1,0 +1,51 @@
+{
+  "company": "Tonal",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages detail Tonal's marketing strategies, including product launches and email marketing.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]",
+        "[5]"
+      ],
+      "reason": "Passages [1], [2], and [5] collectively describe Tonal's focus on launching and repositioning its products through targeted marketing strategies, including email marketing campaigns.",
+      "field": "brand_summary",
+      "claim": "Tonal is a company that focuses on launching and repositioning its products through targeted marketing strategies, including email marketing campaigns."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] explicitly mentions Tonal's use of email marketing campaigns to boost engagement and conversions.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing email marketing campaigns to boost engagement and conversions [2]"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] describes Tonal's staged reveal strategy for generating pre-launch demand.",
+      "field": "current_marketing_strategy",
+      "claim": "Staging product launches with a focus on generating pre-launch demand [1]"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "Passage [5] discusses Tonal's repositioning strategy to align with a clear target market and strategy.",
+      "field": "current_marketing_strategy",
+      "claim": "Repositioning the brand to align with a clear strategy and target market [5]"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "company": "Charlotte Tilbury",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages provide details on Charlotte Tilbury's Instagram marketing strategy, including the use of various content types and influencer collaborations.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[3]",
+        "[5]"
+      ],
+      "reason": "Passages [1], [3], and [5] collectively describe Charlotte Tilbury's Instagram launch strategy that maximizes reach, engagement, and conversions through various types of content and influencer collaborations.",
+      "field": "brand_summary",
+      "claim": "Charlotte Tilbury is known for its Instagram launch strategy that maximizes reach, engagement, and conversions through various types of content and influencer collaborations."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] explicitly mentions the use of Instagram Stories for product launches with polls, quizzes, and emoji sliders to drive audience interaction.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizes Instagram Stories for product launches with polls, quizzes, and emoji sliders to drive audience interaction"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "Passage [3] states that Collab posts are an easy visibility win and can maximize reach organically.",
+      "field": "current_marketing_strategy",
+      "claim": "Uses Collab posts to maximize reach organically"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "Passage [5] mentions that Charlotte Tilbury's campaigns are often tied to celebrity MUA content or creator tutorials to amplify reach and resonance.",
+      "field": "current_marketing_strategy",
+      "claim": "Leverages celebrity makeup artists and creator tutorials to amplify reach and resonance"
+    }
+  ]
+}

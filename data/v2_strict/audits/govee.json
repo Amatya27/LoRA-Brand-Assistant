@@ -1,0 +1,50 @@
+{
+  "company": "Govee",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain marketing-related information about Govee's brand and marketing strategies.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[4]",
+        "[5]"
+      ],
+      "reason": "Passages [4] and [5] both indicate Govee's leadership in LED lighting and their use of influencer partnerships and live activations to enhance brand awareness and user-friendly features.",
+      "field": "brand_summary",
+      "claim": "Govee is a prominent leader in the LED lighting industry, known for providing high-quality LED lighting products that enhance the ambience of any space without needing specialist knowledge to fit them. They have a systematic influencer partnership strategy and have launched marketing campaigns to increase brand awareness and demonstrate user-friendly features."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passage [4] explicitly mentions Govee's systematic influencer partnership strategy.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing influencer partnerships to showcase their products and increase brand awareness [4]"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passage [4] indicates that Govee's marketing campaigns aim to demonstrate user-friendly features of their LED lights.",
+      "field": "current_marketing_strategy",
+      "claim": "Launching marketing campaigns to demonstrate user-friendly features of their LED lights [4]"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "Passage [5] mentions Govee's participation in live activations on TikTok to engage with audiences and build brand atmosphere.",
+      "field": "current_marketing_strategy",
+      "claim": "Participating in live activations on TikTok to engage with audiences and build brand atmosphere [5]"
+    }
+  ]
+}

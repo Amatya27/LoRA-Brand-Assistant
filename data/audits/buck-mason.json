@@ -1,0 +1,50 @@
+{
+  "company": "Buck Mason",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain marketing-related information about Buck Mason's target audience and ad strategies.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "The passage explicitly states that Buck Mason targeted a broad audience of men aged 25–54 living in the US.",
+      "field": "likely_target_audience",
+      "claim": "Men aged 25–54 living in the US"
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[4]"
+      ],
+      "reason": "Both passages mention that Buck Mason targeted its video ads in Instagram Stories to a 1% lookalike audience.",
+      "field": "current_marketing_strategy",
+      "claim": "Targeting video ads in Instagram Stories to a 1% lookalike audience"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The passage states that Buck Mason runs editorial-style product photography with strong copy anchored in American craftsmanship.",
+      "field": "current_marketing_strategy",
+      "claim": "Using product photography with strong copy anchored in American craftsmanship"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The passage mentions that seasonal wardrobe essentials campaigns and gift-for-him positioning drive Q4 acquisition spikes.",
+      "field": "current_marketing_strategy",
+      "claim": "Running seasonal wardrobe essentials campaigns and gift-for-him positioning"
+    }
+  ]
+}

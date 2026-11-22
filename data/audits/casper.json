@@ -1,0 +1,39 @@
+{
+  "company": "Casper",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain marketing-related information about Casper's strategies and target audience.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage explicitly states Casper's marketing approach and target audience.",
+      "field": "brand_summary",
+      "claim": "Casper is a mattress startup that targets young adults with appealing visuals and a comedic persona on platforms like Twitter and Instagram. They build brand awareness through engaging narratives and experiences like nap pods on college campuses."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage mentions that Casper targets young adults.",
+      "field": "likely_target_audience",
+      "claim": "Young adults"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage mentions building brand awareness through engaging narratives and experiences like nap pods on college campuses.",
+      "field": "current_marketing_strategy",
+      "claim": "Building brand awareness through engaging narratives and experiences like nap pods on college campuses"
+    }
+  ]
+}

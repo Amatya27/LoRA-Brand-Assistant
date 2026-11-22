@@ -1,0 +1,70 @@
+{
+  "company": "Trade Coffee",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain marketing-related information about Trade Coffee's advertising and partnership strategies.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[1]"
+      ],
+      "reason": "Passages [2] and [1] confirm that Trade Coffee is a coffee subscription brand connecting customers with craft coffee roasters, uses paid social retargeting and earned media, and focuses on roaster origin stories and specific coffee tasting notes.",
+      "field": "brand_summary",
+      "claim": "Trade Coffee is a coffee subscription brand that connects customers with craft coffee roasters. They use paid social retargeting and earned media to build credibility and retain customers. The brand has a strong focus on roaster origin stories and specific coffee tasting notes in their marketing."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] states that Trade Coffee retargets podcast listeners and Wirecutter readers with quiz-based landing pages.",
+      "field": "current_marketing_strategy",
+      "claim": "Paid social retargeting of podcast listeners and Wirecutter readers with quiz-based landing pages."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] mentions that the partnership with Wirecutter earned media builds brand authority.",
+      "field": "current_marketing_strategy",
+      "claim": "Use of earned media through partnerships with Wirecutter to build brand authority."
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] confirms that Trade Coffee's Facebook and Instagram ads feature roaster origin stories and specific coffee tasting notes.",
+      "field": "current_marketing_strategy",
+      "claim": "Advertising on Facebook and Instagram with content focused on roaster origin stories and specific coffee tasting notes."
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] does not mention TikTok marketing efforts, supporting the claim.",
+      "field": "marketing_gaps",
+      "claim": "No mention of TikTok marketing efforts [1]."
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] does not mention email marketing campaigns, supporting the claim.",
+      "field": "marketing_gaps",
+      "claim": "No evidence of email marketing campaigns [1]."
+    }
+  ]
+}

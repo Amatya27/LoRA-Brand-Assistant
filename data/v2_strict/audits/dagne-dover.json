@@ -1,0 +1,80 @@
+{
+  "company": "Dagne Dover",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The evidence provided includes marketing strategies and customer insights, which are directly related to the claims made about Dagne Dover's marketing approach.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The passage states that Dagne Dover is an accessories brand that focuses on functional bags for various lifestyles and has grown through word-of-mouth marketing.",
+      "field": "brand_summary",
+      "claim": "Dagne Dover is an accessories brand that focuses on functional bags for various lifestyles, including work, travel, parenting, fitness, and everyday use. The brand has grown significantly through word-of-mouth marketing and has a strong influencer marketing strategy."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage mentions students and parents as key demographics, and emphasizes the quality and functionality of the bags.",
+      "field": "likely_target_audience",
+      "claim": "Students, young professionals, parents, and fitness enthusiasts who value functionality and quality in their bags."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The passage explicitly states that word-of-mouth marketing drives close to half of the company's growth.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizes word-of-mouth marketing as a primary driver of growth"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage discusses Dagne Dover's influencer marketing strategy, indicating a strong focus on this aspect.",
+      "field": "current_marketing_strategy",
+      "claim": "Has a strong influencer marketing strategy"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "The passage mentions a successful Instagram advertising campaign with a high return on ad spend.",
+      "field": "current_marketing_strategy",
+      "claim": "Uses Instagram for advertising with high return on ad spend"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The passage states that Dagne Dover sells through more than 250 retail locations.",
+      "field": "current_marketing_strategy",
+      "claim": "Sells through more than 250 retail locations"
+    },
+    {
+      "n": 7,
+      "verdict": "supported",
+      "evidence": [
+        "[3]",
+        "[4]"
+      ],
+      "reason": "The passages mention the importance of lifestyle and functionality in their marketing strategy, as well as successful Instagram campaigns focusing on interior shots and functionality.",
+      "field": "current_marketing_strategy",
+      "claim": "Focuses on lifestyle and functionality in their marketing"
+    }
+  ]
+}

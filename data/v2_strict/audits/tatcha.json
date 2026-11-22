@@ -1,0 +1,50 @@
+{
+  "company": "Tatcha",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The evidence provided includes details about Tatcha's use of influencer marketing and Instagram ads, which are key elements of their marketing strategy.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[6]"
+      ],
+      "reason": "Passages [2] and [6] indicate that Tatcha uses influencer marketing and Instagram ads to reach its target audience.",
+      "field": "brand_summary",
+      "claim": "Tatcha is a luxury skincare brand that uses influencer marketing and Instagram ads to reach its target audience."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] states that Tatcha uses influencers to amplify their message and create trust with their audience.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing influencer marketing to amplify their message and create trust with their audience."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[6]"
+      ],
+      "reason": "Passage [6] shows that Tatcha runs Instagram ads to target their audience effectively.",
+      "field": "current_marketing_strategy",
+      "claim": "Running Instagram ads to target their audience effectively."
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] mentions that Tatcha collaborates with content creators to resonate with their target market.",
+      "field": "current_marketing_strategy",
+      "claim": "Collaborating with content creators to resonate with their target market."
+    }
+  ]
+}

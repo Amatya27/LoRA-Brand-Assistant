@@ -1,0 +1,71 @@
+{
+  "company": "Lovevery",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages provide detailed information about Lovevery's marketing strategies and partnerships.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage explicitly states Lovevery's mission and partnerships.",
+      "field": "brand_summary",
+      "claim": "Lovevery designs stage-based play products and content to help children reach their full potential and give parents confidence in guiding them. They partner with mission-aligned brands, creators, and experts who share their commitment to early childhood development."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage mentions partnering with mission-aligned brands, organizations, creators, and experts.",
+      "field": "current_marketing_strategy",
+      "claim": "Partnering with mission-aligned brands, organizations, creators, and experts"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[3]"
+      ],
+      "reason": "The passages mention affiliate programs and influencer marketing as part of their marketing strategy.",
+      "field": "current_marketing_strategy",
+      "claim": "Using an affiliate program and influencer marketing to promote their products"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "The passage discusses developing a consistent voice around topics such as tummy time, toddler meals, and emotional regulation.",
+      "field": "current_marketing_strategy",
+      "claim": "Developing a consistent voice around topics such as tummy time, toddler meals, and emotional regulation"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The passage mentions the importance of user-generated content (UGC) campaigns to showcase product usage and value.",
+      "field": "current_marketing_strategy",
+      "claim": "Creating user-generated content (UGC) campaigns to showcase product usage and value"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[4]",
+        "[5]"
+      ],
+      "reason": "The passages indicate a focus on repeat customers and encouraging engagement through developmental stages.",
+      "field": "current_marketing_strategy",
+      "claim": "Focusing on repeat customers and encouraging engagement through developmental stages"
+    }
+  ]
+}

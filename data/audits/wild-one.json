@@ -1,0 +1,53 @@
+{
+  "company": "Wild One",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages provide details about Wild One's target audience and marketing strategies, which are relevant to marketing.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage explicitly states that Wild One's core user is 25-40-year-old women.",
+      "field": "likely_target_audience",
+      "claim": "25-40-year-old women"
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[3]",
+        "[6]"
+      ],
+      "reason": "Multiple passages mention Wild One's omnichannel retail marketing strategy.",
+      "field": "current_marketing_strategy",
+      "claim": "Omnichannel retail marketing strategy"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[3]",
+        "[6]"
+      ],
+      "reason": "The passages indicate that Wild One has launched its products in popular stores.",
+      "field": "current_marketing_strategy",
+      "claim": "Launching products in popular stores"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[6]"
+      ],
+      "reason": "The passage mentions that Wild One has gained partnerships with major and independent retailers.",
+      "field": "current_marketing_strategy",
+      "claim": "Partnerships with major and independent retailers"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "company": "RXBAR",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "Passages [2] and [4] provide marketing-related information about RXBAR's focus on simple ingredients and social media engagement.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] explicitly states that RXBAR's campaign utilizes simple ingredients, social media engagement, and influencer marketing.",
+      "field": "brand_summary",
+      "claim": "RXBAR focuses on simple, clear ingredients and has a strong presence on social media, using influencer marketing and engaging content to connect with their audience."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] mentions that RXBAR's campaign caters to health-conscious consumers by using simple ingredients.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing simple ingredients to appeal to health-conscious consumers"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] mentions that RXBAR engages in social media marketing and influencer partnerships.",
+      "field": "current_marketing_strategy",
+      "claim": "Engaging in social media marketing and influencer partnerships"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "company": "Who Gives A Crap",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages contain marketing-related information about Who Gives A Crap's brand and campaign strategies.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[4]",
+        "[5]"
+      ],
+      "reason": "Passages [1], [4], and [5] confirm that Who Gives A Crap is an eco-friendly toilet paper brand that donates 50% of its profits to sanitation projects and has launched a global brand campaign to support retail expansion in the UK and Australia.",
+      "field": "brand_summary",
+      "claim": "Who Gives A Crap is an eco-friendly toilet paper brand that donates 50% of its profits to sanitation projects, aiming to address the global sanitation crisis. They have recently launched their first global brand campaign to support retail expansion in the UK and Australia."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[4]",
+        "[5]"
+      ],
+      "reason": "Passages [1], [4], and [5] confirm that Who Gives A Crap has launched a global brand campaign to support retail expansion in the UK and Australia.",
+      "field": "current_marketing_strategy",
+      "claim": "Launching a global brand campaign to support retail expansion in the UK and Australia."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "Passage [3] confirms that Who Gives A Crap uses humor and community engagement to lower the 'ick factor' associated with toilet paper.",
+      "field": "current_marketing_strategy",
+      "claim": "Using humor and community engagement to lower the 'ick factor' associated with toilet paper."
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] confirms that Who Gives A Crap has optimized product packaging and bulk sizes to reduce shipping carbon footprints.",
+      "field": "current_marketing_strategy",
+      "claim": "Optimizing product packaging and bulk sizes to reduce shipping carbon footprints."
+    }
+  ]
+}

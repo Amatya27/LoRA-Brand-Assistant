@@ -1,0 +1,71 @@
+{
+  "company": "Reformation",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages provide detailed insights into Reformation's marketing strategies, including collaborations, sustainability programs, controlled drops, and omnichannel sales.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[3]",
+        "[4]"
+      ],
+      "reason": "Passages [3] and [4] explicitly mention Reformation's dual strategy of storytelling-driven collaborations and product-anchored sustainability programs, as well as their use of narrative-driven launches.",
+      "field": "brand_summary",
+      "claim": "Reformation uses a combination of storytelling-driven collaborations and product-anchored sustainability programs to drive customer engagement and repeat purchases. They also focus on controlled drops and selective collaborations to maintain consumer interest and engagement."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "Passage [3] mentions storytelling-driven collaborations with celebrities and influencers.",
+      "field": "current_marketing_strategy",
+      "claim": "Storytelling-driven collaborations with celebrities and influencers"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "Passage [3] mentions product-anchored sustainability programs.",
+      "field": "current_marketing_strategy",
+      "claim": "Product-anchored sustainability programs"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] mentions controlled drops and selective collaborations.",
+      "field": "current_marketing_strategy",
+      "claim": "Controlled drops and selective collaborations"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passage [4] mentions narrative-driven launches to convert cultural momentum into sales.",
+      "field": "current_marketing_strategy",
+      "claim": "Narrative-driven launches to convert cultural momentum into sales"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[3]",
+        "[6]"
+      ],
+      "reason": "Passages [3] and [6] mention omnichannel sales and data-driven marketing.",
+      "field": "current_marketing_strategy",
+      "claim": "Omnichannel sales and data-driven marketing"
+    }
+  ]
+}

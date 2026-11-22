@@ -1,0 +1,39 @@
+{
+  "company": "Kosas",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain marketing-related information about Kosas's activities and strategies.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage mentions that Rob Rausch is the face of a new Kosas campaign, indicating collaboration with influencers.",
+      "field": "current_marketing_strategy",
+      "claim": "Collaborating with influencers like Rob Rausch to promote new campaigns"
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The passage states that Kosas features customer unboxing experiences on TikTok.",
+      "field": "current_marketing_strategy",
+      "claim": "Using TikTok for unboxing videos and community engagement"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage mentions that Kosas participated in the Sephoria parade to reach urban audiences.",
+      "field": "current_marketing_strategy",
+      "claim": "Participating in events like the Sephoria parade to reach urban audiences"
+    }
+  ]
+}

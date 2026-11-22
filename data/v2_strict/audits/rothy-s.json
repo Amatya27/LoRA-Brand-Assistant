@@ -1,0 +1,51 @@
+{
+  "company": "Rothy's",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "Passages [2], [3], and [5] provide marketing-related information about Rothy's, emphasizing their focus on sustainability and luxury.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[3]",
+        "[5]"
+      ],
+      "reason": "Passages [2], [3], and [5] indicate that Rothy's emphasizes sustainability and luxury through the use of recycled materials and focuses on machine-washable products designed for everyday wear and comfort.",
+      "field": "brand_summary",
+      "claim": "Rothy's is a brand that emphasizes sustainability and luxury through its use of recycled materials in its shoes and bags. They focus on machine-washable products designed for everyday wear and comfort."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "Passage [3] mentions that Rothy's highlights their sustainability aspect in their marketing.",
+      "field": "current_marketing_strategy",
+      "claim": "Highlighting the sustainability aspect of their products [3]"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] indicates that Rothy's focuses on the luxury and comfort of their shoes and bags.",
+      "field": "current_marketing_strategy",
+      "claim": "Focusing on the luxury and comfort of their shoes and bags [2]"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] states that Rothy's uses real-life wear scenarios to demonstrate product features.",
+      "field": "current_marketing_strategy",
+      "claim": "Using real-life wear scenarios to demonstrate product features [2]"
+    }
+  ]
+}

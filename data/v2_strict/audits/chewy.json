@@ -1,0 +1,79 @@
+{
+  "company": "Chewy",
+  "overall": "fix",
+  "groundedness": 0.86,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain detailed information about Chewy's marketing strategies, including community building, user-generated content, and influencer collaborations.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[4]",
+        "[5]"
+      ],
+      "reason": "Passages indicate Chewy focuses on building a strong community and customer loyalty through personalized service, fast fulfillment, and user-generated content. They also leverage influencers and local micro-influencers.",
+      "field": "brand_summary",
+      "claim": "Chewy focuses on building a strong community and customer loyalty through personalized service, fast fulfillment, and user-generated content. They also leverage influencers and local micro-influencers to enhance credibility and reach."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage mentions Autoship loyalty programs to encourage repeat purchases.",
+      "field": "current_marketing_strategy",
+      "claim": "Autoship loyalty programs to encourage repeat purchases"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage mentions 24/7 customer care for immediate support.",
+      "field": "current_marketing_strategy",
+      "claim": "24/7 customer care for immediate support"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage mentions user-generated content and interactive posts to foster community.",
+      "field": "current_marketing_strategy",
+      "claim": "User-generated content and interactive posts to foster community"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage mentions collaboration with influencers to increase reach and credibility.",
+      "field": "current_marketing_strategy",
+      "claim": "Collaboration with influencers to increase reach and credibility"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passage mentions local micro-influencers for city-specific content.",
+      "field": "current_marketing_strategy",
+      "claim": "Local micro-influencers for city-specific content"
+    },
+    {
+      "n": 7,
+      "verdict": "unsupported",
+      "evidence": [],
+      "reason": "Passage mentions limited innovation in content strategy but does not explicitly state it as a gap or issue.",
+      "field": "marketing_gaps",
+      "claim": "Limited innovation in content strategy"
+    }
+  ]
+}

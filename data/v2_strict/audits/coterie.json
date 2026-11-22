@@ -1,0 +1,61 @@
+{
+  "company": "Coterie",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The evidence provided includes details about Coterie's marketing strategy and partnerships, which are directly related to the claims.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]",
+        "[6]"
+      ],
+      "reason": "Passages [1] and [6] indicate Coterie is a premium baby care brand that partnered with Envision Horizons to improve their Amazon Ads strategy, focusing on audience growth and ROAS improvement. Passage [2] confirms the focus on high-quality products and customer satisfaction.",
+      "field": "brand_summary",
+      "claim": "Coterie is a premium baby care brand that focuses on high-quality products and customer satisfaction. They have partnered with Envision Horizons to improve their Amazon Ads strategy, focusing on audience growth and ROAS improvement."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] mentions reaching parents at the exact moment of category consideration with tailored messaging.",
+      "field": "likely_target_audience",
+      "claim": "Parents looking for premium baby care products"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] states that Coterie is using Amazon Ads to target parents at the moment of category consideration with tailored messaging.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing Amazon Ads to target parents at the moment of category consideration with tailored messaging"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] mentions replacing volume-based reach with intent-based engagement.",
+      "field": "current_marketing_strategy",
+      "claim": "Implementing an audience strategy that emphasizes intent-based engagement over volume-based reach"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] confirms the use of Amazon DSP to extend the audience strategy beyond search with tactics like view remarketing.",
+      "field": "current_marketing_strategy",
+      "claim": "Using Amazon DSP to extend audience strategy beyond search with tactics like view remarketing"
+    }
+  ]
+}

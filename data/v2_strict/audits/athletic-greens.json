@@ -1,0 +1,71 @@
+{
+  "company": "Athletic Greens",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain detailed information about Athletic Greens' marketing strategies and target audience.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[3]",
+        "[4]"
+      ],
+      "reason": "Passages [2], [3], and [4] all support the claim about Athletic Greens' focus on foundational nutrition, NSF Certified for Sport quality, habit consistency, and their use of creator-led demand, partnerships with prominent figures, and user-generated content.",
+      "field": "brand_summary",
+      "claim": "Athletic Greens is a brand that focuses on foundational nutrition, NSF Certified for Sport quality, and habit consistency. They use creator-led demand, partnerships with prominent figures, and user-generated content to enhance their marketing strategy."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] explicitly mentions that Athletic Greens targets busy professionals and performance-minded consumers.",
+      "field": "likely_target_audience",
+      "claim": "Busy professionals and performance-minded consumers"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passage [4] mentions that Athletic Greens has formed partnerships with prominent figures like Tim Ferriss.",
+      "field": "current_marketing_strategy",
+      "claim": "Partnerships with prominent figures like Tim Ferriss"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] discusses the role of podcast sponsorships in Athletic Greens' marketing strategy.",
+      "field": "current_marketing_strategy",
+      "claim": "Podcast sponsorships"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "Passage [3] highlights the use of user-generated content on social media as part of Athletic Greens' marketing strategy.",
+      "field": "current_marketing_strategy",
+      "claim": "User-generated content on social media"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[6]"
+      ],
+      "reason": "Passage [6] mentions SEO and content marketing as part of Athletic Greens' current marketing strategy.",
+      "field": "current_marketing_strategy",
+      "claim": "SEO and content marketing"
+    }
+  ]
+}

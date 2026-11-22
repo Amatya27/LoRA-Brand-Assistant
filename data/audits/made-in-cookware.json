@@ -1,0 +1,51 @@
+{
+  "company": "Made In Cookware",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages provide insights into Made In Cookware's marketing strategies, including SMS campaigns, educational content, and storytelling.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]",
+        "[5]"
+      ],
+      "reason": "Passages [1] and [2] confirm Made In Cookware's focus on high-end cookware, direct-to-consumer sales, and authentic supply chains. Passage [5] supports the educational messaging strategy.",
+      "field": "brand_summary",
+      "claim": "Made In Cookware is a direct-to-consumer brand that creates high-end cookware, emphasizing craft makers and authentic supply chains. They use AI-driven optimizations for SMS campaigns and focus on educational messaging to build customer confidence."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] states that Made In Cookware uses AI-driven optimizations for SMS campaigns.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing SMS campaigns with AI-driven optimizations for targeted and efficient messaging [1]"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "Passage [5] confirms that Made In Cookware focuses on educational content to build customer confidence.",
+      "field": "current_marketing_strategy",
+      "claim": "Focusing on educational content to build customer confidence in cookware usage [5]"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passage [4] mentions the use of videos and storytelling as part of their brand differentiation strategy.",
+      "field": "current_marketing_strategy",
+      "claim": "Using storytelling through videos and content to differentiate their brand [4]"
+    }
+  ]
+}

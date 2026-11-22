@@ -1,0 +1,62 @@
+{
+  "company": "Olaplex",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages detail Olaplex's marketing strategies and activities across various platforms and methods.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[3]",
+        "[4]",
+        "[5]"
+      ],
+      "reason": "The claim is supported by multiple passages that detail Olaplex's use of data-driven performance marketing, leveraging multiple platforms, influencer marketing, community building, and social listening.",
+      "field": "brand_summary",
+      "claim": "Olaplex uses data-driven performance marketing and leverages multiple platforms for engagement. They use high-impact formats like carousel ads, video content, and social proof creatives on Facebook. They also use influencer marketing and community building strategies."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage explicitly states Olaplex's use of high-impact formats like carousel ads, video content, and social proof creatives on Facebook.",
+      "field": "current_marketing_strategy",
+      "claim": "Leverages high-impact formats like carousel ads, video content, and social proof creatives on Facebook [1]"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "The passage mentions Olaplex's collaboration with haircare professionals and influencers for paid ads and influencer marketing.",
+      "field": "current_marketing_strategy",
+      "claim": "Collaborates with haircare professionals and influencers for paid ads and influencer marketing [3]"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The passage states that Olaplex uses TikTok for brand awareness and attracting new customers.",
+      "field": "current_marketing_strategy",
+      "claim": "Uses TikTok for brand awareness and attracting new customers [5]"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "The passage mentions Olaplex's use of social listening to monitor conversations and gather customer insights.",
+      "field": "current_marketing_strategy",
+      "claim": "Monitors conversations and gathers customer insights through social listening [4]"
+    }
+  ]
+}

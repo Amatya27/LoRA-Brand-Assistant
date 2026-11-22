@@ -95,6 +95,36 @@ ROLE_HINTS = {
     "vice",
     "vp",
 }
+PRIVACY_BOILERPLATE_TOKENS = (
+    "cookie",
+    "ip address",
+    "advertising partner",
+    "tracking tool",
+    "personal information",
+    "de-identified",
+    "opt-out",
+    "opt out of",
+    "third-party advertis",
+    "data we collect",
+)
+MARKETING_SIGNAL_TOKENS = (
+    "campaign",
+    "influencer",
+    "launch",
+    "collaborat",
+    "ambassador",
+    "tiktok",
+    "instagram",
+    "audience",
+    "loyalty",
+    "giveaway",
+    "content series",
+    "ugc",
+    "user-generated",
+    "sponsorship",
+)
+LEGAL_URL_PATTERNS = ("/privacy", "/terms", "/policy", "/policies", "cookie", "/legal", "gdpr", "ccpa")
+
 LOW_VALUE_URL_PATTERNS = (
     "/login",
     "/signin",
@@ -859,6 +889,17 @@ def evidence_quality_score(
     elif website_domain and website_domain == domain:
         score += 10
 
+    # Grounding fix: privacy/legal/cookie boilerplate is not marketing evidence.
+    # Passages scoring <= 0 are discarded by collect_evidence, so these never reach a packet.
+    lowered = combined.lower()
+    privacy_hits = sum(1 for token in PRIVACY_BOILERPLATE_TOKENS if token in lowered)
+    marketing_hits = sum(1 for token in MARKETING_SIGNAL_TOKENS if token in lowered)
+    if privacy_hits >= 2 and marketing_hits == 0:
+        return -1  # hard exclusion: never usable as marketing evidence
+    if any(pattern in url_lower for pattern in LEGAL_URL_PATTERNS) and marketing_hits == 0:
+        score -= 15
+    score += min(marketing_hits, 4) * 3
+
     return score
 
 
@@ -975,7 +1016,9 @@ def build_prompt(
     return (
         "You are a grounded brand-outreach assistant.\n"
         "Use only the evidence below.\n"
-        "If a fact is not supported by evidence, say it is uncertain.\n"
+        "Never guess, assume, or use outside knowledge. Missing information is acceptable.\n"
+        "If the evidence does not support a field, write INSUFFICIENT_EVIDENCE for that field "
+        "(or an empty list) instead of inventing content.\n"
         "Return valid JSON only.\n\n"
         f"Company: {company}\n"
         f"Person: {person_line}\n\n"
@@ -983,13 +1026,22 @@ def build_prompt(
         f"{profile_block}\n\n"
         "Rules:\n"
         "- Keep the answer concise, specific, and evidence-based.\n"
-        "- List 3 to 5 current marketing strategy points.\n"
-        "- List exactly 2 or 3 marketing gaps as missed opportunities, not generic channel names.\n"
-        "- The email must be an outreach email from our team to the company proposing a collaborative Instagram post.\n"
+        "- List up to 5 current marketing strategy points, only those the evidence states. Fewer or none is fine.\n"
+        "- List up to 3 marketing gaps. Each gap starts from an activity or audience a cited passage states, "
+        "then names what did not appear in the sources reviewed, e.g. \"Active Instagram influencer program [1] "
+        "aimed at Gen Z [2]; no TikTok activity appeared in the sources reviewed.\" Never state a gap as a fact "
+        "about the company and never write a gap without a cited anchor. Zero gaps is a valid answer.\n"
+        "- If the evidence has no real marketing information, set evidence_status to insufficient "
+        "and do not write a pitch.\n"
+        "- When a gap is supported, the email is an outreach email from our team to the company proposing "
+        "a collaborative Instagram post. Present the gap as what we noticed in the sources reviewed and as a "
+        "suggestion, not a fact. With no supported gap, the email fields are INSUFFICIENT_EVIDENCE.\n"
         "- Explain how the proposed post helps the brand reach a wider audience or address one identified gap.\n"
         "- Use citations like [1] and [2] that refer to the evidence block.\n\n"
         "Required JSON schema:\n"
         "{\n"
+        '  "evidence_status": "sufficient or insufficient",\n'
+        '  "insufficient_fields": ["names of fields you could not ground"],\n'
         '  "brand_summary": "string",\n'
         '  "likely_target_audience": "string",\n'
         '  "current_marketing_strategy": ["string", "string", "string"],\n'

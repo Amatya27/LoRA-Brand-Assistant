@@ -1,0 +1,82 @@
+{
+  "company": "Vans",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages provide detailed information about Vans' marketing strategies and target audience.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[4]",
+        "[5]"
+      ],
+      "reason": "Passages [1] and [4] mention Vans' focus on action sports, art, music, street culture, and community engagement. Passage [5] mentions localization for different markets.",
+      "field": "brand_summary",
+      "claim": "Vans is known for its storytelling and partnerships in action sports, art, music, and street culture. They emphasize creative self-expression and community engagement through collaborations, events, and a loyalty program. Vans also localizes content for different markets, such as China, using local creators and digital magazines."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] mentions action sports enthusiasts, artists, music lovers, street culture followers, and families with children as part of their target audience.",
+      "field": "likely_target_audience",
+      "claim": "Action sports enthusiasts, artists, music lovers, street culture followers, and families with children"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] mentions storytelling and partnerships with artists and action sports athletes.",
+      "field": "current_marketing_strategy",
+      "claim": "Storytelling and partnerships with artists and action sports athletes"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] mentions grassroots events and community showcases.",
+      "field": "current_marketing_strategy",
+      "claim": "Grassroots events and community showcases"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] mentions customizable product options through Vans Customs.",
+      "field": "current_marketing_strategy",
+      "claim": "Customizable product options through Vans Customs"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[4]",
+        "[5]"
+      ],
+      "reason": "Passages [4] and [5] mention localization for different markets.",
+      "field": "current_marketing_strategy",
+      "claim": "Localizing content for different markets"
+    },
+    {
+      "n": 7,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passage [4] mentions collaborations with brands like Supreme and artists like Takashi Murakami.",
+      "field": "current_marketing_strategy",
+      "claim": "Collaborations with brands like Supreme and artists like Takashi Murakami"
+    }
+  ]
+}

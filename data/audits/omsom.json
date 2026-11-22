@@ -1,0 +1,52 @@
+{
+  "company": "Omsom",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The evidence provided includes marketing strategies and activities of Omsom, including partnerships and digital marketing efforts.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]",
+        "[3]",
+        "[6]"
+      ],
+      "reason": "The evidence supports the claim that Omsom is an Asian-American sauce brand that emphasizes storytelling and heritage in its marketing. It also supports the partnership with Kirati Kreations for digital marketing services, focusing on PPC campaigns, social media marketing, and content creation.",
+      "field": "brand_summary",
+      "claim": "Omsom is an Asian-American sauce brand that emphasizes storytelling and heritage in its marketing. It has partnered with Kirati Kreations for digital marketing services, focusing on PPC campaigns, social media marketing, and content creation."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The evidence supports the use of PPC campaigns to increase product visibility and sales.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing PPC campaigns to increase product visibility and sales."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[6]"
+      ],
+      "reason": "The evidence supports the development of engaging social media content for platforms like Facebook and Instagram.",
+      "field": "current_marketing_strategy",
+      "claim": "Developing engaging social media content for platforms like Facebook and Instagram."
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[6]"
+      ],
+      "reason": "The evidence supports the creation of educational posts and recipe-based content to engage the audience.",
+      "field": "current_marketing_strategy",
+      "claim": "Creating educational posts and recipe-based content to engage the audience."
+    }
+  ]
+}

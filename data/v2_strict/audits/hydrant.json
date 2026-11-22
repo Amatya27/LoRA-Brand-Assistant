@@ -1,0 +1,52 @@
+{
+  "company": "Hydrant",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The evidence provided focuses on Hydrant's marketing strategies, including digital marketing on social media and email/SMS marketing.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]",
+        "[3]"
+      ],
+      "reason": "Passages [1], [2], and [3] all mention Hydrant's use of digital marketing on platforms like Facebook and Instagram, as well as SMS and email marketing to retain customers.",
+      "field": "brand_summary",
+      "claim": "Hydrant is a hydration startup that has grown rapidly through digital marketing on platforms like Facebook and Instagram. They also use SMS and email marketing to retain customers and encourage repeat purchases."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[3]"
+      ],
+      "reason": "Passages [1] and [3] explicitly state that Hydrant uses digital marketing on Facebook and Instagram to test different value propositions and audiences.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing digital marketing on Facebook and Instagram to test different value propositions and audiences."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] mentions that SMS and email marketing are crucial for bringing customers back after their first purchase.",
+      "field": "current_marketing_strategy",
+      "claim": "Employing SMS and email marketing to retain customers and encourage repeat purchases."
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passage [4] indicates that Hydrant has grown rapidly through online sales via their own website.",
+      "field": "current_marketing_strategy",
+      "claim": "Focusing on online sales through their own website."
+    }
+  ]
+}

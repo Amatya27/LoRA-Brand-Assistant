@@ -1,0 +1,70 @@
+{
+  "company": "Fenty Beauty",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The evidence provided focuses on Fenty Beauty's marketing strategies, including social media engagement and inclusivity.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[6]"
+      ],
+      "reason": "Passages [2] and [6] both highlight Fenty Beauty's inclusive marketing strategy and community engagement.",
+      "field": "brand_summary",
+      "claim": "Fenty Beauty is known for its inclusive marketing strategy, focusing on diverse representation and community engagement through social media. The brand actively interacts with followers and reposts user-generated content to foster a loyal fan base."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[6]"
+      ],
+      "reason": "Passage [6] mentions Fenty Beauty's focus on diverse representation in advertising.",
+      "field": "likely_target_audience",
+      "claim": "Diverse audience with a focus on inclusivity, including individuals of varying ethnicities, genders, and body types."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] states that Fenty Beauty actively interacts with followers and reposts user-generated content.",
+      "field": "current_marketing_strategy",
+      "claim": "Actively interacting with followers and reposting user-generated content to build community and authenticity."
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] mentions that Fenty Beauty collaborates with influencers and creators.",
+      "field": "current_marketing_strategy",
+      "claim": "Collaborating with influencers and creators to maximize reach and impact."
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[6]"
+      ],
+      "reason": "Passage [6] explicitly states that Fenty Beauty features a diverse range of models and ambassadors in its advertising.",
+      "field": "current_marketing_strategy",
+      "claim": "Focusing on diverse representation in advertising campaigns."
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] mentions that weak identity resolution can break the customer journey into several profiles, hindering effective personalization.",
+      "field": "marketing_gaps",
+      "claim": "Weak identity resolution can break the customer journey into several profiles, hindering effective personalization."
+    }
+  ]
+}

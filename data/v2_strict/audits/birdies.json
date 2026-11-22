@@ -1,0 +1,69 @@
+{
+  "company": "Birdies",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages provide detailed information about Birdies' marketing strategies, including influencer marketing, user-generated content, and branded hashtags.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "The passage states that Birdies is a San Francisco-based shoe brand that has seen significant growth through a focused social media strategy, including influencer marketing and user-generated content.",
+      "field": "brand_summary",
+      "claim": "Birdies is a San Francisco-based shoe brand that has seen significant growth through a focused social media strategy, including influencer marketing and user-generated content."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage mentions that Birdies selects influencers with a good brand fit to be part of their exclusive group.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing influencer marketing with selected influencers who have a good brand fit"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "The passage mentions that Birdies uses user-generated content as part of its social media strategy.",
+      "field": "current_marketing_strategy",
+      "claim": "Creating a user-generated content campaign with a branded hashtag"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "The passage states that influencers chosen by Birdies gain early access to promotions and discounts in exchange for content.",
+      "field": "current_marketing_strategy",
+      "claim": "Offering early access to promotions and discounts to influencers in exchange for content"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "The passage mentions that Birdies employs a hyper-focused social media strategy to increase engagement and sales.",
+      "field": "current_marketing_strategy",
+      "claim": "Employing a hyper-focused social media strategy to increase engagement and sales"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The passage mentions that Birdies uses branded hashtags to track and increase engagement.",
+      "field": "current_marketing_strategy",
+      "claim": "Using branded hashtags to track and increase engagement"
+    }
+  ]
+}

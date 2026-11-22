@@ -1,0 +1,74 @@
+{
+  "company": "Jones Road Beauty",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain marketing-related information about Jones Road Beauty's influencer marketing strategy.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[4]",
+        "[6]"
+      ],
+      "reason": "Passages [1], [4], and [6] collectively support the claim that Jones Road Beauty utilizes influencer marketing to drive engagement and sales, focusing on female audiences and using Reels as a preferred media type.",
+      "field": "brand_summary",
+      "claim": "Jones Road Beauty utilizes influencer marketing to drive engagement and sales, focusing on female audiences and using Reels as a preferred media type."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[4]",
+        "[6]"
+      ],
+      "reason": "Passages [4] and [6] indicate a significant female presence among the influencer pool and mention the geographical dispersion among creators, including a notable number from the United States, Canada, and Ireland.",
+      "field": "likely_target_audience",
+      "claim": "Female audience, with a significant presence in the United States, Canada, and Ireland."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[5]"
+      ],
+      "reason": "Passages [1] and [5] confirm that Jones Road Beauty utilizes influencer marketing to drive engagement and sales.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizes influencer marketing to drive engagement and sales."
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passage [4] states that Jones Road Beauty has a significant female presence among its influencer pool, implying a well-targeted audience strategy for cosmetic products usually marketed towards women.",
+      "field": "current_marketing_strategy",
+      "claim": "Focuses on female audiences."
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[6]"
+      ],
+      "reason": "Passages [1] and [6] indicate that Reels are the preferred media type, with 73.53% of content being reels.",
+      "field": "current_marketing_strategy",
+      "claim": "Prefers using Reels as a media type."
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[6]"
+      ],
+      "reason": "Passage [6] mentions the geographical distribution of creators, including a notable number from the United States, Canada, and Ireland.",
+      "field": "current_marketing_strategy",
+      "claim": "Geographically targets creators in the United States, Canada, and Ireland."
+    }
+  ]
+}

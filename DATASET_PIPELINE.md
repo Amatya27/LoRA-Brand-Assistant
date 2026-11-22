@@ -194,3 +194,36 @@ ungrounded answer (a hallucination).
   JSON is well-formed, not that the claims are grounded. Human curation
   (Phase 1.3) is the real quality gate.
 - **Empty-evidence packets must be dropped before labeling** (see above).
+
+---
+
+## Version 2: real data only (supersedes steps 1.2 to 1.4 above)
+
+The first dataset was built with rules that required every field to be filled, so the
+teacher sometimes wrote marketing claims from privacy-policy text or from nothing. Version 2
+removes every place that forced an answer:
+
+| Where | Before | Now |
+|---|---|---|
+| Retrieval scoring (`brand_assistant_rag.py`) | privacy/cookie/legal text could rank as evidence | such passages are excluded; marketing passages are promoted |
+| Prompt rules (`build_prompt`) | "3 to 5 strategy points", "exactly 2 or 3 gaps" | "up to", zero is valid, `INSUFFICIENT_EVIDENCE` allowed |
+| Validator (`validate_output`) | empty gaps or citations were errors | abstention is valid when `evidence_status` is `insufficient` |
+| Labeler (`make_labels.py`) | every packet was labeled | a packet with no evidence gets no label; citations must resolve |
+| Dataset build (`build_dataset.py`) | schema-valid and approved | also needs a passing grounding audit |
+
+Order of work:
+
+```bash
+python make_labels.py      # teacher writes labels, abstaining where evidence is missing
+python audit_labels.py     # judge checks every stated claim against the evidence
+python review_labels.py    # a person reviews label, audit verdict and evidence side by side
+python build_dataset.py    # only verified labels are written; see manifest.json
+```
+
+To repair a label the audit marked `fix`: edit `data/labeled/<company>.json` and remove or
+correct the unsupported claim inside `completion`, delete `data/audits/<company>.json`, and
+run `python audit_labels.py` again. Labels marked `reject` are left out; re-retrieve that
+company if better evidence may exist.
+
+Abstained labels are kept in the training data on purpose, so the model learns to say
+`INSUFFICIENT_EVIDENCE` instead of guessing.

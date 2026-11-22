@@ -1,0 +1,41 @@
+{
+  "company": "Saie",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages focus on Saie's marketing strategies and collaborations with creators and cultural moments.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[3]",
+        "[5]"
+      ],
+      "reason": "Passages indicate Saie collaborates with creators and influencers to develop products.",
+      "field": "current_marketing_strategy",
+      "claim": "Collaborating with creators and influencers to develop products"
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "Passages indicate Saie engages with their audience through specific product offerings.",
+      "field": "current_marketing_strategy",
+      "claim": "Engaging with their audience through specific product offerings"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[6]"
+      ],
+      "reason": "Passages indicate Saie partners with cultural moments and events.",
+      "field": "current_marketing_strategy",
+      "claim": "Partnerships with cultural moments and events"
+    }
+  ]
+}

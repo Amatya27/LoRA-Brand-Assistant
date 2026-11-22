@@ -1,0 +1,60 @@
+{
+  "company": "Lululemon",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The passages provide detailed information about Lululemon's marketing strategies, including physical presence, community engagement, and influencer partnerships.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]"
+      ],
+      "reason": "Passages [1] and [2] confirm Lululemon's focus on physical presence, community engagement, and target market segmentation.",
+      "field": "brand_summary",
+      "claim": "Lululemon reaches its audience through a mix of physical presence and community engagement, focusing on retail stores that host events and classes, and a strong ambassador program. The brand segments its target market by gender, activity, and geography, with a focus on women's apparel and accessories."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] states that Lululemon reaches its audience through physical presence and community engagement.",
+      "field": "current_marketing_strategy",
+      "claim": "Physical retail presence with community events and classes"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "Passage [5] mentions Lululemon's micro-influencer strategy at a massive scale.",
+      "field": "current_marketing_strategy",
+      "claim": "Micro-influencer strategy at a massive scale"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passage [4] confirms that Lululemon's global campaigns focus on social identity and functional benefits.",
+      "field": "current_marketing_strategy",
+      "claim": "Global campaigns that focus on social identity and functional benefits"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passage [4] states that Lululemon emphasizes the idea and experience behind the product in its marketing strategy.",
+      "field": "current_marketing_strategy",
+      "claim": "Product-led marketing that emphasizes the idea and experience behind the product"
+    }
+  ]
+}

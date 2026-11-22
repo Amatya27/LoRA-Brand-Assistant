@@ -1,0 +1,71 @@
+{
+  "company": "Chobani",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain detailed information about Chobani's marketing strategies, including digital media campaigns, athlete endorsements, and purpose-driven content.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]",
+        "[3]"
+      ],
+      "reason": "Passages [1] and [2] detail Chobani's digital media campaigns and content strategy, while passage [3] confirms athlete endorsements and purpose-driven content.",
+      "field": "brand_summary",
+      "claim": "Chobani employs a purpose-driven marketing strategy that emphasizes community impact and athlete endorsements. They use a mix of digital and traditional media to reach their target audience, focusing on connected TV, YouTube, TikTok, Instagram Reels, and search ads. Their content strategy includes recipe videos, athlete stories, and wellness messaging."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "Passage [3] confirms Chobani's purpose-driven content that highlights community impact and athlete endorsements.",
+      "field": "current_marketing_strategy",
+      "claim": "Purpose-driven content that highlights community impact and athlete endorsements"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] details Chobani's digital media campaigns on TikTok, Instagram Reels, and YouTube.",
+      "field": "current_marketing_strategy",
+      "claim": "Digital media campaigns on platforms like TikTok, Instagram Reels, and YouTube"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] confirms Chobani's use of search and retail media ads linked to sales performance.",
+      "field": "current_marketing_strategy",
+      "claim": "Search and retail media ads linked to sales performance"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] confirms Chobani's use of connected TV ads targeting households for breakfast and coffee content.",
+      "field": "current_marketing_strategy",
+      "claim": "Connected TV ads targeting households for breakfast and coffee content"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "Passage [3] confirms Chobani's Olympic and Paralympic sponsorships with athlete stories and product packaging.",
+      "field": "current_marketing_strategy",
+      "claim": "Olympic and Paralympic sponsorships with athlete stories and product packaging"
+    }
+  ]
+}

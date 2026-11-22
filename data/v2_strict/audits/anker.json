@@ -1,0 +1,49 @@
+{
+  "company": "Anker",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain detailed information about Anker's marketing strategies and campaigns.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] explicitly states that Anker is a leading global brand in phone and home technology, known for providing high-quality accessories to charge a range of different tech products. It also mentions their collaboration with Stride Social for enhancing brand awareness and engagement.",
+      "field": "brand_summary",
+      "claim": "Anker is a leading global brand in phone and home technology, known for providing high-quality accessories to charge a range of different tech products from phones to off-grid living appliances. They have been working with Stride Social to enhance brand awareness and boost engagement through influencer marketing campaigns."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] mentions that Anker's influencer campaign with Stride Social highlights the features and benefits of Anker's products.",
+      "field": "current_marketing_strategy",
+      "claim": "Utilizing influencer marketing to highlight product features and benefits"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] states that the influencers produced detailed content, which amplified brand awareness and boosted engagement for Anker's products.",
+      "field": "current_marketing_strategy",
+      "claim": "Amplifying brand awareness through detailed content produced by influencers"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "Passage [3] indicates that the campaign's effectiveness in increasing brand awareness and engaging a wide audience for Anker's innovative tech products was reflected in impressive metrics.",
+      "field": "current_marketing_strategy",
+      "claim": "Boosting engagement with a wide audience through social media campaigns"
+    }
+  ]
+}

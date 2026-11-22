@@ -1,0 +1,62 @@
+{
+  "company": "Liquid Death",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain detailed information about Liquid Death's marketing strategies and activities, indicating a strong focus on marketing.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[3]",
+        "[5]"
+      ],
+      "reason": "Passages [1] and [5] mention Liquid Death's bold and edgy marketing approach, use of humor and creativity, and engagement on social media platforms like Instagram and TikTok. Passage [3] specifically mentions the 'Small Cans' campaign.",
+      "field": "brand_summary",
+      "claim": "Liquid Death has a bold and edgy marketing approach, redefining traditional water advertising with humor and creativity. They use social media platforms like Instagram and TikTok to engage their audience with unconventional content."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] explicitly states that Liquid Death uses humor and creativity in their marketing to redefine traditional water advertising.",
+      "field": "current_marketing_strategy",
+      "claim": "Uses humor and creativity in advertising to stand out in the market [1]"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[3]"
+      ],
+      "reason": "Passage [3] mentions the success of the 'Small Cans' campaign on social media platforms.",
+      "field": "current_marketing_strategy",
+      "claim": "Runs successful social media campaigns, such as the 'Small Cans' campaign [3]"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[6]"
+      ],
+      "reason": "Passages [1] and [6] indicate that Liquid Death collaborates with influencers and artists for content creation.",
+      "field": "current_marketing_strategy",
+      "claim": "Collaborates with influencers and artists for content creation [1, 6]"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[4]"
+      ],
+      "reason": "Passage [4] mentions Liquid Death's direct-to-consumer distribution model and strong online presence.",
+      "field": "current_marketing_strategy",
+      "claim": "Employs a direct-to-consumer distribution model with a strong online presence [4]"
+    }
+  ]
+}

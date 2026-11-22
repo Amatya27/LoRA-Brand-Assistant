@@ -1,0 +1,50 @@
+{
+  "company": "Blue Bottle Coffee",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "Passages provide specific details about Blue Bottle Coffee's marketing strategy, including product design, café aesthetics, and expansion plans.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[6]"
+      ],
+      "reason": "Passage [1] states that Blue Bottle Coffee emphasizes minimalist design, seasonal coffees, and signature beverages, combining high-traffic cafés with digital channels. Passage [6] confirms the global expansion and Nestlé backing.",
+      "field": "brand_summary",
+      "claim": "Blue Bottle Coffee emphasizes minimalist design, seasonal coffees, and signature beverages, combining high-traffic cafés with digital channels. They maintain a craft ethos while expanding globally, backed by Nestlé since 2017."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] explicitly mentions that Blue Bottle Coffee emphasizes minimalist design in both product and café aesthetics.",
+      "field": "current_marketing_strategy",
+      "claim": "Emphasizes minimalist design in both product and café aesthetics."
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] states that seasonal coffees and signature beverages are consistently promoted across digital and physical channels.",
+      "field": "current_marketing_strategy",
+      "claim": "Seasonal coffees and signature beverages are consistently promoted across digital and physical channels."
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[6]"
+      ],
+      "reason": "Passage [6] confirms that Blue Bottle Coffee prioritizes high-traffic cultural districts and architecturally distinct locations for its expansion.",
+      "field": "current_marketing_strategy",
+      "claim": "Expands through high-traffic cultural districts and architecturally distinct locations."
+    }
+  ]
+}

@@ -1,0 +1,989 @@
+[
+  {
+    "company": "Allbirds",
+    "split": "valid",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Alo Yoga",
+    "split": "train",
+    "included": true,
+    "has_pitch": true,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Anker",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Aritzia",
+    "split": "test",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Article",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Athletic Brewing",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Athletic Greens",
+    "split": "train",
+    "included": true,
+    "has_pitch": true,
+    "evidence_status": "sufficient"
+  },
+  {
+    "company": "Avocado Green Mattress",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Away",
+    "split": "valid",
+    "included": true,
+    "has_pitch": true,
+    "evidence_status": "sufficient"
+  },
+  {
+    "company": "Baboon to the Moon",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "BarkBox",
+    "split": "test",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Beis",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Bellroy",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Billie",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Birdies",
+    "split": "test",
+    "included": true,
+    "has_pitch": true,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Blue Bottle Coffee",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Blueland",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Bombas",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Bones Coffee",
+    "split": "valid",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Branch Furniture",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Brooklinen",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Buck Mason",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Burrow",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Caraway",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Casper",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Charlotte Tilbury",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Chewy",
+    "split": "train",
+    "included": true,
+    "has_pitch": true,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Chobani",
+    "split": "train",
+    "included": true,
+    "has_pitch": true,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Cometeer",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Coterie",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Curology",
+    "split": "test",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Cuyana",
+    "split": "test",
+    "included": true,
+    "has_pitch": true,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Dagne Dover",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Death Wish Coffee",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Dollar Shave Club",
+    "split": "train",
+    "included": true,
+    "has_pitch": true,
+    "evidence_status": "sufficient"
+  },
+  {
+    "company": "Drunk Elephant",
+    "split": "test",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Ember",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Faherty",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Fenty Beauty",
+    "split": "test",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Fi",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Fly By Jing",
+    "split": "valid",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Frida",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Girlfriend Collective",
+    "split": "test",
+    "included": true,
+    "has_pitch": true,
+    "evidence_status": "sufficient"
+  },
+  {
+    "company": "Glossier",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Govee",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Graza",
+    "split": "valid",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Great Jones",
+    "split": "valid",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Greats",
+    "split": "valid",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Grove Collaborative",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Gymshark",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Harry's",
+    "split": "test",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Hatch",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Haus",
+    "split": "test",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Health-Ade",
+    "split": "test",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Hims",
+    "split": "test",
+    "included": true,
+    "has_pitch": true,
+    "evidence_status": "sufficient"
+  },
+  {
+    "company": "Hoka",
+    "split": "test",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Hu Kitchen",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Hydrant",
+    "split": "train",
+    "included": true,
+    "has_pitch": true,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Hydrow",
+    "split": "test",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Ilia Beauty",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Imperfect Foods",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Jones Road Beauty",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "July Luggage",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Koio",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Kosas",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Lalo",
+    "split": "test",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Liquid Death",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Liquid I.V.",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Lovevery",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Lululemon",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Made In Cookware",
+    "split": "test",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Madewell",
+    "split": "train",
+    "included": true,
+    "has_pitch": true,
+    "evidence_status": "sufficient"
+  },
+  {
+    "company": "Magic Spoon",
+    "split": "test",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Marine Layer",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Merit Beauty",
+    "split": "train",
+    "included": true,
+    "has_pitch": true,
+    "evidence_status": "sufficient"
+  },
+  {
+    "company": "MeUndies",
+    "split": "valid",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Milk Makeup",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Misfits Market",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Momofuku Goods",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Monos",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "MZ Wallace",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Nanoleaf",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Native Union",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Native",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "New Balance",
+    "split": "test",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Nomad Goods",
+    "split": "test",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Nothing",
+    "split": "test",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Oatly",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Olaplex",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Olipop",
+    "split": "test",
+    "included": true,
+    "has_pitch": true,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Ollie",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Omsom",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Our Place",
+    "split": "test",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Oura",
+    "split": "test",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Outdoor Voices",
+    "split": "valid",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Parachute Home",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Parade",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Partake Foods",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Peak Design",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Pela",
+    "split": "valid",
+    "included": true,
+    "has_pitch": true,
+    "evidence_status": "sufficient"
+  },
+  {
+    "company": "Peloton",
+    "split": "train",
+    "included": true,
+    "has_pitch": true,
+    "evidence_status": "sufficient"
+  },
+  {
+    "company": "Poppi",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Prose",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Public Goods",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Purple",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Quip",
+    "split": "test",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Rare Beauty",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Recess",
+    "split": "test",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Reformation",
+    "split": "train",
+    "included": true,
+    "has_pitch": true,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Rhone",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Ritual",
+    "split": "train",
+    "included": true,
+    "has_pitch": true,
+    "evidence_status": "sufficient"
+  },
+  {
+    "company": "Rothy's",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Ruggable",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "RXBAR",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Saie",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Seed",
+    "split": "test",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Siete Foods",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Skims",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Spindrift",
+    "split": "train",
+    "included": true,
+    "has_pitch": true,
+    "evidence_status": "sufficient"
+  },
+  {
+    "company": "Stance",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Stumptown Coffee",
+    "split": "valid",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Summer Fridays",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Supergoop",
+    "split": "valid",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Tatcha",
+    "split": "train",
+    "included": true,
+    "has_pitch": true,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Ten Thousand",
+    "split": "train",
+    "included": true,
+    "has_pitch": true,
+    "evidence_status": "sufficient"
+  },
+  {
+    "company": "The Farmer's Dog",
+    "split": "test",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "The Ordinary",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Thrive Market",
+    "split": "valid",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Thursday Boots",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Tonal",
+    "split": "valid",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Topicals",
+    "split": "test",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Tracksmith",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Trade Coffee",
+    "split": "train",
+    "included": true,
+    "has_pitch": true,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Vans",
+    "split": "test",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Vuori",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Warby Parker",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Who Gives A Crap",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Whoop",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Wild One",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Youth to the People",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  },
+  {
+    "company": "Zenni Optical",
+    "split": "train",
+    "included": true,
+    "has_pitch": false,
+    "evidence_status": "insufficient"
+  }
+]

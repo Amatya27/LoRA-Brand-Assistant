@@ -1,0 +1,83 @@
+{
+  "company": "Chewy",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain detailed information about Chewy's marketing strategies, including service initiatives, user-generated content, influencer collaborations, and SEO efforts.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]",
+        "[3]"
+      ],
+      "reason": "Passages [1], [2], and [3] all support the claim by mentioning Chewy's focus on service, value, community engagement, user-generated content, and influencer collaborations.",
+      "field": "brand_summary",
+      "claim": "Chewy's marketing strategy emphasizes service, value, and community engagement through initiatives like 24/7 Care, fast fulfillment, and personalized content. They also use user-generated content and influencer collaborations to foster a stronger community connection and enhance customer loyalty."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] mentions the Autoship loyalty program as part of Chewy's marketing strategy.",
+      "field": "current_marketing_strategy",
+      "claim": "Autoship loyalty program"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "Passage [1] mentions the 24/7 Care service as part of Chewy's marketing strategy.",
+      "field": "current_marketing_strategy",
+      "claim": "24/7 Care service"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]"
+      ],
+      "reason": "Passages [1] and [2] mention personalized content and user-generated content as part of Chewy's marketing strategy.",
+      "field": "current_marketing_strategy",
+      "claim": "Personalized content and user-generated content"
+    },
+    {
+      "n": 5,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[4]"
+      ],
+      "reason": "Passages [2] and [4] mention the collaboration with influencers as part of Chewy's marketing strategy.",
+      "field": "current_marketing_strategy",
+      "claim": "Collaboration with influencers"
+    },
+    {
+      "n": 6,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "Passage [5] mentions SEO and content hubs as part of Chewy's marketing strategy.",
+      "field": "current_marketing_strategy",
+      "claim": "SEO and content hubs"
+    },
+    {
+      "n": 7,
+      "verdict": "supported",
+      "evidence": [
+        "[2]"
+      ],
+      "reason": "Passage [2] explicitly states that the campaign had limited innovation in content strategy.",
+      "field": "marketing_gaps",
+      "claim": "Limited innovation in content strategy [2]"
+    }
+  ]
+}

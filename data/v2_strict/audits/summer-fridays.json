@@ -1,0 +1,56 @@
+{
+  "company": "Summer Fridays",
+  "overall": "keep",
+  "groundedness": 1.0,
+  "evidence_quality": "marketing",
+  "evidence_reason": "The provided passages contain detailed information about Summer Fridays' marketing strategies, including AI-powered social listening and merch as a brand extension.",
+  "claims": [
+    {
+      "n": 1,
+      "verdict": "supported",
+      "evidence": [
+        "[1]",
+        "[2]",
+        "[3]",
+        "[4]",
+        "[6]"
+      ],
+      "reason": "The evidence supports the claim that Summer Fridays uses AI-powered social listening to amplify customer voices and crafts authentic marketing strategies. Additionally, it extends its brand beyond skincare by creating merch that reinforces brand identity and strengthens emotional loyalty.",
+      "field": "brand_summary",
+      "claim": "Summer Fridays is a skincare brand that leverages AI-powered social listening to amplify customer voices and crafts authentic marketing strategies. They extend their brand beyond skincare by creating merch that reinforces their brand identity and strengthens emotional loyalty."
+    },
+    {
+      "n": 2,
+      "verdict": "supported",
+      "evidence": [
+        "[1]"
+      ],
+      "reason": "The passage states that Summer Fridays engages with skincare enthusiasts and crafts authentic marketing strategies using AI-powered social listening.",
+      "field": "current_marketing_strategy",
+      "claim": "Uses AI-powered social listening to engage with skincare enthusiasts and craft authentic marketing strategies [1]"
+    },
+    {
+      "n": 3,
+      "verdict": "supported",
+      "evidence": [
+        "[2]",
+        "[3]",
+        "[4]",
+        "[6]"
+      ],
+      "reason": "The evidence shows that Summer Fridays turns merch into a lifestyle brand extension to reinforce brand identity and emotional loyalty.",
+      "field": "current_marketing_strategy",
+      "claim": "Turns merch into a lifestyle brand extension to reinforce brand identity and emotional loyalty [2][3][4][6]"
+    },
+    {
+      "n": 4,
+      "verdict": "supported",
+      "evidence": [
+        "[5]"
+      ],
+      "reason": "The passage mentions that Summer Fridays maintains a consistent voice that balances relatable and genuine user-generated content with polished professional imagery.",
+      "field": "current_marketing_strategy",
+      "claim": "Maintains a consistent voice that balances relatable and genuine user-generated content with polished professional imagery [5]"
+    }
+  ]
+}
