@@ -93,7 +93,8 @@ ACTION_RX = re.compile(
     re.I,
 )
 CREATOR_DATA_RX = re.compile(
-    r"\b(followers|influencer audience|audience of (its|their) influencers|creators'? audience|sponsored posts|"
+    r"\b(influencer audiences?|audience of (its|their|the) (influencers|creators)|creators'? (audience|followers)|"
+    r"influencers'? (audience|followers)|sponsored posts|"
     r"earned media value|emv|engagement rate|audience demographics of)\b",
     re.I,
 )

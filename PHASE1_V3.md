@@ -73,7 +73,9 @@ mlx_lm.server --model mlx-community/Qwen2.5-14B-Instruct-4bit   # second termina
 python phase1v3.py label --company-id billie
 ```
 
-The teacher returns a draft whose prose carries `{C1}` markers and whose `claims` list holds passage IDs and exact quotes. Deterministic checks run straight away (see "What is checked"). A hand-written draft can be imported with `--draft-file draft.json`; it is recorded as `human_written`, never as model output.
+The teacher returns a draft whose prose carries `{C1}` markers and whose `claims` list holds passage IDs and exact quotes. Deterministic checks run straight away (see "What is checked").
+
+If they fail, the teacher gets up to `--max-repairs` (default 2) repair rounds. Each round shows it only its own draft and the failed check messages. The label keeps the attempt with the fewest errors, and every attempt is recorded in `generator.attempts`. References written as `(C1)` or `[C1]` that name an existing claim are normalised to `{C1}`, and the number of normalisations is recorded. A hand-written draft can be imported with `--draft-file draft.json`; it is recorded as `human_written`, never as model output.
 
 ### 3. Verify (deterministic checks plus local reviewer)
 

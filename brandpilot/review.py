@@ -150,10 +150,12 @@ def validate_review_response(
 
 def decide(deterministic_errors: list[str], review: dict[str, Any] | None, review_errors: list[str], expected_claim_ids: list[str]) -> tuple[str, list[str]]:
     reasons: list[str] = []
+    if deterministic_errors:
+        # The label already fails on checks that need no model; a reviewer problem cannot rescue it.
+        extra = ["reviewer response also invalid: " + "; ".join(review_errors)] if (review is None or review_errors) else []
+        return AUDIT_FAIL, [f"{len(deterministic_errors)} deterministic check error(s)"] + extra
     if review is None or review_errors:
         return AUDIT_UNRESOLVED, ["reviewer response invalid or incomplete"] + review_errors
-    if deterministic_errors:
-        reasons.append(f"{len(deterministic_errors)} deterministic check error(s)")
     if review["identity_ok"] is not True:
         reasons.append("reviewer reported a company-identity problem")
     bad = [c["claim_id"] for c in review["claims"] if c["verdict"] != "supported" or c.get("issues")]

@@ -49,7 +49,8 @@ def parse_json_object(text: str) -> dict:
     start, end = text.find("{"), text.rfind("}")
     if start == -1 or end <= start:
         raise ValueError("no JSON object in model output")
-    value = json.loads(text[start : end + 1])
+    # strict=False tolerates raw newlines/tabs inside strings, which local models often emit
+    value = json.loads(text[start : end + 1], strict=False)
     if not isinstance(value, dict):
         raise ValueError("model output JSON is not an object")
     return value

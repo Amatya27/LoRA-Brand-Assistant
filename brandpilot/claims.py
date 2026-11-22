@@ -30,6 +30,39 @@ PITCH_TEXT = ("email_subject", "email_body")
 # Fields whose every sentence is a factual assertion and must carry a claim marker.
 STRICT_FACT_FIELDS = ("brand_summary", "likely_target_audience", "current_marketing_strategy", "marketing_gaps")
 MARKER = re.compile(r"\{(C\d+)\}")
+_LOOSE_MARKER = re.compile(r"[\(\[](C\d+)[\)\]]")
+
+
+def normalize_markers(draft: dict[str, Any]) -> tuple[dict[str, Any], int]:
+    """Rewrite unambiguous claim references written as (C1) or [C1] into {C1}.
+
+    Only ids that exist in the draft's claim list are rewritten; everything else is left
+    for the checks to report. Returns (draft, number_of_rewrites).
+    """
+    ids = {c.get("id") for c in draft.get("claims", []) if isinstance(c, dict)}
+    count = 0
+
+    def fix(text: Any) -> Any:
+        nonlocal count
+        if not isinstance(text, str):
+            return text
+        def sub(m: re.Match[str]) -> str:
+            nonlocal count
+            if m.group(1) in ids:
+                count += 1
+                return "{" + m.group(1) + "}"
+            return m.group(0)
+        return _LOOSE_MARKER.sub(sub, text)
+
+    out = dict(draft)
+    for f in TEXT_FIELDS + PITCH_TEXT:
+        out[f] = fix(out.get(f))
+    for f in LIST_FIELDS:
+        if isinstance(out.get(f), list):
+            out[f] = [fix(x) for x in out[f]]
+    if isinstance(out.get("instagram_post_idea"), dict):
+        out["instagram_post_idea"] = {k: fix(v) for k, v in out["instagram_post_idea"].items()}
+    return out, count
 CLAIM_ID = re.compile(r"^C\d+$")
 
 ABSENCE_RX = re.compile(
@@ -50,13 +83,23 @@ PROMISE_RX = re.compile(
 HEDGE_RX = re.compile(r"\b(could|may|might|aim|aims|goal|hope|potential(ly)?|possibly|intended to|designed to)\b", re.I)
 PROPOSAL_SENTENCE_RX = re.compile(
     r"\b(we propose|we'd (love|like)|we would|we could|could|would|might|imagine|let'?s|idea|propose|suggest|"
-    r"invite|happy to|interested|open to|our team|we can|we're|we are|hope)\b|\?",
+    r"invite|happy to|interested|open to|our team|we can|we're|we are|hope|this post|the post|our post|proposed)\b|\?",
     re.I,
 )
 COMPANY_PROPERTY_RX = re.compile(
     r"\b(your|you'?ve|you have|you'?re|you)\b[^.?!]{0,60}\b(launched|ran|run|partnered|partnership|campaign|program|"
     r"collaborat\w*|community|customers|audience|fans|ambassadors?|influencers?|creators?|followers|sales|growth|"
     r"announced|released|introduced|known for|built)\b",
+    re.I,
+)
+# Pitch lines that describe or instruct the proposed post ("Collaborate with X on...",
+# "A video of someone...") are proposals, not claims about the company.
+PROPOSAL_START_RX = re.compile(
+    r"^\W*((collaborat|partner|team(ing)? up|showcas|highlight|featur|creat|launch|shar|celebrat|join|invit|"
+    r"spotlight|introduc|pair|imagin|let'?s|meet|discover|try|swap|bring|show|tell)\w*|"
+    r"(a|an|one|our|this|the)\s+([\w&'-]+\s+){0,4}"
+    r"(video|post|carousel|reel|series|story|stories|campaign|collab|collaboration|idea|concept|challenge|guide|takeover|giveaway|live)|"
+    r"educational content|behind[- ]the[- ]scenes)\b",
     re.I,
 )
 STALE_WORDS_RX = re.compile(r"\b(currently|now|this year|recently|latest|ongoing|today)\b", re.I)
@@ -215,7 +258,8 @@ def check_draft(draft: dict[str, Any], packet: dict[str, Any], *, today: date | 
                 factual_shape = hard_fact or bool(COMPANY_PROPERTY_RX.search(s)) or mentions_company
                 # Proposal wording ("we would", "could") excuses descriptive mentions of the
                 # company, but not numbers or assertions of results inside the same sentence.
-                if hard_fact or (factual_shape and not PROPOSAL_SENTENCE_RX.search(s)):
+                proposal = bool(PROPOSAL_SENTENCE_RX.search(s) or PROPOSAL_START_RX.search(s))
+                if hard_fact or (factual_shape and not proposal):
                     errors.append(f"{path}: factual-looking sentence without a claim marker: {s[:90]!r}")
     for cid in claim_by_id:
         if cid not in used:

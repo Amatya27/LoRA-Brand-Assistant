@@ -516,3 +516,58 @@ def test_first_party_passages_are_not_crowded_out(tmp_path):
     selected, rejected = select_passages(cands)
     assert any(p.official_source for p in selected) and len(selected) == 10
     assert len(selected) + len(rejected) == len(cands)
+
+
+def test_proposal_pitch_lines_are_not_misread_as_facts(built):
+    _, _, packet = built
+    draft = good_draft(packet)
+    draft["email_subject"] = "Collaborate with Fernway on a Trail Notes carousel"
+    draft["instagram_post_idea"]["hook"] = "A video of a walker packing Fernway socks for a three-day hike."
+    assert check_draft(draft, packet)["errors"] == []
+    draft["email_body"] += " This aligns with your current strategy of influencer marketing."
+    assert any("factual-looking sentence" in e for e in check_draft(draft, packet)["errors"])
+
+
+def test_loose_claim_markers_are_normalised(built):
+    from brandpilot.claims import normalize_markers
+    _, _, packet = built
+    draft = good_draft(packet)
+    draft["brand_summary"] = "Fernway makes merino hiking socks for long-distance walkers (C1)."
+    fixed, n = normalize_markers(draft)
+    assert n == 1 and "{C1}" in fixed["brand_summary"] and check_draft(fixed, packet)["errors"] == []
+    draft["brand_summary"] = "Fernway sells in 40 countries (C9)."
+    assert normalize_markers(draft)[1] == 0
+
+
+def test_model_json_with_raw_newlines_parses():
+    from brandpilot.llm import parse_json_object
+    assert parse_json_object('{"email_body": "Hi team,\nline two"}')["email_body"].startswith("Hi team")
+
+
+def test_brand_followers_are_not_creator_audience_data():
+    from brandpilot.passages import CREATOR_DATA_RX
+    assert not CREATOR_DATA_RX.search("Brands request feedback from their followers on Instagram.")
+    assert CREATOR_DATA_RX.search("48% of the influencers' audience is based in the US.")
+
+
+def test_deterministic_failure_beats_invalid_review(built):
+    _, _, packet = built
+    status, reasons = decide(["quote does not occur"], None, ["bad json"], ["C1"])
+    assert status == AUDIT_FAIL and "deterministic" in reasons[0]
+
+
+def test_label_repair_loop_uses_check_feedback(tmp_path, monkeypatch):
+    import phase1v3
+    from brandpilot.evidence import save_json
+    registry, store, packet = build_synthetic_packet(tmp_path)
+    save_json(tmp_path / "ws/packets/fernway.json", packet)
+    bad = good_draft(packet)
+    bad["claims"][1]["quote"] = "a paraphrase that is not in the passage"
+    replies = iter([json.dumps(bad), json.dumps(good_draft(packet))])
+    seen = []
+    monkeypatch.setattr(phase1v3, "chat", lambda cfg, system, user: (seen.append(user), next(replies))[1])
+    assert _cli(tmp_path, "label", "--company-id", "fernway") == 0
+    label = json.loads((tmp_path / "ws/labels/fernway.json").read_text())
+    assert label["deterministic"]["errors"] == []
+    assert [a["deterministic_errors"] for a in label["generator"]["attempts"]] == [1, 0]
+    assert "FAILED these automatic checks" in seen[1] and "quote does not occur" in seen[1]

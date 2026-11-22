@@ -26,7 +26,7 @@ from pathlib import Path
 from typing import Any
 
 from brandpilot.approval import ApprovalError, create_approval
-from brandpilot.claims import check_draft, completion_sha256, completion_string, render_completion
+from brandpilot.claims import check_draft, completion_sha256, completion_string, normalize_markers, render_completion
 from brandpilot.evidence import (
     DocumentStore,
     HttpFetcher,
@@ -164,6 +164,9 @@ def cmd_collect(args) -> int:
 
 def _write_label(workspace: Path, packet: dict, prompt: str, draft: dict, generator: dict, raw: str | None) -> dict:
     company_id = packet["company"]["company_id"]
+    draft, rewrites = normalize_markers(draft)
+    if rewrites:
+        generator = {**generator, "marker_normalisations": rewrites}
     det = check_draft(draft, packet)
     completion = render_completion(draft)
     comp = completion_string(completion)
@@ -213,21 +216,48 @@ def cmd_label(args) -> int:
         raw = None
     else:
         config = ModelConfig.from_env("teacher")
-        try:
-            raw = chat(config, "Follow the user's instructions exactly. Return JSON only.", prompt)
-        except Exception as exc:
-            print(f"{args.company_id}: teacher call failed: {exc}\n  Is `mlx_lm.server --model {config.model}` running at {config.api_base}?")
-            return 3
-        try:
-            draft = parse_json_object(raw)
-        except ValueError as exc:
-            log = workspace / "logs" / f"{args.company_id}-teacher-{utc_now().replace(':', '')}.txt"
-            log.parent.mkdir(parents=True, exist_ok=True)
-            log.write_text(raw, encoding="utf-8")
-            print(f"{args.company_id}: teacher output was not JSON ({exc}); raw output saved to {log}")
+        system = "Follow the user's instructions exactly. Return JSON only."
+        attempts: list[dict] = []
+        best: tuple[int, dict, str] | None = None
+        message = prompt
+        for attempt in range(args.max_repairs + 1):
+            try:
+                raw = chat(config, system, message)
+            except Exception as exc:
+                print(f"{args.company_id}: teacher call failed: {exc}\n  Is `mlx_lm.server --model {config.model}` running at {config.api_base}?")
+                return 3
+            try:
+                draft = parse_json_object(raw)
+            except ValueError as exc:
+                log = workspace / "logs" / f"{args.company_id}-teacher-{utc_now().replace(':', '')}-a{attempt}.txt"
+                log.parent.mkdir(parents=True, exist_ok=True)
+                log.write_text(raw, encoding="utf-8")
+                attempts.append({"attempt": attempt, "raw_sha256": sha256_text(raw), "parse_error": str(exc)})
+                print(f"   attempt {attempt}: output was not JSON ({exc}); saved {log.name}")
+                continue
+            errors = check_draft(normalize_markers(draft)[0], packet)["errors"]
+            attempts.append({"attempt": attempt, "raw_sha256": sha256_text(raw), "deterministic_errors": len(errors)})
+            print(f"   attempt {attempt}: {len(errors)} deterministic error(s)")
+            if best is None or len(errors) < best[0]:
+                best = (len(errors), draft, raw)
+            if not errors:
+                break
+            # Repair round: the teacher sees its own draft and the failed checks, nothing else is added.
+            message = (
+                f"{prompt}\n\nYOUR PREVIOUS ANSWER:\n{json.dumps(draft, ensure_ascii=False)}\n\n"
+                "It FAILED these automatic checks:\n" + "\n".join(f"- {e}" for e in errors) +
+                "\n\nReturn the complete corrected JSON. Copy every quote character-for-character from its passage; "
+                "if no exact quote supports a claim, delete the claim and the sentences that rely on it. Attribute "
+                "vendor/agency results (\"X reports that ...\"). Put a {C#} marker after every factual statement. "
+                "Do not add facts that are not in the passages."
+            )
+        if best is None:
+            print(f"{args.company_id}: no parseable teacher output after {len(attempts)} attempt(s); no label written")
             return 4
+        _, draft, raw = best
         generator = {"source": "model", **config.as_dict(), "system_prompt_sha256": sha256_text(TEACHER_RULES),
-                     "generated_at": utc_now()}
+                     "generated_at": utc_now(), "attempts": attempts,
+                     "note": "repair rounds show the teacher only its own draft and the failed check messages"}
     label = _write_label(workspace, packet, prompt, draft, generator, raw)
     det = label["deterministic"]
     print(f"{args.company_id}: decision={draft.get('decision')} deterministic_errors={len(det['errors'])} warnings={len(det['warnings'])}")
@@ -405,6 +435,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--company-id", required=True); p.add_argument("--person", default="")
     p.add_argument("--draft-file", help="import a hand-written draft instead of calling the teacher")
     p.add_argument("--draft-source", default="human_written", choices=["human_written", "synthetic_fixture"])
+    p.add_argument("--max-repairs", type=int, default=2, help="teacher repair rounds after failed deterministic checks")
     p = sub.add_parser("verify"); p.set_defaults(fn=cmd_verify)
     p.add_argument("--company-id", required=True); p.add_argument("--skip-reviewer", action="store_true")
     p.add_argument("--review-response", help="use a saved reviewer JSON response instead of calling the model")

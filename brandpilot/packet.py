@@ -12,7 +12,7 @@ from .registry import DOC_ACCEPTED, PSG_OK, CompanyIdentity, Registry, assess_do
 
 PACKET_SCHEMA = "brandpilot.packet.v3"
 COLLECTOR_VERSION = "brandpilot-collector-0.3"
-PROMPT_VERSION = "brandpilot.prompt.v3.0"
+PROMPT_VERSION = "brandpilot.prompt.v3.1"
 MIN_PASSAGES_FOR_OK = 2
 
 PACKET_OK = "ok"
@@ -179,8 +179,15 @@ Separate three things:
    fact (an existing campaign, partnership, product, community, value or theme) and cite that premise.
 
 Rules:
-- Put a claim marker like {{C1}} right after every factual statement in every field, including the email and Instagram idea.
-  Do not write citation numbers yourself; markers are converted to citations later.
+- Put a claim marker like {{C1}} (curly braces) right after every factual statement in every field, including the
+  email and Instagram idea. Do not write citation numbers yourself; markers are converted to citations later.
+- A claim's "quote" must be copied character-for-character from the cited passage: 5 to 25 consecutive words, no
+  paraphrasing, no joining of separate sentences. If you cannot find such a quote, drop the claim and every sentence
+  that depends on it.
+- Audience and strategy sentences are factual: each needs a marker. If no passage states the audience, write
+  {INSUFF} instead of guessing.
+- Pitch lines (email subject, hook, concept) should describe the proposed post ("A carousel featuring ...",
+  "Collaborate on ..."). Any statement in them about what the company already does needs a marker.
 - Respect passage types. "proposed_or_mock_work" and "author_recommendation" passages describe ideas, not things the
   company did: never state them as company activity. "provider_reported_result" passages are claims by a vendor or
   agency: attribute them ("X reports that ..."). "creator_or_influencer_audience_data" describes creators' followers,
