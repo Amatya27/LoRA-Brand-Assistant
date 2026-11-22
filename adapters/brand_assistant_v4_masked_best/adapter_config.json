@@ -1,5 +1,5 @@
 {
-    "adapter_path": "adapters/brand_assistant_v3_pilot_v4",
+    "adapter_path": "adapters/brand_assistant_v4_masked",
     "batch_size": 1,
     "clear_cache_threshold": 0,
     "config": null,
@@ -15,7 +15,7 @@
         "scale": 20.0
     },
     "lr_schedule": null,
-    "mask_prompt": false,
+    "mask_prompt": true,
     "max_seq_length": 4096,
     "model": "mlx-community/gemma-3-1b-it-qat-4bit",
     "num_layers": 16,
