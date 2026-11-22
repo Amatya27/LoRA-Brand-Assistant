@@ -170,6 +170,58 @@ def validate_review_response(
     return normalised, errors
 
 
+def _flag_norm(text: str) -> str:
+    import re
+    text = re.sub(r"[\{\[](C\d+|P\d+)[\}\]]", " ", text or "")
+    text = text.replace("’", "'").replace("“", '"').replace("”", '"')
+    return " ".join(re.sub(r"[^a-z0-9' ]+", " ", text.lower()).split())
+
+
+def _label_sentences(draft: dict[str, Any]) -> list[tuple[str, str, bool]]:
+    """(field, normalised sentence, has_marker) for every sentence of every prose field.
+
+    A marker written after the full stop ("... lives. {C2}") belongs to the sentence before it.
+    """
+    import re
+    from .claims import MARKER, field_texts, sentences
+    out = []
+    for path, text in field_texts(draft):
+        text = re.sub(r"([.!?])\s*((?:\{C\d+\}\s*)+)", r" \2\1 ", text)
+        for sent in sentences(text):
+            out.append((path, _flag_norm(sent), bool(MARKER.search(sent))))
+    return out
+
+
+def reconcile_unmarked_flags(review: dict[str, Any], draft: dict[str, Any]) -> tuple[dict[str, Any], list[dict[str, Any]], list[str]]:
+    """Check the reviewer's 'unmarked statement' flags against the actual label text.
+
+    Returns (review_with_remaining_flags, dismissed_flags, errors). A flag is dismissed when the
+    flagged sentence carries a claim marker in the label (the reviewer dropped the marker when
+    quoting it). A flag whose text does not occur in the label is a reviewer error.
+    """
+    import difflib
+    sents = _label_sentences(draft)
+    kept, dismissed, errors = [], [], []
+    for flag in review.get("unmarked_factual_statements", []):
+        text = flag.get("text", "") if isinstance(flag, dict) else str(flag)
+        norm = _flag_norm(text)
+        best, best_ratio = None, 0.0
+        for path, sent, marked in sents:
+            if norm and (norm in sent or sent in norm):
+                ratio = 1.0
+            else:
+                ratio = difflib.SequenceMatcher(None, norm, sent).ratio()
+            if ratio > best_ratio:
+                best, best_ratio = (path, sent, marked), ratio
+        if best is None or best_ratio < 0.85:
+            errors.append(f"reviewer flagged text that is not in the label: {text[:80]!r}")
+        elif best[2]:
+            dismissed.append({"flag": flag, "reason": f"sentence in {best[0]} carries a claim marker; judged via its claim"})
+        else:
+            kept.append(flag)
+    return dict(review, unmarked_factual_statements=kept), dismissed, errors
+
+
 def decide(deterministic_errors: list[str], review: dict[str, Any] | None, review_errors: list[str], expected_claim_ids: list[str]) -> tuple[str, list[str]]:
     reasons: list[str] = []
     if deterministic_errors:

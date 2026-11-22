@@ -594,3 +594,19 @@ def test_reviewer_sees_claim_markers_not_rendered_citations(built):
     draft = good_draft(packet)
     prompt = build_review_prompt(packet, render_completion(draft), draft)
     assert "[C2]" in prompt and "covered by claim" in prompt
+
+
+def test_reviewer_flags_on_marked_sentences_are_dismissed(built):
+    from brandpilot.review import reconcile_unmarked_flags
+    _, _, packet = built
+    draft = good_draft(packet)
+    draft["email_body"] += " This builds on your weekly feature. {C4} Your sales doubled last year."
+    review = {"unmarked_factual_statements": [
+        {"field": "email_body", "text": "We enjoyed reading about your Trail Notes program and the weekly community feature"},
+        {"field": "email_body", "text": "This builds on your weekly feature."},
+        {"field": "email_body", "text": "Your sales doubled last year."},
+        {"field": "email_body", "text": "Fernway is the market leader in Europe."}]}
+    kept, dismissed, errors = reconcile_unmarked_flags(review, draft)
+    assert len(dismissed) == 2
+    assert [k["text"] for k in kept["unmarked_factual_statements"]] == ["Your sales doubled last year."]
+    assert errors and "not in the label" in errors[0]

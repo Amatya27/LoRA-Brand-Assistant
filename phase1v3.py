@@ -49,6 +49,7 @@ from brandpilot.review import (
     build_audit_record,
     build_review_prompt,
     decide,
+    reconcile_unmarked_flags,
     reviewer_config,
     validate_review_response,
 )
@@ -348,16 +349,25 @@ def cmd_verify(args) -> int:
             review_errors.append(f"reviewer call failed: {exc}")
     else:
         review_errors.append("reviewer skipped")
+    dismissed: list = []
     if raw is not None:
         try:
             review, review_errors = validate_review_response(parse_json_object(raw), expected, packet)
         except ValueError as exc:
             review, review_errors = None, [f"reviewer output not JSON: {exc}"]
+        if review is not None:
+            review, dismissed, flag_errors = reconcile_unmarked_flags(review, label["draft"])
+            review_errors = review_errors + flag_errors
+            for d in dismissed:
+                print(f"   dismissed reviewer flag ({d['reason']}): {str(d['flag'])[:100]}")
     status, reasons = decide(det["errors"], review, review_errors, expected)
     record = build_audit_record(company_id=args.company_id, packet_sha256=packet["packet_sha256"],
                                 prompt_sha256=label["prompt_sha256"], completion_sha256=label["completion_sha256"],
                                 config=cfg, deterministic=det, raw_response_text=raw, review=review,
                                 review_errors=review_errors, status=status, reasons=reasons)
+    record["dismissed_reviewer_flags"] = dismissed
+    from brandpilot.hashing import sha256_json
+    record["audit_sha256"] = sha256_json({k: v for k, v in record.items() if k != "audit_sha256"})
     save_json(workspace / "audits" / f"{args.company_id}.json", record)
     print(f"{args.company_id}: audit={status}")
     for r in reasons:
