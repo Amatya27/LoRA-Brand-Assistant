@@ -587,3 +587,10 @@ def test_list_abstention_and_multi_markers_are_normalised(built):
 def test_trailing_commas_in_model_json_parse():
     from brandpilot.llm import parse_json_object
     assert parse_json_object('{"a": [1, 2,], "b": {"c": 1,},}') == {"a": [1, 2], "b": {"c": 1}}
+
+
+def test_reviewer_sees_claim_markers_not_rendered_citations(built):
+    _, _, packet = built
+    draft = good_draft(packet)
+    prompt = build_review_prompt(packet, render_completion(draft), draft)
+    assert "[C2]" in prompt and "covered by claim" in prompt

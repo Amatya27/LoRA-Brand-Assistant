@@ -15,7 +15,7 @@ from .hashing import sha256_json, sha256_text
 from .packet import passage_index, render_evidence_block
 
 AUDIT_SCHEMA = "brandpilot.audit.v3"
-REVIEWER_PROMPT_VERSION = "brandpilot.reviewer.v3.0"
+REVIEWER_PROMPT_VERSION = "brandpilot.reviewer.v3.1"
 VERDICTS = ("supported", "partially_supported", "unsupported", "contradicted", "wrong_company", "not_a_fact")
 ISSUE_CODES = (
     "proposal_or_recommendation_as_fact",
@@ -48,7 +48,9 @@ For EVERY claim id, return exactly one result:
 Also report:
 - identity_ok: true only if every cited passage is about the named company
 - unmarked_factual_statements: factual statements about the company in ANY field (summary, strategy,
-  opportunities, Instagram idea, email subject, email body) that are not covered by a claim id
+  opportunities, Instagram idea, email subject, email body) that have NO claim marker like [C1] after them.
+  A statement followed by a marker is covered by that claim; judge it through the claim's verdict instead.
+  Proposals and descriptions of the suggested post are not factual statements.
 - absence_as_weakness: statements that turn missing information into a weakness or a reason for outreach
 
 Return JSON only:
@@ -68,17 +70,37 @@ def reviewer_config(model: str, api_base: str, temperature: float, max_tokens: i
     }
 
 
-def build_review_prompt(packet: dict[str, Any], completion: dict[str, Any]) -> str:
+def _marked_view(draft: dict[str, Any]) -> dict[str, Any]:
+    """The label as the reviewer should see it: claim markers kept as [C1] so coverage is visible."""
+    import re
+
+    def conv(v: Any) -> Any:
+        if isinstance(v, str):
+            return re.sub(r"\{(C\d+)\}", r"[\1]", v)
+        if isinstance(v, list):
+            return [conv(x) for x in v]
+        if isinstance(v, dict):
+            return {k: conv(x) for k, x in v.items()}
+        return v
+    return {k: conv(v) for k, v in draft.items() if k not in ("claims", "abstain_reason")}
+
+
+def build_review_prompt(packet: dict[str, Any], completion: dict[str, Any], draft: dict[str, Any] | None = None) -> str:
     claims = "\n".join(
         f"{c['id']} ({c.get('kind')}): {c.get('statement')}  [cites {', '.join(c['passage_ids'])}; quote: {json.dumps(c.get('quote', ''), ensure_ascii=False)}]"
         for c in completion.get("claims", [])
     ) or "(no claims)"
-    shown = {k: v for k, v in completion.items() if k not in ("claims", "citations", "schema_version")}
+    if draft is not None:
+        shown = _marked_view(draft)
+        label_title = "LABEL (a marker like [C1] means the statement before it is covered by claim C1):"
+    else:
+        shown = {k: v for k, v in completion.items() if k not in ("claims", "citations", "schema_version")}
+        label_title = "LABEL (rendered):"
     return (
         f"COMPANY: {packet['company']['display_name']} ({packet['company']['category']}); "
         f"official domains: {', '.join(packet['company']['official_domains'])}\n\n"
         f"EVIDENCE:\n{render_evidence_block(packet)}\n\n"
-        f"LABEL (rendered):\n{json.dumps(shown, indent=2, ensure_ascii=False)}\n\n"
+        f"{label_title}\n{json.dumps(shown, indent=2, ensure_ascii=False)}\n\n"
         f"CLAIMS TO JUDGE:\n{claims}\n\nReturn the JSON."
     )
 

@@ -343,7 +343,7 @@ def cmd_verify(args) -> int:
         cfg = {**cfg, "model": "imported-response", "source_file": args.review_response}
     elif not args.skip_reviewer:
         try:
-            raw = chat(config_obj, REVIEWER_SYSTEM, build_review_prompt(packet, completion))
+            raw = chat(config_obj, REVIEWER_SYSTEM, build_review_prompt(packet, completion, label["draft"]))
         except Exception as exc:
             review_errors.append(f"reviewer call failed: {exc}")
     else:
