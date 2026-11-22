@@ -1,8 +1,6 @@
 #!/bin/bash
 set -euo pipefail
 
-python prepare_v3_smoke.py
-
 mlx_lm.lora \
   --model mlx-community/gemma-3-1b-it-qat-4bit \
   --train \
