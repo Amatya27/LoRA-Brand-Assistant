@@ -231,8 +231,13 @@ def check_draft(draft: dict[str, Any], packet: dict[str, Any], *, today: date | 
 
     # ---- markers and field-level policy ---------------------------------------
     used: set[str] = set()
+    field_names = set(TEXT_FIELDS + LIST_FIELDS + PITCH_TEXT + ("instagram_post_idea", "claims", "decision"))
     for path, text in field_texts(draft):
         markers = MARKER.findall(text)
+        if len(re.findall(r"[A-Za-z]{2,}", MARKER.sub("", text))) < 3:
+            errors.append(f"{path}: field has no real text (only claim markers or a few characters)")
+        if text.strip() in field_names:
+            errors.append(f"{path}: contains a schema field name instead of content")
         for m in markers:
             if m not in claim_by_id:
                 errors.append(f"{path}: marker {{{m}}} has no claim")

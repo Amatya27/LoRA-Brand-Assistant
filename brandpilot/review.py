@@ -187,8 +187,9 @@ def _label_sentences(draft: dict[str, Any]) -> list[tuple[str, str, bool]]:
     out = []
     for path, text in field_texts(draft):
         text = re.sub(r"([.!?])\s*((?:\{C\d+\}\s*)+)", r" \2\1 ", text)
-        for sent in sentences(text):
-            out.append((path, _flag_norm(sent), bool(MARKER.search(sent))))
+        for line in text.splitlines():  # greetings and sign-offs sit on their own lines
+            for sent in sentences(line):
+                out.append((path, _flag_norm(sent), bool(MARKER.search(sent))))
     return out
 
 
@@ -200,23 +201,26 @@ def reconcile_unmarked_flags(review: dict[str, Any], draft: dict[str, Any]) -> t
     quoting it). A flag whose text does not occur in the label is a reviewer error.
     """
     import difflib
-    sents = _label_sentences(draft)
+    sents = [x for x in _label_sentences(draft) if len(x[1].split()) >= 3]  # ignore marker-only fragments
     kept, dismissed, errors = [], [], []
     for flag in review.get("unmarked_factual_statements", []):
         text = flag.get("text", "") if isinstance(flag, dict) else str(flag)
+        field = (flag.get("field", "") if isinstance(flag, dict) else "") or ""
         norm = _flag_norm(text)
-        best, best_ratio = None, 0.0
+        best, best_score = None, 0.0
         for path, sent, marked in sents:
-            if norm and (norm in sent or sent in norm):
-                ratio = 1.0
-            else:
-                ratio = difflib.SequenceMatcher(None, norm, sent).ratio()
-            if ratio > best_ratio:
-                best, best_ratio = (path, sent, marked), ratio
-        if best is None or best_ratio < 0.85:
+            ratio = difflib.SequenceMatcher(None, norm, sent).ratio()
+            shorter, longer = sorted((norm, sent), key=len)
+            if shorter and shorter in longer and len(shorter) >= 0.6 * len(longer):
+                ratio = max(ratio, 0.95)
+            score = ratio + (0.01 if field and path.startswith(field) else 0.0)  # prefer the field the reviewer named
+            if score > best_score:
+                best, best_score = (path, sent, marked), score
+        if best is None or best_score < 0.85:
             errors.append(f"reviewer flagged text that is not in the label: {text[:80]!r}")
         elif best[2]:
-            dismissed.append({"flag": flag, "reason": f"sentence in {best[0]} carries a claim marker; judged via its claim"})
+            dismissed.append({"flag": flag, "reason": f"sentence in {best[0]} carries a claim marker; judged via its claim",
+                              "matched_sentence": best[1]})
         else:
             kept.append(flag)
     return dict(review, unmarked_factual_statements=kept), dismissed, errors
