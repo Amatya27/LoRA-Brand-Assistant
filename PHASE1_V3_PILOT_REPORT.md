@@ -157,9 +157,45 @@ python phase1v3.py export --version v3-pilot-$(date +%F)
 
 Before labeling, consider re-collecting Billie, Native and Purple live (`python phase1v3.py collect --company-id purple --search`, needs network and `pip install ddgs`). Live collection is implemented but was **not exercised against the real web** in this session.
 
+## 6b. Pilot results after labeling (22 Nov 2026)
+
+The labels were generated on the Mac with the local teacher and reviewer (`mlx-community/Qwen2.5-14B-Instruct-4bit`, temperature 0, used for both roles), then corrected and reviewed by Thanishka Bolisetty. Export `v3-pilot-2026-11-22` contains **7 approved records (train 7 / valid 0 / test 0)**, because every pilot company sits in the existing train split.
+
+| Company | Outcome | What a person had to fix |
+|---|---|---|
+| Native | approved | Brand summary was only claim markers; unknowns were field names |
+| Ten Thousand | approved | Vendor (Motion/AdLibrary) positioning stated as fact; uncited product name |
+| Athletic Brewing | approved | Pitch was a new beer line, not an Instagram post; creator reach used as customer audience; blog claims unattributed |
+| Purple (re-collected live) | approved | A claim cited a charity's mission (FADV) as Purple's; markers attached to the wrong claims |
+| Liquid Death | approved | Summary was "{C1} and {C2} …"; sustainability pitch cited a humor claim |
+| poppi | approved | TikTok pitch; unsupported audience; promised "brand awareness"; blog claims unattributed |
+| Glossier | approved | Paraphrased quotes; unattributed blog claims; implied "transformations" |
+| Billie | excluded | Teacher never produced claim-marked text; evidence is 3 passages from 2020–21 |
+| Omsom | excluded | A claim quote does not occur in its passage |
+| Spindrift | excluded | Unmarked factual sentences remained |
+
+**Main findings**
+
+1. **The gates worked.** No wrong-company, untraceable or unsupported claim reached the export. Every excluded record has a specific reason in the manifest.
+2. **The 14B teacher was not good enough on its own.** None of the 7 approved labels is unedited model output; all are `model_then_human_edited`, with the edited model draft's hash recorded. The teacher's recurring failures:
+   - paraphrased quotes;
+   - marker-only summaries;
+   - claim markers attached to the wrong claim;
+   - vendor and blog claims stated as fact;
+   - off-brief pitches (TikTok, product lines).
+3. **A sentence can cite a real claim that says something different.** Neither the deterministic checks nor the 14B reviewer catch this (Liquid Death, Purple), so it was caught only in human review.
+4. **The 14B reviewer was unreliable on its own.** It flagged sentences after dropping their markers, flagged claim statements as label text, and flagged our own proposal sentences. `reconcile_unmarked_flags` now checks every flag against the label, and each dismissed flag is recorded in the audit.
+
+**Recommendation before scaling past the pilot**
+
+- Use a stronger teacher, and a reviewer from a different model family than the teacher.
+- Add a check that each marked sentence agrees with its claim's statement.
+- Keep human review mandatory.
+- Re-collect Billie, Omsom and Spindrift live before labeling them again.
+
 ## 7. Still unresolved
 
-- **Labels, reviews and approvals for all 10 pilot companies.** These need the local teacher and reviewer, then a human. Every pilot record still needs human approval. None is approved.
+- **Billie, Omsom and Spindrift** remain unlabeled for training; see §6b. The other seven are approved (export `v3-pilot-2026-11-22`).
 - **Live retrieval is untested on real sites.** The fetcher, redirect handling and HTML extraction are tested only with synthetic pages.
 - **Legacy-cache limits.** Replayed documents have no raw HTML, HTTP status, final URL or publication date. Paragraph boundaries are approximate because the old extractor collapsed whitespace.
 - **Heuristic classifiers.** Statement typing and boilerplate rules are regex-based. Known misses in the pilot: generic advice typed `descriptive` (Athletic P4), satirical official copy (Liquid Death manifesto), and an agency-hosted industry paragraph (Spindrift P3). The LLM reviewer and the human remain the gate for these.

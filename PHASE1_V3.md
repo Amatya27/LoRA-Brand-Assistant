@@ -1,6 +1,6 @@
 # Phase 1 v3: identity-checked evidence, claim-level labels, hash-bound approval
 
-**Status (21 Nov 2026):** training on `data/mlx_brand_assistant/*.jsonl` (the v2 export) is **paused**. That export is kept untouched as a comparison baseline. v3 is a working prototype that has been run on a 10-company pilot, from evidence collection up to (but not including) labeling. Labels, reviews and approvals for the pilot still have to be produced on a machine running the local teacher. See `PHASE1_V3_PILOT_REPORT.md`.
+**Status (22 Nov 2026):** training on `data/mlx_brand_assistant/*.jsonl` (the v2 export) is **paused**. That export is kept untouched as a comparison baseline. The v3 pilot is complete: 10 companies were collected, 7 are labeled, verified and human-approved in `data/v3_datasets/v3-pilot-2026-11-22`, and 3 are excluded with reasons. See `PHASE1_V3_PILOT_REPORT.md` §6b before scaling.
 
 The rule is still "retrieval owns the facts, the model owns the form". v3 adds four guarantees that v2 did not have:
 
