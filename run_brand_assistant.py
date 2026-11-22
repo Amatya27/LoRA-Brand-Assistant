@@ -20,6 +20,7 @@ from pathlib import Path
 
 from brand_assistant_openai_backend import OpenAICompatibleConfig
 from brand_assistant_rag import PROMPT_VERSION_INHERITED, PROMPT_VERSIONS
+from brand_assistant_v3 import V3_PROMPT_VERSIONS
 from brand_assistant_runs import (
     EXIT_CODES,
     MODE_DESCRIPTIONS,
@@ -60,10 +61,17 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     )
     parser.add_argument(
         "--prompt-version",
-        choices=PROMPT_VERSIONS,
+        choices=PROMPT_VERSIONS + V3_PROMPT_VERSIONS,
         default=PROMPT_VERSION_INHERITED,
         help="Prompt instructions for OpenAI-compatible generation. inherited-v0 (default) is the frozen "
-        "baseline prompt; evidence-linked-v1 is experimental and not baseline-comparable.",
+        "baseline prompt; evidence-linked-v1 is experimental and not baseline-comparable. "
+        "brandpilot.prompt.v3.1 / v3.2 render the v3 training-format prompt from a saved v3 packet.",
+    )
+    parser.add_argument(
+        "--empty-evidence-probe",
+        action="store_true",
+        help="v3 prompts only, DIAGNOSTIC: send the request even when the packet has no passages, to observe "
+        "the model's own abstention. By default the pipeline abstains without a request.",
     )
     parser.add_argument("--packet-output", type=Path, default=None, help="Also copy the evidence packet to this path.")
     parser.add_argument("--output", type=Path, default=None, help="Also write the combined result JSON to this path.")
@@ -169,6 +177,9 @@ def main(argv: list[str] | None = None) -> int:
     if args.prompt_version != PROMPT_VERSION_INHERITED and mode not in {"fixed-generation", "adapter-generation"}:
         print("Configuration error: --prompt-version applies only to OpenAI-compatible generation modes.", file=sys.stderr)
         return 2
+    if args.empty_evidence_probe and args.prompt_version not in V3_PROMPT_VERSIONS:
+        print("Configuration error: --empty-evidence-probe applies only to v3 prompt versions.", file=sys.stderr)
+        return 2
     destination_error = check_output_destinations(args)
     if destination_error:
         print(f"Configuration error: {destination_error}", file=sys.stderr)
@@ -209,6 +220,7 @@ def main(argv: list[str] | None = None) -> int:
         adapter_path_is_local=args.adapter_path_is_local,
         server_load_ledger=args.server_load_ledger,
         prompt_version=args.prompt_version,
+        empty_evidence_probe=args.empty_evidence_probe,
     )
     try:
         record = run_pipeline(options, keras_generate=keras_generate)

@@ -57,6 +57,15 @@ from brand_assistant_rag import (
     mentions_company,
     slugify,
 )
+from brand_assistant_v3 import (
+    V3_PROMPT_VERSIONS,
+    V3PacketError,
+    build_v3_prompt,
+    evaluate_v3_text,
+    load_v3_packet,
+    v3_evidence_manifest,
+    v3_identity,
+)
 from brand_assistant_schema import (
     classify_parse_failure,
     parse_model_json_strict,
@@ -64,6 +73,7 @@ from brand_assistant_schema import (
     validate_structure,
 )
 from brand_assistant_verification import (
+    ClaimSourceRecord,
     ControllerBudget,
     Verifier,
     VerifierInput,
@@ -334,6 +344,9 @@ class RunOptions:
     adapter_path_is_local: bool = False
     prompt_version: str = PROMPT_VERSION_INHERITED
     server_load_ledger: Path | None = None
+    # v3 prompts only: send a request even when the packet has no passages. A labelled
+    # diagnostic of the model's own abstention; the default controller abstains first.
+    empty_evidence_probe: bool = False
 
 
 class RunRecorder:
@@ -446,7 +459,11 @@ def run_pipeline(
     slug_source = options.company or "run"
     if not options.company and options.packet_input is not None:
         try:  # best-effort, for the directory name only; the packet is validated below
-            slug_source = str(json.loads(Path(options.packet_input).read_text(encoding="utf-8")).get("company") or "replay")
+            loaded = json.loads(Path(options.packet_input).read_text(encoding="utf-8"))
+            company_field = loaded.get("company")
+            if isinstance(company_field, dict):  # v3 packet
+                company_field = company_field.get("company_id")
+            slug_source = str(company_field or "replay")
         except Exception:
             slug_source = options.packet_input.stem
     recorder = RunRecorder.create(options.runs_root, slugify(slug_source)[:48], mode, options.run_dir)
@@ -489,7 +506,34 @@ def run_pipeline(
 
     # ---- 1. Obtain the evidence packet (live or replayed) -------------------
     packet: dict[str, Any]
-    if options.packet_input is not None:
+    v3 = options.prompt_version in V3_PROMPT_VERSIONS
+    if v3 and options.packet_input is None:
+        return fail("prompt_version_error", "v3 prompts need a saved v3 packet (--packet-input); live v3 retrieval "
+                    "is done by the Phase 1 collector, not this pipeline.")
+    if v3:
+        try:
+            packet, raw_bytes = load_v3_packet(options.packet_input)
+            identity = v3_identity(packet, options.company)
+        except V3PacketError as exc:
+            return fail("invalid_packet", str(exc))
+        except OSError as exc:
+            return fail("invalid_packet", f"{type(exc).__name__}: {exc}")
+        record["identity"] = {**identity, "person": options.person or "", "source": "packet"}
+        recorder.write_bytes("evidence_packet.json", raw_bytes)
+        record["evidence"] = {
+            "evidence_source": "replayed",
+            "packet_format": packet["schema_version"],
+            "packet_input_path": str(options.packet_input),
+            "packet_input_sha256": sha256_bytes(raw_bytes),
+            "packet_content_sha256": packet["packet_sha256"],
+            "packet_status": packet["status"],
+            "packet_status_reasons": packet.get("status_reasons") or [],
+            "packet_collection": packet.get("collection"),
+            "cache_policy": "No retrieval performed; evidence replayed byte-for-byte from the saved packet.",
+            "provenance_note": ("Packet hash, passage text hashes and identity status were checked. Recovering each "
+                                "passage from its stored document needs the Phase 1 evidence store (not checked)."),
+        }
+    elif options.packet_input is not None:
         try:
             packet, raw_bytes = load_packet(options.packet_input)
             identity = check_identity(packet, options.company, options.person)
@@ -534,9 +578,15 @@ def run_pipeline(
     if isinstance(packet.get("search_diagnostics"), dict):
         record["evidence"]["search_diagnostics"] = packet["search_diagnostics"]
 
-    company = str(packet.get("company") or options.company or "")
-    person = str(packet.get("person") or options.person or "")
-    passages = packet.get("evidence_passages") or []
+    if v3:
+        company = packet["company"]["display_name"]
+        person = options.person or ""
+        passages = [{"url": p.get("source_url"), "title": "", "text": p.get("text", "")}
+                    for p in packet.get("passages") or []]
+    else:
+        company = str(packet.get("company") or options.company or "")
+        person = str(packet.get("person") or options.person or "")
+        passages = packet.get("evidence_passages") or []
     identity_warnings = [
         f"evidence_passages[{i}] ({p.get('url')}) does not mention {company!r}"
         for i, p in enumerate(passages)
@@ -588,22 +638,28 @@ def run_pipeline(
         return fail(adapter_error_type or "adapter_path_invalid", " ".join(adapter_errors))
 
     try:
-        prompt = build_prompt_version(packet, options.prompt_version)
-    except ValueError as exc:  # includes PacketError
+        prompt = (build_v3_prompt(packet, options.prompt_version, person) if v3
+                  else build_prompt_version(packet, options.prompt_version))
+    except (ValueError, KeyError) as exc:  # includes PacketError
         return fail("prompt_version_error", str(exc))
     frozen = options.prompt_version == PROMPT_VERSION_INHERITED
+    if v3:
+        prompt_source = ("v3 training-format prompt rendered from the packet; byte-identical to "
+                         "brandpilot.packet.build_teacher_prompt for this rule version")
+    elif frozen:
+        prompt_source = "packet.grounded_prompt (unchanged)"
+    else:
+        prompt_source = ("Experimental instructions; Company/Person, links and evidence block copied verbatim "
+                         "from packet.grounded_prompt")
     record["generation"].update(
         {
             "prompt_version": options.prompt_version,
             "prompt_sha256": sha256_bytes(prompt.encode("utf-8")),
-            "prompt_source": "packet.grounded_prompt (unchanged)" if frozen else (
-                "Experimental instructions; Company/Person, links and evidence block copied verbatim "
-                "from packet.grounded_prompt"
-            ),
+            "prompt_source": prompt_source,
             "baseline_comparable": frozen and mode == "fixed-generation",
         }
     )
-    manifest = evidence_manifest(packet, prompt=prompt)
+    manifest = v3_evidence_manifest(packet) if v3 else evidence_manifest(packet, prompt=prompt)
     inconsistent = [m for m in manifest if m["consistency_errors"]]
     if inconsistent:
         return fail("evidence_inconsistent", "; ".join(
@@ -614,7 +670,14 @@ def run_pipeline(
     recorder.write_json("prompt_messages.json", {"messages": messages})
     record["evidence"]["evidence_ids_supplied"] = allowed_ids
 
-    if not manifest:
+    probe = bool(v3 and options.empty_evidence_probe and not manifest)
+    if probe:
+        record["generation"]["empty_evidence_probe"] = {
+            "enabled": True,
+            "note": ("DIAGNOSTIC: the controller's no-evidence abstention was bypassed on request, to observe the "
+                     "model's own response to a packet with zero passages. Not the pipeline's normal behaviour."),
+        }
+    if not manifest and not probe:
         record["status"] = _status_block(execution_status="incomplete", incomplete_reason="insufficient_evidence")
         record["generation"]["abstained"] = True
         record["generation"]["abstention_note"] = (
@@ -707,7 +770,7 @@ def run_pipeline(
     return _finalise_generation(
         record, recorder, finish, verifier,
         raw_text=raw_text, finish_reason=response["finish_reason"], manifest=manifest,
-        prompt=prompt, company=company, person=person,
+        prompt=prompt, company=company, person=person, v3=v3,
     )
 
 
@@ -724,9 +787,13 @@ def _finalise_generation(
     company: str,
     person: str,
     forced_structural_errors: list[str] | None = None,
+    v3: bool = False,
 ) -> dict[str, Any]:
     allowed_ids = [str(item["citation_id"]) for item in manifest]
-    evaluation = evaluate_model_text(raw_text, finish_reason=finish_reason, allowed_ids=allowed_ids)
+    if v3:
+        evaluation = evaluate_v3_text(raw_text, finish_reason=finish_reason, manifest=manifest)
+    else:
+        evaluation = evaluate_model_text(raw_text, finish_reason=finish_reason, allowed_ids=allowed_ids)
     parsed = evaluation["parsed_output"]
     if forced_structural_errors:
         evaluation["structural_errors"] = forced_structural_errors + evaluation["structural_errors"]
@@ -736,8 +803,11 @@ def _finalise_generation(
 
     structural_ok = evaluation["structural_validation"] == "pass"
     citation_status = evaluation["citation_validation"]
-    if structural_ok and citation_status == "pass":
+    form_gate = (evaluation.get("v3") or {}).get("form_gate_errors") or []
+    if structural_ok and citation_status == "pass" and not form_gate:
         execution, reason = "completed", None
+    elif structural_ok and citation_status == "pass":
+        execution, reason = "incomplete", "v3_form_checks_failed"
     else:
         execution = "incomplete"
         if evaluation["parse_error"]:
@@ -752,7 +822,16 @@ def _finalise_generation(
             reason = "citation_validation_failed"
 
     # Hand-off for a later verifier/controller.
-    records, extraction_status, extraction_note = extract_claim_source_records(parsed, manifest)
+    if v3:
+        if evaluation.get("v3"):
+            records = [ClaimSourceRecord(**r) for r in evaluation["v3"]["claim_source_records"]]
+            extraction_status = "performed"
+            extraction_note = ("Sentences carrying inline [P#] citations, copied literally; support_verdict is "
+                               "not_assessed. The output's own claims list is in parsed_output.claims.")
+        else:
+            records, extraction_status, extraction_note = None, "not_performed", "No parsed output."
+    else:
+        records, extraction_status, extraction_note = extract_claim_source_records(parsed, manifest)
     verifier_input = VerifierInput(
         run_id=recorder.run_id,
         company=company,
@@ -795,6 +874,10 @@ def _finalise_generation(
             "unknown_citation_ids", "claimed_citation_ids",
         )
     }
+    if v3:
+        record["validation"]["raw_format"] = evaluation["raw_format"]
+        record["validation"]["v3"] = {k: v for k, v in (evaluation.get("v3") or {}).items()
+                                      if k != "claim_source_records"} or None
     record["validation"]["note"] = "Structural and citation-ID checks do not establish factual support."
     record["verification"] = verification.to_record()
     record["recovery"]["suggested_action"] = suggestion.value

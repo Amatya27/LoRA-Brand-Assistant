@@ -152,6 +152,12 @@ or an explicit `--run-dir`, or to each other.
   the whole evidence block **verbatim**, so the evidence IDs and excerpts are
   identical. Its runs record `baseline_comparable: false`.
 
+- `brandpilot.prompt.v3.1` / `brandpilot.prompt.v3.2`: for saved **v3** packets
+  (`brandpilot.packet.v3`) only. They render the v3 training-format prompt
+  byte-for-byte and validate output against the v3 schema. See
+  [phase3_v3_smoke.md](phase3_v3_smoke.md), which also documents the labelled
+  `--empty-evidence-probe` diagnostic.
+
 Each run records `prompt_version`, `prompt_sha256` and `baseline_comparable`.
 
 Tests:
