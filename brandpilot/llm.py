@@ -16,14 +16,15 @@ class ModelConfig:
     api_base: str
     model: str
     temperature: float = 0.0
-    max_tokens: int = 2000
+    max_tokens: int = 4096
 
     @classmethod
     def from_env(cls, role: str) -> "ModelConfig":
         prefix = "TEACHER" if role == "teacher" else "JUDGE"
         api_base = os.environ.get(f"{prefix}_API_BASE", os.environ.get("TEACHER_API_BASE", DEFAULT_API_BASE)).rstrip("/")
         model = os.environ.get(f"{prefix}_MODEL", os.environ.get("TEACHER_MODEL", DEFAULT_MODEL))
-        return cls(role=role, api_base=api_base, model=model)
+        max_tokens = int(os.environ.get(f"{prefix}_MAX_TOKENS", "4096"))
+        return cls(role=role, api_base=api_base, model=model, max_tokens=max_tokens)
 
     def as_dict(self) -> dict:
         return asdict(self)

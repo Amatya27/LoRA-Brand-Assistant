@@ -607,9 +607,9 @@ def test_reviewer_flags_on_marked_sentences_are_dismissed(built):
         {"field": "email_body", "text": "Your sales doubled last year."},
         {"field": "email_body", "text": "Fernway is the market leader in Europe."}]}
     kept, dismissed, errors = reconcile_unmarked_flags(review, draft)
-    assert len(dismissed) == 2
+    assert len(dismissed) == 3 and any("does not occur in the label" in d["reason"] for d in dismissed)
     assert [k["text"] for k in kept["unmarked_factual_statements"]] == ["Your sales doubled last year."]
-    assert errors and "not in the label" in errors[0]
+    assert errors == []
 
 
 def test_marker_only_fields_and_field_name_unknowns_fail(built):
@@ -645,4 +645,11 @@ def test_two_word_unknowns_are_allowed(built):
     _, _, packet = built
     draft = good_draft(packet)
     draft["unknowns"] = ["Current partnerships"]
+    assert check_draft(draft, packet)["errors"] == []
+
+
+def test_curly_apostrophe_proposals_are_recognised(built):
+    _, _, packet = built
+    draft = good_draft(packet)
+    draft["email_body"] = draft["email_body"].replace("We'd love to propose", "We’re excited to propose")
     assert check_draft(draft, packet)["errors"] == []
