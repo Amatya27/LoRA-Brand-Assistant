@@ -571,3 +571,19 @@ def test_label_repair_loop_uses_check_feedback(tmp_path, monkeypatch):
     assert label["deterministic"]["errors"] == []
     assert [a["deterministic_errors"] for a in label["generator"]["attempts"]] == [1, 0]
     assert "FAILED these automatic checks" in seen[1] and "quote does not occur" in seen[1]
+
+
+def test_list_abstention_and_multi_markers_are_normalised(built):
+    from brandpilot.claims import normalize_markers
+    _, _, packet = built
+    draft = good_draft(packet)
+    draft["marketing_gaps"] = ["INSUFFICIENT_EVIDENCE"]
+    draft["brand_summary"] = "Fernway makes merino hiking socks for long-distance walkers {C1, C2}."
+    fixed, n = normalize_markers(draft)
+    assert fixed["marketing_gaps"] == [] and "{C1}{C2}" in fixed["brand_summary"]
+    assert check_draft(fixed, packet)["errors"] == []
+
+
+def test_trailing_commas_in_model_json_parse():
+    from brandpilot.llm import parse_json_object
+    assert parse_json_object('{"a": [1, 2,], "b": {"c": 1,},}') == {"a": [1, 2], "b": {"c": 1}}

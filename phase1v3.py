@@ -20,6 +20,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -203,6 +204,53 @@ def cmd_prompt(args) -> int:
     return 0
 
 
+def cmd_explain(args) -> int:
+    """Show exactly why a label fails, and write its draft to an editable file."""
+    import difflib
+    from brandpilot.claims import _norm
+    from brandpilot.packet import passage_index
+    workspace = Path(args.workspace)
+    packet = load_packet(workspace / "packets" / f"{args.company_id}.json")
+    label = _json(workspace / "labels" / f"{args.company_id}.json")
+    if label is None:
+        print("no label")
+        return 2
+    index = passage_index(packet)
+    det = check_draft(label["draft"], packet)
+    print(f"== {args.company_id}: {len(det['errors'])} deterministic error(s)")
+    claims = {c.get("id"): c for c in label["draft"].get("claims", [])}
+    for e in det["errors"]:
+        print(" -", e)
+        m = re.match(r"claim (C\d+): quote does not occur", e)
+        if m and m.group(1) in claims:
+            c = claims[m.group(1)]
+            q = _norm(c.get("quote", ""))
+            print(f"     teacher quote: {c.get('quote')!r}")
+            for pid in c.get("passage_ids", []):
+                if pid not in index:
+                    continue
+                words = index[pid]["text"].split()
+                n = max(3, len(q.split()))
+                best = max((" ".join(words[i:i + n]) for i in range(max(1, len(words) - n + 1))),
+                           key=lambda w: difflib.SequenceMatcher(None, q, _norm(w)).ratio())
+                print(f"     closest in {pid}: {best!r}")
+    audit = _json(workspace / "audits" / f"{args.company_id}.json")
+    if audit:
+        print(f"== audit {audit['status']}: {audit.get('reasons')}")
+        for c in (audit.get("review") or {}).get("claims", []):
+            if c.get("verdict") != "supported" or c.get("issues"):
+                print(f" - reviewer {c['claim_id']}: {c.get('verdict')} {c.get('issues')} {c.get('reason')}")
+        for key in ("unmarked_factual_statements", "absence_as_weakness"):
+            for item in (audit.get("review") or {}).get(key, []):
+                print(f" - reviewer {key}: {item}")
+    out = workspace / "edits" / f"{args.company_id}.draft.json"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(label["draft"], indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    print(f"\nEditable draft: {out}")
+    print(f"After editing: python phase1v3.py label --company-id {args.company_id} --draft-file {out} --draft-source model_then_human_edited")
+    return 0
+
+
 def cmd_label(args) -> int:
     workspace = Path(args.workspace)
     packet = load_packet(workspace / "packets" / f"{args.company_id}.json")
@@ -213,6 +261,11 @@ def cmd_label(args) -> int:
     if args.draft_file:
         draft = json.loads(Path(args.draft_file).read_text(encoding="utf-8"))
         generator = {"source": args.draft_source, "path": args.draft_file, "note": "imported draft; not model-generated"}
+        if args.draft_source == "model_then_human_edited":
+            previous = _json(workspace / "labels" / f"{args.company_id}.json") or {}
+            generator["note"] = "teacher draft edited by a person; the edit replaces the model output"
+            generator["edited_from"] = {"label_completion_sha256": previous.get("completion_sha256"),
+                                        "model": (previous.get("generator") or {}).get("model")}
         raw = None
     else:
         config = ModelConfig.from_env("teacher")
@@ -234,6 +287,8 @@ def cmd_label(args) -> int:
                 log.write_text(raw, encoding="utf-8")
                 attempts.append({"attempt": attempt, "raw_sha256": sha256_text(raw), "parse_error": str(exc)})
                 print(f"   attempt {attempt}: output was not JSON ({exc}); saved {log.name}")
+                message = (f"{prompt}\n\nYour previous answer was not valid JSON ({exc}). Return the complete answer "
+                           "again as one valid JSON object: double-quoted keys and strings, no trailing commas, no comments.")
                 continue
             errors = check_draft(normalize_markers(draft)[0], packet)["errors"]
             attempts.append({"attempt": attempt, "raw_sha256": sha256_text(raw), "deterministic_errors": len(errors)})
@@ -343,6 +398,12 @@ def _print_review_screen(packet: dict, label: dict, audit: dict | None, audit_ok
     print(f"AUDIT: {(audit or {}).get('status', 'none')}  ({audit_ok[1]})")
     for r in (audit or {}).get("reasons", []):
         print("   -", r)
+    review = (audit or {}).get("review") or {}
+    for c in review.get("claims", []):
+        if c.get("verdict") != "supported" or c.get("issues"):
+            print(f"   reviewer {c['claim_id']}: {c.get('verdict')} {c.get('issues')} {c.get('reason')}")
+    for item in review.get("unmarked_factual_statements", []) + review.get("absence_as_weakness", []):
+        print(f"   reviewer flagged: {item}")
 
 
 def cmd_review(args) -> int:
@@ -431,10 +492,12 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--max-documents", type=int, default=12); p.add_argument("--allow-test-split", action="store_true")
     p = sub.add_parser("prompt"); p.set_defaults(fn=cmd_prompt)
     p.add_argument("--company-id", required=True); p.add_argument("--person", default="")
+    p = sub.add_parser("explain"); p.set_defaults(fn=cmd_explain)
+    p.add_argument("--company-id", required=True)
     p = sub.add_parser("label"); p.set_defaults(fn=cmd_label)
     p.add_argument("--company-id", required=True); p.add_argument("--person", default="")
     p.add_argument("--draft-file", help="import a hand-written draft instead of calling the teacher")
-    p.add_argument("--draft-source", default="human_written", choices=["human_written", "synthetic_fixture"])
+    p.add_argument("--draft-source", default="human_written", choices=["human_written", "model_then_human_edited", "synthetic_fixture"])
     p.add_argument("--max-repairs", type=int, default=2, help="teacher repair rounds after failed deterministic checks")
     p = sub.add_parser("verify"); p.set_defaults(fn=cmd_verify)
     p.add_argument("--company-id", required=True); p.add_argument("--skip-reviewer", action="store_true")

@@ -31,6 +31,7 @@ PITCH_TEXT = ("email_subject", "email_body")
 STRICT_FACT_FIELDS = ("brand_summary", "likely_target_audience", "current_marketing_strategy", "marketing_gaps")
 MARKER = re.compile(r"\{(C\d+)\}")
 _LOOSE_MARKER = re.compile(r"[\(\[](C\d+)[\)\]]")
+_MULTI_MARKER = re.compile(r"[\{\(\[]\s*(C\d+(?:\s*,\s*C\d+)+)\s*[\}\)\]]")
 
 
 def normalize_markers(draft: dict[str, Any]) -> tuple[dict[str, Any], int]:
@@ -46,6 +47,16 @@ def normalize_markers(draft: dict[str, Any]) -> tuple[dict[str, Any], int]:
         nonlocal count
         if not isinstance(text, str):
             return text
+
+        def multi(m: re.Match[str]) -> str:
+            nonlocal count
+            parts = [x.strip() for x in m.group(1).split(",")]
+            if all(x in ids for x in parts):
+                count += 1
+                return "".join("{" + x + "}" for x in parts)
+            return m.group(0)
+        text = _MULTI_MARKER.sub(multi, text)
+
         def sub(m: re.Match[str]) -> str:
             nonlocal count
             if m.group(1) in ids:
@@ -59,7 +70,9 @@ def normalize_markers(draft: dict[str, Any]) -> tuple[dict[str, Any], int]:
         out[f] = fix(out.get(f))
     for f in LIST_FIELDS:
         if isinstance(out.get(f), list):
-            out[f] = [fix(x) for x in out[f]]
+            kept = [fix(x) for x in out[f] if not (isinstance(x, str) and x.strip() == INSUFF)]
+            count += len(out[f]) - len(kept)  # an INSUFFICIENT_EVIDENCE list item means an empty list
+            out[f] = kept
     if isinstance(out.get("instagram_post_idea"), dict):
         out["instagram_post_idea"] = {k: fix(v) for k, v in out["instagram_post_idea"].items()}
     return out, count

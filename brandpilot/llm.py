@@ -49,8 +49,16 @@ def parse_json_object(text: str) -> dict:
     start, end = text.find("{"), text.rfind("}")
     if start == -1 or end <= start:
         raise ValueError("no JSON object in model output")
-    # strict=False tolerates raw newlines/tabs inside strings, which local models often emit
-    value = json.loads(text[start : end + 1], strict=False)
+    body = text[start : end + 1]
+    try:
+        # strict=False tolerates raw newlines/tabs inside strings, which local models often emit
+        value = json.loads(body, strict=False)
+    except json.JSONDecodeError:
+        # Second, still conservative attempt: drop trailing commas and // line comments only.
+        import re
+        cleaned = re.sub(r",(\s*[}\]])", r"\1", body)
+        cleaned = re.sub(r"(?m)^\s*//.*$", "", cleaned)
+        value = json.loads(cleaned, strict=False)
     if not isinstance(value, dict):
         raise ValueError("model output JSON is not an object")
     return value

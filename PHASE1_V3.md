@@ -77,6 +77,10 @@ The teacher returns a draft whose prose carries `{C1}` markers and whose `claims
 
 If they fail, the teacher gets up to `--max-repairs` (default 2) repair rounds. Each round shows it only its own draft and the failed check messages. The label keeps the attempt with the fewest errors, and every attempt is recorded in `generator.attempts`. References written as `(C1)` or `[C1]` that name an existing claim are normalised to `{C1}`, and the number of normalisations is recorded. A hand-written draft can be imported with `--draft-file draft.json`; it is recorded as `human_written`, never as model output.
 
+**When a label keeps failing:** run `python phase1v3.py explain --company-id <id>`. It lists every failed check and, for quote errors, the closest exact text in the cited passage. It also shows the reviewer's flagged claims and statements, and writes the draft to `data/v3_pilot/edits/<id>.draft.json`.
+
+Fix the draft by hand: copy exact quotes, add markers, or delete unsupported sentences. Then re-import it with `--draft-source model_then_human_edited` and run `verify` again. The label records that a person edited it, and which model draft it came from.
+
 ### 3. Verify (deterministic checks plus local reviewer)
 
 ```bash
