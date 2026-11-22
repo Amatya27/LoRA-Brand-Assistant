@@ -267,7 +267,7 @@ def check_draft(draft: dict[str, Any], packet: dict[str, Any], *, today: date | 
             for s in sentences(MARKER.sub("", text)):
                 if PROMISE_RX.search(s) and not HEDGE_RX.search(s):
                     errors.append(f"{path}: promises an outcome: {s[:90]!r}")
-            for s in sentences(text):
+            for s in sentences(text.replace("’", "'").replace("‘", "'")):
                 if MARKER.search(s):
                     continue
                 names = [company.get("display_name", ""), *([company.get("legacy_name")] if company.get("legacy_name") else [])]

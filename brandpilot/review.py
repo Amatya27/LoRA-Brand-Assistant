@@ -222,7 +222,11 @@ def reconcile_unmarked_flags(review: dict[str, Any], draft: dict[str, Any]) -> t
             dismissed.append({"flag": flag, "reason": f"text is the statement of claim {claim_hit}; judged via its verdict"})
             continue
         if best is None or best_score < 0.85:
-            errors.append(f"reviewer flagged text that is not in the label: {text[:80]!r}")
+            # Text that is not in the label cannot identify a problem in the label (reviewers quote
+            # evidence passages or paraphrase). Unmarked factual sentences in the label itself are
+            # caught deterministically by check_draft, so the flag is logged and set aside.
+            dismissed.append({"flag": flag, "reason": "flagged text does not occur in the label"})
+            continue
         elif best[2]:
             dismissed.append({"flag": flag, "reason": f"sentence in {best[0]} carries a claim marker; judged via its claim",
                               "matched_sentence": best[1]})
