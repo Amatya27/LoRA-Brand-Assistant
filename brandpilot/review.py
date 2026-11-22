@@ -216,6 +216,11 @@ def reconcile_unmarked_flags(review: dict[str, Any], draft: dict[str, Any]) -> t
             score = ratio + (0.01 if field and path.startswith(field) else 0.0)  # prefer the field the reviewer named
             if score > best_score:
                 best, best_score = (path, sent, marked), score
+        claim_hit = next((c.get("id") for c in draft.get("claims", []) if isinstance(c, dict)
+                          and difflib.SequenceMatcher(None, norm, _flag_norm(c.get("statement", ""))).ratio() >= 0.85), None)
+        if claim_hit and (best is None or best_score < 0.85):
+            dismissed.append({"flag": flag, "reason": f"text is the statement of claim {claim_hit}; judged via its verdict"})
+            continue
         if best is None or best_score < 0.85:
             errors.append(f"reviewer flagged text that is not in the label: {text[:80]!r}")
         elif best[2]:

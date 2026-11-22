@@ -630,3 +630,19 @@ def test_empty_sentences_cannot_absorb_reviewer_flags(built):
     review = {"unmarked_factual_statements": [{"field": "email_body", "text": "This builds on the hallmark scents of your brand."}]}
     kept, dismissed, errors = reconcile_unmarked_flags(review, draft)
     assert not dismissed and len(kept["unmarked_factual_statements"]) == 1
+
+
+def test_reviewer_flag_on_claim_statement_is_dismissed(built):
+    from brandpilot.review import reconcile_unmarked_flags
+    _, _, packet = built
+    draft = good_draft(packet)
+    stmt = draft["claims"][3]["statement"]
+    kept, dismissed, errors = reconcile_unmarked_flags({"unmarked_factual_statements": [{"field": "email_body", "text": stmt}]}, draft)
+    assert not errors and len(dismissed) == 1 and "claim C4" in dismissed[0]["reason"]
+
+
+def test_two_word_unknowns_are_allowed(built):
+    _, _, packet = built
+    draft = good_draft(packet)
+    draft["unknowns"] = ["Current partnerships"]
+    assert check_draft(draft, packet)["errors"] == []

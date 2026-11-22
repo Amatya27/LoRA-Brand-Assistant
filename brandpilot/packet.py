@@ -12,7 +12,7 @@ from .registry import DOC_ACCEPTED, PSG_OK, CompanyIdentity, Registry, assess_do
 
 PACKET_SCHEMA = "brandpilot.packet.v3"
 COLLECTOR_VERSION = "brandpilot-collector-0.3"
-PROMPT_VERSION = "brandpilot.prompt.v3.1"
+PROMPT_VERSION = "brandpilot.prompt.v3.2"
 MIN_PASSAGES_FOR_OK = 2
 
 PACKET_OK = "ok"
@@ -207,8 +207,8 @@ Required JSON:
   "abstain_reason": "string or empty",
   "claims": [{{"id": "C1", "kind": "fact | provider_reported | premise", "statement": "string",
               "passage_ids": ["P1"], "quote": "exact words from the passage"}}],
-  "brand_summary": "text with markers, or {INSUFF}",
-  "likely_target_audience": "text with markers, or {INSUFF}",
+  "brand_summary": "Full sentences, each followed by its marker, e.g. \"X makes ... {{C1}}.\" Never only markers. Or {INSUFF}",
+  "likely_target_audience": "A full sentence followed by its marker, or {INSUFF}",
   "current_marketing_strategy": ["text with markers"],
   "unknowns": ["what the evidence does not show"],
   "marketing_gaps": [],
