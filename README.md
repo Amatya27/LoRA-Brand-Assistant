@@ -12,6 +12,66 @@ The goal is:
 - keep LoRA for structure and style
 - keep RAG for current facts
 
+## Project status and Phase 2 handoff (read this first)
+
+*Last updated 22 Nov 2026, branch `thanishka/phase1-v3`.*
+
+**Phase 1 (training dataset) was repaired and piloted.** An audit found that the original v2 dataset (`data/mlx_brand_assistant/`, 141 records) teaches wrong-company facts, search-snippet text attributed to pages, and "missing information = marketing weakness" reasoning. **Do not train on `data/mlx_brand_assistant/` or `data/v2_strict/`.** They are kept only as a comparison baseline.
+
+The replacement is the **v3 pipeline** (`brandpilot/` + `phase1v3.py`):
+
+- **Identity first.** A versioned registry (`data/registry/companies.v1.json`) holds each company's verified official domain, category and same-name businesses. Ambiguous names (e.g. Haus) are quarantined.
+- **Traceable evidence.** Every passage is an exact span of a stored, hashed document. Search snippets are never evidence, and failed fetches yield nothing.
+- **Claim-level labels.** Every factual sentence carries a claim marker. Each claim cites passage IDs and an exact quote, and citations are rendered from that mapping.
+- **Unknowns separated.** Missing information goes to `unknowns`, never to `marketing_gaps`. Pitches build on positively supported facts, and nothing promises results.
+- **Strict verification.** Deterministic checks run first, then a reviewer model. Malformed reviews stay `unresolved`.
+- **Hash-bound human approval.** Enter never approves. Any edit makes the audit and approval stale.
+- **Versioned exports** (`data/v3_datasets/<version>/`) contain only verified, human-approved records, and a manifest records why every other record was excluded.
+
+### Where things are
+
+| What | Where |
+|---|---|
+| How to run the v3 pipeline (all commands) | [PHASE1_V3.md](PHASE1_V3.md) |
+| Audit findings, pilot results, recommendations | [PHASE1_V3_PILOT_REPORT.md](PHASE1_V3_PILOT_REPORT.md) (see section 6b onward) |
+| Identity registry (11 companies so far) | `data/registry/companies.v1.json` |
+| Pilot evidence packets, prompts, labels, audits, approvals | `data/v3_pilot/` |
+| **Clean dataset:** `v3-pilot-2026-11-22` (7 train / 0 valid / 0 test) | `data/v3_datasets/v3-pilot-2026-11-22/` |
+| Evidence store (page snapshots; not in git) | `artifacts/evidence_store/`; get the tarball from the team drive (see PHASE1_V3.md) |
+| Offline tests (55) | `python -m pytest -q tests` |
+
+### Models that work on a 24 GB Mac (run one at a time)
+
+| Role | Model | Notes |
+|---|---|---|
+| Teacher (labels) | `mlx-community/Qwen3-14B-4bit` | start with `mlx_lm.server --model mlx-community/Qwen3-14B-4bit --chat-template-args '{"enable_thinking": false}'` |
+| Reviewer (verify) | `mlx-community/gemma-3-12b-it-4bit` | a different model family from the teacher; Mistral-Small-24B ran out of memory |
+
+Trial on the 10 pilot companies: **5 of 10 passed every check with no human edits** (Qwen2.5-14B for both roles: 0 of 10). Every label still needs human review before approval.
+
+### What Phase 2 needs to do next, in order
+
+1. **Build the evaluation set and baseline first.**
+   - Add verified registry entries for the 29 test-split companies, and build their evidence packets. These are frozen, for evaluation only, and never labelled for training.
+   - Run the base model (no LoRA) on them with the v3 prompt.
+   - Score correctness, citation support, useful outreach and appropriate abstention separately.
+2. **Grow the dataset.**
+   - Add registry entries for the remaining train and valid companies.
+   - Collect, label (Qwen3), verify (Gemma), review and approve in batches.
+   - The valid split (14 companies) is currently empty, and `mlx_lm.lora` needs a non-empty `valid.jsonl`.
+   - Re-collect Billie, Omsom and Spindrift live.
+3. **Smoke-test training.** Train on the current small export only to check that the loop and the v3 JSON output work. This is not a result.
+4. **Connect the app to the v3 output.** `brand_assistant_postprocess.py` and `webapp/` still read the v2 schema. Use `brandpilot.claims.to_legacy_view()` or update the UI.
+5. **Real training run.**
+   - Export a reviewed dataset (roughly 60+ train, 10+ valid).
+   - Train the adapter (Part 5C below, with `--data data/v3_datasets/<version>`).
+   - Compare it with the baseline on the frozen test packets.
+
+Open items for the team:
+- **Haus:** confirm the intended company (likely the apéritif brand drink.haus), or replace it.
+- **Live retrieval:** `phase1v3.py collect --search` has only been run for Purple and Billie, so far.
+- **Sentence–claim alignment:** a sentence can cite a real claim that says something different. Today only human review catches this, so an automatic check is still to do.
+
 ## What is in this repo now
 
 - `run_brand_assistant.py`
@@ -26,6 +86,8 @@ The goal is:
   Converts your old Colab JSONL dataset into MLX-LM training files.
 - `brand_assistant_checkpoint.py`
   Finds and inspects your Keras checkpoint files.
+- `brandpilot/` and `phase1v3.py`
+  **Phase 1 v3** dataset pipeline: identity registry, traceable evidence, claim-level labels, strict review, approvals, export. See [PHASE1_V3.md](PHASE1_V3.md).
 - `brand_assistant_service.py`
   Reusable service layer that powers the web app.
 - `app.py`
@@ -262,6 +324,8 @@ pip install "mlx-lm[train]"
 
 ### 5B. Convert your old dataset into MLX-LM format
 
+> **Legacy (paused).** This step built `data/mlx_brand_assistant/`, the v2 dataset that must not be used for training. For new training, use a v3 export from `python phase1v3.py export --version <name>` in `data/v3_datasets/<name>/`, which already holds `train/valid/test.jsonl` in prompt/completion format.
+
 Replace the input path with the JSONL file you used in Colab.
 
 ```bash
@@ -277,6 +341,8 @@ This creates:
 - `data/mlx_brand_assistant/test.jsonl`
 
 ### 5C. Train a local QLoRA adapter
+
+> For v3 data, pass `--data data/v3_datasets/<name>`. `mlx_lm.lora` needs a non-empty `valid.jsonl`; the current pilot export has none, so it can only be used for a smoke test after valid-split labels exist.
 
 ```bash
 mlx_lm.lora \
@@ -330,6 +396,8 @@ This uses:
 - your local Gemma 3 1B QLoRA adapter for generation
 
 ## Output format
+
+> **v3 schema (`brandpilot.output.v3`).** New training targets add `decision`, `claims` (id, kind, statement, passage_ids, exact quote), `unknowns` and `collaboration_opportunities`. `marketing_gaps` is narrowed to weaknesses a passage positively states, and `why_it_closes_the_gap` becomes `why_it_fits`. See PHASE1_V3.md. The v2 list below is what the current app consumes.
 
 The generator is asked to return strict JSON with:
 
@@ -398,4 +466,6 @@ python run_brand_assistant.py \
 ```
 ## Guides
 - [SETUP.md](SETUP.md) — environment setup (Phase 0)
-- [DATASET_PIPELINE.md](DATASET_PIPELINE.md) — building the training dataset (Phase 1)
+- [PHASE1_V3.md](PHASE1_V3.md) — **current** Phase 1 pipeline: commands, checks, schema
+- [PHASE1_V3_PILOT_REPORT.md](PHASE1_V3_PILOT_REPORT.md) — audit findings, pilot results, Phase 2 recommendations
+- [DATASET_PIPELINE.md](DATASET_PIPELINE.md) — v2 dataset pipeline (paused; superseded by PHASE1_V3.md)

@@ -1,6 +1,6 @@
 # Phase 1 evidence repair: report and pilot (21 Nov 2026)
 
-Branch `varshini/phase1-evidence-repair`, created from `thanishka/phase1-dataset-v2` at `3b7ccf0656dcea9fc1c3a45c086b07984764df51`. The starting branch had **not** advanced past the audited commit. Nothing was pushed or merged, no model was trained, and no paid service was used. No label, review or approval was generated or recorded for the pilot.
+Branch `varshini/phase1-evidence-repair` (renamed `thanishka/phase1-v3` on 22 Nov 2026), created from `thanishka/phase1-dataset-v2` at `3b7ccf0656dcea9fc1c3a45c086b07984764df51`. The starting branch had **not** advanced past the audited commit. Nothing was pushed or merged, no model was trained, and no paid service was used. No label, review or approval was generated or recorded for the pilot.
 
 ## 1. Headline
 
@@ -192,6 +192,17 @@ The labels were generated on the Mac with the local teacher and reviewer (`mlx-c
 - Add a check that each marked sentence agrees with its claim's statement.
 - Keep human review mandatory.
 - Re-collect Billie, Omsom and Spindrift live before labeling them again.
+
+## 6c. Teacher/reviewer trial (22 Nov 2026)
+
+The same 10 pilot packets were labelled with `mlx-community/Qwen3-14B-4bit` as the teacher, with thinking disabled and up to 2 repair rounds. They were verified with `mlx-community/gemma-3-12b-it-4bit` as the reviewer, run one model at a time on a 24 GB Mac, in the separate workspace `data/v3_teacher_trial/` (not exported).
+
+- **5 of 10 passed every check with no human edits:** Ten Thousand, Omsom, Spindrift, Purple and Athletic Brewing.
+- **Remaining failures:** paraphrased quotes (Billie, Glossier, Liquid Death, poppi) and one unmarked sentence (Native).
+- **For comparison:** Qwen2.5-14B in both roles passed 0 of 10 without edits.
+- **Mistral-Small-24B** as reviewer crashed from memory pressure on this machine.
+
+The trial labels are candidates only. They have not been human-reviewed or approved.
 
 ## 7. Still unresolved
 
