@@ -1,0 +1,139 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "spindrift",
+  "bound_to": {
+    "packet_sha256": "7800217f68db6b0b482b464395d77e2c4af41f77a07e24baccc7f3b050973919",
+    "prompt_sha256": "7c27fa0fa0e082230d62a04e2fe2903be234428aee58a0184ae3ccbeff141619",
+    "completion_sha256": "8df3cec971bd8b0145b721eb36635590645d8c6be28885411b6f2862bf1a45e7",
+    "reviewer_config_sha256": "e0473838432913db4e240d3ef8daef4e582365a7dd88de9513a1b131c5bbf90c"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.0",
+    "reviewer_system_sha256": "5ef77c46c0a032fd6b5710f2229bbc94b5ce268f146e7336a7382f0731fec2e7",
+    "model": "mlx-community/Qwen2.5-14B-Instruct-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 2000
+  },
+  "deterministic": {
+    "errors": [
+      "likely_target_audience: factual sentence without a claim marker: \"They also have a community of dedicated fans known as 'drifters'.\"",
+      "email_body: factual-looking sentence without a claim marker: 'The TikTok creator can showcase the variety of flavors and unique packaging design of Spin'"
+    ],
+    "warnings": [
+      "claim C4: not referenced by any field"
+    ]
+  },
+  "raw_response_sha256": "cb004cada4fd5147a86f306e94b945a694246d026c1de25f8c36eb57c6f294cb",
+  "raw_response": "{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\"P1\"],\n      \"quote\": \"Half & Half hit shelves and brought real brewed tea to our lineup.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Spindrift launched Half & Half, a real brewed tea product.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\"P5\"],\n      \"quote\": \"the company rewards their dedication with free merch and products\",\n      \"issues\": [],\n      \"reason\": \"The passage mentions that Spindrift has a community of dedicated fans known as 'drifters'.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\"P3\"],\n      \"quote\": \"increasingly, influencer-related marketing is shifting to more organic communities who love to purchase and boast about the products\",\n      \"issues\": [],\n      \"reason\": \"The passage indicates that Spindrift collaborates with influencers.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\"P1\"],\n      \"quote\": \"We launched a direct-to-consumer experience to bring the full real fruit lineup to the masses\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Spindrift launched a direct-to-consumer experience.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\"P1\"],\n      \"quote\": \"Pour Pineapple - Spindrift Pineapple Pour To bring joy to our community during lockdown, we gave away thousands of packs from the first batch of Pineapple for free\",\n      \"issues\": [],\n      \"reason\": \"The passage mentions that Spindrift has a product called Pour Pineapple.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\"P1\"],\n      \"quote\": \"We launched Spindrift® Spiked, a hard seltzer made our way\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Spindrift has a product called Spindrift® Spiked.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\"P1\", \"P8\"],\n      \"quote\": \"We brought back Blackberry\",\n      \"issues\": [],\n      \"reason\": \"The passage mentions that Spindrift has a product called Blackberry.\"\n    },\n    {\n      \"claim_id\": \"C8\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\"P1\"],\n      \"quote\": \"We reinvented Lemonade, our way\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Spindrift has a product called Lemonade.\"\n    },\n    {\n      \"claim_id\": \"C9\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\"P7\"],\n      \"quote\": \"New Spindrift® Tea! Crisp, non-carbonated, & slightly sweet\",\n      \"issues\": [],\n      \"reason\": \"The passage mentions that Spindrift has a product called Spindrift® Tea.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [\n    {\n      \"field\": \"email_body\",\n      \"text\": \"We propose collaborating with a popular TikTok creator to promote Spindrift's new product line.\"\n    }\n  ],\n  \"absence_as_weakness\": []\n}",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Half & Half hit shelves and brought real brewed tea to our lineup.",
+        "issues": [],
+        "reason": "The passage states that Spindrift launched Half & Half, a real brewed tea product."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "the company rewards their dedication with free merch and products",
+        "issues": [],
+        "reason": "The passage mentions that Spindrift has a community of dedicated fans known as 'drifters'."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "increasingly, influencer-related marketing is shifting to more organic communities who love to purchase and boast about the products",
+        "issues": [],
+        "reason": "The passage indicates that Spindrift collaborates with influencers."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "We launched a direct-to-consumer experience to bring the full real fruit lineup to the masses",
+        "issues": [],
+        "reason": "The passage states that Spindrift launched a direct-to-consumer experience."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Pour Pineapple - Spindrift Pineapple Pour To bring joy to our community during lockdown, we gave away thousands of packs from the first batch of Pineapple for free",
+        "issues": [],
+        "reason": "The passage mentions that Spindrift has a product called Pour Pineapple."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "We launched Spindrift® Spiked, a hard seltzer made our way",
+        "issues": [],
+        "reason": "The passage states that Spindrift has a product called Spindrift® Spiked."
+      },
+      {
+        "claim_id": "C7",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1",
+          "P8"
+        ],
+        "quote": "We brought back Blackberry",
+        "issues": [],
+        "reason": "The passage mentions that Spindrift has a product called Blackberry."
+      },
+      {
+        "claim_id": "C8",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "We reinvented Lemonade, our way",
+        "issues": [],
+        "reason": "The passage states that Spindrift has a product called Lemonade."
+      },
+      {
+        "claim_id": "C9",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "New Spindrift® Tea! Crisp, non-carbonated, & slightly sweet",
+        "issues": [],
+        "reason": "The passage mentions that Spindrift has a product called Spindrift® Tea."
+      }
+    ],
+    "unmarked_factual_statements": [
+      {
+        "field": "email_body",
+        "text": "We propose collaborating with a popular TikTok creator to promote Spindrift's new product line."
+      }
+    ],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "fail",
+  "reasons": [
+    "2 deterministic check error(s)"
+  ],
+  "created_at": "2026-11-22T04:44:02+00:00",
+  "audit_sha256": "602064c8dbcd1c61d521f7c97191a6ce97f79e3de49c67884c7afe881eb6e985"
+}

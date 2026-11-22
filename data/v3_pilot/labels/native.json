@@ -1,0 +1,79 @@
+{
+  "schema_version": "brandpilot.label.v3",
+  "company_id": "native",
+  "packet_path": "packets/native.json",
+  "packet_sha256": "187c02039c7f56d67e99a98f606e91b6128d03075b0b5c63c0adebfa8ea3d185",
+  "prompt_version": "brandpilot.prompt.v3.1",
+  "prompt": "You are a grounded brand-outreach assistant for our team. Use only the evidence passages below.\nNever use outside knowledge. Return valid JSON only.\n\nSeparate three things:\n1. OBSERVED FACTS - things a passage actually states about this company. Each fact is a claim with an id (C1, C2, ...),\n   the passage id(s) that support it, and an exact quote copied word-for-word from that passage.\n2. UNKNOWNS - things the evidence does not tell us (put them in \"unknowns\"). A channel, program or audience that does\n   not appear in these passages is UNKNOWN. It is never a weakness, never a \"gap\", and never a reason for outreach.\n3. PROPOSALS - collaboration ideas from our team. Proposals are not facts, but each must build on a positively supported\n   fact (an existing campaign, partnership, product, community, value or theme) and cite that premise.\n\nRules:\n- Put a claim marker like {C1} (curly braces) right after every factual statement in every field, including the\n  email and Instagram idea. Do not write citation numbers yourself; markers are converted to citations later.\n- A claim's \"quote\" must be copied character-for-character from the cited passage: 5 to 25 consecutive words, no\n  paraphrasing, no joining of separate sentences. If you cannot find such a quote, drop the claim and every sentence\n  that depends on it.\n- Audience and strategy sentences are factual: each needs a marker. If no passage states the audience, write\n  INSUFFICIENT_EVIDENCE instead of guessing.\n- Pitch lines (email subject, hook, concept) should describe the proposed post (\"A carousel featuring ...\",\n  \"Collaborate on ...\"). Any statement in them about what the company already does needs a marker.\n- Respect passage types. \"proposed_or_mock_work\" and \"author_recommendation\" passages describe ideas, not things the\n  company did: never state them as company activity. \"provider_reported_result\" passages are claims by a vendor or\n  agency: attribute them (\"X reports that ...\"). \"creator_or_influencer_audience_data\" describes creators' followers,\n  not the company's customers. \"vendor_generated_profile_or_analytics\" passages are a tool vendor's estimates\n  (e.g. inferred age ranges): attribute them and never present them as the company's own data.\n  \"forward_looking_statement\" passages describe plans or intentions, not completed activity.\n- Mind time: if a passage describes past activity, do not present it as current.\n- \"marketing_gaps\" may only contain a weakness that a passage positively states. Usually it is [].\n- Never promise results. Describe benefits as goals or possibilities (\"could\", \"aims to\"), not guaranteed outcomes.\n- Decision: write \"draft\" when at least one concrete, evidence-supported collaboration opportunity exists. Otherwise write\n  \"abstain\", give an abstain_reason, set pitch fields to INSUFFICIENT_EVIDENCE and leave collaboration_opportunities empty.\n- The email is from our team to the company, proposing one collaborative Instagram post.\n\nRequired JSON:\n{\n  \"decision\": \"draft\" or \"abstain\",\n  \"abstain_reason\": \"string or empty\",\n  \"claims\": [{\"id\": \"C1\", \"kind\": \"fact | provider_reported | premise\", \"statement\": \"string\",\n              \"passage_ids\": [\"P1\"], \"quote\": \"exact words from the passage\"}],\n  \"brand_summary\": \"text with markers, or INSUFFICIENT_EVIDENCE\",\n  \"likely_target_audience\": \"text with markers, or INSUFFICIENT_EVIDENCE\",\n  \"current_marketing_strategy\": [\"text with markers\"],\n  \"unknowns\": [\"what the evidence does not show\"],\n  \"marketing_gaps\": [],\n  \"collaboration_opportunities\": [\"proposal that builds on a cited fact {C2}\"],\n  \"instagram_post_idea\": {\"hook\": \"string\", \"concept\": \"string\", \"why_it_fits\": \"string\"},\n  \"email_subject\": \"string\",\n  \"email_body\": \"string\"\n}\n\nCompany: Native (company_id native; category: personal care (deodorant, body wash, hair care))\nOfficial domains: nativecos.com\nRecipient: the marketing team\nPacket status: ok\n\nEvidence passages:\n[P1] source: https://www.nativecos.com/pages/about-us | document: official_domain | type: descriptive | dates in text: none | published: unknown\n\"For us, it’s personal. ## Clean No parabens. No sulfates. No animal testing. No gray area. Our ingredients come from nature, are barely processed, and are 100% vegan. You always know what you’re putting on your body. Native signifies our focus on harnessing nature’s power through clean, simple, effective products.\"\n\n[P2] source: https://www.nativecos.com/pages/about-us | document: official_domain | type: descriptive | dates in text: none | published: unknown\n\"Craveable Self-care should feel delightful. Our award-winning formulas are known for their irresistible scents. Don’t be surprised if you want to sniff them all day and crave them later.\"\n\n[P3] source: https://www.nativecos.com/pages/about-us | document: official_domain | type: descriptive | dates in text: none | published: unknown\n\"Effective Our dermatologist-tested products are designed to deliver benefits you want and your body needs. Moisturizing, cleansing, scrubbing, protecting — we do it all (and then some).\"\n",
+  "prompt_sha256": "23c8fe417b851e29fca534a014a8a23c4a2947db0d4ecc9242db75dab2210a57",
+  "generator": {
+    "source": "model_then_human_edited",
+    "path": "data/v3_pilot/edits/native.draft.json",
+    "note": "teacher draft edited by a person; the edit replaces the model output",
+    "edited_from": {
+      "label_completion_sha256": "ac503070118b5c53e4926ab5cc3408827fa8946c02ee1f2756fc7ef4f5f3e880",
+      "model": "mlx-community/Qwen2.5-14B-Instruct-4bit"
+    }
+  },
+  "raw_response": null,
+  "raw_response_sha256": null,
+  "draft": {
+    "decision": "draft",
+    "abstain_reason": "",
+    "claims": [
+      {
+        "id": "C1",
+        "kind": "fact",
+        "statement": "Native's products are clean and free from parabens, sulfates, and animal testing.",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "For us, it’s personal. ## Clean No parabens. No sulfates. No animal testing. No gray area. Our ingredients come from nature, are barely processed, and are 100% vegan."
+      },
+      {
+        "id": "C2",
+        "kind": "fact",
+        "statement": "Native's products are known for their delightful and irresistible scents.",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "Craveable Self-care should feel delightful. Our award-winning formulas are known for their irresistible scents. Don’t be surprised if you want to sniff them all day and crave them later."
+      },
+      {
+        "id": "C3",
+        "kind": "fact",
+        "statement": "Native's products are dermatologist-tested and designed to deliver multiple benefits.",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Effective Our dermatologist-tested products are designed to deliver benefits you want and your body needs. Moisturizing, cleansing, scrubbing, protecting — we do it all (and then some)."
+      }
+    ],
+    "brand_summary": "Native makes clean personal care products with no parabens, sulfates or animal testing {C1}. Its formulas are known for irresistible scents {C2} and are dermatologist-tested {C3}.",
+    "likely_target_audience": "INSUFFICIENT_EVIDENCE",
+    "current_marketing_strategy": [],
+    "unknowns": [
+      "The sources do not describe Native's target audience.",
+      "The sources do not describe Native's current marketing activity."
+    ],
+    "marketing_gaps": [],
+    "collaboration_opportunities": [
+      "Collaborate on a campaign that highlights the delightful scents of Native's products {C2}"
+    ],
+    "instagram_post_idea": {
+      "hook": "A carousel featuring the irresistible scents of Native's products",
+      "concept": "Showcase the scents of Native's personal care products {C2}, alongside its clean-ingredient promise {C1}.",
+      "why_it_fits": "This post aligns with Native's focus on clean, natural products and their delightful scents {C2}."
+    },
+    "email_subject": "Collaborate on a campaign highlighting Native's delightful scents",
+    "email_body": "Dear Native Marketing Team,\n\nWe propose collaborating on an Instagram carousel post that showcases the irresistible scents of Native's personal care products. This idea builds on the delightful and unique scents that are a hallmark of your brand {C2}.\n\nBest regards,\n[Your Team]"
+  },
+  "completion": "{\"schema_version\": \"brandpilot.output.v3\", \"decision\": \"draft\", \"evidence_status\": \"sufficient\", \"abstain_reason\": \"\", \"brand_summary\": \"Native makes clean personal care products with no parabens, sulfates or animal testing [P1]. Its formulas are known for irresistible scents [P2] and are dermatologist-tested [P3].\", \"likely_target_audience\": \"INSUFFICIENT_EVIDENCE\", \"current_marketing_strategy\": [], \"unknowns\": [\"The sources do not describe Native's target audience.\", \"The sources do not describe Native's current marketing activity.\"], \"marketing_gaps\": [], \"collaboration_opportunities\": [\"Collaborate on a campaign that highlights the delightful scents of Native's products [P2]\"], \"instagram_post_idea\": {\"hook\": \"A carousel featuring the irresistible scents of Native's products\", \"concept\": \"Showcase the scents of Native's personal care products [P2], alongside its clean-ingredient promise [P1].\", \"why_it_fits\": \"This post aligns with Native's focus on clean, natural products and their delightful scents [P2].\"}, \"email_subject\": \"Collaborate on a campaign highlighting Native's delightful scents\", \"email_body\": \"Dear Native Marketing Team,\\n\\nWe propose collaborating on an Instagram carousel post that showcases the irresistible scents of Native's personal care products. This idea builds on the delightful and unique scents that are a hallmark of your brand [P2].\\n\\nBest regards,\\n[Your Team]\", \"claims\": [{\"id\": \"C1\", \"kind\": \"fact\", \"statement\": \"Native's products are clean and free from parabens, sulfates, and animal testing.\", \"passage_ids\": [\"P1\"], \"quote\": \"For us, it’s personal. ## Clean No parabens. No sulfates. No animal testing. No gray area. Our ingredients come from nature, are barely processed, and are 100% vegan.\"}, {\"id\": \"C2\", \"kind\": \"fact\", \"statement\": \"Native's products are known for their delightful and irresistible scents.\", \"passage_ids\": [\"P2\"], \"quote\": \"Craveable Self-care should feel delightful. Our award-winning formulas are known for their irresistible scents. Don’t be surprised if you want to sniff them all day and crave them later.\"}, {\"id\": \"C3\", \"kind\": \"fact\", \"statement\": \"Native's products are dermatologist-tested and designed to deliver multiple benefits.\", \"passage_ids\": [\"P3\"], \"quote\": \"Effective Our dermatologist-tested products are designed to deliver benefits you want and your body needs. Moisturizing, cleansing, scrubbing, protecting — we do it all (and then some).\"}], \"citations\": [\"[P1]\", \"[P2]\", \"[P3]\"]}",
+  "completion_sha256": "225c212938d001ba7b8bb8a7f35dfd3159b3aa8b3c2eab1a4c8437b71deafdbc",
+  "deterministic": {
+    "errors": [],
+    "warnings": []
+  },
+  "created_at": "2026-11-22T08:40:48+00:00",
+  "approved": false
+}

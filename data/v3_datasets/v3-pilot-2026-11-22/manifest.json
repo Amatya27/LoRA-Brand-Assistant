@@ -1,0 +1,177 @@
+{
+  "schema_version": "brandpilot.dataset_manifest.v3",
+  "dataset_version": "v3-pilot-2026-11-22",
+  "created_at": "2026-11-22T09:20:49+00:00",
+  "approval_basis": "explicit, hash-bound human approval records (brandpilot.approval.v3) only",
+  "git_commit": "ddabe235321f5dc1a9159636a61d8fd1ba52141c",
+  "registry": {
+    "version": "2026-11-21.v1",
+    "sha256": "30ef3cd9bf05bcad5ca5c1e00110b3252c8aa7b1715374cbddb5f6bb1f090a23"
+  },
+  "split_source": "/Users/thanishka/LoRA-Brand-Assistant/data/mlx_brand_assistant/manifest.json",
+  "counts": {
+    "train": 7,
+    "valid": 0,
+    "test": 0
+  },
+  "included": 7,
+  "excluded": 3,
+  "entries": [
+    {
+      "company_id": "athletic-brewing",
+      "legacy_name": "Athletic Brewing",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "b4402d13308268a6f92f8cb7945ac29e7c0c2aa60d424647328c113280347f89",
+        "packet_sha256": "c0a371d4bdfaf1745e94d2bfb0a8ab0bc1f2e6d473992e1b52c404c1d3e622da",
+        "audit_sha256": "cecb218881846e005acd7d01aab91b8969b4eabd3098565c81726b249008ffea",
+        "approved_by": "Thanishka Bolisetty",
+        "approved_at": "2026-11-22T08:58:33+00:00"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "billie",
+      "legacy_name": "Billie",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 6 error(s), e.g. brand_summary: factual sentence without a claim marker: 'Billie aims to challenge societal pressures on women and engage with its audience in surpr'",
+        "verification: audit status fail",
+        "human approval: no approval record"
+      ],
+      "provenance": {
+        "label_sha256": "e068ec491b7247ed85339ce636cfca9c31ccda9e3814d1f93d08738f6385169a",
+        "packet_sha256": "8be6d18975eb70c986bc1fab023e592cc95ae126c8a520bb3154c8597a4e12bb",
+        "audit_sha256": "658bbc66f9fbb2cb34ef30be2744da929771b69946c2382ede5c323c34d28698"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "glossier",
+      "legacy_name": "Glossier",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "6b8fb63c969708cf6c4c376645657f4ebf0000f8673523ac30c03c7c4a592cbc",
+        "packet_sha256": "054a85629ea4920bf01ce490433c30ff24a33b5a8dbb003cf10df9a7cf398775",
+        "audit_sha256": "1d4c91644b846a3cfaaaa20c216546b2619d1cb1ca5d86f26d80934d5bc08179",
+        "approved_by": "Thanishka Bolisetty",
+        "approved_at": "2026-11-22T09:20:02+00:00"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "liquid-death",
+      "legacy_name": "Liquid Death",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "b8e16d451d2bfe54acad750e35445b405a8e417aa832317c6ef4cfaed5c6fe23",
+        "packet_sha256": "0b56352a8410ff3ae8be92b59b5b56b30803b09c2da43499bca89c8209e207f9",
+        "audit_sha256": "2a3c9455c6f6d30b12b3e4e3105ec298bcf589f763084adcda432890184533b2",
+        "approved_by": "Thanishka Bolisetty",
+        "approved_at": "2026-11-22T09:20:44+00:00"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "native",
+      "legacy_name": "Native",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "37c7c2e0d674922ecffa4d452ccdac7c186b9337d6d2cd2aad6aa79221335825",
+        "packet_sha256": "187c02039c7f56d67e99a98f606e91b6128d03075b0b5c63c0adebfa8ea3d185",
+        "audit_sha256": "d38eb666c16093d8a0096bf724b13d69bdd37782b39d12357492fd54d4b4f50f",
+        "approved_by": "Thanishka Bolisetty",
+        "approved_at": "2026-11-22T08:43:44+00:00"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "omsom",
+      "legacy_name": "Omsom",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 4 error(s), e.g. claim C4: quote does not occur in cited passage(s) ['P4']",
+        "verification: audit status fail",
+        "human approval: no approval record"
+      ],
+      "provenance": {
+        "label_sha256": "b35af59f0ed43ffb923a92afc546459aa1a5e9a51889430cce23629a48366ee4",
+        "packet_sha256": "955c58d59b2837a5e482786e9b9ca3adf60428bae9d4ac48621d1255d6b7c1a8",
+        "audit_sha256": "9a1e21778b4b876ed432fbf85518771beb3f590da9a4ee142defc25d15d9c169"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "poppi",
+      "legacy_name": "Poppi",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "f8f7a24e678c4fe9349b3865681135fa19ae296b2486d984c5ebd1e467bcdeb5",
+        "packet_sha256": "bfa1e517494a182b3d1c676d9446c7dec73145ee61ecaaf85d9408fa6353eb7e",
+        "audit_sha256": "9f78044ecc0291de23db05876fcd06297e466697afa8d571001f4001e6e81015",
+        "approved_by": "Thanishka Bolisetty",
+        "approved_at": "2026-11-22T09:16:10+00:00"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "purple",
+      "legacy_name": "Purple",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "4794fc66af60a49f8cd94749098985e73bc065cbd5041e31085f851af3fa9c31",
+        "packet_sha256": "29c0c0546cc447cf2ab2873080fce11d8e1bc1fe3cdad4dbd78a0e45cb4c3754",
+        "audit_sha256": "fda291afdace19d05ef78f3709cd3133eb45be3fc62c4e6b878ff2bfdd4e1338",
+        "approved_by": "Thanishka Bolisetty",
+        "approved_at": "2026-11-22T09:15:26+00:00"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "spindrift",
+      "legacy_name": "Spindrift",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 2 error(s), e.g. likely_target_audience: factual sentence without a claim marker: \"They also have a community of dedicated fans known as 'drifters'.\"",
+        "verification: audit status fail",
+        "human approval: no approval record"
+      ],
+      "provenance": {
+        "label_sha256": "43285905fd549dc610086a2ab1279b2ae3293c451984560bea8bc63e58da0aee",
+        "packet_sha256": "7800217f68db6b0b482b464395d77e2c4af41f77a07e24baccc7f3b050973919",
+        "audit_sha256": "602064c8dbcd1c61d521f7c97191a6ce97f79e3de49c67884c7afe881eb6e985"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "ten-thousand",
+      "legacy_name": "Ten Thousand",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "33724007a75dfaa8509a030be50b377373edaf2b31600d70cc6376ced98f185c",
+        "packet_sha256": "1b1c3acc5c6b0784169270fcdd96c78e151a13a4a0984888f8175becc22d98b6",
+        "audit_sha256": "65c81e2297b7a827de50d3f5c14cfbd08c4e879f232b066a2e66f40c41985780",
+        "approved_by": "Thanishka Bolisetty",
+        "approved_at": "2026-11-22T08:53:37+00:00"
+      },
+      "decision": "draft"
+    }
+  ]
+}

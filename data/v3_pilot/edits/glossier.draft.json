@@ -1,0 +1,62 @@
+{
+  "decision": "draft",
+  "abstain_reason": "",
+  "claims": [
+    {
+      "id": "C1",
+      "kind": "fact",
+      "statement": "Glossier prioritizes skincare over makeup.",
+      "passage_ids": [
+        "P1",
+        "P2"
+      ],
+      "quote": "Skin First. Makeup Second™"
+    },
+    {
+      "id": "C2",
+      "kind": "provider_reported",
+      "statement": "Glossier’s marketing runs on community.",
+      "passage_ids": [
+        "P4"
+      ],
+      "quote": "Glossier’s marketing runs on community"
+    },
+    {
+      "id": "C3",
+      "kind": "provider_reported",
+      "statement": "Project Practical reports that Glossier uses user-generated content and collaborates with influencers.",
+      "passage_ids": [
+        "P10"
+      ],
+      "quote": "By incorporating user-generated content, Glossier encourages customers to become brand advocates"
+    },
+    {
+      "id": "C4",
+      "kind": "provider_reported",
+      "statement": "Glossier has a large Instagram following.",
+      "passage_ids": [
+        "P7"
+      ],
+      "quote": "A community of over 2.8 million followers (2024) engages with carousels, UGC spotlights, and routine breakdowns"
+    }
+  ],
+  "brand_summary": "Glossier prioritizes skincare over makeup {C1}. Third-party marketing analyses describe a community-driven strategy {C2} built on user-generated content and influencer partnerships {C3}, and report an Instagram community of over 2.8 million followers {C4}.",
+  "likely_target_audience": "INSUFFICIENT_EVIDENCE",
+  "current_marketing_strategy": [
+    "Marketing blogs report a community-driven strategy built on user-generated content and influencer partnerships {C2}{C3}."
+  ],
+  "unknowns": [
+    "Specific details about the company's email marketing strategy, TV ad campaigns, and radio ad campaigns"
+  ],
+  "marketing_gaps": [],
+  "collaboration_opportunities": [
+    "Collaborate on a new Instagram carousel featuring user-generated content that highlights the skincare-first approach of Glossier products {C1}{C3}"
+  ],
+  "instagram_post_idea": {
+    "hook": "A carousel featuring user-generated content that showcases the skincare-first approach of Glossier products",
+    "concept": "A carousel of real customers' skin-first routines, each slide credited to the person who shared it",
+    "why_it_fits": "This post aligns with Glossier's focus on skincare and community engagement {C1}{C2}"
+  },
+  "email_subject": "Collaborate on a new Instagram carousel featuring user-generated content",
+  "email_body": "Dear Glossier Marketing Team,\n\nWe propose collaborating on a new Instagram carousel that features user-generated content highlighting the skincare-first approach of Glossier products. This aligns with your focus on skincare and community engagement {C1}{C2}. The carousel would feature real customers' skin-first routines, shared with their permission.\n\nIf this sounds interesting, we'd be happy to share a draft.\n\nBest regards,\n[Your Team]"
+}

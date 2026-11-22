@@ -10,8 +10,15 @@ Separate three things:
    fact (an existing campaign, partnership, product, community, value or theme) and cite that premise.
 
 Rules:
-- Put a claim marker like {C1} right after every factual statement in every field, including the email and Instagram idea.
-  Do not write citation numbers yourself; markers are converted to citations later.
+- Put a claim marker like {C1} (curly braces) right after every factual statement in every field, including the
+  email and Instagram idea. Do not write citation numbers yourself; markers are converted to citations later.
+- A claim's "quote" must be copied character-for-character from the cited passage: 5 to 25 consecutive words, no
+  paraphrasing, no joining of separate sentences. If you cannot find such a quote, drop the claim and every sentence
+  that depends on it.
+- Audience and strategy sentences are factual: each needs a marker. If no passage states the audience, write
+  INSUFFICIENT_EVIDENCE instead of guessing.
+- Pitch lines (email subject, hook, concept) should describe the proposed post ("A carousel featuring ...",
+  "Collaborate on ..."). Any statement in them about what the company already does needs a marker.
 - Respect passage types. "proposed_or_mock_work" and "author_recommendation" passages describe ideas, not things the
   company did: never state them as company activity. "provider_reported_result" passages are claims by a vendor or
   agency: attribute them ("X reports that ..."). "creator_or_influencer_audience_data" describes creators' followers,
@@ -45,7 +52,32 @@ Required JSON:
 Company: Purple (company_id purple; category: mattresses and sleep products)
 Official domains: purple.com
 Recipient: the marketing team
-Packet status: insufficient_evidence (no passage passed identity, provenance and relevance checks)
+Packet status: ok
 
 Evidence passages:
-No evidence passed identity and provenance checks.
+[P1] source: https://sleepretailer.com/blogs/news/purple-partners-with-raymour-flanigan | document: third_party_confirmed | type: actual_activity | dates in text: none | published: 2024-03-08 22:49:15 -0500
+"Purple began as an online mattress company that only sold products directly to consumers. Over the last two years, Purple has partnered with mattress and furniture retailers to achieve its mission of bringing its comfort products to customers however, whenever and wherever they want them. Purple’s mattresses, pillows and seat cushions feature the patented Purple Grid material that provides pressure relief, cooling airflow and motion isolation, which result in Purple’s superior comfort products."
+
+[P2] source: https://www.prnewswire.com/news-releases/purple-celebrates-grid-day-with-the-grid-it-forward-campaign-gifting-hundreds-of-mattresses-to-customers-and-their-loved-ones-302931716.html | document: third_party_confirmed | type: descriptive | dates in text: none | published: 2026-11-06T14:00:00Z
+"Grid Day was born from Purple's \"original gridders\" (OG's) and most loyal fans. As Purple celebrates a decade of reinventing sleep, the brand established Grid Day as an official day of recognition for the community that helped build it. For many customers, Purple has moved beyond the mattress into an essential part of daily life, proving how better nights lead to better days. Grid Day turns that passion into an occasion, serving as a dedicated day to celebrate existing owners, giving them a platform to share how Purple has changed their lives for the better, and ultimately empower them to give the gift of restorative sleep to someone they love."
+
+[P3] source: https://sleepretailer.com/blogs/news/purple-partners-with-raymour-flanigan | document: third_party_confirmed | type: descriptive | dates in text: none | published: 2024-03-08 22:49:15 -0500
+"“Raymour & Flanigan is a top-tier retailer and we’re excited to partner with their brand,” said Joe Megibow, Purple CEO. “This partnership will help us offer customers in the Northeast a high-touch experience when shopping for a Purple mattress.”"
+
+[P4] source: https://sleepretailer.com/blogs/news/purple-partners-with-raymour-flanigan | document: third_party_confirmed | type: brand_positioning | dates in text: none | published: 2024-03-08 22:49:15 -0500
+"“FADV’s mission is to generate resources for domestic violence service providers through corporate, individual and community partnerships,” said Brooke Muir, Head of Outreach & Development for FADV. “We are thrilled to partner with companies like Purple and Raymour & Flanigan who are committed to supporting their local communities.”"
+
+[P5] source: https://www.prnewswire.com/news-releases/purple-celebrates-grid-day-with-the-grid-it-forward-campaign-gifting-hundreds-of-mattresses-to-customers-and-their-loved-ones-302931716.html | document: third_party_confirmed | type: historical_activity | dates in text: Nov. 6, 2026 | published: 2026-11-06T14:00:00Z
+"SALT LAKE CITY , Nov. 6, 2026 /PRNewswire/ -- Purple Innovation , Inc (\"Purple\"), (NASDAQ: PRPL ) the world leader in sleep technology and inventor of GelFlex Grid®, today announced November 7th as \"Grid Day,\" marking the launch of its annual campaign, Grid It Forward ."
+
+[P6] source: https://www.prnewswire.com/news-releases/purple-announces-significant-expansion-of-commercial-relationship-with-somnigroup-302447709.html | document: third_party_confirmed | type: descriptive | dates in text: none | published: 2025-05-06T21:00:00+01:00
+"Bolsters Mattress Firm's position as a multi-branded retailer offering customers more choice and value, while enabling Somnigroup to participate in Purple's future success"
+
+[P7] source: https://www.prnewswire.com/news-releases/purple-announces-significant-expansion-of-commercial-relationship-with-somnigroup-302447709.html | document: third_party_confirmed | type: brand_positioning | dates in text: none | published: 2025-05-06T21:00:00+01:00
+"\"We are pleased to deepen our relationship with Purple, a brand that resonates with consumers and has brought innovation to the market,\" said Scott Thompson , Chairman, President, and CEO of Somnigroup. \"Offering more Purple premium mattresses in Mattress Firm stores across the country will help Mattress Firm further cement its position as a leading multi-branded retailer with a product suite to meet the full range of consumer preferences. Our expanded relationship with Purple underscores our strong conviction in its future success and the significant value we believe our comprehensive distribution and manufacturing capabilities can bring to its business."
+
+[P8] source: https://www.prnewswire.com/news-releases/purple-announces-significant-expansion-of-commercial-relationship-with-somnigroup-302447709.html | document: third_party_confirmed | type: actual_activity | dates in text: none | published: 2025-05-06T21:00:00+01:00
+"Purple also announced that it has received an incremental $20.0 million from existing lenders pursuant to an amendment to its existing credit agreement, bringing the total principal commitment to $100.0 million . The new financing will support Purple's continued investments in product innovation and advertising. As with the existing term loan, the increased amount includes the ability to PIK interest. In connection with the incremental borrowings, Purple issued to the lenders approximately 6.6 million equity warrants at a strike price of $1.50 and a term of approximately 10 years."
+
+[P9] source: https://www.prnewswire.com/news-releases/purple-celebrates-grid-day-with-the-grid-it-forward-campaign-gifting-hundreds-of-mattresses-to-customers-and-their-loved-ones-302931716.html | document: third_party_confirmed | type: descriptive | dates in text: none | published: 2026-11-06T14:00:00Z
+"\"With this fall marking Purple's tenth year, we wanted our holiday campaign to focus on genuine appreciation for the community that built Purple,\" said Rob DeMartini, Chief Executive Officer of Purple. \"Sleep is deeply personal, and when people experience how our GelFlex Grid delivers gel for cooling, flex for comfort, and grid for support, their first instinct is often to tell someone they love. Grid It Forward turns that instinct into action. We are thrilled to celebrate Grid Day by gifting and discounting hundreds of our next-generation mattresses to our most loyal customers and the people in their corners who deserve a better night's rest.\""

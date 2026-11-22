@@ -1,0 +1,76 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "native",
+  "bound_to": {
+    "packet_sha256": "187c02039c7f56d67e99a98f606e91b6128d03075b0b5c63c0adebfa8ea3d185",
+    "prompt_sha256": "23c8fe417b851e29fca534a014a8a23c4a2947db0d4ecc9242db75dab2210a57",
+    "completion_sha256": "225c212938d001ba7b8bb8a7f35dfd3159b3aa8b3c2eab1a4c8437b71deafdbc",
+    "reviewer_config_sha256": "9f7ee1a8c1d24c79cf6d0eba44a592ea76faa8d5a857316202226e85859bc3e2"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/Qwen2.5-14B-Instruct-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 2000
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": []
+  },
+  "raw_response_sha256": "02ae43121c512ff41acf0737817da581cdf95686894dd722ba454c710e4262d2",
+  "raw_response": "{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\"P1\"],\n      \"quote\": \"For us, it’s personal. ## Clean No parabens. No sulfates. No animal testing. No gray area. Our ingredients come from nature, are barely processed, and are 100% vegan.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that Native's products are clean and free from parabens, sulfates, and animal testing.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\"P2\"],\n      \"quote\": \"Craveable Self-care should feel delightful. Our award-winning formulas are known for their irresistible scents. Don’t be surprised if you want to sniff them all day and crave them later.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that Native's products are known for their irresistible scents.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\"P3\"],\n      \"quote\": \"Effective Our dermatologist-tested products are designed to deliver benefits you want and your body needs. Moisturizing, cleansing, scrubbing, protecting — we do it all (and then some).\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that Native's products are dermatologist-tested and designed to deliver multiple benefits.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [\n    {\n      \"field\": \"email_body\",\n      \"text\": \"This idea builds on the delightful and unique scents that are a hallmark of your brand.\"\n    }\n  ],\n  \"absence_as_weakness\": []\n}",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "For us, it’s personal. ## Clean No parabens. No sulfates. No animal testing. No gray area. Our ingredients come from nature, are barely processed, and are 100% vegan.",
+        "issues": [],
+        "reason": "The passage directly states that Native's products are clean and free from parabens, sulfates, and animal testing."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "Craveable Self-care should feel delightful. Our award-winning formulas are known for their irresistible scents. Don’t be surprised if you want to sniff them all day and crave them later.",
+        "issues": [],
+        "reason": "The passage directly states that Native's products are known for their irresistible scents."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Effective Our dermatologist-tested products are designed to deliver benefits you want and your body needs. Moisturizing, cleansing, scrubbing, protecting — we do it all (and then some).",
+        "issues": [],
+        "reason": "The passage directly states that Native's products are dermatologist-tested and designed to deliver multiple benefits."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-22T08:41:39+00:00",
+  "audit_sha256": "d38eb666c16093d8a0096bf724b13d69bdd37782b39d12357492fd54d4b4f50f",
+  "dismissed_reviewer_flags": [
+    {
+      "flag": {
+        "field": "email_body",
+        "text": "This idea builds on the delightful and unique scents that are a hallmark of your brand."
+      },
+      "reason": "sentence in email_body carries a claim marker; judged via its claim",
+      "matched_sentence": "this idea builds on the delightful and unique scents that are a hallmark of your brand"
+    }
+  ]
+}

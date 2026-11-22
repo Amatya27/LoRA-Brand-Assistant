@@ -1,0 +1,63 @@
+```json
+{
+  "decision": "draft",
+  "abstain_reason": "",
+  "claims": [
+    {
+      "id": "C1",
+      "kind": "fact",
+      "statement": "Athletic Brewing aims to use their business as a force for good.",
+      "passage_ids": ["P1"],
+      "quote": "We are bound by a shared passion for using our business as a force for good."
+    },
+    {
+      "id": "C2",
+      "kind": "fact",
+      "statement": "Athletic Brewing values inclusivity and collaboration.",
+      "passage_ids": ["P2"],
+      "quote": "Building a respectful and encompassing community inside and outside of our walls is core to our values."
+    },
+    {
+      "id": "C3",
+      "kind": "fact",
+      "statement": "Athletic Brewing collaborates with influencers.",
+      "passage_ids": ["P4"],
+      "quote": "Athletic Brewing did a great job at that. And they formed long-term partnerships with these influencers."
+    },
+    {
+      "id": "C4",
+      "kind": "fact",
+     d": "statement": "Athletic Brewing participated in an AI Bootcamp.",
+      "passage_ids": ["P5"],
+      "quote": "The marketing team at Athletic Brewing participated in a two-hour AI Bootcamp"
+    },
+    {
+      "id": "C5",
+      "kind": "fact",
+      "statement": "Athletic Brewing values quality in their products.",
+      "passage_ids": ["P6"],
+      "quote": "Our customers expect the best and we do not settle for anything other than perfection in our products."
+    },
+    {
+      "id": "C6",
+      "kind": "fact",
+      "statement": "Athletic Brewing collaborates with college athletes.",
+      "passage_ids": ["P8"],
+      "quote": "The brand also formed partnerships with college athletes, since these athletes appeal to a lot of Gen Z, millennials and sports fans."
+    }
+  ],
+  "brand_summary": "{C1} and {C2}. They value quality in their products {C5} and collaborate with influencers and college athletes {C3} and {C6}.",
+  "likely_target_audience": "{C6} suggests that their target audience includes Gen Z, millennials, and sports fans.",
+  "current_marketing_strategy": ["{C3} suggests that they use influencer marketing as part of their strategy."],
+  "unknowns": ["Specific channels, programs, or audience segments not mentioned in the passages are unknown."],
+  "marketing_gaps": [],
+  "collaboration_opportunities": ["Collaborate on a new product line with AI-generated marketing campaign {C4}."],
+  "instagram_post_idea": {
+    "hook": "A carousel featuring a new product line generated through an AI Bootcamp.",
+    "concept": "Showcase the new product line and its AI-generated marketing campaign.",
+    "why_it_fits": "This aligns with their values of innovation and collaboration {C1} and {C2}."
+  },
+  "email_subject": "Collaborate on a new product line with AI-generated marketing campaign",
+  "email_body": "Dear Athletic Brewing Marketing Team,\n\nWe propose collaborating on a new product line generated through an AI Bootcamp {C4}. This aligns with your values of innovation and collaboration {C1} and {C2}. We can showcase this new product line in a carousel post on Instagram, highlighting the unique features and AI-generated marketing campaign.\n\nBest regards,\n[Your Team]"
+}
+```
