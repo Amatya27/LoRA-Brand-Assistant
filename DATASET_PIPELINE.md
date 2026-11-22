@@ -227,3 +227,23 @@ company if better evidence may exist.
 
 Abstained labels are kept in the training data on purpose, so the model learns to say
 `INSUFFICIENT_EVIDENCE` instead of guessing.
+
+## Version 2: final result
+
+Steps run, in order:
+1. bash retrieve_all.sh (web evidence for each company; privacy and legal text filtered out)
+2. python update_gap_rule.py (puts the scoped gap rule into every saved prompt)
+3. python make_labels.py (teacher writes labels; says INSUFFICIENT_EVIDENCE instead of guessing)
+4. python audit_labels.py, then python prune_labels.py, repeated until no "fix" labels remain
+   (unsupported claims are deleted, never rewritten; no supported gap means no email)
+5. python review_labels.py (human approval of every label)
+6. python build_dataset.py (stratified 70/10/20 split, so pitch emails reach every split)
+
+Final numbers:
+- 150 companies searched, 142 with evidence, 141 labeled (1 failed twice and was left out)
+- Every stated claim supported by the evidence (audit groundedness 1.00), all 141 human approved
+- 22 labels have a supported gap and pitch email; 119 say there was not enough evidence for a gap
+- Split: train 98 (15 with pitch), valid 14 (2 with pitch), test 29 (5 with pitch)
+
+A gap means "not seen in the sources reviewed", not "the company does not do this".
+Known limit: only 22 pitch examples, because public web evidence rarely supports a specific gap.
