@@ -1,0 +1,449 @@
+{
+ "frozen_by": "Varshini Akula (integration and execution)",
+ "frozen_at_utc": "2026-11-23T09:09:29Z",
+ "git": {
+  "branch": "varshini/phase4-v5-complete",
+  "head": "479f0d8f76690c43cca4da8a961678317d6cd761",
+  "phase3_commit": "2d356e635cfb340c3dbc55600e84936a84fb3160",
+  "phase2_commit": "6efa34675074a1f505ef2b5c60188cf7bdf49fef",
+  "thushar_handoff_commit": "8aabd14f8040d809b508b79706cb111068e0f043",
+  "thushar_earlier_phase4_commit": "854071d08ab9f7dfee0534f42fe25754670ffc4d (concepts ported, code not merged)",
+  "dirty_paths": []
+ },
+ "code_versions": {
+  "controller": "phase4-v5-controller-1",
+  "checks": "phase4-v5-checks-1",
+  "review_schema": "phase4-v5-review-1",
+  "review_prompt": "phase4-v5-reviewer-prompt-1",
+  "v3_validator": "phase3-v3-validator-2",
+  "module_sha256": {
+   "brand_assistant_review.py": "5b48a49ed069408a3df7fa6a43f22cbe82f4d6a6ed4e9a0717f94ec9fd6558f3",
+   "brand_assistant_recovery.py": "3455f268ec949b395519178587871e0b963c55827ff3e0467ab7961c8b5ec310",
+   "brand_assistant_v3.py": "f7311f0ea26f72b12102927255e8c00e7efc7516aeb901de32fcac63c0691b0e",
+   "brand_assistant_runs.py": "1c9d72f962c3069d7782c2ee0614f1e5e1ad86fe8cae9d86b270019bfde611bc",
+   "run_phase4_v5.py": "e6464086c1f8125f9b822dfcd600b45ade8c15a5f49f8fa24a2bb2da4123b699"
+  }
+ },
+ "dataset": {
+  "path": "outputs/phase3_v5/handoff_6efa346/data/v3_datasets/v3-2026-11-22-auto07",
+  "version": "v3-2026-11-22-auto07",
+  "train_sha256": "9639a5dd82654fee397dea8f9cf33ef10b5227f6181d9524073a66f8639cc7e4",
+  "valid_sha256": "8e49bec5c2c7ff94f883a980487e8bc8db19776eed83805dd4888b5cfa6b5bca",
+  "acceptance": "7 human-approved train rows; 33 train + 9 valid auto-accepted (auto_threshold_0.7, human_reviewed false)",
+  "test_split": "empty in this export; reserved test companies not opened"
+ },
+ "generator": {
+  "model": "mlx-community/gemma-3-1b-it-qat-4bit",
+  "model_revision": "15fed4eafb456c6fcb2a1165f19ac609670ed14b",
+  "chat_template": "tokenizer_config.json chat_template, single user turn",
+  "arms": {
+   "base": {
+    "adapter": null
+   },
+   "v5": {
+    "adapter": "adapters/brand_assistant_v5_best",
+    "adapters_safetensors_sha256": "84d482c93281680d9393ab595f06054f30e88d4c61e5f083d2c557c03980adf2",
+    "adapter_config_sha256": "88ebe11724c9313a718f07634f020937b71f566c039e1492100a02274687c036",
+    "expected_runtime": {
+     "tensors": 112,
+     "lora_modules": 56,
+     "layers": "18-25"
+    }
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 3072,
+  "repetition_penalty": null,
+  "runtime_verification": "scripts/serve_mlx_with_load_ledger.py ledger; required for every request incl. repairs"
+ },
+ "reviewer": {
+  "backend": "openai_compatible (mlx_lm.server)",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "local_path": "~/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+  "temperature": 0.0,
+  "max_tokens": 300,
+  "timeout_s": 120,
+  "unit": "one atomic assertion per request",
+  "passages_shown": "cited passages + up to 2 best lexical matches",
+  "invalid_response_retries": 1,
+  "prompt_template_sha256": "918a0eb610cf4555dfd7e9f0b8ffb2c68b55f001a641169f8fc685db8a2fcbed",
+  "independence": "Different model family from the generator; NOT a human rating.",
+  "selection_reason": "Only instruction-tuned local model already cached; no download made."
+ },
+ "controller": {
+  "max_repairs": 2,
+  "claim_cap_in_repair": 10,
+  "claim_cap_basis": "90th percentile of claims per auto07 target (median 6, p90 10, max 17)",
+  "same_arm_repairs": true,
+  "evidence": "frozen packet only; no retrieval",
+  "outcomes": [
+   "verified_pending_human_review",
+   "abstained_insufficient_evidence",
+   "withheld_failed_checks",
+   "unresolved_review",
+   "execution_failure"
+  ]
+ },
+ "cases": [
+  {
+   "order": 1,
+   "case_id": "bones-coffee",
+   "group": "validation_checkpoint_selection",
+   "packet_path": "outputs/phase3_v5/handoff_6efa346/data/v3_pilot/packets/bones-coffee.json",
+   "packet_git_source": "origin/yj/phase2-v5:data/v3_pilot/packets/bones-coffee.json",
+   "packet_file_sha256": "2b142c817d21f36b754432b8adfabf145801155d4bfb4f5bd5cfde0c54160255",
+   "packet_content_sha256": "9c87dae136c352cbc5e29fba931e88653093c9a8e730a0fa7cd2e816bb148814",
+   "passages": 6,
+   "prompt_version": "brandpilot.prompt.v3.3",
+   "prompt_sha256": "eae026c88cca6dfc0911515702f05ca0d1911db1ec801c00f2ca3b4a1b2caf55",
+   "reference_completion_in_input": false
+  },
+  {
+   "order": 2,
+   "case_id": "fly-by-jing",
+   "group": "validation_checkpoint_selection",
+   "packet_path": "outputs/phase3_v5/handoff_6efa346/data/v3_pilot/packets/fly-by-jing.json",
+   "packet_git_source": "origin/yj/phase2-v5:data/v3_pilot/packets/fly-by-jing.json",
+   "packet_file_sha256": "3081d7aa938a12f9d82b9abd8c07e0919b6c33b187a520ee34d8fb595d8d2919",
+   "packet_content_sha256": "c974a43b16e102e870046f0fbbb1e63d54bd1f356426177dfbdd948911ce7eea",
+   "passages": 10,
+   "prompt_version": "brandpilot.prompt.v3.3",
+   "prompt_sha256": "c43b9ebb40431d87b00daad7b2a05cf5778f1876ca8970cff60694bb034ba9df",
+   "reference_completion_in_input": false
+  },
+  {
+   "order": 3,
+   "case_id": "graza",
+   "group": "validation_checkpoint_selection",
+   "packet_path": "outputs/phase3_v5/handoff_6efa346/data/v3_pilot/packets/graza.json",
+   "packet_git_source": "origin/yj/phase2-v5:data/v3_pilot/packets/graza.json",
+   "packet_file_sha256": "90885d58833240d5dcbae4e882ba171a70b911f83001cdcbc28976f662c8479c",
+   "packet_content_sha256": "90fc71b07ba6c1187fbcacc9fd4e9cf66b948d1c0e45f62dc877017037d2aaab",
+   "passages": 10,
+   "prompt_version": "brandpilot.prompt.v3.3",
+   "prompt_sha256": "611ccdc548cc67e2fef4ce4c01baada7ab7ab6b4aa8dbad9a710eac5677dcd67",
+   "reference_completion_in_input": false
+  },
+  {
+   "order": 4,
+   "case_id": "greats",
+   "group": "validation_checkpoint_selection",
+   "packet_path": "outputs/phase3_v5/handoff_6efa346/data/v3_pilot/packets/greats.json",
+   "packet_git_source": "origin/yj/phase2-v5:data/v3_pilot/packets/greats.json",
+   "packet_file_sha256": "5692008474bf43b68226832e87bff0e6ddae5ba71ff2fd61e90d8bf87cb33d3c",
+   "packet_content_sha256": "7515c79267cde47867d10ced674d9e82a96d14a1d696c42d760d047d5862edb2",
+   "passages": 6,
+   "prompt_version": "brandpilot.prompt.v3.3",
+   "prompt_sha256": "ead8859da1b07add3af51dade59414d0e588e65a6763ba793f2504d232db21ea",
+   "reference_completion_in_input": false
+  },
+  {
+   "order": 5,
+   "case_id": "outdoor-voices",
+   "group": "validation_checkpoint_selection",
+   "packet_path": "outputs/phase3_v5/handoff_6efa346/data/v3_pilot/packets/outdoor-voices.json",
+   "packet_git_source": "origin/yj/phase2-v5:data/v3_pilot/packets/outdoor-voices.json",
+   "packet_file_sha256": "6b87e22e3fd75283ad6cc263a5a20528a58d01ab4b8d7c6b9c68cc231a651b3b",
+   "packet_content_sha256": "fb3e615c99b46c771dbad20e22c50265924457d570787815464636572221af43",
+   "passages": 10,
+   "prompt_version": "brandpilot.prompt.v3.3",
+   "prompt_sha256": "c3012daeb989515469b795c2dcc033d396d065cce0c00bb2b6ab430ee33806f7",
+   "reference_completion_in_input": false
+  },
+  {
+   "order": 6,
+   "case_id": "pela",
+   "group": "validation_checkpoint_selection",
+   "packet_path": "outputs/phase3_v5/handoff_6efa346/data/v3_pilot/packets/pela.json",
+   "packet_git_source": "origin/yj/phase2-v5:data/v3_pilot/packets/pela.json",
+   "packet_file_sha256": "ff1ea4de9e5d0e47e242ef072e581344ba97e883150cd88078f413769b47b0d8",
+   "packet_content_sha256": "8a29de2d7cb594d04380ab8a2de0c9e172e30811b9fa6fa80ce741cadb703fbf",
+   "passages": 10,
+   "prompt_version": "brandpilot.prompt.v3.3",
+   "prompt_sha256": "6a93f74b7c6224570615c144fa9c426ea7154944981efd49e528dcee96af0f5d",
+   "reference_completion_in_input": false
+  },
+  {
+   "order": 7,
+   "case_id": "stumptown-coffee",
+   "group": "validation_checkpoint_selection",
+   "packet_path": "outputs/phase3_v5/handoff_6efa346/data/v3_pilot/packets/stumptown-coffee.json",
+   "packet_git_source": "origin/yj/phase2-v5:data/v3_pilot/packets/stumptown-coffee.json",
+   "packet_file_sha256": "cfabb366b32b624a07f766be14209200b6dc25ffc9a9117106fa41f8dc1b84a9",
+   "packet_content_sha256": "546ce43823e5e75d054f71f5ab29323f092a352f38b07d41bc95a8b64116acf6",
+   "passages": 10,
+   "prompt_version": "brandpilot.prompt.v3.3",
+   "prompt_sha256": "a5e53720ebdf975c6d0a45abc86f2dd4e0be8ecaf21a6b4a1f009ff701e008b7",
+   "reference_completion_in_input": false
+  },
+  {
+   "order": 8,
+   "case_id": "thrive-market",
+   "group": "validation_checkpoint_selection",
+   "packet_path": "outputs/phase3_v5/handoff_6efa346/data/v3_pilot/packets/thrive-market.json",
+   "packet_git_source": "origin/yj/phase2-v5:data/v3_pilot/packets/thrive-market.json",
+   "packet_file_sha256": "ce835d89120668d3c5724492f7652a9ddfb59f0172c876aa611d737ed732c517",
+   "packet_content_sha256": "ed5bf926801b01e5f73b9daf8c07d8b6c7867569f338f689df590ac50ee72f2d",
+   "passages": 10,
+   "prompt_version": "brandpilot.prompt.v3.3",
+   "prompt_sha256": "4cc47093e419563867779fad552aa6d9d660bc6773c0de31d88746c757cd90e7",
+   "reference_completion_in_input": false
+  },
+  {
+   "order": 9,
+   "case_id": "tonal",
+   "group": "validation_checkpoint_selection",
+   "packet_path": "outputs/phase3_v5/handoff_6efa346/data/v3_pilot/packets/tonal.json",
+   "packet_git_source": "origin/yj/phase2-v5:data/v3_pilot/packets/tonal.json",
+   "packet_file_sha256": "acbf97fe4e327d017c2d5d817173da9fc641c3d87b3bb77b5386d84f0358b02a",
+   "packet_content_sha256": "d00bcfb37c669099e3b7a0da6b6526131ec5e635dfc1048b8fa68620b08b341d",
+   "passages": 10,
+   "prompt_version": "brandpilot.prompt.v3.3",
+   "prompt_sha256": "d1cd15bcb01e5a77af71201c4821a2e3f861e2e284e9640a64d1d92fca094990",
+   "reference_completion_in_input": false
+  },
+  {
+   "order": 10,
+   "case_id": "rhone",
+   "group": "development",
+   "packet_path": "outputs/phase3_v5/packets/rhone.json",
+   "packet_file_sha256": "f04699988bbf881513bd01df3701b03f3f6720e26e18a45ac4f7e0196fb9b624",
+   "packet_content_sha256": "51810081ffe9da63b19d58269017f5b749031d1f82dd84050faf3878a2d6c662",
+   "passages": 10,
+   "prompt_version": "brandpilot.prompt.v3.3",
+   "prompt_sha256": "f26bc8e51acf635baa541f19262981a406687d01e5629ecab91b304940cebfb1",
+   "reference_completion_in_input": false
+  },
+  {
+   "order": 11,
+   "case_id": "gymshark",
+   "group": "development",
+   "packet_path": "outputs/phase3_v5/packets/gymshark.json",
+   "packet_file_sha256": "ed258ef16c379f7a877e69a9e8fbd50aeac89e24efee7076082f2b8e9eae948a",
+   "packet_content_sha256": "baf2f85c805b22fb151e604697fef5da66c61b3b7a3f5c004f9342313cc4e20c",
+   "passages": 10,
+   "prompt_version": "brandpilot.prompt.v3.3",
+   "prompt_sha256": "28d0f8916f60325598791cbeb70ef7abe25e549dc701ea730c692530362d4125",
+   "reference_completion_in_input": false
+  },
+  {
+   "order": 12,
+   "case_id": "synthetic-fernway-contradiction",
+   "group": "synthetic_regression",
+   "packet_path": "outputs/phase3_v5/packets/synthetic_fernway_contradiction.json",
+   "packet_file_sha256": "cafacd04cd9cdab8d1bb2765e6d3393104c544a929496bd4f8805a72c4c1c50b",
+   "packet_content_sha256": "a0ac4c41ff64bd99d2980297a6f2c3f8a1825b325a5b068795ea62c72d84ee83",
+   "passages": 3,
+   "prompt_version": "brandpilot.prompt.v3.3",
+   "prompt_sha256": "d9825b433a68413e5d28c89caeb79a9b113b7d13a08c6bbc8f149cbba36f3689",
+   "reference_completion_in_input": false
+  },
+  {
+   "order": 13,
+   "case_id": "synthetic-fernway-empty",
+   "group": "synthetic_regression",
+   "packet_path": "outputs/phase3_v5/packets/synthetic_fernway_empty.json",
+   "packet_file_sha256": "724ea11632052d97828e033af4c07c870ff9c0cf05ac5960bee0cf7cae13d7af",
+   "packet_content_sha256": "4460856023849f0128e558d296a3a483ff01c366720e53fde6516d424a4a4396",
+   "passages": 0,
+   "prompt_version": "brandpilot.prompt.v3.3",
+   "prompt_sha256": "e234125368e0786e730c7df2b9c4193d928841b820154658f9f0098e5c5025e8",
+   "reference_completion_in_input": false
+  }
+ ],
+ "reuse": {
+  "bones-coffee/base": {
+   "run_dir": "outputs/phase3_v5/runs/20261123T034244511275Z-bones-coffee-fixed-generation-59371d",
+   "raw_output_sha256": "0fdc228df0934ea3f7ccb2a7296b8ab634da066f896bef3a07c573c0fd87eb9b",
+   "prompt_sha256": "eae026c88cca6dfc0911515702f05ca0d1911db1ec801c00f2ca3b4a1b2caf55",
+   "packet_input_sha256": "2b142c817d21f36b754432b8adfabf145801155d4bfb4f5bd5cfde0c54160255",
+   "settings": {
+    "api_base": "http://127.0.0.1:8080/v1",
+    "model": "mlx-community/gemma-3-1b-it-qat-4bit",
+    "adapter_path": null,
+    "max_tokens": 3072,
+    "temperature": 0.0,
+    "timeout_s": 300.0
+   },
+   "model_revision": "15fed4eafb456c6fcb2a1165f19ac609670ed14b",
+   "runtime_verified": true,
+   "phase3_bundle": "outputs/phase3_v5/phase3_v5_results_v2.tar.gz",
+   "phase3_bundle_sha256": "9b05064a78d8efa97ba9221d719a6abff054fe57f910eec6b62e18364b48b8e1"
+  },
+  "bones-coffee/v5": {
+   "run_dir": "outputs/phase3_v5/runs/20261123T034346615950Z-bones-coffee-adapter-generation-e64f36",
+   "raw_output_sha256": "ef99d15291c8c23c6548c682da8874691b7c2032cf1332f03f84423a80044522",
+   "prompt_sha256": "eae026c88cca6dfc0911515702f05ca0d1911db1ec801c00f2ca3b4a1b2caf55",
+   "packet_input_sha256": "2b142c817d21f36b754432b8adfabf145801155d4bfb4f5bd5cfde0c54160255",
+   "settings": {
+    "api_base": "http://127.0.0.1:8080/v1",
+    "model": "mlx-community/gemma-3-1b-it-qat-4bit",
+    "adapter_path": "adapters/brand_assistant_v5_best",
+    "max_tokens": 3072,
+    "temperature": 0.0,
+    "timeout_s": 300.0
+   },
+   "model_revision": "15fed4eafb456c6fcb2a1165f19ac609670ed14b",
+   "runtime_verified": true,
+   "phase3_bundle": "outputs/phase3_v5/phase3_v5_results_v2.tar.gz",
+   "phase3_bundle_sha256": "9b05064a78d8efa97ba9221d719a6abff054fe57f910eec6b62e18364b48b8e1"
+  },
+  "graza/base": {
+   "run_dir": "outputs/phase3_v5/runs/20261123T034523300234Z-graza-fixed-generation-0f1e26",
+   "raw_output_sha256": "3613696f10e4eb64af3da6b151b2db4c470400253a73ef55e42fe7bbdd0b9d41",
+   "prompt_sha256": "611ccdc548cc67e2fef4ce4c01baada7ab7ab6b4aa8dbad9a710eac5677dcd67",
+   "packet_input_sha256": "90885d58833240d5dcbae4e882ba171a70b911f83001cdcbc28976f662c8479c",
+   "settings": {
+    "api_base": "http://127.0.0.1:8080/v1",
+    "model": "mlx-community/gemma-3-1b-it-qat-4bit",
+    "adapter_path": null,
+    "max_tokens": 3072,
+    "temperature": 0.0,
+    "timeout_s": 300.0
+   },
+   "model_revision": "15fed4eafb456c6fcb2a1165f19ac609670ed14b",
+   "runtime_verified": true,
+   "phase3_bundle": "outputs/phase3_v5/phase3_v5_results_v2.tar.gz",
+   "phase3_bundle_sha256": "9b05064a78d8efa97ba9221d719a6abff054fe57f910eec6b62e18364b48b8e1"
+  },
+  "graza/v5": {
+   "run_dir": "outputs/phase3_v5/runs/20261123T034538636328Z-graza-adapter-generation-720ed0",
+   "raw_output_sha256": "4d54478cb8b7a43a7013fdd1c42c239593bb0af8d48819b8d28a2c90feb55d96",
+   "prompt_sha256": "611ccdc548cc67e2fef4ce4c01baada7ab7ab6b4aa8dbad9a710eac5677dcd67",
+   "packet_input_sha256": "90885d58833240d5dcbae4e882ba171a70b911f83001cdcbc28976f662c8479c",
+   "settings": {
+    "api_base": "http://127.0.0.1:8080/v1",
+    "model": "mlx-community/gemma-3-1b-it-qat-4bit",
+    "adapter_path": "adapters/brand_assistant_v5_best",
+    "max_tokens": 3072,
+    "temperature": 0.0,
+    "timeout_s": 300.0
+   },
+   "model_revision": "15fed4eafb456c6fcb2a1165f19ac609670ed14b",
+   "runtime_verified": true,
+   "phase3_bundle": "outputs/phase3_v5/phase3_v5_results_v2.tar.gz",
+   "phase3_bundle_sha256": "9b05064a78d8efa97ba9221d719a6abff054fe57f910eec6b62e18364b48b8e1"
+  },
+  "rhone/base": {
+   "run_dir": "outputs/phase3_v5/runs/20261123T034722509704Z-rhone-fixed-generation-7c3372",
+   "raw_output_sha256": "fb1f67b60a5ca9354d59a25f5ca4a93705938aac590278825a19a5cf0b22fcd5",
+   "prompt_sha256": "f26bc8e51acf635baa541f19262981a406687d01e5629ecab91b304940cebfb1",
+   "packet_input_sha256": "f04699988bbf881513bd01df3701b03f3f6720e26e18a45ac4f7e0196fb9b624",
+   "settings": {
+    "api_base": "http://127.0.0.1:8080/v1",
+    "model": "mlx-community/gemma-3-1b-it-qat-4bit",
+    "adapter_path": null,
+    "max_tokens": 3072,
+    "temperature": 0.0,
+    "timeout_s": 300.0
+   },
+   "model_revision": "15fed4eafb456c6fcb2a1165f19ac609670ed14b",
+   "runtime_verified": true,
+   "phase3_bundle": "outputs/phase3_v5/phase3_v5_results_v2.tar.gz",
+   "phase3_bundle_sha256": "9b05064a78d8efa97ba9221d719a6abff054fe57f910eec6b62e18364b48b8e1"
+  },
+  "rhone/v5": {
+   "run_dir": "outputs/phase3_v5/runs/20261123T034736532319Z-rhone-adapter-generation-76387d",
+   "raw_output_sha256": "41e30aace462575c13548ee5f35ba768c083a1529bf5be6f40de423ba77eb5a4",
+   "prompt_sha256": "f26bc8e51acf635baa541f19262981a406687d01e5629ecab91b304940cebfb1",
+   "packet_input_sha256": "f04699988bbf881513bd01df3701b03f3f6720e26e18a45ac4f7e0196fb9b624",
+   "settings": {
+    "api_base": "http://127.0.0.1:8080/v1",
+    "model": "mlx-community/gemma-3-1b-it-qat-4bit",
+    "adapter_path": "adapters/brand_assistant_v5_best",
+    "max_tokens": 3072,
+    "temperature": 0.0,
+    "timeout_s": 300.0
+   },
+   "model_revision": "15fed4eafb456c6fcb2a1165f19ac609670ed14b",
+   "runtime_verified": true,
+   "phase3_bundle": "outputs/phase3_v5/phase3_v5_results_v2.tar.gz",
+   "phase3_bundle_sha256": "9b05064a78d8efa97ba9221d719a6abff054fe57f910eec6b62e18364b48b8e1"
+  },
+  "gymshark/base": {
+   "run_dir": "outputs/phase3_v5/runs/20261123T035032180689Z-gymshark-fixed-generation-0577b1",
+   "raw_output_sha256": "4405e3b393ab4db996bf445a9cb553ea2b41b5b533826050e2498100f7fa69b3",
+   "prompt_sha256": "28d0f8916f60325598791cbeb70ef7abe25e549dc701ea730c692530362d4125",
+   "packet_input_sha256": "ed258ef16c379f7a877e69a9e8fbd50aeac89e24efee7076082f2b8e9eae948a",
+   "settings": {
+    "api_base": "http://127.0.0.1:8080/v1",
+    "model": "mlx-community/gemma-3-1b-it-qat-4bit",
+    "adapter_path": null,
+    "max_tokens": 3072,
+    "temperature": 0.0,
+    "timeout_s": 300.0
+   },
+   "model_revision": "15fed4eafb456c6fcb2a1165f19ac609670ed14b",
+   "runtime_verified": true,
+   "phase3_bundle": "outputs/phase3_v5/phase3_v5_results_v2.tar.gz",
+   "phase3_bundle_sha256": "9b05064a78d8efa97ba9221d719a6abff054fe57f910eec6b62e18364b48b8e1"
+  },
+  "gymshark/v5": {
+   "run_dir": "outputs/phase3_v5/runs/20261123T035048993302Z-gymshark-adapter-generation-dde101",
+   "raw_output_sha256": "8691526f71072c92c1664ee7f93b35cbf1a11e8774f0cf34b241c78186e1a668",
+   "prompt_sha256": "28d0f8916f60325598791cbeb70ef7abe25e549dc701ea730c692530362d4125",
+   "packet_input_sha256": "ed258ef16c379f7a877e69a9e8fbd50aeac89e24efee7076082f2b8e9eae948a",
+   "settings": {
+    "api_base": "http://127.0.0.1:8080/v1",
+    "model": "mlx-community/gemma-3-1b-it-qat-4bit",
+    "adapter_path": "adapters/brand_assistant_v5_best",
+    "max_tokens": 3072,
+    "temperature": 0.0,
+    "timeout_s": 300.0
+   },
+   "model_revision": "15fed4eafb456c6fcb2a1165f19ac609670ed14b",
+   "runtime_verified": true,
+   "phase3_bundle": "outputs/phase3_v5/phase3_v5_results_v2.tar.gz",
+   "phase3_bundle_sha256": "9b05064a78d8efa97ba9221d719a6abff054fe57f910eec6b62e18364b48b8e1"
+  },
+  "synthetic-fernway-contradiction/base": {
+   "run_dir": "outputs/phase3_v5/runs/20261123T035406032039Z-fernway-fixed-generation-a12f7b",
+   "raw_output_sha256": "3015ebbe6570692eec4490de3856f2b9c9b51ca4461783e05d9eedc129eff43e",
+   "prompt_sha256": "d9825b433a68413e5d28c89caeb79a9b113b7d13a08c6bbc8f149cbba36f3689",
+   "packet_input_sha256": "cafacd04cd9cdab8d1bb2765e6d3393104c544a929496bd4f8805a72c4c1c50b",
+   "settings": {
+    "api_base": "http://127.0.0.1:8080/v1",
+    "model": "mlx-community/gemma-3-1b-it-qat-4bit",
+    "adapter_path": null,
+    "max_tokens": 3072,
+    "temperature": 0.0,
+    "timeout_s": 300.0
+   },
+   "model_revision": "15fed4eafb456c6fcb2a1165f19ac609670ed14b",
+   "runtime_verified": true,
+   "phase3_bundle": "outputs/phase3_v5/phase3_v5_results_v2.tar.gz",
+   "phase3_bundle_sha256": "9b05064a78d8efa97ba9221d719a6abff054fe57f910eec6b62e18364b48b8e1"
+  },
+  "synthetic-fernway-contradiction/v5": {
+   "run_dir": "outputs/phase3_v5/runs/20261123T035521310900Z-fernway-adapter-generation-fe3454",
+   "raw_output_sha256": "4f268c07890b8d12f13c91a3fd714b13cddd7bd2c1220b497d4c3ff1f9c9e5ea",
+   "prompt_sha256": "d9825b433a68413e5d28c89caeb79a9b113b7d13a08c6bbc8f149cbba36f3689",
+   "packet_input_sha256": "cafacd04cd9cdab8d1bb2765e6d3393104c544a929496bd4f8805a72c4c1c50b",
+   "settings": {
+    "api_base": "http://127.0.0.1:8080/v1",
+    "model": "mlx-community/gemma-3-1b-it-qat-4bit",
+    "adapter_path": "adapters/brand_assistant_v5_best",
+    "max_tokens": 3072,
+    "temperature": 0.0,
+    "timeout_s": 300.0
+   },
+   "model_revision": "15fed4eafb456c6fcb2a1165f19ac609670ed14b",
+   "runtime_verified": true,
+   "phase3_bundle": "outputs/phase3_v5/phase3_v5_results_v2.tar.gz",
+   "phase3_bundle_sha256": "9b05064a78d8efa97ba9221d719a6abff054fe57f910eec6b62e18364b48b8e1"
+  }
+ },
+ "environment": {
+  "python": "3.11.14",
+  "platform": "macOS-26.3-arm64-arm-64bit",
+  "machine": "arm64",
+  "chip": "Apple M3",
+  "memory_bytes": 8589934592,
+  "mlx": "0.32.4",
+  "mlx_lm": "0.32.2"
+ },
+ "source_snapshots": "Phase 1 evidence store absent: findings are packet-level only.",
+ "case_execution_order": "validation 1-9 (base then v5 per stage), then development and synthetic regression cases"
+}
