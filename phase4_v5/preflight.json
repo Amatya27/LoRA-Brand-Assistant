@@ -1,0 +1,49 @@
+{
+  "status": "preflight_only_phase3_handoff_missing",
+  "source_commit": "6efa34675074a1f505ef2b5c60188cf7bdf49fef",
+  "requested_phase3_branch": "varshini/phase3-v5-inference",
+  "requested_phase3_commit": "2d356e6",
+  "adapter_checksums": {
+    "adapters.safetensors": {
+      "expected": "84d482c93281680d9393ab595f06054f30e88d4c61e5f083d2c557c03980adf2",
+      "actual": "84d482c93281680d9393ab595f06054f30e88d4c61e5f083d2c557c03980adf2",
+      "match": true
+    },
+    "adapter_config.json": {
+      "expected": "88ebe11724c9313a718f07634f020937b71f566c039e1492100a02274687c036",
+      "actual": "88ebe11724c9313a718f07634f020937b71f566c039e1492100a02274687c036",
+      "match": true
+    }
+  },
+  "dataset_version": "v3-2026-11-22-auto07",
+  "splits": {
+    "train": {
+      "rows": 40,
+      "sha256": "9639a5dd82654fee397dea8f9cf33ef10b5227f6181d9524073a66f8639cc7e4",
+      "acceptance_counts": {
+        "auto_threshold_0.7": 33,
+        "human_approval": 7
+      }
+    },
+    "valid": {
+      "rows": 9,
+      "sha256": "8e49bec5c2c7ff94f883a980487e8bc8db19776eed83805dd4888b5cfa6b5bca",
+      "acceptance_counts": {
+        "auto_threshold_0.7": 9
+      }
+    }
+  },
+  "validation_companies": [
+    "bones-coffee",
+    "fly-by-jing",
+    "graza",
+    "greats",
+    "outdoor-voices",
+    "pela",
+    "stumptown-coffee",
+    "thrive-market",
+    "tonal"
+  ],
+  "independent_semantic_review_completed": false,
+  "held_out_examples_opened": false
+}
