@@ -33,7 +33,7 @@ from brand_assistant_recovery import (
     CLAIM_CAP, CONTROLLER_VERSION, MAX_REPAIRS, MAX_REVIEW_RETRIES, CaseState, LiveGenerator, advance,
 )
 from brand_assistant_review import (
-    CHECKS_VERSION, REVIEW_PROMPT_VERSION, REVIEW_SCHEMA_VERSION, Assertion, OpenAICompatibleReviewer, ReviewCache,
+    CHECKS_VERSION, SUPPORT_GUARD, REVIEW_PROMPT_VERSION, REVIEW_SCHEMA_VERSION, Assertion, OpenAICompatibleReviewer, ReviewCache,
     deterministic_flags, final_verdict, render_review_prompt, review_assertion, sha256_json,
 )
 from brand_assistant_v3 import V3_VALIDATOR_VERSION, build_v3_prompt, validate_v3_packet
@@ -210,8 +210,8 @@ def make_reviewer(args) -> OpenAICompatibleReviewer:
 
 
 def cmd_calibrate(args) -> int:
-    cal = json.loads((RESULTS / "calibration/calibration_set.v1.json").read_text())
-    out_path = RESULTS / "calibration" / "calibration_results.v1.json"
+    cal = json.loads((RESULTS / f"calibration/calibration_set.{args.set}.json").read_text())
+    out_path = RESULTS / "calibration" / f"calibration_results.{args.set}.{CHECKS_VERSION}.json"
     if out_path.exists():
         print(f"{out_path} exists; not overwriting.", file=sys.stderr)
         return 2
@@ -225,7 +225,7 @@ def cmd_calibrate(args) -> int:
                       item["statement"], item["kind"], item["cited"], "inline_[P#]" if item["cited"] else "none")
         flags = deterministic_flags(a, manifest)
         review = review_assertion(a, cal["company"], manifest, reviewer, cache=None)
-        fv = final_verdict(a, review, flags)
+        fv = final_verdict(a, review, flags, manifest, cal["company"]["display_name"])
         exp_flags = set(item["expected_flags"])
         row = {"id": item["id"], "category": item["category"], "statement": item["statement"],
                "expected_verdict": item["expected_verdict"], "final_verdict": fv["verdict"],
@@ -252,6 +252,11 @@ def cmd_calibrate(args) -> int:
                "unresolved": sum(r["status"] != "reviewed" for r in rows),
                "disagreements": [r["id"] for r in rows if not r["final_correct"]],
                "note": "SYNTHETIC calibration with integrator-written expected answers; not independent human ratings.",
+               "checks_version": CHECKS_VERSION,
+               "safe_non_support": sum(r["expected_verdict"] != "supported" and r["final_verdict"] != "supported" for r in rows),
+               "expected_non_support": sum(r["expected_verdict"] != "supported" for r in rows),
+               "supported_kept": sum(r["expected_verdict"] == "supported" and r["final_verdict"] == "supported" for r in rows),
+               "expected_supported": sum(r["expected_verdict"] == "supported" for r in rows),
                "rows": rows}
     out_path.write_text(json.dumps(summary, indent=1, ensure_ascii=False) + "\n")
     print(f"final {summary['final_correct']}/{n}  reviewer-alone {summary['reviewer_alone_correct']}/{n}  "
@@ -538,6 +543,7 @@ def main(argv=None) -> int:
     sub.add_parser("freeze-config")
     c = sub.add_parser("calibrate")
     c.add_argument("--reviewer-api-base", default="http://127.0.0.1:8081/v1")
+    c.add_argument("--set", default="v1")
     a = sub.add_parser("advance")
     a.add_argument("--backend", choices=["generator", "reviewer"], required=True)
     a.add_argument("--cases", choices=["validation", "dev"], default="validation")

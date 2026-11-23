@@ -1,0 +1,420 @@
+{
+ "calibration_version": "phase4-v5-calibration-1",
+ "reviewer": {
+  "backend": "openai_compatible",
+  "api_base": "http://127.0.0.1:8081/v1",
+  "model": "/Users/varshini/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "max_tokens": 300,
+  "temperature": 0.0,
+  "timeout_s": 120,
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+  "prompt_version": "phase4-v5-reviewer-prompt-1",
+  "schema": "phase4-v5-review-1"
+ },
+ "n": 14,
+ "final_correct": 12,
+ "reviewer_alone_correct": 4,
+ "flags_correct": 14,
+ "unresolved": 0,
+ "disagreements": [
+  "cal-02",
+  "cal-14"
+ ],
+ "note": "SYNTHETIC calibration with integrator-written expected answers; not independent human ratings.",
+ "checks_version": "phase4-v5-checks-2",
+ "safe_non_support": 10,
+ "expected_non_support": 10,
+ "supported_kept": 4,
+ "expected_supported": 4,
+ "rows": [
+  {
+   "id": "cal-01",
+   "category": "supported",
+   "statement": "Larkspur Tea runs the Steep Club, a monthly subscription of seasonal loose-leaf teas.",
+   "expected_verdict": "supported",
+   "final_verdict": "supported",
+   "reviewer_verdict": "supported",
+   "citation_status": "cited",
+   "expected_citation_status": null,
+   "flags": [],
+   "expected_flags": [],
+   "final_correct": true,
+   "reviewer_correct": true,
+   "flags_correct": true,
+   "evidence_passage_id": "P1",
+   "evidence_quote": "In 2026 Larkspur Tea launched the Steep Club, a monthly subscription that ships three seasonal loose-leaf teas to members.",
+   "reason": "The passage P1 directly states that Larkspur Tea launched the Steep Club in 2026, which is consistent with the statement that Larkspur Tea runs the Steep Club.",
+   "status": "reviewed",
+   "attempts": [
+    {
+     "raw_text": "```json\n{\n  \"review_id\": \"R-3ec5d7790578a14d\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P1\",\n  \"evidence_quote\": \"In 2026 Larkspur Tea launched the Steep Club, a monthly subscription that ships three seasonal loose-leaf teas to members.\",\n  \"reason\": \"The passage P1 directly states that Larkspur Tea launched the Steep Club in 2026, which is consistent with the statement that Larkspur Tea runs the Steep Club.\"\n}\n```",
+     "validation_errors": [],
+     "latency_s": 10.892
+    }
+   ]
+  },
+  {
+   "id": "cal-02",
+   "category": "direct_contradiction",
+   "statement": "Larkspur Tea sells its teas in grocery stores nationwide.",
+   "expected_verdict": "contradicted",
+   "final_verdict": "unresolved",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "expected_citation_status": null,
+   "flags": [],
+   "expected_flags": [],
+   "final_correct": false,
+   "reviewer_correct": false,
+   "flags_correct": true,
+   "evidence_passage_id": "P7",
+   "evidence_quote": "Larkspur Tea sells only through its own website and does not sell in grocery stores.",
+   "reason": "The passage P7 directly states that Larkspur Tea sells only through its own website and does not sell in grocery stores, which directly supports the statement that Larkspur Tea sells its teas in grocery stores nationwide.",
+   "status": "reviewed",
+   "attempts": [
+    {
+     "raw_text": "```json\n{\n  \"review_id\": \"R-fd16c7c35d3530df\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P7\",\n  \"evidence_quote\": \"Larkspur Tea sells only through its own website and does not sell in grocery stores.\",\n  \"reason\": \"The passage P7 directly states that Larkspur Tea sells only through its own website and does not sell in grocery stores, which directly supports the statement that Larkspur Tea sells its teas in grocery stores nationwide.\"\n}\n```",
+     "validation_errors": [],
+     "latency_s": 9.278
+    }
+   ]
+  },
+  {
+   "id": "cal-03",
+   "category": "unsupported",
+   "statement": "Larkspur Tea partners with three national coffee chains.",
+   "expected_verdict": "unsupported",
+   "final_verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "expected_citation_status": null,
+   "flags": [],
+   "expected_flags": [],
+   "final_correct": true,
+   "reviewer_correct": false,
+   "flags_correct": true,
+   "evidence_passage_id": "P1",
+   "evidence_quote": "In 2026 Larkspur Tea launched the Steep Club, a monthly subscription that ships three seasonal loose-leaf teas to members.",
+   "reason": "The passage P1 directly states that Larkspur Tea launched the Steep Club in 2026, which is a monthly subscription that ships three seasonal loose-leaf teas to members. This clearly indicates that Larkspur Tea partners with three national coffee chains.",
+   "status": "reviewed",
+   "attempts": [
+    {
+     "raw_text": "```json\n{\n  \"review_id\": \"R-facedcd4069ed77c\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P1\",\n  \"evidence_quote\": \"In 2026 Larkspur Tea launched the Steep Club, a monthly subscription that ships three seasonal loose-leaf teas to members.\",\n  \"reason\": \"The passage P1 directly states that Larkspur Tea launched the Steep Club in 2026, which is a monthly subscription that ships three seasonal loose-leaf teas to members. This clearly indicates that Larkspur Tea partners with three national coffee chains.\"\n}\n```",
+     "validation_errors": [],
+     "latency_s": 10.551
+    }
+   ]
+  },
+  {
+   "id": "cal-04",
+   "category": "correct_quote_unrelated_claim",
+   "statement": "Larkspur Tea has won several industry awards for its packaging.",
+   "expected_verdict": "unsupported",
+   "final_verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "expected_citation_status": null,
+   "flags": [],
+   "expected_flags": [],
+   "final_correct": true,
+   "reviewer_correct": false,
+   "flags_correct": true,
+   "evidence_passage_id": "P1",
+   "evidence_quote": "In 2026 Larkspur Tea launched the Steep Club, a monthly subscription that ships three seasonal loose-leaf teas to members.",
+   "reason": "The passage P1 directly states that Larkspur Tea launched the Steep Club in 2026, which is a form of packaging. The Steep Club is a monthly subscription that ships loose-leaf teas, indicating packaging. Therefore, the statement is supported by the evidence.",
+   "status": "reviewed",
+   "attempts": [
+    {
+     "raw_text": "```json\n{\n  \"review_id\": \"R-da67beb7915a2fd1\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P1\",\n  \"evidence_quote\": \"In 2026 Larkspur Tea launched the Steep Club, a monthly subscription that ships three seasonal loose-leaf teas to members.\",\n  \"reason\": \"The passage P1 directly states that Larkspur Tea launched the Steep Club in 2026, which is a form of packaging. The Steep Club is a monthly subscription that ships loose-leaf teas, indicating packaging. Therefore, the statement is supported by the evidence.\"\n}\n```",
+     "validation_errors": [],
+     "latency_s": 11.009
+    }
+   ]
+  },
+  {
+   "id": "cal-05",
+   "category": "wrong_company",
+   "statement": "Larkspur sponsored a fintech podcast series and hosts investor dinners.",
+   "expected_verdict": "unsupported",
+   "final_verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": "cited",
+   "expected_citation_status": null,
+   "flags": [
+    "wrong_company_evidence"
+   ],
+   "expected_flags": [
+    "wrong_company_evidence"
+   ],
+   "final_correct": true,
+   "reviewer_correct": false,
+   "flags_correct": true,
+   "evidence_passage_id": "P5",
+   "evidence_quote": "Larkspur Capital, a venture firm, sponsored a fintech podcast series and hosts investor dinners in New York.",
+   "reason": "The passage P5 directly states that Larkspur Capital sponsored a fintech podcast series and hosts investor dinners, which aligns with the statement that Larkspur Tea sponsored a fintech podcast series and hosts investor dinners.",
+   "status": "reviewed",
+   "attempts": [
+    {
+     "raw_text": "```json\n{\n  \"review_id\": \"R-2601282f3b542eaa\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P5\",\n  \"evidence_quote\": \"Larkspur Capital, a venture firm, sponsored a fintech podcast series and hosts investor dinners in New York.\",\n  \"reason\": \"The passage P5 directly states that Larkspur Capital sponsored a fintech podcast series and hosts investor dinners, which aligns with the statement that Larkspur Tea sponsored a fintech podcast series and hosts investor dinners.\"\n}\n```",
+     "validation_errors": [],
+     "latency_s": 9.86
+    }
+   ]
+  },
+  {
+   "id": "cal-06",
+   "category": "recommendation_as_activity",
+   "statement": "Larkspur Tea launched a TikTok series about brewing techniques.",
+   "expected_verdict": "unsupported",
+   "final_verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "expected_citation_status": null,
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "expected_flags": [
+    "recommendation_as_fact"
+   ],
+   "final_correct": true,
+   "reviewer_correct": false,
+   "flags_correct": true,
+   "evidence_passage_id": "P1",
+   "evidence_quote": "In 2026 Larkspur Tea launched the Steep Club, a monthly subscription that ships three seasonal loose-leaf teas to members.",
+   "reason": "The passage explicitly states that Larkspur Tea launched the Steep Club in 2026, which is a series about brewing techniques.",
+   "status": "reviewed",
+   "attempts": [
+    {
+     "raw_text": "```json\n{\n  \"review_id\": \"R-01f5604676e90c59\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P1\",\n  \"evidence_quote\": \"In 2026 Larkspur Tea launched the Steep Club, a monthly subscription that ships three seasonal loose-leaf teas to members.\",\n  \"reason\": \"The passage explicitly states that Larkspur Tea launched the Steep Club in 2026, which is a series about brewing techniques.\"\n}\n```",
+     "validation_errors": [],
+     "latency_s": 11.113
+    }
+   ]
+  },
+  {
+   "id": "cal-07",
+   "category": "unknown_as_weakness",
+   "statement": "Larkspur Tea lacks a loyalty program and is missing out on repeat customers.",
+   "expected_verdict": "unsupported",
+   "final_verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "expected_citation_status": null,
+   "flags": [
+    "gap_requires_positive_evidence"
+   ],
+   "expected_flags": [
+    "gap_requires_positive_evidence"
+   ],
+   "final_correct": true,
+   "reviewer_correct": false,
+   "flags_correct": true,
+   "evidence_passage_id": "P3",
+   "evidence_quote": "Tea brands like Larkspur should consider launching a TikTok series about brewing techniques and a loyalty program.",
+   "reason": "The passage suggests that Larkspur should consider launching a loyalty program, which implies that the company lacks one.",
+   "status": "reviewed",
+   "attempts": [
+    {
+     "raw_text": "```json\n{\n  \"review_id\": \"R-0830941becb3939e\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P3\",\n  \"evidence_quote\": \"Tea brands like Larkspur should consider launching a TikTok series about brewing techniques and a loyalty program.\",\n  \"reason\": \"The passage suggests that Larkspur should consider launching a loyalty program, which implies that the company lacks one.\"\n}\n```",
+     "validation_errors": [],
+     "latency_s": 12.122
+    }
+   ]
+  },
+  {
+   "id": "cal-08",
+   "category": "historical_as_current",
+   "statement": "Larkspur Tea currently runs a pop-up tasting bar in Portland.",
+   "expected_verdict": "unsupported",
+   "final_verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": "cited",
+   "expected_citation_status": null,
+   "flags": [
+    "historical_as_current"
+   ],
+   "expected_flags": [
+    "historical_as_current"
+   ],
+   "final_correct": true,
+   "reviewer_correct": false,
+   "flags_correct": true,
+   "evidence_passage_id": "P2",
+   "evidence_quote": "Back in 2019 Larkspur Tea ran a single pop-up tasting bar in Portland for one summer before closing it.",
+   "reason": "The passage P2 directly states that Larkspur Tea ran a pop-up tasting bar in Portland in 2019, which is consistent with the statement that the company currently runs a pop-up tasting bar in Portland.",
+   "status": "reviewed",
+   "attempts": [
+    {
+     "raw_text": "```json\n{\n  \"review_id\": \"R-c1967db7d40edc4e\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P2\",\n  \"evidence_quote\": \"Back in 2019 Larkspur Tea ran a single pop-up tasting bar in Portland for one summer before closing it.\",\n  \"reason\": \"The passage P2 directly states that Larkspur Tea ran a pop-up tasting bar in Portland in 2019, which is consistent with the statement that the company currently runs a pop-up tasting bar in Portland.\"\n}\n```",
+     "validation_errors": [],
+     "latency_s": 14.53
+    }
+   ]
+  },
+  {
+   "id": "cal-09",
+   "category": "provider_result_unattributed",
+   "statement": "Larkspur Tea's email campaign increased repeat orders by 40 percent.",
+   "expected_verdict": "unsupported",
+   "final_verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": "cited",
+   "expected_citation_status": null,
+   "flags": [
+    "provider_result_unattributed"
+   ],
+   "expected_flags": [
+    "provider_result_unattributed"
+   ],
+   "final_correct": true,
+   "reviewer_correct": false,
+   "flags_correct": true,
+   "evidence_passage_id": "P4",
+   "evidence_quote": "Brewline Agency reports that its email campaign for Larkspur Tea increased repeat orders by 40 percent.",
+   "reason": "The passage [P4] directly states that Brewline Agency reported an increase in repeat orders for Larkspur Tea, which aligns with the statement that Larkspur Tea's email campaign increased repeat orders by 40 percent.",
+   "status": "reviewed",
+   "attempts": [
+    {
+     "raw_text": "```json\n{\n  \"review_id\": \"R-497a62a36c39d173\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P4\",\n  \"evidence_quote\": \"Brewline Agency reports that its email campaign for Larkspur Tea increased repeat orders by 40 percent.\",\n  \"reason\": \"The passage [P4] directly states that Brewline Agency reported an increase in repeat orders for Larkspur Tea, which aligns with the statement that Larkspur Tea's email campaign increased repeat orders by 40 percent.\"\n}\n```",
+     "validation_errors": [],
+     "latency_s": 14.033
+    }
+   ]
+  },
+  {
+   "id": "cal-10",
+   "category": "provider_result_attributed",
+   "statement": "Brewline Agency reports that Larkspur Tea's email campaign increased repeat orders by 40 percent.",
+   "expected_verdict": "supported",
+   "final_verdict": "supported",
+   "reviewer_verdict": "supported",
+   "citation_status": "cited",
+   "expected_citation_status": null,
+   "flags": [],
+   "expected_flags": [],
+   "final_correct": true,
+   "reviewer_correct": true,
+   "flags_correct": true,
+   "evidence_passage_id": "P4",
+   "evidence_quote": "Brewline Agency reports that its email campaign for Larkspur Tea increased repeat orders by 40 percent.",
+   "reason": "The passage [P4] directly states that Brewline Agency reported an increase in repeat orders for Larkspur Tea's email campaign, which is consistent with the statement.",
+   "status": "reviewed",
+   "attempts": [
+    {
+     "raw_text": "```json\n{\n  \"review_id\": \"R-048e76cb2eaeded1\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P4\",\n  \"evidence_quote\": \"Brewline Agency reports that its email campaign for Larkspur Tea increased repeat orders by 40 percent.\",\n  \"reason\": \"The passage [P4] directly states that Brewline Agency reported an increase in repeat orders for Larkspur Tea's email campaign, which is consistent with the statement.\"\n}\n```",
+     "validation_errors": [],
+     "latency_s": 11.962
+    }
+   ]
+  },
+  {
+   "id": "cal-11",
+   "category": "creator_audience_as_customers",
+   "statement": "Larkspur Tea's customers are mostly aged 18 to 24.",
+   "expected_verdict": "unsupported",
+   "final_verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "expected_citation_status": null,
+   "flags": [
+    "creator_audience_as_customers"
+   ],
+   "expected_flags": [
+    "creator_audience_as_customers"
+   ],
+   "final_correct": true,
+   "reviewer_correct": false,
+   "flags_correct": true,
+   "evidence_passage_id": "P6",
+   "evidence_quote": "Creators who post about Larkspur Tea mostly have followers aged 18 to 24, according to a creator analytics tool.",
+   "reason": "The passage P6 directly states that creators who post about Larkspur Tea have followers aged 18 to 24, which aligns with the statement that Larkspur Tea's customers are mostly aged 18 to 24.",
+   "status": "reviewed",
+   "attempts": [
+    {
+     "raw_text": "```json\n{\n  \"review_id\": \"R-2cdcb07d37b98d42\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P6\",\n  \"evidence_quote\": \"Creators who post about Larkspur Tea mostly have followers aged 18 to 24, according to a creator analytics tool.\",\n  \"reason\": \"The passage P6 directly states that creators who post about Larkspur Tea have followers aged 18 to 24, which aligns with the statement that Larkspur Tea's customers are mostly aged 18 to 24.\"\n}\n```",
+     "validation_errors": [],
+     "latency_s": 14.451
+    }
+   ]
+  },
+  {
+   "id": "cal-12",
+   "category": "supported_wrong_citation",
+   "statement": "Larkspur Tea sells only through its own website.",
+   "expected_verdict": "supported",
+   "final_verdict": "supported",
+   "reviewer_verdict": "supported",
+   "citation_status": "miscited_supported_elsewhere",
+   "expected_citation_status": "miscited_supported_elsewhere",
+   "flags": [],
+   "expected_flags": [],
+   "final_correct": true,
+   "reviewer_correct": true,
+   "flags_correct": true,
+   "evidence_passage_id": "P7",
+   "evidence_quote": "Larkspur Tea sells only through its own website and does not sell in grocery stores.",
+   "reason": "The passage P7 directly states that Larkspur Tea sells only through its own website, which is consistent with the statement.",
+   "status": "reviewed",
+   "attempts": [
+    {
+     "raw_text": "```json\n{\n  \"review_id\": \"R-a65ec5e70beef103\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P7\",\n  \"evidence_quote\": \"Larkspur Tea sells only through its own website and does not sell in grocery stores.\",\n  \"reason\": \"The passage P7 directly states that Larkspur Tea sells only through its own website, which is consistent with the statement.\"\n}\n```",
+     "validation_errors": [],
+     "latency_s": 10.792
+    }
+   ]
+  },
+  {
+   "id": "cal-13",
+   "category": "supported",
+   "statement": "Larkspur Tea ran a pop-up tasting bar in Portland in 2019.",
+   "expected_verdict": "supported",
+   "final_verdict": "supported",
+   "reviewer_verdict": "supported",
+   "citation_status": "cited",
+   "expected_citation_status": null,
+   "flags": [],
+   "expected_flags": [],
+   "final_correct": true,
+   "reviewer_correct": true,
+   "flags_correct": true,
+   "evidence_passage_id": "P2",
+   "evidence_quote": "Back in 2019 Larkspur Tea ran a single pop-up tasting bar in Portland for one summer before closing it.",
+   "reason": "The passage P2 directly states that Larkspur Tea ran a pop-up tasting bar in Portland in 2019, which supports the given statement.",
+   "status": "reviewed",
+   "attempts": [
+    {
+     "raw_text": "```json\n{\n  \"review_id\": \"R-1892dd8d1821c940\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P2\",\n  \"evidence_quote\": \"Back in 2019 Larkspur Tea ran a single pop-up tasting bar in Portland for one summer before closing it.\",\n  \"reason\": \"The passage P2 directly states that Larkspur Tea ran a pop-up tasting bar in Portland in 2019, which supports the given statement.\"\n}\n```",
+     "validation_errors": [],
+     "latency_s": 12.653
+    }
+   ]
+  },
+  {
+   "id": "cal-14",
+   "category": "direct_contradiction",
+   "statement": "Larkspur Tea's Steep Club ships ten teas to members every week.",
+   "expected_verdict": "contradicted",
+   "final_verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "expected_citation_status": null,
+   "flags": [],
+   "expected_flags": [],
+   "final_correct": false,
+   "reviewer_correct": false,
+   "flags_correct": true,
+   "evidence_passage_id": "P1",
+   "evidence_quote": "In 2026 Larkspur Tea launched the Steep Club, a monthly subscription that ships three seasonal loose-leaf teas to members.",
+   "reason": "The passage P1 directly states that Larkspur Tea launched the Steep Club in 2026, which implies that the Steep Club ships ten teas to members every week.",
+   "status": "reviewed",
+   "attempts": [
+    {
+     "raw_text": "```json\n{\n  \"review_id\": \"R-426e4032990e23bc\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P1\",\n  \"evidence_quote\": \"In 2026 Larkspur Tea launched the Steep Club, a monthly subscription that ships three seasonal loose-leaf teas to members.\",\n  \"reason\": \"The passage P1 directly states that Larkspur Tea launched the Steep Club in 2026, which implies that the Steep Club ships ten teas to members every week.\"\n}\n```",
+     "validation_errors": [],
+     "latency_s": 13.418
+    }
+   ]
+  }
+ ]
+}

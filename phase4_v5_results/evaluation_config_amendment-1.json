@@ -1,0 +1,53 @@
+{
+ "amendment": 1,
+ "applies_to": "evaluation_config.json",
+ "made_before": "any review of validation, development or synthetic-regression outputs (no validation outputs had been assessed)",
+ "change": {
+  "checks_version": {
+   "from": "phase4-v5-checks-1",
+   "to": "phase4-v5-checks-2"
+  },
+  "support_guard": {
+   "min_content_word_coverage": 0.6,
+   "numbers_must_appear": true,
+   "negation_mismatch": "unresolved"
+  },
+  "rule": "A reviewer 'supported' verdict counts only if the named evidence passage covers >= 60% of the statement's content words (proposal vocabulary excluded for proposal premises), contains every number in the statement, and its best-matching sentence is not negated when the statement is not. Coverage/number failures -> unsupported; negation mismatch -> unresolved."
+ },
+ "reason": "Calibration v1 (checks-1): the local reviewer (Qwen2.5-1.5B-Instruct) returned 'supported' on 14/14 items, including direct contradictions and unrelated statements; reviewer-alone agreement 4/14, combined 10/14.",
+ "calibration": {
+  "v1_checks1": {
+   "n": 14,
+   "final_correct": 10,
+   "reviewer_alone_correct": 4,
+   "flags_correct": 14,
+   "unresolved": 0
+  },
+  "v1_checks2_development": {
+   "n": 14,
+   "final_correct": 12,
+   "reviewer_alone_correct": 4,
+   "safe_non_support": 10,
+   "expected_non_support": 10,
+   "supported_kept": 4,
+   "expected_supported": 4,
+   "unresolved": 0
+  },
+  "v2_checks2_heldout": {
+   "n": 12,
+   "final_correct": 9,
+   "reviewer_alone_correct": 5,
+   "safe_non_support": 8,
+   "expected_non_support": 8,
+   "supported_kept": 3,
+   "expected_supported": 4,
+   "unresolved": 0
+  }
+ },
+ "known_limitation": "The guarded reviewer separates supported from not-supported; it does not reliably separate contradicted from unsupported (0/4 direct contradictions labelled contradicted). Contradicted counts are a lower bound.",
+ "module_sha256": {
+  "brand_assistant_review.py": "443affccda3962b04a065f6df8223541ee3a81dd946acdcc3b05a133d08e695e",
+  "brand_assistant_recovery.py": "3455f268ec949b395519178587871e0b963c55827ff3e0467ab7961c8b5ec310",
+  "run_phase4_v5.py": "3bf6fcc700ea33181cb10e556afc0e0d74ccde4f4f50d8d7cb489f306bcbcdd4"
+ }
+}

@@ -1,0 +1,361 @@
+{
+ "calibration_version": "phase4-v5-calibration-2",
+ "reviewer": {
+  "backend": "openai_compatible",
+  "api_base": "http://127.0.0.1:8081/v1",
+  "model": "/Users/varshini/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "max_tokens": 300,
+  "temperature": 0.0,
+  "timeout_s": 120,
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+  "prompt_version": "phase4-v5-reviewer-prompt-1",
+  "schema": "phase4-v5-review-1"
+ },
+ "n": 12,
+ "final_correct": 9,
+ "reviewer_alone_correct": 5,
+ "flags_correct": 12,
+ "unresolved": 0,
+ "disagreements": [
+  "v2-03",
+  "v2-04",
+  "v2-12"
+ ],
+ "note": "SYNTHETIC calibration with integrator-written expected answers; not independent human ratings.",
+ "checks_version": "phase4-v5-checks-2",
+ "safe_non_support": 8,
+ "expected_non_support": 8,
+ "supported_kept": 3,
+ "expected_supported": 4,
+ "rows": [
+  {
+   "id": "v2-01",
+   "category": "supported",
+   "statement": "Pinecrest Bikes opened a showroom in Denver that offers free test rides.",
+   "expected_verdict": "supported",
+   "final_verdict": "supported",
+   "reviewer_verdict": "supported",
+   "citation_status": "cited",
+   "expected_citation_status": null,
+   "flags": [],
+   "expected_flags": [],
+   "final_correct": true,
+   "reviewer_correct": true,
+   "flags_correct": true,
+   "evidence_passage_id": "P1",
+   "evidence_quote": "In 2025 Pinecrest Bikes opened its first showroom in Denver, where customers can book free test rides.",
+   "reason": "The passage explicitly states that Pinecrest Bikes opened a showroom in Denver and offers free test rides, which directly supports the statement.",
+   "status": "reviewed",
+   "attempts": [
+    {
+     "raw_text": "```json\n{\n  \"review_id\": \"R-aeb4d6731fac514c\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P1\",\n  \"evidence_quote\": \"In 2025 Pinecrest Bikes opened its first showroom in Denver, where customers can book free test rides.\",\n  \"reason\": \"The passage explicitly states that Pinecrest Bikes opened a showroom in Denver and offers free test rides, which directly supports the statement.\"\n}\n```",
+     "validation_errors": [],
+     "latency_s": 11.617
+    }
+   ]
+  },
+  {
+   "id": "v2-02",
+   "category": "supported",
+   "statement": "Pinecrest sells two e-bike models, the Ridge and the Metro.",
+   "expected_verdict": "supported",
+   "final_verdict": "supported",
+   "reviewer_verdict": "supported",
+   "citation_status": "cited",
+   "expected_citation_status": null,
+   "flags": [],
+   "expected_flags": [],
+   "final_correct": true,
+   "reviewer_correct": true,
+   "flags_correct": true,
+   "evidence_passage_id": "P6",
+   "evidence_quote": "Pinecrest Bikes sells two models, the Ridge and the Metro, both with a 50-mile battery range.",
+   "reason": "The evidence passage directly states that Pinecrest Bikes sells two e-bike models, which matches the statement.",
+   "status": "reviewed",
+   "attempts": [
+    {
+     "raw_text": "```json\n{\n  \"review_id\": \"R-1c08ec8e16c39f32\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P6\",\n  \"evidence_quote\": \"Pinecrest Bikes sells two models, the Ridge and the Metro, both with a 50-mile battery range.\",\n  \"reason\": \"The evidence passage directly states that Pinecrest Bikes sells two e-bike models, which matches the statement.\"\n}\n```",
+     "validation_errors": [],
+     "latency_s": 11.658
+    }
+   ]
+  },
+  {
+   "id": "v2-03",
+   "category": "direct_contradiction",
+   "statement": "Pinecrest Bikes offers financing on every e-bike.",
+   "expected_verdict": "contradicted",
+   "final_verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "expected_citation_status": null,
+   "flags": [],
+   "expected_flags": [],
+   "final_correct": false,
+   "reviewer_correct": false,
+   "flags_correct": true,
+   "evidence_passage_id": "P1",
+   "evidence_quote": "In 2025 Pinecrest Bikes opened its first showroom in Denver, where customers can book free test rides.",
+   "reason": "The passage P1 explicitly states that Pinecrest Bikes opened a showroom in Denver, where customers can book free test rides. This implies that Pinecrest Bikes offers financing on every e-bike, as test rides are often associated with financing options.",
+   "status": "reviewed",
+   "attempts": [
+    {
+     "raw_text": "```json\n{\n  \"review_id\": \"R-4cdf4efe662f78a8\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P1\",\n  \"evidence_quote\": \"In 2025 Pinecrest Bikes opened its first showroom in Denver, where customers can book free test rides.\",\n  \"reason\": \"The passage P1 explicitly states that Pinecrest Bikes opened a showroom in Denver, where customers can book free test rides. This implies that Pinecrest Bikes offers financing on every e-bike, as test rides are often associated with financing options.\"\n}\n```",
+     "validation_errors": [],
+     "latency_s": 13.429
+    }
+   ]
+  },
+  {
+   "id": "v2-04",
+   "category": "direct_contradiction",
+   "statement": "Both Pinecrest models have a 100-mile battery range.",
+   "expected_verdict": "contradicted",
+   "final_verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "expected_citation_status": null,
+   "flags": [],
+   "expected_flags": [],
+   "final_correct": false,
+   "reviewer_correct": false,
+   "flags_correct": true,
+   "evidence_passage_id": "P6",
+   "evidence_quote": "Pinecrest Bikes sells two models, the Ridge and the Metro, both with a 50-mile battery range.",
+   "reason": "The evidence passage directly states that Pinecrest Bikes has two models, the Ridge and the Metro, both with a 50-mile battery range, which contradicts the statement that both Pinecrest models have a 100-mile battery range.",
+   "status": "reviewed",
+   "attempts": [
+    {
+     "raw_text": "```json\n{\n  \"review_id\": \"R-9036378785fe3fb3\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P6\",\n  \"evidence_quote\": \"Pinecrest Bikes sells two models, the Ridge and the Metro, both with a 50-mile battery range.\",\n  \"reason\": \"The evidence passage directly states that Pinecrest Bikes has two models, the Ridge and the Metro, both with a 50-mile battery range, which contradicts the statement that both Pinecrest models have a 100-mile battery range.\"\n}\n```",
+     "validation_errors": [],
+     "latency_s": 14.135
+    }
+   ]
+  },
+  {
+   "id": "v2-05",
+   "category": "unsupported",
+   "statement": "Pinecrest Bikes runs a podcast about urban commuting.",
+   "expected_verdict": "unsupported",
+   "final_verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "expected_citation_status": null,
+   "flags": [],
+   "expected_flags": [],
+   "final_correct": true,
+   "reviewer_correct": false,
+   "flags_correct": true,
+   "evidence_passage_id": "P1",
+   "evidence_quote": "In 2025 Pinecrest Bikes opened its first showroom in Denver, where customers can book free test rides.",
+   "reason": "The passage explicitly states that Pinecrest Bikes opened a showroom in Denver, which implies they are involved in some form of urban commuting-related activities, including podcasting.",
+   "status": "reviewed",
+   "attempts": [
+    {
+     "raw_text": "```json\n{\n  \"review_id\": \"R-0d93b7fa28112d5e\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P1\",\n  \"evidence_quote\": \"In 2025 Pinecrest Bikes opened its first showroom in Denver, where customers can book free test rides.\",\n  \"reason\": \"The passage explicitly states that Pinecrest Bikes opened a showroom in Denver, which implies they are involved in some form of urban commuting-related activities, including podcasting.\"\n}\n```",
+     "validation_errors": [],
+     "latency_s": 12.161
+    }
+   ]
+  },
+  {
+   "id": "v2-06",
+   "category": "correct_quote_unrelated_claim",
+   "statement": "Pinecrest Bikes is the best-selling e-bike brand in Colorado.",
+   "expected_verdict": "unsupported",
+   "final_verdict": "unsupported",
+   "reviewer_verdict": "unsupported",
+   "citation_status": "cited",
+   "expected_citation_status": null,
+   "flags": [],
+   "expected_flags": [],
+   "final_correct": true,
+   "reviewer_correct": true,
+   "flags_correct": true,
+   "evidence_passage_id": null,
+   "evidence_quote": "",
+   "reason": "The passages do not provide any information about the sales performance or market share of Pinecrest Bikes in Colorado. They only mention the company's activities and features.",
+   "status": "reviewed",
+   "attempts": [
+    {
+     "raw_text": "```json\n{\n  \"review_id\": \"R-4ba2f8a1f3ad1abe\",\n  \"verdict\": \"unsupported\",\n  \"evidence_passage_id\": null,\n  \"evidence_quote\": null,\n  \"reason\": \"The passages do not provide any information about the sales performance or market share of Pinecrest Bikes in Colorado. They only mention the company's activities and features.\"\n}\n```",
+     "validation_errors": [],
+     "latency_s": 9.416
+    }
+   ]
+  },
+  {
+   "id": "v2-07",
+   "category": "recommendation_as_activity",
+   "statement": "Pinecrest Bikes runs an Instagram ambassador program for college riders.",
+   "expected_verdict": "unsupported",
+   "final_verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": "cited",
+   "expected_citation_status": null,
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "expected_flags": [
+    "recommendation_as_fact"
+   ],
+   "final_correct": true,
+   "reviewer_correct": false,
+   "flags_correct": true,
+   "evidence_passage_id": "P4",
+   "evidence_quote": "A student marketing plan proposes that Pinecrest Bikes launch an Instagram ambassador program for college riders.",
+   "reason": "The passage [P4] directly states that Pinecrest Bikes is planning to launch an Instagram ambassador program for college riders, which aligns with the statement.",
+   "status": "reviewed",
+   "attempts": [
+    {
+     "raw_text": "```json\n{\n  \"review_id\": \"R-8517b6cd92166fbc\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P4\",\n  \"evidence_quote\": \"A student marketing plan proposes that Pinecrest Bikes launch an Instagram ambassador program for college riders.\",\n  \"reason\": \"The passage [P4] directly states that Pinecrest Bikes is planning to launch an Instagram ambassador program for college riders, which aligns with the statement.\"\n}\n```",
+     "validation_errors": [],
+     "latency_s": 11.387
+    }
+   ]
+  },
+  {
+   "id": "v2-08",
+   "category": "historical_as_current",
+   "statement": "Pinecrest Bikes currently sponsors the Boulder city cycling festival.",
+   "expected_verdict": "unsupported",
+   "final_verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": "cited",
+   "expected_citation_status": null,
+   "flags": [
+    "historical_as_current"
+   ],
+   "expected_flags": [
+    "historical_as_current"
+   ],
+   "final_correct": true,
+   "reviewer_correct": false,
+   "flags_correct": true,
+   "evidence_passage_id": "P3",
+   "evidence_quote": "In 2021 Pinecrest Bikes sponsored a city cycling festival in Boulder.",
+   "reason": "The passage [P3] directly states that Pinecrest Bikes sponsored a city cycling festival in Boulder in 2021, which is consistent with the statement that they currently sponsor the Boulder city cycling festival.",
+   "status": "reviewed",
+   "attempts": [
+    {
+     "raw_text": "```json\n{\n  \"review_id\": \"R-9edb4f0a82e62935\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P3\",\n  \"evidence_quote\": \"In 2021 Pinecrest Bikes sponsored a city cycling festival in Boulder.\",\n  \"reason\": \"The passage [P3] directly states that Pinecrest Bikes sponsored a city cycling festival in Boulder in 2021, which is consistent with the statement that they currently sponsor the Boulder city cycling festival.\"\n}\n```",
+     "validation_errors": [],
+     "latency_s": 12.289
+    }
+   ]
+  },
+  {
+   "id": "v2-09",
+   "category": "provider_result_unattributed",
+   "statement": "Pinecrest's video ads doubled showroom bookings in three months.",
+   "expected_verdict": "unsupported",
+   "final_verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": "cited",
+   "expected_citation_status": null,
+   "flags": [
+    "provider_result_unattributed"
+   ],
+   "expected_flags": [
+    "provider_result_unattributed"
+   ],
+   "final_correct": true,
+   "reviewer_correct": false,
+   "flags_correct": true,
+   "evidence_passage_id": "P5",
+   "evidence_quote": "Gearline Media says its video ads for Pinecrest Bikes doubled showroom bookings in three months.",
+   "reason": "The passage directly states that Gearline Media's video ads for Pinecrest Bikes doubled showroom bookings in three months, which is consistent with the statement.",
+   "status": "reviewed",
+   "attempts": [
+    {
+     "raw_text": "```json\n{\n  \"review_id\": \"R-7dd77354735d5144\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P5\",\n  \"evidence_quote\": \"Gearline Media says its video ads for Pinecrest Bikes doubled showroom bookings in three months.\",\n  \"reason\": \"The passage directly states that Gearline Media's video ads for Pinecrest Bikes doubled showroom bookings in three months, which is consistent with the statement.\"\n}\n```",
+     "validation_errors": [],
+     "latency_s": 11.338
+    }
+   ]
+  },
+  {
+   "id": "v2-10",
+   "category": "provider_result_attributed",
+   "statement": "Gearline Media says its video ads for Pinecrest Bikes doubled showroom bookings in three months.",
+   "expected_verdict": "supported",
+   "final_verdict": "supported",
+   "reviewer_verdict": "supported",
+   "citation_status": "cited",
+   "expected_citation_status": null,
+   "flags": [],
+   "expected_flags": [],
+   "final_correct": true,
+   "reviewer_correct": true,
+   "flags_correct": true,
+   "evidence_passage_id": "P5",
+   "evidence_quote": "Gearline Media says its video ads for Pinecrest Bikes doubled showroom bookings in three months.",
+   "reason": "The passage [P5] directly states that Gearline Media's video ads for Pinecrest Bikes doubled showroom bookings in three months, which is consistent with the statement.",
+   "status": "reviewed",
+   "attempts": [
+    {
+     "raw_text": "```json\n{\n  \"review_id\": \"R-5e5810a063ba0269\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P5\",\n  \"evidence_quote\": \"Gearline Media says its video ads for Pinecrest Bikes doubled showroom bookings in three months.\",\n  \"reason\": \"The passage [P5] directly states that Gearline Media's video ads for Pinecrest Bikes doubled showroom bookings in three months, which is consistent with the statement.\"\n}\n```",
+     "validation_errors": [],
+     "latency_s": 12.131
+    }
+   ]
+  },
+  {
+   "id": "v2-11",
+   "category": "unknown_as_weakness",
+   "statement": "Pinecrest Bikes has no social media strategy.",
+   "expected_verdict": "unsupported",
+   "final_verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "expected_citation_status": null,
+   "flags": [
+    "gap_requires_positive_evidence"
+   ],
+   "expected_flags": [
+    "gap_requires_positive_evidence"
+   ],
+   "final_correct": true,
+   "reviewer_correct": false,
+   "flags_correct": true,
+   "evidence_passage_id": "P1",
+   "evidence_quote": "In 2025 Pinecrest Bikes opened its first showroom in Denver, where customers can book free test rides.",
+   "reason": "The passage explicitly states that Pinecrest Bikes opened a showroom in Denver, implying the presence of social media strategy to attract customers.",
+   "status": "reviewed",
+   "attempts": [
+    {
+     "raw_text": "```json\n{\n  \"review_id\": \"R-fce847942deaff13\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P1\",\n  \"evidence_quote\": \"In 2025 Pinecrest Bikes opened its first showroom in Denver, where customers can book free test rides.\",\n  \"reason\": \"The passage explicitly states that Pinecrest Bikes opened a showroom in Denver, implying the presence of social media strategy to attract customers.\"\n}\n```",
+     "validation_errors": [],
+     "latency_s": 11.066
+    }
+   ]
+  },
+  {
+   "id": "v2-12",
+   "category": "supported_wrong_citation",
+   "statement": "Every Pinecrest e-bike ships with a two-year warranty.",
+   "expected_verdict": "supported",
+   "final_verdict": "unresolved",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "expected_citation_status": "miscited_supported_elsewhere",
+   "flags": [],
+   "expected_flags": [],
+   "final_correct": false,
+   "reviewer_correct": true,
+   "flags_correct": true,
+   "evidence_passage_id": "P2",
+   "evidence_quote": "Every Pinecrest e-bike ships with a two-year warranty, and the company does not offer financing.",
+   "reason": "The evidence passage directly states that Pinecrest Bikes ships every e-bike with a two-year warranty, which supports the given statement.",
+   "status": "reviewed",
+   "attempts": [
+    {
+     "raw_text": "```json\n{\n  \"review_id\": \"R-c94b52fcccf221b2\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P2\",\n  \"evidence_quote\": \"Every Pinecrest e-bike ships with a two-year warranty, and the company does not offer financing.\",\n  \"reason\": \"The evidence passage directly states that Pinecrest Bikes ships every e-bike with a two-year warranty, which supports the given statement.\"\n}\n```",
+     "validation_errors": [],
+     "latency_s": 11.366
+    }
+   ]
+  }
+ ]
+}

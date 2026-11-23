@@ -476,3 +476,29 @@ def test_repair_prompt_never_contains_the_reference_completion():
     prompt = build_repair_prompt("ORIGINAL PROMPT", a, packet(), "targeted_fix")
     assert prompt.startswith("ORIGINAL PROMPT") and "400 stores" in prompt
     assert '"schema_version": "brandpilot.output.v3"' not in prompt
+
+
+# --- support guard (checks-2) --------------------------------------------------------------
+
+def _guarded(statement, quote_pid="P1", quote=Q_TRAIL):
+    out = good_output()
+    out["current_marketing_strategy"] = [statement + " [P1]."]
+    a = assess(out, reviewer=MockReviewer(rules=[(statement[:12], "supported", quote_pid, quote)]))
+    return next(r for r in a["assertions"] if r["location"] == "current_marketing_strategy[0]#s0")
+
+
+def test_guard_rejects_supported_verdict_for_unrelated_statement():
+    r = _guarded("Fernway won three outdoor industry awards for packaging design")
+    assert r["reviewer_verdict"] == "supported" and r["verdict"] == "unsupported" and r["guard"]["coverage"] < 0.6
+
+
+def test_guard_rejects_numbers_absent_from_evidence():
+    r = _guarded("In March 2026 Fernway launched the Trail Notes program with 500 members")
+    assert r["verdict"] == "unsupported" and r["guard"]["missing_numbers"] == ["500"]
+
+
+def test_guard_marks_negated_evidence_unresolved():
+    from brand_assistant_review import support_guard
+    g = support_guard("Larkspur Tea sells its teas in grocery stores.",
+                      "Larkspur Tea sells only through its own website and does not sell in grocery stores.", "Larkspur Tea")
+    assert g["negation_mismatch"] is True and g["problems"]

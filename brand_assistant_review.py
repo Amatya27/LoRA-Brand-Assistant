@@ -37,7 +37,23 @@ from brand_assistant_v3 import (
     quote_in_passage,
 )
 
-CHECKS_VERSION = "phase4-v5-checks-1"
+CHECKS_VERSION = "phase4-v5-checks-2"
+# checks-2 adds SUPPORT_GUARD after reviewer calibration v1 showed the local reviewer labels
+# contradicted and unrelated statements "supported". A model "supported" verdict now counts only
+# if the named evidence passage passes these deterministic checks; otherwise it is unresolved.
+SUPPORT_GUARD = {"min_content_word_coverage": 0.6, "numbers_must_appear": True, "negation_mismatch": "unresolved"}
+NUMBER_WORDS = {"zero": "0", "one": "1", "two": "2", "three": "3", "four": "4", "five": "5", "six": "6", "seven": "7",
+                "eight": "8", "nine": "9", "ten": "10", "eleven": "11", "twelve": "12", "twenty": "20", "thirty": "30",
+                "forty": "40", "fifty": "50", "hundred": "100", "thousand": "1000", "million": "1000000",
+                "double": "2x", "doubled": "2x", "triple": "3x", "tripled": "3x", "half": "0.5"}
+NEGATION_RX = re.compile(r"\b(not|no|never|without|none|only|neither|nor)\b|n't\b", re.I)
+GENERIC_WORDS = {"brand", "company", "products", "product", "business", "also", "including", "such", "known"}
+# Our own proposal vocabulary: excluded from coverage for proposal_premise units, whose only
+# factual content is the premise about the company.
+PROPOSAL_WORDS = {"collaborate", "collaboration", "collaborative", "collaborating", "propose", "proposing", "proposal",
+                  "instagram", "carousel", "post", "posts", "reel", "reels", "feature", "featuring", "features",
+                  "showcase", "showcasing", "highlight", "highlighting", "highlights", "builds", "build", "building",
+                  "one", "new", "series", "campaign", "idea", "concept", "share", "sharing", "together", "would", "could"}
 REVIEW_SCHEMA_VERSION = "phase4-v5-review-1"
 REVIEW_PROMPT_VERSION = "phase4-v5-reviewer-prompt-1"
 VERDICTS = ("supported", "contradicted", "unsupported")
@@ -606,11 +622,55 @@ def review_assertion(a: Assertion, company: dict, manifest: dict[str, dict], rev
     return {**out, "cache": "miss" if cache is not None else "disabled"}
 
 
-def final_verdict(a: Assertion, review: dict, flags: list[str]) -> dict:
-    """Combine reviewer verdict, deterministic flags and citation status for one assertion."""
+def _numbers(text: str) -> set[str]:
+    norm = _norm(text).replace(",", "")
+    out = set(re.findall(r"\d+(?:\.\d+)?", norm))
+    out |= {NUMBER_WORDS[w] for w in _WORD.findall(norm) if w in NUMBER_WORDS}
+    return out
+
+
+def support_guard(statement: str, evidence_text: str, company_name: str, kind: str = "factual") -> dict:
+    """Deterministic minimum for accepting a model 'supported' verdict (checks-2)."""
+    company_tokens = content_words(company_name)
+    s_words = content_words(statement) - company_tokens - GENERIC_WORDS
+    if kind == "proposal_premise":
+        s_words -= PROPOSAL_WORDS
+    e_words = content_words(evidence_text)
+    coverage = (len(s_words & e_words) / len(s_words)) if s_words else 0.0
+    s_nums, e_nums = _numbers(statement), _numbers(evidence_text)
+    missing_numbers = sorted(s_nums - e_nums)
+    best = max(sentences(evidence_text) or [evidence_text], key=lambda x: len(s_words & content_words(x)))
+    negation_mismatch = bool(NEGATION_RX.search(best)) and not NEGATION_RX.search(statement)
+    problems = []
+    if coverage < SUPPORT_GUARD["min_content_word_coverage"]:
+        problems.append(f"content-word coverage {coverage:.2f} < {SUPPORT_GUARD['min_content_word_coverage']}")
+    if missing_numbers:
+        problems.append(f"numbers not in evidence: {missing_numbers}")
+    if negation_mismatch:
+        problems.append("evidence sentence is negated but the statement is not")
+    return {"coverage": round(coverage, 3), "missing_numbers": missing_numbers, "negation_mismatch": negation_mismatch,
+            "problems": problems}
+
+
+def final_verdict(a: Assertion, review: dict, flags: list[str], manifest: dict[str, dict] | None = None,
+                  company_name: str = "") -> dict:
+    """Combine reviewer verdict, the support guard, deterministic flags and citation status."""
     if review.get("status") != "reviewed":
         return {"verdict": "unresolved", "citation_status": None, "reason": review.get("reason")}
     v = review["verdict"]
+    guard = None
+    if v == "supported" and manifest is not None:
+        evid_text = (manifest.get(review.get("evidence_passage_id")) or {}).get("text", "")
+        guard = support_guard(a.review_text, evid_text, company_name, a.kind)
+        if guard["problems"]:
+            if guard["missing_numbers"] and guard["coverage"] >= SUPPORT_GUARD["min_content_word_coverage"]:
+                return {"verdict": "unsupported", "reviewer_verdict": v, "citation_status": None, "flags": flags,
+                        "guard": guard, "reason": "support guard: " + "; ".join(guard["problems"])}
+            if guard["coverage"] < SUPPORT_GUARD["min_content_word_coverage"]:
+                return {"verdict": "unsupported", "reviewer_verdict": v, "citation_status": None, "flags": flags,
+                        "guard": guard, "reason": "support guard: " + "; ".join(guard["problems"])}
+            return {"verdict": "unresolved", "reviewer_verdict": v, "citation_status": None, "flags": flags,
+                    "guard": guard, "reason": "support guard: " + "; ".join(guard["problems"])}
     evid = review.get("evidence_passage_id")
     if not a.cited_passages:
         cit = "uncited"
@@ -624,7 +684,8 @@ def final_verdict(a: Assertion, review: dict, flags: list[str]) -> dict:
     if v == "supported" and blocking:
         verdict = "unsupported"
         reason = f"reviewer said supported, but deterministic check(s) failed: {', '.join(blocking)}"
-    return {"verdict": verdict, "reviewer_verdict": v, "citation_status": cit, "flags": flags, "reason": reason}
+    return {"verdict": verdict, "reviewer_verdict": v, "citation_status": cit, "flags": flags, "reason": reason,
+            "guard": guard}
 
 
 # ---------------------------------------------------------------------------
@@ -665,13 +726,14 @@ def assess_output(raw_text: str | None, finish_reason: str | None, packet: dict,
             continue
         review = review_assertion(a, company, manifest, reviewer, cache=cache) if reviewed_now else \
             {"status": "unresolved", "reason": "not reviewed"}
-        fv = final_verdict(a, review, flags)
+        fv = final_verdict(a, review, flags, manifest, company["display_name"])
         reviews.append({
             "review_id": a.review_id, "location": a.location, "text": a.text, "kind": a.kind,
             "cited_passages": a.cited_passages, "citation_source": a.citation_source, "marker_mapping": a.marker_mapping,
             "unknown_citations": a.unknown_citations,
             "introduced_by_repair": previous_review_ids is not None and a.review_id not in previous_review_ids,
             "diagnostic_only": not strict, **fv,
+            "reviewer_reason": review.get("reason"),
             "evidence_passage_id": review.get("evidence_passage_id"), "evidence_quote": review.get("evidence_quote"),
             "review": {k: review.get(k) for k in ("status", "attempts", "request_sha256", "reviewer", "cache")},
         })
