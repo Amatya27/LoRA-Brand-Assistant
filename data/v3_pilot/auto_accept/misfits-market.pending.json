@@ -1,0 +1,25 @@
+{
+  "groundedness": 0.8571,
+  "claims_total": 7,
+  "claims_supported": 6,
+  "claim_support": {
+    "C1": "supported",
+    "C2": "supported",
+    "C3": "supported",
+    "C4": "supported",
+    "C5": "reviewer response invalid for this claim: C5: reviewer quote does not occur in the referenced passage(s)",
+    "C6": "supported",
+    "C7": "supported"
+  },
+  "reasons": [],
+  "removed_claims": [
+    "C5"
+  ],
+  "removed_claim_reasons": {
+    "C5": "reviewer response invalid for this claim: C5: reviewer quote does not occur in the referenced passage(s)"
+  },
+  "decision": "prune",
+  "completion_sha256": "f4af1ecbc21365655256e0ea015963bce5b9a524257d52001fb018c112476457",
+  "audit_sha256": "56a9b1744fb054a5cf472ce60fedf304742853fedf3d7c805abb7974d16ab7cd",
+  "pruned_completion_sha256": "f468b0eb49ac70f2f687b1125372363291a388f21cc44d430995c1e38df3a3cf"
+}

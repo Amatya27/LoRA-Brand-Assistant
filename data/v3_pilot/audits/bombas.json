@@ -1,0 +1,109 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "bombas",
+  "bound_to": {
+    "packet_sha256": "ac21918fd0c6fec97904dc4e68701201faec4f10bf2f91b596d1d85ed62359da",
+    "prompt_sha256": "4e0ffc4499695aa2359d3b5ae013d6efd9c855de2ca0c08aaafde29e968839f9",
+    "completion_sha256": "8d91d6129d62a073306b30f1d0264478eea6e95e53f3258f4b119ad27e9535f1",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": [
+      "claim C7: not referenced by any field"
+    ]
+  },
+  "raw_response_sha256": "3ba1a30f006ef40a9652162164d42ce8d6687b136efea4f0348af6d27bb5c28f",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"2023 100 Million Donations 3,500 Giving Partners With the help of our customers and our growing giving network, we hit over 100 million donations to those who need them most.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that Bombas has made over 100 million donations.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"Partnered for Good Our wholesale partners have contributed over 20 million essential clothing items to those experiencing homelessness.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that Bombas' wholesale partners have contributed over 20 million items.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Social Media Marketing Bombas has effectively utilized social media platforms, particularly Facebook and Instagram, to promote their mission of helping those in need and target the younger generation.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms Bombas' effective use of social media for promotion and targeting.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"Influencer Partnerships: Bombas collaborates with influencers who align with their mission and target audience.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that Bombas collaborates with influencers.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"Social Media Platform Strategy Bombas treats each platform distinctly: * TikTok: 56.3% of influencer content, focusing on authentic creator partnerships * Instagram: 43.7% of influencer content, blend of polished and user-generated content * YouTube: 450+ creator partnerships for longer-form storytelling\",\n      \"issues\": [],\n      \"reason\": \"The passage details Bombas' distinct social media strategy, highlighting influencer content.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"Targeting Strategies Bombas employs various targeting strategies to reach their intended audience: * Mission-driven Marketing: Bombas leverages their mission and philanthropic nature to connect with their target market.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms Bombas uses its mission to connect with its target market.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P10\"\n      ],\n      \"quote\": \"Authentic Storytelling Around Social Contributions Purpose-driven messaging requires authenticity. Bombas varies emphasis based on context: * Donation milestone campaigns: Customers prioritize the giveback story * Performance product launches: Consumers value quality messaging over purpose * Seasonal moments: Different emphasis at different times of year\",\n      \"issues\": [],\n      \"reason\": \"The passage describes how Bombas varies its messaging based on context.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "2023 100 Million Donations 3,500 Giving Partners With the help of our customers and our growing giving network, we hit over 100 million donations to those who need them most.",
+        "issues": [],
+        "reason": "The passage explicitly states that Bombas has made over 100 million donations."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "Partnered for Good Our wholesale partners have contributed over 20 million essential clothing items to those experiencing homelessness.",
+        "issues": [],
+        "reason": "The passage directly states that Bombas' wholesale partners have contributed over 20 million items."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Social Media Marketing Bombas has effectively utilized social media platforms, particularly Facebook and Instagram, to promote their mission of helping those in need and target the younger generation.",
+        "issues": [],
+        "reason": "The passage confirms Bombas' effective use of social media for promotion and targeting."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "Influencer Partnerships: Bombas collaborates with influencers who align with their mission and target audience.",
+        "issues": [],
+        "reason": "The passage explicitly states that Bombas collaborates with influencers."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "Social Media Platform Strategy Bombas treats each platform distinctly: * TikTok: 56.3% of influencer content, focusing on authentic creator partnerships * Instagram: 43.7% of influencer content, blend of polished and user-generated content * YouTube: 450+ creator partnerships for longer-form storytelling",
+        "issues": [],
+        "reason": "The passage details Bombas' distinct social media strategy, highlighting influencer content."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "Targeting Strategies Bombas employs various targeting strategies to reach their intended audience: * Mission-driven Marketing: Bombas leverages their mission and philanthropic nature to connect with their target market.",
+        "issues": [],
+        "reason": "The passage confirms Bombas uses its mission to connect with its target market."
+      },
+      {
+        "claim_id": "C7",
+        "verdict": "supported",
+        "passage_ids": [
+          "P10"
+        ],
+        "quote": "Authentic Storytelling Around Social Contributions Purpose-driven messaging requires authenticity. Bombas varies emphasis based on context: * Donation milestone campaigns: Customers prioritize the giveback story * Performance product launches: Consumers value quality messaging over purpose * Seasonal moments: Different emphasis at different times of year",
+        "issues": [],
+        "reason": "The passage describes how Bombas varies its messaging based on context."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-22T23:49:47+00:00",
+  "audit_sha256": "b910d0dd97cf2cde350086e86762962d048dba930a2e2f83d51f86c0b33e72c6",
+  "dismissed_reviewer_flags": []
+}

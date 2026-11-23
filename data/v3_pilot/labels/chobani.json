@@ -1,0 +1,229 @@
+{
+  "schema_version": "brandpilot.label.v3",
+  "company_id": "chobani",
+  "packet_path": "packets/chobani.json",
+  "packet_sha256": "93f8ea09dfc242b44619d2ff9025a4f3cd75a0ef05d8c7addf39c60fbb3ee26e",
+  "prompt_version": "brandpilot.prompt.v3.3",
+  "prompt": "You are a grounded brand-outreach assistant for our team. Use only the evidence passages below.\nNever use outside knowledge. Return valid JSON only.\n\nSeparate three things:\n1. OBSERVED FACTS - things a passage actually states about this company. Each fact is a claim with an id (C1, C2, ...),\n   the passage id(s) that support it, and an exact quote copied word-for-word from that passage.\n2. UNKNOWNS - things the evidence does not tell us (put them in \"unknowns\"). A channel, program or audience that does\n   not appear in these passages is UNKNOWN. It is never a weakness, never a \"gap\", and never a reason for outreach.\n3. PROPOSALS - collaboration ideas from our team. Proposals are not facts, but each must build on a positively supported\n   fact (an existing campaign, partnership, product, community, value or theme) and cite that premise.\n\nRules:\n- Put a claim marker like {C1} (curly braces) right after every factual statement in every field, including the\n  email and Instagram idea. Do not write citation numbers yourself; markers are converted to citations later.\n- A claim's \"quote\" must be copied character-for-character from the cited passage: 5 to 25 consecutive words, no\n  paraphrasing, no joining of separate sentences. If you cannot find such a quote, drop the claim and every sentence\n  that depends on it.\n- Audience and strategy sentences are factual: each needs a marker. If no passage states the audience, write\n  INSUFFICIENT_EVIDENCE instead of guessing.\n- Pitch lines (email subject, hook, concept) should describe the proposed post (\"A carousel featuring ...\",\n  \"Collaborate on ...\"). Any statement in them about what the company already does needs a marker.\n- Respect passage types. \"proposed_or_mock_work\" and \"author_recommendation\" passages describe ideas, not things the\n  company did: never state them as company activity. \"provider_reported_result\" passages are claims by a vendor or\n  agency: attribute them (\"X reports that ...\"). \"creator_or_influencer_audience_data\" describes creators' followers,\n  not the company's customers. \"vendor_generated_profile_or_analytics\" passages are a tool vendor's estimates\n  (e.g. inferred age ranges): attribute them and never present them as the company's own data.\n  \"forward_looking_statement\" passages describe plans or intentions, not completed activity.\n- Mind time: if a passage describes past activity, do not present it as current.\n- \"marketing_gaps\" may only contain a weakness that a passage positively states. Usually it is [].\n- Never promise results. Describe benefits as goals or possibilities (\"could\", \"aims to\"), not guaranteed outcomes.\n- Decision: write \"draft\" when at least one concrete, evidence-supported collaboration opportunity exists. Otherwise write\n  \"abstain\", give an abstain_reason, set pitch fields to INSUFFICIENT_EVIDENCE and leave collaboration_opportunities empty.\n- The email is from our team to the company, proposing one collaborative Instagram post. The pitch, the post idea and\n  every collaboration opportunity are for Instagram only (no TikTok, YouTube, podcasts or other channels).\n- When a sentence uses a vendor, agency or analytics passage, name that source in the sentence itself\n  (\"According to AdLibrary, ...\", \"Attentive reports that ...\").\n- Each \"unknowns\" item names one specific thing the passages do not tell us (e.g. \"Whether X runs a creator program\").\n  Never write placeholder text such as \"what the evidence does not show\".\n\nRequired JSON:\n{\n  \"decision\": \"draft\" or \"abstain\",\n  \"abstain_reason\": \"string or empty\",\n  \"claims\": [{\"id\": \"C1\", \"kind\": \"fact | provider_reported | premise\", \"statement\": \"string\",\n              \"passage_ids\": [\"P1\"], \"quote\": \"exact words from the passage\"}],\n  \"brand_summary\": \"Full sentences, each followed by its marker, e.g. \"X makes ... {C1}.\" Never only markers. Or INSUFFICIENT_EVIDENCE\",\n  \"likely_target_audience\": \"A full sentence followed by its marker, or INSUFFICIENT_EVIDENCE\",\n  \"current_marketing_strategy\": [\"text with markers\"],\n  \"unknowns\": [\"one specific open question, e.g. Whether the company works with creators\"],\n  \"marketing_gaps\": [],\n  \"collaboration_opportunities\": [\"proposal that builds on a cited fact {C2}\"],\n  \"instagram_post_idea\": {\"hook\": \"string\", \"concept\": \"string\", \"why_it_fits\": \"string\"},\n  \"email_subject\": \"string\",\n  \"email_body\": \"string\"\n}\n\nCompany: Chobani (company_id chobani; category: yogurt and dairy foods)\nOfficial domains: chobani.com, chobani.com.au\nRecipient: the marketing team\nPacket status: ok\n\nEvidence passages:\n[P1] source: https://www.latterly.org/chobani-marketing-strategy/ | document: third_party_confirmed | type: actual_activity | dates in text: none | published: unknown\n\"Retail media: Walmart Connect, Instacart, and Amazon Ads campaigns linking ad exposure to basket-level conversion. Content strategy blends appetizing food cues with simple wellness messages and utility. Chobani rotates product spotlights, user recipes, and purpose stories that show community impact. Paid search protects brand terms, while non-brand terms focus on flavor, protein, and oat milk use cases. Creative testing informs thumbnails, CTAs, and copy length for each platform. * Benchmarks indicate food brands often see higher TikTok engagement rates than Instagram, supporting short-form emphasis for launches.\"\n\n[P2] source: https://thebrandhopper.com/brand/a-deep-dive-into-the-marketing-strategies-of-chobani/ | document: third_party_confirmed | type: actual_activity | dates in text: none | published: unknown\n\"In addition to everyday engagement, Chobani leveraged influencer partnerships and social media campaigns to widen its reach. Early on, Chobani partnered with health and fitness bloggers, mommy bloggers, and influencers whose values aligned with the brand (e.g. advocates of wholesome eating). These influencers created recipe posts, reviews, or lifestyle content featuring Chobani, effectively introducing the yogurt to niche audiences in an authentic way. For example, teaming up with cookbook authors and food bloggers to develop creative yogurt recipes allowed Chobani to market itself as a versatile ingredient, not just a snack.\"\n\n[P3] source: https://thebrandhopper.com/brand/a-deep-dive-into-the-marketing-strategies-of-chobani/ | document: third_party_confirmed | type: actual_activity | dates in text: none | published: unknown\n\"These collaborations are sometimes featured in magazines, on cooking websites, or through live demonstrations (e.g., cooking classes or segments sponsored by Chobani), amplifying reach. The brand also engages in cause-related content – for example, sharing stories of its community initiatives or employee spotlights – which reinforces its image as a company that cares (this intersects with their purpose-driven marketing, see Strategy 8). All in all, Chobani’s content strategy has been about informing and inspiring the consumer.\"\n\n[P4] source: https://thebrandhopper.com/brand/a-deep-dive-into-the-marketing-strategies-of-chobani/ | document: third_party_confirmed | type: historical_activity | dates in text: 2009, 2010 | published: unknown\n\"Beginning around 2009–2010, Chobani fans started writing to the company with glowing reviews and even heartfelt tales – one fan described bicycling 80 miles to visit the Chobani factory out of pure devotion!. Recognizing the marketing gold in these organic testimonials, Chobani launched its “Love Stories” campaign to amplify them. The company showcased authentic customer stories in its marketing materials and on social media, celebrating the community’s passion as part of the brand narrative. This not only provided free, genuine promotion but also made fans feel heard and valued.\"\n\n[P5] source: https://www.projectpractical.com/chobani-marketing-strategy/ | document: third_party_confirmed | type: actual_activity | dates in text: none | published: unknown\n\"The Chobani Promotion Chobani used social media to spread the word about their products. This approach created a big buzz and made their brand more popular. They connected with their fans on different platforms, building a community. They made real connections with their audience. This made people talk about their brand and helped it grow naturally. Chobani’s fans on social media helped share their message even wider. Chobani also teamed up with the U.S. Olympic Team. This made them the official yogurt of the team. This partnership made Chobani’s brand stronger and more well-known across the country. Chobani built an online community of fans through smart use of social media.\"\n\n[P6] source: https://www.projectpractical.com/chobani-marketing-strategy/ | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown\n\"Conclusion Chobani’s success comes from their smart marketing and dedication to quality. They offer top-notch yogurt that stands out in the market. This has helped them become leaders in the yogurt world. Their protein-rich yogurt appeals to those who want to eat healthy. This has created a strong following for their brand. Chobani also knows how to connect with customers online. They use social media to share engaging content and run interactive campaigns. This has built a loyal community around their brand. They’ve even worked with Twitch streamers to reach more people. This clever use of influencer marketing has brought in new customers. But Chobani’s success isn’t just about marketing.\"\n\n[P7] source: https://www.latterly.org/chobani-marketing-strategy/ | document: third_party_confirmed | type: actual_activity | dates in text: none | published: unknown\n\"Advertising and Communication Channels In a crowded refrigerated aisle, brands win attention with precision reach and clear value. Chobani applies a full-funnel approach that unites national storytelling with retail activation. The company blends video, social, retail media, and in-store communication to convert awareness into basket growth. Television and connected TV secure broad reach for flagship launches, especially across morning dayparts aligned with breakfast habits. YouTube, online video, and short-form social formats reinforce memory structures with frequent, high-viewability impressions.\"\n\n[P8] source: https://www.latterly.org/chobani-marketing-strategy/ | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown\n\"Platform-Specific Strategy Chobani tailors creative and frequency to each channel, focusing on fit, context, and measurable outcomes. The mix emphasizes efficient CPMs for reach, then shifts spend toward audiences showing high conversion potential. * Connected TV: Household-targeted video aligned to breakfast and coffee content, optimizing toward reach and cost per completed view. * YouTube and Online Video: Six- and fifteen-second cutdowns for Greek yogurt and oat milk, controlled frequency to reduce wear-out. * TikTok and Instagram Reels: Recipe, barista, and high-protein snacking content, tuned to sound-on behaviors and creator collaboration.\"\n\n[P9] source: https://www.projectpractical.com/chobani-marketing-strategy/ | document: third_party_confirmed | type: actual_activity | dates in text: none | published: unknown\n\"Chobani’s Twitch Marketing Campaign Chobani teamed up with popular Twitch streamers for an engaging gaming campaign. Their goal was to boost brand awareness and support a charity. This partnership aimed to fit smoothly into their broader marketing strategies. The campaign used Twitch’s massive popularity to reach a tech-savvy crowd. Chobani wanted to appeal to gamers, not just yogurt lovers. This move helped them reach new potential customers. A custom Roblox game was the campaign’s highlight. Streamers played it live, mixing gameplay with Chobani’s product ads. This strategy kept viewers entertained and spread Chobani’s main messages effectively.\"\n",
+  "prompt_sha256": "a9f8f60d8b352e3d2819f85d96e6470884fe60c1e47b7f9003701615b1c18260",
+  "generator": {
+    "source": "model",
+    "role": "teacher",
+    "api_base": "http://localhost:8080/v1",
+    "model": "mlx-community/Qwen3-14B-4bit",
+    "temperature": 0.0,
+    "max_tokens": 4096,
+    "system_prompt_sha256": "a434c070378f6a787103cac3ef71971836c5f435d8b5fcbad58e17d38f3ef7f3",
+    "generated_at": "2026-11-22T21:48:14+00:00",
+    "attempts": [
+      {
+        "attempt": 0,
+        "raw_sha256": "98044c7760071fd1da5f5c6a488c2782d66f4908bf9caf74d0d2c36091384772",
+        "deterministic_errors": 2,
+        "quote_repairs": [
+          {
+            "claim": "C5",
+            "passage_id": "P2",
+            "similarity": 0.9958,
+            "old_quote": "Chobani partnered with health and fitness bloggers, mommy bloggers, and influencers whose values aligned with the brand.",
+            "new_quote": "Chobani partnered with health and fitness bloggers, mommy bloggers, and influencers whose values aligned with the brand"
+          },
+          {
+            "claim": "C6",
+            "passage_id": "P3",
+            "similarity": 0.9954,
+            "old_quote": "These collaborations are sometimes featured in magazines, on cooking websites, or through live demonstrations.",
+            "new_quote": "These collaborations are sometimes featured in magazines, on cooking websites, or through live demonstrations"
+          },
+          {
+            "claim": "C7",
+            "passage_id": "P4",
+            "similarity": 0.9837,
+            "old_quote": "Recognizing the marketing gold in these organic testimonials, Chobani launched its 'Love Stories' campaign to amplify them.",
+            "new_quote": "Recognizing the marketing gold in these organic testimonials, Chobani launched its “Love Stories” campaign to amplify them."
+          }
+        ]
+      },
+      {
+        "attempt": 1,
+        "raw_sha256": "7cd5152f0ae72172d05c8103c8d2157b8492da839f21890e974bed9b2e920cf2",
+        "deterministic_errors": 1,
+        "quote_repairs": []
+      },
+      {
+        "attempt": 2,
+        "raw_sha256": "07bf7d8bc9917a39cd8c23ce9327b22612ecb28ea1307c2e6f5b787991776a44",
+        "deterministic_errors": 12,
+        "quote_repairs": []
+      }
+    ],
+    "quote_repair": "claims.repair_quotes (min similarity 0.9; numbers/negations unchanged); see attempts[].quote_repairs",
+    "note": "repair rounds show the teacher only its own draft and the failed check messages"
+  },
+  "raw_response": "{\n  \"decision\": \"draft\",\n  \"abstain_reason\": \"\",\n  \"claims\": [\n    {\n      \"id\": \"C1\",\n      \"kind\": \"fact\",\n      \"statement\": \"Chobani uses retail media campaigns with Walmart Connect, Instacart, and Amazon Ads to link ad exposure to basket-level conversion.\",\n      \"passage_ids\": [\"P1\"],\n      \"quote\": \"Retail media: Walmart Connect, Instacart, and Amazon Ads campaigns linking ad exposure to basket-level conversion.\"\n    },\n    {\n      \"id\": \"C2\",\n      \"kind\": \"fact\",\n      \"statement\": \"Chobani's content strategy blends appetizing food cues with simple wellness messages and utility.\",\n      \"passage_ids\": [\"P1\"],\n      \"quote\": \"Content strategy blends appetizing food cues with simple wellness messages and utility.\"\n    },\n    {\n      \"id\": \"C3\",\n      \"kind\": \"fact\",\n      \"statement\": \"Chobani rotates product spotlights, user recipes, and purpose stories that show community impact.\",\n      \"passage_ids\": [\"P1\"],\n      \"quote\": \"Chobani rotates product spotlights, user recipes, and purpose stories that show community impact.\"\n    },\n    {\n      \"id\": \"C4\",\n      \"kind\": \"fact\",\n      \"statement\": \"Chobani leveraged influencer partnerships and social media campaigns to widen its reach.\",\n      \"passage_ids\": [\"P2\"],\n      \"quote\": \"In addition to everyday engagement, Chobani leveraged influencer partnerships and social media campaigns to widen its reach.\"\n    },\n    {\n      \"id\": \"C5\",\n      \"kind\": \"fact\",\n      \"statement\": \"Chobani partnered with health and fitness bloggers, mommy bloggers, and influencers whose values aligned with the brand.\",\n      \"passage_ids\": [\"P2\"],\n      \"quote\": \"Chobani partnered with health and fitness bloggers, mommy bloggers, and influencers whose values aligned with the brand\"\n    },\n    {\n      \"id\": \"C6\",\n      \"kind\": \"fact\",\n      \"statement\": \"Chobani's collaborations are sometimes featured in magazines, on cooking websites, or through live demonstrations.\",\n      \"passage_ids\": [\"P3\"],\n      \"quote\": \"These collaborations are sometimes featured in magazines, on cooking websites, or through live demonstrations\"\n    },\n    {\n      \"id\": \"C7\",\n      \"kind\": \"fact\",\n      \"statement\": \"Chobani launched its 'Love Stories' campaign to amplify customer testimonials.\",\n      \"passage_ids\": [\"P4\"],\n      \"quote\": \"Recognizing the marketing gold in these organic testimonials, Chobani launched its “Love Stories” campaign to amplify them.\"\n    },\n    {\n      \"id\": \"C8\",\n      \"kind\": \"fact\",\n      \"statement\": \"Chobani used social media to spread the word about their products and connected with fans on different platforms.\",\n      \"passage_ids\": [\"P5\"],\n      \"quote\": \"Chobani used social media to spread the word about their products. This approach created a big buzz and made their brand more popular.\"\n    },\n    {\n      \"id\": \"C9\",\n      \"kind\": \"fact\",\n      \"statement\": \"Chobani partnered with the U.S. Olympic Team, making them the official yogurt of the team.\",\n      \"passage_ids\": [\"P5\"],\n      \"quote\": \"Chobani also teamed up with the U.S. Olympic Team. This made them the official yogurt of the team.\"\n    },\n    {\n      \"id\": \"C10\",\n      \"kind\": \"fact\",\n      \"statement\": \"Chobani built an online community of fans through smart use of social media.\",\n      \"passage_ids\": [\"P5\"],\n      \"quote\": \"Chobani built an online community of fans through smart use of social media.\"\n    },\n    {\n      \"id\": \"C11\",\n      \"kind\": \"fact\",\n      \"statement\": \"Chobani's platform-specific strategy includes YouTube and Online Video with six- and fifteen-second cutdowns for Greek yogurt and oat milk.\",\n      \"passage_ids\": [\"P8\"],\n      \"quote\": \"YouTube and Online Video: Six- and fifteen-second cutdowns for Greek yogurt and oat milk, controlled frequency to reduce wear-out.\"\n    },\n    {\n      \"id\": \"C12\",\n      \"kind\": \"fact\",\n      \"statement\": \"Chobani's platform-specific strategy includes TikTok and Instagram Reels with recipe, barista, and high-protein snacking content.\",\n      \"passage_ids\": [\"P8\"],\n      \"quote\": \"TikTok and Instagram Reels: Recipe, barista, and high-protein snacking content, tuned to sound-on behaviors and creator collaboration.\"\n    },\n    {\n      \"id\": \"C13\",\n      \"kind\": \"fact\",\n      \"statement\": \"Chobani partnered with Twitch streamers for an engaging gaming campaign.\",\n      \"passage_ids\": [\"P9\"],\n      \"quote\": \"Chobani teamed up with popular Twitch streamers for an engaging gaming campaign.\"\n    }\n  ],\n  \"brand_summary\": \"Chobani uses retail media campaigns with Walmart Connect, Instacart, and Amazon Ads to link ad exposure to basket-level conversion {C1}. Chobani's content strategy blends appetizing food cues with simple wellness messages and utility {C2}. Chobani rotates product spotlights, user recipes, and purpose stories that show community impact {C3}.\",\n  \"likely_target_audience\": \"Chobani's content strategy targets health-conscious individuals, fitness enthusiasts, and food bloggers {C2}.\",\n  \"current_marketing_strategy\": [\n    \"Chobani uses retail media campaigns with Walmart Connect, Instacart, and Amazon Ads to link ad exposure to basket-level conversion {C1}.\",\n    \"Chobani's content strategy blends appetizing food cues with simple wellness messages and utility {C2}.\",\n    \"Chobani rotates product spotlights, user recipes, and purpose stories that show community impact {C3}.\",\n    \"Chobani leveraged influencer partnerships and social media campaigns to widen its reach {C4}.\",\n    \"Chobani partnered with health and fitness bloggers, mommy bloggers, and influencers whose values aligned with the brand {C5}.\",\n    \"Chobani's collaborations are sometimes featured in magazines, on cooking websites, or through live demonstrations {C6}.\",\n    \"Chobani launched its 'Love Stories' campaign to amplify customer testimonials {C7}.\",\n    \"Chobani used social media to spread the word about their products and connected with fans on different platforms {C8}.\",\n    \"Chobani partnered with the U.S. Olympic Team, making them the official yogurt of the team {C9}.\",\n    \"Chobani built an online community of fans through smart use of social media {C10}.\",\n    \"Chobani's platform-specific strategy includes YouTube and Online Video with six- and fifteen-second cutdowns for Greek yogurt and oat milk {C11}.\",\n    \"Chobani's platform-specific strategy includes TikTok and Instagram Reels with recipe, barista, and high-protein snacking content {C12}.\",\n    \"Chobani partnered with Twitch streamers for an engaging gaming campaign {C13}.\"\n  ],\n  \"unknowns\": [\"Whether Chobani currently runs a creator program for Instagram influencers.\"],\n  \"marketing_gaps\": [],\n  \"collaboration_opportunities\": [\"Collaborate on a TikTok and Instagram Reels campaign featuring recipe, barista, and high-protein snacking content, tuned to sound-on behaviors and creator collaboration {C12}.\"],\n  \"instagram_post_idea\": {\n    \"hook\": \"Join us in celebrating the versatility of Chobani yogurt with a fun recipe challenge!\",\n    \"concept\": \"A carousel post featuring user-submitted recipes using Chobani yogurt, complete with step-by-step instructions and a call to action for followers to share their own creations.\",\n    \"why_it_fits\": \"This concept aligns with Chobani's content strategy of showcasing user recipes and purpose stories that show community impact {C3}. It also fits their platform-specific strategy for Instagram Reels, which includes recipe content {C12}.\"\n  },\n  \"email_subject\": \"Collaboration Opportunity: Showcase Chobani's Versatile Yogurt with a Recipe Challenge\",\n  \"email_body\": \"Hi Chobani Marketing Team,\\n\\nWe're reaching out to propose a fun and engaging Instagram collaboration that aligns with your brand's content strategy. We'd like to create a carousel post featuring user-submitted recipes using Chobani yogurt, complete with step-by-step instructions and a call to action for followers to share their own creations.\\n\\nThis concept fits well with your platform-specific strategy for Instagram Reels, which includes recipe content {C12}. It also supports your community-driven approach by showcasing user recipes and purpose stories that show community impact {C3}.\\n\\nWe'd love to discuss this opportunity further and explore how we can work together to bring this idea to life.\\n\\nBest regards,\\n[Your Name]\"\n}",
+  "raw_response_sha256": "7cd5152f0ae72172d05c8103c8d2157b8492da839f21890e974bed9b2e920cf2",
+  "draft": {
+    "decision": "draft",
+    "abstain_reason": "",
+    "claims": [
+      {
+        "id": "C1",
+        "kind": "fact",
+        "statement": "Chobani uses retail media campaigns with Walmart Connect, Instacart, and Amazon Ads to link ad exposure to basket-level conversion.",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Retail media: Walmart Connect, Instacart, and Amazon Ads campaigns linking ad exposure to basket-level conversion."
+      },
+      {
+        "id": "C2",
+        "kind": "fact",
+        "statement": "Chobani's content strategy blends appetizing food cues with simple wellness messages and utility.",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Content strategy blends appetizing food cues with simple wellness messages and utility."
+      },
+      {
+        "id": "C3",
+        "kind": "fact",
+        "statement": "Chobani rotates product spotlights, user recipes, and purpose stories that show community impact.",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Chobani rotates product spotlights, user recipes, and purpose stories that show community impact."
+      },
+      {
+        "id": "C4",
+        "kind": "fact",
+        "statement": "Chobani leveraged influencer partnerships and social media campaigns to widen its reach.",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "In addition to everyday engagement, Chobani leveraged influencer partnerships and social media campaigns to widen its reach."
+      },
+      {
+        "id": "C5",
+        "kind": "fact",
+        "statement": "Chobani partnered with health and fitness bloggers, mommy bloggers, and influencers whose values aligned with the brand.",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "Chobani partnered with health and fitness bloggers, mommy bloggers, and influencers whose values aligned with the brand"
+      },
+      {
+        "id": "C6",
+        "kind": "fact",
+        "statement": "Chobani's collaborations are sometimes featured in magazines, on cooking websites, or through live demonstrations.",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "These collaborations are sometimes featured in magazines, on cooking websites, or through live demonstrations"
+      },
+      {
+        "id": "C7",
+        "kind": "fact",
+        "statement": "Chobani launched its 'Love Stories' campaign to amplify customer testimonials.",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "Recognizing the marketing gold in these organic testimonials, Chobani launched its “Love Stories” campaign to amplify them."
+      },
+      {
+        "id": "C8",
+        "kind": "fact",
+        "statement": "Chobani used social media to spread the word about their products and connected with fans on different platforms.",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "Chobani used social media to spread the word about their products. This approach created a big buzz and made their brand more popular."
+      },
+      {
+        "id": "C9",
+        "kind": "fact",
+        "statement": "Chobani partnered with the U.S. Olympic Team, making them the official yogurt of the team.",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "Chobani also teamed up with the U.S. Olympic Team. This made them the official yogurt of the team."
+      },
+      {
+        "id": "C10",
+        "kind": "fact",
+        "statement": "Chobani built an online community of fans through smart use of social media.",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "Chobani built an online community of fans through smart use of social media."
+      },
+      {
+        "id": "C11",
+        "kind": "fact",
+        "statement": "Chobani's platform-specific strategy includes YouTube and Online Video with six- and fifteen-second cutdowns for Greek yogurt and oat milk.",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "YouTube and Online Video: Six- and fifteen-second cutdowns for Greek yogurt and oat milk, controlled frequency to reduce wear-out."
+      },
+      {
+        "id": "C12",
+        "kind": "fact",
+        "statement": "Chobani's platform-specific strategy includes TikTok and Instagram Reels with recipe, barista, and high-protein snacking content.",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "TikTok and Instagram Reels: Recipe, barista, and high-protein snacking content, tuned to sound-on behaviors and creator collaboration."
+      },
+      {
+        "id": "C13",
+        "kind": "fact",
+        "statement": "Chobani partnered with Twitch streamers for an engaging gaming campaign.",
+        "passage_ids": [
+          "P9"
+        ],
+        "quote": "Chobani teamed up with popular Twitch streamers for an engaging gaming campaign."
+      }
+    ],
+    "brand_summary": "Chobani uses retail media campaigns with Walmart Connect, Instacart, and Amazon Ads to link ad exposure to basket-level conversion {C1}. Chobani's content strategy blends appetizing food cues with simple wellness messages and utility {C2}. Chobani rotates product spotlights, user recipes, and purpose stories that show community impact {C3}.",
+    "likely_target_audience": "Chobani's content strategy targets health-conscious individuals, fitness enthusiasts, and food bloggers {C2}.",
+    "current_marketing_strategy": [
+      "Chobani uses retail media campaigns with Walmart Connect, Instacart, and Amazon Ads to link ad exposure to basket-level conversion {C1}.",
+      "Chobani's content strategy blends appetizing food cues with simple wellness messages and utility {C2}.",
+      "Chobani rotates product spotlights, user recipes, and purpose stories that show community impact {C3}.",
+      "Chobani leveraged influencer partnerships and social media campaigns to widen its reach {C4}.",
+      "Chobani partnered with health and fitness bloggers, mommy bloggers, and influencers whose values aligned with the brand {C5}.",
+      "Chobani's collaborations are sometimes featured in magazines, on cooking websites, or through live demonstrations {C6}.",
+      "Chobani launched its 'Love Stories' campaign to amplify customer testimonials {C7}.",
+      "Chobani used social media to spread the word about their products and connected with fans on different platforms {C8}.",
+      "Chobani partnered with the U.S. Olympic Team, making them the official yogurt of the team {C9}.",
+      "Chobani built an online community of fans through smart use of social media {C10}.",
+      "Chobani's platform-specific strategy includes YouTube and Online Video with six- and fifteen-second cutdowns for Greek yogurt and oat milk {C11}.",
+      "Chobani's platform-specific strategy includes TikTok and Instagram Reels with recipe, barista, and high-protein snacking content {C12}.",
+      "Chobani partnered with Twitch streamers for an engaging gaming campaign {C13}."
+    ],
+    "unknowns": [
+      "Whether Chobani currently runs a creator program for Instagram influencers."
+    ],
+    "marketing_gaps": [],
+    "collaboration_opportunities": [
+      "Collaborate on a TikTok and Instagram Reels campaign featuring recipe, barista, and high-protein snacking content, tuned to sound-on behaviors and creator collaboration {C12}."
+    ],
+    "instagram_post_idea": {
+      "hook": "Join us in celebrating the versatility of Chobani yogurt with a fun recipe challenge!",
+      "concept": "A carousel post featuring user-submitted recipes using Chobani yogurt, complete with step-by-step instructions and a call to action for followers to share their own creations.",
+      "why_it_fits": "This concept aligns with Chobani's content strategy of showcasing user recipes and purpose stories that show community impact {C3}. It also fits their platform-specific strategy for Instagram Reels, which includes recipe content {C12}."
+    },
+    "email_subject": "Collaboration Opportunity: Showcase Chobani's Versatile Yogurt with a Recipe Challenge",
+    "email_body": "Hi Chobani Marketing Team,\n\nWe're reaching out to propose a fun and engaging Instagram collaboration that aligns with your brand's content strategy. We'd like to create a carousel post featuring user-submitted recipes using Chobani yogurt, complete with step-by-step instructions and a call to action for followers to share their own creations.\n\nThis concept fits well with your platform-specific strategy for Instagram Reels, which includes recipe content {C12}. It also supports your community-driven approach by showcasing user recipes and purpose stories that show community impact {C3}.\n\nWe'd love to discuss this opportunity further and explore how we can work together to bring this idea to life.\n\nBest regards,\n[Your Name]"
+  },
+  "completion": "{\"schema_version\": \"brandpilot.output.v3\", \"decision\": \"draft\", \"evidence_status\": \"sufficient\", \"abstain_reason\": \"\", \"brand_summary\": \"Chobani uses retail media campaigns with Walmart Connect, Instacart, and Amazon Ads to link ad exposure to basket-level conversion [P1]. Chobani's content strategy blends appetizing food cues with simple wellness messages and utility [P1]. Chobani rotates product spotlights, user recipes, and purpose stories that show community impact [P1].\", \"likely_target_audience\": \"Chobani's content strategy targets health-conscious individuals, fitness enthusiasts, and food bloggers [P1].\", \"current_marketing_strategy\": [\"Chobani uses retail media campaigns with Walmart Connect, Instacart, and Amazon Ads to link ad exposure to basket-level conversion [P1].\", \"Chobani's content strategy blends appetizing food cues with simple wellness messages and utility [P1].\", \"Chobani rotates product spotlights, user recipes, and purpose stories that show community impact [P1].\", \"Chobani leveraged influencer partnerships and social media campaigns to widen its reach [P2].\", \"Chobani partnered with health and fitness bloggers, mommy bloggers, and influencers whose values aligned with the brand [P2].\", \"Chobani's collaborations are sometimes featured in magazines, on cooking websites, or through live demonstrations [P3].\", \"Chobani launched its 'Love Stories' campaign to amplify customer testimonials [P4].\", \"Chobani used social media to spread the word about their products and connected with fans on different platforms [P5].\", \"Chobani partnered with the U.S. Olympic Team, making them the official yogurt of the team [P5].\", \"Chobani built an online community of fans through smart use of social media [P5].\", \"Chobani's platform-specific strategy includes YouTube and Online Video with six- and fifteen-second cutdowns for Greek yogurt and oat milk [P8].\", \"Chobani's platform-specific strategy includes TikTok and Instagram Reels with recipe, barista, and high-protein snacking content [P8].\", \"Chobani partnered with Twitch streamers for an engaging gaming campaign [P9].\"], \"unknowns\": [\"Whether Chobani currently runs a creator program for Instagram influencers.\"], \"marketing_gaps\": [], \"collaboration_opportunities\": [\"Collaborate on a TikTok and Instagram Reels campaign featuring recipe, barista, and high-protein snacking content, tuned to sound-on behaviors and creator collaboration [P8].\"], \"instagram_post_idea\": {\"hook\": \"Join us in celebrating the versatility of Chobani yogurt with a fun recipe challenge!\", \"concept\": \"A carousel post featuring user-submitted recipes using Chobani yogurt, complete with step-by-step instructions and a call to action for followers to share their own creations.\", \"why_it_fits\": \"This concept aligns with Chobani's content strategy of showcasing user recipes and purpose stories that show community impact [P1]. It also fits their platform-specific strategy for Instagram Reels, which includes recipe content [P8].\"}, \"email_subject\": \"Collaboration Opportunity: Showcase Chobani's Versatile Yogurt with a Recipe Challenge\", \"email_body\": \"Hi Chobani Marketing Team,\\n\\nWe're reaching out to propose a fun and engaging Instagram collaboration that aligns with your brand's content strategy. We'd like to create a carousel post featuring user-submitted recipes using Chobani yogurt, complete with step-by-step instructions and a call to action for followers to share their own creations.\\n\\nThis concept fits well with your platform-specific strategy for Instagram Reels, which includes recipe content [P8]. It also supports your community-driven approach by showcasing user recipes and purpose stories that show community impact [P1].\\n\\nWe'd love to discuss this opportunity further and explore how we can work together to bring this idea to life.\\n\\nBest regards,\\n[Your Name]\", \"claims\": [{\"id\": \"C1\", \"kind\": \"fact\", \"statement\": \"Chobani uses retail media campaigns with Walmart Connect, Instacart, and Amazon Ads to link ad exposure to basket-level conversion.\", \"passage_ids\": [\"P1\"], \"quote\": \"Retail media: Walmart Connect, Instacart, and Amazon Ads campaigns linking ad exposure to basket-level conversion.\"}, {\"id\": \"C2\", \"kind\": \"fact\", \"statement\": \"Chobani's content strategy blends appetizing food cues with simple wellness messages and utility.\", \"passage_ids\": [\"P1\"], \"quote\": \"Content strategy blends appetizing food cues with simple wellness messages and utility.\"}, {\"id\": \"C3\", \"kind\": \"fact\", \"statement\": \"Chobani rotates product spotlights, user recipes, and purpose stories that show community impact.\", \"passage_ids\": [\"P1\"], \"quote\": \"Chobani rotates product spotlights, user recipes, and purpose stories that show community impact.\"}, {\"id\": \"C4\", \"kind\": \"fact\", \"statement\": \"Chobani leveraged influencer partnerships and social media campaigns to widen its reach.\", \"passage_ids\": [\"P2\"], \"quote\": \"In addition to everyday engagement, Chobani leveraged influencer partnerships and social media campaigns to widen its reach.\"}, {\"id\": \"C5\", \"kind\": \"fact\", \"statement\": \"Chobani partnered with health and fitness bloggers, mommy bloggers, and influencers whose values aligned with the brand.\", \"passage_ids\": [\"P2\"], \"quote\": \"Chobani partnered with health and fitness bloggers, mommy bloggers, and influencers whose values aligned with the brand\"}, {\"id\": \"C6\", \"kind\": \"fact\", \"statement\": \"Chobani's collaborations are sometimes featured in magazines, on cooking websites, or through live demonstrations.\", \"passage_ids\": [\"P3\"], \"quote\": \"These collaborations are sometimes featured in magazines, on cooking websites, or through live demonstrations\"}, {\"id\": \"C7\", \"kind\": \"fact\", \"statement\": \"Chobani launched its 'Love Stories' campaign to amplify customer testimonials.\", \"passage_ids\": [\"P4\"], \"quote\": \"Recognizing the marketing gold in these organic testimonials, Chobani launched its “Love Stories” campaign to amplify them.\"}, {\"id\": \"C8\", \"kind\": \"fact\", \"statement\": \"Chobani used social media to spread the word about their products and connected with fans on different platforms.\", \"passage_ids\": [\"P5\"], \"quote\": \"Chobani used social media to spread the word about their products. This approach created a big buzz and made their brand more popular.\"}, {\"id\": \"C9\", \"kind\": \"fact\", \"statement\": \"Chobani partnered with the U.S. Olympic Team, making them the official yogurt of the team.\", \"passage_ids\": [\"P5\"], \"quote\": \"Chobani also teamed up with the U.S. Olympic Team. This made them the official yogurt of the team.\"}, {\"id\": \"C10\", \"kind\": \"fact\", \"statement\": \"Chobani built an online community of fans through smart use of social media.\", \"passage_ids\": [\"P5\"], \"quote\": \"Chobani built an online community of fans through smart use of social media.\"}, {\"id\": \"C11\", \"kind\": \"fact\", \"statement\": \"Chobani's platform-specific strategy includes YouTube and Online Video with six- and fifteen-second cutdowns for Greek yogurt and oat milk.\", \"passage_ids\": [\"P8\"], \"quote\": \"YouTube and Online Video: Six- and fifteen-second cutdowns for Greek yogurt and oat milk, controlled frequency to reduce wear-out.\"}, {\"id\": \"C12\", \"kind\": \"fact\", \"statement\": \"Chobani's platform-specific strategy includes TikTok and Instagram Reels with recipe, barista, and high-protein snacking content.\", \"passage_ids\": [\"P8\"], \"quote\": \"TikTok and Instagram Reels: Recipe, barista, and high-protein snacking content, tuned to sound-on behaviors and creator collaboration.\"}, {\"id\": \"C13\", \"kind\": \"fact\", \"statement\": \"Chobani partnered with Twitch streamers for an engaging gaming campaign.\", \"passage_ids\": [\"P9\"], \"quote\": \"Chobani teamed up with popular Twitch streamers for an engaging gaming campaign.\"}], \"citations\": [\"[P1]\", \"[P2]\", \"[P3]\", \"[P4]\", \"[P5]\", \"[P8]\", \"[P9]\"]}",
+  "completion_sha256": "3238579be8331f3d08eedc03f4ecd34f04eb07e8365028f6614028e7eea6fec6",
+  "deterministic": {
+    "errors": [
+      "current_marketing_strategy[8]: factual sentence without a claim marker: 'Chobani partnered with the U.S.'"
+    ],
+    "warnings": []
+  },
+  "created_at": "2026-11-22T21:48:14+00:00",
+  "approved": false
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "thrive-market",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "ed5bf926801b01e5f73b9daf8c07d8b6c7867569f338f689df590ac50ee72f2d",
+    "prompt_sha256": "4cc47093e419563867779fad552aa6d9d660bc6773c0de31d88746c757cd90e7",
+    "completion_sha256": "09cfe773474f393434ad0271863bc5829477c895c4d25659168459441c2f06af",
+    "audit_sha256": "f3af352923a2664906ca15af59bdca9f23be87d67ecc41bcd64088548e242ce3"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 8,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:43+00:00",
+  "record_sha256": "70013576fc32a0fde0149fb0834ecc708851806a36cddd6280a48cd57f28997f"
+}

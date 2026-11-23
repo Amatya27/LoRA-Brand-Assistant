@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "avocado-green-mattress",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "f2755f78396322838fdc9a120c0b032b7202eb154efaec8d93b4db5b9b1af6c9",
+    "prompt_sha256": "dcb3e8250f2b94a7a323c445c3b3fd0a96c1a98c81ff2893ef556d41e666bc65",
+    "completion_sha256": "96c6d084fb5fc4528f392790aa4ecbcc2dff157c732bef8ab878047204341552",
+    "audit_sha256": "97b665bbafdffb4a8c956eb098de75c8dc812804f405175f513c46e2fdcc9431"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 17,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:44+00:00",
+  "record_sha256": "61f0223bdfb8466600cd3058ec6db32d3b9948c4475c492146db61f101140ceb"
+}

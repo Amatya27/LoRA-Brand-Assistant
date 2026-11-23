@@ -1,0 +1,23 @@
+{
+  "company_id": "whoop",
+  "acceptance_basis": "auto_threshold_0.7",
+  "decision": "reject",
+  "reasons": [
+    "pruned draft fails check_draft: collaboration_opportunities[0]: vendor/provider claim C4 (P3) is not attributed to its source (modash) in the prose: 'Collaborate on an Instagram post featuring a WHOOP influencer who averages 10K-5'"
+  ],
+  "groundedness": 0.875,
+  "claim_support": {
+    "C1": "supported",
+    "C2": "supported",
+    "C3": "supported",
+    "C4": "supported",
+    "C5": "supported",
+    "C6": "supported",
+    "C7": "deterministic: claim C7: quote does not occur in cited passage(s) ['P8']",
+    "C8": "supported"
+  },
+  "removed_claims": [],
+  "label_completion_sha256": "1b7316b73e9df0a1da7ff123d6a8d4fc1429885aeea0a1bfefdb295ee9993b93",
+  "audit_sha256": "2d9d81af927bb459e17fe66df668e81da41a9f685f25d008421624692602512c",
+  "created_at": "2026-11-23T00:28:48+00:00"
+}

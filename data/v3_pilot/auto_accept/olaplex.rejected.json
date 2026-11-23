@@ -1,0 +1,20 @@
+{
+  "company_id": "olaplex",
+  "acceptance_basis": "auto_threshold_0.7",
+  "decision": "reject",
+  "reasons": [
+    "groundedness 0.60 < 0.7"
+  ],
+  "groundedness": 0.6,
+  "claim_support": {
+    "C1": "supported",
+    "C2": "reviewer response invalid for this claim: C2: reviewer quote does not occur in the referenced passage(s)",
+    "C3": "deterministic: claim C3: quote does not occur in cited passage(s) ['P8']",
+    "C4": "supported",
+    "C5": "supported"
+  },
+  "removed_claims": [],
+  "label_completion_sha256": "d2eae97f507136e37613c7b92ce31eca1c96dd35044aa8a4f12b56b6058cbb96",
+  "audit_sha256": "20c12bdffe044b485ecabef2c3b2c963d20e840574472dd6c3a6841971d95c24",
+  "created_at": "2026-11-23T00:28:47+00:00"
+}

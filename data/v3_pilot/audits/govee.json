@@ -1,0 +1,137 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "govee",
+  "bound_to": {
+    "packet_sha256": "6434ed442ba9f38bcaa5b95456832e73195ee70c8f2a1b5ecabc3e9b0d19585a",
+    "prompt_sha256": "94858159af7f8f45492be98ef748e3540414b92f902bdce290c3cfef0d54cfcd",
+    "completion_sha256": "c115447314d1515c0f4684e96dbd87b3f2c0f839336a961b66d6aa7beff24bc1",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [
+      "current_marketing_strategy[2]: vendor/provider claim C3 (P3) is not attributed to its source (stride-social) in the prose: 'Stride Social collaborated with product review creators to produce organic-style'"
+    ],
+    "warnings": []
+  },
+  "raw_response_sha256": "8729c5aa5505ae99f08db4166107ca82f35ff6ed12b48fb00582a5c2af7b15e0",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Govee Teams Up with Tim Howard Govee Teams Up with Tim Howard to Bring \\\"Unstoppable Fun\\\" to Watch Parties\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states Govee partnered with Tim Howard for watch parties.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"Govee, the Official Smart Lighting Partner of House of the Dragon Season 3, brings Westeros's fire and shadow off the screen and into your room.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms Govee's collaboration with House of the Dragon Season 3.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Stride Social collaborated with product review creators to produce organic-style videos that seamlessly integrated Govee's LED lights into their content.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states this collaboration.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"Govee's influencer campaign showcased their LED lights, to push brand awareness for their product ## range.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms an influencer campaign to promote brand awareness.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"Govee has promoted 8 products with 51 ads in the past 7 days, including 17 new creatives.\",\n      \"issues\": [],\n      \"reason\": \"The passage provides data on Govee's advertising activity.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P10\"\n      ],\n      \"quote\": \"Since 2017, Govee has been revolutionizing the smart living experience with innovative lighting solutions.\",\n      \"issues\": [],\n      \"reason\": \"The passage states Govee has been innovating since 2017.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"Govee is a leading smart lighting brand\"\n    },\n    {\n      \"field\": \"likely_target_audience\",\n      \"text\": \"The likely target audience for Govee's products includes smart lighting enthusiasts, soccer fans, and fans of House of the Dragon\"\n    },\n    {\n      \"field\": \"current_marketing_strategy\",\n      \"text\": \"Govee has been revolutionizing the smart living experience with innovative lighting solutions since 2017\"\n    },\n    {\n      \"field\": \"instagram_post_idea\",\n      \"text\": \"This post would showcase the immersive experience of bringing Westeros's fire and shadow into your room\"\n    },\n    {\n      \"field\": \"email_body\",\n      \"text\": \"We believe this concept would resonate well with your audience and further enhance brand awareness for Govee's smart lighting products.\"\n    }\n  ],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Govee Teams Up with Tim Howard Govee Teams Up with Tim Howard to Bring \"Unstoppable Fun\" to Watch Parties",
+        "issues": [],
+        "reason": "The passage explicitly states Govee partnered with Tim Howard for watch parties."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "Govee, the Official Smart Lighting Partner of House of the Dragon Season 3, brings Westeros's fire and shadow off the screen and into your room.",
+        "issues": [],
+        "reason": "The passage confirms Govee's collaboration with House of the Dragon Season 3."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Stride Social collaborated with product review creators to produce organic-style videos that seamlessly integrated Govee's LED lights into their content.",
+        "issues": [],
+        "reason": "The passage directly states this collaboration."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "Govee's influencer campaign showcased their LED lights, to push brand awareness for their product ## range.",
+        "issues": [],
+        "reason": "The passage confirms an influencer campaign to promote brand awareness."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "Govee has promoted 8 products with 51 ads in the past 7 days, including 17 new creatives.",
+        "issues": [],
+        "reason": "The passage provides data on Govee's advertising activity."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P10"
+        ],
+        "quote": "Since 2017, Govee has been revolutionizing the smart living experience with innovative lighting solutions.",
+        "issues": [],
+        "reason": "The passage states Govee has been innovating since 2017."
+      }
+    ],
+    "unmarked_factual_statements": [
+      {
+        "field": "email_body",
+        "text": "We believe this concept would resonate well with your audience and further enhance brand awareness for Govee's smart lighting products."
+      }
+    ],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "fail",
+  "reasons": [
+    "1 deterministic check error(s)"
+  ],
+  "created_at": "2026-11-22T23:59:34+00:00",
+  "audit_sha256": "ea01d78e3cf91237d7e69e3db2995bfc52f58434131d74121ef431848c746d0d",
+  "dismissed_reviewer_flags": [
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "Govee is a leading smart lighting brand"
+      },
+      "reason": "flagged text does not occur in the label"
+    },
+    {
+      "flag": {
+        "field": "likely_target_audience",
+        "text": "The likely target audience for Govee's products includes smart lighting enthusiasts, soccer fans, and fans of House of the Dragon"
+      },
+      "reason": "sentence in likely_target_audience carries a claim marker; judged via its claim",
+      "matched_sentence": "the likely target audience for govee's products includes smart lighting enthusiasts soccer fans and fans of house of the dragon"
+    },
+    {
+      "flag": {
+        "field": "current_marketing_strategy",
+        "text": "Govee has been revolutionizing the smart living experience with innovative lighting solutions since 2017"
+      },
+      "reason": "sentence in brand_summary carries a claim marker; judged via its claim",
+      "matched_sentence": "govee has been revolutionizing the smart living experience with innovative lighting solutions since 2017"
+    },
+    {
+      "flag": {
+        "field": "instagram_post_idea",
+        "text": "This post would showcase the immersive experience of bringing Westeros's fire and shadow into your room"
+      },
+      "reason": "flagged text does not occur in the label"
+    }
+  ]
+}

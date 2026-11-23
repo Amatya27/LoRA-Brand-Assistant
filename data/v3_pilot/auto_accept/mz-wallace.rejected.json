@@ -1,0 +1,24 @@
+{
+  "company_id": "mz-wallace",
+  "acceptance_basis": "auto_threshold_0.7",
+  "decision": "reject",
+  "reasons": [
+    "pruned draft fails check_draft: likely_target_audience: factual sentence without a claim marker: 'Insufficient Evidence'"
+  ],
+  "groundedness": 1.0,
+  "claim_support": {
+    "C1": "supported",
+    "C2": "supported",
+    "C3": "supported",
+    "C4": "supported",
+    "C5": "supported",
+    "C6": "supported",
+    "C7": "supported",
+    "C8": "supported",
+    "C9": "supported"
+  },
+  "removed_claims": [],
+  "label_completion_sha256": "6bb0e926234126ff5b436c47e01aed0091dc7ee537c48def9fdfb9afa10543ef",
+  "audit_sha256": "0d4d4cdfd11de6abf298a5251fb6cc3ffe94b992b0049edbbd498063f3ec53f0",
+  "created_at": "2026-11-23T00:28:46+00:00"
+}

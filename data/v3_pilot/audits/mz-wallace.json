@@ -1,0 +1,134 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "mz-wallace",
+  "bound_to": {
+    "packet_sha256": "4255ed95275d6268d7e1b8f50e3dc7b069dc2820bb400cf7cfeccbda9afe77e4",
+    "prompt_sha256": "8b29d1fb5c5150a2c163ee8800495fca91bd1fdb1983285c072f18c07afffc2b",
+    "completion_sha256": "6bb0e926234126ff5b436c47e01aed0091dc7ee537c48def9fdfb9afa10543ef",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [
+      "likely_target_audience: factual sentence without a claim marker: 'Insufficient Evidence'"
+    ],
+    "warnings": [
+      "unknowns[0]: unknowns normally carry no claim markers"
+    ]
+  },
+  "raw_response_sha256": "d1034236b34db218c242449ef039ba9e8ca1ac8609680e5087ab59093beae5bc",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"It was a long time coming, but after nearly 20 years in the game, accessories brand MZ Wallace has finally launched a men's collection” November 2019 CNN\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states MZ Wallace launched its first men's collection in November 2019.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"As a B Corp-certified brand, we hold ourselves to the highest standards, ensuring that our design choices and business practices create lasting value for both people and the planet.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that MZ Wallace is a B Corp-certified brand.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\",\n        \"P4\"\n      ],\n      \"quote\": \"MZW x MARLA AARON Our limited edition Lock Print Accordion Jewelry Case is back and makes for the perfect gift.\",\n      \"issues\": [],\n      \"reason\": \"The passages mention a collaboration with MARLA AARON and a Lock Print Accordion Jewelry Case.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"Signature nylon fabrics are bluesign® approved and Global Recycled Standard (GRS) certified\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms that MZ Wallace's nylon fabrics have specific certifications.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"The brand owes its longevity and success to its clever ability to marry practical design with luxury details.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes MZ Wallace's ability to combine practical design with luxury.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"Packaging made from post-consumer recycled and biodegradable materials\",\n      \"issues\": [],\n      \"reason\": \"The passage states that MZ Wallace uses recycled and biodegradable packaging.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"Designed to Do More # DESIGNED TO DO MORE® We believe in design that does more, so you can do more.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly reflects MZ Wallace's brand positioning.\"\n    },\n    {\n      \"claim_id\": \"C8\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"thanks to strategic relationships with department stores, wholesale makes up a big piece of the pie.\",\n      \"issues\": [],\n      \"reason\": \"The passage mentions strategic relationships with department stores and wholesale.\"\n    },\n    {\n      \"claim_id\": \"C9\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"Our signature and super-light recycled nylon prevents waste and lowers our impact on the environment.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes MZ Wallace's use of lightweight, recycled nylon.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "It was a long time coming, but after nearly 20 years in the game, accessories brand MZ Wallace has finally launched a men's collection” November 2019 CNN",
+        "issues": [],
+        "reason": "The passage explicitly states MZ Wallace launched its first men's collection in November 2019."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "As a B Corp-certified brand, we hold ourselves to the highest standards, ensuring that our design choices and business practices create lasting value for both people and the planet.",
+        "issues": [],
+        "reason": "The passage directly states that MZ Wallace is a B Corp-certified brand."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3",
+          "P4"
+        ],
+        "quote": "MZW x MARLA AARON Our limited edition Lock Print Accordion Jewelry Case is back and makes for the perfect gift.",
+        "issues": [],
+        "reason": "The passages mention a collaboration with MARLA AARON and a Lock Print Accordion Jewelry Case."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "Signature nylon fabrics are bluesign® approved and Global Recycled Standard (GRS) certified",
+        "issues": [],
+        "reason": "The passage confirms that MZ Wallace's nylon fabrics have specific certifications."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "The brand owes its longevity and success to its clever ability to marry practical design with luxury details.",
+        "issues": [],
+        "reason": "The passage describes MZ Wallace's ability to combine practical design with luxury."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "Packaging made from post-consumer recycled and biodegradable materials",
+        "issues": [],
+        "reason": "The passage states that MZ Wallace uses recycled and biodegradable packaging."
+      },
+      {
+        "claim_id": "C7",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "Designed to Do More # DESIGNED TO DO MORE® We believe in design that does more, so you can do more.",
+        "issues": [],
+        "reason": "The passage directly reflects MZ Wallace's brand positioning."
+      },
+      {
+        "claim_id": "C8",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "thanks to strategic relationships with department stores, wholesale makes up a big piece of the pie.",
+        "issues": [],
+        "reason": "The passage mentions strategic relationships with department stores and wholesale."
+      },
+      {
+        "claim_id": "C9",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "Our signature and super-light recycled nylon prevents waste and lowers our impact on the environment.",
+        "issues": [],
+        "reason": "The passage describes MZ Wallace's use of lightweight, recycled nylon."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "fail",
+  "reasons": [
+    "1 deterministic check error(s)"
+  ],
+  "created_at": "2026-11-23T00:12:11+00:00",
+  "audit_sha256": "0d4d4cdfd11de6abf298a5251fb6cc3ffe94b992b0049edbbd498063f3ec53f0",
+  "dismissed_reviewer_flags": []
+}

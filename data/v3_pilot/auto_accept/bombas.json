@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "bombas",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "ac21918fd0c6fec97904dc4e68701201faec4f10bf2f91b596d1d85ed62359da",
+    "prompt_sha256": "4e0ffc4499695aa2359d3b5ae013d6efd9c855de2ca0c08aaafde29e968839f9",
+    "completion_sha256": "8d91d6129d62a073306b30f1d0264478eea6e95e53f3258f4b119ad27e9535f1",
+    "audit_sha256": "b910d0dd97cf2cde350086e86762962d048dba930a2e2f83d51f86c0b33e72c6"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 7,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:44+00:00",
+  "record_sha256": "1b170ddd67c170c3a9298f596c2f6ea704e7ab03e3c7e841338991e561de61d8"
+}

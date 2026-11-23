@@ -1,0 +1,87 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "allbirds",
+  "bound_to": {
+    "packet_sha256": "98148e01b46631a72eb3af4e372edaf94b0531b8b4a17e0050f83b238938fe55",
+    "prompt_sha256": "66b9f0d07c3e10c2d7816f1b3bdb8c98f7a345a3c9434afd2b7eef17b4e55cff",
+    "completion_sha256": "6de4383cfa1e0a1b0977f91f5d8b265d1d68f3c6e07a178c65ad2f81b2b07831",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": []
+  },
+  "raw_response_sha256": "512896eb91772fc1e4cb466b38fc0ddcfb9c0e3d5fef92d07845024e3d20fc19",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"First, we started by working with The New Zealand Merino Company’s regenerative wool program, ZQRX, to source M0.0NSHOT’s wool from Lake Hawea Station.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that Allbirds worked with the New Zealand Merino Company to source wool.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Second, we calculated the specific farm-level carbon footprint of Lake Hawea Station.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Allbirds calculated the carbon footprint.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Then, we collaborated with The New Zealand Merino Company to translate this farm footprint into a product-level wool material carbon intensity for M0.0NSHOT.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms Allbirds collaborated to translate the farm footprint.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"Allbirds believes this wool carbon intensity value captures a more comprehensive model of the total emissions fluxes happening on-farm.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly quotes Allbirds' belief about the wool carbon intensity value.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"Lake Hawea Station is deeply committed to farming regeneratively, investing significantly in enhancing our biodiversity and have introduced new animal well-being programs and hydro and solar infrastructure.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes Lake Hawea Station's commitment to regenerative farming practices.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "First, we started by working with The New Zealand Merino Company’s regenerative wool program, ZQRX, to source M0.0NSHOT’s wool from Lake Hawea Station.",
+        "issues": [],
+        "reason": "The passage explicitly states that Allbirds worked with the New Zealand Merino Company to source wool."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Second, we calculated the specific farm-level carbon footprint of Lake Hawea Station.",
+        "issues": [],
+        "reason": "The passage states that Allbirds calculated the carbon footprint."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Then, we collaborated with The New Zealand Merino Company to translate this farm footprint into a product-level wool material carbon intensity for M0.0NSHOT.",
+        "issues": [],
+        "reason": "The passage confirms Allbirds collaborated to translate the farm footprint."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "Allbirds believes this wool carbon intensity value captures a more comprehensive model of the total emissions fluxes happening on-farm.",
+        "issues": [],
+        "reason": "The passage directly quotes Allbirds' belief about the wool carbon intensity value."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "Lake Hawea Station is deeply committed to farming regeneratively, investing significantly in enhancing our biodiversity and have introduced new animal well-being programs and hydro and solar infrastructure.",
+        "issues": [],
+        "reason": "The passage describes Lake Hawea Station's commitment to regenerative farming practices."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-22T20:05:37+00:00",
+  "audit_sha256": "c407fb9b9ee000269c9b717d010fb354c287a0d70119fc8c1dc5f6b1d10a4a35",
+  "dismissed_reviewer_flags": []
+}

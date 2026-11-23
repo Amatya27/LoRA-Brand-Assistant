@@ -1,0 +1,27 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "bones-coffee",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "9c87dae136c352cbc5e29fba931e88653093c9a8e730a0fa7cd2e816bb148814",
+    "prompt_sha256": "eae026c88cca6dfc0911515702f05ca0d1911db1ec801c00f2ca3b4a1b2caf55",
+    "completion_sha256": "a94756c6e1fcc52262bc424c7c59e11ad4a2f291dafd508eed0a040a8ed736c9",
+    "audit_sha256": "c03f81bac46d6e7f453db711b7cfc19c735ac5d40a68c6919c51ed07356c4dbe"
+  },
+  "groundedness_before_pruning": 0.75,
+  "claims_total_before_pruning": 4,
+  "removed_claims": [
+    "C2"
+  ],
+  "removed_claim_reasons": {
+    "C2": "deterministic: claim C2: quote does not occur in cited passage(s) ['P1', 'P5']"
+  },
+  "original_completion_sha256": "cbdfa2b4e5f2cf0d8a9e3890346f7d23eda076cf23fc27c8595d0ad9ea7631b0",
+  "original_audit_sha256": "12c34af1eae4d0afbf7f88dfc5dadb98c05c19f6111dae5128c8810bf260f9b6",
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:30:41+00:00",
+  "record_sha256": "2b23188f37e65006d21aa3414952337e4b7d5c1bc363255e27b0397bb3c83f03"
+}

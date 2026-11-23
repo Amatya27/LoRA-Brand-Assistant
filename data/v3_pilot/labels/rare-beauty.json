@@ -1,0 +1,230 @@
+{
+  "schema_version": "brandpilot.label.v3",
+  "company_id": "rare-beauty",
+  "packet_path": "packets/rare-beauty.json",
+  "packet_sha256": "b05ad52dc343069137a98b3c194c7fe9cde10d8adcdbb99533c1e2daf101ace8",
+  "prompt_version": "brandpilot.prompt.v3.3",
+  "prompt": "You are a grounded brand-outreach assistant for our team. Use only the evidence passages below.\nNever use outside knowledge. Return valid JSON only.\n\nSeparate three things:\n1. OBSERVED FACTS - things a passage actually states about this company. Each fact is a claim with an id (C1, C2, ...),\n   the passage id(s) that support it, and an exact quote copied word-for-word from that passage.\n2. UNKNOWNS - things the evidence does not tell us (put them in \"unknowns\"). A channel, program or audience that does\n   not appear in these passages is UNKNOWN. It is never a weakness, never a \"gap\", and never a reason for outreach.\n3. PROPOSALS - collaboration ideas from our team. Proposals are not facts, but each must build on a positively supported\n   fact (an existing campaign, partnership, product, community, value or theme) and cite that premise.\n\nRules:\n- Put a claim marker like {C1} (curly braces) right after every factual statement in every field, including the\n  email and Instagram idea. Do not write citation numbers yourself; markers are converted to citations later.\n- A claim's \"quote\" must be copied character-for-character from the cited passage: 5 to 25 consecutive words, no\n  paraphrasing, no joining of separate sentences. If you cannot find such a quote, drop the claim and every sentence\n  that depends on it.\n- Audience and strategy sentences are factual: each needs a marker. If no passage states the audience, write\n  INSUFFICIENT_EVIDENCE instead of guessing.\n- Pitch lines (email subject, hook, concept) should describe the proposed post (\"A carousel featuring ...\",\n  \"Collaborate on ...\"). Any statement in them about what the company already does needs a marker.\n- Respect passage types. \"proposed_or_mock_work\" and \"author_recommendation\" passages describe ideas, not things the\n  company did: never state them as company activity. \"provider_reported_result\" passages are claims by a vendor or\n  agency: attribute them (\"X reports that ...\"). \"creator_or_influencer_audience_data\" describes creators' followers,\n  not the company's customers. \"vendor_generated_profile_or_analytics\" passages are a tool vendor's estimates\n  (e.g. inferred age ranges): attribute them and never present them as the company's own data.\n  \"forward_looking_statement\" passages describe plans or intentions, not completed activity.\n- Mind time: if a passage describes past activity, do not present it as current.\n- \"marketing_gaps\" may only contain a weakness that a passage positively states. Usually it is [].\n- Never promise results. Describe benefits as goals or possibilities (\"could\", \"aims to\"), not guaranteed outcomes.\n- Decision: write \"draft\" when at least one concrete, evidence-supported collaboration opportunity exists. Otherwise write\n  \"abstain\", give an abstain_reason, set pitch fields to INSUFFICIENT_EVIDENCE and leave collaboration_opportunities empty.\n- The email is from our team to the company, proposing one collaborative Instagram post. The pitch, the post idea and\n  every collaboration opportunity are for Instagram only (no TikTok, YouTube, podcasts or other channels).\n- When a sentence uses a vendor, agency or analytics passage, name that source in the sentence itself\n  (\"According to AdLibrary, ...\", \"Attentive reports that ...\").\n- Each \"unknowns\" item names one specific thing the passages do not tell us (e.g. \"Whether X runs a creator program\").\n  Never write placeholder text such as \"what the evidence does not show\".\n\nRequired JSON:\n{\n  \"decision\": \"draft\" or \"abstain\",\n  \"abstain_reason\": \"string or empty\",\n  \"claims\": [{\"id\": \"C1\", \"kind\": \"fact | provider_reported | premise\", \"statement\": \"string\",\n              \"passage_ids\": [\"P1\"], \"quote\": \"exact words from the passage\"}],\n  \"brand_summary\": \"Full sentences, each followed by its marker, e.g. \"X makes ... {C1}.\" Never only markers. Or INSUFFICIENT_EVIDENCE\",\n  \"likely_target_audience\": \"A full sentence followed by its marker, or INSUFFICIENT_EVIDENCE\",\n  \"current_marketing_strategy\": [\"text with markers\"],\n  \"unknowns\": [\"one specific open question, e.g. Whether the company works with creators\"],\n  \"marketing_gaps\": [],\n  \"collaboration_opportunities\": [\"proposal that builds on a cited fact {C2}\"],\n  \"instagram_post_idea\": {\"hook\": \"string\", \"concept\": \"string\", \"why_it_fits\": \"string\"},\n  \"email_subject\": \"string\",\n  \"email_body\": \"string\"\n}\n\nCompany: Rare Beauty (company_id rare-beauty; category: makeup)\nOfficial domains: rarebeauty.com\nRecipient: the marketing team\nPacket status: ok\n\nEvidence passages:\n[P1] source: https://www.rarebeauty.com/pages/about | document: official_domain | type: brand_positioning | dates in text: none | published: unknown\n\"Our Mission We are on a mission to help everyone celebrate their individuality by redefining what beautiful means. We want to promote self-acceptance and give people the tools they need to feel less alone in the world. Our vision is to create a safe, welcoming space in beauty—and beyond—that supports mental well-being across age, gender identity, sexual orientation, race, cultural background, physical or mental ability, and perspective. We believe in the beauty of imperfections. We nurture a caring, respectful community. We create meaningful connections and relationships. We champion authenticity and positivity. We lead with transparency to build trust.\"\n\n[P2] source: https://www.rarebeauty.com/pages/about | document: official_domain | type: descriptive | dates in text: none | published: unknown\n\"Our Founder I think Rare Beauty can be more than a beauty brand—it can make an impact. I want us all to stop comparing ourselves to each other and just start embracing our own uniqueness.\"\n\n[P3] source: https://digitalagencynetwork.com/rare-beauty-marketing-campaigns/ | document: third_party_confirmed | type: actual_activity | dates in text: none | published: unknown\n\"So we can identify Rare Beauty target audience as follows: ───────────────────┬──────────────────────────────────────┬───────────────────────────────────────── Audience │Marketing Opportunity │Relevant Campaign Approach ───────────────────┼──────────────────────────────────────┼───────────────────────────────────────── Gen Z beauty │Self-expression, product discovery, │TikTok-native creator content, Soft Pinch consumers │and relatable demonstrations │tutorials, short-form video ───────────────────┼──────────────────────────────────────┼───────────────────────────────────────── Mental │Shared values and interest in │Rare Impact Fund, Your Words Matter, health-conscious │responsible brand behavior │Mental Health Summit consumers │ │ ───────────────────┼──────────────────────────────────────┼───────────────────────────────────────── Selena Gomez’s │Familiarity, recognition, and trust │Founder-led storytelling and product existing audience │transfer │demonstrations ───────────────────┼──────────────────────────────────────┼───────────────────────────────────────── Accessibility-focus│Clear product education and │Inclusive product design communication, ed shoppers │consideration of different needs │accessible packaging, tutorials ───────────────────┼──────────────────────────────────────┼───────────────────────────────────────── Everyday makeup │Practical application advice and │#RareRoutine, product reviews, shade enthusiasts │product recommendations │comparisons ───────────────────┼──────────────────────────────────────┼───────────────────────────────────────── Sephora and Space │Convenient product access and in-store│Retail launches, educational displays, NK shoppers │discovery │collaborative promotions ───────────────────┴──────────────────────────────────────┴───────────────────────────────────────── What stands out is that Rare Beauty can reach these groups without giving each one a completely different identity.\"\n\n[P4] source: https://digitalagencynetwork.com/rare-beauty-marketing-campaigns/ | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown\n\"1. What is Rare Beauty’s marketing strategy? Rare Beauty’s marketing strategy combines founder-led storytelling, inclusive brand positioning, creator marketing, community engagement, purpose-driven initiatives, retail distribution, and paid digital advertising. Its central message focuses on self-acceptance and individuality, while the Rare Impact Fund connects the brand to mental health advocacy through a formal funding commitment. Product demonstrations, especially across TikTok and YouTube, help customers discover and evaluate the cosmetics. Sephora and other retail partners support distribution, while Search advertising helps capture product-related demand.\"\n\n[P5] source: https://digitalagencynetwork.com/rare-beauty-marketing-campaigns/ | document: third_party_confirmed | type: actual_activity | dates in text: none | published: unknown\n\"6. How does Rare Beauty use influencer marketing? Rare Beauty uses creator content to support product discovery, application education, and brand visibility. Creators demonstrate cosmetics, share reviews, compare shades, and incorporate products into everyday routines. The brand also develops founder-led content and participates in more formal marketing collaborations. Importantly, not every creator post featuring Rare Beauty should be interpreted as sponsored advertising. Organic content, gifting, and paid partnerships are different activities and should be identified accurately.\"\n\n[P6] source: https://www.marketingdive.com/news/rare-beauty-every-side-of-you-selena-gomez-first-global-campaign/730087/ | document: third_party_confirmed | type: actual_activity | dates in text: none | published: unknown\n\"Rare Beauty, the cosmetics brand founded by singer and actor Selena Gomez, launched its first global brand campaign, titled “Every Side of You,” per details shared with Marketing Dive. * “Every Side of You” is part of the brand’s “Love Your Rare” platform and celebrates individuality and authenticity. Key to the campaign is a 60-second spot voiced by Gomez that features a diverse cast sharing moments of vulnerability and confidence. * The campaign was created with Fred & Farid Los Angeles and spans social media, out-of-home, Sephora locations, connected TV, influencer marketing and paid digital. The effort could drive growth for the young brand, which is already a favorite among Gen Z.\"\n\n[P7] source: https://www.opensend.com/post/rare-beauty-marketing-strategy | document: third_party_confirmed | type: provider_reported_result | dates in text: none | published: unknown\n\"Community-first can precede advertising-first: Rare Beauty spent nearly five years building its community before launching its first major global advertising campaign. * Creator content supports the customer journey: Rare Beauty reports that creator-led TikTok content produces longer watch times and helps deepen community connections. * AI-supported advertising improves relevance: Rare Beauty has used Google’s AI-powered Search and YouTube tools to respond to how younger shoppers discover and evaluate products. * Purpose must be measurable: Rare Beauty donates 1% of eligible sales to the Rare Impact Fund, which supports youth mental health organizations.\"\n\n[P8] source: https://www.opensend.com/post/rare-beauty-marketing-strategy | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown\n\"Strengthen Ecommerce Growth With Opensend Rare Beauty’s growth cannot be reduced to a single tactic. Its success comes from combining useful products, founder visibility, creator education, community participation, mental health advocacy, and increasingly sophisticated advertising. For other ecommerce brands, the transferable lesson is to improve both layers of marketing: The visible layer includes creative, paid media, email, SMS, landing pages, and customer experiences. The invisible layer includes identity resolution, cross-device recognition, audience addressability, event quality, match rates, and measurement inputs.\"\n\n[P9] source: https://www.linkedin.com/pulse/marketing-never-smelled-better-rare-beautys-smartest-campaign-singh-paw2e | document: third_party_confirmed | type: actual_activity | dates in text: none | published: unknown\n\"Recommended by LinkedIn Your beauty brand doesn't need more marketing. It… Jasmine Reed 2 months ago Marketing Moo Deng Natalie Peña-Galvis 2 years ago Cheers to Ideas: Moxie Beauty – Brand, Video &… Seagull Advertising 1 year ago So what made this campaign stand out from all the other beauty launches this year? Here are three key factors of why this marketing technique worked so well: 1. Multi-Sensory Engagement: Billboards are a visually reliant form of marketing, and Rare Beauty takes this one step further by adding smell as a sensory engagement element. Sniffing a billboard offers people a fun, new experience that lets them connect with the product through smell and memory. 2.\"\n\n[P10] source: https://www.linkedin.com/pulse/marketing-never-smelled-better-rare-beautys-smartest-campaign-singh-paw2e | document: third_party_confirmed | type: historical_activity | dates in text: August 2025 | published: unknown\n\"Rare Beauty made its initial launch into the world of fragrances in August 2025 with the release of Rare Eau de Parfum. In addition to their fragrance, the brand launched four layering balms to emphasize personalized and unique experiences. The product packaging is accessibility-friendly, and a portion of fragrance sales supported the Rare Impact Fund. Not only has every detail of the product been strategically planned to align with the brand's mission, but the strategy used before the product launch was so unique that it has marketing enthusiasts talking about it months after the initial launch.\"\n",
+  "prompt_sha256": "b0e1f80ca624ac62af5a375e50bb5eda5f13effdbfbc4941969f00cfe5b92bf2",
+  "generator": {
+    "source": "model",
+    "role": "teacher",
+    "api_base": "http://localhost:8080/v1",
+    "model": "mlx-community/Qwen3-14B-4bit",
+    "temperature": 0.0,
+    "max_tokens": 4096,
+    "system_prompt_sha256": "a434c070378f6a787103cac3ef71971836c5f435d8b5fcbad58e17d38f3ef7f3",
+    "generated_at": "2026-11-22T22:56:13+00:00",
+    "attempts": [
+      {
+        "attempt": 0,
+        "raw_sha256": "f4319668140f9b304850a15e3329cbc10efa69c0e966861f3777ed330a3eb8a0",
+        "deterministic_errors": 5,
+        "quote_repairs": [
+          {
+            "claim": "C4",
+            "passage_id": "P4",
+            "similarity": 0.9846,
+            "old_quote": "Its central message focuses on self-acceptance and individuality.",
+            "new_quote": "Its central message focuses on self-acceptance and individuality,"
+          },
+          {
+            "claim": "C5",
+            "passage_id": "P6",
+            "similarity": 0.9823,
+            "old_quote": "Every Side of You is part of the brand’s Love Your Rare platform and celebrates individuality and authenticity.",
+            "new_quote": "“Every Side of You” is part of the brand’s “Love Your Rare” platform and celebrates individuality and authenticity."
+          }
+        ]
+      },
+      {
+        "attempt": 1,
+        "raw_sha256": "30084dc118ac54d63b60c2456b0e03f64975e17c730f191f0a48d6ea79e77e88",
+        "deterministic_errors": 1,
+        "quote_repairs": []
+      },
+      {
+        "attempt": 2,
+        "raw_sha256": "8aab913b7e4d5fa4f76200c625cb11458477de13736a90af68bed521a337ca43",
+        "deterministic_errors": 0,
+        "quote_repairs": []
+      }
+    ],
+    "quote_repair": "claims.repair_quotes (min similarity 0.9; numbers/negations unchanged); see attempts[].quote_repairs",
+    "note": "repair rounds show the teacher only its own draft and the failed check messages"
+  },
+  "raw_response": "{\n  \"decision\": \"draft\",\n  \"abstain_reason\": \"\",\n  \"claims\": [\n    {\n      \"id\": \"C1\",\n      \"kind\": \"fact\",\n      \"statement\": \"Rare Beauty's mission is to help everyone celebrate their individuality by redefining what beautiful means.\",\n      \"passage_ids\": [\"P1\"],\n      \"quote\": \"Our Mission We are on a mission to help everyone celebrate their individuality by redefining what beautiful means.\"\n    },\n    {\n      \"id\": \"C2\",\n      \"kind\": \"fact\",\n      \"statement\": \"Rare Beauty's marketing strategy combines founder-led storytelling, inclusive brand positioning, creator marketing, community engagement, purpose-driven initiatives, retail distribution, and paid digital advertising.\",\n      \"passage_ids\": [\"P4\"],\n      \"quote\": \"Rare Beauty’s marketing strategy combines founder-led storytelling, inclusive brand positioning, creator marketing, community engagement, purpose-driven initiatives, retail distribution, and paid digital advertising.\"\n    },\n    {\n      \"id\": \"C3\",\n      \"kind\": \"fact\",\n      \"statement\": \"Rare Beauty uses creator content to support product discovery, application education, and brand visibility.\",\n      \"passage_ids\": [\"P5\"],\n      \"quote\": \"Rare Beauty uses creator content to support product discovery, application education, and brand visibility.\"\n    },\n    {\n      \"id\": \"C4\",\n      \"kind\": \"fact\",\n      \"statement\": \"Rare Beauty's central message focuses on self-acceptance and individuality.\",\n      \"passage_ids\": [\"P4\"],\n      \"quote\": \"Its central message focuses on self-acceptance and individuality,\"\n    },\n    {\n      \"id\": \"C5\",\n      \"kind\": \"fact\",\n      \"statement\": \"Rare Beauty's campaign titled 'Every Side of You' celebrates individuality and authenticity.\",\n      \"passage_ids\": [\"P6\"],\n      \"quote\": \"“Every Side of You” is part of the brand’s “Love Your Rare” platform and celebrates individuality and authenticity.\"\n    },\n    {\n      \"id\": \"C6\",\n      \"kind\": \"fact\",\n      \"statement\": \"Rare Beauty's campaign included a 60-second spot voiced by Selena Gomez that features a diverse cast sharing moments of vulnerability and confidence.\",\n      \"passage_ids\": [\"P6\"],\n      \"quote\": \"Key to the campaign is a 60-second spot voiced by Gomez that features a diverse cast sharing moments of vulnerability and confidence.\"\n    },\n    {\n      \"id\": \"C7\",\n      \"kind\": \"fact\",\n      \"statement\": \"Rare Beauty's campaign spanned social media, out-of-home, Sephora locations, connected TV, influencer marketing, and paid digital.\",\n      \"passage_ids\": [\"P6\"],\n      \"quote\": \"The campaign was created with Fred & Farid Los Angeles and spans social media, out-of-home, Sephora locations, connected TV, influencer marketing and paid digital.\"\n    },\n    {\n      \"id\": \"C8\",\n      \"kind\": \"fact\",\n      \"statement\": \"Rare Beauty's campaign was successful in driving growth for the young brand, which is already a favorite among Gen Z.\",\n      \"passage_ids\": [\"P6\"],\n      \"quote\": \"The effort could drive growth for the young brand, which is already a favorite among Gen Z.\"\n    },\n    {\n      \"id\": \"C9\",\n      \"kind\": \"provider_reported\",\n      \"statement\": \"According to opensend, Rare Beauty spent nearly five years building its community before launching its first major global advertising campaign.\",\n      \"passage_ids\": [\"P7\"],\n      \"quote\": \"Community-first can precede advertising-first: Rare Beauty spent nearly five years building its community before launching its first major global advertising campaign.\"\n    },\n    {\n      \"id\": \"C10\",\n      \"kind\": \"provider_reported\",\n      \"statement\": \"According to opensend, Rare Beauty reports that creator-led TikTok content produces longer watch times and helps deepen community connections.\",\n      \"passage_ids\": [\"P7\"],\n      \"quote\": \"Creator content supports the customer journey: Rare Beauty reports that creator-led TikTok content produces longer watch times and helps deepen community connections.\"\n    },\n    {\n      \"id\": \"C11\",\n      \"kind\": \"provider_reported\",\n      \"statement\": \"According to opensend, Rare Beauty donates 1% of eligible sales to the Rare Impact Fund, which supports youth mental health organizations.\",\n      \"passage_ids\": [\"P7\"],\n      \"quote\": \"Purpose must be measurable: Rare Beauty donates 1% of eligible sales to the Rare Impact Fund, which supports youth mental health organizations.\"\n    },\n    {\n      \"id\": \"C12\",\n      \"kind\": \"fact\",\n      \"statement\": \"Rare Beauty's campaign included a multi-sensory engagement element, such as adding smell as a sensory engagement element to billboards.\",\n      \"passage_ids\": [\"P9\"],\n      \"quote\": \"Multi-Sensory Engagement: Billboards are a visually reliant form of marketing, and Rare Beauty takes this one step further by adding smell as a sensory engagement element.\"\n    },\n    {\n      \"id\": \"C13\",\n      \"kind\": \"fact\",\n      \"statement\": \"Rare Beauty launched Rare Eau de Parfum in August 2025, along with four layering balms to emphasize personalized and unique experiences.\",\n      \"passage_ids\": [\"P10\"],\n      \"quote\": \"Rare Beauty made its initial launch into the world of fragrances in August 2025 with the release of Rare Eau de Parfum. In addition to their fragrance, the brand launched four layering balms to emphasize personalized and unique experiences.\"\n    },\n    {\n      \"id\": \"C14\",\n      \"kind\": \"fact\",\n      \"statement\": \"A portion of Rare Beauty's fragrance sales supported the Rare Impact Fund.\",\n      \"passage_ids\": [\"P10\"],\n      \"quote\": \"a portion of fragrance sales supported the Rare Impact Fund.\"\n    }\n  ],\n  \"brand_summary\": \"Rare Beauty's mission is to help everyone celebrate their individuality by redefining what beautiful means {C1}. It is a cosmetics brand founded by Selena Gomez {C2}. Rare Beauty's marketing strategy combines founder-led storytelling, inclusive brand positioning, creator marketing, community engagement, purpose-driven initiatives, retail distribution, and paid digital advertising {C2}. Its central message focuses on self-acceptance and individuality {C4}.\",\n  \"likely_target_audience\": \"Rare Beauty's target audience includes Gen Z beauty consumers, mental health-conscious consumers, Selena Gomez’s existing audience, accessibility-focused shoppers, everyday makeup enthusiasts, and Sephora and Space NK shoppers {C3}.\",\n  \"current_marketing_strategy\": [\n    \"Rare Beauty's marketing strategy combines founder-led storytelling, inclusive brand positioning, creator marketing, community engagement, purpose-driven initiatives, retail distribution, and paid digital advertising {C2}.\",\n    \"Rare Beauty uses creator content to support product discovery, application education, and brand visibility {C3}.\",\n    \"Rare Beauty's central message focuses on self-acceptance and individuality {C4}.\"\n  ],\n  \"unknowns\": [\"Whether Rare Beauty has a formal creator program or specific guidelines for influencer collaborations.\"],\n  \"marketing_gaps\": [],\n  \"collaboration_opportunities\": [\n    \"Develop a community-driven Instagram post that highlights Rare Beauty's Rare Impact Fund and its commitment to youth mental health, as reported by opensend {C11}.\",\n    \"Create an Instagram post that showcases diverse individuals sharing their personal stories of self-acceptance and how Rare Beauty's products have helped them feel confident and empowered {C1}.\"\n  ],\n  \"instagram_post_idea\": {\n    \"hook\": \"Celebrate your unique beauty with Rare Beauty's mission of self-acceptance and individuality {C1}.\",\n    \"concept\": \"A carousel post featuring diverse individuals sharing their personal stories of self-acceptance and how Rare Beauty's products have helped them feel confident and empowered {C1}.\",\n    \"why_it_fits\": \"This post aligns with Rare Beauty's mission of promoting self-acceptance and individuality {C1}, and it supports their community engagement and purpose-driven initiatives {C2}.\"\n  },\n  \"email_subject\": \"Collaboration Opportunity: Celebrate Individuality with Rare Beauty on Instagram\",\n  \"email_body\": \"Hi Rare Beauty Marketing Team,\\n\\nWe're excited to propose a collaboration that aligns with your brand's mission of celebrating individuality and promoting self-acceptance. Our idea is to create an Instagram post that showcases diverse individuals sharing their personal stories of self-acceptance and how Rare Beauty's products have helped them feel confident and empowered {C1}.\\n\\nThis post would support your community engagement and purpose-driven initiatives {C2}, and it would resonate with your target audience of Gen Z beauty consumers, mental health-conscious consumers, and everyday makeup enthusiasts {C3}.\\n\\nWe'd love to discuss this opportunity further and explore how we can work together to bring this vision to life.\\n\\nBest regards,\\n[Your Name]\"\n}",
+  "raw_response_sha256": "8aab913b7e4d5fa4f76200c625cb11458477de13736a90af68bed521a337ca43",
+  "draft": {
+    "decision": "draft",
+    "abstain_reason": "",
+    "claims": [
+      {
+        "id": "C1",
+        "kind": "fact",
+        "statement": "Rare Beauty's mission is to help everyone celebrate their individuality by redefining what beautiful means.",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Our Mission We are on a mission to help everyone celebrate their individuality by redefining what beautiful means."
+      },
+      {
+        "id": "C2",
+        "kind": "fact",
+        "statement": "Rare Beauty's marketing strategy combines founder-led storytelling, inclusive brand positioning, creator marketing, community engagement, purpose-driven initiatives, retail distribution, and paid digital advertising.",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "Rare Beauty’s marketing strategy combines founder-led storytelling, inclusive brand positioning, creator marketing, community engagement, purpose-driven initiatives, retail distribution, and paid digital advertising."
+      },
+      {
+        "id": "C3",
+        "kind": "fact",
+        "statement": "Rare Beauty uses creator content to support product discovery, application education, and brand visibility.",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "Rare Beauty uses creator content to support product discovery, application education, and brand visibility."
+      },
+      {
+        "id": "C4",
+        "kind": "fact",
+        "statement": "Rare Beauty's central message focuses on self-acceptance and individuality.",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "Its central message focuses on self-acceptance and individuality,"
+      },
+      {
+        "id": "C5",
+        "kind": "fact",
+        "statement": "Rare Beauty's campaign titled 'Every Side of You' celebrates individuality and authenticity.",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "“Every Side of You” is part of the brand’s “Love Your Rare” platform and celebrates individuality and authenticity."
+      },
+      {
+        "id": "C6",
+        "kind": "fact",
+        "statement": "Rare Beauty's campaign included a 60-second spot voiced by Selena Gomez that features a diverse cast sharing moments of vulnerability and confidence.",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "Key to the campaign is a 60-second spot voiced by Gomez that features a diverse cast sharing moments of vulnerability and confidence."
+      },
+      {
+        "id": "C7",
+        "kind": "fact",
+        "statement": "Rare Beauty's campaign spanned social media, out-of-home, Sephora locations, connected TV, influencer marketing, and paid digital.",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "The campaign was created with Fred & Farid Los Angeles and spans social media, out-of-home, Sephora locations, connected TV, influencer marketing and paid digital."
+      },
+      {
+        "id": "C8",
+        "kind": "fact",
+        "statement": "Rare Beauty's campaign was successful in driving growth for the young brand, which is already a favorite among Gen Z.",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "The effort could drive growth for the young brand, which is already a favorite among Gen Z."
+      },
+      {
+        "id": "C9",
+        "kind": "provider_reported",
+        "statement": "According to opensend, Rare Beauty spent nearly five years building its community before launching its first major global advertising campaign.",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "Community-first can precede advertising-first: Rare Beauty spent nearly five years building its community before launching its first major global advertising campaign."
+      },
+      {
+        "id": "C10",
+        "kind": "provider_reported",
+        "statement": "According to opensend, Rare Beauty reports that creator-led TikTok content produces longer watch times and helps deepen community connections.",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "Creator content supports the customer journey: Rare Beauty reports that creator-led TikTok content produces longer watch times and helps deepen community connections."
+      },
+      {
+        "id": "C11",
+        "kind": "provider_reported",
+        "statement": "According to opensend, Rare Beauty donates 1% of eligible sales to the Rare Impact Fund, which supports youth mental health organizations.",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "Purpose must be measurable: Rare Beauty donates 1% of eligible sales to the Rare Impact Fund, which supports youth mental health organizations."
+      },
+      {
+        "id": "C12",
+        "kind": "fact",
+        "statement": "Rare Beauty's campaign included a multi-sensory engagement element, such as adding smell as a sensory engagement element to billboards.",
+        "passage_ids": [
+          "P9"
+        ],
+        "quote": "Multi-Sensory Engagement: Billboards are a visually reliant form of marketing, and Rare Beauty takes this one step further by adding smell as a sensory engagement element."
+      },
+      {
+        "id": "C13",
+        "kind": "fact",
+        "statement": "Rare Beauty launched Rare Eau de Parfum in August 2025, along with four layering balms to emphasize personalized and unique experiences.",
+        "passage_ids": [
+          "P10"
+        ],
+        "quote": "Rare Beauty made its initial launch into the world of fragrances in August 2025 with the release of Rare Eau de Parfum. In addition to their fragrance, the brand launched four layering balms to emphasize personalized and unique experiences."
+      },
+      {
+        "id": "C14",
+        "kind": "fact",
+        "statement": "A portion of Rare Beauty's fragrance sales supported the Rare Impact Fund.",
+        "passage_ids": [
+          "P10"
+        ],
+        "quote": "a portion of fragrance sales supported the Rare Impact Fund."
+      }
+    ],
+    "brand_summary": "Rare Beauty's mission is to help everyone celebrate their individuality by redefining what beautiful means {C1}. It is a cosmetics brand founded by Selena Gomez {C2}. Rare Beauty's marketing strategy combines founder-led storytelling, inclusive brand positioning, creator marketing, community engagement, purpose-driven initiatives, retail distribution, and paid digital advertising {C2}. Its central message focuses on self-acceptance and individuality {C4}.",
+    "likely_target_audience": "Rare Beauty's target audience includes Gen Z beauty consumers, mental health-conscious consumers, Selena Gomez’s existing audience, accessibility-focused shoppers, everyday makeup enthusiasts, and Sephora and Space NK shoppers {C3}.",
+    "current_marketing_strategy": [
+      "Rare Beauty's marketing strategy combines founder-led storytelling, inclusive brand positioning, creator marketing, community engagement, purpose-driven initiatives, retail distribution, and paid digital advertising {C2}.",
+      "Rare Beauty uses creator content to support product discovery, application education, and brand visibility {C3}.",
+      "Rare Beauty's central message focuses on self-acceptance and individuality {C4}."
+    ],
+    "unknowns": [
+      "Whether Rare Beauty has a formal creator program or specific guidelines for influencer collaborations."
+    ],
+    "marketing_gaps": [],
+    "collaboration_opportunities": [
+      "Develop a community-driven Instagram post that highlights Rare Beauty's Rare Impact Fund and its commitment to youth mental health, as reported by opensend {C11}.",
+      "Create an Instagram post that showcases diverse individuals sharing their personal stories of self-acceptance and how Rare Beauty's products have helped them feel confident and empowered {C1}."
+    ],
+    "instagram_post_idea": {
+      "hook": "Celebrate your unique beauty with Rare Beauty's mission of self-acceptance and individuality {C1}.",
+      "concept": "A carousel post featuring diverse individuals sharing their personal stories of self-acceptance and how Rare Beauty's products have helped them feel confident and empowered {C1}.",
+      "why_it_fits": "This post aligns with Rare Beauty's mission of promoting self-acceptance and individuality {C1}, and it supports their community engagement and purpose-driven initiatives {C2}."
+    },
+    "email_subject": "Collaboration Opportunity: Celebrate Individuality with Rare Beauty on Instagram",
+    "email_body": "Hi Rare Beauty Marketing Team,\n\nWe're excited to propose a collaboration that aligns with your brand's mission of celebrating individuality and promoting self-acceptance. Our idea is to create an Instagram post that showcases diverse individuals sharing their personal stories of self-acceptance and how Rare Beauty's products have helped them feel confident and empowered {C1}.\n\nThis post would support your community engagement and purpose-driven initiatives {C2}, and it would resonate with your target audience of Gen Z beauty consumers, mental health-conscious consumers, and everyday makeup enthusiasts {C3}.\n\nWe'd love to discuss this opportunity further and explore how we can work together to bring this vision to life.\n\nBest regards,\n[Your Name]"
+  },
+  "completion": "{\"schema_version\": \"brandpilot.output.v3\", \"decision\": \"draft\", \"evidence_status\": \"sufficient\", \"abstain_reason\": \"\", \"brand_summary\": \"Rare Beauty's mission is to help everyone celebrate their individuality by redefining what beautiful means [P1]. It is a cosmetics brand founded by Selena Gomez [P4]. Rare Beauty's marketing strategy combines founder-led storytelling, inclusive brand positioning, creator marketing, community engagement, purpose-driven initiatives, retail distribution, and paid digital advertising [P4]. Its central message focuses on self-acceptance and individuality [P4].\", \"likely_target_audience\": \"Rare Beauty's target audience includes Gen Z beauty consumers, mental health-conscious consumers, Selena Gomez’s existing audience, accessibility-focused shoppers, everyday makeup enthusiasts, and Sephora and Space NK shoppers [P5].\", \"current_marketing_strategy\": [\"Rare Beauty's marketing strategy combines founder-led storytelling, inclusive brand positioning, creator marketing, community engagement, purpose-driven initiatives, retail distribution, and paid digital advertising [P4].\", \"Rare Beauty uses creator content to support product discovery, application education, and brand visibility [P5].\", \"Rare Beauty's central message focuses on self-acceptance and individuality [P4].\"], \"unknowns\": [\"Whether Rare Beauty has a formal creator program or specific guidelines for influencer collaborations.\"], \"marketing_gaps\": [], \"collaboration_opportunities\": [\"Develop a community-driven Instagram post that highlights Rare Beauty's Rare Impact Fund and its commitment to youth mental health, as reported by opensend [P7].\", \"Create an Instagram post that showcases diverse individuals sharing their personal stories of self-acceptance and how Rare Beauty's products have helped them feel confident and empowered [P1].\"], \"instagram_post_idea\": {\"hook\": \"Celebrate your unique beauty with Rare Beauty's mission of self-acceptance and individuality [P1].\", \"concept\": \"A carousel post featuring diverse individuals sharing their personal stories of self-acceptance and how Rare Beauty's products have helped them feel confident and empowered [P1].\", \"why_it_fits\": \"This post aligns with Rare Beauty's mission of promoting self-acceptance and individuality [P1], and it supports their community engagement and purpose-driven initiatives [P4].\"}, \"email_subject\": \"Collaboration Opportunity: Celebrate Individuality with Rare Beauty on Instagram\", \"email_body\": \"Hi Rare Beauty Marketing Team,\\n\\nWe're excited to propose a collaboration that aligns with your brand's mission of celebrating individuality and promoting self-acceptance. Our idea is to create an Instagram post that showcases diverse individuals sharing their personal stories of self-acceptance and how Rare Beauty's products have helped them feel confident and empowered [P1].\\n\\nThis post would support your community engagement and purpose-driven initiatives [P4], and it would resonate with your target audience of Gen Z beauty consumers, mental health-conscious consumers, and everyday makeup enthusiasts [P5].\\n\\nWe'd love to discuss this opportunity further and explore how we can work together to bring this vision to life.\\n\\nBest regards,\\n[Your Name]\", \"claims\": [{\"id\": \"C1\", \"kind\": \"fact\", \"statement\": \"Rare Beauty's mission is to help everyone celebrate their individuality by redefining what beautiful means.\", \"passage_ids\": [\"P1\"], \"quote\": \"Our Mission We are on a mission to help everyone celebrate their individuality by redefining what beautiful means.\"}, {\"id\": \"C2\", \"kind\": \"fact\", \"statement\": \"Rare Beauty's marketing strategy combines founder-led storytelling, inclusive brand positioning, creator marketing, community engagement, purpose-driven initiatives, retail distribution, and paid digital advertising.\", \"passage_ids\": [\"P4\"], \"quote\": \"Rare Beauty’s marketing strategy combines founder-led storytelling, inclusive brand positioning, creator marketing, community engagement, purpose-driven initiatives, retail distribution, and paid digital advertising.\"}, {\"id\": \"C3\", \"kind\": \"fact\", \"statement\": \"Rare Beauty uses creator content to support product discovery, application education, and brand visibility.\", \"passage_ids\": [\"P5\"], \"quote\": \"Rare Beauty uses creator content to support product discovery, application education, and brand visibility.\"}, {\"id\": \"C4\", \"kind\": \"fact\", \"statement\": \"Rare Beauty's central message focuses on self-acceptance and individuality.\", \"passage_ids\": [\"P4\"], \"quote\": \"Its central message focuses on self-acceptance and individuality,\"}, {\"id\": \"C5\", \"kind\": \"fact\", \"statement\": \"Rare Beauty's campaign titled 'Every Side of You' celebrates individuality and authenticity.\", \"passage_ids\": [\"P6\"], \"quote\": \"“Every Side of You” is part of the brand’s “Love Your Rare” platform and celebrates individuality and authenticity.\"}, {\"id\": \"C6\", \"kind\": \"fact\", \"statement\": \"Rare Beauty's campaign included a 60-second spot voiced by Selena Gomez that features a diverse cast sharing moments of vulnerability and confidence.\", \"passage_ids\": [\"P6\"], \"quote\": \"Key to the campaign is a 60-second spot voiced by Gomez that features a diverse cast sharing moments of vulnerability and confidence.\"}, {\"id\": \"C7\", \"kind\": \"fact\", \"statement\": \"Rare Beauty's campaign spanned social media, out-of-home, Sephora locations, connected TV, influencer marketing, and paid digital.\", \"passage_ids\": [\"P6\"], \"quote\": \"The campaign was created with Fred & Farid Los Angeles and spans social media, out-of-home, Sephora locations, connected TV, influencer marketing and paid digital.\"}, {\"id\": \"C8\", \"kind\": \"fact\", \"statement\": \"Rare Beauty's campaign was successful in driving growth for the young brand, which is already a favorite among Gen Z.\", \"passage_ids\": [\"P6\"], \"quote\": \"The effort could drive growth for the young brand, which is already a favorite among Gen Z.\"}, {\"id\": \"C9\", \"kind\": \"provider_reported\", \"statement\": \"According to opensend, Rare Beauty spent nearly five years building its community before launching its first major global advertising campaign.\", \"passage_ids\": [\"P7\"], \"quote\": \"Community-first can precede advertising-first: Rare Beauty spent nearly five years building its community before launching its first major global advertising campaign.\"}, {\"id\": \"C10\", \"kind\": \"provider_reported\", \"statement\": \"According to opensend, Rare Beauty reports that creator-led TikTok content produces longer watch times and helps deepen community connections.\", \"passage_ids\": [\"P7\"], \"quote\": \"Creator content supports the customer journey: Rare Beauty reports that creator-led TikTok content produces longer watch times and helps deepen community connections.\"}, {\"id\": \"C11\", \"kind\": \"provider_reported\", \"statement\": \"According to opensend, Rare Beauty donates 1% of eligible sales to the Rare Impact Fund, which supports youth mental health organizations.\", \"passage_ids\": [\"P7\"], \"quote\": \"Purpose must be measurable: Rare Beauty donates 1% of eligible sales to the Rare Impact Fund, which supports youth mental health organizations.\"}, {\"id\": \"C12\", \"kind\": \"fact\", \"statement\": \"Rare Beauty's campaign included a multi-sensory engagement element, such as adding smell as a sensory engagement element to billboards.\", \"passage_ids\": [\"P9\"], \"quote\": \"Multi-Sensory Engagement: Billboards are a visually reliant form of marketing, and Rare Beauty takes this one step further by adding smell as a sensory engagement element.\"}, {\"id\": \"C13\", \"kind\": \"fact\", \"statement\": \"Rare Beauty launched Rare Eau de Parfum in August 2025, along with four layering balms to emphasize personalized and unique experiences.\", \"passage_ids\": [\"P10\"], \"quote\": \"Rare Beauty made its initial launch into the world of fragrances in August 2025 with the release of Rare Eau de Parfum. In addition to their fragrance, the brand launched four layering balms to emphasize personalized and unique experiences.\"}, {\"id\": \"C14\", \"kind\": \"fact\", \"statement\": \"A portion of Rare Beauty's fragrance sales supported the Rare Impact Fund.\", \"passage_ids\": [\"P10\"], \"quote\": \"a portion of fragrance sales supported the Rare Impact Fund.\"}], \"citations\": [\"[P1]\", \"[P4]\", \"[P5]\", \"[P6]\", \"[P7]\", \"[P9]\", \"[P10]\"]}",
+  "completion_sha256": "0a69b874df9d76838d6906ce3216eaf12a436545e7005460aa2f5afd7bfc24a8",
+  "deterministic": {
+    "errors": [],
+    "warnings": [
+      "claim C5: not referenced by any field",
+      "claim C6: not referenced by any field",
+      "claim C7: not referenced by any field",
+      "claim C8: not referenced by any field",
+      "claim C9: not referenced by any field",
+      "claim C10: not referenced by any field",
+      "claim C12: not referenced by any field",
+      "claim C13: not referenced by any field",
+      "claim C14: not referenced by any field"
+    ]
+  },
+  "created_at": "2026-11-22T22:56:13+00:00",
+  "approved": false
+}

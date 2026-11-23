@@ -1,0 +1,176 @@
+{
+  "schema_version": "brandpilot.label.v3",
+  "company_id": "kosas",
+  "packet_path": "packets/kosas.json",
+  "packet_sha256": "80c4b2f59f7bceda22682f2f58c3afacd73ca903b165bf721732183fa7fb537c",
+  "prompt_version": "brandpilot.prompt.v3.3",
+  "prompt": "You are a grounded brand-outreach assistant for our team. Use only the evidence passages below.\nNever use outside knowledge. Return valid JSON only.\n\nSeparate three things:\n1. OBSERVED FACTS - things a passage actually states about this company. Each fact is a claim with an id (C1, C2, ...),\n   the passage id(s) that support it, and an exact quote copied word-for-word from that passage.\n2. UNKNOWNS - things the evidence does not tell us (put them in \"unknowns\"). A channel, program or audience that does\n   not appear in these passages is UNKNOWN. It is never a weakness, never a \"gap\", and never a reason for outreach.\n3. PROPOSALS - collaboration ideas from our team. Proposals are not facts, but each must build on a positively supported\n   fact (an existing campaign, partnership, product, community, value or theme) and cite that premise.\n\nRules:\n- Put a claim marker like {C1} (curly braces) right after every factual statement in every field, including the\n  email and Instagram idea. Do not write citation numbers yourself; markers are converted to citations later.\n- A claim's \"quote\" must be copied character-for-character from the cited passage: 5 to 25 consecutive words, no\n  paraphrasing, no joining of separate sentences. If you cannot find such a quote, drop the claim and every sentence\n  that depends on it.\n- Audience and strategy sentences are factual: each needs a marker. If no passage states the audience, write\n  INSUFFICIENT_EVIDENCE instead of guessing.\n- Pitch lines (email subject, hook, concept) should describe the proposed post (\"A carousel featuring ...\",\n  \"Collaborate on ...\"). Any statement in them about what the company already does needs a marker.\n- Respect passage types. \"proposed_or_mock_work\" and \"author_recommendation\" passages describe ideas, not things the\n  company did: never state them as company activity. \"provider_reported_result\" passages are claims by a vendor or\n  agency: attribute them (\"X reports that ...\"). \"creator_or_influencer_audience_data\" describes creators' followers,\n  not the company's customers. \"vendor_generated_profile_or_analytics\" passages are a tool vendor's estimates\n  (e.g. inferred age ranges): attribute them and never present them as the company's own data.\n  \"forward_looking_statement\" passages describe plans or intentions, not completed activity.\n- Mind time: if a passage describes past activity, do not present it as current.\n- \"marketing_gaps\" may only contain a weakness that a passage positively states. Usually it is [].\n- Never promise results. Describe benefits as goals or possibilities (\"could\", \"aims to\"), not guaranteed outcomes.\n- Decision: write \"draft\" when at least one concrete, evidence-supported collaboration opportunity exists. Otherwise write\n  \"abstain\", give an abstain_reason, set pitch fields to INSUFFICIENT_EVIDENCE and leave collaboration_opportunities empty.\n- The email is from our team to the company, proposing one collaborative Instagram post. The pitch, the post idea and\n  every collaboration opportunity are for Instagram only (no TikTok, YouTube, podcasts or other channels).\n- When a sentence uses a vendor, agency or analytics passage, name that source in the sentence itself\n  (\"According to AdLibrary, ...\", \"Attentive reports that ...\").\n- Each \"unknowns\" item names one specific thing the passages do not tell us (e.g. \"Whether X runs a creator program\").\n  Never write placeholder text such as \"what the evidence does not show\".\n\nRequired JSON:\n{\n  \"decision\": \"draft\" or \"abstain\",\n  \"abstain_reason\": \"string or empty\",\n  \"claims\": [{\"id\": \"C1\", \"kind\": \"fact | provider_reported | premise\", \"statement\": \"string\",\n              \"passage_ids\": [\"P1\"], \"quote\": \"exact words from the passage\"}],\n  \"brand_summary\": \"Full sentences, each followed by its marker, e.g. \"X makes ... {C1}.\" Never only markers. Or INSUFFICIENT_EVIDENCE\",\n  \"likely_target_audience\": \"A full sentence followed by its marker, or INSUFFICIENT_EVIDENCE\",\n  \"current_marketing_strategy\": [\"text with markers\"],\n  \"unknowns\": [\"one specific open question, e.g. Whether the company works with creators\"],\n  \"marketing_gaps\": [],\n  \"collaboration_opportunities\": [\"proposal that builds on a cited fact {C2}\"],\n  \"instagram_post_idea\": {\"hook\": \"string\", \"concept\": \"string\", \"why_it_fits\": \"string\"},\n  \"email_subject\": \"string\",\n  \"email_body\": \"string\"\n}\n\nCompany: Kosas (company_id kosas; category: clean makeup and skincare)\nOfficial domains: kosas.com\nRecipient: the marketing team\nPacket status: ok\n\nEvidence passages:\n[P1] source: https://kosas.com/pages/about/ | document: official_domain | type: brand_positioning | dates in text: none | published: unknown\n\"20% Off Sitewide + Free Choice of Mini with Orders $80+ About Kosas 100% Makeup. 100% Skincare. Our mission is to evolve beauty’s mindset towards revealing, expressing and feeling comfy in your skin. It’s good makeup (not no makeup) that’s quick, easy, can’t mess up. And it’s clinically proven to actually make your skin better, even when it’s bare.\"\n\n[P2] source: https://kosas.com/pages/about/ | document: official_domain | type: descriptive | dates in text: none | published: unknown\n\"Shop All Show submenu for \\\"Shop All\\\" 100% Makeup. 100% Skincare. Shop All Products Shop New Arrivals FREE Wet Stick in Unbuttoned with orders $80+\"\n\n[P3] source: https://www.dtcpatterns.com/dtc-patterns-articles/building-a-cult-following-101-kosass-turns-their-social-strategy-into-customer-acquisition-and-loyalty | document: third_party_confirmed | type: actual_activity | dates in text: none | published: unknown\n\"Kosas also shows customers their branded unboxing experience through TikTok, getting potential customers excited to receive their goodies. To create multiple ways for customers to engage and advertise the brand, earlier this year they launched a branded sticker pack and showcased this through a TikTok video.\"\n\n[P4] source: https://www.retailbrands.global/brands/kosas/social-media-trends | document: third_party_confirmed | type: descriptive | dates in text: October 2026 | published: unknown\n\"Kosas Emphasizes Skincare Benefits in Instagram Content Social Media Trends · Emerging · 25 October 2026 Recent Instagram posts from Kosas consistently highlight the clinical skincare benefits and 'good skin day' outcomes of their makeup products, positioning them as more than just cosmetics. * Instagram Content Consistently Directs Users to Sephora Social Media Trends · Emerging · 25 October 2026 A significant portion of Kosas's recent Instagram posts include explicit calls-to-action directing followers to purchase products at Sephora, highlighting a strong focus on this retail partnership within their social…\"\n\n[P5] source: https://www.dtcpatterns.com/dtc-patterns-articles/building-a-cult-following-101-kosass-turns-their-social-strategy-into-customer-acquisition-and-loyalty | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown\n\"Kosas’ ingredient feature TikTok posts Kosas leverages social to elevate their products benefits and effectiveness to remind customers why their brand stands apart from the competition. They strategically tie their core ingredients, (i.e. Arnica and Caffeine), to their key benefits (i.e. soothing and brightening), to explain how effective and safe their products are. Kosas’ customer reviews, unboxing, and merch highlights on their TikTok Because building a community is the core of the Kosas brand, they also feature important community comments from social and product reviews.\"\n\n[P6] source: https://www.foritisbygrace.com/technical-communication/2022/6/21/swot-analysis-of-kosas | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown\n\"Their youthful branding does a good job in marketing towards a younger audience; however, this may exclude some people in an older age demographic from purchasing products. I also think that if Kosas were to incorporate more consumer-generated content, they will increase their brand loyalty and engagement. Grace ForsterJuly 7, 2022Comment Facebook0 Twitter Tumblr Pinterest0 0 Likes Previous\"\n\n[P7] source: https://www.retailbrands.global/brands/kosas/social-media-trends | document: third_party_confirmed | type: descriptive | dates in text: October 2026 | published: unknown\n\"Retail Brands Brands / Kosas / Social Media Trends Signal category # Kosas: Social Media Trends intelligence What the brand’s audience is doing and saying on social platforms: reach, engagement and emerging themes. 3 signals for Kosas · Last updated 25 October 2026\"\n\n[P8] source: https://www.foritisbygrace.com/technical-communication/2022/6/21/swot-analysis-of-kosas | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown\n\"Kosas has content containing video, shopping, and photography posts. The page is bright and youthful. The page contains content from both models and consumers in video and photography posts. Some videos are even tutorials on how to use each product. This account is also targeting a wide range of people who care about makeup and skincare. TikTok: The Kosas TikTok account is also very active. The account includes videos from makeup influencers as well as reposted content from consumers. This account is more playful and has more entertaining content that may appeal to a wide range of people. I feel that this account does a great job in expressing the playful nature of the Kosas brand.\"\n\n[P9] source: https://www.foritisbygrace.com/technical-communication/2022/6/21/swot-analysis-of-kosas | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown\n\"An older audience may not want to add such a colorful statement to their makeup routine. * Other makeup companies like Glossier, Drunk Elephant, and Glow Recipe are producing products that Kosas currently does not offer. These companies are offering retinol products that may reduce the signs of aging by reducing fine lines are wrinkles. The three companies still have youthful branding but also offer products that expand their audience into an older demographic of users. Currently, Kosas is doing a good job in marketing their clean products and being very transparent about the ingredients in their products on social media platforms.\"\n\n[P10] source: https://www.accio.com/business/kosas-cosmetics | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown\n\"Company Overview and Business Model Kosas is a mid-sized beauty brand that has established a strong identity in the \\\"clean beauty\\\" sector. The company's core value proposition is the fusion of skincare with makeup, marketing its products as \\\"makeup for skincare freaks\\\" Tribedynamics. This approach targets health-conscious consumers who seek high-quality, minimalist makeup with beneficial ingredients SizethemarketForbes. The company operates a direct-to-consumer model through its website and also sells through major retail partners such as Sephora and Credo Beauty Shiftinggaia. This multi-channel strategy allows Kosas to reach a broad customer base while maintaining a strong brand presence.\"\n",
+  "prompt_sha256": "859b3fbf20f629bf4bf30cf2304e5e0b57ba9db6c6ce733b52bd8ba776669a11",
+  "generator": {
+    "source": "model",
+    "role": "teacher",
+    "api_base": "http://localhost:8080/v1",
+    "model": "mlx-community/Qwen3-14B-4bit",
+    "temperature": 0.0,
+    "max_tokens": 4096,
+    "system_prompt_sha256": "a434c070378f6a787103cac3ef71971836c5f435d8b5fcbad58e17d38f3ef7f3",
+    "generated_at": "2026-11-22T22:21:02+00:00",
+    "attempts": [
+      {
+        "attempt": 0,
+        "raw_sha256": "4597f8b598ab2a23a3724764e2e66c441c4531788d7e8144222976a709c9f0b5",
+        "deterministic_errors": 0,
+        "quote_repairs": [
+          {
+            "claim": "C8",
+            "passage_id": "P6",
+            "similarity": 0.9875,
+            "old_quote": "Their youthful branding does a good job in marketing towards a younger audience.",
+            "new_quote": "Their youthful branding does a good job in marketing towards a younger audience;"
+          },
+          {
+            "claim": "C10",
+            "passage_id": "P10",
+            "similarity": 0.9966,
+            "old_quote": "The company operates a direct-to-consumer model through its website and also sells through major retail partners such as Sephora and Credo Beauty.",
+            "new_quote": "The company operates a direct-to-consumer model through its website and also sells through major retail partners such as Sephora and Credo Beauty"
+          }
+        ]
+      }
+    ],
+    "quote_repair": "claims.repair_quotes (min similarity 0.9; numbers/negations unchanged); see attempts[].quote_repairs",
+    "note": "repair rounds show the teacher only its own draft and the failed check messages"
+  },
+  "raw_response": "{\n  \"decision\": \"draft\",\n  \"abstain_reason\": \"\",\n  \"claims\": [\n    {\n      \"id\": \"C1\",\n      \"kind\": \"fact\",\n      \"statement\": \"Kosas makes 100% Makeup. 100% Skincare.\",\n      \"passage_ids\": [\"P1\", \"P2\"],\n      \"quote\": \"100% Makeup. 100% Skincare.\"\n    },\n    {\n      \"id\": \"C2\",\n      \"kind\": \"fact\",\n      \"statement\": \"Kosas' mission is to evolve beauty’s mindset towards revealing, expressing and feeling comfy in your skin.\",\n      \"passage_ids\": [\"P1\"],\n      \"quote\": \"Our mission is to evolve beauty’s mindset towards revealing, expressing and feeling comfy in your skin.\"\n    },\n    {\n      \"id\": \"C3\",\n      \"kind\": \"fact\",\n      \"statement\": \"Kosas' products are clinically proven to actually make your skin better, even when it’s bare.\",\n      \"passage_ids\": [\"P1\"],\n      \"quote\": \"clinically proven to actually make your skin better, even when it’s bare.\"\n    },\n    {\n      \"id\": \"C4\",\n      \"kind\": \"fact\",\n      \"statement\": \"Kosas shows customers their branded unboxing experience through TikTok.\",\n      \"passage_ids\": [\"P3\"],\n      \"quote\": \"Kosas also shows customers their branded unboxing experience through TikTok, getting potential customers excited to receive their goodies.\"\n    },\n    {\n      \"id\": \"C5\",\n      \"kind\": \"fact\",\n      \"statement\": \"Kosas leverages social media to elevate their products' benefits and effectiveness.\",\n      \"passage_ids\": [\"P5\"],\n      \"quote\": \"Kosas leverages social to elevate their products benefits and effectiveness to remind customers why their brand stands apart from the competition.\"\n    },\n    {\n      \"id\": \"C6\",\n      \"kind\": \"fact\",\n      \"statement\": \"Kosas has a strong focus on Instagram content that highlights the clinical skincare benefits of their makeup products.\",\n      \"passage_ids\": [\"P4\"],\n      \"quote\": \"Recent Instagram posts from Kosas consistently highlight the clinical skincare benefits and 'good skin day' outcomes of their makeup products, positioning them as more than just cosmetics.\"\n    },\n    {\n      \"id\": \"C7\",\n      \"kind\": \"fact\",\n      \"statement\": \"Kosas's Instagram content includes explicit calls-to-action directing users to purchase products at Sephora.\",\n      \"passage_ids\": [\"P4\"],\n      \"quote\": \"A significant portion of Kosas's recent Instagram posts include explicit calls-to-action directing followers to purchase products at Sephora, highlighting a strong focus on this retail partnership within their social…\"\n    },\n    {\n      \"id\": \"C8\",\n      \"kind\": \"fact\",\n      \"statement\": \"Kosas has a youthful branding that targets a younger audience.\",\n      \"passage_ids\": [\"P6\"],\n      \"quote\": \"Their youthful branding does a good job in marketing towards a younger audience.\"\n    },\n    {\n      \"id\": \"C9\",\n      \"kind\": \"fact\",\n      \"statement\": \"Kosas has a TikTok account that is very active and includes videos from makeup influencers and reposted content from consumers.\",\n      \"passage_ids\": [\"P8\"],\n      \"quote\": \"The Kosas TikTok account is also very active. The account includes videos from makeup influencers as well as reposted content from consumers.\"\n    },\n    {\n      \"id\": \"C10\",\n      \"kind\": \"fact\",\n      \"statement\": \"Kosas operates a direct-to-consumer model through its website and also sells through major retail partners such as Sephora and Credo Beauty.\",\n      \"passage_ids\": [\"P10\"],\n      \"quote\": \"The company operates a direct-to-consumer model through its website and also sells through major retail partners such as Sephora and Credo Beauty.\"\n    }\n  ],\n  \"brand_summary\": \"Kosas makes 100% Makeup. 100% Skincare. {C1} Kosas' mission is to evolve beauty’s mindset towards revealing, expressing and feeling comfy in your skin. {C2} Kosas' products are clinically proven to actually make your skin better, even when it’s bare. {C3}\",\n  \"likely_target_audience\": \"Kosas targets a younger audience with its youthful branding. {C8}\",\n  \"current_marketing_strategy\": [\n    \"Kosas shows customers their branded unboxing experience through TikTok. {C4}\",\n    \"Kosas leverages social media to elevate their products' benefits and effectiveness. {C5}\",\n    \"Kosas has a strong focus on Instagram content that highlights the clinical skincare benefits of their makeup products. {C6}\",\n    \"Kosas's Instagram content includes explicit calls-to-action directing users to purchase products at Sephora. {C7}\",\n    \"Kosas has a TikTok account that is very active and includes videos from makeup influencers and reposted content from consumers. {C9}\"\n  ],\n  \"unknowns\": [\n    \"Whether Kosas has a creator program or collaborates with creators outside of TikTok and Instagram.\"\n  ],\n  \"marketing_gaps\": [],\n  \"collaboration_opportunities\": [\n    \"Collaborate on an Instagram carousel post featuring customer reviews and unboxing experiences, building on Kosas' existing TikTok unboxing strategy {C4} and their focus on Instagram content that highlights clinical skincare benefits {C6}.\"\n  ],\n  \"instagram_post_idea\": {\n    \"hook\": \"Discover how Kosas transforms your skincare routine into a daily ritual of self-care.\",\n    \"concept\": \"A carousel post showcasing customer reviews and unboxing experiences, emphasizing the clinical skincare benefits of Kosas products.\",\n    \"why_it_fits\": \"This concept aligns with Kosas' mission to evolve beauty’s mindset towards feeling comfy in your skin {C2} and their existing Instagram strategy that highlights clinical skincare benefits {C6}.\"\n  },\n  \"email_subject\": \"Collaboration Opportunity: Showcase Customer Experiences on Instagram\",\n  \"email_body\": \"Hi Kosas Marketing Team,\\n\\nWe're excited about the opportunity to collaborate on an Instagram post that highlights customer reviews and unboxing experiences, emphasizing the clinical skincare benefits of Kosas products. This concept aligns with your mission to evolve beauty’s mindset towards feeling comfy in your skin {C2} and your existing Instagram strategy that highlights clinical skincare benefits {C6}.\\n\\nWe believe this post would resonate with your audience and further strengthen your brand's message. Let's discuss how we can bring this idea to life together!\\n\\nBest regards,\\n[Your Name]\"\n}",
+  "raw_response_sha256": "4597f8b598ab2a23a3724764e2e66c441c4531788d7e8144222976a709c9f0b5",
+  "draft": {
+    "decision": "draft",
+    "abstain_reason": "",
+    "claims": [
+      {
+        "id": "C1",
+        "kind": "fact",
+        "statement": "Kosas makes 100% Makeup. 100% Skincare.",
+        "passage_ids": [
+          "P1",
+          "P2"
+        ],
+        "quote": "100% Makeup. 100% Skincare."
+      },
+      {
+        "id": "C2",
+        "kind": "fact",
+        "statement": "Kosas' mission is to evolve beauty’s mindset towards revealing, expressing and feeling comfy in your skin.",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Our mission is to evolve beauty’s mindset towards revealing, expressing and feeling comfy in your skin."
+      },
+      {
+        "id": "C3",
+        "kind": "fact",
+        "statement": "Kosas' products are clinically proven to actually make your skin better, even when it’s bare.",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "clinically proven to actually make your skin better, even when it’s bare."
+      },
+      {
+        "id": "C4",
+        "kind": "fact",
+        "statement": "Kosas shows customers their branded unboxing experience through TikTok.",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Kosas also shows customers their branded unboxing experience through TikTok, getting potential customers excited to receive their goodies."
+      },
+      {
+        "id": "C5",
+        "kind": "fact",
+        "statement": "Kosas leverages social media to elevate their products' benefits and effectiveness.",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "Kosas leverages social to elevate their products benefits and effectiveness to remind customers why their brand stands apart from the competition."
+      },
+      {
+        "id": "C6",
+        "kind": "fact",
+        "statement": "Kosas has a strong focus on Instagram content that highlights the clinical skincare benefits of their makeup products.",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "Recent Instagram posts from Kosas consistently highlight the clinical skincare benefits and 'good skin day' outcomes of their makeup products, positioning them as more than just cosmetics."
+      },
+      {
+        "id": "C7",
+        "kind": "fact",
+        "statement": "Kosas's Instagram content includes explicit calls-to-action directing users to purchase products at Sephora.",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "A significant portion of Kosas's recent Instagram posts include explicit calls-to-action directing followers to purchase products at Sephora, highlighting a strong focus on this retail partnership within their social…"
+      },
+      {
+        "id": "C8",
+        "kind": "fact",
+        "statement": "Kosas has a youthful branding that targets a younger audience.",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "Their youthful branding does a good job in marketing towards a younger audience;"
+      },
+      {
+        "id": "C9",
+        "kind": "fact",
+        "statement": "Kosas has a TikTok account that is very active and includes videos from makeup influencers and reposted content from consumers.",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "The Kosas TikTok account is also very active. The account includes videos from makeup influencers as well as reposted content from consumers."
+      },
+      {
+        "id": "C10",
+        "kind": "fact",
+        "statement": "Kosas operates a direct-to-consumer model through its website and also sells through major retail partners such as Sephora and Credo Beauty.",
+        "passage_ids": [
+          "P10"
+        ],
+        "quote": "The company operates a direct-to-consumer model through its website and also sells through major retail partners such as Sephora and Credo Beauty"
+      }
+    ],
+    "brand_summary": "Kosas makes 100% Makeup. 100% Skincare. {C1} Kosas' mission is to evolve beauty’s mindset towards revealing, expressing and feeling comfy in your skin. {C2} Kosas' products are clinically proven to actually make your skin better, even when it’s bare. {C3}",
+    "likely_target_audience": "Kosas targets a younger audience with its youthful branding. {C8}",
+    "current_marketing_strategy": [
+      "Kosas shows customers their branded unboxing experience through TikTok. {C4}",
+      "Kosas leverages social media to elevate their products' benefits and effectiveness. {C5}",
+      "Kosas has a strong focus on Instagram content that highlights the clinical skincare benefits of their makeup products. {C6}",
+      "Kosas's Instagram content includes explicit calls-to-action directing users to purchase products at Sephora. {C7}",
+      "Kosas has a TikTok account that is very active and includes videos from makeup influencers and reposted content from consumers. {C9}"
+    ],
+    "unknowns": [
+      "Whether Kosas has a creator program or collaborates with creators outside of TikTok and Instagram."
+    ],
+    "marketing_gaps": [],
+    "collaboration_opportunities": [
+      "Collaborate on an Instagram carousel post featuring customer reviews and unboxing experiences, building on Kosas' existing TikTok unboxing strategy {C4} and their focus on Instagram content that highlights clinical skincare benefits {C6}."
+    ],
+    "instagram_post_idea": {
+      "hook": "Discover how Kosas transforms your skincare routine into a daily ritual of self-care.",
+      "concept": "A carousel post showcasing customer reviews and unboxing experiences, emphasizing the clinical skincare benefits of Kosas products.",
+      "why_it_fits": "This concept aligns with Kosas' mission to evolve beauty’s mindset towards feeling comfy in your skin {C2} and their existing Instagram strategy that highlights clinical skincare benefits {C6}."
+    },
+    "email_subject": "Collaboration Opportunity: Showcase Customer Experiences on Instagram",
+    "email_body": "Hi Kosas Marketing Team,\n\nWe're excited about the opportunity to collaborate on an Instagram post that highlights customer reviews and unboxing experiences, emphasizing the clinical skincare benefits of Kosas products. This concept aligns with your mission to evolve beauty’s mindset towards feeling comfy in your skin {C2} and your existing Instagram strategy that highlights clinical skincare benefits {C6}.\n\nWe believe this post would resonate with your audience and further strengthen your brand's message. Let's discuss how we can bring this idea to life together!\n\nBest regards,\n[Your Name]"
+  },
+  "completion": "{\"schema_version\": \"brandpilot.output.v3\", \"decision\": \"draft\", \"evidence_status\": \"sufficient\", \"abstain_reason\": \"\", \"brand_summary\": \"Kosas makes 100% Makeup. 100% Skincare. [P1][P2] Kosas' mission is to evolve beauty’s mindset towards revealing, expressing and feeling comfy in your skin. [P1] Kosas' products are clinically proven to actually make your skin better, even when it’s bare. [P1]\", \"likely_target_audience\": \"Kosas targets a younger audience with its youthful branding. [P6]\", \"current_marketing_strategy\": [\"Kosas shows customers their branded unboxing experience through TikTok. [P3]\", \"Kosas leverages social media to elevate their products' benefits and effectiveness. [P5]\", \"Kosas has a strong focus on Instagram content that highlights the clinical skincare benefits of their makeup products. [P4]\", \"Kosas's Instagram content includes explicit calls-to-action directing users to purchase products at Sephora. [P4]\", \"Kosas has a TikTok account that is very active and includes videos from makeup influencers and reposted content from consumers. [P8]\"], \"unknowns\": [\"Whether Kosas has a creator program or collaborates with creators outside of TikTok and Instagram.\"], \"marketing_gaps\": [], \"collaboration_opportunities\": [\"Collaborate on an Instagram carousel post featuring customer reviews and unboxing experiences, building on Kosas' existing TikTok unboxing strategy [P3] and their focus on Instagram content that highlights clinical skincare benefits [P4].\"], \"instagram_post_idea\": {\"hook\": \"Discover how Kosas transforms your skincare routine into a daily ritual of self-care.\", \"concept\": \"A carousel post showcasing customer reviews and unboxing experiences, emphasizing the clinical skincare benefits of Kosas products.\", \"why_it_fits\": \"This concept aligns with Kosas' mission to evolve beauty’s mindset towards feeling comfy in your skin [P1] and their existing Instagram strategy that highlights clinical skincare benefits [P4].\"}, \"email_subject\": \"Collaboration Opportunity: Showcase Customer Experiences on Instagram\", \"email_body\": \"Hi Kosas Marketing Team,\\n\\nWe're excited about the opportunity to collaborate on an Instagram post that highlights customer reviews and unboxing experiences, emphasizing the clinical skincare benefits of Kosas products. This concept aligns with your mission to evolve beauty’s mindset towards feeling comfy in your skin [P1] and your existing Instagram strategy that highlights clinical skincare benefits [P4].\\n\\nWe believe this post would resonate with your audience and further strengthen your brand's message. Let's discuss how we can bring this idea to life together!\\n\\nBest regards,\\n[Your Name]\", \"claims\": [{\"id\": \"C1\", \"kind\": \"fact\", \"statement\": \"Kosas makes 100% Makeup. 100% Skincare.\", \"passage_ids\": [\"P1\", \"P2\"], \"quote\": \"100% Makeup. 100% Skincare.\"}, {\"id\": \"C2\", \"kind\": \"fact\", \"statement\": \"Kosas' mission is to evolve beauty’s mindset towards revealing, expressing and feeling comfy in your skin.\", \"passage_ids\": [\"P1\"], \"quote\": \"Our mission is to evolve beauty’s mindset towards revealing, expressing and feeling comfy in your skin.\"}, {\"id\": \"C3\", \"kind\": \"fact\", \"statement\": \"Kosas' products are clinically proven to actually make your skin better, even when it’s bare.\", \"passage_ids\": [\"P1\"], \"quote\": \"clinically proven to actually make your skin better, even when it’s bare.\"}, {\"id\": \"C4\", \"kind\": \"fact\", \"statement\": \"Kosas shows customers their branded unboxing experience through TikTok.\", \"passage_ids\": [\"P3\"], \"quote\": \"Kosas also shows customers their branded unboxing experience through TikTok, getting potential customers excited to receive their goodies.\"}, {\"id\": \"C5\", \"kind\": \"fact\", \"statement\": \"Kosas leverages social media to elevate their products' benefits and effectiveness.\", \"passage_ids\": [\"P5\"], \"quote\": \"Kosas leverages social to elevate their products benefits and effectiveness to remind customers why their brand stands apart from the competition.\"}, {\"id\": \"C6\", \"kind\": \"fact\", \"statement\": \"Kosas has a strong focus on Instagram content that highlights the clinical skincare benefits of their makeup products.\", \"passage_ids\": [\"P4\"], \"quote\": \"Recent Instagram posts from Kosas consistently highlight the clinical skincare benefits and 'good skin day' outcomes of their makeup products, positioning them as more than just cosmetics.\"}, {\"id\": \"C7\", \"kind\": \"fact\", \"statement\": \"Kosas's Instagram content includes explicit calls-to-action directing users to purchase products at Sephora.\", \"passage_ids\": [\"P4\"], \"quote\": \"A significant portion of Kosas's recent Instagram posts include explicit calls-to-action directing followers to purchase products at Sephora, highlighting a strong focus on this retail partnership within their social…\"}, {\"id\": \"C8\", \"kind\": \"fact\", \"statement\": \"Kosas has a youthful branding that targets a younger audience.\", \"passage_ids\": [\"P6\"], \"quote\": \"Their youthful branding does a good job in marketing towards a younger audience;\"}, {\"id\": \"C9\", \"kind\": \"fact\", \"statement\": \"Kosas has a TikTok account that is very active and includes videos from makeup influencers and reposted content from consumers.\", \"passage_ids\": [\"P8\"], \"quote\": \"The Kosas TikTok account is also very active. The account includes videos from makeup influencers as well as reposted content from consumers.\"}, {\"id\": \"C10\", \"kind\": \"fact\", \"statement\": \"Kosas operates a direct-to-consumer model through its website and also sells through major retail partners such as Sephora and Credo Beauty.\", \"passage_ids\": [\"P10\"], \"quote\": \"The company operates a direct-to-consumer model through its website and also sells through major retail partners such as Sephora and Credo Beauty\"}], \"citations\": [\"[P1]\", \"[P2]\", \"[P3]\", \"[P4]\", \"[P5]\", \"[P6]\", \"[P8]\", \"[P10]\"]}",
+  "completion_sha256": "ccaa72d654bc8d4f8654f8f83ef7f06643de4538eac7a4b33d9556039d2dfd8e",
+  "deterministic": {
+    "errors": [],
+    "warnings": [
+      "claim C10: not referenced by any field"
+    ]
+  },
+  "created_at": "2026-11-22T22:21:02+00:00",
+  "approved": false
+}

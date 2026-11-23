@@ -185,8 +185,37 @@ VENDOR_ANALYSIS_HOSTS = (
 FORWARD_RX = re.compile(r"\b(going to|plan(s|ning)? to|intend(s|ing)? to|starting to|will be launching|aim(s|ing)? to|hope to)\b", re.I)
 
 
+# Policy-page language: privacy notices, terms of use, returns/refunds and cookie text, which
+# often lacks the literal words "privacy policy" or "cookie".
+POLICY_RX = re.compile(
+    r"\b(return shipping|refunds? (will|are|is)|original form of payment|store credit|exchanges? (are|must|will)|"
+    r"returns? (are|must|will) be|within \d+ days of (purchase|delivery)|restocking fee|final sale|"
+    r"(targeted|interest-based) advertis\w*|advertising partners|analytics? (providers|practices)|"
+    r"(we|you) may (use|collect|share|disclose|opt)|technologies (to|such as|like)|web beacons?|pixels? and|local storage|"
+    r"(the|our) services|third[- ]party (sites|services|websites|links)|links to other websites|"
+    r"you represent (and warrant|that)|indemnif\w*|limitation of liability|governing law|arbitration|warrant(y|ies)\b|"
+    r"intellectual property rights|by (posting|submitting|using|accessing)|without notice|at our (sole )?discretion|"
+    r"we reserve the right|price (information|errors?)|typographical errors?|(special|bulk) orders|applicable law|"
+    r"personally identifiable|data (controller|processor|subject)|retention period|your (rights|choices)\b|"
+    r"in no event|liabilit(y|ies)|makes? no representations?|(return|refund|exchange|shipping) polic(y|ies)|"
+    r"promo(tional)? codes?|unworn|unwashed|sole discretion|transmission of|sign (in|into) (the|your)|"
+    r"(the|this) (agreement|terms)\b|hereby|herein|thereof)",
+    re.I,
+)
+# Capitalised defined terms ("the Service", "Platform Content") are contract language.
+DEFINED_TERM_RX = re.compile(r"\b(the|our|this|any) (Service|Services|Platform|Site|Website|Terms|Comments|Platform Content|User Content)\b")
+POLICY_PATH_RX = re.compile(r"/(pages/|policies/|legal/)?(privacy|terms|tos|returns?|refund|shipping|cookies?|legal|policies|accessibility|warranty)(-[\w-]+)?/?($|[?#.])", re.I)
+
+
+def is_policy_url(url: str) -> bool:
+    from urllib.parse import urlparse
+    return bool(POLICY_PATH_RX.search(urlparse(url or "").path or "/"))
+
+
 def boilerplate_kind(unit_text: str) -> str | None:
     lowered = unit_text.lower()
+    if POLICY_RX.search(unit_text) or DEFINED_TERM_RX.search(unit_text):
+        return "legal_or_privacy"
     if len(TOC_RX.findall(unit_text)) >= 3:
         return "table_of_contents"
     words = re.findall(r"[A-Za-z][A-Za-z'’-]*", unit_text)
@@ -212,6 +241,12 @@ def units_for(text: str) -> list[Unit]:
         para = "\n\n" in gap or bool(re.search(r"(^|\s)#{1,6}\s", gap)) or not units
         units.append(Unit(s, e, text[s:e], boilerplate_kind(text[s:e]), para))
         prev_end = e
+    # A sentence sitting inside a run of policy text (>= 4 of its 6 nearest neighbours are
+    # legal/privacy units) is part of that policy, even if it has no legal keyword itself.
+    legal = [u.boilerplate == "legal_or_privacy" for u in units]
+    for i, u in enumerate(units):
+        if u.boilerplate is None and sum(legal[max(0, i - 3):i] + legal[i + 1:i + 4]) >= 4:
+            u.boilerplate = "legal_or_privacy_context"
     return units
 
 
@@ -333,7 +368,12 @@ def candidate_passages(
     official = identity.is_official_url(doc_url)
     doc_flags = document_genre_flags(doc_url, doc_text)
     out: list[Passage] = []
-    for start, end in windows(doc_text, units_for(doc_text)):
+    units = units_for(doc_text)
+    # A privacy/terms/returns/cookie page (by URL, or a long document that is mostly policy
+    # sentences, as legacy cached extractions often are): its remaining sentences are policy text too.
+    legal_units = sum((u.boilerplate or "").startswith("legal_or_privacy") for u in units)
+    policy_page = is_policy_url(doc_url) or (len(units) >= 20 and legal_units / len(units) >= 0.4)
+    for start, end in windows(doc_text, units):
         text = doc_text[start:end]
         ident, ident_reason = assess_passage_identity(identity, doc_identity_decision, text)
         stype, flags = classify_statement(text, doc_flags, official)
@@ -371,6 +411,8 @@ def candidate_passages(
             p.rejection_reasons.append("not_marketing_relevant")
         if len(TOC_RX.findall(text)) >= 3:
             p.rejection_reasons.append("boilerplate:table_of_contents")
+        if policy_page:
+            p.rejection_reasons.append("boilerplate:policy_page")
         out.append(p)
     return out
 

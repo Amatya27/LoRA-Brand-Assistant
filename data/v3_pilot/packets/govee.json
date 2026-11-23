@@ -1,0 +1,1597 @@
+{
+  "schema_version": "brandpilot.packet.v3",
+  "company": {
+    "company_id": "govee",
+    "display_name": "Govee",
+    "legacy_name": "Govee",
+    "category": "smart lighting and home gadgets",
+    "official_domains": [
+      "govee.com",
+      "us.govee.com"
+    ],
+    "identity_status": "verified",
+    "registry_version": "2026-11-22.v3",
+    "registry_sha256": "cc9ab39277bffb4c0aa0b59df8db2e7fec12da7955a58651370daf2936495a16"
+  },
+  "collection": {
+    "mode": "legacy_cache_replay",
+    "collector_version": "brandpilot-collector-0.3",
+    "created_at": "2026-11-22T20:36:37+00:00",
+    "queries": [
+      "\"Govee\" instagram marketing campaign target audience",
+      "\"Govee\" social media strategy brand positioning",
+      "\"Govee\" marketing campaign press release instagram",
+      "\"Govee\" customer audience brand story",
+      "\"Govee\" about us brand values audience",
+      "\"Govee\" newsroom marketing campaign",
+      "\"Govee\" brand campaign case study"
+    ],
+    "notes": [
+      "replayed from legacy packet govee-research-packet.json (sha256 4c35350c158f148a)",
+      "documents are legacy cached extractions; no new fetches were made"
+    ]
+  },
+  "leads": [
+    {
+      "company_id": "govee",
+      "query": "\"Govee\" about us brand values audience",
+      "url": "https://goveeillumination.com/about-us/",
+      "title": "About Us - Govee",
+      "snippet": "Whether you’re setting the mood, enhancing productivity, or simply adding flair to your space, Govee puts control at your fingertips. Available in over 80 countries, our mission is simple: to make every day brighter, more colorful, and uniquely yours.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "govee",
+      "query": "\"Govee\" newsroom marketing campaign",
+      "url": "https://us.govee.com/pages/newsroom",
+      "title": "Govee - Making Life Smarter | Smart Home Lighting",
+      "snippet": "Govee leads with next-gen RGBIC technology, offering smart LED strip lights, outdoor lights, floor lamps, TV backlights, gaming lights, smart bulbs, and more.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "govee",
+      "query": "\"Govee\" newsroom marketing campaign",
+      "url": "https://us.govee.com/blogs/news",
+      "title": "News - Govee US",
+      "snippet": "Sep 6, 2026 · Stay updated with Govee News for the latest breakthroughs in smart lighting and home innovation. Explore product launches, tech trends, and industry insights that brighten your world. Govee, a global leader in smart lighting, today unveiled its latest AI-powered lighting innovations at IFA 2026.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "govee",
+      "query": "\"Govee\" instagram marketing campaign target audience",
+      "url": "https://adfox.ai/blog/govee-marketing-data-analysis-of-govees-social-media-ads-by-goodsfox/",
+      "title": "Govee Marketing: A Data Analysis of Govee’s Social Media Ads ...",
+      "snippet": "As seen, Govee employs Facebook, Instagram, Messenger, Facebook (FAN) and You tube all in nearly equal measure to reach its target audience.This targeted distribution allows Govee to reach a wider demographic across multiple networks.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "govee",
+      "query": "\"Govee\" customer audience brand story",
+      "url": "https://us.govee.com/pages/brand-introduction",
+      "title": "brand introduction - Govee US",
+      "snippet": "Black Friday Deals Start In: 03D 09H 14M 49S No.1 Brand For Household Permanent Outdoor Lights IN THE USA",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "govee",
+      "query": "\"Govee\" instagram marketing campaign target audience",
+      "url": "https://www.stride-social.com/case-studies/govee",
+      "title": "Govee marketing campaign by Stride Social",
+      "snippet": "Objectives: The core objective of this campaign was to increase brand awareness for Govee's LED lights and demonstrate their user-friendly features, making them accessible and appealing to a broad audience.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "govee",
+      "query": "\"Govee\" customer audience brand story",
+      "url": "https://us.govee.com/pages/about-us",
+      "title": "About Govee | Govee US",
+      "snippet": "Since 2017, Govee has been revolutionizing the smart living experience with innovative lighting solutions. From gaming setups to living spaces and outdoor areas, Govee's smart lights are not just visually stunning but transform everyday moments into personalized and engaging lighting experience.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "govee",
+      "query": "\"Govee\" about us brand values audience",
+      "url": "https://goveeofficial.com/about-govee/",
+      "title": "About Govee",
+      "snippet": "Since 2017, Govee has been revolutionizing the smart living experience with innovative lighting solutions. From gaming setups to living spaces and outdoor areas, Govee’s smart lights are not just visually stunning but transform everyday moments into personalized and engaging lighting experience.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    }
+  ],
+  "documents": [
+    {
+      "source_id": "S-c37cc6fad189",
+      "company_id": "govee",
+      "requested_url": "https://goveeillumination.com/about-us/",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "0d584b1a5b6239439343f2cb0a1d996d3c20d7c4a605d344ff609ac257704110",
+      "text_path": "text/0d584b1a5b6239439343f2cb0a1d996d3c20d7c4a605d344ff609ac257704110.txt",
+      "raw_path": null,
+      "text_chars": 1890,
+      "redirect_chain": [],
+      "identity_decision": "conflicting_entity_domain",
+      "identity_reason": "host goveeillumination.com belongs to Govee Illumination (look-alike)",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 17b1966e79d6818542e6c7987b51dba808807cf5c5593d1c1c1eb10859bfabdd.json sha256=727c50be8f9fbd609bcc6a2fb2641a5ed957928a1325b5dce42dfb712f3ae855",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-6494f43e41aa",
+      "company_id": "govee",
+      "requested_url": "https://us.govee.com/pages/newsroom",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "4261397a96d7c36801f5e3cf1a4eb243ac113088ecb41280f3052ac12c8c3bf9",
+      "text_path": "text/4261397a96d7c36801f5e3cf1a4eb243ac113088ecb41280f3052ac12c8c3bf9.txt",
+      "raw_path": null,
+      "text_chars": 4399,
+      "redirect_chain": [],
+      "identity_decision": "official_domain",
+      "identity_reason": "host us.govee.com is an official domain",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 0674cb6eae522a458a29e71e7e95d48971e74b5c5e0cec4827208ba177938f90.json sha256=7d2cf530f93b0b6a1e2f33f8a3ca9c39435a0e07fec611d45b40ff31fa9d8e79",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-b08b6d63b413",
+      "company_id": "govee",
+      "requested_url": "https://us.govee.com/blogs/news",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "388378222a5c6774983ece9c7d76598646e7416f9557c1c68e67f4deb7473cee",
+      "text_path": "text/388378222a5c6774983ece9c7d76598646e7416f9557c1c68e67f4deb7473cee.txt",
+      "raw_path": null,
+      "text_chars": 36329,
+      "redirect_chain": [],
+      "identity_decision": "official_domain",
+      "identity_reason": "host us.govee.com is an official domain",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 33f0e32ced15e23352edb65cf3544cf5e9ab6c9c50e18da216fbd77f75a96b0c.json sha256=e2dca95d4b86cb6e502246076e1cd7c6eb87e84e90b0bcdd9d0f075db4711108",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-ec90eaf24b48",
+      "company_id": "govee",
+      "requested_url": "https://adfox.ai/blog/govee-marketing-data-analysis-of-govees-social-media-ads-by-goodsfox/",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "97d344b1f76091136bc999355a1c3aca4fdd063769028636fb503f93b800d46f",
+      "text_path": "text/97d344b1f76091136bc999355a1c3aca4fdd063769028636fb503f93b800d46f.txt",
+      "raw_path": null,
+      "text_chars": 5132,
+      "redirect_chain": [],
+      "identity_decision": "third_party_confirmed",
+      "identity_reason": "13 name mention(s) co-occur with smart lighting and home gadgets terms",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 4249fe7d2ee00cee3d707e792c435a02efb437ca559445717343d2ea7bed3ccb.json sha256=e5154b479ec8d50546307c0dc5d3e522aaa71b78db4f040b9ca5af0e796d38c3",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-70c250bc3610",
+      "company_id": "govee",
+      "requested_url": "https://us.govee.com/pages/brand-introduction",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "3d23a17d01d63304d18e9ed2111801107d5e2c32b64eb8a0dbb9d34e5ec91fd4",
+      "text_path": "text/3d23a17d01d63304d18e9ed2111801107d5e2c32b64eb8a0dbb9d34e5ec91fd4.txt",
+      "raw_path": null,
+      "text_chars": 3139,
+      "redirect_chain": [],
+      "identity_decision": "official_domain",
+      "identity_reason": "host us.govee.com is an official domain",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 6fa9549b00978b514c32f8bcc93b94d70d496eed738115b1db1615c411abe69c.json sha256=86791fe4b3823e0889fbbd6408605808ffd3b8a13fadfb15f5941d59ee82c6dd",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-b7055d323162",
+      "company_id": "govee",
+      "requested_url": "https://www.stride-social.com/case-studies/govee",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "5de472f4f9c139f83819ccd9a12c343d7ce16d44a15d45b70cd9f3e704feeae7",
+      "text_path": "text/5de472f4f9c139f83819ccd9a12c343d7ce16d44a15d45b70cd9f3e704feeae7.txt",
+      "raw_path": null,
+      "text_chars": 3223,
+      "redirect_chain": [],
+      "identity_decision": "third_party_confirmed",
+      "identity_reason": "10 name mention(s) co-occur with smart lighting and home gadgets terms",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 9501daf12d1440c1df6a8bdf504a54c6da5d26cbe54c0ebb99e9d46bc929eedb.json sha256=4b16aa07e4bcc1800e41f6691ae5838062513889d227b7a2341d1e882a031f33",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-b45dd874ac89",
+      "company_id": "govee",
+      "requested_url": "https://us.govee.com/pages/about-us",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "2e72256d9c785212cbe2d3b9e15227c5c176177643c05d9c64a3e34e1e8855df",
+      "text_path": "text/2e72256d9c785212cbe2d3b9e15227c5c176177643c05d9c64a3e34e1e8855df.txt",
+      "raw_path": null,
+      "text_chars": 7215,
+      "redirect_chain": [],
+      "identity_decision": "official_domain",
+      "identity_reason": "host us.govee.com is an official domain",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 5414c8fe07b5eda7e6a643c43ab7fb0e6b626ec009e7c48ae11b1366dec0a88e.json sha256=63b79bf8a2e440ae01bd173515b516370b3c03ace638242b70b9ab76d434d29b",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-603f0671015e",
+      "company_id": "govee",
+      "requested_url": "https://goveeofficial.com/about-govee/",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "a1510d836a69f44fad6f81ad097b5bb8192e0adf4457af05db6ee9de76280bf5",
+      "text_path": "text/a1510d836a69f44fad6f81ad097b5bb8192e0adf4457af05db6ee9de76280bf5.txt",
+      "raw_path": null,
+      "text_chars": 2710,
+      "redirect_chain": [],
+      "identity_decision": "third_party_confirmed",
+      "identity_reason": "3 name mention(s) co-occur with smart lighting and home gadgets terms",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 1c2594d1a2ee477bd53d7f17c830aa3d90e3c848ee3996ac9a495a58c37f038e.json sha256=20dd01749a81f4e074a9c1e1cf429119c18b5fff90d012e7c3cce842a5196b80",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "passage_uid": "PU-2f529cf0f84c03a7",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 26957,
+      "char_end": 27583,
+      "text": "6/16/2026 Govee Teams Up with Tim Howard Govee Teams Up with Tim Howard to Bring \"Unstoppable Fun\" to Watch Parties New research reveals the majority of soccer fans prefer watching at home, with many investing in technology to recreate the match-day experience BELLEVUE, Wash., June 10, 2026 -- Govee, a leading smart lighting brand, today announced a collaboration with legendary goalkeeper and American soccer icon Tim Howard, to bring \"unstoppable fun\" to at-home watch parties during this summer's global soccer tournament. Research shows that home is becoming the default match-day setting for many U.S. fans this summer.",
+      "text_sha256": "675355609875c77f0d124d867ac99f55d6f3be059f5adc8af742100b57a9b28f",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "historical_activity",
+      "flags": [],
+      "dates_mentioned": [
+        "June 10, 2026"
+      ],
+      "relevance_terms": [
+        "brand",
+        "collab",
+        "collaborat",
+        "fans"
+      ],
+      "score": 21,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P1",
+      "source_url": "https://us.govee.com/blogs/news",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-48437a9409147cdc",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 16787,
+      "char_end": 17378,
+      "text": "6/26/2026 Govee x house of the dragon 3 Govee Brings House of the Dragon's Fire and Darkness Beyond the Screen in Collaboration With HBO Max Govee, the Official Smart Lighting Partner of House of the Dragon Season 3, brings Westeros's fire and shadow off the screen and into your room. BELLEVUE, Wash., June 22, 2026 -- Govee, a global leader in smart lighting, today announced an official collaboration with the HBO Original Series House of the Dragon, debuting House of the Dragon–themed light scenes and an in-app theme skin across the Govee TV Backlight series throughout the show's run.",
+      "text_sha256": "0963fc3f9c9bf32650d317de7c187e260cdfffda2761740f3952feb4d08a553a",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "historical_activity",
+      "flags": [],
+      "dates_mentioned": [
+        "June 22, 2026"
+      ],
+      "relevance_terms": [
+        "collab",
+        "collaborat",
+        "partner"
+      ],
+      "score": 19,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P2",
+      "source_url": "https://us.govee.com/blogs/news",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-63d3b16d00d59877",
+      "source_id": "S-b7055d323162",
+      "char_start": 1527,
+      "char_end": 2153,
+      "text": "Execution: Stride Social collaborated with product review creators to produce organic-style videos that seamlessly integrated Govee's LED lights into their content. This approach ensured that the advertisements felt natural and engaging to the creators' audiences, highlighting the ease of use and aesthetic benefits of Govee's products. Results: The campaign worked wonders, with results continually improving as we maintain ongoing monthly campaigns with Govee. Our long-term partnership with Govee has built a foundation of trust and effectiveness, consistently driving high engagement and awareness for their LED products.",
+      "text_sha256": "8499074f756d6a61c2f9a64d2da26c7438e6b36c1c7ac75923c16cbf129459c2",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "advertis",
+        "audience",
+        "campaign",
+        "collab",
+        "collaborat",
+        "content",
+        "creator",
+        "partner"
+      ],
+      "score": 19,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P3",
+      "source_url": "https://www.stride-social.com/case-studies/govee",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-cdad18bbf8c73428",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 29413,
+      "char_end": 30040,
+      "text": "\"I spent my career trying to stop shots,\" said Tim Howard, known to U.S. fans as the \"Secretary of Defense.\" \"But after experiencing a watch party with Govee lighting, I realized this kind of fun is simply unstoppable. When the red, white, and blue that U.S. soccer fans know so well filled the whole space, I felt like I was back on the field.\" Tim Howard will be joining the \"Unstoppable Fun\" Stream Battle, Govee's live activation on TikTok starting June 12th. Four soccer-focused creators will each host a Govee-themed livestream during a match this summer, using Govee lighting to build the atmosphere for their audiences.",
+      "text_sha256": "b46af03a4b503c026067f1a6ce0506146ded2ebff19f0d92d7de2eafcd00576a",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "audience",
+        "creator",
+        "fans",
+        "tiktok"
+      ],
+      "score": 18,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P4",
+      "source_url": "https://us.govee.com/blogs/news",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-c0524f9e453abe12",
+      "source_id": "S-ec90eaf24b48",
+      "char_start": 825,
+      "char_end": 1524,
+      "text": "01 Overview of Govee’s Social Media Advertising According to GoodsFox data, Govee has promoted 8 products with 51 ads in the past 7 days, including 17 new creatives. The ads were mainly images and videos targeting 4 regions – the US, Germany, Singapore, and Mexico. Govee leveraged 5 social media platforms for its ads – Facebook, Instagram, Messenger, and Facebook (FAN) and YouTube. The following table shows the proportion of Govee’s ads by media source:GoodsFox As seen, Govee employs Facebook, Instagram, Messenger, Facebook(FAN) and You tube all in nearly equal measure to reach its target audience.This targeted distribution allows Govee to reach a wider demographic across multiple networks.",
+      "text_sha256": "bb6d4deee41dd58f7cd37ddb2a759381e1aa6b7677d9faed9e9b2988cee7f73a",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "advertis",
+        "audience",
+        "instagram",
+        "social media",
+        "youtube"
+      ],
+      "score": 14,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P5",
+      "source_url": "https://adfox.ai/blog/govee-marketing-data-analysis-of-govees-social-media-ads-by-goodsfox/",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-f7405167dc1966b4",
+      "source_id": "S-b45dd874ac89",
+      "char_start": 3701,
+      "char_end": 3961,
+      "text": "Smart Lighting That Knows You Effortlessly manage your lighting with Govee Home App for more customized functions, or voice commands for remote control. Industry Recognition What They're SayingWhat They're Saying Create with Our Partners our journeyour journey",
+      "text_sha256": "60f936627422c5dd1ce24009003be4955251eda68564f79f1a7df8e102e4e2bb",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "partner"
+      ],
+      "score": 12,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P6",
+      "source_url": "https://us.govee.com/pages/about-us",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-61021b63bc7e0b70",
+      "source_id": "S-b7055d323162",
+      "char_start": 570,
+      "char_end": 899,
+      "text": "Govee’s influencer campaign showcased their LED lights, to push brand awareness for their product ## range. Campaign Views 12 Million+ Campaign Likes 650k+ Total shares 200k+ Introduction: Govee's systematic influencer partnership illuminated their brand and showcased the simplicity of their high-quality LED lighting solutions.",
+      "text_sha256": "ab34e8b6f0c36be0e62910ac764860ad5d3ac9448fd7b2b4c654f74a9ae55b00",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "brand",
+        "campaign",
+        "influencer",
+        "partner"
+      ],
+      "score": 12,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P7",
+      "source_url": "https://www.stride-social.com/case-studies/govee",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-d39539ffe100ca69",
+      "source_id": "S-6494f43e41aa",
+      "char_start": 3024,
+      "char_end": 3375,
+      "text": "11/13/2023 Take TV Viewing to the Next Level with the Govee TV Backlight 3 Lite press release | 11/07/2023 GoveeLife Unveils Flagship Smart Space Heaters to Warm Up Just in Time for Winter press release | 10/09/2023 Govee Unveils a Festive Trio: Introducing Christmas String Lights, Permanent Outdoor Lights Pro, and Christmas Light Sets press release",
+      "text_sha256": "addf2cec20dd3656072f8fa1e0c312aa748c09c6123494ffd9041c2fdd68375e",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [
+        "2023"
+      ],
+      "relevance_terms": [],
+      "score": 10,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P8",
+      "source_url": "https://us.govee.com/pages/newsroom",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-5f6830482e0ebbd2",
+      "source_id": "S-6494f43e41aa",
+      "char_start": 3850,
+      "char_end": 4155,
+      "text": "Or contact us directly at ● For NA and UK: ryan.yang@corp.govee.com or kathy@corp.govee.com ● For EU region: minna@corp.govee.com Name Email Subject Message Submit close btn close btn close Subscribe Form BackgroundSubscribe Form Background Subscribe Form Background get $5 off your first orderGet It Now!",
+      "text_sha256": "4e446e7af18ed98a904a378eb7ba1e9ae945cd9a34dade9574aff0cf4354a4c7",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [],
+      "score": 10,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P9",
+      "source_url": "https://us.govee.com/pages/newsroom",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-6a27ab0e3cb2434d",
+      "source_id": "S-b45dd874ac89",
+      "char_start": 2731,
+      "char_end": 3039,
+      "text": "About Govee Since 2017, Govee has been revolutionizing the smart living experience with innovative lighting solutions. From gaming setups to living spaces and outdoor areas, Govee's smart lights are not just visually stunning but transform everyday moments into personalized and engaging lighting experience.",
+      "text_sha256": "4c9edf9a2a028845ea4dc81d9d692a61da1fb5db7bceb0eaf8a8f010181cf320",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [
+        "2017"
+      ],
+      "relevance_terms": [],
+      "score": 10,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P10",
+      "source_url": "https://us.govee.com/pages/about-us",
+      "document_identity": "official_domain",
+      "publication_date": null
+    }
+  ],
+  "rejected_passages": [
+    {
+      "passage_uid": "PU-a9d2bc5f2b68af21",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 3349,
+      "char_end": 4027,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "historical_activity",
+      "preview": "NewsGovee Brings Vintage Holiday Magic to Life with One Tap Alongside Creative Director and Designer Brady Tolbert10/26/2026 Govee Turns Up the Spooky With Sarah Michelle Gellar in New Nationwide Hall"
+    },
+    {
+      "passage_uid": "PU-e3d2bf74bbe042f0",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 12191,
+      "char_end": 12864,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "historical_activity",
+      "preview": "8/25/2026 govee teams up with moana Govee Teams Up with Disney's Live-Action Reimagining of \"Moana\" to Bring Exclusive Smart Lighting Effects Into Homes! LOS ANGELES, June 26, 2026 -- Govee, a global "
+    },
+    {
+      "passage_uid": "PU-40b202d75b5555e0",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 3105,
+      "char_end": 3348,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "actual_activity",
+      "preview": "News search results for Newssearch results for News ## News Stay updated with Govee News for the latest breakthroughs in smart lighting and home innovation. Explore product launches, tech trends, and "
+    },
+    {
+      "passage_uid": "PU-d4dd724bffd4dfb3",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 17847,
+      "char_end": 18225,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Click here to view the full collaboration details > Another Way to Experience Westeros Beyond the Screen For House of the Dragon fans, the world of Westeros lives in its details — the fire of Dragonst"
+    },
+    {
+      "passage_uid": "PU-01f670385341ff8a",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 19571,
+      "char_end": 20171,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Experience House of the Dragon Across the Full Govee TV Backlight 3 Series Every House of the Dragon fan gets a fit — the collaboration runs across Govee's industry-leading TV Backlight lineup, a thre"
+    },
+    {
+      "passage_uid": "PU-e891ba9054e59a23",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 30041,
+      "char_end": 30524,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "The creator whose watch party stream receives the highest combined view count will win a live call-in from Howard - with the US legend and the winning creator talking soccer and lighting setups. Notes"
+    },
+    {
+      "passage_uid": "PU-24211b9266c99275",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 10028,
+      "char_end": 10502,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "9/4/2026 Govee Collaborates with Interior Designers to Showcase Smart Lighting as a New Element of Home Design Govee, a global leader in smart lighting, is showcasing the evolving role of smart lighti"
+    },
+    {
+      "passage_uid": "PU-ad55816282fa8818",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 10503,
+      "char_end": 11100,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Govee Collaborates with Interior Designers Working with interior stylists Gemma Mahabeer-Goldsmith and Melanie Lissack, Govee brings its floor lamps into distinctly different interior settings, demons"
+    },
+    {
+      "passage_uid": "PU-9a330a2c683ecfc7",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 12865,
+      "char_end": 13410,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "\"Through our collaboration with Disney's 'Moana', we're journeying beyond the reef and bringing a touch of Moana's story to everyday life and helping users create spaces where their own dreams and jou"
+    },
+    {
+      "passage_uid": "PU-9115fa93336a7ec6",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 15147,
+      "char_end": 15645,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Govee collaboration, explore the exclusive lighting effects, and discover compatible Govee smart lighting products, please visit this page. About Disney's \"Moana\" In \"Moana,\" Disney's live-action reim"
+    },
+    {
+      "passage_uid": "PU-1fcdfc314f4867c0",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 17379,
+      "char_end": 17845,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "\"House of the Dragon delivers a cinematic experience with stunning visuals, and we're honored to be HBO's Official Smart Lighting Partner for Season 3,\" said Eric Wu, CEO of Govee. \"Backed by years of"
+    },
+    {
+      "passage_uid": "PU-6f9676f2f30ff374",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 20762,
+      "char_end": 21444,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "From living spaces, gaming setups, and outdoor areas, Govee's smart home tech is not just visually stunning, but also functional — transforming small everyday moments into more personalized and bright"
+    },
+    {
+      "passage_uid": "PU-ca02291535751104",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 27584,
+      "char_end": 28264,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "More than half of U.S. adults (56%) plan to watch at least one match and 68% prefer watching in a private home setting, either their own home or the home of family and friends. Rising ticket, travel, "
+    },
+    {
+      "passage_uid": "PU-b80bc0f2969b8beb",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 31123,
+      "char_end": 31620,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "For movie lovers, sports fans, and anyone who wants to turn their living room into an immersive home cinema, the TV Backlight 3 brings cinema-grade color accuracy to a broader audience. Industry-Highe"
+    },
+    {
+      "passage_uid": "PU-b5caac6d4add5e19",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 7120,
+      "char_end": 7672,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "historical_activity",
+      "preview": "Amplifies Personal Creativity into Everyday Ambience with AI-Powered COB Strip Light Also unveiled at IFA 2026, the Govee COB Strip Light 2 Pro brings AI-powered creativity to personalized everyday li"
+    },
+    {
+      "passage_uid": "PU-9b3996ed6864a6c4",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 20172,
+      "char_end": 20761,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "historical_activity",
+      "preview": "Govee TV Backlight 3 Pro — the flagship for HDR and cinematic viewing, with Govee's triple-camera HDR engine preserving the deepest shadow and widest color range in House of the Dragon's most cinemati"
+    },
+    {
+      "passage_uid": "PU-86ffe46cbcc02fe4",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 22587,
+      "char_end": 23102,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "historical_activity",
+      "preview": "6/22/2026 govee prime day 2026 news Govee Lights Up Prime Day With Its Lowest Prices Yet This Year From June 23–26, consumers can save up to 53% on smart lighting built for year-round use across indoo"
+    },
+    {
+      "passage_uid": "PU-bea8faa0384a9e5d",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 30525,
+      "char_end": 31122,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "historical_activity",
+      "preview": "6/12/2026 govee tv backlight 3 news Govee Introduces the TV Backlight 3 With the Highest-Resolution 4MP Dual-Camera and First Hybrid Glass-Plastic Lens With the industry's highest 4-million-pixel reso"
+    },
+    {
+      "passage_uid": "PU-16c0f1934393e113",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 5227,
+      "char_end": 5917,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "As the first smart lighting brand to introduce multi-turn conversations into AI-powered lighting, Govee allows users to easily describe, refine, and personalize their desired lighting experiences thro"
+    },
+    {
+      "passage_uid": "PU-f06c1898f8b80569",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 15646,
+      "char_end": 16237,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "The film is directed by Emmy® and Tony Award® winner Thomas Kail (\"Hamilton\"); produced by Dwayne Johnson, p.g.a., Beau Flynn, p.g.a., Dany Garcia, Hiram Garcia, p.g.a. and Lin-Manuel Miranda; and exe"
+    },
+    {
+      "passage_uid": "PU-4ce021c2d32d3c40",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 21445,
+      "char_end": 21985,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Martin; Executive Producers Sara Hess, Melissa Bernstein, Kevin de la Noy, Vince Gerardis, David Hancock, Philippa Goslett. Based on George R.R. Martin's \"Fire & Blood.\" Season three cast includes Mat"
+    },
+    {
+      "passage_uid": "PU-e4a2ad338f6ee033",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 21986,
+      "char_end": 22585,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "About HBO HBO® is one of the most respected and innovative entertainment brands in the world, serving iconic, award-winning programming through the HBO linear channels and the direct-to-consumer strea"
+    },
+    {
+      "passage_uid": "PU-ca4106e4c26b30f7",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 23103,
+      "char_end": 23751,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "This year's Govee Prime Day lineup includes indoor lighting that shifts from everyday illumination to ambient color, outdoor lighting that enhances patios and home exteriors year-round, and immersive "
+    },
+    {
+      "passage_uid": "PU-a60abb4f54081053",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 24107,
+      "char_end": 24711,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Govee Uplighter Floor Lamp: Now $125.99, was $179.99 (30% off) Govee Floor Lamp 2, in black, silver, or blue: Now $99.99, was $159.99 (37% off) Govee Table Lamp 2: Now $53.99, was $79.99 (32% off) Gov"
+    },
+    {
+      "passage_uid": "PU-dcdfbc7229ce6a86",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 28265,
+      "char_end": 28797,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "brand_positioning",
+      "preview": "Govee elevates that home-viewing experience with smart lighting designed to bring match-night fun, energy, and shared memories to life. \"At Govee, we believe lighting should do more than brighten a ro"
+    },
+    {
+      "passage_uid": "PU-bebccbccbb78a590",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 32906,
+      "char_end": 33437,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Govee AI content filters automatically adapt to what's playing — moody and restrained for thrillers, vibrant and dynamic for animation, soft and warm for documentaries — so the atmosphere always match"
+    },
+    {
+      "passage_uid": "PU-10994aac7434757d",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 4028,
+      "char_end": 4634,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "By combining advanced AI capabilities with cutting-edge lighting technologies, Govee is pioneering a new generation of smart lighting experiences that are simpler, more personalized, and more accessib"
+    },
+    {
+      "passage_uid": "PU-c67acdf5f372ee16",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 4635,
+      "char_end": 5226,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Through AI, lighting can become more adaptive and responsive, helping people effortlessly shape the atmosphere of their homes and enrich everyday moments,\" said Eric Wu, CEO of Govee. View All New Pro"
+    },
+    {
+      "passage_uid": "PU-80dd3cc64367b15e",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 5918,
+      "char_end": 6436,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "AI Lighting Bot 2.0 creates personalized lighting based on users' moods and daily needs. When users need to feel more energized and focused, the AI intelligently prioritizes Govee's featured 478nm sky"
+    },
+    {
+      "passage_uid": "PU-bd11f348e9b44785",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 6437,
+      "char_end": 7119,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Meanwhile, the NaturalTone Algorithm delivers accurate, natural-looking white light across a 1,000K–10,000K color temperature range, with up to 7,000 lumens of white light output and a CRI of 95. The "
+    },
+    {
+      "passage_uid": "PU-b8e3396ad803d399",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 7673,
+      "char_end": 8253,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "To perfectly complement these AI-driven experiences, the strip light features an industry-leading density of 1,344 LEDs and 16 ICs per meter, along with an innovative triple-layer groove design. This "
+    },
+    {
+      "passage_uid": "PU-6a0711678ceea9c1",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 8254,
+      "char_end": 8923,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Alongside the flagship model, Govee is also introducing the COB Strip Light 2, bringing seamless, spot-free illumination and AI-powered lighting experiences to even more users. AI-Powered Outdoor Ligh"
+    },
+    {
+      "passage_uid": "PU-c2c858865024b7ba",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 8924,
+      "char_end": 9217,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Powered by Govee's LuminBlend+ Color Management System, it delivers precise color reproduction and seamless color transitions for richer, more dynamic outdoor lighting displays. Pricing and Availabili"
+    },
+    {
+      "passage_uid": "PU-1b06d9538324847c",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 9445,
+      "char_end": 10027,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "$499.99 (100ft) / $799.99 (200ft) About Govee Govee has been revolutionizing the smart living experience with innovative, ambient lighting solutions since 2017. From living spaces, gaming setups, and "
+    },
+    {
+      "passage_uid": "PU-55c7192fc0c3cfa6",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 11101,
+      "char_end": 11611,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Floor Lamp 3 uses layered illumination to add dimension and create distinct moments within a room, while Lantern Floor Lamp pairs a softly curved silhouette with Halo Gradient Lighting to create a cal"
+    },
+    {
+      "passage_uid": "PU-6f0c0eeed650bf4e",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 11612,
+      "char_end": 12190,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "\"Lighting technology provides greater freedom in color, control and expression, but the final experience should feel intuitive, harmonious and personal,\" said Jerry Lin, Product Manager of Govee. By t"
+    },
+    {
+      "passage_uid": "PU-9897acec4aec6317",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 13411,
+      "char_end": 13985,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Whether illuminating a living room for an immersive family film night or adding a touch of ambiance to a bedroom routine for the ultimate \"Moana\" fan, the effects make home experiences more immersive "
+    },
+    {
+      "passage_uid": "PU-86a308b1a39829aa",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 13986,
+      "char_end": 14583,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "The effects are available across Govee's indoor lighting portfolio, including: Govee Lantern Floor Lamp Govee Floor Lamp 3 Govee Uplighter Floor Lamp with Nebula Effect Govee Table Lamp Classic Govee "
+    },
+    {
+      "passage_uid": "PU-9836af13c00f2393",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 14584,
+      "char_end": 15144,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Featuring vibrant and unique color lighting effects, tunable white lighting from warm to cool tones, synchronized multi-device experiences through DreamView, and automatic day-to-night lighting transi"
+    },
+    {
+      "passage_uid": "PU-0a64d5b1fa546d53",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 16238,
+      "char_end": 16786,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "About Govee Govee has been revolutionizing the smart living experience with innovative, ambient lighting solutions since 2017. From living spaces, gaming setups, and outdoor areas, Govee's smart home "
+    },
+    {
+      "passage_uid": "PU-a6d96f7b8419238a",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 18915,
+      "char_end": 19570,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "A House of the Dragon Layer Across the Govee Experience Govee and HBO have co-designed a curated set of House of the Dragon–inspired light scenes, playable across the TV Backlight lineup and the wider"
+    },
+    {
+      "passage_uid": "PU-2107b0dc536ec845",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 23752,
+      "char_end": 24106,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "The Uplighter Floor Lamp turns a plain living room corner into moving light art with its magical ripple effect, tunable white light, RGBIC ambient color, and hands-free Auto-Run mode. For smaller spac"
+    },
+    {
+      "passage_uid": "PU-381ccf420ecf0689",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 24712,
+      "char_end": 25047,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "The Permanent Outdoor Lights Pro combines white lighting and colorful effects in one installation for holidays, parties, curb appeal, and summer gatherings without climbing a ladder again. For patios,"
+    },
+    {
+      "passage_uid": "PU-44cce087be58efae",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 25048,
+      "char_end": 25664,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Govee Permanent Outdoor Lights Pro: 100ft now $279.99, was $439.99 (36% off) 150ft now $389.99, was $599.99 (35% off) 200ft now $459.99, was $759.99 (39% off) Govee Curtain Lights Pro: Now $139.99, wa"
+    },
+    {
+      "passage_uid": "PU-92555976ee04f6bc",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 25665,
+      "char_end": 26323,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Stadium greens during the world's largest soccer tournament, fast-moving game effects, and cinematic skies or explosions can expand beyond the bezel, making the screen feel larger and the room more im"
+    },
+    {
+      "passage_uid": "PU-0226a456f01881a3",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 26324,
+      "char_end": 26956,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "To explore the full range of Prime Day deals, visit Govee's Amazon Store and official website. About Govee Govee has been revolutionizing the smart living experience with innovative, ambient lighting "
+    },
+    {
+      "passage_uid": "PU-ec5cb6597902b06c",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 28798,
+      "char_end": 29412,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "When the match kicks off, one tap in the Govee Home app or a simple voice command can shift the space from everyday illumination into an energized watch-party setting filled with customizable colors, "
+    },
+    {
+      "passage_uid": "PU-5c0fe24125d3f4ac",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 31621,
+      "char_end": 32246,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "The advanced lens architecture combines the high light transmittance of glass with the precise refraction of aspherical plastic elements, effectively minimizing chromatic aberration and distortion for"
+    },
+    {
+      "passage_uid": "PU-3f38599babd8cfc9",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 32247,
+      "char_end": 32905,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Paired with a high signal-to-noise 1080p image sensor operating at 30fps, the system captures cleaner shadows with reduced noise and stronger contrast — so when a sunset fades to twilight in a documen"
+    },
+    {
+      "passage_uid": "PU-a98ec2c812231286",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 33438,
+      "char_end": 34045,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "With 60 LEDs per meter, brightness increases by approximately 20% over the previous generation, creating smoother transitions and more layered illumination from dark areas to highlights with no visibl"
+    },
+    {
+      "passage_uid": "PU-ec4338315ade542b",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 34046,
+      "char_end": 34738,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "A custom high-bond adhesive means installation takes roughly in minutes with zero tools, no drilling, and no electrician — just peel, stick, and start watching. Whole-Room Immersive Lighting and Seaml"
+    },
+    {
+      "passage_uid": "PU-da93f3635ad4870b",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 34739,
+      "char_end": 35358,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "TV Backlight 3 for 55\"–65\" TVs — $109.99 TV Backlight 3 for 75\"–85\" TVs — $139.99 About Govee Govee has been revolutionizing the smart living experience with innovative, ambient lighting solutions sin"
+    },
+    {
+      "passage_uid": "PU-c8cee67e384b5f56",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 35780,
+      "char_end": 36085,
+      "selection_status": "rejected",
+      "reasons": [
+        "near_duplicate_of_selected_passage"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Or contact us directly at ● For NA and UK: ryan.yang@corp.govee.com or kathy@corp.govee.com ● For EU region: minna@corp.govee.com Name Email Subject Message Submit close btn close btn close Subscribe "
+    },
+    {
+      "passage_uid": "PU-121fd71a27bf83fd",
+      "source_id": "S-b45dd874ac89",
+      "char_start": 3043,
+      "char_end": 3177,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Our Innovative Technologies LuminBlend+LuminBlend+ AI LightingBot 2.0AI LightingBot 2.0 EnvisualEnvisual RGBICRGBIC DreamViewDreamView"
+    },
+    {
+      "passage_uid": "PU-d9771a66424fec3c",
+      "source_id": "S-b45dd874ac89",
+      "char_start": 3244,
+      "char_end": 3435,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "DreamView Upgraded color management system that redefines the boundaries of color accuracy and range our journeyour journey Connect with Your Home Connect with Your HomeConnect with Your Home"
+    },
+    {
+      "passage_uid": "PU-9979b3372ae3960c",
+      "source_id": "S-b45dd874ac89",
+      "char_start": 3439,
+      "char_end": 3631,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "The Benefits of Smart Lighting Control with EaseControl with Ease Light Every MomentLight Every Moment Beyond On & OffBeyond On & Off Smart Lighting That Knows YouSmart Lighting That Knows You"
+    },
+    {
+      "passage_uid": "PU-7e571870ccdb04b1",
+      "source_id": "S-b45dd874ac89",
+      "char_start": 3965,
+      "char_end": 4109,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Make Every Part of Your Home Feel Special 1290+ Patents (Utility & Design) 21 Million+ Registered App Users Available in 80+ Countries & Regions"
+    },
+    {
+      "passage_uid": "PU-de9d22a79a05f962",
+      "source_id": "S-b45dd874ac89",
+      "char_start": 4137,
+      "char_end": 4508,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Warm Glow for Room Picture of Govee Uplighter Floor Lamp Govee Uplighter Floor Lamp $149.99$179.99 Shop Now Picture of Govee Christmas Sparkle String Lights Govee Christmas Sparkle String Lights $149."
+    },
+    {
+      "passage_uid": "PU-4832041b295a958a",
+      "source_id": "S-b45dd874ac89",
+      "char_start": 4536,
+      "char_end": 4907,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Warm Glow for Room Picture of Govee Uplighter Floor Lamp Govee Uplighter Floor Lamp $149.99$179.99 Shop Now Picture of Govee Christmas Sparkle String Lights Govee Christmas Sparkle String Lights $149."
+    },
+    {
+      "passage_uid": "PU-ffbef88d925c2a4c",
+      "source_id": "S-b45dd874ac89",
+      "char_start": 5497,
+      "char_end": 5868,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Warm Glow for Room Picture of Govee Uplighter Floor Lamp Govee Uplighter Floor Lamp $149.99$179.99 Shop Now Picture of Govee Christmas Sparkle String Lights Govee Christmas Sparkle String Lights $149."
+    },
+    {
+      "passage_uid": "PU-e37e8aaba0e9999d",
+      "source_id": "S-b45dd874ac89",
+      "char_start": 5896,
+      "char_end": 6267,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Warm Glow for Room Picture of Govee Uplighter Floor Lamp Govee Uplighter Floor Lamp $149.99$179.99 Shop Now Picture of Govee Christmas Sparkle String Lights Govee Christmas Sparkle String Lights $149."
+    },
+    {
+      "passage_uid": "PU-b0d68908423250d2",
+      "source_id": "S-b7055d323162",
+      "char_start": 900,
+      "char_end": 1526,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Client Background: Govee is a prominent leader in the LED lighting industry, renowned for providing top-tier LED lighting products that enhance the ambience of any space without needing specialist kno"
+    },
+    {
+      "passage_uid": "PU-0f969f4662ea812f",
+      "source_id": "S-ec90eaf24b48",
+      "char_start": 227,
+      "char_end": 671,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Govee Marketing: A Data Analysis of Govee’s Social Media Ads by GoodsFox HomeBrand Strategy & AnalysisGovee Marketing: A Data Analysis of Govee’s Social Media Ads by GoodsFox Govee is a global leading"
+    },
+    {
+      "passage_uid": "PU-a4f1b1ff098895e5",
+      "source_id": "S-ec90eaf24b48",
+      "char_start": 1525,
+      "char_end": 2186,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "The visual content caters to social media users who prefer engaging images and videos over text and captions. Govee occasionally shows off its ads on YouTube. 02 Performance of Govee’s Ads: Traffic, D"
+    },
+    {
+      "passage_uid": "PU-c09f292af3189958",
+      "source_id": "S-ec90eaf24b48",
+      "char_start": 2797,
+      "char_end": 3453,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Based on Goodsfox, this suggests that the brand is using various versions or copies of its advertisements to cater to various consumer segments or tastes. 03 Conclusion All in all , Govee is the smart"
+    },
+    {
+      "passage_uid": "PU-dcc3c147bca38f81",
+      "source_id": "S-ec90eaf24b48",
+      "char_start": 2187,
+      "char_end": 2796,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Longer active periods signal positive performance and allow for continuous optimization. Most of Govee’s ad creatives have multiple related versions as well, denoting high relevance. Govee creates loc"
+    },
+    {
+      "passage_uid": "PU-28b7172d90515baf",
+      "source_id": "S-b08b6d63b413",
+      "char_start": 18226,
+      "char_end": 18914,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:ambiguous_entity"
+      ],
+      "identity_reason": "possible different entity: Govee TV",
+      "statement_type": "descriptive",
+      "preview": "The Govee TV Backlight lineup reads on-screen color in real time through its camera color-matching system and extends it onto the surrounding wall as the scene evolves — so when dragonfire roars, warm"
+    },
+    {
+      "passage_uid": "PU-6acb181786df3bda",
+      "source_id": "S-b7055d323162",
+      "char_start": 2154,
+      "char_end": 2463,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "At Stride Social we strive to bring the very best results to the brands we work with. Whether it's through our unique services or our hand-picked creator roster. Our expertise comes from our unique st"
+    },
+    {
+      "passage_uid": "PU-bccc82baf2353ca9",
+      "source_id": "S-b7055d323162",
+      "char_start": 2517,
+      "char_end": 2704,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Stride Social have been amazing to work with! Not only do they give creators freedom and ##### flexibility, but they are also fun to work with. Looking forward to many years collaborating"
+    },
+    {
+      "passage_uid": "PU-1bdda54b78fcec7c",
+      "source_id": "S-b7055d323162",
+      "char_start": 2829,
+      "char_end": 3088,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Temu Stride Ahead with Influencer Marketing. Let’s Work Together. Start a campaignJOIN STRIDE TALENT Stride Social company logo in black text.QR code with WeChat logo and Chinese text prompting to sea"
+    },
+    {
+      "passage_uid": "PU-8b8ae4563f9ebb12",
+      "source_id": "S-603f0671015e",
+      "char_start": 2402,
+      "char_end": 2710,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "About Govee Since 2017, Govee has been revolutionizing the smart living experience with innovative lighting solutions. From gaming setups to living spaces and outdoor areas, Govee’s smart lights are n"
+    },
+    {
+      "passage_uid": "PU-9a6dc35a77878cf0",
+      "source_id": "S-c37cc6fad189",
+      "char_start": 128,
+      "char_end": 820,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "brand_positioning",
+      "preview": "Table & Floor Lamps Search here Search HomeAbout us Govee: Lighting Up Life Since 2017At Govee, we believe life should be as vibrant as you are. Since 2017, we’ve been redefining smart lighting—turnin"
+    },
+    {
+      "passage_uid": "PU-e9689da472714399",
+      "source_id": "S-b7055d323162",
+      "char_start": 249,
+      "char_end": 538,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Vector icon of a house with a checkmark indicating home verification or approval. Instagram logo. Instagram logo. Three interlinked white circular arrows forming a continuous loop on a dark background"
+    },
+    {
+      "passage_uid": "PU-c5e67e2ec0f9276e",
+      "source_id": "S-ec90eaf24b48",
+      "char_start": 4658,
+      "char_end": 4868,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "2026 Global DTC Marketing Insights: Traffic Shifts, Ad Trends & Emerging E-commerce Markets * 05/28/2026 An ad intelligence platform built for marketers to discover winning ads across games, apps, and"
+    },
+    {
+      "passage_uid": "PU-bc0869e975f8c433",
+      "source_id": "S-c37cc6fad189",
+      "char_start": 964,
+      "char_end": 1094,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Refund and Returns Policy Copyright @ 2025 gearlume.com Search My Cart Wishlist Recently Viewed GoveeGovee Great to have you back!"
+    }
+  ],
+  "status": "ok",
+  "status_reasons": [],
+  "packet_sha256": "6434ed442ba9f38bcaa5b95456832e73195ee70c8f2a1b5ecabc3e9b0d19585a"
+}

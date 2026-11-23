@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "parachute-home",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "9cb12eff77ffb5e0ac45593357a0d264946e929200db7efa1c5efa6a7528d169",
+    "prompt_sha256": "6a47bbaa7f5c63abcde4c5435b1103c3cedbcec50b89c2f43d37065054eb7321",
+    "completion_sha256": "c7f8b7cad13efb4e26968c0a4e9f71368c97c0dde88ef00eaf4be8fe09e610c2",
+    "audit_sha256": "b17bef760310b4b72a1dc4a5d52adcba2b4efdfa8677446438501d36d6d3c1cf"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 7,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:47+00:00",
+  "record_sha256": "e388b47ac18b484e561e9e0b052d333fadb1bba1edde66f20a0b0776e3a9bf6a"
+}

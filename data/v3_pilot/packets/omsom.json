@@ -9,13 +9,13 @@
       "omsom.com"
     ],
     "identity_status": "verified",
-    "registry_version": "2026-11-21.v1",
-    "registry_sha256": "30ef3cd9bf05bcad5ca5c1e00110b3252c8aa7b1715374cbddb5f6bb1f090a23"
+    "registry_version": "2026-11-22.v3",
+    "registry_sha256": "8abbd9a930d2dd95d6993cfa4ab1f6d031f250483edb5d5b57c5afbf03c19836"
   },
   "collection": {
     "mode": "legacy_cache_replay",
     "collector_version": "brandpilot-collector-0.3",
-    "created_at": "2026-11-22T03:51:08+00:00",
+    "created_at": "2026-11-22T20:24:28+00:00",
     "queries": [
       "\"Omsom\" instagram marketing campaign target audience",
       "\"Omsom\" social media strategy brand positioning",
@@ -986,6 +986,19 @@
       "preview": "Listing Optimization Included: Keyword-friendly product titles. Improved bullet points and description. Detailed product descriptions. Researched SEO-keyword integration. Suitable product categorizati"
     },
     {
+      "passage_uid": "PU-e5d34a8b9639596d",
+      "source_id": "S-799ad9db530d",
+      "char_start": 53,
+      "char_end": 495,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "omsom Options Omsom 74.6K followers 285 following PROUD + LOUD ASIAN FLAVORS 🔥 As seen in @vogue @nytimes @cnn @foodandwine ✨ Find our Saucy Noodles at @wholefoods 🛒 Posts Reels Tagged Yakisoba-stuffe"
+    },
+    {
       "passage_uid": "PU-d75277815d83e1b0",
       "source_id": "S-92098e52ea59",
       "char_start": 114,
@@ -1075,19 +1088,6 @@
       "identity_reason": "third-party passage names the company in a confirmed document",
       "statement_type": "provider_reported_result",
       "preview": "Omsom's genuine identity creates trust that competitors cannot replicate. Who founded Omsom? Omsom was founded in 2020 by sisters Vanessa and Kim Pham, Vietnamese-Americans who grew up cooking Vietnam"
-    },
-    {
-      "passage_uid": "PU-e5d34a8b9639596d",
-      "source_id": "S-799ad9db530d",
-      "char_start": 53,
-      "char_end": 495,
-      "selection_status": "rejected",
-      "reasons": [
-        "not_marketing_relevant"
-      ],
-      "identity_reason": "third-party passage names the company in a confirmed document",
-      "statement_type": "descriptive",
-      "preview": "omsom Options Omsom 74.6K followers 285 following PROUD + LOUD ASIAN FLAVORS 🔥 As seen in @vogue @nytimes @cnn @foodandwine ✨ Find our Saucy Noodles at @wholefoods 🛒 Posts Reels Tagged Yakisoba-stuffe"
     },
     {
       "passage_uid": "PU-386de5256d51091e",
@@ -1336,5 +1336,5 @@
   ],
   "status": "ok",
   "status_reasons": [],
-  "packet_sha256": "955c58d59b2837a5e482786e9b9ca3adf60428bae9d4ac48621d1255d6b7c1a8"
+  "packet_sha256": "8c4576fbdae422b8914f14e02cc5ba9ead1e1c0cdfc28543069d8b4ac272e100"
 }

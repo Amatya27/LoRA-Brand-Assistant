@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "faherty",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "d6f37028a30a9e3982c934e201cf529086d30b52170a9167fe86c947aad049ca",
+    "prompt_sha256": "747066b6a8b3223b37ca91f70290336467a093aa9d78e5cca21fe66671109a0b",
+    "completion_sha256": "df04a11d766defe2c85bc4bdb646c963734bebe9770f4b2d835ba2cd46bcab3f",
+    "audit_sha256": "3b7ed1c09e7f24af3165e710a5a93cc8e4f70544e50a6edda144daa142aab866"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 7,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:45+00:00",
+  "record_sha256": "ed8b09ad5399d29cccc845556687cf8953565fb47df68ce64398852575070908"
+}

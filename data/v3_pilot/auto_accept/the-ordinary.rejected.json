@@ -1,0 +1,19 @@
+{
+  "company_id": "the-ordinary",
+  "acceptance_basis": "auto_threshold_0.7",
+  "decision": "reject",
+  "reasons": [
+    "pruned draft fails check_draft: decision: the email must propose an Instagram post"
+  ],
+  "groundedness": 1.0,
+  "claim_support": {
+    "C1": "supported",
+    "C2": "supported",
+    "C3": "supported",
+    "C4": "supported"
+  },
+  "removed_claims": [],
+  "label_completion_sha256": "76fcfab7c1bd370b5821bd4c35d93f4122bdb60e5069f1442706ab5c9154b780",
+  "audit_sha256": "62d68436cd95287a6c683ac2dadbdc51daf47ca08f953608f8aa3886ff682a83",
+  "created_at": "2026-11-23T00:28:47+00:00"
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "native-union",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "be994b68d9843a3793cd58ea606f08802136c30e71bb577de31f671f4bba4226",
+    "prompt_sha256": "78875074fd9d9239987f95d54964597e19cda065e77c8b8d3f54fdd9fa2bf463",
+    "completion_sha256": "2446f4737db6424287486d1ce4287fca6410baa251e4b9600f6eae0c0c8a85f2",
+    "audit_sha256": "56e081cf6458a5f671e5566268ff359260bb6a079f876ef1b0a39c06fe230862"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 5,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:46+00:00",
+  "record_sha256": "b1625ae8d29bcf98a7b5ae29698151d5e29fad3685d3e95aa15d66977cb077ff"
+}

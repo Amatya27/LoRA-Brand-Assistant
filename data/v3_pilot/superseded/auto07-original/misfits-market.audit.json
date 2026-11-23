@@ -1,0 +1,114 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "misfits-market",
+  "bound_to": {
+    "packet_sha256": "6500630ce486b492fca884dc1646ce41927269af21acba43b6934906ca422f37",
+    "prompt_sha256": "58fc609095b6d7cd2dbd4bd5101e729dff7d58d82bd464d439fa01d2361aed1f",
+    "completion_sha256": "f4af1ecbc21365655256e0ea015963bce5b9a524257d52001fb018c112476457",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": [
+      "claim C2: not referenced by any field"
+    ]
+  },
+  "raw_response_sha256": "4fc6e94c91e8b931325da661708918bfa6af702e5d0829a21c57d8b0d08350d8",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"We’ve been proud to offer Lakeside’s standout California-grown organic veggies since 2018, but our partnership goes even deeper.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states a partnership with Lakeside Organic Gardens since 2018 and describes a collaborative effort to package broccoli tops.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"when we save food from waste, we also save all the resources that went into producing it.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that saving food from waste also saves resources.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"The brand encourages existing customers to invite friends and family by offering credits or discounts, effectively turning satisfied users into brand advocates.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that Misfits Market encourages referrals with credits or discounts.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Misfits Market leverages influencer and creator partnerships to reach niche audiences.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly mentions leveraging influencer and creator partnerships.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"Misfits Market uses social media to build brand affinity and community, focusing on platforms where visual storytelling and short-form content perform well\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Misfits Market uses social media to build brand affinity and community.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"By featuring customers, unboxing moments, recipes, and before-and-after grocery hauls, Misfits Market turns everyday usage into social proof.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes Misfits Market featuring user-generated content on social media.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"That’s why we partner with 60+ organizations nationwide, including Feeding America, to fight hunger and improve food access everywhere we operate.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Misfits Market partners with 60+ organizations, including Feeding America.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "We’ve been proud to offer Lakeside’s standout California-grown organic veggies since 2018, but our partnership goes even deeper.",
+        "issues": [],
+        "reason": "The passage explicitly states a partnership with Lakeside Organic Gardens since 2018 and describes a collaborative effort to package broccoli tops."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "when we save food from waste, we also save all the resources that went into producing it.",
+        "issues": [],
+        "reason": "The passage directly states that saving food from waste also saves resources."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "The brand encourages existing customers to invite friends and family by offering credits or discounts, effectively turning satisfied users into brand advocates.",
+        "issues": [],
+        "reason": "The passage directly states that Misfits Market encourages referrals with credits or discounts."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Misfits Market leverages influencer and creator partnerships to reach niche audiences.",
+        "issues": [],
+        "reason": "The passage explicitly mentions leveraging influencer and creator partnerships."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "Misfits Market uses social media to build brand affinity and community, focusing on platforms where visual storytelling and short-form content perform well",
+        "issues": [],
+        "reason": "The passage states that Misfits Market uses social media to build brand affinity and community."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "By featuring customers, unboxing moments, recipes, and before-and-after grocery hauls, Misfits Market turns everyday usage into social proof.",
+        "issues": [],
+        "reason": "The passage describes Misfits Market featuring user-generated content on social media."
+      },
+      {
+        "claim_id": "C7",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "That’s why we partner with 60+ organizations nationwide, including Feeding America, to fight hunger and improve food access everywhere we operate.",
+        "issues": [],
+        "reason": "The passage states that Misfits Market partners with 60+ organizations, including Feeding America."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [
+    "C5: reviewer quote does not occur in the referenced passage(s)"
+  ],
+  "status": "unresolved",
+  "reasons": [
+    "reviewer response invalid or incomplete",
+    "C5: reviewer quote does not occur in the referenced passage(s)"
+  ],
+  "created_at": "2026-11-23T00:10:19+00:00",
+  "audit_sha256": "56a9b1744fb054a5cf472ce60fedf304742853fedf3d7c805abb7974d16ab7cd",
+  "dismissed_reviewer_flags": []
+}

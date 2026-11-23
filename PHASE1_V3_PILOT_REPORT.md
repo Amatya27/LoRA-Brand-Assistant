@@ -204,6 +204,174 @@ The same 10 pilot packets were labelled with `mlx-community/Qwen3-14B-4bit` as t
 
 The trial labels are candidates only. They have not been human-reviewed or approved.
 
+## 6d. Batch 2 attempt (22 Nov 2026)
+
+Five validation-split companies were added to the registry (`2026-11-22.v2`): Allbirds, Graza, Supergoop, Fly By Jing and Bones Coffee. Domains were checked by web search and still need a teammate's spot-check. Two copycat Bones Coffee store domains are listed as conflicting. Packets were rebuilt from the legacy cache (all `ok`, 0 provenance errors), labelled with Qwen3-14B and verified with Gemma-3-12B.
+
+- **No new record was approved.** Graza, Fly By Jing and Bones Coffee each have one claim quote that does not occur in its passage. Supergoop fails on a checker bug: the sentence splitter breaks on "Supergoop!" and the campaign name "Every. Single. Day.", producing false "unmarked sentence" errors. Allbirds passed as an abstention, but 7 of its 9 passages are privacy/terms/returns boilerplate that the filter missed, so the abstention reflects a retrieval gap and was not approved.
+- **Omsom and Spindrift trial labels** (which passed every automatic check) were rejected in human review and left unapproved. Omsom: placeholder text in `unknowns`, AdLibrary claims stated without attribution, a TikTok pitch. Spindrift: C6 presents a general industry quote from another agency's co-founder as Spindrift's strategy, and the email cites P6 for TikTok, which only P3 mentions. Their earlier Qwen2.5 labels are kept in `data/v3_pilot/superseded/`.
+- **Implication:** "passed all automatic checks" is not the same as "approvable". Before scaling, add checks for placeholder text, provider attribution in the prose, claim/quote relevance to the company, and the brief's channel (Instagram); fix the splitter for names containing "!" or "."; and extend the boilerplate filter to privacy/terms pages.
+
+The training dataset therefore remains `v3-pilot-2026-11-22` (7 train, 0 valid, 0 test).
+
+## 6e. Larger dataset with automatic acceptance (22 Nov 2026)
+
+> **The 42 auto-accepted records below were NOT reviewed by a human.** They were accepted automatically under the policy `auto_threshold_0.7` set by the project owner on 22 Nov 2026. Only the 7 records marked "human approval" were reviewed and approved by a person. Every auto-accepted record has a file `data/v3_pilot/auto_accept/<id>.json` with `human_reviewed: false`, bound to its packet, prompt, completion and audit hashes. The export manifest (`approval_basis`, `acceptance_counts`, and `acceptance` per entry) records the same.
+
+**Policy.** groundedness = supported claims / total claims. A claim is supported only if no deterministic check names it, the Gemma reviewer's output for it is valid, and the verdict is `supported`. A label is accepted only when all of these hold:
+- groundedness ≥ 0.7;
+- the reviewer confirmed identity;
+- the decision is `draft`;
+- the unknowns contain no placeholder text.
+
+For each accepted label:
+1. Every unsupported claim is removed, together with every sentence, list item or field that cites it (one round only).
+2. The pruned label must pass `check_draft`. Emptying the brand summary, the email or the Instagram idea rejects it.
+3. The pruned label is re-verified by Gemma and must reach audit `pass`.
+
+Abstentions are never auto-accepted.
+
+**Pipeline changes** (all tested; `pytest`: 74 passed):
+- **Sentence splitter:** keeps brand names ending in "!" or "." (e.g. Supergoop!) and short quoted campaign names in one piece, and ignores greetings and sign-offs.
+- **Boilerplate filter:** now covers privacy, terms, returns and cookie text, plus a rule for policy-page URLs and text density, and a rule for context from neighbouring legal paragraphs.
+- **Quote repair:** applies only when the corrected text appears verbatim in the passage, similarity is at least 0.9, and the numbers and negations are unchanged. Every repair is recorded in the label's `attempts[].quote_repairs`.
+- **New checks:**
+  - placeholder text in `unknowns`;
+  - vendor claims that don't name their source in the sentence (an error for prompt v3.3 or later, a warning for older labels so the 7 human approvals stay valid);
+  - non-Instagram channels in the pitch.
+- **Prompt:** bumped to `brandpilot.prompt.v3.3`.
+- **Export:** accepts a packet built under an older registry version when the company's identity fields are unchanged.
+
+**Registry** `2026-11-22.v3`: 95 companies.
+- **Added:**
+  - 9 validation-split companies: Away, Great Jones, Greats, MeUndies, Outdoor Voices, Pela, Stumptown Coffee, Thrive Market, Tonal;
+  - 70 train-split companies.
+- **How domains were checked:** each was confirmed by a web search by Claude, with the source URLs recorded. **A teammate should spot-check them.**
+- **Skipped:**
+  - domain could not be verified: Caraway, Ember, Hatch, Liquid I.V., Nanoleaf, Partake Foods, Peak Design, RXBAR, Saie, Summer Fridays;
+  - generic name whose cached evidence points to other entities: Article, Fi, Hydrant, Prose, Stance, Ritual, Parade;
+  - no legacy data: Rothy's.
+- **Test split:** the 29 companies were not touched, so step 6 (the test set) was not done.
+
+**Run.**
+1. Packets were replayed from the legacy cache with no live fetching.
+2. 85 companies were labelled with Qwen3-14B-4bit (thinking off), then verified with gemma-3-12b-it-4bit.
+3. Auto-accept was applied, the 4 pruned labels were re-verified, then the export ran.
+4. The original labels and audits of pruned companies are saved in `data/v3_pilot/superseded/auto07-original/`. Earlier batch-2 files are in `data/v3_pilot/superseded/batch2-before-auto07/`.
+
+Excluded although auto-accepted:
+- **Cometeer:** the leakage check matched the test-split brand "Nothing", which appears only as an ordinary word. This is a likely false positive, but it was left excluded.
+- **Kosas:** mentions the test-split brand Drunk Elephant.
+- **Youth To The People:** not in the v2 split manifest, and no split was invented for it.
+
+Allbirds: after the boilerplate fix, all of its cached pages are policy text, so its packet is now `insufficient_evidence` with 0 passages. Its old label no longer matches the packet, so it was rejected.
+
+The commonest rejection reason (about half of all rejections) is a deterministic check failure that has nothing to do with unsupported claims. Examples: unmarked factual sentences, vendor claims without the source named, "insufficient evidence" text written into a field, and markers pointing to claims that don't exist. A second teacher attempt with check feedback, or human edits, would recover many of these.
+
+Export `v3-2026-11-22-auto07`: **train 40 / valid 9 / test 0** (7 human-approved, 42 auto-accepted).
+
+| Company | Split | Basis | Groundedness | Claims removed |
+|---|---|---|---|---|
+| Alo Yoga | train | auto_threshold_0.7 | 1.00 (7 claims) | none |
+| Athletic Brewing | train | human approval (Thanishka Bolisetty) | n/a | n/a |
+| Avocado Green Mattress | train | auto_threshold_0.7 | 1.00 (17 claims) | none |
+| Baboon to the Moon | train | auto_threshold_0.7 | 1.00 (7 claims) | none |
+| Beis | train | auto_threshold_0.7 | 1.00 (6 claims) | none |
+| Bellroy | train | auto_threshold_0.7 | 1.00 (9 claims) | none |
+| Blueland | train | auto_threshold_0.7 | 0.80 (5 claims) | C3 (deterministic: claim C3: quote does not occur in cited passa) |
+| Bombas | train | auto_threshold_0.7 | 1.00 (7 claims) | none |
+| Brooklinen | train | auto_threshold_0.7 | 1.00 (7 claims) | none |
+| Buck Mason | train | auto_threshold_0.7 | 1.00 (10 claims) | none |
+| Casper | train | auto_threshold_0.7 | 0.83 (6 claims) | C4 (deterministic: claim C4: quote does not occur in cited passa) |
+| Chewy | train | auto_threshold_0.7 | 1.00 (11 claims) | none |
+| Coterie | train | auto_threshold_0.7 | 1.00 (6 claims) | none |
+| Death Wish Coffee | train | auto_threshold_0.7 | 1.00 (6 claims) | none |
+| Faherty | train | auto_threshold_0.7 | 1.00 (7 claims) | none |
+| Glossier | train | human approval (Thanishka Bolisetty) | n/a | n/a |
+| Hu Kitchen | train | auto_threshold_0.7 | 1.00 (7 claims) | none |
+| Imperfect Foods | train | auto_threshold_0.7 | 1.00 (5 claims) | none |
+| Jones Road Beauty | train | auto_threshold_0.7 | 1.00 (7 claims) | none |
+| Liquid Death | train | human approval (Thanishka Bolisetty) | n/a | n/a |
+| Lovevery | train | auto_threshold_0.7 | 1.00 (4 claims) | none |
+| Madewell | train | auto_threshold_0.7 | 1.00 (15 claims) | none |
+| Misfits Market | train | auto_threshold_0.7 | 0.86 (7 claims) | C5 (reviewer response invalid for this claim: C5: reviewer quote) |
+| Momofuku Goods | train | auto_threshold_0.7 | 1.00 (6 claims) | none |
+| Monos | train | auto_threshold_0.7 | 1.00 (5 claims) | none |
+| Native | train | human approval (Thanishka Bolisetty) | n/a | n/a |
+| Native Union | train | auto_threshold_0.7 | 1.00 (5 claims) | none |
+| Parachute Home | train | auto_threshold_0.7 | 1.00 (7 claims) | none |
+| Peloton | train | auto_threshold_0.7 | 1.00 (5 claims) | none |
+| Poppi | train | human approval (Thanishka Bolisetty) | n/a | n/a |
+| Public Goods | train | auto_threshold_0.7 | 1.00 (7 claims) | none |
+| Purple | train | human approval (Thanishka Bolisetty) | n/a | n/a |
+| Rare Beauty | train | auto_threshold_0.7 | 1.00 (14 claims) | none |
+| Siete Foods | train | auto_threshold_0.7 | 1.00 (7 claims) | none |
+| Spindrift | train | auto_threshold_0.7 | 1.00 (5 claims) | none |
+| Tatcha | train | auto_threshold_0.7 | 1.00 (7 claims) | none |
+| Ten Thousand | train | human approval (Thanishka Bolisetty) | n/a | n/a |
+| Tracksmith | train | auto_threshold_0.7 | 1.00 (6 claims) | none |
+| Vuori | train | auto_threshold_0.7 | 1.00 (7 claims) | none |
+| Warby Parker | train | auto_threshold_0.7 | 1.00 (7 claims) | none |
+| Bones Coffee | valid | auto_threshold_0.7 | 0.75 (4 claims) | C2 (deterministic: claim C2: quote does not occur in cited passa) |
+| Fly By Jing | valid | auto_threshold_0.7 | 1.00 (6 claims) | none |
+| Graza | valid | auto_threshold_0.7 | 1.00 (5 claims) | none |
+| Greats | valid | auto_threshold_0.7 | 1.00 (7 claims) | none |
+| Outdoor Voices | valid | auto_threshold_0.7 | 1.00 (6 claims) | none |
+| Pela | valid | auto_threshold_0.7 | 1.00 (6 claims) | none |
+| Stumptown Coffee | valid | auto_threshold_0.7 | 1.00 (6 claims) | none |
+| Thrive Market | valid | auto_threshold_0.7 | 1.00 (8 claims) | none |
+| Tonal | valid | auto_threshold_0.7 | 1.00 (5 claims) | none |
+
+**Rejected / excluded**
+
+| Company | Split | Reason |
+|---|---|---|
+| Allbirds | valid | label was generated from a different packet version |
+| Anker | train | pruned draft fails check_draft: email_body: vendor/provider claim C3 (P10) is not attributed to its source (stride-social) in the prose: 'This post would feature testimonials from creators and influencers who have used'  |
+| Athletic Greens | train | pruned draft fails check_draft: email_body: factual-looking sentence without a claim marker: "Hi [Marketing Team],\n\nWe're excited to propose a collaboration with Athletic Greens for an" (+1 more) |
+| Away | valid | pruned draft fails check_draft: brand_summary: factual sentence without a claim marker: 'Away is a travel lifestyle brand that has launched limited edition collections in partners' (+1 more) |
+| Billie | train | target structure/policy: 7 error(s), e.g. brand_summary: factual sentence without a claim marker: 'Billie aims to challenge societal pressures on women and engage with its audience in surpr' |
+| Blue Bottle Coffee | train | removing unsupported claims emptied ['likely_target_audience'] |
+| Branch Furniture | train | pruned draft fails check_draft: brand_summary: marker {C7} has no claim |
+| Burrow | train | groundedness 0.67 < 0.7 |
+| Charlotte Tilbury | train | pruned draft fails check_draft: likely_target_audience: factual sentence without a claim marker: 'Charlotte Tilbury’s social media relies on real, relatable content.' (+4 more) |
+| Chobani | train | pruned draft fails check_draft: current_marketing_strategy[8]: factual sentence without a claim marker: 'Chobani partnered with the U.S.' |
+| Cometeer | train | possible test-split leakage: mentions ['Nothing'] |
+| Dagne Dover | train | pruned draft fails check_draft: brand_summary: factual sentence without a claim marker: 'Dagne Dover is a bag brand based in New York City.' (+6 more) |
+| Dollar Shave Club | train | pruned draft fails check_draft: likely_target_audience: marker {C9} has no claim |
+| Frida | train | removing unsupported claims emptied ['instagram_post_idea.why_it_fits'] |
+| Govee | train | pruned draft fails check_draft: current_marketing_strategy[2]: vendor/provider claim C3 (P3) is not attributed to its source (stride-social) in the prose: 'Stride Social collaborated with product review creators to produ |
+| Great Jones | valid | pruned draft fails check_draft: email_subject: vendor/provider claim C3 (P4) is not attributed to its source (adlibrary) in the prose: "Collaboration Opportunity: Showcase Great Jones' Kitchenware with Food Photograp" (+ |
+| Grove Collaborative | train | pruned draft fails check_draft: email_body: vendor/provider claim C4 (P6) is not attributed to its source (adlibrary) in the prose: "Hi Grove Collaborative Marketing Team,\n\nWe're excited to propose a collaboration" (+2 |
+| Gymshark | train | removing unsupported claims emptied ['likely_target_audience'] |
+| Ilia Beauty | train | pruned draft fails check_draft: likely_target_audience: marker {C6} has no claim |
+| July Luggage | train | pruned draft fails check_draft: instagram_post_idea.hook: factual-looking sentence without a claim marker: 'Personalize your travel with July Luggage.' |
+| Koio | train | pruned draft fails check_draft: email_body: vendor/provider claim C3 (P9) is not attributed to its source (adlibrary) in the prose: 'The post would feature high-quality product photography, including close-ups of ' (+2 m |
+| Kosas | train | possible test-split leakage: mentions ['Drunk Elephant'] |
+| Lululemon | train | pruned draft fails check_draft: brand_summary: marker {C9} has no claim |
+| Marine Layer | train | pruned draft fails check_draft: likely_target_audience: marker {C7} has no claim (+4 more) |
+| Merit Beauty | train | pruned draft fails check_draft: likely_target_audience: factual sentence without a claim marker: 'The passages do not specify the likely target audience for MERIT. {INSUFFICIENT_EVIDENCE}' |
+| MeUndies | valid | groundedness 0.60 < 0.7 |
+| Milk Makeup | train | audit status fail: reviewer found factual statements without claim support |
+| MZ Wallace | train | pruned draft fails check_draft: likely_target_audience: factual sentence without a claim marker: 'Insufficient Evidence' |
+| Oatly | train | groundedness 0.40 < 0.7 |
+| Olaplex | train | groundedness 0.60 < 0.7 |
+| Ollie | train | removing unsupported claims emptied ['collaboration_opportunities', 'instagram_post_idea.why_it_fits'] |
+| Omsom | train | pruned draft fails check_draft: email_body: vendor/provider claim C2 (P1) is not attributed to its source (adlibrary) in the prose: "We'd love to create an Instagram post that highlights the Pham sisters' personal" (+4 m |
+| Reformation | train | pruned draft fails check_draft: email_body: vendor/provider claim C6 (P9) is not attributed to its source (canvasbusinessmodel) in the prose: 'We believe a campaign that blends cultural relevance with circularity, simila |
+| Rhone | train | pruned draft fails check_draft: likely_target_audience: factual sentence without a claim marker: 'The likely target audience is not specified in the evidence {INSUFFICIENT_EVIDENCE}' |
+| Ruggable | train | pruned draft fails check_draft: email_body: marker {C10} has no claim (+4 more) |
+| Skims | train | pruned draft fails check_draft: email_body: vendor/provider claim C6 (P8) is not attributed to its source (enrichlabs) in the prose: 'This campaign would align with your existing strategy of pairing evergreen conti' (+3  |
+| Supergoop | valid | audit status fail: claims not fully supported: ['C5'] |
+| The Ordinary | train | pruned draft fails check_draft: decision: the email must propose an Instagram post |
+| Thursday Boots | train | pruned draft fails check_draft: current_marketing_strategy[0]: factual sentence without a claim marker: 'They don’t play games with their customers in the form of sales and discounts.' |
+| Trade Coffee | train | pruned draft fails check_draft: email_subject: vendor/provider claim C1 (P6) is not attributed to its source (adlibrary) in the prose: "Collaboration Opportunity: Showcase Trade Coffee's Curated Roasters on Instagram" (+ |
+| Who Gives A Crap | train | pruned draft fails check_draft: likely_target_audience: marker {C6} has no claim (+3 more) |
+| Whoop | train | pruned draft fails check_draft: collaboration_opportunities[0]: vendor/provider claim C4 (P3) is not attributed to its source (modash) in the prose: 'Collaborate on an Instagram post featuring a WHOOP influencer who aver |
+| Wild One | train | pruned draft fails check_draft: decision: the email must propose an Instagram post |
+| Youth To The People | None | no split assignment in the legacy manifest (new company: assign a split explicitly) |
+| Zenni Optical | train | removing unsupported claims emptied ['brand_summary', 'likely_target_audience', 'instagram_post_idea.why_it_fits'] |
+
 ## 7. Still unresolved
 
 - **Billie, Omsom and Spindrift** remain unlabeled for training; see §6b. The other seven are approved (export `v3-pilot-2026-11-22`).
@@ -218,7 +386,7 @@ The trial labels are candidates only. They have not been human-reviewed or appro
 
 ## 8. Checks actually run
 
-- `python -m pytest -q tests`: **40 passed**, offline, synthetic fixtures.
+- `python -m pytest -q tests`: **74 passed** (22 Nov 2026, after the §6e fixes), offline, synthetic fixtures.
 - Reproduction script against the committed v2 data: counts, the export match, the `decide` duplicate-verdict probe, and the absence-gap count.
 - Raw-data comparison of 120 legacy passages for the 10 pilot companies against their cached pages: 14 not recoverable, 13 of those prefixed with search title/snippet.
 - Pilot: `replay-legacy` for 10 companies, `validate_packet` for every packet against a freshly unpacked copy of the evidence-store tarball (69/69 passages verified), and `phase1v3.py prompt` for all 10.

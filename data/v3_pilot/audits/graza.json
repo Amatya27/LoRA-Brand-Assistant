@@ -1,0 +1,87 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "graza",
+  "bound_to": {
+    "packet_sha256": "90fc71b07ba6c1187fbcacc9fd4e9cf66b948d1c0e45f62dc877017037d2aaab",
+    "prompt_sha256": "611ccdc548cc67e2fef4ce4c01baada7ab7ab6b4aa8dbad9a710eac5677dcd67",
+    "completion_sha256": "da89b1a541273a733fce9446a603b883a990ce91f117c7afe3cfabd190e5981c",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": []
+  },
+  "raw_response_sha256": "4b9bcf8b48460957e18a176f2423ceed7cba5013d5dbef650930b1b7de809a93",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Olive Oil the way it's supposed to be.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that Graza makes olive oil and mentions squeeze bottles implicitly through the description of the product.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"“Sizzle”Extra Virgin Olive Oil Use it every day, in every way.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly mentions 'Drizzle' and 'Sizzle' as core products.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"After launch, Graza leaned heavily on UGC. Home cooks, chefs, creators used the bottle, showed recipes, drizzled oil in cooking videos.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that Graza relies heavily on user-generated content.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"Graza understood where brand discovery actually happens: in feeds, not aisles.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that Graza focuses on visibility in social media feeds.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P9\"\n      ],\n      \"quote\": \"Graza is working with other canned products to promote the refills.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that Graza partners with other brands to promote new products.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Olive Oil the way it's supposed to be.",
+        "issues": [],
+        "reason": "The passage explicitly states that Graza makes olive oil and mentions squeeze bottles implicitly through the description of the product."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "“Sizzle”Extra Virgin Olive Oil Use it every day, in every way.",
+        "issues": [],
+        "reason": "The passage directly mentions 'Drizzle' and 'Sizzle' as core products."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "After launch, Graza leaned heavily on UGC. Home cooks, chefs, creators used the bottle, showed recipes, drizzled oil in cooking videos.",
+        "issues": [],
+        "reason": "The passage explicitly states that Graza relies heavily on user-generated content."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "Graza understood where brand discovery actually happens: in feeds, not aisles.",
+        "issues": [],
+        "reason": "The passage directly states that Graza focuses on visibility in social media feeds."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P9"
+        ],
+        "quote": "Graza is working with other canned products to promote the refills.",
+        "issues": [],
+        "reason": "The passage explicitly states that Graza partners with other brands to promote new products."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-22T23:37:10+00:00",
+  "audit_sha256": "291ee7c5798d8b0ea2e838cf89180c6b2cdcf34f9cc4a7d324cb105b4b7d396a",
+  "dismissed_reviewer_flags": []
+}

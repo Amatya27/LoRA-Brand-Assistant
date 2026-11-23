@@ -1,0 +1,102 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "lululemon",
+  "bound_to": {
+    "packet_sha256": "1c2bb9adf64d48caa62ed708ace6b2fe1126bb23de4ec272c2c8b9eb93dc21b0",
+    "prompt_sha256": "77fa4fe87287931a7175ab19525dd40163dc2b8cd466ac0e753c184bbdc2c443",
+    "completion_sha256": "3a3d91fd01cf6a06be85f9590752b177a074ec057b0b8f3ac759437a6bb1dc10",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [
+      "brand_summary: marker {C9} has no claim"
+    ],
+    "warnings": [
+      "claim C4: not referenced by any field"
+    ]
+  },
+  "raw_response_sha256": "31161b465f9500f9e4ae63ad485f5d179ac0ebae78778a4dd06f176855ae3699",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"The brand uses a mix of high-quality YouTube/video campaigns (like FEEL Space, The Other 364, and the Michelle Yeoh “Be Spring” collaboration), community events (the Summer Sweat Games in China reached 70 stores and 40 cities in Q2 2024), in-store experiences like yoga classes and workshops, and social media content that participates in existing conversations rather than broadcasting at people.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly mentions community events, in-store experiences, and social media as part of Lululemon's advertising.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"Lululemon partners with yoga instructors, personal trainers, run-club leaders, and wellness coaches and giving them product and community space in exchange for authentic representation. This creates an army of credible, hyperlocal brand advocates who post from their own authentic contexts.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Lululemon partners with various professionals to act as brand advocates.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"The ambassador program is the marketing spine. More than 4,000 local store ambassadors, mostly yoga instructors, trainers, and run coaches, anchor each market with classes and social posts.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms the existence of over 4,000 ambassadors who are key to Lululemon's marketing.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"The community tab on the lululemon website is where they house all their interactive content including workouts, info about their ambassadors, events, goal setting, and lululemon’s impact statements.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes the community tab on the website and its content.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P10\"\n      ],\n      \"quote\": \"lululemon has given itself a great foundation to work from by encouraging customers to use #thesweatlife in their posts about lululemon.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Lululemon encourages customers to use a specific hashtag on social media.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"Lululemon is a purpose-driven brand that focuses on community, innovation, and values-driven business practices\"\n    }\n  ],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "The brand uses a mix of high-quality YouTube/video campaigns (like FEEL Space, The Other 364, and the Michelle Yeoh “Be Spring” collaboration), community events (the Summer Sweat Games in China reached 70 stores and 40 cities in Q2 2024), in-store experiences like yoga classes and workshops, and social media content that participates in existing conversations rather than broadcasting at people.",
+        "issues": [],
+        "reason": "The passage explicitly mentions community events, in-store experiences, and social media as part of Lululemon's advertising."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "Lululemon partners with yoga instructors, personal trainers, run-club leaders, and wellness coaches and giving them product and community space in exchange for authentic representation. This creates an army of credible, hyperlocal brand advocates who post from their own authentic contexts.",
+        "issues": [],
+        "reason": "The passage directly states Lululemon partners with various professionals to act as brand advocates."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "The ambassador program is the marketing spine. More than 4,000 local store ambassadors, mostly yoga instructors, trainers, and run coaches, anchor each market with classes and social posts.",
+        "issues": [],
+        "reason": "The passage confirms the existence of over 4,000 ambassadors who are key to Lululemon's marketing."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "The community tab on the lululemon website is where they house all their interactive content including workouts, info about their ambassadors, events, goal setting, and lululemon’s impact statements.",
+        "issues": [],
+        "reason": "The passage describes the community tab on the website and its content."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P10"
+        ],
+        "quote": "lululemon has given itself a great foundation to work from by encouraging customers to use #thesweatlife in their posts about lululemon.",
+        "issues": [],
+        "reason": "The passage states that Lululemon encourages customers to use a specific hashtag on social media."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "fail",
+  "reasons": [
+    "1 deterministic check error(s)"
+  ],
+  "created_at": "2026-11-23T00:06:20+00:00",
+  "audit_sha256": "b173107568c5aea36e380c292f01852b245adc1371ce4b9374a4471034c2c822",
+  "dismissed_reviewer_flags": [
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "Lululemon is a purpose-driven brand that focuses on community, innovation, and values-driven business practices"
+      },
+      "reason": "sentence in brand_summary carries a claim marker; judged via its claim",
+      "matched_sentence": "lululemon is a purpose driven brand that focuses on community innovation and values driven business practices"
+    }
+  ]
+}

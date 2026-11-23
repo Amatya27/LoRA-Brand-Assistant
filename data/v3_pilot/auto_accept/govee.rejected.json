@@ -1,0 +1,21 @@
+{
+  "company_id": "govee",
+  "acceptance_basis": "auto_threshold_0.7",
+  "decision": "reject",
+  "reasons": [
+    "pruned draft fails check_draft: current_marketing_strategy[2]: vendor/provider claim C3 (P3) is not attributed to its source (stride-social) in the prose: 'Stride Social collaborated with product review creators to produce organic-style'"
+  ],
+  "groundedness": 1.0,
+  "claim_support": {
+    "C1": "supported",
+    "C2": "supported",
+    "C3": "supported",
+    "C4": "supported",
+    "C5": "supported",
+    "C6": "supported"
+  },
+  "removed_claims": [],
+  "label_completion_sha256": "c115447314d1515c0f4684e96dbd87b3f2c0f839336a961b66d6aa7beff24bc1",
+  "audit_sha256": "ea01d78e3cf91237d7e69e3db2995bfc52f58434131d74121ef431848c746d0d",
+  "created_at": "2026-11-23T00:28:45+00:00"
+}

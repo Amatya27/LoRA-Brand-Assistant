@@ -1,0 +1,107 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "faherty",
+  "bound_to": {
+    "packet_sha256": "d6f37028a30a9e3982c934e201cf529086d30b52170a9167fe86c947aad049ca",
+    "prompt_sha256": "747066b6a8b3223b37ca91f70290336467a093aa9d78e5cca21fe66671109a0b",
+    "completion_sha256": "df04a11d766defe2c85bc4bdb646c963734bebe9770f4b2d835ba2cd46bcab3f",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": []
+  },
+  "raw_response_sha256": "8766188b8b3ee8e57ce6a57f3cc32da6148dca8067e7579cf0e7338b021a104d",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"We’re committed to designing a more responsible path forward. Environmental Impact We design with the planet in mind — sourcing organic and recycled fabrics, reducing waste, and protecting the places that make our best days possible.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states Faherty's commitment to responsible design, sourcing, waste reduction, and environmental protection.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"We work with Native artists and leaders to ensure authentic representation, economic opportunity, and rightful recognition of Indigenous creativity in fashion.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Faherty's collaboration with Native artists and leaders.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"That’s why we are proud to announce that Faherty Brand has achieved B Corporation™ certification.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms Faherty's B Corporation certification.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"Faherty is committed to sustainability, ethical manufacturing and premium materials, creating comfort-first apparel designed with longevity and environmental responsibility in mind.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Faherty's commitment to sustainability, ethical manufacturing, and premium materials.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"Celebrating Our Native Partners Some of our most meaningful relationships are with the Native artists and designers we've had the privilege of working alongside.\",\n      \"issues\": [],\n      \"reason\": \"The passage highlights Faherty's partnerships with Native artists and designers.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"Faherty is an omnichannel apparel and lifestyle brand operating across ecommerce and approximately 78 physical retail stores nationwide.\",\n      \"issues\": [],\n      \"reason\": \"The passage states Faherty operates across ecommerce and has 78 physical stores.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"The marketing team recognized an opportunity to move from broad outreach toward campaigns grounded in how customers behave.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Faherty's marketing team recognized an opportunity to shift their outreach strategy.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "We’re committed to designing a more responsible path forward. Environmental Impact We design with the planet in mind — sourcing organic and recycled fabrics, reducing waste, and protecting the places that make our best days possible.",
+        "issues": [],
+        "reason": "The passage explicitly states Faherty's commitment to responsible design, sourcing, waste reduction, and environmental protection."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "We work with Native artists and leaders to ensure authentic representation, economic opportunity, and rightful recognition of Indigenous creativity in fashion.",
+        "issues": [],
+        "reason": "The passage directly states Faherty's collaboration with Native artists and leaders."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "That’s why we are proud to announce that Faherty Brand has achieved B Corporation™ certification.",
+        "issues": [],
+        "reason": "The passage confirms Faherty's B Corporation certification."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "Faherty is committed to sustainability, ethical manufacturing and premium materials, creating comfort-first apparel designed with longevity and environmental responsibility in mind.",
+        "issues": [],
+        "reason": "The passage directly states Faherty's commitment to sustainability, ethical manufacturing, and premium materials."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "Celebrating Our Native Partners Some of our most meaningful relationships are with the Native artists and designers we've had the privilege of working alongside.",
+        "issues": [],
+        "reason": "The passage highlights Faherty's partnerships with Native artists and designers."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "Faherty is an omnichannel apparel and lifestyle brand operating across ecommerce and approximately 78 physical retail stores nationwide.",
+        "issues": [],
+        "reason": "The passage states Faherty operates across ecommerce and has 78 physical stores."
+      },
+      {
+        "claim_id": "C7",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "The marketing team recognized an opportunity to move from broad outreach toward campaigns grounded in how customers behave.",
+        "issues": [],
+        "reason": "The passage states that Faherty's marketing team recognized an opportunity to shift their outreach strategy."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-22T23:58:11+00:00",
+  "audit_sha256": "3b7ed1c09e7f24af3165e710a5a93cc8e4f70544e50a6edda144daa142aab866",
+  "dismissed_reviewer_flags": []
+}

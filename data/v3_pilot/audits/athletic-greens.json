@@ -1,0 +1,152 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "athletic-greens",
+  "bound_to": {
+    "packet_sha256": "075ad95d24ebdbfee3a1722b3cfdaacb8166827b72eaf5983708b54db639e736",
+    "prompt_sha256": "1ead207f30176628f6b3722260ec5a2d55d397b08a00b7ec4aa488e36e05b237",
+    "completion_sha256": "d8f2ffbe406e8fdb85af31876ae69746e7abcd2d2c4abb767ee42cfc92a2c49b",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [
+      "email_body: factual-looking sentence without a claim marker: \"Hi [Marketing Team],\\n\\nWe're excited to propose a collaboration with Athletic Greens for an\"",
+      "email_body: factual-looking sentence without a claim marker: 'The post would be a carousel featuring UGC, showcasing how AG1 has positively impacted cus'"
+    ],
+    "warnings": []
+  },
+  "raw_response_sha256": "813536261a056a5c246e52f2d4683fc63aa55ff187557c9ba81ef14c8a3d0c85",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Social Media Partnership and Collaboration Strategic partnerships with content creators and influencers are central to Athletic Greens’ digital marketing efforts.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that partnerships with influencers are central to their digital marketing.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Collaborating with health and wellness influencers allows the brand to reach targeted audiences effectively.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that influencer collaborations effectively reach targeted audiences.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"Athletic Greens aims to significantly boost brand awareness through targeted marketing initiatives.\",\n      \"issues\": [],\n      \"reason\": \"The passage states Athletic Greens' goal to boost brand awareness.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"By collaborating with health and wellness influencers, they can reach potential customers effectively.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that influencer collaborations effectively reach potential customers.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"AG1 invests in long-term creator relationships that combine scientific credibility with mainstream reach.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms AG1 invests in long-term creator relationships.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Podcast integrations form a reliable acquisition pillar, supplemented by newsletter placements and social collaborations.\",\n      \"issues\": [],\n      \"reason\": \"The passage mentions podcast integrations as a reliable acquisition pillar.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"Athletic Greens understands the value of UGC and has harnessed it as a key component of their marketing endeavors.\",\n      \"issues\": [],\n      \"reason\": \"The passage states Athletic Greens understands the value of UGC.\"\n    },\n    {\n      \"claim_id\": \"C8\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"By incorporating UGC into influencer collaborations, Athletic Greens creates a narrative that aligns with their target audience.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that incorporating UGC aligns with their target audience.\"\n    },\n    {\n      \"claim_id\": \"C9\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"Athletic Greens’ marketing plan focuses on authenticity, leveraging partnerships with influencers who align with their brand values to connect with their target audience.\",\n      \"issues\": [],\n      \"reason\": \"The passage states Athletic Greens' marketing plan focuses on authenticity and influencer partnerships.\"\n    },\n    {\n      \"claim_id\": \"C10\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"These podcasters pitch AG1 directly to their listeners, weaving the product seamlessly into their content.\",\n      \"issues\": [],\n      \"reason\": \"The passage states podcasters pitch AG1 directly to their listeners.\"\n    },\n    {\n      \"claim_id\": \"C11\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"They create a narrative of health and wellness that resonates deeply with the podcast audience.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that AG1 creates a narrative that resonates with the podcast audience.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Social Media Partnership and Collaboration Strategic partnerships with content creators and influencers are central to Athletic Greens’ digital marketing efforts.",
+        "issues": [],
+        "reason": "The passage explicitly states that partnerships with influencers are central to their digital marketing."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Collaborating with health and wellness influencers allows the brand to reach targeted audiences effectively.",
+        "issues": [],
+        "reason": "The passage directly states that influencer collaborations effectively reach targeted audiences."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "Athletic Greens aims to significantly boost brand awareness through targeted marketing initiatives.",
+        "issues": [],
+        "reason": "The passage states Athletic Greens' goal to boost brand awareness."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "By collaborating with health and wellness influencers, they can reach potential customers effectively.",
+        "issues": [],
+        "reason": "The passage directly states that influencer collaborations effectively reach potential customers."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "AG1 invests in long-term creator relationships that combine scientific credibility with mainstream reach.",
+        "issues": [],
+        "reason": "The passage confirms AG1 invests in long-term creator relationships."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Podcast integrations form a reliable acquisition pillar, supplemented by newsletter placements and social collaborations.",
+        "issues": [],
+        "reason": "The passage mentions podcast integrations as a reliable acquisition pillar."
+      },
+      {
+        "claim_id": "C7",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "Athletic Greens understands the value of UGC and has harnessed it as a key component of their marketing endeavors.",
+        "issues": [],
+        "reason": "The passage states Athletic Greens understands the value of UGC."
+      },
+      {
+        "claim_id": "C8",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "By incorporating UGC into influencer collaborations, Athletic Greens creates a narrative that aligns with their target audience.",
+        "issues": [],
+        "reason": "The passage states that incorporating UGC aligns with their target audience."
+      },
+      {
+        "claim_id": "C9",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "Athletic Greens’ marketing plan focuses on authenticity, leveraging partnerships with influencers who align with their brand values to connect with their target audience.",
+        "issues": [],
+        "reason": "The passage states Athletic Greens' marketing plan focuses on authenticity and influencer partnerships."
+      },
+      {
+        "claim_id": "C10",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "These podcasters pitch AG1 directly to their listeners, weaving the product seamlessly into their content.",
+        "issues": [],
+        "reason": "The passage states podcasters pitch AG1 directly to their listeners."
+      },
+      {
+        "claim_id": "C11",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "They create a narrative of health and wellness that resonates deeply with the podcast audience.",
+        "issues": [],
+        "reason": "The passage states that AG1 creates a narrative that resonates with the podcast audience."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "fail",
+  "reasons": [
+    "2 deterministic check error(s)"
+  ],
+  "created_at": "2026-11-22T23:45:00+00:00",
+  "audit_sha256": "eaee770d6951317f74a522dc04462ec27df2e1f7f825115b9ae63c573a787873",
+  "dismissed_reviewer_flags": []
+}

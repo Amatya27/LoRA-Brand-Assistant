@@ -1,0 +1,104 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "casper",
+  "bound_to": {
+    "packet_sha256": "39a1066b4c49aaa6670b555ebb8a4c1250b42a2414661b81e17d6a017622ae5a",
+    "prompt_sha256": "20bb3da43039214ab7005863afad9180279a3bd255f7917bd915f356f92289f6",
+    "completion_sha256": "50bc6b8f0d2ce24a43d2a3da774ecc81b85de2a9f58c2a8110d8a92486c32c1c",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [
+      "claim C4: quote does not occur in cited passage(s) ['P4']"
+    ],
+    "warnings": []
+  },
+  "raw_response_sha256": "a2a729856ff1f030477e5f90f1ad78160c085fdc1c1763e0e46af42fde857c06",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"In 2023, Casper Canada proudly became Canadian owned and operated.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states Casper Canada became Canadian owned and operated in 2023.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"We make sleep simple so you can rest easy.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Casper's mission is to simplify sleep.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Casper decided to focus on a multi-channel approach, using a combination of social media advertising, influencer marketing, and content marketing to reach its target audience.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms Casper uses a multi-channel approach including social media, influencer marketing, and content marketing.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"Casper also implemented a unique referral program. Satisfied customers received incentives for referring friends.\",\n      \"issues\": [],\n      \"reason\": \"The passage states Casper has a referral program with incentives.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"Casper partnered with Paramount Pictures to promote Ebenezer, a movie about the crotchety Charles Dickens character.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms Casper partnered with Paramount Pictures.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"The company invested in digital advertising and social media campaigns, creating a buzz around its products.\",\n      \"issues\": [],\n      \"reason\": \"The passage states Casper uses digital advertising and social media campaigns.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "In 2023, Casper Canada proudly became Canadian owned and operated.",
+        "issues": [],
+        "reason": "The passage explicitly states Casper Canada became Canadian owned and operated in 2023."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "We make sleep simple so you can rest easy.",
+        "issues": [],
+        "reason": "The passage directly states Casper's mission is to simplify sleep."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Casper decided to focus on a multi-channel approach, using a combination of social media advertising, influencer marketing, and content marketing to reach its target audience.",
+        "issues": [],
+        "reason": "The passage confirms Casper uses a multi-channel approach including social media, influencer marketing, and content marketing."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "Casper also implemented a unique referral program. Satisfied customers received incentives for referring friends.",
+        "issues": [],
+        "reason": "The passage states Casper has a referral program with incentives."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "Casper partnered with Paramount Pictures to promote Ebenezer, a movie about the crotchety Charles Dickens character.",
+        "issues": [],
+        "reason": "The passage confirms Casper partnered with Paramount Pictures."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "The company invested in digital advertising and social media campaigns, creating a buzz around its products.",
+        "issues": [],
+        "reason": "The passage states Casper uses digital advertising and social media campaigns."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [
+    "C4: reviewer quote does not occur in the referenced passage(s)"
+  ],
+  "status": "fail",
+  "reasons": [
+    "1 deterministic check error(s)",
+    "reviewer response also invalid: C4: reviewer quote does not occur in the referenced passage(s)"
+  ],
+  "created_at": "2026-11-22T23:52:26+00:00",
+  "audit_sha256": "3205f27d7645c9a128916cf6cfa580e39be8c8751388e844ae03acee6d5fecf1",
+  "dismissed_reviewer_flags": []
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "lovevery",
+  "bound_to": {
+    "packet_sha256": "1f396606ff7f653773e0dd0603716a13cac87c1ddb91808bb135a7a8f9fa79e7",
+    "prompt_sha256": "230f4b2e29e4c08ced94b20707d95ea2a8ba32fc24460bee08d2e0959758ab88",
+    "completion_sha256": "1699f9471a1d189c3b58f14bf8b4c0c5626da93a49ac3c2d1170b8f0dc57a018",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": []
+  },
+  "raw_response_sha256": "c1df56315b7e9489dfe3a8d73407f81dd9f880caf4bf8e5732056f814450dda4",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Lovevery invites creators and social partners to apply to its Collab Program, which provides approved participants with access to campaigns, branded assets, and performance tracking.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Lovevery invites creators to a program with access to campaigns and assets.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"Its Pre-Loved marketplace, launched in 2025, gives secondhand buyers an official route into a market where families were already trading used Lovevery toys.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly mentions a Pre-Loved marketplace launched in 2025.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"Passionate about giving babies the best and healthiest beginning in life.\",\n      \"issues\": [],\n      \"reason\": \"The passage quotes Jessica Rolph as being passionate about giving babies the best beginning in life.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P10\"\n      ],\n      \"quote\": \"Lovevery Shop by Age Shop by Category Parenting Gifting Explore The Play Kits\",\n      \"issues\": [],\n      \"reason\": \"The passage lists 'Shop by Age' and 'Parenting' as categories, indicating products for babies and toddlers.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Lovevery invites creators and social partners to apply to its Collab Program, which provides approved participants with access to campaigns, branded assets, and performance tracking.",
+        "issues": [],
+        "reason": "The passage directly states Lovevery invites creators to a program with access to campaigns and assets."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "Its Pre-Loved marketplace, launched in 2025, gives secondhand buyers an official route into a market where families were already trading used Lovevery toys.",
+        "issues": [],
+        "reason": "The passage explicitly mentions a Pre-Loved marketplace launched in 2025."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "Passionate about giving babies the best and healthiest beginning in life.",
+        "issues": [],
+        "reason": "The passage quotes Jessica Rolph as being passionate about giving babies the best beginning in life."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P10"
+        ],
+        "quote": "Lovevery Shop by Age Shop by Category Parenting Gifting Explore The Play Kits",
+        "issues": [],
+        "reason": "The passage lists 'Shop by Age' and 'Parenting' as categories, indicating products for babies and toddlers."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-22T23:41:32+00:00",
+  "audit_sha256": "07292f1617de8850eb7bd122a7dd2f630a6b7d48c2a612e04342c63b08631fa1",
+  "dismissed_reviewer_flags": []
+}

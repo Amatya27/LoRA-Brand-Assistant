@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "brooklinen",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "112e6ec30eeb5a1dd0d111e287678a58220f1a2ac997a3a6cddca7f5559be804",
+    "prompt_sha256": "89f782e1a6d79f80515937360ca4e229fecdb7b76957740bb966cf627d44f430",
+    "completion_sha256": "2f0aab9122d85b45dfc272ae733a4170cf553cc53b7b3cddd8555e3299c5057d",
+    "audit_sha256": "84beb696158a9ebe73ae4c44766d622c751082fa57f13f465d6ea35236e3b116"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 7,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:44+00:00",
+  "record_sha256": "fb9fbd455648a3ddd9610244ae79fde0311cc779b71b694dd0900f29b412d4f2"
+}

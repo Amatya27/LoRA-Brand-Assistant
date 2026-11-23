@@ -1,0 +1,132 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "baboon-to-the-moon",
+  "bound_to": {
+    "packet_sha256": "8d5183e24058ce5c58e1b8aea19aa4f0c2df016064c7b095aec2d8d56aff57de",
+    "prompt_sha256": "5dedd94c5e970caf3b6e4babaa011ffd6dc6cd95e2fe1a6b11f42bdf7992fa09",
+    "completion_sha256": "3ce7824adfd7d882681ecc141ca2ad5189193edafdf1be4cfbcc47ba499735d4",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": []
+  },
+  "raw_response_sha256": "8a7822130f7a823f4bdf6c7b9def386e051689538976afa6834779cbcf19717f",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"BABOON TO THE MOON designs for life's adventures by providing high quality gear made to last.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states this claim.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"They use their Instagram account to showcase products, build a community, and show their products in use.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states this activity on Instagram.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Baboon To The Moon creates branded campaigns on Instagram to promote their new colors and patterns.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms this activity.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"Baboon To The Moon sells a lifestyle through their marketing; they curate travel guides to inspire their audience with recommendations for their next trip.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states this marketing approach.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"BABOON TO THE MOON’s “Anywhere, Everything” series spotlights how their bags fit into the lifestyle of an influencer.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms this series highlights influencer lifestyles.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P9\"\n      ],\n      \"quote\": \"BABOON TO THE MOON is an adventure brand - we make versatile, technical and radical bags.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states this about the brand.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"We're inspired by those who challenge the status quo and follow their passions, even if that means taking unexpected and unconventional paths.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes the company's inspiration.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"Baboon To The Moon designs for life's adventures by providing high quality gear made to last\"\n    },\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"Baboon To The Moon is an adventure brand - we make versatile, technical and radical bags\"\n    },\n    {\n      \"field\": \"likely_target_audience\",\n      \"text\": \"Baboon To The Moon's target audience includes individuals who are inspired by those who challenge the status quo and follow their passions, even if that means taking unexpected and unconventional paths\"\n    }\n  ],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "BABOON TO THE MOON designs for life's adventures by providing high quality gear made to last.",
+        "issues": [],
+        "reason": "The passage directly states this claim."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "They use their Instagram account to showcase products, build a community, and show their products in use.",
+        "issues": [],
+        "reason": "The passage explicitly states this activity on Instagram."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Baboon To The Moon creates branded campaigns on Instagram to promote their new colors and patterns.",
+        "issues": [],
+        "reason": "The passage confirms this activity."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "Baboon To The Moon sells a lifestyle through their marketing; they curate travel guides to inspire their audience with recommendations for their next trip.",
+        "issues": [],
+        "reason": "The passage directly states this marketing approach."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "BABOON TO THE MOON’s “Anywhere, Everything” series spotlights how their bags fit into the lifestyle of an influencer.",
+        "issues": [],
+        "reason": "The passage confirms this series highlights influencer lifestyles."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P9"
+        ],
+        "quote": "BABOON TO THE MOON is an adventure brand - we make versatile, technical and radical bags.",
+        "issues": [],
+        "reason": "The passage directly states this about the brand."
+      },
+      {
+        "claim_id": "C7",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "We're inspired by those who challenge the status quo and follow their passions, even if that means taking unexpected and unconventional paths.",
+        "issues": [],
+        "reason": "The passage describes the company's inspiration."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-22T23:46:57+00:00",
+  "audit_sha256": "7cdbddab3e64f238ebdcd81c33129f2b553ab633c74b1cd263b418144147c146",
+  "dismissed_reviewer_flags": [
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "Baboon To The Moon designs for life's adventures by providing high quality gear made to last"
+      },
+      "reason": "sentence in brand_summary carries a claim marker; judged via its claim",
+      "matched_sentence": "baboon to the moon designs for life's adventures by providing high quality gear made to last"
+    },
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "Baboon To The Moon is an adventure brand - we make versatile, technical and radical bags"
+      },
+      "reason": "sentence in brand_summary carries a claim marker; judged via its claim",
+      "matched_sentence": "baboon to the moon is an adventure brand we make versatile technical and radical bags"
+    },
+    {
+      "flag": {
+        "field": "likely_target_audience",
+        "text": "Baboon To The Moon's target audience includes individuals who are inspired by those who challenge the status quo and follow their passions, even if that means taking unexpected and unconventional paths"
+      },
+      "reason": "sentence in likely_target_audience carries a claim marker; judged via its claim",
+      "matched_sentence": "baboon to the moon's target audience includes individuals who are inspired by those who challenge the status quo and follow their passions even if that means taking unexpected and unconventional paths"
+    }
+  ]
+}

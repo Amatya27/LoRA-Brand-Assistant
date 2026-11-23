@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "kosas",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "80c4b2f59f7bceda22682f2f58c3afacd73ca903b165bf721732183fa7fb537c",
+    "prompt_sha256": "859b3fbf20f629bf4bf30cf2304e5e0b57ba9db6c6ce733b52bd8ba776669a11",
+    "completion_sha256": "ccaa72d654bc8d4f8654f8f83ef7f06643de4538eac7a4b33d9556039d2dfd8e",
+    "audit_sha256": "3a4e52167752dfae0fabe8be35f5ffdee82e7e5d65f1a8448e7840427057a333"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 10,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:46+00:00",
+  "record_sha256": "edfefd1021aeb1ebc04a893d4a773cc7d67dc7dd8f564c91c798dca75957c887"
+}

@@ -1,0 +1,1138 @@
+{
+  "schema_version": "brandpilot.packet.v3",
+  "company": {
+    "company_id": "koio",
+    "display_name": "Koio",
+    "legacy_name": "Koio",
+    "category": "Italian-made sneakers",
+    "official_domains": [
+      "koio.co"
+    ],
+    "identity_status": "verified",
+    "registry_version": "2026-11-22.v3",
+    "registry_sha256": "cc9ab39277bffb4c0aa0b59df8db2e7fec12da7955a58651370daf2936495a16"
+  },
+  "collection": {
+    "mode": "legacy_cache_replay",
+    "collector_version": "brandpilot-collector-0.3",
+    "created_at": "2026-11-22T20:36:39+00:00",
+    "queries": [
+      "\"Koio\" instagram marketing campaign target audience",
+      "\"Koio\" social media strategy brand positioning",
+      "\"Koio\" marketing campaign press release instagram",
+      "\"Koio\" customer audience brand story",
+      "\"Koio\" about us brand values audience",
+      "\"Koio\" newsroom marketing campaign",
+      "\"Koio\" brand campaign case study"
+    ],
+    "notes": [
+      "replayed from legacy packet koio-research-packet.json (sha256 f21306a93582f03d)",
+      "documents are legacy cached extractions; no new fetches were made"
+    ]
+  },
+  "leads": [
+    {
+      "company_id": "koio",
+      "query": "\"Koio\" marketing campaign press release instagram",
+      "url": "https://www.koio.co/pages/press",
+      "title": "About Us | Press | KOIO",
+      "snippet": "Move Over Prada: Millennials Can't Get Enough of Koio, An Italian Sneaker Company That Sells Luxury Shoes For A Fraction of The Cost — Business Insider, February 2018",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "koio",
+      "query": "\"Koio\" customer audience brand story",
+      "url": "https://www.koio.co/",
+      "title": "Koio | Handcrafted Italian Leather Sneakers",
+      "snippet": "KOIO is a modern footwear brand. Discover our collection of timeless leather sneakers. Every pair is thoughtfully handcrafted in Italy. Explore now!",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "koio",
+      "query": "\"Koio\" instagram marketing campaign target audience",
+      "url": "https://adlibrary.com/brands/koio-instagram-ads",
+      "title": "Koio Instagram Ads Library",
+      "snippet": "Explore Koio's top-performing Instagram ads, creatives, messaging, and campaign insights to benchmark strategy and discover winning ad patterns.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "koio",
+      "query": "\"Koio\" newsroom marketing campaign",
+      "url": "https://www.brandsninja.com/brands/koio",
+      "title": "koio Email Newsletters & Marketing Campaigns - BrandsNinja ...",
+      "snippet": "Discover the latest email newsletters, marketing campaigns, deals, and updates from koio. Browse koio's email marketing strategies and design inspiration.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "koio",
+      "query": "\"Koio\" newsroom marketing campaign",
+      "url": "https://www.enrichlabs.ai/case-study/koio-email-marketing",
+      "title": "Koio Email Marketing: Case Study - Enrich Labs",
+      "snippet": "Oct 31, 2026 · Discover Koio's top email marketing strategies—personalization, automation, segmentation, and testing techniques that boost engagement, conversions, and revenue.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "koio",
+      "query": "\"Koio\" instagram marketing campaign target audience",
+      "url": "https://endearhq.com/blog/koio-case-study",
+      "title": "Koio Case Study: The Impact of Retail Clienteling | Endear Blog",
+      "snippet": "To promote their new shoe to their stores' local customers, select Koio locations and pop-ups implemented an event-based marketing campaign using Endear's segmenting and bulk messaging capabilities to target shoppers in each store's neighborhood and invite them to their store's launch event.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "koio",
+      "query": "\"Koio\" brand campaign case study",
+      "url": "https://www.casestudies.com/company/endear/case-study/how-koio-saw-store-sales-soar-for-latest-sneaker-drop",
+      "title": "Case Study: Koio achieves 36.2% email open rates and 11% in ...",
+      "snippet": "Koio, a digitally-native sneaker brand, sought to enhance its retail marketing and customer engagement for a new product launch. The challenge was to connect with local customers and drive traffic to its physical stores in New York and Los Angeles, augmenting its strong online presence.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "koio",
+      "query": "\"Koio\" instagram marketing campaign target audience",
+      "url": "https://adlibrary.com/brands/koio",
+      "title": "Koio Ads & Marketing Strategy | AdLibrary",
+      "snippet": "On Facebook and Instagram, Koio suits image-led formats. Expect high-quality product photography, carousels across silhouettes such as the Capri, close-ups of leather and stitching, and short Reels showing how the shoe wears. Instagram is a natural fit for a design-forward footwear audience.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    }
+  ],
+  "documents": [
+    {
+      "source_id": "S-2c7b4529b2bf",
+      "company_id": "koio",
+      "requested_url": "https://www.koio.co/",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "44b5360e3838dfc719828f74a2075fa3a30ef4ed01fe6e677618ac625a29baca",
+      "text_path": "text/44b5360e3838dfc719828f74a2075fa3a30ef4ed01fe6e677618ac625a29baca.txt",
+      "raw_path": null,
+      "text_chars": 20977,
+      "redirect_chain": [],
+      "identity_decision": "official_domain",
+      "identity_reason": "host koio.co is an official domain",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 6b3173c98c2ae11eabe7187e20b12dadafd13d1a2645fb81c4c2f09f20ef5828.json sha256=173f4a51949211e89acf8da4045c15b0d9a2b2862bded770b725a9123c33e563",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-c110e50e3c94",
+      "company_id": "koio",
+      "requested_url": "https://adlibrary.com/brands/koio-instagram-ads",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "5647f532fbfb83f3a534c2edee87e901335227a04ad16c115adad26388a56506",
+      "text_path": "text/5647f532fbfb83f3a534c2edee87e901335227a04ad16c115adad26388a56506.txt",
+      "raw_path": null,
+      "text_chars": 2345,
+      "redirect_chain": [],
+      "identity_decision": "third_party_confirmed",
+      "identity_reason": "7 name mention(s) co-occur with Italian-made sneakers terms",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 1c686b35c09f9fbe3f9c34b1f58c7d05b36def8841c7fe2e186a2ac5fd992b1c.json sha256=0c1a3d56574ddc5f4702cd6f96dd390d7864307b9fece0625626e27609f50b59",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-d18317f06b24",
+      "company_id": "koio",
+      "requested_url": "https://www.brandsninja.com/brands/koio",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "23e5b2a3323656f2e0da0854d3927536a39a78c4f12471e33772b71d224c0153",
+      "text_path": "text/23e5b2a3323656f2e0da0854d3927536a39a78c4f12471e33772b71d224c0153.txt",
+      "raw_path": null,
+      "text_chars": 13329,
+      "redirect_chain": [],
+      "identity_decision": "unconfirmed",
+      "identity_reason": "document body never names the company",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file fd8bfceac9865277b8d63176b1d5e72e1da233d4c90d39b02f596ad9f5c5ae31.json sha256=1263c3f6890dd51014a291fab4dfd8193327d873104b17f4d71eba5de649a8a9",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-5b4cb8360471",
+      "company_id": "koio",
+      "requested_url": "https://www.enrichlabs.ai/case-study/koio-email-marketing",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "74c81fa95af821699b8d6eac6f7d2459844859fc60926f2cc9f4eb9c68174872",
+      "text_path": "text/74c81fa95af821699b8d6eac6f7d2459844859fc60926f2cc9f4eb9c68174872.txt",
+      "raw_path": null,
+      "text_chars": 7096,
+      "redirect_chain": [],
+      "identity_decision": "unconfirmed",
+      "identity_reason": "company name appears without its product category",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file a6103c5343bb7338a0d047b88c6b5062aec3552f7e945863524d8fd28992be42.json sha256=f7b0f1df0d529aaeb63a1f3ebe9dd99822a24a6e1804d8298ce8b7991ec97916",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-142b9c1be891",
+      "company_id": "koio",
+      "requested_url": "https://endearhq.com/blog/koio-case-study",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "320c25db36a88c1799bc4c80062c64a824111e8b9c662ca5c7c5a2fef771f667",
+      "text_path": "text/320c25db36a88c1799bc4c80062c64a824111e8b9c662ca5c7c5a2fef771f667.txt",
+      "raw_path": null,
+      "text_chars": 5668,
+      "redirect_chain": [],
+      "identity_decision": "third_party_confirmed",
+      "identity_reason": "9 name mention(s) co-occur with Italian-made sneakers terms",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file d36083832b578a07e62c3d72f4f518c0b8d49f35ab7f3345634f831a83c2c341.json sha256=0ec2c925166ea6eaa1e6a86be86b1bb37b1f648f078473d7783853494c93bd98",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-33dedad5ffb3",
+      "company_id": "koio",
+      "requested_url": "https://www.casestudies.com/company/endear/case-study/how-koio-saw-store-sales-soar-for-latest-sneaker-drop",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "a474396372a63831b9c77937310c935e1a4fb7ca22b24429bd0d53f673df92e2",
+      "text_path": "text/a474396372a63831b9c77937310c935e1a4fb7ca22b24429bd0d53f673df92e2.txt",
+      "raw_path": null,
+      "text_chars": 2008,
+      "redirect_chain": [],
+      "identity_decision": "third_party_confirmed",
+      "identity_reason": "6 name mention(s) co-occur with Italian-made sneakers terms",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 3f8fc2d3a6db69b5ec736150652f4ea6cae993f5d91f96ffd526926c0078999b.json sha256=a5393d0eec7fa8a5f9dd4afc577941048bbf3fe23e5549612ea6c5f82688642b",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-ca57589bcfcc",
+      "company_id": "koio",
+      "requested_url": "https://adlibrary.com/brands/koio",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "29552bece729e27acd386dacd0aaa5ccac211e5a532771acb9de60b229bdbe7a",
+      "text_path": "text/29552bece729e27acd386dacd0aaa5ccac211e5a532771acb9de60b229bdbe7a.txt",
+      "raw_path": null,
+      "text_chars": 6031,
+      "redirect_chain": [],
+      "identity_decision": "third_party_confirmed",
+      "identity_reason": "37 name mention(s) co-occur with Italian-made sneakers terms",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 66ec7f8a7b127ebc20c3ec0fd2d817bd023366054d84fc0ab157dcce49d39731.json sha256=9bcefa6fa572ef680173e4f73f9fffcb10a4a7b92a1c76506ea975938cc472fc",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "passage_uid": "PU-644f3b8e320768b4",
+      "source_id": "S-2c7b4529b2bf",
+      "char_start": 12675,
+      "char_end": 13076,
+      "text": "Shop Boots KOIOKOIO Responsibility and Craft–From the Start Ten years and hundreds of iterations later, that philosophy still drives every pair we make: thoughtful design, responsible materials, and an obsessive attention to detail that honors both the craft and the wearer. Learn More Discover the Capri The quest for the perfect sneaker ends right here, with the Capri. It's your day-to-night go to.",
+      "text_sha256": "efab8e88cd70b8a67913bce0512e527676deda86cb2fc33fe0edf5579c09a98a",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "brand_positioning",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [],
+      "score": 12,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P1",
+      "source_url": "https://www.koio.co/",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-d5010e593b5862ac",
+      "source_id": "S-2c7b4529b2bf",
+      "char_start": 5750,
+      "char_end": 6003,
+      "text": "Gift Cards ^{} Men's white Italian leather slip on lace-less dress sneakers with white rubber soles laying on a rug in a room. The Capri X Returns A pair of dark brown men's brown Italian suede lace-up sneakers with white rubber soles on a wooden floor.",
+      "text_sha256": "b19be32765c70fc7018d120782b160e3918fa8ccbf26784d0408fac41ef743b2",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [],
+      "score": 10,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P2",
+      "source_url": "https://www.koio.co/",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-990fd3029ec7a7e0",
+      "source_id": "S-142b9c1be891",
+      "char_start": 1743,
+      "char_end": 2264,
+      "text": "To help launch a new product, they turned to Endear In anticipation of the launch of the Tempo style sneaker in July 2019, the Koio team developed a marketing strategy combining social media, e-mail, and IRL in-store engagement. To promote their new shoe to their stores' local customers, select Koio locations and pop-ups implemented an event-based marketing campaign using Endear's segmenting and bulk messaging capabilities to target shoppers in each store's neighborhood and invite them to their store's launch event.",
+      "text_sha256": "013c64dd94b62d405796c92f369536f36fc98e25c7590a34556b6e203b6245ed",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [
+        "July 2019"
+      ],
+      "relevance_terms": [
+        "campaign",
+        "customers",
+        "event",
+        "launch",
+        "marketing",
+        "pop-up",
+        "social media"
+      ],
+      "score": 18,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P3",
+      "source_url": "https://endearhq.com/blog/koio-case-study",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-537793f05d605e6d",
+      "source_id": "S-33dedad5ffb3",
+      "char_start": 255,
+      "char_end": 910,
+      "text": "How Koio Saw Store Sales Soar for Latest Sneaker Drop Koio, a digitally-native sneaker brand, sought to enhance its retail marketing and customer engagement for a new product launch. The challenge was to connect with local customers and drive traffic to its physical stores in New York and Los Angeles, augmenting its strong online presence. To achieve this, Koio turned to the clienteling platform from vendor Endear. Using Endear, Koio implemented a targeted, event-based marketing campaign. The solution leveraged the platform's segmenting and bulk messaging capabilities to send personalized invitations for an in-store launch event to local shoppers.",
+      "text_sha256": "a0a968f2a126d1fea76b94291512ecffcc4d359252a288449a85089ba460f78d",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "brand",
+        "campaign",
+        "customers",
+        "event",
+        "launch",
+        "marketing",
+        "retail"
+      ],
+      "score": 18,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P4",
+      "source_url": "https://www.casestudies.com/company/endear/case-study/how-koio-saw-store-sales-soar-for-latest-sneaker-drop",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-6713b457d6f30137",
+      "source_id": "S-142b9c1be891",
+      "char_start": 2825,
+      "char_end": 3493,
+      "text": "While the brand has now been using Endear to connect with shoppers for over four years now, this was Koio's first event-focused campaign implemented through Endear. But beyond directly attributable sales, this campaign and others like it serve to reinforce a sense of Koio community and open the door for further storytelling opportunities via physical retail locations and, most importantly, the teams that work there. Fostering a conversational relationship rather than a purely transaction one is invaluable when building a loyal and valuable customer base and an essential part of what Endear offers to its users. *vs. an industry average of 15% for U.S. retailers",
+      "text_sha256": "f42543face609faebfa6b54b854a81715585d62ef33b0583bdd16a65f2be47d6",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "brand",
+        "campaign",
+        "community",
+        "event",
+        "retail",
+        "storytelling"
+      ],
+      "score": 15,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P5",
+      "source_url": "https://endearhq.com/blog/koio-case-study",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-61f885ed1a6eb030",
+      "source_id": "S-142b9c1be891",
+      "char_start": 792,
+      "char_end": 1487,
+      "text": "About Koio Koio is a New York-based sneaker brand delivering Italian craftsmanship to modern consumers looking for comfort, quality, and style that can go anywhere. All this at a fraction of the price of traditional luxury sneakers on the market. Since their inception in 2014, Koio has quickly become a social media sensation, recognized around the world as the footwear of choice for influencers, jetsetters, and busy working professionals alike. The digitally-native brand has since expanded to two permanent brick-and-mortar locations in New York and Los Angeles. As one of Endear's inaugural customers, Koio has augmented their strong digital presence through store-based marketing efforts.",
+      "text_sha256": "7634eb6b8e67a94c7a0f41e895d4cd62e512573e489c4310e0ef35a937168e13",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [
+        "2014"
+      ],
+      "relevance_terms": [
+        "brand",
+        "customers",
+        "influencer",
+        "marketing",
+        "social media"
+      ],
+      "score": 14,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P6",
+      "source_url": "https://endearhq.com/blog/koio-case-study",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-f5ff777413056d0f",
+      "source_id": "S-2c7b4529b2bf",
+      "char_start": 11470,
+      "char_end": 11803,
+      "text": "A $14 shipping and processing fee will apply to all returns/exchanges. You can waive this fee by opting into Checkout+ for $7.98 at the time of purchase. Promotions cannot be combined for additional discounts. Accessories are excluded from any site promotion. Items on sale with a 25% or more discount are eligible for exchange only.",
+      "text_sha256": "d0729a66ff3c3e859bbfada19e3bec1c57559e0d978adb28e2f2558709837dd0",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [],
+      "score": 10,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P7",
+      "source_url": "https://www.koio.co/",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-764a0c280761ab9b",
+      "source_id": "S-c110e50e3c94",
+      "char_start": 1304,
+      "char_end": 1632,
+      "text": "About Koio Koio is a DTC footwear brand selling premium leather sneakers made in Italy, positioned at a higher price point than typical sneaker brands. It sells primarily through its own website and a small number of retail showrooms, emphasizing craftsmanship and minimalist design. The brand advertises across Meta placements.",
+      "text_sha256": "0ab0927184f97e18a29d9d8a775384b9beff2721cbf92883486364f0b5b6675f",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "flags": [
+        "vendor_generated_profile_or_analytics"
+      ],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "advertis",
+        "brand",
+        "retail"
+      ],
+      "score": 9,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P8",
+      "source_url": "https://adlibrary.com/brands/koio-instagram-ads",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-1c3e7272c62d70a6",
+      "source_id": "S-ca57589bcfcc",
+      "char_start": 2118,
+      "char_end": 2626,
+      "text": "Koio Meta Ads (Facebook & Instagram): Platform Analysis On Facebook and Instagram, Koio suits image-led formats. Expect high-quality product photography, carousels across silhouettes such as the Capri, close-ups of leather and stitching, and short Reels showing how the shoe wears. Instagram is a natural fit for a design-forward footwear audience. Retargeting site visitors helps with a higher-priced item that shoppers research, and editorial imagery keeps the brand feeling premium instead of promotional.",
+      "text_sha256": "21d328daaec89deb72ad0c9a522b68342b060ea43df631361f32f06b2d65879a",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "flags": [
+        "vendor_generated_profile_or_analytics"
+      ],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "audience",
+        "brand",
+        "instagram"
+      ],
+      "score": 9,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P9",
+      "source_url": "https://adlibrary.com/brands/koio",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-82231b621d2acaa6",
+      "source_id": "S-ca57589bcfcc",
+      "char_start": 4044,
+      "char_end": 4724,
+      "text": "Browse Koio's active Facebook and Instagram ads on AdLibrary at adlibrary.com. Search the brand name to see current creatives, formats and copy in one place. What platforms does Koio advertise on? Koio advertises mainly on Meta, meaning Facebook and Instagram feeds and Stories, where design-forward shoppers browse footwear. AdLibrary lets you review the Meta creative the brand is running. Who are Koio's main competitors? Koio competes with premium sneaker makers such as Common Projects, Oliver Cabell, Greats and Axel Arigato. Compare their ad creative on AdLibrary. What makes Koio's ads effective? Koio ads lean on craft, with close-ups of Italian leather and clean design.",
+      "text_sha256": "0d90809844b9860e4c61aa5d1e82c50018c556f3331ff2bf20c752bbcbacde44",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "flags": [
+        "vendor_generated_profile_or_analytics"
+      ],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "advertis",
+        "brand",
+        "instagram"
+      ],
+      "score": 9,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P10",
+      "source_url": "https://adlibrary.com/brands/koio",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    }
+  ],
+  "rejected_passages": [
+    {
+      "passage_uid": "PU-e94da8857c8d5f47",
+      "source_id": "S-5b4cb8360471",
+      "char_start": 3960,
+      "char_end": 4414,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Floret Flowers Marketing Strategy: Case Study Discover how Floret Flowers uses storytelling, visual content, community engagement, and sustainability to build a powerful online brand in the floral ind"
+    },
+    {
+      "passage_uid": "PU-05e86bfb984b09a2",
+      "source_id": "S-5b4cb8360471",
+      "char_start": 4419,
+      "char_end": 4892,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Open Farm Marketing Strategy: Case Study Discover effective marketing strategies for Open Farm, including storytelling, influencer collaborations, sustainability focus, and multi-channel campaigns to "
+    },
+    {
+      "passage_uid": "PU-c9f801733deb73c8",
+      "source_id": "S-5b4cb8360471",
+      "char_start": 3500,
+      "char_end": 3955,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Aldo Orta Jewelry Marketing Strategy: Case Study Boost Aldo Orta Jewelry’s visibility with expert SEO, influencer collaborations, compelling content, and targeted marketing strategies to drive sales a"
+    },
+    {
+      "passage_uid": "PU-2f1d0eaeace0a1fc",
+      "source_id": "S-142b9c1be891",
+      "char_start": 339,
+      "char_end": 529,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Koio's Sneaker Success: Unveiling the Impact of Endear's Clienteling in Local Store Marketing ## Sneaker brand, Koio, upped their retail marketing game for a new product launch by leveraging"
+    },
+    {
+      "passage_uid": "PU-cf4f1aa7f93bd0e1",
+      "source_id": "S-5b4cb8360471",
+      "char_start": 3247,
+      "char_end": 3495,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Other Posts You May Like Aldo Orta Jewelry Marketing Strategy: Case Study - Boost Aldo Orta Jewelry’s visibility with expert SEO, influencer collaborations, compelling content, and targeted marketing "
+    },
+    {
+      "passage_uid": "PU-0656a31bd76e8fa0",
+      "source_id": "S-d18317f06b24",
+      "char_start": 1947,
+      "char_end": 2985,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "historical_activity",
+      "preview": "Endless wardrobe pairings. ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ koio newsletter: How to Style the New Capri Read full newsletter → koio Sep 24, 2026, 1:32 PM The"
+    },
+    {
+      "passage_uid": "PU-a53092f71acfbb29",
+      "source_id": "S-2c7b4529b2bf",
+      "char_start": 12009,
+      "char_end": 12674,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Handcrafted Italian Leather Sneakers Get a Head Start on Black Friday Get a Head Start on Black Friday 20% Off Sitewide* + Up to 70% Off Last Chance SHOP EARLY ACCESS *Some exclusions apply The Capri "
+    },
+    {
+      "passage_uid": "PU-b23ecc75ac0e1c69",
+      "source_id": "S-142b9c1be891",
+      "char_start": 2265,
+      "char_end": 2824,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Koio using clienteling platform, Endear, for a local store marketing campaign and product launch Koio using clienteling platform, Endear, for a local store marketing campaign and product launch. These"
+    },
+    {
+      "passage_uid": "PU-7412fce9efc05ec9",
+      "source_id": "S-5b4cb8360471",
+      "char_start": 5693,
+      "char_end": 6190,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Sam AI SEO/GEO Content Marketer SEO + GEO Content Strategy Message Sam × Kai Kai Active now Hi Kai! Great to meet you! If you're looking to accelerate your social media presence, fill in the informati"
+    },
+    {
+      "passage_uid": "PU-02219791af433000",
+      "source_id": "S-ca57589bcfcc",
+      "char_start": 1227,
+      "char_end": 1555,
+      "selection_status": "rejected",
+      "reasons": [
+        "near_duplicate_of_selected_passage"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "About Koio Koio is a DTC footwear brand selling premium leather sneakers made in Italy, positioned at a higher price point than typical sneaker brands. It sells primarily through its own website and a"
+    },
+    {
+      "passage_uid": "PU-cce3dff840d34a31",
+      "source_id": "S-ca57589bcfcc",
+      "char_start": 3050,
+      "char_end": 3486,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "author_recommendation",
+      "preview": "Koio Google Ads, YouTube Ads & Cross-Platform Lessons Beyond Meta, direct-to-consumer footwear brands like Koio lean on search, email, press features and showroom experiences that let shoppers try the"
+    },
+    {
+      "passage_uid": "PU-e7001b26cba03ba4",
+      "source_id": "S-33dedad5ffb3",
+      "char_start": 911,
+      "char_end": 1234,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "This strategy resulted in an email open rate of 36.2%, more than double the industry average. Most significantly, Endear's platform was directly attributed to driving 11% of the in-store sales during "
+    },
+    {
+      "passage_uid": "PU-c66e0a68361ae913",
+      "source_id": "S-5b4cb8360471",
+      "char_start": 2157,
+      "char_end": 2669,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Pretty brilliant.” Codie A. Sanchez Entrepreneur and investor ★★★★★87% AUTONOMOUS > “This is how social moves from a communications channel to an intelligence system for the entire > brand.” Roxanne K"
+    },
+    {
+      "passage_uid": "PU-d2b530b93dcf8563",
+      "source_id": "S-ca57589bcfcc",
+      "char_start": 1559,
+      "char_end": 2114,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Koio Ads Strategy: What Makes Koio Ads Effective Koio sells a premium sneaker, and its advertising works to justify the price through craft. Creative centers on Italian leather, handmade construction "
+    },
+    {
+      "passage_uid": "PU-d12dc746e9999700",
+      "source_id": "S-142b9c1be891",
+      "char_start": 1488,
+      "char_end": 1738,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "A steady stream of associate-driven follow ups, personal product recommendations, and thank-you messages has helped Koio maintain and boost their customer engagement and extend their brands' voice via"
+    },
+    {
+      "passage_uid": "PU-eab603ae308b6cf9",
+      "source_id": "S-5b4cb8360471",
+      "char_start": 4897,
+      "char_end": 5122,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Girlfriend Collective Email Marketing: Case Study Discover how Girlfriend Collective uses personalized segmentation, engaging content, automation, and authentic messaging to boost email marketing succ"
+    },
+    {
+      "passage_uid": "PU-f979ad24d89898c4",
+      "source_id": "S-ca57589bcfcc",
+      "char_start": 2630,
+      "char_end": 3046,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Koio Ad Copy & TikTok Creative Themes Copy themes: (1) handcrafted in Italy from fine leather; (2) minimal design that goes with everything; (3) quality that justifies a higher price; (4) the everyday"
+    },
+    {
+      "passage_uid": "PU-66c31b0cb02c4f05",
+      "source_id": "S-ca57589bcfcc",
+      "char_start": 4725,
+      "char_end": 5318,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "A restrained premium tone and consistent visuals help justify a higher-priced sneaker. Where does Koio make its sneakers? Koio sneakers are handcrafted in Italy from premium leather. The brand sells m"
+    },
+    {
+      "passage_uid": "PU-537e39ba1e039f90",
+      "source_id": "S-d18317f06b24",
+      "char_start": 3689,
+      "char_end": 4325,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "historical_activity",
+      "preview": "Read full newsletter → koio Sep 11, 2026, 1:30 PM Introducing Capri Antica: Our Bestseller, Upgraded The Black Label of the Capri, introduced in six new colorways. ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏"
+    },
+    {
+      "passage_uid": "PU-d4d41bb176dd534f",
+      "source_id": "S-d18317f06b24",
+      "char_start": 5849,
+      "char_end": 6356,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "Designed for movement from day to night. ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ koio newsletter: The Carrara: Restocked Read full newsletter → koio Aug 21, 2026, 1:30 AM "
+    },
+    {
+      "passage_uid": "PU-e9dee0e4fcb1119d",
+      "source_id": "S-5b4cb8360471",
+      "char_start": 5530,
+      "char_end": 5688,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Kai AI Social Media Manager Social Intelligence Trend Detection Message Kai Helena ### Helena AI Digital Marketer SEO & Content Performance Message Helena Sam"
+    },
+    {
+      "passage_uid": "PU-fd09960458546ad7",
+      "source_id": "S-5b4cb8360471",
+      "char_start": 6735,
+      "char_end": 7068,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Your Name Work Email Website URL What are your top 3 pain points? How did you hear about me? Send × Sam Sam Active now Hi Sam! Hey there! Great to meet you. I handle SEO and GEO content marketing, fro"
+    },
+    {
+      "passage_uid": "PU-fe7d4d5e691674df",
+      "source_id": "S-ca57589bcfcc",
+      "char_start": 173,
+      "char_end": 327,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Koio Ads koio.co Koio designs luxury leather sneakers handcrafted in Italy, merging modern style with traditional artisan craftsmanship for everyday wear."
+    },
+    {
+      "passage_uid": "PU-7f4e46fdcb84889d",
+      "source_id": "S-d18317f06b24",
+      "char_start": 11697,
+      "char_end": 12266,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "The clock is ticking on our 4th of July Event. Secure your handcrafted summer essentials before midnight... ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ koio newsletter: LAST CHANCE: Your 15% Off D"
+    },
+    {
+      "passage_uid": "PU-2788fbbaa866debe",
+      "source_id": "S-2c7b4529b2bf",
+      "char_start": 11155,
+      "char_end": 11301,
+      "selection_status": "rejected",
+      "reasons": [
+        "statement_type:proposed_or_mock_work"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "proposed_or_mock_work",
+      "preview": "Zimbabwe United States (USD) 0 Terms Orders placed between November 14th and December 31st will have an extended exchange window for the holidays."
+    },
+    {
+      "passage_uid": "PU-625daee9c47fde0d",
+      "source_id": "S-d18317f06b24",
+      "char_start": 96,
+      "char_end": 1946,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "Latest Emails from koio koio Oct 27, 2026, 1:30 PM The Capri X Is Coming Back Hidden elastics, same Capri fit, now on pre-order. ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏"
+    },
+    {
+      "passage_uid": "PU-f5b711add1f20b7d",
+      "source_id": "S-d18317f06b24",
+      "char_start": 2986,
+      "char_end": 3688,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "One definitive foundation. ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ koio newsletter: The Fall 2026 Capri Collection Read full newsletter → koio Sep 16, 2026, 1:32 "
+    },
+    {
+      "passage_uid": "PU-7e143488308db7ae",
+      "source_id": "S-d18317f06b24",
+      "char_start": 4326,
+      "char_end": 4512,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "Final hours to secure core classics and last-chance styles on sale. ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ koio newsletter: Choose Your Icon: Capri or Monza?"
+    },
+    {
+      "passage_uid": "PU-fbbb68663e2b1886",
+      "source_id": "S-d18317f06b24",
+      "char_start": 6357,
+      "char_end": 7459,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "It won't last long. ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ koio newsletter: The Carrara Is Back (For Now) Read full newsletter → koio Aug 17, 2026, 6:28 PM The Monza Mo"
+    },
+    {
+      "passage_uid": "PU-60a158a549ee77a0",
+      "source_id": "S-5b4cb8360471",
+      "char_start": 1698,
+      "char_end": 1984,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "8 min read Share: Ask AI: ChatGPT Claude Grok Perplexity Google AI Koio Email Marketing: Case Study - Featured image showing Discover Koio's top email marketing strategies—personalization, automation,"
+    },
+    {
+      "passage_uid": "PU-c0dfb1c62e13e060",
+      "source_id": "S-5b4cb8360471",
+      "char_start": 5359,
+      "char_end": 5525,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Choose Your Specialist Select the AI marketing specialist you'd like to work with Angela ### Angela AI Email Marketer Email Workflows Cart Recovery Message Angela Kai"
+    },
+    {
+      "passage_uid": "PU-24d8b89af89cd7e5",
+      "source_id": "S-ca57589bcfcc",
+      "char_start": 3490,
+      "char_end": 3764,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:ambiguous_entity"
+      ],
+      "identity_reason": "possible different entity: Koio Ads, Koio Google, Koio Meta, Koio TikTok",
+      "statement_type": "provider_reported_result",
+      "preview": "Find Koio Ads: All Search Variants Searching for Koio? Whether you type Koio ads, Koio Meta ads, Koio TikTok ads, Koio Google ads, or see all Koio ads — this page surfaces every active and historical "
+    },
+    {
+      "passage_uid": "PU-00621632ecad7982",
+      "source_id": "S-d18317f06b24",
+      "char_start": 4513,
+      "char_end": 5848,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Read full newsletter → koio Sep 4, 2026, 1:30 PM Final Days: Labor Day Sale Take 10% off core classics before time runs out. ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏"
+    },
+    {
+      "passage_uid": "PU-feecc4a4c7e5dfc7",
+      "source_id": "S-d18317f06b24",
+      "char_start": 7460,
+      "char_end": 10399,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Handcrafted in Marche, Italy. ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ koio newsletter: Capri Restock: Two Rare Tones Return Read full newsletter → koio Aug 7, 2026, 1:30 PM Eart"
+    },
+    {
+      "passage_uid": "PU-4732de8954479c46",
+      "source_id": "S-d18317f06b24",
+      "char_start": 10400,
+      "char_end": 11696,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "The Capri Terra is back. ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ koio newsletter: Hand-Finished in Florence Read full newsletter → koio Jul 18, 2026, 1:30 PM The Summe"
+    },
+    {
+      "passage_uid": "PU-139b431bf9577f81",
+      "source_id": "S-d18317f06b24",
+      "char_start": 12267,
+      "char_end": 12451,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Starting now, elevate your summer wardrobe with 15% off. ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ koio newsletter: 15% Off Summer: Pack Light, Walk Far."
+    },
+    {
+      "passage_uid": "PU-5518735dba773b88",
+      "source_id": "S-142b9c1be891",
+      "char_start": 3498,
+      "char_end": 3650,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "See Endear in action Request a personalized demo and we'll walk you through real-world use cases, key features, and answer your most pressing questions."
+    },
+    {
+      "passage_uid": "PU-ac441b5ce38ef238",
+      "source_id": "S-142b9c1be891",
+      "char_start": 3701,
+      "char_end": 4103,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant",
+        "boilerplate:table_of_contents"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "provider_reported_result",
+      "preview": "How Jones Road Beauty Built a Clienteling Program that Drives a 10% Conversion Rate from Store Outreach 2. How A.L.C. Grew Post-Purchase Outreach by 2.5x While Freeing Up 30 Minutes a Day for Each Cli"
+    },
+    {
+      "passage_uid": "PU-da0d2e810c3be385",
+      "source_id": "S-142b9c1be891",
+      "char_start": 4311,
+      "char_end": 4823,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant",
+        "boilerplate:table_of_contents"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "provider_reported_result",
+      "preview": "Latest posts in Success Stories 1. How Jones Road Beauty Built a Clienteling Program that Drives a 10% Conversion Rate from Store Outreach 2. How A.L.C. Grew Post-Purchase Outreach by 2.5x While Freei"
+    },
+    {
+      "passage_uid": "PU-718b783efe0d0e9f",
+      "source_id": "S-33dedad5ffb3",
+      "char_start": 0,
+      "char_end": 251,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:ambiguous_entity",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "possible different entity: Koio Case",
+      "statement_type": "provider_reported_result",
+      "preview": "CaseStudies.com Companies Categories Case Studies Search Search case studies by title and company name # Case Study: Koio achieves 36.2% email open rates and 11% in-store sales attribution with Endear"
+    },
+    {
+      "passage_uid": "PU-c8390d327cd15008",
+      "source_id": "S-5b4cb8360471",
+      "char_start": 6339,
+      "char_end": 6685,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Fill in the details below and I'll show you how. Work email Website URL What email platform do you use? (Optional) Klaviyo Brevo Mailchimp Send × Helena Helena Active now Great to meet you! I'm Helena"
+    }
+  ],
+  "status": "ok",
+  "status_reasons": [],
+  "packet_sha256": "d00d08e6800c1f4c0deeeac7c2fc1ce56b592a92821e57e6bc6733583e82cfcf"
+}

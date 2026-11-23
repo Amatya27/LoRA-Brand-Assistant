@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "pela",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "8a29de2d7cb594d04380ab8a2de0c9e172e30811b9fa6fa80ce741cadb703fbf",
+    "prompt_sha256": "6a93f74b7c6224570615c144fa9c426ea7154944981efd49e528dcee96af0f5d",
+    "completion_sha256": "744b0c0f9ca574a4ecfb950108a180e69eaa7a50f4f97314022dbf84fb9751df",
+    "audit_sha256": "e0ef3b1c9794af570997c7dbda8cd2437cf48c808687d827fad2ade0c2a1e95c"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 6,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:43+00:00",
+  "record_sha256": "5efd0ba0a6d0a9162a8aee69378625ee4691cbd5b6c9fdbda847afdbfdf8de0d"
+}

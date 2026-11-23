@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "outdoor-voices",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "fb3e615c99b46c771dbad20e22c50265924457d570787815464636572221af43",
+    "prompt_sha256": "c3012daeb989515469b795c2dcc033d396d065cce0c00bb2b6ab430ee33806f7",
+    "completion_sha256": "c64cc469f7e3f7b44acf62970d4e08d6cee4e480e3755cc12ea5ce7afed596cf",
+    "audit_sha256": "3daace0884e7a513fb773153780ad834e4f57cebbc8a7970310afc6b982ce7a2"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 6,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:43+00:00",
+  "record_sha256": "c3641f07158e8a51467040e9015566749ec1ed5a91d6a4ed71130ea971e2ee03"
+}

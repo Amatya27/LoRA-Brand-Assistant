@@ -1,6 +1,6 @@
 {
   "schema": "brandpilot.registry.v1",
-  "registry_version": "2026-11-21.v1",
+  "registry_version": "2026-11-22.v3",
   "description": "Company identity registry for BrandPilot Phase 1 v3. Domains are taken from the listed verification sources, never guessed from names. Only status=verified companies may produce evidence packets.",
   "companies": [
     {
@@ -760,6 +760,3714 @@
         }
       ],
       "notes": "QUARANTINED: most likely intended entity is the Haus apéritif brand (drink.haus), but a team member must confirm before any evidence is collected. Haus is in the held-out test split, so the pilot does not label it."
+    },
+    {
+      "company_id": "allbirds",
+      "display_name": "Allbirds",
+      "legacy_name": "Allbirds",
+      "status": "verified",
+      "category": "wool and natural-material footwear",
+      "official_domains": [
+        "allbirds.com"
+      ],
+      "aliases": [
+        "Allbirds"
+      ],
+      "category_terms": [
+        "shoe",
+        "shoes",
+        "sneaker",
+        "sneakers",
+        "wool",
+        "Wool Runner",
+        "Merino",
+        "footwear",
+        "sugarcane",
+        "tree"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://www.allbirds.com/pages/press",
+          "note": "first-party press page; release says 'visit www.allbirds.com'",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Allbirds",
+          "note": "launched with the Wool Runners sneaker",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "graza",
+      "display_name": "Graza",
+      "legacy_name": "Graza",
+      "status": "verified",
+      "category": "single-origin olive oil in squeeze bottles",
+      "official_domains": [
+        "graza.co"
+      ],
+      "aliases": [
+        "Graza"
+      ],
+      "category_terms": [
+        "olive oil",
+        "squeeze",
+        "Sizzle",
+        "Drizzle",
+        "Jaen",
+        "Spain",
+        "EVOO",
+        "Andrew Benin"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://graza.co/pages/about-us",
+          "note": "first-party about page: olive oil, squeeze bottle, Jaen Spain",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://www.foodnavigator-usa.com/Article/2022/01/12/Graza-debuts-premium-affordable-olive-oil-in-squeeze-bottle-format",
+          "note": "launch coverage",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "supergoop",
+      "display_name": "Supergoop!",
+      "legacy_name": "Supergoop",
+      "status": "verified",
+      "category": "sunscreen and SPF skincare",
+      "official_domains": [
+        "supergoop.com"
+      ],
+      "aliases": [
+        "Supergoop",
+        "Supergoop!"
+      ],
+      "category_terms": [
+        "sunscreen",
+        "SPF",
+        "Unseen",
+        "skincare",
+        "skin",
+        "Holly Thaggard",
+        "UV"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://supergoop.com/pages/sg-promise",
+          "note": "first-party mission page (sunscreen)",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://www.dermstore.com/c/brands/supergoop/",
+          "note": "retailer brand page: founded 2005 by Holly Thaggard",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "fly-by-jing",
+      "display_name": "Fly By Jing",
+      "legacy_name": "Fly By Jing",
+      "status": "verified",
+      "category": "Sichuan chili crisp and condiments",
+      "official_domains": [
+        "flybyjing.com"
+      ],
+      "aliases": [
+        "Fly By Jing",
+        "Fly by Jing",
+        "FLYBYJING",
+        "Flybyjing"
+      ],
+      "category_terms": [
+        "chili crisp",
+        "Sichuan",
+        "Chengdu",
+        "sauce",
+        "condiment",
+        "Jing Gao",
+        "spicy",
+        "dumpling"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://flybyjing.com/shop/dumpling-sauces/",
+          "note": "first-party shop page (Sichuan Chili Crisp)",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://www.fastcompany.com/91384725/fly-by-jing-ketchup",
+          "note": "Fast Company: founded by Jing Gao, chili crisp",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": "Name mentions must be the full brand name; bare 'Jing' is not a mention."
+    },
+    {
+      "company_id": "bones-coffee",
+      "display_name": "Bones Coffee Company",
+      "legacy_name": "Bones Coffee",
+      "status": "verified",
+      "category": "flavored small-batch coffee",
+      "official_domains": [
+        "bonescoffee.com"
+      ],
+      "aliases": [
+        "Bones Coffee",
+        "Bones Coffee Company",
+        "Bones Coffee Co."
+      ],
+      "category_terms": [
+        "coffee",
+        "roast",
+        "flavored",
+        "beans",
+        "Cape Coral",
+        "brew",
+        "Bones Cups"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [
+        {
+          "name": "Look-alike Bones Coffee storefronts",
+          "domains": [
+            "bonescofe.com",
+            "bonescoffeeplus.com"
+          ],
+          "note": "copycat store domains, not Bones Coffee Company (bonescoffee.com); flagged 2026-11-22"
+        }
+      ],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://www.bonescoffee.com/pages/presskit",
+          "note": "first-party press kit",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://www.bevnet.com/brands/bones-coffee-company",
+          "note": "BevNET brand listing points to bonescoffee.com",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": "Bare 'Bones' is not a mention; require the full brand name."
+    },
+    {
+      "company_id": "away",
+      "display_name": "Away",
+      "legacy_name": "Away",
+      "status": "verified",
+      "category": "travel luggage and suitcases",
+      "official_domains": [
+        "awaytravel.com"
+      ],
+      "aliases": [
+        "Away",
+        "Away Travel",
+        "Away luggage"
+      ],
+      "category_terms": [
+        "luggage",
+        "suitcase",
+        "carry-on",
+        "travel",
+        "bags",
+        "Jen Rubio",
+        "Steph Korey"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [
+        {
+          "name": "away-luggage.com",
+          "domains": [
+            "away-luggage.com"
+          ],
+          "note": "unverified look-alike domain seen in the legacy search leads; not Away's official site"
+        }
+      ],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://www.awaytravel.com/",
+          "note": "first-party homepage (luggage, bags and accessories)",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://luxe.digital/brand/away-travel",
+          "note": "brand profile: founded NYC 2015 by Steph Korey and Jen Rubio",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": "'Away' is a common word: a third-party passage counts only with luggage/travel vocabulary."
+    },
+    {
+      "company_id": "great-jones",
+      "display_name": "Great Jones",
+      "legacy_name": "Great Jones",
+      "status": "verified",
+      "category": "cookware and bakeware",
+      "official_domains": [
+        "greatjonesgoods.com"
+      ],
+      "aliases": [
+        "Great Jones",
+        "Great Jones Goods"
+      ],
+      "category_terms": [
+        "cookware",
+        "bakeware",
+        "Dutch oven",
+        "Dutchess",
+        "pots",
+        "pans",
+        "Sierra Tishgart",
+        "kitchen"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [
+        {
+          "name": "GREATS (sneakers)",
+          "domains": [
+            "greats.com"
+          ],
+          "note": "different company with a similar name"
+        },
+        {
+          "name": "greatsjones.com",
+          "domains": [
+            "greatsjones.com"
+          ],
+          "note": "look-alike domain seen in legacy leads; not verified as official"
+        }
+      ],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://greatjonesgoods.com",
+          "note": "first-party shop (cookware, bakeware)",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://www.tasteofhome.com/collection/great-jones-cookware/",
+          "note": "Taste of Home coverage of Great Jones cookware",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "greats",
+      "display_name": "GREATS",
+      "legacy_name": "Greats",
+      "status": "verified",
+      "category": "premium sneakers",
+      "official_domains": [
+        "greats.com"
+      ],
+      "aliases": [
+        "GREATS",
+        "Greats",
+        "GREATS Brand",
+        "Greats Brand"
+      ],
+      "category_terms": [
+        "sneaker",
+        "sneakers",
+        "footwear",
+        "Royale",
+        "Brooklyn",
+        "shoes"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [
+        {
+          "name": "Great Jones (cookware)",
+          "domains": [
+            "greatjonesgoods.com"
+          ],
+          "note": "different company with a similar name"
+        }
+      ],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://www.si.com/fannation/sneakers/off-court/brooklyn-sneaker-brand-greats-launches-new-manhattan-city-runner",
+          "note": "SI: Manhattan City Runner available at Greats.com",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://www.viglink.com/merchants/70312/greats-affiliate-program",
+          "note": "affiliate listing gives greats.com",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": "'greats' is a common word: require sneaker/footwear vocabulary."
+    },
+    {
+      "company_id": "meundies",
+      "display_name": "MeUndies",
+      "legacy_name": "MeUndies",
+      "status": "verified",
+      "category": "underwear and loungewear",
+      "official_domains": [
+        "meundies.com"
+      ],
+      "aliases": [
+        "MeUndies",
+        "Me Undies"
+      ],
+      "category_terms": [
+        "underwear",
+        "loungewear",
+        "bralette",
+        "socks",
+        "membership",
+        "pairs",
+        "Jonathan Shokrian"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://www.meundies.com/membership",
+          "note": "first-party membership page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://www.reviewed.com/style/content/meundies-printed-underwear-reviewed",
+          "note": "Reviewed: launched 2011 by Jonathan Shokrian",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "outdoor-voices",
+      "display_name": "Outdoor Voices",
+      "legacy_name": "Outdoor Voices",
+      "status": "verified",
+      "category": "activewear",
+      "official_domains": [
+        "outdoorvoices.com"
+      ],
+      "aliases": [
+        "Outdoor Voices",
+        "OV"
+      ],
+      "category_terms": [
+        "activewear",
+        "apparel",
+        "leggings",
+        "recreation",
+        "Doing Things",
+        "Ty Haney",
+        "skort",
+        "exercise dress"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://www.outdoorvoices.com/about",
+          "note": "first-party about page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://www.wikipedia.org/wiki/Outdoor_Voices",
+          "note": "Wikipedia article",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": "Bare 'OV' is not a mention by itself in third-party text."
+    },
+    {
+      "company_id": "pela",
+      "display_name": "Pela",
+      "legacy_name": "Pela",
+      "status": "verified",
+      "category": "compostable phone cases",
+      "official_domains": [
+        "pelacase.com",
+        "pelacase.ca"
+      ],
+      "aliases": [
+        "Pela",
+        "Pela Case"
+      ],
+      "category_terms": [
+        "phone case",
+        "compostable",
+        "Flaxstic",
+        "case",
+        "plant-based",
+        "Pela 360",
+        "zero waste"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [
+        {
+          "name": "Pela tools (pelatools.com)",
+          "domains": [
+            "pelatools.com"
+          ],
+          "note": "unrelated company sharing the name"
+        }
+      ],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://pelacase.com",
+          "note": "first-party US store",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://pelacase.ca",
+          "note": "first-party Canadian store",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://amp.cnn.com/cnn/cnn-underscored/electronics/pela-case-compostable-tech-accessories",
+          "note": "CNN Underscored coverage",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "stumptown-coffee",
+      "display_name": "Stumptown Coffee Roasters",
+      "legacy_name": "Stumptown Coffee",
+      "status": "verified",
+      "category": "specialty coffee roaster",
+      "official_domains": [
+        "stumptowncoffee.com"
+      ],
+      "aliases": [
+        "Stumptown",
+        "Stumptown Coffee",
+        "Stumptown Coffee Roasters"
+      ],
+      "category_terms": [
+        "coffee",
+        "roaster",
+        "cold brew",
+        "beans",
+        "espresso",
+        "Portland",
+        "Hair Bender"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://stumptowncoffee.com/pages/our-story",
+          "note": "first-party our-story page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://wikipedia.com/wiki/Stumptown_Coffee",
+          "note": "Wikipedia article (Portland roaster, owned by JDE Peet's)",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": "'Stumptown' is also a Portland nickname: require coffee vocabulary."
+    },
+    {
+      "company_id": "thrive-market",
+      "display_name": "Thrive Market",
+      "legacy_name": "Thrive Market",
+      "status": "verified",
+      "category": "membership online organic grocery",
+      "official_domains": [
+        "thrivemarket.com"
+      ],
+      "aliases": [
+        "Thrive Market"
+      ],
+      "category_terms": [
+        "grocery",
+        "groceries",
+        "organic",
+        "membership",
+        "online grocer",
+        "healthy",
+        "Thrive Cash"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [
+        {
+          "name": "Thrive Marketing (thrivemktg.net)",
+          "domains": [
+            "thrivemktg.net"
+          ],
+          "note": "marketing agency with a similar name"
+        }
+      ],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://help.thrivemarket.com/hc/en-us/articles/360036218992-What-is-Thrive-Market",
+          "note": "first-party help center",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://Www.Wikipedia.org/wiki/Thrive_Market",
+          "note": "Wikipedia article",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": "Bare 'Thrive' is not a mention."
+    },
+    {
+      "company_id": "tonal",
+      "display_name": "Tonal",
+      "legacy_name": "Tonal",
+      "status": "verified",
+      "category": "smart home gym equipment",
+      "official_domains": [
+        "tonal.com"
+      ],
+      "aliases": [
+        "Tonal",
+        "Tonal 2"
+      ],
+      "category_terms": [
+        "home gym",
+        "strength training",
+        "fitness",
+        "workout",
+        "smart gym",
+        "weights",
+        "membership"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://www.tonal.com",
+          "note": "first-party homepage",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://www.digitaltrends.com/smart-home-reviews/tonal-home-gym-review/",
+          "note": "Digital Trends review",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": "'tonal' is a common adjective: require fitness vocabulary."
+    },
+    {
+      "company_id": "brooklinen",
+      "display_name": "Brooklinen",
+      "legacy_name": "Brooklinen",
+      "status": "verified",
+      "category": "bedding and home textiles",
+      "official_domains": [
+        "brooklinen.com"
+      ],
+      "aliases": [
+        "Brooklinen"
+      ],
+      "category_terms": [
+        "bedding",
+        "sheets",
+        "comforter",
+        "pillows",
+        "sateen",
+        "towels",
+        "Kickstarter"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://www.brooklinen.com/pages/about",
+          "note": "first-party about page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://sleepfoundation.org/best-sheets/brooklinen-sheets-review",
+          "note": "Sleep Foundation review",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "blueland",
+      "display_name": "Blueland",
+      "legacy_name": "Blueland",
+      "status": "verified",
+      "category": "refillable cleaning products",
+      "official_domains": [
+        "blueland.com"
+      ],
+      "aliases": [
+        "Blueland"
+      ],
+      "category_terms": [
+        "cleaning",
+        "refill",
+        "tablets",
+        "Forever Bottle",
+        "plastic",
+        "soap",
+        "cleaner"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://blueland.com/about-us",
+          "note": "first-party about page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://www.sustainablejungle.com/brand-ratings/blueland/",
+          "note": "Sustainable Jungle brand rating",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "lovevery",
+      "display_name": "Lovevery",
+      "legacy_name": "Lovevery",
+      "status": "verified",
+      "category": "stage-based baby and toddler play kits",
+      "official_domains": [
+        "lovevery.com"
+      ],
+      "aliases": [
+        "Lovevery"
+      ],
+      "category_terms": [
+        "Play Kits",
+        "play kit",
+        "baby",
+        "toddler",
+        "Montessori",
+        "toys",
+        "subscription"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://lovevery.com/products/the-play-kits",
+          "note": "first-party product page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://www.wikipedia.com/wiki/Lovevery",
+          "note": "Wikipedia article",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "cometeer",
+      "display_name": "Cometeer",
+      "legacy_name": "Cometeer",
+      "status": "verified",
+      "category": "flash-frozen coffee capsules",
+      "official_domains": [
+        "cometeer.com"
+      ],
+      "aliases": [
+        "Cometeer",
+        "Cometeer Coffee"
+      ],
+      "category_terms": [
+        "coffee",
+        "frozen",
+        "capsules",
+        "roasters",
+        "extract",
+        "latte"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://cometeer.com",
+          "note": "first-party homepage",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Cometeer_Coffee",
+          "note": "Wikipedia article (Gloucester, MA)",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": "Wikipedia's infobox lists cometeercoffee.com; first-party pages are served from cometeer.com."
+    },
+    {
+      "company_id": "ruggable",
+      "display_name": "Ruggable",
+      "legacy_name": "Ruggable",
+      "status": "verified",
+      "category": "machine-washable rugs",
+      "official_domains": [
+        "ruggable.com",
+        "ruggable.co.uk"
+      ],
+      "aliases": [
+        "Ruggable"
+      ],
+      "category_terms": [
+        "rug",
+        "rugs",
+        "washable",
+        "runner",
+        "rug pad",
+        "home decor"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://ruggable.com/en-CA/pages/about",
+          "note": "first-party about page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://www.hgtv.com/design/decorating/furniture-and-accessories/ruggable-washable-rug-review",
+          "note": "HGTV review",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "alo-yoga",
+      "display_name": "Alo Yoga",
+      "legacy_name": "Alo Yoga",
+      "status": "verified",
+      "category": "yoga apparel and athleisure",
+      "official_domains": [
+        "aloyoga.com"
+      ],
+      "aliases": [
+        "Alo Yoga",
+        "Alo"
+      ],
+      "category_terms": [
+        "yoga",
+        "activewear",
+        "athleisure",
+        "leggings",
+        "studio",
+        "apparel",
+        "wellness"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://www.aloyoga.com/about",
+          "note": "first-party about page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://www.Wikipedia.org/wiki/Alo_Yoga",
+          "note": "Wikipedia: LA company founded 2007",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": "Bare 'Alo' needs yoga/apparel vocabulary."
+    },
+    {
+      "company_id": "anker",
+      "display_name": "Anker",
+      "legacy_name": "Anker",
+      "status": "verified",
+      "category": "mobile charging electronics",
+      "official_domains": [
+        "anker.com"
+      ],
+      "aliases": [
+        "Anker",
+        "Anker Innovations"
+      ],
+      "category_terms": [
+        "charger",
+        "charging",
+        "power bank",
+        "cable",
+        "hub",
+        "soundcore",
+        "eufy"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://anker.com/",
+          "note": "first-party homepage",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://Www.wikipedia.org/wiki/Anker_Innovations",
+          "note": "Wikipedia: Anker Innovations",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "athletic-greens",
+      "display_name": "AG1",
+      "legacy_name": "Athletic Greens",
+      "status": "verified",
+      "category": "greens nutrition supplement drink",
+      "official_domains": [
+        "drinkag1.com",
+        "athleticgreens.com"
+      ],
+      "aliases": [
+        "AG1",
+        "Athletic Greens",
+        "AG1 by Athletic Greens"
+      ],
+      "category_terms": [
+        "supplement",
+        "greens",
+        "powder",
+        "nutrition",
+        "vitamins",
+        "daily",
+        "scoop"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://drinkag1.com/product",
+          "note": "first-party product page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://ie.trustpilot.com/review/athleticgreens.com",
+          "note": "Trustpilot 'Drink AG1' page on athleticgreens.com",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": "Renamed from Athletic Greens to AG1; Trustpilot lists athleticgreens.com for the same brand."
+    },
+    {
+      "company_id": "avocado-green-mattress",
+      "display_name": "Avocado Green Mattress",
+      "legacy_name": "Avocado Green Mattress",
+      "status": "verified",
+      "category": "organic mattresses",
+      "official_domains": [
+        "avocadogreenmattress.com",
+        "avocadogreenmattress.ca"
+      ],
+      "aliases": [
+        "Avocado Green Mattress",
+        "Avocado Mattress",
+        "Avocado"
+      ],
+      "category_terms": [
+        "mattress",
+        "organic",
+        "latex",
+        "sleep",
+        "bedding",
+        "wool"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://www.avocadogreenmattress.com/our-team",
+          "note": "first-party team page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://www.rtings.com/mattress/reviews/avocado/green",
+          "note": "RTINGS review",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": "Bare 'Avocado' needs mattress vocabulary."
+    },
+    {
+      "company_id": "baboon-to-the-moon",
+      "display_name": "Baboon to the Moon",
+      "legacy_name": "Baboon to the Moon",
+      "status": "verified",
+      "category": "travel bags",
+      "official_domains": [
+        "baboontothemoon.com"
+      ],
+      "aliases": [
+        "Baboon to the Moon",
+        "BABOON TO THE MOON"
+      ],
+      "category_terms": [
+        "bag",
+        "bags",
+        "Go-Bag",
+        "duffle",
+        "fannypack",
+        "travel",
+        "colorful"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://baboontothemoon.com/pages/about-us",
+          "note": "first-party about page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://www.dtcetc.com/brand/baboon-to-the-moon",
+          "note": "DTC brand listing",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "beis",
+      "display_name": "Béis",
+      "legacy_name": "Beis",
+      "status": "verified",
+      "category": "travel bags and luggage",
+      "official_domains": [
+        "beistravel.com"
+      ],
+      "aliases": [
+        "Béis",
+        "BÉIS",
+        "Beis",
+        "Beis Travel"
+      ],
+      "category_terms": [
+        "travel",
+        "luggage",
+        "weekender",
+        "bag",
+        "suitcase",
+        "Shay Mitchell",
+        "roller"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://beistravel.com/pages/about",
+          "note": "first-party about page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://www.refinery29.com/en-us/2018/10/214261/shay-mitchell-beis-travel-brand-2018",
+          "note": "Refinery29 launch coverage",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "bellroy",
+      "display_name": "Bellroy",
+      "legacy_name": "Bellroy",
+      "status": "verified",
+      "category": "wallets, bags and carry goods",
+      "official_domains": [
+        "bellroy.com"
+      ],
+      "aliases": [
+        "Bellroy"
+      ],
+      "category_terms": [
+        "wallet",
+        "bag",
+        "leather",
+        "carry",
+        "backpack",
+        "card holder"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://bellroy.com/customer-care/terms-conditions",
+          "note": "first-party customer care page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://Www.Wikipedia.org/wiki/Bellroy",
+          "note": "Wikipedia: Melbourne company",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "blue-bottle-coffee",
+      "display_name": "Blue Bottle Coffee",
+      "legacy_name": "Blue Bottle Coffee",
+      "status": "verified",
+      "category": "specialty coffee roaster and cafés",
+      "official_domains": [
+        "bluebottlecoffee.com"
+      ],
+      "aliases": [
+        "Blue Bottle Coffee",
+        "Blue Bottle"
+      ],
+      "category_terms": [
+        "coffee",
+        "café",
+        "cafe",
+        "roast",
+        "beans",
+        "espresso",
+        "brew"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://bluebottlecoffee.com/us/eng/our-coffee",
+          "note": "first-party coffee page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://wikipedia.com/wiki/Blue_Bottle_Coffee",
+          "note": "Wikipedia article",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "bombas",
+      "display_name": "Bombas",
+      "legacy_name": "Bombas",
+      "status": "verified",
+      "category": "socks and basics with a donation model",
+      "official_domains": [
+        "bombas.com"
+      ],
+      "aliases": [
+        "Bombas"
+      ],
+      "category_terms": [
+        "socks",
+        "sock",
+        "donate",
+        "donation",
+        "apparel",
+        "underwear",
+        "slippers"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "third_party_reference",
+      "verification_sources": [
+        {
+          "url": "https://gearjunkie.com/apparel/bombas-sock-underwear-shirt-slipper-sale",
+          "note": "GearJunkie article linking to Bombas.com",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://businessinsider.nl/bombas-socks-review",
+          "note": "Business Insider review",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "branch-furniture",
+      "display_name": "Branch Furniture",
+      "legacy_name": "Branch Furniture",
+      "status": "verified",
+      "category": "office furniture",
+      "official_domains": [
+        "branchfurniture.com",
+        "branchfurniture.ca"
+      ],
+      "aliases": [
+        "Branch Furniture",
+        "Branch"
+      ],
+      "category_terms": [
+        "office",
+        "chair",
+        "desk",
+        "furniture",
+        "ergonomic",
+        "workspace"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://branchfurniture.com/llms.txt",
+          "note": "first-party site index",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://branchfurniture.com/collections/office-chairs",
+          "note": "first-party collection page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": "Bare 'Branch' needs office-furniture vocabulary."
+    },
+    {
+      "company_id": "buck-mason",
+      "display_name": "Buck Mason",
+      "legacy_name": "Buck Mason",
+      "status": "verified",
+      "category": "menswear and womenswear basics",
+      "official_domains": [
+        "buckmason.com"
+      ],
+      "aliases": [
+        "Buck Mason"
+      ],
+      "category_terms": [
+        "tee",
+        "t-shirt",
+        "denim",
+        "apparel",
+        "clothing",
+        "menswear",
+        "store"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://www.buckmason.com/pages/about",
+          "note": "first-party about page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://en.wikipedia.com/wiki/Buck_Mason",
+          "note": "Wikipedia article",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "burrow",
+      "display_name": "Burrow",
+      "legacy_name": "Burrow",
+      "status": "verified",
+      "category": "modular furniture",
+      "official_domains": [
+        "burrow.com"
+      ],
+      "aliases": [
+        "Burrow"
+      ],
+      "category_terms": [
+        "sofa",
+        "furniture",
+        "modular",
+        "sectional",
+        "couch",
+        "Nomad"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [
+        {
+          "name": "Burrow 24/7",
+          "domains": [
+            "burrow247.com"
+          ],
+          "note": "unrelated business sharing the name"
+        },
+        {
+          "name": "Burrow (India)",
+          "domains": [
+            "burrow.co.in"
+          ],
+          "note": "unrelated business sharing the name"
+        }
+      ],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://burrow.com/about",
+          "note": "first-party about page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://coolhunting.com/design/burrow-modular-adaptable-sofa-couch-urban-living",
+          "note": "Cool Hunting coverage",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": "'burrow' is a common word: require furniture vocabulary."
+    },
+    {
+      "company_id": "casper",
+      "display_name": "Casper",
+      "legacy_name": "Casper",
+      "status": "verified",
+      "category": "mattresses and sleep products",
+      "official_domains": [
+        "casper.com",
+        "casper.ca"
+      ],
+      "aliases": [
+        "Casper",
+        "Casper Sleep"
+      ],
+      "category_terms": [
+        "mattress",
+        "sleep",
+        "pillow",
+        "bed",
+        "foam",
+        "hybrid"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [
+        {
+          "name": "Casper Creative",
+          "domains": [
+            "casper-creative.com"
+          ],
+          "note": "unrelated agency sharing the name"
+        }
+      ],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://casper.com/about",
+          "note": "first-party about page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://www.healthline.com/health/best-casper-mattress",
+          "note": "Healthline review",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "charlotte-tilbury",
+      "display_name": "Charlotte Tilbury",
+      "legacy_name": "Charlotte Tilbury",
+      "status": "verified",
+      "category": "makeup and skincare",
+      "official_domains": [
+        "charlottetilbury.com"
+      ],
+      "aliases": [
+        "Charlotte Tilbury",
+        "Charlotte Tilbury Beauty"
+      ],
+      "category_terms": [
+        "makeup",
+        "beauty",
+        "skincare",
+        "lipstick",
+        "Pillow Talk",
+        "cosmetics",
+        "Magic Cream"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://charlottetilbury.com/content/charlottes-story",
+          "note": "first-party story page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://en.Wikipedia.com/wiki/Charlotte_Tilbury",
+          "note": "Wikipedia article",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": "Mentions of Charlotte Tilbury the person are fine when about the brand."
+    },
+    {
+      "company_id": "chewy",
+      "display_name": "Chewy",
+      "legacy_name": "Chewy",
+      "status": "verified",
+      "category": "online pet supplies retailer",
+      "official_domains": [
+        "chewy.com"
+      ],
+      "aliases": [
+        "Chewy",
+        "Chewy.com"
+      ],
+      "category_terms": [
+        "pet",
+        "pets",
+        "dog",
+        "cat",
+        "Autoship",
+        "pharmacy",
+        "vet"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://www.chewy.com/app/content/about-us",
+          "note": "first-party about page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://wikipedia.com/wiki/Chewy.com",
+          "note": "Wikipedia article",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "chobani",
+      "display_name": "Chobani",
+      "legacy_name": "Chobani",
+      "status": "verified",
+      "category": "yogurt and dairy foods",
+      "official_domains": [
+        "chobani.com",
+        "chobani.com.au"
+      ],
+      "aliases": [
+        "Chobani"
+      ],
+      "category_terms": [
+        "yogurt",
+        "Greek yogurt",
+        "oat",
+        "dairy",
+        "creamer",
+        "food"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "third_party_reference",
+      "verification_sources": [
+        {
+          "url": "https://www.bevrank.com/bevcompanies/chobani",
+          "note": "BevRank profile lists www.chobani.com",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://www.chobani.com.au/the-chobani-story/",
+          "note": "first-party Australian site",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "coterie",
+      "display_name": "Coterie",
+      "legacy_name": "Coterie",
+      "status": "verified",
+      "category": "premium baby diapers",
+      "official_domains": [
+        "coterie.com"
+      ],
+      "aliases": [
+        "Coterie"
+      ],
+      "category_terms": [
+        "diaper",
+        "diapers",
+        "baby",
+        "wipes",
+        "subscription",
+        "parents"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [
+        {
+          "name": "Coterie Insurance",
+          "domains": [
+            "coterieinsurance.com"
+          ],
+          "note": "unrelated insurer"
+        },
+        {
+          "name": "Coterie Marketing",
+          "domains": [
+            "coteriemktg.com"
+          ],
+          "note": "unrelated agency"
+        }
+      ],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://coterie.com/faq",
+          "note": "first-party FAQ",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Coterie_(company)",
+          "note": "Wikipedia article",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": "'coterie' is a common word: require baby/diaper vocabulary."
+    },
+    {
+      "company_id": "dagne-dover",
+      "display_name": "Dagne Dover",
+      "legacy_name": "Dagne Dover",
+      "status": "verified",
+      "category": "bags and luggage",
+      "official_domains": [
+        "dagnedover.com"
+      ],
+      "aliases": [
+        "Dagne Dover"
+      ],
+      "category_terms": [
+        "bag",
+        "tote",
+        "backpack",
+        "neoprene",
+        "luggage",
+        "travel"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://www.dagnedover.com/pages/about-us",
+          "note": "first-party about page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://thepointsguy.com/news/dagne-dover-luggage-suitcases/",
+          "note": "The Points Guy coverage",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "death-wish-coffee",
+      "display_name": "Death Wish Coffee",
+      "legacy_name": "Death Wish Coffee",
+      "status": "verified",
+      "category": "strong coffee brand",
+      "official_domains": [
+        "deathwishcoffee.com"
+      ],
+      "aliases": [
+        "Death Wish Coffee",
+        "Death Wish Coffee Co."
+      ],
+      "category_terms": [
+        "coffee",
+        "roast",
+        "beans",
+        "caffeine",
+        "brew",
+        "latte"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://deathwishcoffee.com/pages/about",
+          "note": "first-party about page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://www.bevnet.com/news/2021/death-wish-coffee-company-brews-up-a-new-website",
+          "note": "BevNET coverage of the site relaunch",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "dollar-shave-club",
+      "display_name": "Dollar Shave Club",
+      "legacy_name": "Dollar Shave Club",
+      "status": "verified",
+      "category": "razors and grooming subscription",
+      "official_domains": [
+        "dollarshaveclub.com"
+      ],
+      "aliases": [
+        "Dollar Shave Club",
+        "DSC"
+      ],
+      "category_terms": [
+        "razor",
+        "shave",
+        "blades",
+        "grooming",
+        "subscription",
+        "Shave Butter"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://us.dollarshaveclub.com/pages/where-it-matters",
+          "note": "first-party page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://www.wikiwand.com/en/articles/Dollar_Shave_Club",
+          "note": "Wikiwand article",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "faherty",
+      "display_name": "Faherty",
+      "legacy_name": "Faherty",
+      "status": "verified",
+      "category": "apparel",
+      "official_domains": [
+        "fahertybrand.com"
+      ],
+      "aliases": [
+        "Faherty",
+        "Faherty Brand"
+      ],
+      "category_terms": [
+        "clothing",
+        "apparel",
+        "shirt",
+        "beach",
+        "organic cotton",
+        "menswear"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://fahertybrand.com/pages/about",
+          "note": "first-party about page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://themanual.com/fashion/embrace-an-endless-summer-with-fashion-by-faherty",
+          "note": "The Manual coverage",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "frida",
+      "display_name": "Frida",
+      "legacy_name": "Frida",
+      "status": "verified",
+      "category": "baby, postpartum and parenting products",
+      "official_domains": [
+        "frida.com"
+      ],
+      "aliases": [
+        "Frida",
+        "Fridababy",
+        "Frida Baby",
+        "Frida Mom"
+      ],
+      "category_terms": [
+        "baby",
+        "parents",
+        "NoseFrida",
+        "postpartum",
+        "Frida Mom",
+        "diaper",
+        "newborn"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [
+        {
+          "name": "Frida Group",
+          "domains": [
+            "fridagroup.com"
+          ],
+          "note": "unrelated company sharing the name"
+        },
+        {
+          "name": "Frida the brand",
+          "domains": [
+            "fridathebrand.com"
+          ],
+          "note": "unrelated company sharing the name"
+        }
+      ],
+      "social_handles": {},
+      "domain_verification": "third_party_reference",
+      "verification_sources": [
+        {
+          "url": "https://jobs.workable.com/companies/eGjmfwnPFqG9PWk4FKd3Lh.md",
+          "note": "Frida job listing gives website frida.com",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://www.babylist.com/store/b/fridababy/465",
+          "note": "Babylist brand store",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": "Frida Kahlo mentions are not this company."
+    },
+    {
+      "company_id": "govee",
+      "display_name": "Govee",
+      "legacy_name": "Govee",
+      "status": "verified",
+      "category": "smart lighting and home gadgets",
+      "official_domains": [
+        "govee.com",
+        "us.govee.com"
+      ],
+      "aliases": [
+        "Govee"
+      ],
+      "category_terms": [
+        "lights",
+        "lighting",
+        "LED",
+        "smart",
+        "lamp",
+        "strip lights",
+        "Govee Home"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [
+        {
+          "name": "Govee Illumination (look-alike)",
+          "domains": [
+            "goveeillumination.com"
+          ],
+          "note": "look-alike domain seen in legacy leads; not verified as official"
+        }
+      ],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://us.govee.com/pages/about-us",
+          "note": "first-party about page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://uk.govee.com/collections/smart-lights",
+          "note": "first-party UK store",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "grove-collaborative",
+      "display_name": "Grove Collaborative",
+      "legacy_name": "Grove Collaborative",
+      "status": "verified",
+      "category": "sustainable home and personal care products",
+      "official_domains": [
+        "grove.co",
+        "grove.com"
+      ],
+      "aliases": [
+        "Grove Collaborative",
+        "Grove Co.",
+        "Grove"
+      ],
+      "category_terms": [
+        "cleaning",
+        "household",
+        "sustainable",
+        "plastic",
+        "refill",
+        "personal care",
+        "home"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://grove.co/terms",
+          "note": "first-party terms: operates grove.com and grove.co",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://wikipedia.com/wiki/Grove_Collaborative",
+          "note": "Wikipedia article",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": "Bare 'Grove' needs household vocabulary."
+    },
+    {
+      "company_id": "gymshark",
+      "display_name": "Gymshark",
+      "legacy_name": "Gymshark",
+      "status": "verified",
+      "category": "fitness apparel",
+      "official_domains": [
+        "gymshark.com"
+      ],
+      "aliases": [
+        "Gymshark"
+      ],
+      "category_terms": [
+        "gym",
+        "fitness",
+        "apparel",
+        "activewear",
+        "training",
+        "leggings",
+        "athletes"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://uk.gymshark.com/pages/about-us",
+          "note": "first-party about page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Gymshark",
+          "note": "Wikipedia article",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "hu-kitchen",
+      "display_name": "Hu Kitchen",
+      "legacy_name": "Hu Kitchen",
+      "status": "verified",
+      "category": "organic chocolate and snacks",
+      "official_domains": [
+        "hukitchen.com",
+        "hukitchen.co.uk"
+      ],
+      "aliases": [
+        "Hu Kitchen",
+        "Hu Chocolate",
+        "Hu"
+      ],
+      "category_terms": [
+        "chocolate",
+        "snack",
+        "organic",
+        "cacao",
+        "dark chocolate",
+        "paleo"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [
+        {
+          "name": "huukitchen.com",
+          "domains": [
+            "huukitchen.com"
+          ],
+          "note": "look-alike domain seen in legacy leads"
+        }
+      ],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://hukitchen.com/pages/about-us",
+          "note": "first-party about page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://fairtradeamerica.org/brands/hu-kitchen",
+          "note": "Fair Trade America brand listing",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": "Bare 'Hu' is not a mention; require chocolate/snack vocabulary."
+    },
+    {
+      "company_id": "ilia-beauty",
+      "display_name": "ILIA",
+      "legacy_name": "Ilia Beauty",
+      "status": "verified",
+      "category": "clean makeup and skincare",
+      "official_domains": [
+        "iliabeauty.com"
+      ],
+      "aliases": [
+        "ILIA",
+        "ILIA Beauty",
+        "Ilia Beauty"
+      ],
+      "category_terms": [
+        "makeup",
+        "skin tint",
+        "beauty",
+        "skincare",
+        "clean beauty",
+        "serum",
+        "SPF"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://iliabeauty.com/pages/about",
+          "note": "first-party about page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://credobeauty.com/collections/ilia",
+          "note": "Credo Beauty brand page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "imperfect-foods",
+      "display_name": "Imperfect Foods",
+      "legacy_name": "Imperfect Foods",
+      "status": "verified",
+      "category": "grocery delivery of rescued food",
+      "official_domains": [
+        "imperfectfoods.com"
+      ],
+      "aliases": [
+        "Imperfect Foods",
+        "Imperfect Produce"
+      ],
+      "category_terms": [
+        "grocery",
+        "groceries",
+        "produce",
+        "food waste",
+        "delivery",
+        "box",
+        "rescued"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [
+        {
+          "name": "Impossible Foods",
+          "domains": [
+            "impossiblefoods.com"
+          ],
+          "note": "different company with a similar name"
+        }
+      ],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://imperfectfoods.com/how-it-works",
+          "note": "first-party how-it-works page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://research.contrary.com/company/imperfect-foods",
+          "note": "Contrary Research profile",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "jones-road-beauty",
+      "display_name": "Jones Road Beauty",
+      "legacy_name": "Jones Road Beauty",
+      "status": "verified",
+      "category": "makeup and skincare",
+      "official_domains": [
+        "jonesroadbeauty.com"
+      ],
+      "aliases": [
+        "Jones Road",
+        "Jones Road Beauty"
+      ],
+      "category_terms": [
+        "makeup",
+        "beauty",
+        "Miracle Balm",
+        "Bobbi Brown",
+        "skincare",
+        "lip"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [
+        {
+          "name": "jonesroadcosmetics.com",
+          "domains": [
+            "jonesroadcosmetics.com"
+          ],
+          "note": "look-alike domain seen in legacy leads"
+        }
+      ],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://www.jonesroadbeauty.com/pages/5reasons",
+          "note": "first-party page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://drugstorenews.com/bobbi-brown-re-enters-makeup-world-jones-road",
+          "note": "Drug Store News launch coverage",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "july-luggage",
+      "display_name": "July",
+      "legacy_name": "July Luggage",
+      "status": "verified",
+      "category": "luggage and travel bags",
+      "official_domains": [
+        "july.com"
+      ],
+      "aliases": [
+        "July",
+        "July Luggage"
+      ],
+      "category_terms": [
+        "luggage",
+        "suitcase",
+        "carry-on",
+        "travel",
+        "polycarbonate",
+        "Melbourne"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://july.com/au/the-details",
+          "note": "first-party details page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://www.timeout.com/melbourne/shopping/july-luggage-qv",
+          "note": "Time Out Melbourne store listing",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": "'July' is a month name: a third-party passage counts only with luggage vocabulary."
+    },
+    {
+      "company_id": "koio",
+      "display_name": "Koio",
+      "legacy_name": "Koio",
+      "status": "verified",
+      "category": "Italian-made sneakers",
+      "official_domains": [
+        "koio.co"
+      ],
+      "aliases": [
+        "Koio",
+        "KOIO"
+      ],
+      "category_terms": [
+        "sneakers",
+        "sneaker",
+        "leather",
+        "shoes",
+        "Italy",
+        "footwear"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://www.koio.co/pages/frequently-asked-questions",
+          "note": "first-party FAQ names www.koio.co as the official store",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://themanual.com/fashion/koio-leather-sneakers",
+          "note": "The Manual coverage",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "kosas",
+      "display_name": "Kosas",
+      "legacy_name": "Kosas",
+      "status": "verified",
+      "category": "clean makeup and skincare",
+      "official_domains": [
+        "kosas.com"
+      ],
+      "aliases": [
+        "Kosas",
+        "Kosas Cosmetics"
+      ],
+      "category_terms": [
+        "makeup",
+        "beauty",
+        "concealer",
+        "skincare",
+        "lip",
+        "foundation"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://kosas.com/pages/about",
+          "note": "first-party about page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://www.revolve.com/v/kosas-makeup",
+          "note": "Revolve brand page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "lululemon",
+      "display_name": "lululemon",
+      "legacy_name": "Lululemon",
+      "status": "verified",
+      "category": "athletic apparel",
+      "official_domains": [
+        "lululemon.com",
+        "lululemon.ca",
+        "lululemon.com.hk"
+      ],
+      "aliases": [
+        "lululemon",
+        "Lululemon",
+        "lululemon athletica"
+      ],
+      "category_terms": [
+        "yoga",
+        "apparel",
+        "leggings",
+        "athletic",
+        "run",
+        "store",
+        "Align"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://shop.lululemon.com/help/legal/terms-of-use",
+          "note": "first-party terms list lululemon.com, .ca, .com.hk",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://en.wikipedia.com/wiki/Lululemon",
+          "note": "Wikipedia article",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "madewell",
+      "display_name": "Madewell",
+      "legacy_name": "Madewell",
+      "status": "verified",
+      "category": "denim and apparel",
+      "official_domains": [
+        "madewell.com"
+      ],
+      "aliases": [
+        "Madewell"
+      ],
+      "category_terms": [
+        "denim",
+        "jeans",
+        "apparel",
+        "clothing",
+        "store",
+        "tailoring"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://madewell.com/gb/c/about-madewell",
+          "note": "first-party about page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://www.madewell.com/c/quality",
+          "note": "first-party quality page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "marine-layer",
+      "display_name": "Marine Layer",
+      "legacy_name": "Marine Layer",
+      "status": "verified",
+      "category": "casual apparel",
+      "official_domains": [
+        "marinelayer.com"
+      ],
+      "aliases": [
+        "Marine Layer"
+      ],
+      "category_terms": [
+        "shirt",
+        "tee",
+        "apparel",
+        "clothing",
+        "Re-Spun",
+        "soft",
+        "store"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "third_party_reference",
+      "verification_sources": [
+        {
+          "url": "https://www.newburystboston.com/?p=2997",
+          "note": "Newbury St Boston store listing gives www.marinelayer.com",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://coolhunting.com/style/marine-layer-clothing/",
+          "note": "Cool Hunting coverage",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": "'marine layer' is also a weather term: require apparel vocabulary."
+    },
+    {
+      "company_id": "merit-beauty",
+      "display_name": "MERIT",
+      "legacy_name": "Merit Beauty",
+      "status": "verified",
+      "category": "minimalist makeup",
+      "official_domains": [
+        "meritbeauty.com"
+      ],
+      "aliases": [
+        "MERIT",
+        "Merit Beauty",
+        "MERIT Beauty"
+      ],
+      "category_terms": [
+        "makeup",
+        "beauty",
+        "minimalist",
+        "Katherine Power",
+        "skincare",
+        "lip"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://meritbeauty.com/pages/about",
+          "note": "first-party about page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://www.whowhatwear.com/beauty/best-merit-beauty-products",
+          "note": "Who What Wear coverage",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": "'merit' is a common word: require beauty vocabulary."
+    },
+    {
+      "company_id": "milk-makeup",
+      "display_name": "Milk Makeup",
+      "legacy_name": "Milk Makeup",
+      "status": "verified",
+      "category": "vegan makeup",
+      "official_domains": [
+        "milkmakeup.com"
+      ],
+      "aliases": [
+        "Milk Makeup",
+        "MILK MAKEUP"
+      ],
+      "category_terms": [
+        "makeup",
+        "beauty",
+        "vegan",
+        "cosmetics",
+        "Milk Studios",
+        "stick"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://milkmakeup.com/pages/about-us",
+          "note": "first-party about page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://Www.Wikipedia.org/wiki/Milk_Makeup",
+          "note": "Wikipedia article",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": "Bare 'Milk' is not a mention."
+    },
+    {
+      "company_id": "misfits-market",
+      "display_name": "Misfits Market",
+      "legacy_name": "Misfits Market",
+      "status": "verified",
+      "category": "online value grocery",
+      "official_domains": [
+        "misfitsmarket.com"
+      ],
+      "aliases": [
+        "Misfits Market"
+      ],
+      "category_terms": [
+        "grocery",
+        "groceries",
+        "produce",
+        "organic",
+        "delivery",
+        "food waste"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://misfitsmarket.com/about-us",
+          "note": "first-party about page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Misfits_Market",
+          "note": "Wikipedia article",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "momofuku-goods",
+      "display_name": "Momofuku Goods",
+      "legacy_name": "Momofuku Goods",
+      "status": "verified",
+      "category": "pantry goods: noodles and chili crunch",
+      "official_domains": [
+        "momofuku.com",
+        "shop.momofuku.com"
+      ],
+      "aliases": [
+        "Momofuku Goods",
+        "Momofuku"
+      ],
+      "category_terms": [
+        "noodles",
+        "chili crunch",
+        "pantry",
+        "sauce",
+        "David Chang",
+        "seasoning"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://shop.momofuku.com/pages/welcome-from-dave",
+          "note": "first-party store page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://canadashop.momofuku.com/",
+          "note": "first-party Canadian store",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": "Momofuku restaurant mentions are the same group; require pantry/product vocabulary for third-party text."
+    },
+    {
+      "company_id": "monos",
+      "display_name": "Monos",
+      "legacy_name": "Monos",
+      "status": "verified",
+      "category": "luggage and travel accessories",
+      "official_domains": [
+        "monos.com"
+      ],
+      "aliases": [
+        "Monos"
+      ],
+      "category_terms": [
+        "luggage",
+        "suitcase",
+        "carry-on",
+        "travel",
+        "bags"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [
+        {
+          "name": "Monos Creative",
+          "domains": [
+            "monoscreative.com"
+          ],
+          "note": "unrelated studio sharing the name"
+        }
+      ],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://monos.com/pages/our-story",
+          "note": "first-party story page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://design-milk.com/colorful-monos-luggage/",
+          "note": "Design Milk coverage",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "mz-wallace",
+      "display_name": "MZ Wallace",
+      "legacy_name": "MZ Wallace",
+      "status": "verified",
+      "category": "nylon bags",
+      "official_domains": [
+        "mzwallace.com"
+      ],
+      "aliases": [
+        "MZ Wallace",
+        "MZ WALLACE"
+      ],
+      "category_terms": [
+        "bag",
+        "tote",
+        "nylon",
+        "handbag",
+        "travel",
+        "Metro"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://mzwallace.com/zh-sg/pages/about-us",
+          "note": "first-party about page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://wikipedia.com/wiki/MZ_Wallace",
+          "note": "Wikipedia article",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "native-union",
+      "display_name": "Native Union",
+      "legacy_name": "Native Union",
+      "status": "verified",
+      "category": "tech accessories",
+      "official_domains": [
+        "nativeunion.com"
+      ],
+      "aliases": [
+        "Native Union"
+      ],
+      "category_terms": [
+        "cable",
+        "charger",
+        "phone case",
+        "tech",
+        "accessories",
+        "MagSafe"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [
+        {
+          "name": "Native (deodorant)",
+          "domains": [
+            "nativecos.com"
+          ],
+          "note": "different company with a similar name"
+        },
+        {
+          "name": "TransUnion",
+          "domains": [
+            "transunion.com"
+          ],
+          "note": "unrelated company appearing in legacy leads"
+        }
+      ],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://www.nativeunion.com",
+          "note": "first-party homepage",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://www.trustpilot.com/review/www.nativeunion.com?page=3",
+          "note": "Trustpilot page for nativeunion.com",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "oatly",
+      "display_name": "Oatly",
+      "legacy_name": "Oatly",
+      "status": "verified",
+      "category": "oat-based dairy alternatives",
+      "official_domains": [
+        "oatly.com"
+      ],
+      "aliases": [
+        "Oatly"
+      ],
+      "category_terms": [
+        "oat",
+        "oat milk",
+        "oatmilk",
+        "dairy",
+        "plant-based",
+        "barista"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://oatly.com/oatly-who",
+          "note": "first-party who-we-are page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://en.Wikipedia.com/wiki/Oatly",
+          "note": "Wikipedia article",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "olaplex",
+      "display_name": "Olaplex",
+      "legacy_name": "Olaplex",
+      "status": "verified",
+      "category": "bond-building hair care",
+      "official_domains": [
+        "olaplex.com"
+      ],
+      "aliases": [
+        "Olaplex",
+        "OLAPLEX"
+      ],
+      "category_terms": [
+        "hair",
+        "haircare",
+        "shampoo",
+        "bond",
+        "salon",
+        "treatment",
+        "No. 3"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://olaplex.com/pages/foundational-hair-health",
+          "note": "first-party page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://uk.olaplex.com/pages/how-it-works",
+          "note": "first-party UK how-it-works",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "ollie",
+      "display_name": "Ollie",
+      "legacy_name": "Ollie",
+      "status": "verified",
+      "category": "fresh dog food subscription",
+      "official_domains": [
+        "myollie.com"
+      ],
+      "aliases": [
+        "Ollie"
+      ],
+      "category_terms": [
+        "dog",
+        "dog food",
+        "pet",
+        "fresh",
+        "recipes",
+        "pup",
+        "meals"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [
+        {
+          "name": "Ollie Marketing",
+          "domains": [
+            "olliemarketing.com"
+          ],
+          "note": "unrelated agency"
+        }
+      ],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://myollie.com/about/",
+          "note": "first-party about page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://www.vetstreet.com/food-and-treats/dog-food/ollie-dog-food-review",
+          "note": "VetStreet review",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": "'Ollie' is a common name: require dog/pet-food vocabulary. ollie.com appeared in legacy leads but was not verified as this company's domain."
+    },
+    {
+      "company_id": "parachute-home",
+      "display_name": "Parachute",
+      "legacy_name": "Parachute Home",
+      "status": "verified",
+      "category": "bedding and home goods",
+      "official_domains": [
+        "parachutehome.com"
+      ],
+      "aliases": [
+        "Parachute",
+        "Parachute Home"
+      ],
+      "category_terms": [
+        "bedding",
+        "sheets",
+        "linen",
+        "towels",
+        "home",
+        "duvet",
+        "Portugal"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://parachutehome.com/pages/parachute-home-about-us",
+          "note": "first-party about page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://www.domino.com/content/parachute-home-bedding-best-products/",
+          "note": "Domino coverage",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": "'parachute' is a common word: require home/bedding vocabulary."
+    },
+    {
+      "company_id": "peloton",
+      "display_name": "Peloton",
+      "legacy_name": "Peloton",
+      "status": "verified",
+      "category": "connected fitness equipment and app",
+      "official_domains": [
+        "onepeloton.com"
+      ],
+      "aliases": [
+        "Peloton",
+        "Peloton Interactive"
+      ],
+      "category_terms": [
+        "bike",
+        "fitness",
+        "workout",
+        "instructor",
+        "Tread",
+        "app",
+        "class"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://onepeloton.com/en-CA/company",
+          "note": "first-party company page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://Www.Wikipedia.org/wiki/Peloton_Interactive",
+          "note": "Wikipedia: Peloton Interactive",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": "'peloton' is also a cycling term: require fitness/product vocabulary."
+    },
+    {
+      "company_id": "public-goods",
+      "display_name": "Public Goods",
+      "legacy_name": "Public Goods",
+      "status": "verified",
+      "category": "membership household and personal care essentials",
+      "official_domains": [
+        "publicgoods.com"
+      ],
+      "aliases": [
+        "Public Goods"
+      ],
+      "category_terms": [
+        "household",
+        "essentials",
+        "membership",
+        "personal care",
+        "sustainable",
+        "pantry"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://PublicGoods.com/pages/support",
+          "note": "first-party support page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://reviewed.com/beauty/features/public-goods-review",
+          "note": "Reviewed coverage",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": "'public goods' is an economics term: require household/product vocabulary."
+    },
+    {
+      "company_id": "rare-beauty",
+      "display_name": "Rare Beauty",
+      "legacy_name": "Rare Beauty",
+      "status": "verified",
+      "category": "makeup",
+      "official_domains": [
+        "rarebeauty.com"
+      ],
+      "aliases": [
+        "Rare Beauty",
+        "Rare Beauty by Selena Gomez"
+      ],
+      "category_terms": [
+        "makeup",
+        "beauty",
+        "blush",
+        "Selena Gomez",
+        "mental health",
+        "Rare Impact Fund"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://www.rarebeauty.com/about",
+          "note": "first-party about page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://www.wikipedia.com/wiki/Rare_Beauty",
+          "note": "Wikipedia article",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "reformation",
+      "display_name": "Reformation",
+      "legacy_name": "Reformation",
+      "status": "verified",
+      "category": "sustainable fashion",
+      "official_domains": [
+        "thereformation.com"
+      ],
+      "aliases": [
+        "Reformation",
+        "The Reformation",
+        "Ref"
+      ],
+      "category_terms": [
+        "clothing",
+        "dresses",
+        "fashion",
+        "sustainable",
+        "store",
+        "jeans"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://www.thereformation.com/about-us",
+          "note": "first-party about page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://www.thereformation.com/pages/timeline",
+          "note": "first-party timeline",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": "'reformation' is a historical term: require fashion vocabulary. reformationshop.com appeared in legacy leads but was not verified."
+    },
+    {
+      "company_id": "rhone",
+      "display_name": "Rhone",
+      "legacy_name": "Rhone",
+      "status": "verified",
+      "category": "premium activewear",
+      "official_domains": [
+        "rhone.com"
+      ],
+      "aliases": [
+        "Rhone",
+        "Rhone Apparel"
+      ],
+      "category_terms": [
+        "activewear",
+        "apparel",
+        "shirt",
+        "training",
+        "performance",
+        "GoldFusion"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://www.rhone.com/pages/mens-new-to-rhone/",
+          "note": "first-party page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Rhone_Apparel",
+          "note": "Wikipedia lists rhone.com",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": "'Rhone' is also a river/region: require apparel vocabulary."
+    },
+    {
+      "company_id": "siete-foods",
+      "display_name": "Siete Foods",
+      "legacy_name": "Siete Foods",
+      "status": "verified",
+      "category": "grain-free Mexican-American foods",
+      "official_domains": [
+        "sietefoods.com"
+      ],
+      "aliases": [
+        "Siete",
+        "Siete Foods",
+        "Siete Family Foods"
+      ],
+      "category_terms": [
+        "tortillas",
+        "chips",
+        "grain-free",
+        "salsa",
+        "Garza",
+        "family",
+        "snack"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://sietefoods.com/blogs/siete-stories/our-new-line-of-grain-free-tortillas",
+          "note": "first-party blog",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://www.wholefoodsmarket.com/product/siete-family-foods-grain-free-chickpea-flour-tortilla-7-oz-b07fzcq5r2",
+          "note": "Whole Foods listing",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "skims",
+      "display_name": "SKIMS",
+      "legacy_name": "Skims",
+      "status": "verified",
+      "category": "shapewear and clothing",
+      "official_domains": [
+        "skims.com"
+      ],
+      "aliases": [
+        "SKIMS",
+        "Skims"
+      ],
+      "category_terms": [
+        "shapewear",
+        "underwear",
+        "loungewear",
+        "Kim Kardashian",
+        "bodysuit",
+        "clothing"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "third_party_reference",
+      "verification_sources": [
+        {
+          "url": "https://www.Wikipedia.com/wiki/Skims",
+          "note": "Wikipedia lists skims.com",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://au.fashionunited.com/news/retail/kim-kardashian-s-skims-solutionwear-launches-online/201909109689",
+          "note": "FashionUnited: launched online at Skims.com",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "tatcha",
+      "display_name": "Tatcha",
+      "legacy_name": "Tatcha",
+      "status": "verified",
+      "category": "Japanese-inspired skincare",
+      "official_domains": [
+        "tatcha.com"
+      ],
+      "aliases": [
+        "Tatcha"
+      ],
+      "category_terms": [
+        "skincare",
+        "Japanese",
+        "cream",
+        "beauty",
+        "Dewy Skin",
+        "Water Cream"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://tatcha.com/pages/heritage",
+          "note": "first-party heritage page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://www.tatcha.com/faq",
+          "note": "first-party FAQ",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "the-ordinary",
+      "display_name": "The Ordinary",
+      "legacy_name": "The Ordinary",
+      "status": "verified",
+      "category": "skincare",
+      "official_domains": [
+        "theordinary.com"
+      ],
+      "aliases": [
+        "The Ordinary"
+      ],
+      "category_terms": [
+        "skincare",
+        "serum",
+        "DECIEM",
+        "niacinamide",
+        "acid",
+        "Deciem"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://theordinary.com/en-us/faq.html",
+          "note": "first-party FAQ (operated by DECIEM)",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://theordinary.com/en-us/category/skincare",
+          "note": "first-party category page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": "'the ordinary' is a common phrase: require skincare/DECIEM vocabulary."
+    },
+    {
+      "company_id": "thursday-boots",
+      "display_name": "Thursday Boot Company",
+      "legacy_name": "Thursday Boots",
+      "status": "verified",
+      "category": "boots and footwear",
+      "official_domains": [
+        "thursdayboots.com"
+      ],
+      "aliases": [
+        "Thursday Boots",
+        "Thursday Boot Company",
+        "Thursday Boot Co."
+      ],
+      "category_terms": [
+        "boots",
+        "boot",
+        "leather",
+        "footwear",
+        "shoes",
+        "Captain"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [
+        {
+          "name": "Boots (UK pharmacy)",
+          "domains": [
+            "boots-uk.com",
+            "boots.com"
+          ],
+          "note": "different company"
+        }
+      ],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://thursdayboots.com/pages/our-story",
+          "note": "first-party story page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://ca.trustpilot.com/review/thursdayboots.com",
+          "note": "Trustpilot page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": "Bare 'Thursday' is a weekday, not a mention."
+    },
+    {
+      "company_id": "tracksmith",
+      "display_name": "Tracksmith",
+      "legacy_name": "Tracksmith",
+      "status": "verified",
+      "category": "running apparel",
+      "official_domains": [
+        "tracksmith.com"
+      ],
+      "aliases": [
+        "Tracksmith"
+      ],
+      "category_terms": [
+        "running",
+        "runners",
+        "apparel",
+        "race",
+        "marathon",
+        "Boston"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://tracksmith.com/pages/about",
+          "note": "first-party about page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://www.fleetfeet.com/browse/tracksmith",
+          "note": "Fleet Feet brand page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "trade-coffee",
+      "display_name": "Trade Coffee",
+      "legacy_name": "Trade Coffee",
+      "status": "verified",
+      "category": "coffee subscription",
+      "official_domains": [
+        "drinktrade.com"
+      ],
+      "aliases": [
+        "Trade Coffee",
+        "Trade"
+      ],
+      "category_terms": [
+        "coffee",
+        "subscription",
+        "roasters",
+        "beans",
+        "roast",
+        "quiz"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://www.drinktrade.com/subscribe",
+          "note": "first-party subscribe page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://www.drinktrade.com/pages/discover",
+          "note": "first-party discover page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": "Bare 'Trade' is not a mention; require coffee vocabulary."
+    },
+    {
+      "company_id": "vuori",
+      "display_name": "Vuori",
+      "legacy_name": "Vuori",
+      "status": "verified",
+      "category": "performance apparel",
+      "official_domains": [
+        "vuoriclothing.com"
+      ],
+      "aliases": [
+        "Vuori"
+      ],
+      "category_terms": [
+        "apparel",
+        "activewear",
+        "joggers",
+        "performance",
+        "Encinitas",
+        "clothing"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [
+        {
+          "name": "vuori-joggers.com",
+          "domains": [
+            "vuori-joggers.com"
+          ],
+          "note": "look-alike domain seen in legacy leads"
+        }
+      ],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://vuoriclothing.com/about",
+          "note": "first-party about page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://mec.ca/en/products/brands/vuori",
+          "note": "MEC brand page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "warby-parker",
+      "display_name": "Warby Parker",
+      "legacy_name": "Warby Parker",
+      "status": "verified",
+      "category": "eyewear",
+      "official_domains": [
+        "warbyparker.com"
+      ],
+      "aliases": [
+        "Warby Parker"
+      ],
+      "category_terms": [
+        "glasses",
+        "eyewear",
+        "frames",
+        "sunglasses",
+        "contacts",
+        "eye exam",
+        "Buy a Pair, Give a Pair"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://warbyparker.com/history",
+          "note": "first-party history page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://www.Wikipedia.com/wiki/Warby_Parker",
+          "note": "Wikipedia article",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "who-gives-a-crap",
+      "display_name": "Who Gives A Crap",
+      "legacy_name": "Who Gives A Crap",
+      "status": "verified",
+      "category": "recycled and bamboo toilet paper",
+      "official_domains": [
+        "whogivesacrap.org"
+      ],
+      "aliases": [
+        "Who Gives A Crap",
+        "WGAC"
+      ],
+      "category_terms": [
+        "toilet paper",
+        "bamboo",
+        "recycled",
+        "tissues",
+        "sanitation",
+        "paper towels"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://au.whogivesacrap.org/pages/about",
+          "note": "first-party about page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://amp.cnn.com/cnn/cnn-underscored/reviews/who-gives-a-crap",
+          "note": "CNN Underscored review",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "whoop",
+      "display_name": "WHOOP",
+      "legacy_name": "Whoop",
+      "status": "verified",
+      "category": "fitness wearable",
+      "official_domains": [
+        "whoop.com"
+      ],
+      "aliases": [
+        "WHOOP",
+        "Whoop"
+      ],
+      "category_terms": [
+        "wearable",
+        "strain",
+        "recovery",
+        "sleep",
+        "band",
+        "fitness",
+        "membership"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://www.whoop.com/us",
+          "note": "first-party US page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://www.wikipedia.org/wiki/WHOOP_(company)",
+          "note": "Wikipedia article",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": "'whoop' is a common word: require wearable/fitness vocabulary."
+    },
+    {
+      "company_id": "wild-one",
+      "display_name": "Wild One",
+      "legacy_name": "Wild One",
+      "status": "verified",
+      "category": "dog accessories",
+      "official_domains": [
+        "wildone.com"
+      ],
+      "aliases": [
+        "Wild One"
+      ],
+      "category_terms": [
+        "dog",
+        "dogs",
+        "leash",
+        "harness",
+        "pet",
+        "collar",
+        "carrier"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [
+        {
+          "name": "Wild Ones (native plants nonprofit)",
+          "domains": [
+            "wildones.org"
+          ],
+          "note": "unrelated organization"
+        }
+      ],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://wildone.com/pages/about",
+          "note": "first-party about page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://www.gearpatrol.com/outdoors/a514840/wild-one-new-brand-for-dogs/",
+          "note": "Gear Patrol launch coverage",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": "'wild one' is a common phrase: require dog/pet vocabulary."
+    },
+    {
+      "company_id": "youth-to-the-people",
+      "display_name": "Youth To The People",
+      "legacy_name": "Youth To The People",
+      "status": "verified",
+      "category": "superfood skincare",
+      "official_domains": [
+        "youthtothepeople.com"
+      ],
+      "aliases": [
+        "Youth To The People",
+        "Youth to the People",
+        "YTTP"
+      ],
+      "category_terms": [
+        "skincare",
+        "superfood",
+        "cleanser",
+        "vegan",
+        "beauty",
+        "Kale"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [],
+      "social_handles": {},
+      "domain_verification": "third_party_reference",
+      "verification_sources": [
+        {
+          "url": "https://www.loreal.com/en/luxe-division/youth-to-the-people/",
+          "note": "L'Oréal brand page links youthtothepeople.com",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://www.sephora.com/brand/youth-to-the-people/skincare",
+          "note": "Sephora brand page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "company_id": "zenni-optical",
+      "display_name": "Zenni Optical",
+      "legacy_name": "Zenni Optical",
+      "status": "verified",
+      "category": "online eyewear",
+      "official_domains": [
+        "zennioptical.com"
+      ],
+      "aliases": [
+        "Zenni",
+        "Zenni Optical"
+      ],
+      "category_terms": [
+        "glasses",
+        "eyeglasses",
+        "frames",
+        "eyewear",
+        "prescription",
+        "sunglasses"
+      ],
+      "allowed_name_extensions": [],
+      "conflicting_entities": [
+        {
+          "name": "zennoptics.com",
+          "domains": [
+            "zennoptics.com"
+          ],
+          "note": "look-alike domain seen in legacy leads"
+        }
+      ],
+      "social_handles": {},
+      "domain_verification": "first_party_pages",
+      "verification_sources": [
+        {
+          "url": "https://zennioptical.com/c/glasses-production-story",
+          "note": "first-party page",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        },
+        {
+          "url": "https://Www.Wikipedia.org/wiki/Zenni_Optical",
+          "note": "Wikipedia article",
+          "accessed": "2026-11-22",
+          "method": "web search by Claude (assistant), 2026-11-22; to be spot-checked by Thanishka"
+        }
+      ],
+      "notes": ""
     }
   ]
 }

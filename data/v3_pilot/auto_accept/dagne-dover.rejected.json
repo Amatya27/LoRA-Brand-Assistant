@@ -1,0 +1,21 @@
+{
+  "company_id": "dagne-dover",
+  "acceptance_basis": "auto_threshold_0.7",
+  "decision": "reject",
+  "reasons": [
+    "pruned draft fails check_draft: brand_summary: factual sentence without a claim marker: 'Dagne Dover is a bag brand based in New York City.' (+6 more)"
+  ],
+  "groundedness": 0.8333,
+  "claim_support": {
+    "C1": "supported",
+    "C2": "supported",
+    "C3": "reviewer response invalid for this claim: C3: reviewer quote does not occur in the referenced passage(s)",
+    "C4": "supported",
+    "C5": "supported",
+    "C6": "supported"
+  },
+  "removed_claims": [],
+  "label_completion_sha256": "ac5e21fc217a0aa65b0f7c103233d46e34fd82960d3e9aed5ae2bcd071f77054",
+  "audit_sha256": "221875c14c9c15439a3c1aae91ea2acc5d2d4abac0820e01ce6d3eecd9647294",
+  "created_at": "2026-11-23T00:28:45+00:00"
+}

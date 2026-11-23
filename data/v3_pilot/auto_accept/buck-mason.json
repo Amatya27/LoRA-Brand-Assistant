@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "buck-mason",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "808652288801202b314430904cbed24dfb12a8f2bd85806e52d71a422706f68f",
+    "prompt_sha256": "4b7b43448fb94bb23508f1e79978f9648a1fd202a6e673165a28be4b53c0d5f1",
+    "completion_sha256": "7e06c48e5151d8eb6c104f17ad86a939fbeeb2970a9d2fc521bfb1f43cb795cb",
+    "audit_sha256": "b27d215d3bd68f5c244b4b0606ac489c5fc88526aa387484b9af90541f336102"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 10,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:45+00:00",
+  "record_sha256": "0d9977bf85e8a5e66f094fd2cef360e54be568ccd84b6979a64a31738b34ebc6"
+}

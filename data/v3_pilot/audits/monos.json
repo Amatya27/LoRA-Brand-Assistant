@@ -1,0 +1,87 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "monos",
+  "bound_to": {
+    "packet_sha256": "a9683b38bfd065865184fe551132b56ea539be01cce8bf66b3fd03c4f030c0b8",
+    "prompt_sha256": "2feb70330f8d0e8453c6b4e92a6ac4096edb22c56f69a5217dcdf639e3d9d8eb",
+    "completion_sha256": "9efd0409ba26cfc7add09d5e11c9abef86d1c763579c39c0c1ae317bc152086f",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": []
+  },
+  "raw_response_sha256": "7348470798993a6bdad060c247a23c4d0ecb5d481b6d0d85c35ae54615d47282",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"We are always open to meaningful collaborations with passionate and like-minded individuals for ongoing partnerships and specialized campaigns.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Monos is open to collaborations.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Monos is proud to be the first North American luggage brand to achieve Certified B Corporation® status\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states this fact.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"We’ve partnered with veritree to support reforestation efforts in the Old Bonjoge Forest, a 2,000-hectare forest near Kisumu City, Kenya.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms the partnership with veritree.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"Monos aims to build a legacy brand that values conscious consumption and global citizenship.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states this aim.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"The brand's target audience consists of frequent travelers, including young professionals, typically aged between 25 and 45.\",\n      \"issues\": [],\n      \"reason\": \"The passage clearly identifies the target audience's demographics.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "We are always open to meaningful collaborations with passionate and like-minded individuals for ongoing partnerships and specialized campaigns.",
+        "issues": [],
+        "reason": "The passage directly states Monos is open to collaborations."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Monos is proud to be the first North American luggage brand to achieve Certified B Corporation® status",
+        "issues": [],
+        "reason": "The passage explicitly states this fact."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "We’ve partnered with veritree to support reforestation efforts in the Old Bonjoge Forest, a 2,000-hectare forest near Kisumu City, Kenya.",
+        "issues": [],
+        "reason": "The passage confirms the partnership with veritree."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "Monos aims to build a legacy brand that values conscious consumption and global citizenship.",
+        "issues": [],
+        "reason": "The passage directly states this aim."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "The brand's target audience consists of frequent travelers, including young professionals, typically aged between 25 and 45.",
+        "issues": [],
+        "reason": "The passage clearly identifies the target audience's demographics."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-23T00:11:25+00:00",
+  "audit_sha256": "62472a70b94e2a9d7c7f7259023f07fd7983435551a22c581afc69775f242726",
+  "dismissed_reviewer_flags": []
+}

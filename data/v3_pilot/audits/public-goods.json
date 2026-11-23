@@ -1,0 +1,110 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "public-goods",
+  "bound_to": {
+    "packet_sha256": "6a03e2e73fcfa081f8af96a1af05ed53010fdf054739c501193a2b2199aac3b0",
+    "prompt_sha256": "c9f9f3c6ddaae2f5a047ba678ffc3ba932b3b1a6759e77f2e8857c48b4fe951d",
+    "completion_sha256": "80fa73e56c8eea9cb570beab04cc20f6ef76cef61a200db1df6fee269c3e37ed",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": [
+      "claim C6: not referenced by any field",
+      "claim C7: not referenced by any field"
+    ]
+  },
+  "raw_response_sha256": "274012f94f1e33de45f39b18101ad4142b269c3d30e4d3e77363d10322090617",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"We believe humans should consume and touch products that are healthy, so if it’s not good for you we don’t make it.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states this belief.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"We partner with veritree to restore ecosystems and offset damage to our forests.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly mentions this partnership.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Public Goods built its brand around simplicity, quality, and everyday essentials\",\n      \"issues\": [],\n      \"reason\": \"The passage states this directly.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"Public Goods partnered with Joybyte to build a creator program capable of introducing multiple product categories without relying on a one-size-fits-all influencer campaign\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms this partnership and strategy.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"Public Goods successfully built a scalable creator content engine that generated authentic awareness across multiple product categories\",\n      \"issues\": [],\n      \"reason\": \"The passage states this as a result of their efforts.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P9\"\n      ],\n      \"quote\": \"We select artisans and manufacturers that share our values\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states this selection criterion.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"At our core, we believe in simple ingredients, ethical vendors, earth-first initiatives and everyday products that harmonize with your home and your life.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly lists these values.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "We believe humans should consume and touch products that are healthy, so if it’s not good for you we don’t make it.",
+        "issues": [],
+        "reason": "The passage directly states this belief."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "We partner with veritree to restore ecosystems and offset damage to our forests.",
+        "issues": [],
+        "reason": "The passage explicitly mentions this partnership."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Public Goods built its brand around simplicity, quality, and everyday essentials",
+        "issues": [],
+        "reason": "The passage states this directly."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "Public Goods partnered with Joybyte to build a creator program capable of introducing multiple product categories without relying on a one-size-fits-all influencer campaign",
+        "issues": [],
+        "reason": "The passage confirms this partnership and strategy."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "Public Goods successfully built a scalable creator content engine that generated authentic awareness across multiple product categories",
+        "issues": [],
+        "reason": "The passage states this as a result of their efforts."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P9"
+        ],
+        "quote": "We select artisans and manufacturers that share our values",
+        "issues": [],
+        "reason": "The passage directly states this selection criterion."
+      },
+      {
+        "claim_id": "C7",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "At our core, we believe in simple ingredients, ethical vendors, earth-first initiatives and everyday products that harmonize with your home and your life.",
+        "issues": [],
+        "reason": "The passage explicitly lists these values."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-23T00:16:02+00:00",
+  "audit_sha256": "47148d8b710bc159536814b9ef68ee06d39bb8d701e0bf04d802af9611fcbdd1",
+  "dismissed_reviewer_flags": []
+}

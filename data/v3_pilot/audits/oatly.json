@@ -1,0 +1,97 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "oatly",
+  "bound_to": {
+    "packet_sha256": "a870fb1bc30de045f82704abb56e5df83996c812b037a62ca785ebe4139925f7",
+    "prompt_sha256": "4a0ea47d0b9a826ece4a44e330282d3b428d073c4e70ccb5225bdf5ca8555936",
+    "completion_sha256": "7b89a8ffc97001fb13fc68fc227bb79b95d5c7c230dd0294b9cbce6be2d54dbb",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [
+      "claim C2: kind must be one of ('fact', 'provider_reported', 'premise')",
+      "claim C3: quote does not occur in cited passage(s) ['P4']",
+      "claim C5: quote does not occur in cited passage(s) ['P10']"
+    ],
+    "warnings": []
+  },
+  "raw_response_sha256": "0252bf5a86de70442047998743455e10a44d0e128264207092186fb7583b7d7e",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"We're the world's first oat drink company, here to make it easy for people to eat better and live healthier lives without recklessly taxing the planet's resources in the process.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Oatly is the world's first oat drink company and describes their mission.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"The provocative marketing strategy Oatly uses to define its own market and create crazy campaigns.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly describes Oatly's marketing strategy as provocative and unconventional.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"target the Oatly brand at younger, trendier milk drinkers. Today, the company has found an audience among hipsters and coffee fans.\",\n      \"issues\": [],\n      \"reason\": \"The passage states Oatly targets younger, trendier drinkers and has found an audience among hipsters and coffee fans.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"And if you care about people, nutrition is key, and great taste makes it easier for people to eat better and live healthier lives without recklessly taxing the planet's resources in the process.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes Oatly's focus on health, nutrition, and sustainability as part of their mission.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P10\"\n      ],\n      \"quote\": \"Oatly’s new cartons were first released in Sweden and have since been rolled out to other European nations, including Belgium and Germany. The cartons are expected to be on U.S. shelves by January.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms the rollout of new cartons in Europe and their expected launch in the U.S. by January.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "We're the world's first oat drink company, here to make it easy for people to eat better and live healthier lives without recklessly taxing the planet's resources in the process.",
+        "issues": [],
+        "reason": "The passage directly states Oatly is the world's first oat drink company and describes their mission."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "The provocative marketing strategy Oatly uses to define its own market and create crazy campaigns.",
+        "issues": [],
+        "reason": "The passage explicitly describes Oatly's marketing strategy as provocative and unconventional."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "target the Oatly brand at younger, trendier milk drinkers. Today, the company has found an audience among hipsters and coffee fans.",
+        "issues": [],
+        "reason": "The passage states Oatly targets younger, trendier drinkers and has found an audience among hipsters and coffee fans."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "And if you care about people, nutrition is key, and great taste makes it easier for people to eat better and live healthier lives without recklessly taxing the planet's resources in the process.",
+        "issues": [],
+        "reason": "The passage describes Oatly's focus on health, nutrition, and sustainability as part of their mission."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P10"
+        ],
+        "quote": "Oatly’s new cartons were first released in Sweden and have since been rolled out to other European nations, including Belgium and Germany. The cartons are expected to be on U.S. shelves by January.",
+        "issues": [],
+        "reason": "The passage confirms the rollout of new cartons in Europe and their expected launch in the U.S. by January."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [
+    "C3: reviewer quote does not occur in the referenced passage(s)",
+    "C5: reviewer quote does not occur in the referenced passage(s)"
+  ],
+  "status": "fail",
+  "reasons": [
+    "3 deterministic check error(s)",
+    "reviewer response also invalid: C3: reviewer quote does not occur in the referenced passage(s); C5: reviewer quote does not occur in the referenced passage(s)"
+  ],
+  "created_at": "2026-11-23T00:13:17+00:00",
+  "audit_sha256": "27d8abd10dfd64af724e7ddf3cd1c4b5b1a79bc3d3e38c2a2f658442acaa572c",
+  "dismissed_reviewer_flags": []
+}

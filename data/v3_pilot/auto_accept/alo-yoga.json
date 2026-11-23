@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "alo-yoga",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "0f067a5a21ae44d735f968669f10749260071964b573e9697d91cddea2ed8c20",
+    "prompt_sha256": "f650912fcb4f4c533d66306d2c9b0cb71e4b83253023dba9dbfd5e549b56375f",
+    "completion_sha256": "e01842ecf67521dcf9a60e4c792fad6d065fc94f2823ab55eb5f7886f757d2ba",
+    "audit_sha256": "4b26efece86c2f31812841f68c1f712068370e536fc00cb8527c4d84600331af"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 7,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:44+00:00",
+  "record_sha256": "0dcc360aee9bca72e2f16ee5b1920a97393eaa203820629d2b9841c68ac02af4"
+}

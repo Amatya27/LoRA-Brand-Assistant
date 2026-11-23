@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "peloton",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "f47d13c1f1704327310fb3bd6e71e50b965629365808f69dbd39a7e4d06a1c4a",
+    "prompt_sha256": "bf49a033102fd0e7ea6fa9b9a529ba9aa92a06097ff956d2e87b14b51c02bed2",
+    "completion_sha256": "09012709bc9b5bf5974c0f90d8323af39e95ed7ba1424ef1e4ab5a8ec5b358f6",
+    "audit_sha256": "ffbf2cf03986203d16d0a0e0d2b15f98cca411cb19d8595b36b95ea30c2b6878"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 5,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:47+00:00",
+  "record_sha256": "adf6dce1cae822d8e8dfc2ba561e99795aeb33cca2c5c3f61ed831e727e855a6"
+}

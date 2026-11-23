@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "lovevery",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "1f396606ff7f653773e0dd0603716a13cac87c1ddb91808bb135a7a8f9fa79e7",
+    "prompt_sha256": "230f4b2e29e4c08ced94b20707d95ea2a8ba32fc24460bee08d2e0959758ab88",
+    "completion_sha256": "1699f9471a1d189c3b58f14bf8b4c0c5626da93a49ac3c2d1170b8f0dc57a018",
+    "audit_sha256": "07292f1617de8850eb7bd122a7dd2f630a6b7d48c2a612e04342c63b08631fa1"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 4,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:44+00:00",
+  "record_sha256": "7b317d54657956971571e17763fc431a60e74226e718f76eb9a58691715ea655"
+}

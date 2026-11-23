@@ -1,0 +1,85 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "bones-coffee",
+  "bound_to": {
+    "packet_sha256": "c7b3ebe8a8df814976b4d68dc87548e5a6fba543d18f9d141703fc9e8ef05df1",
+    "prompt_sha256": "db78166e6306cad724f6aaf384ff70a7aaf0b63c15ada946f97df6734165f67a",
+    "completion_sha256": "a75fea8baa6a790d99690fc050b6d55aac32eed3aa5641b3b7f3007e25a9a588",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [
+      "claim C2: quote does not occur in cited passage(s) ['P1', 'P5']"
+    ],
+    "warnings": []
+  },
+  "raw_response_sha256": "c862dae76d2be0161e63d8bbb0b266d3fe33a82c1a2332630c7c76803d386e6f",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"We started Bones Coffee Company as a family with a passion for coffee and a mission to inject some flavor into an otherwise boring landscape of coffee companies.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that Bones Coffee Company creates flavored coffee.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\",\n        \"P5\"\n      ],\n      \"quote\": \"This one is definitely in my top 3 favorite flavors now. From the minute I opened the bag it smelled just like I opened a bag of freshly made S’mores! Tastes just like it smells, can’t beat it. If you haven’t tried this flavor yet do yourself a favor and grab a bag! Evan D. Rated 5 out of 5 The front of a 12 ounce bag of Bones Coffee Company S’morey Time coffee.\",\n      \"issues\": [],\n      \"reason\": \"The passage mentions S'morey Time as a flavor, and P5 lists other flavors like Chocolate Raspberry and Banana Foster.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"Now, still family-owned and operated with over 70 amazing employees from our local communities, we’re shipping our products all over the world.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that Bones Coffee Company is family-owned and operated.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"The Nightmare Before Christmas Collector's Box. There are five four ounce bags of coffee scattered around and they are named Ruff Weather, Mudslide Boogie, Santa Jack, The Pumpkin King, and Frog's Breath. The inside of the box has characters from The Nightmare Before Christmas on it.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes the Nightmare Before Christmas Collector's Box, confirming the existence of themed collections.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "We started Bones Coffee Company as a family with a passion for coffee and a mission to inject some flavor into an otherwise boring landscape of coffee companies.",
+        "issues": [],
+        "reason": "The passage explicitly states that Bones Coffee Company creates flavored coffee."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1",
+          "P5"
+        ],
+        "quote": "This one is definitely in my top 3 favorite flavors now. From the minute I opened the bag it smelled just like I opened a bag of freshly made S’mores! Tastes just like it smells, can’t beat it. If you haven’t tried this flavor yet do yourself a favor and grab a bag! Evan D. Rated 5 out of 5 The front of a 12 ounce bag of Bones Coffee Company S’morey Time coffee.",
+        "issues": [],
+        "reason": "The passage mentions S'morey Time as a flavor, and P5 lists other flavors like Chocolate Raspberry and Banana Foster."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "Now, still family-owned and operated with over 70 amazing employees from our local communities, we’re shipping our products all over the world.",
+        "issues": [],
+        "reason": "The passage directly states that Bones Coffee Company is family-owned and operated."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "The Nightmare Before Christmas Collector's Box. There are five four ounce bags of coffee scattered around and they are named Ruff Weather, Mudslide Boogie, Santa Jack, The Pumpkin King, and Frog's Breath. The inside of the box has characters from The Nightmare Before Christmas on it.",
+        "issues": [],
+        "reason": "The passage describes the Nightmare Before Christmas Collector's Box, confirming the existence of themed collections."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [
+    "C2: reviewer quote does not occur in the referenced passage(s)"
+  ],
+  "status": "fail",
+  "reasons": [
+    "1 deterministic check error(s)",
+    "reviewer response also invalid: C2: reviewer quote does not occur in the referenced passage(s)"
+  ],
+  "created_at": "2026-11-22T20:07:42+00:00",
+  "audit_sha256": "9b3c55f0d375ad38119cc9edb75c65944dfec6acb319e2f669cae6a05e2a07c9",
+  "dismissed_reviewer_flags": []
+}

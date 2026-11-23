@@ -1,0 +1,129 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "dollar-shave-club",
+  "bound_to": {
+    "packet_sha256": "619cfdd7cae715d9b6323f0f23f679b003dec33bc555f67a46ed720a8c7ac897",
+    "prompt_sha256": "6957895fe459454f418178dd19ddf2b10a84ba4923f662fa121a2994fe4b8485",
+    "completion_sha256": "d81396da46764a53adf11b9a45e86bd15ec98cd6f99331d573b0659ccdc4cf32",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [
+      "likely_target_audience: marker {C9} has no claim"
+    ],
+    "warnings": [
+      "claim C6: not referenced by any field",
+      "claim C8: not referenced by any field"
+    ]
+  },
+  "raw_response_sha256": "b2a87e49edd239df3f04296b3651aa30c8dbf3ceff0cf7a9039adc81ba73db40",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Utilizing Social Media for Brand Awareness The Dollar Shave Club recognized the potential of social media in building brand awareness and engaged with their target audience through various platforms.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that Dollar Shave Club recognized the potential of social media.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"The brand's partnerships with influencers have played a crucial role in expanding their reach.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that influencer partnerships expanded their reach.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Dollar Shave Club’s success can be attributed to its viral marketing campaign, unique value proposition, memorable branding, and targeted messaging.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly attributes Dollar Shave Club's success to these factors.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"Dollar Shave Club recognized the power of social media marketing and utilized platforms like Facebook and Twitter to engage with their customers effectively.\",\n      \"issues\": [],\n      \"reason\": \"The passage states Dollar Shave Club recognized and utilized social media.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"Dollar Shave Club leveraged social media platforms like Facebook and Twitter to engage with their customers, cultivate a sense of community, and create personalized experiences.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms Dollar Shave Club leveraged social media for engagement and community building.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"The founders of DSC launched their razor subscription business to meet a specific customer need.\",\n      \"issues\": [],\n      \"reason\": \"The passage states the business was launched to meet a customer need.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"One of the most significant factors behind the Dollar Shave Club's rapid rise to prominence is its effective use of viral marketing.\",\n      \"issues\": [],\n      \"reason\": \"The passage highlights viral marketing as a key factor in their success.\"\n    },\n    {\n      \"claim_id\": \"C8\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"DSC offers several benefits to customers. Subscriptions come with free shipping, discounts up to 15%, birthday rewards, and early access to new product launches.\",\n      \"issues\": [],\n      \"reason\": \"The passage lists several benefits offered by DSC.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": [\n    {\n      \"field\": \"likely_target_audience\",\n      \"text\": \"The Dollar Shave Club's target audience is not explicitly stated in the evidence.\"\n    }\n  ]\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Utilizing Social Media for Brand Awareness The Dollar Shave Club recognized the potential of social media in building brand awareness and engaged with their target audience through various platforms.",
+        "issues": [],
+        "reason": "The passage explicitly states that Dollar Shave Club recognized the potential of social media."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "The brand's partnerships with influencers have played a crucial role in expanding their reach.",
+        "issues": [],
+        "reason": "The passage directly states that influencer partnerships expanded their reach."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Dollar Shave Club’s success can be attributed to its viral marketing campaign, unique value proposition, memorable branding, and targeted messaging.",
+        "issues": [],
+        "reason": "The passage directly attributes Dollar Shave Club's success to these factors."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "Dollar Shave Club recognized the power of social media marketing and utilized platforms like Facebook and Twitter to engage with their customers effectively.",
+        "issues": [],
+        "reason": "The passage states Dollar Shave Club recognized and utilized social media."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "Dollar Shave Club leveraged social media platforms like Facebook and Twitter to engage with their customers, cultivate a sense of community, and create personalized experiences.",
+        "issues": [],
+        "reason": "The passage confirms Dollar Shave Club leveraged social media for engagement and community building."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "The founders of DSC launched their razor subscription business to meet a specific customer need.",
+        "issues": [],
+        "reason": "The passage states the business was launched to meet a customer need."
+      },
+      {
+        "claim_id": "C7",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "One of the most significant factors behind the Dollar Shave Club's rapid rise to prominence is its effective use of viral marketing.",
+        "issues": [],
+        "reason": "The passage highlights viral marketing as a key factor in their success."
+      },
+      {
+        "claim_id": "C8",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "DSC offers several benefits to customers. Subscriptions come with free shipping, discounts up to 15%, birthday rewards, and early access to new product launches.",
+        "issues": [],
+        "reason": "The passage lists several benefits offered by DSC."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": [
+      {
+        "field": "likely_target_audience",
+        "text": "The Dollar Shave Club's target audience is not explicitly stated in the evidence."
+      }
+    ]
+  },
+  "review_validation_errors": [],
+  "status": "fail",
+  "reasons": [
+    "1 deterministic check error(s)"
+  ],
+  "created_at": "2026-11-22T23:57:31+00:00",
+  "audit_sha256": "58b4510603418f38a8f9a1782651d5cbe546209c8efe1518d1f23329da0ca6b8",
+  "dismissed_reviewer_flags": []
+}

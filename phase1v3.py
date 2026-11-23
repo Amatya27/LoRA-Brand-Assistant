@@ -27,7 +27,7 @@ from pathlib import Path
 from typing import Any
 
 from brandpilot.approval import ApprovalError, create_approval
-from brandpilot.claims import check_draft, completion_sha256, completion_string, normalize_markers, render_completion
+from brandpilot.claims import check_draft, completion_sha256, completion_string, normalize_markers, render_completion, repair_quotes
 from brandpilot.evidence import (
     DocumentStore,
     HttpFetcher,
@@ -291,9 +291,13 @@ def cmd_label(args) -> int:
                 message = (f"{prompt}\n\nYour previous answer was not valid JSON ({exc}). Return the complete answer "
                            "again as one valid JSON object: double-quoted keys and strings, no trailing commas, no comments.")
                 continue
-            errors = check_draft(normalize_markers(draft)[0], packet)["errors"]
-            attempts.append({"attempt": attempt, "raw_sha256": sha256_text(raw), "deterministic_errors": len(errors)})
-            print(f"   attempt {attempt}: {len(errors)} deterministic error(s)")
+            # Quote repair: a near-verbatim quote (similarity >= 0.9, same numbers and negations)
+            # is replaced by the exact passage text; every repair is recorded in the label.
+            draft, repairs = repair_quotes(normalize_markers(draft)[0], packet)
+            errors = check_draft(draft, packet)["errors"]
+            attempts.append({"attempt": attempt, "raw_sha256": sha256_text(raw), "deterministic_errors": len(errors),
+                             "quote_repairs": repairs})
+            print(f"   attempt {attempt}: {len(errors)} deterministic error(s), {len(repairs)} quote repair(s)")
             if best is None or len(errors) < best[0]:
                 best = (len(errors), draft, raw)
             if not errors:
@@ -313,6 +317,7 @@ def cmd_label(args) -> int:
         _, draft, raw = best
         generator = {"source": "model", **config.as_dict(), "system_prompt_sha256": sha256_text(TEACHER_RULES),
                      "generated_at": utc_now(), "attempts": attempts,
+                     "quote_repair": "claims.repair_quotes (min similarity 0.9; numbers/negations unchanged); see attempts[].quote_repairs",
                      "note": "repair rounds show the teacher only its own draft and the failed check messages"}
     label = _write_label(workspace, packet, prompt, draft, generator, raw)
     det = label["deterministic"]
@@ -330,7 +335,7 @@ def cmd_verify(args) -> int:
         print("no label; run `label` first")
         return 2
     store = DocumentStore(args.store) if Path(args.store).exists() else None
-    det = check_draft(label["draft"], packet)
+    det = check_draft(label["draft"], packet, prompt_version=label.get("prompt_version"))
     prov = validate_packet(packet, store)
     det = {"errors": [f"provenance: {e}" for e in prov] + det["errors"], "warnings": det["warnings"]}
     completion = json.loads(label["completion"])
@@ -373,6 +378,79 @@ def cmd_verify(args) -> int:
     for r in reasons:
         print("   -", r)
     return 0 if status != AUDIT_UNRESOLVED else 1
+
+
+def cmd_auto_accept(args) -> int:
+    """Owner policy auto_threshold_0.7 (NOT a human approval); see brandpilot/autoaccept.py.
+
+    Round 1 (after verify): judge groundedness; if >= 0.7, remove unsupported claims and every
+    sentence citing them, write the pruned label, and ask for re-verification.
+    Round 2 (after re-verify of the pruned label): write the hash-bound auto-accept record.
+    """
+    from brandpilot.autoaccept import THRESHOLD, assess, build_record
+    from brandpilot.review import AUDIT_PASS
+    workspace = Path(args.workspace)
+    cid = args.company_id
+    auto_dir = workspace / "auto_accept"
+    packet = load_packet(workspace / "packets" / f"{cid}.json")
+    label = _json(workspace / "labels" / f"{cid}.json")
+    audit = _json(workspace / "audits" / f"{cid}.json")
+    if (workspace / "approvals" / f"{cid}.json").exists():
+        print(f"{cid}: has a human approval record; auto-accept does not touch it")
+        return 2
+    if label is None:
+        print(f"{cid}: no label"); return 2
+    ok, why = audit_is_current(audit, packet_sha256=packet["packet_sha256"], prompt_sha256=label["prompt_sha256"],
+                               completion_sha256=label["completion_sha256"])
+    if not ok:
+        print(f"{cid}: audit not current ({why}); run verify first"); return 2
+    pending_path = auto_dir / f"{cid}.pending.json"
+    pending = _json(pending_path)
+    if pending and pending.get("pruned_completion_sha256") != label["completion_sha256"]:
+        pending = None  # the label changed since pruning; start over
+    res = assess(label["draft"], packet, audit, THRESHOLD)
+
+    def reject(reasons):
+        save_json(auto_dir / f"{cid}.rejected.json", {"company_id": cid, "acceptance_basis": "auto_threshold_0.7",
+                  "decision": "reject", "reasons": reasons, "groundedness": (pending or res)["groundedness"],
+                  "claim_support": (pending or res)["claim_support"], "removed_claims": (pending or {}).get("removed_claims", []),
+                  "label_completion_sha256": label["completion_sha256"], "audit_sha256": audit.get("audit_sha256"),
+                  "created_at": utc_now()})
+        (auto_dir / f"{cid}.json").unlink(missing_ok=True)
+        print(f"{cid}: REJECTED (groundedness {(pending or res)['groundedness']:.2f})")
+        for r in reasons:
+            print("   -", r)
+        return 1
+
+    if pending is None and res["decision"] == "prune":
+        auto_dir.mkdir(parents=True, exist_ok=True)
+        orig_dir = workspace / "superseded" / "auto07-original"
+        orig_dir.mkdir(parents=True, exist_ok=True)
+        save_json(orig_dir / f"{cid}.label.json", label)
+        save_json(orig_dir / f"{cid}.audit.json", audit)
+        generator = {**label["generator"], "source": "model_then_auto_pruned",
+                     "note": "unsupported claims and every sentence citing them were removed automatically (auto_threshold_0.7)",
+                     "edited_from": {"label_completion_sha256": label["completion_sha256"], "audit_sha256": audit.get("audit_sha256")},
+                     "removed_claims": res["removed_claims"]}
+        new = _write_label(workspace, packet, label["prompt"], res["pruned_draft"], generator, label.get("raw_response"))
+        save_json(pending_path, {**{k: v for k, v in res.items() if k != "pruned_draft"},
+                                 "completion_sha256": label["completion_sha256"], "audit_sha256": audit.get("audit_sha256"),
+                                 "pruned_completion_sha256": new["completion_sha256"]})
+        print(f"{cid}: groundedness {res['groundedness']:.2f}; removed {res['removed_claims']}; pruned label written. Re-run verify, then auto-accept.")
+        return 0
+    if res["decision"] == "reject":
+        return reject(res["reasons"] + ([f"after pruning and re-verification: groundedness {res['groundedness']:.2f}"] if pending else []))
+    if res["decision"] == "prune":  # re-verification found new unsupported claims: one pruning round only
+        return reject([f"after pruning, the reviewer still rejects {res['removed_claims']}"])
+    if audit.get("status") != AUDIT_PASS:
+        return reject([f"audit status {audit.get('status')}: {'; '.join(audit.get('reasons') or [])[:200]}"])
+    rec = build_record(company_id=cid, packet_sha256=packet["packet_sha256"], prompt_sha256=label["prompt_sha256"],
+                       completion_sha256=label["completion_sha256"], audit_sha256=audit["audit_sha256"],
+                       assessment=res, original=pending, created_at=utc_now())
+    save_json(auto_dir / f"{cid}.json", rec)
+    (auto_dir / f"{cid}.rejected.json").unlink(missing_ok=True)
+    print(f"{cid}: AUTO-ACCEPTED (groundedness {rec['groundedness_before_pruning']:.2f}, removed {rec['removed_claims']})")
+    return 0
 
 
 def _print_review_screen(packet: dict, label: dict, audit: dict | None, audit_ok: tuple[bool, str]) -> None:
@@ -515,6 +593,8 @@ def main(argv: list[str] | None = None) -> int:
     p = sub.add_parser("review"); p.set_defaults(fn=cmd_review)
     p.add_argument("--company-id", required=True); p.add_argument("--reviewer", required=True)
     p.add_argument("--allow-non-tty", action="store_true", help=argparse.SUPPRESS)
+    p = sub.add_parser("auto-accept"); p.set_defaults(fn=cmd_auto_accept)
+    p.add_argument("--company-id", required=True)
     p = sub.add_parser("export"); p.set_defaults(fn=cmd_export)
     p.add_argument("--version", required=True); p.add_argument("--out-root", default=str(REPO / "data/v3_datasets"))
     sub.add_parser("status").set_defaults(fn=cmd_status)

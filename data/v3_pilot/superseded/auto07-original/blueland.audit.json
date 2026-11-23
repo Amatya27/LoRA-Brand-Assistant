@@ -1,0 +1,95 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "blueland",
+  "bound_to": {
+    "packet_sha256": "36f802c4c565b684e61dfbfa37124bfff886200642dce0ec4e7f04964ff71762",
+    "prompt_sha256": "35e12c256fd93e34bb924ec24d9bbfc6398a2e47261a873e827315562dc25111",
+    "completion_sha256": "0b0077c8ec3feb7e34ef4176c7603f17f7c625b596fe901fae050c441fab90c2",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [
+      "claim C3: quote does not occur in cited passage(s) ['P7']"
+    ],
+    "warnings": []
+  },
+  "raw_response_sha256": "16fbeaf3f0f52fdcd89db7e242189167a535c015e5b9bc072caf6ccdd7cbb7bf",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"Create solutions that put people and planet first.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states Blueland's mission is to put people and planet first.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"the future of cleaner cleaning: resealable and industrially compostable pouches\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states the new packaging includes resealable and industrially compostable pouches.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"She invested hundreds of hours into Blueland's Instagram account, focusing on product education.\",\n      \"issues\": [],\n      \"reason\": \"The passage states Blueland focused on product education on their Instagram account.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"Drew Barrymore commented on one of Blueland's Instagram posts and shared a lengthy video endorsement on an Instagram story.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes celebrity endorsement and engagement on Instagram.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\",\n        \"P8\"\n      ],\n      \"quote\": \"sustainability requires higher standards year after year, and we’re committed to continually raising the bar\",\n      \"issues\": [],\n      \"reason\": \"The passage highlights Blueland's commitment to sustainability and the passage also mentions their impact report.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "Create solutions that put people and planet first.",
+        "issues": [],
+        "reason": "The passage explicitly states Blueland's mission is to put people and planet first."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "the future of cleaner cleaning: resealable and industrially compostable pouches",
+        "issues": [],
+        "reason": "The passage directly states the new packaging includes resealable and industrially compostable pouches."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "She invested hundreds of hours into Blueland's Instagram account, focusing on product education.",
+        "issues": [],
+        "reason": "The passage states Blueland focused on product education on their Instagram account."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "Drew Barrymore commented on one of Blueland's Instagram posts and shared a lengthy video endorsement on an Instagram story.",
+        "issues": [],
+        "reason": "The passage describes celebrity endorsement and engagement on Instagram."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1",
+          "P8"
+        ],
+        "quote": "sustainability requires higher standards year after year, and we’re committed to continually raising the bar",
+        "issues": [],
+        "reason": "The passage highlights Blueland's commitment to sustainability and the passage also mentions their impact report."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [
+    "C3: reviewer quote does not occur in the referenced passage(s)"
+  ],
+  "status": "fail",
+  "reasons": [
+    "1 deterministic check error(s)",
+    "reviewer response also invalid: C3: reviewer quote does not occur in the referenced passage(s)"
+  ],
+  "created_at": "2026-11-22T23:41:06+00:00",
+  "audit_sha256": "5fd820b06e6a9236999909766ea0d58554c90cdd08bbafcf02304e8ce197a331",
+  "dismissed_reviewer_flags": []
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "youth-to-the-people",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "af76c23b4844edcc2ec32b7e0f4ec9c5c77c22dd402abdbc81afe06ca63b0cc1",
+    "prompt_sha256": "9d671fcf45feccde51f561c0b4bfe079d0444a6fb4e4a05c624f5d5eb3e1fd0e",
+    "completion_sha256": "73adb71fabcd100e85e1bd27f7a77e73cc8204b72126567c7c5e1a02e82af083",
+    "audit_sha256": "849af7daa4a5c7aa44c6d1fe53450fdb00e3b6fdc6bea46663ac89070ca29875"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 6,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:48+00:00",
+  "record_sha256": "c8e25e5f7cbd8edbdfd364469b2e9ca50d25c4d0c1d6b58b1d6e7781362cd7ce"
+}

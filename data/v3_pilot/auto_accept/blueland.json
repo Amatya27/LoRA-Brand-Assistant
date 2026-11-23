@@ -1,0 +1,27 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "blueland",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "36f802c4c565b684e61dfbfa37124bfff886200642dce0ec4e7f04964ff71762",
+    "prompt_sha256": "35e12c256fd93e34bb924ec24d9bbfc6398a2e47261a873e827315562dc25111",
+    "completion_sha256": "6172603e8baca95073bf4b6940225f47dffc89c6a746b747a521fd8e9337f60c",
+    "audit_sha256": "f4080dbecadb89659994b3465f199a014e827ad09cda5771354b2ccc9fb8cc12"
+  },
+  "groundedness_before_pruning": 0.8,
+  "claims_total_before_pruning": 5,
+  "removed_claims": [
+    "C3"
+  ],
+  "removed_claim_reasons": {
+    "C3": "deterministic: claim C3: quote does not occur in cited passage(s) ['P7']"
+  },
+  "original_completion_sha256": "0b0077c8ec3feb7e34ef4176c7603f17f7c625b596fe901fae050c441fab90c2",
+  "original_audit_sha256": "5fd820b06e6a9236999909766ea0d58554c90cdd08bbafcf02304e8ce197a331",
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:30:41+00:00",
+  "record_sha256": "34ac8e41ae79e9a20f5d468e1f51226ff339e895ff60220d5c6ffcd3b3d3e112"
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "parachute-home",
+  "bound_to": {
+    "packet_sha256": "9cb12eff77ffb5e0ac45593357a0d264946e929200db7efa1c5efa6a7528d169",
+    "prompt_sha256": "6a47bbaa7f5c63abcde4c5435b1103c3cedbcec50b89c2f43d37065054eb7321",
+    "completion_sha256": "c7f8b7cad13efb4e26968c0a4e9f71368c97c0dde88ef00eaf4be8fe09e610c2",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": []
+  },
+  "raw_response_sha256": "556c06b420beee4bb16071c95967eaa1f7042f08f5e960684120d4dc0d75890d",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Parachute Home just launched its first mattress line, and it's a total game-changer when it comes to sleeping soundly.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that Parachute Home launched its first mattress line.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"20% off sitewide valid in Parachute stores and at parachutehome.com from November 15, 2026, 12:00am EST through November 30, 2026, 11:59pm PST.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states the dates and details of the 20% off sitewide sale.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Using Upfluence, Parachute Home can identify top-performing creators such as ‘baileyjrankin’ and ‘wanderingmyhome’ (both with 7 mentions).\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Parachute Home uses Upfluence to identify creators and analyze content.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"the majority of creators are located in the US but show notable engagement in countries like France and Bulgaria,\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms that Parachute Home's creators are primarily in the US but have engagement in France and Bulgaria.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"Parachute launched a hospitality collection exclusive for hotels, allowing their customers to experience the brand when traveling.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that Parachute Home has a hospitality collection exclusive for hotels.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"Parachute Home’s data indicates an engagement rate of approximately 3.88%, which is closely monitored through Upfluence\",\n      \"issues\": [],\n      \"reason\": \"The passage states Parachute Home's engagement rate is approximately 3.88%.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P10\"\n      ],\n      \"quote\": \"Today is the debut of its new four-piece rug collection.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Parachute Home debuted a four-piece rug collection.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Parachute Home just launched its first mattress line, and it's a total game-changer when it comes to sleeping soundly.",
+        "issues": [],
+        "reason": "The passage explicitly states that Parachute Home launched its first mattress line."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "20% off sitewide valid in Parachute stores and at parachutehome.com from November 15, 2026, 12:00am EST through November 30, 2026, 11:59pm PST.",
+        "issues": [],
+        "reason": "The passage directly states the dates and details of the 20% off sitewide sale."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Using Upfluence, Parachute Home can identify top-performing creators such as ‘baileyjrankin’ and ‘wanderingmyhome’ (both with 7 mentions).",
+        "issues": [],
+        "reason": "The passage states that Parachute Home uses Upfluence to identify creators and analyze content."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "the majority of creators are located in the US but show notable engagement in countries like France and Bulgaria,",
+        "issues": [],
+        "reason": "The passage confirms that Parachute Home's creators are primarily in the US but have engagement in France and Bulgaria."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "Parachute launched a hospitality collection exclusive for hotels, allowing their customers to experience the brand when traveling.",
+        "issues": [],
+        "reason": "The passage explicitly states that Parachute Home has a hospitality collection exclusive for hotels."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "Parachute Home’s data indicates an engagement rate of approximately 3.88%, which is closely monitored through Upfluence",
+        "issues": [],
+        "reason": "The passage states Parachute Home's engagement rate is approximately 3.88%."
+      },
+      {
+        "claim_id": "C7",
+        "verdict": "supported",
+        "passage_ids": [
+          "P10"
+        ],
+        "quote": "Today is the debut of its new four-piece rug collection.",
+        "issues": [],
+        "reason": "The passage states that Parachute Home debuted a four-piece rug collection."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-23T00:14:56+00:00",
+  "audit_sha256": "b17bef760310b4b72a1dc4a5d52adcba2b4efdfa8677446438501d36d6d3c1cf",
+  "dismissed_reviewer_flags": []
+}

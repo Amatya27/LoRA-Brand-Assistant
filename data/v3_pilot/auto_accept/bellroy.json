@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "bellroy",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "cde0ceb5aea58833a1705c5c390d87db67498ea49b0b5691623037c2e2f053f0",
+    "prompt_sha256": "340d81816bdd90e2fbd779a2ae8e79ee408dd34fde0b9be19577b9bb91621982",
+    "completion_sha256": "5aee8d5cd9f996f98207149c04c8f8c251fcf0fa08cc6f9b57928aa0bb162602",
+    "audit_sha256": "5f4e3b24c99411a7a7ba9b3f53f9f53f033d71968d74831d23d398bd95683cbc"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 9,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:44+00:00",
+  "record_sha256": "04c6b4b9effa212e9c879f56524a492dc6bfc6a7a3c70d33bedc5e85230cdecc"
+}

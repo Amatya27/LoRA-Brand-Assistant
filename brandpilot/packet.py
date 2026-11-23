@@ -12,7 +12,7 @@ from .registry import DOC_ACCEPTED, PSG_OK, CompanyIdentity, Registry, assess_do
 
 PACKET_SCHEMA = "brandpilot.packet.v3"
 COLLECTOR_VERSION = "brandpilot-collector-0.3"
-PROMPT_VERSION = "brandpilot.prompt.v3.2"
+PROMPT_VERSION = "brandpilot.prompt.v3.3"
 MIN_PASSAGES_FOR_OK = 2
 
 PACKET_OK = "ok"
@@ -199,7 +199,12 @@ Rules:
 - Never promise results. Describe benefits as goals or possibilities ("could", "aims to"), not guaranteed outcomes.
 - Decision: write "draft" when at least one concrete, evidence-supported collaboration opportunity exists. Otherwise write
   "abstain", give an abstain_reason, set pitch fields to {INSUFF} and leave collaboration_opportunities empty.
-- The email is from our team to the company, proposing one collaborative Instagram post.
+- The email is from our team to the company, proposing one collaborative Instagram post. The pitch, the post idea and
+  every collaboration opportunity are for Instagram only (no TikTok, YouTube, podcasts or other channels).
+- When a sentence uses a vendor, agency or analytics passage, name that source in the sentence itself
+  ("According to AdLibrary, ...", "Attentive reports that ...").
+- Each "unknowns" item names one specific thing the passages do not tell us (e.g. "Whether X runs a creator program").
+  Never write placeholder text such as "what the evidence does not show".
 
 Required JSON:
 {{
@@ -210,7 +215,7 @@ Required JSON:
   "brand_summary": "Full sentences, each followed by its marker, e.g. \"X makes ... {{C1}}.\" Never only markers. Or {INSUFF}",
   "likely_target_audience": "A full sentence followed by its marker, or {INSUFF}",
   "current_marketing_strategy": ["text with markers"],
-  "unknowns": ["what the evidence does not show"],
+  "unknowns": ["one specific open question, e.g. Whether the company works with creators"],
   "marketing_gaps": [],
   "collaboration_opportunities": ["proposal that builds on a cited fact {{C2}}"],
   "instagram_post_idea": {{"hook": "string", "concept": "string", "why_it_fits": "string"}},

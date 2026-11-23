@@ -1,0 +1,116 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "jones-road-beauty",
+  "bound_to": {
+    "packet_sha256": "18556c8c401d56298ee0db76cce297adfd296d8d1ae5c6cb62082b1555b995cc",
+    "prompt_sha256": "286319d7e23e4d4a2ad7d5f62f865b9c0e08883b932d722fdac204999064b0ea",
+    "completion_sha256": "e60c7d102418bc191b58d9e4b4838e3ceba18e7da0f9ff78c310b33794c154c2",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": []
+  },
+  "raw_response_sha256": "7bba6fbf56e43edabcc373f3f14203e6f38771abc0317241968c21d127bca87c",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"we’re thrilled to introduce our newest campaign — Beauty Stories.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states the existence of a campaign called 'Beauty Stories'.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"Share it with us on Instagram, @jonesroadbeauty.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly encourages users to share their stories on Instagram.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P9\"\n      ],\n      \"quote\": \"Social media is one of the primary tools Jones Road uses for communicating with our customers. Plus, I’m personally obsessed with Instagram, and I personally manage the content on my personal account.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that social media is a primary tool for communication, and specifically mentions Instagram.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"The Hero Kit The Hero Kit Bestseller\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly calls 'The Hero Kit' a bestseller.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"The Makeup Travel Kit 2.0 The Makeup Travel Kit 2.0 Limited Edition\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that 'The Makeup Travel Kit 2.0' is a limited edition.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Jones Road Beauty can analyze the top 10 creators by mentions, such as ‘estertaniaj’ and ‘nikki.bruner’, to understand why they resonate with audiences.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes Jones Road Beauty using Upfluence to analyze creators.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"By effectively analyzing data and using that to inform content strategies, engagement tactics, and influencer partnerships, Jones Road Beauty can notably enhance its market presence and consumer connect.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes Jones Road Beauty using data to inform marketing strategies.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [\n    {\n      \"field\": \"email_body\",\n      \"text\": \"We’re reaching out to propose a collaboration for an Instagram post that highlights customer-submitted beauty stories, in line with your Beauty Stories campaign\"\n    }\n  ],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "we’re thrilled to introduce our newest campaign — Beauty Stories.",
+        "issues": [],
+        "reason": "The passage explicitly states the existence of a campaign called 'Beauty Stories'."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "Share it with us on Instagram, @jonesroadbeauty.",
+        "issues": [],
+        "reason": "The passage directly encourages users to share their stories on Instagram."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P9"
+        ],
+        "quote": "Social media is one of the primary tools Jones Road uses for communicating with our customers. Plus, I’m personally obsessed with Instagram, and I personally manage the content on my personal account.",
+        "issues": [],
+        "reason": "The passage states that social media is a primary tool for communication, and specifically mentions Instagram."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "The Hero Kit The Hero Kit Bestseller",
+        "issues": [],
+        "reason": "The passage explicitly calls 'The Hero Kit' a bestseller."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "The Makeup Travel Kit 2.0 The Makeup Travel Kit 2.0 Limited Edition",
+        "issues": [],
+        "reason": "The passage explicitly states that 'The Makeup Travel Kit 2.0' is a limited edition."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Jones Road Beauty can analyze the top 10 creators by mentions, such as ‘estertaniaj’ and ‘nikki.bruner’, to understand why they resonate with audiences.",
+        "issues": [],
+        "reason": "The passage describes Jones Road Beauty using Upfluence to analyze creators."
+      },
+      {
+        "claim_id": "C7",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "By effectively analyzing data and using that to inform content strategies, engagement tactics, and influencer partnerships, Jones Road Beauty can notably enhance its market presence and consumer connect.",
+        "issues": [],
+        "reason": "The passage describes Jones Road Beauty using data to inform marketing strategies."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-23T00:03:33+00:00",
+  "audit_sha256": "12e12db8a6d7c33e238fa6dc5220d9d001935dab494fc4dde2deac712422f5b5",
+  "dismissed_reviewer_flags": [
+    {
+      "flag": {
+        "field": "email_body",
+        "text": "We’re reaching out to propose a collaboration for an Instagram post that highlights customer-submitted beauty stories, in line with your Beauty Stories campaign"
+      },
+      "reason": "sentence in email_body carries a claim marker; judged via its claim",
+      "matched_sentence": "we're reaching out to propose a collaboration for an instagram post that highlights customer submitted beauty stories in line with your beauty stories campaign"
+    }
+  ]
+}

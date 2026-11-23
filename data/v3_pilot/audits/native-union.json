@@ -1,0 +1,87 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "native-union",
+  "bound_to": {
+    "packet_sha256": "be994b68d9843a3793cd58ea606f08802136c30e71bb577de31f671f4bba4226",
+    "prompt_sha256": "78875074fd9d9239987f95d54964597e19cda065e77c8b8d3f54fdd9fa2bf463",
+    "completion_sha256": "2446f4737db6424287486d1ce4287fca6410baa251e4b9600f6eae0c0c8a85f2",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": []
+  },
+  "raw_response_sha256": "3d41b7341ea91aaab3e5a453cc135736e93b12bcfa7789af4be837e5266d4469",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"We’re inviting creators who share our values to join our affiliate program and earn exclusive perks while spreading the word about Native Union.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that Native Union invites creators to their affiliate program.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"‘Design for Life’ became our new North Star and now guides everything we do.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that 'Design for Life' is Native Union's brand purpose.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P10\"\n      ],\n      \"quote\": \"As we continue to commit to ‘Design for Life’ and as such expand our product range in new directions, we wanted a softer typography to reflect this more holistic approach to creating for the modern lifestyle.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Native Union updated their visual identity with softer typography.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"Our commitment to using the best materials, plant-based and recycled whenever possible, ensures that our products not only meet the highest quality standards but also have a Reduced Environmental Impact\",\n      \"issues\": [],\n      \"reason\": \"The passage mentions using plant-based and recycled materials in their products.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"Product Categories Charge / Carry / Protect\",\n      \"issues\": [],\n      \"reason\": \"The passage lists 'Charge / Carry / Protect' as product categories.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "We’re inviting creators who share our values to join our affiliate program and earn exclusive perks while spreading the word about Native Union.",
+        "issues": [],
+        "reason": "The passage explicitly states that Native Union invites creators to their affiliate program."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "‘Design for Life’ became our new North Star and now guides everything we do.",
+        "issues": [],
+        "reason": "The passage directly states that 'Design for Life' is Native Union's brand purpose."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P10"
+        ],
+        "quote": "As we continue to commit to ‘Design for Life’ and as such expand our product range in new directions, we wanted a softer typography to reflect this more holistic approach to creating for the modern lifestyle.",
+        "issues": [],
+        "reason": "The passage states that Native Union updated their visual identity with softer typography."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "Our commitment to using the best materials, plant-based and recycled whenever possible, ensures that our products not only meet the highest quality standards but also have a Reduced Environmental Impact",
+        "issues": [],
+        "reason": "The passage mentions using plant-based and recycled materials in their products."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "Product Categories Charge / Carry / Protect",
+        "issues": [],
+        "reason": "The passage lists 'Charge / Carry / Protect' as product categories."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-23T00:12:42+00:00",
+  "audit_sha256": "56e081cf6458a5f671e5566268ff359260bb6a079f876ef1b0a39c06fe230862",
+  "dismissed_reviewer_flags": []
+}

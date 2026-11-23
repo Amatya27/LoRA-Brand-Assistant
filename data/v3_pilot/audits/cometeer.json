@@ -1,0 +1,87 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "cometeer",
+  "bound_to": {
+    "packet_sha256": "77e011cbba6ba75c1e47571e88912c435eb0392c230427414c4c61388262d648",
+    "prompt_sha256": "5040600c6caf83c69aee8b7b1c41dd9531b3df3d29c85f771bcd3889ce589dbd",
+    "completion_sha256": "76bea4992f2f0b848021b311eabb11feb061ec3cacc2dcd356219020c857ca83",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": []
+  },
+  "raw_response_sha256": "083c136933a17210f3e45bcf33e736c5bbffe8dbc918e1208e8c7fd073637191",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Nothing taken away. ## Partnering With the World’s Best Roasters From the beginning, we built Cometeer as a platform for exceptional coffee. We partnered with some of the world’s most respected roasters and gave them a new way to showcase their coffees without sacrificing quality.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states Cometeer partners with respected roasters to showcase their coffees.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Cometeer is revolutionizing specialty coffee by flash-freezing perfectly extracted coffee from ## top-tier roasters, deliver barista-quality cups at home—no equipment required.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Cometeer flash-freezes coffee to deliver barista-quality cups at home.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"I partnered with the Cometeer team across brand and packaging strategy, designing new product launch campaigns and limited-edition drops that translate craft, discovery, and convenience into elevated unboxing experiences.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Cometeer partners to launch new product campaigns and limited-edition drops.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"What makes Cometeer's ads effective? The melting capsule is an instant visual hook — the product demonstrates itself in seconds, which is uniquely powerful for short-form video advertising.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Cometeer's ads are effective because the melting capsule demonstrates the product in seconds.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"Our mission is to create massive positive change in the coffee-verse. From farm to roaster to consumer. More fair, more delicious, more sustainable, more future-forward.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Cometeer's mission is to create positive change in the coffee-verse.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Nothing taken away. ## Partnering With the World’s Best Roasters From the beginning, we built Cometeer as a platform for exceptional coffee. We partnered with some of the world’s most respected roasters and gave them a new way to showcase their coffees without sacrificing quality.",
+        "issues": [],
+        "reason": "The passage explicitly states Cometeer partners with respected roasters to showcase their coffees."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Cometeer is revolutionizing specialty coffee by flash-freezing perfectly extracted coffee from ## top-tier roasters, deliver barista-quality cups at home—no equipment required.",
+        "issues": [],
+        "reason": "The passage directly states Cometeer flash-freezes coffee to deliver barista-quality cups at home."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "I partnered with the Cometeer team across brand and packaging strategy, designing new product launch campaigns and limited-edition drops that translate craft, discovery, and convenience into elevated unboxing experiences.",
+        "issues": [],
+        "reason": "The passage states that Cometeer partners to launch new product campaigns and limited-edition drops."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "What makes Cometeer's ads effective? The melting capsule is an instant visual hook — the product demonstrates itself in seconds, which is uniquely powerful for short-form video advertising.",
+        "issues": [],
+        "reason": "The passage states that Cometeer's ads are effective because the melting capsule demonstrates the product in seconds."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "Our mission is to create massive positive change in the coffee-verse. From farm to roaster to consumer. More fair, more delicious, more sustainable, more future-forward.",
+        "issues": [],
+        "reason": "The passage directly states Cometeer's mission is to create positive change in the coffee-verse."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-22T23:42:06+00:00",
+  "audit_sha256": "6ffe9fc60caff95906d7273778dc89252ad8098348616840ce3b6a16ec9241b1",
+  "dismissed_reviewer_flags": []
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "chewy",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "77a8db8ed1e8e330f2e3f1433f5a462f56c4a33a2f98488411fcf0ef16889ee6",
+    "prompt_sha256": "640aa13836fde36d34ea33075824c3ee8faa2b974bcd4a35d0ba75155ac70ebd",
+    "completion_sha256": "4fc36dfe42d5d47ae5a5741aef53c434947f63b50dbd31f7bc63f5b0f136cfab",
+    "audit_sha256": "fee3f882bbd67bcaa0c38eecbccb2cb43de4f897cad7de89bdfd158109bddbc8"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 11,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:45+00:00",
+  "record_sha256": "673feb66f9604ca37d8f62652a653d35e4842e0968450619f2bc9746b2ae1465"
+}

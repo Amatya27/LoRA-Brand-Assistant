@@ -1,0 +1,97 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "pela",
+  "bound_to": {
+    "packet_sha256": "8a29de2d7cb594d04380ab8a2de0c9e172e30811b9fa6fa80ce741cadb703fbf",
+    "prompt_sha256": "6a93f74b7c6224570615c144fa9c426ea7154944981efd49e528dcee96af0f5d",
+    "completion_sha256": "744b0c0f9ca574a4ecfb950108a180e69eaa7a50f4f97314022dbf84fb9751df",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": []
+  },
+  "raw_response_sha256": "4737772bfbbefc99ba21270dee9cfff359027851cf5fa8dd581fde78c0a148dc",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Pela Case, creators of the first-ever compostable phone case, is a company with an eco-friendly brand. It was founded in 2010 by Jeremy Lang to create day-to-day products designed for a waste-free future.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states Pela Case was founded in 2010 by Jeremy Lang with a waste-free future in mind.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"We have a big, hairy audacious goal. We want to create a waste free future.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Pela Case's goal is to create a waste-free future.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"We create sustainable, plant-based alternatives to conventional plastic products.\",\n      \"issues\": [],\n      \"reason\": \"The passage states Pela Case creates sustainable, plant-based alternatives to plastic products.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"Instagram focuses on aesthetics — the cases photograph well and influencer gifting generates consistent UGC.\",\n      \"issues\": [],\n      \"reason\": \"The passage states Pela Case's Instagram strategy focuses on aesthetics and influencer gifting.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"This goal has brought thousands of students and professors to the Pela Case community as customers and influencers.\",\n      \"issues\": [],\n      \"reason\": \"The passage mentions a community of customers and influencers passionate about reducing waste.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"The marketing team at Pela Case has also benefited from BrandChamp’s activity builder, which allows them to plan out their marketing campaigns and product launches in advance.\",\n      \"issues\": [],\n      \"reason\": \"The passage states Pela Case scaled its ambassador program from 400 to 1600 participants.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Pela Case, creators of the first-ever compostable phone case, is a company with an eco-friendly brand. It was founded in 2010 by Jeremy Lang to create day-to-day products designed for a waste-free future.",
+        "issues": [],
+        "reason": "The passage explicitly states Pela Case was founded in 2010 by Jeremy Lang with a waste-free future in mind."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "We have a big, hairy audacious goal. We want to create a waste free future.",
+        "issues": [],
+        "reason": "The passage directly states Pela Case's goal is to create a waste-free future."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "We create sustainable, plant-based alternatives to conventional plastic products.",
+        "issues": [],
+        "reason": "The passage states Pela Case creates sustainable, plant-based alternatives to plastic products."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "Instagram focuses on aesthetics — the cases photograph well and influencer gifting generates consistent UGC.",
+        "issues": [],
+        "reason": "The passage states Pela Case's Instagram strategy focuses on aesthetics and influencer gifting."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "This goal has brought thousands of students and professors to the Pela Case community as customers and influencers.",
+        "issues": [],
+        "reason": "The passage mentions a community of customers and influencers passionate about reducing waste."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "The marketing team at Pela Case has also benefited from BrandChamp’s activity builder, which allows them to plan out their marketing campaigns and product launches in advance.",
+        "issues": [],
+        "reason": "The passage states Pela Case scaled its ambassador program from 400 to 1600 participants."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-22T23:34:42+00:00",
+  "audit_sha256": "e0ef3b1c9794af570997c7dbda8cd2437cf48c808687d827fad2ade0c2a1e95c",
+  "dismissed_reviewer_flags": []
+}

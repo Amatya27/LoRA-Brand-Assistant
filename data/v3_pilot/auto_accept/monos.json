@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "monos",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "a9683b38bfd065865184fe551132b56ea539be01cce8bf66b3fd03c4f030c0b8",
+    "prompt_sha256": "2feb70330f8d0e8453c6b4e92a6ac4096edb22c56f69a5217dcdf639e3d9d8eb",
+    "completion_sha256": "9efd0409ba26cfc7add09d5e11c9abef86d1c763579c39c0c1ae317bc152086f",
+    "audit_sha256": "62472a70b94e2a9d7c7f7259023f07fd7983435551a22c581afc69775f242726"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 5,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:46+00:00",
+  "record_sha256": "c1a626669a3273fa3adaeea48d97903c8f30f2ea7a5d138d3579feda5159028c"
+}

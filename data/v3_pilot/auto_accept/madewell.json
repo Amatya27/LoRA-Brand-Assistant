@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "madewell",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "cf03599a2a0ecfb4be5a294ba06e4dd25a147c5011516134fb17cf8cfe4d9a30",
+    "prompt_sha256": "e1704ab83f45681bc522dae309418bd292f99aedd317d28f6d8cec23365b88d3",
+    "completion_sha256": "e7c9be0f02920a1e52c78e143a3014343a5eb31b31dcf3e8114af340364e2637",
+    "audit_sha256": "643ff0e7302c528b2ab9548ffd3c330c912ee41a229c789deb75d746a038cb41"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 15,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:46+00:00",
+  "record_sha256": "38af0ee322624bd93f5339e3c9d16b7fc5e70f0dd4f0bcf74c22371b0f44afc5"
+}

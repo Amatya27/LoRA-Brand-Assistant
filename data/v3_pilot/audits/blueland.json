@@ -1,0 +1,78 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "blueland",
+  "bound_to": {
+    "packet_sha256": "36f802c4c565b684e61dfbfa37124bfff886200642dce0ec4e7f04964ff71762",
+    "prompt_sha256": "35e12c256fd93e34bb924ec24d9bbfc6398a2e47261a873e827315562dc25111",
+    "completion_sha256": "6172603e8baca95073bf4b6940225f47dffc89c6a746b747a521fd8e9337f60c",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": []
+  },
+  "raw_response_sha256": "6dc4944600c5e7c9534638c1ab1c5b165d9a0187d24dd5523a742689273df6c4",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"Create solutions that put people and planet first.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states Blueland's mission is to put people and planet first.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"the future of cleaner cleaning: resealable and industrially compostable pouches\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states the new packaging includes resealable and industrially compostable pouches.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"Drew Barrymore commented on one of Blueland's Instagram posts and shared a lengthy video endorsement on an Instagram story.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes a celebrity endorsement on Instagram, indicating a strong social media presence.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\",\n        \"P8\"\n      ],\n      \"quote\": \"sustainability requires higher standards year after year, and we’re committed to continually raising the bar\",\n      \"issues\": [],\n      \"reason\": \"The passage highlights Blueland's commitment to sustainability, a key element of their marketing strategy.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "Create solutions that put people and planet first.",
+        "issues": [],
+        "reason": "The passage explicitly states Blueland's mission is to put people and planet first."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "the future of cleaner cleaning: resealable and industrially compostable pouches",
+        "issues": [],
+        "reason": "The passage directly states the new packaging includes resealable and industrially compostable pouches."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "Drew Barrymore commented on one of Blueland's Instagram posts and shared a lengthy video endorsement on an Instagram story.",
+        "issues": [],
+        "reason": "The passage describes a celebrity endorsement on Instagram, indicating a strong social media presence."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1",
+          "P8"
+        ],
+        "quote": "sustainability requires higher standards year after year, and we’re committed to continually raising the bar",
+        "issues": [],
+        "reason": "The passage highlights Blueland's commitment to sustainability, a key element of their marketing strategy."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-23T00:29:35+00:00",
+  "audit_sha256": "f4080dbecadb89659994b3465f199a014e827ad09cda5771354b2ccc9fb8cc12",
+  "dismissed_reviewer_flags": []
+}

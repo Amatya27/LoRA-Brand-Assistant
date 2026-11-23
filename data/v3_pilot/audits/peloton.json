@@ -1,0 +1,87 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "peloton",
+  "bound_to": {
+    "packet_sha256": "f47d13c1f1704327310fb3bd6e71e50b965629365808f69dbd39a7e4d06a1c4a",
+    "prompt_sha256": "bf49a033102fd0e7ea6fa9b9a529ba9aa92a06097ff956d2e87b14b51c02bed2",
+    "completion_sha256": "09012709bc9b5bf5974c0f90d8323af39e95ed7ba1424ef1e4ab5a8ec5b358f6",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": []
+  },
+  "raw_response_sha256": "c8a5cf4bda891bf6c519ac7da15439ea86c04bd7c307b903132b36eb562542c1",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"In 2012, we brought the best talent in technology, hardware and production together to accomplish an ambitious goal: bring the community and excitement of boutique fitness into the home.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states Peloton was founded in 2012 with the goal of bringing boutique fitness into the home.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"We use a combination of technology, content and best-in-class instructors to empower our millions-strong community through fitness.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Peloton uses technology, content, and instructors to empower its community.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Peloton collaborates with fitness influencers, celebrities, and brand ambassadors to promote its products and classes,\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly mentions Peloton's collaboration with influencers, celebrities, and brand ambassadors.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P9\"\n      ],\n      \"quote\": \"Peloton’s go-to-market strategy is built around a two-step funnel: acquisition, then retention.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Peloton's strategy is built around a two-step funnel of acquisition and retention.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"Peloton’s marketing strategy isn’t just about selling exercise bikes; it’s about crafting a lifestyle.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Peloton's marketing strategy is about crafting a lifestyle, not just selling bikes.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "In 2012, we brought the best talent in technology, hardware and production together to accomplish an ambitious goal: bring the community and excitement of boutique fitness into the home.",
+        "issues": [],
+        "reason": "The passage explicitly states Peloton was founded in 2012 with the goal of bringing boutique fitness into the home."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "We use a combination of technology, content and best-in-class instructors to empower our millions-strong community through fitness.",
+        "issues": [],
+        "reason": "The passage directly states Peloton uses technology, content, and instructors to empower its community."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Peloton collaborates with fitness influencers, celebrities, and brand ambassadors to promote its products and classes,",
+        "issues": [],
+        "reason": "The passage explicitly mentions Peloton's collaboration with influencers, celebrities, and brand ambassadors."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P9"
+        ],
+        "quote": "Peloton’s go-to-market strategy is built around a two-step funnel: acquisition, then retention.",
+        "issues": [],
+        "reason": "The passage states that Peloton's strategy is built around a two-step funnel of acquisition and retention."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "Peloton’s marketing strategy isn’t just about selling exercise bikes; it’s about crafting a lifestyle.",
+        "issues": [],
+        "reason": "The passage states that Peloton's marketing strategy is about crafting a lifestyle, not just selling bikes."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-23T00:15:27+00:00",
+  "audit_sha256": "ffbf2cf03986203d16d0a0e0d2b15f98cca411cb19d8595b36b95ea30c2b6878",
+  "dismissed_reviewer_flags": []
+}

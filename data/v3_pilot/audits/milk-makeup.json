@@ -1,0 +1,197 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "milk-makeup",
+  "bound_to": {
+    "packet_sha256": "924c639baa5fec54c8629c57991202d4bf65ab3e74be5684adf19cb969230301",
+    "prompt_sha256": "5d82a8052ab42e5ad4625338ab0f893a4be4f7c3931543ce488b47a4d3c7dcfd",
+    "completion_sha256": "1c24b057d46a7a2e02e7c643c79aacd662ac8869c236458d7e93c190eb1796ff",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": []
+  },
+  "raw_response_sha256": "c16b99bd15c9bd32c8c25d232befdc3dfaa11007ddd989ac170738b9beb056b6",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Our mission is to unlock your creativity—no matter who you are, what you do, or where you live.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Milk Makeup's mission as unlocking creativity.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"We start with good ingredients. Turn those into effective formulas. And that results in easy-to-use makeup that’s 100% vegan, cruelty-free, and paraben-free...Always.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly describes Milk Makeup's product philosophy.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Since day one, it’s been more about storytelling than selling. Think short films, behind-the-scenes shoots, interviews with NYC creatives, and so on. The brand has always spotlighted real people and real voices, not just polished influencer content.\",\n      \"issues\": [],\n      \"reason\": \"The passage details Milk Makeup's focus on storytelling and highlighting real people.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Diversity isn’t an add-on for Milk, it’s baked in. From gender expression to underground art scenes, the brand stands for showing up exactly as you are.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly mentions diversity, self-expression, and community as core values.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"NeoReach partnered with Milk Makeup to run a talent-managed creator program on TikTok, Instagram and YouTube, built for Milk Makeup’s beauty audience.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms Milk Makeup's use of a talent-managed creator program.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"NYC Subway ads were used to promote their Hydro Grip Primer, and educate New York City influencers, fashionistas, and commuters of the long-lasting quality. The campaign ran in trendy neighborhoods reaching beauty connoisseurs.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes a campaign targeting beauty connoisseurs.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"Milk Makeup creators produced 10+ pieces of content native to TikTok, Instagram and YouTube, built for how that audience actually watches.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms Milk Makeup creators produce content for specific platforms.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"Milk Makeup is a vegan, cruelty-free, paraben-free makeup brand\"\n    },\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"It was born out of Milk Studios, a creative hub in downtown New York City\"\n    },\n    {\n      \"field\": \"likely_target_audience\",\n      \"text\": \"Milk Makeup's target audience includes beauty connoisseurs, influencers, fashionistas, and commuters in trendy neighborhoods\"\n    },\n    {\n      \"field\": \"current_marketing_strategy\",\n      \"text\": \"Milk Makeup built its brand on culture, storytelling, and spotlighting real people and real voices\"\n    },\n    {\n      \"field\": \"current_marketing_strategy\",\n      \"text\": \"Milk Makeup ran a talent-managed creator program on TikTok, Instagram, and YouTube, built for their beauty audience\"\n    },\n    {\n      \"field\": \"current_marketing_strategy\",\n      \"text\": \"Milk Makeup ran a campaign promoting their Hydro Grip Primer in NYC subway ads, targeting beauty connoisseurs\"\n    },\n    {\n      \"field\": \"current_marketing_strategy\",\n      \"text\": \"Milk Makeup creators produced content native to TikTok, Instagram, and YouTube, built for how that audience actually watches\"\n    },\n    {\n      \"field\": \"collaboration_opportunities\",\n      \"text\": \"Collaborate on an Instagram campaign that highlights real people and real voices, aligning with Milk Makeup's brand values\"\n    },\n    {\n      \"field\": \"instagram_post_idea\",\n      \"text\": \"A carousel post featuring diverse creators and their unique stories with Milk Makeup products, highlighting the brand's commitment to self-expression and community\"\n    },\n    {\n      \"field\": \"email_body\",\n      \"text\": \"Hi Milk Makeup Team\"\n    },\n    {\n      \"field\": \"email_body\",\n      \"text\": \"We propose a carousel post featuring diverse creators and their unique stories with Milk Makeup products, highlighting the brand's commitment to self-expression and community.\"\n    },\n    {\n      \"field\": \"email_body\",\n      \"text\": \"This concept builds on your existing creator programs\"\n    },\n    {\n      \"field\": \"email_body\",\n      \"text\": \"We'd love to discuss this further and explore how we can work together to bring this vision to life.\"\n    }\n  ],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Our mission is to unlock your creativity—no matter who you are, what you do, or where you live.",
+        "issues": [],
+        "reason": "The passage directly states Milk Makeup's mission as unlocking creativity."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "We start with good ingredients. Turn those into effective formulas. And that results in easy-to-use makeup that’s 100% vegan, cruelty-free, and paraben-free...Always.",
+        "issues": [],
+        "reason": "The passage explicitly describes Milk Makeup's product philosophy."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Since day one, it’s been more about storytelling than selling. Think short films, behind-the-scenes shoots, interviews with NYC creatives, and so on. The brand has always spotlighted real people and real voices, not just polished influencer content.",
+        "issues": [],
+        "reason": "The passage details Milk Makeup's focus on storytelling and highlighting real people."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Diversity isn’t an add-on for Milk, it’s baked in. From gender expression to underground art scenes, the brand stands for showing up exactly as you are.",
+        "issues": [],
+        "reason": "The passage explicitly mentions diversity, self-expression, and community as core values."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "NeoReach partnered with Milk Makeup to run a talent-managed creator program on TikTok, Instagram and YouTube, built for Milk Makeup’s beauty audience.",
+        "issues": [],
+        "reason": "The passage confirms Milk Makeup's use of a talent-managed creator program."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "NYC Subway ads were used to promote their Hydro Grip Primer, and educate New York City influencers, fashionistas, and commuters of the long-lasting quality. The campaign ran in trendy neighborhoods reaching beauty connoisseurs.",
+        "issues": [],
+        "reason": "The passage describes a campaign targeting beauty connoisseurs."
+      },
+      {
+        "claim_id": "C7",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "Milk Makeup creators produced 10+ pieces of content native to TikTok, Instagram and YouTube, built for how that audience actually watches.",
+        "issues": [],
+        "reason": "The passage confirms Milk Makeup creators produce content for specific platforms."
+      }
+    ],
+    "unmarked_factual_statements": [
+      {
+        "field": "instagram_post_idea",
+        "text": "A carousel post featuring diverse creators and their unique stories with Milk Makeup products, highlighting the brand's commitment to self-expression and community"
+      },
+      {
+        "field": "email_body",
+        "text": "Hi Milk Makeup Team"
+      },
+      {
+        "field": "email_body",
+        "text": "We propose a carousel post featuring diverse creators and their unique stories with Milk Makeup products, highlighting the brand's commitment to self-expression and community."
+      },
+      {
+        "field": "email_body",
+        "text": "We'd love to discuss this further and explore how we can work together to bring this vision to life."
+      }
+    ],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "fail",
+  "reasons": [
+    "reviewer found factual statements without claim support"
+  ],
+  "created_at": "2026-11-23T00:09:43+00:00",
+  "audit_sha256": "a6e525120843a5e7d025fb74ecefa89e053573a98622fec2a4fa250d739a2f5d",
+  "dismissed_reviewer_flags": [
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "Milk Makeup is a vegan, cruelty-free, paraben-free makeup brand"
+      },
+      "reason": "flagged text does not occur in the label"
+    },
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "It was born out of Milk Studios, a creative hub in downtown New York City"
+      },
+      "reason": "sentence in brand_summary carries a claim marker; judged via its claim",
+      "matched_sentence": "it was born out of milk studios a creative hub in downtown new york city"
+    },
+    {
+      "flag": {
+        "field": "likely_target_audience",
+        "text": "Milk Makeup's target audience includes beauty connoisseurs, influencers, fashionistas, and commuters in trendy neighborhoods"
+      },
+      "reason": "sentence in likely_target_audience carries a claim marker; judged via its claim",
+      "matched_sentence": "milk makeup's target audience includes beauty connoisseurs influencers fashionistas and commuters in trendy neighborhoods"
+    },
+    {
+      "flag": {
+        "field": "current_marketing_strategy",
+        "text": "Milk Makeup built its brand on culture, storytelling, and spotlighting real people and real voices"
+      },
+      "reason": "sentence in current_marketing_strategy[0] carries a claim marker; judged via its claim",
+      "matched_sentence": "milk makeup built its brand on culture storytelling and spotlighting real people and real voices"
+    },
+    {
+      "flag": {
+        "field": "current_marketing_strategy",
+        "text": "Milk Makeup ran a talent-managed creator program on TikTok, Instagram, and YouTube, built for their beauty audience"
+      },
+      "reason": "sentence in current_marketing_strategy[1] carries a claim marker; judged via its claim",
+      "matched_sentence": "milk makeup ran a talent managed creator program on tiktok instagram and youtube built for their beauty audience"
+    },
+    {
+      "flag": {
+        "field": "current_marketing_strategy",
+        "text": "Milk Makeup ran a campaign promoting their Hydro Grip Primer in NYC subway ads, targeting beauty connoisseurs"
+      },
+      "reason": "sentence in current_marketing_strategy[2] carries a claim marker; judged via its claim",
+      "matched_sentence": "milk makeup ran a campaign promoting their hydro grip primer in nyc subway ads targeting beauty connoisseurs"
+    },
+    {
+      "flag": {
+        "field": "current_marketing_strategy",
+        "text": "Milk Makeup creators produced content native to TikTok, Instagram, and YouTube, built for how that audience actually watches"
+      },
+      "reason": "sentence in current_marketing_strategy[3] carries a claim marker; judged via its claim",
+      "matched_sentence": "milk makeup creators produced content native to tiktok instagram and youtube built for how that audience actually watches"
+    },
+    {
+      "flag": {
+        "field": "collaboration_opportunities",
+        "text": "Collaborate on an Instagram campaign that highlights real people and real voices, aligning with Milk Makeup's brand values"
+      },
+      "reason": "sentence in collaboration_opportunities[0] carries a claim marker; judged via its claim",
+      "matched_sentence": "collaborate on an instagram campaign that highlights real people and real voices aligning with milk makeup's brand values"
+    },
+    {
+      "flag": {
+        "field": "email_body",
+        "text": "This concept builds on your existing creator programs"
+      },
+      "reason": "flagged text does not occur in the label"
+    }
+  ]
+}

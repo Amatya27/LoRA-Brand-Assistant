@@ -1,0 +1,21 @@
+{
+  "company_id": "koio",
+  "acceptance_basis": "auto_threshold_0.7",
+  "decision": "reject",
+  "reasons": [
+    "pruned draft fails check_draft: email_body: vendor/provider claim C3 (P9) is not attributed to its source (adlibrary) in the prose: 'The post would feature high-quality product photography, including close-ups of ' (+2 more)"
+  ],
+  "groundedness": 0.8333,
+  "claim_support": {
+    "C1": "supported",
+    "C2": "supported",
+    "C3": "supported",
+    "C4": "supported",
+    "C5": "deterministic: claim C5: quote does not occur in cited passage(s) ['P4']",
+    "C6": "supported"
+  },
+  "removed_claims": [],
+  "label_completion_sha256": "5ffe2276508ce5bf475d69b8d3d360cc9c741c8629ce3c9569a1038de5975801",
+  "audit_sha256": "817f9c08bcab172e4233da00ba3ef07d1e74aa0b0ce4d8b6dc851199cfc26d6d",
+  "created_at": "2026-11-23T00:28:46+00:00"
+}

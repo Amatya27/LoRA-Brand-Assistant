@@ -1,0 +1,151 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "alo-yoga",
+  "bound_to": {
+    "packet_sha256": "0f067a5a21ae44d735f968669f10749260071964b573e9697d91cddea2ed8c20",
+    "prompt_sha256": "f650912fcb4f4c533d66306d2c9b0cb71e4b83253023dba9dbfd5e549b56375f",
+    "completion_sha256": "e01842ecf67521dcf9a60e4c792fad6d065fc94f2823ab55eb5f7886f757d2ba",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": []
+  },
+  "raw_response_sha256": "cd628730f6002375671d8133a065dcf0ef5000eb9fa520985d0728bbca45c72f",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"Alo Yoga Marketing Strategy: Through Social Commerce and Influencer Partnerships\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that Alo Yoga's marketing strategy includes social commerce and influencer partnerships.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"differentiation depends on brand meaning, channel strength, and product momentum. Alo Yoga focuses on premium positioning, content-fueled demand, and experiential retail to stand apart.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Alo Yoga's strategy focuses on premium positioning, content-fueled demand, and experiential retail.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Social commerce engine: Shoppable Instagram, TikTok Shop, and creator storefronts reduce friction from discovery to checkout.\",\n      \"issues\": [],\n      \"reason\": \"The passage mentions a social commerce engine with shoppable Instagram, TikTok Shop, and creator storefronts.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"High-profile partnerships with fitness influencers and wellness practitioners provide credibility within the core yoga and fitness communities\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly mentions high-profile partnerships with influencers and wellness practitioners.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"The Pro Program by Alo Yoga helps establish the brand as a yoga authority. It offers discounts to yoga instructors who then promote Alo Yoga’s products.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Alo Yoga's Pro Program offers discounts to instructors who promote their products.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P9\"\n      ],\n      \"quote\": \"Alo Yoga encourages its customers to tell friends about the brand through a referral program.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that Alo Yoga has a referral program.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P10\"\n      ],\n      \"quote\": \"Alo Yoga's influencer activity by platform Share of sponsored content by social network ### Content format by platform Share of all sponsored posts.\",\n      \"issues\": [],\n      \"reason\": \"The passage indicates Modash reports Alo Yoga has a strong presence on Instagram, YouTube, and TikTok.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"Alo Yoga is a premium yoga apparel and athleisure brand\"\n    },\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"Alo Yoga has been in operation since 2007\"\n    },\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"It has a clear vision for elevated activewear and mindful movement\"\n    },\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"it has converted culture into commerce at scale\"\n    },\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"The brand has built a thriving ecosystem that spans apparel, wellness content, and experiential retail\"\n    },\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"anchored in premium positioning and relentless storytelling\"\n    }\n  ],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "Alo Yoga Marketing Strategy: Through Social Commerce and Influencer Partnerships",
+        "issues": [],
+        "reason": "The passage explicitly states that Alo Yoga's marketing strategy includes social commerce and influencer partnerships."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "differentiation depends on brand meaning, channel strength, and product momentum. Alo Yoga focuses on premium positioning, content-fueled demand, and experiential retail to stand apart.",
+        "issues": [],
+        "reason": "The passage directly states Alo Yoga's strategy focuses on premium positioning, content-fueled demand, and experiential retail."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Social commerce engine: Shoppable Instagram, TikTok Shop, and creator storefronts reduce friction from discovery to checkout.",
+        "issues": [],
+        "reason": "The passage mentions a social commerce engine with shoppable Instagram, TikTok Shop, and creator storefronts."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "High-profile partnerships with fitness influencers and wellness practitioners provide credibility within the core yoga and fitness communities",
+        "issues": [],
+        "reason": "The passage explicitly mentions high-profile partnerships with influencers and wellness practitioners."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "The Pro Program by Alo Yoga helps establish the brand as a yoga authority. It offers discounts to yoga instructors who then promote Alo Yoga’s products.",
+        "issues": [],
+        "reason": "The passage states that Alo Yoga's Pro Program offers discounts to instructors who promote their products."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P9"
+        ],
+        "quote": "Alo Yoga encourages its customers to tell friends about the brand through a referral program.",
+        "issues": [],
+        "reason": "The passage directly states that Alo Yoga has a referral program."
+      },
+      {
+        "claim_id": "C7",
+        "verdict": "supported",
+        "passage_ids": [
+          "P10"
+        ],
+        "quote": "Alo Yoga's influencer activity by platform Share of sponsored content by social network ### Content format by platform Share of all sponsored posts.",
+        "issues": [],
+        "reason": "The passage indicates Modash reports Alo Yoga has a strong presence on Instagram, YouTube, and TikTok."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-22T23:43:37+00:00",
+  "audit_sha256": "4b26efece86c2f31812841f68c1f712068370e536fc00cb8527c4d84600331af",
+  "dismissed_reviewer_flags": [
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "Alo Yoga is a premium yoga apparel and athleisure brand"
+      },
+      "reason": "flagged text does not occur in the label"
+    },
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "Alo Yoga has been in operation since 2007"
+      },
+      "reason": "flagged text does not occur in the label"
+    },
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "It has a clear vision for elevated activewear and mindful movement"
+      },
+      "reason": "flagged text does not occur in the label"
+    },
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "it has converted culture into commerce at scale"
+      },
+      "reason": "flagged text does not occur in the label"
+    },
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "The brand has built a thriving ecosystem that spans apparel, wellness content, and experiential retail"
+      },
+      "reason": "sentence in brand_summary carries a claim marker; judged via its claim",
+      "matched_sentence": "the brand has built a thriving ecosystem that spans apparel wellness content and experiential retail anchored in premium positioning and relentless storytelling"
+    },
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "anchored in premium positioning and relentless storytelling"
+      },
+      "reason": "flagged text does not occur in the label"
+    }
+  ]
+}

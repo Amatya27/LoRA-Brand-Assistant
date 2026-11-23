@@ -1,0 +1,103 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "fly-by-jing",
+  "bound_to": {
+    "packet_sha256": "eea5d899d1846f2818d5a580c4a6781c4a733c0b4d0074f22189843aa76e67ba",
+    "prompt_sha256": "fcf0c440ad48e34f9e0545efcd1527016f1f1fa1e865c9f0d4127616a19443a5",
+    "completion_sha256": "5ecd749f2a467381c8be5c082f719a2938af5de074ec7c08ed027c8b5963ae49",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [
+      "claim C5: quote does not occur in cited passage(s) ['P6']"
+    ],
+    "warnings": [
+      "claim C5: not referenced by any field"
+    ]
+  },
+  "raw_response_sha256": "8addaafdc10446293c8dbdf94c57a7e6a33f252ae52835d7eb721e825ef3ce31",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Sichuan-Inspired Condiments Brand Could Be the Next Hot Thing in Home Cooking Spreads\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states Fly By Jing is a Sichuan chili crisp and condiments brand.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"You can now replicate these flavors at home with our line of Sichuan sourced condiments and noodles.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Fly By Jing has a line of Sichuan sourced condiments and noodles.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"the brand has collaborated with fellow DTC food brand Fishwife, Disney, and the YouTube series Hot Ones.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms Fly By Jing partnered with Fishwife, Disney, and Hot Ones.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"the brand had something most emerging CPG products don’t: pre-existing demand signals.\",\n      \"issues\": [],\n      \"reason\": \"The passage states Fly By Jing pursued retail partnerships with Whole Foods, Target, and broader grocery distribution.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"Fly by Jing also partnered with Shake Shack in the UK on a Chili Crisp menu\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms Fly By Jing partnered with Shake Shack in the UK.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P10\"\n      ],\n      \"quote\": \"built a seeding program around a simple mechanic: send the jar, film the reaction, let the spice do the talking.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms Fly By Jing built a seeding program around sending jars to nano and micro creators.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Sichuan-Inspired Condiments Brand Could Be the Next Hot Thing in Home Cooking Spreads",
+        "issues": [],
+        "reason": "The passage explicitly states Fly By Jing is a Sichuan chili crisp and condiments brand."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "You can now replicate these flavors at home with our line of Sichuan sourced condiments and noodles.",
+        "issues": [],
+        "reason": "The passage directly states Fly By Jing has a line of Sichuan sourced condiments and noodles."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "the brand has collaborated with fellow DTC food brand Fishwife, Disney, and the YouTube series Hot Ones.",
+        "issues": [],
+        "reason": "The passage confirms Fly By Jing partnered with Fishwife, Disney, and Hot Ones."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "the brand had something most emerging CPG products don’t: pre-existing demand signals.",
+        "issues": [],
+        "reason": "The passage states Fly By Jing pursued retail partnerships with Whole Foods, Target, and broader grocery distribution."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "Fly by Jing also partnered with Shake Shack in the UK on a Chili Crisp menu",
+        "issues": [],
+        "reason": "The passage confirms Fly By Jing partnered with Shake Shack in the UK."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P10"
+        ],
+        "quote": "built a seeding program around a simple mechanic: send the jar, film the reaction, let the spice do the talking.",
+        "issues": [],
+        "reason": "The passage confirms Fly By Jing built a seeding program around sending jars to nano and micro creators."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "fail",
+  "reasons": [
+    "1 deterministic check error(s)"
+  ],
+  "created_at": "2026-11-22T20:07:14+00:00",
+  "audit_sha256": "171d92ba6f3a7ec8273d95630451aef083657932119367a87820de8e357b2166",
+  "dismissed_reviewer_flags": []
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "hu-kitchen",
+  "bound_to": {
+    "packet_sha256": "5034b597e41ea5dd8e24a7d96cbd19d65b0c2edf60ebd2a761b20246b545d527",
+    "prompt_sha256": "a06037275be47ef9c875c6aa0878d2bbafb19359bd62711a6faee86ff1c157fb",
+    "completion_sha256": "d40cd1bf41b07b0ceb00d18702dc028f3877dd2c878fd1dfe7e6978013a9fa14",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": []
+  },
+  "raw_response_sha256": "5087333b3d7706b9d82b9e072ed205b5dcc1c965293d527ca64702a9835e530b",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"Hu sources 100% of its cocoa, coconut sugar, cashews, vanilla, and quinoa on Fairtrade terms.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that Hu sources these ingredients on Fairtrade terms.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"As a values driven brand, we put Humanity at the forefront of everything we do to help create a positive impact for all of our fellow humans from growers to eaters.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Hu is a values-driven brand.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"Today, Hu chocolate is sold in over 34,000 stores across the US, Canada, and the UK.\",\n      \"issues\": [],\n      \"reason\": \"The passage states Hu chocolate is sold in over 34,000 stores across these locations.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"Hu Chocolate uses the same unwavering ingredient guardrails we championed at our Hu Kitchen restaurant.\",\n      \"issues\": [],\n      \"reason\": \"The passage states Hu uses the same ingredient guardrails as its restaurant.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P9\"\n      ],\n      \"quote\": \"Hu also has a commitment to sourcing ingredients on Fairtrade terms?\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly mentions Hu's commitment to Fairtrade sourcing.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P9\"\n      ],\n      \"quote\": \"Grab some Hu chocolate at your local Whole Foods, Target, Sprouts, or Kroger\",\n      \"issues\": [],\n      \"reason\": \"The passage lists these stores as places to find Hu chocolate.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"Hu Kitchen is an ideal example for examining consumer sentiment toward a clean eating-focused marketing approach\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Hu Kitchen is an ideal example for examining consumer sentiment.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "Hu sources 100% of its cocoa, coconut sugar, cashews, vanilla, and quinoa on Fairtrade terms.",
+        "issues": [],
+        "reason": "The passage explicitly states that Hu sources these ingredients on Fairtrade terms."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "As a values driven brand, we put Humanity at the forefront of everything we do to help create a positive impact for all of our fellow humans from growers to eaters.",
+        "issues": [],
+        "reason": "The passage directly states Hu is a values-driven brand."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "Today, Hu chocolate is sold in over 34,000 stores across the US, Canada, and the UK.",
+        "issues": [],
+        "reason": "The passage states Hu chocolate is sold in over 34,000 stores across these locations."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "Hu Chocolate uses the same unwavering ingredient guardrails we championed at our Hu Kitchen restaurant.",
+        "issues": [],
+        "reason": "The passage states Hu uses the same ingredient guardrails as its restaurant."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P9"
+        ],
+        "quote": "Hu also has a commitment to sourcing ingredients on Fairtrade terms?",
+        "issues": [],
+        "reason": "The passage explicitly mentions Hu's commitment to Fairtrade sourcing."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P9"
+        ],
+        "quote": "Grab some Hu chocolate at your local Whole Foods, Target, Sprouts, or Kroger",
+        "issues": [],
+        "reason": "The passage lists these stores as places to find Hu chocolate."
+      },
+      {
+        "claim_id": "C7",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "Hu Kitchen is an ideal example for examining consumer sentiment toward a clean eating-focused marketing approach",
+        "issues": [],
+        "reason": "The passage directly states Hu Kitchen is an ideal example for examining consumer sentiment."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-23T00:01:38+00:00",
+  "audit_sha256": "2b8d7128c5cd0a70633f609ae4daa219ef764c8ee048fcc24fc92edb5ee2511f",
+  "dismissed_reviewer_flags": []
+}

@@ -1,0 +1,97 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "momofuku-goods",
+  "bound_to": {
+    "packet_sha256": "1176b733baca73db709d72de9425f0f97fc99e0c1e8f7ccf4fea471f5fa6b3a0",
+    "prompt_sha256": "ed03d17b18cad4fe3f342409008a2c4aa03a99692f744eef090c6760be6aaa19",
+    "completion_sha256": "121c285c6ca12c17feb98de5b5194b5a15cd838ab52df2b04f9a97bbf999d285",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": []
+  },
+  "raw_response_sha256": "07240c322cf51583fa3667e9741abc704782099f31d1d34b72588198b0f187c3",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"Momofuku Goods launched in 2020 as the consumer product extension of David Chang's Momofuku restaurant group. The brand sells chili crisp, seasoned salts, soy sauce, and noodles via DTC and major retail, leveraging Chang's enormous culinary celebrity and the Momofuku restaurant brand's cultural cachet to compete in the premium condiment and specialty pantry category.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that Momofuku Goods is an extension of the restaurant group and lists the products they sell.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"Momofuku Goods' social advertising features chef-level food photography alongside recipe tutorials that showcase the products in restaurant-quality applications.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states this about their social advertising.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"David Chang's personal social presence (Instagram, TV) generates organic reach that supplements paid campaigns.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states this about David Chang's social presence.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"David Chang's restaurant reputation compressed years of brand-building into a DTC launch with a built-in audience.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states this about David Chang's reputation.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"Every month, Momofuku Goods seeds product to influencers hoping to develop organic relationships and generate awareness as efficiently as possible.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes their practice of seeding products to influencers.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"For the April viral recipe challenge, Reacher shifted 150 samples into Chili Crunch because it consistently outperforms, instead of splitting evenly across products.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes their reallocation strategy for samples.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "Momofuku Goods launched in 2020 as the consumer product extension of David Chang's Momofuku restaurant group. The brand sells chili crisp, seasoned salts, soy sauce, and noodles via DTC and major retail, leveraging Chang's enormous culinary celebrity and the Momofuku restaurant brand's cultural cachet to compete in the premium condiment and specialty pantry category.",
+        "issues": [],
+        "reason": "The passage explicitly states that Momofuku Goods is an extension of the restaurant group and lists the products they sell."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "Momofuku Goods' social advertising features chef-level food photography alongside recipe tutorials that showcase the products in restaurant-quality applications.",
+        "issues": [],
+        "reason": "The passage directly states this about their social advertising."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "David Chang's personal social presence (Instagram, TV) generates organic reach that supplements paid campaigns.",
+        "issues": [],
+        "reason": "The passage directly states this about David Chang's social presence."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "David Chang's restaurant reputation compressed years of brand-building into a DTC launch with a built-in audience.",
+        "issues": [],
+        "reason": "The passage directly states this about David Chang's reputation."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "Every month, Momofuku Goods seeds product to influencers hoping to develop organic relationships and generate awareness as efficiently as possible.",
+        "issues": [],
+        "reason": "The passage describes their practice of seeding products to influencers."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "For the April viral recipe challenge, Reacher shifted 150 samples into Chili Crunch because it consistently outperforms, instead of splitting evenly across products.",
+        "issues": [],
+        "reason": "The passage describes their reallocation strategy for samples."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-23T00:10:56+00:00",
+  "audit_sha256": "eb365eca678f2b1dc2cab5c557ec24880667ff33bdb1cf1eca52e4cb5c5fe2fa",
+  "dismissed_reviewer_flags": []
+}

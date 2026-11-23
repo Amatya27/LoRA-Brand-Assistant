@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "imperfect-foods",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "e9e96460dadf26e13d74c7ea91b438e4342fc40283b72e5600fc6bb48910f173",
+    "prompt_sha256": "943fda954f9cedc9fa0d6e7573a35188160495558fb005a7af73cc7add26b0a9",
+    "completion_sha256": "b466aad55c182e7b2df8a6efc4589a6fdca4f361af3b0427f6c971dedb904de6",
+    "audit_sha256": "144f63ef8829c12a46f024c08596755e6a1c4beb4851f804e07203973317602d"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 5,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:46+00:00",
+  "record_sha256": "e9625abd4f36551fb1017c9639e4ceedb6ca92646c5101a8e58e8c838a3bd977"
+}

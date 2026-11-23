@@ -1,0 +1,187 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "madewell",
+  "bound_to": {
+    "packet_sha256": "cf03599a2a0ecfb4be5a294ba06e4dd25a147c5011516134fb17cf8cfe4d9a30",
+    "prompt_sha256": "e1704ab83f45681bc522dae309418bd292f99aedd317d28f6d8cec23365b88d3",
+    "completion_sha256": "e7c9be0f02920a1e52c78e143a3014343a5eb31b31dcf3e8114af340364e2637",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": []
+  },
+  "raw_response_sha256": "ccd77483fad921bf01b9c82dbc2a668fd8417274db96f8a538a08acc75d50f62",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Introduced in 2006, Madewell is a premium denim brand for Women and men.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states Madewell is a premium denim brand for Women and men.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Their campaigns leverage collaborations with influencers and partnerships with notable organizations.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly mentions collaborations with influencers and partnerships with organizations.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Additionally, the brand participates in community events and sustainability initiatives, reinforcing its commitment to ethical practices.\",\n      \"issues\": [],\n      \"reason\": \"The passage states Madewell participates in community events and sustainability initiatives.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"one of the key aspects of the brand’s marketing strategy is to tailor campaigns to fit the platform they’re premiering on\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that tailoring campaigns to fit the platform is a key aspect of Madewell's marketing strategy.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"the campaign is meant to appeal to both Madewell’s growing Gen-Z demo and its existing millennial core audience.\",\n      \"issues\": [],\n      \"reason\": \"The passage states the campaign is designed to appeal to Gen-Z and millennial audiences.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"a different evergreen TikTok campaign that launched on August 10 and provides information on Madewell’s trade-in program has been viewed more than 400,000 times and shared 3,000 times.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes a TikTok campaign providing information on Madewell's trade-in program.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"Instagram remains the visual engine, where Madewell engages a following in the low millions with consistent denim-led content.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes Instagram as a visual engine for Madewell's consistent denim-led content.\"\n    },\n    {\n      \"claim_id\": \"C8\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"Branded emails connect storytelling to commerce through clear CTAs, style bundles, and loyalty earn messaging.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that branded emails connect storytelling to commerce.\"\n    },\n    {\n      \"claim_id\": \"C9\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"Access and Perks: Insider loyalty benefits reinforce affordability perceptions through targeted offers, birthday rewards, and early access windows.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes the Insider loyalty program offering targeted offers, birthday rewards, and early access.\"\n    },\n    {\n      \"claim_id\": \"C10\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"Store activations with Cotton’s Blue Jeans Go Green exchange worn jeans for credit, driving store traffic and denim trade-ups.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes the 'Cotton’s Blue Jeans Go Green' event where customers exchange jeans for credit.\"\n    },\n    {\n      \"claim_id\": \"C11\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"Madewell Forever: Resale listings curated with ThredUp extend lifecycle storytelling, encouraging value-minded shoppers to reenter the funnel.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes 'Madewell Forever' as resale listings curated with ThredUp.\"\n    },\n    {\n      \"claim_id\": \"C12\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"Insider Drops: Limited capsules, early access, and double-point denim periods concentrate urgency around seasonal launches.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes 'Insider Drops' as including limited capsules, early access, and double-point denim periods.\"\n    },\n    {\n      \"claim_id\": \"C13\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"Hometown Heroes Pop-ups: Local maker showcases position stores as cultural spaces, strengthening neighborhood relevance and word of mouth.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes 'Hometown Heroes Pop-ups' as showcasing local makers and positioning stores as cultural spaces.\"\n    },\n    {\n      \"claim_id\": \"C14\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"The brand adopts a conversational approach, promoting direct interaction through comments and user-generated content.\",\n      \"issues\": [],\n      \"reason\": \"The passage states Madewell adopts a conversational approach and promotes direct interaction.\"\n    },\n    {\n      \"claim_id\": \"C15\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P9\"\n      ],\n      \"quote\": \"Platforms like Instagram showcase user-generated content and brand storytelling.\",\n      \"issues\": [],\n      \"reason\": \"The passage states Instagram showcases user-generated content and brand storytelling.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Introduced in 2006, Madewell is a premium denim brand for Women and men.",
+        "issues": [],
+        "reason": "The passage explicitly states Madewell is a premium denim brand for Women and men."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Their campaigns leverage collaborations with influencers and partnerships with notable organizations.",
+        "issues": [],
+        "reason": "The passage directly mentions collaborations with influencers and partnerships with organizations."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Additionally, the brand participates in community events and sustainability initiatives, reinforcing its commitment to ethical practices.",
+        "issues": [],
+        "reason": "The passage states Madewell participates in community events and sustainability initiatives."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "one of the key aspects of the brand’s marketing strategy is to tailor campaigns to fit the platform they’re premiering on",
+        "issues": [],
+        "reason": "The passage explicitly states that tailoring campaigns to fit the platform is a key aspect of Madewell's marketing strategy."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "the campaign is meant to appeal to both Madewell’s growing Gen-Z demo and its existing millennial core audience.",
+        "issues": [],
+        "reason": "The passage states the campaign is designed to appeal to Gen-Z and millennial audiences."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "a different evergreen TikTok campaign that launched on August 10 and provides information on Madewell’s trade-in program has been viewed more than 400,000 times and shared 3,000 times.",
+        "issues": [],
+        "reason": "The passage describes a TikTok campaign providing information on Madewell's trade-in program."
+      },
+      {
+        "claim_id": "C7",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "Instagram remains the visual engine, where Madewell engages a following in the low millions with consistent denim-led content.",
+        "issues": [],
+        "reason": "The passage describes Instagram as a visual engine for Madewell's consistent denim-led content."
+      },
+      {
+        "claim_id": "C8",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "Branded emails connect storytelling to commerce through clear CTAs, style bundles, and loyalty earn messaging.",
+        "issues": [],
+        "reason": "The passage states that branded emails connect storytelling to commerce."
+      },
+      {
+        "claim_id": "C9",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "Access and Perks: Insider loyalty benefits reinforce affordability perceptions through targeted offers, birthday rewards, and early access windows.",
+        "issues": [],
+        "reason": "The passage describes the Insider loyalty program offering targeted offers, birthday rewards, and early access."
+      },
+      {
+        "claim_id": "C10",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "Store activations with Cotton’s Blue Jeans Go Green exchange worn jeans for credit, driving store traffic and denim trade-ups.",
+        "issues": [],
+        "reason": "The passage describes the 'Cotton’s Blue Jeans Go Green' event where customers exchange jeans for credit."
+      },
+      {
+        "claim_id": "C11",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "Madewell Forever: Resale listings curated with ThredUp extend lifecycle storytelling, encouraging value-minded shoppers to reenter the funnel.",
+        "issues": [],
+        "reason": "The passage describes 'Madewell Forever' as resale listings curated with ThredUp."
+      },
+      {
+        "claim_id": "C12",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "Insider Drops: Limited capsules, early access, and double-point denim periods concentrate urgency around seasonal launches.",
+        "issues": [],
+        "reason": "The passage describes 'Insider Drops' as including limited capsules, early access, and double-point denim periods."
+      },
+      {
+        "claim_id": "C13",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "Hometown Heroes Pop-ups: Local maker showcases position stores as cultural spaces, strengthening neighborhood relevance and word of mouth.",
+        "issues": [],
+        "reason": "The passage describes 'Hometown Heroes Pop-ups' as showcasing local makers and positioning stores as cultural spaces."
+      },
+      {
+        "claim_id": "C14",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "The brand adopts a conversational approach, promoting direct interaction through comments and user-generated content.",
+        "issues": [],
+        "reason": "The passage states Madewell adopts a conversational approach and promotes direct interaction."
+      },
+      {
+        "claim_id": "C15",
+        "verdict": "supported",
+        "passage_ids": [
+          "P9"
+        ],
+        "quote": "Platforms like Instagram showcase user-generated content and brand storytelling.",
+        "issues": [],
+        "reason": "The passage states Instagram showcases user-generated content and brand storytelling."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-23T00:07:32+00:00",
+  "audit_sha256": "643ff0e7302c528b2ab9548ffd3c330c912ee41a229c789deb75d746a038cb41",
+  "dismissed_reviewer_flags": []
+}

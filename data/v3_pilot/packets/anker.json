@@ -1,0 +1,1633 @@
+{
+  "schema_version": "brandpilot.packet.v3",
+  "company": {
+    "company_id": "anker",
+    "display_name": "Anker",
+    "legacy_name": "Anker",
+    "category": "mobile charging electronics",
+    "official_domains": [
+      "anker.com"
+    ],
+    "identity_status": "verified",
+    "registry_version": "2026-11-22.v3",
+    "registry_sha256": "cc9ab39277bffb4c0aa0b59df8db2e7fec12da7955a58651370daf2936495a16"
+  },
+  "collection": {
+    "mode": "legacy_cache_replay",
+    "collector_version": "brandpilot-collector-0.3",
+    "created_at": "2026-11-22T20:36:35+00:00",
+    "queries": [
+      "\"Anker\" instagram marketing campaign target audience",
+      "\"Anker\" social media strategy brand positioning",
+      "\"Anker\" marketing campaign press release instagram",
+      "\"Anker\" customer audience brand story",
+      "\"Anker\" about us brand values audience",
+      "\"Anker\" newsroom marketing campaign",
+      "\"Anker\" brand campaign case study"
+    ],
+    "notes": [
+      "replayed from legacy packet anker-research-packet.json (sha256 ed3fce030070c460)",
+      "documents are legacy cached extractions; no new fetches were made"
+    ]
+  },
+  "leads": [
+    {
+      "company_id": "anker",
+      "query": "\"Anker\" about us brand values audience",
+      "url": "https://ankergroup.org/about-us/",
+      "title": "About Us – Anker Group",
+      "snippet": "Anker makes life simpler and smarter for millions of people worldwide. We design reliable, high quality products so everyone enjoys a better experience with technology. Anker was born in 2011 with one simple but big goal: smart technology, high in quality and worthy of trust.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "anker",
+      "query": "\"Anker\" about us brand values audience",
+      "url": "https://www.store.anker.com/about",
+      "title": "About Us - store.anker.com",
+      "snippet": "Discover AnkerNordics: your trusted Nordic source for innovative charging and audio technology. Learn about our mission, values, and commitment to quality.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "anker",
+      "query": "\"Anker\" customer audience brand story",
+      "url": "https://www.anker-in.com/story",
+      "title": "Our Story - Anker Innovations",
+      "snippet": "Discover the story behind Anker Innovations. Since 2011, we have grown into a globally recognized consumer electronics brand.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "anker",
+      "query": "\"Anker\" marketing campaign press release instagram",
+      "url": "https://www.anker.com/news",
+      "title": "news - Anker US",
+      "snippet": "Jan 8, 2024 · Discover Anker and shop chargers, batteries, hubs, docks, portable power stations, conferencing gear, and more.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "anker",
+      "query": "\"Anker\" instagram marketing campaign target audience",
+      "url": "https://www.stride-social.com/case-studies/anker",
+      "title": "Anker marketing campaign by Stride Social",
+      "snippet": "This approach effectively targeted their desired audience, enhancing both sales and brand visibility. The influencers produced detailed content, highlighting the features and benefits of Anker's products.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "anker",
+      "query": "\"Anker\" about us brand values audience",
+      "url": "https://www.anker.com/ca/about-us",
+      "title": "Our Story - anker.com",
+      "snippet": "To build a playground where Makers inspire Makers, creating a brand that the world desires. Since 2011, Anker has grown from a single product category into a global smart hardware technology company with businesses in charging, energy, smart home, audio and video, and creative tools.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "anker",
+      "query": "\"Anker\" customer audience brand story",
+      "url": "https://www.anker.com/ca/ourstory",
+      "title": "Our Story - Anker",
+      "snippet": "To fulfill this mission, our charging brand Anker pioneered PowerIQ™ technology for universal fast-charging compatibility, introduced gallium nitride (GaN) to consumer electronics, and ushered in the era of fast charging.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "anker",
+      "query": "\"Anker\" about us brand values audience",
+      "url": "https://www.anker.com/about-us",
+      "title": "Anker Innovations - Anker US - Anker",
+      "snippet": "Anker Innovations We are charging experts and innovators of smart devices for entertainment, travel, and smart homes. This innovation is being led by our 4 key brands: Anker is the global leader in charging technology. This includes wireless charging, car charging, and our best-selling portable and wall chargers.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    }
+  ],
+  "documents": [
+    {
+      "source_id": "S-36514d3dd738",
+      "company_id": "anker",
+      "requested_url": "https://ankergroup.org/about-us/",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "d6136196f5d358e2009f973361e821712690215642d950bfedbdcec3ad1cb0c2",
+      "text_path": "text/d6136196f5d358e2009f973361e821712690215642d950bfedbdcec3ad1cb0c2.txt",
+      "raw_path": null,
+      "text_chars": 1813,
+      "redirect_chain": [],
+      "identity_decision": "third_party_confirmed",
+      "identity_reason": "2 name mention(s) co-occur with mobile charging electronics terms",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file ac2ecb84fb0a7bee122e9371118bde3221d41108539a9c3bc43b680abd641887.json sha256=8f8131da1fba0b1a59767530d7514ed65123dacf3d735f3cd0f3a310ad5c421d",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-3d09cb613bca",
+      "company_id": "anker",
+      "requested_url": "https://www.store.anker.com/about",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "extraction_failed",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "20627216c15b390ffbe66abe4f1ce7d3b8769431891e69f194721b0a873386ec",
+      "text_path": "text/20627216c15b390ffbe66abe4f1ce7d3b8769431891e69f194721b0a873386ec.txt",
+      "raw_path": null,
+      "text_chars": 59,
+      "redirect_chain": [],
+      "identity_decision": "not_assessed",
+      "identity_reason": "document status extraction_failed",
+      "errors": [
+        "extracted text shorter than 200 characters"
+      ],
+      "provenance_notes": [
+        "legacy cache file 2c0a8ff5c9ab5973f242866005fa4d78d07d43bbff0dcce296a810dbb7554d84.json sha256=e8e2bf3fe9e41934bff40088a175c8c0fa3f165cd6bf0f5ba0a8cc4754c05293",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-0893c1828596",
+      "company_id": "anker",
+      "requested_url": "https://www.anker-in.com/story",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "c54c880d3c3c8fee00a8dc31335687c15b81539ff593c2ba1ce679320382366f",
+      "text_path": "text/c54c880d3c3c8fee00a8dc31335687c15b81539ff593c2ba1ce679320382366f.txt",
+      "raw_path": null,
+      "text_chars": 10143,
+      "redirect_chain": [],
+      "identity_decision": "third_party_confirmed",
+      "identity_reason": "8 name mention(s) co-occur with mobile charging electronics terms",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 08677432b9b9070ab973071217250399f5d5bda76ce91345661ecfc316be05e5.json sha256=ca91068948d043bea539b82ba14752997d5aba7a3a670bb3861a17205d8dedb6",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-30f172c44332",
+      "company_id": "anker",
+      "requested_url": "https://www.anker.com/news",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "a36733c7fd2711e53d003110492bcc23fa4a1e4d61f0f2470a776c21de6a2a5f",
+      "text_path": "text/a36733c7fd2711e53d003110492bcc23fa4a1e4d61f0f2470a776c21de6a2a5f.txt",
+      "raw_path": null,
+      "text_chars": 3085,
+      "redirect_chain": [],
+      "identity_decision": "official_domain",
+      "identity_reason": "host anker.com is an official domain",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 596c167d0b8f364628f16bd611666e92f723e9309ce246df5c0909ea6c36505f.json sha256=3371b3d5ff7d9eb5cababbdc567aa7f2f68df01e536b12ca76499de63cb74970",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-7e10d6aeb05e",
+      "company_id": "anker",
+      "requested_url": "https://www.stride-social.com/case-studies/anker",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "401b077e1a4f82d1c668affc44eca8657da79f03b5d011de7c74395028985675",
+      "text_path": "text/401b077e1a4f82d1c668affc44eca8657da79f03b5d011de7c74395028985675.txt",
+      "raw_path": null,
+      "text_chars": 3068,
+      "redirect_chain": [],
+      "identity_decision": "third_party_confirmed",
+      "identity_reason": "6 name mention(s) co-occur with mobile charging electronics terms",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file d028ad134d8d82e09f1da551194620a2f6b5824ad8ba783b7a67df1a5142df97.json sha256=a0e7d8362e8aaca615d2845f91f6565bef57a9261209d5fad6e53d45899c3607",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-5f16ea152da5",
+      "company_id": "anker",
+      "requested_url": "https://www.anker.com/ca/about-us",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "9a5acce4b06182c6d3f85043bbcd1e95e0ecf36d9164f050352882a1522a816f",
+      "text_path": "text/9a5acce4b06182c6d3f85043bbcd1e95e0ecf36d9164f050352882a1522a816f.txt",
+      "raw_path": null,
+      "text_chars": 15275,
+      "redirect_chain": [],
+      "identity_decision": "official_domain",
+      "identity_reason": "host anker.com is an official domain",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 4a5fbed6f1b5ff4cd1ad54fb4ae6606832bf344fc60eec5bcd7c2070a1d211cc.json sha256=1a701f35b147f2c7d1521c145b4f97fa952c02a40e98370fa448c8e0d4f03bac",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-b781ead6cd38",
+      "company_id": "anker",
+      "requested_url": "https://www.anker.com/about-us",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "b6310fc54d75adf607f2a9a5d123261fd7127c6ffa3f40ba3caec8246752203d",
+      "text_path": "text/b6310fc54d75adf607f2a9a5d123261fd7127c6ffa3f40ba3caec8246752203d.txt",
+      "raw_path": null,
+      "text_chars": 5720,
+      "redirect_chain": [],
+      "identity_decision": "official_domain",
+      "identity_reason": "host anker.com is an official domain",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file f44c8e5529c49516560174d0696a13782a25e47c2b1d5cacf30cc71646e949e5.json sha256=61c7c1d13308b14fbdbb1699acadd043463bb64a5b98dc806b9269d92f4f0322",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "passage_uid": "PU-96804feac7d963fa",
+      "source_id": "S-b781ead6cd38",
+      "char_start": 1347,
+      "char_end": 2015,
+      "text": "Green Innovation in Charging Technology Eco-friendly materials for a sustainable future. Our Milestones and Achievements 2025 2024 2023 2022 2020 2018 2015 2014 2013 2012 Unveiled GaNPrime™ 2.0, Anker's most advanced fast charging technology to date. World's first 250W GaN desktop charger. Anker officially launched its power storage sub-brand, Anker SOLIX. Introduced GaNPrime™ with multi-port high-power charging and dynamic power distribution. Became the world's No. 1 mobile charging brand. Became the First brand to adopt Gallium Nitride (GaN) chargers. Recognized by The Wall Street Journal as the dream multi‑device charger. Industry's first Amazon bestseller.",
+      "text_sha256": "1844521cba4bf4eb5e1cf7fea13c2220af51175c444fd8fb7a3c594bb06bf5ee",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "historical_activity",
+      "flags": [],
+      "dates_mentioned": [
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2018",
+        "2020",
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "relevance_terms": [
+        "brand",
+        "launch"
+      ],
+      "score": 17,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P1",
+      "source_url": "https://www.anker.com/about-us",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-ee7c7d08b0ef53f0",
+      "source_id": "S-b781ead6cd38",
+      "char_start": 2016,
+      "char_end": 2353,
+      "text": "Anker developed PowerIQ™ to deliver full-speed, cross-platform charging. Launched the first 4,500mAh ultra‑slim power bank. Anker's Charge to Sustainability Learn More ANKER SOLIX｜LIVE IN POWER Anker SOLIX F3800 Minimum Effort, Maximum Power Learn More Anker SOLIX X1 Power for the Extreme Learn More Explore. Connect. Engage with Anker.",
+      "text_sha256": "03d68a2ec8dd5e1e0fbf40382676ae757cfb978ce5db50440cf72da64a684fd3",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "actual_activity",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "launch"
+      ],
+      "score": 16,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P2",
+      "source_url": "https://www.anker.com/about-us",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-0c52b6034c281234",
+      "source_id": "S-7e10d6aeb05e",
+      "char_start": 1165,
+      "char_end": 1773,
+      "text": "Our objective with Anker is to promote multiple products to build brand awareness for both new and existing offerings. Execution: Given the nature of Anker's products, we collaborated with product review creators specialising in home and tech sub-niches. This approach effectively targeted their desired audience, enhancing both sales and brand visibility. The influencers produced detailed content, highlighting the features and benefits of Anker's products. Results: Over the last four months, this campaign achieved outstanding success. Generating over 12 million views, 845,000 likes, and 103,000 shares.",
+      "text_sha256": "346465113bf62ea40c1f530ce2c32c2bef3657abca6830a20ad5fe83ef79ce9f",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "audience",
+        "brand",
+        "campaign",
+        "collab",
+        "collaborat",
+        "content",
+        "creator",
+        "influencer"
+      ],
+      "score": 19,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P3",
+      "source_url": "https://www.stride-social.com/case-studies/anker",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-de9f11a3ed5ba694",
+      "source_id": "S-5f16ea152da5",
+      "char_start": 1905,
+      "char_end": 2081,
+      "text": "are defined as brands with more than 75% of retail sales coming from mobile phone charging ## products, including chargers, wireless chargers, power banks, and charging cables.",
+      "text_sha256": "9cb281bb0dcba36701b0a9297e1338e2f2509906173f606760f47c29832708cb",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "brand",
+        "retail"
+      ],
+      "score": 14,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P4",
+      "source_url": "https://www.anker.com/ca/about-us",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-3d8b3a07c04d4656",
+      "source_id": "S-5f16ea152da5",
+      "char_start": 3835,
+      "char_end": 4027,
+      "text": "¹ Data source: Euromonitor International (Shanghai) Co., Ltd., measured in terms of brands' ## retail sales value (USD million) globally in 2025. Plug-and-play solar battery storage is defined",
+      "text_sha256": "f9f9ef1f5a1d4394dc5e7378de07fa04ef24bf9e839de536621ee4ecb7b1c90a",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [
+        "2025"
+      ],
+      "relevance_terms": [
+        "brand",
+        "retail"
+      ],
+      "score": 14,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P5",
+      "source_url": "https://www.anker.com/ca/about-us",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-59fc3dd892eae169",
+      "source_id": "S-5f16ea152da5",
+      "char_start": 10403,
+      "char_end": 10697,
+      "text": "What Is Anker? Anker is the unified consumer brand of Anker Innovations. Our products are organized under five categories: Anker Charging, Anker SOLIX, Anker eufy, Anker soundcore, and Anker eufyMake. Five categories. One brand. One standard of quality and innovation behind everything we make.",
+      "text_sha256": "1c454a8508490eddeb3c4df1c0f62865d8513d8ee50c42f523ab249595636917",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "brand_positioning",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "brand"
+      ],
+      "score": 14,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P6",
+      "source_url": "https://www.anker.com/ca/about-us",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-916db15021171005",
+      "source_id": "S-b781ead6cd38",
+      "char_start": 2354,
+      "char_end": 3017,
+      "text": "General Inquiries support@anker.com Follow Us On Media and Partnerships Media Requests Student Inquiries Cooperate Requests General Inquiries support@anker.com Follow Us On Media and Partnerships Media Requests Student Inquiries Cooperate Requests Anker—Global Leader in Mobile Charging *Data is from Euromonitor International (Shanghai) Co., Ltd., measured in terms of retail value sales in 2020, 2021, 2022, and 2023, based on research completed in October 2024. *Pay immediately or installments with Affirm. Rates from 0-36% APR. Payment options through Affirm are subject to an eligibility check and are provided by these lending partners: affirm.com/lenders.",
+      "text_sha256": "fa13178a91ac15b0f4014106af1aa3a25aba1747f84a35c1776efe4e9afd9ffc",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "October 2024"
+      ],
+      "relevance_terms": [
+        "partner",
+        "retail"
+      ],
+      "score": 14,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P7",
+      "source_url": "https://www.anker.com/about-us",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-b7f6103aee4c1609",
+      "source_id": "S-30f172c44332",
+      "char_start": 0,
+      "char_end": 663,
+      "text": "Anker ChargingAnker SOLIXAnker eufyAnker eufyMakeAnker soundcore Anker Innovations Power Bank Charger Wireless Charger Cable AC Power Hubs & Docks Series Shop By Member Benefits Explore & Support Press Release *Pay immediately or installments with Affirm. Rates from 0-36% APR. Payment options through Affirm are subject to an eligibility check and are provided by these lending partners: affirm.com/lenders. Options depend on your purchase amount, and a down payment may be required. CA residents: Loans by Affirm Loan Services, LLC are made or arranged pursuant to a California Finance Lenders Law license. For licenses and disclosures, see affirm.com/licenses.",
+      "text_sha256": "d4a880022491a74f779e2ac1d111ee22dbdd4eb9d76473eb65468d338b26d228",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "partner"
+      ],
+      "score": 12,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P8",
+      "source_url": "https://www.anker.com/news",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-15ab2c0de67ef5a7",
+      "source_id": "S-7e10d6aeb05e",
+      "char_start": 1774,
+      "char_end": 2308,
+      "text": "These impressive metrics reflect the campaign's effectiveness in increasing brand awareness and engaging a wide audience for Anker's innovative tech products. Ultimately highlighting new products to their desired audience. ‍ At Stride Social we strive to bring the very best results to the brands we work with. Whether it's through our unique services or our hand-picked creator roster. Our expertise comes from our unique story and life experience in this space. If you would like to work with us on your campaign, then get in touch.",
+      "text_sha256": "8c523d0368f87a4b94924b2229e185dead6b1c783003a9382803468810a95994",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "audience",
+        "brand",
+        "campaign",
+        "creator"
+      ],
+      "score": 12,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P9",
+      "source_url": "https://www.stride-social.com/case-studies/anker",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-befb9f783018f000",
+      "source_id": "S-7e10d6aeb05e",
+      "char_start": 566,
+      "char_end": 1164,
+      "text": "Anker’s influencer campaign achieved staggering engagement through product review content. Campaign Views 12 Million+ Campaign Likes 845+ Total shares 103k+ Introduction: Anker's strategic influencer campaign with Stride Social amplified brand awareness and boosted engagement for their charging and battery products. Client Background: Anker is a leading global brand in phone and home technology. Renowned for providing high-quality accessories to charge a range of different tech products from phones to off-grid living appliances. Objectives: Anker has been a long-term client of Stride Social.",
+      "text_sha256": "711ec6d3d8e2ebb3333a4150cb5ac41ebf585d68a0380438e2cd11558a96661e",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "brand",
+        "campaign",
+        "content",
+        "influencer"
+      ],
+      "score": 11,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P10",
+      "source_url": "https://www.stride-social.com/case-studies/anker",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    }
+  ],
+  "rejected_passages": [
+    {
+      "passage_uid": "PU-67edaf8d4c2cf71e",
+      "source_id": "S-5f16ea152da5",
+      "char_start": 4394,
+      "char_end": 4548,
+      "selection_status": "rejected",
+      "reasons": [
+        "near_duplicate_of_selected_passage"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "² Data source: Euromonitor International (Shanghai) Co., Ltd., measured in terms of brands' ## retail sales value (USD million) globally in 2024 and 2025."
+    },
+    {
+      "passage_uid": "PU-d27ca9e916d4c61e",
+      "source_id": "S-5f16ea152da5",
+      "char_start": 11037,
+      "char_end": 11671,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Why did Anker adopt a unified brand structure? The unified structure makes one thing clearer: every product we create is backed by Anker. Anker eufy cameras, Anker soundcore earbuds, Anker SOLIX energ"
+    },
+    {
+      "passage_uid": "PU-d68bd63d250462d9",
+      "source_id": "S-5f16ea152da5",
+      "char_start": 12497,
+      "char_end": 13083,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "1 mobile charging brand based on retail sales value for six consecutive years: 2020 to 2025. Data source: Euromonitor International (Shanghai) Co., Ltd., measured by global retail sales value from 202"
+    },
+    {
+      "passage_uid": "PU-6837a4deae01df3e",
+      "source_id": "S-5f16ea152da5",
+      "char_start": 2100,
+      "char_end": 2394,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "historical_activity",
+      "preview": "may also be used with other consumer electronic devices. ## Anker eufy Anker eufy specializes in AI-driven smart living solutions. Since 2016, we have introduced a wide range of products, from home se"
+    },
+    {
+      "passage_uid": "PU-bd18b2b259c73e20",
+      "source_id": "S-5f16ea152da5",
+      "char_start": 281,
+      "char_end": 839,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Seek Ultimate. To build a playground where Makers inspire Makers, creating a brand that the world desires. ## One Anker, One Brand Since 2011, Anker has grown from a single product category into a glo"
+    },
+    {
+      "passage_uid": "PU-f4701ee471dba7af",
+      "source_id": "S-5f16ea152da5",
+      "char_start": 902,
+      "char_end": 1209,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Anker eufyMake: Creative Tools Five product categories. One unified brand. Today, Anker is building a connected platform guided by our commitment to Ultimate Innovation, bringing our technologies, pro"
+    },
+    {
+      "passage_uid": "PU-22c42762b6d7d58a",
+      "source_id": "S-5f16ea152da5",
+      "char_start": 1648,
+      "char_end": 1802,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "In terms of retail value sales from 2020 through 2025. ## ## Data source: Euromonitor International (Shanghai) Co., Ltd. Measured in terms of retail value"
+    },
+    {
+      "passage_uid": "PU-23aab39292dad44c",
+      "source_id": "S-5f16ea152da5",
+      "char_start": 2398,
+      "char_end": 2903,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "brand_positioning",
+      "preview": "Anker soundcore Anker soundcore is a global leader in audio and video, with more than 120 million products sold to over 75 million users worldwide. Through Ultimate Innovation, we make sound and visio"
+    },
+    {
+      "passage_uid": "PU-9d1bbe5269ddd58b",
+      "source_id": "S-5f16ea152da5",
+      "char_start": 4781,
+      "char_end": 5406,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Research completed in February 2026. ## Who We Are Anker is a global smart hardware technology company founded in 2011 and headquartered in Changsha, China. Dual-listed on the Shenzhen Stock Exchange "
+    },
+    {
+      "passage_uid": "PU-9f814f87410e0c4d",
+      "source_id": "S-5f16ea152da5",
+      "char_start": 10706,
+      "char_end": 11028,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Are Anker Charging, Anker SOLIX, Anker eufy, Anker soundcore, and Anker eufyMake separate ### ### brands? No. They are product categories under the unified Anker brand. Each represents a distinct area"
+    },
+    {
+      "passage_uid": "PU-35eac5418f80e54f",
+      "source_id": "S-5f16ea152da5",
+      "char_start": 11672,
+      "char_end": 11818,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "We take that trust seriously and will continue bringing the same focus on quality, innovation, and customer experience to the unified Anker brand."
+    },
+    {
+      "passage_uid": "PU-4a1bcda47878a215",
+      "source_id": "S-5f16ea152da5",
+      "char_start": 13084,
+      "char_end": 13610,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Payment options through Affirm are subject to an eligibility check and are provided by these lending partners:affirm.com/lenders. Options depend on your purchase amount, and a down payment may be requ"
+    },
+    {
+      "passage_uid": "PU-feba4ba59059476e",
+      "source_id": "S-30f172c44332",
+      "char_start": 664,
+      "char_end": 805,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "For example, an $800 purchase could be split into 12 monthly payments of $72.21 at 15% APR or 4 interest free payments of $200 every 2 weeks."
+    },
+    {
+      "passage_uid": "PU-63214f3a7af0b456",
+      "source_id": "S-5f16ea152da5",
+      "char_start": 0,
+      "char_end": 277,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "🔥 Black Friday Deals Anker Charging eufy Security eufy Clean eufy Baby soundcore Audio & Projector Scenario Business Support Explore 🔥 Black Friday Deals Anker Charging eufy Security eufy Clean eufy B"
+    },
+    {
+      "passage_uid": "PU-4fe342a5050f1596",
+      "source_id": "S-5f16ea152da5",
+      "char_start": 1230,
+      "char_end": 1643,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Anker Charging Anker Charging ranks No. 1 worldwide in mobile charging* and is a global leader in charging technology for everyday life, travel, and desktop use. We offer the best charging products an"
+    },
+    {
+      "passage_uid": "PU-0b3522300415020e",
+      "source_id": "S-5f16ea152da5",
+      "char_start": 2907,
+      "char_end": 3327,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Anker eufyMake Anker eufyMake is a global innovator in personal creative tools, pioneering the world's first personal UV printer and transforming digital ideas into tangible reality with 3D textures a"
+    },
+    {
+      "passage_uid": "PU-16d407edb7e73327",
+      "source_id": "S-5f16ea152da5",
+      "char_start": 4031,
+      "char_end": 4217,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "as a solar storage system designed for consumer self-installation, featuring integrated power ## management and storage components that enable users to complete setup and begin operation"
+    },
+    {
+      "passage_uid": "PU-9e42c0c9f0ea2adb",
+      "source_id": "S-5f16ea152da5",
+      "char_start": 4221,
+      "char_end": 4387,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "immediately at home via standard electrical connectors without requiring professional hard-wiring ## or certified electrical labour. Research completed in March 2026."
+    },
+    {
+      "passage_uid": "PU-4acd46396465a801",
+      "source_id": "S-5f16ea152da5",
+      "char_start": 4588,
+      "char_end": 4777,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "storage includes both all-in-one types with built-in micro inverters and standalone types ## connected to external inverters. Both types enable users to install and use immediately at home."
+    },
+    {
+      "passage_uid": "PU-12853fb2bb534760",
+      "source_id": "S-5f16ea152da5",
+      "char_start": 5907,
+      "char_end": 6040,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Think Long-Term-Delay Gratification with an Endgame /Mindset #### • Prioritize the Greater Good-Stay Grateful and See the Big Picture"
+    },
+    {
+      "passage_uid": "PU-5d149be096f68eed",
+      "source_id": "S-5f16ea152da5",
+      "char_start": 6397,
+      "char_end": 6530,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Think Long-Term-Delay Gratification with an Endgame /Mindset #### • Prioritize the Greater Good-Stay Grateful and See the Big Picture"
+    },
+    {
+      "passage_uid": "PU-00d22fdd47d30888",
+      "source_id": "S-5f16ea152da5",
+      "char_start": 6607,
+      "char_end": 7148,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Our Innovations Our research facilities are at the forefront of developing groundbreaking technologies that open up new industries. With specialized expertise in AI and robotics, multimodal algorithms"
+    },
+    {
+      "passage_uid": "PU-b7b2fbfe4b368163",
+      "source_id": "S-5f16ea152da5",
+      "char_start": 7156,
+      "char_end": 7337,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Smart Home Energy Management Conducting in-depth research on photovoltaic power generation and user electricity consumption models to optimize smart |home energy management systems."
+    },
+    {
+      "passage_uid": "PU-f5cece31863438d5",
+      "source_id": "S-5f16ea152da5",
+      "char_start": 7388,
+      "char_end": 7644,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Comprehensive Safety and Efficiency 03 Smart Home Energy Management ###### Smart Home Energy Management Conducting in-depth research on photovoltaic power generation and user electricity consumption m"
+    },
+    {
+      "passage_uid": "PU-859facd2a334857b",
+      "source_id": "S-5f16ea152da5",
+      "char_start": 7685,
+      "char_end": 7822,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Personalized Audio Experience Delivering intelligent noise cancellation tailored to diversse sound requirements across various scenarios."
+    },
+    {
+      "passage_uid": "PU-f5c903e2ca8fb5ea",
+      "source_id": "S-5f16ea152da5",
+      "char_start": 7869,
+      "char_end": 8054,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Comprehensive Safety and Efficiency Leveraging intelligent cognition and environmental perception to ensure all-weather, all-scenario safety, and efficient indopor and outdoor cleaning."
+    },
+    {
+      "passage_uid": "PU-065a6fd943b3a46c",
+      "source_id": "S-5f16ea152da5",
+      "char_start": 8138,
+      "char_end": 8287,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "We're proud to be consistently recognized as a leadingglobal smart hardware company, receiving #### numerous awards and honors across key categories."
+    },
+    {
+      "passage_uid": "PU-6592a790321607f1",
+      "source_id": "S-5f16ea152da5",
+      "char_start": 8326,
+      "char_end": 8456,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Driven by a forward-thinking culture, we continue to set the standard for excellence and #### innovation across our product lines."
+    },
+    {
+      "passage_uid": "PU-3b6015b507ae9a0d",
+      "source_id": "S-5f16ea152da5",
+      "char_start": 8480,
+      "char_end": 8801,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Yang Meng Founder, Executive Director and Chairman Mr. Yang earned his master's degree in Computer Science from the University of Texas at Austin, following his bachelor's degree in Computer Science f"
+    },
+    {
+      "passage_uid": "PU-f122d3aaaa422dc4",
+      "source_id": "S-5f16ea152da5",
+      "char_start": 8806,
+      "char_end": 9271,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Zhao Dongping Co-founder, Executive Director and President Prior to joining the Group, Mr. Zhao served as Product Sales Director and Senior Product Sales Manager at Dell (China) Co., Ltd., and as Gene"
+    },
+    {
+      "passage_uid": "PU-5e3a7f4cd6864fdd",
+      "source_id": "S-5f16ea152da5",
+      "char_start": 9276,
+      "char_end": 9590,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Zhu Fanghao Executive Director Prior to joining the Company, Mr. Zhu served as President of Coolpad's Internet and E-commerce Division and President of 360 Mobile. He has served as the General Manager"
+    },
+    {
+      "passage_uid": "PU-22f936794e14e924",
+      "source_id": "S-5f16ea152da5",
+      "char_start": 9595,
+      "char_end": 10047,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Xiong Kang Executive Director Prior to joining the Company, Mr. Xiong served as vice president of the Western Europe division, director of the transformation project office, and head of the corporate "
+    },
+    {
+      "passage_uid": "PU-71d3bc57196ae7fe",
+      "source_id": "S-5f16ea152da5",
+      "char_start": 10051,
+      "char_end": 10287,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Our Office Asia-Pacific CHINA JAPAN KOREA India Australia North America United States Canada Europe Netherlands United Kingdom Germany Middle East Saudi Arabia United Arab Emirates United States Canad"
+    },
+    {
+      "passage_uid": "PU-55e1d5a0a54df43e",
+      "source_id": "S-5f16ea152da5",
+      "char_start": 11827,
+      "char_end": 12496,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "What are the five categories under Anker? Anker Charging: Chargers, power banks, wireless chargers, cables, hubs, docks, charging stations, and accessories. Anker SOLIX: Portable power stations, home "
+    },
+    {
+      "passage_uid": "PU-35c66cd018cb62e5",
+      "source_id": "S-b781ead6cd38",
+      "char_start": 0,
+      "char_end": 682,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Anker ChargingAnker SOLIXAnker eufyAnker eufyMakeAnker soundcore Anker Innovations Power Bank Charger Wireless Charger Cable AC Power Hubs & Docks Series Shop By Member Benefits Explore & Support Powe"
+    },
+    {
+      "passage_uid": "PU-5a6134f021b84b17",
+      "source_id": "S-b781ead6cd38",
+      "char_start": 683,
+      "char_end": 1346,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "TurboBoost™ Anker’s First Ultra‑Fast Power Bank Recharging Technology via Charging Base**. Leading with Design Immerse Yourself in Visual Excellence Industry-leading ultra-thin protective films for ex"
+    },
+    {
+      "passage_uid": "PU-0d21552b922c94ba",
+      "source_id": "S-b781ead6cd38",
+      "char_start": 3018,
+      "char_end": 3414,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Options depend on your purchase amount, and a down payment may be required. CA residents: Loans by Affirm Loan Services, LLC are made or arranged pursuant to a California Finance Lenders Law license. "
+    },
+    {
+      "passage_uid": "PU-6fac0d931014fda1",
+      "source_id": "S-0893c1828596",
+      "char_start": 383,
+      "char_end": 685,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "brand_positioning",
+      "preview": "Our Story Ignite Possibilities Through Ultimate Innovation ## A Global Smart Hardware Technology Company Driven by Ultimate Innovation Anker Innovations' mission is to ignite possibilities through ult"
+    },
+    {
+      "passage_uid": "PU-6ad9519f2c6c0f0f",
+      "source_id": "S-36514d3dd738",
+      "char_start": 187,
+      "char_end": 726,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "brand_positioning",
+      "preview": "Our Story Anker was born in 2011 with one simple but big goal: smart technology, high in quality and worthy of trust. We started as a small team of passionate engineers and designers, and today we are"
+    },
+    {
+      "passage_uid": "PU-b8ecce886f3ee42e",
+      "source_id": "S-0893c1828596",
+      "char_start": 839,
+      "char_end": 1309,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Anker Innovations Anker is a global smart hardware technology company founded in 2011 and headquartered in Changsha, China. Dual-listed on the Shenzhen Stock Exchange (300866) and the Hong Kong Stock "
+    },
+    {
+      "passage_uid": "PU-6ec69936f99df860",
+      "source_id": "S-36514d3dd738",
+      "char_start": 730,
+      "char_end": 995,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Our Growth Path 1. 2011 Anker founded, focused on mobile chargers 2. 2013 Range grows and enters global markets 3. 2016 Sub-brands Soundcore, Eufy and Nebula arrive 4. 2020 New technology across Sound"
+    },
+    {
+      "passage_uid": "PU-47da5438d8c26a5f",
+      "source_id": "S-5f16ea152da5",
+      "char_start": 3331,
+      "char_end": 3831,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:ambiguous_entity"
+      ],
+      "identity_reason": "possible different entity: Anker SOLIX",
+      "statement_type": "descriptive",
+      "preview": "Anker SOLIX Anker SOLIX is a global leader in the smart energy category, delivering reliable, accessible, and sustainable solutions for every household. We serve homeowners, RV enthusiasts, and off-gr"
+    },
+    {
+      "passage_uid": "PU-2a435551d797334b",
+      "source_id": "S-7e10d6aeb05e",
+      "char_start": 2362,
+      "char_end": 2549,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Stride Social have been amazing to work with! Not only do they give creators freedom and ##### flexibility, but they are also fun to work with. Looking forward to many years collaborating"
+    },
+    {
+      "passage_uid": "PU-f89bc1238de9df7f",
+      "source_id": "S-7e10d6aeb05e",
+      "char_start": 2674,
+      "char_end": 2933,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Temu Stride Ahead with Influencer Marketing. Let’s Work Together. Start a campaignJOIN STRIDE TALENT Stride Social company logo in black text.QR code with WeChat logo and Chinese text prompting to sea"
+    },
+    {
+      "passage_uid": "PU-917f8391eaace689",
+      "source_id": "S-0893c1828596",
+      "char_start": 1611,
+      "char_end": 1756,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "brand_positioning",
+      "preview": "Vision To build a playground where makers inspire makers, To create a brand that the world desires. ## Our Values First Principle First Principle"
+    },
+    {
+      "passage_uid": "PU-d75fc23610c99fe4",
+      "source_id": "S-36514d3dd738",
+      "char_start": 0,
+      "char_end": 183,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "About us ANKER Anker makes life simpler and smarter for millions of people worldwide. We design reliable, high quality products so everyone enjoys a better experience with technology."
+    },
+    {
+      "passage_uid": "PU-4ffec0df6fdc057c",
+      "source_id": "S-0893c1828596",
+      "char_start": 4333,
+      "char_end": 4563,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Enhanced Viewing and Security Quickly establishing optimal viewing environments, providing virtual security concierge services, and offering high-precision 3D positioning, obstacle avoidance and mappi"
+    },
+    {
+      "passage_uid": "PU-df04206c7081f134",
+      "source_id": "S-0893c1828596",
+      "char_start": 4750,
+      "char_end": 4980,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Enhanced Viewing and Security Quickly establishing optimal viewing environments, providing virtual security concierge services, and offering high-precision 3D positioning, obstacle avoidance and mappi"
+    },
+    {
+      "passage_uid": "PU-8a09ce8ba5a47409",
+      "source_id": "S-36514d3dd738",
+      "char_start": 1159,
+      "char_end": 1334,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Global Presence, Real Impact 100+ Countries Global presence 80M+ Happy users Across the world 146+ International awards For innovation and quality 10+ Sub-brands In technology"
+    },
+    {
+      "passage_uid": "PU-c4ca0e5fcc323825",
+      "source_id": "S-36514d3dd738",
+      "char_start": 1338,
+      "char_end": 1621,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "brand_positioning",
+      "preview": "Our Values Sustainability Responsible towards the planet and society. Innovation Always looking for new ways to improve life. Endless Quality Products built to very high standards. User Focused The ne"
+    },
+    {
+      "passage_uid": "PU-32b759df38f6a09b",
+      "source_id": "S-7e10d6aeb05e",
+      "char_start": 249,
+      "char_end": 538,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Vector icon of a house with a checkmark indicating home verification or approval. Instagram logo. Instagram logo. Three interlinked white circular arrows forming a continuous loop on a dark background"
+    },
+    {
+      "passage_uid": "PU-13dfbe38de6cd76c",
+      "source_id": "S-0893c1828596",
+      "char_start": 1314,
+      "char_end": 1482,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:ambiguous_entity",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "possible different entity: Anker Innovations Anker",
+      "statement_type": "descriptive",
+      "preview": "Anker Innovations Anker Innovations was founded by CEO Steven Yang. The company is headquartered in Changsha, Hunan, China, and operates more than 50 offices worldwide."
+    },
+    {
+      "passage_uid": "PU-d18792a684f63249",
+      "source_id": "S-0893c1828596",
+      "char_start": 1931,
+      "char_end": 2132,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Aim for Long-Term Globally Optimal Outcomes Grow Together Grow Together • Think Long-Term—Delay Gratification with an Endgame Mindset • Prioritize the Greater Good—Stay Grateful and See the Big Pictur"
+    },
+    {
+      "passage_uid": "PU-a07f04c3ce5171dd",
+      "source_id": "S-0893c1828596",
+      "char_start": 2402,
+      "char_end": 2603,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Aim for Long-Term Globally Optimal Outcomes Grow Together Grow Together • Think Long-Term—Delay Gratification with an Endgame Mindset • Prioritize the Greater Good—Stay Grateful and See the Big Pictur"
+    },
+    {
+      "passage_uid": "PU-e1e03198c4067f38",
+      "source_id": "S-0893c1828596",
+      "char_start": 2670,
+      "char_end": 3053,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Our Innovations Our research facilities are at the forefront of developing groundbreaking technologies that open up new industries. With specialized expertise in AI and robotics, multimodal algorithms"
+    },
+    {
+      "passage_uid": "PU-ede56f570017a978",
+      "source_id": "S-0893c1828596",
+      "char_start": 3121,
+      "char_end": 3301,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Smart Home Energy Management Conducting in-depth research on photovoltaic power generation and user electricity consumption models to optimize smart home energy management systems."
+    },
+    {
+      "passage_uid": "PU-bc3d589227b920d8",
+      "source_id": "S-0893c1828596",
+      "char_start": 3306,
+      "char_end": 3442,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Personalized Audio Experience Delivering intelligent noise cancellation tailored to diverse sound requirements across various scenarios."
+    },
+    {
+      "passage_uid": "PU-4ffa2758d71e3e5f",
+      "source_id": "S-0893c1828596",
+      "char_start": 3447,
+      "char_end": 3631,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Comprehensive Safety and Efficiency Leveraging intelligent cognition and environmental perception to ensure all-weather, all-scenario safety, and efficient indoor and outdoor cleaning."
+    },
+    {
+      "passage_uid": "PU-e4f36c62b2ceea4a",
+      "source_id": "S-0893c1828596",
+      "char_start": 3636,
+      "char_end": 3816,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Smart Home Energy Management Conducting in-depth research on photovoltaic power generation and user electricity consumption models to optimize smart home energy management systems."
+    },
+    {
+      "passage_uid": "PU-930fa53a8d4e6836",
+      "source_id": "S-0893c1828596",
+      "char_start": 3821,
+      "char_end": 3957,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Personalized Audio Experience Delivering intelligent noise cancellation tailored to diverse sound requirements across various scenarios."
+    },
+    {
+      "passage_uid": "PU-426b369f8a492553",
+      "source_id": "S-0893c1828596",
+      "char_start": 3962,
+      "char_end": 4146,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Comprehensive Safety and Efficiency Leveraging intelligent cognition and environmental perception to ensure all-weather, all-scenario safety, and efficient indoor and outdoor cleaning."
+    },
+    {
+      "passage_uid": "PU-460021bd7a52e4ac",
+      "source_id": "S-0893c1828596",
+      "char_start": 4151,
+      "char_end": 4328,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Adaptive Intelligence Focusing on user needs by recognizing and understanding rich situational information, adapting to different environments, and making intelligent decisions."
+    },
+    {
+      "passage_uid": "PU-fa4f27d94e248575",
+      "source_id": "S-0893c1828596",
+      "char_start": 4568,
+      "char_end": 4745,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Adaptive Intelligence Focusing on user needs by recognizing and understanding rich situational information, adapting to different environments, and making intelligent decisions."
+    },
+    {
+      "passage_uid": "PU-4f07457d503b32d9",
+      "source_id": "S-0893c1828596",
+      "char_start": 5135,
+      "char_end": 5328,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Efficient Wireless Charging Overcoming traditional charging limitations to achieve efficient wireless charging over more expansive areas, enabling seamless, in-use charging throughout the home."
+    },
+    {
+      "passage_uid": "PU-7e6283b5fb09ccf1",
+      "source_id": "S-0893c1828596",
+      "char_start": 5333,
+      "char_end": 5523,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Revolutionary Enhancements Pioneering advancements in noise reduction, sound clarity, image perception, projection brightness, spatial sound field coverage, and cleaning precision and depth."
+    },
+    {
+      "passage_uid": "PU-70c3cb2f5ead95bc",
+      "source_id": "S-0893c1828596",
+      "char_start": 5678,
+      "char_end": 5871,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Efficient Wireless Charging Overcoming traditional charging limitations to achieve efficient wireless charging over more expansive areas, enabling seamless, in-use charging throughout the home."
+    },
+    {
+      "passage_uid": "PU-a438833104918243",
+      "source_id": "S-0893c1828596",
+      "char_start": 5876,
+      "char_end": 6066,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Revolutionary Enhancements Pioneering advancements in noise reduction, sound clarity, image perception, projection brightness, spatial sound field coverage, and cleaning precision and depth."
+    },
+    {
+      "passage_uid": "PU-27241c60ecfdda28",
+      "source_id": "S-0893c1828596",
+      "char_start": 6070,
+      "char_end": 6283,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Awards and Recognitions Award-Winning Global Smart Hardware Company We're proud to be consistently recognized as a leading global smart hardware company, receiving numerous awards and honors across ke"
+    },
+    {
+      "passage_uid": "PU-7ab0b1c9ee85c3f7",
+      "source_id": "S-0893c1828596",
+      "char_start": 6284,
+      "char_end": 6815,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Visionary Product Innovation Driven by a forward-thinking culture, we continue to set the standard for excellence and innovation across our product lines. [object Object] Award-Winning Global Smart Ha"
+    },
+    {
+      "passage_uid": "PU-71aabee4c20ff47a",
+      "source_id": "S-0893c1828596",
+      "char_start": 6865,
+      "char_end": 7187,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Yang Meng Founder, Executive Director and Chairman Mr. Yang earned his master's degree in Computer Science from the University of Texas at Austin, following his bachelor's degree in Computer Science f"
+    },
+    {
+      "passage_uid": "PU-0910b8d0efd061ea",
+      "source_id": "S-0893c1828596",
+      "char_start": 7217,
+      "char_end": 7682,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Zhao Dongping Co-founder, Executive Director and President Prior to joining the Group, Mr. Zhao served as Product Sales Director and Senior Product Sales Manager at Dell (China) Co., Ltd., and as Gene"
+    },
+    {
+      "passage_uid": "PU-891fbe5c3eb0fc5f",
+      "source_id": "S-0893c1828596",
+      "char_start": 7687,
+      "char_end": 8195,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Zhang Shanfeng Non-executive Director Prior to joining the Company, Mr. Zhang served as Sales Manager, Head of the Greater China Region and Head of the Greater China and South Korea Region at Google I"
+    },
+    {
+      "passage_uid": "PU-3067014c36e83c19",
+      "source_id": "S-0893c1828596",
+      "char_start": 8200,
+      "char_end": 8514,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Zhu Fanghao Executive Director Prior to joining the Company, Mr. Zhu served as President of Coolpad's Internet and E-commerce Division and President of 360 Mobile. He has served as the General Manager"
+    },
+    {
+      "passage_uid": "PU-d6b888633cdabd25",
+      "source_id": "S-0893c1828596",
+      "char_start": 8519,
+      "char_end": 8971,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Xiong Kang Executive Director Prior to joining the Company, Mr. Xiong served as vice president of the Western Europe division, director of the transformation project office, and head of the corporate "
+    },
+    {
+      "passage_uid": "PU-7354bad257c27416",
+      "source_id": "S-0893c1828596",
+      "char_start": 8975,
+      "char_end": 9229,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Our Offices Asia Pacific CHINA JAPAN KOREA INDIA AUSTRALIA North America UNITED STATES CANADA Europe NETHERLANDS UNITED KINGDOM GERMANY Middle East SAUDI ARABIA UNITED ARAB EMIRATES UNITED STATES CANA"
+    },
+    {
+      "passage_uid": "PU-a5d14ac5a3b8440a",
+      "source_id": "S-36514d3dd738",
+      "char_start": 999,
+      "char_end": 1155,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Innovation in Every Product With constant investment in research and development, we create products that make your digital life better, faster and smarter."
+    },
+    {
+      "passage_uid": "PU-fa62685c377bc101",
+      "source_id": "S-36514d3dd738",
+      "char_start": 1650,
+      "char_end": 1787,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "ANKER ANKER ANKER SupportOnline · we are here to help Hi there! 👋Send us a message and our team will answer you here as soon as possible."
+    }
+  ],
+  "status": "ok",
+  "status_reasons": [],
+  "packet_sha256": "f2c692121153988ec75afb7207c51f88b472faaaa8a2e6fa68ff901ea60f1af3"
+}

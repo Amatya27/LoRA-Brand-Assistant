@@ -1,0 +1,97 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "tracksmith",
+  "bound_to": {
+    "packet_sha256": "750335192f50ce9f3f4b127db50116e06c3bbfbad126f92db63b3416793a1248",
+    "prompt_sha256": "dd0dc18c47c3e211021ca327d11df601c33e45000d371c69b1adf9e5b266597f",
+    "completion_sha256": "a97384f5a91fc4250fbd8693bacadf43c10c872120e331c640ca4dadac478902",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": []
+  },
+  "raw_response_sha256": "db6a38bf463292b0501bc4d1352b15662c5242d053de360c68cf504b22b3d290",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Tracksmith was founded in New England.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states Tracksmith was founded in New England.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Our first permanent retail store, the Trackhouse is a community hub for runners.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states the Trackhouse is a community hub for runners.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"Tracksmith running gear stands apart from the mainstream in three ways: aesthetics, community, and philosophy.\",\n      \"issues\": [],\n      \"reason\": \"The passage states Tracksmith's gear is different in aesthetics, community, and philosophy.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"the brand operates more like a running club than a retailer, with group runs, events, and a no-professional-sponsorship policy.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes Tracksmith's operations as similar to a running club.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P10\"\n      ],\n      \"quote\": \"We honor the Amateur Spirit upon which the sport was founded and champion the Running Class – the non-professional yet competitive runners dedicated to the pursuit of personal excellence.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes Tracksmith's ethos as honoring the Amateur Spirit and championing the Running Class.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"The brand’s running club, Hare A.C., formalises the community dimension.\",\n      \"issues\": [],\n      \"reason\": \"The passage mentions Tracksmith's running club, Hare A.C.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Tracksmith was founded in New England.",
+        "issues": [],
+        "reason": "The passage explicitly states Tracksmith was founded in New England."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Our first permanent retail store, the Trackhouse is a community hub for runners.",
+        "issues": [],
+        "reason": "The passage directly states the Trackhouse is a community hub for runners."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "Tracksmith running gear stands apart from the mainstream in three ways: aesthetics, community, and philosophy.",
+        "issues": [],
+        "reason": "The passage states Tracksmith's gear is different in aesthetics, community, and philosophy."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "the brand operates more like a running club than a retailer, with group runs, events, and a no-professional-sponsorship policy.",
+        "issues": [],
+        "reason": "The passage describes Tracksmith's operations as similar to a running club."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P10"
+        ],
+        "quote": "We honor the Amateur Spirit upon which the sport was founded and champion the Running Class – the non-professional yet competitive runners dedicated to the pursuit of personal excellence.",
+        "issues": [],
+        "reason": "The passage describes Tracksmith's ethos as honoring the Amateur Spirit and championing the Running Class."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "The brand’s running club, Hare A.C., formalises the community dimension.",
+        "issues": [],
+        "reason": "The passage mentions Tracksmith's running club, Hare A.C."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-23T00:22:05+00:00",
+  "audit_sha256": "2f168a135a07cbb174e43edec442f1fcc29b5fcf89cea099fe017ac0ffbeb22a",
+  "dismissed_reviewer_flags": []
+}

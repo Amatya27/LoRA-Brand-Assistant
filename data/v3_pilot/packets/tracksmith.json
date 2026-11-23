@@ -1,0 +1,1585 @@
+{
+  "schema_version": "brandpilot.packet.v3",
+  "company": {
+    "company_id": "tracksmith",
+    "display_name": "Tracksmith",
+    "legacy_name": "Tracksmith",
+    "category": "running apparel",
+    "official_domains": [
+      "tracksmith.com"
+    ],
+    "identity_status": "verified",
+    "registry_version": "2026-11-22.v3",
+    "registry_sha256": "cc9ab39277bffb4c0aa0b59df8db2e7fec12da7955a58651370daf2936495a16"
+  },
+  "collection": {
+    "mode": "legacy_cache_replay",
+    "collector_version": "brandpilot-collector-0.3",
+    "created_at": "2026-11-22T20:36:47+00:00",
+    "queries": [
+      "\"Tracksmith\" instagram marketing campaign target audience",
+      "\"Tracksmith\" social media strategy brand positioning",
+      "\"Tracksmith\" marketing campaign press release instagram",
+      "\"Tracksmith\" customer audience brand story",
+      "\"Tracksmith\" about us brand values audience",
+      "\"Tracksmith\" newsroom marketing campaign",
+      "\"Tracksmith\" brand campaign case study"
+    ],
+    "notes": [
+      "replayed from legacy packet tracksmith-research-packet.json (sha256 527918595fb53d83)",
+      "documents are legacy cached extractions; no new fetches were made"
+    ]
+  },
+  "leads": [
+    {
+      "company_id": "tracksmith",
+      "query": "\"Tracksmith\" customer audience brand story",
+      "url": "https://www.tracksmith.com/fk/pages/about",
+      "title": "About Us | Performance Running Apparel and Gear | Tracksmith",
+      "snippet": "We are small, so we need to be nimbler, quicker and craftier. When we started Tracksmith, we commissioned British illustrator Gary Chalk to create the original hand-drawn illustration of our hare. We affectionately named him, “Eliot,” as a tribute to the legendary Eliot Lounge in Boston.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "tracksmith",
+      "query": "\"Tracksmith\" marketing campaign press release instagram",
+      "url": "https://adlibrary.com/brands/tracksmith",
+      "title": "Tracksmith Ads Library - Analyze Top Facebook & Instagram Ads",
+      "snippet": "Discover Tracksmith's best-performing ads. Analyze their Facebook, Instagram, and TikTok creative strategies and campaign insights.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "tracksmith",
+      "query": "\"Tracksmith\" newsroom marketing campaign",
+      "url": "https://www.brandsninja.com/brands/tracksmith",
+      "title": "tracksmith Email Newsletters & Marketing Campaigns",
+      "snippet": "Aug 26, 2026 · Discover the latest email newsletters, marketing campaigns, deals, and updates from tracksmith. Browse tracksmith's email marketing strategies and design inspiration.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "tracksmith",
+      "query": "\"Tracksmith\" customer audience brand story",
+      "url": "https://hill.camp/tracksmith-running/",
+      "title": "Tracksmith Running: The Brand Story Behind America’s Most ...",
+      "snippet": "Discover the Tracksmith brand story: how Matt Taylor built America's most distinctive running brand from a Boston garage into a global cult label for serious amateur runners.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "tracksmith",
+      "query": "\"Tracksmith\" about us brand values audience",
+      "url": "https://help.tracksmith.com/en-US/articles/about-tracksmith-115924",
+      "title": "About Tracksmith",
+      "snippet": "Tracksmith is an independent running brand. We honor the Amateur Spirit upon which the sport was founded and champion the Running Class – the non-professional yet competitive runners dedicated to the pursuit of personal excellence.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "tracksmith",
+      "query": "\"Tracksmith\" about us brand values audience",
+      "url": "https://help.tracksmith.com/en-US/who-are-we-415087",
+      "title": "Who Are We? - Tracksmith",
+      "snippet": "Tracksmith is an independent running brand. We honor the Amateur Spirit upon which the sport was founded and champion the Running Class – the non-professional yet competitive runners dedicated to the pursuit of personal excellence.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "tracksmith",
+      "query": "\"Tracksmith\" about us brand values audience",
+      "url": "https://www.tracksmith.com/",
+      "title": "Performance Running Gear, Apparel, and Accessories | Tracksmith",
+      "snippet": "Tracksmith is an independent running company that celebrates the competitive spirit. Shop premium running equipment for racing, training and all conditions.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "tracksmith",
+      "query": "\"Tracksmith\" brand campaign case study",
+      "url": "https://www.outerboxdesign.com/work/case-studies/applying-machine-learning-to-product-listing-ads-maximizes-social-roas/",
+      "title": "Tracksmith Paid Social Case Study | 246% ROAS Growth - OuterBox",
+      "snippet": "Tracksmith wanted stronger Meta campaign performance without giving up the creative consistency behind its brand. We used an Advantage+ campaign with Dynamic Product Ads, informed by paid search results, to focus on high-performing product groups.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    }
+  ],
+  "documents": [
+    {
+      "source_id": "S-e95e835b4452",
+      "company_id": "tracksmith",
+      "requested_url": "https://www.tracksmith.com/fk/pages/about",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "9fe94bcb36b7f961d76d9b43462355a7524a423be3592758ce84777d2cc7d7ca",
+      "text_path": "text/9fe94bcb36b7f961d76d9b43462355a7524a423be3592758ce84777d2cc7d7ca.txt",
+      "raw_path": null,
+      "text_chars": 4506,
+      "redirect_chain": [],
+      "identity_decision": "official_domain",
+      "identity_reason": "host tracksmith.com is an official domain",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 9488d93271a93456c19fa146dbceb9be9a43df73a55602922c7b90a5ddbd31e3.json sha256=60ecd8c001cc8f3b5a387b0ce5991ddae8bf3eacc3daa720c26b0fae0182c843",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-8bcb27b5741c",
+      "company_id": "tracksmith",
+      "requested_url": "https://adlibrary.com/brands/tracksmith",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "b37b37d5a83e63deeb4831afea0a8130064648d33fe101e8156b2aae78f9413e",
+      "text_path": "text/b37b37d5a83e63deeb4831afea0a8130064648d33fe101e8156b2aae78f9413e.txt",
+      "raw_path": null,
+      "text_chars": 5430,
+      "redirect_chain": [],
+      "identity_decision": "third_party_confirmed",
+      "identity_reason": "40 name mention(s) co-occur with running apparel terms",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file b6367e765b7f8a97a4fc88b110f49263b8c0b2b3a043536dd219e44bc5d7e513.json sha256=069f86de20ff3f75ec8dc4ac10297063e5c2466111e206b90073b557000995bb",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-0964eb5ce629",
+      "company_id": "tracksmith",
+      "requested_url": "https://www.brandsninja.com/brands/tracksmith",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "e2832ca17a00bc21f7b33a325b9c2c96552340296ed9fa56ec6fee228059c63f",
+      "text_path": "text/e2832ca17a00bc21f7b33a325b9c2c96552340296ed9fa56ec6fee228059c63f.txt",
+      "raw_path": null,
+      "text_chars": 13269,
+      "redirect_chain": [],
+      "identity_decision": "unconfirmed",
+      "identity_reason": "company name appears without its product category",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 222ea58ba13ff495cd9ffdb53a1888b736c7240e267d1ea98d38975f08ea0351.json sha256=7e0c0581dc40f5ae8e5e75ab663f20a73b058511e0a7e8697d35a89ea8297e71",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-bc298067d2b0",
+      "company_id": "tracksmith",
+      "requested_url": "https://hill.camp/tracksmith-running/",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "8675b395a0f00e3ac457a16763376373ea0a8c54d6a7922caa4d00f51280e008",
+      "text_path": "text/8675b395a0f00e3ac457a16763376373ea0a8c54d6a7922caa4d00f51280e008.txt",
+      "raw_path": null,
+      "text_chars": 17536,
+      "redirect_chain": [],
+      "identity_decision": "third_party_confirmed",
+      "identity_reason": "68 name mention(s) co-occur with running apparel terms",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file eb22c2fa10998cf94a6d550605d341dcc9bb2b3620c97a77e83a9ce454ab44d6.json sha256=7916046606709409b51173313cba2873d794995b8697a4c6e4440264493a922e",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-fb1018477217",
+      "company_id": "tracksmith",
+      "requested_url": "https://help.tracksmith.com/en-US/articles/about-tracksmith-115924",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "0e964c52957029f532e6c41430ad92b0f0efbd23e06c2454f21fe00ed250eb69",
+      "text_path": "text/0e964c52957029f532e6c41430ad92b0f0efbd23e06c2454f21fe00ed250eb69.txt",
+      "raw_path": null,
+      "text_chars": 2997,
+      "redirect_chain": [],
+      "identity_decision": "official_domain",
+      "identity_reason": "host help.tracksmith.com is an official domain",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file c9644660ee3e9c8289a4433b506a682a69f73764f8caa19ccc57a2b0916a0764.json sha256=66f2ab6b50230e7c9d5efe0314e3cdc9b8dadfa06f0825a82c87fcf1a1d08c3c",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-8dda77498ce7",
+      "company_id": "tracksmith",
+      "requested_url": "https://help.tracksmith.com/en-US/who-are-we-415087",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "f72b5f05f78c3e9e9b8bd038dafcc268a633940330d1e3cb340c17dabd137d62",
+      "text_path": "text/f72b5f05f78c3e9e9b8bd038dafcc268a633940330d1e3cb340c17dabd137d62.txt",
+      "raw_path": null,
+      "text_chars": 584,
+      "redirect_chain": [],
+      "identity_decision": "official_domain",
+      "identity_reason": "host help.tracksmith.com is an official domain",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file e1b3c1685c059fdd2759ede061edf3c30ce5ca21ea673ba964e1df673bb35bf3.json sha256=2e44cb99e898b9beb9d953a0d00a89e926644a636b6f739ab3d81a300f0bbff0",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-38c1589c88c7",
+      "company_id": "tracksmith",
+      "requested_url": "https://www.tracksmith.com/",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "97f2f09dc9a68f6aa7171f2cd792823057a55ce43496e1291091c57535f30f62",
+      "text_path": "text/97f2f09dc9a68f6aa7171f2cd792823057a55ce43496e1291091c57535f30f62.txt",
+      "raw_path": null,
+      "text_chars": 3195,
+      "redirect_chain": [],
+      "identity_decision": "official_domain",
+      "identity_reason": "host tracksmith.com is an official domain",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 8f5faf79596f162c7269d5805bc73e6df3253219e7365b254b1d943cbeedf9ba.json sha256=d63c8c1d4b6c07b7a93382b1e80c7f9746e5c3df956dcb28c4808733d33f8149",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-7cee32980dbe",
+      "company_id": "tracksmith",
+      "requested_url": "https://www.outerboxdesign.com/work/case-studies/applying-machine-learning-to-product-listing-ads-maximizes-social-roas/",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "fde9148e2f73d45a5cae55a52492b6369d1a22ce3f1aabcce9675ed89aad1b6b",
+      "text_path": "text/fde9148e2f73d45a5cae55a52492b6369d1a22ce3f1aabcce9675ed89aad1b6b.txt",
+      "raw_path": null,
+      "text_chars": 8912,
+      "redirect_chain": [],
+      "identity_decision": "third_party_confirmed",
+      "identity_reason": "5 name mention(s) co-occur with running apparel terms",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file fc702bdcb59210e74963614d721728f6e66c8ed27ad9db0e00cf74fa16eadf81.json sha256=4c2cb7d544caeba47d8476b9aaf1f3f0a82127146cb3060136cf137bbcbd415a",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "passage_uid": "PU-6381ca8c7aaad733",
+      "source_id": "S-e95e835b4452",
+      "char_start": 2270,
+      "char_end": 2878,
+      "text": "We affectionately named him, “Eliot,” as a tribute to the legendary Eliot Lounge in Boston. #### New England Born & Bred Tracksmith was founded in New England. We live here, we work here and we race here. We relish everything New England means to running and to us. This place, and its historical significance to our sport, are at the core of our identity. When we launched in 2014, we set up shop in Wellesley, MA at the halfway point of the Boston Marathon. In 2017, we moved 13.1 miles down the course to 285 Newbury Street. Our first permanent retail store, the Trackhouse is a community hub for runners.",
+      "text_sha256": "7e644d8e1794e552d8e476a72c84ea3f285b8a632af796b340a968ade2541882",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "historical_activity",
+      "flags": [],
+      "dates_mentioned": [
+        "2014",
+        "2017"
+      ],
+      "relevance_terms": [
+        "community",
+        "launch",
+        "retail"
+      ],
+      "score": 19,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P1",
+      "source_url": "https://www.tracksmith.com/fk/pages/about",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-75698c5cd51ee12f",
+      "source_id": "S-fb1018477217",
+      "char_start": 1903,
+      "char_end": 2212,
+      "text": "Where can I find more information on major marathon events? We love connecting and celebrating with our Tracksmith community around major marathons. To stay up-to-date on major marathon events, we recommend signing up for our Tracksmith newsletter, as well as the community newsletter for the location of your",
+      "text_sha256": "a52501765bd94160a0e615dee9bd2960348d7d48fd4984a68f3e3149f5e96c78",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "community",
+        "event",
+        "newsletter"
+      ],
+      "score": 16,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P2",
+      "source_url": "https://help.tracksmith.com/en-US/articles/about-tracksmith-115924",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-23df9ea68fa575f9",
+      "source_id": "S-bc298067d2b0",
+      "char_start": 10704,
+      "char_end": 11345,
+      "text": "Inside, Tracksmith running has recreated the Eliot Lounge — a legendary Boston runners’ bar that closed in 1996 — complete with original barstools and the tradition of racing back from the Boston Marathon finish line to be first through the door. > Voir cette publication sur Instagram > > Une publication partagée par Tracksmith (@tracksmithrunning) The brand’s running club, Hare A.C., formalises the community dimension. At major marathon weekends, Tracksmith shows up not just as a brand partner but as a participant: hosting shakeout runs, hand-stamping finisher’s posters, standing at finish lines. These are not marketing activations.",
+      "text_sha256": "f6fb78ea24f803f8930bfebd2b5146bcd8a4a470c1f827f7e43e6652cda2dc23",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [
+        "1996"
+      ],
+      "relevance_terms": [
+        "brand",
+        "community",
+        "instagram",
+        "marketing",
+        "partner"
+      ],
+      "score": 14,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P3",
+      "source_url": "https://hill.camp/tracksmith-running/",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-70c6d09a060a6188",
+      "source_id": "S-bc298067d2b0",
+      "char_start": 15139,
+      "char_end": 15662,
+      "text": "What makes Tracksmith running gear different from other brands? Tracksmith running gear stands apart from the mainstream in three ways: aesthetics, community, and philosophy. On the aesthetic side, Tracksmith uses muted, collegiate-inspired colourways — navy, ivory, forest green — and clean, timeless silhouettes that look nothing like conventional technical running kit. On the community side, the brand operates more like a running club than a retailer, with group runs, events, and a no-professional-sponsorship policy.",
+      "text_sha256": "73bfad5d0d2af0b426eb690d952285fc62f1c0e9785c7668af049dd4329ebff3",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "brand",
+        "community",
+        "event",
+        "retail",
+        "sponsor"
+      ],
+      "score": 14,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P4",
+      "source_url": "https://hill.camp/tracksmith-running/",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-830c7edc8b297776",
+      "source_id": "S-e95e835b4452",
+      "char_start": 475,
+      "char_end": 851,
+      "text": "These can't be switched off. Analytics Help us understand which pages and products people use, so we can improve the store. Reported in aggregate, never used to identify you. Marketing Used to measure our advertising and to show you Tracksmith products on other websites and social platforms. SAVE PREFERENCES New York Marathon Collection is here. Learn more & shop the drops.",
+      "text_sha256": "744d29cd3ee8279e41d9a6dc5ccaf8d4f2d108eb32669ea6f165ed54b7df5aa3",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "advertis",
+        "marketing"
+      ],
+      "score": 14,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P5",
+      "source_url": "https://www.tracksmith.com/fk/pages/about",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-622a3d8ce938b90a",
+      "source_id": "S-e95e835b4452",
+      "char_start": 1657,
+      "char_end": 2269,
+      "text": "The Hare Our logo, the hare, is an animal that relies upon its speed. Not as a predator, but as a survivor. The hare is a runner’s runner. The timeless object of the chase. In folklore and mythology the hare is often portrayed as the trickster: quick-witted, outsmarting his opponents at every opportunity. Likewise, Tracksmith is a challenger. Without the size or scale most brands enjoy, we rely on our ingenuity. We are small, so we need to be nimbler, quicker and craftier. When we started Tracksmith, we commissioned British illustrator Gary Chalk to create the original hand-drawn illustration of our hare.",
+      "text_sha256": "6bd8e26bd1eee0361dd0b1b459430679ce73581bd3381090ea458bdb19905ba4",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "brand",
+        "mission"
+      ],
+      "score": 14,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P6",
+      "source_url": "https://www.tracksmith.com/fk/pages/about",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-afc6206533745ccc",
+      "source_id": "S-fb1018477217",
+      "char_start": 953,
+      "char_end": 1281,
+      "text": "Where can I find information on Races and Events (Twilight 5000, Amateur Mile, etc.) Please visit our event calendar here. If you have questions regarding our Twilight 5000, Amateur Mile, or other events, please contact our community team at [email protected]. They can help with event information, registration, scheduling, and",
+      "text_sha256": "4f04c61ce9ce9ad81d297e9975c296c1dd35e1d15de10485d1c18e8626150dff",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "community",
+        "event"
+      ],
+      "score": 14,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P7",
+      "source_url": "https://help.tracksmith.com/en-US/articles/about-tracksmith-115924",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-cad5bcdf52fe9f52",
+      "source_id": "S-38c1589c88c7",
+      "char_start": 2099,
+      "char_end": 2233,
+      "text": "For the Love Running is better in community. Run with us locally or connect with more athletes via Hare A.C. Run With UsJoin Hare A.C.",
+      "text_sha256": "ef1221fedd96205d81364ca5659f74ff7c1168ac2120a25ec50007a94c5a4963",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "community"
+      ],
+      "score": 12,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P8",
+      "source_url": "https://www.tracksmith.com/",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-f4e84ea25609abd2",
+      "source_id": "S-7cee32980dbe",
+      "char_start": 3266,
+      "char_end": 3852,
+      "text": "The Challenge Tracksmith is an athletic brand that sells high-performance running gear. The company wanted to improve ROAS for its Meta campaigns while maintaining consistency with its creative themes. It also wanted to avoid relying on social media content that did not align with its brand ethos. Instead of depending on new creative, we adopted a campaign style designed to target new potential buyers accurately. The approach needed to keep Tracksmith’s high-quality products at the center of the ads. Two Tracksmith runners training outdoorsTwo Tracksmith runners training outdoors",
+      "text_sha256": "f47d8f9dacaae98106f54c9d17f671725d13b8947f0b2e6e0f301b3ecdc43c00",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "brand",
+        "campaign",
+        "content",
+        "social media"
+      ],
+      "score": 12,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P9",
+      "source_url": "https://www.outerboxdesign.com/work/case-studies/applying-machine-learning-to-product-listing-ads-maximizes-social-roas/",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-01187f4fd161a9d2",
+      "source_id": "S-8dda77498ce7",
+      "char_start": 110,
+      "char_end": 570,
+      "text": "Who Are We?Updated 9 months ago Tracksmith is an independent running brand. We honor the Amateur Spirit upon which the sport was founded and champion the Running Class – the non-professional yet competitive runners dedicated to the pursuit of personal excellence. We offer well-considered and original products for training, racing and recovery. In everything we do, we aim to celebrate, support and add to running’s distinct culture. Was this article helpful?",
+      "text_sha256": "2673d6b160516d53cad6d66e1f378062a7cfb87fd98d1986725074fe66d25a50",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "flags": [
+        "forward_looking_statement"
+      ],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "brand"
+      ],
+      "score": 12,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P10",
+      "source_url": "https://help.tracksmith.com/en-US/who-are-we-415087",
+      "document_identity": "official_domain",
+      "publication_date": null
+    }
+  ],
+  "rejected_passages": [
+    {
+      "passage_uid": "PU-d7bba6455711d55a",
+      "source_id": "S-e95e835b4452",
+      "char_start": 3241,
+      "char_end": 3507,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "brand_positioning",
+      "preview": "How We Work We make products for runners committed to the personal pursuit of excellence. We work tirelessly to produce the highest quality running apparel on the market and to create a community for "
+    },
+    {
+      "passage_uid": "PU-e494c3d9403d832d",
+      "source_id": "S-38c1589c88c7",
+      "char_start": 2239,
+      "char_end": 2418,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:ambiguous_entity"
+      ],
+      "identity_reason": "possible different entity: Tracksmith Foundation",
+      "statement_type": "actual_activity",
+      "preview": "The Tracksmith Foundation Launched with the goal of increasing access to youth track and field in the US, our Foundation is committed to advocating for our sport and its athletes."
+    },
+    {
+      "passage_uid": "PU-cbac58baff6c899e",
+      "source_id": "S-38c1589c88c7",
+      "char_start": 2441,
+      "char_end": 2575,
+      "selection_status": "rejected",
+      "reasons": [
+        "near_duplicate_of_selected_passage"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "For the Love Running is better in community. Run with us locally or connect with more athletes via Hare A.C. Run With UsJoin Hare A.C."
+    },
+    {
+      "passage_uid": "PU-afb59965e7c5ee0c",
+      "source_id": "S-bc298067d2b0",
+      "char_start": 7917,
+      "char_end": 8563,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "The No-Pro Policy: The Most Radical Part of the Tracksmith Brand Story Perhaps the most counterintuitive chapter of the Tracksmith brand story — and arguably its most powerful — is the deliberate choi"
+    },
+    {
+      "passage_uid": "PU-0c75bb1b7b142209",
+      "source_id": "S-e95e835b4452",
+      "char_start": 1043,
+      "char_end": 1461,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Running Class Tracksmith is an independent running brand. We honor the Amateur Spirit upon which the sport was founded and champion the Running Class – the non-professional yet competitive runners ded"
+    },
+    {
+      "passage_uid": "PU-8bc48579e1716222",
+      "source_id": "S-e95e835b4452",
+      "char_start": 2884,
+      "char_end": 3235,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "brand_positioning",
+      "preview": "Race Day Is Sacred We believe in competition and the meritocracy of racing. Not because winning and losing are particularly important, but because competition sends us on an innately human journey. Th"
+    },
+    {
+      "passage_uid": "PU-e8ae5d23ca92ce60",
+      "source_id": "S-fb1018477217",
+      "char_start": 120,
+      "char_end": 363,
+      "selection_status": "rejected",
+      "reasons": [
+        "near_duplicate_of_selected_passage"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Who Are We? Tracksmith is an independent running brand. We honor the Amateur Spirit upon which the sport was founded and champion the Running Class – the non-professional yet competitive runners dedic"
+    },
+    {
+      "passage_uid": "PU-6d454ac764a1d8c2",
+      "source_id": "S-fb1018477217",
+      "char_start": 667,
+      "char_end": 937,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Do you have a retail location? We have two retail locations. Below you can find each store location and links to the store pages with hours and contact information. We look forward to seeing you!. Tra"
+    },
+    {
+      "passage_uid": "PU-d36f124c1a42866f",
+      "source_id": "S-fb1018477217",
+      "char_start": 1287,
+      "char_end": 1576,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Where can I find information on Hare A.C.? Hare A.C. is a global community for runners and provides exclusive benefits, rewards, experiences, and innovative race challenges. An overview of the program"
+    },
+    {
+      "passage_uid": "PU-281741807ded833f",
+      "source_id": "S-fb1018477217",
+      "char_start": 1586,
+      "char_end": 1897,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Where can I find information on group runs and other events? We offer group runs in select cities around the world. Currently, we have regular runs in Boston, New York, London, and Chicago. To view up"
+    },
+    {
+      "passage_uid": "PU-6663465123f9c738",
+      "source_id": "S-fb1018477217",
+      "char_start": 2218,
+      "char_end": 2502,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Where can I purchase a Gift Card? Digital gift cards are available here for US customers. The gift card is delivered by email to the purchaser's email address shortly after checkout. The purchaser can"
+    },
+    {
+      "passage_uid": "PU-db0c63128b02b5f0",
+      "source_id": "S-8bcb27b5741c",
+      "char_start": 3513,
+      "char_end": 4210,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Browse Tracksmith's ad creatives at AdLibrary.com, covering their Facebook, Instagram, and digital campaign history. What platforms does Tracksmith advertise on? Tracksmith focuses on Facebook, Instag"
+    },
+    {
+      "passage_uid": "PU-e26d3baa92122942",
+      "source_id": "S-bc298067d2b0",
+      "char_start": 2285,
+      "char_end": 2801,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "historical_activity",
+      "preview": "New England Roots: Where the Tracksmith Running Identity Was Forged Tracksmith running launched in Wellesley, Massachusetts, at the exact halfway point of the Boston Marathon course. In 2017, it moved"
+    },
+    {
+      "passage_uid": "PU-494e868f79426071",
+      "source_id": "S-38c1589c88c7",
+      "char_start": 475,
+      "char_end": 960,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:ambiguous_entity"
+      ],
+      "identity_reason": "possible different entity: Tracksmith Essentials",
+      "statement_type": "descriptive",
+      "preview": "These can't be switched off. Analytics Help us understand which pages and products people use, so we can improve the store. Reported in aggregate, never used to identify you. Marketing Used to measure"
+    },
+    {
+      "passage_uid": "PU-8a48448aa17fabb0",
+      "source_id": "S-38c1589c88c7",
+      "char_start": 1605,
+      "char_end": 1739,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Start Here New to Tracksmith? We can’t wait to run with you. Explore technical styles designed for every effort in your training plan."
+    },
+    {
+      "passage_uid": "PU-706ad85de6d9113e",
+      "source_id": "S-38c1589c88c7",
+      "char_start": 1763,
+      "char_end": 1955,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Start Here New to Tracksmith? We can’t wait to run with you. Explore technical styles designed for every effort in your training plan: from easy miles to track repeats, long runs to race days."
+    },
+    {
+      "passage_uid": "PU-264162add16dfaf0",
+      "source_id": "S-7cee32980dbe",
+      "char_start": 3856,
+      "char_end": 4494,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Our Solution We implemented an Advantage+ campaign featuring Dynamic Product Ads. Advantage+ relies heavily on machine learning to target high-converting users and can outperform manual targeting with"
+    },
+    {
+      "passage_uid": "PU-7e8d243081af993d",
+      "source_id": "S-bc298067d2b0",
+      "char_start": 6973,
+      "char_end": 7662,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Eliot the Hare: A Tracksmith Brand Symbol Built to Last The Tracksmith brand logo is a hare — hand-drawn by British illustrator Gary Chalk at launch, and affectionately named Eliot, as a tribute to th"
+    },
+    {
+      "passage_uid": "PU-1f4dbbe976a139f2",
+      "source_id": "S-bc298067d2b0",
+      "char_start": 8564,
+      "char_end": 9123,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Olympic Marathon Trials, where 120 of the 500 starters were wearing Tracksmith. Not because the brand paid them to. Because they chose to. That distinction matters enormously to the runners who wear t"
+    },
+    {
+      "passage_uid": "PU-16d20e2a20da9329",
+      "source_id": "S-e95e835b4452",
+      "char_start": 1481,
+      "char_end": 1651,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "In The Name \"TRACK” is a symbol of commitment to training and racing, while “SMITH” represents dedication to a specialized craft - an obsession with quality and function."
+    },
+    {
+      "passage_uid": "PU-45d014df8d6151b9",
+      "source_id": "S-e95e835b4452",
+      "char_start": 3513,
+      "char_end": 3960,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Come Run with Us We’d love to hear from you or, better yet, run with you. You can visit us at the Trackhouse, 285 Newbury Street in Boston's Back Bay. Or reach out to the team at [email protected]. FA"
+    },
+    {
+      "passage_uid": "PU-3745d46a740854b8",
+      "source_id": "S-fb1018477217",
+      "char_start": 2508,
+      "char_end": 2760,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Password Reset and Account Information Your personal Tracksmith.com account can be used to view your orders, updated your address and manage your Hare AC subscription. To navigate to your account, sel"
+    },
+    {
+      "passage_uid": "PU-6854c5139c9c0303",
+      "source_id": "S-8bcb27b5741c",
+      "char_start": 1269,
+      "char_end": 1555,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "About Tracksmith Tracksmith is a Boston-based running brand with an Ivy League heritage aesthetic and a deep editorial identity. Their advertising is built around celebrating the serious amateur runne"
+    },
+    {
+      "passage_uid": "PU-a789bf64813daf9a",
+      "source_id": "S-bc298067d2b0",
+      "char_start": 645,
+      "char_end": 1183,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "The Tracksmith Brand Story: Born from a Frustration, Built on a Belief The Tracksmith brand story begins in 2014, with a conviction and a gap. Matt Taylor, a former head of running category marketing "
+    },
+    {
+      "passage_uid": "PU-c958ed08c848216a",
+      "source_id": "S-bc298067d2b0",
+      "char_start": 1441,
+      "char_end": 2111,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "The Tracksmith brand story is, at its core, the story of a brand built to serve those people — and only those people. > Voir cette publication sur Instagram > > Une publication partagée par Tracksmith"
+    },
+    {
+      "passage_uid": "PU-3c92dfe8a8be4cc5",
+      "source_id": "S-bc298067d2b0",
+      "char_start": 4358,
+      "char_end": 5007,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "The result is gear that looks as good coming off a bike path as it does on it — apparel that serious runners wear not just because it performs, but because it says something about who they are. > Voir"
+    },
+    {
+      "passage_uid": "PU-afc9d26fdfbfb830",
+      "source_id": "S-bc298067d2b0",
+      "char_start": 5847,
+      "char_end": 6307,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "The Brighton Vest is what you reach for when you know a hard winter morning is coming. > Voir cette publication sur Instagram > > Une publication partagée par Tracksmith (@tracksmithrunning) Pricing r"
+    },
+    {
+      "passage_uid": "PU-dd16d594d969d7d0",
+      "source_id": "S-bc298067d2b0",
+      "char_start": 6308,
+      "char_end": 6969,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "The Tracksmith brand makes no apology for pricing that reflects genuine quality rather than volume production economics. > Voir cette publication sur Instagram > > Une publication partagée par Tracksm"
+    },
+    {
+      "passage_uid": "PU-bf68d37c2506e299",
+      "source_id": "S-bc298067d2b0",
+      "char_start": 10313,
+      "char_end": 10703,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:ambiguous_entity"
+      ],
+      "identity_reason": "possible different entity: Tracksmith Brand",
+      "statement_type": "descriptive",
+      "preview": "The Trackhouse and Hare A.C.: Community at the Heart of the Tracksmith Brand The Trackhouse at 285 Newbury Street is the Tracksmith brand’s retail flagship — but calling it a shop undersells it consid"
+    },
+    {
+      "passage_uid": "PU-44e58e25d511ec5c",
+      "source_id": "S-fb1018477217",
+      "char_start": 388,
+      "char_end": 661,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "author_recommendation",
+      "preview": "How can I reach Tracksmith? Providing highly personalized customer service is our top priority. You can write to us at [email protected], call us at (781) 235-0027 or text us at (617) 546-4702. We are"
+    },
+    {
+      "passage_uid": "PU-beb036e5238663a1",
+      "source_id": "S-8bcb27b5741c",
+      "char_start": 2196,
+      "char_end": 2483,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Tracksmith Ad Copy & TikTok Creative Themes Copy themes include dedication, the amateur running ethos, seasonal race preparation, and heritage craft references. They frequently reference specific race"
+    },
+    {
+      "passage_uid": "PU-89a70981d92568fa",
+      "source_id": "S-bc298067d2b0",
+      "char_start": 11597,
+      "char_end": 12053,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Tracksmith Running in 2026: A Brand Story Still Being Written Tracksmith running’s growth — revenues up 280% between 2019 and 2022 — has been achieved without compromising the brand’s essential charac"
+    },
+    {
+      "passage_uid": "PU-c9cc413a2fc936eb",
+      "source_id": "S-7cee32980dbe",
+      "char_start": 4495,
+      "char_end": 4647,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "actual_activity",
+      "preview": "Three product sets launched first: high-performing tops, bottoms, and session shorts. We created one ad for each set so all three could launch together."
+    },
+    {
+      "passage_uid": "PU-1064fda67a781a0d",
+      "source_id": "S-7cee32980dbe",
+      "char_start": 5166,
+      "char_end": 5583,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Improve Paid Social Returns Without Losing Brand Consistency Paid social growth works best when stronger targeting and better campaign structure support the brand customers already recognize. OuterBox"
+    },
+    {
+      "passage_uid": "PU-d4bc0da79a30a4bb",
+      "source_id": "S-bc298067d2b0",
+      "char_start": 88,
+      "char_end": 641,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Tracksmith Running: The Brand Story Behind America’s Most Stylish Running Label There is a moment, somewhere between mile eight and mile twelve of a long Sunday run, when the gear you are wearing eith"
+    },
+    {
+      "passage_uid": "PU-f5c5b28a00a588fe",
+      "source_id": "S-bc298067d2b0",
+      "char_start": 3734,
+      "char_end": 4357,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "The Aesthetic Gap That Became a Running Brand One of the founding insights behind the Tracksmith brand story was absurdly simple: the clothes Matt Taylor wore to run looked nothing like the clothes he"
+    },
+    {
+      "passage_uid": "PU-56dbe52168c5daeb",
+      "source_id": "S-bc298067d2b0",
+      "char_start": 5008,
+      "char_end": 5346,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Comparisons to Satisfy Running are inevitable — another brand that has staked out the ground between technical running and considered style. But where Satisfy leans into counterculture and oversized s"
+    },
+    {
+      "passage_uid": "PU-5a3c9d1fb57416c5",
+      "source_id": "S-bc298067d2b0",
+      "char_start": 5350,
+      "char_end": 5846,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Tracksmith Running Gear: What the Brand Actually Makes Tracksmith running began with the essentials — singlets, shorts, and socks — and built outward from there with the same unhurried discipline it b"
+    },
+    {
+      "passage_uid": "PU-996902a154e70e44",
+      "source_id": "S-bc298067d2b0",
+      "char_start": 7663,
+      "char_end": 7913,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Without the marketing budgets of Nike or adidas, without the distribution networks of the global sporting goods conglomerates, Tracksmith running has had to be smarter, more distinctive, and more will"
+    },
+    {
+      "passage_uid": "PU-5affd5e79ccb2f8c",
+      "source_id": "S-bc298067d2b0",
+      "char_start": 12054,
+      "char_end": 12719,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Every expansion has followed the same logic: serve the Running Class, honour the culture, make it beautiful. « I want Tracksmith to be around for 100 years, » Taylor has said. « And unfortunately — or"
+    },
+    {
+      "passage_uid": "PU-a4c434d5bda6c343",
+      "source_id": "S-bc298067d2b0",
+      "char_start": 12720,
+      "char_end": 13057,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "They respond to a brand that behaves like a club, not a shop. For anyone who has ever felt that the running industry was making apparel for everyone except serious runners — the Tracksmith brand story"
+    },
+    {
+      "passage_uid": "PU-01e2f0de95278b6f",
+      "source_id": "S-bc298067d2b0",
+      "char_start": 14449,
+      "char_end": 15134,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "What is the Tracksmith brand story? The Tracksmith brand story begins in 2014, when Matt Taylor and Luke Scheybeler — co-founder of Rapha — set out to create a premium running apparel brand for commit"
+    },
+    {
+      "passage_uid": "PU-6a2a4031855de8ba",
+      "source_id": "S-bc298067d2b0",
+      "char_start": 16356,
+      "char_end": 16861,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Does Tracksmith make running shoes? Yes. Tracksmith entered the footwear category in 2021 with the Eliot Runner — a road running shoe designed with the same restrained aesthetic and performance focus "
+    },
+    {
+      "passage_uid": "PU-6a845bf70ea5b201",
+      "source_id": "S-8bcb27b5741c",
+      "char_start": 470,
+      "char_end": 605,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Who Tracksmith targets Dedicated amateur runners who value heritage, editorial storytelling and premium quality over performance specs."
+    },
+    {
+      "passage_uid": "PU-1844b701f0a4989a",
+      "source_id": "S-8bcb27b5741c",
+      "char_start": 1559,
+      "char_end": 1882,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Tracksmith Ads Strategy: What Makes Tracksmith Ads Effective Tracksmith targets the 'serious amateur' identity — runners who care deeply about the sport but aren't elites. Their ads validate that iden"
+    },
+    {
+      "passage_uid": "PU-4f92242284814ffb",
+      "source_id": "S-8bcb27b5741c",
+      "char_start": 1886,
+      "char_end": 2192,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Tracksmith Meta Ads (Facebook & Instagram): Platform Analysis On Instagram, Tracksmith runs some of the most visually distinctive ads in the running category — muted film tones, wool textures, and ath"
+    },
+    {
+      "passage_uid": "PU-f82501e5bb42ed56",
+      "source_id": "S-8bcb27b5741c",
+      "char_start": 4211,
+      "char_end": 4717,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Yes. Tracksmith sponsors a small roster of elite amateur and professional runners, and their athlete stories are woven into ad creative to reinforce authenticity. What other ways do people search for "
+    },
+    {
+      "passage_uid": "PU-1baa5b53b80e375e",
+      "source_id": "S-bc298067d2b0",
+      "char_start": 15863,
+      "char_end": 16351,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Where is Tracksmith based and where can you buy it? Tracksmith is headquartered in Boston, Massachusetts, and operates its flagship store — the Trackhouse — at 285 Newbury Street, approximately 400 me"
+    },
+    {
+      "passage_uid": "PU-b1b1c1edb3a19d44",
+      "source_id": "S-7cee32980dbe",
+      "char_start": 5862,
+      "char_end": 6334,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "5000Inc. 5000 Google Premier Partner 2026Google Premier Partner 2026 Clutch 5-Star RatedClutch 5-Star Rated Forbes Advisor Best of 2026Forbes Advisor Best of 2026 OuterBox, Integrated Search Agency of"
+    },
+    {
+      "passage_uid": "PU-40e6b918aaefca94",
+      "source_id": "S-bc298067d2b0",
+      "char_start": 1184,
+      "char_end": 1440,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "That middle ground is what Tracksmith calls the Running Class: not professionals, not casual joggers, but committed runners who train through winters, who structure their weeks around long runs, who i"
+    },
+    {
+      "passage_uid": "PU-9cd796131696cf35",
+      "source_id": "S-bc298067d2b0",
+      "char_start": 2802,
+      "char_end": 3475,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "It’s the heart and soul of running because of the Boston Marathon, which goes back to 1897 — the oldest continuous foot race, » Taylor explained. « You also have an incredible collegiate and youth net"
+    },
+    {
+      "passage_uid": "PU-b553300786a38271",
+      "source_id": "S-bc298067d2b0",
+      "char_start": 3476,
+      "char_end": 3730,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Tracksmith running gear looks, above all else, considered. « There’s a style component for sure. We are classic and timeless in our style, » Taylor told Wildsam. « It’s very much driven by New England"
+    },
+    {
+      "passage_uid": "PU-a9fbc795b7d33752",
+      "source_id": "S-bc298067d2b0",
+      "char_start": 9127,
+      "char_end": 9813,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "author_recommendation",
+      "preview": "Content as Craft: How Tracksmith Running Tells Its Story The Tracksmith brand story is told not just through products but through some of the most distinctive content in sport. Its films are long, qui"
+    },
+    {
+      "passage_uid": "PU-0e743633bf5b2940",
+      "source_id": "S-bc298067d2b0",
+      "char_start": 15663,
+      "char_end": 15858,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Philosophically, Tracksmith running is unapologetically for the committed amateur — not the elite, not the casual jogger, but the person in between who takes the sport seriously as a way of life."
+    },
+    {
+      "passage_uid": "PU-883d913ec602de3d",
+      "source_id": "S-7cee32980dbe",
+      "char_start": 2605,
+      "char_end": 2918,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:ambiguous_entity"
+      ],
+      "identity_reason": "possible different entity: Tracksmith Increased",
+      "statement_type": "provider_reported_result",
+      "preview": "How Tracksmith Increased Campaign-Wide ROAS 246% Month Over Month Tracksmith wanted stronger Meta campaign performance without giving up the creative consistency behind its brand. We used an Advantage"
+    },
+    {
+      "passage_uid": "PU-dbd75c2c6dbf7f50",
+      "source_id": "S-7cee32980dbe",
+      "char_start": 2952,
+      "char_end": 3262,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "provider_reported_result",
+      "preview": "Key Results Services: eCommerce, Paid Social, Facebook, Instagram. Higher ROAS 165% Advantage+ Dynamic Product Ad campaigns versus traditional campaigns. Campaign-Wide ROAS 246% Month-over-month incre"
+    },
+    {
+      "passage_uid": "PU-1ce51aea053bc97a",
+      "source_id": "S-0964eb5ce629",
+      "char_start": 96,
+      "char_end": 888,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "Latest Emails from tracksmith tracksmith Sep 25, 2026, 4:30 PM The Eliot Ryder is Back In Ivory/Grass and Navy ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏"
+    },
+    {
+      "passage_uid": "PU-16ac29269baa50e1",
+      "source_id": "S-0964eb5ce629",
+      "char_start": 889,
+      "char_end": 1050,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "New Twilight styles for Fall ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ tracksmith newsletter: Are You Ready to Work?"
+    },
+    {
+      "passage_uid": "PU-f21048e87f02ac68",
+      "source_id": "S-0964eb5ce629",
+      "char_start": 3443,
+      "char_end": 3970,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "The Eliot Ryder drops next week. ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ tracksmith newsletter: Have you got your ticket to ride? Read full newsletter → tr"
+    },
+    {
+      "passage_uid": "PU-92bc05cf501642c6",
+      "source_id": "S-0964eb5ce629",
+      "char_start": 3971,
+      "char_end": 4165,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "The Charles & Kazu Tourer are back. ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ tracksmith newsletter: New tortoise colorways in our best-selling sunglas..."
+    },
+    {
+      "passage_uid": "PU-cfce130b8c1dee11",
+      "source_id": "S-0964eb5ce629",
+      "char_start": 8578,
+      "char_end": 8752,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "Last Chance to Shop our Spring Archive Sale, First ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ tracksmith newsletter: Early access ends today."
+    },
+    {
+      "passage_uid": "PU-1dec166fb572448d",
+      "source_id": "S-7cee32980dbe",
+      "char_start": 1053,
+      "char_end": 1416,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Lead Generation Stay Ahead of Google's Core Updates Has your site been impacted by a core update? Our expert guide enables you to analyze the impact, prioritize the right fixes, and protect your visib"
+    },
+    {
+      "passage_uid": "PU-e9621ef78ceb9c41",
+      "source_id": "S-7cee32980dbe",
+      "char_start": 2277,
+      "char_end": 2454,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Contact Us Our Office Locations >866-647-9218info@outerbox.com Find Out What It Takes To Rank First on Google Free Digital Marketing Website Audit & Consultation with an Expert."
+    },
+    {
+      "passage_uid": "PU-cc7cb4510e3e0f9b",
+      "source_id": "S-bc298067d2b0",
+      "char_start": 9814,
+      "char_end": 10309,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "It was none of that. But when you see the reactions and comments, they are overwhelmingly positive. It connected with people deeply. » The brand’s photographic work, much of it shot by documentary pho"
+    },
+    {
+      "passage_uid": "PU-78fbc6b0de0aaad1",
+      "source_id": "S-bc298067d2b0",
+      "char_start": 11346,
+      "char_end": 11593,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "They are what a running club does. « There’s an incredible sense of camaraderie that comes from having a shared goal of running faster, » Taylor has said. « As a brand, we understand that these human "
+    },
+    {
+      "passage_uid": "PU-e9895c45a9784f89",
+      "source_id": "S-bc298067d2b0",
+      "char_start": 16867,
+      "char_end": 17018,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "From Castor Beans to the Start Line: Inside ACT Running’s B Corp Bet Brands #### Why Deeluxe Never Made a Snowboard, a Binding, or Anything Else Brands"
+    },
+    {
+      "passage_uid": "PU-751098b5d5ee50b0",
+      "source_id": "S-bc298067d2b0",
+      "char_start": 17024,
+      "char_end": 17447,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "NNormal: What Happens When the Best Runner Alive Builds His Own Shoes Brands #### Bandit Running: The Brooklyn Brand That Made Running Gear a Status Symbol Hill Welcome to Hill, a blog dedicated to th"
+    },
+    {
+      "passage_uid": "PU-36f5c2f13e9176b9",
+      "source_id": "S-8bcb27b5741c",
+      "char_start": 2799,
+      "char_end": 3127,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:ambiguous_entity"
+      ],
+      "identity_reason": "possible different entity: Tracksmith Ads, Tracksmith Google, Tracksmith Meta, Tracksmith TikTok",
+      "statement_type": "provider_reported_result",
+      "preview": "Find Tracksmith Ads: All Search Variants Searching for Tracksmith? Whether you type Tracksmith ads, Tracksmith Meta ads, Tracksmith TikTok ads, Tracksmith Google ads, or see all Tracksmith ads — this "
+    },
+    {
+      "passage_uid": "PU-8a949f2ddf90be63",
+      "source_id": "S-0964eb5ce629",
+      "char_start": 4166,
+      "char_end": 8577,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "author_recommendation",
+      "preview": "Read full newsletter → tracksmith Jun 29, 2026, 8:00 PM New Summer Essentials For training & travel ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ tracksmith "
+    },
+    {
+      "passage_uid": "PU-c99f9e7d451b484a",
+      "source_id": "S-7cee32980dbe",
+      "char_start": 1506,
+      "char_end": 1812,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Our Team Office Locations Careers Press Room AI Development Services OuterBox builds custom AI applications, workflow automation, interfaces, and integrations around your data, systems, and growth pri"
+    },
+    {
+      "passage_uid": "PU-d48a67a5dd840539",
+      "source_id": "S-bc298067d2b0",
+      "char_start": 2112,
+      "char_end": 2281,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Track — commitment to training and racing. Smith — obsession with craft and quality. Two words that together describe something closer to a vocation than a product line."
+    },
+    {
+      "passage_uid": "PU-424f847dbb2db68c",
+      "source_id": "S-0964eb5ce629",
+      "char_start": 1051,
+      "char_end": 3442,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "author_recommendation",
+      "preview": "Read full newsletter → tracksmith Aug 26, 2026, 5:02 PM A New Story Begins… Welcome to Pre-Season ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ tracksmith "
+    },
+    {
+      "passage_uid": "PU-fb04a2676bdd432b",
+      "source_id": "S-7cee32980dbe",
+      "char_start": 4675,
+      "char_end": 5162,
+      "selection_status": "rejected",
+      "reasons": [
+        "statement_type:proposed_or_mock_work"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "proposed_or_mock_work",
+      "preview": "The Results Beginning with the first month of Advantage+ campaigns, Tracksmith recorded stronger returns while continuing to scale. The account increased budget without giving up the return improvemen"
+    },
+    {
+      "passage_uid": "PU-9571937f6532ba81",
+      "source_id": "S-8bcb27b5741c",
+      "char_start": 2487,
+      "char_end": 2795,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:ambiguous_entity"
+      ],
+      "identity_reason": "possible different entity: Tracksmith Google",
+      "statement_type": "author_recommendation",
+      "preview": "Tracksmith Google Ads, YouTube Ads & Cross-Platform Lessons Tracksmith shows that leaning hard into a niche identity — even one that excludes casual buyers — can generate disproportionate earned media"
+    }
+  ],
+  "status": "ok",
+  "status_reasons": [],
+  "packet_sha256": "750335192f50ce9f3f4b127db50116e06c3bbfbad126f92db63b3416793a1248"
+}

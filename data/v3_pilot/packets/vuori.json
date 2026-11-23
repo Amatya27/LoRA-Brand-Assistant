@@ -1,0 +1,2835 @@
+{
+  "schema_version": "brandpilot.packet.v3",
+  "company": {
+    "company_id": "vuori",
+    "display_name": "Vuori",
+    "legacy_name": "Vuori",
+    "category": "performance apparel",
+    "official_domains": [
+      "vuoriclothing.com"
+    ],
+    "identity_status": "verified",
+    "registry_version": "2026-11-22.v3",
+    "registry_sha256": "cc9ab39277bffb4c0aa0b59df8db2e7fec12da7955a58651370daf2936495a16"
+  },
+  "collection": {
+    "mode": "legacy_cache_replay",
+    "collector_version": "brandpilot-collector-0.3",
+    "created_at": "2026-11-22T20:36:47+00:00",
+    "queries": [
+      "\"Vuori\" instagram marketing campaign target audience",
+      "\"Vuori\" social media strategy brand positioning",
+      "\"Vuori\" marketing campaign press release instagram",
+      "\"Vuori\" customer audience brand story",
+      "\"Vuori\" about us brand values audience",
+      "\"Vuori\" newsroom marketing campaign",
+      "\"Vuori\" brand campaign case study"
+    ],
+    "notes": [
+      "replayed from legacy packet vuori-research-packet.json (sha256 b72cca3bc02eb342)",
+      "documents are legacy cached extractions; no new fetches were made"
+    ]
+  },
+  "leads": [
+    {
+      "company_id": "vuori",
+      "query": "\"Vuori\" about us brand values audience",
+      "url": "https://vuori-joggers.com/about/",
+      "title": "About us - Vuori",
+      "snippet": "At the heart of Vuori are core values centered on premium comfort and versatility. These values translate into practical customer benefits that define our brand experience.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "vuori",
+      "query": "\"Vuori\" instagram marketing campaign target audience",
+      "url": "https://www.opensend.com/post/vuori-marketing-strategy",
+      "title": "Vuori Marketing Strategy (2026) | Opensend",
+      "snippet": "Aug 3, 2026 · Vuori's community strategy relies on athletes, trainers, wellness professionals, and creators whose audiences align closely with the brand's active lifestyle positioning. The brand also experiments with unconventional channels, advertising on Bumble and curating Spotify playlists to reach audiences in unexpected contexts.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "vuori",
+      "query": "\"Vuori\" marketing campaign press release instagram",
+      "url": "https://vuoriclothing.com/pages/press-inquiries",
+      "title": "Press Inquiries – Vuori",
+      "snippet": "We appreciate your interest in getting in touch with Vuori's press team. Find out who to reach out to. We will respond promptly; thank you.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "vuori",
+      "query": "\"Vuori\" customer audience brand story",
+      "url": "https://vuoriclothing.com/pages/our-story",
+      "title": "Our Story: A New Perspective on Performance Apparel™ – Vuori",
+      "snippet": "Vuori makes performance apparel inspired by the active coastal California lifestyle. Read our story & learn more about our activewear & lounge clothing brand.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "vuori",
+      "query": "\"Vuori\" instagram marketing campaign target audience",
+      "url": "https://www.hivelr.com/2025/01/vuori-marketing-strategy/",
+      "title": "Vuori: Marketing Strategy - Hivelr",
+      "snippet": "Jan 4, 2025 · Vuori leverages data-driven marketing to personalize campaigns, fostering strong connections with existing customers while attracting new audiences through digital engagement, influencer collaborations, and experiential events.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "vuori",
+      "query": "\"Vuori\" about us brand values audience",
+      "url": "https://help.vuoriclothing.com/en_us/about-vuori-rJL8JVsJ1l",
+      "title": "About Vuori",
+      "snippet": "Vuori was born in Encinitas, CA, a vibrant hub for active living. As a values-based business, we aim to prioritize great relationships, bringing together people from all walks of life to share positive, meaningful experiences.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "vuori",
+      "query": "\"Vuori\" about us brand values audience",
+      "url": "https://vuoriclothing.com/pages/impact",
+      "title": "Our Impact – Investment in Happiness – Vuori",
+      "snippet": "Guided by our values, we're happier on a healthy planet. Learn about Vuori's dynamic impact program we've developed aimed to protect it.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "vuori",
+      "query": "\"Vuori\" brand campaign case study",
+      "url": "https://www.linkedin.com/pulse/case-study-vuori-premium-activewear-brand-mastered-karina-gerszberg-dwjze",
+      "title": "Case Study: Vuori – The Premium Activewear Brand That ...",
+      "snippet": "Mar 19, 2025 · This case study explores how Vuori leveraged storytelling, influencer marketing, and a direct-to-consumer strategy to build a billion-dollar brand in a space dominated by giants like...",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    }
+  ],
+  "documents": [
+    {
+      "source_id": "S-b29ab870ca7e",
+      "company_id": "vuori",
+      "requested_url": "https://vuori-joggers.com/about/",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "0085d406f12c5422fc83ad491ae4b6bd5879249181afa83ec92c3cb3216168d4",
+      "text_path": "text/0085d406f12c5422fc83ad491ae4b6bd5879249181afa83ec92c3cb3216168d4.txt",
+      "raw_path": null,
+      "text_chars": 14557,
+      "redirect_chain": [],
+      "identity_decision": "conflicting_entity_domain",
+      "identity_reason": "host vuori-joggers.com belongs to vuori-joggers.com",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 4dac3471c4f6b1fa6d8d8630205bb1899e75fb198d61310af29137766dfbbb20.json sha256=f66c9d5c9faa70209716bf6893c95ccac121e93c57838198115251a52af1e1b8",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-a9eb7eacee45",
+      "company_id": "vuori",
+      "requested_url": "https://www.opensend.com/post/vuori-marketing-strategy",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "d8ce6e54310bec538d64ff0ea3ab45b714b59b2b1b5144d84fec51968bc42a05",
+      "text_path": "text/d8ce6e54310bec538d64ff0ea3ab45b714b59b2b1b5144d84fec51968bc42a05.txt",
+      "raw_path": null,
+      "text_chars": 20060,
+      "redirect_chain": [],
+      "identity_decision": "third_party_confirmed",
+      "identity_reason": "19 name mention(s) co-occur with performance apparel terms",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 623d5485606a7112ea308772fdc14fa5677afb379121097b2ddac699044af3c4.json sha256=62dc73c15bf14b56cb322b6f033a69b3e3f3e836cf3b8ce3c884bc3be965b427",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-15a9f1241441",
+      "company_id": "vuori",
+      "requested_url": "https://vuoriclothing.com/pages/press-inquiries",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "d0b0faca09f0895807c6a79c256378838b4e4ca577ef0644b9fa8f49335e3c2e",
+      "text_path": "text/d0b0faca09f0895807c6a79c256378838b4e4ca577ef0644b9fa8f49335e3c2e.txt",
+      "raw_path": null,
+      "text_chars": 2132,
+      "redirect_chain": [],
+      "identity_decision": "official_domain",
+      "identity_reason": "host vuoriclothing.com is an official domain",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file ecb91f410124bf61db0fdcb7a0f18b995f30bc016f26f941112b23e5e8c45661.json sha256=69119f1201ac1eaea0644ec80a047aae502996c87614d8cbdd7cb67ba73900cc",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-8c3a57567093",
+      "company_id": "vuori",
+      "requested_url": "https://vuoriclothing.com/pages/our-story",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "86e4467c6d6b52a90cbd38dbfb71a0714bede67fa2f6602f11259d1fde675fca",
+      "text_path": "text/86e4467c6d6b52a90cbd38dbfb71a0714bede67fa2f6602f11259d1fde675fca.txt",
+      "raw_path": null,
+      "text_chars": 4115,
+      "redirect_chain": [],
+      "identity_decision": "official_domain",
+      "identity_reason": "host vuoriclothing.com is an official domain",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 2982e409d5f123423eae7c510dbba05810622413a51058c0a5e36f7f510594c7.json sha256=2dbb6561b371717d34c330c6e629f72e1a48d0d4a1c2cbc4247b9beeaf95dc4a",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-f0bc37feabd5",
+      "company_id": "vuori",
+      "requested_url": "https://www.hivelr.com/2025/01/vuori-marketing-strategy/",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "3ea4e8e37e15d1bd2c265267067e70af67fc0a2898479e3d9567fdfde97dfcd2",
+      "text_path": "text/3ea4e8e37e15d1bd2c265267067e70af67fc0a2898479e3d9567fdfde97dfcd2.txt",
+      "raw_path": null,
+      "text_chars": 28316,
+      "redirect_chain": [],
+      "identity_decision": "third_party_confirmed",
+      "identity_reason": "73 name mention(s) co-occur with performance apparel terms",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file f4e7c47152369600ed27db482fedbcf873477c45426dbaa016b28d0b1b279408.json sha256=41c4e2386444c73c7799888c96e19321a6a9b7639b38a3b527a66ac4133a8893",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-3113afcfa0aa",
+      "company_id": "vuori",
+      "requested_url": "https://help.vuoriclothing.com/en_us/about-vuori-rJL8JVsJ1l",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "extraction_failed",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "8fe5b7fef57e9b19c3645166ac9d20f3e338108f8817ce559ce071736c2e685d",
+      "text_path": "text/8fe5b7fef57e9b19c3645166ac9d20f3e338108f8817ce559ce071736c2e685d.txt",
+      "raw_path": null,
+      "text_chars": 85,
+      "redirect_chain": [],
+      "identity_decision": "not_assessed",
+      "identity_reason": "document status extraction_failed",
+      "errors": [
+        "extracted text shorter than 200 characters"
+      ],
+      "provenance_notes": [
+        "legacy cache file 89863909f4e2792e4cf1ef47ad44e59f4e438effae05c1cb3a993adea0c4ad16.json sha256=0a3545d66ce94b6c903126606001dea83089bf87e712c632a80018300a96e286",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-8834eec4d1f9",
+      "company_id": "vuori",
+      "requested_url": "https://vuoriclothing.com/pages/impact",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "f0419d3fa25489c8103f4cab86b7980f797fec065c0a0db33ec3cf0013d9954e",
+      "text_path": "text/f0419d3fa25489c8103f4cab86b7980f797fec065c0a0db33ec3cf0013d9954e.txt",
+      "raw_path": null,
+      "text_chars": 4767,
+      "redirect_chain": [],
+      "identity_decision": "official_domain",
+      "identity_reason": "host vuoriclothing.com is an official domain",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 5bef9b9503b49813ac852e9c1962dd7edb64f78f904675d706272d6b27eab534.json sha256=870d1c99b405bb9940bebcc58c9b911f8600f278f102a8d12e654b72b2367f07",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-50862d78a15a",
+      "company_id": "vuori",
+      "requested_url": "https://www.linkedin.com/pulse/case-study-vuori-premium-activewear-brand-mastered-karina-gerszberg-dwjze",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "2c053edb2a7658ca10bacd20197b5ad361435c1e6b1b59c94f3e98097205c958",
+      "text_path": "text/2c053edb2a7658ca10bacd20197b5ad361435c1e6b1b59c94f3e98097205c958.txt",
+      "raw_path": null,
+      "text_chars": 10428,
+      "redirect_chain": [],
+      "identity_decision": "third_party_confirmed",
+      "identity_reason": "22 name mention(s) co-occur with performance apparel terms",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file ee01ffdebbae82d0ab7064788d120be46e031311c7a14f36c0c935882c8621e1.json sha256=0f7746a4c12d4c48bae1c66cec26fcbf0919c5f6420899b4db47203723381f54",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "passage_uid": "PU-f286d2447d767ed0",
+      "source_id": "S-8834eec4d1f9",
+      "char_start": 2599,
+      "char_end": 3283,
+      "text": "Our Community We aim to foster a culture where all of our people can thrive whether they work at our HQ, global retail stores or at the factories we choose to partner with—both near and far. We request that our Tier 1 manufacturing vendors abide by our Vendor Code of Conduct, which is based on International Labor Organization (ILO) core labor standards. Learn more in our California Transparency in Supply Chains Act Statement. We are also committed to helping our employees live extraordinary lives and be in great relationships. We do this by investing the time and resources towards our team members' health, happiness and growth. Our Supply Chain Vuori logo The Rise. The Shine.",
+      "text_sha256": "507b2be67068dedd54b0e126fe8d230b87d9a8a2cf05fa0d63c998412fc7e3c0",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "flags": [
+        "forward_looking_statement"
+      ],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "community",
+        "partner",
+        "retail"
+      ],
+      "score": 16,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P1",
+      "source_url": "https://vuoriclothing.com/pages/impact",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-3aa4a964eb78feae",
+      "source_id": "S-8834eec4d1f9",
+      "char_start": 2199,
+      "char_end": 2595,
+      "text": "Our Planet As an organization, we collectively aim to minimize the environmental wake left by our operations. We strive to do our part in securing a low-climate future by reducing waste and continuously improving resource efficiency throughout our business. Since 2019, we’ve partnered with CleanHub to remove plastic waste from coastal communities. Learn more about Vuori's climate journey here.",
+      "text_sha256": "7f82dda52db8848fc4b4ec7d8b77d34adf44290c8ea420460eb52320e39299a8",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "historical_activity",
+      "flags": [
+        "forward_looking_statement"
+      ],
+      "dates_mentioned": [
+        "2019"
+      ],
+      "relevance_terms": [
+        "partner"
+      ],
+      "score": 15,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P2",
+      "source_url": "https://vuoriclothing.com/pages/impact",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-b8eaa4c60ce7623b",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 14185,
+      "char_end": 14715,
+      "text": "4. Promotion Vuori’s promotional strategy is anchored in authentic storytelling and digital engagement: * Content Marketing – Vuori uses lifestyle-focused campaigns that showcase real people in natural environments, emphasizing wellness and outdoor adventure. * Influencer Collaborations – Partnerships with fitness influencers, athletes, and wellness advocates drive brand awareness and social proof. * Community Engagement – In-store fitness classes, events, and local partnerships foster deeper relationships and brand loyalty.",
+      "text_sha256": "2c988cf76a6c78b58c87077ccff3da1bb3eac4f15ccc38db1cb5fcd2b9ada02c",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "brand",
+        "campaign",
+        "collab",
+        "collaborat",
+        "community",
+        "content",
+        "event",
+        "influencer",
+        "loyalty",
+        "marketing",
+        "partner",
+        "storytelling"
+      ],
+      "score": 28,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P3",
+      "source_url": "https://www.hivelr.com/2025/01/vuori-marketing-strategy/",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-157ab6c8d15ab409",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 21101,
+      "char_end": 21708,
+      "text": "1. Awareness Stage – Discovery and Brand Introduction * Touchpoints: Social media ads, influencer collaborations, digital marketing, retail storefronts, and premium retail partners (e.g., Nordstrom). * Actions: Customers encounter Vuori through aspirational content featuring real-life scenarios and outdoor backdrops, emphasizing performance and lifestyle. * Pain Points Addressed: Vuori highlights versatility, addressing the need for multi-functional activewear transitioning from gym to casual settings. * Goal: Capture attention and drive curiosity through visually engaging and authentic storytelling.",
+      "text_sha256": "9d771a0ce8a74a138af4fa47f04e299e2923c19b7c6ed450411cc9aae533b2b2",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "brand",
+        "collab",
+        "collaborat",
+        "content",
+        "customers",
+        "influencer",
+        "marketing",
+        "partner",
+        "retail",
+        "social media",
+        "storytelling"
+      ],
+      "score": 26,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P4",
+      "source_url": "https://www.hivelr.com/2025/01/vuori-marketing-strategy/",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-4b94d5b21d763dc4",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 5701,
+      "char_end": 6281,
+      "text": "Leveraging Social Media and Influencers for Brand Growth Vuori's community strategy relies on athletes, trainers, wellness professionals, and creators whose audiences align closely with the brand's active lifestyle positioning. The brand also experiments with unconventional channels, advertising on Bumble and curating Spotify playlists to reach audiences in unexpected contexts. For athleisure brands looking to implement similar email marketing strategies, the key insight is that community-generated content performs better than studio-shot creative and costs less to produce.",
+      "text_sha256": "c8f00b9495c8b454a4e67f1bd6f9488d1060450620c5fc59991c9558c72114c6",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "advertis",
+        "audience",
+        "brand",
+        "community",
+        "content",
+        "creator",
+        "influencer",
+        "marketing",
+        "positioning",
+        "social media"
+      ],
+      "score": 24,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P5",
+      "source_url": "https://www.opensend.com/post/vuori-marketing-strategy",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-af19e67a36cddafc",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 17777,
+      "char_end": 18392,
+      "text": "1. Attention – Capturing Awareness Vuori uses visually compelling and authentic campaigns to stand out in the crowded athleisure market. * High-Impact Visuals – Vuori’s ads feature serene outdoor environments and real-life scenarios, reflecting its California lifestyle ethos. * Social Media and Influencers – Collaborations with fitness influencers and wellness advocates help amplify brand awareness across platforms like Instagram, YouTube, and TikTok. * Retail Expansion – Strategically located stores in high-traffic areas draw attention to Vuori’s brand, creating physical touchpoints that enhance visibility.",
+      "text_sha256": "fc0e773c496de80dfba296d33fb201e4e26c3a4653551adde49691ae5c54cc4d",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "brand",
+        "campaign",
+        "collab",
+        "collaborat",
+        "influencer",
+        "instagram",
+        "retail",
+        "social media",
+        "tiktok",
+        "youtube"
+      ],
+      "score": 24,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P6",
+      "source_url": "https://www.hivelr.com/2025/01/vuori-marketing-strategy/",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-545a05c97b7d093c",
+      "source_id": "S-50862d78a15a",
+      "char_start": 2707,
+      "char_end": 3406,
+      "text": "Key Strategies That Fueled Vuori’s Growth ### 1. Influencer & Ambassador Marketing: Building Brand Credibility Vuori’s strategic partnerships with fitness, wellness, and outdoor influencers have played a major role in its brand awareness and credibility. The company invests heavily in ambassador programs and collaborations with high-profile athletes, trainers, and content creators. Some of Vuori’s key influencer partnerships include: * Noah Ohlsen – Elite CrossFit athlete and fitness personality. * Gerry Lopez – Legendary surfer and outdoor enthusiast. * Jamie Anderson – Olympic snowboarder. * Hannah Eden – Fitness trainer and entrepreneur. * Rob Machado – Surfer and environmental advocate.",
+      "text_sha256": "637f865f40060c5e6eee401f5ff312c010620e4c0340aad4ed32419654f9d506",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "ambassador",
+        "brand",
+        "collab",
+        "collaborat",
+        "content",
+        "creator",
+        "influencer",
+        "marketing",
+        "partner"
+      ],
+      "score": 22,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P7",
+      "source_url": "https://www.linkedin.com/pulse/case-study-vuori-premium-activewear-brand-mastered-karina-gerszberg-dwjze",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-a6090bf00ad77a3d",
+      "source_id": "S-50862d78a15a",
+      "char_start": 6055,
+      "char_end": 6710,
+      "text": "Lessons for Entrepreneurs & Lifestyle Brands > Authenticity Wins – Vuori’s success is rooted in its commitment to real, meaningful connections > with customers and ambassadors. DTC + Retail is a Winning Formula – Controlling distribution while > strategically expanding into stores creates balance. Sustainability is the Future – Modern > consumers care about the impact of their purchases, making eco-conscious practices essential. > Branding is More Than a Logo – Vuori built an identity around values, experiences, and > storytelling. Influencer Marketing Drives Growth – Aligning with the right ambassadors fuels brand > credibility and organic reach.",
+      "text_sha256": "e3a10bb9e6a08c824d6955ad3e02c137dcd83306202fbebfa3bebbe8e85f7bf6",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "ambassador",
+        "brand",
+        "customers",
+        "influencer",
+        "marketing",
+        "retail",
+        "storytelling"
+      ],
+      "score": 18,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P8",
+      "source_url": "https://www.linkedin.com/pulse/case-study-vuori-premium-activewear-brand-mastered-karina-gerszberg-dwjze",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-eabb12ce652e4e6c",
+      "source_id": "S-50862d78a15a",
+      "char_start": 3553,
+      "char_end": 3735,
+      "text": "2. Direct-to-Consumer Mastery & Retail Expansion Vuori initially launched as a direct-to-consumer (DTC) brand, leveraging its online presence to cultivate a loyal, engaged community.",
+      "text_sha256": "276c0c40b5b58b2e6c2a0da110371315e2bd7a202ced985119088101aa2c58aa",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "actual_activity",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "brand",
+        "community",
+        "launch",
+        "retail"
+      ],
+      "score": 16,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P9",
+      "source_url": "https://www.linkedin.com/pulse/case-study-vuori-premium-activewear-brand-mastered-karina-gerszberg-dwjze",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-3148e7eacf66bff4",
+      "source_id": "S-8834eec4d1f9",
+      "char_start": 760,
+      "char_end": 1365,
+      "text": "planet. That’s why we have developed a dynamic program aimed to protect it. ## Our Commitment Vuori is dedicated to making quality products that empower deeper connections with fitness, nature, creativity and community. While we recognize that the activewear industry has a long way to go in terms of cleaning up its footprint, we believe businesses have the power to make real, meaningful progress in securing a low-climate future. By offering transparency into our process and commitments, we invite our community to be part of the journey with us as we strive to create meaningful, long-lasting change.",
+      "text_sha256": "b5c50a2c26c2d0b90b149f8879b142e5878565470d65ea3a8cb9fafc43d6d7d4",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "brand_positioning",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "community"
+      ],
+      "score": 14,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P10",
+      "source_url": "https://vuoriclothing.com/pages/impact",
+      "document_identity": "official_domain",
+      "publication_date": null
+    }
+  ],
+  "rejected_passages": [
+    {
+      "passage_uid": "PU-468ad561b2d4caf2",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 22966,
+      "char_end": 23372,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "actual_activity",
+      "preview": "Touchpoints: Email follow-ups, loyalty programs, user-generated content (UGC), and customer feedback surveys. * Actions: Vuori engages customers with new product launches, exclusive offers, and commun"
+    },
+    {
+      "passage_uid": "PU-ba597ca596fe8fc7",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 5592,
+      "char_end": 6263,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Founded in 2015, Vuori began as a men’s athletic brand but quickly expanded to offer versatile, high-quality pieces seamlessly transitioning from gym to street. With a focus on sustainability, innovat"
+    },
+    {
+      "passage_uid": "PU-e294b8dee04c0e60",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 10780,
+      "char_end": 11007,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Vuori leverages data-driven marketing to personalize campaigns, fostering strong connections with existing customers while attracting new audiences through digital engagement, influencer collaboration"
+    },
+    {
+      "passage_uid": "PU-f1cad4b3c5153836",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 13555,
+      "char_end": 14180,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "3. Place Vuori employs an omnichannel distribution model to maximize reach and engagement: * Direct-to-Consumer (DTC) – Vuori’s website and app serve as primary sales channels, offering exclusive onli"
+    },
+    {
+      "passage_uid": "PU-debece3718b88f8f",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 11215,
+      "char_end": 11915,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Design Aesthetic – Offering a softer, more laid-back design approach than Lululemon’s sleek performance focus. * Community Engagement – Hosting in-store events and partnering with fitness influencers "
+    },
+    {
+      "passage_uid": "PU-6b8e8b62ec580c95",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 23377,
+      "char_end": 24016,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "5. Advocacy Stage – Turning Customers into Brand Ambassadors * Touchpoints: Social media engagement, referral programs, and influencer campaigns. * Actions: Satisfied customers share their experiences"
+    },
+    {
+      "passage_uid": "PU-59a094922945cbcf",
+      "source_id": "S-50862d78a15a",
+      "char_start": 4327,
+      "char_end": 5016,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "actual_activity",
+      "preview": "3. Sustainability & Ethical Manufacturing Vuori has positioned itself as a leader in sustainable activewear by prioritizing: * Recycled & organic materials – Many of its best-selling pieces, including"
+    },
+    {
+      "passage_uid": "PU-aeb7c372449a05f7",
+      "source_id": "S-50862d78a15a",
+      "char_start": 5198,
+      "char_end": 5521,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Free fitness & yoga classes in flagship stores. * Exclusive collaborations with wellness experts. * Content marketing that emphasizes adventure, travel, and personal growth. Vuori’s experiential marke"
+    },
+    {
+      "passage_uid": "PU-b3701fab63a8e9b0",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 7797,
+      "char_end": 8220,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "4. Customer Experience and Community Engagement Vuori creates immersive brand experiences through community-driven initiatives, retail stores, and engaging digital content. In-store events, fitness cl"
+    },
+    {
+      "passage_uid": "PU-04146ace4b87013f",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 18395,
+      "char_end": 18993,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Strategic Partnerships – Presence in premium retailers (e.g., Nordstrom) extends Vuori’s reach to new audiences. ### 2. Interest – Building Curiosity and Engagement Vuori nurtures interest by highligh"
+    },
+    {
+      "passage_uid": "PU-dd4a70152ed5c4b2",
+      "source_id": "S-50862d78a15a",
+      "char_start": 1289,
+      "char_end": 1696,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "With its California-inspired aesthetic, sustainability commitments, and hyper-focused influencer collaborations, Vuori has emerged as one of the fastest-growing brands in the fitness and athleisure sp"
+    },
+    {
+      "passage_uid": "PU-a5f7694b41c21ec2",
+      "source_id": "S-50862d78a15a",
+      "char_start": 1701,
+      "char_end": 2199,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "actual_activity",
+      "preview": "The Vision: Performance Meets Lifestyle When Joe Kudla launched Vuori, he didn’t set out to create just another fitness brand. Instead, he envisioned a brand that fused performance with style, offerin"
+    },
+    {
+      "passage_uid": "PU-f9b49834ad13c3d3",
+      "source_id": "S-50862d78a15a",
+      "char_start": 7105,
+      "char_end": 7574,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Final Thought: Vuori is a masterclass in brand-building—one that proves success in the modern marketplace requires more than just great products. Through storytelling, community engagement, sustainabi"
+    },
+    {
+      "passage_uid": "PU-ec3798ffd6b2576b",
+      "source_id": "S-8c3a57567093",
+      "char_start": 1038,
+      "char_end": 1681,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "activewear. ## Investment In Happiness We’re committed to delivering a great experience for our customers. Which is why our Investment in Happiness is our product guarantee. Love it or send it back. F"
+    },
+    {
+      "passage_uid": "PU-913a258c36212b26",
+      "source_id": "S-8c3a57567093",
+      "char_start": 1963,
+      "char_end": 2331,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "brand_positioning",
+      "preview": "Impact We see it every day, we’re simply Happier on a Healthy Planet. That’s why we have developed a dynamic program aimed at protecting our earth. As we grow, we continue to adhere to our commitments"
+    },
+    {
+      "passage_uid": "PU-bdba69a7f3a0c689",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 8225,
+      "char_end": 8922,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "5. Cultural Relevance and Lifestyle Alignment Vuori taps into the growing wellness and outdoor lifestyle trends. By aligning with the cultural shift toward health, mindfulness, and work-life balance, "
+    },
+    {
+      "passage_uid": "PU-4808d6abc604fb26",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 9585,
+      "char_end": 10221,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Brand Storytelling – Campaigns highlight authenticity, highlighting real people and natural settings to convey the brand’s essence. * Product Innovation – Vuori consistently improves product offerings"
+    },
+    {
+      "passage_uid": "PU-be2ac0ee8563b470",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 16136,
+      "char_end": 16685,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "actual_activity",
+      "preview": "2. Targeting Vuori’s targeting is highly selective, focusing on quality over mass-market appeal: * Primary Target – Health-conscious, active consumers who value performance apparel that transitions ef"
+    },
+    {
+      "passage_uid": "PU-b96632045d0c5fce",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 21713,
+      "char_end": 22342,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "2. Consideration Stage – Building Interest and Engagement * Touchpoints: Vuori’s website, product reviews, blog content, email marketing, and social proof (testimonials and influencer endorsements). *"
+    },
+    {
+      "passage_uid": "PU-0507d8b589a6f702",
+      "source_id": "S-50862d78a15a",
+      "char_start": 719,
+      "char_end": 1288,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Karina Gerszberg Published Mar 19, 2025 + Follow As a Fractional CMO, I am fascinated by brands that redefine industries through storytelling, innovation, and strategic brand-building. Vuori, founded "
+    },
+    {
+      "passage_uid": "PU-3928117398ae2123",
+      "source_id": "S-50862d78a15a",
+      "char_start": 2204,
+      "char_end": 2702,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Key Objectives That Drove Vuori’s Success: * Elevate everyday performance wear by offering a premium alternative to traditional activewear. * Leverage influencer partnerships to drive organic brand gr"
+    },
+    {
+      "passage_uid": "PU-b55b7b5c9ae56fbc",
+      "source_id": "S-50862d78a15a",
+      "char_start": 3767,
+      "char_end": 4102,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Control pricing and margins without relying on third-party retailers. * Refine its brand voice and storytelling through owned content channels. * Leverage customer data and insights to improve product"
+    },
+    {
+      "passage_uid": "PU-2056e0b29eada6cf",
+      "source_id": "S-8834eec4d1f9",
+      "char_start": 394,
+      "char_end": 547,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "brand_positioning",
+      "preview": "Happier on a healthy planet happier on a healthy planet #### Guided by our values and the coastal California lifestyle, we’re simply happier on a healthy"
+    },
+    {
+      "passage_uid": "PU-374c2d804d1b57a0",
+      "source_id": "S-8834eec4d1f9",
+      "char_start": 553,
+      "char_end": 754,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "brand_positioning",
+      "preview": "planet. That’s why we have developed a dynamic program aimed to protect it. happier on a healthy planet #### Guided by our values and the coastal California lifestyle, we’re simply happier on a health"
+    },
+    {
+      "passage_uid": "PU-5536382631d73e79",
+      "source_id": "S-8834eec4d1f9",
+      "char_start": 1369,
+      "char_end": 1775,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Our Selves We strive for transparency in our products, our processes and business practices. We seek to provide visibility into our supply chain and to run our business with strong ethics and data pri"
+    },
+    {
+      "passage_uid": "PU-457f1574f5facc89",
+      "source_id": "S-8c3a57567093",
+      "char_start": 2335,
+      "char_end": 2664,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Community Encinitas, California inspired the creation of Vuori. It’s our backyard and playground, As a values-based business, we aim to prioritize great relationships, bringing together people from al"
+    },
+    {
+      "passage_uid": "PU-26c3d92111f1adff",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 13582,
+      "char_end": 14157,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Building a First-Party Data Strategy Vuori's competitive moat depends on: * Owned customer relationships through DTC channels * Community programs that generate engagement without paid media * Retail "
+    },
+    {
+      "passage_uid": "PU-017beef86aa05ba2",
+      "source_id": "S-b29ab870ca7e",
+      "char_start": 11419,
+      "char_end": 12021,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Forward-Looking Brand Direction Looking ahead, Vuori is poised to continue its trajectory of growth and innovation in the performance apparel industry. Our forward-looking direction involves expanding"
+    },
+    {
+      "passage_uid": "PU-6da612f6425e0bdb",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 17583,
+      "char_end": 17772,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "AIDA Model (Attention, Interest, Desire, Action) Vuori’s marketing strategy aligns with the AIDA model, effectively guiding potential customers from brand awareness to purchase and loyalty."
+    },
+    {
+      "passage_uid": "PU-c021d93d26f6c736",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 2424,
+      "char_end": 2944,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Vuori achieved a $5.5 billion valuation by filling a cultural gap in premium men's athleisure with California coastal positioning * The brand captures 6.13% penetration among $500k+ income households "
+    },
+    {
+      "passage_uid": "PU-3075097880a9de26",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 8682,
+      "char_end": 9307,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Measuring Marketing ROI and Optimizing Performance Vuori's omnichannel model gives customers more ways to discover, evaluate, and purchase its products. A modern omnichannel apparel brand can strength"
+    },
+    {
+      "passage_uid": "PU-afdaddd8ecd968a3",
+      "source_id": "S-15a9f1241441",
+      "char_start": 412,
+      "char_end": 681,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Press Inquiries We appreciate your interest in getting in touch with our press team. For press inquiries, please reach out to press@vuoriclothing.com We will respond as promptly as possible! Thanks ag"
+    },
+    {
+      "passage_uid": "PU-e413631d7c5bc5c3",
+      "source_id": "S-15a9f1241441",
+      "char_start": 1987,
+      "char_end": 2132,
+      "selection_status": "rejected",
+      "reasons": [
+        "boilerplate:table_of_contents"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Privacy Rights Request Form| 7. Accessibility| 8. Your Privacy Choices| 9. Sitemap Wed Nov 04 2026 00:21:22 GMT+0000 (Coordinated Universal Time)"
+    },
+    {
+      "passage_uid": "PU-45b80f4929c713a6",
+      "source_id": "S-8834eec4d1f9",
+      "char_start": 4622,
+      "char_end": 4767,
+      "selection_status": "rejected",
+      "reasons": [
+        "boilerplate:table_of_contents"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Privacy Rights Request Form| 7. Accessibility| 8. Your Privacy Choices| 9. Sitemap Tue Nov 17 2026 08:46:13 GMT+0000 (Coordinated Universal Time)"
+    },
+    {
+      "passage_uid": "PU-cb97173969fb5914",
+      "source_id": "S-8c3a57567093",
+      "char_start": 394,
+      "char_end": 627,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "A New Perspective on Performance Apparel ## A New Perspective On Performance Apparel™ man and woman training in vuori A New Perspective On Performance Apparel™ man and woman training in vuori A New Pe"
+    },
+    {
+      "passage_uid": "PU-d503dc00244e2d5f",
+      "source_id": "S-8c3a57567093",
+      "char_start": 631,
+      "char_end": 820,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Vuori makes premium performance apparel inspired by the active Coastal California lifestyle; an ## integration of fitness, surf, sport, and art. We’re evolving the definition of traditional"
+    },
+    {
+      "passage_uid": "PU-346a2e695cde7e15",
+      "source_id": "S-8c3a57567093",
+      "char_start": 824,
+      "char_end": 1032,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "activewear. #### Vuori makes premium performance apparel inspired by the active Coastal California lifestyle; an #### integration of fitness, surf, sport, and art. We’re evolving the definition of tra"
+    },
+    {
+      "passage_uid": "PU-a40b13f3394a8570",
+      "source_id": "S-8c3a57567093",
+      "char_start": 3970,
+      "char_end": 4115,
+      "selection_status": "rejected",
+      "reasons": [
+        "boilerplate:table_of_contents"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Privacy Rights Request Form| 7. Accessibility| 8. Your Privacy Choices| 9. Sitemap Tue Nov 17 2026 08:52:13 GMT+0000 (Coordinated Universal Time)"
+    },
+    {
+      "passage_uid": "PU-045a0ae81e3c57c2",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 3209,
+      "char_end": 3555,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Vuori's Brand Marketing Strategy: Elevating the Athleisure Experience Vuori didn't compete on product features. It competed on cultural positioning. Founder Joe Kudla built the brand around a vision o"
+    },
+    {
+      "passage_uid": "PU-ae976eeeb363c8f9",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 4749,
+      "char_end": 5038,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:ambiguous_entity"
+      ],
+      "identity_reason": "possible different entity: Vuori Vuori",
+      "statement_type": "descriptive",
+      "preview": "Developing a Comprehensive Digital Marketing Strategy for Vuori Vuori maintains a strong digital marketing presence across social media, paid advertising, ecommerce, email, and lifestyle content. But "
+    },
+    {
+      "passage_uid": "PU-19766ed06683ffca",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 6285,
+      "char_end": 6705,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Vuori's Direct-to-Consumer Marketing for Enhanced Customer Connection Vuori combines direct ecommerce, company-owned stores, and selective wholesale distribution through partners such as Nordstrom and"
+    },
+    {
+      "passage_uid": "PU-0fa263468067d70c",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 6710,
+      "char_end": 7331,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Building Stronger Customer Relationships Through D2C The DTC model enables Vuori to capture first-party data that wholesale channels cannot provide: * Behavioral signals: Products viewed, time on site"
+    },
+    {
+      "passage_uid": "PU-2d83c2d24c56876b",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 9461,
+      "char_end": 9776,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Targeting the Athleisure Market: Vuori vs. Competitors Third-party audience analytics indicate that Lululemon has substantially greater penetration than Vuori within the consumer segments measured by "
+    },
+    {
+      "passage_uid": "PU-4d366a862ed457c9",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 11213,
+      "char_end": 11673,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Experiential retail: More than 100 owned stores by the end of 2025 function as community hubs with free fitness classes and wellness events, not just transaction points * DreamKnit fabric trials: In-s"
+    },
+    {
+      "passage_uid": "PU-d2ed208ab8c5e707",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 13042,
+      "char_end": 13356,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Analyze purchase intent from browsing patterns * Personalize product recommendations by customer interest For brands building their own first-party data strategies, Vuori demonstrates that the value i"
+    },
+    {
+      "passage_uid": "PU-56301731333391a2",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 15415,
+      "char_end": 15977,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Results vary by traffic quality, audience, campaign execution, and integration setup. For DTC brands without Vuori's $400M+ funding, Opensend provides enterprise-grade identity resolution and signal q"
+    },
+    {
+      "passage_uid": "PU-83bfeb84e19d24ac",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 8923,
+      "char_end": 9289,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "As Vuori continues to scale, its substantial brand equity will remain a key driver of growth and market influence. ## Marketing 3Cs Vuori’s marketing success can be analyzed through the 3Cs – Company,"
+    },
+    {
+      "passage_uid": "PU-b87b85a3a10e08ad",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 11919,
+      "char_end": 12122,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Marketing Mix (4Ps) Vuori’s marketing mix – encompassing Product, Price, Place, and Promotion – reflects a carefully curated strategy that aligns with the brand’s premium positioning and lifestyle foc"
+    },
+    {
+      "passage_uid": "PU-503bbe39a0d3bb33",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 14899,
+      "char_end": 15183,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Vuori’s 4P marketing mix reflects a holistic, customer-centric approach. By emphasizing quality products, premium pricing, strategic placement, and authentic promotion, Vuori strengthens its position "
+    },
+    {
+      "passage_uid": "PU-f6cbc1e2da9a6892",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 20781,
+      "char_end": 21096,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Customer Journey Mapping Vuori’s customer journey is carefully crafted to reflect its premium positioning, delivering seamless and engaging experiences from brand discovery to post-purchase loyalty. B"
+    },
+    {
+      "passage_uid": "PU-f933f06085c8c685",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 24193,
+      "char_end": 24615,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Conclusion: Vuori’s Competitive Advantages and Long-Term Profitability Vuori’s competitive edge lies in its ability to blend performance, lifestyle, and sustainability into a cohesive brand identity t"
+    },
+    {
+      "passage_uid": "PU-eef5cdf80dff3181",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 24650,
+      "char_end": 25232,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Product Versatility and Quality – Vuori’s apparel seamlessly transitions between active and casual wear, appealing to consumers seeking multifunctional wardrobe-essentials. * Sustainability Leadership"
+    },
+    {
+      "passage_uid": "PU-72ea73f17b39a9b2",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 25413,
+      "char_end": 25997,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Long-Term Profitability: Vuori’s ability to attract and retain customers through experiential retail, personalized digital engagement, and exclusive product offerings strengthens its profitability. By"
+    },
+    {
+      "passage_uid": "PU-32245a820526e37f",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 10092,
+      "char_end": 10623,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Major competitors typically lead with women's yoga and fitness categories, use technical or studio-focused branding, average around $145 per transaction, and address a broader market across income seg"
+    },
+    {
+      "passage_uid": "PU-551cd18692ef22c4",
+      "source_id": "S-15a9f1241441",
+      "char_start": 0,
+      "char_end": 315,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:ambiguous_entity"
+      ],
+      "identity_reason": "possible different entity: Vuori Free",
+      "statement_type": "descriptive",
+      "preview": "Our StoryDreamKnit™ CollectionVuori BlissBlend™ CollectionLivvy Dunne's FavoritesMatching SetsSunday CollectionKore CollectionDreamKnit™ CollectionArch Manning’s PicksOur StoresEventsACTV ClubJournal "
+    },
+    {
+      "passage_uid": "PU-8e5e22f23cac4964",
+      "source_id": "S-50862d78a15a",
+      "char_start": 4183,
+      "char_end": 4322,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "London (international expansion in 2023) This hybrid model has enabled Vuori to maintain brand exclusivity while reaching a wider audience."
+    },
+    {
+      "passage_uid": "PU-c56cf2ae9463917c",
+      "source_id": "S-50862d78a15a",
+      "char_start": 5021,
+      "char_end": 5174,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "4. Community-Driven Brand Experience Beyond just selling clothes, Vuori has built a lifestyle brand centered around movement, mindfulness, and community."
+    },
+    {
+      "passage_uid": "PU-d87b776b4279ac83",
+      "source_id": "S-8834eec4d1f9",
+      "char_start": 0,
+      "char_end": 315,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:ambiguous_entity"
+      ],
+      "identity_reason": "possible different entity: Vuori Free",
+      "statement_type": "descriptive",
+      "preview": "Our StoryDreamKnit™ CollectionVuori BlissBlend™ CollectionLivvy Dunne's FavoritesMatching SetsSunday CollectionKore CollectionDreamKnit™ CollectionArch Manning’s PicksOur StoresEventsACTV ClubJournal "
+    },
+    {
+      "passage_uid": "PU-00be3823b130384e",
+      "source_id": "S-8c3a57567093",
+      "char_start": 0,
+      "char_end": 315,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:ambiguous_entity"
+      ],
+      "identity_reason": "possible different entity: Vuori Free",
+      "statement_type": "descriptive",
+      "preview": "Our StoryDreamKnit™ CollectionVuori BlissBlend™ CollectionLivvy Dunne's FavoritesMatching SetsSunday CollectionKore CollectionDreamKnit™ CollectionArch Manning’s PicksOur StoresEventsACTV ClubJournal "
+    },
+    {
+      "passage_uid": "PU-f0ffc7b27d44d063",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 2175,
+      "char_end": 2404,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "The foundation beneath Vuori's success parallels what Opensend enables: strengthening the identity and signal layer behind match rates, audience addressability, attribution, retargeting, and marketing"
+    },
+    {
+      "passage_uid": "PU-3f794c335f964a20",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 4263,
+      "char_end": 4745,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:ambiguous_entity"
+      ],
+      "identity_reason": "possible different entity: Vuori Lifestyle",
+      "statement_type": "descriptive",
+      "preview": "Building Community Around the Vuori Lifestyle Vuori's V1 Community Leader Program scaled to over 1,000 micro-influencers and professional athletes by 2025, including CrossFit champion Noah Ohlsen, sur"
+    },
+    {
+      "passage_uid": "PU-b26d8933b9f6bda1",
+      "source_id": "S-b29ab870ca7e",
+      "char_start": 5204,
+      "char_end": 5862,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Our brand resonates particularly with people who enjoy the integrated culture of fitness, surf, sport, and art, as reflected in our design philosophy. We aim to empower this audience by providing clot"
+    },
+    {
+      "passage_uid": "PU-0d62320a017aa97e",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 4990,
+      "char_end": 5591,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Vuori: Marketing Strategy Hivelr Business ReviewHivelr Business ReviewBy Hivelr Business ReviewJanuary 4, 2025 Marketing No Comments14 Mins Read1,569 Views Share Facebook Twitter LinkedIn Email 5/5 (1"
+    },
+    {
+      "passage_uid": "PU-698540a2f11ccce3",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 7048,
+      "char_end": 7432,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "2. Quality and Innovation High-quality materials and attention to detail bolster Vuori’s reputation for durability and comfort. The brand invests in innovative fabric technology, such as moisture-wick"
+    },
+    {
+      "passage_uid": "PU-8a3e8dac4ec59a59",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 7437,
+      "char_end": 7792,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "3. Sustainability and Ethical Practices Vuori’s commitment to sustainability adds to its positive brand perception. The company emphasizes eco-friendly materials, carbon neutrality, and ethical supply"
+    },
+    {
+      "passage_uid": "PU-2a06af13254c6eca",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 10265,
+      "char_end": 10779,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "2. Customers Vuori targets health-conscious, active individuals who value style, quality, and versatility in their clothing. Its customer base spans across demographics but is particularly strong amon"
+    },
+    {
+      "passage_uid": "PU-e3ee8b84b3d27c59",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 13116,
+      "char_end": 13550,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Perceived Value – High-quality materials, sustainable production, and stylish designs justify the price points. * Long-Term Investment – Vuori markets its apparel as durable and versatile, emphasizing"
+    },
+    {
+      "passage_uid": "PU-97a3518303cc7166",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 15187,
+      "char_end": 15461,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "STP Model (Segmentation, Targeting, Positioning) Vuori leverages the STP model to create a unique space in the competitive athleisure market by identifying the right customer segments, targeting high-"
+    },
+    {
+      "passage_uid": "PU-6e6a510c9b2e622c",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 15500,
+      "char_end": 16131,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "1. Segmentation Vuori segments the market based on demographics, psychographics, and behavioral factors: * Demographic Segmentation – Vuori focuses on men and women aged 25-45, primarily professionals"
+    },
+    {
+      "passage_uid": "PU-471170e1de457d35",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 16690,
+      "char_end": 17022,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "3. Positioning Vuori is a premium performance lifestyle brand that blends functionality with fashion, driven by sustainability and coastal California-inspired design. * Positioning Statement – “Vuori "
+    },
+    {
+      "passage_uid": "PU-1890314d9995e433",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 17048,
+      "char_end": 17579,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Versatility – Apparel that functions for both fitness and casual wear. * Sustainability – Commitment to eco-conscious materials and carbon neutrality. * Community and Lifestyle – Brand messaging roote"
+    },
+    {
+      "passage_uid": "PU-d81fc4e8cc7daa50",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 19752,
+      "char_end": 20451,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "4. Action – Driving Conversions and Loyalty Vuori ensures a seamless path to purchase through digital and physical channels. * User-Friendly Website – Vuori’s e-commerce platform is optimized for a sm"
+    },
+    {
+      "passage_uid": "PU-50fce4864df79515",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 20452,
+      "char_end": 20742,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Vuori’s execution of the AIDA model ensures sustained customer engagement, from initial brand awareness to long-term loyalty. By aligning performance, sustainability, and lifestyle appeal, Vuori effec"
+    },
+    {
+      "passage_uid": "PU-a7c4c84d7bbac779",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 24017,
+      "char_end": 24189,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "By understanding its audience’s evolving needs, Vuori drives conversions and cultivates loyalty and advocacy, ensuring sustained growth in the competitive athleisure space."
+    },
+    {
+      "passage_uid": "PU-5431d67934795089",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 11678,
+      "char_end": 12083,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "historical_activity",
+      "preview": "Revenue Milestones Vuori's financial trajectory demonstrates the compound effect of these strategies: * Vuori does not publicly release complete annual financial statements * The company reached a $5."
+    },
+    {
+      "passage_uid": "PU-40debeea506d279f",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 14161,
+      "char_end": 14781,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "How Opensend Strengthens the Marketing Foundation Vuori Demonstrates Vuori's success illustrates a principle most DTC brands miss: marketing performance is constrained by data quality, not creative qu"
+    },
+    {
+      "passage_uid": "PU-1162a7f5609e740f",
+      "source_id": "S-b29ab870ca7e",
+      "char_start": 1576,
+      "char_end": 2221,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "historical_activity",
+      "preview": "Brand History and Development Vuori’s journey began in 2015 when founder Joe Kudla launched the brand in San Diego County, California. Inspired by his personal interest in yoga and a gap he identified"
+    },
+    {
+      "passage_uid": "PU-f0d0662ec739c555",
+      "source_id": "S-50862d78a15a",
+      "char_start": 3407,
+      "char_end": 3548,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "By aligning with respected figures in the fitness and outdoor industries, Vuori established trust and authenticity among its target audience."
+    },
+    {
+      "passage_uid": "PU-6ea526b2efb90f49",
+      "source_id": "S-50862d78a15a",
+      "char_start": 6715,
+      "char_end": 7100,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "The Future of Vuori Vuori continues to expand globally and refine its position as a leader in premium performance apparel. Key areas of future growth include: * Further international expansion, partic"
+    },
+    {
+      "passage_uid": "PU-6e1826b68f947df6",
+      "source_id": "S-8834eec4d1f9",
+      "char_start": 1779,
+      "char_end": 2195,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:ambiguous_entity"
+      ],
+      "identity_reason": "possible different entity: Vuori Preferred",
+      "statement_type": "descriptive",
+      "preview": "Our Products The path to a better future for our planet is ever-evolving, and we actively work to increase our investments in preferred materials year over year. As of 2024, approximately 56% of our t"
+    },
+    {
+      "passage_uid": "PU-7e37ff12238896a7",
+      "source_id": "S-8c3a57567093",
+      "char_start": 1685,
+      "char_end": 1959,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:ambiguous_entity"
+      ],
+      "identity_reason": "possible different entity: Vuori Vendor",
+      "statement_type": "descriptive",
+      "preview": "Our Supply Chain We request that our Tier 1 manufacturing vendors abide by our Vuori Vendor Code of Conduct, where we set forth our expectations for the fair treatment of labor, safe and healthy worki"
+    },
+    {
+      "passage_uid": "PU-7d0f454e6b8cf00b",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 2947,
+      "char_end": 3205,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "author_recommendation",
+      "preview": "Ecommerce and customer data can support personalized lifecycle marketing, although Vuori has not publicly disclosed a verified repeat-purchase increase from predictive email campaigns * Vuori has been"
+    },
+    {
+      "passage_uid": "PU-618640dcb9be4b48",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 7474,
+      "char_end": 8042,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Recommending lightweight shorts to customers in warm climates before summer * Surfacing cold-weather outerwear based on temperature drops in specific regions * Triggering cross-sell and repeat-purchas"
+    },
+    {
+      "passage_uid": "PU-959cbf2ddc97b145",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 9308,
+      "char_end": 9457,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "For brands building customer retention strategies, Vuori demonstrates that retention isn't just an email problem. It's a data infrastructure problem."
+    },
+    {
+      "passage_uid": "PU-488485b8d15e14bb",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 10628,
+      "char_end": 11020,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Analyzing Competitive Dynamics Andy Lawrence, Vuori's Senior Vice President of International, described the brand's expansion philosophy: \"We're not chasing quick wins; we're cultivating meaningful co"
+    },
+    {
+      "passage_uid": "PU-188423bcae3bc2be",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 11024,
+      "char_end": 11177,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Driving Growth: Vuori's Marketing Strategy in Action Vuori's growth combines multiple tactics working together rather than relying on any single channel."
+    },
+    {
+      "passage_uid": "PU-0b72b0d286df4a80",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 12260,
+      "char_end": 12830,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Enhancing ROAS with Improved Conversion Data A modern omnichannel apparel brand can strengthen performance through: * Server-side event tracking that reduces dependence on browser-only pixels * Invent"
+    },
+    {
+      "passage_uid": "PU-65d600153f6e6378",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 16447,
+      "char_end": 16883,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Can Opensend improve my email deliverability and list quality? Yes. Opensend Revive restores reach by replacing eligible bounced or outdated email addresses with active addresses for the same users. T"
+    },
+    {
+      "passage_uid": "PU-148ca4a02bc6590a",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 16888,
+      "char_end": 17297,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "What integrations does Opensend support for ecommerce brands? Opensend offers plug-and-play integrations with platforms such as Shopify and Klaviyo, allowing most brands to begin implementation withou"
+    },
+    {
+      "passage_uid": "PU-e859895d2d0901cb",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 17302,
+      "char_end": 17814,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "How quickly can I implement Opensend and see results? Many brands begin implementation without a complex engineering project. Once integrated, Connect begins identifying visitors immediately, Reconnec"
+    },
+    {
+      "passage_uid": "PU-b70f2bd17d8354ed",
+      "source_id": "S-b29ab870ca7e",
+      "char_start": 4503,
+      "char_end": 5203,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Brand Positioning and Intended Audience Vuori positions itself as a premium performance apparel brand that transcends traditional athletic wear. Our positioning is rooted in the idea that clothing sho"
+    },
+    {
+      "passage_uid": "PU-4a2523a2e1cf4344",
+      "source_id": "S-b29ab870ca7e",
+      "char_start": 6413,
+      "char_end": 7047,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "brand_positioning",
+      "preview": "For customers, this means investing in pieces that offer more value by serving multiple purposes—imagine wearing the same joggers for a gym session and then for a relaxed evening with friends. Beyond "
+    },
+    {
+      "passage_uid": "PU-d975dd25704efe79",
+      "source_id": "S-b29ab870ca7e",
+      "char_start": 12022,
+      "char_end": 12624,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "As we evolve, our focus remains on enhancing the user experience, both in terms of product quality and digital engagement. This means continually improving our website to offer more personalized conte"
+    },
+    {
+      "passage_uid": "PU-88d8311f3f10ca73",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 6264,
+      "char_end": 6443,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "As consumer preferences shift toward comfort and versatility, Vuori’s success offers valuable insights into the evolving intersection of fashion, function, and lifestyle branding."
+    },
+    {
+      "passage_uid": "PU-032712ce0b53373f",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 6447,
+      "char_end": 6672,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Brand Equity Vuori’s brand equity is rooted in its ability to blend performance apparel with lifestyle aesthetics, creating a distinct identity in the competitive athleisure market. This equity stems "
+    },
+    {
+      "passage_uid": "PU-1ba8b2e95372b2a7",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 6677,
+      "char_end": 7043,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "1. Brand Differentiation Vuori distinguishes itself by merging technical athletic wear with everyday comfort and style. Unlike competitors focused solely on performance or fashion, Vuori’s designs are"
+    },
+    {
+      "passage_uid": "PU-f2add845c1f3b177",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 9294,
+      "char_end": 9552,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "1. Company Vuori is a premium performance and lifestyle brand bridging the gap between athletic functionality and casual wear. The brand’s identity is deeply rooted in California’s coastal lifestyle, "
+    },
+    {
+      "passage_uid": "PU-0b82363a2fd66a77",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 11012,
+      "char_end": 11187,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "3. Competitors Vuori operates in a crowded athleisure market, competing with established brands like Lululemon, Athleta, and Nike and emerging direct-to-consumer (DTC) labels."
+    },
+    {
+      "passage_uid": "PU-26800773f57f0e2f",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 12308,
+      "char_end": 12969,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Design and Functionality – Vuori’s clothing emphasizes comfort, durability, and technical features like moisture-wicking and four-way stretch. Signature products such as the Kore Short and Performance"
+    },
+    {
+      "passage_uid": "PU-1dfe5899692a6f58",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 12974,
+      "char_end": 13095,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "2. Price Vuori adopts a premium pricing strategy, positioning itself in line with competitors like Lululemon and Athleta."
+    },
+    {
+      "passage_uid": "PU-a926c754e4ac8997",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 18996,
+      "char_end": 19132,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Community Engagement – Local fitness events, workshops, and in-store experiences foster curiosity and emotional connection to the brand."
+    },
+    {
+      "passage_uid": "PU-32731fda5d5ce7d0",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 19137,
+      "char_end": 19747,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "3. Desire – Creating Emotional and Practical Appeal Vuori appeals to consumer desires by promoting its values and product benefits. * Lifestyle Alignment – Vuori’s messaging taps into the aspirational"
+    },
+    {
+      "passage_uid": "PU-9c3ff990f2a803b7",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 3560,
+      "char_end": 4258,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "provider_reported_result",
+      "preview": "Crafting a Distinct Brand Voice The brand's positioning centers on three pillars: * Lifestyle over performance: Minimalist designs in muted earth tones that look like premium casual wear but perform l"
+    },
+    {
+      "passage_uid": "PU-8fd5b22f6ba9866f",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 12087,
+      "char_end": 12255,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Leveraging Analytics for Marketing Optimization and ROI Vuori's marketing technology stack demonstrates how data infrastructure drives performance across every channel."
+    },
+    {
+      "passage_uid": "PU-85f8b0db2e9554d6",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 16012,
+      "char_end": 16442,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "provider_reported_result",
+      "preview": "How does Opensend help ecommerce brands identify anonymous visitors? Opensend Connect can identify 25-35% of anonymous website visitors by matching eligible traffic through its proprietary identity gr"
+    },
+    {
+      "passage_uid": "PU-0753ab267c39ae68",
+      "source_id": "S-50862d78a15a",
+      "char_start": 5800,
+      "char_end": 6050,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Strategic investment from SoftBank ($400M in 2021) to fuel global expansion. * Diversification of product lines beyond men’s apparel to cater to a broader audience. * Enhanced retail experience to bri"
+    },
+    {
+      "passage_uid": "PU-34be578171e2ad37",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 1701,
+      "char_end": 2174,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:ambiguous_entity"
+      ],
+      "identity_reason": "possible different entity: Vuori Marketing",
+      "statement_type": "author_recommendation",
+      "preview": "Vuori Marketing Strategy (2026) Opensend OpensendAugust 4, 2026 Share on FacebookShare on XShare on LinkedIn Vuori Marketing Strategy (2026) Vuori grew from a Southern California startup to a $5.5 bil"
+    },
+    {
+      "passage_uid": "PU-d4b327b05d5dc727",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 5043,
+      "char_end": 5362,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:ambiguous_entity"
+      ],
+      "identity_reason": "possible different entity: Vuori Journal",
+      "statement_type": "descriptive",
+      "preview": "Optimizing Digital Presence with SEO and Content The Vuori Journal supports organic discovery and brand engagement through lifestyle content about fitness, wellness, travel, and California culture. Th"
+    },
+    {
+      "passage_uid": "PU-9c360fc5eae51336",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 8046,
+      "char_end": 8197,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "author_recommendation",
+      "preview": "Advanced Marketing Strategy Frameworks for Vuori in 2026 Vuori's growth trajectory follows recognizable strategic patterns that other brands can adapt."
+    },
+    {
+      "passage_uid": "PU-ab31a911c0693c12",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 8202,
+      "char_end": 8677,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Implementing Data-Driven Decision Making The brand's approach combines several frameworks: * STP Model: Segmentation by lifestyle (active professionals, wellness enthusiasts), targeting affluent house"
+    },
+    {
+      "passage_uid": "PU-ffd476d6a6f53ae6",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 14784,
+      "char_end": 15414,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Reconnect maintains customer identity across devices and browsers, ensuring abandoned cart flows and lifecycle triggers fire correctly when shoppers switch from mobile to desktop * Revive restores rea"
+    },
+    {
+      "passage_uid": "PU-07e65aacaca7b307",
+      "source_id": "S-b29ab870ca7e",
+      "char_start": 713,
+      "char_end": 1234,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "brand_positioning",
+      "preview": "Here, you’ll discover how Vuori’s innovative designs prioritize both functionality and fashion, ensuring you feel confident and comfortable in any setting. From the origins of our brand to the future "
+    },
+    {
+      "passage_uid": "PU-900a202a99f38180",
+      "source_id": "S-b29ab870ca7e",
+      "char_start": 9159,
+      "char_end": 9704,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Transparency means being honest and clear with our customers about what goes into our products and how they are made. On this website, we commit to providing accurate information about materials, sour"
+    },
+    {
+      "passage_uid": "PU-1576bb5dc09d7b32",
+      "source_id": "S-b29ab870ca7e",
+      "char_start": 9705,
+      "char_end": 10108,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "By upholding these principles, we foster a relationship of trust with our audience, demonstrating that our focus is on delivering genuine benefits rather than mere marketing promises. Ultimately, our "
+    },
+    {
+      "passage_uid": "PU-319946455980f5a3",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 12127,
+      "char_end": 12283,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "1. Product Vuori’s product strategy centers on versatile, high-quality performance apparel that transitions seamlessly between athletic and casual settings."
+    },
+    {
+      "passage_uid": "PU-f83eb6963588bbbb",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 22393,
+      "char_end": 22913,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Touchpoints: E-commerce platform, retail stores, targeted ads, and limited-time offers. * Actions: Customers add products to their carts, take advantage of seasonal collections, and engage with person"
+    },
+    {
+      "passage_uid": "PU-2e75a8ec6ad5be21",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 25235,
+      "char_end": 25408,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Omnichannel Presence – A blend of direct-to-consumer (DTC) sales, physical retail expansion, and selective wholesale partnerships ensures widespread reach and accessibility."
+    },
+    {
+      "passage_uid": "PU-e2c9b694764c37ae",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 0,
+      "char_end": 175,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Social Opensend has acquired Fueled. Activate stronger first-party signals across your marketing. Learn More Opensend LogoOpensend Logo Solutions Connect solution Connect icon"
+    },
+    {
+      "passage_uid": "PU-3a5aa88bf699e555",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 386,
+      "char_end": 661,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Ignite Improve the customer data powering your marketing. Industries Consumer Goods Consumer Goods Health & Wellness Health, Wellness & Fitness Apparel & Fashion Apparel, Fashion & Jewelry Home & Furn"
+    },
+    {
+      "passage_uid": "PU-c559ec5e22716cbb",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 666,
+      "char_end": 1220,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "How To Identify Anonymous Website Visitors What Is Remarketing? Definition, Examples, and How It Works ### What Is Remarketing? Definition, Examples, and How It Works Resources How it works How it wor"
+    },
+    {
+      "passage_uid": "PU-3ec649f4265ccf0f",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 5394,
+      "char_end": 5696,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Advanced segmentation by lifestyle personas rather than basic demographics * Weather-based and seasonal recommendations that can make product messaging more relevant to shoppers * Detailed product edu"
+    },
+    {
+      "passage_uid": "PU-f2f8edb1fb883ac0",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 17819,
+      "char_end": 18025,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "How does Opensend handle customer data privacy and compliance? Opensend uses a proprietary identity graph and a network of opt-in consumer profiles to help brands enrich and activate their first-party"
+    },
+    {
+      "passage_uid": "PU-598b24b5914ba3af",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 19832,
+      "char_end": 19981,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Summarize with AI and extract key insights ChatGPTGoogle AIPerplexityClaude Klaviyo Partner badge Buyer's Choice We're buyer's choice on TrustRadius."
+    },
+    {
+      "passage_uid": "PU-210d3a4866df1b47",
+      "source_id": "S-b29ab870ca7e",
+      "char_start": 74,
+      "char_end": 712,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Brand Overview and Website Purpose Vuori represents a new era in performance apparel, where premium comfort meets refined style. Born from the vibrant Coastal California culture that integrates fitnes"
+    },
+    {
+      "passage_uid": "PU-e6f8917229545672",
+      "source_id": "S-b29ab870ca7e",
+      "char_start": 1235,
+      "char_end": 1572,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "As you navigate through our site, you’ll find comprehensive information about our men’s and women’s collections, designed to meet the needs of those who value both performance and aesthetics. Whether "
+    },
+    {
+      "passage_uid": "PU-df91d0ab6327cb3a",
+      "source_id": "S-b29ab870ca7e",
+      "char_start": 2222,
+      "char_end": 2885,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Over the years, the brand has grown significantly, with reports indicating a valuation that has reached impressive heights, such as an estimated $4 billion. This growth reflects the increasing recogni"
+    },
+    {
+      "passage_uid": "PU-4a6e1072539abe72",
+      "source_id": "S-b29ab870ca7e",
+      "char_start": 5866,
+      "char_end": 6412,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Core Values and Practical Customer Benefits At the heart of Vuori are core values centered on premium comfort and versatility. These values translate into practical customer benefits that define our b"
+    },
+    {
+      "passage_uid": "PU-132b6e7a5bddd9dd",
+      "source_id": "S-b29ab870ca7e",
+      "char_start": 7220,
+      "char_end": 7888,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Product Research and Editorial Approach Our product research and editorial approach on vuori-joggers.com are designed to offer visitors informed and engaging content about Vuori’s offerings. We conduc"
+    },
+    {
+      "passage_uid": "PU-a33e98a61eb3b51e",
+      "source_id": "S-b29ab870ca7e",
+      "char_start": 7889,
+      "char_end": 8503,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "For example, readers might find guides on choosing the right joggers for different activities or testimonials from users who have incorporated Vuori into their daily routines. Our goal is to empower v"
+    },
+    {
+      "passage_uid": "PU-61e4b94dc591c069",
+      "source_id": "S-b29ab870ca7e",
+      "char_start": 8504,
+      "char_end": 9158,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Through well-researched content, we help visitors understand why Vuori stands out in the performance apparel market. ## Quality, Usefulness and Transparency Principles Quality, usefulness, and transpa"
+    },
+    {
+      "passage_uid": "PU-00cc6660109f046e",
+      "source_id": "S-b29ab870ca7e",
+      "char_start": 12625,
+      "char_end": 12786,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "By keeping an eye on trends and listening to our community, we strive to set new standards in performance wear that cater to the evolving demands of modern life."
+    },
+    {
+      "passage_uid": "PU-b6745498e6baa0ea",
+      "source_id": "S-b29ab870ca7e",
+      "char_start": 12790,
+      "char_end": 13409,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Clear Closing Summary In summary, Vuori embodies the essence of premium performance apparel, where comfort and versatility are not just features but a lifestyle. From our humble beginnings in 2015 to "
+    },
+    {
+      "passage_uid": "PU-aef6be8cfdc180df",
+      "source_id": "S-b29ab870ca7e",
+      "char_start": 13410,
+      "char_end": 14070,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "This website serves as a platform to share our story, provide valuable insights, and guide visitors in making the most of our apparel. As we look to the future, we are committed to innovation and sust"
+    },
+    {
+      "passage_uid": "PU-d6a1ec085ef61cbc",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 108,
+      "char_end": 350,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "The Economics of Red Bull December 19, 2025 #### Marvell Technology: PESTEL and Macro-Environmental Analysis November 16, 2025 Facebook X (Twitter) Instagram Tuesday, November 3 HivelrHivelrHivelrHive"
+    },
+    {
+      "passage_uid": "PU-7940d1c48c3e83c7",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 26856,
+      "char_end": 27328,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Royal Caribbean: Marketing Strategy Marketing 1,050 Views #### Vacheron Constantin: Marketing Strategy Marketing 401 Views Add A Comment Leave A Reply Save my name, email, and website in this browser "
+    },
+    {
+      "passage_uid": "PU-96e2aea3d22c491c",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 27865,
+      "char_end": 28014,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Ad Blocker Enabled! Our website is made possible by displaying online advertisements to our visitors. Please support us by disabling your Ad Blocker."
+    },
+    {
+      "passage_uid": "PU-b1e45325010090c5",
+      "source_id": "S-50862d78a15a",
+      "char_start": 5565,
+      "char_end": 5784,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Competing with giants like Lululemon, Nike, and Adidas in the performance apparel space. * Scaling sustainably while maintaining quality and exclusivity. * Evolving with trends in the rapidly changing"
+    },
+    {
+      "passage_uid": "PU-a54a1f45bc4850d5",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 18203,
+      "char_end": 18414,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Get 1 month free for $1 Exclusive, blog only offer: Identify hidden visitors and boost conversions for only a dollar. Start Your Trial Opensend OpensendAugust 4, 2026 Share on FacebookShare on XShare "
+    },
+    {
+      "passage_uid": "PU-92f9a0c818bd15cf",
+      "source_id": "S-a9eb7eacee45",
+      "char_start": 19179,
+      "char_end": 19309,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Littledata Pricing: How Much Does Littledata Cost in 2027 * #### Elevar (Getelevar.com) Pricing: How Much Does Elevar Cost in 2027"
+    },
+    {
+      "passage_uid": "PU-1c407b901ce2103b",
+      "source_id": "S-b29ab870ca7e",
+      "char_start": 2886,
+      "char_end": 3053,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "As we look back on our growth, we remain focused on the core principles that started it all: creating apparel that empowers individuals to live actively and stylishly."
+    },
+    {
+      "passage_uid": "PU-e9600e2160ea9645",
+      "source_id": "S-b29ab870ca7e",
+      "char_start": 3057,
+      "char_end": 3744,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Main Product Families and How They Serve Users Vuori’s main product families are structured to serve both men and women with apparel that meets the demands of an active lifestyle. Our collections incl"
+    },
+    {
+      "passage_uid": "PU-56f6f3d48e39f3e5",
+      "source_id": "S-b29ab870ca7e",
+      "char_start": 3745,
+      "char_end": 4334,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "How do these products serve users? They eliminate the need to choose between comfort and style, allowing seamless transitions throughout the day. For instance, a pair of Vuori joggers can take you fro"
+    },
+    {
+      "passage_uid": "PU-d7da631c2c12b493",
+      "source_id": "S-b29ab870ca7e",
+      "char_start": 4335,
+      "char_end": 4499,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Whether shopping for men’s or women’s wear, visitors can expect a range that caters to diverse activities and preferences, all unified by Vuori’s signature quality."
+    },
+    {
+      "passage_uid": "PU-79f5dc7b7caaeaa2",
+      "source_id": "S-b29ab870ca7e",
+      "char_start": 7048,
+      "char_end": 7216,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "By prioritizing what truly matters to our users, Vuori delivers tangible benefits that enhance daily life, making our apparel a trusted companion for various occasions."
+    },
+    {
+      "passage_uid": "PU-6772da61ad5fbab6",
+      "source_id": "S-b29ab870ca7e",
+      "char_start": 10367,
+      "char_end": 11045,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "author_recommendation",
+      "preview": "From there, navigate to specific sections like product categories, where you can learn about different jogger styles, materials, and fits for both men and women. Our blog section offers in-depth conte"
+    },
+    {
+      "passage_uid": "PU-f89194553f4f3189",
+      "source_id": "S-b29ab870ca7e",
+      "char_start": 14071,
+      "char_end": 14243,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Vuori Site Logo Vuori crafts premium performance joggers inspired by Coastal California living, blending comfort, style, and versatility for your active everyday lifestyle."
+    },
+    {
+      "passage_uid": "PU-43a486fb3e360f38",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 647,
+      "char_end": 845,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "What Successful Companies Do Differently February 23, 2023 ## Body Language Secrets of Leaders December 8, 2023 ## Charlie Munger: The Mastermind Behind Berkshire Hathaway’s Success December 2, 2023"
+    },
+    {
+      "passage_uid": "PU-513cbed8ed599f9a",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 849,
+      "char_end": 971,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "How to Navigate Difficult Conversations October 27, 2023 ## How to Manage an Effective and Efficient Team October 13, 2023"
+    },
+    {
+      "passage_uid": "PU-fa61c01325521c4f",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 975,
+      "char_end": 1158,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Power and Politics in Organizations January 6, 2024 ## How to Build a High-Performing Organization November 11, 2023 ## How Bureaucracy Creates Barriers to Innovation October 13, 2023"
+    },
+    {
+      "passage_uid": "PU-96626540d68d8d3b",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 2065,
+      "char_end": 2218,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Policy Over Profits: The Fed and the S&P 500 November 9, 2025 ## The Federal Reserve’s December 2024 Rate Cut: Implications and Outlook December 20, 2024"
+    },
+    {
+      "passage_uid": "PU-a38157a5270d52c0",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 2439,
+      "char_end": 2612,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Afghanistan: Porter’s Diamond Model-The Competitive Advantage of Nations May 18, 2025 ## Djibouti: Porter’s Diamond Model-The Competitive Advantage of Nations April 14, 2025"
+    },
+    {
+      "passage_uid": "PU-93f6f9b76ae63b70",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 2774,
+      "char_end": 2947,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Afghanistan: Porter’s Diamond Model-The Competitive Advantage of Nations May 18, 2025 ## Long-term Investment Strategies in a Tariff-Driven Market Environment April 26, 2025"
+    },
+    {
+      "passage_uid": "PU-1fda737992ad5f75",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 2951,
+      "char_end": 3121,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant",
+        "boilerplate:table_of_contents"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Cuba: Porter’s Diamond Model-The Competitive Advantage of Nations February 22, 2025 * Investments 1. Finance 2. Crypto 3. Stocks 4. Hedge Fund 5. Quant 6. Data Science 7."
+    },
+    {
+      "passage_uid": "PU-d86b4d0123563b25",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 3325,
+      "char_end": 3446,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "How Blockchain is Transforming Business May 13, 2023 ## Bitcoin: PESTEL and Macro-Environmental Analysis January 14, 2023"
+    },
+    {
+      "passage_uid": "PU-fd1ec808072daaa2",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 3710,
+      "char_end": 3841,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Market Volatility and Trading Strategies December 31, 2023 ## The Secrets of Momentum in Quantitative Hedge Funds December 24, 2023"
+    },
+    {
+      "passage_uid": "PU-b0ec82afd50de95b",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 4058,
+      "char_end": 4193,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "The Secrets of Momentum in Quantitative Hedge Funds December 24, 2023 ## Sharpe Ratio: How to Identify Winning Investments May 20, 2023"
+    },
+    {
+      "passage_uid": "PU-e1a4cf0946f1279b",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 4230,
+      "char_end": 4369,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Momentum Analysis: TSLA, LULU, AMD January 25, 2021 ## Long-term Investment Strategies in a Tariff-Driven Market Environment April 26, 2025"
+    },
+    {
+      "passage_uid": "PU-7ea89a9023fe7b5b",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 4373,
+      "char_end": 4501,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Tesla (TSLA): Q3 2024 Earnings Call Highlights November 30, 2024 ## September Effect: Stock Market Seasonality September 8, 2024"
+    },
+    {
+      "passage_uid": "PU-97a73bd51c0cdb4d",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 4634,
+      "char_end": 4818,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Starlink’s Role in Supporting SpaceX’s Mars Colonization Plans December 15, 2024 ## SpaceX’s Reusability Model: A Game-Changer for Cost Reduction in Space Exploration December 15, 2024"
+    },
+    {
+      "passage_uid": "PU-13fc102a9ec3e4b2",
+      "source_id": "S-f0bc37feabd5",
+      "char_start": 26101,
+      "char_end": 26445,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "LinkedIn Transforming business strategy with research-driven insights and strategic analysis. With a focus on delivering reliable and actionable insights, Hivelr Business Review empowers individuals a"
+    },
+    {
+      "passage_uid": "PU-aedfccbd068305f3",
+      "source_id": "S-50862d78a15a",
+      "char_start": 8094,
+      "char_end": 8242,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "provider_reported_result",
+      "preview": "CASE STUDY: FoodFor Labs & Teresa… Oct 29, 2026 ### CASE STUDY: FoodFor Labs & Teresa… 2 1 Comment * CASE STUDY: Bee People & Marie So… Oct 28, 2026"
+    },
+    {
+      "passage_uid": "PU-28c968e0170f55c4",
+      "source_id": "S-50862d78a15a",
+      "char_start": 8385,
+      "char_end": 8549,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "provider_reported_result",
+      "preview": "CASE STUDY: SuperMush & Alli Schaper –… Oct 24, 2026 ### CASE STUDY: SuperMush & Alli Schaper –… 6 2 Comments * CASE STUDY: Bird&Be & Samantha Diamond… Oct 23, 2026"
+    },
+    {
+      "passage_uid": "PU-aeca8eaa7144eec7",
+      "source_id": "S-50862d78a15a",
+      "char_start": 8554,
+      "char_end": 8742,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "provider_reported_result",
+      "preview": "CASE STUDY: Bird&Be & Samantha Diamond… 5 2 Comments * CASE STUDY: Bee People & Marie So and… Oct 22, 2026 ### CASE STUDY: Bee People & Marie So and… 1 1 Comment Show more See all articles"
+    },
+    {
+      "passage_uid": "PU-554dd2b9478c52ee",
+      "source_id": "S-b29ab870ca7e",
+      "char_start": 10112,
+      "char_end": 10271,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "author_recommendation",
+      "preview": "How Visitors Can Use This Website Visitors can use vuori-joggers.com as a comprehensive resource for all things related to Vuori joggers and the broader brand."
+    },
+    {
+      "passage_uid": "PU-14ec6a341ec97387",
+      "source_id": "S-b29ab870ca7e",
+      "char_start": 11046,
+      "char_end": 11415,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "author_recommendation",
+      "preview": "By utilizing these resources, you can fully appreciate the comfort and versatility of Vuori apparel and make decisions that align with your active lifestyle. Whether you’re browsing for inspiration or"
+    }
+  ],
+  "status": "ok",
+  "status_reasons": [],
+  "packet_sha256": "aac9d08f5d723cc6b1085ae4cb00ad14dcc01d6db299423f6e3af922de24c96d"
+}

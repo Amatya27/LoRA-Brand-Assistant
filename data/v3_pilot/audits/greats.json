@@ -1,0 +1,109 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "greats",
+  "bound_to": {
+    "packet_sha256": "7515c79267cde47867d10ced674d9e82a96d14a1d696c42d760d047d5862edb2",
+    "prompt_sha256": "ead8859da1b07add3af51dade59414d0e588e65a6763ba793f2504d232db21ea",
+    "completion_sha256": "6f395ffc8e79b7e30c70c3363300e51aba4b42dda44a76bde448e14c1d4d0550",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": [
+      "claim C5: not referenced by any field"
+    ]
+  },
+  "raw_response_sha256": "50fc388cba48770e9b515b7e199ac59e9ca544adb0dc3726a46394c2f449925d",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Founded in 2014, GREATS is the first sneaker brand born in Brooklyn.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that GREATS is the first sneaker brand born in Brooklyn.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Our commitment to you is to create sneakers with a superior fit and feel that's built to last.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states GREATS focuses on creating sneakers with a superior fit and feel that's built to last.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Our goal is to ethically transform premium materials into an experience that moves you.\",\n      \"issues\": [],\n      \"reason\": \"The passage states GREATS' goal is to ethically transform premium materials into an experience that moves you.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"Over 300,000 pairs sold.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that over 300,000 pairs of GREATS sneakers have been sold.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"They chose Shopify to build a clean, cohesive store quickly, using their clear visual vision to guide site flow and logistics.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that GREATS chose Shopify to build a store quickly.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"Greats focused on Facebook, Instagram, and email as their primary acquisition channels during their DTC-first phase.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that GREATS focused on Facebook, Instagram, and email as their primary acquisition channels.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"Greats' paid ads led with a single price-versus-quality argument: Italian-made sneakers at DTC prices versus retail-marked-up designer alternatives.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that GREATS' ads led with a price-versus-quality argument.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Founded in 2014, GREATS is the first sneaker brand born in Brooklyn.",
+        "issues": [],
+        "reason": "The passage explicitly states that GREATS is the first sneaker brand born in Brooklyn."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Our commitment to you is to create sneakers with a superior fit and feel that's built to last.",
+        "issues": [],
+        "reason": "The passage directly states GREATS focuses on creating sneakers with a superior fit and feel that's built to last."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Our goal is to ethically transform premium materials into an experience that moves you.",
+        "issues": [],
+        "reason": "The passage states GREATS' goal is to ethically transform premium materials into an experience that moves you."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "Over 300,000 pairs sold.",
+        "issues": [],
+        "reason": "The passage states that over 300,000 pairs of GREATS sneakers have been sold."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "They chose Shopify to build a clean, cohesive store quickly, using their clear visual vision to guide site flow and logistics.",
+        "issues": [],
+        "reason": "The passage states that GREATS chose Shopify to build a store quickly."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "Greats focused on Facebook, Instagram, and email as their primary acquisition channels during their DTC-first phase.",
+        "issues": [],
+        "reason": "The passage states that GREATS focused on Facebook, Instagram, and email as their primary acquisition channels."
+      },
+      {
+        "claim_id": "C7",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "Greats' paid ads led with a single price-versus-quality argument: Italian-made sneakers at DTC prices versus retail-marked-up designer alternatives.",
+        "issues": [],
+        "reason": "The passage states that GREATS' ads led with a price-versus-quality argument."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-22T23:32:54+00:00",
+  "audit_sha256": "122320f649bd4afb33c81dc2915aaf2952807b2d7e1bf157722fe0497bfc0fca",
+  "dismissed_reviewer_flags": []
+}

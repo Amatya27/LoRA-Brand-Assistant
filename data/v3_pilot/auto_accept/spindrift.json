@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "spindrift",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "3fbce4c0e934fb5e651222bdd816df49fdf9ddc6664f446b69b036596d0d6eeb",
+    "prompt_sha256": "c827cd239170c6386b29ae0a38a102343caaa1433b9a941c53c2413877751d80",
+    "completion_sha256": "20fc076786ec9cd7093fbf7ca243776b95ed4a876dfe869cb42a7cf55bff730a",
+    "audit_sha256": "ebc58cfd934dc2238093e486487999a47a76744467a33b2a0acfc7ab5c9b6535"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 5,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:44+00:00",
+  "record_sha256": "795f7569d32eb9fa6fad42729e856a7af874f118ce8ea952fb97280215770de8"
+}

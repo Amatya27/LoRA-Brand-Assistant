@@ -1,0 +1,20 @@
+{
+  "company_id": "supergoop",
+  "acceptance_basis": "auto_threshold_0.7",
+  "decision": "reject",
+  "reasons": [
+    "audit status fail: claims not fully supported: ['C5']"
+  ],
+  "groundedness": 1.0,
+  "claim_support": {
+    "C1": "supported",
+    "C2": "supported",
+    "C3": "supported",
+    "C4": "supported",
+    "C5": "supported"
+  },
+  "removed_claims": [],
+  "label_completion_sha256": "45c2fd816cf5a885e797ebe62af26662bc7cbc280b45d63af35585323211dfa1",
+  "audit_sha256": "c69ab2a2f48ec236c0a447cda3b6207d60bda45aff7d048378f7054821940fac",
+  "created_at": "2026-11-23T00:28:43+00:00"
+}

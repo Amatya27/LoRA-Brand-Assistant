@@ -1,0 +1,2629 @@
+{
+  "schema_version": "brandpilot.packet.v3",
+  "company": {
+    "company_id": "public-goods",
+    "display_name": "Public Goods",
+    "legacy_name": "Public Goods",
+    "category": "membership household and personal care essentials",
+    "official_domains": [
+      "publicgoods.com"
+    ],
+    "identity_status": "verified",
+    "registry_version": "2026-11-22.v3",
+    "registry_sha256": "cc9ab39277bffb4c0aa0b59df8db2e7fec12da7955a58651370daf2936495a16"
+  },
+  "collection": {
+    "mode": "legacy_cache_replay",
+    "collector_version": "brandpilot-collector-0.3",
+    "created_at": "2026-11-22T20:36:46+00:00",
+    "queries": [
+      "\"Public Goods\" instagram marketing campaign target audience",
+      "\"Public Goods\" social media strategy brand positioning",
+      "\"Public Goods\" marketing campaign press release instagram",
+      "\"Public Goods\" customer audience brand story",
+      "\"Public Goods\" about us brand values audience",
+      "\"Public Goods\" newsroom marketing campaign",
+      "\"Public Goods\" brand campaign case study"
+    ],
+    "notes": [
+      "replayed from legacy packet public-goods-research-packet.json (sha256 091e3b5f82eaa640)",
+      "documents are legacy cached extractions; no new fetches were made"
+    ]
+  },
+  "leads": [
+    {
+      "company_id": "public-goods",
+      "query": "\"Public Goods\" customer audience brand story",
+      "url": "https://www.publicgoods.com/pages/about-us",
+      "title": "About Us – Public Goods",
+      "snippet": "Our entire collection of goods expresses a conscious approach to the everyday. Learn about our mission for a healthier, sustainable home. We plant one tree for every order.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "public-goods",
+      "query": "\"Public Goods\" brand campaign case study",
+      "url": "https://joybyte.com/case-studies/public-goods",
+      "title": "Public Goods Case Study | Joybyte",
+      "snippet": "By cultivating a diverse network of creators and a growing library of reusable content, Public Goods expanded brand discovery, strengthened consumer trust, and established a scalable foundation for sustained growth across organic, paid, and retail marketing initiatives.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "public-goods",
+      "query": "\"Public Goods\" newsroom marketing campaign",
+      "url": "https://www.enrichlabs.ai/case-study/public-goods-email-marketing",
+      "title": "Public Goods Email Marketing: Case Study - Enrich Labs",
+      "snippet": "Oct 29, 2026 · Discover how public sector organizations can use targeted, compliant email strategies to engage citizens, promote public goods, and build community trust.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "public-goods",
+      "query": "\"Public Goods\" newsroom marketing campaign",
+      "url": "https://www.publicgoods.com/blogs/news",
+      "title": "News – Public Goods",
+      "snippet": "Read the latest news from Public Goods. Sustainable living tips, product launches, and company updates. One tree planted per order.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "public-goods",
+      "query": "\"Public Goods\" about us brand values audience",
+      "url": "https://www.publicgoods.com/",
+      "title": "Public Goods",
+      "snippet": "\"After reading about so many chemicals and harsh ingredients in other brands, we opted for this soap. We feel much safer using it. It has a pleasant fragrance and sudsy quality. We will certainly purchase again.\"",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "public-goods",
+      "query": "\"Public Goods\" instagram marketing campaign target audience",
+      "url": "https://fastercapital.com/content/Public-Goods--Marketing-Strategies-for-Public-Goods--Reaching-the-Right-Audience.html",
+      "title": "Public Goods: Marketing Strategies for Public Goods: Reaching ...",
+      "snippet": "Apr 4, 2025 · By identifying and understanding the target audience for public goods, marketers can design and implement effective strategies to reach and persuade them to support the public good.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "public-goods",
+      "query": "\"Public Goods\" instagram marketing campaign target audience",
+      "url": "https://www.instagram.com/publicgoods/",
+      "title": "Public Goods (@publicgoods) • Instagram photos and videos",
+      "snippet": "212K Followers, 814 Following, 343 Posts - Public Goods (@publicgoods) on Instagram: \"Essentials made intentional. Designed with care, made clean, and built to last.\"",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "public-goods",
+      "query": "\"Public Goods\" instagram marketing campaign target audience",
+      "url": "https://ainfluencer.com/instagram-influencer-marketing/",
+      "title": "Instagram Influencer Marketing: The 2026 Playbook",
+      "snippet": "Jun 1, 2026 · What Is Instagram Influencer Marketing? Instagram Influencer marketing is a type of social media marketing in which companies collaborate with content creators to market goods and services to their active followers. Instead of you talking about how amazing your brand is, a trusted creator does it in their own way that their audience is familiar ...",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    }
+  ],
+  "documents": [
+    {
+      "source_id": "S-782cf69e83f1",
+      "company_id": "public-goods",
+      "requested_url": "https://www.publicgoods.com/pages/about-us",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "8910abf43048543530a8e6a0f0bdec4bbf6347f370ac87db00f042e2719ac27a",
+      "text_path": "text/8910abf43048543530a8e6a0f0bdec4bbf6347f370ac87db00f042e2719ac27a.txt",
+      "raw_path": null,
+      "text_chars": 8095,
+      "redirect_chain": [],
+      "identity_decision": "official_domain",
+      "identity_reason": "host publicgoods.com is an official domain",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file f3da18d730ec01afc9684842d11f314e25b0b1279d7c738ddcdb20013f8a50aa.json sha256=cd24a8004db89f0534c643afd559fd78bdaa5f8bff2b9f75aa592f4ad2d9cf54",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-4443f766a1c8",
+      "company_id": "public-goods",
+      "requested_url": "https://joybyte.com/case-studies/public-goods",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "7b311b61531d3f131f796f2d12f31c93ff24ee693bb78ccdd5c6ac6ab86ee6f2",
+      "text_path": "text/7b311b61531d3f131f796f2d12f31c93ff24ee693bb78ccdd5c6ac6ab86ee6f2.txt",
+      "raw_path": null,
+      "text_chars": 3991,
+      "redirect_chain": [],
+      "identity_decision": "third_party_confirmed",
+      "identity_reason": "4 name mention(s) co-occur with membership household and personal care essentials terms",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file fbc66121f431faf6c44bcfd5ad86bf5d3123c42b540ef27d596de16b9be57426.json sha256=fb7954ba774e9089245f16b03a08a3353035d92c4f4393ea2654846a440976a2",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-c0299a6bc538",
+      "company_id": "public-goods",
+      "requested_url": "https://www.enrichlabs.ai/case-study/public-goods-email-marketing",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "dd4ace13dba888241b6643028492ebda8d1e48737811667ae637c217bedd49a9",
+      "text_path": "text/dd4ace13dba888241b6643028492ebda8d1e48737811667ae637c217bedd49a9.txt",
+      "raw_path": null,
+      "text_chars": 20936,
+      "redirect_chain": [],
+      "identity_decision": "unconfirmed",
+      "identity_reason": "company name appears without its product category",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 7898f31530b3902b7aae60e06b25677ba0483db1dfe7a211431aa091a7b30f94.json sha256=f7a90ddd033406db97c9304e882b34215f35b89b349b1ee4df700d1236776362",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-0613c780cd62",
+      "company_id": "public-goods",
+      "requested_url": "https://www.publicgoods.com/blogs/news",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "56c759535e6ef0206e9ec302b73f4a4fc4b21687c9cfc15a7e96b8af68d8627f",
+      "text_path": "text/56c759535e6ef0206e9ec302b73f4a4fc4b21687c9cfc15a7e96b8af68d8627f.txt",
+      "raw_path": null,
+      "text_chars": 9389,
+      "redirect_chain": [],
+      "identity_decision": "official_domain",
+      "identity_reason": "host publicgoods.com is an official domain",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file c491fef9dd33dd8f3a0e6ebe15bbda904358da03bb4dfb4bed2f1e808762dc82.json sha256=9e2d8d1ddef1404307d28b2d972c1082042fdb75b8e743adedf88f458ecf0f7a",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-885234c3132a",
+      "company_id": "public-goods",
+      "requested_url": "https://www.publicgoods.com/",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "74c3859bd11975d451fcd4e7188f7e9b0d46a6c2dd208e79093266a6b09c4b59",
+      "text_path": "text/74c3859bd11975d451fcd4e7188f7e9b0d46a6c2dd208e79093266a6b09c4b59.txt",
+      "raw_path": null,
+      "text_chars": 13754,
+      "redirect_chain": [],
+      "identity_decision": "official_domain",
+      "identity_reason": "host publicgoods.com is an official domain",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 99392ac9308fa5af51527cb3ca87fee6263c755d0e92dcb89d26358fe4397593.json sha256=2d28b9d4dcc3558655502b91fd9ff17ac684a3803b5739e999af69bb0bc52b70",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-ac2232a45e12",
+      "company_id": "public-goods",
+      "requested_url": "https://www.instagram.com/publicgoods/",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "bb5b13d08d1b0e8cb7867d315fa1a9361d5fa7b7e0684edbed38dd2fe4741dbd",
+      "text_path": "text/bb5b13d08d1b0e8cb7867d315fa1a9361d5fa7b7e0684edbed38dd2fe4741dbd.txt",
+      "raw_path": null,
+      "text_chars": 2061,
+      "redirect_chain": [],
+      "identity_decision": "third_party_confirmed",
+      "identity_reason": "3 name mention(s) co-occur with membership household and personal care essentials terms",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 8bf128327857b18e5ef4ec8012b8f11036ed7d8edb51bc400c388203a84cef56.json sha256=728865cf1f90903a4c10cbd8d3172e648a115239ae72133fd923c7ecf3468e23",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-2d4fad2ac221",
+      "company_id": "public-goods",
+      "requested_url": "https://ainfluencer.com/instagram-influencer-marketing/",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "68022dfb9de75c54aee5a7f5b8c0416c9fdc25847cacae13f260e659004a2b41",
+      "text_path": "text/68022dfb9de75c54aee5a7f5b8c0416c9fdc25847cacae13f260e659004a2b41.txt",
+      "raw_path": null,
+      "text_chars": 21817,
+      "redirect_chain": [],
+      "identity_decision": "unconfirmed",
+      "identity_reason": "document body never names the company",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file ad992a75044a50a088b0bfb336818447cfee8902cf2a961120df99f8b7a88808.json sha256=88e2904cb60b360baed7831dbea8d36c141ac85a3d40517b94daf722dfc071da",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "passage_uid": "PU-69ddb64428268a5e",
+      "source_id": "S-782cf69e83f1",
+      "char_start": 6042,
+      "char_end": 6491,
+      "text": "We believe humans should consume and touch products that are healthy, so if it’s not good for you we don’t make it. As Sustainable as Possible We’re always exploring ways to make our products gentler on the planet, from getting rid of plastic when we can to biodegradable packaging. Reforestation Efforts We’ve planted nearly half a million trees, one order at a time. We partner with veritree to restore ecosystems and offset damage to our forests.",
+      "text_sha256": "7acc7d756e22b09d0506a647e00080a9616ed4deefdfa76bf9c1be5fbb125777",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "brand_positioning",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "packaging",
+        "partner"
+      ],
+      "score": 16,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P1",
+      "source_url": "https://www.publicgoods.com/pages/about-us",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-7e15308c4d761fe7",
+      "source_id": "S-0613c780cd62",
+      "char_start": 8122,
+      "char_end": 8357,
+      "text": "What Is a Shampoo Bar? Anyone who's bought liquid shampoo for a long time is probably familiar with the phrase \"lather, rinse and repeat.\" Those first two steps don't actually need repeating. Liquid shampoo brands... Antiperspirant vs.",
+      "text_sha256": "335a80fdce60aabfd5aa8cb69e06a4c414531a639bd1e35cbed5236e90d04154",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "brand"
+      ],
+      "score": 12,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P2",
+      "source_url": "https://www.publicgoods.com/blogs/news",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-4e71bc899a2f6d37",
+      "source_id": "S-4443f766a1c8",
+      "char_start": 559,
+      "char_end": 1087,
+      "text": "Beautiful essentials for a healthier, more sustainable home. ## Overview Public Goods built its brand around simplicity, quality, and everyday essentials, but translating that philosophy into social media required a different approach than traditional consumer packaged goods marketing. Joybyte partnered with the brand to create a creator-driven content ecosystem that integrated products naturally into daily routines, allowing authentic experiences to communicate value through real-life use rather than polished advertising.",
+      "text_sha256": "653aae29bdf4c023302b1ad9a2a9e77599f985640f24aa8ff6dad92f27be1894",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "actual_activity",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "advertis",
+        "brand",
+        "content",
+        "creator",
+        "marketing",
+        "partner",
+        "social media"
+      ],
+      "score": 22,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P3",
+      "source_url": "https://joybyte.com/case-studies/public-goods",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-11246fb4e1058b13",
+      "source_id": "S-4443f766a1c8",
+      "char_start": 1479,
+      "char_end": 2039,
+      "text": "Strategy Public Goods partnered with Joybyte to build a creator program capable of introducing multiple product categories without relying on a one-size-fits-all influencer campaign. Rather than treating every product the same, the strategy focused on matching highly relevant creator communities to each category—from food creators for healthy ramen to lifestyle and home creators for household essentials. This audience-first approach ensured every partnership felt authentic while generating reusable content across the brand’s most important product lines.",
+      "text_sha256": "d17c5ee223373d0b69157256f545652e478344aec38e2cf25aebb25cbd164b3d",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "actual_activity",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "audience",
+        "brand",
+        "campaign",
+        "content",
+        "creator",
+        "influencer",
+        "partner"
+      ],
+      "score": 22,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P4",
+      "source_url": "https://joybyte.com/case-studies/public-goods",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-40f54ebbfd49c5e8",
+      "source_id": "S-4443f766a1c8",
+      "char_start": 2551,
+      "char_end": 3171,
+      "text": "Results Public Goods successfully built a scalable creator content engine that generated authentic awareness across multiple product categories while producing a valuable library of reusable creative. By matching the right creators to the right products and adapting the strategy based on creator performance, the brand established a repeatable framework for launching diverse product lines, strengthening brand storytelling, and supporting long-term marketing efforts with creator-led content. thumbnail for video unboxing of public goods ramen bowl thumbnail for video thumbnail for video variety of public goods items",
+      "text_sha256": "953021d8803b0d8e90352f2b0fb78ea078b1f18da337594bd500febfe62afb2b",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "brand",
+        "content",
+        "creator",
+        "launch",
+        "marketing",
+        "storytelling"
+      ],
+      "score": 16,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P5",
+      "source_url": "https://joybyte.com/case-studies/public-goods",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-df715b905739214c",
+      "source_id": "S-782cf69e83f1",
+      "char_start": 4237,
+      "char_end": 4757,
+      "text": "Exclusive offers and perks Shop as a member & save - $65.00 + $0.00 Continue without the discount - $0.00 Slide image # Why we stay simple Our philosophy is simple: if it isn’t good for you, we don’t make it. Minimalism isn’t just an aesthetic preference for us. It’s about stripping away what isn’t needed and leaving what’s useful, calming, healthy and enjoyable. At our core, we believe in simple ingredients, ethical vendors, earth-first initiatives and everyday products that harmonize with your home and your life.",
+      "text_sha256": "d2e0742b8fa52dea2bc559e783c646105226af074040ae8d12291b6091488358",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "brand_positioning",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [],
+      "score": 12,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P6",
+      "source_url": "https://www.publicgoods.com/pages/about-us",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-625a2de896668b02",
+      "source_id": "S-782cf69e83f1",
+      "char_start": 4758,
+      "char_end": 5353,
+      "text": "We started with a vision a decade ago: to create home essentials that work better than conventional products—without harsh, questionable formulas and accessible no matter how you like to shop. Durable, quality essentials that simplify your life, reflect your values and enhance your home without the noise of trends. Today, we stay committed to the same values. Ingredients are chosen for effectiveness and safety. Materials are selected to last. We make the quotidian products you need the most from a considered angle and bringing them to you with the lowest footprint and highest convenience.",
+      "text_sha256": "2af527a0c2caa69aa956bb5ddc403fe354d8b0068e7f05be693f929665386a3e",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "brand_positioning",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [],
+      "score": 12,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P7",
+      "source_url": "https://www.publicgoods.com/pages/about-us",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-e5acdafc6312657d",
+      "source_id": "S-885234c3132a",
+      "char_start": 11996,
+      "char_end": 12218,
+      "text": "\"After reading about so many chemicals and harsh ingredients in other brands, we opted for this soap. We feel much safer using it. It has a pleasant fragrance and sudsy quality. We will certainly purchase again.\" @Lydia W.",
+      "text_sha256": "25410a2fe34169b7d4569ef7ae76134d1d3200e738075de10d53cbbe5eed95e4",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "brand"
+      ],
+      "score": 12,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P8",
+      "source_url": "https://www.publicgoods.com/",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-1eb9dcdd2c0dbe2f",
+      "source_id": "S-885234c3132a",
+      "char_start": 12234,
+      "char_end": 12406,
+      "text": "Carefully selected We select artisans and manufacturers that share our values Learn More ## Understand everything Make choices confidently with clear labeling on everything",
+      "text_sha256": "77568dfd64011e8a5fb2aed0ab2b12077fb81b50448b9401b4528fc53de04acf",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "brand_positioning",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [],
+      "score": 12,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P9",
+      "source_url": "https://www.publicgoods.com/",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-b32d9d652cedac7d",
+      "source_id": "S-885234c3132a",
+      "char_start": 12515,
+      "char_end": 12721,
+      "text": "VF Vegan Friendly Slide image Up to 50% off retail pricing ## Let’s do business We tailor plans to meet the needs of businesses large and small. Trusted by over 5,000 properties to elevate every guest stay.",
+      "text_sha256": "8312c9debef36f457e46cd4c01953a9105c37ecf3cbdb174a7141e4d2e34014d",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "flags": [
+        "forward_looking_statement"
+      ],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "retail"
+      ],
+      "score": 12,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P10",
+      "source_url": "https://www.publicgoods.com/",
+      "document_identity": "official_domain",
+      "publication_date": null
+    }
+  ],
+  "rejected_passages": [
+    {
+      "passage_uid": "PU-6f0977c70fd85562",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 3247,
+      "char_end": 3599,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "What Is Instagram Influencer Marketing? Instagram Influencer marketing is a type of social media marketing in which companies collaborate with content creators to market goods and services to their ac"
+    },
+    {
+      "passage_uid": "PU-80f0e7edf8baa815",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 19749,
+      "char_end": 20060,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "actual_activity",
+      "preview": "1. How Does Instagram Influencer Marketing Work? Brands will find influencers whose audience matches their target market, agree on campaign goals, and pay the influencer to create sponsored content or"
+    },
+    {
+      "passage_uid": "PU-611803c5baf28c66",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 8992,
+      "char_end": 9663,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "actual_activity",
+      "preview": "4. Find The Right Influencers Finding creators is where many Instagram influencer marketing strategies fall apart. There is more than just a follower number and being cool. They must meet your expecta"
+    },
+    {
+      "passage_uid": "PU-4b26c34aeaa4fb8f",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 9668,
+      "char_end": 10359,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "actual_activity",
+      "preview": "5. Choose Your Collaboration Model Different goals demand different collaboration formats. You can’t use one format for all of the situations. Common options to choose from are: Choose Your Collaborat"
+    },
+    {
+      "passage_uid": "PU-03b7a7af3cded864",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 4022,
+      "char_end": 4682,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Why Is Instagram Suitable for Influencer Marketing? Instagram is a platform that has been a benchmark for influencers for more than a decade. Its visual format and content tools make it ideal for stor"
+    },
+    {
+      "passage_uid": "PU-e3e9e47ea2d69b21",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 5140,
+      "char_end": 6633,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "actual_activity",
+      "preview": "Let’s look at a summarized table of all you need to know about this subject: ───────┬─────────┬──────────────────┬─────────────────────────────────┬───────────────────────────── Influen│Followers│Best"
+    },
+    {
+      "passage_uid": "PU-a05b1fd9a44ecca8",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 7809,
+      "char_end": 8381,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "2. Define the Target Audience Always remember that the best Instagram influencer marketing for brands starts with the customer, not the influencer. * Map out ideal customers based on age, location, in"
+    },
+    {
+      "passage_uid": "PU-dd55f4bf164ce5f1",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 12990,
+      "char_end": 13591,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "actual_activity",
+      "preview": "They take real │Launches with a creator you and │both audiences at once │coordination │already work with collabs │ │ │ ────────┴───────────────────────────────────┴──────────────────────────┴─────────"
+    },
+    {
+      "passage_uid": "PU-9c50fe95610ba301",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 6973,
+      "char_end": 7441,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "6 Steps for Instagram Influencer Marketing Strategy Goals, audience, influencers, content, and tracking results are all components of a successful Instagram influencer marketing campaign. Brands that "
+    },
+    {
+      "passage_uid": "PU-4d0f41879d4a96db",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 19259,
+      "char_end": 19736,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "Conclusion Influencers are major players in today’s marketing. You can’t expect to see a rise in your numbers without collaborating with them. And where is the place for this rather than Instagram? In"
+    },
+    {
+      "passage_uid": "PU-14c23d09a6a73579",
+      "source_id": "S-4443f766a1c8",
+      "char_start": 1088,
+      "char_end": 1358,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "By cultivating a diverse network of creators and a growing library of reusable content, Public Goods expanded brand discovery, strengthened consumer trust, and established a scalable foundation for su"
+    },
+    {
+      "passage_uid": "PU-48da4fc7806623fd",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 10871,
+      "char_end": 11328,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "Common Mistakes to Avoid While Instagram Influencer Marketing Even big brands can do some things that can be considered mistakes in Instagram influencer marketing. Here are some you need to avoid: Com"
+    },
+    {
+      "passage_uid": "PU-27db0d38a439b1bf",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 16457,
+      "char_end": 17150,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "The Paid Partnership Rule This part is not a preference. Under the FTC guidance for social media influencers, responsibility for a clear disclosure sits with the advertiser as well as the creator, so "
+    },
+    {
+      "passage_uid": "PU-05aeef5c66ebf5f5",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 20635,
+      "char_end": 20976,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "4. How Do Brands Find Instagram Influencers? Brands can find influencers by different means, such as: * Searching relevant hashtags and keywords on Instagram. * Using influencer marketing platforms li"
+    },
+    {
+      "passage_uid": "PU-ab7f62cea34ca60f",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 10362,
+      "char_end": 10867,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Brand ambassadorships: If you prefer longer‑term partnerships that build trust, this method is for you. ### 6. Track Performance Track the effectiveness of your campaign both during and after it is ru"
+    },
+    {
+      "passage_uid": "PU-5bf22609059287fc",
+      "source_id": "S-0613c780cd62",
+      "char_start": 310,
+      "char_end": 817,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Clear Bath & Body Cleaning Shop Bundles Account Cart 0 Discover Bath & Body Home Cleaning Bundles Surplus Discover New Arrivals Best Sellers Refills Fragrance Free Shop All Link to Become a member Sli"
+    },
+    {
+      "passage_uid": "PU-a3581e282200124f",
+      "source_id": "S-0613c780cd62",
+      "char_start": 818,
+      "char_end": 1416,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Home Kitchen Dining Bedroom Bathroom Decor & Accessories Food Shop All Link to Become a member Slide image Become a member 20% off everything, free shipping on all orders and a yearly $80 credit. Clea"
+    },
+    {
+      "passage_uid": "PU-3613b9d77ef8d396",
+      "source_id": "S-0613c780cd62",
+      "char_start": 1417,
+      "char_end": 1558,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Surplus Shop All Link to Become a member Slide image Become a member 20% off everything, free shipping on all orders and a yearly $80 credit."
+    },
+    {
+      "passage_uid": "PU-bf21b46f1e832a93",
+      "source_id": "S-0613c780cd62",
+      "char_start": 1559,
+      "char_end": 2189,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "IndividualBusiness Discover Show menu Back Discover New Arrivals Best Sellers Refills Fragrance Free Shop All Bath & Body Show menu Back Bath & Body Body Hair Skincare Dental Menstrual Tools & Accesso"
+    },
+    {
+      "passage_uid": "PU-6ce8ce92fa92a7a7",
+      "source_id": "S-0613c780cd62",
+      "char_start": 2194,
+      "char_end": 2404,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "0 products in cart Free shipping is unlocked You're $45 away from free shipping ##### No more products available for purchase You’ll love these too Public Goods Household Dish Soap Dish Soap Regular p"
+    },
+    {
+      "passage_uid": "PU-a59abb0d3df8ad0f",
+      "source_id": "S-0613c780cd62",
+      "char_start": 3924,
+      "char_end": 4102,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Exclusive offers and perks Add membership - $65.00 Pay full price *$20 immediately and $20 every three months. Valid on orders $65+ Continue to Checkout - $0.00 Continue Shopping"
+    },
+    {
+      "passage_uid": "PU-65b0d5a96a7285de",
+      "source_id": "S-0613c780cd62",
+      "char_start": 4237,
+      "char_end": 4416,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Exclusive offers and perks Shop as a member & save - $65.00 + $0.00 Continue without the discount - $0.00 # News Wood vs Plastic Cutting Boards: What to Use and How to Care for It"
+    },
+    {
+      "passage_uid": "PU-69935676151bb5a6",
+      "source_id": "S-0613c780cd62",
+      "char_start": 4420,
+      "char_end": 4659,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Wood vs Plastic Cutting Boards: What to Use and How to Care for It Most of us pick a cutting board once and stop thinking about it. But the material you chop on every day matters, both for what ends u"
+    },
+    {
+      "passage_uid": "PU-d976bfa7124c0972",
+      "source_id": "S-0613c780cd62",
+      "char_start": 4663,
+      "char_end": 4926,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Are All Sulfates Bad? Picture this: a shampoo bottle boasts all the right signs of a clean, ethical product. 100% recycled plastic, 100% vegetarian, logos from organizations that protect animals from "
+    },
+    {
+      "passage_uid": "PU-c32e927936ef39a1",
+      "source_id": "S-0613c780cd62",
+      "char_start": 4930,
+      "char_end": 5162,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Sea Sponge vs Shower Pouf vs Washcloth Everyone has a preferred way of getting clean in the shower: a pouf, a washcloth, or nothing at all beyond a bar of soap and bare hands. A pouf, or... Why You Sh"
+    },
+    {
+      "passage_uid": "PU-d3dda9a8a7fd71f0",
+      "source_id": "S-0613c780cd62",
+      "char_start": 5166,
+      "char_end": 5436,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Why You Should Give Bamboo Straws A Chance Carrying around reusables, a water bottle, utensils, a straw, is one of the simplest ways to cut down on daily waste. But picking the right reusable straw is"
+    },
+    {
+      "passage_uid": "PU-efa882ef6aaaa0fc",
+      "source_id": "S-0613c780cd62",
+      "char_start": 5440,
+      "char_end": 5725,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "How Traditional Floss Ends Up Being an Eco Nightmare Living an eco-friendly life can be tough, especially when starting to look at everyday routines with a more \"green\" eye. Reusables, like steel bott"
+    },
+    {
+      "passage_uid": "PU-36d89e75ec3e9ad7",
+      "source_id": "S-0613c780cd62",
+      "char_start": 5729,
+      "char_end": 5985,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Why You Shouldn't Rinse After Brushing It's a small habit most people never think twice about: rinsing the mouth out with water right after brushing. According to Dynamic Dental Care, that habit might"
+    },
+    {
+      "passage_uid": "PU-d3c35d8001e08800",
+      "source_id": "S-0613c780cd62",
+      "char_start": 5989,
+      "char_end": 6234,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Are You Taking Too Many Showers? Is a daily shower actually good for your skin? Not necessarily. According to Angela Palmer, an esthetician specializing in the treatment of acne and problem skin, a da"
+    },
+    {
+      "passage_uid": "PU-965e36642d8f0b9e",
+      "source_id": "S-0613c780cd62",
+      "char_start": 6260,
+      "char_end": 6536,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "What Does Shaving Cream Do? Why You Should Use It While the rugged bearded look may still be in style, plenty of men prefer a clean shaven face. Before carefully swiping the razor blade across skin, m"
+    },
+    {
+      "passage_uid": "PU-15ee09a841e68545",
+      "source_id": "S-0613c780cd62",
+      "char_start": 6540,
+      "char_end": 6812,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "What Does the \"Fragrance\" Ingredient Actually Mean? Fragrance is the only ingredient listed on a product label that is allowed to not say what it really is. Most people want to use products with this "
+    },
+    {
+      "passage_uid": "PU-8ed1b33b0ff7a173",
+      "source_id": "S-0613c780cd62",
+      "char_start": 6816,
+      "char_end": 7055,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Natural Fragrances: Are They Actually Natural and Safe? When a blend of essential oils drops into a diffuser, or perfume is spritzed onto skin, the nostrils become inundated with a sweet fragrance. Da"
+    },
+    {
+      "passage_uid": "PU-5a39a535609b295d",
+      "source_id": "S-0613c780cd62",
+      "char_start": 7088,
+      "char_end": 7351,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Biodegradable vs Compostable In the world of recycling, there are several terms that can be difficult to break down (much like certain types of plastic). Two of the most commonly used phrases are... D"
+    },
+    {
+      "passage_uid": "PU-3b36e7dad67f8393",
+      "source_id": "S-0613c780cd62",
+      "char_start": 7355,
+      "char_end": 7619,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Does Witch Hazel Expire? How to Tell If Your Bottle Has Gone Bad For decades witch hazel has fallen in and out of fashion in the beauty industry. It's often recognized in its liquid form, which looks "
+    },
+    {
+      "passage_uid": "PU-3b8331e6f72fef45",
+      "source_id": "S-0613c780cd62",
+      "char_start": 7637,
+      "char_end": 7882,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "How to Use Wool Dryer Balls | Laundry 101 What's fluffier than a freshly sheared sheep's wool? Clothes after a spin with wool dryer balls. There are different types of \"balls\" that can be used when dr"
+    },
+    {
+      "passage_uid": "PU-9869b6d16959317f",
+      "source_id": "S-0613c780cd62",
+      "char_start": 7886,
+      "char_end": 8118,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "How to Use a Shampoo Bar Many shampoo bar users have a similar story to tell. They hear about shampoo bars from a friend or online, sometimes already frustrated with the downsides of liquid shampoo: p"
+    },
+    {
+      "passage_uid": "PU-5f346657bcccbc47",
+      "source_id": "S-0613c780cd62",
+      "char_start": 8421,
+      "char_end": 8644,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Which Is Better? Nearly everyone uses either deodorant or antiperspirant daily, since everyone sweats. But \"excessive sweating\" is a real medical condition with a name: hyperhidrosis. It occurs when s"
+    },
+    {
+      "passage_uid": "PU-a0cad479d0a7d077",
+      "source_id": "S-0613c780cd62",
+      "char_start": 8755,
+      "char_end": 8909,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Looks like something went wrong. Please double check your email. If the problem persists, we're always here to help. Contact us at service@publicgoods.com"
+    },
+    {
+      "passage_uid": "PU-995c479f3aa2b357",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 1177,
+      "char_end": 1550,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "Free Tools Instagram Tools Instagram Audit Tool Instagram Engagement Checker Instagram Follower Count Tool Compare Instagram Influencers YouTube Tools YouTube Audit Tool Find YouTube Creators YouTube "
+    },
+    {
+      "passage_uid": "PU-d3d5bd11990a45ec",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 2008,
+      "char_end": 2694,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "Instagram Influencer Marketing Instagram is still where most creator budgets go, and it is also where most of them are spent badly. The platform makes the first step easy, finding someone with an audi"
+    },
+    {
+      "passage_uid": "PU-d3174b2dd21a27b0",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 2695,
+      "char_end": 3243,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "Instagram influencer marketing is one of the quickest ways for brands to attract attention, establish trust, and convert casual users into paying consumers. These are all dependent on doing the market"
+    },
+    {
+      "passage_uid": "PU-bb1a601f59bb94f1",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 4685,
+      "char_end": 4882,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "Sales are boosted by in-app checkout, shoppable posts, and Instagram advertisements. Instagram influencer marketing feels natural when you combine its visual storytelling with reliable influencers."
+    },
+    {
+      "passage_uid": "PU-d679cf8b06d6bad6",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 8386,
+      "char_end": 8987,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "3. Choose Your KPIs To track the effectiveness of your influencer marketing, keep an eye on results and KPIs. You can then modify your material if the numbers start to decline. Here are some of the be"
+    },
+    {
+      "passage_uid": "PU-8789f125d8f430bf",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 17900,
+      "char_end": 18399,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "A creator whose post looked quiet on day one is regularly the one that sold most by week three, which is why campaigns that judge early cut the wrong people. Two fixes cover most of it. Give every cre"
+    },
+    {
+      "passage_uid": "PU-35361e0067abe2f8",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 20361,
+      "char_end": 20630,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "3. Is Instagram Influencer Marketing Suitable For Small Businesses? Yes. Small businesses can benefit the most by collaborating with nano and micro influencers, who are affordable and have high engage"
+    },
+    {
+      "passage_uid": "PU-00104f83332830a5",
+      "source_id": "S-4443f766a1c8",
+      "char_start": 2043,
+      "char_end": 2547,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Execution Joybyte recruited 50 carefully selected creators and adapted the program as performance insights emerged. When food creators naturally gravitated toward the ramen products, the team expanded"
+    },
+    {
+      "passage_uid": "PU-5324d494fb21b3ee",
+      "source_id": "S-782cf69e83f1",
+      "char_start": 310,
+      "char_end": 817,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Clear Bath & Body Cleaning Shop Bundles Account Cart 0 Discover Bath & Body Home Cleaning Bundles Surplus Discover New Arrivals Best Sellers Refills Fragrance Free Shop All Link to Become a member Sli"
+    },
+    {
+      "passage_uid": "PU-26ab2730013df7bd",
+      "source_id": "S-782cf69e83f1",
+      "char_start": 818,
+      "char_end": 1416,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Home Kitchen Dining Bedroom Bathroom Decor & Accessories Food Shop All Link to Become a member Slide image Become a member 20% off everything, free shipping on all orders and a yearly $80 credit. Clea"
+    },
+    {
+      "passage_uid": "PU-08ff65fc4fba3a3c",
+      "source_id": "S-782cf69e83f1",
+      "char_start": 1417,
+      "char_end": 1558,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Surplus Shop All Link to Become a member Slide image Become a member 20% off everything, free shipping on all orders and a yearly $80 credit."
+    },
+    {
+      "passage_uid": "PU-6c0d477012632972",
+      "source_id": "S-782cf69e83f1",
+      "char_start": 1559,
+      "char_end": 2189,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "IndividualBusiness Discover Show menu Back Discover New Arrivals Best Sellers Refills Fragrance Free Shop All Bath & Body Show menu Back Bath & Body Body Hair Skincare Dental Menstrual Tools & Accesso"
+    },
+    {
+      "passage_uid": "PU-6fcabb78a10211d0",
+      "source_id": "S-782cf69e83f1",
+      "char_start": 2194,
+      "char_end": 2404,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "0 products in cart Free shipping is unlocked You're $45 away from free shipping ##### No more products available for purchase You’ll love these too Public Goods Household Dish Soap Dish Soap Regular p"
+    },
+    {
+      "passage_uid": "PU-44b46e2a7a65d80a",
+      "source_id": "S-782cf69e83f1",
+      "char_start": 3924,
+      "char_end": 4102,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Exclusive offers and perks Add membership - $65.00 Pay full price *$20 immediately and $20 every three months. Valid on orders $65+ Continue to Checkout - $0.00 Continue Shopping"
+    },
+    {
+      "passage_uid": "PU-584c899564c1976b",
+      "source_id": "S-782cf69e83f1",
+      "char_start": 5369,
+      "char_end": 5583,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Durable and timeless Designed with longevity in mind and crafted to integrate seamlessly into any space ## Transparently labeled Understand what you’re getting at a glance. Healthy ingredients with no"
+    },
+    {
+      "passage_uid": "PU-79bb3f825823f17d",
+      "source_id": "S-782cf69e83f1",
+      "char_start": 5692,
+      "char_end": 5862,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "VF Vegan Friendly Slide image Slide image Slide image 100,000+ Meals donated to food banks 250,000 Conscious consumers choosing better 400+ Harmful ingredients eliminated"
+    },
+    {
+      "passage_uid": "PU-df9ab238d2c8e100",
+      "source_id": "S-782cf69e83f1",
+      "char_start": 6545,
+      "char_end": 7111,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Public Goods makes simple, well-designed essentials that support healthier living, reduce impact, and integrate calmly into everyday life. What makes Public Goods products more sustainable? Each Publi"
+    },
+    {
+      "passage_uid": "PU-1290c0c4bfc0d70c",
+      "source_id": "S-782cf69e83f1",
+      "char_start": 7461,
+      "char_end": 7615,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Looks like something went wrong. Please double check your email. If the problem persists, we're always here to help. Contact us at service@publicgoods.com"
+    },
+    {
+      "passage_uid": "PU-85715882ef47aaad",
+      "source_id": "S-885234c3132a",
+      "char_start": 310,
+      "char_end": 817,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Clear Bath & Body Cleaning Shop Bundles Account Cart 0 Discover Bath & Body Home Cleaning Bundles Surplus Discover New Arrivals Best Sellers Refills Fragrance Free Shop All Link to Become a member Sli"
+    },
+    {
+      "passage_uid": "PU-a930d0b36c82923b",
+      "source_id": "S-885234c3132a",
+      "char_start": 818,
+      "char_end": 1416,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Home Kitchen Dining Bedroom Bathroom Decor & Accessories Food Shop All Link to Become a member Slide image Become a member 20% off everything, free shipping on all orders and a yearly $80 credit. Clea"
+    },
+    {
+      "passage_uid": "PU-9deff2940d6e126c",
+      "source_id": "S-885234c3132a",
+      "char_start": 1417,
+      "char_end": 1558,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Surplus Shop All Link to Become a member Slide image Become a member 20% off everything, free shipping on all orders and a yearly $80 credit."
+    },
+    {
+      "passage_uid": "PU-1ca4f0d6c9277774",
+      "source_id": "S-885234c3132a",
+      "char_start": 1559,
+      "char_end": 2189,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "IndividualBusiness Discover Show menu Back Discover New Arrivals Best Sellers Refills Fragrance Free Shop All Bath & Body Show menu Back Bath & Body Body Hair Skincare Dental Menstrual Tools & Accesso"
+    },
+    {
+      "passage_uid": "PU-f3fdf304f36eed30",
+      "source_id": "S-885234c3132a",
+      "char_start": 2194,
+      "char_end": 2404,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "0 products in cart Free shipping is unlocked You're $45 away from free shipping ##### No more products available for purchase You’ll love these too Public Goods Household Dish Soap Dish Soap Regular p"
+    },
+    {
+      "passage_uid": "PU-b7902560c08dfd8c",
+      "source_id": "S-885234c3132a",
+      "char_start": 3924,
+      "char_end": 4102,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Exclusive offers and perks Add membership - $65.00 Pay full price *$20 immediately and $20 every three months. Valid on orders $65+ Continue to Checkout - $0.00 Continue Shopping"
+    },
+    {
+      "passage_uid": "PU-2fbb24ae5dcb6c47",
+      "source_id": "S-885234c3132a",
+      "char_start": 4237,
+      "char_end": 4431,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Exclusive offers and perks Shop as a member & save - $65.00 + $0.00 Continue without the discount - $0.00 Slide image # Gather around Dinnerware designed for everyday tables and longer evenings."
+    },
+    {
+      "passage_uid": "PU-2dd6755217f8aa64",
+      "source_id": "S-885234c3132a",
+      "char_start": 4678,
+      "char_end": 4819,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Shop Cleaning Click to Shop Bundles Shop Bundles Curated for convenience ### Shop Bundles Click to Shop Surplus Shop Surplus For your savings"
+    },
+    {
+      "passage_uid": "PU-f1236eafb35924f9",
+      "source_id": "S-885234c3132a",
+      "char_start": 4840,
+      "char_end": 5001,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Tree free by nature Everyday paper essentials made without trees, for a lighter footprint without compromising quality. Shop The Tree Free Collection Slide image"
+    },
+    {
+      "passage_uid": "PU-9b47ad5a57d4f2a8",
+      "source_id": "S-885234c3132a",
+      "char_start": 5005,
+      "char_end": 5391,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Favorites View all products View all Public Goods Personal Care Hand Soap Best Seller Select option Full 12 fl oz Variant sold out or unavailable Refill 34 fl oz Variant sold out or unavailable Full &"
+    },
+    {
+      "passage_uid": "PU-b08b424f287b90ad",
+      "source_id": "S-885234c3132a",
+      "char_start": 5396,
+      "char_end": 5844,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Hand Soap 4.7 Rated 4.7 out of 5 stars 4.7 Stars (698 Reviews) 12 fl oz, Full Regular price $14.95 Public Goods Personal Care Hand Soap Best Seller Select option Full 12 fl oz Variant sold out or unav"
+    },
+    {
+      "passage_uid": "PU-4a55eb7eee3a5c7c",
+      "source_id": "S-885234c3132a",
+      "char_start": 5849,
+      "char_end": 6016,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Hand Soap 4.7 Rated 4.7 out of 5 stars 4.7 Stars (698 Reviews) 34 fl oz, Refill Regular price $29.95 Public Goods Personal Care Lotion Best Seller Select scent Scented"
+    },
+    {
+      "passage_uid": "PU-bb10fbd483b1dc75",
+      "source_id": "S-885234c3132a",
+      "char_start": 6029,
+      "char_end": 6391,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Fragrance Free Select option Full 12 fl oz Variant sold out or unavailable Refill 34 fl oz Variant sold out or unavailable Full & Refill 12 fl oz & 34 fl oz Variant sold out or unavailable Dispenser &"
+    },
+    {
+      "passage_uid": "PU-339a3589fbf06c79",
+      "source_id": "S-885234c3132a",
+      "char_start": 6396,
+      "char_end": 6574,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Lotion 4.6 Rated 4.6 out of 5 stars 4.6 Stars (681 Reviews) Scented, 12 fl oz, Full Regular price $19.95 Public Goods Personal Care Lotion Refill Best Seller Select scent Scented"
+    },
+    {
+      "passage_uid": "PU-c434b4f5a2e0fc8c",
+      "source_id": "S-885234c3132a",
+      "char_start": 6587,
+      "char_end": 6949,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Fragrance Free Select option Full 12 fl oz Variant sold out or unavailable Refill 34 fl oz Variant sold out or unavailable Full & Refill 12 fl oz & 34 fl oz Variant sold out or unavailable Dispenser &"
+    },
+    {
+      "passage_uid": "PU-a6c404661bcbc652",
+      "source_id": "S-885234c3132a",
+      "char_start": 6954,
+      "char_end": 7135,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Lotion 4.6 Rated 4.6 out of 5 stars 4.6 Stars (681 Reviews) Scented, 34 fl oz, Refill Regular price $37.95 Public Goods Personal Care Shampoo Best Seller Select scent Classic Citrus"
+    },
+    {
+      "passage_uid": "PU-52295fcc4239e50d",
+      "source_id": "S-885234c3132a",
+      "char_start": 7155,
+      "char_end": 7446,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Fragrance Free Select option Full 12 fl oz Variant sold out or unavailable Refill 34 fl oz Variant sold out or unavailable Full & Refill 12 fl oz & 34 fl oz Variant sold out or unavailable Travel 3 fl"
+    },
+    {
+      "passage_uid": "PU-cb284ac8407b96f7",
+      "source_id": "S-885234c3132a",
+      "char_start": 7451,
+      "char_end": 7645,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Shampoo 4.6 Rated 4.6 out of 5 stars 4.6 Stars (949 Reviews) Classic Citrus, 12 fl oz, Full Regular price $19.95 Public Goods Personal Care Shampoo Refill Best Seller Select scent Classic Citrus"
+    },
+    {
+      "passage_uid": "PU-5ce0e75f1642f512",
+      "source_id": "S-885234c3132a",
+      "char_start": 7665,
+      "char_end": 7956,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Fragrance Free Select option Full 12 fl oz Variant sold out or unavailable Refill 34 fl oz Variant sold out or unavailable Full & Refill 12 fl oz & 34 fl oz Variant sold out or unavailable Travel 3 fl"
+    },
+    {
+      "passage_uid": "PU-245711287088c9d1",
+      "source_id": "S-885234c3132a",
+      "char_start": 7961,
+      "char_end": 8154,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Shampoo 4.6 Rated 4.6 out of 5 stars 4.6 Stars (949 Reviews) Classic Citrus, 34 fl oz, Refill Regular price $37.95 Public Goods Personal Care Conditioner Best Seller Select scent Classic Citrus"
+    },
+    {
+      "passage_uid": "PU-d8b04f71cee8adc6",
+      "source_id": "S-885234c3132a",
+      "char_start": 8174,
+      "char_end": 8465,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Fragrance Free Select option Full 12 fl oz Variant sold out or unavailable Refill 34 fl oz Variant sold out or unavailable Full & Refill 12 fl oz & 34 fl oz Variant sold out or unavailable Travel 3 fl"
+    },
+    {
+      "passage_uid": "PU-84234c7ce8cf1443",
+      "source_id": "S-885234c3132a",
+      "char_start": 8470,
+      "char_end": 8672,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Conditioner 4.6 Rated 4.6 out of 5 stars 4.6 Stars (735 Reviews) Classic Citrus, 12 fl oz, Full Regular price $19.95 Public Goods Personal Care Conditioner Refill Best Seller Select scent Classic Citr"
+    },
+    {
+      "passage_uid": "PU-404dac600c3c871c",
+      "source_id": "S-885234c3132a",
+      "char_start": 8692,
+      "char_end": 8983,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Fragrance Free Select option Full 12 fl oz Variant sold out or unavailable Refill 34 fl oz Variant sold out or unavailable Full & Refill 12 fl oz & 34 fl oz Variant sold out or unavailable Travel 3 fl"
+    },
+    {
+      "passage_uid": "PU-b2bd07b213757c97",
+      "source_id": "S-885234c3132a",
+      "char_start": 8988,
+      "char_end": 9226,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Conditioner 4.6 Rated 4.6 out of 5 stars 4.6 Stars (735 Reviews) Classic Citrus, 34 fl oz, Refill Regular price $37.95 ## An award winning essential Our HGTV award winning dish soap proves the everyda"
+    },
+    {
+      "passage_uid": "PU-c2102cca7cf6645f",
+      "source_id": "S-885234c3132a",
+      "char_start": 9432,
+      "char_end": 9816,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Refills View all products View all Public Goods Personal Care Hand Soap Best Seller Select option Full 12 fl oz Variant sold out or unavailable Refill 34 fl oz Variant sold out or unavailable Full & R"
+    },
+    {
+      "passage_uid": "PU-79edfd9a46103ad6",
+      "source_id": "S-885234c3132a",
+      "char_start": 9821,
+      "char_end": 10003,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Hand Soap 4.7 Rated 4.7 out of 5 stars 4.7 Stars (698 Reviews) 34 fl oz, Refill Regular price $29.95 Public Goods Personal Care Shampoo Refill Best Seller Select scent Classic Citrus"
+    },
+    {
+      "passage_uid": "PU-bbc755a9d3253a8d",
+      "source_id": "S-885234c3132a",
+      "char_start": 10023,
+      "char_end": 10314,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Fragrance Free Select option Full 12 fl oz Variant sold out or unavailable Refill 34 fl oz Variant sold out or unavailable Full & Refill 12 fl oz & 34 fl oz Variant sold out or unavailable Travel 3 fl"
+    },
+    {
+      "passage_uid": "PU-2117026ac92144e2",
+      "source_id": "S-885234c3132a",
+      "char_start": 10319,
+      "char_end": 10519,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Shampoo 4.6 Rated 4.6 out of 5 stars 4.6 Stars (949 Reviews) Classic Citrus, 34 fl oz, Refill Regular price $37.95 Public Goods Personal Care Conditioner Refill Best Seller Select scent Classic Citrus"
+    },
+    {
+      "passage_uid": "PU-0ef077b363c32bbd",
+      "source_id": "S-885234c3132a",
+      "char_start": 10539,
+      "char_end": 10830,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Fragrance Free Select option Full 12 fl oz Variant sold out or unavailable Refill 34 fl oz Variant sold out or unavailable Full & Refill 12 fl oz & 34 fl oz Variant sold out or unavailable Travel 3 fl"
+    },
+    {
+      "passage_uid": "PU-eb95624f25e66c3e",
+      "source_id": "S-885234c3132a",
+      "char_start": 10835,
+      "char_end": 11037,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Conditioner 4.6 Rated 4.6 out of 5 stars 4.6 Stars (735 Reviews) Classic Citrus, 34 fl oz, Refill Regular price $37.95 Public Goods Personal Care Body Wash Refill Best Seller Select scent Classic Citr"
+    },
+    {
+      "passage_uid": "PU-f4491eef8213ce63",
+      "source_id": "S-885234c3132a",
+      "char_start": 11057,
+      "char_end": 11352,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Fragrance Free Select option Full 12 fl oz Variant sold out or unavailable Refill 34 fl oz Variant sold out or unavailable Full & Refill Set 12 fl oz & 34 fl oz Variant sold out or unavailable Travel "
+    },
+    {
+      "passage_uid": "PU-a2a5507b47af4192",
+      "source_id": "S-885234c3132a",
+      "char_start": 11357,
+      "char_end": 11995,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Body Wash 4.7 Rated 4.7 out of 5 stars 4.7 Stars (684 Reviews) Classic Citrus, 34 fl oz, Refill Regular price $37.95 Slide image Slide image Slide image \"Really love this soap! The consistency is spot"
+    },
+    {
+      "passage_uid": "PU-47697c958727bd55",
+      "source_id": "S-885234c3132a",
+      "char_start": 13120,
+      "char_end": 13274,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Looks like something went wrong. Please double check your email. If the problem persists, we're always here to help. Contact us at service@publicgoods.com"
+    },
+    {
+      "passage_uid": "PU-8430a7c3c4bdf52b",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 3286,
+      "char_end": 3896,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Data management includes uploading contacts, segmenting audiences, and scheduling campaigns aligned with civic calendars. For more on managing social media engagement, see our social media engagement "
+    },
+    {
+      "passage_uid": "PU-83d0c443ea706a29",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 5316,
+      "char_end": 5987,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "For strategies on effective content moderation, see our content moderation complete guide. ### Build and Maintain a High-Quality, Segmented Email List Successful promotion depends on cultivating a per"
+    },
+    {
+      "passage_uid": "PU-b4f7f48abed6223d",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 792,
+      "char_end": 1174,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "Solutions Influencer Marketplaces For Influencers & Affiliates For Brands & Business For Agencies and Multiple Clients Amazon Boost for Creators $500K Ad Boost for Brands Affiliate Marketing Platform "
+    },
+    {
+      "passage_uid": "PU-dd8cfa71e1d163d1",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 3622,
+      "char_end": 4018,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "You “rent” an influencer’s credibility, reach, and content skills to get your brand in front of their community. * This works because people trust individuals far more than brands, especially when the"
+    },
+    {
+      "passage_uid": "PU-f6481bab220972fe",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 7446,
+      "char_end": 7804,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "1. Define Clear Goals Establish your influencer marketing objectives first. Choose whether you want more sales, more website traffic, or brand exposure. Setting clear goals helps you to evaluate your "
+    },
+    {
+      "passage_uid": "PU-9e975a36f1e5fd93",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 11426,
+      "char_end": 11587,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "You must treat influencers as strategic partners, not ad placements, and your Instagram influencer marketing strategy will last longer than a single trend cycle."
+    },
+    {
+      "passage_uid": "PU-2d810f81e45a8c7a",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 12429,
+      "char_end": 12989,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "actual_activity",
+      "preview": "It is gone in 24 │Launches, discount codes, │the only reliable click path on │hours unless saved to a │anything time bound │Instagram │highlight │ ────────┼───────────────────────────────────┼────────"
+    },
+    {
+      "passage_uid": "PU-d14bb23dd200490e",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 17306,
+      "char_end": 17899,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "Why Instagram’s Own Numbers Mislead Instagram will show a creator’s reach, impressions and engagement, and none of those tell you whether anything sold. Two gaps matter. The first is that Reels have n"
+    },
+    {
+      "passage_uid": "PU-ef47f3216b93a5f5",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 7692,
+      "char_end": 8250,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "What Are Best Practices for Engaging Audiences with Public Goods via Email Campaigns? ### Segmentation and Personalization Segment audiences based on demographics, engagement, giving history, or inter"
+    },
+    {
+      "passage_uid": "PU-b377d6a11c3c24c9",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 18944,
+      "char_end": 19368,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Hydro Flask Email Marketing: Case Study Boost Hydro Flask sales with personalized, seasonal email strategies, automation, and engaging visuals to increase open rates and foster customer loyalty. Team "
+    },
+    {
+      "passage_uid": "PU-b226217b1c9e4c58",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 19809,
+      "char_end": 20248,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Prose Email Marketing: Case Study Boost engagement and conversions with Prose's personalized, data-driven email marketing strategy—leveraging automation, segmentation, and optimization for maximum ROI"
+    },
+    {
+      "passage_uid": "PU-b904bc8c14ea6475",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 20253,
+      "char_end": 20462,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "DipYourCar Marketing Strategy: Case Study Discover top marketing strategies for DipYourCar—boost local SEO, leverage social media, influencer partnerships, and optimize your online presence for maximu"
+    },
+    {
+      "passage_uid": "PU-f5977997151e507d",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 4886,
+      "char_end": 5139,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "Types of Instagram Influencers And When to Use Each Choosing the right type of influencer is very important in your Instagram influencer marketing strategy. Bigger isn’t always better, and relevance a"
+    },
+    {
+      "passage_uid": "PU-45698057678e68a9",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 15192,
+      "char_end": 15558,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "The ranges to open a negotiation from are in influencer rates, and nano influencers and micro influencers cover the two tiers worth starting with. Usage rights are the term most brands forget to negot"
+    },
+    {
+      "passage_uid": "PU-9cd2d88199146a7a",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 16160,
+      "char_end": 16453,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "And audience location, because a creator in your market with an audience somewhere you do not ship to is the commonest expensive mistake in ecommerce. The full checklist is in how to audit an influenc"
+    },
+    {
+      "passage_uid": "PU-27fc5a5559b911ee",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 18403,
+      "char_end": 18903,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "Where to Find Instagram Creators In the order that costs least. Your own customer list first, because someone who already bought and already has an audience is the cheapest creator acquisition there i"
+    },
+    {
+      "passage_uid": "PU-d1675b05d9d08f60",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 20065,
+      "char_end": 20356,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "2. How Much Does Instagram Influencer Marketing Cost? Influencer rates differ from year to year and are based on follower count, engagement rate, niche, and content type. Nano and micro influencers ma"
+    },
+    {
+      "passage_uid": "PU-3087950b808aa163",
+      "source_id": "S-782cf69e83f1",
+      "char_start": 7112,
+      "char_end": 7257,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "author_recommendation",
+      "preview": "To help you understand what's in the products you're getting everything is clearly labeled to make sure your purchases are suited to your values."
+    },
+    {
+      "passage_uid": "PU-f3dcb60b313c9348",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 15562,
+      "char_end": 16159,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Vet the Audience Before You Send Anything Instagram shows you a follower count and nothing about whether those followers are real. That check is the one that decides whether the campaign was a waste, "
+    },
+    {
+      "passage_uid": "PU-9c6802d476ca1a5a",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 2102,
+      "char_end": 2762,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "What Is a Public Goods Email Marketing Strategy and How Does It Work? A public goods email marketing strategy involves targeted communication by public sector organizations to inform, engage, and buil"
+    },
+    {
+      "passage_uid": "PU-e52a0718c024185d",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 3897,
+      "char_end": 4501,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Monitoring platforms provide insights into open rates, click-through rates, and feedback, enabling continuous optimization. For instance, Toronto’s email campaigns inform residents about service disru"
+    },
+    {
+      "passage_uid": "PU-7b4941ff40b728ff",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 4631,
+      "char_end": 5315,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "How Can Organizations Effectively Promote Public Goods Through Email Marketing? ### Leverage Integrated, Personalized, and Automated Campaigns Organizations should harness email marketing as a direct,"
+    },
+    {
+      "passage_uid": "PU-b15dda03edd0b3b9",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 6613,
+      "char_end": 7200,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "For tips on handling negative comments or crises, see our social media crisis management. ### Implement Behavior-Triggered Automation Use automation to reinforce public goods promotion through behavio"
+    },
+    {
+      "passage_uid": "PU-71613a408b9c71ba",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 17074,
+      "char_end": 17680,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "This exception does not cover fundraising or campaigning, which demand explicit consent. Using purchased lists generally breaches regulations unless recipients explicitly consented. Verify that data s"
+    },
+    {
+      "passage_uid": "PU-b2313de6b5429eec",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 18481,
+      "char_end": 18714,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "It helped us dramatically improve our > existing social workflows including community management, social listening, and brand advocacy. > This is literally the future of work.” Social Media Manager at"
+    },
+    {
+      "passage_uid": "PU-a84370dc086f0448",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 19373,
+      "char_end": 19804,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Cotopaxi Email Marketing: Case Study Discover Cotopaxi’s powerful email marketing strategy: personalized content, storytelling, segmentation, and tools like Klaviyo to boost engagement and conversions"
+    },
+    {
+      "passage_uid": "PU-cb304ddae5692f66",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 13595,
+      "char_end": 13750,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "What Instagram Creators Cost Rates vary by niche far more than by follower count, and any number you are quoted is an opening position rather than a price."
+    },
+    {
+      "passage_uid": "PU-b40008699df20aaf",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 18904,
+      "char_end": 19255,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "Our list of free influencer marketing tools covers what costs nothing, influencer marketing platforms compares the paid databases, and how to DM influencers plus influencer outreach templates cover th"
+    },
+    {
+      "passage_uid": "PU-1f8f83d83c658e81",
+      "source_id": "S-ac2232a45e12",
+      "char_start": 106,
+      "char_end": 782,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "790 following Public Goods Essentials made intentional. Designed with care, made clean, and built to last. Link iconwww.publicgoods.com and 1 more Posts Reels Tagged Video by Public Goods on November "
+    },
+    {
+      "passage_uid": "PU-61ffc3586cc64fc1",
+      "source_id": "S-ac2232a45e12",
+      "char_start": 783,
+      "char_end": 1387,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Carousel Photo by Public Goods on October 24, 2026. May be an image of coffee cup, coffee maker, carafe and text. Photo by Public Goods on October 21, 2026. Carousel Video by Public Goods on October 2"
+    },
+    {
+      "passage_uid": "PU-060c4c4aaca942ab",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 5988,
+      "char_end": 6612,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "To improve your social media support and customer service, see our social media support guide. ### Share Impactful Stories and Clear Calls-to-Action Craft storytelling emails showcasing how support yi"
+    },
+    {
+      "passage_uid": "PU-9b1374180fc664a6",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 8872,
+      "char_end": 9228,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Clear and Actionable CTAs Include prominent, concise CTA buttons—\"Help feed a family today,\" \"Support Sarah’s future\"—using action verbs and making them visually distinct to drive clicks. Multiple CTA"
+    },
+    {
+      "passage_uid": "PU-0c9063679bc4a264",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 10516,
+      "char_end": 10744,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Maintain a Consistent Schedule Send regular updates—monthly newsletters, quarterly reports, event reminders—to stay top of mind without overwhelming supporters. Consistency fosters trust and anticipat"
+    },
+    {
+      "passage_uid": "PU-276d7f0d4c3b925c",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 11367,
+      "char_end": 11568,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Regularly remove invalid contacts and segment inactive users to sustain high deliverability (Source: Campaign Monitor). To learn more about social media analytics, see our social media analytics guide"
+    },
+    {
+      "passage_uid": "PU-c49d6bc9239d0b46",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 11573,
+      "char_end": 11880,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Conversion and Revenue Monitor actions such as petition signing or event registration. For public awareness campaigns, a 5% conversion rate for event sign-ups is a benchmark. Track email-driven donati"
+    },
+    {
+      "passage_uid": "PU-e0e6171d5a50fbd2",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 12066,
+      "char_end": 12473,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Use engagement data to refine segmentation, ensuring sustained support [Source: Granicus]. ### Advanced Analytics and Attribution Apply multi-touch attribution models to assign credit across channels—"
+    },
+    {
+      "passage_uid": "PU-b5ee4e313a284a50",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 13508,
+      "char_end": 14143,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Use incentives like free reports, targeted sign-up prompts, and encourage sharing to grow an engaged audience [Source: Mailtrap]. Ensuring high deliverability remains difficult. Advocacy and informati"
+    },
+    {
+      "passage_uid": "PU-aff6b43d3035ac27",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 14478,
+      "char_end": 14836,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Regular audits and clear policies foster trust and legal adherence, reducing risks [Source: Business.com]. Overall, overcoming these challenges demands strategic list management, technical authenticat"
+    },
+    {
+      "passage_uid": "PU-ff2c5b978655237c",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 14840,
+      "char_end": 15518,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "How Can Personalization and Segmentation Improve Public Goods Email Marketing? Personalization and segmentation make communication relevancy and engagement soar. Segmenting audiences by demographics, "
+    },
+    {
+      "passage_uid": "PU-97897a34e305e157",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 16158,
+      "char_end": 16492,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "They boost interaction rates, reflecting content value and supporting long-term campaign success [Source: Litmus & Validity]. In summary, tailored messaging—both broad and individual—strengthens relat"
+    },
+    {
+      "passage_uid": "PU-e54fd00320bb174f",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 17822,
+      "char_end": 18303,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Conversely, adding contacts without explicit opt-in damages reputation and violates laws. In conclusion, responsible public goods email marketing relies on strict adherence to consent laws, transparen"
+    },
+    {
+      "passage_uid": "PU-5e062626a20c97dd",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 18718,
+      "char_end": 18939,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Other posts you may like Hydro Flask Email Marketing: Case Study - Boost Hydro Flask sales with personalized, seasonal email strategies, automation, and engaging visuals to increase open rates and fos"
+    },
+    {
+      "passage_uid": "PU-35ab985bf37a2da4",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 6750,
+      "char_end": 6969,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "author_recommendation",
+      "preview": "You can narrow down influencers based on their niche, country, or any other aspect you want. You can also check their previous collaboration and see if they area good fit for you or not. So, don’t mis"
+    },
+    {
+      "passage_uid": "PU-7c734e1bf031eb5a",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 12136,
+      "char_end": 12428,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "There is no │Awareness, and finding an │followers, because the algorithm │link in a Reel │audience you do not already │distributes it │ │have ────────┼───────────────────────────────────┼─────────────"
+    },
+    {
+      "passage_uid": "PU-8e2b3700bea56142",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 17151,
+      "char_end": 17302,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "Write the requirement into the brief rather than mentioning it at contract stage. Most creators want to get this right and simply do not know the rule."
+    },
+    {
+      "passage_uid": "PU-2a37eb3673f2e373",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 1137,
+      "char_end": 1297,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "When marketing runs itself Project FSD: a fully AI-run store Scaling Helena's tools Company About Us Affiliates Featured Can AI agents buy from the Fortune 500?"
+    },
+    {
+      "passage_uid": "PU-c901b9c8837ec948",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 7460,
+      "char_end": 7688,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Use mobile-responsive designs, short subject lines, and engaging imagery to boost open and click rates, amplifying your message (Source: KWSM). For further guidance on social media trends, see our soc"
+    },
+    {
+      "passage_uid": "PU-845b22f08c827122",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 8592,
+      "char_end": 8867,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Storytelling and Impact Sharing Use storytelling to foster emotional connection. Share real beneficiary stories—like Sarah’s journey of rebuilding her life through donor support—to inspire giving. Thi"
+    },
+    {
+      "passage_uid": "PU-f416997d1305191a",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 9751,
+      "char_end": 10002,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Regular Testing and Analytics Continuously test subject lines, content, send times, and formats. Track key metrics—open rates, click-throughs, conversions—and use insights to refine strategies. Regula"
+    },
+    {
+      "passage_uid": "PU-8426144a584b9290",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 10165,
+      "char_end": 10511,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Transparency builds trust and sustains supporter relationships Nonprofit Tech for Good. ### Cross-Channel Integration Coordinate email with social media, SMS, and in-app messaging. Use each platform’s"
+    },
+    {
+      "passage_uid": "PU-dd0049c12de68db8",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 10748,
+      "char_end": 11170,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "How Do You Measure the Success of an Email Strategy for Public Goods? ### Engagement Metrics Track open rates, click-throughs, and click-to-open ratios. For example, a 15-25% open rate suggests effect"
+    },
+    {
+      "passage_uid": "PU-df2b585f3c415fd6",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 12588,
+      "char_end": 12778,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "High sharing indicates strong emotional connection. Segmenting by demographics or engagement levels allows tailored messaging that boosts relevance and support [Source: campaignmonitor.com]."
+    },
+    {
+      "passage_uid": "PU-bd2b794ca39d78a1",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 12783,
+      "char_end": 13192,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Challenges and Context External factors like Apple’s Mail Privacy Protection can distort open rates; rely more on click and conversion data. Authenticating emails, maintaining list hygiene, and tracki"
+    },
+    {
+      "passage_uid": "PU-50af4563e48dcc0e",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 13196,
+      "char_end": 13368,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "What Are Common Challenges in Marketing Public Goods Through Email, and How Can They Overcome ## Them? Building and maintaining a high-quality email list poses a challenge."
+    },
+    {
+      "passage_uid": "PU-594d0d8de0497092",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 15519,
+      "char_end": 16157,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Combined, segmentation and personalization create a relationship ecosystem. Segmentation broadens relevance, while personalization fine-tunes content, reducing barriers and increasing support. For ins"
+    },
+    {
+      "passage_uid": "PU-7eddd07167d21a00",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 16496,
+      "char_end": 16931,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "What Legal and Ethical Considerations Must Guide Public Goods Email Marketing? Legal compliance remains critical. The Privacy and Electronic Communications Regulations 2003 (PECR) require explicit con"
+    },
+    {
+      "passage_uid": "PU-2485a096146476ba",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 20492,
+      "char_end": 20696,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Want to send better email campaigns without the busywork? Angela is an AI email marketer who lives in your inbox. Send a brief, she builds it in Klaviyo or Mailchimp. You approve before anything goes "
+    },
+    {
+      "passage_uid": "PU-f0b35c94f61f5b2e",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 11591,
+      "char_end": 12135,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "author_recommendation",
+      "preview": "Instagram Formats, and What Each One Is Actually For Choosing the wrong format is the commonest reason a well chosen creator produces nothing. The four surfaces do different jobs and the brief should "
+    },
+    {
+      "passage_uid": "PU-cfaf87357466176c",
+      "source_id": "S-2d4fad2ac221",
+      "char_start": 13751,
+      "char_end": 15191,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "author_recommendation",
+      "preview": "What follows is the shape of the market rather than a rate card. ───────┬───────────┬────────────────────────────────────────────────────┬─────────────────────────── Creator│Followers │What you are bu"
+    },
+    {
+      "passage_uid": "PU-b7ccc78cd0df8063",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 1546,
+      "char_end": 2098,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "author_recommendation",
+      "preview": "Public Goods Email Marketing: Case Study Discover how public sector organizations can use targeted, compliant email strategies to engage citizens, promote public goods, and build community trust. Seij"
+    },
+    {
+      "passage_uid": "PU-332e2ec9484dc240",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 2763,
+      "char_end": 3072,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "For example, a municipal government might send a welcome email to new residents, outlining key services and contact information to set a positive engagement tone. Contact segmentation based on demogra"
+    },
+    {
+      "passage_uid": "PU-5fe6dd395c1bc869",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 7205,
+      "char_end": 7363,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Ensure Technical Best Practices and Compliance To maximize reach, emails must land in inboxes. Authenticate domains with SPF, DKIM, DMARC, and BIMI protocols."
+    },
+    {
+      "passage_uid": "PU-241461d1ba73c59c",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 8255,
+      "char_end": 8587,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Crafting Compelling Subject Lines and Preview Text Create short, emotionally resonant subject lines that evoke urgency or highlight impact—like \"Your support helps feed a family this week\" versus \"Don"
+    },
+    {
+      "passage_uid": "PU-8f174677eca1d967",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 9233,
+      "char_end": 9465,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Mobile-First Design Design responsive emails optimized for mobile devices—single-column layouts, large buttons, brief text. Over half of emails open on phones, so accessibility and readability remain "
+    },
+    {
+      "passage_uid": "PU-87a2d95976474490",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 9470,
+      "char_end": 9746,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Automation and Timely Engagement Set up automated workflows for onboarding, re-engagement, and targeted appeals. Such automation maintains consistent communication, saves time, and ensures supporters "
+    },
+    {
+      "passage_uid": "PU-36eef4b7e9b10b6a",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 14144,
+      "char_end": 14369,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Design challenges—like cross-platform rendering—require employing responsive design, testing across devices, and optimizing for mobile. Proper formatting enhances user experience and reduces deletion "
+    },
+    {
+      "passage_uid": "PU-968ab85639ca85f6",
+      "source_id": "S-4443f766a1c8",
+      "char_start": 3485,
+      "char_end": 3636,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "author_recommendation",
+      "preview": "Victory Monkeys See All Case Studies Joybyte Join the Joybyte Newsletter Δ Comments This field is for validation purposes and should be left unchanged."
+    },
+    {
+      "passage_uid": "PU-6172b991b391c84b",
+      "source_id": "S-c0299a6bc538",
+      "char_start": 4502,
+      "char_end": 4627,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "author_recommendation",
+      "preview": "To learn more about social listening tools that can help monitor public sentiment, check our social listening complete guide."
+    }
+  ],
+  "status": "ok",
+  "status_reasons": [],
+  "packet_sha256": "6a03e2e73fcfa081f8af96a1af05ed53010fdf054739c501193a2b2199aac3b0"
+}

@@ -1,0 +1,127 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "bellroy",
+  "bound_to": {
+    "packet_sha256": "cde0ceb5aea58833a1705c5c390d87db67498ea49b0b5691623037c2e2f053f0",
+    "prompt_sha256": "340d81816bdd90e2fbd779a2ae8e79ee408dd34fde0b9be19577b9bb91621982",
+    "completion_sha256": "5aee8d5cd9f996f98207149c04c8f8c251fcf0fa08cc6f9b57928aa0bb162602",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": []
+  },
+  "raw_response_sha256": "f1f315977e803065a2c4c2e28d13ebd91e86fd97b46bef7eb4dfcc0167a774c9",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"We wanted to build both a great brand and a great business. The kind that could really delight its customers, not just satisfy them.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Bellroy's co-founders wanted to build a brand that delighted customers.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"We launched Bellroy with a very tight range of five wallets, and a hardworking team of five people.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states Bellroy launched with five wallets and a team of five.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Our products are designed to feel better on day 1000 than on day one. And hold what can be known as ‘emotional durability’.\",\n      \"issues\": [],\n      \"reason\": \"The passage states their products are designed to feel better over time and have 'emotional durability'.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"We ship directly to 187 countries around the world, translate our content into seven languages and partner with approximately 1000 retailers globally.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms Bellroy ships to 187 countries and partners with 1000 retailers.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P9\"\n      ],\n      \"quote\": \"We collaborate We’re proud to have worked with some talented brands, including Google, Field Notes, Barneys New York, MAAP and Huckberry.\",\n      \"issues\": [],\n      \"reason\": \"The passage lists Google, Field Notes, Barneys New York, MAAP, and Huckberry as brands Bellroy has collaborated with.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"Bellroy partnered with Google to develop a sleeve for Google’s Pixelbook.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states Bellroy partnered with Google to develop a Pixelbook sleeve.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"we released our first collection of six styles. Including our ever-popular staple, the Classic Backpack.\",\n      \"issues\": [],\n      \"reason\": \"The passage states Bellroy released a collection of six bag styles, including the Classic Backpack.\"\n    },\n    {\n      \"claim_id\": \"C8\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"Our supplier Code of Conduct and audit process ensures that Bellroy's suppliers provide safe working conditions, that their workers are treated with respect and dignity, and that the manufacturing processes are environmentally responsible.\",\n      \"issues\": [],\n      \"reason\": \"The passage details Bellroy's supplier Code of Conduct and audit process.\"\n    },\n    {\n      \"claim_id\": \"C9\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P10\"\n      ],\n      \"quote\": \"And all while channeling resources and funds towards helping shape a better world.\",\n      \"issues\": [],\n      \"reason\": \"The passage states Bellroy channels resources towards shaping a better world.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "We wanted to build both a great brand and a great business. The kind that could really delight its customers, not just satisfy them.",
+        "issues": [],
+        "reason": "The passage directly states Bellroy's co-founders wanted to build a brand that delighted customers."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "We launched Bellroy with a very tight range of five wallets, and a hardworking team of five people.",
+        "issues": [],
+        "reason": "The passage explicitly states Bellroy launched with five wallets and a team of five."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Our products are designed to feel better on day 1000 than on day one. And hold what can be known as ‘emotional durability’.",
+        "issues": [],
+        "reason": "The passage states their products are designed to feel better over time and have 'emotional durability'."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "We ship directly to 187 countries around the world, translate our content into seven languages and partner with approximately 1000 retailers globally.",
+        "issues": [],
+        "reason": "The passage confirms Bellroy ships to 187 countries and partners with 1000 retailers."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P9"
+        ],
+        "quote": "We collaborate We’re proud to have worked with some talented brands, including Google, Field Notes, Barneys New York, MAAP and Huckberry.",
+        "issues": [],
+        "reason": "The passage lists Google, Field Notes, Barneys New York, MAAP, and Huckberry as brands Bellroy has collaborated with."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "Bellroy partnered with Google to develop a sleeve for Google’s Pixelbook.",
+        "issues": [],
+        "reason": "The passage explicitly states Bellroy partnered with Google to develop a Pixelbook sleeve."
+      },
+      {
+        "claim_id": "C7",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "we released our first collection of six styles. Including our ever-popular staple, the Classic Backpack.",
+        "issues": [],
+        "reason": "The passage states Bellroy released a collection of six bag styles, including the Classic Backpack."
+      },
+      {
+        "claim_id": "C8",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "Our supplier Code of Conduct and audit process ensures that Bellroy's suppliers provide safe working conditions, that their workers are treated with respect and dignity, and that the manufacturing processes are environmentally responsible.",
+        "issues": [],
+        "reason": "The passage details Bellroy's supplier Code of Conduct and audit process."
+      },
+      {
+        "claim_id": "C9",
+        "verdict": "supported",
+        "passage_ids": [
+          "P10"
+        ],
+        "quote": "And all while channeling resources and funds towards helping shape a better world.",
+        "issues": [],
+        "reason": "The passage states Bellroy channels resources towards shaping a better world."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-22T23:48:19+00:00",
+  "audit_sha256": "5f4e3b24c99411a7a7ba9b3f53f9f53f033d71968d74831d23d398bd95683cbc",
+  "dismissed_reviewer_flags": []
+}

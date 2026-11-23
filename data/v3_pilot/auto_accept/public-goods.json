@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "public-goods",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "6a03e2e73fcfa081f8af96a1af05ed53010fdf054739c501193a2b2199aac3b0",
+    "prompt_sha256": "c9f9f3c6ddaae2f5a047ba678ffc3ba932b3b1a6759e77f2e8857c48b4fe951d",
+    "completion_sha256": "80fa73e56c8eea9cb570beab04cc20f6ef76cef61a200db1df6fee269c3e37ed",
+    "audit_sha256": "47148d8b710bc159536814b9ef68ee06d39bb8d701e0bf04d802af9611fcbdd1"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 7,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:47+00:00",
+  "record_sha256": "f6f00423909bcd38e21247164e694974dea43afdeb47c8eb2822ca57e9690eeb"
+}

@@ -1,0 +1,135 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "warby-parker",
+  "bound_to": {
+    "packet_sha256": "a86356f018bbfebd7797141b9914bf541475d89ad1132f3004794bed01400451",
+    "prompt_sha256": "7e0139ab1b10cb2c36a661b82bf33361718705b8d9516036623fbec4e8408d0a",
+    "completion_sha256": "f2cadcfc8faba35d693fe2ebe77f4cedb485106611c5e514193fa329664cffe1",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": [
+      "claim C6: not referenced by any field",
+      "claim C7: not referenced by any field"
+    ]
+  },
+  "raw_response_sha256": "5066916731e52e9bed110c3dee5bdb09dd9498b0a377104c96bdadade09cdebf",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Community To date, our Buy a Pair, Give a Pair program has served individuals in more than 80 countries and provided over 25 million pairs of glasses to people in need.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states the program has served individuals in over 80 countries and provided over 25 million pairs of glasses.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"our team aims to create high-quality products and deliver remarkable experiences that delight our more than two million customers.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Warby Parker has over two million customers.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Warby Parker gives its own little twist to influential marketing and has collaborated with:\",\n      \"issues\": [],\n      \"reason\": \"The passage mentions Warby Parker collaborating with influencers.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"Instead of only using social media to promote their brand, Warby Parker treats platforms such as Instagram, Facebook, Twitter, and YouTube as places for real conversations and engagement\",\n      \"issues\": [],\n      \"reason\": \"The passage states Warby Parker treats social media as a place for conversations and engagement.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"Warby Parker blends creator collaborations with service-led community programs that build credibility.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states Warby Parker blends creator collaborations with community programs.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"Buy a Pair, Give a Pair collaborations with VisionSpring and partners, surpassing 15 million pairs distributed and expanding access to vision care.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that collaborations have distributed over 15 million pairs of glasses.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"And finally, they partnered with professional storm catchers (I didn’t know they existed either!) and produced visually stunning pictures of the eclipse:\",\n      \"issues\": [],\n      \"reason\": \"The passage describes a partnership with storm catchers to create visually stunning pictures.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"Warby Parker's Buy a Pair, Give a Pair program has served individuals in more than 80 countries and provided over 25 million pairs of glasses to people in need\"\n    },\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"Warby Parker has over two million customers\"\n    },\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"Warby Parker collaborates with influencers and has used creative ways to engage with like-minded Instagrammers\"\n    }\n  ],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Community To date, our Buy a Pair, Give a Pair program has served individuals in more than 80 countries and provided over 25 million pairs of glasses to people in need.",
+        "issues": [],
+        "reason": "The passage explicitly states the program has served individuals in over 80 countries and provided over 25 million pairs of glasses."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "our team aims to create high-quality products and deliver remarkable experiences that delight our more than two million customers.",
+        "issues": [],
+        "reason": "The passage directly states Warby Parker has over two million customers."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Warby Parker gives its own little twist to influential marketing and has collaborated with:",
+        "issues": [],
+        "reason": "The passage mentions Warby Parker collaborating with influencers."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "Instead of only using social media to promote their brand, Warby Parker treats platforms such as Instagram, Facebook, Twitter, and YouTube as places for real conversations and engagement",
+        "issues": [],
+        "reason": "The passage states Warby Parker treats social media as a place for conversations and engagement."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "Warby Parker blends creator collaborations with service-led community programs that build credibility.",
+        "issues": [],
+        "reason": "The passage explicitly states Warby Parker blends creator collaborations with community programs."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "Buy a Pair, Give a Pair collaborations with VisionSpring and partners, surpassing 15 million pairs distributed and expanding access to vision care.",
+        "issues": [],
+        "reason": "The passage states that collaborations have distributed over 15 million pairs of glasses."
+      },
+      {
+        "claim_id": "C7",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "And finally, they partnered with professional storm catchers (I didn’t know they existed either!) and produced visually stunning pictures of the eclipse:",
+        "issues": [],
+        "reason": "The passage describes a partnership with storm catchers to create visually stunning pictures."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-23T00:24:27+00:00",
+  "audit_sha256": "fba32bbca31bb9fea13ae1e44458b6c9b1f447d02974b571134697a2e7776453",
+  "dismissed_reviewer_flags": [
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "Warby Parker's Buy a Pair, Give a Pair program has served individuals in more than 80 countries and provided over 25 million pairs of glasses to people in need"
+      },
+      "reason": "sentence in brand_summary carries a claim marker; judged via its claim",
+      "matched_sentence": "warby parker's buy a pair give a pair program has served individuals in more than 80 countries and provided over 25 million pairs of glasses to people in need"
+    },
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "Warby Parker has over two million customers"
+      },
+      "reason": "sentence in brand_summary carries a claim marker; judged via its claim",
+      "matched_sentence": "warby parker has over two million customers"
+    },
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "Warby Parker collaborates with influencers and has used creative ways to engage with like-minded Instagrammers"
+      },
+      "reason": "sentence in brand_summary carries a claim marker; judged via its claim",
+      "matched_sentence": "warby parker collaborates with influencers and has used creative ways to engage with like minded instagrammers"
+    }
+  ]
+}

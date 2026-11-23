@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import Any
 
 from .approval import approval_is_current
+from .autoaccept import AUTO_BASIS, auto_accept_is_current
 from .claims import check_draft
 from .evidence import DocumentStore, utc_now
 from .hashing import sha256_text
@@ -55,7 +56,16 @@ def evaluate_label(
         return label, reasons + ["packet missing"], prov
     prov["packet_sha256"] = packet.get("packet_sha256")
     if packet.get("company", {}).get("registry_sha256") != registry.sha256:
-        reasons.append("packet built with a different registry version")
+        # A newer registry is acceptable only if this company's identity entry is unchanged.
+        pc = packet.get("company", {})
+        ident = registry.companies.get(company_id)
+        same = ident is not None and ident.status == "verified" and all(
+            pc.get(k) == v for k, v in (("display_name", ident.display_name), ("legacy_name", ident.legacy_name),
+                                        ("category", ident.category), ("official_domains", list(ident.official_domains))))
+        if same:
+            prov["registry_note"] = f"packet built with registry {pc.get('registry_version')}; company identity unchanged in {registry.version}"
+        else:
+            reasons.append("packet built with a different registry version and the company identity changed")
     if packet.get("status") == PACKET_INVALID:
         reasons.append("packet invalid (identity/provenance)")
     if store is None:
@@ -68,7 +78,7 @@ def evaluate_label(
         reasons.append("prompt hash mismatch")
     if sha256_text(label.get("completion", "")) != label.get("completion_sha256"):
         reasons.append("completion hash mismatch")
-    det = check_draft(label.get("draft") or {}, packet)
+    det = check_draft(label.get("draft") or {}, packet, prompt_version=label.get("prompt_version"))
     if det["errors"]:
         reasons.append(f"target structure/policy: {len(det['errors'])} error(s), e.g. {det['errors'][0]}")
     if (label.get("generator") or {}).get("source") == "synthetic_fixture":
@@ -88,11 +98,23 @@ def evaluate_label(
                                   prompt_sha256=label.get("prompt_sha256", ""),
                                   completion_sha256=label.get("completion_sha256", ""),
                                   audit_sha256=(audit or {}).get("audit_sha256"))
-    if not ok:
-        reasons.append(f"human approval: {why}")
-    else:
+    if ok:
+        prov["acceptance"] = "human_approval"
         prov["approved_by"] = approval["reviewer"]
         prov["approved_at"] = approval["reviewed_at"]
+        return label, reasons, prov
+    # Second, weaker basis: a current auto_threshold_0.7 record (NOT a human approval).
+    auto = _load(workspace / "auto_accept" / f"{company_id}.json")
+    a_ok, a_why = auto_accept_is_current(auto, packet_sha256=packet.get("packet_sha256", ""),
+                                         prompt_sha256=label.get("prompt_sha256", ""),
+                                         completion_sha256=label.get("completion_sha256", ""),
+                                         audit_sha256=(audit or {}).get("audit_sha256"))
+    if a_ok:
+        prov.update({"acceptance": AUTO_BASIS, "human_reviewed": False,
+                     "groundedness": auto["groundedness_before_pruning"], "removed_claims": auto["removed_claims"],
+                     "auto_accept_sha256": auto["record_sha256"]})
+    else:
+        reasons.append(f"human approval: {why}; auto-accept: {a_why}")
     return label, reasons, prov
 
 
@@ -146,7 +168,11 @@ def export_dataset(
         "schema_version": EXPORT_SCHEMA,
         "dataset_version": version,
         "created_at": utc_now(),
-        "approval_basis": "explicit, hash-bound human approval records (brandpilot.approval.v3) only",
+        "approval_basis": ("explicit, hash-bound human approval records (brandpilot.approval.v3); or, where an entry's "
+                           "provenance.acceptance is 'auto_threshold_0.7', an automatic hash-bound acceptance at "
+                           "groundedness >= 0.7 after removal of unsupported claims (NOT human-reviewed)"),
+        "acceptance_counts": {b: sum(e["included"] and e["provenance"].get("acceptance") == b for e in entries)
+                              for b in ("human_approval", AUTO_BASIS)},
         "git_commit": git_commit(repo_root),
         "registry": {"version": registry.version, "sha256": registry.sha256},
         "split_source": str(legacy_split_manifest),

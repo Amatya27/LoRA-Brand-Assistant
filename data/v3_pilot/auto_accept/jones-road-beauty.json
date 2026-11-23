@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "jones-road-beauty",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "18556c8c401d56298ee0db76cce297adfd296d8d1ae5c6cb62082b1555b995cc",
+    "prompt_sha256": "286319d7e23e4d4a2ad7d5f62f865b9c0e08883b932d722fdac204999064b0ea",
+    "completion_sha256": "e60c7d102418bc191b58d9e4b4838e3ceba18e7da0f9ff78c310b33794c154c2",
+    "audit_sha256": "12e12db8a6d7c33e238fa6dc5220d9d001935dab494fc4dde2deac712422f5b5"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 7,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:46+00:00",
+  "record_sha256": "f3a82718897b50a99888fcdda4e02b7757ec852c72e391902121086323e2607d"
+}

@@ -1,0 +1,117 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "thrive-market",
+  "bound_to": {
+    "packet_sha256": "ed5bf926801b01e5f73b9daf8c07d8b6c7867569f338f689df590ac50ee72f2d",
+    "prompt_sha256": "4cc47093e419563867779fad552aa6d9d660bc6773c0de31d88746c757cd90e7",
+    "completion_sha256": "09cfe773474f393434ad0271863bc5829477c895c4d25659168459441c2f06af",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": []
+  },
+  "raw_response_sha256": "53ec6e52ad453a2f50e79198bec035598ab459b47a6f9d30c79776c6333b47d2",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Access for All Thrive Gives has been our promise since day one: every annual membership sponsors a free membership for a family in need.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that Thrive Market sponsors a free membership for a family in need for every annual membership.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"Planet First For a healthier planet, we’re committed to sustainable practices in three key areas of our business: science-aligned carbon emission reductions, zero-waste warehouses, and plastic-neutral packaging for Thrive Market brands and shipping materials for all member orders.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states Thrive Market's commitment to sustainable practices in three specific areas.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"As of March 2025, Thrive Market was doing over $700 million in annual sales, carried over 750 brands, and had over 1.6 million paying members.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that Thrive Market had over 1.6 million paying members as of March 2025.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"In December 2024, Thrive Market began accepting SNAP EBT as a form of payment, opening up another revenue stream by offering healthier food options to low-income households who might otherwise not have access to organic groceries.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms that Thrive Market began accepting SNAP EBT in December 2024.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"Presently, Thrive Market maintains an affiliate program through which partners can promote the platform and its products to earn commission. As of July 2025, it had over 500 affiliate partners, including prominent wellness figures Melissa Urban, founder of the Whole30 diet, and Mark Sisson, founder of the health-focused food brand Primal Kitchen.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms Thrive Market has an affiliate program with over 500 partners.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"Even before raising for the first time, Thrive Market built up a network of influencers across social channels such as blogs, Instagram, and YouTube to promote its product and mission.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Thrive Market used influencers to promote its product and mission.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"Thrive has over 300k paying members on a $60 monthly membership\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Thrive has over 300k paying members on a $60 monthly membership.\"\n    },\n    {\n      \"claim_id\": \"C8\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"Content created and distributed by people who already have a strong existing relationship with their audiences -- not by a still unknown and faceless \\\"Brand\\\" -- is much more compelling and converting than company-generated content alone.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes Thrive Market's content marketing strategy, which leverages influencers and existing relationships.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Access for All Thrive Gives has been our promise since day one: every annual membership sponsors a free membership for a family in need.",
+        "issues": [],
+        "reason": "The passage directly states that Thrive Market sponsors a free membership for a family in need for every annual membership."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "Planet First For a healthier planet, we’re committed to sustainable practices in three key areas of our business: science-aligned carbon emission reductions, zero-waste warehouses, and plastic-neutral packaging for Thrive Market brands and shipping materials for all member orders.",
+        "issues": [],
+        "reason": "The passage explicitly states Thrive Market's commitment to sustainable practices in three specific areas."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "As of March 2025, Thrive Market was doing over $700 million in annual sales, carried over 750 brands, and had over 1.6 million paying members.",
+        "issues": [],
+        "reason": "The passage directly states that Thrive Market had over 1.6 million paying members as of March 2025."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "In December 2024, Thrive Market began accepting SNAP EBT as a form of payment, opening up another revenue stream by offering healthier food options to low-income households who might otherwise not have access to organic groceries.",
+        "issues": [],
+        "reason": "The passage confirms that Thrive Market began accepting SNAP EBT in December 2024."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "Presently, Thrive Market maintains an affiliate program through which partners can promote the platform and its products to earn commission. As of July 2025, it had over 500 affiliate partners, including prominent wellness figures Melissa Urban, founder of the Whole30 diet, and Mark Sisson, founder of the health-focused food brand Primal Kitchen.",
+        "issues": [],
+        "reason": "The passage confirms Thrive Market has an affiliate program with over 500 partners."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "Even before raising for the first time, Thrive Market built up a network of influencers across social channels such as blogs, Instagram, and YouTube to promote its product and mission.",
+        "issues": [],
+        "reason": "The passage states that Thrive Market used influencers to promote its product and mission."
+      },
+      {
+        "claim_id": "C7",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "Thrive has over 300k paying members on a $60 monthly membership",
+        "issues": [],
+        "reason": "The passage states that Thrive has over 300k paying members on a $60 monthly membership."
+      },
+      {
+        "claim_id": "C8",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "Content created and distributed by people who already have a strong existing relationship with their audiences -- not by a still unknown and faceless \"Brand\" -- is much more compelling and converting than company-generated content alone.",
+        "issues": [],
+        "reason": "The passage describes Thrive Market's content marketing strategy, which leverages influencers and existing relationships."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-22T23:36:08+00:00",
+  "audit_sha256": "f3af352923a2664906ca15af59bdca9f23be87d67ecc41bcd64088548e242ce3",
+  "dismissed_reviewer_flags": []
+}

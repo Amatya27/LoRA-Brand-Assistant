@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "cometeer",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "77e011cbba6ba75c1e47571e88912c435eb0392c230427414c4c61388262d648",
+    "prompt_sha256": "5040600c6caf83c69aee8b7b1c41dd9531b3df3d29c85f771bcd3889ce589dbd",
+    "completion_sha256": "76bea4992f2f0b848021b311eabb11feb061ec3cacc2dcd356219020c857ca83",
+    "audit_sha256": "6ffe9fc60caff95906d7273778dc89252ad8098348616840ce3b6a16ec9241b1"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 5,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:44+00:00",
+  "record_sha256": "cbdf84d8d7a8245b8615be1472601e33407ba2b92f39995f42e7fcfc92dcb9bd"
+}

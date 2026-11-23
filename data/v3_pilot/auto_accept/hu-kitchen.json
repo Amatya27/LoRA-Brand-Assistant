@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "hu-kitchen",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "5034b597e41ea5dd8e24a7d96cbd19d65b0c2edf60ebd2a761b20246b545d527",
+    "prompt_sha256": "a06037275be47ef9c875c6aa0878d2bbafb19359bd62711a6faee86ff1c157fb",
+    "completion_sha256": "d40cd1bf41b07b0ceb00d18702dc028f3877dd2c878fd1dfe7e6978013a9fa14",
+    "audit_sha256": "2b8d7128c5cd0a70633f609ae4daa219ef764c8ee048fcc24fc92edb5ee2511f"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 7,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:45+00:00",
+  "record_sha256": "f116fd8957bb80fd30530384c980bb5475c570d36a2e6d22449ed0e3745d6d3e"
+}

@@ -1,0 +1,21 @@
+{
+  "company_id": "zenni-optical",
+  "acceptance_basis": "auto_threshold_0.7",
+  "decision": "reject",
+  "reasons": [
+    "removing unsupported claims emptied ['brand_summary', 'likely_target_audience', 'instagram_post_idea.why_it_fits']"
+  ],
+  "groundedness": 0.8333,
+  "claim_support": {
+    "C1": "supported",
+    "C2": "supported",
+    "C3": "supported",
+    "C4": "reviewer response invalid for this claim: C4: reviewer quote does not occur in the referenced passage(s)",
+    "C5": "supported",
+    "C6": "supported"
+  },
+  "removed_claims": [],
+  "label_completion_sha256": "79418228fd759973ae73eb360c549ab8fc7d18c938ac0f927506e00e885f8012",
+  "audit_sha256": "f69d33815015aba54949c2bc1e2b740ca60368bd0fdca580f260ebb056ddd359",
+  "created_at": "2026-11-23T00:28:48+00:00"
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "tracksmith",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "750335192f50ce9f3f4b127db50116e06c3bbfbad126f92db63b3416793a1248",
+    "prompt_sha256": "dd0dc18c47c3e211021ca327d11df601c33e45000d371c69b1adf9e5b266597f",
+    "completion_sha256": "a97384f5a91fc4250fbd8693bacadf43c10c872120e331c640ca4dadac478902",
+    "audit_sha256": "2f168a135a07cbb174e43edec442f1fcc29b5fcf89cea099fe017ac0ffbeb22a"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 6,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:47+00:00",
+  "record_sha256": "1b227898062caeaa8ecbaa32d8a0b163491bee9921e3b019e9a03f341e7a204b"
+}

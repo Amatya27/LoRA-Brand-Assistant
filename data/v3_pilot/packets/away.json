@@ -1,0 +1,3289 @@
+{
+  "schema_version": "brandpilot.packet.v3",
+  "company": {
+    "company_id": "away",
+    "display_name": "Away",
+    "legacy_name": "Away",
+    "category": "travel luggage and suitcases",
+    "official_domains": [
+      "awaytravel.com"
+    ],
+    "identity_status": "verified",
+    "registry_version": "2026-11-22.v3",
+    "registry_sha256": "8abbd9a930d2dd95d6993cfa4ab1f6d031f250483edb5d5b57c5afbf03c19836"
+  },
+  "collection": {
+    "mode": "legacy_cache_replay",
+    "collector_version": "brandpilot-collector-0.3",
+    "created_at": "2026-11-22T20:24:27+00:00",
+    "queries": [
+      "\"Away\" instagram marketing campaign target audience",
+      "\"Away\" social media strategy brand positioning",
+      "\"Away\" marketing campaign press release instagram",
+      "\"Away\" customer audience brand story",
+      "\"Away\" about us brand values audience",
+      "\"Away\" newsroom marketing campaign",
+      "\"Away\" brand campaign case study"
+    ],
+    "notes": [
+      "replayed from legacy packet away-research-packet.json (sha256 b230e89a2c119735)",
+      "documents are legacy cached extractions; no new fetches were made"
+    ]
+  },
+  "leads": [
+    {
+      "company_id": "away",
+      "query": "\"Away\" about us brand values audience",
+      "url": "https://away-luggage.com/about-us/",
+      "title": "About us - Away",
+      "snippet": "We uphold integrity, practical innovation, and traveler-centric design in every product iteration. By cutting out middleman markups and adhering to strict quality control standards, we deliver professional-grade Away Luggage that balances premium quality and fair pricing.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "away",
+      "query": "\"Away\" instagram marketing campaign target audience",
+      "url": "https://maninderwave.com/case-study/away/",
+      "title": "Away Instagram Marketing Case Study | $1.4B Brand Through ...",
+      "snippet": "Discover how Away used Instagram storytelling, influencer marketing, and user-generated content to achieve 10× follower growth, $12M in first-year sales, and a $1.4B valuation.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "away",
+      "query": "\"Away\" customer audience brand story",
+      "url": "https://www.optimonk.com/away-marketing-breakdown",
+      "title": "How Away Reached $1.4 Billion by Turning Luggage into a ...",
+      "snippet": "Aug 29, 2025 · Discover how Away turned luggage into a $1.4B lifestyle brand through storytelling, social media, and influencer marketing.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "away",
+      "query": "\"Away\" marketing campaign press release instagram",
+      "url": "https://www.awaytravel.com/pages/press",
+      "title": "Press - Away",
+      "snippet": "As Away celebrates its 10-year anniversary, the brand is entering a bold new chapter: from a new CEO and new wholesale partners, to a summer activation that signals a collective need to take time off and get away.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "away",
+      "query": "\"Away\" marketing campaign press release instagram",
+      "url": "https://shortyawards.com/11th/away-best-overall-instagram-presence",
+      "title": "Away, Best Overall Instagram Presence - The Shorty Awards",
+      "snippet": "In the last year, Away has nearly doubled its Instagram following, from 175K to more than 350K—a testament to the team's community engagement and growth strategy, and overall increase in brand awareness and customer affinity in the US and now internationally.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "away",
+      "query": "\"Away\" about us brand values audience",
+      "url": "https://www.awaytravel.com/pages/our-story",
+      "title": "Our Story - Away",
+      "snippet": "At Away, you’ll find suitcases, bags, and accessories built with thoughtful details to make each and every journey more seamless. We’re transforming travel to inspire you to get Away more and see more of the world along with us.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "away",
+      "query": "\"Away\" customer audience brand story",
+      "url": "https://www.lilachbullock.com/away-marketing-strategy/",
+      "title": "Away Marketing Strategy: How They Built a Brand That Wins",
+      "snippet": "Away paired a genuinely useful product with deliberate storytelling, a simple range, direct customer relationships and real risk-removal guarantees, and that combination is what turned a suitcase into a recognisable lifestyle brand.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "away",
+      "query": "\"Away\" instagram marketing campaign target audience",
+      "url": "https://www.modash.io/breakdowns/away-influencer-marketing-strategy",
+      "title": "Away's Influencer Marketing Strategy (2026 Data & Insights ...",
+      "snippet": "Sep 21, 2026 · This report breaks down where & how Away invests in influencer marketing, which social platforms they prioritize, top geographical markets, and more. The data in this report comes from Modash's Brand Collaborations API.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    }
+  ],
+  "documents": [
+    {
+      "source_id": "S-133035ee3d52",
+      "company_id": "away",
+      "requested_url": "https://away-luggage.com/about-us/",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "33914b1aad8e254f25c98b75baee2f9e07086c5620d9e8d7f2c73582d5f33076",
+      "text_path": "text/33914b1aad8e254f25c98b75baee2f9e07086c5620d9e8d7f2c73582d5f33076.txt",
+      "raw_path": null,
+      "text_chars": 4585,
+      "redirect_chain": [],
+      "identity_decision": "conflicting_entity_domain",
+      "identity_reason": "host away-luggage.com belongs to away-luggage.com",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 4e8b441d7e103d8faba3ae4713d4e6490c17de1c7844a6f264c29104f94258bd.json sha256=87364f2136462032606df23f77e441ca4d3b8a00b74a1b256b98e4a1b386cff9",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-cfdf06c796ff",
+      "company_id": "away",
+      "requested_url": "https://maninderwave.com/case-study/away/",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "3b5be39ae0c93cf7be9d93b79399f59b93dfbbf8a4bdec4ec31ae76b6cd0ddfb",
+      "text_path": "text/3b5be39ae0c93cf7be9d93b79399f59b93dfbbf8a4bdec4ec31ae76b6cd0ddfb.txt",
+      "raw_path": null,
+      "text_chars": 9535,
+      "redirect_chain": [],
+      "identity_decision": "third_party_confirmed",
+      "identity_reason": "13 name mention(s) co-occur with travel luggage and suitcases terms",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file a0317411c9632e7e7d0d176d0b48c4ef0ad3901d5a445b42145ae2204d64fc32.json sha256=4e2db7db1345ed534a84b5585cae4becce3e0ac3685cd05b0dd1897a861a0371",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-14cc63876e71",
+      "company_id": "away",
+      "requested_url": "https://www.optimonk.com/away-marketing-breakdown",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "9c90707baf82befe8d3c7c8a0a841d85e6173f76c5397471bebd05fb58582766",
+      "text_path": "text/9c90707baf82befe8d3c7c8a0a841d85e6173f76c5397471bebd05fb58582766.txt",
+      "raw_path": null,
+      "text_chars": 13639,
+      "redirect_chain": [],
+      "identity_decision": "third_party_confirmed",
+      "identity_reason": "55 name mention(s) co-occur with travel luggage and suitcases terms",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 68ac0dbf924d4955e205b7d45ca0c8e1ce5c8c5e63fe107996280e5f9fd38a9c.json sha256=753359606d9bf0680c2390dfe5fec7bd882b86fb9fce162368f8661fa01857c6",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-66c3ba5e47f2",
+      "company_id": "away",
+      "requested_url": "https://www.awaytravel.com/pages/press",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "ba9b49d28f86cd3a65b4e6775905805c4ad86703b31c9f0a269640f974d66b4b",
+      "text_path": "text/ba9b49d28f86cd3a65b4e6775905805c4ad86703b31c9f0a269640f974d66b4b.txt",
+      "raw_path": null,
+      "text_chars": 22388,
+      "redirect_chain": [],
+      "identity_decision": "official_domain",
+      "identity_reason": "host awaytravel.com is an official domain",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file c1d07ff56e7fc442536d122f04ca7cb9b9e60997da1869707dcb6bcf86eaeed8.json sha256=d88a27b43ca232bb3d1641a8ae3513a8db7a609f6c613533b66eb24459802b27",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-0ab759974db1",
+      "company_id": "away",
+      "requested_url": "https://shortyawards.com/11th/away-best-overall-instagram-presence",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "691a802629f9ab8e30248b34572c27f72e017c6ea8e181f2b1cc509b2cf06969",
+      "text_path": "text/691a802629f9ab8e30248b34572c27f72e017c6ea8e181f2b1cc509b2cf06969.txt",
+      "raw_path": null,
+      "text_chars": 10612,
+      "redirect_chain": [],
+      "identity_decision": "third_party_confirmed",
+      "identity_reason": "41 name mention(s) co-occur with travel luggage and suitcases terms",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 5743c11da9fdb5be17b3b576c29b9181119dc756b57281962c8b0824c63d69ec.json sha256=17a41fba0e8ff5a5dfb45597510d8bba779a0000ce35512825f62c3715092903",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-14cafdc2d27f",
+      "company_id": "away",
+      "requested_url": "https://www.awaytravel.com/pages/our-story",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "b7af3c6f11b2c2ca08230295da3f570f614170af89af8c55261134e4b9e360d4",
+      "text_path": "text/b7af3c6f11b2c2ca08230295da3f570f614170af89af8c55261134e4b9e360d4.txt",
+      "raw_path": null,
+      "text_chars": 10224,
+      "redirect_chain": [],
+      "identity_decision": "official_domain",
+      "identity_reason": "host awaytravel.com is an official domain",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 9cd1d6f29e62fe9900b63c62a84ece933a2a76e7c10ffa4e2b2c4e0ea2e922d8.json sha256=69132eab06ba76b0925a7dfcaf20679f12b185048f74346c35516f3ecbe30bc6",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-b97550e748d0",
+      "company_id": "away",
+      "requested_url": "https://www.lilachbullock.com/away-marketing-strategy/",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "2b3478d8a98058cce291b5b6d9d0da065cdc6e0f269c08d74f185a7f1df194ef",
+      "text_path": "text/2b3478d8a98058cce291b5b6d9d0da065cdc6e0f269c08d74f185a7f1df194ef.txt",
+      "raw_path": null,
+      "text_chars": 21148,
+      "redirect_chain": [],
+      "identity_decision": "third_party_confirmed",
+      "identity_reason": "21 name mention(s) co-occur with travel luggage and suitcases terms",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 320a47bb6dd4998907b60ef5e734a924d5c5567e4d39bd5ce8ee0244231df8b3.json sha256=5e22d49a1ba23102fc0344a38c17eb36359fd8764f72029d03f3b2e53c08b0be",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-1b038bd53572",
+      "company_id": "away",
+      "requested_url": "https://www.modash.io/breakdowns/away-influencer-marketing-strategy",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "83dcb96eacf713f20197b1e449aad533f560a0942e1b20cefb6f08b0d1b2e729",
+      "text_path": "text/83dcb96eacf713f20197b1e449aad533f560a0942e1b20cefb6f08b0d1b2e729.txt",
+      "raw_path": null,
+      "text_chars": 8237,
+      "redirect_chain": [],
+      "identity_decision": "third_party_confirmed",
+      "identity_reason": "16 name mention(s) co-occur with travel luggage and suitcases terms",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file b2902304a8a7e249d44a66b3858a1de223aec37e3423f1ee1c97ff440b60d90d.json sha256=f1b313f1f109f3ebe2b9037126b520963d16a608efa5d0096f73b771231f4976",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "passage_uid": "PU-0bc80c02f5999042",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 17764,
+      "char_end": 18313,
+      "text": "Away Launches a Luxurious Travel Collection to Celebrate Season 3 of the HBO® Original Series The ## White Lotus Feb 04, 2025 Away, the original travel lifestyle brand, is proud to unveil its latest collaboration: The White Lotus x Away. Designed in partnership with Warner Bros. Discovery Global Consumer Products, this limited edition collection is inspired by luxury retreats and the bold spirit of the Emmy®-winning HBO Original Series, The White Lotus, bringing its indulgent, transformative energy to a curated assortment of travel essentials.",
+      "text_sha256": "f38045a1d90e79be27be0b43dd815c41fd61be33588deca36d12726b840759eb",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "historical_activity",
+      "flags": [],
+      "dates_mentioned": [
+        "Feb 04, 2025"
+      ],
+      "relevance_terms": [
+        "brand",
+        "collab",
+        "collaborat",
+        "launch",
+        "limited edition",
+        "partner"
+      ],
+      "score": 25,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P1",
+      "source_url": "https://www.awaytravel.com/pages/press",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-9ef45ab4daf59455",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 8941,
+      "char_end": 9344,
+      "text": "New York Liberty’s Sabrina Ionescu Partners With Away Luggage To Merge Performance, Travel And ## Style Through this partnership, Away and Sabrina Ionescu will debut a limited-edition collection in 2026, reimagining Away’s signature silhouettes through the lens of a player’s perspective. The collaboration will also outfit the entire New York Liberty team with brand-new, thoughtfully designed luggage.",
+      "text_sha256": "023db1d8df6674742a24185e6c65151591775571590164143ccd845a43dc4c4d",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "historical_activity",
+      "flags": [],
+      "dates_mentioned": [
+        "2026"
+      ],
+      "relevance_terms": [
+        "brand",
+        "collab",
+        "collaborat",
+        "limited-edition",
+        "partner"
+      ],
+      "score": 23,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P2",
+      "source_url": "https://www.awaytravel.com/pages/press",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-955478ff15f10cfc",
+      "source_id": "S-14cc63876e71",
+      "char_start": 9677,
+      "char_end": 10192,
+      "text": "6. Influencer marketing & collaborations Influencer partnerships have been crucial to Away’s rapid success. At the start, the brand collaborated with around 1,000 influencers on Instagram to create buzz and build brand awareness. These partnerships allowed Away to tap into niche audiences and generate organic content that resonated with different types of potential customers. Away also forged celebrity collaborations with notable figures like Karlie Kloss, which helped bring their products to a wider audience.",
+      "text_sha256": "a362c5abdba9a210391f93c31dcb0e743c687a89eaef7e01d2eec5c6ee580edb",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "actual_activity",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "audience",
+        "brand",
+        "collab",
+        "collaborat",
+        "content",
+        "customers",
+        "influencer",
+        "instagram",
+        "marketing",
+        "partner"
+      ],
+      "score": 28,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P3",
+      "source_url": "https://www.optimonk.com/away-marketing-breakdown",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-0913ceb6a48db98c",
+      "source_id": "S-b97550e748d0",
+      "char_start": 10012,
+      "char_end": 10665,
+      "text": "Limited edition colours and collaborations to create ongoing news Rather than relying only on its core range, Away regularly released limited edition colourways and collaborations, giving press and social media something new to cover without needing an entirely new product line. These drops created urgency and gave existing customers a reason to buy again or talk about the brand. How to apply this to your business: Introduce limited runs, seasonal versions or occasional collaborations even within a simple product range. This gives you fresh marketing angles throughout the year without the cost and risk of constantly developing new core products.",
+      "text_sha256": "b7ce4801c3785b8438b8ab89970b16b39273afb0a7ee8d8aa705249f1ecac0ae",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "actual_activity",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "brand",
+        "collab",
+        "collaborat",
+        "customers",
+        "limited edition",
+        "marketing",
+        "social media"
+      ],
+      "score": 22,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P4",
+      "source_url": "https://www.lilachbullock.com/away-marketing-strategy/",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-bc7cb8458bc41b6f",
+      "source_id": "S-0ab759974db1",
+      "char_start": 3912,
+      "char_end": 4495,
+      "text": "Before Away, luggage companies focused on the features of their products to promote them, not on actual travel. Through storytelling on its channels—and through content from its customers, fans, and influencers who advocate for the brand to their circles—Away has reached millions of people worldwide. Instagram has been an essential driver in developing the brand's unique identity and fostering a sense of community around it. For a direct-to-consumer brand like Away, Instagram serves as an authentic platform to express its vision and consistently communicate with its customers.",
+      "text_sha256": "157cfc45a6c7c3f4406974dc51495ee927fd3d042915b055e0dfb0e9897033d5",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "brand",
+        "community",
+        "content",
+        "customers",
+        "fans",
+        "influencer",
+        "instagram",
+        "storytelling"
+      ],
+      "score": 20,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P5",
+      "source_url": "https://shortyawards.com/11th/away-best-overall-instagram-presence",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-f2bc40b0a5faa2a2",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 14083,
+      "char_end": 14336,
+      "text": "Away's dreamy new 'White Lotus' luggage collab is perfect travel eye candy Away's newest limited-edition collection, launching globally on Feb. 11, is a collaboration between the popular luggage brand and Warner Bros. Discovery Global Consumer Products.",
+      "text_sha256": "e5c468d6156a7e1da0d9b8c7eab12d180793f13b686271d293831fc1ad44ab31",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "brand",
+        "collab",
+        "collaborat",
+        "launch",
+        "limited-edition"
+      ],
+      "score": 20,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P6",
+      "source_url": "https://www.awaytravel.com/pages/press",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-75b51f52ca09af25",
+      "source_id": "S-0ab759974db1",
+      "char_start": 5360,
+      "char_end": 6035,
+      "text": "User-generated content of luggage was something that rarely penetrated an Instagram feed before Away, yet Away's community is disproving the notion that luggage is an afterthought—so much so that they've contributed to the thousands of UGC with Away's products that have become the norm to see when scrolling through an Instagram feed. In July 2018, Away launched The Collective, a community of brand ambassadors that actively expand Away's presence on social channels and cultivate awareness and affinity within their networks. Collective members are well-travelled, diverse people whose stories from around the world inspire existing and future members of Away's community.",
+      "text_sha256": "111167449fb02db6c6fb0decfa6b707032a6c32ea2c54c0ef6b4f50002f3b763",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "historical_activity",
+      "flags": [],
+      "dates_mentioned": [
+        "July 2018"
+      ],
+      "relevance_terms": [
+        "ambassador",
+        "brand",
+        "community",
+        "content",
+        "instagram",
+        "launch"
+      ],
+      "score": 19,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P7",
+      "source_url": "https://shortyawards.com/11th/away-best-overall-instagram-presence",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-843ea20ac9a12561",
+      "source_id": "S-0ab759974db1",
+      "char_start": 8678,
+      "char_end": 9205,
+      "text": "Perhaps among the most interesting and unique results of Away's Instagram presence is the role it played in developing the brand's in-house editorial team to launch a quarterly print and digital magazine, Here. After receiving thousands of inquiries on social media from customers asking for tips and recommendations ahead of upcoming trips, Away recognized a whitespace in the travel journalism space and successfully launched Here — a trusted travel source to celebrate the voices and stories of travelers all over the world.",
+      "text_sha256": "c19aad77eee85ebf6bde1395512f69428c4f31c09042bcd0583fb39435b239b5",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "actual_activity",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "brand",
+        "customers",
+        "instagram",
+        "launch",
+        "social media"
+      ],
+      "score": 18,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P8",
+      "source_url": "https://shortyawards.com/11th/away-best-overall-instagram-presence",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-c2829d0b6c6d2404",
+      "source_id": "S-14cc63876e71",
+      "char_start": 1351,
+      "char_end": 1807,
+      "text": "Founded just a decade ago, Away reached unicorn status in only three years, hitting a $1.4 billion valuation.Their secret? They don’t just sell luggage. They position themselves as a lifestyle travel brand. Through smart storytelling, strategic use of social media, and collaborations with influencers and celebrities, they’ve built a brand that resonates far beyond suitcases.Let’s explore how Away’s marketing strategy fueled their rapid rise to success.",
+      "text_sha256": "a06122faf8d7c2ade6277671e113c14b79ddc5568ba8e07b72e6328167d3723d",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "brand",
+        "collab",
+        "collaborat",
+        "influencer",
+        "marketing",
+        "social media",
+        "storytelling"
+      ],
+      "score": 18,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P9",
+      "source_url": "https://www.optimonk.com/away-marketing-breakdown",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-428cc9203496c292",
+      "source_id": "S-b97550e748d0",
+      "char_start": 12176,
+      "char_end": 12542,
+      "text": "What made Away different from other luggage brands when it launched? Away combined a simple, well-designed product with a lifestyle-driven marketing approach, direct online sales and a strong content and community strategy. Rather than competing purely on durability or price, it built an emotional connection to travel that older luggage brands had largely ignored.",
+      "text_sha256": "121fda5d427e7dbb888857888a54db72bcd46a45783599e8e08edef75ac31a10",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "actual_activity",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "brand",
+        "community",
+        "content",
+        "launch",
+        "marketing"
+      ],
+      "score": 18,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P10",
+      "source_url": "https://www.lilachbullock.com/away-marketing-strategy/",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    }
+  ],
+  "rejected_passages": [
+    {
+      "passage_uid": "PU-379f151e00aed84c",
+      "source_id": "S-14cc63876e71",
+      "char_start": 691,
+      "char_end": 1350,
+      "selection_status": "rejected",
+      "reasons": [
+        "boilerplate:table_of_contents"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "1. Define your brand identity 2. 2. Focus on content marketing 3. 3. Use social media for community building 4. 4. Invest in paid advertising 5. 5. Optimize for on-site conversions 6. 6. Influencer ma"
+    },
+    {
+      "passage_uid": "PU-abe463fa5fd749ce",
+      "source_id": "S-14cc63876e71",
+      "char_start": 12040,
+      "char_end": 12267,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "boilerplate:table_of_contents"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "1. Define your brand identity 2. 2. Focus on content marketing 3. 3. Use social media for community building 4. 4. Invest in paid advertising 5. 5. Optimize for on-site conversions 6. 6. Influencer ma"
+    },
+    {
+      "passage_uid": "PU-41aad2fa0f3b7045",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 6736,
+      "char_end": 7052,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Key Contacts A man and woman sitting outside amongst trees with sets of Away luggage in green and blue Press: press@awaytravel.com Influencer & Social Media: influencer@awaytravel.com Advertising & Ac"
+    },
+    {
+      "passage_uid": "PU-10596061f2116c0d",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 9905,
+      "char_end": 10211,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "actual_activity",
+      "preview": "Away Luggage Is FINALLY on Amazon—Shop Our Editors' Favorite Carry-Ons Summer wanderlust setting in? We have excellent news. One of our editor's favorite luggage brands finally launched on Amazon (for"
+    },
+    {
+      "passage_uid": "PU-00c238edfed2ed46",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 10424,
+      "char_end": 10761,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "actual_activity",
+      "preview": "Away just launched a luggage line for kids, and it’s as adorable as it is practical You’re in luck if you’ve got little travelers with you this summer. Away — the CNN Underscored fan-favorite brand kn"
+    },
+    {
+      "passage_uid": "PU-9bbf4241307cee18",
+      "source_id": "S-cfdf06c796ff",
+      "char_start": 3707,
+      "char_end": 4106,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Instagram Lifestyle Content as the Growth Engine Away uses Instagram as a visual storytelling platform, connecting its products with modern travel culture through a mix of aspirational and community-c"
+    },
+    {
+      "passage_uid": "PU-58d445a1eaf09ea6",
+      "source_id": "S-0ab759974db1",
+      "char_start": 7577,
+      "char_end": 7981,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Results In the last year, Away has nearly doubled its Instagram following, from 175K to more than 350K—a testament to the team's community engagement and growth strategy, and overall increase in brand"
+    },
+    {
+      "passage_uid": "PU-2adaed692e4c2bab",
+      "source_id": "S-1b038bd53572",
+      "char_start": 338,
+      "char_end": 726,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:ambiguous_entity"
+      ],
+      "identity_reason": "possible different entity: Away Influencer",
+      "statement_type": "provider_reported_result",
+      "preview": "Away Influencer Marketing Strategy (2026 Data & Insights) A We analyzed 805 sponsored posts from Away across TikTok, Instagram and YouTube over the last 12 months. See where Away invests in influencer"
+    },
+    {
+      "passage_uid": "PU-e428793dea17365a",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 15894,
+      "char_end": 16517,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "historical_activity",
+      "preview": "Latest Announcements Away partners with WNBA All-star Sabrina Ionescu to usher in a new era of travel and sport ## Away partners with WNBA All-star Sabrina Ionescu to usher in a new era of travel and "
+    },
+    {
+      "passage_uid": "PU-d6b56e0965e702dd",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 16623,
+      "char_end": 16903,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "historical_activity",
+      "preview": "Away partners with WNBA Champion New York Liberty to celebrate the future of women's sports May 15, 2025 Away, the award-winning brand shaping the future of travel, announced a new partnership with 20"
+    },
+    {
+      "passage_uid": "PU-74f694ecbba016fa",
+      "source_id": "S-0ab759974db1",
+      "char_start": 7982,
+      "char_end": 8677,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Away has sold more than one million travel products as a result of its growing brand awareness, while building a loyal fanbase and organic celebrity following that includes Karlie Kloss (leading to a "
+    },
+    {
+      "passage_uid": "PU-2830b8fbb7a17de6",
+      "source_id": "S-14cc63876e71",
+      "char_start": 4238,
+      "char_end": 4810,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "3. Use social media for community building Away has taken full advantage of social media, especially Instagram, to create an engaged and loyal customer base. With over 600,000 followers on Instagram, "
+    },
+    {
+      "passage_uid": "PU-091060a784204b15",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 5586,
+      "char_end": 6162,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "brand_positioning",
+      "preview": "United Kingdom You are shopping United Kingdom * United States You are shopping United States Update language # Newsroom Explore the Away Newsroom—your passport to the latest brand updates, press high"
+    },
+    {
+      "passage_uid": "PU-339c8ecc0496e888",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 9585,
+      "char_end": 9871,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Away’s Power Play: ‘Get Away’ Isn’t Just A Campaign, It’s A Cultural Cue As Away celebrates its 10-year anniversary, the brand is entering a bold new chapter: from a new CEO and new wholesale partners"
+    },
+    {
+      "passage_uid": "PU-1a6aa9949d079b9d",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 13460,
+      "char_end": 13605,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "actual_activity",
+      "preview": "Away Teamed Up With ‘The White Lotus’ for a Thailand-inspired Collection in Honor of Season 3's ## Lush Resort This collab is made for travelers."
+    },
+    {
+      "passage_uid": "PU-9c46cc2802796cd2",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 13649,
+      "char_end": 14044,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Away’s The White Lotus Luggage Collab Is Your Sign To Book That Trip ASAP Away joins Abercrombie & Fitch and Bloomingdales in releasing The White Lotus-themed product timed to the new episodes. A bran"
+    },
+    {
+      "passage_uid": "PU-d64ebd3750173974",
+      "source_id": "S-b97550e748d0",
+      "char_start": 2091,
+      "char_end": 2440,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Founder-led storytelling drawn from direct to consumer experience * Seeding product with influencers and editors early * Turning stores into brand experiences rather than just sales points * Turning c"
+    },
+    {
+      "passage_uid": "PU-f35836b4b522c433",
+      "source_id": "S-b97550e748d0",
+      "char_start": 5646,
+      "char_end": 6254,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "actual_activity",
+      "preview": "Keeping the product range deliberately simple Away launched with just one product, the Carry-On, in a small number of colours, rather than a sprawling catalogue. This focus meant marketing could be si"
+    },
+    {
+      "passage_uid": "PU-157046b830f743bf",
+      "source_id": "S-b97550e748d0",
+      "char_start": 8295,
+      "char_end": 8976,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "actual_activity",
+      "preview": "Turning stores into brand experiences rather than just sales points Away opened physical retail locations, including its first store in New York, designed more like lifestyle showrooms than traditiona"
+    },
+    {
+      "passage_uid": "PU-cffcd64c8d85752b",
+      "source_id": "S-cfdf06c796ff",
+      "char_start": 3285,
+      "char_end": 3676,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "About Away & the Campaign Away is a direct-to-consumer travel brand that built strong awareness through visually driven storytelling. Instagram played an important role in its growth by presenting tra"
+    },
+    {
+      "passage_uid": "PU-14f1e9bcb9392500",
+      "source_id": "S-cfdf06c796ff",
+      "char_start": 4539,
+      "char_end": 4745,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Influencer & Community Integration Away collaborates with travel influencers, photographers and frequent travellers, whose community-created content makes the brand feel authentic rather than promotio"
+    },
+    {
+      "passage_uid": "PU-d985dbc004bf1369",
+      "source_id": "S-cfdf06c796ff",
+      "char_start": 7342,
+      "char_end": 7697,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Campaign Details BrandAway CategoryContent Marketing ChannelInstagram IndustryTravel / Luggage / DTC TypeLong-Term / Community-Led MarketGlobal Content TypeLifestyle Photography & UGC 10× Follower Gro"
+    },
+    {
+      "passage_uid": "PU-64115706c9cff648",
+      "source_id": "S-14cc63876e71",
+      "char_start": 1811,
+      "char_end": 2383,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "historical_activity",
+      "preview": "1. Define your brand identity When Steph Korey and Jen Rubio (both ex-Warby Parker execs) launched Away in 2015, they weren’t just launching another direct-to-consumer (DTC) product. They were buildin"
+    },
+    {
+      "passage_uid": "PU-53a33aeccd874d9a",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 6163,
+      "char_end": 6732,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "historical_activity",
+      "preview": "Away launched in 2016 with one perfectly designed Carry-On and has since revolutionized the travel industry by creating a range of luggage and travel essentials backed by the promise of exceptional qu"
+    },
+    {
+      "passage_uid": "PU-cf55fcfb42fcdd9b",
+      "source_id": "S-b97550e748d0",
+      "char_start": 2519,
+      "char_end": 3203,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "More marketing case studies Away built a billion dollar luggage brand not by inventing a new suitcase but by treating travel as an identity people wanted to belong to. They grew an audience before the"
+    },
+    {
+      "passage_uid": "PU-cb21b6c94a2b5113",
+      "source_id": "S-cfdf06c796ff",
+      "char_start": 7730,
+      "char_end": 8246,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "provider_reported_result",
+      "preview": "Tools & Platforms Instagram Influencer Marketing UGC Curation Photography Community Management Email Marketing ### Skills Content Marketing Strategy Instagram Marketing Visual Storytelling User-Genera"
+    },
+    {
+      "passage_uid": "PU-18b9decaf71aa878",
+      "source_id": "S-0ab759974db1",
+      "char_start": 6036,
+      "char_end": 6518,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "The Collective features content creators from all over, with members from the United States, Canada, Norway, Spain, and more. The Collective members are unique and range in the kinds of travel content"
+    },
+    {
+      "passage_uid": "PU-de696cf1367a8b31",
+      "source_id": "S-14cc63876e71",
+      "char_start": 431,
+      "char_end": 627,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "How Away Reached $1.4 Billion by Turning Luggage into a Travel Lifestyle Discover how Away turned luggage into a $1.4B lifestyle brand through storytelling, social media, and influencer marketing."
+    },
+    {
+      "passage_uid": "PU-143e605c7169b4b9",
+      "source_id": "S-14cc63876e71",
+      "char_start": 2518,
+      "char_end": 3170,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "2. Focus on content marketing At the heart of Away’s marketing strategy is an emphasis on storytelling, which creates a deep emotional connection with their audience. One of Away's first major content"
+    },
+    {
+      "passage_uid": "PU-5471f578a12d7829",
+      "source_id": "S-14cc63876e71",
+      "char_start": 4811,
+      "char_end": 5076,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "The campaign encourages both customers and influencers to share their travel moments, fostering a sense of connection and loyalty. This UGC strategy not only increases engagement but also positions Aw"
+    },
+    {
+      "passage_uid": "PU-f452809a35ddd461",
+      "source_id": "S-14cc63876e71",
+      "char_start": 5080,
+      "char_end": 5545,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "4. Invest in paid advertising While organic content is Away’s sweet spot, they’ve also got a smart paid media game. They invest in Google Ads to capture both branded and non-branded search traffic wit"
+    },
+    {
+      "passage_uid": "PU-d0efb4ca629dae7f",
+      "source_id": "S-14cc63876e71",
+      "char_start": 6220,
+      "char_end": 6869,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Illustration for: How Away Reached $1.4 Billion by Turning Luggage into a Travel Lifestyle Their video ads, in particular, align with their brand's storytelling approach, showcasing the lifestyle that"
+    },
+    {
+      "passage_uid": "PU-8148631180f9b0c4",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 11926,
+      "char_end": 12177,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Away, the Travel Brand with a Cult Following, Relocates Its Dallas Store to NorthPark Center Away recently relocated its Dallas store, which is now open at NorthPark Center. It’s the perfect place for"
+    },
+    {
+      "passage_uid": "PU-73aef6dcce9cbcd8",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 18821,
+      "char_end": 19040,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Any other use of Site content including, without limitation personal or commercial use, is strictly prohibited. The Away logo LOGOS A woman rolling an Away carry-on suitcase in green on a white backgr"
+    },
+    {
+      "passage_uid": "PU-2b52a212cab11e34",
+      "source_id": "S-b97550e748d0",
+      "char_start": 4194,
+      "char_end": 4811,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "actual_activity",
+      "preview": "Building an audience before the product existed Away did not launch with a product and then market it. Before the Carry-On was available to buy, the founders built an email list of over 12,000 people "
+    },
+    {
+      "passage_uid": "PU-cf7da8aa5eda58e8",
+      "source_id": "S-b97550e748d0",
+      "char_start": 7629,
+      "char_end": 8291,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Seeding product with influencers and editors early In its early years, Away gifted suitcases to journalists, influencers and people with large social followings, encouraging organic posts of the produ"
+    },
+    {
+      "passage_uid": "PU-917ac152ddefc3f3",
+      "source_id": "S-b97550e748d0",
+      "char_start": 12547,
+      "char_end": 12897,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Did Away rely mainly on paid advertising to grow? Advertising played a role over time, but Away's early growth relied heavily on content built before launch, influencer and press seeding, direct to co"
+    },
+    {
+      "passage_uid": "PU-cb2a9719c6bc72af",
+      "source_id": "S-1b038bd53572",
+      "char_start": 3571,
+      "char_end": 3953,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Top influencers Away works with Away's highest-reach creator partners over the last 12 months. RankInfluencerPlatformPostsTotal views 1@drewfromladueInstagram12.2M 2@makenzie.marshallTikTok11.3M 3@the"
+    },
+    {
+      "passage_uid": "PU-1e9505bd2a19da6e",
+      "source_id": "S-0ab759974db1",
+      "char_start": 590,
+      "char_end": 738,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Creator & Influencer Partnerships Instagram Partnership Multi-Platform Partnership Other Platform Partnership TikTok Partnership YouTube Partnership"
+    },
+    {
+      "passage_uid": "PU-982c3c886ef01315",
+      "source_id": "S-0ab759974db1",
+      "char_start": 1801,
+      "char_end": 2323,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Strategy & Engagement Brand Partnership Call to Action Community Engagement Creative Use of Technology CTV/OTT Data & Insights Earned Media Event & Experiential Gamification GEO (Generative Engine Opt"
+    },
+    {
+      "passage_uid": "PU-7d4dccdef316a8de",
+      "source_id": "S-0ab759974db1",
+      "char_start": 3280,
+      "char_end": 3911,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "An expert in brand storytelling, she knows that the delta between between a great product and a great brand is emotion—the perfect suitcase wouldn't appeal to the masses alone, but rather through a br"
+    },
+    {
+      "passage_uid": "PU-865449a4e9e46097",
+      "source_id": "S-0ab759974db1",
+      "char_start": 4708,
+      "char_end": 5359,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Away's Instagram grid and stories mix behind-the-scenes footage from campaign shoots in Cape Town, Miami, Budapest, and more, interviews with various team members to give viewers a glimpse into what A"
+    },
+    {
+      "passage_uid": "PU-5953d23d80056285",
+      "source_id": "S-0ab759974db1",
+      "char_start": 6519,
+      "char_end": 7208,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Content is often posted on the platform to proactively demonstrate relevant information about Away products or travel tips, such as proper techniques to clean suitcases, a detailed breakdown of the di"
+    },
+    {
+      "passage_uid": "PU-4c2d63d0b5f1ab1b",
+      "source_id": "S-14cafdc2d27f",
+      "char_start": 5906,
+      "char_end": 6291,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "brand_positioning",
+      "preview": "Our approach We’re travelers, and our experiences inform our approach to the things we make. Simply put—our luggage is designed by travelers, for travelers. At Away, you’ll find suitcases, bags, and a"
+    },
+    {
+      "passage_uid": "PU-c61dd669c517e2ec",
+      "source_id": "S-14cc63876e71",
+      "char_start": 3171,
+      "char_end": 3752,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Away’s blog, Away Pages, takes this approach further by providing useful, practical content. From tips on how to efficiently pack a suitcase to life hacks for traveling with kids, the blog offers help"
+    },
+    {
+      "passage_uid": "PU-4e7e742003dea560",
+      "source_id": "S-14cc63876e71",
+      "char_start": 10193,
+      "char_end": 10605,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Illustration for: How Away Reached $1.4 Billion by Turning Luggage into a Travel Lifestyle Another successful collaboration was with Devon Aoki, for a limited edition kids collection: Illustration for"
+    },
+    {
+      "passage_uid": "PU-f8410bc6099b6bc3",
+      "source_id": "S-14cc63876e71",
+      "char_start": 10609,
+      "char_end": 11062,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Wrapping up In short, Away has transformed luggage into a lifestyle by blending strong storytelling, seamless website optimization, and strategic social media use. Their focus on personalization, infl"
+    },
+    {
+      "passage_uid": "PU-3c5dd6f930cc1408",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 7595,
+      "char_end": 7719,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "The Best Away Luggage, Tested and Reviewed Away is one of the best brands in the business, so we tried 31 pieces to see why."
+    },
+    {
+      "passage_uid": "PU-e4c8a32c9d9fc242",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 7763,
+      "char_end": 8173,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "We've Put 70+ Luggage Brands to the Test: These Are the Best Away is one of the most popular luggage brands on the market, and our testing shows it actually lives up to its hype. Though the brand has "
+    },
+    {
+      "passage_uid": "PU-937d31e183ac5bd0",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 12468,
+      "char_end": 12742,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Away's expandable Flex bag is the roomiest carry-on we've tested — but there's a good chance ## you'll be asked to check it A quick glance at our Away luggage review and our guides to the best luggage"
+    },
+    {
+      "passage_uid": "PU-22a598310a3af3d7",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 13213,
+      "char_end": 13410,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "‘The White Lotus’ and Away Team on Luxe Travel Capsule Ahead of Season Three The collab features raffia-inspired accents, Saffiano leather details and a custom lotus flower-printed interior lining."
+    },
+    {
+      "passage_uid": "PU-2fd9f4883ab752d9",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 15212,
+      "char_end": 15346,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "The Best Away Luggage, Tested and Reviewed Away is one of the best brands in the business, so we tried more than 20 pieces to see why."
+    },
+    {
+      "passage_uid": "PU-de48128fa46fc199",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 15390,
+      "char_end": 15529,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Away’s New Daily Backpack Comes Extra Organized for Commuters The fan-favorite suitcase brand’s new backpack has a “pocket-forward” design."
+    },
+    {
+      "passage_uid": "PU-e544b1c5b4aa234e",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 18404,
+      "char_end": 18624,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Away disrupts sleepy luggage category with a revolutionary new softside line Jul 09, 2024 Away, the original travel lifestyle brand, is poised to once again disrupt the luggage industry with the intro"
+    },
+    {
+      "passage_uid": "PU-9cc3810348a021c3",
+      "source_id": "S-b97550e748d0",
+      "char_start": 6258,
+      "char_end": 6878,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Pricing as a positioning statement Away priced its Carry-On at a level clearly above budget luggage but well below premium brands such as Rimowa, positioning itself as accessible luxury. This pricing "
+    },
+    {
+      "passage_uid": "PU-5606b77e370f61e0",
+      "source_id": "S-b97550e748d0",
+      "char_start": 6882,
+      "char_end": 7481,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Founder-led storytelling drawn from direct to consumer experience Jen Rubio had previously worked in social media and marketing at Warby Parker, another brand credited with pioneering the modern direc"
+    },
+    {
+      "passage_uid": "PU-8fe9c9949272a435",
+      "source_id": "S-b97550e748d0",
+      "char_start": 8980,
+      "char_end": 9627,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Turning customers into a visible community Away encouraged customers to share their travel photos featuring the luggage using branded hashtags, and regularly reposted this content across its own socia"
+    },
+    {
+      "passage_uid": "PU-6b368d2b67be10be",
+      "source_id": "S-b97550e748d0",
+      "char_start": 13270,
+      "char_end": 13638,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Can a small business realistically copy Away's marketing approach? Yes, though at a smaller scale. The core principles, building an audience before launching, keeping the product range focused, offeri"
+    },
+    {
+      "passage_uid": "PU-1966cb72b9e978a1",
+      "source_id": "S-cfdf06c796ff",
+      "char_start": 2841,
+      "char_end": 3281,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Through Instagram Storytelling A deep dive into how a direct-to-consumer luggage brand used visual storytelling and user-generated content to turn a suitcase into a lifestyle symbol — achieving 10× fo"
+    },
+    {
+      "passage_uid": "PU-4b0bac05b2491a21",
+      "source_id": "S-cfdf06c796ff",
+      "char_start": 5500,
+      "char_end": 6020,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "The Strategic Advantages of This Approach ❤️ Strong Emotional Connection The strategy builds a strong emotional connection with people who aspire to travel. 🔁 Encourages Participation Its Instagram-fr"
+    },
+    {
+      "passage_uid": "PU-927fef7395154984",
+      "source_id": "S-cfdf06c796ff",
+      "char_start": 6547,
+      "char_end": 6906,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Transformed Instagram into a brand aspiration and community engine * Generated large-scale organic reach through user-generated content * Encouraged customer participation at a level rare for a physic"
+    },
+    {
+      "passage_uid": "PU-44ff621fe9633850",
+      "source_id": "S-14cc63876e71",
+      "char_start": 12942,
+      "char_end": 13233,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "historical_activity",
+      "preview": "WavyTalk Marketing Strategy: How a $52 Brush Built a 15-Billion-Impression Empire A deep dive into WavyTalk’s marketing strategy, from TikTok Shop and creator-led launches to UGC, cultural moments, an"
+    },
+    {
+      "passage_uid": "PU-8b7a98b8beecd5a7",
+      "source_id": "S-1b038bd53572",
+      "char_start": 1061,
+      "char_end": 1186,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Social platforms breakdown Where Away's sponsored collaborations happen, and which content formats they use on each platform."
+    },
+    {
+      "passage_uid": "PU-9a67ec4726972a47",
+      "source_id": "S-1b038bd53572",
+      "char_start": 1191,
+      "char_end": 1458,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Sponsored posts by platform Across all of Away's accounts TikTok552 Instagram165 YouTube88 ### Content format by platform Share of all sponsored posts. Instagram · Reels19.6% Instagram · Feed Posts0.9"
+    },
+    {
+      "passage_uid": "PU-fd649dd68d88f9df",
+      "source_id": "S-1b038bd53572",
+      "char_start": 2964,
+      "char_end": 3151,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "provider_reported_result",
+      "preview": "See how any brand runs influencer marketing Modash tracks sponsored posts across Instagram, TikTok and YouTube. Search any brand to see who they work with, how often, and how it performs."
+    },
+    {
+      "passage_uid": "PU-73c0d4e564050e48",
+      "source_id": "S-cfdf06c796ff",
+      "char_start": 6043,
+      "char_end": 6501,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "The Numbers That Prove the Model Works 10× Instagram follower growth within ~1 year ~100K Instagram followers by August 2017 600/676 Instagram posts from user-generated content 15M Users reached organ"
+    },
+    {
+      "passage_uid": "PU-b7be81b7a196437d",
+      "source_id": "S-0ab759974db1",
+      "char_start": 2857,
+      "char_end": 3279,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Objectives Away is global lifestyle brand designing thoughtful products to make travel more seamless. Since launching in 2016 with a single suitcase, Away has become a global business that offers a wi"
+    },
+    {
+      "passage_uid": "PU-61115e9725f40d31",
+      "source_id": "S-0ab759974db1",
+      "char_start": 10102,
+      "char_end": 10312,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Jen Rubio Co-Founder + Chief Brand Officer at Away * Selena Kalvaria VP, Brand Marketing at Away * Georgia Parent Social Media Manager at Away * Gabrielle Ramirez Social Media Associate at Away Share "
+    },
+    {
+      "passage_uid": "PU-6f5f4bc525950e6a",
+      "source_id": "S-14cafdc2d27f",
+      "char_start": 236,
+      "char_end": 518,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Help Select store Store Our stores Austin Boston: Newbury Chicago Dallas Houston LA: Venice Beach LA: West Hollywood London NYC : Williamsburg NYC: Noho Nashville San Francisco: Hayes Valley San Jose "
+    },
+    {
+      "passage_uid": "PU-e0d273e38cb26208",
+      "source_id": "S-14cafdc2d27f",
+      "char_start": 2016,
+      "char_end": 2186,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Best Lightweight Luggage for Frequent Flyers 4/3/26 * Our Best Reviewed Packing Cube Sets 4/3/26 * The Ultimate Guide to the Best Duffle Bags for Weekend Getaways 3/18/26"
+    },
+    {
+      "passage_uid": "PU-835085983ece3403",
+      "source_id": "S-14cafdc2d27f",
+      "char_start": 3418,
+      "char_end": 3681,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Bundle & save Log in Refer a friend Help Our stores Austin Boston: Newbury Chicago Dallas Houston LA: Venice Beach LA: West Hollywood London NYC : Williamsburg NYC: Noho Nashville San Francisco: Hayes"
+    },
+    {
+      "passage_uid": "PU-d4ef45c7fef490c6",
+      "source_id": "S-14cafdc2d27f",
+      "char_start": 5068,
+      "char_end": 5550,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Bundle & save Back to main menu Our stores Austin Boston: Newbury Chicago Dallas Houston LA: Venice Beach LA: West Hollywood London NYC : Williamsburg NYC: Noho Nashville San Francisco: Hayes Valley S"
+    },
+    {
+      "passage_uid": "PU-e5449c5dd3e7cc41",
+      "source_id": "S-14cafdc2d27f",
+      "char_start": 6295,
+      "char_end": 6720,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Our travel essentials Our suitcases, bags, and accessories use materials—from polycarbonate and aluminum to water-resistant nylon—that are not only sleek and lightweight, but also high-performing, dur"
+    },
+    {
+      "passage_uid": "PU-0f48077605c62a47",
+      "source_id": "S-14cafdc2d27f",
+      "char_start": 6724,
+      "char_end": 6862,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Our team At Away, you’ll find suitcases, bags, and accessories built with thoughtful details to make each and every journey more seamless."
+    },
+    {
+      "passage_uid": "PU-0ce843ed81d24b5a",
+      "source_id": "S-14cafdc2d27f",
+      "char_start": 7202,
+      "char_end": 7575,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Visit us IRL: Your closest store Austin (512) 814-1255 11701 Domain Blvd, Suite 120, Austin, TX 78758 Visit us IRL: Your closest store Boston: Newbury (857) 328-0662 179 Newbury Street, Boston, MA 021"
+    },
+    {
+      "passage_uid": "PU-bbfdc163566a90fa",
+      "source_id": "S-14cafdc2d27f",
+      "char_start": 7576,
+      "char_end": 7906,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Central Expressway Suite 786, Dallas, TX 75225 Visit us IRL: Your closest store Washington DC (202) 978-2604 3237 M Street NW, Washington, DC 20007 Visit us IRL: Your closest store Houston (713) 936-6"
+    },
+    {
+      "passage_uid": "PU-412add97b21968f0",
+      "source_id": "S-14cafdc2d27f",
+      "char_start": 9672,
+      "char_end": 10184,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Double the coverage with Pro Every suitcase comes with Away LifetimeCare™ Coverage. Free repairs for the first five years — for manufacturing defects and for travel damage like airline mishandling. If"
+    },
+    {
+      "passage_uid": "PU-3c8ef43de256a10f",
+      "source_id": "S-14cc63876e71",
+      "char_start": 8150,
+      "char_end": 8676,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Illustration for: How Away Reached $1.4 Billion by Turning Luggage into a Travel Lifestyle They also build trust by displaying social proof, including reviews from reputable outlets like Condé Nast Tr"
+    },
+    {
+      "passage_uid": "PU-7aa74ae37f5ccff9",
+      "source_id": "S-14cc63876e71",
+      "char_start": 12633,
+      "char_end": 12894,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Carroten Marketing Strategy: How Carroten Turned a 40-Year-Old Greek Suncare Brand Into a TikTok ### Sensation How Carroten went from unknown to every US Target shelf in under a year — using TikTok vi"
+    },
+    {
+      "passage_uid": "PU-9945a76bf3c6ea8a",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 236,
+      "char_end": 518,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Help Select store Store Our stores Austin Boston: Newbury Chicago Dallas Houston LA: Venice Beach LA: West Hollywood London NYC : Williamsburg NYC: Noho Nashville San Francisco: Hayes Valley San Jose "
+    },
+    {
+      "passage_uid": "PU-829f3863bf931de1",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 2016,
+      "char_end": 2186,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Best Lightweight Luggage for Frequent Flyers 4/3/26 * Our Best Reviewed Packing Cube Sets 4/3/26 * The Ultimate Guide to the Best Duffle Bags for Weekend Getaways 3/18/26"
+    },
+    {
+      "passage_uid": "PU-f052d80383e7435c",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 3418,
+      "char_end": 3681,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Bundle & save Log in Refer a friend Help Our stores Austin Boston: Newbury Chicago Dallas Houston LA: Venice Beach LA: West Hollywood London NYC : Williamsburg NYC: Noho Nashville San Francisco: Hayes"
+    },
+    {
+      "passage_uid": "PU-6cbf7fb105ba873c",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 5068,
+      "char_end": 5550,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Bundle & save Back to main menu Our stores Austin Boston: Newbury Chicago Dallas Houston LA: Venice Beach LA: West Hollywood London NYC : Williamsburg NYC: Noho Nashville San Francisco: Hayes Valley S"
+    },
+    {
+      "passage_uid": "PU-5c3d7fc5442ab3dd",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 8550,
+      "char_end": 8901,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Away’s New Compression Packing Cubes Are a Gamechanger for Overpackers And while packing cubes certainly help with luggage organization, they won’t necessarily help you pack more stuff. That is, unles"
+    },
+    {
+      "passage_uid": "PU-9bd4bd3c727f7470",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 10254,
+      "char_end": 10382,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Are Away Carry-Ons Worth the Hype? If you want the look and lighter weight of a hard-sided bag, the Away Carry-On is our choice."
+    },
+    {
+      "passage_uid": "PU-6edf232f2ea9a3e5",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 10804,
+      "char_end": 10929,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Away Luggage Now Has Travel Gear for Kids There's a carry-on suitcase, backpack, lunch box and packing cubes — all kid-sized."
+    },
+    {
+      "passage_uid": "PU-f14a61ed965a9731",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 11368,
+      "char_end": 11569,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "I Spend More Time on Flights Than at Home—This Away Weekender Bag Is My Travel Secret Weapon I'm in a phase of life where I see my Away bags more than my husband, my dog, or the inside of my apartment"
+    },
+    {
+      "passage_uid": "PU-f566ed7727957b97",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 12221,
+      "char_end": 12425,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "I never thought I’d love a suitcase this much, but Away proved me wrong So last fall, when CNN Underscored kicked off its All-Stars series, it was only a matter of time before we wrote a story about A"
+    },
+    {
+      "passage_uid": "PU-aec58c502442aba1",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 14378,
+      "char_end": 14506,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Are Away Carry-Ons Worth the Hype? If you want the look and lighter weight of a hard-sided bag, the Away Carry-On is our choice."
+    },
+    {
+      "passage_uid": "PU-bffb4870b2156821",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 14548,
+      "char_end": 14896,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Away's Sparkly New Cosmic Collection Is the Standout Luggage You Need for Holiday Travel \"The luggage is even more sparkly in person, and [each of the designs] feature all the bells and whistles, from"
+    },
+    {
+      "passage_uid": "PU-03b3c8b3eb96b328",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 14932,
+      "char_end": 15172,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "I Seriously Can't Stop Thinking About Away's New Sparkly Luggage... It's unlike any luggage I’ve seen: It has a glitter-injected hard shell that's so full-coverage and so shimmery, it has that satisfy"
+    },
+    {
+      "passage_uid": "PU-f2e0823f18422f17",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 15568,
+      "char_end": 15860,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Away’s New Café Collection Features Leather Accessories And Fall Colors For the new collection, Away’s The Carry-On has been redesigned with a matte finish, a pebbled texture and dark brown lining. Th"
+    },
+    {
+      "passage_uid": "PU-97fdfca07dcab713",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 17008,
+      "char_end": 17640,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Away Named to Fast Company’s Annual List of the World’s Most Innovative Companies of 2025. Mar 18, 2025 This year, the Most Innovative Companies in travel and hospitality reflect a new moment in trave"
+    },
+    {
+      "passage_uid": "PU-f29e412d9174ac56",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 19366,
+      "char_end": 19739,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Visit us IRL: Your closest store Austin (512) 814-1255 11701 Domain Blvd, Suite 120, Austin, TX 78758 Visit us IRL: Your closest store Boston: Newbury (857) 328-0662 179 Newbury Street, Boston, MA 021"
+    },
+    {
+      "passage_uid": "PU-0d57adf4785e5b94",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 19740,
+      "char_end": 20070,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Central Expressway Suite 786, Dallas, TX 75225 Visit us IRL: Your closest store Washington DC (202) 978-2604 3237 M Street NW, Washington, DC 20007 Visit us IRL: Your closest store Houston (713) 936-6"
+    },
+    {
+      "passage_uid": "PU-063fcb490dda78b5",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 21836,
+      "char_end": 22348,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Double the coverage with Pro Every suitcase comes with Away LifetimeCare™ Coverage. Free repairs for the first five years — for manufacturing defects and for travel damage like airline mishandling. If"
+    },
+    {
+      "passage_uid": "PU-adeb34951b1024fb",
+      "source_id": "S-b97550e748d0",
+      "char_start": 3408,
+      "char_end": 4035,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Positioning luggage as a travel lifestyle, not a commodity Before Away, most people bought suitcases based on price and durability alone, choosing from brands like Samsonite or American Tourister with"
+    },
+    {
+      "passage_uid": "PU-56372929fdabe1f2",
+      "source_id": "S-b97550e748d0",
+      "char_start": 4942,
+      "char_end": 5642,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Selling direct to consumer to control the experience and the margin Away sold almost exclusively through its own website in its early years, avoiding traditional wholesale and department store distrib"
+    },
+    {
+      "passage_uid": "PU-6a892cee56000549",
+      "source_id": "S-b97550e748d0",
+      "char_start": 11367,
+      "char_end": 11961,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Handling reputation challenges transparently Away faced public scrutiny in 2019 after reporting on workplace culture at the company, which led to leadership changes including a temporary step back and"
+    },
+    {
+      "passage_uid": "PU-a97044cc39e8a490",
+      "source_id": "S-b97550e748d0",
+      "char_start": 12902,
+      "char_end": 13265,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "How did Away use its website differently from typical retailers? By selling directly through its own site, Away controlled photography, storytelling, pricing and the entire checkout experience rather "
+    },
+    {
+      "passage_uid": "PU-8a615a40aceeedaa",
+      "source_id": "S-1b038bd53572",
+      "char_start": 3168,
+      "char_end": 3394,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Influencer audience size breakdown The size of creator Away works with, measured by average views per post rather than follower count. Views track closer to the reach a brand actually gets, and follow"
+    },
+    {
+      "passage_uid": "PU-b3d526389acdf51e",
+      "source_id": "S-1b038bd53572",
+      "char_start": 3967,
+      "char_end": 4455,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "partnerships Whether Away works with creators once, or builds an ongoing roster. Repeat creators make up 13.0% of Away's creator network and generate 17.9% of total reach. The charts below show how of"
+    },
+    {
+      "passage_uid": "PU-f659722f3bd7493b",
+      "source_id": "S-1b038bd53572",
+      "char_start": 6113,
+      "char_end": 6320,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Sponsored posts by creator location Top 4 markets United States96.7% Canada1.7% United Kingdom1.2% Philippines0.4% ## Away vs. related brands How Away's influencer activity compares with other travel "
+    },
+    {
+      "passage_uid": "PU-a60c121fa7feaad3",
+      "source_id": "S-1b038bd53572",
+      "char_start": 6474,
+      "char_end": 6604,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "What content does Away sponsor most? ### Which influencers does Away work with? ### Which Away accounts are included in this data?"
+    },
+    {
+      "passage_uid": "PU-69fdf851b1145d96",
+      "source_id": "S-0ab759974db1",
+      "char_start": 1274,
+      "char_end": 1523,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Overall Presence Meta Presence Multi-Platform Presence Other Platform Presence TikTok Presence YouTube Presence ### Platforms & Technology Artificial Intelligence Extended Reality Immersive Instagram "
+    },
+    {
+      "passage_uid": "PU-7cb23cb3e6bd459e",
+      "source_id": "S-0ab759974db1",
+      "char_start": 7209,
+      "char_end": 7572,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "The real-time dialogue allows Away to incorporate customer feedback into decisions and quickly make changes or develop new products and experiences based on what followers are asking for, ensuring cus"
+    },
+    {
+      "passage_uid": "PU-54213f4c4f09068f",
+      "source_id": "S-14cc63876e71",
+      "char_start": 11144,
+      "char_end": 11804,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Bombas Marketing Breakdown: How They Turned Socks Into a Social Movement? * Olaplex Marketing Secrets: How a Beauty Brand Built a Billion-Dollar Buzz * Goop Marketing Breakdown: How They Turned Conten"
+    },
+    {
+      "passage_uid": "PU-f8f08baf337c619d",
+      "source_id": "S-14cc63876e71",
+      "char_start": 12433,
+      "char_end": 12584,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Viral How Tarte turns founder storytelling, creator trips, TikTok virality, and smart on-site funnels into a repeatable beauty marketing growth engine."
+    },
+    {
+      "passage_uid": "PU-204c00546f603eba",
+      "source_id": "S-b97550e748d0",
+      "char_start": 1567,
+      "char_end": 1806,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Away Marketing Strategy: How They Built a Brand That Wins By Lilach Bullock If you are skim reading Away built a billion dollar luggage brand not by inventing a new suitcase but by treating travel as "
+    },
+    {
+      "passage_uid": "PU-ecf9dc819b913a7c",
+      "source_id": "S-b97550e748d0",
+      "char_start": 13643,
+      "char_end": 14085,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "author_recommendation",
+      "preview": "What is the main lesson small business owners should take from Away? The clearest lesson is that product quality alone rarely builds a brand. Away paired a genuinely useful product with deliberate sto"
+    },
+    {
+      "passage_uid": "PU-aa3597bc7acf8f70",
+      "source_id": "S-b97550e748d0",
+      "char_start": 16335,
+      "char_end": 16659,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Lilach Bullock Forbes Top 20 Social Media Power Influencer. 23 years of marketing experience. Currently obsessed with AI implementation done well. British AI and marketing consultant working internati"
+    },
+    {
+      "passage_uid": "PU-94bcbf4c897548dc",
+      "source_id": "S-b97550e748d0",
+      "char_start": 19500,
+      "char_end": 19794,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "actual_activity",
+      "preview": "arrives once a week Every week: the live experiment I ran in my own business and what actually happened, which tools are actually worth your money. Tools. AI. Growth. Marketing. And the stuff other ne"
+    },
+    {
+      "passage_uid": "PU-68ecd5e183dd7fa2",
+      "source_id": "S-cfdf06c796ff",
+      "char_start": 6910,
+      "char_end": 7111,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "author_recommendation",
+      "preview": "The Bigger Lesson for Brands Away’s Instagram strategy demonstrates how visual storytelling, user-generated content, and aspirational branding can transform a practical product into a lifestyle symbol"
+    },
+    {
+      "passage_uid": "PU-00cd8fcac833c38c",
+      "source_id": "S-14cc63876e71",
+      "char_start": 7523,
+      "char_end": 8149,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "The agent designs the popup, writes the copy and puts it live. Free to start, no credit card. Create a welcome popup for my DTC brand that tells our brand's story in one line and offers 10% off the fi"
+    },
+    {
+      "passage_uid": "PU-4b22cb37656a62de",
+      "source_id": "S-1b038bd53572",
+      "char_start": 1463,
+      "char_end": 1749,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "provider_reported_result",
+      "preview": "Content format by platform Share of all sponsored posts. Instagram · Reels19.6% Instagram · Feed Posts0.9% TikTok · Posts68.5% YouTube · Long-form10.7% YouTube · Shorts0.2% We can separate videos from"
+    },
+    {
+      "passage_uid": "PU-30ef528eff7903f4",
+      "source_id": "S-1b038bd53572",
+      "char_start": 2203,
+      "char_end": 2351,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Top performing posts @drewfromladueView on Instagram ↗ Instagram post by @drewfromladue for Away #awaypartner let’s pack for japan! packing all [..."
+    },
+    {
+      "passage_uid": "PU-c6dc66614aa04593",
+      "source_id": "S-1b038bd53572",
+      "char_start": 3399,
+      "char_end": 3567,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Away's influencers by average views per post Share of the 462 creators in this dataset <1K18.2% 1K-5K24.9% 5K-10K10.0% 10K-50K25.5% 50K-100K9.1% 100K-500K9.7% 500K+2.6%"
+    },
+    {
+      "passage_uid": "PU-d08bb2e3f7fa942b",
+      "source_id": "S-1b038bd53572",
+      "char_start": 4786,
+      "char_end": 4961,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Creators Away works with repeatedly @prettylittlejetsetterView on TikTok ↗ TikTok post by @prettylittlejetsetter for Away The @Away Travel Bigger Carry on is a no brainer [..."
+    },
+    {
+      "passage_uid": "PU-b0cc3b10f28f29d1",
+      "source_id": "S-1b038bd53572",
+      "char_start": 5595,
+      "char_end": 5913,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Away's most loyal creators Influencer Months activePostsTotal engagement @prettylittlejetsetter Months active7 Posts22 Total engagement610 @snacki123 Months active7 Posts9 Total engagement99 @kat_nari"
+    },
+    {
+      "passage_uid": "PU-13a7118186d8939a",
+      "source_id": "S-0ab759974db1",
+      "char_start": 129,
+      "char_end": 340,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Campaign Brand Awareness Campaign Foreign Language Campaign Global Campaign Integrated Campaign Launch Campaign Local Campaign Multi-Platform Campaign Multicultural Campaign Rebrand Campaign Social Go"
+    },
+    {
+      "passage_uid": "PU-29814e5cf4a6ef86",
+      "source_id": "S-0ab759974db1",
+      "char_start": 345,
+      "char_end": 585,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Content and Media Blog & Micro-blog Brand Voice Branded Content Branded Series Contest or Promotion Copywriting Email & Newsletter Episodic Meme, GIF, & Emojis Micro-Site Single Post or Activation Use"
+    },
+    {
+      "passage_uid": "PU-8075c6ca54dfe3e9",
+      "source_id": "S-0ab759974db1",
+      "char_start": 743,
+      "char_end": 1269,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Design Animation Art Direction Audio & Music Brand Identity Brand Redesign Generative AI Graphic Art Images Website/App ### Industry Auto Business to Business Consumer Brand Education Entertainment Fa"
+    },
+    {
+      "passage_uid": "PU-6ad46347150edd31",
+      "source_id": "S-0ab759974db1",
+      "char_start": 9292,
+      "char_end": 9664,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "https://www.instagram.com/away/?hl=en * https://www.adweek.com/brand-marketing/how-away-shook-up-the-sleepy-luggage-market-with-a-simple-c olorful-carry-on/ * https://www.cntraveler.com/story/why-ever"
+    },
+    {
+      "passage_uid": "PU-bf5dd5517a8dd219",
+      "source_id": "S-14cafdc2d27f",
+      "char_start": 5711,
+      "char_end": 5902,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "author_recommendation",
+      "preview": "Our why We believe the more we travel, the better we all become. That’s why our travel essentials are designed to last (and last) for every trip to come, so you can get out there and explore."
+    },
+    {
+      "passage_uid": "PU-0a837ba490aaf129",
+      "source_id": "S-14cc63876e71",
+      "char_start": 0,
+      "char_end": 428,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "OptiMonk Product Popup Library Pricing Resources Sign inStart for free Product Use cases Email popupsExit-intent popupsGamificationUpsell popupsQuiz popupsSeasonal offers Platform AI assistantsAnalyti"
+    },
+    {
+      "passage_uid": "PU-fc9e4afbd0372dc4",
+      "source_id": "S-14cc63876e71",
+      "char_start": 5546,
+      "char_end": 6219,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "For example, they run targeted campaigns for savvy travelers who value functionality and design… Illustration for: How Away Reached $1.4 Billion by Turning Luggage into a Travel LifestyleIllustration "
+    },
+    {
+      "passage_uid": "PU-6ad8f4b5cdb538f7",
+      "source_id": "S-14cc63876e71",
+      "char_start": 9150,
+      "char_end": 9673,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Select letter colors This customization creates a more personal connection to the product, allowing customers to design luggage that reflects their unique style. Illustration for: How Away Reached $1."
+    },
+    {
+      "passage_uid": "PU-bb05ba806c93f891",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 7074,
+      "char_end": 7553,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "author_recommendation",
+      "preview": "The Best Hard-Shell Carry-On Luggage The models we recommend strike the best balance of durability, design, maneuverability, and price. They’re not perfect for every traveler or for every trip, but wh"
+    },
+    {
+      "passage_uid": "PU-6f3f30b9860d5716",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 8218,
+      "char_end": 8508,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "author_recommendation",
+      "preview": "Traveling With Little Kids Can Be Tough. The Right Gear Can Help We polled well-traveled parents and caregivers for their must-haves when they leave home, then we compared the top choices, including f"
+    },
+    {
+      "passage_uid": "PU-18df252ec09c6fdc",
+      "source_id": "S-b97550e748d0",
+      "char_start": 129,
+      "char_end": 260,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Content marketing templates, strategies and tips * Social Media guides, tips and tactics * Useful tools for bloggers and businesses"
+    },
+    {
+      "passage_uid": "PU-2f8c66a85fdddb54",
+      "source_id": "S-b97550e748d0",
+      "char_start": 11962,
+      "char_end": 12141,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Respond to criticism honestly and quickly, and remember that consistent values matter more to long term trust than any single campaign. Close behind it: What is brand positioning?"
+    },
+    {
+      "passage_uid": "PU-ef1083887eca22a4",
+      "source_id": "S-b97550e748d0",
+      "char_start": 14119,
+      "char_end": 14799,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "BrewDog Marketing Strategy: How They Built a Brand That Wins * GoDaddy Marketing Strategy: How They Built a Brand That Wins * Etsy Marketing Strategy: How They Built a Brand That Wins Related reading:"
+    },
+    {
+      "passage_uid": "PU-1b6217593af08d04",
+      "source_id": "S-cfdf06c796ff",
+      "char_start": 2079,
+      "char_end": 2712,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "actual_activity",
+      "preview": "RECOMMENDED BLOGS Halliburton Launches Agile Asset Management: How AI Is Changing Oil and Gas Investment Decisions Halliburton Launches Agile Asset Management: How AI Is Changing Oil and Gas Investmen"
+    },
+    {
+      "passage_uid": "PU-d9def84a550a2f03",
+      "source_id": "S-cfdf06c796ff",
+      "char_start": 4156,
+      "char_end": 4353,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Lifestyle-First Branding Away showcases travel experiences, aspirational destinations, and modern mobility — making the suitcase part of a wider travel identity rather than a standalone purchase. 📷"
+    },
+    {
+      "passage_uid": "PU-d1a4bb81a2e7ceab",
+      "source_id": "S-14cc63876e71",
+      "char_start": 6873,
+      "char_end": 7522,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "5. Optimize for on-site conversions Away focuses on converting visitors into customers through strategic website optimization. They use email and SMS popups offering 10% off the first order, encouragi"
+    },
+    {
+      "passage_uid": "PU-70bf3e4a3b332538",
+      "source_id": "S-1b038bd53572",
+      "char_start": 5917,
+      "char_end": 6108,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Geographical breakdown The markets where Away's sponsored creators are based. 100.0% of sponsored posts came from creators based in 4 markets. United States and Canada lead at 96.7% and 1.7%."
+    },
+    {
+      "passage_uid": "PU-afb96a7a8e9d87fd",
+      "source_id": "S-0ab759974db1",
+      "char_start": 1528,
+      "char_end": 1796,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Podcast Art & Culture Podcast Branded Podcast Business Podcast Health & Wellness Podcast Lifestyle & Entertainment Podcast News & Politics Podcast Other Podcast Genres Podcast Mini Series Sports Podca"
+    },
+    {
+      "passage_uid": "PU-73b40c2574c4967d",
+      "source_id": "S-0ab759974db1",
+      "char_start": 2328,
+      "char_end": 2721,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Video Comedy Video Documentary Featurette or Behind The Scenes Video Instructional Video Live Video Long Form Video Medium-Length Video Music Video Product Feature Video Short Form Video Vertical Vide"
+    },
+    {
+      "passage_uid": "PU-a54b10b59ae6b7ca",
+      "source_id": "S-0ab759974db1",
+      "char_start": 9814,
+      "char_end": 10080,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "https://www.forbes.com/sites/forbescommunicationscouncil/2018/11/07/instagram-stories-could-make-a dvertisers-stop-taking-creative-for-granted/#3d0c35db1512 * https://digiday.com/marketing/introducing"
+    },
+    {
+      "passage_uid": "PU-7119d98135d56902",
+      "source_id": "S-133035ee3d52",
+      "char_start": 3048,
+      "char_end": 3631,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "brand_positioning",
+      "preview": "Our Mission & Commitment Away’s core mission is simple yet profound: we believe the more we travel, the better we all become. We are committed to making seamless, stress-free travel accessible to ever"
+    },
+    {
+      "passage_uid": "PU-90b764e72220046a",
+      "source_id": "S-14cc63876e71",
+      "char_start": 2384,
+      "char_end": 2514,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Every campaign, every product, every story tied back to a broader mission: making travel easier, more stylish, and more inspiring."
+    },
+    {
+      "passage_uid": "PU-7690980e9b2d7255",
+      "source_id": "S-14cc63876e71",
+      "char_start": 3753,
+      "char_end": 4234,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Illustration for: How Away Reached $1.4 Billion by Turning Luggage into a Travel LifestyleIllustration for: How Away Reached $1.4 Billion by Turning Luggage into a Travel Lifestyle Their SEO strategy "
+    },
+    {
+      "passage_uid": "PU-3433ed5541f6758f",
+      "source_id": "S-14cc63876e71",
+      "char_start": 8677,
+      "char_end": 9102,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Illustration for: How Away Reached $1.4 Billion by Turning Luggage into a Travel Lifestyle On a dynamic shipping bar, various information appears, including payment details, free shipping availability"
+    },
+    {
+      "passage_uid": "PU-11ba727d104ed106",
+      "source_id": "S-14cc63876e71",
+      "char_start": 12283,
+      "char_end": 12428,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Keep reading All articles Marketing Breakdowns ### Tarte Cosmetics Marketing Breakdown: How a 25-Year-Old Beauty Brand Keeps Making Products Feel"
+    },
+    {
+      "passage_uid": "PU-26bb3c39339e7511",
+      "source_id": "S-66c3ba5e47f2",
+      "char_start": 9402,
+      "char_end": 9544,
+      "selection_status": "rejected",
+      "reasons": [
+        "statement_type:proposed_or_mock_work"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "proposed_or_mock_work",
+      "preview": "Away’s Most-Requested Color is Shoppable Today Blush Pink will be re-added to the brand’s core lineup, available in all of the original sizes."
+    },
+    {
+      "passage_uid": "PU-b87096af98ff324d",
+      "source_id": "S-b97550e748d0",
+      "char_start": 1021,
+      "char_end": 1296,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "10Newsletter → [email protected] Marketing since the dial-up era. × One thing before you leave ## The one marketing email you'll want to open. One email, every Sunday. What I'm testing, what's working"
+    },
+    {
+      "passage_uid": "PU-6ef257c7f13fcd12",
+      "source_id": "S-b97550e748d0",
+      "char_start": 1825,
+      "char_end": 2051,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Positioning luggage as a travel lifestyle, not a commodity * Building an audience before the product existed * Selling direct to consumer to control the experience and the margin * Keeping the product"
+    },
+    {
+      "passage_uid": "PU-341a53dfe04d618f",
+      "source_id": "S-b97550e748d0",
+      "char_start": 3204,
+      "char_end": 3404,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "author_recommendation",
+      "preview": "Its marketing playbook, built on content, community and design before advertising spend, offers genuine lessons for small business owners who cannot outspend larger competitors but can out think them."
+    },
+    {
+      "passage_uid": "PU-b03cb365db826931",
+      "source_id": "S-b97550e748d0",
+      "char_start": 4036,
+      "char_end": 4190,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Rebuild your messaging around that feeling rather than the specification sheet, and use it consistently across your website, packaging and social content."
+    },
+    {
+      "passage_uid": "PU-f0f03e3c4162a25b",
+      "source_id": "S-b97550e748d0",
+      "char_start": 14802,
+      "char_end": 15018,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Asana Marketing Strategy: How They Built a Brand That Wins * Depop Marketing Strategy: How They Built a Brand That Wins Published and maintained by the Lilach Bullock team, covering marketing, AI and "
+    },
+    {
+      "passage_uid": "PU-30f3db6597189f9f",
+      "source_id": "S-b97550e748d0",
+      "char_start": 16663,
+      "char_end": 16810,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Get the Sunday newsletter. One email a week. AI experiments, marketing tactics, and the workflows Lilach is building right now in her own business."
+    },
+    {
+      "passage_uid": "PU-d1a2dd2cbc43ec43",
+      "source_id": "S-cfdf06c796ff",
+      "char_start": 4359,
+      "char_end": 4533,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Visual Storytelling Content is clean, minimal, high-quality, and emotionally aspirational, with travel as the central focus and products woven naturally into the narrative. 🤝"
+    },
+    {
+      "passage_uid": "PU-ec3c2e97a5a0d317",
+      "source_id": "S-cfdf06c796ff",
+      "char_start": 7116,
+      "char_end": 7337,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "The Core Principle: Sell the Feeling, Not the Feature By connecting luggage with memorable travel experiences, Away increased engagement, strengthened demand, and built a highly recognisable position "
+    },
+    {
+      "passage_uid": "PU-16446a510e9caa51",
+      "source_id": "S-1b038bd53572",
+      "char_start": 0,
+      "char_end": 217,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "provider_reported_result",
+      "preview": "Join Modash Live to learn how marketers at Stanley 1913, goodwipes & Oddball are doing influencer marketing. Join Modash Live to learn how marketers at Stanley 1913, goodwipes & Oddball are doing infl"
+    },
+    {
+      "passage_uid": "PU-d8e57036403040db",
+      "source_id": "S-1b038bd53572",
+      "char_start": 1753,
+      "char_end": 1962,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "How Away's sponsored posts perform Reach and engagement across all 805 posts. We show median views alongside the average, because a single viral post can pull an average far above what a typical post "
+    },
+    {
+      "passage_uid": "PU-7158967b4790f0a4",
+      "source_id": "S-cfdf06c796ff",
+      "char_start": 8250,
+      "char_end": 8533,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "provider_reported_result",
+      "preview": "Ready to build your own lifestyle brand engine? Let’s create a visual content strategy that generates real pipeline — not just likes. Book a Free Strategy Call → ← Back to Case Studies Real-time resul"
+    },
+    {
+      "passage_uid": "PU-4c5109fae302898a",
+      "source_id": "S-0ab759974db1",
+      "char_start": 3,
+      "char_end": 124,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "THE 14TH ANNUAL SHORTY AWARDS The Shorty Awards honor the best of social media and digital. View this season's finalists!"
+    },
+    {
+      "passage_uid": "PU-6fc58647c06d2ab4",
+      "source_id": "S-133035ee3d52",
+      "char_start": 108,
+      "char_end": 655,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Our Story Welcome to Away, the modern travel lifestyle brand redefining how people explore the world with thoughtful, durable, and stylish travel gear. Operating through our official website away-lugg"
+    },
+    {
+      "passage_uid": "PU-e208e298ccda92d5",
+      "source_id": "S-133035ee3d52",
+      "char_start": 1342,
+      "char_end": 1985,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "brand_positioning",
+      "preview": "We believe travel enriches lives, and reliable luggage should never hold explorers back from new adventures. ## Our Product Philosophy At the core of every Away Luggage piece is the principle: designe"
+    },
+    {
+      "passage_uid": "PU-8b90fcddfa7eecae",
+      "source_id": "S-133035ee3d52",
+      "char_start": 4257,
+      "char_end": 4486,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Categories away-luggage.com is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertisi"
+    },
+    {
+      "passage_uid": "PU-5779e2a0860a787b",
+      "source_id": "S-14cc63876e71",
+      "char_start": 11805,
+      "char_end": 11954,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Create a popup campaign for my online store that grows my email list with a first-order discount and shows a different message to returning visitors."
+    },
+    {
+      "passage_uid": "PU-a10321057e19b731",
+      "source_id": "S-b97550e748d0",
+      "char_start": 495,
+      "char_end": 757,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Research Does AI recommend your business? Run the free check → × Join 15,000 business owners, marketers and entrepreneurs. The Sunday newsletter you'll be annoyed only arrives once a week. I want in. "
+    },
+    {
+      "passage_uid": "PU-ca21902d78e5c733",
+      "source_id": "S-b97550e748d0",
+      "char_start": 1317,
+      "char_end": 1564,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "70%+ open rate. You're in. The first one lands Sunday. Lead generationAdsSEOWorkflow automationHubSpotSystemsAI agentsContent enginesFractional CMOLead generationAdsSEOWorkflow automationHubSpotSystem"
+    },
+    {
+      "passage_uid": "PU-30105942964b7c9d",
+      "source_id": "S-b97550e748d0",
+      "char_start": 4812,
+      "char_end": 4938,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "A simple email list, blog or social account built on genuine value will give you a ready audience the day you open your doors."
+    },
+    {
+      "passage_uid": "PU-4b83d1f538fd56c0",
+      "source_id": "S-b97550e748d0",
+      "char_start": 7482,
+      "char_end": 7625,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Customers connect with founders who are visible and consistent, so use interviews, social posts and your About page to tell that story clearly."
+    },
+    {
+      "passage_uid": "PU-7cd704f4399f9ef3",
+      "source_id": "S-b97550e748d0",
+      "char_start": 9782,
+      "char_end": 10008,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Want AI doing the heavy lifting in your marketing? I build the systems that handle the boring 80 percent, so you get your week back. Done properly, with the human kept in. Book a free 30-minute callOr"
+    },
+    {
+      "passage_uid": "PU-f687e2a29f252c16",
+      "source_id": "S-b97550e748d0",
+      "char_start": 11234,
+      "char_end": 11363,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Removing risk from the buying decision is one of the most effective marketing tools available and often costs less than expected."
+    },
+    {
+      "passage_uid": "PU-b7f2c8cbba0afdef",
+      "source_id": "S-b97550e748d0",
+      "char_start": 15665,
+      "char_end": 15789,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Work with me on AI. AI implementation, marketing strategy, lead generation. Done for you, consulting, coaching, or training."
+    },
+    {
+      "passage_uid": "PU-35e9f8060657401b",
+      "source_id": "S-b97550e748d0",
+      "char_start": 16829,
+      "char_end": 16989,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Let’s get your marketing running on AI. ### Book a free 30-minute call We figure out what you need, where AI fits in, and what working together would look like."
+    },
+    {
+      "passage_uid": "PU-ce8fb3d51c1f6e91",
+      "source_id": "S-b97550e748d0",
+      "char_start": 17788,
+      "char_end": 18068,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "What Is the Best Way to Monitor Backlink Count Over Time? The best way to monitor your backlink count over time is a monthly tracked baseline, not a daily… * What Happens to Your Instagram Reels If Yo"
+    },
+    {
+      "passage_uid": "PU-f527532f620d1f7a",
+      "source_id": "S-b97550e748d0",
+      "char_start": 18073,
+      "char_end": 18241,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "What Happens to Your Instagram Reels If You Switch to Private Here's exactly what happens to your Instagram Reels views, shares and reach if you switch your account to…"
+    },
+    {
+      "passage_uid": "PU-c5d0a78f9fee9c9c",
+      "source_id": "S-b97550e748d0",
+      "char_start": 18245,
+      "char_end": 18405,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Let’s get your marketing running on AI. ### Book a free 30-minute call We figure out what you need, where AI fits in, and what working together would look like."
+    },
+    {
+      "passage_uid": "PU-4f1efebd29142663",
+      "source_id": "S-b97550e748d0",
+      "char_start": 18788,
+      "char_end": 18926,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "That AI consultant who started in marketing. 23 years building marketing that worked. Currently obsessed with AI implementation done well."
+    },
+    {
+      "passage_uid": "PU-66dad5dc92b792cb",
+      "source_id": "S-b97550e748d0",
+      "char_start": 19332,
+      "char_end": 19496,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Privacy Terms Contact Add as preferred source on Google ### JOIN 15,000 BUSINESS OWNERS, MARKETERS AND ENTREPRENEURS ## The Sunday newsletter you'll be annoyed only"
+    },
+    {
+      "passage_uid": "PU-42ecc8adaf165ca6",
+      "source_id": "S-b97550e748d0",
+      "char_start": 20347,
+      "char_end": 20516,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Website Mapping ToolPopular right now: What Is an Instagram Story Reshare and... | What Does the Instagram Story Spotlight... | Where to Find Your Instagram Story Drafts"
+    },
+    {
+      "passage_uid": "PU-918d19fb70415fd0",
+      "source_id": "S-b97550e748d0",
+      "char_start": 20545,
+      "char_end": 20680,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "How to Keep Your Instagram Story Private... | What It Means When Instagram Says Someone... | What to Do When Your Instagram Story Is..."
+    },
+    {
+      "passage_uid": "PU-275f3cb04f4af548",
+      "source_id": "S-cfdf06c796ff",
+      "char_start": 1818,
+      "char_end": 1989,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "NextLogix We developed a digital marketing strategy for NextLogix... Didn't find what you're looking for? Let us know your needs, and we'll tailor a solution just for you."
+    },
+    {
+      "passage_uid": "PU-bee48abe928fafcb",
+      "source_id": "S-cfdf06c796ff",
+      "char_start": 4751,
+      "char_end": 4930,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Subtle Product Positioning Products appear naturally in airport scenes, hotel rooms, and travel photography — creating product desire without relying on aggressive sales messages."
+    },
+    {
+      "passage_uid": "PU-df3c6f6191140e3d",
+      "source_id": "S-cfdf06c796ff",
+      "char_start": 4948,
+      "char_end": 5146,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "How Lifestyle Content Moves Buyers Through the Funnel Top of Funnel #### Awareness — Travel Inspiration Travel inspiration and destination content increase awareness among people who love to travel."
+    },
+    {
+      "passage_uid": "PU-54894afa9e949e5c",
+      "source_id": "S-cfdf06c796ff",
+      "char_start": 5169,
+      "char_end": 5298,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Consideration — Influencer Experiences Influencer experiences and user stories build credibility and interest around the product."
+    },
+    {
+      "passage_uid": "PU-fb7bb47bfd5889f0",
+      "source_id": "S-cfdf06c796ff",
+      "char_start": 5321,
+      "char_end": 5483,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Conversion — Real-World Visibility Real-world product visibility helps customers imagine using the luggage during their own journeys, moving them toward purchase."
+    },
+    {
+      "passage_uid": "PU-e1107760a3a038e4",
+      "source_id": "S-1b038bd53572",
+      "char_start": 4460,
+      "char_end": 4617,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "provider_reported_result",
+      "preview": "One-off vs. repeat creators Share of 491 creators One-off · 87% Repeat· 13% ### Months active Repeat creators only 2 months68.8% 3 months14.1% 4+ months17.2%"
+    },
+    {
+      "passage_uid": "PU-15a45a0c25c00ff8",
+      "source_id": "S-133035ee3d52",
+      "char_start": 656,
+      "char_end": 1341,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Frustrated by flimsy, poorly designed suitcases that fail real-world travel demands, our founders set out to reinvent the luggage industry and build travel essentials that truly serve every journey. F"
+    },
+    {
+      "passage_uid": "PU-a0a8cb246a5e72f4",
+      "source_id": "S-133035ee3d52",
+      "char_start": 1986,
+      "char_end": 2570,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Our iconic Away Luggage lineup features intelligent functional designs that solve common travel pain points. Built-in USB charging ports power devices on the go, optimized interior compartment systems"
+    },
+    {
+      "passage_uid": "PU-12d270e546f723a4",
+      "source_id": "S-133035ee3d52",
+      "char_start": 2571,
+      "char_end": 3044,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Beyond functionality, Away defines modern travel aesthetics with timeless minimalist silhouettes, neutral versatile colorways, and sleek finishes. Our luggage balances sophistication and practicality,"
+    },
+    {
+      "passage_uid": "PU-6d1de501c1974700",
+      "source_id": "S-133035ee3d52",
+      "char_start": 3632,
+      "char_end": 4112,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "By cutting out middleman markups and adhering to strict quality control standards, we deliver professional-grade Away Luggage that balances premium quality and fair pricing. We also embrace sustainabl"
+    },
+    {
+      "passage_uid": "PU-2136b1381685bd52",
+      "source_id": "S-b97550e748d0",
+      "char_start": 9628,
+      "char_end": 9764,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Store owners who've tested ideas like these on Shopify can write up what moved sales and send it to Shopify blogs that take guest posts."
+    },
+    {
+      "passage_uid": "PU-e547c4923b4d8fe4",
+      "source_id": "S-b97550e748d0",
+      "char_start": 15298,
+      "char_end": 15465,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Does AI name you? Check free if ChatGPT, Claude, Perplexity, Gemini and Google recommend your business, and how to become the answer. Run the free check → Sundays only"
+    },
+    {
+      "passage_uid": "PU-2bebaf936ccbd609",
+      "source_id": "S-b97550e748d0",
+      "char_start": 15962,
+      "char_end": 16330,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Run the numbers. Two free calculators that show you exactly where the money is. AI savings calculator →Lead leak calculator → Your buyers are asking AI who to use. Does it say you? See for free whethe"
+    },
+    {
+      "passage_uid": "PU-b881b2be919ff4e3",
+      "source_id": "S-b97550e748d0",
+      "char_start": 17010,
+      "char_end": 17157,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Or take the 30-second calculator You’ll see the hours and the money quietly leaking out of your week, and the three workflows worth building first."
+    },
+    {
+      "passage_uid": "PU-fa405855049e18a3",
+      "source_id": "S-b97550e748d0",
+      "char_start": 17184,
+      "char_end": 17331,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Or grab the free AI resource library Prompt packs, templates, checklists, and swipe files. The exact tools I build for paying clients. Yours, free."
+    },
+    {
+      "passage_uid": "PU-932f3672b29af614",
+      "source_id": "S-b97550e748d0",
+      "char_start": 17366,
+      "char_end": 17488,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "More from the blog. * Wie kann man Backlinks testen ohne bezahlte Tools?Wie kann man Backlinks testen ohne bezahlte Tools?"
+    },
+    {
+      "passage_uid": "PU-d76a4037aaa32f7e",
+      "source_id": "S-b97550e748d0",
+      "char_start": 17493,
+      "char_end": 17783,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Wie kann man Backlinks testen ohne bezahlte Tools? So prüfst du Backlinks ohne bezahlte Tools, mit Google Search Console, Bing und kostenlosen Checkern, Schritt für Schritt. * What Is the Best Way to "
+    },
+    {
+      "passage_uid": "PU-359c34dd47e6e744",
+      "source_id": "S-b97550e748d0",
+      "char_start": 18426,
+      "char_end": 18573,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Or take the 30-second calculator You’ll see the hours and the money quietly leaking out of your week, and the three workflows worth building first."
+    },
+    {
+      "passage_uid": "PU-82a1f6a6d9f0a844",
+      "source_id": "S-b97550e748d0",
+      "char_start": 18600,
+      "char_end": 18765,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Or grab the free AI resource library Prompt packs, templates, checklists, and swipe files. The exact tools I build for paying clients, ready to plug in. Yours, free."
+    },
+    {
+      "passage_uid": "PU-f289bc0af4fb46e2",
+      "source_id": "S-cfdf06c796ff",
+      "char_start": 736,
+      "char_end": 867,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "AI & Data-Driven Prospecting Didn't find what you're looking for? Let us know your needs, and we'll tailor a solution just for you."
+    },
+    {
+      "passage_uid": "PU-8e200460031266d8",
+      "source_id": "S-cfdf06c796ff",
+      "char_start": 9344,
+      "char_end": 9535,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Giving your vision a smooth transition to reality By enabling an innovative digital experience that fulfills new-age demands. Support Image Submit Thank you! Your response has been submitted."
+    },
+    {
+      "passage_uid": "PU-81a5021b04d591af",
+      "source_id": "S-1b038bd53572",
+      "char_start": 922,
+      "char_end": 1057,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "provider_reported_result",
+      "preview": "Sponsored posts by month Last 12 months Oct '25 Nov '25 Dec '25 Jan '26 Feb '26 Mar '26 Apr '26 May '26 Jun '26 Jul '26 Aug '26 Sep '26"
+    },
+    {
+      "passage_uid": "PU-d12faa50d11c50d1",
+      "source_id": "S-cfdf06c796ff",
+      "char_start": 1541,
+      "char_end": 1710,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "provider_reported_result",
+      "preview": "Finedge By combining AI-driven lead scoring and SEO, we helped FinEdge tech... eduspark #### Eduspark We supported EduSpark with AI-based funnel optimization, helping..."
+    },
+    {
+      "passage_uid": "PU-059c17a7d10b0250",
+      "source_id": "S-cfdf06c796ff",
+      "char_start": 8538,
+      "char_end": 8920,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "provider_reported_result",
+      "preview": "Stop chasing leads. ### Start closing 2X more of them. We plug AI-driven outbound and inbound systems straight into your funnel — so every conversation your sales team has is already qualified. 15,000"
+    },
+    {
+      "passage_uid": "PU-b808614820395d64",
+      "source_id": "S-1b038bd53572",
+      "char_start": 2075,
+      "char_end": 2198,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "provider_reported_result",
+      "preview": "3.2% Average engagement rate These figures may include posts amplified with paid spend, which we can't identify separately."
+    }
+  ],
+  "status": "ok",
+  "status_reasons": [],
+  "packet_sha256": "2c85d8e1f0945ce73988a750150778cf996e8492d0b3001457c17989024afb42"
+}

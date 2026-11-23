@@ -1,0 +1,20 @@
+{
+  "company_id": "oatly",
+  "acceptance_basis": "auto_threshold_0.7",
+  "decision": "reject",
+  "reasons": [
+    "groundedness 0.40 < 0.7"
+  ],
+  "groundedness": 0.4,
+  "claim_support": {
+    "C1": "supported",
+    "C2": "deterministic: claim C2: kind must be one of ('fact', 'provider_reported', 'premise')",
+    "C3": "deterministic: claim C3: quote does not occur in cited passage(s) ['P4']",
+    "C4": "supported",
+    "C5": "deterministic: claim C5: quote does not occur in cited passage(s) ['P10']"
+  },
+  "removed_claims": [],
+  "label_completion_sha256": "7b89a8ffc97001fb13fc68fc227bb79b95d5c7c230dd0294b9cbce6be2d54dbb",
+  "audit_sha256": "27d8abd10dfd64af724e7ddf3cd1c4b5b1a79bc3d3e38c2a2f658442acaa572c",
+  "created_at": "2026-11-23T00:28:47+00:00"
+}

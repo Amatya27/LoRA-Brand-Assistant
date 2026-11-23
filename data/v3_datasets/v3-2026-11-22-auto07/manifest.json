@@ -1,0 +1,1704 @@
+{
+  "schema_version": "brandpilot.dataset_manifest.v3",
+  "dataset_version": "v3-2026-11-22-auto07",
+  "created_at": "2026-11-23T00:30:51+00:00",
+  "approval_basis": "explicit, hash-bound human approval records (brandpilot.approval.v3); or, where an entry's provenance.acceptance is 'auto_threshold_0.7', an automatic hash-bound acceptance at groundedness >= 0.7 after removal of unsupported claims (NOT human-reviewed)",
+  "acceptance_counts": {
+    "human_approval": 7,
+    "auto_threshold_0.7": 42
+  },
+  "git_commit": "b864254796b7e43c34fb0be317f5aceadff98691",
+  "registry": {
+    "version": "2026-11-22.v3",
+    "sha256": "cc9ab39277bffb4c0aa0b59df8db2e7fec12da7955a58651370daf2936495a16"
+  },
+  "split_source": "/Users/thanishka/LoRA-Brand-Assistant/data/mlx_brand_assistant/manifest.json",
+  "counts": {
+    "train": 40,
+    "valid": 9,
+    "test": 0
+  },
+  "included": 49,
+  "excluded": 45,
+  "entries": [
+    {
+      "company_id": "allbirds",
+      "legacy_name": "Allbirds",
+      "split": "valid",
+      "included": false,
+      "exclusion_reasons": [
+        "label was generated from a different packet version",
+        "target structure/policy: 6 error(s), e.g. claim C1: unknown passage id(s) ['P1']",
+        "verification: audit is stale: packet_sha256 changed",
+        "human approval: no approval record; auto-accept: no auto-accept record"
+      ],
+      "provenance": {
+        "label_sha256": "8fe6a89b486d862c9e7108a13d9274c98ed932a01fef13e317aad89119177a31",
+        "packet_sha256": "c8c7a3175622c05f57ea384dd92deb806b7ca5fb3c8bcb4fa605549bd756625e",
+        "registry_note": "packet built with registry 2026-11-22.v3; company identity unchanged in 2026-11-22.v3",
+        "audit_sha256": "c407fb9b9ee000269c9b717d010fb354c287a0d70119fc8c1dc5f6b1d10a4a35"
+      },
+      "decision": "abstain"
+    },
+    {
+      "company_id": "alo-yoga",
+      "legacy_name": "Alo Yoga",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "a5b4c884a4567d2f04e20b2b7448fb40689b59547104e5cb653fb8afc4fb5511",
+        "packet_sha256": "0f067a5a21ae44d735f968669f10749260071964b573e9697d91cddea2ed8c20",
+        "audit_sha256": "4b26efece86c2f31812841f68c1f712068370e536fc00cb8527c4d84600331af",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "0dcc360aee9bca72e2f16ee5b1920a97393eaa203820629d2b9841c68ac02af4"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "anker",
+      "legacy_name": "Anker",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 5 error(s), e.g. email_body: vendor/provider claim C3 (P10) is not attributed to its source (stride-social) in the prose: 'This post would feature testimonials from creators and influencers who have used'",
+        "verification: audit status fail",
+        "human approval: no approval record; auto-accept: no auto-accept record"
+      ],
+      "provenance": {
+        "label_sha256": "9339484cbd27791e61289516a8e2dbaf52dee17e33686cfd646329df68f6d93d",
+        "packet_sha256": "f2c692121153988ec75afb7207c51f88b472faaaa8a2e6fa68ff901ea60f1af3",
+        "audit_sha256": "880b35d3e2eb011492117618cd1425cd34923d84c73e9e5b32e6eef6d4ff40d5"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "athletic-brewing",
+      "legacy_name": "Athletic Brewing",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "b4402d13308268a6f92f8cb7945ac29e7c0c2aa60d424647328c113280347f89",
+        "packet_sha256": "c0a371d4bdfaf1745e94d2bfb0a8ab0bc1f2e6d473992e1b52c404c1d3e622da",
+        "registry_note": "packet built with registry 2026-11-21.v1; company identity unchanged in 2026-11-22.v3",
+        "audit_sha256": "cecb218881846e005acd7d01aab91b8969b4eabd3098565c81726b249008ffea",
+        "acceptance": "human_approval",
+        "approved_by": "Thanishka Bolisetty",
+        "approved_at": "2026-11-22T08:58:33+00:00"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "athletic-greens",
+      "legacy_name": "Athletic Greens",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 2 error(s), e.g. email_body: factual-looking sentence without a claim marker: \"Hi [Marketing Team],\\n\\nWe're excited to propose a collaboration with Athletic Greens for an\"",
+        "verification: audit status fail",
+        "human approval: no approval record; auto-accept: no auto-accept record"
+      ],
+      "provenance": {
+        "label_sha256": "ea13a702b2aee5b4ab31e03c22e077fa462ffe91a2b4dbcc4c3c0b680f62fea0",
+        "packet_sha256": "075ad95d24ebdbfee3a1722b3cfdaacb8166827b72eaf5983708b54db639e736",
+        "audit_sha256": "eaee770d6951317f74a522dc04462ec27df2e1f7f825115b9ae63c573a787873"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "avocado-green-mattress",
+      "legacy_name": "Avocado Green Mattress",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "1853c60c8a941bd13115fbd5fe389bdb6f0c83fb792d6b683a6869dd5a0d5af6",
+        "packet_sha256": "f2755f78396322838fdc9a120c0b032b7202eb154efaec8d93b4db5b9b1af6c9",
+        "audit_sha256": "97b665bbafdffb4a8c956eb098de75c8dc812804f405175f513c46e2fdcc9431",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "61f0223bdfb8466600cd3058ec6db32d3b9948c4475c492146db61f101140ceb"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "away",
+      "legacy_name": "Away",
+      "split": "valid",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 2 error(s), e.g. brand_summary: factual sentence without a claim marker: 'Away is a travel lifestyle brand that has launched limited edition collections in partners'",
+        "verification: audit status fail",
+        "human approval: no approval record; auto-accept: no auto-accept record"
+      ],
+      "provenance": {
+        "label_sha256": "1e1fc6aeda36bbbf21f98183adf808fa2bc685f52ee132c595854c87e087aeba",
+        "packet_sha256": "2c85d8e1f0945ce73988a750150778cf996e8492d0b3001457c17989024afb42",
+        "registry_note": "packet built with registry 2026-11-22.v3; company identity unchanged in 2026-11-22.v3",
+        "audit_sha256": "b3de8a0152091198f1d350c33deb92fb3ad53b6c1fd9ec39002f45116ba459d3"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "baboon-to-the-moon",
+      "legacy_name": "Baboon to the Moon",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "7ae93c20ba830fea16c1eda5c2490ca4226b59c8e8e826c5dbbef8d8e797f923",
+        "packet_sha256": "8d5183e24058ce5c58e1b8aea19aa4f0c2df016064c7b095aec2d8d56aff57de",
+        "audit_sha256": "7cdbddab3e64f238ebdcd81c33129f2b553ab633c74b1cd263b418144147c146",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "72371a32e3960f1d2893ec90bd4c24d9dc463682c6a8bf7e7476a786559aeaa3"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "beis",
+      "legacy_name": "Beis",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "130924f357e545b51e86dc1e4bef257920346650e1bf5082398f0e07f9151234",
+        "packet_sha256": "1a3c02486fa4123223b158f89aea7506cf51198ef37c3891789eb398c117708d",
+        "audit_sha256": "11cd91113edc77d3493dbfc85981ed00a635d05a991daa43bb1468fec023587c",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "7a8cbcfd9bef424ba8aeab6fb965664d48b06f112e2fda42843421209474e702"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "bellroy",
+      "legacy_name": "Bellroy",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "8738f001b958fcd1b1e3791eff0fdf1581794620567d31d44017834b5bba25bc",
+        "packet_sha256": "cde0ceb5aea58833a1705c5c390d87db67498ea49b0b5691623037c2e2f053f0",
+        "audit_sha256": "5f4e3b24c99411a7a7ba9b3f53f9f53f033d71968d74831d23d398bd95683cbc",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "04c6b4b9effa212e9c879f56524a492dc6bfc6a7a3c70d33bedc5e85230cdecc"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "billie",
+      "legacy_name": "Billie",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 7 error(s), e.g. brand_summary: factual sentence without a claim marker: 'Billie aims to challenge societal pressures on women and engage with its audience in surpr'",
+        "verification: audit status fail",
+        "human approval: no approval record; auto-accept: no auto-accept record"
+      ],
+      "provenance": {
+        "label_sha256": "e068ec491b7247ed85339ce636cfca9c31ccda9e3814d1f93d08738f6385169a",
+        "packet_sha256": "8be6d18975eb70c986bc1fab023e592cc95ae126c8a520bb3154c8597a4e12bb",
+        "registry_note": "packet built with registry 2026-11-21.v1; company identity unchanged in 2026-11-22.v3",
+        "audit_sha256": "658bbc66f9fbb2cb34ef30be2744da929771b69946c2382ede5c323c34d28698"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "blue-bottle-coffee",
+      "legacy_name": "Blue Bottle Coffee",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 1 error(s), e.g. claim C8: quote does not occur in cited passage(s) ['P10']",
+        "verification: audit status fail",
+        "human approval: no approval record; auto-accept: no auto-accept record"
+      ],
+      "provenance": {
+        "label_sha256": "0cfaaa50b46884193e7dc53149e1604ecd995604455fe4f15cf2c9c85d62842f",
+        "packet_sha256": "d852ab4ec6e731c43a421176423346566d6fa479cc9915d95e9fc32e12837aa9",
+        "audit_sha256": "5c985fdf855c46e615cbdb0e2f28276762acef3f987d0ff2e7eae08348801b12"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "blueland",
+      "legacy_name": "Blueland",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "31d655fc2aeb7a7e64b9b973920c698e3b8ca213ae8c97334d69ab595cab02b5",
+        "packet_sha256": "36f802c4c565b684e61dfbfa37124bfff886200642dce0ec4e7f04964ff71762",
+        "registry_note": "packet built with registry 2026-11-22.v3; company identity unchanged in 2026-11-22.v3",
+        "audit_sha256": "f4080dbecadb89659994b3465f199a014e827ad09cda5771354b2ccc9fb8cc12",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 0.8,
+        "removed_claims": [
+          "C3"
+        ],
+        "auto_accept_sha256": "34ac8e41ae79e9a20f5d468e1f51226ff339e895ff60220d5c6ffcd3b3d3e112"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "bombas",
+      "legacy_name": "Bombas",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "c57f0bf45b3b30ecc6d8da24089330b622a34d8b93406b708e4eb46c2a473654",
+        "packet_sha256": "ac21918fd0c6fec97904dc4e68701201faec4f10bf2f91b596d1d85ed62359da",
+        "audit_sha256": "b910d0dd97cf2cde350086e86762962d048dba930a2e2f83d51f86c0b33e72c6",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "1b170ddd67c170c3a9298f596c2f6ea704e7ab03e3c7e841338991e561de61d8"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "bones-coffee",
+      "legacy_name": "Bones Coffee",
+      "split": "valid",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "390c491d6bf29f6f8d2dea890d935086b09d9aa73c7d276b398e84006d8b40f3",
+        "packet_sha256": "9c87dae136c352cbc5e29fba931e88653093c9a8e730a0fa7cd2e816bb148814",
+        "registry_note": "packet built with registry 2026-11-22.v3; company identity unchanged in 2026-11-22.v3",
+        "audit_sha256": "c03f81bac46d6e7f453db711b7cfc19c735ac5d40a68c6919c51ed07356c4dbe",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 0.75,
+        "removed_claims": [
+          "C2"
+        ],
+        "auto_accept_sha256": "2b23188f37e65006d21aa3414952337e4b7d5c1bc363255e27b0397bb3c83f03"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "branch-furniture",
+      "legacy_name": "Branch Furniture",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 2 error(s), e.g. claim C4: quote does not occur in cited passage(s) ['P4']",
+        "verification: audit status fail",
+        "human approval: no approval record; auto-accept: no auto-accept record"
+      ],
+      "provenance": {
+        "label_sha256": "c9f411ee0eb043fe93937106fcbf5d47950971acc14970c9265df2df5bd9740b",
+        "packet_sha256": "873acb4d1ecdc709f624684b62cd6b0b3f5bdd837cd64a51e7ccbaace3a617cf",
+        "audit_sha256": "78e9e87de3c50be7a40ef8c9a7f4e666df5e57f34c220d6a45546c5aa0a016b5"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "brooklinen",
+      "legacy_name": "Brooklinen",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "396743c304a7eae3e3b1a587ed1edc3f23cf057b599e537263726c4418dcad1b",
+        "packet_sha256": "112e6ec30eeb5a1dd0d111e287678a58220f1a2ac997a3a6cddca7f5559be804",
+        "registry_note": "packet built with registry 2026-11-22.v3; company identity unchanged in 2026-11-22.v3",
+        "audit_sha256": "84beb696158a9ebe73ae4c44766d622c751082fa57f13f465d6ea35236e3b116",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "fb9fbd455648a3ddd9610244ae79fde0311cc779b71b694dd0900f29b412d4f2"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "buck-mason",
+      "legacy_name": "Buck Mason",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "7043a88019c21520915a1904d79b0b3f44cfbde5756914ababbfb3a5c6aaa1c4",
+        "packet_sha256": "808652288801202b314430904cbed24dfb12a8f2bd85806e52d71a422706f68f",
+        "audit_sha256": "b27d215d3bd68f5c244b4b0606ac489c5fc88526aa387484b9af90541f336102",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "0d9977bf85e8a5e66f094fd2cef360e54be568ccd84b6979a64a31738b34ebc6"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "burrow",
+      "legacy_name": "Burrow",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 4 error(s), e.g. claim C3: cites P5, a author_recommendation passage, as support for a factual claim",
+        "verification: audit status fail",
+        "human approval: no approval record; auto-accept: no auto-accept record"
+      ],
+      "provenance": {
+        "label_sha256": "4832252c76a30e97672a5060718677479716365062242b6b9e294d96df8ef313",
+        "packet_sha256": "d792da8d509e1b562e320a5f5981714ff207e52d415a1abc5dbd13dbac0d27bf",
+        "audit_sha256": "22de351574470220906ebe59f77bc66de1c896ababade4644aa04f8ff6e1fdc6"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "casper",
+      "legacy_name": "Casper",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "f4ad6a7e4fa3fb578517e02529663f0891a1f83e9b0c7c8d410508d7820a8009",
+        "packet_sha256": "39a1066b4c49aaa6670b555ebb8a4c1250b42a2414661b81e17d6a017622ae5a",
+        "audit_sha256": "50f7eaf148c01fc7fb520e51c92d303bd7b144dec17969a3083a045a38979b26",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 0.8333,
+        "removed_claims": [
+          "C4"
+        ],
+        "auto_accept_sha256": "c0d239e7c2d2585d6e3e78d21cc14ef618b4bf78c80dab004066e7b5b8a6a3de"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "charlotte-tilbury",
+      "legacy_name": "Charlotte Tilbury",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 5 error(s), e.g. likely_target_audience: factual sentence without a claim marker: 'Charlotte Tilbury’s social media relies on real, relatable content.'",
+        "verification: audit status fail",
+        "human approval: no approval record; auto-accept: no auto-accept record"
+      ],
+      "provenance": {
+        "label_sha256": "e24029bde179d144a1df3d8c6c4a69c960b882614f1d9c13069c9baf1284c6f2",
+        "packet_sha256": "2200d12a254d0392d72241f67c6d3d763529a540e78909c9cb1807b2b8e2f308",
+        "audit_sha256": "b66cf26f2954cec5e08356d4e7002604bb20c296509f0eb7e96c10fb75e86732"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "chewy",
+      "legacy_name": "Chewy",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "be409280b6c2f8bd82d9a0d0d2ef3ac0b0d372a85ab5264ab5950333663bc239",
+        "packet_sha256": "77a8db8ed1e8e330f2e3f1433f5a462f56c4a33a2f98488411fcf0ef16889ee6",
+        "audit_sha256": "fee3f882bbd67bcaa0c38eecbccb2cb43de4f897cad7de89bdfd158109bddbc8",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "673feb66f9604ca37d8f62652a653d35e4842e0968450619f2bc9746b2ae1465"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "chobani",
+      "legacy_name": "Chobani",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 1 error(s), e.g. current_marketing_strategy[8]: factual sentence without a claim marker: 'Chobani partnered with the U.S.'",
+        "verification: audit status fail",
+        "human approval: no approval record; auto-accept: no auto-accept record"
+      ],
+      "provenance": {
+        "label_sha256": "7acf2813dce18fc56902e98d2fd51f4532f891a37f4906fa7a53cf3d5a85630f",
+        "packet_sha256": "93f8ea09dfc242b44619d2ff9025a4f3cd75a0ef05d8c7addf39c60fbb3ee26e",
+        "audit_sha256": "7fd76d782245040fcfecc065cb3cdf3a6a43816db47c893f9a0b3e6484f50772"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "cometeer",
+      "legacy_name": "Cometeer",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "possible test-split leakage: mentions ['Nothing']"
+      ],
+      "provenance": {
+        "label_sha256": "818cff4bd17201309b038f49293a012d88c6ecbb3b97a771758e5db4ac6c82d9",
+        "packet_sha256": "77e011cbba6ba75c1e47571e88912c435eb0392c230427414c4c61388262d648",
+        "registry_note": "packet built with registry 2026-11-22.v3; company identity unchanged in 2026-11-22.v3",
+        "audit_sha256": "6ffe9fc60caff95906d7273778dc89252ad8098348616840ce3b6a16ec9241b1",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "cbdf84d8d7a8245b8615be1472601e33407ba2b92f39995f42e7fcfc92dcb9bd"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "coterie",
+      "legacy_name": "Coterie",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "8d70da2125aec0e95253b526bcf8e6e4bed7ac7af77d11ccc69a2ef10da8397a",
+        "packet_sha256": "ae74eccf408faad342ed985e562aee22953af876eada6d1b22c61fc5988bda17",
+        "audit_sha256": "eff4eeaed4a0b8dd1d5a2bb3855e8a95f79b1295c6aeb396e5b6cca743b3abf3",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "09bb86f353f008d028697ef923919a55d4d64b8f8ef7f6ab4293708d46566e22"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "dagne-dover",
+      "legacy_name": "Dagne Dover",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 8 error(s), e.g. brand_summary: vendor/provider claim C3 (P5) is not attributed to its source (modash) in the prose: 'InstagramReels 77.5% InstagramFeed Posts 22.5% TikTokPosts 100% YouTubeLong-form'",
+        "verification: audit status fail",
+        "human approval: no approval record; auto-accept: no auto-accept record"
+      ],
+      "provenance": {
+        "label_sha256": "27e731e2a7ef2a91eefd3b674d4f00d0f4bb84e26ada355570334456c16e1593",
+        "packet_sha256": "154e00824809fd91c64e981bed0eae71fec7f06a34a62602da020fe53a88ae83",
+        "audit_sha256": "221875c14c9c15439a3c1aae91ea2acc5d2d4abac0820e01ce6d3eecd9647294"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "death-wish-coffee",
+      "legacy_name": "Death Wish Coffee",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "896c7ebadfbca38ebbdb668658c664f66175d100d0ad4bb261945b925665410b",
+        "packet_sha256": "ee99bedd03cc7099a3bf76963129d182403a6090a8cf2679c2c5e8ccfe50807a",
+        "audit_sha256": "0310dcb374f8df7aa4acd6a1e7986b543b4569c9cd5fb870d65cca2030a3b771",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "d0f05162de7b7c622cf0803b3a535437e3e44dd8dfacfc0d2ed658932183edcf"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "dollar-shave-club",
+      "legacy_name": "Dollar Shave Club",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 1 error(s), e.g. likely_target_audience: marker {C9} has no claim",
+        "verification: audit status fail",
+        "human approval: no approval record; auto-accept: no auto-accept record"
+      ],
+      "provenance": {
+        "label_sha256": "8b86c045f2d30047d2ce35573e4a1b8ccfef0805f00f5cecdace25adb740ae92",
+        "packet_sha256": "619cfdd7cae715d9b6323f0f23f679b003dec33bc555f67a46ed720a8c7ac897",
+        "audit_sha256": "58b4510603418f38a8f9a1782651d5cbe546209c8efe1518d1f23329da0ca6b8"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "faherty",
+      "legacy_name": "Faherty",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "35653d499ec599c7150fdfd31e23ff08f56402789c4cdeedb6240846a10f8e99",
+        "packet_sha256": "d6f37028a30a9e3982c934e201cf529086d30b52170a9167fe86c947aad049ca",
+        "audit_sha256": "3b7ed1c09e7f24af3165e710a5a93cc8e4f70544e50a6edda144daa142aab866",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "ed8b09ad5399d29cccc845556687cf8953565fb47df68ce64398852575070908"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "fly-by-jing",
+      "legacy_name": "Fly By Jing",
+      "split": "valid",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "cd77c38fe8a40e36cc05d74dfb804842336a051ed6d898f4c682025cd04db1b7",
+        "packet_sha256": "c974a43b16e102e870046f0fbbb1e63d54bd1f356426177dfbdd948911ce7eea",
+        "registry_note": "packet built with registry 2026-11-22.v3; company identity unchanged in 2026-11-22.v3",
+        "audit_sha256": "434987883b0c49e0f9ee08f0528892277118cd1b31f17bbd124c0b0f7f09e649",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "fb292c8af51507341d3adbf95931d19532d66775b0610cf76c178ad875bde9bf"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "frida",
+      "legacy_name": "Frida",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 1 error(s), e.g. claim C3: quote does not occur in cited passage(s) ['P8']",
+        "verification: audit status fail",
+        "human approval: no approval record; auto-accept: no auto-accept record"
+      ],
+      "provenance": {
+        "label_sha256": "c3964e2204ad9850a7bfa24d7bbbb7da1b2fe5863330fd6afdeb8e43bdbfef73",
+        "packet_sha256": "48aa1c2be82c967d5e548f693bdc7a51424d52a248d3fb9b2261591333bb11ea",
+        "audit_sha256": "dc55115702560345df497e079404580a2903494d1bb7b3b5fa262cf8f479bd5f"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "glossier",
+      "legacy_name": "Glossier",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "6b8fb63c969708cf6c4c376645657f4ebf0000f8673523ac30c03c7c4a592cbc",
+        "packet_sha256": "054a85629ea4920bf01ce490433c30ff24a33b5a8dbb003cf10df9a7cf398775",
+        "registry_note": "packet built with registry 2026-11-21.v1; company identity unchanged in 2026-11-22.v3",
+        "audit_sha256": "1d4c91644b846a3cfaaaa20c216546b2619d1cb1ca5d86f26d80934d5bc08179",
+        "acceptance": "human_approval",
+        "approved_by": "Thanishka Bolisetty",
+        "approved_at": "2026-11-22T09:20:02+00:00"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "govee",
+      "legacy_name": "Govee",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 1 error(s), e.g. current_marketing_strategy[2]: vendor/provider claim C3 (P3) is not attributed to its source (stride-social) in the prose: 'Stride Social collaborated with product review creators to produce organic-style'",
+        "verification: audit status fail",
+        "human approval: no approval record; auto-accept: no auto-accept record"
+      ],
+      "provenance": {
+        "label_sha256": "01e0a3f12c5e3f76625ac1a4c7862d40f2bd4eb7ac1040ad2626e02f2baf52c9",
+        "packet_sha256": "6434ed442ba9f38bcaa5b95456832e73195ee70c8f2a1b5ecabc3e9b0d19585a",
+        "audit_sha256": "ea01d78e3cf91237d7e69e3db2995bfc52f58434131d74121ef431848c746d0d"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "graza",
+      "legacy_name": "Graza",
+      "split": "valid",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "fa01eeff88ebe998b0906c9c3efd12a0b7793d91f7d5e51ce209a4226f3990f9",
+        "packet_sha256": "90fc71b07ba6c1187fbcacc9fd4e9cf66b948d1c0e45f62dc877017037d2aaab",
+        "registry_note": "packet built with registry 2026-11-22.v3; company identity unchanged in 2026-11-22.v3",
+        "audit_sha256": "291ee7c5798d8b0ea2e838cf89180c6b2cdcf34f9cc4a7d324cb105b4b7d396a",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "1bacfde7776fa20400c748b919dd0718b10cb006e5dea323244bdf0e5744b9ec"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "great-jones",
+      "legacy_name": "Great Jones",
+      "split": "valid",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 5 error(s), e.g. email_subject: vendor/provider claim C3 (P4) is not attributed to its source (adlibrary) in the prose: \"Collaboration Opportunity: Showcase Great Jones' Kitchenware with Food Photograp\"",
+        "verification: audit status fail",
+        "human approval: no approval record; auto-accept: no auto-accept record",
+        "possible test-split leakage: mentions ['Our Place']"
+      ],
+      "provenance": {
+        "label_sha256": "2dbc1bff5efd0e1ccbc403c155887762d4fb9f8110fa5b71f94699f0ad565385",
+        "packet_sha256": "75f6bf87251ae447644c0e89f001ac825e7094480b82b2853d3e82e3a2d8e9cf",
+        "registry_note": "packet built with registry 2026-11-22.v3; company identity unchanged in 2026-11-22.v3",
+        "audit_sha256": "304e3a7f66bd7c8c21ee32acd3c7ab3328838ab9496c6a86231a6ebb07879f79"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "greats",
+      "legacy_name": "Greats",
+      "split": "valid",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "8b5c1fc3919676cacd96354659bfea59cc450424684187af46e4bd60fec6b577",
+        "packet_sha256": "7515c79267cde47867d10ced674d9e82a96d14a1d696c42d760d047d5862edb2",
+        "registry_note": "packet built with registry 2026-11-22.v3; company identity unchanged in 2026-11-22.v3",
+        "audit_sha256": "122320f649bd4afb33c81dc2915aaf2952807b2d7e1bf157722fe0497bfc0fca",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "7cda22a89dbcab7faab1b03a26806b4452addb3070a8bfab2516470aaa171d8d"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "grove-collaborative",
+      "legacy_name": "Grove Collaborative",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 3 error(s), e.g. email_body: vendor/provider claim C4 (P6) is not attributed to its source (adlibrary) in the prose: \"Hi Grove Collaborative Marketing Team,\\n\\nWe're excited to propose a collaboration\"",
+        "verification: audit status fail",
+        "human approval: no approval record; auto-accept: no auto-accept record"
+      ],
+      "provenance": {
+        "label_sha256": "d7633c46a2ced0199f4e053cd79860479c57652dd75ec5e1b581ac2171e9cec9",
+        "packet_sha256": "e7932ed162e0b0fc364e65fcf07eefd662207cacc1fa93acd99d5335712be1d2",
+        "audit_sha256": "d6ee54412329b5a4df54e343844c425496787b438ba5aa578d00b4a8d41ea911"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "gymshark",
+      "legacy_name": "Gymshark",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 2 error(s), e.g. claim C5: kind must be one of ('fact', 'provider_reported', 'premise')",
+        "verification: audit status fail",
+        "human approval: no approval record; auto-accept: no auto-accept record"
+      ],
+      "provenance": {
+        "label_sha256": "f343a6c620627441aa82fb5b2726e381ec183dedbb65ba47ceadab19aed22457",
+        "packet_sha256": "baf2f85c805b22fb151e604697fef5da66c61b3b7a3f5c004f9342313cc4e20c",
+        "audit_sha256": "876e3eaf1a62b379d3a47921d259dd01b6d18d1e9795e7360696d64b96a16ff1"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "hu-kitchen",
+      "legacy_name": "Hu Kitchen",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "bb056cc62009887ac5fcb612e40078b18708e320baea01b0af8e1558819e5351",
+        "packet_sha256": "5034b597e41ea5dd8e24a7d96cbd19d65b0c2edf60ebd2a761b20246b545d527",
+        "audit_sha256": "2b8d7128c5cd0a70633f609ae4daa219ef764c8ee048fcc24fc92edb5ee2511f",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "f116fd8957bb80fd30530384c980bb5475c570d36a2e6d22449ed0e3745d6d3e"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "ilia-beauty",
+      "legacy_name": "Ilia Beauty",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 1 error(s), e.g. likely_target_audience: marker {C6} has no claim",
+        "verification: audit status fail",
+        "human approval: no approval record; auto-accept: no auto-accept record"
+      ],
+      "provenance": {
+        "label_sha256": "ac3f3a8b63d422e57c2f5d7a66cbdda04887818403c6e67ef4d67d3d3f46810c",
+        "packet_sha256": "783b317e1da8b510dcb4ba56a67812ce28db9c225ca94e275b0d69b58c790363",
+        "audit_sha256": "060d311ff6ed7ea5f4b1a84f961dd12c03a0941a6309c3bf4f227550402d58c7"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "imperfect-foods",
+      "legacy_name": "Imperfect Foods",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "ef67172a61ff4cd22fc6666ca50f2e9d816b1a8ed5209caa7e1eae7e3721f7cb",
+        "packet_sha256": "e9e96460dadf26e13d74c7ea91b438e4342fc40283b72e5600fc6bb48910f173",
+        "audit_sha256": "144f63ef8829c12a46f024c08596755e6a1c4beb4851f804e07203973317602d",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "e9625abd4f36551fb1017c9639e4ceedb6ca92646c5101a8e58e8c838a3bd977"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "jones-road-beauty",
+      "legacy_name": "Jones Road Beauty",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "cad5e5c4eb52c7ab8844993c01c7a9a41b68d403c51badf218eadc0ce954510c",
+        "packet_sha256": "18556c8c401d56298ee0db76cce297adfd296d8d1ae5c6cb62082b1555b995cc",
+        "audit_sha256": "12e12db8a6d7c33e238fa6dc5220d9d001935dab494fc4dde2deac712422f5b5",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "f3a82718897b50a99888fcdda4e02b7757ec852c72e391902121086323e2607d"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "july-luggage",
+      "legacy_name": "July Luggage",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 1 error(s), e.g. instagram_post_idea.hook: factual-looking sentence without a claim marker: 'Personalize your travel with July Luggage.'",
+        "verification: audit status fail",
+        "human approval: no approval record; auto-accept: no auto-accept record"
+      ],
+      "provenance": {
+        "label_sha256": "0fcad9bd84c4c2e06b4b3ae0081756deb8324c091995a80d89c90e63ad2bcf6b",
+        "packet_sha256": "a068d965c36beb5cc7d48d161c8bee77e6f7ad9b178b98c3d530710edae3d6fd",
+        "audit_sha256": "a3fbbad3f781a6e2431320668e6ff16c72028127007dd0821b1c6d47b292fb32"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "koio",
+      "legacy_name": "Koio",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 4 error(s), e.g. claim C5: quote does not occur in cited passage(s) ['P4']",
+        "verification: audit status fail",
+        "human approval: no approval record; auto-accept: no auto-accept record"
+      ],
+      "provenance": {
+        "label_sha256": "967b5e29694c060b2e347827f3dd1a07895df091fdd3980eac7d3e5be7236dcc",
+        "packet_sha256": "d00d08e6800c1f4c0deeeac7c2fc1ce56b592a92821e57e6bc6733583e82cfcf",
+        "audit_sha256": "817f9c08bcab172e4233da00ba3ef07d1e74aa0b0ce4d8b6dc851199cfc26d6d"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "kosas",
+      "legacy_name": "Kosas",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "possible test-split leakage: mentions ['Drunk Elephant']"
+      ],
+      "provenance": {
+        "label_sha256": "ccff7d6a038e33fc6a828f5c4dfc3f91517e90f3c58af4990c05e12a7efb7bbf",
+        "packet_sha256": "80c4b2f59f7bceda22682f2f58c3afacd73ca903b165bf721732183fa7fb537c",
+        "audit_sha256": "3a4e52167752dfae0fabe8be35f5ffdee82e7e5d65f1a8448e7840427057a333",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "edfefd1021aeb1ebc04a893d4a773cc7d67dc7dd8f564c91c798dca75957c887"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "liquid-death",
+      "legacy_name": "Liquid Death",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "b8e16d451d2bfe54acad750e35445b405a8e417aa832317c6ef4cfaed5c6fe23",
+        "packet_sha256": "0b56352a8410ff3ae8be92b59b5b56b30803b09c2da43499bca89c8209e207f9",
+        "registry_note": "packet built with registry 2026-11-21.v1; company identity unchanged in 2026-11-22.v3",
+        "audit_sha256": "2a3c9455c6f6d30b12b3e4e3105ec298bcf589f763084adcda432890184533b2",
+        "acceptance": "human_approval",
+        "approved_by": "Thanishka Bolisetty",
+        "approved_at": "2026-11-22T09:20:44+00:00"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "lovevery",
+      "legacy_name": "Lovevery",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "c7f55d94c7e173e3834df5ad4a9883ef1353f8397e7a019f114365b59649e1cb",
+        "packet_sha256": "1f396606ff7f653773e0dd0603716a13cac87c1ddb91808bb135a7a8f9fa79e7",
+        "registry_note": "packet built with registry 2026-11-22.v3; company identity unchanged in 2026-11-22.v3",
+        "audit_sha256": "07292f1617de8850eb7bd122a7dd2f630a6b7d48c2a612e04342c63b08631fa1",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "7b317d54657956971571e17763fc431a60e74226e718f76eb9a58691715ea655"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "lululemon",
+      "legacy_name": "Lululemon",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 1 error(s), e.g. brand_summary: marker {C9} has no claim",
+        "verification: audit status fail",
+        "human approval: no approval record; auto-accept: no auto-accept record"
+      ],
+      "provenance": {
+        "label_sha256": "f284008dd9e8af0050512420558b1d60d561f52f19738e5976fb97b480a513f7",
+        "packet_sha256": "1c2bb9adf64d48caa62ed708ace6b2fe1126bb23de4ec272c2c8b9eb93dc21b0",
+        "audit_sha256": "b173107568c5aea36e380c292f01852b245adc1371ce4b9374a4471034c2c822"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "madewell",
+      "legacy_name": "Madewell",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "112b6a2b428999e83b8e61ab2862031fd571a8e068beff7fdbba869d35dc49a9",
+        "packet_sha256": "cf03599a2a0ecfb4be5a294ba06e4dd25a147c5011516134fb17cf8cfe4d9a30",
+        "audit_sha256": "643ff0e7302c528b2ab9548ffd3c330c912ee41a229c789deb75d746a038cb41",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "38af0ee322624bd93f5339e3c9d16b7fc5e70f0dd4f0bcf74c22371b0f44afc5"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "marine-layer",
+      "legacy_name": "Marine Layer",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 5 error(s), e.g. likely_target_audience: marker {C7} has no claim",
+        "verification: audit status fail",
+        "human approval: no approval record; auto-accept: no auto-accept record"
+      ],
+      "provenance": {
+        "label_sha256": "293c9aa5a76b20e292a6aa9e0ad603d51013a06456441cf78b5455ffdc742f00",
+        "packet_sha256": "3633a104ca1ff9a07a6f15137587bb05692a39b57edab079ac4958cdfc26f8c5",
+        "audit_sha256": "93a8da959f290d27b4363cd53896da2595ca99c6311045a55d4585f2230e0696"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "merit-beauty",
+      "legacy_name": "Merit Beauty",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 1 error(s), e.g. likely_target_audience: factual sentence without a claim marker: 'The passages do not specify the likely target audience for MERIT. {INSUFFICIENT_EVIDENCE}'",
+        "verification: audit status fail",
+        "human approval: no approval record; auto-accept: no auto-accept record"
+      ],
+      "provenance": {
+        "label_sha256": "a3391dca197bafa090bec06a246a9755b7a61054afe277a42f24c6750f8aed95",
+        "packet_sha256": "34b49d8ec3e59fa0d4b39966b2898f73df0cf2a316652c13ea579e96309ebb03",
+        "audit_sha256": "b9b733ae786179cc7f5a1a0e1f9314d304c6d2fbdd2fb594efd28aa860752b88"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "meundies",
+      "legacy_name": "MeUndies",
+      "split": "valid",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 3 error(s), e.g. claim C3: kind must be one of ('fact', 'provider_reported', 'premise')",
+        "verification: audit status fail",
+        "human approval: no approval record; auto-accept: no auto-accept record"
+      ],
+      "provenance": {
+        "label_sha256": "1a8dce3663fdbc8dbdf818577d3bf51fe84529a523130c4716ec826f847220a9",
+        "packet_sha256": "d25a1c2718018b243e816357057ca907abf61a733fcb7f76d2a8643a60bbd24d",
+        "registry_note": "packet built with registry 2026-11-22.v3; company identity unchanged in 2026-11-22.v3",
+        "audit_sha256": "7aa98124b961d03c10f9c99b976197fd494bf552eabb77bba185bcebf0254c03"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "milk-makeup",
+      "legacy_name": "Milk Makeup",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "verification: audit status fail",
+        "human approval: no approval record; auto-accept: no auto-accept record"
+      ],
+      "provenance": {
+        "label_sha256": "77cf18e5c3fcc95d0d0330ffe0ba2090185019a69bd05ea1390f85b9f64485f1",
+        "packet_sha256": "924c639baa5fec54c8629c57991202d4bf65ab3e74be5684adf19cb969230301",
+        "audit_sha256": "a6e525120843a5e7d025fb74ecefa89e053573a98622fec2a4fa250d739a2f5d"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "misfits-market",
+      "legacy_name": "Misfits Market",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "314c175e2f80f2dc4be3d473765849644ba6cb5db8621e223dfb033524561c70",
+        "packet_sha256": "6500630ce486b492fca884dc1646ce41927269af21acba43b6934906ca422f37",
+        "audit_sha256": "b6856c57cb4d0d7312b93cd0198a3dd0ceeb110c19be1bd1a68626850d7d5d23",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 0.8571,
+        "removed_claims": [
+          "C5"
+        ],
+        "auto_accept_sha256": "cca7c918c11ceea5f2c77328b3ac25dddab664799c25482bf549fddf02ff0127"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "momofuku-goods",
+      "legacy_name": "Momofuku Goods",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "328e1d73533dc391ac333b1c2f94270d61275624765cb3574bf00530366b2531",
+        "packet_sha256": "1176b733baca73db709d72de9425f0f97fc99e0c1e8f7ccf4fea471f5fa6b3a0",
+        "audit_sha256": "eb365eca678f2b1dc2cab5c557ec24880667ff33bdb1cf1eca52e4cb5c5fe2fa",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "d98f8d709450dfebd5bd15fdfb59751f834e4a6bb9316397c89bf75274ab403e"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "monos",
+      "legacy_name": "Monos",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "9a7ed62bab7b131f4604637540e267dbf1d9fafe81f1b7413ab8082dbd5c6e3d",
+        "packet_sha256": "a9683b38bfd065865184fe551132b56ea539be01cce8bf66b3fd03c4f030c0b8",
+        "audit_sha256": "62472a70b94e2a9d7c7f7259023f07fd7983435551a22c581afc69775f242726",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "c1a626669a3273fa3adaeea48d97903c8f30f2ea7a5d138d3579feda5159028c"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "mz-wallace",
+      "legacy_name": "MZ Wallace",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 1 error(s), e.g. likely_target_audience: factual sentence without a claim marker: 'Insufficient Evidence'",
+        "verification: audit status fail",
+        "human approval: no approval record; auto-accept: no auto-accept record"
+      ],
+      "provenance": {
+        "label_sha256": "210e2295f13ff82eaf6c1f3e9e9034dec8fe88ea91b01505ec0d6f6898eb6060",
+        "packet_sha256": "4255ed95275d6268d7e1b8f50e3dc7b069dc2820bb400cf7cfeccbda9afe77e4",
+        "audit_sha256": "0d4d4cdfd11de6abf298a5251fb6cc3ffe94b992b0049edbbd498063f3ec53f0"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "native-union",
+      "legacy_name": "Native Union",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "b027fe2f0f989958b58e20dba9608b991ad9da1feac74f02bfaf415385a5c42e",
+        "packet_sha256": "be994b68d9843a3793cd58ea606f08802136c30e71bb577de31f671f4bba4226",
+        "audit_sha256": "56e081cf6458a5f671e5566268ff359260bb6a079f876ef1b0a39c06fe230862",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "b1625ae8d29bcf98a7b5ae29698151d5e29fad3685d3e95aa15d66977cb077ff"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "native",
+      "legacy_name": "Native",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "37c7c2e0d674922ecffa4d452ccdac7c186b9337d6d2cd2aad6aa79221335825",
+        "packet_sha256": "187c02039c7f56d67e99a98f606e91b6128d03075b0b5c63c0adebfa8ea3d185",
+        "registry_note": "packet built with registry 2026-11-21.v1; company identity unchanged in 2026-11-22.v3",
+        "audit_sha256": "d38eb666c16093d8a0096bf724b13d69bdd37782b39d12357492fd54d4b4f50f",
+        "acceptance": "human_approval",
+        "approved_by": "Thanishka Bolisetty",
+        "approved_at": "2026-11-22T08:43:44+00:00"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "oatly",
+      "legacy_name": "Oatly",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 3 error(s), e.g. claim C2: kind must be one of ('fact', 'provider_reported', 'premise')",
+        "verification: audit status fail",
+        "human approval: no approval record; auto-accept: no auto-accept record",
+        "possible test-split leakage: mentions ['Olipop']"
+      ],
+      "provenance": {
+        "label_sha256": "52d9d901f77f7e3ff0fa0d247aff992c9eedc1b6ccf74855426f56347624a4cb",
+        "packet_sha256": "a870fb1bc30de045f82704abb56e5df83996c812b037a62ca785ebe4139925f7",
+        "audit_sha256": "27d8abd10dfd64af724e7ddf3cd1c4b5b1a79bc3d3e38c2a2f658442acaa572c"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "olaplex",
+      "legacy_name": "Olaplex",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 4 error(s), e.g. claim C3: quote does not occur in cited passage(s) ['P8']",
+        "verification: audit status fail",
+        "human approval: no approval record; auto-accept: no auto-accept record"
+      ],
+      "provenance": {
+        "label_sha256": "be9684244b5f24d2febbc96b4026640e4c336524e40e0e8a1cf275ebec3047dd",
+        "packet_sha256": "24fbbc7735aa156acf6a4862f58cb6fbeb53ba79714715ee36293c1c45d8a8a7",
+        "audit_sha256": "20c12bdffe044b485ecabef2c3b2c963d20e840574472dd6c3a6841971d95c24"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "ollie",
+      "legacy_name": "Ollie",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "verification: audit status unresolved",
+        "human approval: no approval record; auto-accept: no auto-accept record"
+      ],
+      "provenance": {
+        "label_sha256": "f1bff8b7090411bfa54a7b05023d5add6f423492179d97915878498ac4d5a17c",
+        "packet_sha256": "e920cbd1b5574d5d76c6ac2426b5ba8375d87eb14a41dee89b6478771f75924a",
+        "audit_sha256": "9e41cf8ff7a2a08cab797f745b904d058013673d014de4d8473c52df7f96821c"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "omsom",
+      "legacy_name": "Omsom",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 5 error(s), e.g. email_body: vendor/provider claim C2 (P1) is not attributed to its source (adlibrary) in the prose: \"We'd love to create an Instagram post that highlights the Pham sisters' personal\"",
+        "verification: audit status fail",
+        "human approval: no approval record; auto-accept: no auto-accept record"
+      ],
+      "provenance": {
+        "label_sha256": "66a90e1f11cd73ef5d4adda315e7aabc0e1355cffbea41ea7ba1a5c98b82bf46",
+        "packet_sha256": "8c4576fbdae422b8914f14e02cc5ba9ead1e1c0cdfc28543069d8b4ac272e100",
+        "registry_note": "packet built with registry 2026-11-22.v3; company identity unchanged in 2026-11-22.v3",
+        "audit_sha256": "f5497cb35cd5c94bc17a495cf10853de3f0661cd24c977edfd04fbbb3a076987"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "outdoor-voices",
+      "legacy_name": "Outdoor Voices",
+      "split": "valid",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "697b24b6591a24a9c8c39ff9c62216e1ab863e2173187ca4eacd8b8d2c4f9ca1",
+        "packet_sha256": "fb3e615c99b46c771dbad20e22c50265924457d570787815464636572221af43",
+        "registry_note": "packet built with registry 2026-11-22.v3; company identity unchanged in 2026-11-22.v3",
+        "audit_sha256": "3daace0884e7a513fb773153780ad834e4f57cebbc8a7970310afc6b982ce7a2",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "c3641f07158e8a51467040e9015566749ec1ed5a91d6a4ed71130ea971e2ee03"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "parachute-home",
+      "legacy_name": "Parachute Home",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "966c90dc3272e1c60bb30e14ede492a1abb2f77b4a5e46b4d6226e45182adad5",
+        "packet_sha256": "9cb12eff77ffb5e0ac45593357a0d264946e929200db7efa1c5efa6a7528d169",
+        "audit_sha256": "b17bef760310b4b72a1dc4a5d52adcba2b4efdfa8677446438501d36d6d3c1cf",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "e388b47ac18b484e561e9e0b052d333fadb1bba1edde66f20a0b0776e3a9bf6a"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "pela",
+      "legacy_name": "Pela",
+      "split": "valid",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "1d3039fa377f3e6d5ffc90bd53d750ae32811fa17313cfc2b48ae6012c0110e4",
+        "packet_sha256": "8a29de2d7cb594d04380ab8a2de0c9e172e30811b9fa6fa80ce741cadb703fbf",
+        "registry_note": "packet built with registry 2026-11-22.v3; company identity unchanged in 2026-11-22.v3",
+        "audit_sha256": "e0ef3b1c9794af570997c7dbda8cd2437cf48c808687d827fad2ade0c2a1e95c",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "5efd0ba0a6d0a9162a8aee69378625ee4691cbd5b6c9fdbda847afdbfdf8de0d"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "peloton",
+      "legacy_name": "Peloton",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "085e987765ecabc9861bc852c55e143df1dcd2e0a2fb3a60bd0d80507d9a6389",
+        "packet_sha256": "f47d13c1f1704327310fb3bd6e71e50b965629365808f69dbd39a7e4d06a1c4a",
+        "audit_sha256": "ffbf2cf03986203d16d0a0e0d2b15f98cca411cb19d8595b36b95ea30c2b6878",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "adf6dce1cae822d8e8dfc2ba561e99795aeb33cca2c5c3f61ed831e727e855a6"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "poppi",
+      "legacy_name": "Poppi",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "f8f7a24e678c4fe9349b3865681135fa19ae296b2486d984c5ebd1e467bcdeb5",
+        "packet_sha256": "bfa1e517494a182b3d1c676d9446c7dec73145ee61ecaaf85d9408fa6353eb7e",
+        "registry_note": "packet built with registry 2026-11-21.v1; company identity unchanged in 2026-11-22.v3",
+        "audit_sha256": "9f78044ecc0291de23db05876fcd06297e466697afa8d571001f4001e6e81015",
+        "acceptance": "human_approval",
+        "approved_by": "Thanishka Bolisetty",
+        "approved_at": "2026-11-22T09:16:10+00:00"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "public-goods",
+      "legacy_name": "Public Goods",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "34ffe073a0c8dd0760c71b9e03f61bfa1db37fc8e39c85209ccd59e4daacfd8b",
+        "packet_sha256": "6a03e2e73fcfa081f8af96a1af05ed53010fdf054739c501193a2b2199aac3b0",
+        "audit_sha256": "47148d8b710bc159536814b9ef68ee06d39bb8d701e0bf04d802af9611fcbdd1",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "f6f00423909bcd38e21247164e694974dea43afdeb47c8eb2822ca57e9690eeb"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "purple",
+      "legacy_name": "Purple",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "4794fc66af60a49f8cd94749098985e73bc065cbd5041e31085f851af3fa9c31",
+        "packet_sha256": "29c0c0546cc447cf2ab2873080fce11d8e1bc1fe3cdad4dbd78a0e45cb4c3754",
+        "registry_note": "packet built with registry 2026-11-21.v1; company identity unchanged in 2026-11-22.v3",
+        "audit_sha256": "fda291afdace19d05ef78f3709cd3133eb45be3fc62c4e6b878ff2bfdd4e1338",
+        "acceptance": "human_approval",
+        "approved_by": "Thanishka Bolisetty",
+        "approved_at": "2026-11-22T09:15:26+00:00"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "rare-beauty",
+      "legacy_name": "Rare Beauty",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "4fd4cb5045b57aca4a9c69ec0b14966459cdf5dbe667f6403ee4076880173c5e",
+        "packet_sha256": "b05ad52dc343069137a98b3c194c7fe9cde10d8adcdbb99533c1e2daf101ace8",
+        "audit_sha256": "855c44e460c35005b8b39101a37e3c7280e7f405f09bd9fbf70d926e0d7d83a1",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "4876fb2f97127a1a3d8bb478538b99dec99ca0bfae6167a6ece0143f6ecfb538"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "reformation",
+      "legacy_name": "Reformation",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 2 error(s), e.g. email_body: vendor/provider claim C6 (P9) is not attributed to its source (canvasbusinessmodel) in the prose: 'We believe a campaign that blends cultural relevance with circularity, similar t'",
+        "verification: audit status fail",
+        "human approval: no approval record; auto-accept: no auto-accept record"
+      ],
+      "provenance": {
+        "label_sha256": "2b4aac7766a3a3490b5b183da0bd15fc808cd3f0cc41a5c97aa411e2ff83144e",
+        "packet_sha256": "61fe6bcd04bc4a742ea34dffabca8f10ccad1bec4d298655d05742c9c19a6ab7",
+        "audit_sha256": "5edc2621d389b0360e4289d758fd739171d242216e02690e227f8432d7f1c2fa"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "rhone",
+      "legacy_name": "Rhone",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 1 error(s), e.g. likely_target_audience: factual sentence without a claim marker: 'The likely target audience is not specified in the evidence {INSUFFICIENT_EVIDENCE}'",
+        "verification: audit status fail",
+        "human approval: no approval record; auto-accept: no auto-accept record"
+      ],
+      "provenance": {
+        "label_sha256": "6682541a7f6c24407210ec84085e58b311c198444797883260a8072be6f0aeca",
+        "packet_sha256": "51810081ffe9da63b19d58269017f5b749031d1f82dd84050faf3878a2d6c662",
+        "audit_sha256": "465c65617df6fded1c8bee3c851f7271c2e5f5adad1b8b66f29d495c30ee73d9"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "ruggable",
+      "legacy_name": "Ruggable",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 5 error(s), e.g. email_body: marker {C10} has no claim",
+        "verification: audit status fail",
+        "human approval: no approval record; auto-accept: no auto-accept record"
+      ],
+      "provenance": {
+        "label_sha256": "6e82777c2193d4b6500a52726bb0e9ef98f68e0d9651ae1bec4eff267b6bde17",
+        "packet_sha256": "e0dd007a635172d7a746581128b0164c0edce6a720fec525d76313370f1f848b",
+        "registry_note": "packet built with registry 2026-11-22.v3; company identity unchanged in 2026-11-22.v3",
+        "audit_sha256": "1b64816b9f7abb1b6b4572de7e6db129c9efd752539b8ac8ed210d4b75995780"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "siete-foods",
+      "legacy_name": "Siete Foods",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "8f3befe4fefd84ba26094afca026a66edeba02fffd311e3ddcd153de05fbaa44",
+        "packet_sha256": "a26b09233c918f865de058fce248b47b289fb7255fd47b87f5a875b23b3b13b8",
+        "audit_sha256": "d295b732d206328c21da7d18d215afe21e5d229f70a63a2ab25c8420ee4b5183",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "6ee5ccac7aebacf6ba1c0d33be575b72026bb48c9bf793f51242320bebf924f4"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "skims",
+      "legacy_name": "Skims",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 4 error(s), e.g. email_body: vendor/provider claim C6 (P8) is not attributed to its source (enrichlabs) in the prose: 'This campaign would align with your existing strategy of pairing evergreen conti'",
+        "verification: audit status fail",
+        "human approval: no approval record; auto-accept: no auto-accept record"
+      ],
+      "provenance": {
+        "label_sha256": "e27708dd8fb1c2094f36a6431f3adbe04a13a6b2935e41783b0367be982261f2",
+        "packet_sha256": "1d536ade8c42674552240aa693216a06a44a073ad1eadc0ab1b0bdaa782fbdb8",
+        "audit_sha256": "f9095277a97ebf9c54853585728705c06070ebaaf5bc826442182ddcafbac1d9"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "spindrift",
+      "legacy_name": "Spindrift",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "e420ea39bd2e9066e161f3e654b4cf47835910d56336b7402252e098031fd6fe",
+        "packet_sha256": "3fbce4c0e934fb5e651222bdd816df49fdf9ddc6664f446b69b036596d0d6eeb",
+        "registry_note": "packet built with registry 2026-11-22.v3; company identity unchanged in 2026-11-22.v3",
+        "audit_sha256": "ebc58cfd934dc2238093e486487999a47a76744467a33b2a0acfc7ab5c9b6535",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "795f7569d32eb9fa6fad42729e856a7af874f118ce8ea952fb97280215770de8"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "stumptown-coffee",
+      "legacy_name": "Stumptown Coffee",
+      "split": "valid",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "63fe2ae4a89fbe22424d5970510a339efecb51534d9cbba6fb1f6f2dad62b56f",
+        "packet_sha256": "546ce43823e5e75d054f71f5ab29323f092a352f38b07d41bc95a8b64116acf6",
+        "registry_note": "packet built with registry 2026-11-22.v3; company identity unchanged in 2026-11-22.v3",
+        "audit_sha256": "72f87fd48c1422c54a2dfad2a9672cc177a1a9119246f28d17dd1c6f1afdc0c4",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "843f0ac413889c75811c845b5c37563fbdcbf4be97c5f369221e53f6cd5c67ff"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "supergoop",
+      "legacy_name": "Supergoop",
+      "split": "valid",
+      "included": false,
+      "exclusion_reasons": [
+        "verification: audit status fail",
+        "human approval: no approval record; auto-accept: no auto-accept record"
+      ],
+      "provenance": {
+        "label_sha256": "78caa00ce54538773bdc50cb2849693f3b1b9c42e44a44995e3d13a2015e85de",
+        "packet_sha256": "ac1f33e29e17a9896a28deb1a6fe4843e160dd0e3678829ae927d8b8b52d849c",
+        "registry_note": "packet built with registry 2026-11-22.v3; company identity unchanged in 2026-11-22.v3",
+        "audit_sha256": "c69ab2a2f48ec236c0a447cda3b6207d60bda45aff7d048378f7054821940fac"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "tatcha",
+      "legacy_name": "Tatcha",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "32293721afc64a2023c4a3d505ea5a79dc58aabc0bda6a0dad7ef5749d2ef6bd",
+        "packet_sha256": "61c8422b3ed23e087227685971d728f2d736d989c9acd467eedbcf1894cc10e0",
+        "audit_sha256": "e2bdc2e7e919585c633395d55164c0c34f82057673615ade99214642bc64a591",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "66dad360c9c783b9e3bc29ab6b79ebc10351e37716124db4ea1df95ba10fbe6a"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "ten-thousand",
+      "legacy_name": "Ten Thousand",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "33724007a75dfaa8509a030be50b377373edaf2b31600d70cc6376ced98f185c",
+        "packet_sha256": "1b1c3acc5c6b0784169270fcdd96c78e151a13a4a0984888f8175becc22d98b6",
+        "registry_note": "packet built with registry 2026-11-21.v1; company identity unchanged in 2026-11-22.v3",
+        "audit_sha256": "65c81e2297b7a827de50d3f5c14cfbd08c4e879f232b066a2e66f40c41985780",
+        "acceptance": "human_approval",
+        "approved_by": "Thanishka Bolisetty",
+        "approved_at": "2026-11-22T08:53:37+00:00"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "the-ordinary",
+      "legacy_name": "The Ordinary",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 1 error(s), e.g. decision: the email must propose an Instagram post",
+        "verification: audit status fail",
+        "human approval: no approval record; auto-accept: no auto-accept record"
+      ],
+      "provenance": {
+        "label_sha256": "81ab3f873f6e32dd52d1fed03253d271b2f03c29c6d588f84b715a24e955bfb3",
+        "packet_sha256": "bc6d56328cef74fe5b4ca81cecc9cc6ccf9ee9c5f349313aa63a85007886fc9e",
+        "audit_sha256": "62d68436cd95287a6c683ac2dadbdc51daf47ca08f953608f8aa3886ff682a83"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "thrive-market",
+      "legacy_name": "Thrive Market",
+      "split": "valid",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "7efd20b058ec5e647b793e64bf1b894eb5f72753fc1bc4babea2f1501d635b23",
+        "packet_sha256": "ed5bf926801b01e5f73b9daf8c07d8b6c7867569f338f689df590ac50ee72f2d",
+        "registry_note": "packet built with registry 2026-11-22.v3; company identity unchanged in 2026-11-22.v3",
+        "audit_sha256": "f3af352923a2664906ca15af59bdca9f23be87d67ecc41bcd64088548e242ce3",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "70013576fc32a0fde0149fb0834ecc708851806a36cddd6280a48cd57f28997f"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "thursday-boots",
+      "legacy_name": "Thursday Boots",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 1 error(s), e.g. current_marketing_strategy[0]: factual sentence without a claim marker: 'They don’t play games with their customers in the form of sales and discounts.'",
+        "verification: audit status fail",
+        "human approval: no approval record; auto-accept: no auto-accept record"
+      ],
+      "provenance": {
+        "label_sha256": "015a7944f2c522ea2484cb31345af8422e1b6210ca5e5cb9ac3e405e1e4d9fdc",
+        "packet_sha256": "791da27d22303d08cedc9d437c855427b75eb8bff068ff2eb025379fac27cc1b",
+        "audit_sha256": "8d683d8aebee1a41fa672775865f8dc2c73bacb1611dfdb106b1e586873f4670"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "tonal",
+      "legacy_name": "Tonal",
+      "split": "valid",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "93bc7b35e39fbc372e62b2f108addf4938abe44f36f917029fa378b22b75f4a4",
+        "packet_sha256": "d00bcfb37c669099e3b7a0da6b6526131ec5e635dfc1048b8fa68620b08b341d",
+        "registry_note": "packet built with registry 2026-11-22.v3; company identity unchanged in 2026-11-22.v3",
+        "audit_sha256": "cd450d7c817499dc9911fab863cd9c419f1ebdaafecd7f0127b43d4d3f52d7bc",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "d2ba98a2708ecefab97802a819c68c437e66d1cc849d67171be8a01da26ff82d"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "tracksmith",
+      "legacy_name": "Tracksmith",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "e493bbe434b2cc19299e41165a8e4a5682c65c0dc426190ac2f850866f823499",
+        "packet_sha256": "750335192f50ce9f3f4b127db50116e06c3bbfbad126f92db63b3416793a1248",
+        "audit_sha256": "2f168a135a07cbb174e43edec442f1fcc29b5fcf89cea099fe017ac0ffbeb22a",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "1b227898062caeaa8ecbaa32d8a0b163491bee9921e3b019e9a03f341e7a204b"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "trade-coffee",
+      "legacy_name": "Trade Coffee",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 5 error(s), e.g. email_subject: vendor/provider claim C1 (P6) is not attributed to its source (adlibrary) in the prose: \"Collaboration Opportunity: Showcase Trade Coffee's Curated Roasters on Instagram\"",
+        "verification: audit status fail",
+        "human approval: no approval record; auto-accept: no auto-accept record"
+      ],
+      "provenance": {
+        "label_sha256": "3df1d21835ca89a6217303c2b16fbe56cbcf476b7fb25f03bc68464f62d06ba3",
+        "packet_sha256": "96f06349a3b5757d5239dc6c1b654a3955bc5c9f0eadad9202c0b1aadba4254d",
+        "audit_sha256": "30530d353fe5c49e8daf8476cd1ae5f09cdc323651b28fee5f17c4ad8d69d54b"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "vuori",
+      "legacy_name": "Vuori",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "30863397ea7c20b9a22a3b1130784d3f8eb88efea4f9223e31105cc02c71f2a3",
+        "packet_sha256": "aac9d08f5d723cc6b1085ae4cb00ad14dcc01d6db299423f6e3af922de24c96d",
+        "audit_sha256": "5fb6be1431e1d620a724c6dfa140c6291208ac229a055cf9f88a3e0c9d98cd18",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "31b338585828134373d743bebf30c569082bcb1ba81cc171b399aeb2a30128d9"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "warby-parker",
+      "legacy_name": "Warby Parker",
+      "split": "train",
+      "included": true,
+      "exclusion_reasons": [],
+      "provenance": {
+        "label_sha256": "ab269943b0ff619da9b73dfbf98f7210eb5b197ab11c88ea9eba46ec02a3cb5f",
+        "packet_sha256": "a86356f018bbfebd7797141b9914bf541475d89ad1132f3004794bed01400451",
+        "audit_sha256": "fba32bbca31bb9fea13ae1e44458b6c9b1f447d02974b571134697a2e7776453",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "bbb87770e1c626900058d983a420addb655cb951999ebf45ac6d05c26ea93591"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "who-gives-a-crap",
+      "legacy_name": "Who Gives A Crap",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 4 error(s), e.g. likely_target_audience: marker {C6} has no claim",
+        "verification: audit status fail",
+        "human approval: no approval record; auto-accept: no auto-accept record"
+      ],
+      "provenance": {
+        "label_sha256": "0ebb4895ba3d37ad9bea7788fe307dca1aeae6524e668dbff3a849d7813b1a6d",
+        "packet_sha256": "964b10ed2050a440fbc2128b16348be67533d07dc780d44177f229169828919f",
+        "audit_sha256": "3ae7f577bd54bf485376a0ae786ebebe60ecaeddeaa1767de926aaf7b9162a48"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "whoop",
+      "legacy_name": "Whoop",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 2 error(s), e.g. claim C7: quote does not occur in cited passage(s) ['P8']",
+        "verification: audit status fail",
+        "human approval: no approval record; auto-accept: no auto-accept record",
+        "possible test-split leakage: mentions ['Oura']"
+      ],
+      "provenance": {
+        "label_sha256": "d4a0532cfd23500d13749018290cf2e9c3958525bbe9e8ff8f9068708c4859c6",
+        "packet_sha256": "fd1eaff4a4426f04d692c3c117de14821fb3535cf63039b14bae05bfb9c75eca",
+        "audit_sha256": "2d9d81af927bb459e17fe66df668e81da41a9f685f25d008421624692602512c"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "wild-one",
+      "legacy_name": "Wild One",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "target structure/policy: 1 error(s), e.g. decision: the email must propose an Instagram post",
+        "verification: audit status fail",
+        "human approval: no approval record; auto-accept: no auto-accept record"
+      ],
+      "provenance": {
+        "label_sha256": "353dcab3124441961469c18ae99d56bb3dbd91e4ea4aa97106343398c16645f1",
+        "packet_sha256": "e9461cfdb8eca4d5ec629b9afb996123ef7912fdfe5eca72757c0268097777e2",
+        "audit_sha256": "00fbe01f0b2df9be8ac65f6ed865cf791775f4d96b306d2c0dc0372362d52d07"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "youth-to-the-people",
+      "legacy_name": "Youth To The People",
+      "split": null,
+      "included": false,
+      "exclusion_reasons": [
+        "no split assignment in the legacy manifest (new company: assign a split explicitly)"
+      ],
+      "provenance": {
+        "label_sha256": "4bc43507e991b5dbb9d1fe561d17e622320fa93ed0097eda1b3b231c8eb2cdb6",
+        "packet_sha256": "af76c23b4844edcc2ec32b7e0f4ec9c5c77c22dd402abdbc81afe06ca63b0cc1",
+        "audit_sha256": "849af7daa4a5c7aa44c6d1fe53450fdb00e3b6fdc6bea46663ac89070ca29875",
+        "acceptance": "auto_threshold_0.7",
+        "human_reviewed": false,
+        "groundedness": 1.0,
+        "removed_claims": [],
+        "auto_accept_sha256": "c8e25e5f7cbd8edbdfd364469b2e9ca50d25c4d0c1d6b58b1d6e7781362cd7ce"
+      },
+      "decision": "draft"
+    },
+    {
+      "company_id": "zenni-optical",
+      "legacy_name": "Zenni Optical",
+      "split": "train",
+      "included": false,
+      "exclusion_reasons": [
+        "verification: audit status unresolved",
+        "human approval: no approval record; auto-accept: no auto-accept record"
+      ],
+      "provenance": {
+        "label_sha256": "9a49b720a5c814347caf2bc6eb229ff86efa63582557da0b9f35df07d91b358d",
+        "packet_sha256": "6c2d31e5f3eae1105ee9862c7a5c2df9ca4922a359eff7d6b63c9fa8b75ae7ac",
+        "audit_sha256": "f69d33815015aba54949c2bc1e2b740ca60368bd0fdca580f260ebb056ddd359"
+      },
+      "decision": "draft"
+    }
+  ]
+}

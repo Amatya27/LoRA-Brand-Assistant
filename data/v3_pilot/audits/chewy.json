@@ -1,0 +1,151 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "chewy",
+  "bound_to": {
+    "packet_sha256": "77a8db8ed1e8e330f2e3f1433f5a462f56c4a33a2f98488411fcf0ef16889ee6",
+    "prompt_sha256": "640aa13836fde36d34ea33075824c3ee8faa2b974bcd4a35d0ba75155ac70ebd",
+    "completion_sha256": "4fc36dfe42d5d47ae5a5741aef53c434947f63b50dbd31f7bc63f5b0f136cfab",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": [
+      "claim C5: not referenced by any field",
+      "claim C6: not referenced by any field"
+    ]
+  },
+  "raw_response_sha256": "031b686d528e69266df6b9a652211ea10acae22da63c4bd718f7f571c2b373cc",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\",\n        \"P5\"\n      ],\n      \"quote\": \"Chewy's \\\"Chatty Pets\\\" campaign launches Monday, January 31.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states the campaign launch date.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Chewy collaborated with award-winning creative agency 72andSunny to bring this concept to life.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Chewy's collaboration with 72andSunny.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"The campaign also builds on last year’s popular #ChewyChattyPets TikTok hashtag challenge\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms the campaign builds on a previous TikTok challenge.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Performance marketing, retail media partnerships through Chewy Ads, CRM personalization, and brand storytelling anchored in customer delight\",\n      \"issues\": [],\n      \"reason\": \"The passage lists these as components of Chewy's marketing strategy.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"blog posts, social media content, engaging videos, and informative email newsletters\",\n      \"issues\": [],\n      \"reason\": \"The passage lists these as formats used in Chewy's content marketing strategy.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P10\"\n      ],\n      \"quote\": \"humor is frequently woven into their content, creating a lighthearted and relatable atmosphere that encourages interaction. Engagement is further amplified through interactive elements like contests and giveaways.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes these elements as part of Chewy's social media strategy.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"National TV and CTV flights build scale during adoption seasons, major holidays, and veterinary awareness periods.\",\n      \"issues\": [],\n      \"reason\": \"The passage details a component of Chewy's marketing strategy.\"\n    },\n    {\n      \"claim_id\": \"C8\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"Sponsored placements offer brand partners on-site visibility\",\n      \"issues\": [],\n      \"reason\": \"The passage describes sponsored placements as part of Chewy's marketing strategy.\"\n    },\n    {\n      \"claim_id\": \"C9\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"CRM orchestration: Triggered email, push, and SMS remind customers of low inventory, shipment tracking, and tailored Autoship savings.\",\n      \"issues\": [],\n      \"reason\": \"The passage details CRM orchestration as part of Chewy's marketing strategy.\"\n    },\n    {\n      \"claim_id\": \"C10\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"Paid search, product listing ads, and retargeting convert high-intent queries into purchases with dynamic assortments and price clarity.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes these as part of Chewy's marketing strategy.\"\n    },\n    {\n      \"claim_id\": \"C11\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P9\"\n      ],\n      \"quote\": \"Chewy Ads, launched in May 2023, has doubled the number of advertisers and campaigns on the platform from 2025 to 2026.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms the growth of Chewy Ads.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1",
+          "P5"
+        ],
+        "quote": "Chewy's \"Chatty Pets\" campaign launches Monday, January 31.",
+        "issues": [],
+        "reason": "The passage explicitly states the campaign launch date."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Chewy collaborated with award-winning creative agency 72andSunny to bring this concept to life.",
+        "issues": [],
+        "reason": "The passage directly states Chewy's collaboration with 72andSunny."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "The campaign also builds on last year’s popular #ChewyChattyPets TikTok hashtag challenge",
+        "issues": [],
+        "reason": "The passage confirms the campaign builds on a previous TikTok challenge."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Performance marketing, retail media partnerships through Chewy Ads, CRM personalization, and brand storytelling anchored in customer delight",
+        "issues": [],
+        "reason": "The passage lists these as components of Chewy's marketing strategy."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "blog posts, social media content, engaging videos, and informative email newsletters",
+        "issues": [],
+        "reason": "The passage lists these as formats used in Chewy's content marketing strategy."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P10"
+        ],
+        "quote": "humor is frequently woven into their content, creating a lighthearted and relatable atmosphere that encourages interaction. Engagement is further amplified through interactive elements like contests and giveaways.",
+        "issues": [],
+        "reason": "The passage describes these elements as part of Chewy's social media strategy."
+      },
+      {
+        "claim_id": "C7",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "National TV and CTV flights build scale during adoption seasons, major holidays, and veterinary awareness periods.",
+        "issues": [],
+        "reason": "The passage details a component of Chewy's marketing strategy."
+      },
+      {
+        "claim_id": "C8",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "Sponsored placements offer brand partners on-site visibility",
+        "issues": [],
+        "reason": "The passage describes sponsored placements as part of Chewy's marketing strategy."
+      },
+      {
+        "claim_id": "C9",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "CRM orchestration: Triggered email, push, and SMS remind customers of low inventory, shipment tracking, and tailored Autoship savings.",
+        "issues": [],
+        "reason": "The passage details CRM orchestration as part of Chewy's marketing strategy."
+      },
+      {
+        "claim_id": "C10",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "Paid search, product listing ads, and retargeting convert high-intent queries into purchases with dynamic assortments and price clarity.",
+        "issues": [],
+        "reason": "The passage describes these as part of Chewy's marketing strategy."
+      },
+      {
+        "claim_id": "C11",
+        "verdict": "supported",
+        "passage_ids": [
+          "P9"
+        ],
+        "quote": "Chewy Ads, launched in May 2023, has doubled the number of advertisers and campaigns on the platform from 2025 to 2026.",
+        "issues": [],
+        "reason": "The passage confirms the growth of Chewy Ads."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-22T23:53:55+00:00",
+  "audit_sha256": "fee3f882bbd67bcaa0c38eecbccb2cb43de4f897cad7de89bdfd158109bddbc8",
+  "dismissed_reviewer_flags": []
+}

@@ -9,13 +9,13 @@
       "drinkspindrift.com"
     ],
     "identity_status": "verified",
-    "registry_version": "2026-11-21.v1",
-    "registry_sha256": "30ef3cd9bf05bcad5ca5c1e00110b3252c8aa7b1715374cbddb5f6bb1f090a23"
+    "registry_version": "2026-11-22.v3",
+    "registry_sha256": "8abbd9a930d2dd95d6993cfa4ab1f6d031f250483edb5d5b57c5afbf03c19836"
   },
   "collection": {
     "mode": "legacy_cache_replay",
     "collector_version": "brandpilot-collector-0.3",
-    "created_at": "2026-11-22T03:51:08+00:00",
+    "created_at": "2026-11-22T20:24:28+00:00",
     "queries": [
       "\"Spindrift\" instagram marketing campaign target audience",
       "\"Spindrift\" social media strategy brand positioning",
@@ -410,9 +410,7 @@
       "identity_decision": "ok",
       "identity_reason": "third-party passage names the company in a confirmed document",
       "statement_type": "actual_activity",
-      "flags": [
-        "creator_or_influencer_audience_data"
-      ],
+      "flags": [],
       "dates_mentioned": [],
       "relevance_terms": [
         "brand",
@@ -422,7 +420,7 @@
         "marketing",
         "tiktok"
       ],
-      "score": 18,
+      "score": 20,
       "official_source": false,
       "selection_status": "selected",
       "rejection_reasons": [],
@@ -795,6 +793,19 @@
       "preview": "Awards Modern Retail CPG Playbook // December 22, 2022 # How sparkling water brand Spindrift harnesses its ‘Spinfluencers’ to generate buzz By Gabriela Barkho"
     },
     {
+      "passage_uid": "PU-05e06eba1a4784c2",
+      "source_id": "S-988602d07c86",
+      "char_start": 3654,
+      "char_end": 4319,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Ahead of the release of four new SKUs this month — mango black tea, peach strawberry, mint green tea and a mojito mocktail “nojito” — Spindrift tapped some Spinfluencers to post pictures of blank cans"
+    },
+    {
       "passage_uid": "PU-ce3ec64e8481e05f",
       "source_id": "S-b1595acb847f",
       "char_start": 10275,
@@ -821,6 +832,19 @@
       "preview": "A Rising Star With Limited Recognition Spindrift, a rising star in the sparkling water landscape, faced the daunting task of establishing itself in an already saturated market. Competing against the l"
     },
     {
+      "passage_uid": "PU-89e39bb6e96897ff",
+      "source_id": "S-988602d07c86",
+      "char_start": 2420,
+      "char_end": 3047,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "As a differentiator in the seltzer category, Spindrift promotes itself as a fruit-forward sparkling water, with its products containing around 9% fruit juice. According to Shum, Spindrift’s social med"
+    },
+    {
       "passage_uid": "PU-cc589fbedb98d56f",
       "source_id": "S-b1595acb847f",
       "char_start": 9878,
@@ -845,19 +869,6 @@
       "identity_reason": "third-party passage names the company in a confirmed document",
       "statement_type": "proposed_or_mock_work",
       "preview": "Sign in Natalia Herbert, profile picture Uploaded byNatalia Herbert 367 views # Spindrift Creative Brand Strategy AI-enhanced description The document outlines a creative brand strategy for Spindrift,"
-    },
-    {
-      "passage_uid": "PU-05e06eba1a4784c2",
-      "source_id": "S-988602d07c86",
-      "char_start": 3654,
-      "char_end": 4319,
-      "selection_status": "not_selected",
-      "reasons": [
-        "per_document_cap"
-      ],
-      "identity_reason": "third-party passage names the company in a confirmed document",
-      "statement_type": "descriptive",
-      "preview": "Ahead of the release of four new SKUs this month — mango black tea, peach strawberry, mint green tea and a mojito mocktail “nojito” — Spindrift tapped some Spinfluencers to post pictures of blank cans"
     },
     {
       "passage_uid": "PU-c065ed61dba7ac68",
@@ -936,19 +947,6 @@
       "identity_reason": "third-party passage names the company in a confirmed document",
       "statement_type": "descriptive",
       "preview": "A Campaign Rooted in Authenticity and Simplicity... Just Like the Brand Our exploration into Spindrift’s brand ethos revealed a gem: their commitment to real, simple ingredients. In a world increasing"
-    },
-    {
-      "passage_uid": "PU-89e39bb6e96897ff",
-      "source_id": "S-988602d07c86",
-      "char_start": 2420,
-      "char_end": 3047,
-      "selection_status": "not_selected",
-      "reasons": [
-        "per_document_cap"
-      ],
-      "identity_reason": "third-party passage names the company in a confirmed document",
-      "statement_type": "provider_reported_result",
-      "preview": "As a differentiator in the seltzer category, Spindrift promotes itself as a fruit-forward sparkling water, with its products containing around 9% fruit juice. According to Shum, Spindrift’s social med"
     },
     {
       "passage_uid": "PU-bbe382bcdee37fac",
@@ -1429,6 +1427,20 @@
       "preview": "About Adam I’m a Leica Street photographer, traveller, avid reviewer, marketer and blogger. I am, by my own admission, a gear nut but I don’t buy gear just to test it or pixel peep. I’m only intereste"
     },
     {
+      "passage_uid": "PU-b3d26b5d1064af21",
+      "source_id": "S-930b8da269fe",
+      "char_start": 8302,
+      "char_end": 8985,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "statement_type:proposed_or_mock_work"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "proposed_or_mock_work",
+      "preview": "Going for beach side party that allows you to drift away from the mundane daily grind of a 9-5. Activities will be as follows: ● Cocktail and Mocktail Making Class ● How we Make it Class ● All Natural"
+    },
+    {
       "passage_uid": "PU-58f5949ac26d5a86",
       "source_id": "S-930b8da269fe",
       "char_start": 8988,
@@ -1494,6 +1506,20 @@
       "identity_reason": "third-party passage names the company in a confirmed document",
       "statement_type": "proposed_or_mock_work",
       "preview": "The benefit outweighs the upfront cost of the pop-up. Drift Away will be held in the three cities where Spindrift is looking to capture market share: 1. Seattle 2. San Francisco 3. Portland 18 Experie"
+    },
+    {
+      "passage_uid": "PU-f567d2e0a8128ea6",
+      "source_id": "S-930b8da269fe",
+      "char_start": 16087,
+      "char_end": 16760,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "statement_type:proposed_or_mock_work"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "proposed_or_mock_work",
+      "preview": "Going for beach side party that allows you to drift away from the mundane daily grind of a 9-5. Activities will be as follows: ● Cocktail and Mocktail Making Class ● How we Make it Class ● All Natural"
     },
     {
       "passage_uid": "PU-c67e8d4733ffc393",
@@ -1590,6 +1616,20 @@
       "identity_reason": "third-party passage does not name the company",
       "statement_type": "proposed_or_mock_work",
       "preview": "42 slides14.1K views Social Media Trends 2023 - MarketingTrips.pdf Social Media Trends 2023 - MarketingTrips.pdf byMarketingTrips 93 slides4.2K views Jobs To Be Done - framework explained by Mark Opan"
+    },
+    {
+      "passage_uid": "PU-b5f69560628cc5f7",
+      "source_id": "S-930b8da269fe",
+      "char_start": 48953,
+      "char_end": 49631,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "statement_type:proposed_or_mock_work"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "proposed_or_mock_work",
+      "preview": "Going for beach side party that allows you to drift away from the mundane daily grind of a 9-5. Activities will be as follows: ● Cocktail and Mocktail Making Class ● How we Make it Class ● All Natural"
     },
     {
       "passage_uid": "PU-3688c090d9e5bdb1",
@@ -1825,20 +1865,6 @@
       "preview": "9 / 30 Moodboard The Spindrift moodboard for Drift Away campaign was inspired by the meaning spindrift: spin·drift /ˈspindrift/ noun 1. spray blown from the crests of waves by the wind. We were also i"
     },
     {
-      "passage_uid": "PU-b3d26b5d1064af21",
-      "source_id": "S-930b8da269fe",
-      "char_start": 8302,
-      "char_end": 8985,
-      "selection_status": "rejected",
-      "reasons": [
-        "identity:no_company_mention",
-        "statement_type:proposed_or_mock_work"
-      ],
-      "identity_reason": "third-party passage does not name the company",
-      "statement_type": "proposed_or_mock_work",
-      "preview": "Going for beach side party that allows you to drift away from the mundane daily grind of a 9-5. Activities will be as follows: ● Cocktail and Mocktail Making Class ● How we Make it Class ● All Natural"
-    },
-    {
       "passage_uid": "PU-7164647b1b42ddb3",
       "source_id": "S-930b8da269fe",
       "char_start": 10037,
@@ -1876,20 +1902,6 @@
       "identity_reason": "third-party passage names the company in a confirmed document",
       "statement_type": "proposed_or_mock_work",
       "preview": "Competitive Analysis Sparkling Ice https://www.sparklingice.com/ La Croix www.lacroixwater.com Perrier https://www.perrier.com/ Polar https://polarseltzer.com/ San Pellegrino https://www.sanpellegrino"
-    },
-    {
-      "passage_uid": "PU-f567d2e0a8128ea6",
-      "source_id": "S-930b8da269fe",
-      "char_start": 16087,
-      "char_end": 16760,
-      "selection_status": "rejected",
-      "reasons": [
-        "identity:no_company_mention",
-        "statement_type:proposed_or_mock_work"
-      ],
-      "identity_reason": "third-party passage does not name the company",
-      "statement_type": "proposed_or_mock_work",
-      "preview": "Going for beach side party that allows you to drift away from the mundane daily grind of a 9-5. Activities will be as follows: ● Cocktail and Mocktail Making Class ● How we Make it Class ● All Natural"
     },
     {
       "passage_uid": "PU-911b1c5ce392f18e",
@@ -1956,20 +1968,6 @@
       "identity_reason": "third-party passage names the company in a confirmed document",
       "statement_type": "proposed_or_mock_work",
       "preview": "Moodboard The Spindrift moodboardfor Drift Away campaign was inspired by the meaning spindrift: spin·drift /ˈspindrift/ noun 1. spray blown from the crests of waves by the wind. We were also inspired "
-    },
-    {
-      "passage_uid": "PU-b5f69560628cc5f7",
-      "source_id": "S-930b8da269fe",
-      "char_start": 48953,
-      "char_end": 49631,
-      "selection_status": "rejected",
-      "reasons": [
-        "identity:no_company_mention",
-        "statement_type:proposed_or_mock_work"
-      ],
-      "identity_reason": "third-party passage does not name the company",
-      "statement_type": "proposed_or_mock_work",
-      "preview": "Going for beach side party that allows you to drift away from the mundane daily grind of a 9-5. Activities will be as follows: ● Cocktail and Mocktail Making Class ● How we Make it Class ● All Natural"
     },
     {
       "passage_uid": "PU-56f6239049e29319",
@@ -2385,5 +2383,5 @@
   ],
   "status": "ok",
   "status_reasons": [],
-  "packet_sha256": "7800217f68db6b0b482b464395d77e2c4af41f77a07e24baccc7f3b050973919"
+  "packet_sha256": "3fbce4c0e934fb5e651222bdd816df49fdf9ddc6664f446b69b036596d0d6eeb"
 }

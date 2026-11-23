@@ -1,0 +1,27 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "misfits-market",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "6500630ce486b492fca884dc1646ce41927269af21acba43b6934906ca422f37",
+    "prompt_sha256": "58fc609095b6d7cd2dbd4bd5101e729dff7d58d82bd464d439fa01d2361aed1f",
+    "completion_sha256": "f468b0eb49ac70f2f687b1125372363291a388f21cc44d430995c1e38df3a3cf",
+    "audit_sha256": "b6856c57cb4d0d7312b93cd0198a3dd0ceeb110c19be1bd1a68626850d7d5d23"
+  },
+  "groundedness_before_pruning": 0.8571,
+  "claims_total_before_pruning": 7,
+  "removed_claims": [
+    "C5"
+  ],
+  "removed_claim_reasons": {
+    "C5": "reviewer response invalid for this claim: C5: reviewer quote does not occur in the referenced passage(s)"
+  },
+  "original_completion_sha256": "f4af1ecbc21365655256e0ea015963bce5b9a524257d52001fb018c112476457",
+  "original_audit_sha256": "56a9b1744fb054a5cf472ce60fedf304742853fedf3d7c805abb7974d16ab7cd",
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:30:41+00:00",
+  "record_sha256": "cca7c918c11ceea5f2c77328b3ac25dddab664799c25482bf549fddf02ff0127"
+}

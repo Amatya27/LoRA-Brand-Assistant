@@ -1,0 +1,127 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "vuori",
+  "bound_to": {
+    "packet_sha256": "aac9d08f5d723cc6b1085ae4cb00ad14dcc01d6db299423f6e3af922de24c96d",
+    "prompt_sha256": "31b8260aaf6b388081978612544685678d68a8f1245d7fdd17d29f09d95e8d86",
+    "completion_sha256": "1dda383a51f3c16978d2a8ddbf40e659e6db7b5e4f742cc4cb15ecf64ac6295d",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": [
+      "claim C6: not referenced by any field",
+      "claim C7: not referenced by any field"
+    ]
+  },
+  "raw_response_sha256": "9d627a3866b51f85ce50324cffb4894c97c6f1ed31e57f293f0885445358a88c",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"We aim to foster a culture where all of our people can thrive whether they work at our HQ, global retail stores or at the factories we choose to partner with—both near and far.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states Vuori aims to foster a culture where all its people thrive, including vendors.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"Since 2019, we’ve partnered with CleanHub to remove plastic waste from coastal communities.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Vuori partnered with CleanHub since 2019.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Vuori’s promotional strategy is anchored in authentic storytelling and digital engagement:\",\n      \"issues\": [],\n      \"reason\": \"The passage states Vuori's promotional strategy is anchored in authentic storytelling and digital engagement.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Vuori uses lifestyle-focused campaigns that showcase real people in natural environments, emphasizing wellness and outdoor adventure.\",\n      \"issues\": [],\n      \"reason\": \"The passage states Vuori uses lifestyle-focused campaigns showcasing real people in natural environments.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"Vuori's community strategy relies on athletes, trainers, wellness professionals, and creators whose audiences align closely with the brand's active lifestyle positioning.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Vuori's community strategy relies on these professionals.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"Branding is More Than a Logo – Vuori built an identity around values, experiences, and > storytelling.\",\n      \"issues\": [],\n      \"reason\": \"The passage states Vuori built its brand around values, experiences, and storytelling.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P9\"\n      ],\n      \"quote\": \"Vuori initially launched as a direct-to-consumer (DTC) brand, leveraging its online presence to cultivate a loyal, engaged community.\",\n      \"issues\": [],\n      \"reason\": \"The passage states Vuori initially launched as a DTC brand.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"Vuori aims to foster a culture where all of its people can thrive, including employees and manufacturing vendors\"\n    },\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"Vuori has partnered with CleanHub since 2019 to remove plastic waste from coastal communities\"\n    }\n  ],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "We aim to foster a culture where all of our people can thrive whether they work at our HQ, global retail stores or at the factories we choose to partner with—both near and far.",
+        "issues": [],
+        "reason": "The passage explicitly states Vuori aims to foster a culture where all its people thrive, including vendors."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "Since 2019, we’ve partnered with CleanHub to remove plastic waste from coastal communities.",
+        "issues": [],
+        "reason": "The passage directly states Vuori partnered with CleanHub since 2019."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Vuori’s promotional strategy is anchored in authentic storytelling and digital engagement:",
+        "issues": [],
+        "reason": "The passage states Vuori's promotional strategy is anchored in authentic storytelling and digital engagement."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Vuori uses lifestyle-focused campaigns that showcase real people in natural environments, emphasizing wellness and outdoor adventure.",
+        "issues": [],
+        "reason": "The passage states Vuori uses lifestyle-focused campaigns showcasing real people in natural environments."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "Vuori's community strategy relies on athletes, trainers, wellness professionals, and creators whose audiences align closely with the brand's active lifestyle positioning.",
+        "issues": [],
+        "reason": "The passage directly states Vuori's community strategy relies on these professionals."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "Branding is More Than a Logo – Vuori built an identity around values, experiences, and > storytelling.",
+        "issues": [],
+        "reason": "The passage states Vuori built its brand around values, experiences, and storytelling."
+      },
+      {
+        "claim_id": "C7",
+        "verdict": "supported",
+        "passage_ids": [
+          "P9"
+        ],
+        "quote": "Vuori initially launched as a direct-to-consumer (DTC) brand, leveraging its online presence to cultivate a loyal, engaged community.",
+        "issues": [],
+        "reason": "The passage states Vuori initially launched as a DTC brand."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-23T00:23:41+00:00",
+  "audit_sha256": "5fb6be1431e1d620a724c6dfa140c6291208ac229a055cf9f88a3e0c9d98cd18",
+  "dismissed_reviewer_flags": [
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "Vuori aims to foster a culture where all of its people can thrive, including employees and manufacturing vendors"
+      },
+      "reason": "sentence in brand_summary carries a claim marker; judged via its claim",
+      "matched_sentence": "vuori aims to foster a culture where all of its people can thrive including employees and manufacturing vendors"
+    },
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "Vuori has partnered with CleanHub since 2019 to remove plastic waste from coastal communities"
+      },
+      "reason": "sentence in brand_summary carries a claim marker; judged via its claim",
+      "matched_sentence": "vuori has partnered with cleanhub since 2019 to remove plastic waste from coastal communities"
+    }
+  ]
+}

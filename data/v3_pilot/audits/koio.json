@@ -1,0 +1,133 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "koio",
+  "bound_to": {
+    "packet_sha256": "d00d08e6800c1f4c0deeeac7c2fc1ce56b592a92821e57e6bc6733583e82cfcf",
+    "prompt_sha256": "fea41837526a9bb967bdac539c6640dbafe8257c3bdc9da66e5fedb64f2b8da6",
+    "completion_sha256": "5ffe2276508ce5bf475d69b8d3d360cc9c741c8629ce3c9569a1038de5975801",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [
+      "claim C5: quote does not occur in cited passage(s) ['P4']",
+      "email_body: vendor/provider claim C3 (P9) is not attributed to its source (adlibrary) in the prose: 'The post would feature high-quality product photography, including close-ups of '",
+      "collaboration_opportunities[0]: vendor/provider claim C3 (P9) is not attributed to its source (adlibrary) in the prose: 'Collaborate on an Instagram carousel post showcasing the Capri sneaker with clos'",
+      "instagram_post_idea.why_it_fits: vendor/provider claim C3 (P9) is not attributed to its source (adlibrary) in the prose: \"This concept aligns with AdLibrary's observation that Instagram is a natural fit\""
+    ],
+    "warnings": []
+  },
+  "raw_response_sha256": "ffb27efd9f1cd43165d4d5f10ff95d07f503361c450db769558156ce76409b99",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"thoughtful design, responsible materials, and an obsessive attention to detail that honors both the craft and the wearer.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states Koio emphasizes thoughtful design, responsible materials, and attention to detail.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"DTC footwear brand selling premium leather sneakers made in Italy, positioned at a higher price point than typical sneaker brands.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states this about Koio.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P9\"\n      ],\n      \"quote\": \"Instagram is a natural fit for a design-forward footwear audience.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states this about Koio's advertising strategy.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"To help launch a new product, they turned to Endear In anticipation of the launch of the Tempo style sneaker in July 2019, the Koio team developed a marketing strategy combining social media, e-mail, and IRL in-store engagement.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes Koio using event-based marketing for a new product launch.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"connect with local customers and drive traffic to its physical stores in New York and Los Angeles\",\n      \"issues\": [],\n      \"reason\": \"The passage states Koio has physical stores in New York and Los Angeles.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"recognized around the world as the footwear of choice for influencers, jetsetters, and busy working professionals alike.\",\n      \"issues\": [],\n      \"reason\": \"The passage identifies these groups as Koio's target audience.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"Koio is an Italian-made sneaker brand\"\n    },\n    {\n      \"field\": \"likely_target_audience\",\n      \"text\": \"Koio's main audience includes design-forward consumers\"\n    },\n    {\n      \"field\": \"current_marketing_strategy\",\n      \"text\": \"Koio has used event-based marketing campaigns\"\n    },\n    {\n      \"field\": \"current_marketing_strategy\",\n      \"text\": \"Koio has physical stores in New York and Los Angeles\"\n    }\n  ],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "thoughtful design, responsible materials, and an obsessive attention to detail that honors both the craft and the wearer.",
+        "issues": [],
+        "reason": "The passage explicitly states Koio emphasizes thoughtful design, responsible materials, and attention to detail."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "DTC footwear brand selling premium leather sneakers made in Italy, positioned at a higher price point than typical sneaker brands.",
+        "issues": [],
+        "reason": "The passage directly states this about Koio."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P9"
+        ],
+        "quote": "Instagram is a natural fit for a design-forward footwear audience.",
+        "issues": [],
+        "reason": "The passage directly states this about Koio's advertising strategy."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "To help launch a new product, they turned to Endear In anticipation of the launch of the Tempo style sneaker in July 2019, the Koio team developed a marketing strategy combining social media, e-mail, and IRL in-store engagement.",
+        "issues": [],
+        "reason": "The passage describes Koio using event-based marketing for a new product launch."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "connect with local customers and drive traffic to its physical stores in New York and Los Angeles",
+        "issues": [],
+        "reason": "The passage states Koio has physical stores in New York and Los Angeles."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "recognized around the world as the footwear of choice for influencers, jetsetters, and busy working professionals alike.",
+        "issues": [],
+        "reason": "The passage identifies these groups as Koio's target audience."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "fail",
+  "reasons": [
+    "4 deterministic check error(s)"
+  ],
+  "created_at": "2026-11-23T00:04:53+00:00",
+  "audit_sha256": "817f9c08bcab172e4233da00ba3ef07d1e74aa0b0ce4d8b6dc851199cfc26d6d",
+  "dismissed_reviewer_flags": [
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "Koio is an Italian-made sneaker brand"
+      },
+      "reason": "flagged text does not occur in the label"
+    },
+    {
+      "flag": {
+        "field": "likely_target_audience",
+        "text": "Koio's main audience includes design-forward consumers"
+      },
+      "reason": "flagged text does not occur in the label"
+    },
+    {
+      "flag": {
+        "field": "current_marketing_strategy",
+        "text": "Koio has used event-based marketing campaigns"
+      },
+      "reason": "flagged text does not occur in the label"
+    },
+    {
+      "flag": {
+        "field": "current_marketing_strategy",
+        "text": "Koio has physical stores in New York and Los Angeles"
+      },
+      "reason": "flagged text does not occur in the label"
+    }
+  ]
+}

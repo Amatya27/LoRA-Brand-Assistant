@@ -1,0 +1,97 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "fly-by-jing",
+  "bound_to": {
+    "packet_sha256": "c974a43b16e102e870046f0fbbb1e63d54bd1f356426177dfbdd948911ce7eea",
+    "prompt_sha256": "c43b9ebb40431d87b00daad7b2a05cf5778f1876ca8970cff60694bb034ba9df",
+    "completion_sha256": "487c028256c5015099142d159070834972dee9de99a8cda92d0e759125c776c5",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": []
+  },
+  "raw_response_sha256": "47a0ea971535bc177fa9a545ac38694e0d04c0d0a70b48b66668022b3f83a675",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Sichuan-Inspired Condiments Brand Could Be the Next Hot Thing in Home Cooking Spreads\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that Fly By Jing is a Sichuan-inspired condiments brand.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"You can now replicate these flavors at home with our line of Sichuan sourced condiments and noodles.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that Fly By Jing has a line of Sichuan sourced condiments and noodles.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Another tactic that’s worked well for Fly by Jing as part of its community-building strategy, according to Patricio-Archer, is partnering with other brands.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms that Fly By Jing partners with other brands as part of its community-building strategy.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"Fly By Jing pursued retail partnerships with Whole Foods, Target, and eventually broader grocery distribution,\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that Fly By Jing pursued retail partnerships with Whole Foods, Target, and broader grocery distribution.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"When Gao realized there was a brand story to be told to those first encountering it on a shelf, she said it was time for a rebrand.\",\n      \"issues\": [],\n      \"reason\": \"The passage indicates that Fly By Jing has a rebranding strategy that includes storytelling.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P10\"\n      ],\n      \"quote\": \"Instead of running a traditional influencer campaign with scripted deliverables, Fly By Jing’s early growth team — reportedly working with a lean budget compared to VC-backed CPG competitors — built a seeding program around a simple mechanic: send the jar, film the reaction, let the spice do the talking.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms that Fly By Jing built a seeding program around sending jars to creators.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Sichuan-Inspired Condiments Brand Could Be the Next Hot Thing in Home Cooking Spreads",
+        "issues": [],
+        "reason": "The passage explicitly states that Fly By Jing is a Sichuan-inspired condiments brand."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "You can now replicate these flavors at home with our line of Sichuan sourced condiments and noodles.",
+        "issues": [],
+        "reason": "The passage directly states that Fly By Jing has a line of Sichuan sourced condiments and noodles."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Another tactic that’s worked well for Fly by Jing as part of its community-building strategy, according to Patricio-Archer, is partnering with other brands.",
+        "issues": [],
+        "reason": "The passage confirms that Fly By Jing partners with other brands as part of its community-building strategy."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "Fly By Jing pursued retail partnerships with Whole Foods, Target, and eventually broader grocery distribution,",
+        "issues": [],
+        "reason": "The passage explicitly states that Fly By Jing pursued retail partnerships with Whole Foods, Target, and broader grocery distribution."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "When Gao realized there was a brand story to be told to those first encountering it on a shelf, she said it was time for a rebrand.",
+        "issues": [],
+        "reason": "The passage indicates that Fly By Jing has a rebranding strategy that includes storytelling."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P10"
+        ],
+        "quote": "Instead of running a traditional influencer campaign with scripted deliverables, Fly By Jing’s early growth team — reportedly working with a lean budget compared to VC-backed CPG competitors — built a seeding program around a simple mechanic: send the jar, film the reaction, let the spice do the talking.",
+        "issues": [],
+        "reason": "The passage confirms that Fly By Jing built a seeding program around sending jars to creators."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-22T23:38:18+00:00",
+  "audit_sha256": "434987883b0c49e0f9ee08f0528892277118cd1b31f17bbd124c0b0f7f09e649",
+  "dismissed_reviewer_flags": []
+}

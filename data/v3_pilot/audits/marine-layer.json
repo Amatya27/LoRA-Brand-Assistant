@@ -1,0 +1,106 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "marine-layer",
+  "bound_to": {
+    "packet_sha256": "3633a104ca1ff9a07a6f15137587bb05692a39b57edab079ac4958cdfc26f8c5",
+    "prompt_sha256": "6eb1da721dc6e4254e75d1ad00fb2ebff948b419c4add36b050572ced627d2d1",
+    "completion_sha256": "eabec1680009a5f68c61b27f1b72e18683a889e39bb659f97b832eecfc16ce14",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [
+      "likely_target_audience: marker {C7} has no claim",
+      "email_body: vendor/provider claim C2 (P5) is not attributed to its source (adlibrary) in the prose: \"Hi Marine Layer Marketing Team,\\n\\nWe're reaching out to propose a collaboration o\"",
+      "collaboration_opportunities[0]: vendor/provider claim C2 (P5) is not attributed to its source (adlibrary) in the prose: \"Collaborate on a sustainability-themed Instagram post featuring Marine Layer's R\"",
+      "instagram_post_idea.concept: vendor/provider claim C2 (P5) is not attributed to its source (adlibrary) in the prose: \"A carousel post showcasing Marine Layer's Re-Spun recycled tee program, highligh\"",
+      "instagram_post_idea.why_it_fits: vendor/provider claim C2 (P5) is not attributed to its source (adlibrary) in the prose: \"This concept aligns with Marine Layer's sustainability focus and their existing \""
+    ],
+    "warnings": []
+  },
+  "raw_response_sha256": "b96a34cbe4dc0a1703340b570fd4874e0f686f1f85d30d741147aa555e657e0b",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"Marine Layer is a San Francisco lifestyle apparel brand built on an ultra-soft proprietary micro modal fabric and a quirky brand voice.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Marine Layer is a San Francisco lifestyle apparel brand with a specific fabric and voice.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"Their Re-Spun recycled tee program drives in-store visits and brand loyalty while providing sustainability content for paid campaigns.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly mentions the Re-Spun program's impact on in-store visits, brand loyalty, and sustainability content.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"Marine Layer segments customers by factors like signup channel and gender category to increase email relevance and frequency without feeling invasive.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Marine Layer segments customers for email personalization.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"The brand limits campaigns to at most one email per day, five days a week, aligning communication volume with its relaxed customer experience goals.\",\n      \"issues\": [],\n      \"reason\": \"The passage states Marine Layer limits email campaigns to a specific frequency.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\",\n        \"P9\"\n      ],\n      \"quote\": \"We swiftly introduced Meta's Advantage+ shopping campaigns, integrating them into the account structure.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes collaboration with HYPE10 on marketing campaigns.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"The Marine Layer and HYPE10 teams meet monthly for a comprehensive debrief, analyzing the performance of ad units from the previous period + previous year.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states the teams meet monthly to analyze ad performance.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "Marine Layer is a San Francisco lifestyle apparel brand built on an ultra-soft proprietary micro modal fabric and a quirky brand voice.",
+        "issues": [],
+        "reason": "The passage directly states Marine Layer is a San Francisco lifestyle apparel brand with a specific fabric and voice."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "Their Re-Spun recycled tee program drives in-store visits and brand loyalty while providing sustainability content for paid campaigns.",
+        "issues": [],
+        "reason": "The passage explicitly mentions the Re-Spun program's impact on in-store visits, brand loyalty, and sustainability content."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "Marine Layer segments customers by factors like signup channel and gender category to increase email relevance and frequency without feeling invasive.",
+        "issues": [],
+        "reason": "The passage directly states Marine Layer segments customers for email personalization."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "The brand limits campaigns to at most one email per day, five days a week, aligning communication volume with its relaxed customer experience goals.",
+        "issues": [],
+        "reason": "The passage states Marine Layer limits email campaigns to a specific frequency."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3",
+          "P9"
+        ],
+        "quote": "We swiftly introduced Meta's Advantage+ shopping campaigns, integrating them into the account structure.",
+        "issues": [],
+        "reason": "The passage describes collaboration with HYPE10 on marketing campaigns."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "The Marine Layer and HYPE10 teams meet monthly for a comprehensive debrief, analyzing the performance of ad units from the previous period + previous year.",
+        "issues": [],
+        "reason": "The passage explicitly states the teams meet monthly to analyze ad performance."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "fail",
+  "reasons": [
+    "5 deterministic check error(s)"
+  ],
+  "created_at": "2026-11-23T00:08:07+00:00",
+  "audit_sha256": "93a8da959f290d27b4363cd53896da2595ca99c6311045a55d4585f2230e0696",
+  "dismissed_reviewer_flags": []
+}

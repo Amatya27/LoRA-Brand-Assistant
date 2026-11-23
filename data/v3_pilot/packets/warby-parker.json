@@ -1,0 +1,2897 @@
+{
+  "schema_version": "brandpilot.packet.v3",
+  "company": {
+    "company_id": "warby-parker",
+    "display_name": "Warby Parker",
+    "legacy_name": "Warby Parker",
+    "category": "eyewear",
+    "official_domains": [
+      "warbyparker.com"
+    ],
+    "identity_status": "verified",
+    "registry_version": "2026-11-22.v3",
+    "registry_sha256": "cc9ab39277bffb4c0aa0b59df8db2e7fec12da7955a58651370daf2936495a16"
+  },
+  "collection": {
+    "mode": "legacy_cache_replay",
+    "collector_version": "brandpilot-collector-0.3",
+    "created_at": "2026-11-22T20:36:48+00:00",
+    "queries": [
+      "\"Warby Parker\" instagram marketing campaign target audience",
+      "\"Warby Parker\" social media strategy brand positioning",
+      "\"Warby Parker\" marketing campaign press release instagram",
+      "\"Warby Parker\" customer audience brand story",
+      "\"Warby Parker\" about us brand values audience",
+      "\"Warby Parker\" newsroom marketing campaign",
+      "\"Warby Parker\" brand campaign case study"
+    ],
+    "notes": [
+      "replayed from legacy packet warby-parker-research-packet.json (sha256 b8d1f9451dbb6260)",
+      "documents are legacy cached extractions; no new fetches were made"
+    ]
+  },
+  "leads": [
+    {
+      "company_id": "warby-parker",
+      "query": "\"Warby Parker\" about us brand values audience",
+      "url": "https://investors.warbyparker.com/overview/",
+      "title": "Investor Relations - Warby Parker",
+      "snippet": "1 day ago · Warby Parker was founded with a mission: to inspire and impact the world with vision, purpose, and style. We aim to demonstrate that a business can scale, become profitable, and do good in the world—without charging a premium for it.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "warby-parker",
+      "query": "\"Warby Parker\" social media strategy brand positioning",
+      "url": "https://www.enrichlabs.ai/case-study/warby-parker-marketing-strategy",
+      "title": "Warby Parker Marketing Strategy: Case Study - Enrich Labs",
+      "snippet": "How Does Warby Parker Leverage Social Media for Brand Promotion? Warby Parker employs a multifaceted social media strategy rooted in authentic storytelling, user-generated content, influencer collaborations, and community engagement.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "warby-parker",
+      "query": "\"Warby Parker\" marketing campaign press release instagram",
+      "url": "https://investors.warbyparker.com/news/default.aspx",
+      "title": "News - Warby Parker",
+      "snippet": "Apr 28, 2026 · Warby Parker Launches Warby Parker Sport, Expanding into the Performance Eyewear Category April 16, 2026",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "warby-parker",
+      "query": "\"Warby Parker\" about us brand values audience",
+      "url": "https://www.warbyparker.com/culture",
+      "title": "About Our Company Culture | Warby Parker",
+      "snippet": "Learn about Warby Parker’s company culture, built on creativity, collaboration, and purpose, with a commitment to great design, accessibility, and doing good.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "warby-parker",
+      "query": "\"Warby Parker\" about us brand values audience",
+      "url": "https://www.warbyparker.com/impact-report",
+      "title": "Warby Parker Impact Report",
+      "snippet": "Warby Parker was founded with a mission: to inspire and impact the world with vision, purpose, and style. We’re constantly asking ourselves how we can do more and make a greater impact—and that starts by reimagining everything that a company and industry can be.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "warby-parker",
+      "query": "\"Warby Parker\" social media strategy brand positioning",
+      "url": "https://sadiemattson.wordpress.com/2026/02/15/how-warby-parker-used-strategic-social-media-to-reinvent-eyewear/",
+      "title": "How Warby Parker Used Strategic Social Media to Reinvent ...",
+      "snippet": "Feb 15, 2026 · Warby Parker did not just sell glasses, but changed the eyewear game by showing brands a new way to connect with their customers through smart social media and community-focused marketing (Mahoney & Tang, 2017).",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "warby-parker",
+      "query": "\"Warby Parker\" marketing campaign press release instagram",
+      "url": "https://www.linkedin.com/pulse/warby-parker-barker-13-other-brilliant-instagram-from-bollinger",
+      "title": "Warby Parker, Warby Barker, and 13 Other Brilliant Instagram ...",
+      "snippet": "Dec 4, 2018 · Warby Parker has upped its Instagram game by holding frequent giveaways and contests. They all revolve around their core product and are held in the funnest way possible.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "warby-parker",
+      "query": "\"Warby Parker\" instagram marketing campaign target audience",
+      "url": "https://www.latterly.org/warby-parker-marketing-strategy/",
+      "title": "Warby Parker Marketing Strategy: Home Try-On, Give ... - Latterly",
+      "snippet": "Warby Parker, founded in 2010, transformed the eyewear category with transparent pricing, direct distribution, and design-first storytelling. The brand grew from a digitally native upstart to a public company with over 240 stores across North America and millions of customers.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    }
+  ],
+  "documents": [
+    {
+      "source_id": "S-8d3e933757d3",
+      "company_id": "warby-parker",
+      "requested_url": "https://investors.warbyparker.com/overview/",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "ffffac78f064ba27d27999b8888ea8c517f94d2e32abb1f6d4683e7c3cca7fc7",
+      "text_path": "text/ffffac78f064ba27d27999b8888ea8c517f94d2e32abb1f6d4683e7c3cca7fc7.txt",
+      "raw_path": null,
+      "text_chars": 3655,
+      "redirect_chain": [],
+      "identity_decision": "official_domain",
+      "identity_reason": "host investors.warbyparker.com is an official domain",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file beffdeb0edddf1f181065b8f7d32748a5fab597ba4ff3e4bc1483b01f694e6e0.json sha256=63488329457ac39c7d180336a536f6585fb94f1f3d13d619fd0eb3511ce5f613",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-21f927f4d8bc",
+      "company_id": "warby-parker",
+      "requested_url": "https://www.enrichlabs.ai/case-study/warby-parker-marketing-strategy",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "e0368ce7e89c88da1c72c32953038de9ea2be578d44ae77df460ebed8aca5c9c",
+      "text_path": "text/e0368ce7e89c88da1c72c32953038de9ea2be578d44ae77df460ebed8aca5c9c.txt",
+      "raw_path": null,
+      "text_chars": 4695,
+      "redirect_chain": [],
+      "identity_decision": "third_party_confirmed",
+      "identity_reason": "4 name mention(s) co-occur with eyewear terms",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file f1b247de1a9913bd92d8df7c7d6fe53b993bf26dc3af047f84290c5b096afd17.json sha256=32bdfc5f592960b132ebc423ef0b4b308d6b97e6bcf0cf7a8ded276684c0d9c3",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-13b217caca42",
+      "company_id": "warby-parker",
+      "requested_url": "https://investors.warbyparker.com/news/default.aspx",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "a2033196c4fb986a725a68cba31e733ba26f800fd63bbb43b824598355ee6679",
+      "text_path": "text/a2033196c4fb986a725a68cba31e733ba26f800fd63bbb43b824598355ee6679.txt",
+      "raw_path": null,
+      "text_chars": 3078,
+      "redirect_chain": [],
+      "identity_decision": "official_domain",
+      "identity_reason": "host investors.warbyparker.com is an official domain",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 3174259ba59b34e74f357cdf2d8ab77898ffd6efd564c416d1751ebc44dbb6b7.json sha256=9698420f79df4582005441dc22b487ae93f422bb8811e9f0378e6b166eca23f5",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-5bdf074ae41f",
+      "company_id": "warby-parker",
+      "requested_url": "https://www.warbyparker.com/culture",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "0866a1c18d6acacc40054c7c8abb51a68a2cf0f48c109b8abf733245d9ac69f4",
+      "text_path": "text/0866a1c18d6acacc40054c7c8abb51a68a2cf0f48c109b8abf733245d9ac69f4.txt",
+      "raw_path": null,
+      "text_chars": 6184,
+      "redirect_chain": [],
+      "identity_decision": "official_domain",
+      "identity_reason": "host warbyparker.com is an official domain",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 9ad52b008d943c6f4d023d8e6953ae9a708ebe40e6880844dde1896e680d3cb7.json sha256=059b3742884bcb742431663584f7fe19cd1e8707ddfad0615033d80f26a59e91",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-6d69c31c19af",
+      "company_id": "warby-parker",
+      "requested_url": "https://www.warbyparker.com/impact-report",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "6dde46e6285f662ea5aaf3d1643078c6be236518739aeb882b413a6dc7128c05",
+      "text_path": "text/6dde46e6285f662ea5aaf3d1643078c6be236518739aeb882b413a6dc7128c05.txt",
+      "raw_path": null,
+      "text_chars": 8221,
+      "redirect_chain": [],
+      "identity_decision": "official_domain",
+      "identity_reason": "host warbyparker.com is an official domain",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 54d42f843186d889ddcf9a2caa2596863f26cd313954deefc3b585f59d98fe64.json sha256=5cb66f6c63b328bc33ca0d11b259e2869bffc831598ca8328f64602c7c599a90",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-9a56f9966e87",
+      "company_id": "warby-parker",
+      "requested_url": "https://sadiemattson.wordpress.com/2026/02/15/how-warby-parker-used-strategic-social-media-to-reinvent-eyewear/",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "cf45e80e4eb31340145cbc41275fc5818ce36a32f7e073f460d8508e99adc026",
+      "text_path": "text/cf45e80e4eb31340145cbc41275fc5818ce36a32f7e073f460d8508e99adc026.txt",
+      "raw_path": null,
+      "text_chars": 5040,
+      "redirect_chain": [],
+      "identity_decision": "third_party_confirmed",
+      "identity_reason": "8 name mention(s) co-occur with eyewear terms",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 7cc13accf44eac2d77f25a4ed357aa732189d0068e92528db75cadd757071b2f.json sha256=8264e3c601dfd5897e2e4eb5cacc5b485307e0837fc8638cfeabecc45795709a",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-4db1d4ca46fb",
+      "company_id": "warby-parker",
+      "requested_url": "https://www.linkedin.com/pulse/warby-parker-barker-13-other-brilliant-instagram-from-bollinger",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "001ccea51a3294dc251765a52248efaa161227d234ecdf894d520e0be370b307",
+      "text_path": "text/001ccea51a3294dc251765a52248efaa161227d234ecdf894d520e0be370b307.txt",
+      "raw_path": null,
+      "text_chars": 19893,
+      "redirect_chain": [],
+      "identity_decision": "third_party_confirmed",
+      "identity_reason": "17 name mention(s) co-occur with eyewear terms",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file a4b5e33cf22dd61c91631acbf36fcd3283e534856dc0ea8b598add6ee8fa873c.json sha256=582ceabe2162f5a000ad3b62363d0d9dff52cd67437b56db2c0eb0c6d838c424",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-f81613345f39",
+      "company_id": "warby-parker",
+      "requested_url": "https://www.latterly.org/warby-parker-marketing-strategy/",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "a4c758dcb2641b2ef8876f556ffd519ab5757fcb52dcca4c82fe5980c222d2e1",
+      "text_path": "text/a4c758dcb2641b2ef8876f556ffd519ab5757fcb52dcca4c82fe5980c222d2e1.txt",
+      "raw_path": null,
+      "text_chars": 46182,
+      "redirect_chain": [],
+      "identity_decision": "third_party_confirmed",
+      "identity_reason": "22 name mention(s) co-occur with eyewear terms",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file b81b36cf7d646b47f6321f32ad71b1f6d305131736874f8f805183004a363b87.json sha256=26ffae58b620af0b349cf07edd63048e4fbe2dde924d178ea2a2fd858000cadc",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "passage_uid": "PU-7fc94d69d3023263",
+      "source_id": "S-6d69c31c19af",
+      "char_start": 1824,
+      "char_end": 2385,
+      "text": "Community To date, our Buy a Pair, Give a Pair program has served individuals in more than 80 countries and provided over 25 million pairs of glasses to people in need. In 2025, we launched a collaboration with Bloomberg Philanthropies that will enable the distribution of glasses to millions more people in need worldwide—and double the impact of our Pupils Project in select cities, providing free eye exams and glasses to students around the United States. Two young Buddhist monks smile at the camera. They are wearing traditional maroon robes over hoodies.",
+      "text_sha256": "1e576e2e4f84e950aa4784295079252cdd042bd8a3a94f02a37ffffc587e6886",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "historical_activity",
+      "flags": [],
+      "dates_mentioned": [
+        "2025"
+      ],
+      "relevance_terms": [
+        "collab",
+        "collaborat",
+        "community",
+        "launch"
+      ],
+      "score": 21,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P1",
+      "source_url": "https://www.warbyparker.com/impact-report",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-6437756892a941ad",
+      "source_id": "S-6d69c31c19af",
+      "char_start": 5111,
+      "char_end": 5765,
+      "text": "Customers Each and every day, our team aims to create high-quality products and deliver remarkable experiences that delight our more than two million customers. In 2025, we launched Advisor, a first-of-its-kind tool that makes tailored product recommendations based on a customer’s facial measurements and style preferences. We also announced a landmark partnership with Google and Samsung to develop AI-powered glasses for all-day wear, providing customers with instant context and insight as they navigate the world. A snapshot of 2025: 3 new lens types, 88% of stores offer eye exams, and 33 million+ lives covered. Two men look at glasses in a store.",
+      "text_sha256": "64fb11530530a79c06a978dca11d5bf9a82af0addefa1b535339ca184f0365e0",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "historical_activity",
+      "flags": [
+        "forward_looking_statement"
+      ],
+      "dates_mentioned": [
+        "2025"
+      ],
+      "relevance_terms": [
+        "customers",
+        "launch",
+        "partner"
+      ],
+      "score": 19,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P2",
+      "source_url": "https://www.warbyparker.com/impact-report",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-5ce9bd554e64d765",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 7648,
+      "char_end": 7989,
+      "text": "5. Find Creative Ways to Collaborate with Like-Minded Influencers Collaborating with influential Instagrammers is a great way to reach out to their gigantic fan-base. This is why most brands incorporate this strategy in their social marketing plans. Warby Parker gives its own little twist to influential marketing and has collaborated with:",
+      "text_sha256": "2a16760692a7138380cc9ed8dbc96c94b4ecf03eab26b274084978c213dfe3c6",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "actual_activity",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "brand",
+        "collab",
+        "collaborat",
+        "influencer",
+        "instagram",
+        "marketing"
+      ],
+      "score": 20,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P3",
+      "source_url": "https://www.linkedin.com/pulse/warby-parker-barker-13-other-brilliant-instagram-from-bollinger",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-55edefeab3b92613",
+      "source_id": "S-9a56f9966e87",
+      "char_start": 1244,
+      "char_end": 1944,
+      "text": "Social Media as Community, Not Just Promotion Instead of only using social media to promote their brand, Warby Parker treats platforms such as Instagram, Facebook, Twitter, and YouTube as places for real conversations and engagement (Mahoney & Tang, 2017). The company encourages customers to share their photos, experiences, and feedback, making user-generated content a key part of their marketing strategy (Kaplan & Haenlein, 2010). This can be seen through Warby Parker’s Home Try-On program. It encourages people to share photos and opinions online intentionally. This strategy has turned customers into contributors and has helped spread the word naturally through recommendations from friends.",
+      "text_sha256": "0bf5ba1e51c90947054bbc2b3fc251c26d5ad5c2e3dc4868eff3302f845da9c0",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [
+        "2010",
+        "2017"
+      ],
+      "relevance_terms": [
+        "brand",
+        "community",
+        "content",
+        "customers",
+        "instagram",
+        "marketing",
+        "social media",
+        "youtube"
+      ],
+      "score": 20,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P4",
+      "source_url": "https://sadiemattson.wordpress.com/2026/02/15/how-warby-parker-used-strategic-social-media-to-reinvent-eyewear/",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-505a18edcd98841b",
+      "source_id": "S-f81613345f39",
+      "char_start": 11775,
+      "char_end": 12406,
+      "text": "Influencer Partnerships and Community Engagement Social proof shapes fashion and health decisions, especially for products that must fit faces and budgets. Warby Parker blends creator collaborations with service-led community programs that build credibility. The approach turns authentic endorsements and local activations into measurable demand. Creators supply style context and fit validation, while community outreach demonstrates care, access, and impact. Together they raise awareness, generate UGC, and broaden reach beyond paid impressions. The halo from mission work supports long-term loyalty and favorable word of mouth.",
+      "text_sha256": "b4d41bf8af3e3e92a6b6a43e8bcabe895ec91fc3522ee98b8e3ce02628ba36f6",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "collab",
+        "collaborat",
+        "community",
+        "creator",
+        "influencer",
+        "loyalty",
+        "mission",
+        "partner"
+      ],
+      "score": 20,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P5",
+      "source_url": "https://www.latterly.org/warby-parker-marketing-strategy/",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-bcbf8b9090830922",
+      "source_id": "S-f81613345f39",
+      "char_start": 13726,
+      "char_end": 14366,
+      "text": "Buy a Pair, Give a Pair collaborations with VisionSpring and partners, surpassing 15 million pairs distributed and expanding access to vision care. * Mobile screenings and local events, offering basic exams and education, then directing patients to affordable solutions and nearby stores. * Campus ambassador initiatives that promote Home Try-On, student discounts, and exam bookings during peak academic periods. * Neighborhood pop-ups featuring adjustments and quick repairs, creating goodwill and generating referral volume. Warby Parker turns influence and community into a unified trust engine that feeds both brand strength and sales.",
+      "text_sha256": "217e5db3c28c9918f7da9588b5a2874aa8e1396cdd445853fb6a6f99bec4bcaf",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "ambassador",
+        "brand",
+        "collab",
+        "collaborat",
+        "community",
+        "event",
+        "partner",
+        "pop-up"
+      ],
+      "score": 20,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P6",
+      "source_url": "https://www.latterly.org/warby-parker-marketing-strategy/",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-57aca07342eedcb8",
+      "source_id": "S-8d3e933757d3",
+      "char_start": 973,
+      "char_end": 1563,
+      "text": "About Us Warby Parker was founded with a mission: to inspire and impact the world with vision, purpose, and style. We aim to demonstrate that a business can scale, become profitable, and do good in the world—without charging a premium for it. Since the day we launched in 2010, we’ve pioneered ideas, designed products, and developed technologies that help people see—from designer-quality prescription glasses (starting at $95) and contacts to eye exams and vision tests. Customers can meet us online, at more than 300 Warby Parker stores across the U.S. and Canada, or even in their home.",
+      "text_sha256": "9319abfd6b0a47f93ce5cb8038f22930e94cc4857f6b069130a65e40feaa0831",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "historical_activity",
+      "flags": [
+        "forward_looking_statement"
+      ],
+      "dates_mentioned": [
+        "2010"
+      ],
+      "relevance_terms": [
+        "customers",
+        "launch",
+        "mission"
+      ],
+      "score": 19,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P7",
+      "source_url": "https://investors.warbyparker.com/overview/",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-e8549c6dad302fb1",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 3275,
+      "char_end": 3933,
+      "text": "And finally, they partnered with professional storm catchers (I didn’t know they existed either!) and produced visually stunning pictures of the eclipse: The best bit? It was one of the very few optical brands that used this event creatively and successfully. Others opted for a meh description of the eclipse and some do’s and don’ts. * NYC marathon Warby Parker encouraged NYC marathon runners by giving away super-cute finisher pins at their NYC stores. This was a clever marketing move as lots of people tagged marathon runners they knew so that they could grab a pin too. This way, Warby Parker reached their followers’ friends (and friends of friends).",
+      "text_sha256": "b3ad71e879f067ca8d80d561c3217c50b1c3876756278da62fd1cd2e98fab61a",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "actual_activity",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "brand",
+        "event",
+        "marketing",
+        "partner"
+      ],
+      "score": 16,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P8",
+      "source_url": "https://www.linkedin.com/pulse/warby-parker-barker-13-other-brilliant-instagram-from-bollinger",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-662afe0ce6628d2b",
+      "source_id": "S-9a56f9966e87",
+      "char_start": 431,
+      "char_end": 1053,
+      "text": "A Fresh Take on Eyewear Founded in 2010, Warby Parker shook up an industry that was known for its high prices and lack of customer engagement (Mahoney & Tang, 2017). Instead of sticking to the usual retail methods, the company took advantage of digital platforms to connect directly with customers and share a brand story that focuses on being accessible, open, and socially responsible (Mahoney & Tang, 2017). Warby Parker did not just sell glasses, but changed the eyewear game by showing brands a new way to connect with their customers through smart social media and community-focused marketing (Mahoney & Tang, 2017).",
+      "text_sha256": "3dcfc6c8b3ee3ba73d6451e242381ffc925ded0e8cbc759070b2e528365c24df",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [
+        "2010",
+        "2017"
+      ],
+      "relevance_terms": [
+        "brand",
+        "community",
+        "customers",
+        "marketing",
+        "retail",
+        "social media"
+      ],
+      "score": 16,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P9",
+      "source_url": "https://sadiemattson.wordpress.com/2026/02/15/how-warby-parker-used-strategic-social-media-to-reinvent-eyewear/",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-5c833738524defc4",
+      "source_id": "S-9a56f9966e87",
+      "char_start": 2905,
+      "char_end": 3457,
+      "text": "Why This Still Matters Today Warby Parker understood social media marketing strategies early, which are now the norm. Way before influencer tools and analytics were everywhere, Warby Parker focused on authenticity, engaging with their audience, and building a community (Mahoney & Tang, 2017). Even with social media getting increasingly driven by algorithms and competition, the main takeaway stays the same. Brands that listen, interact, and encourage participation usually create stronger connections and lasting influence (Kaplan & Haenlein, 2010).",
+      "text_sha256": "e952d3351a5182f1cb13375504bbd22e2f4b48bc6279a315a8a3b982d42b5de6",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [
+        "2010",
+        "2017"
+      ],
+      "relevance_terms": [
+        "audience",
+        "brand",
+        "community",
+        "influencer",
+        "marketing",
+        "social media"
+      ],
+      "score": 16,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P10",
+      "source_url": "https://sadiemattson.wordpress.com/2026/02/15/how-warby-parker-used-strategic-social-media-to-reinvent-eyewear/",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    }
+  ],
+  "rejected_passages": [
+    {
+      "passage_uid": "PU-7bb4269ec66ee0ed",
+      "source_id": "S-f81613345f39",
+      "char_start": 35654,
+      "char_end": 36335,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "actual_activity",
+      "preview": "Paid Social: Instagram, TikTok, Pinterest, and Snapchat showcase styles, AR try-on content, and creator testimonials that explain fit, lens options, and price clarity. * Out-of-Home: Transit, urban ki"
+    },
+    {
+      "passage_uid": "PU-24370d02eba19e80",
+      "source_id": "S-f81613345f39",
+      "char_start": 791,
+      "char_end": 1258,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "brand_positioning",
+      "preview": "The company uses data-led merchandising, platform-specific content, and service innovation to compress the path from discovery to purchase. Customers test five frames at home, preview looks with AR, a"
+    },
+    {
+      "passage_uid": "PU-51525ca193aa8d25",
+      "source_id": "S-f81613345f39",
+      "char_start": 8919,
+      "char_end": 9607,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Digital Marketing and Social Media Strategy Consumers research eyewear across search, social, and reviews, then purchase wherever the path feels easiest. Warby Parker integrates its website, mobile ap"
+    },
+    {
+      "passage_uid": "PU-a8fae86d6a1174e9",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 5244,
+      "char_end": 5715,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "actual_activity",
+      "preview": "Our head of > customer insights came up with the idea of launching Warby Barker for April Fools’ Day.” – Neil > Blumenthal For two weeks, they ran the Warby Barker campaign, featuring stunning picture"
+    },
+    {
+      "passage_uid": "PU-55c6a636628888c3",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 14787,
+      "char_end": 15472,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Want Warby Parker’s Instagram Success? Social media is now more powerful and popular than ever. More and more brands are hopping on Instagram to market their products or services and connect with thei"
+    },
+    {
+      "passage_uid": "PU-4ad1eccfb5c5e5d7",
+      "source_id": "S-5bdf074ae41f",
+      "char_start": 237,
+      "char_end": 418,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "We have a couple of ground rules at Warby Parker.* *Nothing crazy. Girl Posing with Head Resting on Hand ## Our customers, employees, community and environment are our stakeholders."
+    },
+    {
+      "passage_uid": "PU-f0c0071103dff7c6",
+      "source_id": "S-5bdf074ae41f",
+      "char_start": 2027,
+      "char_end": 2599,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "How is it possible to sell high-quality prescription glasses for $95? Most high-end brands do not produce their own eyewear. Instead, they sell those rights to massive companies who design, manufactur"
+    },
+    {
+      "passage_uid": "PU-bc6f49afa3aa906c",
+      "source_id": "S-6d69c31c19af",
+      "char_start": 4063,
+      "char_end": 4763,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "brand_positioning",
+      "preview": "Environment We believe that our business can do well while doing good in the world—and that those two goals are intertwined, not at odds. As we grow, we aim to prove that working toward sustainability"
+    },
+    {
+      "passage_uid": "PU-8e8a96c071f146e6",
+      "source_id": "S-8d3e933757d3",
+      "char_start": 1564,
+      "char_end": 1923,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "brand_positioning",
+      "preview": "Ultimately, we believe in vision for all, which is why for every pair of glasses or sunglasses we sell, a pair of glasses is distributed to someone in need through our Buy a Pair, Give a Pair program."
+    },
+    {
+      "passage_uid": "PU-5edf32db9c79009c",
+      "source_id": "S-9a56f9966e87",
+      "char_start": 2135,
+      "char_end": 2696,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Purpose-Driven Branding That People Want to Share One part of Warby Parker’s strategy is their strong focus on social responsibility. Their “Buy a Pair, Give a Pair” program lets customers feel like t"
+    },
+    {
+      "passage_uid": "PU-13ec8b9c0c45595c",
+      "source_id": "S-f81613345f39",
+      "char_start": 27736,
+      "char_end": 28422,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Virtual Try-On content pairs before-and-after imagery with sizing guidance, improving fit accuracy and reducing choice overload. * Community initiatives like Pupils Project bring the purpose message i"
+    },
+    {
+      "passage_uid": "PU-cb8a2d78412cc3be",
+      "source_id": "S-f81613345f39",
+      "char_start": 38623,
+      "char_end": 39197,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Sustainability Priorities and Programs Warby Parker treats social impact and environmental stewardship as an operating system rather than a marketing campaign. Governance, supplier standards, and repo"
+    },
+    {
+      "passage_uid": "PU-f48305b3071aa4c3",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 6687,
+      "char_end": 7286,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "4. Branded Social Media Contests + Freebies Done Right According to Buffer, 35% of fans like a company’s page on Facebook so they can participate in a contest. Warby Parker has upped its Instagram gam"
+    },
+    {
+      "passage_uid": "PU-ce086b142b31f593",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 8747,
+      "char_end": 9405,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "historical_activity",
+      "preview": "7. Make Social Video a Vital Part of Your Marketing Plan > When Instagram first introduced video in June 2013, more than 5 million were shared in the first > 24 hours. Video on Instagram has always be"
+    },
+    {
+      "passage_uid": "PU-fbeae76d9246c269",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 1399,
+      "char_end": 2005,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "an insane amount of love on each of their posts and * a host of successful Instagram marketing campaigns. Fun fact: They’ve managed to built quite a loyal group of followers. Search for #warbyparker, "
+    },
+    {
+      "passage_uid": "PU-0f079f8425ee5a43",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 2009,
+      "char_end": 2603,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "1. Culture-Jacking via Innovative Strategies and Clever Tricks Culture-jacking is piggybacking on popular events to promote business. It works great if done right. And Warby Parker hasn’t done much wr"
+    },
+    {
+      "passage_uid": "PU-08d490bad3a83c25",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 2604,
+      "char_end": 3274,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "actual_activity",
+      "preview": "It’s a perfect opportunity to showcase their brand and involve everyone in a keep-your-eyes-safe activity. They not only conducted multiple cool in-store and online events—eclipse viewing parties, a g"
+    },
+    {
+      "passage_uid": "PU-825355dc1b75c5ae",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 4583,
+      "char_end": 5243,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "All the posts circled in red are UGC posts—posts created by followers, fans, customers, and the like, featuring Warby Parker in some way or another. This gives people a chance to get discovered by 382"
+    },
+    {
+      "passage_uid": "PU-7535812298d9427f",
+      "source_id": "S-5bdf074ae41f",
+      "char_start": 442,
+      "char_end": 1067,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "brand_positioning",
+      "preview": "every decision that we make. ## Got questions? Here maybe we can answer ’em. Where does the name “Warby Parker” come from? The stork. (Just kidding.) In May 2009, our co-founder Dave was wandering aro"
+    },
+    {
+      "passage_uid": "PU-4f23f794ff5b6c14",
+      "source_id": "S-5bdf074ae41f",
+      "char_start": 3223,
+      "char_end": 3498,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Andy Hunt Andy has studied eyewear design in more than 40 countries. Rumors that he conceived the idea for Warby Parker at a temple in the jungle city of Angkor Wat remain unsubstantiated but plausibl"
+    },
+    {
+      "passage_uid": "PU-266e8b2429495a42",
+      "source_id": "S-5bdf074ae41f",
+      "char_start": 4298,
+      "char_end": 4816,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "How do you calculate the impact of your Buy a Pair, Give a Pair program? Excellent question. One of our main sources is the World Health Organization, an agency of the United Nations that focuses on p"
+    },
+    {
+      "passage_uid": "PU-9418bf539fa35d50",
+      "source_id": "S-5bdf074ae41f",
+      "char_start": 4873,
+      "char_end": 5029,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Well, that makes our day. Head over to the jobs page to learn about openings. ## Get the inside scoop on new frames, events, and more Email address Products"
+    },
+    {
+      "passage_uid": "PU-3db361c7b3f39c2f",
+      "source_id": "S-6d69c31c19af",
+      "char_start": 1478,
+      "char_end": 1820,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "2025 at a Glance In both our social mission and our eye care business, we crossed several major milestones this past year. Statistics highlighting the company's growth and social impact: 4,036 team me"
+    },
+    {
+      "passage_uid": "PU-c2a092a5a6e6e3e0",
+      "source_id": "S-6d69c31c19af",
+      "char_start": 4764,
+      "char_end": 5107,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Gold-rimmed glasses with tortoise shell temples hang on green tulip stems with a white tulip. Workers in blue uniforms work on an assembly line in a brightly lit factory. Gold-rimmed glasses with tort"
+    },
+    {
+      "passage_uid": "PU-d2e723314e325425",
+      "source_id": "S-f81613345f39",
+      "char_start": 8218,
+      "char_end": 8915,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Prescription updates and insurance windows, which drive appointment bookings and bundled glasses plus contacts orders. * Style refresh moments around seasons and events, elevating interest in new coll"
+    },
+    {
+      "passage_uid": "PU-4347b502afef7e16",
+      "source_id": "S-f81613345f39",
+      "char_start": 12694,
+      "char_end": 13382,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Micro-influencers in fashion, eyewear, and healthcare, delivering high engagement and credible try-on narratives at efficient CPMs. * Mid-tier creators for capsule drops and seasonal style edits, supp"
+    },
+    {
+      "passage_uid": "PU-4fe244caf8952511",
+      "source_id": "S-f81613345f39",
+      "char_start": 25157,
+      "char_end": 25806,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Brand Messaging and Storytelling In a category often anchored in medical utility, Warby Parker frames eyewear as a lifestyle essential with social impact. The brand unites value, design, and purpose, "
+    },
+    {
+      "passage_uid": "PU-255db216f62cce42",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 11710,
+      "char_end": 12385,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "10. Practice Gary V’s “Jab, jab, jab, right hook” Content Strategy Everybody and their granddads know that the key to engaging with followers and consumers on social media successfully is using the 80"
+    },
+    {
+      "passage_uid": "PU-109f5940711b54fd",
+      "source_id": "S-f81613345f39",
+      "char_start": 130,
+      "char_end": 790,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Warby Parker Marketing Strategy: Home Try-On, Give-Back Model, and Omnichannel Wins Warby Parker, founded in 2010, transformed the eyewear category with transparent pricing, direct distribution, and d"
+    },
+    {
+      "passage_uid": "PU-16fcc1b9116673eb",
+      "source_id": "S-f81613345f39",
+      "char_start": 9868,
+      "char_end": 10527,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "provider_reported_result",
+      "preview": "Search and SEO: category terms like prescription glasses and Home Try-On supported by informative guides and conversion-focused landing pages. * Instagram and TikTok: short-form try-on clips, aestheti"
+    },
+    {
+      "passage_uid": "PU-a5d089a1a9a54c53",
+      "source_id": "S-13b217caca42",
+      "char_start": 1308,
+      "char_end": 1621,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Email Alerts To opt-in for investor email alerts, please enter your email address in the field below and select at least one alert option. After submitting your request, you will receive an activation"
+    },
+    {
+      "passage_uid": "PU-d7a738c49fdc7aef",
+      "source_id": "S-13b217caca42",
+      "char_start": 1915,
+      "char_end": 2141,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "If you experience any issues with this process, please contact us for further assistance. By providing your email address below, you are providing consent to Warby Parker to send you the requested Inv"
+    },
+    {
+      "passage_uid": "PU-31d3435f9bde72a2",
+      "source_id": "S-13b217caca42",
+      "char_start": 2184,
+      "char_end": 2318,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "────────────── Investor Alert Options ───────────────────────────────────────────────────────────────────────── Investor Alert Options"
+    },
+    {
+      "passage_uid": "PU-f112b3ae7dbf71b3",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 12803,
+      "char_end": 13311,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "11. Accentuate Your Brand Color: Hashtags, UGC Content, and Non-Promotional Content What color do you predominantly see in this IG feed? Shades of blue? That’s right. And guess what? It’s Warby Parker"
+    },
+    {
+      "passage_uid": "PU-f98cef1f00d5c560",
+      "source_id": "S-5bdf074ae41f",
+      "char_start": 23,
+      "char_end": 234,
+      "selection_status": "rejected",
+      "reasons": [
+        "boilerplate:table_of_contents"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Premium eyewear, starting at $95 1. Eyeglasses 2. Sunglasses 3. Contacts 4. Eye exams 5. Insurance 6. Accessories 7. Style quiz 8. Intelligent Eyewear 1. Sign in Eyeglasses Sunglasses Contacts Style q"
+    },
+    {
+      "passage_uid": "PU-e20474c48c4e9e6e",
+      "source_id": "S-5bdf074ae41f",
+      "char_start": 1071,
+      "char_end": 1619,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Where does the name “Warby Parker” come from? The stork. (Just kidding.) In May 2009, our co-founder Dave was wandering around the New York Public Library when he stumbled into an exhibition about Jac"
+    },
+    {
+      "passage_uid": "PU-db9573ac6c3458cc",
+      "source_id": "S-5bdf074ae41f",
+      "char_start": 1623,
+      "char_end": 2006,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "So your name comes from a book, huh. Will you recommend a book for me to read? Sure! Jack Kerouac’s Dharma Bums is one of our favorites. (Employees get a copy on their first day, as part of our standa"
+    },
+    {
+      "passage_uid": "PU-189ca6a08995bdbe",
+      "source_id": "S-5bdf074ae41f",
+      "char_start": 2603,
+      "char_end": 2946,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Who started Warby Parker? Meet our founding fathers. ## Neil Blumenthal As the former director of non-profit VisionSpring, Neil spent the better part of five years distributing glasses to people livin"
+    },
+    {
+      "passage_uid": "PU-f23e2f116cb72549",
+      "source_id": "S-5bdf074ae41f",
+      "char_start": 2950,
+      "char_end": 3219,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Dave Gilboa Like a Viking from his native Sweden, Dave spends his free time seeking adventure. Two recent conquests include trekking across Antarctica and becoming the fastest person ever to run a mar"
+    },
+    {
+      "passage_uid": "PU-0ae5c801d658b5ec",
+      "source_id": "S-5bdf074ae41f",
+      "char_start": 3502,
+      "char_end": 3803,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Jeff Raider A bespectacled man for life, Jeff wanted to start Warby Parker because he couldn’t find any frames on the market that fit his quirky yet impeccable taste. Because his passion for glasses i"
+    },
+    {
+      "passage_uid": "PU-07acd9a03da06580",
+      "source_id": "S-5bdf074ae41f",
+      "char_start": 3807,
+      "char_end": 4294,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Why do you distribute glasses to people in need? When we started the company, we had two goals: 1. Offer an alternative to the overpriced and underwhelming eyewear that was available to us. 2. Build a"
+    },
+    {
+      "passage_uid": "PU-30e07648c21a2ccc",
+      "source_id": "S-6d69c31c19af",
+      "char_start": 24,
+      "char_end": 670,
+      "selection_status": "rejected",
+      "reasons": [
+        "boilerplate:table_of_contents"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Eyeglasses 2. Sunglasses 3. Intelligent EyewearNew 4. Contacts 5. Eye exams 6. Insurance 7. Accessories 8. Style quiz 1. Sign in Eyeglasses Sunglasses Contacts Style quiz Warby Parker Impact Report Co"
+    },
+    {
+      "passage_uid": "PU-17a1b664806f3af2",
+      "source_id": "S-6d69c31c19af",
+      "char_start": 2386,
+      "char_end": 2797,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Two women sit on steps, smiling and chatting; one wears glasses and a pink scarf, the other also has glasses and is in a green apron with a phone in hand. Two young Buddhist monks smile at the camera."
+    },
+    {
+      "passage_uid": "PU-77dd4fe22b002ae2",
+      "source_id": "S-6d69c31c19af",
+      "char_start": 2798,
+      "char_end": 3370,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "World map showing 24 countries where glasses were distributed through the Buy a Pair, Give a Pair program in 2025: Armenia, Bangladesh, Cambodia, Cape Verde, Dominican Republic, Ghana, Guatemala, Hond"
+    },
+    {
+      "passage_uid": "PU-492eb4307cae2962",
+      "source_id": "S-6d69c31c19af",
+      "char_start": 3371,
+      "char_end": 4059,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "This model helps eliminate barriers to access by providing free prescription glasses and meeting children at school, where teachers are often the first to spot vision issues. Ten years in, we’ve provi"
+    },
+    {
+      "passage_uid": "PU-cfae9cf16999b3f1",
+      "source_id": "S-6d69c31c19af",
+      "char_start": 5766,
+      "char_end": 6143,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "One man holds up a pair of glasses to his face, and the other looks on. A person holds a smartphone displaying a \"Meet your Advisor\" app with an illustration of a person. Two men look at glasses in a "
+    },
+    {
+      "passage_uid": "PU-4b48c517f9c5ab4e",
+      "source_id": "S-6d69c31c19af",
+      "char_start": 6147,
+      "char_end": 6822,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Employees Warby Parker wouldn’t be where it is today without every one of its team members. As we grow, we stay true to who we are by working to develop a team that’s high-performing, well-rounded, an"
+    },
+    {
+      "passage_uid": "PU-7d8f617a6952c2bd",
+      "source_id": "S-6d69c31c19af",
+      "char_start": 6823,
+      "char_end": 6954,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "A group of five people are posing for a photo with foam fingers, all smiling and having a good time. ## Want to take a deeper dive?"
+    },
+    {
+      "passage_uid": "PU-b9fced22e6ec69ad",
+      "source_id": "S-8d3e933757d3",
+      "char_start": 2169,
+      "char_end": 2482,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Email Alerts To opt-in for investor email alerts, please enter your email address in the field below and select at least one alert option. After submitting your request, you will receive an activation"
+    },
+    {
+      "passage_uid": "PU-f45b8510241a69a7",
+      "source_id": "S-8d3e933757d3",
+      "char_start": 2776,
+      "char_end": 3002,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "If you experience any issues with this process, please contact us for further assistance. By providing your email address below, you are providing consent to Warby Parker to send you the requested Inv"
+    },
+    {
+      "passage_uid": "PU-94097e9ce575f5cb",
+      "source_id": "S-8d3e933757d3",
+      "char_start": 3045,
+      "char_end": 3183,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "────────────── Investor Alert Options ───────────────────────────────────────────────────────────────────────────── Investor Alert Options"
+    },
+    {
+      "passage_uid": "PU-a953395f30a2794f",
+      "source_id": "S-f81613345f39",
+      "char_start": 5103,
+      "char_end": 5756,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Confidence drivers: free shipping and returns, scratch-resistant lenses, and easy exchanges reduce purchase anxiety for new customers. * Mission resonance: partnerships with VisionSpring and others re"
+    },
+    {
+      "passage_uid": "PU-8cc1604f57e7c0e3",
+      "source_id": "S-f81613345f39",
+      "char_start": 5889,
+      "char_end": 6492,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Target Audience and Market Segmentation Vision care spans medical necessity and personal style, which creates diverse motivations and budgets. Warby Parker segments audiences around need states, lifes"
+    },
+    {
+      "passage_uid": "PU-cf5cadd77af779b9",
+      "source_id": "S-f81613345f39",
+      "char_start": 12407,
+      "char_end": 12648,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "This subsection defines the collaboration tiers and deliverables that support efficient creator marketing. Clear roles and asset needs keep campaigns predictable and scalable. Performance data informs"
+    },
+    {
+      "passage_uid": "PU-70fc0bccabb03833",
+      "source_id": "S-f81613345f39",
+      "char_start": 19852,
+      "char_end": 20516,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Place: Web, app, and over 240 retail stores across the United States and Canada, unified by connected data and services. * Promotion: Paid social, search, podcasts, direct mail, and content that highl"
+    },
+    {
+      "passage_uid": "PU-20fd693f958d17e3",
+      "source_id": "S-f81613345f39",
+      "char_start": 40563,
+      "char_end": 41210,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Omnichannel Fulfillment: Options include ship-to-home, in-store pickup, and post-visit adjustments that fit modern routines. * Service Clienteling: Associates use curated profiles and past orders to p"
+    },
+    {
+      "passage_uid": "PU-2c7caf1c64743b2c",
+      "source_id": "S-f81613345f39",
+      "char_start": 43543,
+      "char_end": 44156,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Economic Sensitivity: Value-focused messaging and financing options protect conversion when discretionary budgets tighten. * Regulatory Oversight: Clear clinical protocols and data safeguards support "
+    },
+    {
+      "passage_uid": "PU-eb58b52d0475ad0f",
+      "source_id": "S-21f927f4d8bc",
+      "char_start": 1546,
+      "char_end": 2136,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Warby Parker Marketing Strategy: Case Study Discover how Warby Parker’s innovative marketing combines social impact, digital tech, and community engagement to disrupt the eyewear industry and build lo"
+    },
+    {
+      "passage_uid": "PU-2b117e5e10769b9d",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 10484,
+      "char_end": 10968,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "9. Customer Service + Marketing = Improved Customer Relations > Customers spend 20-40% more with companies [that] engage and respond to customers via social > media. – Social Media Today And Warby Par"
+    },
+    {
+      "passage_uid": "PU-ed3bde77743fd004",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 17027,
+      "char_end": 17277,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "historical_activity",
+      "preview": "IGTV or YouTube: Which is Better for Your Business? IGTV is the newest kid on the block. Not sure what I’m talking about? Let’s get you up to speed… IGTV was launched by… 17 3 Comments * What Social M"
+    },
+    {
+      "passage_uid": "PU-d85c1d8a6765e9ac",
+      "source_id": "S-13b217caca42",
+      "char_start": 955,
+      "char_end": 1154,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:ambiguous_entity"
+      ],
+      "identity_reason": "possible different entity: Warby Parker Logo",
+      "statement_type": "descriptive",
+      "preview": "Investor Email Alerts Selecting a year value will change the news content Select Year: Loading Selecting a category value will change the news content Select Category: All Corporate Warby Parker Logo"
+    },
+    {
+      "passage_uid": "PU-0bb2d90dea66b299",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 930,
+      "char_end": 1325,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Colton Bollinger Published Dec 4, 2018 + Follow Four friends. A $700 pair of glasses lost on an airplane. And a big business idea. This is how Warby Parker (WP) came into being. As fascinating as thei"
+    },
+    {
+      "passage_uid": "PU-bc67cf1fe99f7448",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 6182,
+      "char_end": 6683,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "3. Utilize the Power of a Sneak Peek Different social media platforms require different kinds of pictures. Instagram and Snapchat are all for raw, uncut pictures, and the Warby Parker team understands"
+    },
+    {
+      "passage_uid": "PU-d7ae7a5ab248b125",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 8290,
+      "char_end": 8710,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "6. Stay True to Your Brand’s Core Vision > “Buy a pair, give a pair.” Along with their affordable prices and quirky marketing tactics, Warby Parker’s philanthropic vision has played a huge role in mak"
+    },
+    {
+      "passage_uid": "PU-477ca7b25b130053",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 13312,
+      "char_end": 13805,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Whenever they come across anything in this shade, they take a stunning picture and post it on their official account: They encourage their followers and customers to post similar pictures, and their e"
+    },
+    {
+      "passage_uid": "PU-5cfad5399a65a69f",
+      "source_id": "S-9a56f9966e87",
+      "char_start": 3463,
+      "char_end": 3674,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Final Thoughts Warby Parker’s story shows that good social media marketing is not about jumping on every trend or posting all the time. It is about figuring out how people connect, share, and build tr"
+    },
+    {
+      "passage_uid": "PU-ca090a45dbc695bd",
+      "source_id": "S-9a56f9966e87",
+      "char_start": 3679,
+      "char_end": 3959,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "References+ Kaplan, A. M., & Haenlein, M. (2010). Users of the world, unite! The challenges and opportunities of Social Media. Business horizons, 53(1), 59-68. Mahoney, L. M., & Tang, T. (2017). Strat"
+    },
+    {
+      "passage_uid": "PU-b492111621def741",
+      "source_id": "S-f81613345f39",
+      "char_start": 2742,
+      "char_end": 3407,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Core Elements of the Warby Parker Marketing Strategy In a category often defined by intermediaries and opaque pricing, Warby Parker positions clarity as a competitive advantage. The marketing strategy"
+    },
+    {
+      "passage_uid": "PU-f08f50805702b1f5",
+      "source_id": "S-f81613345f39",
+      "char_start": 3408,
+      "char_end": 3798,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "actual_activity",
+      "preview": "Consistent creative assets, polished retail design, and quick fulfillment complete a brand experience that feels modern and reliable. This subsection introduces the pillars that unify demand generatio"
+    },
+    {
+      "passage_uid": "PU-d14f782f1d42b07f",
+      "source_id": "S-f81613345f39",
+      "char_start": 25807,
+      "char_end": 26406,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "The story emphasizes craftsmanship, scratch-resistant lenses, and thoughtful fit, while explaining services such as eye exams and free adjustments. Social posts, emails, and in-store signage reiterate"
+    },
+    {
+      "passage_uid": "PU-e51f902652612173",
+      "source_id": "S-f81613345f39",
+      "char_start": 27047,
+      "char_end": 27733,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Care and Expertise: On-staff optometrists, trained stylists, and accessible customer support that solve problems quickly and professionally. Content formats mirror these pillars with educational posts"
+    },
+    {
+      "passage_uid": "PU-1be1a778b1566f97",
+      "source_id": "S-f81613345f39",
+      "char_start": 28426,
+      "char_end": 29086,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Competitive Landscape The global eyewear market remains fragmented at the brand level, yet concentrated across manufacturing and retail networks. EssilorLuxottica continues to set the pace at scale, w"
+    },
+    {
+      "passage_uid": "PU-baafdeb57eb87a3b",
+      "source_id": "S-f81613345f39",
+      "char_start": 30152,
+      "char_end": 30802,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Digital Marketplaces: GlassesUSA and FramesDirect aggregate brands, using aggressive retargeting and price anchoring to convert search traffic. Warby Parker’s differentiators address pain points those"
+    },
+    {
+      "passage_uid": "PU-3b906d3bfe79ce5d",
+      "source_id": "S-f81613345f39",
+      "char_start": 31378,
+      "char_end": 32003,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Customer Experience and Retention Strategy Vision care decisions repeat on predictable cycles, which makes experience quality a powerful retention lever. Warby Parker builds loyalty through thoughtful"
+    },
+    {
+      "passage_uid": "PU-0afb5111f2865b6b",
+      "source_id": "S-f81613345f39",
+      "char_start": 33847,
+      "char_end": 34422,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Service Rituals: Free adjustments and quick repairs create reasons to visit stores and strengthen local relationships. * Omnichannel Continuity: Saved prescriptions, wishlists, and appointment histori"
+    },
+    {
+      "passage_uid": "PU-fa87c42f5840a15e",
+      "source_id": "S-f81613345f39",
+      "char_start": 34426,
+      "char_end": 35008,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Advertising and Communication Channels In a crowded eyewear category shaped by price transparency and convenience, Warby Parker scales awareness while defending efficient customer acquisition. The bra"
+    },
+    {
+      "passage_uid": "PU-d0bc5108d9154973",
+      "source_id": "S-f81613345f39",
+      "char_start": 35013,
+      "char_end": 35651,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Media Mix and Creative Strategy Warby Parker balances top-of-funnel reach with intent capture, then reinforces trust with concise offers and service-led messages. Creative typically emphasizes accessi"
+    },
+    {
+      "passage_uid": "PU-be9752e9374cfecb",
+      "source_id": "S-f81613345f39",
+      "char_start": 38084,
+      "char_end": 38618,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Sustainability, Innovation, and Technology Integration Consumers increasingly reward brands that pair convenience with responsibility, especially in healthcare-related purchases. Warby Parker builds c"
+    },
+    {
+      "passage_uid": "PU-45243f348f5ec598",
+      "source_id": "S-f81613345f39",
+      "char_start": 39200,
+      "char_end": 39892,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Energy and Footprint: Efficiency upgrades in stores and facilities, along with renewable energy certificates and offsets, mitigate operational emissions. * Responsible Logistics: Packaging right-sizin"
+    },
+    {
+      "passage_uid": "PU-18ec737280acabb0",
+      "source_id": "S-f81613345f39",
+      "char_start": 41214,
+      "char_end": 41719,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Future Outlook and Strategic Growth In a resilient vision-care market shaped by aging demographics and screen-heavy lifestyles, demand continues to expand. Warby Parker is positioned for steady growth"
+    },
+    {
+      "passage_uid": "PU-d4df7a62637c1653",
+      "source_id": "S-21f927f4d8bc",
+      "char_start": 2772,
+      "char_end": 3196,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "provider_reported_result",
+      "preview": "Hydro Flask Email Marketing: Case Study Boost Hydro Flask sales with personalized, seasonal email strategies, automation, and engaging visuals to increase open rates and foster customer loyalty. Team "
+    },
+    {
+      "passage_uid": "PU-61dcd81602712782",
+      "source_id": "S-21f927f4d8bc",
+      "char_start": 3637,
+      "char_end": 4076,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "provider_reported_result",
+      "preview": "Prose Email Marketing: Case Study Boost engagement and conversions with Prose's personalized, data-driven email marketing strategy—leveraging automation, segmentation, and optimization for maximum ROI"
+    },
+    {
+      "passage_uid": "PU-c91e506b11e59bf6",
+      "source_id": "S-21f927f4d8bc",
+      "char_start": 4081,
+      "char_end": 4290,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "provider_reported_result",
+      "preview": "DipYourCar Marketing Strategy: Case Study Discover top marketing strategies for DipYourCar—boost local SEO, leverage social media, influencer partnerships, and optimize your online presence for maximu"
+    },
+    {
+      "passage_uid": "PU-5bc0f546939796ee",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 3934,
+      "char_end": 4582,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:ambiguous_entity"
+      ],
+      "identity_reason": "possible different entity: Warby Parker Co-Founder",
+      "statement_type": "provider_reported_result",
+      "preview": "This gesture was also wildly appreciated by their consumers. Just take a quick look at the comments section: ## 2. Leverage User-Generated Content = Viral Content > “We find that engagement fosters vi"
+    },
+    {
+      "passage_uid": "PU-0fab7b6864f502c6",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 5745,
+      "char_end": 6178,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "WarbyHomeTryOn: > ‘Select 5 frames to test out for 5 days and we’ll ship them to you—for free!’ Warby Parker’s Home Try-On strategy became instantly popular among their current and prospective custome"
+    },
+    {
+      "passage_uid": "PU-6cfc934112a9935a",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 10199,
+      "char_end": 10480,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "8. Get Your Whole Company Involved in Social Media Marketing When you search for #teamwarby, you’ll see over 4,000 posts. A major chunk of these posts is by their employees, constantly promoting WP. I"
+    },
+    {
+      "passage_uid": "PU-dfc05b0a3edb7fc6",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 10969,
+      "char_end": 11532,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Each comment, photo and tweet gives you an opening to directly > communicate with them on a meaningful, personalized basis that encourages brand loyalty.” > Co-founder and co-CEO David Gilboa On Insta"
+    },
+    {
+      "passage_uid": "PU-7d33e0462466516a",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 11535,
+      "char_end": 11706,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Likes and comments on customers’ pictures The Warby Parker team takes customer service to a whole new level by commenting on their customers’ pictures and offering advice:"
+    },
+    {
+      "passage_uid": "PU-ade34d48193ec7f7",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 15473,
+      "char_end": 15657,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Don’t be afraid to show your brand’s personality on Instagram. And most of all, have a proper Instagram marketing strategy in place that aligns with your brand’s goals and core vision."
+    },
+    {
+      "passage_uid": "PU-fe50f5394cde7518",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 16343,
+      "char_end": 16565,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Finally, a new way to grow on Instagram. A Love Letter To the Instagram Marketer From: Colton Bollinger, Founder & CEO of Jumper Media On: September 25, 2019 To… 28 * The Dominance of Content Marketin"
+    },
+    {
+      "passage_uid": "PU-b946423d0f307e91",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 17766,
+      "char_end": 18010,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Facebook Stories: Jumper’s Complete Guide for Beginners Unless you’ve been living under a rock, you’re no doubt familiar with Facebook, and have probably used the app for… 7 * Inspiration for Your Nex"
+    },
+    {
+      "passage_uid": "PU-d7b15788bfc842bb",
+      "source_id": "S-6d69c31c19af",
+      "char_start": 673,
+      "char_end": 1044,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:ambiguous_entity"
+      ],
+      "identity_reason": "possible different entity: Warby Parker Impact",
+      "statement_type": "descriptive",
+      "preview": "Warby Parker Impact Report Completing a yearly report, as benchmarked by the universally recognized GRI (Global Reporting Initiative) framework, gives us the opportunity to examine how we’re embodying"
+    },
+    {
+      "passage_uid": "PU-2fc53ea377c5af1c",
+      "source_id": "S-6d69c31c19af",
+      "char_start": 1075,
+      "char_end": 1446,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:ambiguous_entity"
+      ],
+      "identity_reason": "possible different entity: Warby Parker Impact",
+      "statement_type": "descriptive",
+      "preview": "Warby Parker Impact Report Completing a yearly report, as benchmarked by the universally recognized GRI (Global Reporting Initiative) framework, gives us the opportunity to examine how we’re embodying"
+    },
+    {
+      "passage_uid": "PU-d9aee63fc75d4149",
+      "source_id": "S-9a56f9966e87",
+      "char_start": 287,
+      "char_end": 425,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "How Warby Parker Used Strategic Social Media to Reinvent Eyewear February 15, 2026 By. Sadie Mattson Photo by GlassesShop GS on Pexels.com"
+    },
+    {
+      "passage_uid": "PU-50780f445e8a4394",
+      "source_id": "S-f81613345f39",
+      "char_start": 6938,
+      "char_end": 7357,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Gen Z and Millennials: fashion-forward buyers seeking AR try-on, creator content, and flexible payments, often purchasing online-to-store. * Young families: value-conscious shoppers needing durable fr"
+    },
+    {
+      "passage_uid": "PU-053d60cd392e220e",
+      "source_id": "S-f81613345f39",
+      "char_start": 7501,
+      "char_end": 8177,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Impact-minded consumers: purpose-driven buyers influenced by social good and transparency, converting through mission-led storytelling. Segmenting around behaviors and needs improves creative relevanc"
+    },
+    {
+      "passage_uid": "PU-b12be8055f9d8492",
+      "source_id": "S-f81613345f39",
+      "char_start": 10528,
+      "char_end": 11062,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Media mixes balance paid social prospecting with branded search, retargeting, and creator whitelisting for incremental reach. The brand tests hooks that emphasize convenience and confidence, such as f"
+    },
+    {
+      "passage_uid": "PU-e21c1054a7c885d8",
+      "source_id": "S-f81613345f39",
+      "char_start": 11104,
+      "char_end": 11771,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "AR try-on prompts above the fold, increasing product detail page dwell time and add-to-cart actions. * Home Try-On CTAs on high-traffic pages, paired with upfront shipping clarity to reduce abandonmen"
+    },
+    {
+      "passage_uid": "PU-2c58b087a195baac",
+      "source_id": "S-f81613345f39",
+      "char_start": 13383,
+      "char_end": 13674,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Disclosure standards remain strict to protect trust and compliance. This subsection explains community programs that convert purpose into participation and loyalty. Local relevance and measurable outc"
+    },
+    {
+      "passage_uid": "PU-3776636660edd960",
+      "source_id": "S-f81613345f39",
+      "char_start": 14515,
+      "char_end": 15177,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Product and Service Strategy Warby Parker organizes its product and service strategy around accessible design, trustworthy clinical care, and a frictionless path to purchase. The assortment spans opti"
+    },
+    {
+      "passage_uid": "PU-c598eafba4558eed",
+      "source_id": "S-f81613345f39",
+      "char_start": 21144,
+      "char_end": 21694,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Gifting moments: Accessory bundles and digital gift cards streamline holiday consideration for both optical and sun categories. * Newness rhythm: Regular color and silhouette refreshes maintain browsi"
+    },
+    {
+      "passage_uid": "PU-ccad2548a044a2b7",
+      "source_id": "S-f81613345f39",
+      "char_start": 21698,
+      "char_end": 22329,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Pricing, Distribution, and Promotional Strategy Warby Parker pairs transparent pricing with broad distribution and focused promotions that emphasize access and value. Price architecture invites entry "
+    },
+    {
+      "passage_uid": "PU-0f9a37198521f89d",
+      "source_id": "S-f81613345f39",
+      "char_start": 24492,
+      "char_end": 25153,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Digital backbone: Prescriptions, favorites, and try-on history sync across app and web, keeping choices consistent across visits. Promotions prioritize clarity over discounting and focus on moments th"
+    },
+    {
+      "passage_uid": "PU-68ccf7127f38e126",
+      "source_id": "S-f81613345f39",
+      "char_start": 32475,
+      "char_end": 33142,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Home Try-On: Five frames shipped at no cost create low-risk trial, improving first-purchase conversion and driving word-of-mouth referrals. * Virtual Try-On: Face-mapping on compatible devices speeds "
+    },
+    {
+      "passage_uid": "PU-0c5111bf4ed32b45",
+      "source_id": "S-f81613345f39",
+      "char_start": 44372,
+      "char_end": 44981,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "boilerplate:table_of_contents"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Louis Vuitton SWOT Analysis: Luxury Leadership, Market Share, Growth Strategy, and Risks 2. Top 12 Pizza Hut Competitors & Alternatives [2026] 3. Steve Madden Marketing Mix: Streetwise Brand Identity "
+    },
+    {
+      "passage_uid": "PU-8140927990ba5cbd",
+      "source_id": "S-21f927f4d8bc",
+      "char_start": 2309,
+      "char_end": 2542,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "provider_reported_result",
+      "preview": "It helped us dramatically improve our > existing social workflows including community management, social listening, and brand advocacy. > This is literally the future of work.” Social Media Manager at"
+    },
+    {
+      "passage_uid": "PU-b7b7e98d5e9ac18d",
+      "source_id": "S-21f927f4d8bc",
+      "char_start": 3201,
+      "char_end": 3632,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "provider_reported_result",
+      "preview": "Cotopaxi Email Marketing: Case Study Discover Cotopaxi’s powerful email marketing strategy: personalized content, storytelling, segmentation, and tools like Klaviyo to boost engagement and conversions"
+    },
+    {
+      "passage_uid": "PU-0eea013350ae859c",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 13809,
+      "char_end": 14133,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "12. Geotagging – Increase Your Post’s Reach > Posts with location have 79% more engagement than those without. Source Warby Parker implement this strategy on Instagram well. They put up locations of t"
+    },
+    {
+      "passage_uid": "PU-c82699872b6281aa",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 16570,
+      "char_end": 16791,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "provider_reported_result",
+      "preview": "The Dominance of Content Marketing in 2019 Content marketing works. This digital marketing strategy is used by 90% of marketers, and small businesses attain 126%… 9 * Using Instagram to Sell High End "
+    },
+    {
+      "passage_uid": "PU-0ff148f895dfda39",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 18015,
+      "char_end": 18220,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "provider_reported_result",
+      "preview": "Inspiration for Your Next Influencer Marketing Campaign Influencer marketing has exploded. 89% of marketers find their ROI from influencer marketing is better or comparable to… 2 Show more See all art"
+    },
+    {
+      "passage_uid": "PU-9b3cb329d2ac5404",
+      "source_id": "S-f81613345f39",
+      "char_start": 42322,
+      "char_end": 42959,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "provider_reported_result",
+      "preview": "Contacts and Subscriptions: Expanded brands and reminders create recurring revenue alongside the Scout daily line. * Progressives and Premium Lenses: Education and fitting tools lift mix, margins, and"
+    },
+    {
+      "passage_uid": "PU-9bb069d83e1b974f",
+      "source_id": "S-9a56f9966e87",
+      "char_start": 2697,
+      "char_end": 2899,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Instead of only talking about product features, the brand offers a story that people want to be a part of, which helps create emotional connections and build long-term loyalty (Kaplan & Haenlein, 2010"
+    },
+    {
+      "passage_uid": "PU-1467b712351b0e6b",
+      "source_id": "S-9a56f9966e87",
+      "char_start": 4005,
+      "char_end": 4128,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "What brands do you think are succeeding on social media right now? What do you think makes their ### approach work so well?"
+    },
+    {
+      "passage_uid": "PU-b4d054aee4bfe28b",
+      "source_id": "S-f81613345f39",
+      "char_start": 4504,
+      "char_end": 5065,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Performance data supports the approach, with estimates placing 2024 revenue near $745 million and active customers rising. Net Promoter Scores reportedly sit in the 80s for many cohorts, reflecting se"
+    },
+    {
+      "passage_uid": "PU-7ea8d8813d63af37",
+      "source_id": "S-f81613345f39",
+      "char_start": 5757,
+      "char_end": 5885,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Warby Parker converts a simple promise into a repeatable system that attracts high-intent shoppers and nurtures long-term value."
+    },
+    {
+      "passage_uid": "PU-0e9be5ba022f0a9a",
+      "source_id": "S-f81613345f39",
+      "char_start": 6493,
+      "char_end": 6892,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "The brand addresses each cohort with targeted offers, clear education, and channel experiences that feel personalized. This subsection outlines core demographic and psychographic segments that guide c"
+    },
+    {
+      "passage_uid": "PU-56e23dda0883a117",
+      "source_id": "S-f81613345f39",
+      "char_start": 9608,
+      "char_end": 9834,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "This subsection presents platform tactics tailored to audience behaviors and content norms. Channel specificity improves engagement and reduces creative fatigue. The approach keeps cost per acquisitio"
+    },
+    {
+      "passage_uid": "PU-688877217b5ec277",
+      "source_id": "S-f81613345f39",
+      "char_start": 14367,
+      "char_end": 14511,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Creator advocacy and local impact establish durable equity that paid media alone cannot replicate, improving efficiency while deepening loyalty."
+    },
+    {
+      "passage_uid": "PU-caa95d9118b52f2f",
+      "source_id": "S-f81613345f39",
+      "char_start": 18370,
+      "char_end": 18497,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "That combination keeps Warby Parker positioned as a dependable category leader with a clearly differentiated value proposition."
+    },
+    {
+      "passage_uid": "PU-ff18dbb00d2de16c",
+      "source_id": "S-f81613345f39",
+      "char_start": 18501,
+      "char_end": 19184,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:ambiguous_entity"
+      ],
+      "identity_reason": "possible different entity: Warby Parker The",
+      "statement_type": "descriptive",
+      "preview": "Marketing Mix of Warby Parker The marketing mix integrates product, price, place, and promotion into a single, measurable growth engine. Product variety anchors trade-ups, transparent pricing encourag"
+    },
+    {
+      "passage_uid": "PU-7791171e40a8888b",
+      "source_id": "S-f81613345f39",
+      "char_start": 19185,
+      "char_end": 19849,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "The mix adapts as new clinical services, lens options, or merchandising stories mature into growth drivers. ### 4Ps Alignment and Key Levers The 4Ps act as coordinated levers rather than separate func"
+    },
+    {
+      "passage_uid": "PU-9bd8b4ed7ba0e7c3",
+      "source_id": "S-f81613345f39",
+      "char_start": 22994,
+      "char_end": 23638,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Enhancements: Light-responsive, polarization, blue-light filtration, and higher index options add approximately 50 to 150 dollars per pair. * Contacts and exams: Competitive contact lens pricing and m"
+    },
+    {
+      "passage_uid": "PU-7c5f59cefd4a5d81",
+      "source_id": "S-f81613345f39",
+      "char_start": 29087,
+      "char_end": 29509,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Estimated 2024 revenue approaches 750 million dollars, supported by a store base exceeding 240 locations across North America. The model counters wholesale markups with vertical integration and freque"
+    },
+    {
+      "passage_uid": "PU-f1d6d86a8b073bc7",
+      "source_id": "S-f81613345f39",
+      "char_start": 31093,
+      "char_end": 31374,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Price Architecture: Transparent entry prices with lens options and coatings provide trade-up room without confusion. Warby Parker competes effectively where service, design, and clarity matter most, e"
+    },
+    {
+      "passage_uid": "PU-d4eaa1963269f8e5",
+      "source_id": "S-f81613345f39",
+      "char_start": 33145,
+      "char_end": 33844,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Insurance and Payment: Out-of-network claim support, growing in-network availability, FSA and HSA guidance, and financing options reduce cost friction. Operational metrics reflect the impact of these "
+    },
+    {
+      "passage_uid": "PU-f15147868ea5698a",
+      "source_id": "S-f81613345f39",
+      "char_start": 39893,
+      "char_end": 40560,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "These operational gains support quality perceptions and enhance loyalty. ### Technology Stack and In-Store Innovation Technology strengthens discovery, exam access, and fulfillment. The stack favors s"
+    },
+    {
+      "passage_uid": "PU-4982ab0e3b91ebfe",
+      "source_id": "S-f81613345f39",
+      "char_start": 41724,
+      "char_end": 42319,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Growth Levers and Investments The roadmap concentrates resources on the highest-return channels and experiences. Investments target access, assortment depth, and operational speed that customers immed"
+    },
+    {
+      "passage_uid": "PU-1431bb005f7dc373",
+      "source_id": "S-f81613345f39",
+      "char_start": 45765,
+      "char_end": 46087,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "brand_positioning",
+      "preview": "Tips and Guides At Latterly.org, we believe that the worlds of business, technology, and lifestyle are more interconnected than ever. Our blog is dedicated to exploring these dynamic intersections, pr"
+    },
+    {
+      "passage_uid": "PU-326722362a438839",
+      "source_id": "S-21f927f4d8bc",
+      "char_start": 2546,
+      "char_end": 2767,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "provider_reported_result",
+      "preview": "Other posts you may like Hydro Flask Email Marketing: Case Study - Boost Hydro Flask sales with personalized, seasonal email strategies, automation, and engaging visuals to increase open rates and fos"
+    },
+    {
+      "passage_uid": "PU-419807ae56fc2693",
+      "source_id": "S-21f927f4d8bc",
+      "char_start": 4320,
+      "char_end": 4455,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "provider_reported_result",
+      "preview": "Need help scaling your social media? Our AI Marketing Agents monitor, analyze, and support social engagement across all platforms 24/7."
+    },
+    {
+      "passage_uid": "PU-5a41e44d5149a1a4",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 14137,
+      "char_end": 14783,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "provider_reported_result",
+      "preview": "13. Use Instagram Stories for Higher Brand Awareness > More than 50% of businesses on Instagram produced an Instagram Story in the last month, while one > in five organic stories from businesses gener"
+    },
+    {
+      "passage_uid": "PU-c588404951b2406d",
+      "source_id": "S-f81613345f39",
+      "char_start": 20517,
+      "char_end": 21141,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "provider_reported_result",
+      "preview": "That clarity strengthens trust and decreases choice paralysis. ### Seasonal Cadence and Merchandising Drivers Marketing plans layer product stories over high-intent seasonal windows. Visual identity s"
+    },
+    {
+      "passage_uid": "PU-7d85ef2f3f47fddb",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 8022,
+      "char_end": 8286,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "painters, who painted their new space * founder of Girl Gaze Project …and soo many more. But instead of going with super-expensive, super-popular, celebrity-status IG influencers, they’ve stuck with c"
+    },
+    {
+      "passage_uid": "PU-acf7f18c12ad1d7f",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 9693,
+      "char_end": 10164,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "new products they’re launching. It adds that, much-needed, oomph factor to their product posts and reinforces the fun vibe they’re going for. Each of their product videos is accompanied with the produ"
+    },
+    {
+      "passage_uid": "PU-2255d6fb1352ec6a",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 15785,
+      "char_end": 16100,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Ranking a Business #1 on Google Maps Was Only Half the Job Jun 11, 2026 ### Ranking a Business #1 on Google Maps Was Only Half the Job Two years ago, we were convinced that getting a local business in"
+    },
+    {
+      "passage_uid": "PU-095ff7601cc672ec",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 16105,
+      "char_end": 16325,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "💌 To the Instagram Marketer (a love letter) From: Colton Bollinger, Founder & CEO of Jumper Media On: October 2, 2019 To the Instagram marketer: If you've fiddled… 43 7 Comments * Finally, a new way t"
+    },
+    {
+      "passage_uid": "PU-757dc7c4754465c9",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 16796,
+      "char_end": 16941,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Using Instagram to Sell High End Products Think Instagram is only for the middle class and not luxury consumers who’d buy your high-end products?"
+    },
+    {
+      "passage_uid": "PU-227b52881e64db05",
+      "source_id": "S-9a56f9966e87",
+      "char_start": 98,
+      "char_end": 273,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "When a Meme Fails: Lessons from the Breast Cancer ### How Weixin Changed Messaging into an Entire Digital World ### What orkut teaches us about why social media platforms fail"
+    },
+    {
+      "passage_uid": "PU-0850a8c414c09ea8",
+      "source_id": "S-9a56f9966e87",
+      "char_start": 1945,
+      "char_end": 2098,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "author_recommendation",
+      "preview": "You can still see this on the Warby Parker website today (linked below), where community and experience are just as important as the products themselves."
+    },
+    {
+      "passage_uid": "PU-f0362436d782d5d8",
+      "source_id": "S-f81613345f39",
+      "char_start": 3825,
+      "char_end": 4503,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Home Try-On: five frames, five days, prepaid returns; a performance driver that reduces fit anxiety and increases first-order conversion. * Virtual Try-On via mobile AR, leveraging device cameras to p"
+    },
+    {
+      "passage_uid": "PU-1619a304d2b0f25c",
+      "source_id": "S-f81613345f39",
+      "char_start": 16782,
+      "char_end": 17093,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Appointments book seamlessly, prescriptions sync to carts, and store associates close gaps with adjustments and counseling. This continuity feels consistent whether the purchase starts online or in a "
+    },
+    {
+      "passage_uid": "PU-58be138c72d46b36",
+      "source_id": "S-f81613345f39",
+      "char_start": 17746,
+      "char_end": 18369,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Operational controls: Centralized routing, inventory buffers, and cleaning protocols manage cycle times, damage risk, and hygienic handling. * Guided selection: Algorithmic suggestions, face-shape pro"
+    },
+    {
+      "passage_uid": "PU-1d2f0943e62d6f23",
+      "source_id": "S-f81613345f39",
+      "char_start": 23801,
+      "char_end": 24489,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Omnichannel Distribution and Fulfillment Logistics orchestrates inventory and labs to reduce cycle times and improve accuracy. Retail density focuses on trade areas with proven demand and strong cross"
+    },
+    {
+      "passage_uid": "PU-0a8f2a9e63698231",
+      "source_id": "S-f81613345f39",
+      "char_start": 26448,
+      "char_end": 27044,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Value and Transparency: Clear pricing with lenses included, frequent communication about prescriptions, and straightforward policies that reduce purchase anxiety. * Design and Quality: Proprietary ace"
+    },
+    {
+      "passage_uid": "PU-7efe2a51fc07e1fe",
+      "source_id": "S-f81613345f39",
+      "char_start": 29549,
+      "char_end": 30149,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "EssilorLuxottica: Dominant portfolio across frames, lenses, and retail; 2024 revenue likely exceeds 27 billion euros based on recent growth trends. * Optical Retail Chains: LensCrafters, Pearle Vision"
+    },
+    {
+      "passage_uid": "PU-4af08dd9259a1aeb",
+      "source_id": "S-f81613345f39",
+      "char_start": 30805,
+      "char_end": 30950,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Purpose-Led Equity: Give-Back and public-benefit accountability translate into trust metrics that support premium positioning versus discounters."
+    },
+    {
+      "passage_uid": "PU-c1dd9e4d06f571d3",
+      "source_id": "S-f81613345f39",
+      "char_start": 32004,
+      "char_end": 32430,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Free adjustments, lens replacement policies, and quick support maintain satisfaction after the sale. These elements increase confidence during prescription updates and reduce churn during style refres"
+    },
+    {
+      "passage_uid": "PU-e8de541802ad77b2",
+      "source_id": "S-f81613345f39",
+      "char_start": 36336,
+      "char_end": 36660,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "The brand underscores transparent pricing, free shipping and returns, and fast delivery windows that reduce purchase anxiety. Visuals prioritize frame styles, face shapes, and color variations, paired"
+    },
+    {
+      "passage_uid": "PU-7c60ab0821e6ae65",
+      "source_id": "S-f81613345f39",
+      "char_start": 37221,
+      "char_end": 37844,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Onsite Personalization: Recently viewed frames, face shape guidance, and saved Home Try-On selections speed decisions across sessions and devices. * Clienteling: Store teams access preferences and pur"
+    },
+    {
+      "passage_uid": "PU-28ffa24d585fc2db",
+      "source_id": "S-f81613345f39",
+      "char_start": 42960,
+      "char_end": 43540,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "A stronger services core creates defensible differentiation that pure online rivals struggle to replicate. ### Risk Management and Scenario Planning Prudent planning sustains growth through market shi"
+    },
+    {
+      "passage_uid": "PU-161c760a4591643a",
+      "source_id": "S-f81613345f39",
+      "char_start": 44982,
+      "char_end": 45123,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Her expertise lies in dissecting complex topics and presenting them in an accessible, engaging manner that resonates with a diverse audience."
+    },
+    {
+      "passage_uid": "PU-1917f49d21b4482a",
+      "source_id": "S-f81613345f39",
+      "char_start": 45128,
+      "char_end": 45308,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Mary Kay Marketing Strategy: Party Plan Growth Tactics for Beauty Consultants ### Frito Lay Marketing Strategy: Driving Snack Aisle Dominance with Doritos and Cheetos Search Search"
+    },
+    {
+      "passage_uid": "PU-856e627ddbb446a5",
+      "source_id": "S-21f927f4d8bc",
+      "char_start": 1137,
+      "char_end": 1297,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "provider_reported_result",
+      "preview": "When marketing runs itself Project FSD: a fully AI-run store Scaling Helena's tools Company About Us Affiliates Featured Can AI agents buy from the Fortune 500?"
+    },
+    {
+      "passage_uid": "PU-039adcb188f4aa68",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 12386,
+      "char_end": 12799,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "provider_reported_result",
+      "preview": "Let’s look at this post as an example. A library: A library contains books, and most people who wear glasses love reading. See, there’s a connection. They frequently post interesting library pictures,"
+    },
+    {
+      "passage_uid": "PU-fedf6f1a514b6465",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 17426,
+      "char_end": 17761,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "provider_reported_result",
+      "preview": "How to Research Interests for Next-Level Facebook Ad Targeting Jul 30, 2019 ### How to Research Interests for Next-Level Facebook Ad Targeting 92% of Marketers Advertise on Facebook With that many adv"
+    },
+    {
+      "passage_uid": "PU-8928f8c9fc976a21",
+      "source_id": "S-f81613345f39",
+      "char_start": 17098,
+      "char_end": 17743,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "provider_reported_result",
+      "preview": "Home Try-On and Service Enhancements Home Try-On addresses hesitation with tactile proof before purchase, a critical unlock for fit-sensitive categories. Logistics technology, curated assortments, and"
+    },
+    {
+      "passage_uid": "PU-12cc5e5df2397dda",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 9406,
+      "char_end": 9612,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "They like to show behind-the-scenes moments through time-lapse videos. * Lots and lots of short gif-fy videos They love to create and upload short, 2-3-second-long videos. They usually use these video"
+    },
+    {
+      "passage_uid": "PU-64ba3877ba8064ed",
+      "source_id": "S-9a56f9966e87",
+      "char_start": 1054,
+      "char_end": 1238,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "author_recommendation",
+      "preview": "Their method is a great example of how social media can help build a brand’s identity, gain customer trust, and create real relationships with people, instead of only pushing products."
+    },
+    {
+      "passage_uid": "PU-3a994ad26c23f60a",
+      "source_id": "S-9a56f9966e87",
+      "char_start": 4147,
+      "char_end": 4270,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Share on X (Opens in new window) X * Share on LinkedIn (Opens in new window) LinkedIn Like Loading… Posted in Uncategorized"
+    },
+    {
+      "passage_uid": "PU-4c603f1555d2657a",
+      "source_id": "S-f81613345f39",
+      "char_start": 15178,
+      "char_end": 15299,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Proprietary frames, vertically integrated labs, and consistent quality standards protect differentiation across channels."
+    },
+    {
+      "passage_uid": "PU-8e8ca9edee5cb0aa",
+      "source_id": "S-f81613345f39",
+      "char_start": 15428,
+      "char_end": 16123,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Portfolio Architecture and Differentiation The product portfolio covers essential needs and anchors premium trade-ups, which strengthens average order value and repeat intent. Services like comprehens"
+    },
+    {
+      "passage_uid": "PU-a7def3335ef64940",
+      "source_id": "S-f81613345f39",
+      "char_start": 16126,
+      "char_end": 16781,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Clinical services: In-store eye exams, contact lens fittings, and prescription renewals through supported tele-optometry where regulations allow. * Virtual try-on: App-based augmented reality fit visu"
+    },
+    {
+      "passage_uid": "PU-84302983ef18885b",
+      "source_id": "S-f81613345f39",
+      "char_start": 22330,
+      "char_end": 22991,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "This approach reduces negotiation pressure and protects margins while signaling quality and care. ### Pricing Tiers and Value Stack Pricing ladders align with customer needs and encourage step-ups whe"
+    },
+    {
+      "passage_uid": "PU-f140219b0d1cc014",
+      "source_id": "S-f81613345f39",
+      "char_start": 23639,
+      "char_end": 23796,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Connected data ensures carts, prescriptions, and preferences follow the customer. That continuity simplifies path-to-purchase and supports higher conversion."
+    },
+    {
+      "passage_uid": "PU-dce229eda5124e71",
+      "source_id": "S-f81613345f39",
+      "char_start": 36665,
+      "char_end": 37218,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Owned Channels and CRM Orchestration Owned communications convert prospects and expand lifetime value through exams, lenses, and contacts. Data-driven sequencing coordinates timing across app, email, "
+    },
+    {
+      "passage_uid": "PU-3c11c762e44389be",
+      "source_id": "S-f81613345f39",
+      "char_start": 37845,
+      "char_end": 38080,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "As average revenue per customer trends upward, the media mix prioritizes incremental reach while maintaining strict efficiency guardrails. Strong creative clarity and well-timed CRM unlock higher resp"
+    },
+    {
+      "passage_uid": "PU-1e5374c0714db84b",
+      "source_id": "S-f81613345f39",
+      "char_start": 45518,
+      "char_end": 45661,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Fenty Beauty SWOT Analysis: Rihanna’s Inclusive Makeup Empire Growth Outlook * Shopee SWOT Analysis: Southeast Asia E-Commerce Growth Prospects"
+    },
+    {
+      "passage_uid": "PU-746caba08cc264e1",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 17282,
+      "char_end": 17420,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "author_recommendation",
+      "preview": "What Social Media Marketers Should Know About Gen Z It’s impossible to ignore Generation Z. This group of tech-savvy consumers make up 25."
+    },
+    {
+      "passage_uid": "PU-f892d89800ceff23",
+      "source_id": "S-f81613345f39",
+      "char_start": 44157,
+      "char_end": 44351,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "author_recommendation",
+      "preview": "Continued investment in services and data clarity should compound returns across channels. This strategy positions the company to lead category share gains while strengthening long-term loyalty."
+    },
+    {
+      "passage_uid": "PU-ca9829d7b7f94096",
+      "source_id": "S-9a56f9966e87",
+      "char_start": 4275,
+      "char_end": 4465,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "author_recommendation",
+      "preview": "Leave a Reply Cancel reply Name Email Website Turn on JavaScript to leave a comment. Δ When a Meme Fails: Lessons from the Breast Cancer Meme→ Create a free website or blog at WordPress.com."
+    },
+    {
+      "passage_uid": "PU-9a8aa04071f666d5",
+      "source_id": "S-4db1d4ca46fb",
+      "char_start": 7424,
+      "char_end": 7644,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "statement_type:proposed_or_mock_work"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "proposed_or_mock_work",
+      "preview": "Free chocolate Bribing their customers with donuts and similar yummy goodies to entice them to drop by their outlets is their favorite tactic. Because—let’s face it—who can resist free chocolate or ot"
+    }
+  ],
+  "status": "ok",
+  "status_reasons": [],
+  "packet_sha256": "a86356f018bbfebd7797141b9914bf541475d89ad1132f3004794bed01400451"
+}

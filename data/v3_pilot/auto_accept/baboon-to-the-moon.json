@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "baboon-to-the-moon",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "8d5183e24058ce5c58e1b8aea19aa4f0c2df016064c7b095aec2d8d56aff57de",
+    "prompt_sha256": "5dedd94c5e970caf3b6e4babaa011ffd6dc6cd95e2fe1a6b11f42bdf7992fa09",
+    "completion_sha256": "3ce7824adfd7d882681ecc141ca2ad5189193edafdf1be4cfbcc47ba499735d4",
+    "audit_sha256": "7cdbddab3e64f238ebdcd81c33129f2b553ab633c74b1cd263b418144147c146"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 7,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:44+00:00",
+  "record_sha256": "72371a32e3960f1d2893ec90bd4c24d9dc463682c6a8bf7e7476a786559aeaa3"
+}

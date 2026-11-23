@@ -1,0 +1,104 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "graza",
+  "bound_to": {
+    "packet_sha256": "7fc584b24e2a0cb4ed4aa5af4673225faa9a7184eb2cc9ada7773e3ae886af7c",
+    "prompt_sha256": "49ebacb7636298ddd28d5190268370cdd7de66be7727e85b5f5a6d783bf39579",
+    "completion_sha256": "cb11ba97f3d969bef9f05209b5b6b883c48addfca44bb4fa4d88cec485075d0c",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [
+      "claim C2: quote does not occur in cited passage(s) ['P2']"
+    ],
+    "warnings": []
+  },
+  "raw_response_sha256": "6d5461c6f667e6775808eda25b82ecfb8ca97dd595acd4eebb541e42e2a2ca5e",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Olive Oil the way it's supposed to be.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms Graza makes olive oil and implies it's in a distinctive format.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"“Sizzle” Extra Virgin Olive Oil Use it every day, in every way.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly mentions 'Drizzle' and 'Sizzle' as core oils.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"After launch, Graza leaned heavily on UGC. Home cooks, chefs, creators used the bottle, showed recipes, drizzled oil in cooking videos.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Graza relies heavily on user-generated content.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"they DM’d food creators, sent them the product, and let the bottle do the work.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes a strategy of directly engaging creators to showcase the product.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P9\"\n      ],\n      \"quote\": \"Graza is working with other canned products to promote the refills.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states Graza collaborates with other brands.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"The visuals are clean, warm, modern. Graza’s social content, product design, and messaging are playful and culinary-inspired rather than overly formal.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes Graza's brand as having a modern aesthetic and playful messaging.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Olive Oil the way it's supposed to be.",
+        "issues": [],
+        "reason": "The passage confirms Graza makes olive oil and implies it's in a distinctive format."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "“Sizzle” Extra Virgin Olive Oil Use it every day, in every way.",
+        "issues": [],
+        "reason": "The passage explicitly mentions 'Drizzle' and 'Sizzle' as core oils."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "After launch, Graza leaned heavily on UGC. Home cooks, chefs, creators used the bottle, showed recipes, drizzled oil in cooking videos.",
+        "issues": [],
+        "reason": "The passage directly states Graza relies heavily on user-generated content."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "they DM’d food creators, sent them the product, and let the bottle do the work.",
+        "issues": [],
+        "reason": "The passage describes a strategy of directly engaging creators to showcase the product."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P9"
+        ],
+        "quote": "Graza is working with other canned products to promote the refills.",
+        "issues": [],
+        "reason": "The passage explicitly states Graza collaborates with other brands."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "The visuals are clean, warm, modern. Graza’s social content, product design, and messaging are playful and culinary-inspired rather than overly formal.",
+        "issues": [],
+        "reason": "The passage describes Graza's brand as having a modern aesthetic and playful messaging."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [
+    "C2: reviewer quote does not occur in the referenced passage(s)"
+  ],
+  "status": "fail",
+  "reasons": [
+    "1 deterministic check error(s)",
+    "reviewer response also invalid: C2: reviewer quote does not occur in the referenced passage(s)"
+  ],
+  "created_at": "2026-11-22T20:06:11+00:00",
+  "audit_sha256": "a8d39d6d03c30558c20f99aec0de7d063eca4cd0fa50c17bcbc507b4e0dad969",
+  "dismissed_reviewer_flags": []
+}

@@ -1,0 +1,132 @@
+{
+  "schema_version": "brandpilot.label.v3",
+  "company_id": "fly-by-jing",
+  "packet_path": "packets/fly-by-jing.json",
+  "packet_sha256": "eea5d899d1846f2818d5a580c4a6781c4a733c0b4d0074f22189843aa76e67ba",
+  "prompt_version": "brandpilot.prompt.v3.2",
+  "prompt": "You are a grounded brand-outreach assistant for our team. Use only the evidence passages below.\nNever use outside knowledge. Return valid JSON only.\n\nSeparate three things:\n1. OBSERVED FACTS - things a passage actually states about this company. Each fact is a claim with an id (C1, C2, ...),\n   the passage id(s) that support it, and an exact quote copied word-for-word from that passage.\n2. UNKNOWNS - things the evidence does not tell us (put them in \"unknowns\"). A channel, program or audience that does\n   not appear in these passages is UNKNOWN. It is never a weakness, never a \"gap\", and never a reason for outreach.\n3. PROPOSALS - collaboration ideas from our team. Proposals are not facts, but each must build on a positively supported\n   fact (an existing campaign, partnership, product, community, value or theme) and cite that premise.\n\nRules:\n- Put a claim marker like {C1} (curly braces) right after every factual statement in every field, including the\n  email and Instagram idea. Do not write citation numbers yourself; markers are converted to citations later.\n- A claim's \"quote\" must be copied character-for-character from the cited passage: 5 to 25 consecutive words, no\n  paraphrasing, no joining of separate sentences. If you cannot find such a quote, drop the claim and every sentence\n  that depends on it.\n- Audience and strategy sentences are factual: each needs a marker. If no passage states the audience, write\n  INSUFFICIENT_EVIDENCE instead of guessing.\n- Pitch lines (email subject, hook, concept) should describe the proposed post (\"A carousel featuring ...\",\n  \"Collaborate on ...\"). Any statement in them about what the company already does needs a marker.\n- Respect passage types. \"proposed_or_mock_work\" and \"author_recommendation\" passages describe ideas, not things the\n  company did: never state them as company activity. \"provider_reported_result\" passages are claims by a vendor or\n  agency: attribute them (\"X reports that ...\"). \"creator_or_influencer_audience_data\" describes creators' followers,\n  not the company's customers. \"vendor_generated_profile_or_analytics\" passages are a tool vendor's estimates\n  (e.g. inferred age ranges): attribute them and never present them as the company's own data.\n  \"forward_looking_statement\" passages describe plans or intentions, not completed activity.\n- Mind time: if a passage describes past activity, do not present it as current.\n- \"marketing_gaps\" may only contain a weakness that a passage positively states. Usually it is [].\n- Never promise results. Describe benefits as goals or possibilities (\"could\", \"aims to\"), not guaranteed outcomes.\n- Decision: write \"draft\" when at least one concrete, evidence-supported collaboration opportunity exists. Otherwise write\n  \"abstain\", give an abstain_reason, set pitch fields to INSUFFICIENT_EVIDENCE and leave collaboration_opportunities empty.\n- The email is from our team to the company, proposing one collaborative Instagram post.\n\nRequired JSON:\n{\n  \"decision\": \"draft\" or \"abstain\",\n  \"abstain_reason\": \"string or empty\",\n  \"claims\": [{\"id\": \"C1\", \"kind\": \"fact | provider_reported | premise\", \"statement\": \"string\",\n              \"passage_ids\": [\"P1\"], \"quote\": \"exact words from the passage\"}],\n  \"brand_summary\": \"Full sentences, each followed by its marker, e.g. \"X makes ... {C1}.\" Never only markers. Or INSUFFICIENT_EVIDENCE\",\n  \"likely_target_audience\": \"A full sentence followed by its marker, or INSUFFICIENT_EVIDENCE\",\n  \"current_marketing_strategy\": [\"text with markers\"],\n  \"unknowns\": [\"what the evidence does not show\"],\n  \"marketing_gaps\": [],\n  \"collaboration_opportunities\": [\"proposal that builds on a cited fact {C2}\"],\n  \"instagram_post_idea\": {\"hook\": \"string\", \"concept\": \"string\", \"why_it_fits\": \"string\"},\n  \"email_subject\": \"string\",\n  \"email_body\": \"string\"\n}\n\nCompany: Fly By Jing (company_id fly-by-jing; category: Sichuan chili crisp and condiments)\nOfficial domains: flybyjing.com\nRecipient: the marketing team\nPacket status: ok\n\nEvidence passages:\n[P1] source: https://flybyjing.com/pages/press | document: official_domain | type: historical_activity | dates in text: 2019 | published: unknown\n\"PRESS Holiday Gift Guide 2019: The Best Items To Stock Their Pantry This Sichuan-Inspired Condiments Brand Could Be the Next Hot Thing in Home Cooking Spreads, the Best Food Gift of All You Need This High End Chinese Chile Crisp How So-Called ‘Ugly Food’ Is Challenging Notions of What We Crave Chef Jing “Jenny” Gao launched her Fly by Jing line of sauces and seasonings...\"\n\n[P2] source: https://flybyjing.com/pages/about | document: official_domain | type: descriptive | dates in text: none | published: unknown\n\"I Literally Wrote the Book on Sichuan Chili Crisp I started my pop-ups to bring the spirit of Chengdu’s bustling streets to life — loud, vibrant, unapologetic flavors that make you feel alive. You can now replicate these flavors at home with our line of Sichuan sourced condiments and noodles. Once you’re ready to take it to the next level, The Book of Sichuan Chili Crisp has 85 hot recipes for everything from dumplings to cocktails to desserts. This James Beard Award-winning book is both love letter and manifesto, tracing the journey of Sichuan Chili Crisp from my grandmother’s kitchen to every table that craves boldness.\"\n\n[P3] source: https://www.marketingbrew.com/stories/2023/01/13/how-fly-by-jing-went-from-kickstarter-to-shake-shack-partner-in-a-few-years | document: third_party_confirmed | type: actual_activity | dates in text: none | published: unknown\n\"Howdy, partner Another tactic that’s worked well for Fly by Jing as part of its community-building strategy, according to Patricio-Archer, is partnering with other brands. In the last year, the brand has collaborated with fellow DTC food brand Fishwife, Disney, and the YouTube series Hot Ones. On LinkedIn, Gao called the Hot Ones collaboration a “monumental achievement.” She told us that it’s been great for brand exposure and that getting on the show was in the works for about four years,” adding that “it’s the first time they had a chili oil on the lineup…so it definitely felt like a great moment for us.\"\n\n[P4] source: https://www.influencers-time.com/how-fly-by-jing-built-a-cult-brand-with-chili-crisp-seeding/ | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown\n\"Retail Momentum Followed the Content, Not the Other Way Around By the time Fly By Jing pursued retail partnerships with Whole Foods, Target, and eventually broader grocery distribution, the brand had something most emerging CPG products don’t: pre-existing demand signals. Buyers could see search volume, sold-out drops, and a wall of organic user-generated content proving the product already had traction. This sequencing — content first, retail second — is increasingly the norm for challenger brands. Feastables won shelf space the same way, and Chomps did too, using creator waves instead of retail media spend to prove demand before a single case hit a shelf.\"\n\n[P5] source: https://www.influencers-time.com/how-fly-by-jing-built-a-cult-brand-with-chili-crisp-seeding/ | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown\n\"Numbers That Matter to Marketing Leads While Fly By Jing hasn’t published a granular breakdown of seeding spend versus revenue, the directional pattern is consistent with broader industry data. HubSpot’s marketing research has repeatedly shown that user-generated and creator-driven content outperforms branded content on trust metrics, and Statista data on the creator economy shows nano and micro creator partnerships remain the fastest-growing segment of influencer spend, precisely because of cost efficiency relative to output. For a brand strategist building a business case internally, the takeaway isn’t “spend less.\"\n\n[P6] source: https://www.marketingbrew.com/stories/2023/01/13/how-fly-by-jing-went-from-kickstarter-to-shake-shack-partner-in-a-few-years | document: third_party_confirmed | type: historical_activity | flags: forward_looking_statement | dates in text: 2022 | published: unknown\n\"In 2022, Fly by Jing also partnered with Shake Shack in the UK on a Chili Crisp menu, which Gao said will be rolling out to all US locations this year. Fly by Jing also plans to “reinvent” its retention strategy this year, Patricio-Archer said. While it currently has a referral program and a loyalty program, she said “all of those things will fall away and take a completely new identity.” As Fly by Jing grows, Gao said everything ultimately ties back to its Chili Crisp hero products and “helping to reinforce [the brand’s] core.” That sense of identity ties back to Gao’s marketing advice to other DTC founders, which is defining the brand’s story.\"\n\n[P7] source: https://www.marketingbrew.com/stories/2023/01/13/how-fly-by-jing-went-from-kickstarter-to-shake-shack-partner-in-a-few-years | document: third_party_confirmed | type: actual_activity | dates in text: none | published: unknown\n\"The Kickstarter-era jar design for Chili Crisp did not include Gao's personal story. “When we first launched, my objective was really to create a design that made you look twice,” she said. old Fly By Jing Chili Crisp jar versus new oneold Fly By Jing Chili Crisp jar versus new one Kickstarter and Fly by Jing When Gao realized there was a brand story to be told to those first encountering it on a shelf, she said it was time for a rebrand. “Being very honest and open with our customers and talking to them like they’re friends and at our level, I think people really appreciate that,” she said. It’s also helped the brand’s growth over the last four years, according to Gao.\"\n\n[P8] source: https://www.modernretail.co/retailers/modern-retail-talk-how-instagram-darling-fly-by-jing-handled-an-unprecedented-demand-surge/ | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown\n\"X Fly by Jing The last five months have been a whirlwind for the company Fly By Jing. The California-based brand makes Chinese food items, including a chili crisp sauce that has taken Instagram by storm. Since shelter in place orders began earlier this year, Fly By Jing’s stock began to fly off the shelves. Much of that was thanks to inroads the company made with influencers and social advertising. Now, the company has learned quite a few lessons about how to handle having an item in such hot demand. For this week’s Modern Retail Talk, founder and CEO Jing Gao spoke about her trials and tribulations during the coronavirus.\"\n\n[P9] source: https://www.shopify.com/blog/fly-by-jing-recipe-for-success | document: third_party_confirmed | type: historical_activity | dates in text: 2026 | published: unknown\n\"Start for free Start for freeHow does Shopify work blog•Podcasts # How Fly By Jing Turned Chili Crisp Into an Eight-Figure Brand When Jing Gao launched Fly By Jing, she wasn’t just selling chili crisp—she was challenging a century-old story about the value of Chinese food. Starting from an underground supper club and a scrappy Kickstarter, she built a brand now found in Target, Walmart, and Whole Foods that has inspired a generation of Asian food founders. by Alicia ClarkJun 2, 2026\"\n\n[P10] source: https://www.influencers-time.com/how-fly-by-jing-built-a-cult-brand-with-chili-crisp-seeding/ | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown\n\"Seeding the Taste, Not the Hashtag Instead of running a traditional influencer campaign with scripted deliverables, Fly By Jing’s early growth team — reportedly working with a lean budget compared to VC-backed CPG competitors — built a seeding program around a simple mechanic: send the jar, film the reaction, let the spice do the talking. The creators weren’t mega-influencers. Early seeding lists leaned heavily on food-focused nano and micro creators: home cooks, chefs’ assistants, food photographers with 3,000 to 40,000 followers who actually cooked at home and had audiences who trusted their palates.\"\n",
+  "prompt_sha256": "fcf0c440ad48e34f9e0545efcd1527016f1f1fa1e865c9f0d4127616a19443a5",
+  "generator": {
+    "source": "model",
+    "role": "teacher",
+    "api_base": "http://localhost:8080/v1",
+    "model": "mlx-community/Qwen3-14B-4bit",
+    "temperature": 0.0,
+    "max_tokens": 4096,
+    "system_prompt_sha256": "eb6e2a30e7c76fd221a7a8e7d56c552b2d00d4ce1b02d4c76e8d8cdcbad8da7b",
+    "generated_at": "2026-11-22T20:02:40+00:00",
+    "attempts": [
+      {
+        "attempt": 0,
+        "raw_sha256": "a4db706acd3dc5b5d2c6a5982dba1db169e50549e742bb7c7fd1a8e9ae7fd1fc",
+        "deterministic_errors": 2
+      },
+      {
+        "attempt": 1,
+        "raw_sha256": "742491be41da71e5af0199412ef994c72b0255c0932062543986691238c4fe98",
+        "deterministic_errors": 1
+      },
+      {
+        "attempt": 2,
+        "raw_sha256": "742491be41da71e5af0199412ef994c72b0255c0932062543986691238c4fe98",
+        "deterministic_errors": 1
+      }
+    ],
+    "note": "repair rounds show the teacher only its own draft and the failed check messages"
+  },
+  "raw_response": "{\n  \"decision\": \"draft\",\n  \"abstain_reason\": \"\",\n  \"claims\": [\n    {\n      \"id\": \"C1\",\n      \"kind\": \"fact\",\n      \"statement\": \"Fly By Jing is a Sichuan chili crisp and condiments brand {C1}.\",\n      \"passage_ids\": [\"P1\"],\n      \"quote\": \"Sichuan-Inspired Condiments Brand Could Be the Next Hot Thing in Home Cooking Spreads\"\n    },\n    {\n      \"id\": \"C2\",\n      \"kind\": \"fact\",\n      \"statement\": \"Fly By Jing has a line of Sichuan sourced condiments and noodles {C2}.\",\n      \"passage_ids\": [\"P2\"],\n      \"quote\": \"You can now replicate these flavors at home with our line of Sichuan sourced condiments and noodles.\"\n    },\n    {\n      \"id\": \"C3\",\n      \"kind\": \"fact\",\n      \"statement\": \"Fly By Jing has partnered with brands like Fishwife, Disney, and Hot Ones {C3}.\",\n      \"passage_ids\": [\"P3\"],\n      \"quote\": \"the brand has collaborated with fellow DTC food brand Fishwife, Disney, and the YouTube series Hot Ones.\"\n    },\n    {\n      \"id\": \"C4\",\n      \"kind\": \"fact\",\n      \"statement\": \"Fly By Jing pursued retail partnerships with Whole Foods, Target, and broader grocery distribution {C4}.\",\n      \"passage_ids\": [\"P4\"],\n      \"quote\": \"the brand had something most emerging CPG products don’t: pre-existing demand signals.\"\n    },\n    {\n      \"id\": \"C5\",\n      \"kind\": \"fact\",\n      \"statement\": \"Fly By Jing partnered with Shake Shack in the UK on a Chili Crisp menu {C5}.\",\n      \"passage_ids\": [\"P6\"],\n      \"quote\": \"Fly by Jing also partnered with Shake Shack in the UK on a Chili Crisp menu.\"\n    },\n    {\n      \"id\": \"C6\",\n      \"kind\": \"fact\",\n      \"statement\": \"Fly By Jing’s early growth team built a seeding program around sending jars to nano and micro creators {C6}.\",\n      \"passage_ids\": [\"P10\"],\n      \"quote\": \"built a seeding program around a simple mechanic: send the jar, film the reaction, let the spice do the talking.\"\n    }\n  ],\n  \"brand_summary\": \"Fly By Jing is a Sichuan chili crisp and condiments brand {C1}. It has a line of Sichuan sourced condiments and noodles {C2}.\",\n  \"likely_target_audience\": \"INSUFFICIENT_EVIDENCE\",\n  \"current_marketing_strategy\": [\n    \"Fly By Jing has partnered with brands like Fishwife, Disney, and Hot Ones {C3}.\",\n    \"Fly By Jing pursued retail partnerships with Whole Foods, Target, and broader grocery distribution {C4}.\",\n    \"Fly By Jing’s early growth team built a seeding program around sending jars to nano and micro creators {C6}.\"\n  ],\n  \"unknowns\": [\"what the evidence does not show\"],\n  \"marketing_gaps\": [],\n  \"collaboration_opportunities\": [\"Collaborate on a new Instagram campaign featuring user-generated content from nano and micro creators {C6}.\"],\n  \"instagram_post_idea\": {\n    \"hook\": \"Taste the heat of Sichuan with Fly By Jing’s chili crisp! {C6}\",\n    \"concept\": \"A carousel post showcasing user-generated content from nano and micro creators who have tried Fly By Jing’s chili crisp {C6}.\",\n    \"why_it_fits\": \"This idea builds on Fly By Jing’s successful seeding program with nano and micro creators {C6}.\"\n  },\n  \"email_subject\": \"Collaboration Opportunity: User-Generated Content Campaign for Fly By Jing\",\n  \"email_body\": \"Hi Fly By Jing Marketing Team,\\n\\nWe’re reaching out to propose a collaboration that builds on your successful seeding program with nano and micro creators {C6}. We’d love to work with you on a new Instagram campaign featuring user-generated content from creators who have tried your chili crisp.\\n\\nThis campaign would align with your brand’s community-building strategy and could help further grow your audience.\\n\\nLooking forward to discussing this opportunity further.\\n\\nBest regards,\\n[Your Name]\"\n}",
+  "raw_response_sha256": "742491be41da71e5af0199412ef994c72b0255c0932062543986691238c4fe98",
+  "draft": {
+    "decision": "draft",
+    "abstain_reason": "",
+    "claims": [
+      {
+        "id": "C1",
+        "kind": "fact",
+        "statement": "Fly By Jing is a Sichuan chili crisp and condiments brand {C1}.",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Sichuan-Inspired Condiments Brand Could Be the Next Hot Thing in Home Cooking Spreads"
+      },
+      {
+        "id": "C2",
+        "kind": "fact",
+        "statement": "Fly By Jing has a line of Sichuan sourced condiments and noodles {C2}.",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "You can now replicate these flavors at home with our line of Sichuan sourced condiments and noodles."
+      },
+      {
+        "id": "C3",
+        "kind": "fact",
+        "statement": "Fly By Jing has partnered with brands like Fishwife, Disney, and Hot Ones {C3}.",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "the brand has collaborated with fellow DTC food brand Fishwife, Disney, and the YouTube series Hot Ones."
+      },
+      {
+        "id": "C4",
+        "kind": "fact",
+        "statement": "Fly By Jing pursued retail partnerships with Whole Foods, Target, and broader grocery distribution {C4}.",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "the brand had something most emerging CPG products don’t: pre-existing demand signals."
+      },
+      {
+        "id": "C5",
+        "kind": "fact",
+        "statement": "Fly By Jing partnered with Shake Shack in the UK on a Chili Crisp menu {C5}.",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "Fly by Jing also partnered with Shake Shack in the UK on a Chili Crisp menu."
+      },
+      {
+        "id": "C6",
+        "kind": "fact",
+        "statement": "Fly By Jing’s early growth team built a seeding program around sending jars to nano and micro creators {C6}.",
+        "passage_ids": [
+          "P10"
+        ],
+        "quote": "built a seeding program around a simple mechanic: send the jar, film the reaction, let the spice do the talking."
+      }
+    ],
+    "brand_summary": "Fly By Jing is a Sichuan chili crisp and condiments brand {C1}. It has a line of Sichuan sourced condiments and noodles {C2}.",
+    "likely_target_audience": "INSUFFICIENT_EVIDENCE",
+    "current_marketing_strategy": [
+      "Fly By Jing has partnered with brands like Fishwife, Disney, and Hot Ones {C3}.",
+      "Fly By Jing pursued retail partnerships with Whole Foods, Target, and broader grocery distribution {C4}.",
+      "Fly By Jing’s early growth team built a seeding program around sending jars to nano and micro creators {C6}."
+    ],
+    "unknowns": [
+      "what the evidence does not show"
+    ],
+    "marketing_gaps": [],
+    "collaboration_opportunities": [
+      "Collaborate on a new Instagram campaign featuring user-generated content from nano and micro creators {C6}."
+    ],
+    "instagram_post_idea": {
+      "hook": "Taste the heat of Sichuan with Fly By Jing’s chili crisp! {C6}",
+      "concept": "A carousel post showcasing user-generated content from nano and micro creators who have tried Fly By Jing’s chili crisp {C6}.",
+      "why_it_fits": "This idea builds on Fly By Jing’s successful seeding program with nano and micro creators {C6}."
+    },
+    "email_subject": "Collaboration Opportunity: User-Generated Content Campaign for Fly By Jing",
+    "email_body": "Hi Fly By Jing Marketing Team,\n\nWe’re reaching out to propose a collaboration that builds on your successful seeding program with nano and micro creators {C6}. We’d love to work with you on a new Instagram campaign featuring user-generated content from creators who have tried your chili crisp.\n\nThis campaign would align with your brand’s community-building strategy and could help further grow your audience.\n\nLooking forward to discussing this opportunity further.\n\nBest regards,\n[Your Name]"
+  },
+  "completion": "{\"schema_version\": \"brandpilot.output.v3\", \"decision\": \"draft\", \"evidence_status\": \"sufficient\", \"abstain_reason\": \"\", \"brand_summary\": \"Fly By Jing is a Sichuan chili crisp and condiments brand [P1]. It has a line of Sichuan sourced condiments and noodles [P2].\", \"likely_target_audience\": \"INSUFFICIENT_EVIDENCE\", \"current_marketing_strategy\": [\"Fly By Jing has partnered with brands like Fishwife, Disney, and Hot Ones [P3].\", \"Fly By Jing pursued retail partnerships with Whole Foods, Target, and broader grocery distribution [P4].\", \"Fly By Jing’s early growth team built a seeding program around sending jars to nano and micro creators [P10].\"], \"unknowns\": [\"what the evidence does not show\"], \"marketing_gaps\": [], \"collaboration_opportunities\": [\"Collaborate on a new Instagram campaign featuring user-generated content from nano and micro creators [P10].\"], \"instagram_post_idea\": {\"hook\": \"Taste the heat of Sichuan with Fly By Jing’s chili crisp! [P10]\", \"concept\": \"A carousel post showcasing user-generated content from nano and micro creators who have tried Fly By Jing’s chili crisp [P10].\", \"why_it_fits\": \"This idea builds on Fly By Jing’s successful seeding program with nano and micro creators [P10].\"}, \"email_subject\": \"Collaboration Opportunity: User-Generated Content Campaign for Fly By Jing\", \"email_body\": \"Hi Fly By Jing Marketing Team,\\n\\nWe’re reaching out to propose a collaboration that builds on your successful seeding program with nano and micro creators [P10]. We’d love to work with you on a new Instagram campaign featuring user-generated content from creators who have tried your chili crisp.\\n\\nThis campaign would align with your brand’s community-building strategy and could help further grow your audience.\\n\\nLooking forward to discussing this opportunity further.\\n\\nBest regards,\\n[Your Name]\", \"claims\": [{\"id\": \"C1\", \"kind\": \"fact\", \"statement\": \"Fly By Jing is a Sichuan chili crisp and condiments brand {C1}.\", \"passage_ids\": [\"P1\"], \"quote\": \"Sichuan-Inspired Condiments Brand Could Be the Next Hot Thing in Home Cooking Spreads\"}, {\"id\": \"C2\", \"kind\": \"fact\", \"statement\": \"Fly By Jing has a line of Sichuan sourced condiments and noodles {C2}.\", \"passage_ids\": [\"P2\"], \"quote\": \"You can now replicate these flavors at home with our line of Sichuan sourced condiments and noodles.\"}, {\"id\": \"C3\", \"kind\": \"fact\", \"statement\": \"Fly By Jing has partnered with brands like Fishwife, Disney, and Hot Ones {C3}.\", \"passage_ids\": [\"P3\"], \"quote\": \"the brand has collaborated with fellow DTC food brand Fishwife, Disney, and the YouTube series Hot Ones.\"}, {\"id\": \"C4\", \"kind\": \"fact\", \"statement\": \"Fly By Jing pursued retail partnerships with Whole Foods, Target, and broader grocery distribution {C4}.\", \"passage_ids\": [\"P4\"], \"quote\": \"the brand had something most emerging CPG products don’t: pre-existing demand signals.\"}, {\"id\": \"C5\", \"kind\": \"fact\", \"statement\": \"Fly By Jing partnered with Shake Shack in the UK on a Chili Crisp menu {C5}.\", \"passage_ids\": [\"P6\"], \"quote\": \"Fly by Jing also partnered with Shake Shack in the UK on a Chili Crisp menu.\"}, {\"id\": \"C6\", \"kind\": \"fact\", \"statement\": \"Fly By Jing’s early growth team built a seeding program around sending jars to nano and micro creators {C6}.\", \"passage_ids\": [\"P10\"], \"quote\": \"built a seeding program around a simple mechanic: send the jar, film the reaction, let the spice do the talking.\"}], \"citations\": [\"[P1]\", \"[P2]\", \"[P3]\", \"[P4]\", \"[P6]\", \"[P10]\"]}",
+  "completion_sha256": "5ecd749f2a467381c8be5c082f719a2938af5de074ec7c08ed027c8b5963ae49",
+  "deterministic": {
+    "errors": [
+      "claim C5: quote does not occur in cited passage(s) ['P6']"
+    ],
+    "warnings": [
+      "claim C5: not referenced by any field"
+    ]
+  },
+  "created_at": "2026-11-22T20:02:40+00:00",
+  "approved": false
+}

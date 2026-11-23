@@ -1,0 +1,107 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "tatcha",
+  "bound_to": {
+    "packet_sha256": "61c8422b3ed23e087227685971d728f2d736d989c9acd467eedbcf1894cc10e0",
+    "prompt_sha256": "ef6943c4d861e56bd1eeac51b7df36cebe10d58f936f13f1ebd5f8c414410d46",
+    "completion_sha256": "06cc92b0905beab597f5f4ab6179c12d5f477ae6e0bd842f7349df7c56532be5",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": []
+  },
+  "raw_response_sha256": "581c3d26fe101dcb913a71cb3a5095dfdcff9babb7b65beebfa0eab83a7d1dcd",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"that caring for the skin is also a way of caring for the mind\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states this idea as the foundation of Tatcha.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"It was built by a team whose expertise, knowledge, and care shaped everything from the science to the soul of the brand.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that Tatcha was built by a team.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Tatcha has adeptly utilized this avenue by partnering with beauty influencers and content creators who resonate with their target market.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms Tatcha partners with influencers who resonate with their target market.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"Tatcha’s marketing strategy involves creating exclusive engagement opportunities for both influencers and consumers\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states this as part of Tatcha's marketing strategy.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"Tatcha's social media presence is a vital component of its digital marketing strategy\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states this.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"Tatcha’s commitment to education and opportunity comes to life through a deep partnership with Room to Read\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms this partnership and its impact.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"Tatcha is a San Francisco-based luxury skincare brand founded in 2009 by Victoria Tsai, inspired by Japanese geisha beauty rituals\",\n      \"issues\": [],\n      \"reason\": \"The passage provides this information as reported by AdLibrary.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "that caring for the skin is also a way of caring for the mind",
+        "issues": [],
+        "reason": "The passage explicitly states this idea as the foundation of Tatcha."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "It was built by a team whose expertise, knowledge, and care shaped everything from the science to the soul of the brand.",
+        "issues": [],
+        "reason": "The passage directly states that Tatcha was built by a team."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Tatcha has adeptly utilized this avenue by partnering with beauty influencers and content creators who resonate with their target market.",
+        "issues": [],
+        "reason": "The passage confirms Tatcha partners with influencers who resonate with their target market."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "Tatcha’s marketing strategy involves creating exclusive engagement opportunities for both influencers and consumers",
+        "issues": [],
+        "reason": "The passage directly states this as part of Tatcha's marketing strategy."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "Tatcha's social media presence is a vital component of its digital marketing strategy",
+        "issues": [],
+        "reason": "The passage explicitly states this."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "Tatcha’s commitment to education and opportunity comes to life through a deep partnership with Room to Read",
+        "issues": [],
+        "reason": "The passage confirms this partnership and its impact."
+      },
+      {
+        "claim_id": "C7",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "Tatcha is a San Francisco-based luxury skincare brand founded in 2009 by Victoria Tsai, inspired by Japanese geisha beauty rituals",
+        "issues": [],
+        "reason": "The passage provides this information as reported by AdLibrary."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-23T00:20:30+00:00",
+  "audit_sha256": "e2bdc2e7e919585c633395d55164c0c34f82057673615ade99214642bc64a591",
+  "dismissed_reviewer_flags": []
+}

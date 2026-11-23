@@ -1,0 +1,20 @@
+{
+  "company_id": "meundies",
+  "acceptance_basis": "auto_threshold_0.7",
+  "decision": "reject",
+  "reasons": [
+    "groundedness 0.60 < 0.7"
+  ],
+  "groundedness": 0.6,
+  "claim_support": {
+    "C1": "supported",
+    "C2": "supported",
+    "C3": "deterministic: claim C3: kind must be one of ('fact', 'provider_reported', 'premise')",
+    "C4": "deterministic: claim C4: kind must be one of ('fact', 'provider_reported', 'premise')",
+    "C5": "supported"
+  },
+  "removed_claims": [],
+  "label_completion_sha256": "7458c5d4b7c88350f3cd8685d1c0ed9f8856666918eaec6e77af3c99350310ef",
+  "audit_sha256": "7aa98124b961d03c10f9c99b976197fd494bf552eabb77bba185bcebf0254c03",
+  "created_at": "2026-11-23T00:28:43+00:00"
+}

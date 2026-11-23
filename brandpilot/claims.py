@@ -129,8 +129,61 @@ def quote_in_passage(quote: str, passage_text: str) -> bool:
     return bool(q) and len(q.split()) >= 3 and q in _norm(passage_text)
 
 
-def sentences(text: str) -> list[str]:
-    return [s.strip() for s in _SENT.split(text or "") if s.strip()]
+_MASK = {".": "\x01", "!": "\x02", "?": "\x03"}
+_UNMASK = {v: k for k, v in _MASK.items()}
+# Short quoted spans such as 'Every. Single. Day.' or "Do it!" are names, not sentence breaks.
+_QUOTED_SPAN = re.compile(r"(?:(?<=\s)|^|(?<=\())(?:'(?=\S)[^'\n]{1,60}?(?<=\S)'(?!\w)|\"[^\"\n]{1,60}\"|“[^”\n]{1,60}”|‘[^’\n]{1,60}’)")
+GREETING_RX = re.compile(r"^\W*(hi|hello|hey|dear|greetings|good (morning|afternoon|evening))\b[^.?!\n]{0,60}[!,.:]?\s*$", re.I)
+
+
+def _mask(span: str) -> str:
+    return "".join(_MASK.get(ch, ch) for ch in span)
+
+
+def sentences(text: str, protect: tuple[str, ...] | list[str] = ()) -> list[str]:
+    """Split prose into sentences without breaking inside protected names ("Supergoop!")
+    or short quoted campaign names ("'Every. Single. Day.'")."""
+    masked = text or ""
+    for name in sorted({n for n in protect if n and any(c in n for c in ".!?")}, key=len, reverse=True):
+        masked = re.sub(r"(?<!\w)" + re.escape(name), lambda m: _mask(m.group(0)), masked)
+    masked = _QUOTED_SPAN.sub(lambda m: _mask(m.group(0)), masked)
+    out = []
+    for part in _SENT.split(masked):
+        part = "".join(_UNMASK.get(ch, ch) for ch in part).strip()
+        if part:
+            out.append(part)
+    return out
+
+
+def is_greeting(sentence: str) -> bool:
+    """'Hi Supergoop!' / 'Dear team,' are salutations, not factual sentences."""
+    return bool(GREETING_RX.match(sentence.strip()))
+
+
+PLACEHOLDER_RX = re.compile(
+    r"(what the evidence does not (show|tell)|\bplaceholder\b|\bTBD\b|\bTODO\b|lorem ipsum|\bN/?A\b|^\W*(unknowns?|none|string|\.\.\.)\W*$|"
+    r"\[(insert|your|company|unknown)[^\]]*\]|<[^>]+>|INSUFFICIENT_EVIDENCE)",
+    re.I,
+)
+ATTRIBUTION_RX = re.compile(r"\b(according to|reports?|reported|says|said|claims?|states?|notes?|estimates?|per|describes?|described|analys[ie]s|suggests?)\b", re.I)
+OTHER_CHANNEL_RX = re.compile(r"\b(tik ?tok|youtube|snapchat|pinterest|twitter|facebook|linkedin|podcasts?|twitch|threads app)\b", re.I)
+
+
+def source_names(url: str) -> list[str]:
+    """Names a reader would use for a source: 'adlibrary' and 'ad library' for adlibrary.com."""
+    from .registry import host_of
+    host = host_of(url or "")
+    labels = [x for x in host.split(".") if x not in ("www", "blog", "com", "co", "io", "ai", "net", "org", "uk", "app")]
+    return [labels[0]] if labels else []
+
+
+def _compact(text: str) -> str:
+    return re.sub(r"[^a-z0-9]", "", text.lower())
+
+
+def _brand_names(company: dict[str, Any]) -> list[str]:
+    names = [company.get("display_name", ""), company.get("legacy_name") or "", *(company.get("aliases") or [])]
+    return [n for n in names if n]
 
 
 def _is_abstained(value: Any) -> bool:
@@ -163,13 +216,18 @@ def field_texts(draft: dict[str, Any]) -> list[tuple[str, str]]:
     return out
 
 
-def check_draft(draft: dict[str, Any], packet: dict[str, Any], *, today: date | None = None) -> dict[str, list[str]]:
+SOURCE_NAME_SINCE_PROMPT = "brandpilot.prompt.v3.3"
+
+
+def check_draft(draft: dict[str, Any], packet: dict[str, Any], *, today: date | None = None,
+                prompt_version: str | None = None) -> dict[str, list[str]]:
     """Deterministic checks. Returns {"errors": [...], "warnings": [...]}."""
     errors: list[str] = []
     warnings: list[str] = []
     today = today or date.today()
     index = passage_index(packet)
     company = packet.get("company", {})
+    protect = tuple(_brand_names(company))
 
     if packet.get("status") == PACKET_INVALID:
         errors.append("packet_invalid: identity or provenance is not valid; this packet cannot be labeled")
@@ -253,9 +311,35 @@ def check_draft(draft: dict[str, Any], packet: dict[str, Any], *, today: date | 
                 warnings.append(f"{path}: unknowns normally carry no claim markers")
             if re.search(r"\b(weak|fails?|failing|lacks?|missing out|behind competitors)\b", text, re.I):
                 errors.append(f"{path}: an unknown is phrased as a weakness")
+            if PLACEHOLDER_RX.search(text.strip()):
+                errors.append(f"{path}: unknowns contain placeholder text instead of a specific unknown: {text[:60]!r}")
             continue
+        # Vendor/provider claims must name their source in the sentence that uses them.
+        for s in sentences(text, protect):
+            for m in MARKER.findall(s):
+                c = claim_by_id.get(m) or {}
+                for p in c.get("passage_ids", []):
+                    ps = index.get(p, {})
+                    vendor = (c.get("kind") == "provider_reported" or ps.get("statement_type") == T_PROVIDER
+                              or "vendor_generated_profile_or_analytics" in (ps.get("flags") or []))
+                    if not vendor or ps.get("official_source"):
+                        continue
+                    names = source_names(ps.get("source_url", ""))
+                    plain = MARKER.sub("", s)
+                    attributed = bool(ATTRIBUTION_RX.search(plain))
+                    named = not names or any(n in _compact(plain) for n in names)
+                    # This check was added with prompt v3.3. Older labels (e.g. the human-approved pilot,
+                    # whose attribution a person reviewed) get a warning instead of an error.
+                    legacy = prompt_version is not None and prompt_version < SOURCE_NAME_SINCE_PROMPT
+                    if legacy and not (attributed and named):
+                        warnings.append(f"{path}: vendor/provider claim {m} ({p}) does not name its source in the prose (pre-v3.3 label)")
+                        break
+                    if not attributed or not named:
+                        errors.append(f"{path}: vendor/provider claim {m} ({p}) is not attributed to its source "
+                                      f"({names[0] if names else 'the provider'}) in the prose: {plain[:80]!r}")
+                        break
         if base in STRICT_FACT_FIELDS:
-            for s in sentences(text):
+            for s in sentences(text, protect):
                 if not MARKER.search(s):
                     errors.append(f"{path}: factual sentence without a claim marker: {s[:90]!r}")
         if base == "collaboration_opportunities" and not markers:
@@ -264,11 +348,15 @@ def check_draft(draft: dict[str, Any], packet: dict[str, Any], *, today: date | 
             if ABSENCE_RX.search(MARKER.sub("", text)):
                 errors.append(f"{path}: treats absence of information as a weakness or opportunity")
         if base in ("collaboration_opportunities", "email_body", "email_subject", "instagram_post_idea"):
-            for s in sentences(MARKER.sub("", text)):
+            for s in sentences(MARKER.sub("", text), protect):
                 if PROMISE_RX.search(s) and not HEDGE_RX.search(s):
                     errors.append(f"{path}: promises an outcome: {s[:90]!r}")
-            for s in sentences(text.replace("’", "'").replace("‘", "'")):
-                if MARKER.search(s):
+            for s in sentences(text.replace("’", "'").replace("‘", "'"), protect):
+                ch = OTHER_CHANNEL_RX.search(s)
+                cited = " ".join(str((claim_by_id.get(m) or {}).get(k, "")) for m in MARKER.findall(s) for k in ("statement", "quote"))
+                if ch and (base in ("instagram_post_idea", "email_subject") or not re.search(re.escape(ch.group(0)), cited, re.I)):
+                    errors.append(f"{path}: the pitch must be for Instagram, but proposes another channel: {s[:90]!r}")
+                if MARKER.search(s) or is_greeting(s):
                     continue
                 names = [company.get("display_name", ""), *([company.get("legacy_name")] if company.get("legacy_name") else [])]
                 mentions_company = any(n and re.search(r"(?<!\w)" + re.escape(n) + r"(?!\w)", s) for n in names)
@@ -290,6 +378,8 @@ def check_draft(draft: dict[str, Any], packet: dict[str, Any], *, today: date | 
             errors.append("decision: a draft needs at least one evidence-based collaboration opportunity")
         if pitch_abstained or any(_is_abstained(draft.get(k)) for k in PITCH_TEXT):
             errors.append("decision: a draft needs an email subject and body")
+        if not re.search(r"instagram", str(draft.get("email_body", "")) + str(draft.get("email_subject", "")), re.I):
+            errors.append("decision: the email must propose an Instagram post")
         if len(str(draft.get("email_body", ""))) < 80:
             errors.append("decision: email_body must be at least 80 characters")
         if not claim_by_id:
@@ -382,3 +472,64 @@ def to_legacy_view(completion: dict[str, Any]) -> dict[str, Any]:
             "unknowns": completion.get("unknowns", []),
         },
     }
+
+
+# ---------------------------------------------------------------------------
+# quote repair
+
+QUOTE_REPAIR_MIN_SIMILARITY = 0.9
+_NEGATION = re.compile(r"\b(not|no|never|none|without|nor|n't|cannot)\b|n't\b", re.I)
+
+
+def _meaning_tokens(text: str) -> tuple[list[str], list[str]]:
+    t = _norm(text)
+    return re.findall(r"\d+(?:[.,]\d+)?", t), sorted(m.group(0) for m in _NEGATION.finditer(t))
+
+
+def best_passage_span(quote: str, passage_text: str) -> tuple[float, str]:
+    """Most similar exact span of the passage: a whole sentence, or a run of words of about
+    the quote's length inside one sentence. Returns (similarity, exact_passage_text)."""
+    from difflib import SequenceMatcher
+    from .passages import segment
+    q = _norm(quote)
+    n = len(q.split())
+    best = (0.0, "")
+    for s0, e0 in segment(passage_text) or [(0, len(passage_text))]:
+        sent = passage_text[s0:e0]
+        cands = [sent]
+        words = list(re.finditer(r"\S+", sent))
+        for size in range(max(3, n - 2), n + 3):
+            for i in range(0, max(0, len(words) - size) + 1):
+                if i + size <= len(words):
+                    cands.append(sent[words[i].start(): words[i + size - 1].end()])
+        for c in cands:
+            r = SequenceMatcher(None, q, _norm(c)).ratio()
+            if r > best[0]:
+                best = (r, c.strip())
+    return best
+
+
+def repair_quotes(draft: dict[str, Any], packet: dict[str, Any], min_similarity: float = QUOTE_REPAIR_MIN_SIMILARITY) -> tuple[dict[str, Any], list[dict[str, Any]]]:
+    """Replace a non-verbatim claim quote with the most similar exact span of a cited passage,
+    only when similarity >= min_similarity and numbers and negations are unchanged.
+    Anything else is left for check_draft to report. Returns (draft, repairs)."""
+    index = passage_index(packet)
+    out = json.loads(json.dumps(draft))
+    repairs: list[dict[str, Any]] = []
+    for c in out.get("claims") or []:
+        if not isinstance(c, dict):
+            continue
+        quote, pids = c.get("quote"), c.get("passage_ids")
+        if not isinstance(quote, str) or not isinstance(pids, list) or not quote.strip():
+            continue
+        if any(p not in index for p in pids) or any(quote_in_passage(quote, index[p]["text"]) for p in pids):
+            continue
+        scored = [(*best_passage_span(quote, index[p]["text"]), p) for p in pids]
+        sim, span, pid = max(scored)
+        if sim < min_similarity or not quote_in_passage(span, index[pid]["text"]):
+            continue
+        if _meaning_tokens(span) != _meaning_tokens(quote):
+            continue
+        repairs.append({"claim": c.get("id"), "passage_id": pid, "similarity": round(sim, 4), "old_quote": quote, "new_quote": span})
+        c["quote"] = span
+    return out, repairs

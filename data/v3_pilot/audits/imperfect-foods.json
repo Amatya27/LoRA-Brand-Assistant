@@ -1,0 +1,87 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "imperfect-foods",
+  "bound_to": {
+    "packet_sha256": "e9e96460dadf26e13d74c7ea91b438e4342fc40283b72e5600fc6bb48910f173",
+    "prompt_sha256": "943fda954f9cedc9fa0d6e7573a35188160495558fb005a7af73cc7add26b0a9",
+    "completion_sha256": "b466aad55c182e7b2df8a6efc4589a6fdca4f361af3b0427f6c971dedb904de6",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": []
+  },
+  "raw_response_sha256": "e7b348618e5975ac120616c67572ef78042ea1b9b5f276d170df365ff9c964df",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"Delivering groceries on a mission to fight food waste and build a better food system for everyone.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Imperfect Foods delivers groceries with a mission to fight food waste.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"Delivery box design We revamped the new Imperfect Foods box to focus on our customer, highlighting: * The Imperfect mission and how our customers fit in * Easily-accessible tips the customer can use while put away their groceries * Lots of that quirky Imperfect fun to make them smile\",\n      \"issues\": [],\n      \"reason\": \"The passage describes the delivery box design as highlighting the Imperfect mission and including customer-friendly tips.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Partners who share our values section showing product shots of Tillamook cheese, La Croix, Organic Valley milk, Cento beans, and a snack mix, above a row of partner logos including Imperfect Foods, Tillamook, Impossible, and Cento.\",\n      \"issues\": [],\n      \"reason\": \"The passage lists Tillamook, Impossible, and Cento as partners of Imperfect Foods.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"Magenta footer with a whimsical illustration of a beet descending by parachute into an open Imperfect Foods box, navigation links arranged around it, and a bottom row with logo, B Corp mark, social icons, and an App Store badge.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes a magenta footer with a beet illustration, which is part of Imperfect Foods' brand design.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"imperfectfoods Verified Options Imperfect Foods 426K followers 7,017 following Delivering groceries on a mission to fight food waste and build a better food system for everyone.\",\n      \"issues\": [],\n      \"reason\": \"The passage states Imperfect Foods has 426K followers on Instagram and mentions posts about pets and produce.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "Delivering groceries on a mission to fight food waste and build a better food system for everyone.",
+        "issues": [],
+        "reason": "The passage directly states Imperfect Foods delivers groceries with a mission to fight food waste."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "Delivery box design We revamped the new Imperfect Foods box to focus on our customer, highlighting: * The Imperfect mission and how our customers fit in * Easily-accessible tips the customer can use while put away their groceries * Lots of that quirky Imperfect fun to make them smile",
+        "issues": [],
+        "reason": "The passage describes the delivery box design as highlighting the Imperfect mission and including customer-friendly tips."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Partners who share our values section showing product shots of Tillamook cheese, La Croix, Organic Valley milk, Cento beans, and a snack mix, above a row of partner logos including Imperfect Foods, Tillamook, Impossible, and Cento.",
+        "issues": [],
+        "reason": "The passage lists Tillamook, Impossible, and Cento as partners of Imperfect Foods."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "Magenta footer with a whimsical illustration of a beet descending by parachute into an open Imperfect Foods box, navigation links arranged around it, and a bottom row with logo, B Corp mark, social icons, and an App Store badge.",
+        "issues": [],
+        "reason": "The passage describes a magenta footer with a beet illustration, which is part of Imperfect Foods' brand design."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "imperfectfoods Verified Options Imperfect Foods 426K followers 7,017 following Delivering groceries on a mission to fight food waste and build a better food system for everyone.",
+        "issues": [],
+        "reason": "The passage states Imperfect Foods has 426K followers on Instagram and mentions posts about pets and produce."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-23T00:02:54+00:00",
+  "audit_sha256": "144f63ef8829c12a46f024c08596755e6a1c4beb4851f804e07203973317602d",
+  "dismissed_reviewer_flags": []
+}

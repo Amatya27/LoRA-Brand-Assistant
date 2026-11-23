@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "greats",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "7515c79267cde47867d10ced674d9e82a96d14a1d696c42d760d047d5862edb2",
+    "prompt_sha256": "ead8859da1b07add3af51dade59414d0e588e65a6763ba793f2504d232db21ea",
+    "completion_sha256": "6f395ffc8e79b7e30c70c3363300e51aba4b42dda44a76bde448e14c1d4d0550",
+    "audit_sha256": "122320f649bd4afb33c81dc2915aaf2952807b2d7e1bf157722fe0497bfc0fca"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 7,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:43+00:00",
+  "record_sha256": "7cda22a89dbcab7faab1b03a26806b4452addb3070a8bfab2516470aaa171d8d"
+}

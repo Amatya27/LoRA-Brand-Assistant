@@ -1,0 +1,19 @@
+{
+  "company_id": "ollie",
+  "acceptance_basis": "auto_threshold_0.7",
+  "decision": "reject",
+  "reasons": [
+    "removing unsupported claims emptied ['collaboration_opportunities', 'instagram_post_idea.why_it_fits']"
+  ],
+  "groundedness": 0.75,
+  "claim_support": {
+    "C1": "supported",
+    "C2": "reviewer response invalid for this claim: C2: reviewer quote does not occur in the referenced passage(s)",
+    "C3": "supported",
+    "C4": "supported"
+  },
+  "removed_claims": [],
+  "label_completion_sha256": "62bf3efaa83eb802b971ba749ff3ad79a3379cfce7dd1d3733863a5cb147ca1f",
+  "audit_sha256": "9e41cf8ff7a2a08cab797f745b904d058013673d014de4d8473c52df7f96821c",
+  "created_at": "2026-11-23T00:28:47+00:00"
+}

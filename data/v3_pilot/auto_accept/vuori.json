@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "vuori",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "aac9d08f5d723cc6b1085ae4cb00ad14dcc01d6db299423f6e3af922de24c96d",
+    "prompt_sha256": "31b8260aaf6b388081978612544685678d68a8f1245d7fdd17d29f09d95e8d86",
+    "completion_sha256": "1dda383a51f3c16978d2a8ddbf40e659e6db7b5e4f742cc4cb15ecf64ac6295d",
+    "audit_sha256": "5fb6be1431e1d620a724c6dfa140c6291208ac229a055cf9f88a3e0c9d98cd18"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 7,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:48+00:00",
+  "record_sha256": "31b338585828134373d743bebf30c569082bcb1ba81cc171b399aeb2a30128d9"
+}

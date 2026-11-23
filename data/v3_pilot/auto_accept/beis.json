@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "beis",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "1a3c02486fa4123223b158f89aea7506cf51198ef37c3891789eb398c117708d",
+    "prompt_sha256": "36139b7f565500d3f9885452f67576af713f372960d490cc558bf9ce5bc63a76",
+    "completion_sha256": "0890df08673679048609d01b0d1ab94dae29bbe488f7850f13b8a058e25794ad",
+    "audit_sha256": "11cd91113edc77d3493dbfc85981ed00a635d05a991daa43bb1468fec023587c"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 6,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:44+00:00",
+  "record_sha256": "7a8cbcfd9bef424ba8aeab6fb965664d48b06f112e2fda42843421209474e702"
+}

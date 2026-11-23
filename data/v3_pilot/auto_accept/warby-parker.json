@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "warby-parker",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "a86356f018bbfebd7797141b9914bf541475d89ad1132f3004794bed01400451",
+    "prompt_sha256": "7e0139ab1b10cb2c36a661b82bf33361718705b8d9516036623fbec4e8408d0a",
+    "completion_sha256": "f2cadcfc8faba35d693fe2ebe77f4cedb485106611c5e514193fa329664cffe1",
+    "audit_sha256": "fba32bbca31bb9fea13ae1e44458b6c9b1f447d02974b571134697a2e7776453"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 7,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:48+00:00",
+  "record_sha256": "bbb87770e1c626900058d983a420addb655cb951999ebf45ac6d05c26ea93591"
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "rare-beauty",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "b05ad52dc343069137a98b3c194c7fe9cde10d8adcdbb99533c1e2daf101ace8",
+    "prompt_sha256": "b0e1f80ca624ac62af5a375e50bb5eda5f13effdbfbc4941969f00cfe5b92bf2",
+    "completion_sha256": "0a69b874df9d76838d6906ce3216eaf12a436545e7005460aa2f5afd7bfc24a8",
+    "audit_sha256": "855c44e460c35005b8b39101a37e3c7280e7f405f09bd9fbf70d926e0d7d83a1"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 14,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:47+00:00",
+  "record_sha256": "4876fb2f97127a1a3d8bb478538b99dec99ca0bfae6167a6ece0143f6ecfb538"
+}

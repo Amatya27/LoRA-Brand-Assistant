@@ -1,0 +1,107 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "brooklinen",
+  "bound_to": {
+    "packet_sha256": "112e6ec30eeb5a1dd0d111e287678a58220f1a2ac997a3a6cddca7f5559be804",
+    "prompt_sha256": "89f782e1a6d79f80515937360ca4e229fecdb7b76957740bb966cf627d44f430",
+    "completion_sha256": "2f0aab9122d85b45dfc272ae733a4170cf553cc53b7b3cddd8555e3299c5057d",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": []
+  },
+  "raw_response_sha256": "1445ab444f126014ac2b0c50b69a21b204621cef75509d955bc5d2b1f595e8b8",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"we’ve partnered with high-quality manufacturers throughout the world to make the best bedding in the game.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states Brooklinen partners with high-quality manufacturers to make the best bedding.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"We partner with Good360 to distribute any returned product to donation centers across the country.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Brooklinen partners with Good360 for product distribution.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Early recommendations and blogger outreach gave way to structured creator campaigns, product collaborations, paid social testing, and celebrity-led advertising.\",\n      \"issues\": [],\n      \"reason\": \"The passage mentions structured creator campaigns and product collaborations as part of Brooklinen's strategy.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"Collaborations and Placements Reach Adjacent Audiences\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that Brooklinen's marketing strategy includes collaborations and placements to reach adjacent audiences.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"For the larger 2026 relaunch, Brooklinen used creator and celebrity talent at a different scale.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms Brooklinen utilized creator and celebrity talent in their 2026 relaunch.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"175k+ 5-Star Reviews\",\n      \"issues\": [],\n      \"reason\": \"The passage states Brooklinen has over 175k 5-star reviews.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P9\"\n      ],\n      \"quote\": \"Brooklinen primarily targets Millennial and Gen Z consumers, along with urban professionals, young families, and design-conscious individuals\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Brooklinen's target audience.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "we’ve partnered with high-quality manufacturers throughout the world to make the best bedding in the game.",
+        "issues": [],
+        "reason": "The passage explicitly states Brooklinen partners with high-quality manufacturers to make the best bedding."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "We partner with Good360 to distribute any returned product to donation centers across the country.",
+        "issues": [],
+        "reason": "The passage directly states Brooklinen partners with Good360 for product distribution."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Early recommendations and blogger outreach gave way to structured creator campaigns, product collaborations, paid social testing, and celebrity-led advertising.",
+        "issues": [],
+        "reason": "The passage mentions structured creator campaigns and product collaborations as part of Brooklinen's strategy."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "Collaborations and Placements Reach Adjacent Audiences",
+        "issues": [],
+        "reason": "The passage explicitly states that Brooklinen's marketing strategy includes collaborations and placements to reach adjacent audiences."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "For the larger 2026 relaunch, Brooklinen used creator and celebrity talent at a different scale.",
+        "issues": [],
+        "reason": "The passage confirms Brooklinen utilized creator and celebrity talent in their 2026 relaunch."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "175k+ 5-Star Reviews",
+        "issues": [],
+        "reason": "The passage states Brooklinen has over 175k 5-star reviews."
+      },
+      {
+        "claim_id": "C7",
+        "verdict": "supported",
+        "passage_ids": [
+          "P9"
+        ],
+        "quote": "Brooklinen primarily targets Millennial and Gen Z consumers, along with urban professionals, young families, and design-conscious individuals",
+        "issues": [],
+        "reason": "The passage directly states Brooklinen's target audience."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-22T23:40:35+00:00",
+  "audit_sha256": "84beb696158a9ebe73ae4c44766d622c751082fa57f13f465d6ea35236e3b116",
+  "dismissed_reviewer_flags": []
+}

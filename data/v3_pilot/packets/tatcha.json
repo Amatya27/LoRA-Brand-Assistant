@@ -1,0 +1,2212 @@
+{
+  "schema_version": "brandpilot.packet.v3",
+  "company": {
+    "company_id": "tatcha",
+    "display_name": "Tatcha",
+    "legacy_name": "Tatcha",
+    "category": "Japanese-inspired skincare",
+    "official_domains": [
+      "tatcha.com"
+    ],
+    "identity_status": "verified",
+    "registry_version": "2026-11-22.v3",
+    "registry_sha256": "cc9ab39277bffb4c0aa0b59df8db2e7fec12da7955a58651370daf2936495a16"
+  },
+  "collection": {
+    "mode": "legacy_cache_replay",
+    "collector_version": "brandpilot-collector-0.3",
+    "created_at": "2026-11-22T20:36:47+00:00",
+    "queries": [
+      "\"Tatcha\" instagram marketing campaign target audience",
+      "\"Tatcha\" social media strategy brand positioning",
+      "\"Tatcha\" marketing campaign press release instagram",
+      "\"Tatcha\" customer audience brand story",
+      "\"Tatcha\" about us brand values audience",
+      "\"Tatcha\" newsroom marketing campaign",
+      "\"Tatcha\" brand campaign case study"
+    ],
+    "notes": [
+      "replayed from legacy packet tatcha-research-packet.json (sha256 991bbf9f390b965e)",
+      "documents are legacy cached extractions; no new fetches were made"
+    ]
+  },
+  "leads": [
+    {
+      "company_id": "tatcha",
+      "query": "\"Tatcha\" about us brand values audience",
+      "url": "https://tatchacosmetics.com/about-us/",
+      "title": "About Us - Tatcha",
+      "snippet": "Tatcha was born from a deep appreciation for Japanese beauty rituals that have stood the test of time. We journeyed to Kyoto to uncover age-old secrets, where geisha-inspired routines revealed the power of simplicity and purity in skincare.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "tatcha",
+      "query": "\"Tatcha\" about us brand values audience",
+      "url": "https://www.tatcha.co.uk/pages/our-story",
+      "title": "About Tatcha: Our Story & Japanese Beauty Philosophy | Tatcha",
+      "snippet": "Discover Tatcha's Japanese beauty philosophy, rooted in hinou dokon, the belief that skin and mind share one root, and the rituals that care for both.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "tatcha",
+      "query": "\"Tatcha\" marketing campaign press release instagram",
+      "url": "https://adlibrary.com/brands/tatcha-instagram-ads",
+      "title": "Tatcha Instagram Ads Library",
+      "snippet": "Explore Tatcha's top-performing Instagram ads, creatives, messaging, and campaign insights to benchmark strategy and discover winning ad patterns.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "tatcha",
+      "query": "\"Tatcha\" instagram marketing campaign target audience",
+      "url": "https://beautero.com/articles/tatcha-target-comprehensive-overview/",
+      "title": "Tatcha Target: An In-Depth Analysis of Luxury Skincare",
+      "snippet": "Defining the target market is essential for understanding how Tatcha positions itself in the highly competitive beauty industry. Knowing who the target audience is allows the brand to tailor its products, messaging, and marketing strategies effectively.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "tatcha",
+      "query": "\"Tatcha\" customer audience brand story",
+      "url": "https://tatcha.com/pages/our-story",
+      "title": "Our Story | Tatcha",
+      "snippet": "Tatcha was built from that journey — one woman's search for beauty and goodness in the world, and the people in Japan who showed her both. What she brought home was a belief: that science and soul are not separate ideas.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "tatcha",
+      "query": "\"Tatcha\" instagram marketing campaign target audience",
+      "url": "https://starngage.com/app/global/brands/tatcha",
+      "title": "Tatcha's Instagram Audience Analytics and Demographics",
+      "snippet": "This analytics report shows tatcha's audience demographic percentage for key statistic like number of followers, average engagement rate, topic of interests, top-5 countries, core gender and so forth.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "tatcha",
+      "query": "\"Tatcha\" marketing campaign press release instagram",
+      "url": "https://www.influencerintelligence.com/blog/TSQ/influencers-go-head-to-head-for-tatcha-campaign",
+      "title": "Influencers Go Head To Head For Tatcha Campaign",
+      "snippet": "In August 2024, Japanese skincare brand, Tatcha, launched a social media-led campaign pitting two of its best-selling face cream products against each other. The sporty ‘Moisture Match Up’ campaign implores consumers to choose a team: #TeamDewy (its Dewy skin cream) or #TeamWater (its Water Cream).",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "tatcha",
+      "query": "\"Tatcha\" brand campaign case study",
+      "url": "https://realgrowthmatters.com/learn/case-studies/tatcha-product-launch-campaign/",
+      "title": "Tatcha as a product launch campaign case study: mechanics and ...",
+      "snippet": "Story: This case study runs a product launch campaign through the Tatcha lens, from mechanics to public benchmarks. Why it matters: The value of a product launch campaign comes from rigour: clear targets, real benchmarks, built-in measurement.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    }
+  ],
+  "documents": [
+    {
+      "source_id": "S-b91bce3e88a7",
+      "company_id": "tatcha",
+      "requested_url": "https://tatchacosmetics.com/about-us/",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "6d5ad1b15c7fb008fe24dd20e8bdead63e8acabaebbe5870d1db7e722a6c6cd3",
+      "text_path": "text/6d5ad1b15c7fb008fe24dd20e8bdead63e8acabaebbe5870d1db7e722a6c6cd3.txt",
+      "raw_path": null,
+      "text_chars": 2420,
+      "redirect_chain": [],
+      "identity_decision": "third_party_confirmed",
+      "identity_reason": "2 name mention(s) co-occur with Japanese-inspired skincare terms",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 7ca3e53f2140b828f68cc38f4c1c66028152a6def7485faaf898d2b9f0abd404.json sha256=e69fbebbf2018a6f8ee5c7d92ba43cc1d59a30293465265cf852284ade270b40",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-564052e6b495",
+      "company_id": "tatcha",
+      "requested_url": "https://www.tatcha.co.uk/pages/our-story",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "81a441c513f5ebebe645044c560b9b076a35cd46867a71926b626b951c3401c1",
+      "text_path": "text/81a441c513f5ebebe645044c560b9b076a35cd46867a71926b626b951c3401c1.txt",
+      "raw_path": null,
+      "text_chars": 6142,
+      "redirect_chain": [],
+      "identity_decision": "third_party_confirmed",
+      "identity_reason": "14 name mention(s) co-occur with Japanese-inspired skincare terms",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 37df7159986fa51cbebc55af1b501911f15afd560910ea0f09123eacb4f4e852.json sha256=16e4469047eb4aad65abc26dfa61db29a450c2f9f566bd254d96475e975efecc",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-5f61473c62a7",
+      "company_id": "tatcha",
+      "requested_url": "https://adlibrary.com/brands/tatcha-instagram-ads",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "1a6b37f86081e29427943ab23e944d3d03a1ec4c7ad72403fcf890b8ba301b05",
+      "text_path": "text/1a6b37f86081e29427943ab23e944d3d03a1ec4c7ad72403fcf890b8ba301b05.txt",
+      "raw_path": null,
+      "text_chars": 2381,
+      "redirect_chain": [],
+      "identity_decision": "third_party_confirmed",
+      "identity_reason": "5 name mention(s) co-occur with Japanese-inspired skincare terms",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 2d8d199c106acee2f2ada3623b4f69e54ac512405e4e5601a4847369e8d9fd74.json sha256=7c70e0ad4a8f2fa3b3c9dc75142e464f0dc2972154a134ba23233a03511fde1d",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-0462cbee4ec9",
+      "company_id": "tatcha",
+      "requested_url": "https://beautero.com/articles/tatcha-target-comprehensive-overview/",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "33816b64a28cc5ae7f060e3f8ecb5ff47dfef8a0986a8b9257ec4f3ab1412a33",
+      "text_path": "text/33816b64a28cc5ae7f060e3f8ecb5ff47dfef8a0986a8b9257ec4f3ab1412a33.txt",
+      "raw_path": null,
+      "text_chars": 33899,
+      "redirect_chain": [],
+      "identity_decision": "third_party_confirmed",
+      "identity_reason": "124 name mention(s) co-occur with Japanese-inspired skincare terms",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file c21869fa533283d5cbe27b28f12956f36c19686d9f76f7e1414b990a95e31633.json sha256=9565df689d09477939eb08fe725896e794d2fb1bebdbce0c55f838c67ccb1f58",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-f3799cd778f0",
+      "company_id": "tatcha",
+      "requested_url": "https://tatcha.com/pages/our-story",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "93d6d073b23046c413eb8a38e2320e72c1fd9125950a23f99bbca0241fb6199f",
+      "text_path": "text/93d6d073b23046c413eb8a38e2320e72c1fd9125950a23f99bbca0241fb6199f.txt",
+      "raw_path": null,
+      "text_chars": 5941,
+      "redirect_chain": [],
+      "identity_decision": "official_domain",
+      "identity_reason": "host tatcha.com is an official domain",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file e33c6dc19954ca410bdd6b2d74254328eef55d6cf197c697983666efee1218d9.json sha256=aace314da6f475650683b80c5ce03313cdee8e62fb0cb31bed0880318526f7fa",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-940c37ee5b38",
+      "company_id": "tatcha",
+      "requested_url": "https://starngage.com/app/global/brands/tatcha",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "d03b5b27d550446da4e5c1f674e6ea61db9b2da21a2874632413cbc0aa1b3a19",
+      "text_path": "text/d03b5b27d550446da4e5c1f674e6ea61db9b2da21a2874632413cbc0aa1b3a19.txt",
+      "raw_path": null,
+      "text_chars": 32503,
+      "redirect_chain": [],
+      "identity_decision": "unconfirmed",
+      "identity_reason": "document body never names the company",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 4b5a65752aac30c74f3e8ed8c8b536b14a5e6af26ddd42be5c6ee2e1f12debfe.json sha256=8bd7fb4e1bff8e8f57c23e9eb7a4d49317757da9079c7d2ddb513d5a367e39cc",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-dce47e8c0841",
+      "company_id": "tatcha",
+      "requested_url": "https://www.influencerintelligence.com/blog/TSQ/influencers-go-head-to-head-for-tatcha-campaign",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "extraction_failed",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "91227ad38a4f0e9a16881aeba69a8a4e104322ad2d20b4a68303ed0138c95143",
+      "text_path": "text/91227ad38a4f0e9a16881aeba69a8a4e104322ad2d20b4a68303ed0138c95143.txt",
+      "raw_path": null,
+      "text_chars": 121,
+      "redirect_chain": [],
+      "identity_decision": "not_assessed",
+      "identity_reason": "document status extraction_failed",
+      "errors": [
+        "extracted text shorter than 200 characters"
+      ],
+      "provenance_notes": [
+        "legacy cache file 251b66e0dbec209751b2bdb134d24cbe9defc6c3a49af397bf7d10c157324ce7.json sha256=9df4a5d2cab85b4f4a82dadf21deecb69496d39a24b75b617e6cd34b87325e16",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-b655a3c5649b",
+      "company_id": "tatcha",
+      "requested_url": "https://realgrowthmatters.com/learn/case-studies/tatcha-product-launch-campaign/",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "898918e595efa2e2dbb6e346664eea66f506c7e1fd1029f8189241090640a39e",
+      "text_path": "text/898918e595efa2e2dbb6e346664eea66f506c7e1fd1029f8189241090640a39e.txt",
+      "raw_path": null,
+      "text_chars": 17499,
+      "redirect_chain": [],
+      "identity_decision": "unconfirmed",
+      "identity_reason": "company name appears without its product category",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 49e343df30a7e1350fa557f8d3aa117328c0e885c2733441993bd32dae449272.json sha256=8bba848b1f98a71085f590c130f16de54a119e302d888283030062ebb3fd8314",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "passage_uid": "PU-997fbb9bf4cc2496",
+      "source_id": "S-f3799cd778f0",
+      "char_start": 2463,
+      "char_end": 2963,
+      "text": "Skin and Mind Are One Tatcha began with a simple truth discovered in Japan: that caring for the skin is also a way of caring for the mind. Zen monk Toryo Ito introduced Vicky to the Japanese phrase hinou-dokon (皮脳同根), meaning \"skin and mind, same root\"—a reminder that our inner and outer selves are deeply connected, each shaping and reflecting the other. It became one of the ideas at the heart of Tatcha, inspiring our commitment to NeuroSkin Science and the work of the Tatcha Institute in Tokyo.",
+      "text_sha256": "814beb48651121f65812fcc46f12e19d674f3efc761de4007b9632b6ea351242",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "actual_activity",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [],
+      "score": 14,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P1",
+      "source_url": "https://tatcha.com/pages/our-story",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-4e7fc87a4c5a9ad3",
+      "source_id": "S-f3799cd778f0",
+      "char_start": 3927,
+      "char_end": 4097,
+      "text": "Founding Team Tatcha was not built by one person. It was built by a team whose expertise, knowledge, and care shaped everything from the science to the soul of the brand.",
+      "text_sha256": "1a6b208cf2e7dd752df85e618b5a347261ca3b911c159e8919e084f843fab238",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "brand"
+      ],
+      "score": 12,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P2",
+      "source_url": "https://tatcha.com/pages/our-story",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-60ffb2ed70205bcb",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 15452,
+      "char_end": 16074,
+      "text": "Influencer Collaborations and Marketing In today’s digital age, strategic collaborations with influencers can make or break a luxury brand’s visibility. Tatcha has adeptly utilized this avenue by partnering with beauty influencers and content creators who resonate with their target market. Such collaborations have helped amplify Tatcha's message while lending authenticity to its promotional efforts. Influencers often provide a personal touch that large advertising campaigns may lack. The reviews and demonstrations shared by these influencers resonate with their followers, creating a sense of trust and relatability.",
+      "text_sha256": "5a63e498c543d4a161df030fb44744d91596e99a3a28bfc9b6c2995f6f150c65",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "advertis",
+        "brand",
+        "campaign",
+        "collab",
+        "collaborat",
+        "content",
+        "creator",
+        "influencer",
+        "marketing",
+        "partner"
+      ],
+      "score": 24,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P3",
+      "source_url": "https://beautero.com/articles/tatcha-target-comprehensive-overview/",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-d47a3fabf771ab5b",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 16075,
+      "char_end": 16744,
+      "text": "This direct connection engages the audience differently than traditional marketing methods. Furthermore, Tatcha’s marketing strategy involves creating exclusive engagement opportunities for both influencers and consumers. Events that allow for an immersive brand experience can foster deeper connections. By leveraging influencer networks, Tatcha can reach niche audiences effectively, enhancing its brand positioning as a leader in luxury skincare. Tatcha's careful curation of partnerships ensures that the brand remains aligned with individuals who reflect its values, thus maintaining the integrity of its luxury image while expanding its reach in a crowded market.",
+      "text_sha256": "39f7856568b1c36d2c55e9a1a8da571b60faed2280b49a8e99ada97aa0c81f74",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "audience",
+        "brand",
+        "event",
+        "influencer",
+        "marketing",
+        "partner",
+        "positioning"
+      ],
+      "score": 18,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P4",
+      "source_url": "https://beautero.com/articles/tatcha-target-comprehensive-overview/",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-7c2a7057e704b771",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 18438,
+      "char_end": 19063,
+      "text": "Social Media Presence Tatcha's social media presence is a vital component of its digital marketing strategy. Platforms like Instagram and Facebook serve as visual stages where the brand showcases its luxurious offerings. The curated aesthetic of the Tatcha profile attracts users who appreciate high-quality images and sophisticated branding. Such visual appeal aligns with the expectations of luxury consumers, who often seek not just a product but a complete experience. Engagement on these platforms goes beyond mere advertising. Tatcha often employs user-generated content, showcasing real customers using their products.",
+      "text_sha256": "abd016a9f32e02b156f4eb37d53aebb1902f7caa09f67e2dbedc9a8a2740cbb6",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "advertis",
+        "brand",
+        "content",
+        "customers",
+        "instagram",
+        "marketing",
+        "social media"
+      ],
+      "score": 18,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P5",
+      "source_url": "https://beautero.com/articles/tatcha-target-comprehensive-overview/",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-7b595fb87760fd21",
+      "source_id": "S-f3799cd778f0",
+      "char_start": 4457,
+      "char_end": 4693,
+      "text": "Impact Tatcha’s commitment to education and opportunity comes to life through a deep partnership with Room to Read, a global organization that supports girls' literacy around the world and helps build confidence for the next generation.",
+      "text_sha256": "b44f26a92ee0c38d926cbc51b5f5189f4500404dc514d5f73661a8b3e6789626",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "partner"
+      ],
+      "score": 12,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P6",
+      "source_url": "https://tatcha.com/pages/our-story",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-f4a3ef37d788e573",
+      "source_id": "S-b91bce3e88a7",
+      "char_start": 1005,
+      "char_end": 1507,
+      "text": "We believe skincare should feel like a moment of calm, a daily ritual that honors both your skin and your spirit.Beyond creating beautiful products, we’re committed to doing beautiful things. Through our partnership with Room to Read, we’ve helped millions of girls access education across Asia and Africa, because we believe true beauty begins with opportunity and empowerment.Welcome to Tatcha. Where every bottle holds a story, every routine becomes a ritual, and radiant skin is just the beginning.",
+      "text_sha256": "f3dc9866cef093ef2406e72cd83bce5e66e62ab47b388bacc84ed4163a8ab65d",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "brand_positioning",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "partner"
+      ],
+      "score": 8,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P7",
+      "source_url": "https://tatchacosmetics.com/about-us/",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-506fc9abf7c52e2b",
+      "source_id": "S-5f61473c62a7",
+      "char_start": 1406,
+      "char_end": 1668,
+      "text": "About Tatcha Tatcha is a San Francisco-based luxury skincare brand founded in 2009 by Victoria Tsai, inspired by Japanese geisha beauty rituals. Acquired by Unilever in 2019 for ~$500M, it remains a top seller at Sephora with the Dewy Skin Cream as its flagship.",
+      "text_sha256": "5dc52aefc918c68ba4081458cd84851638db957107fef53e8293ad0190db5680",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "flags": [
+        "vendor_generated_profile_or_analytics"
+      ],
+      "dates_mentioned": [
+        "2009",
+        "2019"
+      ],
+      "relevance_terms": [
+        "brand"
+      ],
+      "score": 5,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P8",
+      "source_url": "https://adlibrary.com/brands/tatcha-instagram-ads",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    }
+  ],
+  "rejected_passages": [
+    {
+      "passage_uid": "PU-648d9aef4249e37d",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 17532,
+      "char_end": 18229,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "The brand can tailor its message and visuals to resonate with diverse consumer segments, ensuring effective communication. Second, digital marketing fosters brand loyalty. Tatcha's engagement with its"
+    },
+    {
+      "passage_uid": "PU-5e183aaafab3d8c3",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 25647,
+      "char_end": 26146,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Another critical factor is consistent engagement through quality marketing strategies. Tatcha's collaborations with influencers enhance its visibility and credibility, helping to maintain relevance in"
+    },
+    {
+      "passage_uid": "PU-bfc3453f25f3df73",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 27481,
+      "char_end": 28150,
+      "selection_status": "rejected",
+      "reasons": [
+        "boilerplate:table_of_contents"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Potential Market Expansion Strategies To ensure future growth, Tatcha might consider various market expansion strategies. Some of these include: 1. Geographic Expansion: Tatcha has a strong presence i"
+    },
+    {
+      "passage_uid": "PU-97271e27bedb4886",
+      "source_id": "S-940c37ee5b38",
+      "char_start": 31210,
+      "char_end": 31563,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "brand_positioning",
+      "preview": "StarNgage FacebookInstagram App StoreGoogle Play At StarNgage, we believe that socially distributed visual content is the future of advertising. It's happening now on Instagram/TikTok and we want to h"
+    },
+    {
+      "passage_uid": "PU-0ac91a8244a95a52",
+      "source_id": "S-940c37ee5b38",
+      "char_start": 6116,
+      "char_end": 22803,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "│Name │Foll│ER │Cou│Topic of Influence │Potent│ │ │ower│ │ntr│ │ial │ │ │s │ │y │ │Reach │ ───┼──────────────────────────────────┼────┼───┼───┼─────────────────────────────────┼──────┼─────── 1 │Nike "
+    },
+    {
+      "passage_uid": "PU-27792ffd837547eb",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 16748,
+      "char_end": 17375,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "The Role of Digital Marketing Digital marketing plays a pivotal role in the contemporary commercial landscape, particularly for brands in the beauty industry. For Tatcha, a brand synonymous with luxur"
+    },
+    {
+      "passage_uid": "PU-b6d0e5fcef3b68f8",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 29785,
+      "char_end": 30331,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Considerations for Future Growth Looking ahead, Tatcha must remain vigilant to shifting consumer preferences and emerging beauty trends. The brand can continue to expand while maintaining its strong e"
+    },
+    {
+      "passage_uid": "PU-7093d6f03bfb83ae",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 13405,
+      "char_end": 13982,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Brand Positioning Strategy Visual representation of Tatcha's sustainability efforts in packaging Visual representation of Tatcha's sustainability efforts in packaging The brand positioning strategy of"
+    },
+    {
+      "passage_uid": "PU-a856fdb3f5ac6503",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 19064,
+      "char_end": 19308,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "This approach not only boosts credibility but also invites potential buyers to envision themselves within the Tatcha experience. The brand also collaborates with influencers who echo Tatcha’s ethos, e"
+    },
+    {
+      "passage_uid": "PU-4c5c9002436ca200",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 19995,
+      "char_end": 20550,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Additionally, the website offers educational content, emphasizing the benefits of key ingredients in products. Such information helps consumers make informed decisions and reinforces the notion that T"
+    },
+    {
+      "passage_uid": "PU-402944b7b9cc2c33",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 21048,
+      "char_end": 21646,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Ethical Sourcing of Ingredients Tatcha emphasizes ethical sourcing in its ingredient selection. The brand collaborates with farmers who follow sustainable practices. These partnerships benefit not onl"
+    },
+    {
+      "passage_uid": "PU-f99648448c10bcec",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 22096,
+      "char_end": 22758,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "brand_positioning",
+      "preview": "Environmental Considerations in Production Digital marketing strategies employed by Tatcha showcased on various platforms Digital marketing strategies employed by Tatcha showcased on various platforms"
+    },
+    {
+      "passage_uid": "PU-5a445b831952963f",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 29232,
+      "char_end": 29780,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Benefits of Tatcha's Brand Approach Tatcha’s premium pricing strategy is a deliberate choice that signals quality and exclusivity. By positioning itself within the higher price spectrum, Tatcha appeal"
+    },
+    {
+      "passage_uid": "PU-2ff5ae39b5af56bf",
+      "source_id": "S-b655a3c5649b",
+      "char_start": 5211,
+      "char_end": 5773,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "Media, PR, email, and creator content fire together on availability day — and Tatcha is no exception — to manufacture sales velocity, the signal that drives algorithmic and retailer momentum. For a br"
+    },
+    {
+      "passage_uid": "PU-f764c8ce18f23190",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 330,
+      "char_end": 994,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Intro Tatcha, a name synonymous with luxury skincare, has positioned itself uniquely within the competitive beauty market. Founded by Victoria Tsai, the brand is inspired by ancient Japanese beauty ri"
+    },
+    {
+      "passage_uid": "PU-7fecdc74b30e95b6",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 1017,
+      "char_end": 1358,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Runway Highlights While Tatcha primarily operates in the skincare sector, its presence at high-profile fashion events cannot be overlooked. Many designers incorporate Tatcha products backstage to ensu"
+    },
+    {
+      "passage_uid": "PU-aa035d34f6dbd090",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 3922,
+      "char_end": 4215,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Celebrity Style Spotlights Public figures and influencers spotlight Tatcha frequently on social media platforms. Their endorsement not only showcases the brand's efficacy but also establishes a framew"
+    },
+    {
+      "passage_uid": "PU-4d2670508a9a07f2",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 7913,
+      "char_end": 8471,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Defining the Target Market Defining the target market is essential for understanding how Tatcha positions itself in the highly competitive beauty industry. Knowing who the target audience is allows th"
+    },
+    {
+      "passage_uid": "PU-4fef15827bd1ec75",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 24510,
+      "char_end": 24990,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Moreover, customers look for elegant packaging that conveys the brand's sophistication and uniqueness. Another expectation centers on personalized service. Luxury buyers appreciate tailored shopping e"
+    },
+    {
+      "passage_uid": "PU-a0d9c6db606ad180",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 24995,
+      "char_end": 25646,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Brand Loyalty Factors Brand loyalty is crucial for Tatcha's continued success within the beauty industry, particularly in a competitive environment. Several factors contribute to fostering this loyalt"
+    },
+    {
+      "passage_uid": "PU-051e25f7521fe41b",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 26790,
+      "char_end": 27476,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Personalization of Products: Customers increasingly seek tailored skincare solutions. Tatcha could expand its product lines to include customizable elements that meet unique skin types and preferences"
+    },
+    {
+      "passage_uid": "PU-12eb2acceb2d5edc",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 28800,
+      "char_end": 29227,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "The core elements of Tatcha's brand narrative focus not only on product efficacy but also on the consumer experience tied to its luxurious offerings. Tatcha successfully reinforces its identity throug"
+    },
+    {
+      "passage_uid": "PU-653004770504522b",
+      "source_id": "S-b655a3c5649b",
+      "char_start": 10600,
+      "char_end": 11290,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "Taking Tatcha as the example: Velocity — concentrated sales in a short window — is — and Tatcha is no exception — the signal that drives algorithmic ranking, retailer reorders, and press momentum. For"
+    },
+    {
+      "passage_uid": "PU-a791ce6e3c549091",
+      "source_id": "S-f3799cd778f0",
+      "char_start": 485,
+      "char_end": 804,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Healthy Aging Previous Our Gifting Philosophy The Gift Guide The Holiday Collection Curate Your Own Set The Dewy Skin Cream Curate your own set Our newest innovation Next * Our Story Previous Our Stor"
+    },
+    {
+      "passage_uid": "PU-8ccac908530aac29",
+      "source_id": "S-f3799cd778f0",
+      "char_start": 972,
+      "char_end": 1112,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Minis Previous Our Gifting Philosophy The Gift Guide The Holiday Collection Curate Your Own Set The Dewy Skin Cream Curate your own set Next"
+    },
+    {
+      "passage_uid": "PU-3b114353573198e7",
+      "source_id": "S-f3799cd778f0",
+      "char_start": 1540,
+      "char_end": 1733,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Ingredients Previous Our Story Founding Team Heritage Ritual Impact Blog Next Ritual Finder Account ## Bag Your bag is empty Continue shopping Select Gifts Close ss 0 / 0 Selected Search for..."
+    },
+    {
+      "passage_uid": "PU-7dc4db4a4fe6b963",
+      "source_id": "S-f3799cd778f0",
+      "char_start": 1736,
+      "char_end": 2272,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Rooted in Japanese Wisdom. Created with Care. After years of putting everything before herself, Vicky Tsai saw the toll of constant travel, long hours, and a breakneck career reflected in her skin. In"
+    },
+    {
+      "passage_uid": "PU-53d334063e4a34ea",
+      "source_id": "S-f3799cd778f0",
+      "char_start": 2276,
+      "char_end": 2431,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "“I started traveling years ago because I was lost. For reasons I still can’t explain, I ended up ## in Japan. Those experiences healed my skin and my soul."
+    },
+    {
+      "passage_uid": "PU-3806b0ce38a71dcf",
+      "source_id": "S-f3799cd778f0",
+      "char_start": 2978,
+      "char_end": 3521,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Wisdom Made More Powerful Through Science The wisdom of Japan has been passed from generation to generation through rituals, ingredients, and everyday acts of care. Founded in Tokyo in 2010, the Tatch"
+    },
+    {
+      "passage_uid": "PU-73e5712ca34e43c5",
+      "source_id": "S-f3799cd778f0",
+      "char_start": 3536,
+      "char_end": 3922,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Inspiring self-love, one journey at a time Tatcha was built from that journey — one woman's search for beauty and goodness in the world, and the people in Japan who showed her both. What she brought h"
+    },
+    {
+      "passage_uid": "PU-41ec85c5a0e9d810",
+      "source_id": "S-f3799cd778f0",
+      "char_start": 4112,
+      "char_end": 4256,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Heritage The rituals born in Kyoto centuries ago have something to teach all of us about slowing down, showing up, and honoring ourselves today."
+    },
+    {
+      "passage_uid": "PU-f7bcf9de8527e703",
+      "source_id": "S-f3799cd778f0",
+      "char_start": 4271,
+      "char_end": 4442,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Ritual Ritual isn’t a routine to complete. It’s a moment to enter. A deliberate act of self-care. Tatcha transforms skincare into a mindful moment to slow down and exhale."
+    },
+    {
+      "passage_uid": "PU-3a32c751fb59c3d1",
+      "source_id": "S-f3799cd778f0",
+      "char_start": 4840,
+      "char_end": 5033,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Every Tatcha purchase supports education equality worldwide. Go to item 1 Go to item 2 Go to item 3 Go to item 4 Keep in Touch Signup for access to special offers, new products, tips, and more."
+    },
+    {
+      "passage_uid": "PU-bfeaff86dc9787c0",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 1709,
+      "char_end": 2107,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Celebrity-inspired Looks The brand's alignments with celebrities create a powerful synergy. Many A-listers endorse Tatcha's offerings, transforming them into coveted beauty must-haves. For instance, n"
+    },
+    {
+      "passage_uid": "PU-cc69ab453cbae316",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 3083,
+      "char_end": 3370,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Hair Care Secrets Though primarily a skincare brand, Tatcha is also venturing into hair care. Their formulas are crafted with the same attention to detail and quality as their skincare products. Custo"
+    },
+    {
+      "passage_uid": "PU-8d9dedf397a1fc69",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 5119,
+      "char_end": 5643,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Foreword to Tatcha Elegant Tatcha branding elements emphasizing its heritage Elegant Tatcha branding elements emphasizing its heritage In the realm of luxury skincare, Tatcha stands out for its unique"
+    },
+    {
+      "passage_uid": "PU-b24ba71f06209ecb",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 7252,
+      "char_end": 7909,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Tatcha’s commitment to education about its ingredients and their origins is a reflection of Tsai’s desire to empower consumers, allowing them to make informed choices about their skincare routines. > "
+    },
+    {
+      "passage_uid": "PU-a3fa0a87d11f13cc",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 9154,
+      "char_end": 9509,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Additionally, Tatcha appeals broadly to both Asian and non-Asian individuals, but it sequentially targets those interested in skincare rituals influenced by traditional Japanese beauty practices. Furt"
+    },
+    {
+      "passage_uid": "PU-615452b9d9f1bbdb",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 10344,
+      "char_end": 10882,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Investing in wellness and preventive care * Participating in mindful shopping, often researching products * Prioritizing brands that emphasize sustainability By identifying and understanding these dem"
+    },
+    {
+      "passage_uid": "PU-687a1231144ad3eb",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 12737,
+      "char_end": 13401,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Packaging and Brand Aesthetics Tatcha’s packaging stands out not just for its functionality but also for its aesthetic appeal. Each product is designed to convey elegance and simplicity. The use of ri"
+    },
+    {
+      "passage_uid": "PU-61a4828f83f39fd3",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 14709,
+      "char_end": 15255,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Tatcha plays into this by highlighting its unique ingredients sourced from Japan, often detailing their significance in traditional Japanese beauty rituals. By aligning the brand with cultural narrati"
+    },
+    {
+      "passage_uid": "PU-bdeff629ce23bb22",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 20554,
+      "char_end": 21043,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Sustainability Efforts In recent years, consumers have become more aware of sustainability in the beauty industry. Tatcha acknowledges this importance and integrates sustainable practices into its ope"
+    },
+    {
+      "passage_uid": "PU-7699b9acbe1391bd",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 21647,
+      "char_end": 22091,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "By focusing on ethical sourcing, Tatcha reinforces its narrative of luxury that is conscientious. > \"The careful selection of ingredients is crucial. It reflects both quality and a commitment to > sus"
+    },
+    {
+      "passage_uid": "PU-b6172f3c6e621647",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 23096,
+      "char_end": 23742,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Consumer Behavior Insights Understanding consumer behavior is essential for Tatcha to maintain its competitive edge within the luxury skincare market. This section emphasizes the importance of recogni"
+    },
+    {
+      "passage_uid": "PU-f71dc1a6ef6cfb91",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 23878,
+      "char_end": 24509,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Luxury Product Expectations Luxury consumers today have distinct expectations when it comes to product quality and experience. Tatcha, positioned in the premium segment, must meet – and often exceed –"
+    },
+    {
+      "passage_uid": "PU-80987845656f9695",
+      "source_id": "S-564052e6b495",
+      "char_start": 2770,
+      "char_end": 3270,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "actual_activity",
+      "preview": "Skin and Mind Are One Tatcha began with a simple truth discovered in Japan: that caring for the skin is also a way of caring for the mind. Zen monk Toryo Ito introduced Vicky to the Japanese phrase hi"
+    },
+    {
+      "passage_uid": "PU-228a76834f67b107",
+      "source_id": "S-940c37ee5b38",
+      "char_start": 30612,
+      "char_end": 31209,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "The most followed Instagram brands are global companies spanning fashion, sports, technology, and entertainment with hundreds of millions of followers. StarNgage tracks live follower counts and engage"
+    },
+    {
+      "passage_uid": "PU-8ada36b0877d40d4",
+      "source_id": "S-b655a3c5649b",
+      "char_start": 12592,
+      "char_end": 13255,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "A strong product with a vague launch — Tatcha included — still misses; the launch is half the work. For Tatcha, this is the point worth acting on. What does a pre-launch waitlist actually do? For Tatc"
+    },
+    {
+      "passage_uid": "PU-1d7c540111a7c618",
+      "source_id": "S-b655a3c5649b",
+      "char_start": 2032,
+      "char_end": 2678,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "The math behind a Tatcha product launch campaign 0% A planning anchor for Tatcha New-product failure rates run high — roughly 25% fail within the first year and about 40% by the end of the seco Source"
+    },
+    {
+      "passage_uid": "PU-678738b4d14275da",
+      "source_id": "S-b655a3c5649b",
+      "char_start": 3837,
+      "char_end": 4516,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "historical_activity",
+      "preview": "Most new products fail, and the failures rarely trace to a bad product alone — they — for Tatcha, a live factor — trace to unclear targeting, thin demand generation, and a launch that peaked and then "
+    },
+    {
+      "passage_uid": "PU-66011e8b52ac1d13",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 1363,
+      "char_end": 1704,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Seasonal Must-Haves Tatcha's seasonal collections reflect the ever-changing beauty landscape. Each launch is infused with elements that resonate with contemporary beauty trends. Products like The Dewy"
+    },
+    {
+      "passage_uid": "PU-f1733ca7199fa157",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 2138,
+      "char_end": 2782,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Skincare Regimens It's crucial to understand that Tatcha's products often emphasize a minimalist yet effective skincare routine. The brand's philosophy promotes a three-step regimen that includes clea"
+    },
+    {
+      "passage_uid": "PU-19249a1aca103827",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 3393,
+      "char_end": 3674,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Red Carpet Events Tatcha often garners attention during major red carpet events. Celebrities frequently share their beauty secrets, revealing their use of Tatcha products, which in turn drives consume"
+    },
+    {
+      "passage_uid": "PU-5f37f349015be8b2",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 3679,
+      "char_end": 3917,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Fashion Police Reviews The scrutiny from review shows and platforms also contributes to Tatcha’s visibility. Positive reviews elevate the brand's perception as a luxury choice among consumers who aspi"
+    },
+    {
+      "passage_uid": "PU-03833dc3a5fef67c",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 4237,
+      "char_end": 4484,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Street Style Snapshots In urban settings, the adoption of Tatcha products becomes a reflection of personal style statements. The brand resonates particularly well with younger demographics who seek au"
+    },
+    {
+      "passage_uid": "PU-65ac66084f5bfdfe",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 5648,
+      "char_end": 6339,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Origins of the Brand Tatcha was inspired by the ancient beauty rituals of Geisha in Japan. Founded in 2009 by Victoria Tsai, the brand draws upon centuries-old beauty practices that were emphasized fo"
+    },
+    {
+      "passage_uid": "PU-d4340282fac2c09d",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 6648,
+      "char_end": 7251,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Founder's Vision Victoria Tsai's vision for Tatcha transcends commercial success. Her aim is to create a bridge between ancient wisdom and modern science, merging the best of both worlds for optimal s"
+    },
+    {
+      "passage_uid": "PU-6a5f70bf5a698462",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 8476,
+      "char_end": 9153,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Demographics of Tatcha Users The demographics of Tatcha users provide a clear picture of the brand’s ideal customer. The primary demographic includes women aged between 25 to 45, who are often college"
+    },
+    {
+      "passage_uid": "PU-c2c4ae7c5b418148",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 9514,
+      "char_end": 10154,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Psychographics and Lifestyle Choices Psychographics delve deeper than mere statistics, shedding light on the motivations and lifestyle choices of Tatcha users. Tatcha’s clientele values quality over q"
+    },
+    {
+      "passage_uid": "PU-cf321c0474c60724",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 10886,
+      "char_end": 11330,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Product Offerings Understanding Tatcha's product offerings is essential to grasp the brand’s identity and its position in the luxury skincare market. The product line embodies both effectiveness and e"
+    },
+    {
+      "passage_uid": "PU-4885dc23e5b29045",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 14136,
+      "char_end": 14708,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Luxury Branding and Consumer Perception Luxury branding is not simply about offering high-priced products; it is about creating an image and lifestyle that resonates with consumers. Tatcha successfull"
+    },
+    {
+      "passage_uid": "PU-5fe08d17cef59935",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 19313,
+      "char_end": 19994,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Website Experience and E-commerce Strategy The Tatcha website exemplifies an effective e-commerce strategy that caters to its target market. The site is thoughtfully designed to provide an intuitive u"
+    },
+    {
+      "passage_uid": "PU-1abd651a0ddc213a",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 23743,
+      "char_end": 23873,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "By exploring consumer expectations and loyalty, Tatcha can ensure alignment between its products and the desires of its clientele."
+    },
+    {
+      "passage_uid": "PU-e7b40a5c72696905",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 26150,
+      "char_end": 26632,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "The Future of Tatcha in the Market The future of Tatcha is not only significant for the brand itself but also represents unfolding trends in the luxury skincare market. As consumer preferences shift, "
+    },
+    {
+      "passage_uid": "PU-840345310c02c9f1",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 28151,
+      "char_end": 28659,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Optimizing for mobile use is essential given global trends toward mobile shopping. The combination of these strategies will likely position Tatcha favorably as it aims to retain a competitive edge in "
+    },
+    {
+      "passage_uid": "PU-36bddefd474a5e87",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 30332,
+      "char_end": 30930,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Tatcha not only illuminates the path for luxury skincare brands but also sets a benchmark for how to succeed in a saturated market while staying true to one's ethos. > \"Luxury is not a destination but"
+    },
+    {
+      "passage_uid": "PU-bb0e83693bbb7ce4",
+      "source_id": "S-564052e6b495",
+      "char_start": 4235,
+      "char_end": 4405,
+      "selection_status": "rejected",
+      "reasons": [
+        "near_duplicate_of_selected_passage"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Founding Team Tatcha was not built by one person. It was built by a team whose expertise, knowledge, and care shaped everything from the science to the soul of the brand."
+    },
+    {
+      "passage_uid": "PU-63836169d6b445d1",
+      "source_id": "S-564052e6b495",
+      "char_start": 4766,
+      "char_end": 5002,
+      "selection_status": "rejected",
+      "reasons": [
+        "near_duplicate_of_selected_passage"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Impact Tatcha’s commitment to education and opportunity comes to life through a deep partnership with Room to Read, a global organisation that supports girls' literacy around the world and helps build"
+    },
+    {
+      "passage_uid": "PU-f7befb2842d9f292",
+      "source_id": "S-940c37ee5b38",
+      "char_start": 1181,
+      "char_end": 1601,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "List of Top Instagram Brands Ranking Discover top ranked and most influential brands for 2026. We've profiled top Brands by number of followers and category so you can see how they're ranked. Find out"
+    },
+    {
+      "passage_uid": "PU-f81c5de06b413c0c",
+      "source_id": "S-b655a3c5649b",
+      "char_start": 1177,
+      "char_end": 1846,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "How a product launch campaign plays out for Tatcha S Situation The setup A product launch campaign is a concentrated chance to move the Tatcha business in its category, with a short window and high st"
+    },
+    {
+      "passage_uid": "PU-36a4cd76ed659dc9",
+      "source_id": "S-b655a3c5649b",
+      "char_start": 9604,
+      "char_end": 10300,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "Fast answers Are the figures here taken from Tatcha's internal data? No. Every statistic is a public, linked benchmark for the product launch campaign type, applied to Tatcha as the example. Where a f"
+    },
+    {
+      "passage_uid": "PU-4ef2b943d0d9b1ac",
+      "source_id": "S-b655a3c5649b",
+      "char_start": 13256,
+      "char_end": 13572,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "Why is Tatcha the brand featured here? Tatcha is a recognisable brand in its category, which makes the product launch mechanics concrete and easy to follow. The campaign-type analysis and every benchm"
+    },
+    {
+      "passage_uid": "PU-755ea849e4437f4c",
+      "source_id": "S-b655a3c5649b",
+      "char_start": 13600,
+      "char_end": 13968,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "ANA — product launch marketing guidance — Association of National Advertisers reference on launch marketing. * Tesla Cybertruck launch record — Documents the 250,000 reservations within five days of r"
+    },
+    {
+      "passage_uid": "PU-242da499d560f038",
+      "source_id": "S-b655a3c5649b",
+      "char_start": 199,
+      "char_end": 597,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Tatcha as a product launch campaign case study: mechanics and numbers Tatcha is a consumer brand. Here Tatcha is the lens for examining the product launch campaign type. It covers what the campaign ty"
+    },
+    {
+      "passage_uid": "PU-abddfa2b83956685",
+      "source_id": "S-b655a3c5649b",
+      "char_start": 2684,
+      "char_end": 3244,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Quick facts BrandTatcha IndustryIts Category Campaign typeProduct Launch Primary channelsPaid, owned, earned Planning horizonMonths ahead of launch Core measureIncremental lift, not reach Source basis"
+    },
+    {
+      "passage_uid": "PU-7b5964c7b4aa06be",
+      "source_id": "S-b655a3c5649b",
+      "char_start": 5774,
+      "char_end": 6428,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Around 80% of customers expect a new product to work flawlessly on — and Tatcha is no exception — first use, so the launch promise and the product experience have to match. Skipping this is the most c"
+    },
+    {
+      "passage_uid": "PU-fd31d217a4a35964",
+      "source_id": "S-b655a3c5649b",
+      "char_start": 6637,
+      "char_end": 7175,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "The numbers that set the targets Benchmarks come before briefs. They tell a Tatcha team what a product launch campaign can realistically deliver. Planning a product launch campaign for Tatcha without "
+    },
+    {
+      "passage_uid": "PU-cfdf31ef0f09b7bd",
+      "source_id": "S-b655a3c5649b",
+      "char_start": 11291,
+      "char_end": 11904,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "It applies cleanly to Tatcha. A campaign that goes quiet on day — as a Tatcha team knows — eight wastes the awareness it just paid for. That holds directly for Tatcha. The slope of demand after launch"
+    },
+    {
+      "passage_uid": "PU-302666fd4934ad57",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 41,
+      "char_end": 326,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Fashion And Style/ 3. Other/ 4. Tatcha Target: An In-Depth Analysis of Luxury Skincare/ # Tatcha Target: An In-Depth Analysis of Luxury Skincare ByMeera Shah Share Tatcha's luxurious product display s"
+    },
+    {
+      "passage_uid": "PU-b78447bdbb768e7e",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 2787,
+      "char_end": 3078,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Makeup Tutorials Makeup enthusiasts increasingly turn to Tatcha for products that enhance their overall look. By layering Tatcha products under makeup, users can achieve a luminous finish. Tatcha's ph"
+    },
+    {
+      "passage_uid": "PU-64a4aabd9c3426f4",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 4489,
+      "char_end": 4771,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Beauty Product Reviews Consumer feedback on platforms like Reddit often emphasizes Tatcha's effectiveness. Regular users share transformative experiences regarding the use of Tatcha’s skincare regime."
+    },
+    {
+      "passage_uid": "PU-f0f9a62ae22d214b",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 4776,
+      "char_end": 5115,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Fashion Forecast Analysis As beauty and fashion trends evolve, Tatcha appears to stay ahead of the curve. By integrating seasonal trends into its product development cycle, Tatcha ensures that its off"
+    },
+    {
+      "passage_uid": "PU-51c383a3fd65ba12",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 6340,
+      "char_end": 6643,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Tatcha sources its materials through ethical channels, ensuring quality and respect for cultural traditions. The influence of Japanese philosophy in skincare, particularly the concept of simplicity an"
+    },
+    {
+      "passage_uid": "PU-c83682b4f55f289c",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 10155,
+      "char_end": 10316,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Additionally, many Tatcha consumers engage in self-care rituals, viewing skincare as part of a holistic approach to well-being, rather than just a routine chore."
+    },
+    {
+      "passage_uid": "PU-f34bf7e55d4d29b2",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 11335,
+      "char_end": 12011,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Skincare Line Overview Tatcha offers a diverse range of skincare products that focus on hydration, nourishment, and radiance. The core line includes cleansers, serums, moisturizers, and masks designed"
+    },
+    {
+      "passage_uid": "PU-3a1babe2e4ff1b27",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 12016,
+      "char_end": 12583,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Key Ingredients and Their Benefits Tatcha emphasizes the inclusion of unique, high-quality ingredients, often sourced from Japan. Ingredients like rice blend, green tea, and agar serve individual purp"
+    },
+    {
+      "passage_uid": "PU-dbc87747ba169dda",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 12584,
+      "char_end": 12732,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Tatcha’s formulations are designed to work synergistically, promoting healthy skin while ensuring minimal irritation, even for sensitive skin types."
+    },
+    {
+      "passage_uid": "PU-000781bf9a743b55",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 13983,
+      "char_end": 14131,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "This section aims to dissect this strategy in detail, illustrating how Tatcha effectively communicates its values and influences consumer behaviors."
+    },
+    {
+      "passage_uid": "PU-b93f6a58678a5cb5",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 18230,
+      "char_end": 18433,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "By analyzing engagement metrics, the brand can glean insights about consumer preferences and behavior. This data-driven approach helps to refine marketing strategies and adapt to emerging trends swift"
+    },
+    {
+      "passage_uid": "PU-c5039077fe67721d",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 22759,
+      "char_end": 23092,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "This focus leads to a smaller ecological footprint, aligning with modern consumer expectations for environmental stewardship. Moreover, Tatcha works to ensure that their production methods meet rigoro"
+    },
+    {
+      "passage_uid": "PU-2b198063b903ed5c",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 26637,
+      "char_end": 26757,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Emerging Trends in the Beauty Industry Tatcha must stay ahead by observing and analyzing current beauty industry trends."
+    },
+    {
+      "passage_uid": "PU-ab12ddd19a93ae19",
+      "source_id": "S-564052e6b495",
+      "char_start": 2040,
+      "char_end": 2578,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Rooted in Japanese Wisdom. Created with Care. After years of putting everything before herself, Vicky Tsai saw the toll of constant travell, long hours, and a breakneck career reflected in her skin. I"
+    },
+    {
+      "passage_uid": "PU-902e9e81c61ced5b",
+      "source_id": "S-564052e6b495",
+      "char_start": 3285,
+      "char_end": 3829,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Wisdom Made More Powerful Through Science The wisdom of Japan has been passed from generation to generation through rituals, ingredients, and everyday acts of care. Founded in Tokyo in 2010, the Tatch"
+    },
+    {
+      "passage_uid": "PU-04b48ce52210bf47",
+      "source_id": "S-564052e6b495",
+      "char_start": 4580,
+      "char_end": 4751,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Ritual Ritual isn’t a routine to complete. It’s a moment to enter. A deliberate act of self-care. Tatcha transforms skincare into a mindful moment to slow down and exhale."
+    },
+    {
+      "passage_uid": "PU-cbc53ea2b40612d3",
+      "source_id": "S-b655a3c5649b",
+      "char_start": 3248,
+      "char_end": 3836,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "The product launch campaign, defined Here is the short version for Tatcha. A product launch campaign is the coordinated push that takes a new product from announcement to market traction. A product la"
+    },
+    {
+      "passage_uid": "PU-6134bfb4c35325b8",
+      "source_id": "S-b655a3c5649b",
+      "char_start": 6429,
+      "char_end": 6633,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "Apple's event cadence shows the pattern — controlled information — as a Tatcha team knows — release keeps a product in the conversation for weeks. For a brand like Tatcha, getting this wrong is expens"
+    },
+    {
+      "passage_uid": "PU-316a2358bf29e6d8",
+      "source_id": "S-b655a3c5649b",
+      "char_start": 8354,
+      "char_end": 9022,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "The failure patterns worth pre-empting Failure has a shape. For Tatcha, the four errors below are the ones worth pre-empting. The product launch campaign mistakes worth naming for Tatcha: * Skipping p"
+    },
+    {
+      "passage_uid": "PU-09f901d8574c4ad7",
+      "source_id": "S-b655a3c5649b",
+      "char_start": 9023,
+      "char_end": 9600,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "A Tatcha product launch campaign is set up to win, or not, in advance. ## How RGM reads the Tatcha example For Tatcha, the value is the model. A product launch campaign is a repeatable structure, not "
+    },
+    {
+      "passage_uid": "PU-1bac66c4c7465674",
+      "source_id": "S-b655a3c5649b",
+      "char_start": 13985,
+      "char_end": 14117,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "All case studies The full RGM case-study library. #### What is growth marketing The foundational concept behind every campaign type."
+    },
+    {
+      "passage_uid": "PU-c2aed31ef69107f2",
+      "source_id": "S-b91bce3e88a7",
+      "char_start": 310,
+      "char_end": 1004,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Primer & Makeup Essentials Search here Search HomeAbout us Tatcha was born from a deep appreciation for Japanese beauty rituals that have stood the test of time. We journeyed to Kyoto to uncover age-o"
+    },
+    {
+      "passage_uid": "PU-2d92bf7cbb07cbe4",
+      "source_id": "S-564052e6b495",
+      "char_start": 3844,
+      "char_end": 4230,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Inspiring self-love, one journey at a time Tatcha was built from that journey — one woman's search for beauty and goodness in the world, and the people in Japan who showed her both. What she brought h"
+    },
+    {
+      "passage_uid": "PU-37929a4cc3d62cff",
+      "source_id": "S-5f61473c62a7",
+      "char_start": 471,
+      "char_end": 662,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Jart+Glow RecipeDrunk ElephantHerbivore BotanicalsParivieThe OutsetAugustinus BaderPeach & LilyThe Ordinary ## Who Tatcha targets Affluent women invested in Japanese-inspired ritual skincare."
+    },
+    {
+      "passage_uid": "PU-5a365f8f86998406",
+      "source_id": "S-b655a3c5649b",
+      "char_start": 0,
+      "char_end": 196,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Light Real / Growth / Matters Menu Services Industries Learn Glossary Training Tools Search Ctrl K ◐ Apply Home · Learn · Case Studies · Tatcha Product Launch Case Study · Product Launch Marketing"
+    },
+    {
+      "passage_uid": "PU-d38123251ffc3c31",
+      "source_id": "S-b655a3c5649b",
+      "char_start": 1847,
+      "char_end": 2013,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "R Result The scoreboard On incremental lift against a baseline for Tatcha, not reach and not impressions. That is the honest scoreboard for a product launch campaign."
+    },
+    {
+      "passage_uid": "PU-247c155c1dae22b5",
+      "source_id": "S-b655a3c5649b",
+      "char_start": 4520,
+      "char_end": 5210,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "How a product launch campaign is run Run through the mechanics: a product launch campaign for Tatcha is an operating system. For Tatcha, a product launch campaign is less one ad and more a set of conn"
+    },
+    {
+      "passage_uid": "PU-9bbcb4e769363256",
+      "source_id": "S-b655a3c5649b",
+      "char_start": 7774,
+      "char_end": 8350,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Which KPIs decide the verdict Choose KPIs that hold up. A Tatcha product launch campaign is judged on the metrics listed here. The KPIs that count for a product launch campaign are listed here. Pre-la"
+    },
+    {
+      "passage_uid": "PU-6fd86e22da8a143e",
+      "source_id": "S-b655a3c5649b",
+      "char_start": 11905,
+      "char_end": 12591,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Launch creative that over-promises against a rough first-use experience converts early adopters into — for Tatcha, a live factor — detractors, and detractors are loud at exactly the moment a launch ne"
+    },
+    {
+      "passage_uid": "PU-3a191dd0cec9b589",
+      "source_id": "S-b655a3c5649b",
+      "char_start": 14123,
+      "char_end": 14266,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "Incrementality testing How to prove a campaign actually caused the lift. Directory — Sheet Index11 Sections 01Growth marketing services24 links"
+    },
+    {
+      "passage_uid": "PU-9d1d88f5f5fb2921",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 31667,
+      "char_end": 31994,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Effective Strategies to Eliminate Hair Bumpslg... By Rajesh Kapoorlg... Discover effective methods to eliminate hair bumps! Learn about their causes, prevention, and treatments, from home remedies to "
+    },
+    {
+      "passage_uid": "PU-b85c819ae6df17ea",
+      "source_id": "S-940c37ee5b38",
+      "char_start": 216,
+      "char_end": 339,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "descriptive",
+      "preview": "Top 20 United States Influencers Ranked by Engagement Rate * Discover the most engaging influencers on Instagram by Fashion"
+    },
+    {
+      "passage_uid": "PU-18259c3c81ef9f0c",
+      "source_id": "S-b655a3c5649b",
+      "char_start": 623,
+      "char_end": 1158,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "author_recommendation",
+      "preview": "Story: This case study runs a product launch campaign through the Tatcha lens, from mechanics to public benchmarks. * Why it matters: The value of a product launch campaign comes from rigour: clear ta"
+    },
+    {
+      "passage_uid": "PU-98d1bb3bd678c8c1",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 15256,
+      "char_end": 15426,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "The pleasing design not only attracts attention but also enhances perceived value, influencing purchasing decisions in a positive direction. > \"Luxury is in each detail.”"
+    },
+    {
+      "passage_uid": "PU-ceec80559cfb2b5a",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 30935,
+      "char_end": 31279,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Exploring the Enigmatic World of Il Makiage Dupe Foundation: A Beauty Revelationlg... By Lily Changlg... Delve into the world of makeup with a focus on Il Makiage dupe foundations. Compare, contrast, "
+    },
+    {
+      "passage_uid": "PU-29cf9fd3928927f9",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 31284,
+      "char_end": 31662,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Unveiling the Efficacy of Olay Retinol 24: Comprehensive Reviews and Analysislg... By Sunita Agrawallg... Discover detailed reviews and analysis of Olay Retinol 24, a top anti-aging skincare product. "
+    },
+    {
+      "passage_uid": "PU-9256e7cb9d27e019",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 31999,
+      "char_end": 32305,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Mastering the Art of Self-Application: Your Makeup Guidelg... By Sunita Agrawallg... Unlock your makeup potential! 💄 Discover essential skills, tools, and techniques to master self-application for eve"
+    },
+    {
+      "passage_uid": "PU-64929e23a807c168",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 32310,
+      "char_end": 32648,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Illuminate Your Beauty: The Ultimate Guide to Light-Up Makeup Mirrors with Magnificationlg... By Priyanka Chopralg... Discover the ultimate guide to light-up makeup mirrors with magnification. Learn a"
+    },
+    {
+      "passage_uid": "PU-45830a90cd54d341",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 32653,
+      "char_end": 33106,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Expert Tips for Healing Chapped Lips and Maintaining Lip Healthlg... By Makoto Yamamotolg... Unlock the secrets to banish chapped lips for good with our ultimate guide! From hydration tips 💧 to protec"
+    },
+    {
+      "passage_uid": "PU-703fa07efca5356c",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 33111,
+      "char_end": 33416,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Essential Makeup Techniques for Newbieslg... By Elena Petrovalg... Unlock the basics of makeup application with this beginner's guide! 💄 Step into the world of beauty, learning essential techniques an"
+    },
+    {
+      "passage_uid": "PU-1c13d92c80bd62d3",
+      "source_id": "S-0462cbee4ec9",
+      "char_start": 33421,
+      "char_end": 33688,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Discover the Most Effective Creams for Banishing Under Eye Bagslg... By Neha Singhlg... Uncover the best creams combating under-eye bags! Explore potent ingredients, application techniques, and top re"
+    },
+    {
+      "passage_uid": "PU-a6caaa55aad4d32a",
+      "source_id": "S-564052e6b495",
+      "char_start": 744,
+      "char_end": 958,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:ambiguous_entity",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "possible different entity: Tatcha Institute",
+      "statement_type": "descriptive",
+      "preview": "Oily Previous Curate Your Own Set Find Your Ritual Refer a Friend Next * Our Story Previous Our Story Founding Team Heritage Ritual Impact Next * Science Previous Science Tatcha Institute Hadasei-3 In"
+    },
+    {
+      "passage_uid": "PU-5a5a1be2578d62c1",
+      "source_id": "S-564052e6b495",
+      "char_start": 1811,
+      "char_end": 2037,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Travel Set Curator Ritual Finder Account ## Bag Add a complimentary Dewy Milk Moisturizer Deluxe Sample. While supplies last. Code DEWYMILK Your bag is empty Continue shopping Select Gifts Close ss 0 "
+    },
+    {
+      "passage_uid": "PU-07197f52eb93ebda",
+      "source_id": "S-564052e6b495",
+      "char_start": 2582,
+      "char_end": 2738,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "“I started travelling years ago because I was lost. For reasons I still can’t explain, I ended up ## in Japan. Those experiences healed my skin and my soul."
+    },
+    {
+      "passage_uid": "PU-87f4d00a08f6a226",
+      "source_id": "S-564052e6b495",
+      "char_start": 4420,
+      "char_end": 4565,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Heritage The rituals born in Kyoto centuries ago have something to teach all of us about slowing down, showing up, and honouring ourselves today."
+    },
+    {
+      "passage_uid": "PU-79b22412c9681734",
+      "source_id": "S-b91bce3e88a7",
+      "char_start": 1544,
+      "char_end": 1678,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Refund and Returns Policy Copyright @ 2025 lowkeyskin.com Search My Cart Wishlist Recently Viewed TatchaTatcha Great to have you back!"
+    },
+    {
+      "passage_uid": "PU-da36952935e77830",
+      "source_id": "S-b655a3c5649b",
+      "char_start": 7176,
+      "char_end": 7770,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "author_recommendation",
+      "preview": "A Tatcha forecast should start from a figure like this. ─────────────────────┬────────────────────────────────────────── What to measure │Why it matters ─────────────────────┼─────────────────────────"
+    }
+  ],
+  "status": "ok",
+  "status_reasons": [],
+  "packet_sha256": "61c8422b3ed23e087227685971d728f2d736d989c9acd467eedbcf1894cc10e0"
+}

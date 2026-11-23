@@ -1,0 +1,2646 @@
+{
+  "schema_version": "brandpilot.packet.v3",
+  "company": {
+    "company_id": "ilia-beauty",
+    "display_name": "ILIA",
+    "legacy_name": "Ilia Beauty",
+    "category": "clean makeup and skincare",
+    "official_domains": [
+      "iliabeauty.com"
+    ],
+    "identity_status": "verified",
+    "registry_version": "2026-11-22.v3",
+    "registry_sha256": "cc9ab39277bffb4c0aa0b59df8db2e7fec12da7955a58651370daf2936495a16"
+  },
+  "collection": {
+    "mode": "legacy_cache_replay",
+    "collector_version": "brandpilot-collector-0.3",
+    "created_at": "2026-11-22T20:36:38+00:00",
+    "queries": [
+      "\"Ilia Beauty\" instagram marketing campaign target audience",
+      "\"Ilia Beauty\" social media strategy brand positioning",
+      "\"Ilia Beauty\" marketing campaign press release instagram",
+      "\"Ilia Beauty\" customer audience brand story",
+      "\"Ilia Beauty\" about us brand values audience",
+      "\"Ilia Beauty\" newsroom marketing campaign",
+      "\"Ilia Beauty\" brand campaign case study"
+    ],
+    "notes": [
+      "replayed from legacy packet ilia-beauty-research-packet.json (sha256 dd77659507ba279a)",
+      "documents are legacy cached extractions; no new fetches were made"
+    ]
+  },
+  "leads": [
+    {
+      "company_id": "ilia-beauty",
+      "query": "\"Ilia Beauty\" newsroom marketing campaign",
+      "url": "https://iliabeauty.com/blogs/the-ilia-newsrooms/tagged/product-launch",
+      "title": "The ILIA Newsroom – tagged \"Product Launch\"",
+      "snippet": "Your source for the latest on ILIA Beauty product releases, partnerships, company news, and more.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "ilia-beauty",
+      "query": "\"Ilia Beauty\" newsroom marketing campaign",
+      "url": "https://iliabeauty.com/blogs/the-ilia-newsrooms",
+      "title": "The ILIA Newsroom",
+      "snippet": "Your source for the latest on ILIA Beauty product releases, partnerships, company news, and more.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "ilia-beauty",
+      "query": "\"Ilia Beauty\" about us brand values audience",
+      "url": "https://www.accio.com/business/ilia-beauty",
+      "title": "ILIA Beauty: Company Analysis & Supplier Insights - accio.com",
+      "snippet": "Nov 8, 2026 · Explore ILIA Beauty's brand philosophy, market position, and financial growth. Discover top suppliers for clean beauty products and sustainable packaging. Click to access a detailed company analysis report.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "ilia-beauty",
+      "query": "\"Ilia Beauty\" about us brand values audience",
+      "url": "https://iliabeauty.com/pages/about",
+      "title": "About ILIA: Sustainable Skincare-Powered Makeup - ILIA Beauty",
+      "snippet": "And so the story of ILIA begins. ILIA Beauty is a prestige line of natural, organic, and clean beauty products that combine superior color performance and nourishing organics.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "ilia-beauty",
+      "query": "\"Ilia Beauty\" about us brand values audience",
+      "url": "https://iliabeauty.com/en-ca/pages/about",
+      "title": "About ILIA: Sustainable Skincare-Powered Makeup - ILIA Beauty",
+      "snippet": "ILIA Beauty is a prestige line of natural, organic, and clean beauty products that combine superior color performance and nourishing organics.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "ilia-beauty",
+      "query": "\"Ilia Beauty\" instagram marketing campaign target audience",
+      "url": "https://www.havstrategy.com/marketing-strategy-of-ilia-beauty/",
+      "title": "Marketing Strategy of Ilia Beauty - HavStrategy",
+      "snippet": "This blog takes a deep dive into social media marketing strategies for skincare brands and ILIA Beauty’s marketing strategy, focusing on its successful social media campaigns, innovative product launch tactics, creative advertising strategies, and website optimization techniques.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "ilia-beauty",
+      "query": "\"Ilia Beauty\" about us brand values audience",
+      "url": "https://iliabeauty.recruitee.com/who-we-are",
+      "title": "Who We Are - ILIA, Inc.",
+      "snippet": "88% of ILIA employees would say this is a great place to work! This is one way we hold ourselves accountable to our continued commitment to exploring innovative ways of collaborating as a team and fostering an inclusive, supportive and rewarding work culture.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "ilia-beauty",
+      "query": "\"Ilia Beauty\" instagram marketing campaign target audience",
+      "url": "https://www.modash.io/breakdowns/ilia-beauty-influencer-marketing-strategy",
+      "title": "ILIA Beauty's Influencer Marketing Strategy (2026 Data ...",
+      "snippet": "Oct 16, 2026 · This report breaks down where & how ILIA Beauty invests in influencer marketing, which social platforms they prioritize, top geographical markets, and more. The data in this report comes from Modash's Brand Collaborations API.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    }
+  ],
+  "documents": [
+    {
+      "source_id": "S-f615691789fc",
+      "company_id": "ilia-beauty",
+      "requested_url": "https://iliabeauty.com/blogs/the-ilia-newsrooms/tagged/product-launch",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "7eb9f22d2db1b466b6d945932803bdbee4e2f26c5d822bcc3d779624a46688e6",
+      "text_path": "text/7eb9f22d2db1b466b6d945932803bdbee4e2f26c5d822bcc3d779624a46688e6.txt",
+      "raw_path": null,
+      "text_chars": 9182,
+      "redirect_chain": [],
+      "identity_decision": "official_domain",
+      "identity_reason": "host iliabeauty.com is an official domain",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file a273276731b1ecbe6daa398a679446538f5d0fdd30b15ea697eff23425650239.json sha256=9434729fe4bcf89092628130cd9c2ef628e3a97b824d62d3f1ae210501f365fb",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-197e71cef0e0",
+      "company_id": "ilia-beauty",
+      "requested_url": "https://iliabeauty.com/blogs/the-ilia-newsrooms",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "ce270b7ddf75e77fe440a4a6e9f726ba6640af90156be2f5df1ab54c6765d5d1",
+      "text_path": "text/ce270b7ddf75e77fe440a4a6e9f726ba6640af90156be2f5df1ab54c6765d5d1.txt",
+      "raw_path": null,
+      "text_chars": 9225,
+      "redirect_chain": [],
+      "identity_decision": "official_domain",
+      "identity_reason": "host iliabeauty.com is an official domain",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 9a4dc9cce1e49eb08b4e1f9bad5edfdcf5812501399d7ec05900fd331b7acbfe.json sha256=e875941010916d0005c48a5647890a9bc90bdf61b0d40d41c10a02bb39adca35",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-0d6c407f3df0",
+      "company_id": "ilia-beauty",
+      "requested_url": "https://www.accio.com/business/ilia-beauty",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "164458a9443e5b2367b7370034a861e236ee0657720df25578cfe469c8ce97b1",
+      "text_path": "text/164458a9443e5b2367b7370034a861e236ee0657720df25578cfe469c8ce97b1.txt",
+      "raw_path": null,
+      "text_chars": 18717,
+      "redirect_chain": [],
+      "identity_decision": "third_party_confirmed",
+      "identity_reason": "16 name mention(s) co-occur with clean makeup and skincare terms",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file f743ce03f3ea8303d64a963fc37b333a63d3ce81b1f4de45e015a15b5aa84fb0.json sha256=4d58feff454a276cacac3960d5f3f085603766ed9954751923257322a0c8d2c7",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-74e52ff7b758",
+      "company_id": "ilia-beauty",
+      "requested_url": "https://iliabeauty.com/pages/about",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "e625eacd29837a8b2b3eaea0961e49952d0d51ecffdbc05b6e56fd86a2cb8dba",
+      "text_path": "text/e625eacd29837a8b2b3eaea0961e49952d0d51ecffdbc05b6e56fd86a2cb8dba.txt",
+      "raw_path": null,
+      "text_chars": 11948,
+      "redirect_chain": [],
+      "identity_decision": "official_domain",
+      "identity_reason": "host iliabeauty.com is an official domain",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 789d33a301d9c68bbca2f7d66c170449634b922ba6f4ddef905fccdcbb3f3a3b.json sha256=2c2fe2d4436fff5c20b21257fd047806c93258bca19b9c7864db15e2757b1f08",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-2d801f1b9c0f",
+      "company_id": "ilia-beauty",
+      "requested_url": "https://iliabeauty.com/en-ca/pages/about",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "e625eacd29837a8b2b3eaea0961e49952d0d51ecffdbc05b6e56fd86a2cb8dba",
+      "text_path": "text/e625eacd29837a8b2b3eaea0961e49952d0d51ecffdbc05b6e56fd86a2cb8dba.txt",
+      "raw_path": null,
+      "text_chars": 11948,
+      "redirect_chain": [],
+      "identity_decision": "official_domain",
+      "identity_reason": "host iliabeauty.com is an official domain",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 13f56a061386d4a0e83b8612d9876dee05b92b76c2d8826aba3879fa43727ae6.json sha256=fbd7011be828ddff9144f769dea0bfb61209c83ef0eff1ef21a8c6699dd8eca4",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-53beb4316ae6",
+      "company_id": "ilia-beauty",
+      "requested_url": "https://www.havstrategy.com/marketing-strategy-of-ilia-beauty/",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "ebae207d35b66a354b9ae9a7aa1adfa24cf6cc2e256cee31576ff2d18f5ca089",
+      "text_path": "text/ebae207d35b66a354b9ae9a7aa1adfa24cf6cc2e256cee31576ff2d18f5ca089.txt",
+      "raw_path": null,
+      "text_chars": 24606,
+      "redirect_chain": [],
+      "identity_decision": "third_party_confirmed",
+      "identity_reason": "27 name mention(s) co-occur with clean makeup and skincare terms",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file df91294c8390fc46d6a27549f91792a6021ef60372beedc46c766c81a3ab011c.json sha256=8b438a894b8b630fccc3505eb8d7abc809423c00f574e6d8a84fda9474f3d633",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-d615d24c9ebe",
+      "company_id": "ilia-beauty",
+      "requested_url": "https://iliabeauty.recruitee.com/who-we-are",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "ebb3e79db9ec4a1d4fb8d7d8bf023a5edfa57e4d1575b37a6b06d758ad4dbfd8",
+      "text_path": "text/ebb3e79db9ec4a1d4fb8d7d8bf023a5edfa57e4d1575b37a6b06d758ad4dbfd8.txt",
+      "raw_path": null,
+      "text_chars": 1531,
+      "redirect_chain": [],
+      "identity_decision": "unconfirmed",
+      "identity_reason": "company name appears without its product category",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 6b30c5ffd10aa8f42e7c0312c6f588286583a3198f649486a917c7e18de31cef.json sha256=9ca34ef2b92542f0e05484389ae1ea8436a0d99620ef9c184ca729dcfab083ea",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-98da115ec348",
+      "company_id": "ilia-beauty",
+      "requested_url": "https://www.modash.io/breakdowns/ilia-beauty-influencer-marketing-strategy",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "92b2b639a91dba44f482e1f187557ce698c92fadb2f064096b553ac69a58ba37",
+      "text_path": "text/92b2b639a91dba44f482e1f187557ce698c92fadb2f064096b553ac69a58ba37.txt",
+      "raw_path": null,
+      "text_chars": 12329,
+      "redirect_chain": [],
+      "identity_decision": "third_party_confirmed",
+      "identity_reason": "66 name mention(s) co-occur with clean makeup and skincare terms",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file c5f9f0cfae1a743ded3cd3b8f71178c9670cc59d670b1f0b1f9488ecb2283ded.json sha256=8cec77656e125698919985b33a6200ebd7746e34bfcf52ae0f9a0160a8b5dbf2",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "passage_uid": "PU-a71337f7da092a04",
+      "source_id": "S-197e71cef0e0",
+      "char_start": 2803,
+      "char_end": 3065,
+      "text": "ILIA Beauty Unveils California Flora September 28, 2026 ILIA Introduces Thru Line Waterproof Eyeliner Product Launch ### ILIA Introduces Thru Line Waterproof Eyeliner July 29, 2026 Crown Affair x ILIA Beauty Launch Limited-Edition Collaboration Brand Partnership",
+      "text_sha256": "2382004c071b8da708494670db8aa1ab1781d14ce0d612548513f1b39d963e76",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "historical_activity",
+      "flags": [],
+      "dates_mentioned": [
+        "July 29, 2026",
+        "September 28, 2026"
+      ],
+      "relevance_terms": [
+        "brand",
+        "collab",
+        "collaborat",
+        "launch",
+        "limited-edition",
+        "partner"
+      ],
+      "score": 25,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P1",
+      "source_url": "https://iliabeauty.com/blogs/the-ilia-newsrooms",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-7db26caac7b2fc5d",
+      "source_id": "S-197e71cef0e0",
+      "char_start": 2285,
+      "char_end": 2661,
+      "text": "Crown Affair x ILIA Beauty Launch Limited-Edition Collaboration June 23, 2026 Crown Affair and ILIA Beauty Launch Limited-Edition Collaboration For Simplifying Summer Rituals The partnership introduces The Hair Towel Reimagined in ILIA’s signature Blush Pink and a curated Out-The-Door Ritual Set NEW YORK, NY (June 23, 2026): Crown Affair and ILIA Beauty announced the lau...",
+      "text_sha256": "7155b0e5191423b5238844b61821f554d234ccfb0571eecaf8d345054e195f7f",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "historical_activity",
+      "flags": [],
+      "dates_mentioned": [
+        "June 23, 2026"
+      ],
+      "relevance_terms": [
+        "collab",
+        "collaborat",
+        "launch",
+        "limited-edition",
+        "partner"
+      ],
+      "score": 23,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P2",
+      "source_url": "https://iliabeauty.com/blogs/the-ilia-newsrooms",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-7c6c68bc487b7e38",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 15161,
+      "char_end": 15749,
+      "text": "By creating an easy and cost-effective way for customers to maintain their skincare and makeup routines, ILIA has been able to build long-term customer loyalty. Hiring an experienced beauty digital marketing agency like HavStrategy can help you boost CRO in just months. The ilia beauty marketing strategy demonstrates how a brand can successfully combine purpose-driven values with structured digital execution. By aligning storytelling-led product launches with consistent community engagement, ilia beauty social media marketing plays a central role in strengthening brand positioning.",
+      "text_sha256": "2377edf2480debafd4a95ea66ab047ae953c516046a51e29a66dd8682160f1bb",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "actual_activity",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "brand",
+        "community",
+        "customers",
+        "launch",
+        "loyalty",
+        "marketing",
+        "positioning",
+        "social media",
+        "storytelling"
+      ],
+      "score": 26,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P3",
+      "source_url": "https://www.havstrategy.com/marketing-strategy-of-ilia-beauty/",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-48d161ccb5a27537",
+      "source_id": "S-197e71cef0e0",
+      "char_start": 2102,
+      "char_end": 2281,
+      "text": "Your source for the latest on ILIA Beauty product releases, partnerships, company news, and more. Crown Affair x ILIA Beauty Launch Limited-Edition Collaboration Brand Partnership",
+      "text_sha256": "cf6a657b56cac5036defa75eb58c7ccb2c46e0249382f3ce17084b3c6e71e3c3",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "brand",
+        "collab",
+        "collaborat",
+        "launch",
+        "limited-edition",
+        "partner"
+      ],
+      "score": 22,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P4",
+      "source_url": "https://iliabeauty.com/blogs/the-ilia-newsrooms",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-3c67843128b6e727",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 2695,
+      "char_end": 3239,
+      "text": "This blog takes a deep dive into social media marketing strategies for skincare brands and ILIA Beauty’s marketing strategy, focusing on its successful social media campaigns, innovative product launch tactics, creative advertising strategies, and website optimization techniques. By collaborating with best cosmetics marketing agency London and understanding the strategic decisions that have driven ILIA’s success, it’s clear how the brand has become a leader in the clean beauty space. Digital Marketing Agency For Beauty And Skincare Brands",
+      "text_sha256": "d60efc4aa2a21329b97fc3ec5d43d9ba73aa522603164e015182295f207a92af",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "advertis",
+        "brand",
+        "campaign",
+        "collab",
+        "collaborat",
+        "launch",
+        "marketing",
+        "social media"
+      ],
+      "score": 20,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P5",
+      "source_url": "https://www.havstrategy.com/marketing-strategy-of-ilia-beauty/",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-9790ea0552b0eaad",
+      "source_id": "S-98da115ec348",
+      "char_start": 1402,
+      "char_end": 1834,
+      "text": "ILIA Beauty's influencer activity by platform Share of sponsored content by social network ### Content format by platform Share of all sponsored posts. InstagramReels 85.6% InstagramFeed Posts 14.4% TikTokPosts 100% YouTubeLong-form 73.6% YouTubeShorts 26.4% TikTok influencer marketing is a clear focus for ILIA Beauty. Here are 3 examples of ILIA Beauty's recent sponsored collaborations (one each for Instagram, TikTok, YouTube).",
+      "text_sha256": "76cdfcaefecca9cfe38fc33435efbf92de2e1ab3e735f6828421789d9731aa1b",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "flags": [
+        "vendor_generated_profile_or_analytics",
+        "creator_or_influencer_audience_data"
+      ],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "collab",
+        "collaborat",
+        "content",
+        "influencer",
+        "instagram",
+        "marketing",
+        "sponsor",
+        "tiktok",
+        "youtube"
+      ],
+      "score": 19,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P6",
+      "source_url": "https://www.modash.io/breakdowns/ilia-beauty-influencer-marketing-strategy",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-67984e1a47626a4d",
+      "source_id": "S-98da115ec348",
+      "char_start": 3949,
+      "char_end": 4471,
+      "text": "ILIA Beauty's influencers average views (TikTok) Based on each influencer's average views per post <1K49.0% 1K-5K24.7% 5K-10K7.8% 10K-50K11.9% 50K-100K3.2% 100K-500K2.7% 500K+0.7% With 49% of partnerships featuring creators averaging <1K views, ILIA Beauty's strategy suggests niche targeting and authenticity, likely leveraging collaboration models like gifting and affiliates to work with smaller creators. Here is an example of a sponsored collaboration with a larger-audience creator on TikTok (753.2k avg views/post):",
+      "text_sha256": "f6dd6679fc5c4d541daa6ce6fb1413e0c84d934745c33af568cf05f081e89ec4",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "flags": [
+        "vendor_generated_profile_or_analytics"
+      ],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "audience",
+        "collab",
+        "collaborat",
+        "creator",
+        "influencer",
+        "partner",
+        "sponsor",
+        "tiktok"
+      ],
+      "score": 19,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P7",
+      "source_url": "https://www.modash.io/breakdowns/ilia-beauty-influencer-marketing-strategy",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-765790b72d22ac0e",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 7773,
+      "char_end": 8395,
+      "text": "1. #ILIASkinChallenge The #ILIASkinChallenge was a popular campaign that invited customers to share their no-makeup or minimal makeup looks using ILIA Beauty products. The campaign emphasized the brand’s philosophy of skin-first beauty, where makeup enhances the skin rather than masking it. Customers and influencers were encouraged to post their natural beauty routines on Instagram, tagging the brand and using the hashtag. This user-generated content (UGC) strategy worked particularly well in building trust with ILIA’s audience, as it allowed potential customers to see real people with real skin using the products.",
+      "text_sha256": "1c4997d6dda9dca09886e822a8fdd86ae902907914f4dc7b47410666ce98e720",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "audience",
+        "brand",
+        "campaign",
+        "content",
+        "customers",
+        "influencer",
+        "instagram"
+      ],
+      "score": 18,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P8",
+      "source_url": "https://www.havstrategy.com/marketing-strategy-of-ilia-beauty/",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-338cfb2e54894b7d",
+      "source_id": "S-98da115ec348",
+      "char_start": 150,
+      "char_end": 608,
+      "text": "(2026 Data & Insights) We analyzed 7.4k pieces of influencer content sponsored by ILIA Beauty over the last 12 months. This report breaks down where & how ILIA Beauty invests in influencer marketing, which social platforms they prioritize, top geographical markets, and more. The data in this report comes from Modash's Brand Collaborations API. P.S. for a simple list of influencers who have collaborated with ILIA Beauty, see here: ILIA Beauty influencers.",
+      "text_sha256": "84746e625bfdd522f0d0c76740c20eff3b5edafa4b9d4a043535292ef5357193",
+      "identity_decision": "ok",
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "flags": [
+        "vendor_generated_profile_or_analytics"
+      ],
+      "dates_mentioned": [
+        "2026"
+      ],
+      "relevance_terms": [
+        "brand",
+        "collab",
+        "collaborat",
+        "content",
+        "influencer",
+        "marketing",
+        "sponsor"
+      ],
+      "score": 17,
+      "official_source": false,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P9",
+      "source_url": "https://www.modash.io/breakdowns/ilia-beauty-influencer-marketing-strategy",
+      "document_identity": "third_party_confirmed",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-37e7472c09751c03",
+      "source_id": "S-2d801f1b9c0f",
+      "char_start": 5962,
+      "char_end": 6247,
+      "text": "Makeup That Makes Your Skin Better™ We believe clean beauty is thoughtful beauty—with carefully-selected ingredients meant to perform harmoniously and to protect your skin. Learn More 15% off your first order Be the first to hear about product launches, exclusive sales, and more news.",
+      "text_sha256": "1af9dac3c28029628aaf0d32ca75b9932781a6b97a31a14ae4c90eaa7b71743c",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "actual_activity",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "launch"
+      ],
+      "score": 16,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P10",
+      "source_url": "https://iliabeauty.com/en-ca/pages/about",
+      "document_identity": "official_domain",
+      "publication_date": null
+    }
+  ],
+  "rejected_passages": [
+    {
+      "passage_uid": "PU-ff4950f633f4fe15",
+      "source_id": "S-f615691789fc",
+      "char_start": 2285,
+      "char_end": 2661,
+      "selection_status": "rejected",
+      "reasons": [
+        "near_duplicate_of_selected_passage"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "historical_activity",
+      "preview": "Crown Affair x ILIA Beauty Launch Limited-Edition Collaboration June 23, 2026 Crown Affair and ILIA Beauty Launch Limited-Edition Collaboration For Simplifying Summer Rituals The partnership introduce"
+    },
+    {
+      "passage_uid": "PU-8209e12c3a26797a",
+      "source_id": "S-f615691789fc",
+      "char_start": 2102,
+      "char_end": 2281,
+      "selection_status": "rejected",
+      "reasons": [
+        "near_duplicate_of_selected_passage"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Your source for the latest on ILIA Beauty product releases, partnerships, company news, and more. Crown Affair x ILIA Beauty Launch Limited-Edition Collaboration Brand Partnership"
+    },
+    {
+      "passage_uid": "PU-c3ce8b1d3c16ce18",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 5021,
+      "char_end": 5619,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "As part of ilia beauty digital marketing, pre-launch teasers were rolled out on Instagram and YouTube, highlighting product versatility, skin benefits, and everyday usability. This phase of ilia beaut"
+    },
+    {
+      "passage_uid": "PU-10eb5f52c5e606f3",
+      "source_id": "S-197e71cef0e0",
+      "char_start": 3070,
+      "char_end": 3235,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Crown Affair x ILIA Beauty Launch Limited-Edition Collaboration June 23, 2026 1 2 3 4 General inquiries or press related questions? Email us at press@iliabeauty.com."
+    },
+    {
+      "passage_uid": "PU-1ac49ad97793cbf2",
+      "source_id": "S-98da115ec348",
+      "char_start": 1096,
+      "char_end": 1298,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Social platforms breakdown In our dataset (which only includes Instagram, YouTube, and TikTok), this is how the volume of ILIA Beauty's sponsored influencer collaborations break down by social platfor"
+    },
+    {
+      "passage_uid": "PU-80e124e51ef19dbb",
+      "source_id": "S-197e71cef0e0",
+      "char_start": 2674,
+      "char_end": 2798,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "More Beauty News All Brand Partnership Product Launch Talent Partnership ILIA Beauty Unveils California Flora Product Launch"
+    },
+    {
+      "passage_uid": "PU-84f07de47fcb81a2",
+      "source_id": "S-197e71cef0e0",
+      "char_start": 3239,
+      "char_end": 3524,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "actual_activity",
+      "preview": "Makeup That Makes Your Skin Better™ We believe clean beauty is thoughtful beauty—with carefully-selected ingredients meant to perform harmoniously and to protect your skin. Learn More 15% off your fir"
+    },
+    {
+      "passage_uid": "PU-d7ba600228e8c22c",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 5620,
+      "char_end": 6207,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "This approach strengthened ilia beauty social media marketing while aligning with the brand’s broader ilia beauty digital marketing ecosystem. By leveraging real-time creator content and organic buzz,"
+    },
+    {
+      "passage_uid": "PU-f3d7d724ee9fc536",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 6736,
+      "char_end": 7263,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "actual_activity",
+      "preview": "Through intentional storytelling within ilia beauty social media marketing, the brand positioned the product as an everyday essential rather than just another cosmetic release. As part of the broader "
+    },
+    {
+      "passage_uid": "PU-14f0459995a83d5e",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 7480,
+      "char_end": 7767,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Social Media Campaigns: Building a Loyal Community ILIA Beauty has expertly used social media to build a strong and loyal community. The brand’s social media campaigns emphasize authenticity, transpar"
+    },
+    {
+      "passage_uid": "PU-9813d9ffcb90e6e0",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 8537,
+      "char_end": 9092,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "2. Inclusive Beauty with #ILIAMakeupForAll Another powerful social media campaign was the #ILIAMakeupForAll initiative, which focused on inclusivity. The campaign showcased models, influencers, and re"
+    },
+    {
+      "passage_uid": "PU-1c21c169551baeb7",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 9386,
+      "char_end": 9712,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Creative Social Media Advertising Strategy ILIA Beauty has taken a thoughtful approach to social media advertising, focusing on storytelling, education, and authenticity. Rather than bombarding consum"
+    },
+    {
+      "passage_uid": "PU-b83d246096b1acdd",
+      "source_id": "S-74e52ff7b758",
+      "char_start": 5962,
+      "char_end": 6247,
+      "selection_status": "rejected",
+      "reasons": [
+        "near_duplicate_of_selected_passage"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "actual_activity",
+      "preview": "Makeup That Makes Your Skin Better™ We believe clean beauty is thoughtful beauty—with carefully-selected ingredients meant to perform harmoniously and to protect your skin. Learn More 15% off your fir"
+    },
+    {
+      "passage_uid": "PU-9c7ef47e658f5a2a",
+      "source_id": "S-f615691789fc",
+      "char_start": 2674,
+      "char_end": 2798,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "More Beauty News All Brand Partnership Product Launch Talent Partnership ILIA Beauty Unveils California Flora Product Launch"
+    },
+    {
+      "passage_uid": "PU-0cf2555212dc12b3",
+      "source_id": "S-f615691789fc",
+      "char_start": 3196,
+      "char_end": 3481,
+      "selection_status": "rejected",
+      "reasons": [
+        "near_duplicate_of_selected_passage"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "actual_activity",
+      "preview": "Makeup That Makes Your Skin Better™ We believe clean beauty is thoughtful beauty—with carefully-selected ingredients meant to perform harmoniously and to protect your skin. Learn More 15% off your fir"
+    },
+    {
+      "passage_uid": "PU-19f5b89a570bd1ba",
+      "source_id": "S-98da115ec348",
+      "char_start": 5646,
+      "char_end": 6021,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "ILIA Beauty's repeat partnerships Out of 4.4k unique influencers in our dataset, 182 of them (4%) posted content for ILIA Beauty in 3 or more separate calendar months. The most consistent partner is @"
+    },
+    {
+      "passage_uid": "PU-7424b247717679ca",
+      "source_id": "S-f615691789fc",
+      "char_start": 2803,
+      "char_end": 3044,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "historical_activity",
+      "preview": "ILIA Beauty Unveils California Flora September 28, 2026 ILIA Introduces Thru Line Waterproof Eyeliner Product Launch ### ILIA Introduces Thru Line Waterproof Eyeliner July 29, 2026 ILIA Launches NEW S"
+    },
+    {
+      "passage_uid": "PU-b875aa5972be6353",
+      "source_id": "S-f615691789fc",
+      "char_start": 3049,
+      "char_end": 3192,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "historical_activity",
+      "preview": "ILIA Launches NEW Soft Focus Finishing Powder June 02, 2026 1 2 General inquiries or press related questions? Email us at press@iliabeauty.com."
+    },
+    {
+      "passage_uid": "PU-f28414f1ec5b93e0",
+      "source_id": "S-2d801f1b9c0f",
+      "char_start": 4097,
+      "char_end": 4587,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "brand_positioning",
+      "preview": "Better is a balance. We strive towards more sustainable packaging through the use of recycled aluminum, glass components, and responsibly sourced paper. But it isn’t enough—that’s only the beginning o"
+    },
+    {
+      "passage_uid": "PU-ad80468a5ed12b05",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 3243,
+      "char_end": 3868,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Brand Positioning: Clean, Effective, and Inclusive ILIA Beauty’s brand positioning is rooted in the concept of clean beauty, but with a twist: the brand is equally focused on delivering performance. M"
+    },
+    {
+      "passage_uid": "PU-2fcaa37b019836ee",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 9718,
+      "char_end": 10397,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "1. Instagram and Facebook Video Ads As part of the broader ilia beauty advertising strategy, ILIA Beauty’s video ads on Instagram and Facebook strongly emphasize education. Within ilia beauty social m"
+    },
+    {
+      "passage_uid": "PU-5d9e83f50951fc54",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 11889,
+      "char_end": 12536,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "A strong example of this execution within ilia beauty digital marketing featured a carousel campaign highlighting the True Skin Radiant Priming Serum, Super Serum Skin Tint, and Balmy Gloss. Each card"
+    },
+    {
+      "passage_uid": "PU-4bf3d343277deb67",
+      "source_id": "S-74e52ff7b758",
+      "char_start": 4097,
+      "char_end": 4587,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "brand_positioning",
+      "preview": "Better is a balance. We strive towards more sustainable packaging through the use of recycled aluminum, glass components, and responsibly sourced paper. But it isn’t enough—that’s only the beginning o"
+    },
+    {
+      "passage_uid": "PU-a44ae2f74a0320c0",
+      "source_id": "S-98da115ec348",
+      "char_start": 9580,
+      "char_end": 10013,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "ILIA Beauty vs. related brands influencer activity (by social platform) Sponsored posts by platform ILIA Beauty Kosas Saie hello Among these brands, Kosas leads on Instagram, TikTok, and YouTube. The "
+    },
+    {
+      "passage_uid": "PU-9ff21adf732ddafd",
+      "source_id": "S-0d6c407f3df0",
+      "char_start": 1750,
+      "char_end": 2146,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "brand_positioning",
+      "preview": "Brand Philosophy and Market Positioning ILIA Beauty operates on a \"skin-first\" philosophy, creating products that merge skincare and makeup. The brand's mission is to protect and revive the skin using"
+    },
+    {
+      "passage_uid": "PU-147ff3a163cbbae2",
+      "source_id": "S-197e71cef0e0",
+      "char_start": 71,
+      "char_end": 333,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "4 Exclusive Offers Free Mini Eye Stylus With any $75+ order ILIA Artist Collective Industry-exclusive beauty benefits Limited Edition Holiday Sets Shop the seasonal edits 30% Off of Multi-Stick Save o"
+    },
+    {
+      "passage_uid": "PU-25e15ad48bd3821e",
+      "source_id": "S-2d801f1b9c0f",
+      "char_start": 71,
+      "char_end": 333,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "4 Exclusive Offers Free Mini Eye Stylus With any $75+ order ILIA Artist Collective Industry-exclusive beauty benefits Limited Edition Holiday Sets Shop the seasonal edits 30% Off of Multi-Stick Save o"
+    },
+    {
+      "passage_uid": "PU-661b00cfe6c10092",
+      "source_id": "S-2d801f1b9c0f",
+      "char_start": 2252,
+      "char_end": 2605,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "brand_positioning",
+      "preview": "Clean, skin-centric beauty. We believe in skin that looks like skin—and radiance that comes naturally. With transparency as our guide and color as our vehicle, we challenge the conventions of clean be"
+    },
+    {
+      "passage_uid": "PU-613e2e6dbb687c6c",
+      "source_id": "S-2d801f1b9c0f",
+      "char_start": 3604,
+      "char_end": 4093,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "brand_positioning",
+      "preview": "We believe in better. We learned early on that not every natural ingredient is good for the skin, nor is every synthetic bad. Clean beauty is where those two collide—with conscious, carefully-selected"
+    },
+    {
+      "passage_uid": "PU-e43c8ffa538d82bc",
+      "source_id": "S-2d801f1b9c0f",
+      "char_start": 4591,
+      "char_end": 5226,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Meet Sasha. Born in Vancouver and raised in a rural, ocean-side setting just outside the city, Sasha has always been close to nature. Her younger brother and now business partner, Zac, suffered from a"
+    },
+    {
+      "passage_uid": "PU-f332789e107f5605",
+      "source_id": "S-2d801f1b9c0f",
+      "char_start": 5227,
+      "char_end": 5907,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "This was an amazing accomplishment, especially after the doctors had predicted he would never be able to play sports. Sasha’s interests fell into design, studying Typography in London and New York. Sh"
+    },
+    {
+      "passage_uid": "PU-63b0411df171410a",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 4159,
+      "char_end": 4460,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "actual_activity",
+      "preview": "Product Launch Strategy ILIA Beauty has consistently managed to create buzz with its product launches. The brand takes a thoughtful and purposeful approach to each launch, ensuring that the product fi"
+    },
+    {
+      "passage_uid": "PU-ecf4e8b631a9c9ba",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 4466,
+      "char_end": 5020,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "actual_activity",
+      "preview": "1. Launch of Super Serum Skin Tint SPF 40 One of ILIA Beauty’s most successful product launches was the Super Serum Skin Tint SPF 40, a tinted serum that combines the benefits of makeup, skincare, and"
+    },
+    {
+      "passage_uid": "PU-fae2f02ee1bf02d5",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 6208,
+      "char_end": 6735,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Leading up to the launch, ILIA created a series of visually striking social media posts that teased the product with rich, close-up shots of lips drenched in the glossy yet hydrating formula. To stren"
+    },
+    {
+      "passage_uid": "PU-78a38022d4bf1770",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 11341,
+      "char_end": 11888,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "2. Carousel Ads for Multi-Product Routines As part of the broader ilia beauty advertising strategy, ILIA Beauty effectively uses carousel ads to showcase how multiple products work together within a c"
+    },
+    {
+      "passage_uid": "PU-1aa12d412a7d6d5a",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 15750,
+      "char_end": 16309,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Transparency, clean formulations, and educational messaging are deeply integrated into ilia beauty digital marketing, helping the brand establish credibility and long-term consumer trust within the co"
+    },
+    {
+      "passage_uid": "PU-de0ac15019980282",
+      "source_id": "S-74e52ff7b758",
+      "char_start": 71,
+      "char_end": 333,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "4 Exclusive Offers Free Mini Eye Stylus With any $75+ order ILIA Artist Collective Industry-exclusive beauty benefits Limited Edition Holiday Sets Shop the seasonal edits 30% Off of Multi-Stick Save o"
+    },
+    {
+      "passage_uid": "PU-4dd57d725b91eb56",
+      "source_id": "S-74e52ff7b758",
+      "char_start": 2252,
+      "char_end": 2605,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "brand_positioning",
+      "preview": "Clean, skin-centric beauty. We believe in skin that looks like skin—and radiance that comes naturally. With transparency as our guide and color as our vehicle, we challenge the conventions of clean be"
+    },
+    {
+      "passage_uid": "PU-6076b917bef3256f",
+      "source_id": "S-74e52ff7b758",
+      "char_start": 3604,
+      "char_end": 4093,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "brand_positioning",
+      "preview": "We believe in better. We learned early on that not every natural ingredient is good for the skin, nor is every synthetic bad. Clean beauty is where those two collide—with conscious, carefully-selected"
+    },
+    {
+      "passage_uid": "PU-f091cc544194ef4a",
+      "source_id": "S-74e52ff7b758",
+      "char_start": 4591,
+      "char_end": 5226,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Meet Sasha. Born in Vancouver and raised in a rural, ocean-side setting just outside the city, Sasha has always been close to nature. Her younger brother and now business partner, Zac, suffered from a"
+    },
+    {
+      "passage_uid": "PU-278325a258d54ec0",
+      "source_id": "S-74e52ff7b758",
+      "char_start": 5227,
+      "char_end": 5907,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "This was an amazing accomplishment, especially after the doctors had predicted he would never be able to play sports. Sasha’s interests fell into design, studying Typography in London and New York. Sh"
+    },
+    {
+      "passage_uid": "PU-29878b55d774a08f",
+      "source_id": "S-f615691789fc",
+      "char_start": 71,
+      "char_end": 333,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "4 Exclusive Offers Free Mini Eye Stylus With any $75+ order ILIA Artist Collective Industry-exclusive beauty benefits Limited Edition Holiday Sets Shop the seasonal edits 30% Off of Multi-Stick Save o"
+    },
+    {
+      "passage_uid": "PU-6f77ffa05b42c476",
+      "source_id": "S-98da115ec348",
+      "char_start": 3495,
+      "char_end": 3752,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Carousels: 1.8% 💡 Related resource: How To Find TikTok Influencers. ## Influencer audience size breakdown (by views) For their top social platform (TikTok), here is a breakdown of the type of influenc"
+    },
+    {
+      "passage_uid": "PU-ce5b01afcf7bd7c4",
+      "source_id": "S-98da115ec348",
+      "char_start": 11219,
+      "char_end": 11348,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "What type of influencer content does ILIA Beauty sponsor most? ### Do ILIA Beauty use discount codes in their influencer collabs?"
+    },
+    {
+      "passage_uid": "PU-81368272efebd053",
+      "source_id": "S-98da115ec348",
+      "char_start": 11353,
+      "char_end": 11598,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Which influencers does ILIA Beauty collaborate with? ## Scaling your influencer program? When you outgrow your mishmash of spreadsheets & free tools, try Modash. Find & email influencers, track campai"
+    },
+    {
+      "passage_uid": "PU-abbbf4ba10807603",
+      "source_id": "S-197e71cef0e0",
+      "char_start": 749,
+      "char_end": 896,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "All Bestsellers Complexion ILIA's Super Serum Skin Tint SPF 40 bottle laid on top of a swirl of different Skin Tint serum shades in the background."
+    },
+    {
+      "passage_uid": "PU-26a4bd3a7a189e92",
+      "source_id": "S-197e71cef0e0",
+      "char_start": 4893,
+      "char_end": 5486,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Choosing a selection results in a full page refresh. * Opens in a new window. ## Shopping bag (0) items Your bag is empty. Shop All Earn points with this order. Join ILIA VIP Sign In Add these best se"
+    },
+    {
+      "passage_uid": "PU-8f0fc39caf4635b2",
+      "source_id": "S-197e71cef0e0",
+      "char_start": 5487,
+      "char_end": 6183,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Select Shade Lip Sketch Hydrating Crayon Our weightless lip crayon glides on smoothly, delivering rich, long-lasting color with a soft-matte finish. Add to Bag - $27 Soft Focus Blurring Blush 12-Hour "
+    },
+    {
+      "passage_uid": "PU-40290270b4e63a9e",
+      "source_id": "S-197e71cef0e0",
+      "char_start": 6184,
+      "char_end": 6811,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Lip Sketch Hydrating Crayon Long-wear Lipstick + Liner Add to Bag - $27 Soft Focus Blurring Blush Soft Focus Blurring Blush 12-Hour Wear. Talc-Free. Select Shade - $36 Pairs well with 5 items Thru Lin"
+    },
+    {
+      "passage_uid": "PU-afc442448d4904bb",
+      "source_id": "S-197e71cef0e0",
+      "char_start": 6812,
+      "char_end": 7368,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Lip Sketch Hydrating Crayon Long-wear Lipstick + Liner Add to Bag - $27 Soft Focus Blurring Blush Soft Focus Blurring Blush 12-Hour Wear. Talc-Free. Select Shade - $36 Estimated Total $0.00 USD Search"
+    },
+    {
+      "passage_uid": "PU-d644ed8a9a94e7e1",
+      "source_id": "S-197e71cef0e0",
+      "char_start": 8935,
+      "char_end": 9146,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Email Address* Notify Me We'll only use your email to notify you when this product is restocked. ### Added to your bag. #### Complete your look. * Loading... * Loading... * Loading... You now have fre"
+    },
+    {
+      "passage_uid": "PU-299962754f1256e8",
+      "source_id": "S-2d801f1b9c0f",
+      "char_start": 749,
+      "char_end": 896,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "All Bestsellers Complexion ILIA's Super Serum Skin Tint SPF 40 bottle laid on top of a swirl of different Skin Tint serum shades in the background."
+    },
+    {
+      "passage_uid": "PU-603f11ac3a83141c",
+      "source_id": "S-2d801f1b9c0f",
+      "char_start": 2111,
+      "char_end": 2248,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Makeup that makes your skin better An assortment o ILIA beauty products including Skin Tint, Multi-Sticks, Mascara, and complexion stick."
+    },
+    {
+      "passage_uid": "PU-5d5ab150441522fb",
+      "source_id": "S-2d801f1b9c0f",
+      "char_start": 2609,
+      "char_end": 3146,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Skincare-powered makeup. We see skincare and makeup as one, and early on realized botanicals were not enough. Our potent formulas are designed with active levels of skincare ingredients that shield sk"
+    },
+    {
+      "passage_uid": "PU-d9448f9f8f05e300",
+      "source_id": "S-2d801f1b9c0f",
+      "char_start": 3150,
+      "char_end": 3600,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Wake up skin, makeup the rest. Our daily essentials are designed to instantly revive your look. It all comes back to vibrancy, vivid washes of color, and a fuss-free philosophy with a focus on making "
+    },
+    {
+      "passage_uid": "PU-310983706abf6f13",
+      "source_id": "S-2d801f1b9c0f",
+      "char_start": 7616,
+      "char_end": 8209,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Choosing a selection results in a full page refresh. * Opens in a new window. ## Shopping bag (0) items Your bag is empty. Shop All Earn points with this order. Join ILIA VIP Sign In Add these best se"
+    },
+    {
+      "passage_uid": "PU-f642cdefbad336bf",
+      "source_id": "S-2d801f1b9c0f",
+      "char_start": 8210,
+      "char_end": 8906,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Select Shade Lip Sketch Hydrating Crayon Our weightless lip crayon glides on smoothly, delivering rich, long-lasting color with a soft-matte finish. Add to Bag - $27 Soft Focus Blurring Blush 12-Hour "
+    },
+    {
+      "passage_uid": "PU-d98c9e94020a1a04",
+      "source_id": "S-2d801f1b9c0f",
+      "char_start": 8907,
+      "char_end": 9534,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Lip Sketch Hydrating Crayon Long-wear Lipstick + Liner Add to Bag - $27 Soft Focus Blurring Blush Soft Focus Blurring Blush 12-Hour Wear. Talc-Free. Select Shade - $36 Pairs well with 5 items Thru Lin"
+    },
+    {
+      "passage_uid": "PU-9bf99046ec25cbb1",
+      "source_id": "S-2d801f1b9c0f",
+      "char_start": 9535,
+      "char_end": 10091,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Lip Sketch Hydrating Crayon Long-wear Lipstick + Liner Add to Bag - $27 Soft Focus Blurring Blush Soft Focus Blurring Blush 12-Hour Wear. Talc-Free. Select Shade - $36 Estimated Total $0.00 USD Search"
+    },
+    {
+      "passage_uid": "PU-df1a2087c7638072",
+      "source_id": "S-2d801f1b9c0f",
+      "char_start": 11658,
+      "char_end": 11869,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Email Address* Notify Me We'll only use your email to notify you when this product is restocked. ### Added to your bag. #### Complete your look. * Loading... * Loading... * Loading... You now have fre"
+    },
+    {
+      "passage_uid": "PU-71ce34e60eb29de7",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 10398,
+      "char_end": 11081,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "A strong example of this execution within the ilia beauty advertising strategy is the promotion of the Super Serum Skin Tint SPF 40. The ads highlighted the product’s three-in-one benefits—skincare, m"
+    },
+    {
+      "passage_uid": "PU-c926f6a0a7eaff3d",
+      "source_id": "S-74e52ff7b758",
+      "char_start": 749,
+      "char_end": 896,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "All Bestsellers Complexion ILIA's Super Serum Skin Tint SPF 40 bottle laid on top of a swirl of different Skin Tint serum shades in the background."
+    },
+    {
+      "passage_uid": "PU-274a5c33e99150d8",
+      "source_id": "S-74e52ff7b758",
+      "char_start": 2111,
+      "char_end": 2248,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Makeup that makes your skin better An assortment o ILIA beauty products including Skin Tint, Multi-Sticks, Mascara, and complexion stick."
+    },
+    {
+      "passage_uid": "PU-35f83079c20ea8d6",
+      "source_id": "S-74e52ff7b758",
+      "char_start": 2609,
+      "char_end": 3146,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Skincare-powered makeup. We see skincare and makeup as one, and early on realized botanicals were not enough. Our potent formulas are designed with active levels of skincare ingredients that shield sk"
+    },
+    {
+      "passage_uid": "PU-32c2d22e136631d2",
+      "source_id": "S-74e52ff7b758",
+      "char_start": 3150,
+      "char_end": 3600,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Wake up skin, makeup the rest. Our daily essentials are designed to instantly revive your look. It all comes back to vibrancy, vivid washes of color, and a fuss-free philosophy with a focus on making "
+    },
+    {
+      "passage_uid": "PU-01cc90eae3270e47",
+      "source_id": "S-74e52ff7b758",
+      "char_start": 7616,
+      "char_end": 8209,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Choosing a selection results in a full page refresh. * Opens in a new window. ## Shopping bag (0) items Your bag is empty. Shop All Earn points with this order. Join ILIA VIP Sign In Add these best se"
+    },
+    {
+      "passage_uid": "PU-865daf5aec51d5b9",
+      "source_id": "S-74e52ff7b758",
+      "char_start": 8210,
+      "char_end": 8906,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Select Shade Lip Sketch Hydrating Crayon Our weightless lip crayon glides on smoothly, delivering rich, long-lasting color with a soft-matte finish. Add to Bag - $27 Soft Focus Blurring Blush 12-Hour "
+    },
+    {
+      "passage_uid": "PU-bd45097866c982ee",
+      "source_id": "S-74e52ff7b758",
+      "char_start": 8907,
+      "char_end": 9534,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Lip Sketch Hydrating Crayon Long-wear Lipstick + Liner Add to Bag - $27 Soft Focus Blurring Blush Soft Focus Blurring Blush 12-Hour Wear. Talc-Free. Select Shade - $36 Pairs well with 5 items Thru Lin"
+    },
+    {
+      "passage_uid": "PU-0457af5dd5d6e2a6",
+      "source_id": "S-74e52ff7b758",
+      "char_start": 9535,
+      "char_end": 10091,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Lip Sketch Hydrating Crayon Long-wear Lipstick + Liner Add to Bag - $27 Soft Focus Blurring Blush Soft Focus Blurring Blush 12-Hour Wear. Talc-Free. Select Shade - $36 Estimated Total $0.00 USD Search"
+    },
+    {
+      "passage_uid": "PU-a690d155cc8e361b",
+      "source_id": "S-74e52ff7b758",
+      "char_start": 11658,
+      "char_end": 11869,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Email Address* Notify Me We'll only use your email to notify you when this product is restocked. ### Added to your bag. #### Complete your look. * Loading... * Loading... * Loading... You now have fre"
+    },
+    {
+      "passage_uid": "PU-09866154fc416ea9",
+      "source_id": "S-f615691789fc",
+      "char_start": 749,
+      "char_end": 896,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "All Bestsellers Complexion ILIA's Super Serum Skin Tint SPF 40 bottle laid on top of a swirl of different Skin Tint serum shades in the background."
+    },
+    {
+      "passage_uid": "PU-7aeee9d224198b04",
+      "source_id": "S-f615691789fc",
+      "char_start": 4850,
+      "char_end": 5443,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Choosing a selection results in a full page refresh. * Opens in a new window. ## Shopping bag (0) items Your bag is empty. Shop All Earn points with this order. Join ILIA VIP Sign In Add these best se"
+    },
+    {
+      "passage_uid": "PU-6bce556b1e922832",
+      "source_id": "S-f615691789fc",
+      "char_start": 5444,
+      "char_end": 6140,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Select Shade Lip Sketch Hydrating Crayon Our weightless lip crayon glides on smoothly, delivering rich, long-lasting color with a soft-matte finish. Add to Bag - $27 Soft Focus Blurring Blush 12-Hour "
+    },
+    {
+      "passage_uid": "PU-08ea56fd2a16b363",
+      "source_id": "S-f615691789fc",
+      "char_start": 6141,
+      "char_end": 6768,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Lip Sketch Hydrating Crayon Long-wear Lipstick + Liner Add to Bag - $27 Soft Focus Blurring Blush Soft Focus Blurring Blush 12-Hour Wear. Talc-Free. Select Shade - $36 Pairs well with 5 items Thru Lin"
+    },
+    {
+      "passage_uid": "PU-75ba2952daa484b5",
+      "source_id": "S-f615691789fc",
+      "char_start": 6769,
+      "char_end": 7325,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Lip Sketch Hydrating Crayon Long-wear Lipstick + Liner Add to Bag - $27 Soft Focus Blurring Blush Soft Focus Blurring Blush 12-Hour Wear. Talc-Free. Select Shade - $36 Estimated Total $0.00 USD Search"
+    },
+    {
+      "passage_uid": "PU-4bb285530b17e1cb",
+      "source_id": "S-f615691789fc",
+      "char_start": 8892,
+      "char_end": 9103,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Email Address* Notify Me We'll only use your email to notify you when this product is restocked. ### Added to your bag. #### Complete your look. * Loading... * Loading... * Loading... You now have fre"
+    },
+    {
+      "passage_uid": "PU-207e49c9b65b4659",
+      "source_id": "S-98da115ec348",
+      "char_start": 5037,
+      "char_end": 5459,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "And here is another example with a smaller creator on TikTok (10.0k avg views/post): ### dimorggan x ILIA Beauty dimorggan @dimorggan 19 Jan, 26 TikTok post by @dimorggan for ILIA Beauty. Caption read"
+    },
+    {
+      "passage_uid": "PU-ea695febe77253d9",
+      "source_id": "S-98da115ec348",
+      "char_start": 7331,
+      "char_end": 8016,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "alanahutto x ILIA Beauty alanahutto @alanahutto 12 Jan, 26 TikTok post by @alanahutto for ILIA Beauty. Caption reads: @ILIA Beauty STOP blush from settling [...]. 969 3 @ILIA Beauty STOP blush from se"
+    },
+    {
+      "passage_uid": "PU-5a5ec90becb6523a",
+      "source_id": "S-98da115ec348",
+      "char_start": 8386,
+      "char_end": 8601,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "ILIA Beauty's influencer activity by market United States55.9% United Kingdom10.5% Canada6.5% Brazil4.0% India3.0% Other20.1% Here is another example of ILIA Beauty collaborating with an influencer in"
+    },
+    {
+      "passage_uid": "PU-cf65334802593a1d",
+      "source_id": "S-98da115ec348",
+      "char_start": 8830,
+      "char_end": 9068,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "ILIA Beauty's influencer activity vs. related brands ILIA Beauty competes directly with Kosas and Saie hello in clean-leaning, skin-first makeup, where influencer GRWMs, complexion wear tests, and ing"
+    },
+    {
+      "passage_uid": "PU-fe8dbf74ca52fa53",
+      "source_id": "S-0d6c407f3df0",
+      "char_start": 118,
+      "char_end": 651,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "ILIA Beauty: Comprehensive Company Analysis & Supplier Recommendations Complete the user's request 2026-11-08 10 Sources icon 10 Sources ILIA Beauty HavStrategy Forbes CB Insights Prefontaine | Waco, "
+    },
+    {
+      "passage_uid": "PU-92e205c3d381568d",
+      "source_id": "S-0d6c407f3df0",
+      "char_start": 2171,
+      "char_end": 2824,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Skincare-Powered Makeup: Products are designed to enhance the skin rather than mask it, combining color performance with nourishing organic ingredients IliabeautyHavstrategy. * Ingredient Standards: A"
+    },
+    {
+      "passage_uid": "PU-410c52e224ca84de",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 2213,
+      "char_end": 2694,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Marketing Strategy of Ilia Beauty ILIA Beauty is a brand that has masterfully blended the worlds of clean beauty and high-performance cosmetics. The brand has built a strong reputation by offering pro"
+    },
+    {
+      "passage_uid": "PU-44b8a37febcb523f",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 9093,
+      "char_end": 9382,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "author_recommendation",
+      "preview": "With this campaign, ILIA was able to establish itself as a brand that champions diversity and inclusion in beauty, which further solidified its connection with a broader audience. Hiring an experience"
+    },
+    {
+      "passage_uid": "PU-0c1846e7e3cf6c11",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 11082,
+      "char_end": 11335,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "The ads were targeted to specific audience segments based on their interest in clean beauty, skincare, or cosmetics. By ensuring that the content was both informative and visually appealing, ILIA’s vi"
+    },
+    {
+      "passage_uid": "PU-da8076166bfa9d91",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 12760,
+      "char_end": 13124,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Website Conversion Rate Optimization (CRO): Making Every Click Count ILIA Beauty’s website has been designed with a customer-centric approach, focusing on ease of navigation, product discovery, and a "
+    },
+    {
+      "passage_uid": "PU-936deaab9a7e0102",
+      "source_id": "S-98da115ec348",
+      "char_start": 612,
+      "char_end": 837,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Influencer activity throughout the year ILIA Beauty's influencer campaigns are active year-round with notable month-to-month fluctuation. The chart below shows month-by-month data for total sponsored "
+    },
+    {
+      "passage_uid": "PU-637d539ac972ac2a",
+      "source_id": "S-98da115ec348",
+      "char_start": 4476,
+      "char_end": 4810,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "tracey_white_ x ILIA Beauty tracey_white_ @tracey_white_ 22 Jan, 26 TikTok post by @tracey_white_ for ILIA Beauty. Caption reads: [...] with 24 hour hydration, yes please! @ILIA.... 1.5M 1.1k [...] wi"
+    },
+    {
+      "passage_uid": "PU-258716ed3538f667",
+      "source_id": "S-98da115ec348",
+      "char_start": 8020,
+      "char_end": 8315,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Geographical breakdown In our dataset, United States is where ILIA Beauty had the most influencer activity. 55.9% of their live influencer content in the last 12 months was posted by American influenc"
+    },
+    {
+      "passage_uid": "PU-901a2c9149103a66",
+      "source_id": "S-98da115ec348",
+      "char_start": 8606,
+      "char_end": 8826,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "fletchxer x ILIA Beauty fletchxer @fletchxer 11 Jun, 26 TikTok post by @fletchxer for ILIA Beauty. Caption reads: The best! @ILIA Beauty #iliabeauty #iliapartner. 2.8M 1.9k The best! @ILIA Beauty #ili"
+    },
+    {
+      "passage_uid": "PU-d7974d4a1aaded16",
+      "source_id": "S-98da115ec348",
+      "char_start": 9113,
+      "char_end": 9541,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "ILIA Beauty vs. related brands influencer activity Total sponsored posts tracked (last 12 months) ILIA Beauty Kosas Saie hello Kosas leads with 17.4k sponsored posts, significantly outpacing ILIA Beau"
+    },
+    {
+      "passage_uid": "PU-5f0756d52ff588fa",
+      "source_id": "S-98da115ec348",
+      "char_start": 10056,
+      "char_end": 10644,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "ILIA Beauty vs. related brands influencer activity (by country) Estimated sponsored posts in ILIA Beauty's top markets ILIA Beauty Kosas Saie hello Kosas has the highest estimated sponsored-post volum"
+    },
+    {
+      "passage_uid": "PU-8a89c527191da69d",
+      "source_id": "S-0d6c407f3df0",
+      "char_start": 689,
+      "char_end": 898,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Corporate Overview and Financial Performance ILIA Beauty is a U.S.-based prestige brand specializing in clean makeup and skincare, with its headquarters located in Laguna Beach, California LinkedinRoc"
+    },
+    {
+      "passage_uid": "PU-a1e58724e51ea6f3",
+      "source_id": "S-0d6c407f3df0",
+      "char_start": 17695,
+      "char_end": 18225,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "ISO │bamboo lids. │s │9001 certified. ──────────────────────┼──────────────────────────────────┼────┼───────────────────────────────────── Guangzhou Haojie │Dropper bottles, airless bottles │6 │ODM, d"
+    },
+    {
+      "passage_uid": "PU-563c497056982e0d",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 12537,
+      "char_end": 12755,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "By focusing on product education, visually compelling imagery, and step-by-step guidance, ILIA’s carousel ads were able to attract new customers while encouraging existing customers to expand their pr"
+    },
+    {
+      "passage_uid": "PU-87ead41d6fca870f",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 13130,
+      "char_end": 13678,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "1. Interactive Skincare and Makeup Quiz One of the most effective CRO tools on ILIA’s website is the interactive skincare and makeup quiz. This feature helps customers find the best products for their"
+    },
+    {
+      "passage_uid": "PU-95cf8b5681bf8b58",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 14492,
+      "char_end": 15160,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "This strategy helps to build trust and provide additional validation for potential buyers. #### 3. Subscription Options for Hero Products ILIA has implemented a subscription model for some of its best"
+    },
+    {
+      "passage_uid": "PU-ee20d61754410a28",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 16605,
+      "char_end": 16975,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Trusted by 35+ Top Beauty & Skincare Brands luxury marketing agency dubai Digital Marketing Agency For Beauty And Skincare Brands Digital Marketing Agency For Beauty And Skincare Brands Digital Market"
+    },
+    {
+      "passage_uid": "PU-500bc0222c14e29f",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 19318,
+      "char_end": 19500,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Pinterest Marketing India: Full Strategy for Fashion & Home Decor Brands * Influencer vs Performance Marketing for D2C Brands * Male Grooming Brand Marketing India: The 2026 Playbook"
+    },
+    {
+      "passage_uid": "PU-13202ae84da88a18",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 13845,
+      "char_end": 14491,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "2. Simplified Product Pages with Customer Reviews ILIA Beauty’s product pages are optimized for clarity and conversion. Each page features high-quality imagery, detailed product descriptions, and ingr"
+    },
+    {
+      "passage_uid": "PU-18ea87dce0433fd8",
+      "source_id": "S-98da115ec348",
+      "char_start": 842,
+      "char_end": 1092,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "ILIA Beauty's influencer activity by month Number of sponsored posts ILIA Beauty's sponsored post volume peaks in June with 1.1k posts, 76% higher than the monthly average of 609. February recorded th"
+    },
+    {
+      "passage_uid": "PU-2e0856e3ce31c1bf",
+      "source_id": "S-98da115ec348",
+      "char_start": 1839,
+      "char_end": 2026,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "makeupdanielle x ILIA Beauty makeupdanielle @makeupdanielle 17 Jun, 26 Instagram post by @makeupdanielle for ILIA Beauty. Caption reads: Mascara of my dreams💫✨ @iliabeauty #iliabeauty...."
+    },
+    {
+      "passage_uid": "PU-c53096454fc342e2",
+      "source_id": "S-98da115ec348",
+      "char_start": 2380,
+      "char_end": 2563,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "daniellejinadu x ILIA Beauty daniellejinadu @daniellejinadu 07 Aug, 26 TikTok post by @daniellejinadu for ILIA Beauty. Caption reads: [...] super serum skin tint from @ILIA Beauty...."
+    },
+    {
+      "passage_uid": "PU-0b66be745aeb8598",
+      "source_id": "S-98da115ec348",
+      "char_start": 6026,
+      "char_end": 6702,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "ellaa.wall x ILIA Beauty ellaa.wall @ellaa.wall 07 Jun, 26 TikTok post by @ellaa.wall for ILIA Beauty. Caption reads: [...] #routine #highschool @ILIA Beauty @Roller.... 831 74 [...] #routine #highsch"
+    },
+    {
+      "passage_uid": "PU-d3d8e9480fb3dff8",
+      "source_id": "S-98da115ec348",
+      "char_start": 6707,
+      "char_end": 7276,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "itsabbyak x ILIA Beauty itsabbyak @itsabbyak 04 Aug, 26 TikTok post by @itsabbyak for ILIA Beauty. Caption reads: @ILIA Beauty #iliabeauty #iliablush [...]. 15.2k 44 @ILIA Beauty #iliabeauty #iliablus"
+    },
+    {
+      "passage_uid": "PU-f83900aa586530bf",
+      "source_id": "S-0d6c407f3df0",
+      "char_start": 2825,
+      "char_end": 2998,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "It competes with other popular clean brands sold at retailers like Sephora, including Kosas, Lawless, Westman Atelier, and RMS Beauty EswGrandviewresearchInsightaceanalytic."
+    },
+    {
+      "passage_uid": "PU-d11ef47f2d6b8c81",
+      "source_id": "S-0d6c407f3df0",
+      "char_start": 3003,
+      "char_end": 3602,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Operations and Supply Chain ILIA Beauty manages a global supply chain to support its operations. While the company designs, markets, and sells its products from its U.S. base, its manufacturing and so"
+    },
+    {
+      "passage_uid": "PU-792b4ace8f778874",
+      "source_id": "S-0d6c407f3df0",
+      "char_start": 3605,
+      "char_end": 3975,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Distribution: ILIA operates a central distribution hub in Ohio, with satellite locations in Canada and the United Kingdom to serve its markets Netstock. * Supply Chain Management: The company utilizes"
+    },
+    {
+      "passage_uid": "PU-08caabd5370a70e9",
+      "source_id": "S-0d6c407f3df0",
+      "char_start": 4254,
+      "char_end": 4713,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "descriptive",
+      "preview": "Clean Beauty & Color Cosmetics Manufacturers These suppliers offer private label and custom formulation services for clean, vegan, and high-performance color cosmetics, similar to the product categori"
+    },
+    {
+      "passage_uid": "PU-5e96555258d94d6b",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 7264,
+      "char_end": 7476,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "The coordinated execution across channels highlights how ilia beauty digital marketing and community-driven engagement work together to build momentum and secure strong product adoption in the clean b"
+    },
+    {
+      "passage_uid": "PU-79e14024944b32d6",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 13679,
+      "char_end": 13839,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Additionally, it serves as an opportunity to collect valuable customer data that can be used for future marketing efforts, such as personalized email campaigns."
+    },
+    {
+      "passage_uid": "PU-30d6d868aa7a6942",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 16310,
+      "char_end": 16534,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Together, ilia beauty social media marketing and performance-driven execution reflect how the ilia beauty marketing strategy continues to expand reach while maintaining a clear, value-led identity in "
+    },
+    {
+      "passage_uid": "PU-fd35cef95bf1a14e",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 17118,
+      "char_end": 17644,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "talk Name number Industry *--- Select Choice ---Skincare BrandFashion and Apparel BrandLuxury BrandHome Decor BrandBeauty / Cosmetic BrandJewellery BrandPerfume BrandHealth / Wellness brandNutrition /"
+    },
+    {
+      "passage_uid": "PU-c8652513c1458908",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 19989,
+      "char_end": 20184,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Cost to Build a fashion lifestyle brand in India 2026 - HavStrategy * How Indian Beauty Brands Go Global: UAE, UK & International Expansion Guide * Beauty and Fashion Brand Marketing Case Studies"
+    },
+    {
+      "passage_uid": "PU-a113d154a23fdb35",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 21704,
+      "char_end": 21828,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Why Most Brands Fail Ramadan Marketing (UAE Guide 2026) - HavStrategy * How to Market a Beauty Brand in the UAE (2026 Guide)"
+    },
+    {
+      "passage_uid": "PU-8bfe0027b8f795a2",
+      "source_id": "S-98da115ec348",
+      "char_start": 10971,
+      "char_end": 11131,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "provider_reported_result",
+      "preview": "HNB Cosmetics's Influencer Marketing Strategy Or, if you want to access data like this for your own software or processes, take a look at Modash's API products:"
+    },
+    {
+      "passage_uid": "PU-980638fe72c47a6b",
+      "source_id": "S-d615d24c9ebe",
+      "char_start": 1083,
+      "char_end": 1441,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "provider_reported_result",
+      "preview": "We are proud to be a certified Great Place to Work® Our survey revealed that... #### 88% of ILIA employees would say this is a great place to work! This is one way we hold ourselves accountable to our"
+    },
+    {
+      "passage_uid": "PU-ac4c81d011febfb7",
+      "source_id": "S-0d6c407f3df0",
+      "char_start": 3979,
+      "char_end": 4249,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Supplier Recommendations The following sections provide lists of verified suppliers specializing in clean beauty manufacturing and sustainable packaging. These suppliers have been selected based on th"
+    },
+    {
+      "passage_uid": "PU-47bdb16881aa3d7d",
+      "source_id": "S-0d6c407f3df0",
+      "char_start": 6876,
+      "char_end": 7635,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Certifications https://sc04.alicdn.com/kf/H49c99d6bb2e64749ad9b3f8eac655fcfR.png Store rating4.7/5.0(25) Reorder rate18% icon Customization Options Drawing-based customization Finished product inspect"
+    },
+    {
+      "passage_uid": "PU-352cf16d6b81cd5b",
+      "source_id": "S-0d6c407f3df0",
+      "char_start": 7818,
+      "char_end": 8571,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Certifications https://sc04.alicdn.com/kf/H49c99d6bb2e64749ad9b3f8eac655fcfR.png Store rating4.8/5.0(89) Reorder rate22% icon Customization Options Agile supply chain Finished product inspection QA/QC"
+    },
+    {
+      "passage_uid": "PU-64e2bfe2c9612929",
+      "source_id": "S-0d6c407f3df0",
+      "char_start": 11418,
+      "char_end": 11868,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Sustainable Cosmetic Packaging Suppliers These suppliers provide eco-friendly packaging solutions, including Post-Consumer Recycled (PCR) plastic, glass, and aluminum, which align with the sustainabil"
+    },
+    {
+      "passage_uid": "PU-2ba81a76d7856fa6",
+      "source_id": "S-0d6c407f3df0",
+      "char_start": 11869,
+      "char_end": 12561,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Certifications - Store rating5.0/5.0(3) Reorder rate19% icon Customization Options Sample-based customization sample processing,graphic processing,customized on demand Eco-Friendly 150ml PCR Glass Air"
+    },
+    {
+      "passage_uid": "PU-b1202491a4228a53",
+      "source_id": "S-0d6c407f3df0",
+      "char_start": 12562,
+      "char_end": 12711,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "9 yrsGuangdong,CNCN Matches 5/5 Main products include PCR bottles and a variety of materials like aluminum, ensuring sustainable packaging solutions."
+    },
+    {
+      "passage_uid": "PU-dd895538899d29f0",
+      "source_id": "S-0d6c407f3df0",
+      "char_start": 13584,
+      "char_end": 14219,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Certifications - Store rating5.0/5.0(5) Reorder rate25% icon Customization Options Sample-based customization glass bottle, dropper bottle, liquor bottle, glass jar, spice jar In Stock Cosmetic Packag"
+    },
+    {
+      "passage_uid": "PU-2ee2710a48aedb64",
+      "source_id": "S-0d6c407f3df0",
+      "char_start": 14389,
+      "char_end": 15237,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Certifications https://sc04.alicdn.com/kf/H1f4b08eba716475a8e1a31bc6491e400e.pnghttps://sc04.alicdn.com/kf/H42e71e6 8ed9d45d8b1c4643a65638abf9.png Store rating5.0/5.0(1) Reorder rate33% icon Customiza"
+    },
+    {
+      "passage_uid": "PU-b700f58ec0367112",
+      "source_id": "S-0d6c407f3df0",
+      "char_start": 15449,
+      "char_end": 17694,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Certifications https://sc04.alicdn.com/kf/H1f4b08eba716475a8e1a31bc6491e400e.pnghttps://sc04.alicdn.com/kf/Hdbbb6a1 06e8d4515be692063768d8fd4J.pnghttps://sc04.alicdn.com/kf/Hdcdda68a5c974643bba82b99a6"
+    },
+    {
+      "passage_uid": "PU-2c74d5b819d58a64",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 3869,
+      "char_end": 4155,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "This dual focus on skincare and cosmetics has resonated with consumers who want products that both perform well and align with their values. The brand’s inclusive approach to beauty—offering shades an"
+    },
+    {
+      "passage_uid": "PU-0a86457bb69091c8",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 8396,
+      "char_end": 8531,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "The campaign also helped to boost engagement, with users actively participating and sharing their personal skincare and makeup stories."
+    },
+    {
+      "passage_uid": "PU-bf48afb70ec54ff0",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 16979,
+      "char_end": 17102,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "35+ Top Beauty And Skincare Brands Clients ## Let's Connect Please enable JavaScript in your browser to complete this form."
+    },
+    {
+      "passage_uid": "PU-c047c2c17112caef",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 18368,
+      "char_end": 18488,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Best shopify agency for fashion brands * Best shopify agency for luxury brands * Best shopify agency for Skincare brands"
+    },
+    {
+      "passage_uid": "PU-90d8c2374ff6ccd5",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 19517,
+      "char_end": 19692,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "How We Built a Premium D2C Website That Positions Troveaa as a Professional Luxury Handbag Brand * The Grandmother's Recipe Trap: How Ayurvedic Brands Go Premium - HavStrategy"
+    },
+    {
+      "passage_uid": "PU-657c689f6c0eda21",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 24298,
+      "char_end": 24606,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Industry *--- Select Choice ---Skincare BrandFashion and Apparel BrandLuxury BrandHome Decor BrandBeauty / Cosmetic BrandJewellery BrandPerfume BrandHealth / Wellness brandNutrition / Supplements Bran"
+    },
+    {
+      "passage_uid": "PU-133816f7948218a4",
+      "source_id": "S-d615d24c9ebe",
+      "char_start": 289,
+      "char_end": 519,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "brand_positioning",
+      "preview": "Our Values Boundless Dare to dream big. Own it Own your actions with accountability. Be the Solution Never give up. Live with Integrity Do the right thing. Be Human Come as you are. Be kind to others,"
+    },
+    {
+      "passage_uid": "PU-411db808a3715a9f",
+      "source_id": "S-0d6c407f3df0",
+      "char_start": 12712,
+      "char_end": 13383,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "provider_reported_result",
+      "preview": "Certifications - Store rating4.7/5.0(19) Reorder rate<15% icon Customization Options Agile supply chain Drawing-based customization Finished product inspection QA/QC inspectors (4) airless pump bottle"
+    },
+    {
+      "passage_uid": "PU-b511bb75f86b7356",
+      "source_id": "S-0d6c407f3df0",
+      "char_start": 15238,
+      "char_end": 15448,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "provider_reported_result",
+      "preview": "Guangzhou Haojie Cosmetics Packaging Co., Ltd. 6 yrsGuangdong,CNCN Matches 5/5 Products made from glass with CE, RoHS, and ISO 9001 compliance, ensuring safety and quality. 100% on-time shipping rate "
+    },
+    {
+      "passage_uid": "PU-c2d696216aa5e742",
+      "source_id": "S-0d6c407f3df0",
+      "char_start": 899,
+      "char_end": 1586,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "The company has demonstrated remarkable financial growth, with reported revenue increasing significantly over a short period. ───────────────────────────┬────────────────────── Year │Reported Revenue "
+    },
+    {
+      "passage_uid": "PU-2e24c94538f75f08",
+      "source_id": "S-0d6c407f3df0",
+      "char_start": 1587,
+      "char_end": 1745,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "One source reported a 2022 revenue of $100 million Cbinsights, while another noted revenue skyrocketed from $5 million in 2018 to $100 million by 2021 Forbes."
+    },
+    {
+      "passage_uid": "PU-93d67f8bbbbdbd2e",
+      "source_id": "S-0d6c407f3df0",
+      "char_start": 5900,
+      "char_end": 6677,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Certifications https://sc04.alicdn.com/kf/H49c99d6bb2e64749ad9b3f8eac655fcfR.png Store rating4.9/5.0(232) Reorder rate25% icon Customization Options Drawing-based customization Finished product inspec"
+    },
+    {
+      "passage_uid": "PU-8ec0c615ca21f01d",
+      "source_id": "S-0d6c407f3df0",
+      "char_start": 6678,
+      "char_end": 6875,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Shenzhen Panni E-Business Co., Ltd. 14 yrsGuangdong,CNCN Matches 3/5 14 years of registration, vegan formulations with minerals, and zero negative reviews highlight exceptional quality and service."
+    },
+    {
+      "passage_uid": "PU-9b3132641cec9a87",
+      "source_id": "S-0d6c407f3df0",
+      "char_start": 7636,
+      "char_end": 7817,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Yiwu Bimei Cosmetics Co., Ltd. 5 yrsZhejiang,CNCN Matches 6/6 Made with organic ingredients and zero negative reviews, ensuring high-quality standards and excellent service ratings."
+    },
+    {
+      "passage_uid": "PU-86f8266f108b7576",
+      "source_id": "S-0d6c407f3df0",
+      "char_start": 8572,
+      "char_end": 8787,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Guangzhou yeseyedo Cosmetics Co., Ltd. Manufacturer5 yrsGuangdong,CNCN Matches 5/5 Custom matte liquid lipstick and waterproof long-lasting lipgloss, with cruelty-free products and GMP certification e"
+    },
+    {
+      "passage_uid": "PU-d59426c69ec37a38",
+      "source_id": "S-0d6c407f3df0",
+      "char_start": 8788,
+      "char_end": 9841,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Certifications https://sc04.alicdn.com/kf/H20c0f2658164418bae951f47f1c98f14P.png Store rating5.0/5.0(1) Reorder rate18% icon Customization Options Raw material identification and traceability QA/QC in"
+    },
+    {
+      "passage_uid": "PU-d5177ce3e6aa3904",
+      "source_id": "S-0d6c407f3df0",
+      "char_start": 9842,
+      "char_end": 10231,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Focus│12 │ODM, sample-based customization, Cosmetics Co., │on organic, vegan, and multi-use │year│agile supply chain. Certified with Ltd. │products. │s │GMPC & ISO 22716. ──────────────────┼──────────"
+    },
+    {
+      "passage_uid": "PU-7e0469af9820e0b0",
+      "source_id": "S-0d6c407f3df0",
+      "char_start": 10232,
+      "char_end": 10581,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Specializes in vegan, │year│full raw material and finished Co.,Ltd │cruelty-free liquid/cream blush. │s │product inspection. ──────────────────┼─────────────────────────────────────────┼────┼─────────"
+    },
+    {
+      "passage_uid": "PU-48eb72287b7fd4fc",
+      "source_id": "S-0d6c407f3df0",
+      "char_start": 10582,
+      "char_end": 11270,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Offers multi-use │year│full raw material and finished Ltd. │blush/contour sticks and lip tints. │s │product inspection. ──────────────────┼─────────────────────────────────────────┼────┼──────────────"
+    },
+    {
+      "passage_uid": "PU-20e43a989c432b44",
+      "source_id": "S-0d6c407f3df0",
+      "char_start": 11271,
+      "char_end": 11413,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Ltd. │and long-lasting lip products. │s │ ──────────────────┴─────────────────────────────────────────┴────┴──────────────────────────────────"
+    },
+    {
+      "passage_uid": "PU-e343e34432ded55b",
+      "source_id": "S-0d6c407f3df0",
+      "char_start": 13384,
+      "char_end": 13583,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Xuzhou Das Packing Solutions Co., Ltd. 10 yrsJiangsu,CNCN Matches 4/5 Zero negative reviews and over 2400 positive testimonials, adhering to international safety standards with sustainable materials."
+    },
+    {
+      "passage_uid": "PU-580be1266554b4be",
+      "source_id": "S-0d6c407f3df0",
+      "char_start": 14220,
+      "char_end": 14388,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "9 yrsShandong,CNCN Matches 4/5 Zero negative reviews and a 5.0 rating reflect exceptional quality, supported by over 10 quality inspectors ensuring top-tier production."
+    },
+    {
+      "passage_uid": "PU-eabea4dbb27c6d46",
+      "source_id": "S-53beb4316ae6",
+      "char_start": 17648,
+      "char_end": 17812,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "descriptive",
+      "preview": "Explore HavStrategy by region Choose a market to browse its services, industries, specialist growth pages and resources. Singapore pages are intentionally excluded."
+    },
+    {
+      "passage_uid": "PU-494062f5d4de8cc9",
+      "source_id": "S-0d6c407f3df0",
+      "char_start": 4714,
+      "char_end": 5899,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "provider_reported_result",
+      "preview": "Certifications https://sc04.alicdn.com/kf/H0e2f600c41a64779b83983eb9e91209cU.pnghttps://sc04.alicdn.com/kf/H721b90e d33bc468a8cb65355a3d4c52eE.pnghttps://sc04.alicdn.com/kf/H49c99d6bb2e64749ad9b3f8eac"
+    },
+    {
+      "passage_uid": "PU-2f6b087c3723d4eb",
+      "source_id": "S-d615d24c9ebe",
+      "char_start": 852,
+      "char_end": 1078,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected",
+        "statement_type:proposed_or_mock_work"
+      ],
+      "identity_reason": "document identity: unconfirmed",
+      "statement_type": "proposed_or_mock_work",
+      "preview": "Sustainability Empowered with executive sponsors and an annual budget, this committee activates across the business to develop programs or educational resources that drive innovation within our teams "
+    }
+  ],
+  "status": "ok",
+  "status_reasons": [],
+  "packet_sha256": "783b317e1da8b510dcb4ba56a67812ce28db9c225ca94e275b0d69b58c790363"
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "siete-foods",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "a26b09233c918f865de058fce248b47b289fb7255fd47b87f5a875b23b3b13b8",
+    "prompt_sha256": "fce10ef7518b72fd27dae455b395689620f4610fb796fb2bed9b54910604f8d2",
+    "completion_sha256": "24a8e9914b6dd52fb110331d8ba9aa4465b993ea1a78fbcdb3af2762c6420212",
+    "audit_sha256": "d295b732d206328c21da7d18d215afe21e5d229f70a63a2ab25c8420ee4b5183"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 7,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:47+00:00",
+  "record_sha256": "6ee5ccac7aebacf6ba1c0d33be575b72026bb48c9bf793f51242320bebf924f4"
+}

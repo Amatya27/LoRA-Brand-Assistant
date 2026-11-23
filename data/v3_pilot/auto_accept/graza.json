@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "graza",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "90fc71b07ba6c1187fbcacc9fd4e9cf66b948d1c0e45f62dc877017037d2aaab",
+    "prompt_sha256": "611ccdc548cc67e2fef4ce4c01baada7ab7ab6b4aa8dbad9a710eac5677dcd67",
+    "completion_sha256": "da89b1a541273a733fce9446a603b883a990ce91f117c7afe3cfabd190e5981c",
+    "audit_sha256": "291ee7c5798d8b0ea2e838cf89180c6b2cdcf34f9cc4a7d324cb105b4b7d396a"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 5,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:43+00:00",
+  "record_sha256": "1bacfde7776fa20400c748b919dd0718b10cb006e5dea323244bdf0e5744b9ec"
+}

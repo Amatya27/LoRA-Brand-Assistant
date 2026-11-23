@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "fly-by-jing",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "c974a43b16e102e870046f0fbbb1e63d54bd1f356426177dfbdd948911ce7eea",
+    "prompt_sha256": "c43b9ebb40431d87b00daad7b2a05cf5778f1876ca8970cff60694bb034ba9df",
+    "completion_sha256": "487c028256c5015099142d159070834972dee9de99a8cda92d0e759125c776c5",
+    "audit_sha256": "434987883b0c49e0f9ee08f0528892277118cd1b31f17bbd124c0b0f7f09e649"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 6,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:43+00:00",
+  "record_sha256": "fb292c8af51507341d3adbf95931d19532d66775b0610cf76c178ad875bde9bf"
+}

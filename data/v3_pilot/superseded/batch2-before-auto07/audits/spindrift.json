@@ -1,0 +1,97 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "spindrift",
+  "bound_to": {
+    "packet_sha256": "7800217f68db6b0b482b464395d77e2c4af41f77a07e24baccc7f3b050973919",
+    "prompt_sha256": "972d8f7752c350bdf5030e74ae33bf98faebbde8cb93a93ed099b00edf84dd65",
+    "completion_sha256": "f22455ce6ca56275319b742c46fc78ce7c553f3dbb3bd58cd6c9e2153e70fe71",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": []
+  },
+  "raw_response_sha256": "0e04819795a111f70c81223b2054f32d80302c0187ceee111fdc23302e542891",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"We launched a direct-to-consumer experience to bring the full real fruit lineup to the masses.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states Spindrift launched a direct-to-consumer experience.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"We gave away thousands of packs from the first batch of Pineapple for free.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states they gave away Pineapple packs for free.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"our community is our North Star — we call them ‘the drifters,’ and they’re the biggest fans of the brands who tell everyone about it.\",\n      \"issues\": [],\n      \"reason\": \"The passage identifies a community of fans called 'the drifters'.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"the company rewards their dedication with free merch and products.\",\n      \"issues\": [],\n      \"reason\": \"The passage states the company rewards fans with free merch and products.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"CHECK OUT OUR COLLAB WITH DAK PRESCOTT!\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly mentions a collaboration with DAK Prescott.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"influencer-related marketing is shifting to more organic communities who love to purchase and boast about the products.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes a marketing strategy involving influencers and organic communities.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "We launched a direct-to-consumer experience to bring the full real fruit lineup to the masses.",
+        "issues": [],
+        "reason": "The passage explicitly states Spindrift launched a direct-to-consumer experience."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "We gave away thousands of packs from the first batch of Pineapple for free.",
+        "issues": [],
+        "reason": "The passage directly states they gave away Pineapple packs for free."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "our community is our North Star — we call them ‘the drifters,’ and they’re the biggest fans of the brands who tell everyone about it.",
+        "issues": [],
+        "reason": "The passage identifies a community of fans called 'the drifters'."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "the company rewards their dedication with free merch and products.",
+        "issues": [],
+        "reason": "The passage states the company rewards fans with free merch and products."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "CHECK OUT OUR COLLAB WITH DAK PRESCOTT!",
+        "issues": [],
+        "reason": "The passage explicitly mentions a collaboration with DAK Prescott."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "influencer-related marketing is shifting to more organic communities who love to purchase and boast about the products.",
+        "issues": [],
+        "reason": "The passage describes a marketing strategy involving influencers and organic communities."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-22T10:55:33+00:00",
+  "audit_sha256": "7ba057eccc83b8a12e097b0bb019be2a683ec0ba07493dababdf9714f9da5fc6",
+  "dismissed_reviewer_flags": []
+}

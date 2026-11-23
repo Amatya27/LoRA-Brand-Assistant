@@ -1,0 +1,97 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "death-wish-coffee",
+  "bound_to": {
+    "packet_sha256": "ee99bedd03cc7099a3bf76963129d182403a6090a8cf2679c2c5e8ccfe50807a",
+    "prompt_sha256": "94a90c9ad1f8e7a66797f33ad925d1f89dec9441aa96862fc1bea12a2f404dbe",
+    "completion_sha256": "b674b9103b31613879526543608770da658e27b3ca2e58750d4fb1b1e28e2541",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": []
+  },
+  "raw_response_sha256": "c72c52f2207c0175ac438efc716160a92f1903f9479961225bd6ac6622b82eda",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"They launched Valhalla Java, a roast designed for hardcore fans.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states Death Wish Coffee launched Valhalla Java for hardcore fans.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"Every few months, they drop a new mug designed by edgy artists. These sold out in hours.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms Death Wish Coffee releases limited edition mugs that quickly sell out.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"a Super Bowl XLIX commercial spot fully funded and produced by Intuit Quickbooks.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Death Wish Coffee had a Super Bowl commercial funded by Intuit Quickbooks.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P10\"\n      ],\n      \"quote\": \"celebrated National Coffee Day with a suite of one-day-only promotions, including product discounts, a free tote bag with every purchase, and free sample packs for new customers\",\n      \"issues\": [],\n      \"reason\": \"The passage details Death Wish Coffee's National Coffee Day campaign with specific promotions.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"What if we make the strongest coffee in the world? That became their big idea. Soon, they sold energy and power.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes Death Wish Coffee's brand positioning as focusing on being the strongest coffee.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"Their packaging was black & red. The logo was a skull and crossbones. Everything about the brand screamed: This coffee is extreme.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes Death Wish Coffee's branding as including a black and red color scheme and a skull and crossbones logo.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "They launched Valhalla Java, a roast designed for hardcore fans.",
+        "issues": [],
+        "reason": "The passage explicitly states Death Wish Coffee launched Valhalla Java for hardcore fans."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "Every few months, they drop a new mug designed by edgy artists. These sold out in hours.",
+        "issues": [],
+        "reason": "The passage confirms Death Wish Coffee releases limited edition mugs that quickly sell out."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "a Super Bowl XLIX commercial spot fully funded and produced by Intuit Quickbooks.",
+        "issues": [],
+        "reason": "The passage directly states Death Wish Coffee had a Super Bowl commercial funded by Intuit Quickbooks."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P10"
+        ],
+        "quote": "celebrated National Coffee Day with a suite of one-day-only promotions, including product discounts, a free tote bag with every purchase, and free sample packs for new customers",
+        "issues": [],
+        "reason": "The passage details Death Wish Coffee's National Coffee Day campaign with specific promotions."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "What if we make the strongest coffee in the world? That became their big idea. Soon, they sold energy and power.",
+        "issues": [],
+        "reason": "The passage describes Death Wish Coffee's brand positioning as focusing on being the strongest coffee."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "Their packaging was black & red. The logo was a skull and crossbones. Everything about the brand screamed: This coffee is extreme.",
+        "issues": [],
+        "reason": "The passage describes Death Wish Coffee's branding as including a black and red color scheme and a skull and crossbones logo."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-22T23:56:48+00:00",
+  "audit_sha256": "0310dcb374f8df7aa4acd6a1e7986b543b4569c9cd5fb870d65cca2030a3b771",
+  "dismissed_reviewer_flags": []
+}

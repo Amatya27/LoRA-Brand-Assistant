@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "stumptown-coffee",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "546ce43823e5e75d054f71f5ab29323f092a352f38b07d41bc95a8b64116acf6",
+    "prompt_sha256": "a5e53720ebdf975c6d0a45abc86f2dd4e0be8ecaf21a6b4a1f009ff701e008b7",
+    "completion_sha256": "6967b312cce9da050743e4a60d6de8a02de9d203ce1dd25a1850bed8a4a51297",
+    "audit_sha256": "72f87fd48c1422c54a2dfad2a9672cc177a1a9119246f28d17dd1c6f1afdc0c4"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 6,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:43+00:00",
+  "record_sha256": "843f0ac413889c75811c845b5c37563fbdcbf4be97c5f369221e53f6cd5c67ff"
+}

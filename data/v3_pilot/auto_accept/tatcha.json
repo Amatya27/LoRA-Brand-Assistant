@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "tatcha",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "61c8422b3ed23e087227685971d728f2d736d989c9acd467eedbcf1894cc10e0",
+    "prompt_sha256": "ef6943c4d861e56bd1eeac51b7df36cebe10d58f936f13f1ebd5f8c414410d46",
+    "completion_sha256": "06cc92b0905beab597f5f4ab6179c12d5f477ae6e0bd842f7349df7c56532be5",
+    "audit_sha256": "e2bdc2e7e919585c633395d55164c0c34f82057673615ade99214642bc64a591"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 7,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:47+00:00",
+  "record_sha256": "66dad360c9c783b9e3bc29ab6b79ebc10351e37716124db4ea1df95ba10fbe6a"
+}

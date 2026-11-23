@@ -1,0 +1,154 @@
+{
+  "schema_version": "brandpilot.label.v3",
+  "company_id": "hu-kitchen",
+  "packet_path": "packets/hu-kitchen.json",
+  "packet_sha256": "5034b597e41ea5dd8e24a7d96cbd19d65b0c2edf60ebd2a761b20246b545d527",
+  "prompt_version": "brandpilot.prompt.v3.3",
+  "prompt": "You are a grounded brand-outreach assistant for our team. Use only the evidence passages below.\nNever use outside knowledge. Return valid JSON only.\n\nSeparate three things:\n1. OBSERVED FACTS - things a passage actually states about this company. Each fact is a claim with an id (C1, C2, ...),\n   the passage id(s) that support it, and an exact quote copied word-for-word from that passage.\n2. UNKNOWNS - things the evidence does not tell us (put them in \"unknowns\"). A channel, program or audience that does\n   not appear in these passages is UNKNOWN. It is never a weakness, never a \"gap\", and never a reason for outreach.\n3. PROPOSALS - collaboration ideas from our team. Proposals are not facts, but each must build on a positively supported\n   fact (an existing campaign, partnership, product, community, value or theme) and cite that premise.\n\nRules:\n- Put a claim marker like {C1} (curly braces) right after every factual statement in every field, including the\n  email and Instagram idea. Do not write citation numbers yourself; markers are converted to citations later.\n- A claim's \"quote\" must be copied character-for-character from the cited passage: 5 to 25 consecutive words, no\n  paraphrasing, no joining of separate sentences. If you cannot find such a quote, drop the claim and every sentence\n  that depends on it.\n- Audience and strategy sentences are factual: each needs a marker. If no passage states the audience, write\n  INSUFFICIENT_EVIDENCE instead of guessing.\n- Pitch lines (email subject, hook, concept) should describe the proposed post (\"A carousel featuring ...\",\n  \"Collaborate on ...\"). Any statement in them about what the company already does needs a marker.\n- Respect passage types. \"proposed_or_mock_work\" and \"author_recommendation\" passages describe ideas, not things the\n  company did: never state them as company activity. \"provider_reported_result\" passages are claims by a vendor or\n  agency: attribute them (\"X reports that ...\"). \"creator_or_influencer_audience_data\" describes creators' followers,\n  not the company's customers. \"vendor_generated_profile_or_analytics\" passages are a tool vendor's estimates\n  (e.g. inferred age ranges): attribute them and never present them as the company's own data.\n  \"forward_looking_statement\" passages describe plans or intentions, not completed activity.\n- Mind time: if a passage describes past activity, do not present it as current.\n- \"marketing_gaps\" may only contain a weakness that a passage positively states. Usually it is [].\n- Never promise results. Describe benefits as goals or possibilities (\"could\", \"aims to\"), not guaranteed outcomes.\n- Decision: write \"draft\" when at least one concrete, evidence-supported collaboration opportunity exists. Otherwise write\n  \"abstain\", give an abstain_reason, set pitch fields to INSUFFICIENT_EVIDENCE and leave collaboration_opportunities empty.\n- The email is from our team to the company, proposing one collaborative Instagram post. The pitch, the post idea and\n  every collaboration opportunity are for Instagram only (no TikTok, YouTube, podcasts or other channels).\n- When a sentence uses a vendor, agency or analytics passage, name that source in the sentence itself\n  (\"According to AdLibrary, ...\", \"Attentive reports that ...\").\n- Each \"unknowns\" item names one specific thing the passages do not tell us (e.g. \"Whether X runs a creator program\").\n  Never write placeholder text such as \"what the evidence does not show\".\n\nRequired JSON:\n{\n  \"decision\": \"draft\" or \"abstain\",\n  \"abstain_reason\": \"string or empty\",\n  \"claims\": [{\"id\": \"C1\", \"kind\": \"fact | provider_reported | premise\", \"statement\": \"string\",\n              \"passage_ids\": [\"P1\"], \"quote\": \"exact words from the passage\"}],\n  \"brand_summary\": \"Full sentences, each followed by its marker, e.g. \"X makes ... {C1}.\" Never only markers. Or INSUFFICIENT_EVIDENCE\",\n  \"likely_target_audience\": \"A full sentence followed by its marker, or INSUFFICIENT_EVIDENCE\",\n  \"current_marketing_strategy\": [\"text with markers\"],\n  \"unknowns\": [\"one specific open question, e.g. Whether the company works with creators\"],\n  \"marketing_gaps\": [],\n  \"collaboration_opportunities\": [\"proposal that builds on a cited fact {C2}\"],\n  \"instagram_post_idea\": {\"hook\": \"string\", \"concept\": \"string\", \"why_it_fits\": \"string\"},\n  \"email_subject\": \"string\",\n  \"email_body\": \"string\"\n}\n\nCompany: Hu Kitchen (company_id hu-kitchen; category: organic chocolate and snacks)\nOfficial domains: hukitchen.com, hukitchen.co.uk\nRecipient: the marketing team\nPacket status: ok\n\nEvidence passages:\n[P1] source: https://hukitchen.com/pages/fairtrade | document: official_domain | type: brand_positioning | dates in text: none | published: unknown\n\"Fairtrade Month is for You We are shoppers, grocers, brands and farmers. We come together in the choices we make so that the people who grow our food get a fairer deal for their work. Together, we’re making equitable the new normal — because fairness should never be optional. This October, Hu joins Fairtrade America to honor and celebrate one of the cocoa farmers who has made an impact within their community. Highlight illustration Photo provided by Fairtrade Africa\"\n\n[P2] source: https://hukitchen.com/pages/fairtrade | document: official_domain | type: descriptive | dates in text: none | published: unknown\n\"Fairtrade standards As a proud partner of Fairtrade, Hu sources 100% of its cocoa, coconut sugar, cashews, vanilla, and quinoa on Fairtrade terms. As a values driven brand, we put Humanity at the forefront of everything we do to help create a positive impact for all of our fellow humans from growers to eaters. What does Fairtrade mean? Being certified Fairtrade means farming organizations are able to earn at least the Fairtrade minimum price, which acts as a safeguard for when market prices drop.\"\n\n[P3] source: https://www.apexdrop.com/success-stories/hu/ | document: third_party_confirmed | type: actual_activity | dates in text: none | published: unknown\n\"Success StoryBuild Engagement & Increase Retention Using Instagram, ApexDrop activated 100 micro-influencers with Hu Kitchen Chocolate to post branded content and messaging into their Instagram feeds. The strategy has increased brand awareness in addition to high-quality sponsored content. Conversion opportunities were created on social media based on core consumer traits. Also, select influencers cross-promoted content to other social media networks improving SEO, reach, and social discovery.\"\n\n[P4] source: https://hukitchen.com/pages/fairtrade | document: official_domain | type: descriptive | flags: forward_looking_statement | dates in text: none | published: unknown\n\"The future is fair We saw firsthand how Fairtrade’s approach aims to empower famers and workers in support of more secure livelihoods. As a values-driven brand, we remain committed to sourcing simple and responsible ingredients in partnership with Fairtrade.\"\n\n[P5] source: https://hukitchen.com/pages/about-us | document: official_domain | type: brand_positioning | dates in text: none | published: unknown\n\"Indulgent. Simple. Chocolate. Crafted with care for every moment. ### OUR MISSION We founded Hu to unite simple ingredients with unbeatable taste.\"\n\n[P6] source: https://hukitchen.com/pages/about-us | document: official_domain | type: descriptive | dates in text: none | published: unknown\n\"It was an instant hit, inspiring us to bring it to retail stores nationwide. WHERE ARE WE NOW? Today, Hu chocolate is sold in over 34,000 stores across the US, Canada, and the UK. Hu Chocolate uses the same unwavering ingredient guardrails we championed at our Hu Kitchen restaurant. Our organic, Fairtrade dark chocolate is made with just 3 simple and familiar ingredients – cacao, unrefined coconut sugar, and cocoa butter. We avoid things like refined sugar, lecithins, sugar alcohols, and palm oil. Not to be missed are our crave-worthy Salty Dark Chocolate and creamy Nut-Butter-Filled bars – all decadent, indulgent eating experiences that deliver on both taste and ingredient simplicity.\"\n\n[P7] source: https://hukitchen.com/pages/about-us | document: official_domain | type: descriptive | dates in text: none | published: unknown\n\"Chocolate for all Humans, available (almost) everywhere. Retailer Logo Divider Icon Retailer Logo Divider Icon Retailer Logo Divider Icon Retailer Logo Divider Icon Retailer Logo Divider Icon Retailer Logo\"\n\n[P8] source: https://sensia.ai/blog/how-does-a-clean-eating-promise-shape-consumer-loyalty-insights-from-hu-kitchens-approach | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown\n\"Hu Kitchen is an ideal example for examining consumer sentiment toward a clean eating-focused marketing approach, showcasing how this commitment resonates with and builds loyalty among health-conscious audiences. This article draws insights from Sensia’s consumer feedback analysis to illustrate how Hu Kitchen’s philosophy resonates with different consumer profiles, and how it shapes perceptions, purchasing habits, and loyalty. By dissecting Sensia’s data, we’ll also see how other brands in the natural foods industry can leverage similar approaches to strengthen their market position.\"\n\n[P9] source: https://www.instagram.com/hukitchen/ | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown\n\"My favorites are the hazelnut butter bites and the salty dark chocolate bar! 👏🏼 But did you know that Hu also has a commitment to sourcing ingredients on Fairtrade terms? 🥥🍫🤎 Ingredients like coconut sugar, cacao, cashews, quinoa, and vanilla are responsibly farmed and with a commitment to support the farmers and communities that produce them. ✨ Grab some Hu chocolate at your local Whole Foods, Target, Sprouts, or Kroger and give yourself a little sweet treat that’s made better for you and for the communities that make it. 〰️ #HuPartner Video Swipe for our 3 favorite ways to snack this fall 🍂🤭 Carousel Sorry, we can’t hear you over the crunch 🤤🍫 Video date bark, meet fig season 🤤 Video currently accepting fall activities only 🎃✨🍁 Carousel Get the full experience Sign up for Instagram Close hukitchen's profile picture See full profile in the app Use the app to see more about hukitchen.\"\n\n[P10] source: https://sensia.ai/blog/how-does-a-clean-eating-promise-shape-consumer-loyalty-insights-from-hu-kitchens-approach | document: third_party_confirmed | type: descriptive | flags: forward_looking_statement | dates in text: October 31, 2024 | published: unknown\n\"Research Sign in Contact us ← Research # How Does a \\\"Clean Eating\\\" Promise Shape Consumer Loyalty? Insights from Hu Kitchen’s Approach AP AP · October 31, 2024 · 10 min read In today’s health-conscious world, the concept of \\\"clean eating\\\" has evolved beyond a trend—it has become a defining standard for many brands aiming to win consumer loyalty. Hu Kitchen, an innovative brand in the natural and healthy foods sector, exemplifies this approach by championing transparency, clean ingredients, and ethical practices.\"\n",
+  "prompt_sha256": "a06037275be47ef9c875c6aa0878d2bbafb19359bd62711a6faee86ff1c157fb",
+  "generator": {
+    "source": "model",
+    "role": "teacher",
+    "api_base": "http://localhost:8080/v1",
+    "model": "mlx-community/Qwen3-14B-4bit",
+    "temperature": 0.0,
+    "max_tokens": 4096,
+    "system_prompt_sha256": "a434c070378f6a787103cac3ef71971836c5f435d8b5fcbad58e17d38f3ef7f3",
+    "generated_at": "2026-11-22T22:10:05+00:00",
+    "attempts": [
+      {
+        "attempt": 0,
+        "raw_sha256": "d4ad5cf0fec906b700c4ce91baa677b067f20398a98333e7c1b8cd571425b36b",
+        "deterministic_errors": 0,
+        "quote_repairs": [
+          {
+            "claim": "C5",
+            "passage_id": "P9",
+            "similarity": 0.9853,
+            "old_quote": "Hu also has a commitment to sourcing ingredients on Fairtrade terms.",
+            "new_quote": "Hu also has a commitment to sourcing ingredients on Fairtrade terms?"
+          },
+          {
+            "claim": "C6",
+            "passage_id": "P9",
+            "similarity": 0.9935,
+            "old_quote": "Grab some Hu chocolate at your local Whole Foods, Target, Sprouts, or Kroger.",
+            "new_quote": "Grab some Hu chocolate at your local Whole Foods, Target, Sprouts, or Kroger"
+          },
+          {
+            "claim": "C7",
+            "passage_id": "P8",
+            "similarity": 0.9912,
+            "old_quote": "Hu Kitchen is an ideal example for examining consumer sentiment toward a clean eating-focused marketing approach.",
+            "new_quote": "Hu Kitchen is an ideal example for examining consumer sentiment toward a clean eating-focused marketing approach,"
+          }
+        ]
+      }
+    ],
+    "quote_repair": "claims.repair_quotes (min similarity 0.9; numbers/negations unchanged); see attempts[].quote_repairs",
+    "note": "repair rounds show the teacher only its own draft and the failed check messages"
+  },
+  "raw_response": "{\n  \"decision\": \"draft\",\n  \"abstain_reason\": \"\",\n  \"claims\": [\n    {\n      \"id\": \"C1\",\n      \"kind\": \"fact\",\n      \"statement\": \"Hu sources 100% of its cocoa, coconut sugar, cashews, vanilla, and quinoa on Fairtrade terms.\",\n      \"passage_ids\": [\"P2\"],\n      \"quote\": \"Hu sources 100% of its cocoa, coconut sugar, cashews, vanilla, and quinoa on Fairtrade terms.\"\n    },\n    {\n      \"id\": \"C2\",\n      \"kind\": \"fact\",\n      \"statement\": \"Hu is a values-driven brand that puts Humanity at the forefront of everything it does to help create a positive impact for all of its fellow humans from growers to eaters.\",\n      \"passage_ids\": [\"P2\"],\n      \"quote\": \"As a values driven brand, we put Humanity at the forefront of everything we do to help create a positive impact for all of our fellow humans from growers to eaters.\"\n    },\n    {\n      \"id\": \"C3\",\n      \"kind\": \"fact\",\n      \"statement\": \"Hu chocolate is sold in over 34,000 stores across the US, Canada, and the UK.\",\n      \"passage_ids\": [\"P6\"],\n      \"quote\": \"Today, Hu chocolate is sold in over 34,000 stores across the US, Canada, and the UK.\"\n    },\n    {\n      \"id\": \"C4\",\n      \"kind\": \"fact\",\n      \"statement\": \"Hu chocolate uses the same unwavering ingredient guardrails it championed at its Hu Kitchen restaurant.\",\n      \"passage_ids\": [\"P6\"],\n      \"quote\": \"Hu Chocolate uses the same unwavering ingredient guardrails we championed at our Hu Kitchen restaurant.\"\n    },\n    {\n      \"id\": \"C5\",\n      \"kind\": \"fact\",\n      \"statement\": \"Hu has a commitment to sourcing ingredients on Fairtrade terms.\",\n      \"passage_ids\": [\"P9\"],\n      \"quote\": \"Hu also has a commitment to sourcing ingredients on Fairtrade terms.\"\n    },\n    {\n      \"id\": \"C6\",\n      \"kind\": \"fact\",\n      \"statement\": \"Hu chocolate is available at stores like Whole Foods, Target, Sprouts, and Kroger.\",\n      \"passage_ids\": [\"P9\"],\n      \"quote\": \"Grab some Hu chocolate at your local Whole Foods, Target, Sprouts, or Kroger.\"\n    },\n    {\n      \"id\": \"C7\",\n      \"kind\": \"fact\",\n      \"statement\": \"Hu Kitchen is an ideal example for examining consumer sentiment toward a clean eating-focused marketing approach.\",\n      \"passage_ids\": [\"P8\"],\n      \"quote\": \"Hu Kitchen is an ideal example for examining consumer sentiment toward a clean eating-focused marketing approach.\"\n    }\n  ],\n  \"brand_summary\": \"Hu sources 100% of its cocoa, coconut sugar, cashews, vanilla, and quinoa on Fairtrade terms {C1}. Hu is a values-driven brand that puts Humanity at the forefront of everything it does to help create a positive impact for all of its fellow humans from growers to eaters {C2}. Hu chocolate is sold in over 34,000 stores across the US, Canada, and the UK {C3}.\",\n  \"likely_target_audience\": \"The likely target audience is health-conscious consumers who value clean eating, ethical sourcing, and transparency in ingredients {C7}.\",\n  \"current_marketing_strategy\": [\n    \"Hu sources 100% of its cocoa, coconut sugar, cashews, vanilla, and quinoa on Fairtrade terms {C1}.\",\n    \"Hu is a values-driven brand that puts Humanity at the forefront of everything it does to help create a positive impact for all of its fellow humans from growers to eaters {C2}.\",\n    \"Hu chocolate is sold in over 34,000 stores across the US, Canada, and the UK {C3}.\",\n    \"Hu chocolate uses the same unwavering ingredient guardrails it championed at its Hu Kitchen restaurant {C4}.\",\n    \"Hu has a commitment to sourcing ingredients on Fairtrade terms {C5}.\",\n    \"Hu chocolate is available at stores like Whole Foods, Target, Sprouts, and Kroger {C6}.\"\n  ],\n  \"unknowns\": [\n    \"Whether Hu Kitchen has a formal creator or influencer program beyond the use of micro-influencers for specific campaigns.\"\n  ],\n  \"marketing_gaps\": [],\n  \"collaboration_opportunities\": [\n    \"Collaborate on an Instagram post highlighting Hu's Fairtrade commitment and its impact on communities {C1}.\"\n  ],\n  \"instagram_post_idea\": {\n    \"hook\": \"Discover how Hu Kitchen is making a difference with every bite {C1}.\",\n    \"concept\": \"A carousel post showcasing Hu's Fairtrade-certified ingredients and their impact on farmers and communities, paired with a call to action to explore their products at local stores {C6}.\",\n    \"why_it_fits\": \"This post aligns with Hu's values-driven mission and commitment to Fairtrade, while also promoting their product availability in major retailers {C1} {C6}.\"\n  },\n  \"email_subject\": \"Collaboration Opportunity: Highlighting Hu's Fairtrade Commitment on Instagram\",\n  \"email_body\": \"Hi [Marketing Team],\\n\\nWe’re reaching out to propose a collaboration for an Instagram post that highlights Hu Kitchen’s commitment to Fairtrade-certified ingredients and their positive impact on communities. This post would align with your brand’s values-driven mission and could help reinforce your message of ethical sourcing and transparency.\\n\\nThe concept would be a carousel post showcasing Hu’s Fairtrade-certified ingredients and their impact on farmers and communities, paired with a call to action to explore their products at local stores. This would be a great way to engage your audience and reinforce your brand’s mission.\\n\\nWe’d love to hear your thoughts on this idea and discuss how we can bring it to life together.\\n\\nBest regards,\\n[Your Name]\"\n}",
+  "raw_response_sha256": "d4ad5cf0fec906b700c4ce91baa677b067f20398a98333e7c1b8cd571425b36b",
+  "draft": {
+    "decision": "draft",
+    "abstain_reason": "",
+    "claims": [
+      {
+        "id": "C1",
+        "kind": "fact",
+        "statement": "Hu sources 100% of its cocoa, coconut sugar, cashews, vanilla, and quinoa on Fairtrade terms.",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "Hu sources 100% of its cocoa, coconut sugar, cashews, vanilla, and quinoa on Fairtrade terms."
+      },
+      {
+        "id": "C2",
+        "kind": "fact",
+        "statement": "Hu is a values-driven brand that puts Humanity at the forefront of everything it does to help create a positive impact for all of its fellow humans from growers to eaters.",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "As a values driven brand, we put Humanity at the forefront of everything we do to help create a positive impact for all of our fellow humans from growers to eaters."
+      },
+      {
+        "id": "C3",
+        "kind": "fact",
+        "statement": "Hu chocolate is sold in over 34,000 stores across the US, Canada, and the UK.",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "Today, Hu chocolate is sold in over 34,000 stores across the US, Canada, and the UK."
+      },
+      {
+        "id": "C4",
+        "kind": "fact",
+        "statement": "Hu chocolate uses the same unwavering ingredient guardrails it championed at its Hu Kitchen restaurant.",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "Hu Chocolate uses the same unwavering ingredient guardrails we championed at our Hu Kitchen restaurant."
+      },
+      {
+        "id": "C5",
+        "kind": "fact",
+        "statement": "Hu has a commitment to sourcing ingredients on Fairtrade terms.",
+        "passage_ids": [
+          "P9"
+        ],
+        "quote": "Hu also has a commitment to sourcing ingredients on Fairtrade terms?"
+      },
+      {
+        "id": "C6",
+        "kind": "fact",
+        "statement": "Hu chocolate is available at stores like Whole Foods, Target, Sprouts, and Kroger.",
+        "passage_ids": [
+          "P9"
+        ],
+        "quote": "Grab some Hu chocolate at your local Whole Foods, Target, Sprouts, or Kroger"
+      },
+      {
+        "id": "C7",
+        "kind": "fact",
+        "statement": "Hu Kitchen is an ideal example for examining consumer sentiment toward a clean eating-focused marketing approach.",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "Hu Kitchen is an ideal example for examining consumer sentiment toward a clean eating-focused marketing approach,"
+      }
+    ],
+    "brand_summary": "Hu sources 100% of its cocoa, coconut sugar, cashews, vanilla, and quinoa on Fairtrade terms {C1}. Hu is a values-driven brand that puts Humanity at the forefront of everything it does to help create a positive impact for all of its fellow humans from growers to eaters {C2}. Hu chocolate is sold in over 34,000 stores across the US, Canada, and the UK {C3}.",
+    "likely_target_audience": "The likely target audience is health-conscious consumers who value clean eating, ethical sourcing, and transparency in ingredients {C7}.",
+    "current_marketing_strategy": [
+      "Hu sources 100% of its cocoa, coconut sugar, cashews, vanilla, and quinoa on Fairtrade terms {C1}.",
+      "Hu is a values-driven brand that puts Humanity at the forefront of everything it does to help create a positive impact for all of its fellow humans from growers to eaters {C2}.",
+      "Hu chocolate is sold in over 34,000 stores across the US, Canada, and the UK {C3}.",
+      "Hu chocolate uses the same unwavering ingredient guardrails it championed at its Hu Kitchen restaurant {C4}.",
+      "Hu has a commitment to sourcing ingredients on Fairtrade terms {C5}.",
+      "Hu chocolate is available at stores like Whole Foods, Target, Sprouts, and Kroger {C6}."
+    ],
+    "unknowns": [
+      "Whether Hu Kitchen has a formal creator or influencer program beyond the use of micro-influencers for specific campaigns."
+    ],
+    "marketing_gaps": [],
+    "collaboration_opportunities": [
+      "Collaborate on an Instagram post highlighting Hu's Fairtrade commitment and its impact on communities {C1}."
+    ],
+    "instagram_post_idea": {
+      "hook": "Discover how Hu Kitchen is making a difference with every bite {C1}.",
+      "concept": "A carousel post showcasing Hu's Fairtrade-certified ingredients and their impact on farmers and communities, paired with a call to action to explore their products at local stores {C6}.",
+      "why_it_fits": "This post aligns with Hu's values-driven mission and commitment to Fairtrade, while also promoting their product availability in major retailers {C1} {C6}."
+    },
+    "email_subject": "Collaboration Opportunity: Highlighting Hu's Fairtrade Commitment on Instagram",
+    "email_body": "Hi [Marketing Team],\n\nWe’re reaching out to propose a collaboration for an Instagram post that highlights Hu Kitchen’s commitment to Fairtrade-certified ingredients and their positive impact on communities. This post would align with your brand’s values-driven mission and could help reinforce your message of ethical sourcing and transparency.\n\nThe concept would be a carousel post showcasing Hu’s Fairtrade-certified ingredients and their impact on farmers and communities, paired with a call to action to explore their products at local stores. This would be a great way to engage your audience and reinforce your brand’s mission.\n\nWe’d love to hear your thoughts on this idea and discuss how we can bring it to life together.\n\nBest regards,\n[Your Name]"
+  },
+  "completion": "{\"schema_version\": \"brandpilot.output.v3\", \"decision\": \"draft\", \"evidence_status\": \"sufficient\", \"abstain_reason\": \"\", \"brand_summary\": \"Hu sources 100% of its cocoa, coconut sugar, cashews, vanilla, and quinoa on Fairtrade terms [P2]. Hu is a values-driven brand that puts Humanity at the forefront of everything it does to help create a positive impact for all of its fellow humans from growers to eaters [P2]. Hu chocolate is sold in over 34,000 stores across the US, Canada, and the UK [P6].\", \"likely_target_audience\": \"The likely target audience is health-conscious consumers who value clean eating, ethical sourcing, and transparency in ingredients [P8].\", \"current_marketing_strategy\": [\"Hu sources 100% of its cocoa, coconut sugar, cashews, vanilla, and quinoa on Fairtrade terms [P2].\", \"Hu is a values-driven brand that puts Humanity at the forefront of everything it does to help create a positive impact for all of its fellow humans from growers to eaters [P2].\", \"Hu chocolate is sold in over 34,000 stores across the US, Canada, and the UK [P6].\", \"Hu chocolate uses the same unwavering ingredient guardrails it championed at its Hu Kitchen restaurant [P6].\", \"Hu has a commitment to sourcing ingredients on Fairtrade terms [P9].\", \"Hu chocolate is available at stores like Whole Foods, Target, Sprouts, and Kroger [P9].\"], \"unknowns\": [\"Whether Hu Kitchen has a formal creator or influencer program beyond the use of micro-influencers for specific campaigns.\"], \"marketing_gaps\": [], \"collaboration_opportunities\": [\"Collaborate on an Instagram post highlighting Hu's Fairtrade commitment and its impact on communities [P2].\"], \"instagram_post_idea\": {\"hook\": \"Discover how Hu Kitchen is making a difference with every bite [P2].\", \"concept\": \"A carousel post showcasing Hu's Fairtrade-certified ingredients and their impact on farmers and communities, paired with a call to action to explore their products at local stores [P9].\", \"why_it_fits\": \"This post aligns with Hu's values-driven mission and commitment to Fairtrade, while also promoting their product availability in major retailers [P2] [P9].\"}, \"email_subject\": \"Collaboration Opportunity: Highlighting Hu's Fairtrade Commitment on Instagram\", \"email_body\": \"Hi [Marketing Team],\\n\\nWe’re reaching out to propose a collaboration for an Instagram post that highlights Hu Kitchen’s commitment to Fairtrade-certified ingredients and their positive impact on communities. This post would align with your brand’s values-driven mission and could help reinforce your message of ethical sourcing and transparency.\\n\\nThe concept would be a carousel post showcasing Hu’s Fairtrade-certified ingredients and their impact on farmers and communities, paired with a call to action to explore their products at local stores. This would be a great way to engage your audience and reinforce your brand’s mission.\\n\\nWe’d love to hear your thoughts on this idea and discuss how we can bring it to life together.\\n\\nBest regards,\\n[Your Name]\", \"claims\": [{\"id\": \"C1\", \"kind\": \"fact\", \"statement\": \"Hu sources 100% of its cocoa, coconut sugar, cashews, vanilla, and quinoa on Fairtrade terms.\", \"passage_ids\": [\"P2\"], \"quote\": \"Hu sources 100% of its cocoa, coconut sugar, cashews, vanilla, and quinoa on Fairtrade terms.\"}, {\"id\": \"C2\", \"kind\": \"fact\", \"statement\": \"Hu is a values-driven brand that puts Humanity at the forefront of everything it does to help create a positive impact for all of its fellow humans from growers to eaters.\", \"passage_ids\": [\"P2\"], \"quote\": \"As a values driven brand, we put Humanity at the forefront of everything we do to help create a positive impact for all of our fellow humans from growers to eaters.\"}, {\"id\": \"C3\", \"kind\": \"fact\", \"statement\": \"Hu chocolate is sold in over 34,000 stores across the US, Canada, and the UK.\", \"passage_ids\": [\"P6\"], \"quote\": \"Today, Hu chocolate is sold in over 34,000 stores across the US, Canada, and the UK.\"}, {\"id\": \"C4\", \"kind\": \"fact\", \"statement\": \"Hu chocolate uses the same unwavering ingredient guardrails it championed at its Hu Kitchen restaurant.\", \"passage_ids\": [\"P6\"], \"quote\": \"Hu Chocolate uses the same unwavering ingredient guardrails we championed at our Hu Kitchen restaurant.\"}, {\"id\": \"C5\", \"kind\": \"fact\", \"statement\": \"Hu has a commitment to sourcing ingredients on Fairtrade terms.\", \"passage_ids\": [\"P9\"], \"quote\": \"Hu also has a commitment to sourcing ingredients on Fairtrade terms?\"}, {\"id\": \"C6\", \"kind\": \"fact\", \"statement\": \"Hu chocolate is available at stores like Whole Foods, Target, Sprouts, and Kroger.\", \"passage_ids\": [\"P9\"], \"quote\": \"Grab some Hu chocolate at your local Whole Foods, Target, Sprouts, or Kroger\"}, {\"id\": \"C7\", \"kind\": \"fact\", \"statement\": \"Hu Kitchen is an ideal example for examining consumer sentiment toward a clean eating-focused marketing approach.\", \"passage_ids\": [\"P8\"], \"quote\": \"Hu Kitchen is an ideal example for examining consumer sentiment toward a clean eating-focused marketing approach,\"}], \"citations\": [\"[P2]\", \"[P6]\", \"[P8]\", \"[P9]\"]}",
+  "completion_sha256": "d40cd1bf41b07b0ceb00d18702dc028f3877dd2c878fd1dfe7e6978013a9fa14",
+  "deterministic": {
+    "errors": [],
+    "warnings": []
+  },
+  "created_at": "2026-11-22T22:10:05+00:00",
+  "approved": false
+}

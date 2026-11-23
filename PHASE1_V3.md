@@ -97,6 +97,21 @@ python phase1v3.py review --company-id billie --reviewer "Your Name"
 
 The review screen shows the company identity and every selected passage in full, with its source URL, document identity, statement type, dates and character offsets. It also shows the rendered label, each claim with its quote, the deterministic errors and the audit verdict. **Enter skips without recording anything.** Only typing `approve` or `reject` records a decision, and `approve` is refused unless the current audit passed.
 
+### 4b. Automatic acceptance at groundedness >= 0.7 (owner policy, 22 Nov 2026; not a human approval)
+
+```bash
+python phase1v3.py auto-accept --company-id graza     # round 1: judge and prune
+JUDGE_MODEL=mlx-community/gemma-3-12b-it-4bit python phase1v3.py verify --company-id graza   # re-verify the pruned label
+python phase1v3.py auto-accept --company-id graza     # round 2: write data/v3_pilot/auto_accept/graza.json
+```
+
+- groundedness = supported claims / all claims. A claim is supported only if no deterministic error names it, the reviewer's response for it is valid, and its verdict is `supported`.
+- Below 0.7, wrong company (`identity_ok` not true), an abstention, placeholder unknowns, or no reviewer output: rejected (`auto_accept/<id>.rejected.json` records why).
+- Otherwise every unsupported claim is removed, with every sentence, list item and Instagram-idea sentence that cites it. If that empties `brand_summary`, the email, an Instagram field or the opportunities, the label is rejected. The pruned draft must pass `check_draft`; it is written as a new label (`generator.source = model_then_auto_pruned`, original kept in `superseded/auto07-original/`) and must be re-verified. Only one pruning round is allowed.
+- The record is bound to the packet, prompt, completion and audit hashes, says `human_reviewed: false`, and lists the removed claims. Export accepts it as a second, weaker basis and marks each entry's `provenance.acceptance` as `human_approval` or `auto_threshold_0.7`.
+
+A record with a human approval is never touched by `auto-accept`.
+
 ### 5. Export a versioned dataset
 
 ```bash
@@ -107,10 +122,11 @@ python phase1v3.py status
 Exports go to `data/v3_datasets/<version>/`, and an existing version is never overwritten. A record is included only if all of the following hold:
 
 - packet provenance validates against the store;
+- the packet was built with the current registry, or with an older one in which this company's identity entry is unchanged;
 - the label matches its packet and prompt hashes;
 - deterministic checks pass;
 - the current audit status is `pass`;
-- the human approval is current;
+- the human approval is current, or (marked separately) a current `auto_threshold_0.7` record exists;
 - the company has a split assignment;
 - no possible test-split leakage was found.
 

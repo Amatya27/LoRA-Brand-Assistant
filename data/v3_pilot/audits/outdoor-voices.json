@@ -1,0 +1,97 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "outdoor-voices",
+  "bound_to": {
+    "packet_sha256": "fb3e615c99b46c771dbad20e22c50265924457d570787815464636572221af43",
+    "prompt_sha256": "c3012daeb989515469b795c2dcc033d396d065cce0c00bb2b6ab430ee33806f7",
+    "completion_sha256": "c64cc469f7e3f7b44acf62970d4e08d6cee4e480e3755cc12ea5ce7afed596cf",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": []
+  },
+  "raw_response_sha256": "d70910fc64196a92d3cb84f9ff50e97dcf188c9028778ea0ddf779694c6e275f",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Outdoor Voices was founded in 2013 by Ty Haney.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that Outdoor Voices was founded in 2013 by Ty Haney.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"We make Technical Apparel for Recreation At Outdoor Voices, we make Technical Apparel for Recreation, designing the uniform for Doing Things with materials made for movement.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that Outdoor Voices makes Technical Apparel for Recreation.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Outdoor Voices collaborates with a wide range of influencers, from fitness enthusiasts to lifestyle bloggers, to promote its products.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that Outdoor Voices collaborates with influencers.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"Outdoor Voices has a distinct style that can’t be mistaken for any other outdoor brand.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that Outdoor Voices has a distinct style.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Our mission is to \\\"Get The World Moving,\\\" celebrating sweat and maximizing happiness through movement because Endorphins Make You Happy.\",\n      \"issues\": [],\n      \"reason\": \"The passage states Outdoor Voices' mission is to 'Get The World Moving'.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"Yet, even in its brick-and-mortar locations, Outdoor Voices chose an uncommon path, positioning them as physical touchpoints for the OV community, gathering spots where clients can socialize and “do things” rather than just places to shop.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes physical locations as gathering spots where clients socialize and 'do things'.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Outdoor Voices was founded in 2013 by Ty Haney.",
+        "issues": [],
+        "reason": "The passage explicitly states that Outdoor Voices was founded in 2013 by Ty Haney."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "We make Technical Apparel for Recreation At Outdoor Voices, we make Technical Apparel for Recreation, designing the uniform for Doing Things with materials made for movement.",
+        "issues": [],
+        "reason": "The passage directly states that Outdoor Voices makes Technical Apparel for Recreation."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Outdoor Voices collaborates with a wide range of influencers, from fitness enthusiasts to lifestyle bloggers, to promote its products.",
+        "issues": [],
+        "reason": "The passage explicitly states that Outdoor Voices collaborates with influencers."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "Outdoor Voices has a distinct style that can’t be mistaken for any other outdoor brand.",
+        "issues": [],
+        "reason": "The passage directly states that Outdoor Voices has a distinct style."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Our mission is to \"Get The World Moving,\" celebrating sweat and maximizing happiness through movement because Endorphins Make You Happy.",
+        "issues": [],
+        "reason": "The passage states Outdoor Voices' mission is to 'Get The World Moving'."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "Yet, even in its brick-and-mortar locations, Outdoor Voices chose an uncommon path, positioning them as physical touchpoints for the OV community, gathering spots where clients can socialize and “do things” rather than just places to shop.",
+        "issues": [],
+        "reason": "The passage describes physical locations as gathering spots where clients socialize and 'do things'."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-22T23:34:07+00:00",
+  "audit_sha256": "3daace0884e7a513fb773153780ad834e4f57cebbc8a7970310afc6b982ce7a2",
+  "dismissed_reviewer_flags": []
+}

@@ -1,0 +1,97 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "stumptown-coffee",
+  "bound_to": {
+    "packet_sha256": "546ce43823e5e75d054f71f5ab29323f092a352f38b07d41bc95a8b64116acf6",
+    "prompt_sha256": "a5e53720ebdf975c6d0a45abc86f2dd4e0be8ecaf21a6b4a1f009ff701e008b7",
+    "completion_sha256": "6967b312cce9da050743e4a60d6de8a02de9d203ce1dd25a1850bed8a4a51297",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": []
+  },
+  "raw_response_sha256": "b608ea2ba898c692ba005461f464f6bb99989812e1f07ebe3fccfa97efbe430e",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Stumptown Coffee Roasters is a specialty coffee roaster and retailer founded in Portland, Oregon, in 1999.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that Stumptown is a specialty coffee roaster and retailer founded in Portland, Oregon, in 1999.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Full transparency — we work with producers we know, so both sides of the supply chain stay visible to each other.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Stumptown works with producers they know to maintain visibility in the supply chain.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"2003 FIRST DIRECT TRADE RELATIONSHIP First Direct trade sourcing relationship with the Aguirre Family's El Injerto farm in Huehuetenango, Guatemala\",\n      \"issues\": [],\n      \"reason\": \"The passage mentions a direct trade relationship with the Aguirre Family's El Injerto farm in Guatemala.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"As our business continues to grow and evolve, so will our Direct Trade model to continue our mission of making the most positive impact where we can.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that their Direct Trade model is part of their mission to make a positive impact.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"Discover Huye Mountain single origin coffee from Rwanda and the story of producer David Rubanzangabo. Explore how quality, community, and innovation shaped one of Stumptown’s longest-standing partnerships.\",\n      \"issues\": [],\n      \"reason\": \"The passage mentions a partnership with David Rubanzangabo in Rwanda, highlighting quality, community, and innovation.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"Heritage and specificity — the Hair Bender blend, Portland origin, and direct trade sourcing give copy concrete details that generic coffee brands cannot match.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Stumptown's ads are effective due to their heritage and specificity.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Stumptown Coffee Roasters is a specialty coffee roaster and retailer founded in Portland, Oregon, in 1999.",
+        "issues": [],
+        "reason": "The passage explicitly states that Stumptown is a specialty coffee roaster and retailer founded in Portland, Oregon, in 1999."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Full transparency — we work with producers we know, so both sides of the supply chain stay visible to each other.",
+        "issues": [],
+        "reason": "The passage states that Stumptown works with producers they know to maintain visibility in the supply chain."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "2003 FIRST DIRECT TRADE RELATIONSHIP First Direct trade sourcing relationship with the Aguirre Family's El Injerto farm in Huehuetenango, Guatemala",
+        "issues": [],
+        "reason": "The passage mentions a direct trade relationship with the Aguirre Family's El Injerto farm in Guatemala."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "As our business continues to grow and evolve, so will our Direct Trade model to continue our mission of making the most positive impact where we can.",
+        "issues": [],
+        "reason": "The passage states that their Direct Trade model is part of their mission to make a positive impact."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "Discover Huye Mountain single origin coffee from Rwanda and the story of producer David Rubanzangabo. Explore how quality, community, and innovation shaped one of Stumptown’s longest-standing partnerships.",
+        "issues": [],
+        "reason": "The passage mentions a partnership with David Rubanzangabo in Rwanda, highlighting quality, community, and innovation."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "Heritage and specificity — the Hair Bender blend, Portland origin, and direct trade sourcing give copy concrete details that generic coffee brands cannot match.",
+        "issues": [],
+        "reason": "The passage states that Stumptown's ads are effective due to their heritage and specificity."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-22T23:35:19+00:00",
+  "audit_sha256": "72f87fd48c1422c54a2dfad2a9672cc177a1a9119246f28d17dd1c6f1afdc0c4",
+  "dismissed_reviewer_flags": []
+}

@@ -1,0 +1,94 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "bones-coffee",
+  "bound_to": {
+    "packet_sha256": "9c87dae136c352cbc5e29fba931e88653093c9a8e730a0fa7cd2e816bb148814",
+    "prompt_sha256": "eae026c88cca6dfc0911515702f05ca0d1911db1ec801c00f2ca3b4a1b2caf55",
+    "completion_sha256": "cbdfa2b4e5f2cf0d8a9e3890346f7d23eda076cf23fc27c8595d0ad9ea7631b0",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [
+      "claim C2: quote does not occur in cited passage(s) ['P1', 'P5']"
+    ],
+    "warnings": []
+  },
+  "raw_response_sha256": "1e057a6e1b37a4c39a5194f255ee858b199b38cb4e090f9e203ed494829fe9e9",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"We started Bones Coffee Company as a family with a passion for coffee and a mission to inject some flavor into an otherwise boring landscape of coffee companies.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states the company creates flavored coffee.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\",\n        \"P5\"\n      ],\n      \"quote\": \"This one is definitely in my top 3 favorite flavors now. From the minute I opened the bag it smelled just like I opened a bag of freshly made S’mores! Tastes just like it smells, can’t beat it. If you haven’t tried this flavor yet do yourself a favor and grab a bag! Evan D. Rated 5 out of 5 The front of a 12 ounce bag of Bones Coffee Company S’morey Time coffee.\",\n      \"issues\": [],\n      \"reason\": \"The passage mentions S'morey Time as a flavor, and P5 lists other flavors like Strawberry Cheesecake and Maple Bacon.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"The Nightmare Before Christmas Collector's Box. There are five four ounce bags of coffee scattered around and they are named Ruff Weather, Mudslide Boogie, Santa Jack, The Pumpkin King, and Frog's Breath. The inside of the box has characters from The Nightmare Before Christmas on it.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly describes the Nightmare Before Christmas Collector's Box.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"Join the Raffle Bones Coffee Company logo, showing a skeleton leaning back and drinking a cup of coffee, surrounded by greenery 79 Mid Cape Terrace STE 8, Cape Coral, FL 33991\",\n      \"issues\": [],\n      \"reason\": \"The passage mentions a raffle, indicating a community event.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [\n    {\n      \"field\": \"email_body\",\n      \"text\": \"We believe your themed coffee boxes, like The Nightmare Before Christmas Collector's Box [C3], would make a fantastic Instagram post.\"\n    }\n  ],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "We started Bones Coffee Company as a family with a passion for coffee and a mission to inject some flavor into an otherwise boring landscape of coffee companies.",
+        "issues": [],
+        "reason": "The passage explicitly states the company creates flavored coffee."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1",
+          "P5"
+        ],
+        "quote": "This one is definitely in my top 3 favorite flavors now. From the minute I opened the bag it smelled just like I opened a bag of freshly made S’mores! Tastes just like it smells, can’t beat it. If you haven’t tried this flavor yet do yourself a favor and grab a bag! Evan D. Rated 5 out of 5 The front of a 12 ounce bag of Bones Coffee Company S’morey Time coffee.",
+        "issues": [],
+        "reason": "The passage mentions S'morey Time as a flavor, and P5 lists other flavors like Strawberry Cheesecake and Maple Bacon."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "The Nightmare Before Christmas Collector's Box. There are five four ounce bags of coffee scattered around and they are named Ruff Weather, Mudslide Boogie, Santa Jack, The Pumpkin King, and Frog's Breath. The inside of the box has characters from The Nightmare Before Christmas on it.",
+        "issues": [],
+        "reason": "The passage directly describes the Nightmare Before Christmas Collector's Box."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "Join the Raffle Bones Coffee Company logo, showing a skeleton leaning back and drinking a cup of coffee, surrounded by greenery 79 Mid Cape Terrace STE 8, Cape Coral, FL 33991",
+        "issues": [],
+        "reason": "The passage mentions a raffle, indicating a community event."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [
+    "C2: reviewer quote does not occur in the referenced passage(s)"
+  ],
+  "status": "fail",
+  "reasons": [
+    "1 deterministic check error(s)",
+    "reviewer response also invalid: C2: reviewer quote does not occur in the referenced passage(s)"
+  ],
+  "created_at": "2026-11-22T23:38:48+00:00",
+  "audit_sha256": "12c34af1eae4d0afbf7f88dfc5dadb98c05c19f6111dae5128c8810bf260f9b6",
+  "dismissed_reviewer_flags": [
+    {
+      "flag": {
+        "field": "email_body",
+        "text": "We believe your themed coffee boxes, like The Nightmare Before Christmas Collector's Box [C3], would make a fantastic Instagram post."
+      },
+      "reason": "sentence in email_body carries a claim marker; judged via its claim",
+      "matched_sentence": "we believe your themed coffee boxes like the nightmare before christmas collector's box would make a fantastic instagram post"
+    }
+  ]
+}

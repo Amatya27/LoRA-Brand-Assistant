@@ -1,0 +1,207 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "avocado-green-mattress",
+  "bound_to": {
+    "packet_sha256": "f2755f78396322838fdc9a120c0b032b7202eb154efaec8d93b4db5b9b1af6c9",
+    "prompt_sha256": "dcb3e8250f2b94a7a323c445c3b3fd0a96c1a98c81ff2893ef556d41e666bc65",
+    "completion_sha256": "96c6d084fb5fc4528f392790aa4ecbcc2dff157c732bef8ab878047204341552",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": []
+  },
+  "raw_response_sha256": "2041ba189fd44119efb6b55d38ede1dec82f354835e381190094eb216577c57a",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Avocado Green Mattress Partners with Sika Health to Simplify Paying with HSA/FSA Funds for Organic, Non-Toxic Sleep Products\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states Avocado Green Mattress partners with Sika Health.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Avocado Green Mattress and Coyuchi Collaborate to Elevate Organic Living\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Avocado Green Mattress collaborates with Coyuchi.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Avocado Green Mattress and Lunya Partner to Celebrate the Ritual of Slowing Down Together with Organic Sleep Essentials\",\n      \"issues\": [],\n      \"reason\": \"The passage states Avocado Green Mattress partners with Lunya.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Avocado Green Mattress Achieves 88% Landfill Diversion Rate Across Los Angeles Manufacturing Facilities\",\n      \"issues\": [],\n      \"reason\": \"The passage states Avocado Green Mattress achieves an 88% landfill diversion rate.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Avocado Achieves Unprecedented OEKO-TEX® STANDARD 100 Certification Across Every Mattress, Crib Mattress, Pillow, and Mattress Topper\",\n      \"issues\": [],\n      \"reason\": \"The passage states Avocado achieves OEKO-TEX® STANDARD 100 certification.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Avocado Green Mattress Named a Top Pick in The New York Times' Wirecutter’s Best Latex Mattresses of 2026\",\n      \"issues\": [],\n      \"reason\": \"The passage states Avocado Green Mattress is named a top pick in Wirecutter.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"As of January 2026, Avocado employs 698 people across manufacturing, retail, and corporate operations.\",\n      \"issues\": [],\n      \"reason\": \"The passage states Avocado employs 698 people.\"\n    },\n    {\n      \"claim_id\": \"C8\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"Our mission is to be the most trusted source for certified organic mattresses, pillows, and bedding at accessible prices\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Avocado's mission.\"\n    },\n    {\n      \"claim_id\": \"C9\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"Avocado has been a Certified B Corporation since 2014, with a current Impact Score of 113.9\",\n      \"issues\": [],\n      \"reason\": \"The passage states Avocado is a Certified B Corporation with a specific Impact Score.\"\n    },\n    {\n      \"claim_id\": \"C10\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"We are the world’s only Climate Neutral Certified® mattress and bedding brand\",\n      \"issues\": [],\n      \"reason\": \"The passage states Avocado is the world’s only Climate Neutral Certified brand.\"\n    },\n    {\n      \"claim_id\": \"C11\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"We donate one percent of all revenues to environmental nonprofits through our membership with 1% For The Planet\",\n      \"issues\": [],\n      \"reason\": \"The passage states Avocado donates one percent of revenues.\"\n    },\n    {\n      \"claim_id\": \"C12\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"Our materials include GOLS certified organic latex, GOTS certified organic wool, GOTS certified organic cotton, and GOTS certified organic kapok fiber.\",\n      \"issues\": [],\n      \"reason\": \"The passage lists materials that are certified organic by GOTS.\"\n    },\n    {\n      \"claim_id\": \"C13\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"Our factory and wood shop in Los Angeles are GOTS organic and FSC® certified — and powered entirely by renewable energy.\",\n      \"issues\": [],\n      \"reason\": \"The passage states Avocado's factory and wood shop are powered by renewable energy.\"\n    },\n    {\n      \"claim_id\": \"C14\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P9\"\n      ],\n      \"quote\": \"We are legally required to consider the impact of our decisions on our workers, customers, suppliers, community, and the environment.\",\n      \"issues\": [],\n      \"reason\": \"The passage states B Corporations are legally required to consider impact.\"\n    },\n    {\n      \"claim_id\": \"C15\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P10\"\n      ],\n      \"quote\": \"We’re a certified B Corp and Climate Neutral certified.\",\n      \"issues\": [],\n      \"reason\": \"The passage states Avocado is a certified B Corp and Climate Neutral certified.\"\n    },\n    {\n      \"claim_id\": \"C16\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P10\"\n      ],\n      \"quote\": \"Our products are organic certified by GOTS.\",\n      \"issues\": [],\n      \"reason\": \"The passage states Avocado's products are organic certified by GOTS.\"\n    },\n    {\n      \"claim_id\": \"C17\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P10\"\n      ],\n      \"quote\": \"Our factories are powered by renewable energy and are approaching zero waste.\",\n      \"issues\": [],\n      \"reason\": \"The passage states Avocado's factories are approaching zero waste.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Avocado Green Mattress Partners with Sika Health to Simplify Paying with HSA/FSA Funds for Organic, Non-Toxic Sleep Products",
+        "issues": [],
+        "reason": "The passage explicitly states Avocado Green Mattress partners with Sika Health."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Avocado Green Mattress and Coyuchi Collaborate to Elevate Organic Living",
+        "issues": [],
+        "reason": "The passage directly states Avocado Green Mattress collaborates with Coyuchi."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Avocado Green Mattress and Lunya Partner to Celebrate the Ritual of Slowing Down Together with Organic Sleep Essentials",
+        "issues": [],
+        "reason": "The passage states Avocado Green Mattress partners with Lunya."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Avocado Green Mattress Achieves 88% Landfill Diversion Rate Across Los Angeles Manufacturing Facilities",
+        "issues": [],
+        "reason": "The passage states Avocado Green Mattress achieves an 88% landfill diversion rate."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Avocado Achieves Unprecedented OEKO-TEX® STANDARD 100 Certification Across Every Mattress, Crib Mattress, Pillow, and Mattress Topper",
+        "issues": [],
+        "reason": "The passage states Avocado achieves OEKO-TEX® STANDARD 100 certification."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Avocado Green Mattress Named a Top Pick in The New York Times' Wirecutter’s Best Latex Mattresses of 2026",
+        "issues": [],
+        "reason": "The passage states Avocado Green Mattress is named a top pick in Wirecutter."
+      },
+      {
+        "claim_id": "C7",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "As of January 2026, Avocado employs 698 people across manufacturing, retail, and corporate operations.",
+        "issues": [],
+        "reason": "The passage states Avocado employs 698 people."
+      },
+      {
+        "claim_id": "C8",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "Our mission is to be the most trusted source for certified organic mattresses, pillows, and bedding at accessible prices",
+        "issues": [],
+        "reason": "The passage directly states Avocado's mission."
+      },
+      {
+        "claim_id": "C9",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "Avocado has been a Certified B Corporation since 2014, with a current Impact Score of 113.9",
+        "issues": [],
+        "reason": "The passage states Avocado is a Certified B Corporation with a specific Impact Score."
+      },
+      {
+        "claim_id": "C10",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "We are the world’s only Climate Neutral Certified® mattress and bedding brand",
+        "issues": [],
+        "reason": "The passage states Avocado is the world’s only Climate Neutral Certified brand."
+      },
+      {
+        "claim_id": "C11",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "We donate one percent of all revenues to environmental nonprofits through our membership with 1% For The Planet",
+        "issues": [],
+        "reason": "The passage states Avocado donates one percent of revenues."
+      },
+      {
+        "claim_id": "C12",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "Our materials include GOLS certified organic latex, GOTS certified organic wool, GOTS certified organic cotton, and GOTS certified organic kapok fiber.",
+        "issues": [],
+        "reason": "The passage lists materials that are certified organic by GOTS."
+      },
+      {
+        "claim_id": "C13",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "Our factory and wood shop in Los Angeles are GOTS organic and FSC® certified — and powered entirely by renewable energy.",
+        "issues": [],
+        "reason": "The passage states Avocado's factory and wood shop are powered by renewable energy."
+      },
+      {
+        "claim_id": "C14",
+        "verdict": "supported",
+        "passage_ids": [
+          "P9"
+        ],
+        "quote": "We are legally required to consider the impact of our decisions on our workers, customers, suppliers, community, and the environment.",
+        "issues": [],
+        "reason": "The passage states B Corporations are legally required to consider impact."
+      },
+      {
+        "claim_id": "C15",
+        "verdict": "supported",
+        "passage_ids": [
+          "P10"
+        ],
+        "quote": "We’re a certified B Corp and Climate Neutral certified.",
+        "issues": [],
+        "reason": "The passage states Avocado is a certified B Corp and Climate Neutral certified."
+      },
+      {
+        "claim_id": "C16",
+        "verdict": "supported",
+        "passage_ids": [
+          "P10"
+        ],
+        "quote": "Our products are organic certified by GOTS.",
+        "issues": [],
+        "reason": "The passage states Avocado's products are organic certified by GOTS."
+      },
+      {
+        "claim_id": "C17",
+        "verdict": "supported",
+        "passage_ids": [
+          "P10"
+        ],
+        "quote": "Our factories are powered by renewable energy and are approaching zero waste.",
+        "issues": [],
+        "reason": "The passage states Avocado's factories are approaching zero waste."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-22T23:46:18+00:00",
+  "audit_sha256": "97b665bbafdffb4a8c956eb098de75c8dc812804f405175f513c46e2fdcc9431",
+  "dismissed_reviewer_flags": []
+}

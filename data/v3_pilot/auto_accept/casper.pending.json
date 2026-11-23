@@ -1,0 +1,24 @@
+{
+  "groundedness": 0.8333,
+  "claims_total": 6,
+  "claims_supported": 5,
+  "claim_support": {
+    "C1": "supported",
+    "C2": "supported",
+    "C3": "supported",
+    "C4": "deterministic: claim C4: quote does not occur in cited passage(s) ['P4']",
+    "C5": "supported",
+    "C6": "supported"
+  },
+  "reasons": [],
+  "removed_claims": [
+    "C4"
+  ],
+  "removed_claim_reasons": {
+    "C4": "deterministic: claim C4: quote does not occur in cited passage(s) ['P4']"
+  },
+  "decision": "prune",
+  "completion_sha256": "50bc6b8f0d2ce24a43d2a3da774ecc81b85de2a9f58c2a8110d8a92486c32c1c",
+  "audit_sha256": "3205f27d7645c9a128916cf6cfa580e39be8c8751388e844ae03acee6d5fecf1",
+  "pruned_completion_sha256": "a205f91c5e96ac4c833432188e665bdffc5d951128def9948a36035cba4685ab"
+}

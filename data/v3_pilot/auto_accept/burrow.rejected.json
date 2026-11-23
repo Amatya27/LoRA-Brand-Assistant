@@ -1,0 +1,21 @@
+{
+  "company_id": "burrow",
+  "acceptance_basis": "auto_threshold_0.7",
+  "decision": "reject",
+  "reasons": [
+    "groundedness 0.67 < 0.7"
+  ],
+  "groundedness": 0.6667,
+  "claim_support": {
+    "C1": "supported",
+    "C2": "supported",
+    "C3": "deterministic: claim C3: cites P5, a author_recommendation passage, as support for a factual claim",
+    "C4": "supported",
+    "C5": "deterministic: claim C5: cites P5, a author_recommendation passage, as support for a factual claim",
+    "C6": "supported"
+  },
+  "removed_claims": [],
+  "label_completion_sha256": "2b1dcd074738ecc46cd31b1ea307eca8ceb9c14292ece0e7522655a9e4a90680",
+  "audit_sha256": "22de351574470220906ebe59f77bc66de1c896ababade4644aa04f8ff6e1fdc6",
+  "created_at": "2026-11-23T00:28:45+00:00"
+}

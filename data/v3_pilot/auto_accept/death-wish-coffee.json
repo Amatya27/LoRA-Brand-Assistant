@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "death-wish-coffee",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "ee99bedd03cc7099a3bf76963129d182403a6090a8cf2679c2c5e8ccfe50807a",
+    "prompt_sha256": "94a90c9ad1f8e7a66797f33ad925d1f89dec9441aa96862fc1bea12a2f404dbe",
+    "completion_sha256": "b674b9103b31613879526543608770da658e27b3ca2e58750d4fb1b1e28e2541",
+    "audit_sha256": "0310dcb374f8df7aa4acd6a1e7986b543b4569c9cd5fb870d65cca2030a3b771"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 6,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:45+00:00",
+  "record_sha256": "d0f05162de7b7c622cf0803b3a535437e3e44dd8dfacfc0d2ed658932183edcf"
+}

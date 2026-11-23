@@ -1,0 +1,140 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "buck-mason",
+  "bound_to": {
+    "packet_sha256": "808652288801202b314430904cbed24dfb12a8f2bd85806e52d71a422706f68f",
+    "prompt_sha256": "4b7b43448fb94bb23508f1e79978f9648a1fd202a6e673165a28be4b53c0d5f1",
+    "completion_sha256": "7e06c48e5151d8eb6c104f17ad86a939fbeeb2970a9d2fc521bfb1f43cb795cb",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": [
+      "claim C4: not referenced by any field"
+    ]
+  },
+  "raw_response_sha256": "e42a815c07a0915c0a7a85258ccf0ba8dda9ecaf1b4640a7d7ddf7b3af5aa8d4",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"The brand has expanded its physical retail footprint to over 30 stores across the United States\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states Buck Mason has over 30 stores.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Buck Mason effectively blends modern and traditional marketing techniques\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Buck Mason blends modern and traditional marketing techniques.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"Buck Mason focuses on Facebook, Instagram, and email, with direct mail to existing customers as an unusual but effective retention channel\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Buck Mason uses Facebook, Instagram, and email.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"Buck Mason's main competitors include Bonobos, Marine Layer, and Todd Snyder in the premium American menswear segment\",\n      \"issues\": [],\n      \"reason\": \"The passage lists Bonobos, Marine Layer, and Todd Snyder as Buck Mason's competitors.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"Heritage-masculine visual aesthetics combined with a subscription replenishment model allows Buck Mason to spend more per acquisition and still outperform single-purchase competitor unit economics\",\n      \"issues\": [],\n      \"reason\": \"The passage states that these aesthetics and a model contribute to effective ads.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"the brand created a Custom Audience of people who had made an online purchase in 2016\",\n      \"issues\": [],\n      \"reason\": \"The passage states Buck Mason created a Custom Audience of people who had made an online purchase in 2016.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"targeted its ad in Stories to a 1% lookalike audience based on this Custom Audience\",\n      \"issues\": [],\n      \"reason\": \"The passage states Buck Mason targeted ads to a 1% lookalike audience.\"\n    },\n    {\n      \"claim_id\": \"C8\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"targeted a broad audience of men aged 25–54 living in the US\",\n      \"issues\": [],\n      \"reason\": \"The passage states Buck Mason targeted men aged 25-54 in the US.\"\n    },\n    {\n      \"claim_id\": \"C9\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\",\n        \"P4\"\n      ],\n      \"quote\": \"Shop The Fall Collection Shop Outerwear Explore the Fall Campaign\",\n      \"issues\": [],\n      \"reason\": \"The passage mentions the Fall Collection and campaign.\"\n    },\n    {\n      \"claim_id\": \"C10\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P9\"\n      ],\n      \"quote\": \"a relaxed-yet-familiar, nostalgic all-American look eased up our way with rolled sleeves, casual layering, and an air of nonchalance\",\n      \"issues\": [],\n      \"reason\": \"The passage describes the campaign as a relaxed, nostalgic, all-American look.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "The brand has expanded its physical retail footprint to over 30 stores across the United States",
+        "issues": [],
+        "reason": "The passage explicitly states Buck Mason has over 30 stores."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Buck Mason effectively blends modern and traditional marketing techniques",
+        "issues": [],
+        "reason": "The passage directly states Buck Mason blends modern and traditional marketing techniques."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "Buck Mason focuses on Facebook, Instagram, and email, with direct mail to existing customers as an unusual but effective retention channel",
+        "issues": [],
+        "reason": "The passage directly states Buck Mason uses Facebook, Instagram, and email."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "Buck Mason's main competitors include Bonobos, Marine Layer, and Todd Snyder in the premium American menswear segment",
+        "issues": [],
+        "reason": "The passage lists Bonobos, Marine Layer, and Todd Snyder as Buck Mason's competitors."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "Heritage-masculine visual aesthetics combined with a subscription replenishment model allows Buck Mason to spend more per acquisition and still outperform single-purchase competitor unit economics",
+        "issues": [],
+        "reason": "The passage states that these aesthetics and a model contribute to effective ads."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "the brand created a Custom Audience of people who had made an online purchase in 2016",
+        "issues": [],
+        "reason": "The passage states Buck Mason created a Custom Audience of people who had made an online purchase in 2016."
+      },
+      {
+        "claim_id": "C7",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "targeted its ad in Stories to a 1% lookalike audience based on this Custom Audience",
+        "issues": [],
+        "reason": "The passage states Buck Mason targeted ads to a 1% lookalike audience."
+      },
+      {
+        "claim_id": "C8",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "targeted a broad audience of men aged 25–54 living in the US",
+        "issues": [],
+        "reason": "The passage states Buck Mason targeted men aged 25-54 in the US."
+      },
+      {
+        "claim_id": "C9",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2",
+          "P4"
+        ],
+        "quote": "Shop The Fall Collection Shop Outerwear Explore the Fall Campaign",
+        "issues": [],
+        "reason": "The passage mentions the Fall Collection and campaign."
+      },
+      {
+        "claim_id": "C10",
+        "verdict": "supported",
+        "passage_ids": [
+          "P9"
+        ],
+        "quote": "a relaxed-yet-familiar, nostalgic all-American look eased up our way with rolled sleeves, casual layering, and an air of nonchalance",
+        "issues": [],
+        "reason": "The passage describes the campaign as a relaxed, nostalgic, all-American look."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-22T23:51:19+00:00",
+  "audit_sha256": "b27d215d3bd68f5c244b4b0606ac489c5fc88526aa387484b9af90541f336102",
+  "dismissed_reviewer_flags": []
+}

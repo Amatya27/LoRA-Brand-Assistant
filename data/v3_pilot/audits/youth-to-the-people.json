@@ -1,0 +1,132 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "youth-to-the-people",
+  "bound_to": {
+    "packet_sha256": "af76c23b4844edcc2ec32b7e0f4ec9c5c77c22dd402abdbc81afe06ca63b0cc1",
+    "prompt_sha256": "9d671fcf45feccde51f561c0b4bfe079d0444a6fb4e4a05c624f5d5eb3e1fd0e",
+    "completion_sha256": "73adb71fabcd100e85e1bd27f7a77e73cc8204b72126567c7c5e1a02e82af083",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": [
+      "claim C6: not referenced by any field"
+    ]
+  },
+  "raw_response_sha256": "706070a7798dc063fb97ee2bbdb7ee6ffc561a321ab214cb198e82be653dfe14",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Youth To The People was built to not only make positive change in skin, but to inspire the individual to reach a little higher, dream a little bigger, and give back to others.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states this claim about the company.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"We are committed to making the most responsible and sustainable decisions for our products and the planet, every single day.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states this commitment.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"Our formula philosophy is a partnership between the latest innovation in skincare technology combined with nutrient-rich superfood plant extracts.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes the company's formula philosophy.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"Every action, no matter how small, makes a difference.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states this sentiment.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"Join The #YTTPEmpties Challenge and show us + the community how you rethink your impact for a chance to win free YTTP product favorites.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes this challenge.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P9\"\n      ],\n      \"quote\": \"Youth to the People’s incorporation of scientific and natural ingredients isn’t unique in the beauty industry or even within L’Oréal’s portfolio.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms this statement about the company.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"Youth To The People was built to not only make positive change in skin, but to inspire the individual to reach a little higher, dream a little bigger, and give back to others\"\n    },\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"The brand is committed to making the most responsible and sustainable decisions for our products and the planet, every single day\"\n    },\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"Our formula philosophy is a partnership between the latest innovation in skincare technology combined with nutrient-rich superfood plant extracts\"\n    },\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"Every action, no matter how small, makes a difference\"\n    }\n  ],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Youth To The People was built to not only make positive change in skin, but to inspire the individual to reach a little higher, dream a little bigger, and give back to others.",
+        "issues": [],
+        "reason": "The passage directly states this claim about the company."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "We are committed to making the most responsible and sustainable decisions for our products and the planet, every single day.",
+        "issues": [],
+        "reason": "The passage explicitly states this commitment."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "Our formula philosophy is a partnership between the latest innovation in skincare technology combined with nutrient-rich superfood plant extracts.",
+        "issues": [],
+        "reason": "The passage describes the company's formula philosophy."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "Every action, no matter how small, makes a difference.",
+        "issues": [],
+        "reason": "The passage directly states this sentiment."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "Join The #YTTPEmpties Challenge and show us + the community how you rethink your impact for a chance to win free YTTP product favorites.",
+        "issues": [],
+        "reason": "The passage describes this challenge."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P9"
+        ],
+        "quote": "Youth to the People’s incorporation of scientific and natural ingredients isn’t unique in the beauty industry or even within L’Oréal’s portfolio.",
+        "issues": [],
+        "reason": "The passage confirms this statement about the company."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-23T00:28:10+00:00",
+  "audit_sha256": "849af7daa4a5c7aa44c6d1fe53450fdb00e3b6fdc6bea46663ac89070ca29875",
+  "dismissed_reviewer_flags": [
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "Youth To The People was built to not only make positive change in skin, but to inspire the individual to reach a little higher, dream a little bigger, and give back to others"
+      },
+      "reason": "sentence in brand_summary carries a claim marker; judged via its claim",
+      "matched_sentence": "youth to the people was built to not only make positive change in skin but to inspire the individual to reach a little higher dream a little bigger and give back to others"
+    },
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "The brand is committed to making the most responsible and sustainable decisions for our products and the planet, every single day"
+      },
+      "reason": "sentence in brand_summary carries a claim marker; judged via its claim",
+      "matched_sentence": "the brand is committed to making the most responsible and sustainable decisions for our products and the planet every single day"
+    },
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "Our formula philosophy is a partnership between the latest innovation in skincare technology combined with nutrient-rich superfood plant extracts"
+      },
+      "reason": "sentence in brand_summary carries a claim marker; judged via its claim",
+      "matched_sentence": "our formula philosophy is a partnership between the latest innovation in skincare technology combined with nutrient rich superfood plant extracts"
+    },
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "Every action, no matter how small, makes a difference"
+      },
+      "reason": "sentence in brand_summary carries a claim marker; judged via its claim",
+      "matched_sentence": "every action no matter how small makes a difference"
+    }
+  ]
+}

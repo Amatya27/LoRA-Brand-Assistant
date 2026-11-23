@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "momofuku-goods",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "1176b733baca73db709d72de9425f0f97fc99e0c1e8f7ccf4fea471f5fa6b3a0",
+    "prompt_sha256": "ed03d17b18cad4fe3f342409008a2c4aa03a99692f744eef090c6760be6aaa19",
+    "completion_sha256": "121c285c6ca12c17feb98de5b5194b5a15cd838ab52df2b04f9a97bbf999d285",
+    "audit_sha256": "eb365eca678f2b1dc2cab5c557ec24880667ff33bdb1cf1eca52e4cb5c5fe2fa"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 6,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:46+00:00",
+  "record_sha256": "d98f8d709450dfebd5bd15fdfb59751f834e4a6bb9316397c89bf75274ab403e"
+}

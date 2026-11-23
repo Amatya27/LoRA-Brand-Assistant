@@ -1,0 +1,1725 @@
+{
+  "schema_version": "brandpilot.packet.v3",
+  "company": {
+    "company_id": "thursday-boots",
+    "display_name": "Thursday Boot Company",
+    "legacy_name": "Thursday Boots",
+    "category": "boots and footwear",
+    "official_domains": [
+      "thursdayboots.com"
+    ],
+    "identity_status": "verified",
+    "registry_version": "2026-11-22.v3",
+    "registry_sha256": "cc9ab39277bffb4c0aa0b59df8db2e7fec12da7955a58651370daf2936495a16"
+  },
+  "collection": {
+    "mode": "legacy_cache_replay",
+    "collector_version": "brandpilot-collector-0.3",
+    "created_at": "2026-11-22T20:36:47+00:00",
+    "queries": [
+      "\"Thursday Boots\" instagram marketing campaign target audience",
+      "\"Thursday Boots\" social media strategy brand positioning",
+      "\"Thursday Boots\" marketing campaign press release instagram",
+      "\"Thursday Boots\" customer audience brand story",
+      "\"Thursday Boots\" about us brand values audience",
+      "\"Thursday Boots\" newsroom marketing campaign",
+      "\"Thursday Boots\" brand campaign case study"
+    ],
+    "notes": [
+      "replayed from legacy packet thursday-boots-research-packet.json (sha256 b8f7fbf77133384d)",
+      "documents are legacy cached extractions; no new fetches were made"
+    ]
+  },
+  "leads": [
+    {
+      "company_id": "thursday-boots",
+      "query": "\"Thursday Boots\" newsroom marketing campaign",
+      "url": "https://www.boots-uk.com/newsroom/news-item/boots-launches-new-brand-platform-give-it-some-boots-with-high-impact-campaign/",
+      "title": "Boots launches new brand platform ‘Give it Some Boots’ with ...",
+      "snippet": "Sep 9, 2026 · Boots launches new brand platform ‘Give it Some Boots’ with high-impact campaign The campaign also features a real No7 Macmillan Beauty Advisor from a Boots store, one of many specially trained advisors supporting customers experiencing the visible side effects of cancer. It brings to life the message that with expert advice and care, available both in store and online, customers are in ...",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "thursday-boots",
+      "query": "\"Thursday Boots\" instagram marketing campaign target audience",
+      "url": "https://adlibrary.com/brands/thursday-boots",
+      "title": "Thursday Boots Ads Library - Top Facebook & Instagram Ads",
+      "snippet": "Discover Thursday Boots's best-performing ads. Analyze their product showcases, ad creatives, and social media campaigns.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "thursday-boots",
+      "query": "\"Thursday Boots\" about us brand values audience",
+      "url": "https://thursdayboots.com/pages/our-values",
+      "title": "Our Values - Thursday Boot Company",
+      "snippet": "At Thursday Boot Company, we share a strong sense of commitment to the world around us and continually look for ways to improve the environmental and social impact of our products and operations.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "thursday-boots",
+      "query": "\"Thursday Boots\" customer audience brand story",
+      "url": "https://blog.thursdayboots.com/brand/",
+      "title": "Brand – Thursday Boot Company",
+      "snippet": "A conversation with Thursday’s founders about how the search for the perfect pair of boots led to the inception of a full blown business.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "thursday-boots",
+      "query": "\"Thursday Boots\" customer audience brand story",
+      "url": "https://blog.thursdayboots.com/brand/thursday-boots-from-the-beginning-to-now/",
+      "title": "Thursday Boots from the Beginning to Now",
+      "snippet": "Nolan Walsh and Connor Wilson founded Thursday in 2014 during business school. The two took a springtime surf trip to Nicaragua, which ultimately changed their lives by offering unexpected but penetrating clarity into the future of footwear.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "thursday-boots",
+      "query": "\"Thursday Boots\" about us brand values audience",
+      "url": "https://thursdayboots.com/pages/our-story",
+      "title": "Our Story - Thursday Boot Company",
+      "snippet": "By partnering with suppliers and manufacturers who share our values, we strive to make a meaningful difference, one step at a time. Crafted by experts. Behind every Thursday product is a team of skilled artisans who take pride in their craft.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "thursday-boots",
+      "query": "\"Thursday Boots\" customer audience brand story",
+      "url": "https://thursdayboots.com/pages/our-story-rugged",
+      "title": "Our Story - Thursday Boot Company",
+      "snippet": "Thursday Boots are built for work & play. With the durability of work boots and sophistication of fashion boots, you'll be ready wherever the day takes you.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    },
+    {
+      "company_id": "thursday-boots",
+      "query": "\"Thursday Boots\" newsroom marketing campaign",
+      "url": "https://thursdayboots.com/",
+      "title": "Thursday Boot Company | Handcrafted with Integrity",
+      "snippet": "Thursday Boots are built for work & play. With the durability of work boots and sophistication of fashion boots, you'll be ready wherever the day takes you.",
+      "engine": "ddgs (legacy research packet)",
+      "observed_at": null,
+      "note": "search result metadata; not webpage evidence"
+    }
+  ],
+  "documents": [
+    {
+      "source_id": "S-4c03af9873c3",
+      "company_id": "thursday-boots",
+      "requested_url": "https://www.boots-uk.com/newsroom/news-item/boots-launches-new-brand-platform-give-it-some-boots-with-high-impact-campaign/",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "8cb6bba46a055531dad6497f81915b1b53878e086fe8cb63585f5c3e40dea793",
+      "text_path": "text/8cb6bba46a055531dad6497f81915b1b53878e086fe8cb63585f5c3e40dea793.txt",
+      "raw_path": null,
+      "text_chars": 7530,
+      "redirect_chain": [],
+      "identity_decision": "conflicting_entity_domain",
+      "identity_reason": "host boots-uk.com belongs to Boots (UK pharmacy)",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file b095883536473c347973583f18e9f5c3941a7f9fbfbbd69409fbc6825c536e56.json sha256=182cc7c17f483d29fa1daeb961f916528cc07df98ccea1d4fe34eae49efcf3c6",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-a1433d9c2d62",
+      "company_id": "thursday-boots",
+      "requested_url": "https://adlibrary.com/brands/thursday-boots",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "6f1a9f3ce7aeb737cdaf9ed64fac0565e272521898928f4d01b844732a03bae7",
+      "text_path": "text/6f1a9f3ce7aeb737cdaf9ed64fac0565e272521898928f4d01b844732a03bae7.txt",
+      "raw_path": null,
+      "text_chars": 6679,
+      "redirect_chain": [],
+      "identity_decision": "third_party_confirmed",
+      "identity_reason": "53 name mention(s) co-occur with boots and footwear terms",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 81c5ae1ba63d010b09977a9902a3d1a202b2e7689a017a42b982c9c514f9baca.json sha256=4f7117907d32d9dd5db80aea4970ee9c11a630bc9244551d5f8886566cd4adc1",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-b4174770722a",
+      "company_id": "thursday-boots",
+      "requested_url": "https://thursdayboots.com/pages/our-values",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "e79392ea3bb75fe61af44cfc959d143b1419d5b395566b617a70c98b9dc4b085",
+      "text_path": "text/e79392ea3bb75fe61af44cfc959d143b1419d5b395566b617a70c98b9dc4b085.txt",
+      "raw_path": null,
+      "text_chars": 7684,
+      "redirect_chain": [],
+      "identity_decision": "official_domain",
+      "identity_reason": "host thursdayboots.com is an official domain",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 2c768fdf601c4e4f5ad6cf85412a5f60ab31b9d47ebe9c5cc95649874c36781f.json sha256=9a8c33cb7177c0db9b199632c6c07b373a25b1f3dd1e4dbd03be56df615a4daa",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-d5dc8878b603",
+      "company_id": "thursday-boots",
+      "requested_url": "https://blog.thursdayboots.com/brand/",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "74cde5c61f4d28f503e8cefe6769f3a9f029d8e2ae3b9359690c13381c3ab6a5",
+      "text_path": "text/74cde5c61f4d28f503e8cefe6769f3a9f029d8e2ae3b9359690c13381c3ab6a5.txt",
+      "raw_path": null,
+      "text_chars": 1291,
+      "redirect_chain": [],
+      "identity_decision": "official_domain",
+      "identity_reason": "host blog.thursdayboots.com is an official domain",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 727cf0bc922cae326055ebb94d04720b228e667831d8379b35a6b9aab3bd9ef7.json sha256=1183610b1f7de9d03022083e02db6734c7aa18006dd87ea241b41631903fdb54",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-ff3c4f51172d",
+      "company_id": "thursday-boots",
+      "requested_url": "https://blog.thursdayboots.com/brand/thursday-boots-from-the-beginning-to-now/",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "06c10a5cbee4516b90defb9ef954ebb5973ca259424b9f80af935fa426853923",
+      "text_path": "text/06c10a5cbee4516b90defb9ef954ebb5973ca259424b9f80af935fa426853923.txt",
+      "raw_path": null,
+      "text_chars": 11284,
+      "redirect_chain": [],
+      "identity_decision": "official_domain",
+      "identity_reason": "host blog.thursdayboots.com is an official domain",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 8471eb0207eeb6411bc4fc0e4924cc4a085f42362af316e2dadcae64b94ac64d.json sha256=0341156756d90fc19d6ceee0d9ebb807bd95ca1eadbdb395910523894d6d272b",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-83bd744575a7",
+      "company_id": "thursday-boots",
+      "requested_url": "https://thursdayboots.com/pages/our-story",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "cbb4e813d370f83b9ec7dda29a50d50cdf02ea82ec65b3fd1a056661151291f0",
+      "text_path": "text/cbb4e813d370f83b9ec7dda29a50d50cdf02ea82ec65b3fd1a056661151291f0.txt",
+      "raw_path": null,
+      "text_chars": 8067,
+      "redirect_chain": [],
+      "identity_decision": "official_domain",
+      "identity_reason": "host thursdayboots.com is an official domain",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 83f93fb6519bf52f1a19e472bee27013473562298b2f29f3aa0c837c3173d295.json sha256=dac13b34168328d0163591dc446b3d4d78cc4473595f595bd93b2105b6af1cdb",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-80090807ddf0",
+      "company_id": "thursday-boots",
+      "requested_url": "https://thursdayboots.com/pages/our-story-rugged",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "552a280b7e1580049c80ce8d881bb99359b08a6568ef64fd8a62ce1cc9c4eb26",
+      "text_path": "text/552a280b7e1580049c80ce8d881bb99359b08a6568ef64fd8a62ce1cc9c4eb26.txt",
+      "raw_path": null,
+      "text_chars": 5369,
+      "redirect_chain": [],
+      "identity_decision": "official_domain",
+      "identity_reason": "host thursdayboots.com is an official domain",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file c906548a4385f017d3639d47bc690ed92d42deb160d261767d49ce8b1b693dcf.json sha256=9d681dde8ade4b05744b75cf627497a523d75706a7be2e2b78c8f24ae24b61a9",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    },
+    {
+      "source_id": "S-7c8ad1870562",
+      "company_id": "thursday-boots",
+      "requested_url": "https://thursdayboots.com/",
+      "final_url": null,
+      "title": "",
+      "retrieval_timestamp": null,
+      "publication_date": null,
+      "http_status": null,
+      "access_status": "legacy_cache_replay",
+      "status": "ok",
+      "extraction_method": "ddgs.extract(fmt='text_rich') via legacy brand_assistant_rag cache",
+      "extraction_version": "unknown (legacy cache; ddgs version not recorded)",
+      "raw_content_sha256": null,
+      "extracted_text_sha256": "e276087924b269bbbce46a01311ed3fc3202aba3258e0e3727d413b567b3c0de",
+      "text_path": "text/e276087924b269bbbce46a01311ed3fc3202aba3258e0e3727d413b567b3c0de.txt",
+      "raw_path": null,
+      "text_chars": 15135,
+      "redirect_chain": [],
+      "identity_decision": "official_domain",
+      "identity_reason": "host thursdayboots.com is an official domain",
+      "errors": [],
+      "provenance_notes": [
+        "legacy cache file 5cfeb1a1259da7dea3dded210e0b27b3770b4ef817005fcfa9344fc6a1c5f283.json sha256=f0c1df0f0eba986cfe62ae6f6d4ddb06f3bded408c60d7c15d85ab837cdb19df",
+        "cache file last modified unknown (cache write time, not a verified fetch time)",
+        "raw HTML, HTTP status, final URL and publication date were not recorded by the legacy cache",
+        "legacy extractor normalised whitespace, so paragraph boundaries are approximate"
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "passage_uid": "PU-ffbe7d029bc98519",
+      "source_id": "S-ff3c4f51172d",
+      "char_start": 4059,
+      "char_end": 4748,
+      "text": "NW: We brought our samples from Guatemala to meetings with the top-tier manufacturers, who built products for a lot of top legacy brands, and found a great partner. They had the same philosophical priorities we had in terms of ethical sourcing, fair labor, and high quality goods. We convinced them to make about $250,000 worth of boots, with $40,000 up front, which is all we had. Luckily, it worked out. > This was a passion project, which we didn’t approach from a financial standpoint. We came at it > with the perspective of, “Bootmaking is so cool and if we’re able to just learn something here and > have fun, that would be great.” TB: When did you launch your Kickstarter campaign?",
+      "text_sha256": "02602e02915a089fb3dbd139ab2bd9389dc18b3e7389161d86d040fca286de4e",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "brand",
+        "campaign",
+        "launch",
+        "partner"
+      ],
+      "score": 18,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P1",
+      "source_url": "https://blog.thursdayboots.com/brand/thursday-boots-from-the-beginning-to-now/",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-d62fbbc511f800b4",
+      "source_id": "S-b4174770722a",
+      "char_start": 571,
+      "char_end": 1216,
+      "text": "Products View all results Our Values # Products made the right way. Always. Our Story Our Product Our Values ## It’s about more than just boots At Thursday Boot Company, we share a strong sense of commitment to the world around us and continually look for ways to improve the environmental and social impact of our products and operations. We only partner with manufacturers and suppliers that uphold the highest ethical standards in a manner that is consistent with our core brand values. While we’re still a small company, we take the extra steps necessary to make a significant positive impact. Ethical sourcing Ethical sourcing Our Materials",
+      "text_sha256": "74c40285e392db9c57d3f8bf3184ebbe8b61617cbadcbc6d6b37b556a9b8ef1d",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "brand_positioning",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "brand",
+        "partner"
+      ],
+      "score": 16,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P2",
+      "source_url": "https://thursdayboots.com/pages/our-values",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-071c35c45422cde7",
+      "source_id": "S-ff3c4f51172d",
+      "char_start": 8080,
+      "char_end": 8763,
+      "text": "Instead, we worked piece by piece. > We don’t play games with our customers in the form of sales and discounts. To this day, we haven’t > had a single traditional sale event. We’re serious about the product and we’re serious about > treating our customers with respect. TB: What distinguishes Thursday Boots stylistically? NW: From the product perspective, we’re well encapsulated by the name ‘Thursday.’ It’s a day that we can work hard, but it’s also the unofficial start of the weekend. We make products with that versatility in mind — comfortable and durable footwear with clean designs — so you feel good, no matter where the day takes you. TB: You have a unique sales approach.",
+      "text_sha256": "b488c1d7538fc57e7e5a1eadcaf4251bf742c4b4c1b5b806e6aa691aeac2f9a0",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "brand_positioning",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "customers",
+        "event"
+      ],
+      "score": 16,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P3",
+      "source_url": "https://blog.thursdayboots.com/brand/thursday-boots-from-the-beginning-to-now/",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-0914eef25bd46ccd",
+      "source_id": "S-ff3c4f51172d",
+      "char_start": 9448,
+      "char_end": 10122,
+      "text": "Many other brands often don’t have anybody there for that purpose. Because of all we’ve done in that regard, we improve with every production run. Boots being laced. TB: What’s next for Thursday? NW: Using customer feedback, we’re constantly testing and evaluating new products. While my lips are sealed regarding specifics, we have several exciting new projects underway. What I will say is that, no matter how big Thursday gets, our appreciation for the Team Thursday community is boundless. We’ve built a special little family, which includes our loyal customers, and we want that sense of community to last forever. Nolan and Connor during New York fashion week in 2017.",
+      "text_sha256": "d304f0c8fbcfe1928b0ffb8f97136555fd4eee041937224300a10e911319f989",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [
+        "2017"
+      ],
+      "relevance_terms": [
+        "brand",
+        "community",
+        "customers"
+      ],
+      "score": 16,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P4",
+      "source_url": "https://blog.thursdayboots.com/brand/thursday-boots-from-the-beginning-to-now/",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-d8d708af105f49a1",
+      "source_id": "S-83bd744575a7",
+      "char_start": 1820,
+      "char_end": 2123,
+      "text": "Made with integrity. We’re committed to continually improving the environmental and social impact of our business. By partnering with suppliers and manufacturers who share our values, we strive to make a meaningful difference, one step at a time. See Our Values → Crafted by experts. Crafted by experts.",
+      "text_sha256": "86be493d8c896b76c0dde487d4a864a27d6f515ae6b8b5205175b2c25904ee5c",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "brand_positioning",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "partner"
+      ],
+      "score": 14,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P5",
+      "source_url": "https://thursdayboots.com/pages/our-story",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-b6a99f9a97898f75",
+      "source_id": "S-b4174770722a",
+      "char_start": 2361,
+      "char_end": 2907,
+      "text": "Our (growing) team Team Thursday is bigger than co-founders, equity-holding employees, or manufacturing partners. When we think about Team Thursday, we think about all of the people who dedicate their lives to making each of the materials that go into our products; we think about the local communities in which those materials are made; and of course, we think about you, our amazing customers! We are honored to make products we love and to make a positive impact in the lives of everyone in the Team Thursday family. From all of us, thank you!",
+      "text_sha256": "424fa723c7a9558d3e7bbe57a73bde1225eee6e9cf24c8a7e819a504b10c0696",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "customers",
+        "partner"
+      ],
+      "score": 14,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P6",
+      "source_url": "https://thursdayboots.com/pages/our-values",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-5479058b02503d93",
+      "source_id": "S-7c8ad1870562",
+      "char_start": 71,
+      "char_end": 487,
+      "text": "General Access to any company’s website can be challenging for persons having certain disabilities. A person’s disability is often unique. What may work well for one person may cause difficulties for another person. Our company has made efforts to accommodate as many of our customers and potential customers as is reasonable given our size, resources, and knowledge of our customers, and potential customer’s needs.",
+      "text_sha256": "cd74a3eab7d60d1602539869b56156fbed230be640b5376533bfec1d1798e496",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "customers"
+      ],
+      "score": 12,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P7",
+      "source_url": "https://thursdayboots.com/",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-82c5734a8c85a4cb",
+      "source_id": "S-7c8ad1870562",
+      "char_start": 1409,
+      "char_end": 2086,
+      "text": "Contact information is set forth below. ## Some Specific Accessibility Features Within This Website This website contains a third-party plugin, also known as a Widget, called UserWay Website Accessibility (“UserWay”), which is powered by this third party’s dedicated accessibility server. Use of this Widget can improve website access for some users, particularly related to certain type of disabilities. UserWay has stated that its application makes efforts to follow to some degree the Web Content Accessibility Guidelines (WCAG 2.1). On our website, the UserWay widget can be triggered by clicking the “View in Accessibility Mode” link, featured in the footer of most pages.",
+      "text_sha256": "0120cd055a747799b6333a197f1022f08340523a82ed1c6fdb10e6aaee92b83a",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "content"
+      ],
+      "score": 12,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P8",
+      "source_url": "https://thursdayboots.com/",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-3c11287e2b02b38a",
+      "source_id": "S-7c8ad1870562",
+      "char_start": 2483,
+      "char_end": 3050,
+      "text": "Disclaimer We anticipate that from time to time, within our resources, we will be making modifications to parts of our website, and possibly modifications to accessibility of our website. Reasonable efforts toward improving seamless, accessible, and unhindered use of websites by customers and potential customers is generally a worthwhile goal. Moving closer to this goal will often depend on the knowledge the company has regarding any particular difficulties those using the website might encounter, as well as available resources and improvements with technology.",
+      "text_sha256": "ef9cff99c35a5d035b1e23d9275b15aa9917a43f73def1dabb1883a49608f849",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [
+        "customers"
+      ],
+      "score": 12,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P9",
+      "source_url": "https://thursdayboots.com/",
+      "document_identity": "official_domain",
+      "publication_date": null
+    },
+    {
+      "passage_uid": "PU-43e880bc5d2bcab7",
+      "source_id": "S-83bd744575a7",
+      "char_start": 793,
+      "char_end": 1492,
+      "text": "Our philosophy is simple. You deserve it all. Our Story Our Product Our Values ## Why 'Thursday'? Thursday was built out of our own frustration. Clunky work boots or delicate fashion boots? Cheap shoes that fall apart after a few wears, or shoes that were incredibly overpriced? It didn't seem right that we had to make these tradeoffs, so we started Thursday to provide another option. Thursday is more than our name: it’s our philosophy. Thursday is a workday, but it’s also the unofficial start of the weekend, and we design every product with that same versatility in mind. Your life isn’t one-dimensional. What you wear shouldn’t be either. Building things that last. Building things that last.",
+      "text_sha256": "2009978e18f90d119f2a0cd8a2eff9164e70b24e956eaf72fbec676d1d8508b9",
+      "identity_decision": "ok",
+      "identity_reason": "official-domain document",
+      "statement_type": "brand_positioning",
+      "flags": [],
+      "dates_mentioned": [],
+      "relevance_terms": [],
+      "score": 12,
+      "official_source": true,
+      "selection_status": "selected",
+      "rejection_reasons": [],
+      "packet_id": "P10",
+      "source_url": "https://thursdayboots.com/pages/our-story",
+      "document_identity": "official_domain",
+      "publication_date": null
+    }
+  ],
+  "rejected_passages": [
+    {
+      "passage_uid": "PU-1d9ab6c053782e3b",
+      "source_id": "S-4c03af9873c3",
+      "char_start": 3836,
+      "char_end": 4534,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "actual_activity",
+      "preview": "It brings to life the message that with expert advice and care, available both in store and online, customers are in trusted hands with Boots. Taking the movement beyond advertising, ‘Give it Some Boo"
+    },
+    {
+      "passage_uid": "PU-9f8aa0dec80309ef",
+      "source_id": "S-ff3c4f51172d",
+      "char_start": 4749,
+      "char_end": 5410,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "historical_activity",
+      "preview": "NW: I went to Pastores in late April 2014. We launched in October 2014. So, the company’s inception happened in a short period of time. We were working seven days a week, so everything was really happ"
+    },
+    {
+      "passage_uid": "PU-1f036566b90b0745",
+      "source_id": "S-4c03af9873c3",
+      "char_start": 1273,
+      "char_end": 1945,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "actual_activity",
+      "preview": "The campaign launches with high-impact TV and cinema placements ahead of upcoming film ‘Verity,’ the highly anticipated adaptation of Colleen Hoover’s bestselling novel The message is clear - it’s tim"
+    },
+    {
+      "passage_uid": "PU-f776b46a06b9baad",
+      "source_id": "S-ff3c4f51172d",
+      "char_start": 5411,
+      "char_end": 6107,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "We came at it knowing that it would have to be very low budget. Our whole production budget was like $2,500. We produced our own video, which featured our friends, and wrote all of the copy ourselves."
+    },
+    {
+      "passage_uid": "PU-7ea147f30c35015c",
+      "source_id": "S-ff3c4f51172d",
+      "char_start": 6109,
+      "char_end": 6737,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "I think that attitude ultimately really attracted people to the brand. I think as we’ve grown up as a brand, maintaining some of that free-flow culture is something that I really appreciate. Our staff"
+    },
+    {
+      "passage_uid": "PU-f5fd0d968b1d68a5",
+      "source_id": "S-ff3c4f51172d",
+      "char_start": 7394,
+      "char_end": 8079,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "brand_positioning",
+      "preview": "I was with him one day and asked him if he knew anyone who could help with marketing. He said, “I could do that!” So, that’s how he came on. Just before this, Rich Carelli also joined the team. He was"
+    },
+    {
+      "passage_uid": "PU-63d004b25eb48ee7",
+      "source_id": "S-ff3c4f51172d",
+      "char_start": 8764,
+      "char_end": 9447,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Can you explain it? NW: From a philosophy standpoint, we really wanted to build a business we were proud of, which to us meant giving customers genuinely good value. We don’t play games with our custo"
+    },
+    {
+      "passage_uid": "PU-c764f10ac7f9265f",
+      "source_id": "S-7c8ad1870562",
+      "char_start": 3051,
+      "char_end": 3291,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Despite the efforts we may have made regarding accessibility, consistent with normal business practices for a company of or size and resources, some content, features, processes, or policies, may be i"
+    },
+    {
+      "passage_uid": "PU-89289e2bfbbfbf83",
+      "source_id": "S-7c8ad1870562",
+      "char_start": 3724,
+      "char_end": 4376,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Accessibility Assistance If you are in need of general customer support, please visit our Contact Us page or email teamthursday@thursdayboots.com. This is the fastest and most efficient way to get our"
+    },
+    {
+      "passage_uid": "PU-84a3156da0df7074",
+      "source_id": "S-83bd744575a7",
+      "char_start": 1508,
+      "char_end": 1805,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "brand_positioning",
+      "preview": "Building things that last. Every product we make is designed and developed in-house. From leather to laces, we hand-select the best materials and refine every detail to create products that are built "
+    },
+    {
+      "passage_uid": "PU-59971117ce9cfd64",
+      "source_id": "S-83bd744575a7",
+      "char_start": 2525,
+      "char_end": 2976,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "See you around. We’re bringing Thursday to more neighborhoods every year. Our retail stores offer a place to explore the collection, experience the craftsmanship up close, and get expert guidance from"
+    },
+    {
+      "passage_uid": "PU-7291c5e739ffb9f9",
+      "source_id": "S-b4174770722a",
+      "char_start": 1859,
+      "char_end": 2357,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Responsible manufacturing In addition to offering the highest quality craftsmanship, our manufacturing partners have consistently demonstrated a commitment to fair labor and environmental consideratio"
+    },
+    {
+      "passage_uid": "PU-522bd4b3dd1800a9",
+      "source_id": "S-ff3c4f51172d",
+      "char_start": 187,
+      "char_end": 856,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Thursday Boots from the Beginning to Now A conversation with Thursday’s founders about how the search for the perfect pair of boots led to the inception of a full blown business. Nolan Walsh and Conno"
+    },
+    {
+      "passage_uid": "PU-baeaa316cea2c995",
+      "source_id": "S-ff3c4f51172d",
+      "char_start": 3472,
+      "char_end": 4058,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "They had all of the infrastructure for good footwear, right within the city. This is important so that everything happens in sync, which is better for the final product as well as the environment. Boo"
+    },
+    {
+      "passage_uid": "PU-35d92e51f506ab46",
+      "source_id": "S-a1433d9c2d62",
+      "char_start": 1351,
+      "char_end": 1671,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "About Thursday Boots Thursday Boot Co. is a DTC footwear brand selling men's and women's leather boots and shoes at a mid-range price point. It sells primarily through its own website, positioning on "
+    },
+    {
+      "passage_uid": "PU-093fd087a0db1877",
+      "source_id": "S-4c03af9873c3",
+      "char_start": 588,
+      "char_end": 722,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "actual_activity",
+      "preview": "Media Resources You are here: Home Newsroom News Item Boots launches new brand platform ‘Give it Some Boots’ with high-impact campaign"
+    },
+    {
+      "passage_uid": "PU-c2846b980856c916",
+      "source_id": "S-4c03af9873c3",
+      "char_start": 4535,
+      "char_end": 5048,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "The initial eight-week launch will span broadcast media, premium digital environments and localised, data-driven retail activation, designed to capture, engage and convert consumers at every stage of "
+    },
+    {
+      "passage_uid": "PU-bdadc5bca36a78f5",
+      "source_id": "S-7c8ad1870562",
+      "char_start": 588,
+      "char_end": 737,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "More general information about website access and website access statements can be found at www.AccessibilityStatements.com and at www.KarlinLaw.com."
+    },
+    {
+      "passage_uid": "PU-5457545401a39236",
+      "source_id": "S-7c8ad1870562",
+      "char_start": 741,
+      "char_end": 1408,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Accessibility On This Website Our website provides several methods, features, and policies that can help with access to our website and/or to products or services provided or referred to on our websit"
+    },
+    {
+      "passage_uid": "PU-418e52d1f9f8781d",
+      "source_id": "S-7c8ad1870562",
+      "char_start": 2087,
+      "char_end": 2479,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "The widget can then be accessed in the bottom left corner of the website for the remainder of the session. ## Enabling the Accessibility Menu The accessibility menu can be enabled by clicking the acce"
+    },
+    {
+      "passage_uid": "PU-5a6b28ca099725ac",
+      "source_id": "S-7c8ad1870562",
+      "char_start": 3295,
+      "char_end": 3720,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Third Party Applications Our website may use third-party add-ons or “plug-ins” for certain functions. These may not work or may not work the same for every user and/or every type of disability. We do "
+    },
+    {
+      "passage_uid": "PU-c5bd4878166050a2",
+      "source_id": "S-7c8ad1870562",
+      "char_start": 4377,
+      "char_end": 4948,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "This contact channel is not intended for general customer service inquiries, including questions about products, orders, returns, or exchanges and using it for this purpose is likely to result in dela"
+    },
+    {
+      "passage_uid": "PU-b41d7b634424c024",
+      "source_id": "S-7c8ad1870562",
+      "char_start": 4949,
+      "char_end": 5418,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "You can also send an email, explaining in as much detail as possible, what type of difficulty you had, or may have had, or believe others may have. (Note: If the email is sent to a third party website"
+    },
+    {
+      "passage_uid": "PU-df7f9c1f9ca717ef",
+      "source_id": "S-7c8ad1870562",
+      "char_start": 6430,
+      "char_end": 6639,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "This website has not reviewed these statements by others and does not render an opinion on the accuracy of these statements. * Google (For Google Products, including but not limited to: Chrome, Androi"
+    },
+    {
+      "passage_uid": "PU-c1e17ea378084a47",
+      "source_id": "S-7c8ad1870562",
+      "char_start": 6832,
+      "char_end": 7110,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "LinkedIn Accessibility Also, for reference, are the following, which this website has not reviewed or tested. By including these references, this website is not rendering an opinion on any statement m"
+    },
+    {
+      "passage_uid": "PU-31ae02b04b3394eb",
+      "source_id": "S-7c8ad1870562",
+      "char_start": 7420,
+      "char_end": 7776,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Free Shipping & Returns We are proud to offer free shipping within the contiguous U.S. for all orders of $50 or more. Because it's important to us that you love your Thursdays, we also offer free retu"
+    },
+    {
+      "passage_uid": "PU-04e21f309facf838",
+      "source_id": "S-7c8ad1870562",
+      "char_start": 8363,
+      "char_end": 8668,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Built for the long haul Shop All Men's Men's Boots Men's Boots Men's Boots Men's Sneakers Men's Sneakers Men's Sneakers Men's Shoes Men's Shoes Men's Shoes Men's Jackets Men's Jackets Men's Jackets Me"
+    },
+    {
+      "passage_uid": "PU-67dd6239633c3f20",
+      "source_id": "S-7c8ad1870562",
+      "char_start": 8672,
+      "char_end": 9136,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Layer Up For Fall Shop MenShop Women The Loafer Edit The Loafer Edit ## The Loafer Edit Shop MenShop Women ## Made for every step Shop All Women's Women's Boots Women's Boots Women's Boots Women's Sho"
+    },
+    {
+      "passage_uid": "PU-1e3e423799f2fd4e",
+      "source_id": "S-7c8ad1870562",
+      "char_start": 9182,
+      "char_end": 9324,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Amazing product! I love these boots! They are comfortable, stylish, and durable. Highly recommend them to anyone looking for quality footwear."
+    },
+    {
+      "passage_uid": "PU-046b0bf0c7b78321",
+      "source_id": "S-7c8ad1870562",
+      "char_start": 9358,
+      "char_end": 9522,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Worth every penny! Truly a perfect shoe! High quality from top to bottom - beautiful leather; great sole. Comfortable right out of the box! And absolutely adorable!"
+    },
+    {
+      "passage_uid": "PU-26d935dfe5900808",
+      "source_id": "S-7c8ad1870562",
+      "char_start": 9557,
+      "char_end": 9751,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Great pair of shoes These are amazing. I have had several pairs in this style from others, some costing twice as much. The quality and comfort of these is 2nd to none. About to get another pair."
+    },
+    {
+      "passage_uid": "PU-eb2aed87bae5003c",
+      "source_id": "S-7c8ad1870562",
+      "char_start": 9785,
+      "char_end": 9930,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Style meets comfort Love this jacket, great style, unbelievable quality and customer service was exceptional. Would buy again without hesitation."
+    },
+    {
+      "passage_uid": "PU-65f69bd52f9bece5",
+      "source_id": "S-7c8ad1870562",
+      "char_start": 9962,
+      "char_end": 10342,
+      "selection_status": "rejected",
+      "reasons": [
+        "near_duplicate_of_selected_passage"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Why ‘Thursday’? Thursday is more than our name: it’s our philosophy. Thursday is a workday, but it’s also the unofficial start of the weekend, and we design every product with that same versatility in"
+    },
+    {
+      "passage_uid": "PU-16dd76e3a6c6d6bb",
+      "source_id": "S-7c8ad1870562",
+      "char_start": 10909,
+      "char_end": 11462,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Please check your email for a confirmation message Please recheck the info you entered Join Team Thursday Error Success Australia (AUD $) Canada (CAD $) United Kingdom (GBP £) United States (USD $) Al"
+    },
+    {
+      "passage_uid": "PU-6354a4da2d27a0a2",
+      "source_id": "S-7c8ad1870562",
+      "char_start": 11464,
+      "char_end": 11957,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Bosnia & Herzegovina (BAM КМ) Botswana (BWP P) Brazil (BRL R$) British Virgin Islands (USD $) Brunei (BND $) Bulgaria (EUR €) Burkina Faso (XOF Fr) Burundi (BIF Fr) Cambodia (KHR ៛) Cameroon (XAF CFA)"
+    },
+    {
+      "passage_uid": "PU-3c31b1918ebc9157",
+      "source_id": "S-7c8ad1870562",
+      "char_start": 11959,
+      "char_end": 12420,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Djibouti (DJF Fdj) Dominica (XCD $) Dominican Republic (DOP $) Ecuador (USD $) Egypt (EGP ج.م) El Salvador (USD $) Equatorial Guinea (XAF CFA) Estonia (EUR €) Eswatini (SZL E) Ethiopia (ETB Br) Falkla"
+    },
+    {
+      "passage_uid": "PU-06fa246476813518",
+      "source_id": "S-7c8ad1870562",
+      "char_start": 12422,
+      "char_end": 13312,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Grenada (XCD $) Guadeloupe (EUR €) Guatemala (GTQ Q) Guernsey (GBP £) Guinea (GNF Fr) Guinea-Bissau (XOF Fr) Guyana (GYD $) Haiti (HTG G) Honduras (HNL L) Hong Kong SAR (HKD $) Hungary (HUF Ft) Icelan"
+    },
+    {
+      "passage_uid": "PU-9533c84267e665ab",
+      "source_id": "S-7c8ad1870562",
+      "char_start": 13381,
+      "char_end": 14088,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Netherlands (EUR €) New Caledonia (XPF Fr) New Zealand (NZD $) Nicaragua (NIO C$) Nigeria (NGN ₦) Niue (NZD $) North Macedonia (MKD ден) Norway (NOK kr) Oman (USD $) Pakistan (PKR ₨) Panama (USD $) Pa"
+    },
+    {
+      "passage_uid": "PU-733c98826eae1779",
+      "source_id": "S-80090807ddf0",
+      "char_start": 170,
+      "char_end": 526,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Free Shipping & Returns We are proud to offer free shipping within the contiguous U.S. for all orders of $50 or more. Because it's important to us that you love your Thursdays, we also offer free retu"
+    },
+    {
+      "passage_uid": "PU-17767863baf916ea",
+      "source_id": "S-80090807ddf0",
+      "char_start": 1143,
+      "char_end": 1696,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Please check your email for a confirmation message Please recheck the info you entered Join Team Thursday Error Success Australia (AUD $) Canada (CAD $) United Kingdom (GBP £) United States (USD $) Al"
+    },
+    {
+      "passage_uid": "PU-0dbc791826a79893",
+      "source_id": "S-80090807ddf0",
+      "char_start": 1698,
+      "char_end": 2191,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Bosnia & Herzegovina (BAM КМ) Botswana (BWP P) Brazil (BRL R$) British Virgin Islands (USD $) Brunei (BND $) Bulgaria (EUR €) Burkina Faso (XOF Fr) Burundi (BIF Fr) Cambodia (KHR ៛) Cameroon (XAF CFA)"
+    },
+    {
+      "passage_uid": "PU-c1a2bc6062aee3ea",
+      "source_id": "S-80090807ddf0",
+      "char_start": 2193,
+      "char_end": 2654,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Djibouti (DJF Fdj) Dominica (XCD $) Dominican Republic (DOP $) Ecuador (USD $) Egypt (EGP ج.م) El Salvador (USD $) Equatorial Guinea (XAF CFA) Estonia (EUR €) Eswatini (SZL E) Ethiopia (ETB Br) Falkla"
+    },
+    {
+      "passage_uid": "PU-f5399cf12050f3cc",
+      "source_id": "S-80090807ddf0",
+      "char_start": 2656,
+      "char_end": 3546,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Grenada (XCD $) Guadeloupe (EUR €) Guatemala (GTQ Q) Guernsey (GBP £) Guinea (GNF Fr) Guinea-Bissau (XOF Fr) Guyana (GYD $) Haiti (HTG G) Honduras (HNL L) Hong Kong SAR (HKD $) Hungary (HUF Ft) Icelan"
+    },
+    {
+      "passage_uid": "PU-72c3c2f7dfe101b9",
+      "source_id": "S-80090807ddf0",
+      "char_start": 3615,
+      "char_end": 4322,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Netherlands (EUR €) New Caledonia (XPF Fr) New Zealand (NZD $) Nicaragua (NIO C$) Nigeria (NGN ₦) Niue (NZD $) North Macedonia (MKD ден) Norway (NOK kr) Oman (USD $) Pakistan (PKR ₨) Panama (USD $) Pa"
+    },
+    {
+      "passage_uid": "PU-a99e07e981533a56",
+      "source_id": "S-83bd744575a7",
+      "char_start": 170,
+      "char_end": 526,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Free Shipping & Returns We are proud to offer free shipping within the contiguous U.S. for all orders of $50 or more. Because it's important to us that you love your Thursdays, we also offer free retu"
+    },
+    {
+      "passage_uid": "PU-a54b2e0bfde0f4fd",
+      "source_id": "S-83bd744575a7",
+      "char_start": 571,
+      "char_end": 780,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Products View all results Our philosophy is simple. You deserve it all. Our philosophy is simple. You deserve it all. Our philosophy is simple. You deserve it all. Our philosophy is simple. You deserv"
+    },
+    {
+      "passage_uid": "PU-00262e381fcd2d1d",
+      "source_id": "S-83bd744575a7",
+      "char_start": 2139,
+      "char_end": 2510,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Crafted by experts. Behind every Thursday product is a team of skilled artisans who take pride in their craft. By investing in our own manufacturing facility, we work side by side with the people who "
+    },
+    {
+      "passage_uid": "PU-8ed050aa2909efbc",
+      "source_id": "S-83bd744575a7",
+      "char_start": 2994,
+      "char_end": 3290,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Made for the people who wear them. The only thing we’re more passionate about than our products are the people who wear them. Whether you have a question, a comment, or just want to share your latest "
+    },
+    {
+      "passage_uid": "PU-6da60f0e83bb8c40",
+      "source_id": "S-83bd744575a7",
+      "char_start": 3841,
+      "char_end": 4394,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Please check your email for a confirmation message Please recheck the info you entered Join Team Thursday Error Success Australia (AUD $) Canada (CAD $) United Kingdom (GBP £) United States (USD $) Al"
+    },
+    {
+      "passage_uid": "PU-088efe74dba244e2",
+      "source_id": "S-83bd744575a7",
+      "char_start": 4396,
+      "char_end": 4889,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Bosnia & Herzegovina (BAM КМ) Botswana (BWP P) Brazil (BRL R$) British Virgin Islands (USD $) Brunei (BND $) Bulgaria (EUR €) Burkina Faso (XOF Fr) Burundi (BIF Fr) Cambodia (KHR ៛) Cameroon (XAF CFA)"
+    },
+    {
+      "passage_uid": "PU-043b2a0682bd6f21",
+      "source_id": "S-83bd744575a7",
+      "char_start": 4891,
+      "char_end": 5352,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Djibouti (DJF Fdj) Dominica (XCD $) Dominican Republic (DOP $) Ecuador (USD $) Egypt (EGP ج.م) El Salvador (USD $) Equatorial Guinea (XAF CFA) Estonia (EUR €) Eswatini (SZL E) Ethiopia (ETB Br) Falkla"
+    },
+    {
+      "passage_uid": "PU-fbc898a68c0dacad",
+      "source_id": "S-83bd744575a7",
+      "char_start": 5354,
+      "char_end": 6244,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Grenada (XCD $) Guadeloupe (EUR €) Guatemala (GTQ Q) Guernsey (GBP £) Guinea (GNF Fr) Guinea-Bissau (XOF Fr) Guyana (GYD $) Haiti (HTG G) Honduras (HNL L) Hong Kong SAR (HKD $) Hungary (HUF Ft) Icelan"
+    },
+    {
+      "passage_uid": "PU-d98b4db51a85c970",
+      "source_id": "S-83bd744575a7",
+      "char_start": 6313,
+      "char_end": 7020,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Netherlands (EUR €) New Caledonia (XPF Fr) New Zealand (NZD $) Nicaragua (NIO C$) Nigeria (NGN ₦) Niue (NZD $) North Macedonia (MKD ден) Norway (NOK kr) Oman (USD $) Pakistan (PKR ₨) Panama (USD $) Pa"
+    },
+    {
+      "passage_uid": "PU-1134d6a0ff7ef942",
+      "source_id": "S-b4174770722a",
+      "char_start": 170,
+      "char_end": 526,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Free Shipping & Returns We are proud to offer free shipping within the contiguous U.S. for all orders of $50 or more. Because it's important to us that you love your Thursdays, we also offer free retu"
+    },
+    {
+      "passage_uid": "PU-06769c5b0e7f9183",
+      "source_id": "S-b4174770722a",
+      "char_start": 1220,
+      "char_end": 1855,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Ethical sourcing We wake up every day excited to build products we’re proud of — not only in terms of achieving the highest quality, but in doing that the right way. 100% of the bovine leather used on"
+    },
+    {
+      "passage_uid": "PU-508a01ad80638178",
+      "source_id": "S-b4174770722a",
+      "char_start": 3458,
+      "char_end": 4011,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Please check your email for a confirmation message Please recheck the info you entered Join Team Thursday Error Success Australia (AUD $) Canada (CAD $) United Kingdom (GBP £) United States (USD $) Al"
+    },
+    {
+      "passage_uid": "PU-5c72331daeebaa47",
+      "source_id": "S-b4174770722a",
+      "char_start": 4013,
+      "char_end": 4506,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Bosnia & Herzegovina (BAM КМ) Botswana (BWP P) Brazil (BRL R$) British Virgin Islands (USD $) Brunei (BND $) Bulgaria (EUR €) Burkina Faso (XOF Fr) Burundi (BIF Fr) Cambodia (KHR ៛) Cameroon (XAF CFA)"
+    },
+    {
+      "passage_uid": "PU-1012ec0070d7d922",
+      "source_id": "S-b4174770722a",
+      "char_start": 4508,
+      "char_end": 4969,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Djibouti (DJF Fdj) Dominica (XCD $) Dominican Republic (DOP $) Ecuador (USD $) Egypt (EGP ج.م) El Salvador (USD $) Equatorial Guinea (XAF CFA) Estonia (EUR €) Eswatini (SZL E) Ethiopia (ETB Br) Falkla"
+    },
+    {
+      "passage_uid": "PU-c0cb7d28e8505ccb",
+      "source_id": "S-b4174770722a",
+      "char_start": 4971,
+      "char_end": 5861,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Grenada (XCD $) Guadeloupe (EUR €) Guatemala (GTQ Q) Guernsey (GBP £) Guinea (GNF Fr) Guinea-Bissau (XOF Fr) Guyana (GYD $) Haiti (HTG G) Honduras (HNL L) Hong Kong SAR (HKD $) Hungary (HUF Ft) Icelan"
+    },
+    {
+      "passage_uid": "PU-10c7a5fa1c8d2474",
+      "source_id": "S-b4174770722a",
+      "char_start": 5930,
+      "char_end": 6637,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Netherlands (EUR €) New Caledonia (XPF Fr) New Zealand (NZD $) Nicaragua (NIO C$) Nigeria (NGN ₦) Niue (NZD $) North Macedonia (MKD ден) Norway (NOK kr) Oman (USD $) Pakistan (PKR ₨) Panama (USD $) Pa"
+    },
+    {
+      "passage_uid": "PU-364f3f2214dcb5b0",
+      "source_id": "S-d5dc8878b603",
+      "char_start": 196,
+      "char_end": 512,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "Thursday Boots from the Beginning to Now A conversation with Thursday’s founders about how the search for the perfect pair of boots led to the inception of a full blown business. A conversation with T"
+    },
+    {
+      "passage_uid": "PU-4aa64f4b0624aaa1",
+      "source_id": "S-ff3c4f51172d",
+      "char_start": 857,
+      "char_end": 1510,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "We sat down with Nolan to hear more about Thursday’s serendipitous inception. Nolan and Connor in 2014, while laying down the groundwork for Thursday. TB: When did you and Connor first meet? NW: Conno"
+    },
+    {
+      "passage_uid": "PU-f25225e3ba928f4a",
+      "source_id": "S-ff3c4f51172d",
+      "char_start": 1511,
+      "char_end": 2188,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "We saw every option on the market, but everything was either too expensive, or too cheap and liable to fall apart. Aesthetically, we only saw too-cool-for-school fashion boots or bulbous, heavy work b"
+    },
+    {
+      "passage_uid": "PU-4d5a153dfad5282a",
+      "source_id": "S-ff3c4f51172d",
+      "char_start": 2189,
+      "char_end": 2822,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "It had that nice blend of a high fashion boot in a work boot, so I asked him where he got them. He said he got them in a small town in Guatemala. He couldn’t remember the name of the town, but his fri"
+    },
+    {
+      "passage_uid": "PU-8fc7527bfe33991f",
+      "source_id": "S-ff3c4f51172d",
+      "char_start": 2824,
+      "char_end": 3471,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "It turns out, he was the guy we had just met in Nicaragua’s friend. We connected with his bootmaker and made about 20 boot samples in Pastores. We flew back to the U.S. and posted them on Etsy. They w"
+    },
+    {
+      "passage_uid": "PU-833a60d1f2cab297",
+      "source_id": "S-ff3c4f51172d",
+      "char_start": 6738,
+      "char_end": 7393,
+      "selection_status": "not_selected",
+      "reasons": [
+        "per_document_cap"
+      ],
+      "identity_reason": "official-domain document",
+      "statement_type": "descriptive",
+      "preview": "We thought, “OK, this is something we can really do as a job after school.” Nolan in Pastores, Guatemala (when sepia photo filters were very trendy). TB: When did you start recruiting staff members? N"
+    },
+    {
+      "passage_uid": "PU-c5f72aed5bd791bf",
+      "source_id": "S-4c03af9873c3",
+      "char_start": 725,
+      "char_end": 1270,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "historical_activity",
+      "preview": "Boots launches new brand platform ‘Give it Some Boots’ with high-impact campaign 09 September 2026 News Brand * The new brand platform ‘Give it Some Boots’ encourages consumers to have the confidence "
+    },
+    {
+      "passage_uid": "PU-65fb5f3d36db8839",
+      "source_id": "S-4c03af9873c3",
+      "char_start": 5367,
+      "char_end": 5695,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "historical_activity",
+      "preview": "Experts Charlotte Lock Brand Meet all the experts ## Related News 16 November 2026 Boots Online Doctor launches new specialist medical cannabis service to support patients living with... News Healthca"
+    },
+    {
+      "passage_uid": "PU-ace623cb502e8474",
+      "source_id": "S-a1433d9c2d62",
+      "char_start": 4549,
+      "char_end": 5196,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Browse Thursday Boots's active Facebook and Instagram ads on AdLibrary at adlibrary.com, where you can filter by format and see the creative, copy, and landing pages the brand is running. What platfor"
+    },
+    {
+      "passage_uid": "PU-143699e139ea1f2d",
+      "source_id": "S-4c03af9873c3",
+      "char_start": 5049,
+      "char_end": 5363,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "The launch comes as Boots continues to strengthen its position as the UK's leading health, beauty and wellness retailer, combining over 200 healthcare services with an unrivalled beauty offering and a"
+    },
+    {
+      "passage_uid": "PU-8b399e3900bfc27a",
+      "source_id": "S-a1433d9c2d62",
+      "char_start": 2124,
+      "char_end": 2684,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Thursday Boots Meta Ads (Facebook & Instagram): Platform Analysis On Facebook and Instagram, Thursday can use clean lifestyle imagery, close-ups of leather and stitching, and customer reviews as socia"
+    },
+    {
+      "passage_uid": "PU-099e2510805d0c94",
+      "source_id": "S-a1433d9c2d62",
+      "char_start": 2688,
+      "char_end": 3185,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Thursday Boots Ad Copy & TikTok Creative Themes Copy themes: (1) high-quality materials at honest prices; (2) boots that pair with everyday wardrobes; (3) durability and comfort backed by reviews; (4)"
+    },
+    {
+      "passage_uid": "PU-b34d54a6e9001256",
+      "source_id": "S-4c03af9873c3",
+      "char_start": 2582,
+      "char_end": 3275,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Charlotte Lock, Chief Marketing Officer at Boots said: “Life doesn’t come with a filter. It’s joyful, messy, unexpected and sometimes tough. ‘Give it Some Boots’ puts Boots right in the middle of real"
+    },
+    {
+      "passage_uid": "PU-5126879ba65b2d5d",
+      "source_id": "S-4c03af9873c3",
+      "char_start": 6035,
+      "char_end": 6615,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Features Take a closer look at our team members and the work they do, learn more about our corporate social responsibility initiatives and see how we work behind the scenes. xx About Boots: Boots is t"
+    },
+    {
+      "passage_uid": "PU-da6b6704b329f4f4",
+      "source_id": "S-a1433d9c2d62",
+      "char_start": 1675,
+      "char_end": 2120,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Thursday Boots Ads Strategy: What Makes Thursday Boots Ads Effective Thursday Boot Company sells men's and women's boots, sneakers, and dress shoes online, with the tagline Highest Quality. Honest Pri"
+    },
+    {
+      "passage_uid": "PU-d7b3a9acb40b00c2",
+      "source_id": "S-a1433d9c2d62",
+      "char_start": 3775,
+      "char_end": 4139,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Find Thursday Boots Ads: All Search Variants Searching for Thursday Boots? Whether you type Thursday Boots ads, Thursday Boots Meta ads, Thursday Boots TikTok ads, Thursday Boots Google ads, or see al"
+    },
+    {
+      "passage_uid": "PU-28ad9814432366b3",
+      "source_id": "S-a1433d9c2d62",
+      "char_start": 5197,
+      "char_end": 5885,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "Thursday's ads work by pairing one clear promise, high quality at honest prices, with detailed product visuals and customer reviews that make the value claim believable. What is Thursday Boots best kn"
+    },
+    {
+      "passage_uid": "PU-fd7f8b5f69483a71",
+      "source_id": "S-4c03af9873c3",
+      "char_start": 3276,
+      "char_end": 3835,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "From a young woman overwhelmed by skincare choices to someone experiencing their first grey hair, to a woman entering perimenopause, each find what they need at Boots, and with it a sense of confidenc"
+    },
+    {
+      "passage_uid": "PU-01fdb2c3dd2f2710",
+      "source_id": "S-4c03af9873c3",
+      "char_start": 6616,
+      "char_end": 7040,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "It offers an unrivalled depth and breadth of products, which incorporates its extensive own brand range and innovative portfolio of brands, including No7, the UK’s No1 skincare brand, Soap & Glory, Li"
+    },
+    {
+      "passage_uid": "PU-3fa127e10ade297b",
+      "source_id": "S-a1433d9c2d62",
+      "char_start": 5886,
+      "char_end": 6055,
+      "selection_status": "rejected",
+      "reasons": [
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "provider_reported_result",
+      "preview": "All of these queries surface the same Thursday Boots ad creative in our library. ### Get weekly ad insights Top-performing ads and creative strategies, delivered weekly."
+    },
+    {
+      "passage_uid": "PU-b5a62fb04395185d",
+      "source_id": "S-4c03af9873c3",
+      "char_start": 1946,
+      "char_end": 2581,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Whether people are entering a new life stage, navigating a health challenge, finding a confidence boost or getting ready for a big night out, Boots is in their corner with trusted advice, products and"
+    },
+    {
+      "passage_uid": "PU-573afa2c634dafe7",
+      "source_id": "S-a1433d9c2d62",
+      "char_start": 3189,
+      "char_end": 3356,
+      "selection_status": "not_selected",
+      "reasons": [
+        "packet_passage_cap"
+      ],
+      "identity_reason": "third-party passage names the company in a confirmed document",
+      "statement_type": "author_recommendation",
+      "preview": "Thursday Boots Google Ads, YouTube Ads & Cross-Platform Lessons Thursday's lesson is that a direct-to-consumer value proposition can carry an entire creative strategy."
+    },
+    {
+      "passage_uid": "PU-11d5a466266852f3",
+      "source_id": "S-4c03af9873c3",
+      "char_start": 322,
+      "char_end": 530,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Environmental, Social & Governance toggle Caring for healthier communities Progressing our sustainable Bootprint Empowering people and promoting diversity * Suppliers toggle Existing supplier Goods fo"
+    },
+    {
+      "passage_uid": "PU-e34a75b9924929a7",
+      "source_id": "S-4c03af9873c3",
+      "char_start": 5699,
+      "char_end": 5839,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "Downloads Give it Some Boots - 60s TV Still Download Give it Some Boots - OOH Ad Download Give it Some Boots OOH Ad 2 Download See all media"
+    },
+    {
+      "passage_uid": "PU-987f3b76ab6d750f",
+      "source_id": "S-4c03af9873c3",
+      "char_start": 5845,
+      "char_end": 6029,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:document_identity_rejected",
+        "not_marketing_relevant"
+      ],
+      "identity_reason": "document identity: conflicting_entity_domain",
+      "statement_type": "descriptive",
+      "preview": "News What’s new at Boots? Find out the latest updates from the UK’s largest pharmacy-led health and beauty chain – from new products and services to important business developments. xx"
+    },
+    {
+      "passage_uid": "PU-b47f4b6764f6e483",
+      "source_id": "S-a1433d9c2d62",
+      "char_start": 3466,
+      "char_end": 3771,
+      "selection_status": "rejected",
+      "reasons": [
+        "identity:no_company_mention"
+      ],
+      "identity_reason": "third-party passage does not name the company",
+      "statement_type": "author_recommendation",
+      "preview": "Other footwear and apparel DTC brands can adopt the pattern of one clear promise supported by product detail and customer voice. Comparing the brand's ads with those of direct competitors in AdLibrary"
+    }
+  ],
+  "status": "ok",
+  "status_reasons": [],
+  "packet_sha256": "791da27d22303d08cedc9d437c855427b75eb8bff068ff2eb025379fac27cc1b"
+}

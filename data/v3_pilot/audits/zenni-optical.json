@@ -1,0 +1,102 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "zenni-optical",
+  "bound_to": {
+    "packet_sha256": "6c2d31e5f3eae1105ee9862c7a5c2df9ca4922a359eff7d6b63c9fa8b75ae7ac",
+    "prompt_sha256": "4c534b17fc4165c7b0f62cf0ad7dfb71141bf02caf3a1784f02823cf3b8d3b74",
+    "completion_sha256": "79418228fd759973ae73eb360c549ab8fc7d18c938ac0f927506e00e885f8012",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": []
+  },
+  "raw_response_sha256": "4704ac05afdd66c51ca76b7af7ca5716b5256b94de7af8468293c2d05741167e",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Zenni hosted over 250 vision screenings (including innovative VR-based evaluations)\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that Zenni hosted over 250 vision screenings.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"Zenni partnered with Community Goods in Chicago, delivering free vision screenings, and EyeQLenz glasses to local children.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states this partnership and its activities.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Zenni’s “I Run For…” campaign led by Chase Stokes and in partnership with Bring Change to Mind.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms the launch of the campaign and its key partners and leader.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"Our social media campaigns are designed to engage, inspire, and inform customers.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states the purpose of Zenni's social media campaigns.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"Zenni won the 2024 Brand Experience Award for Mobile & Social Optimization.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states Zenni's award win.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"Zenni x Monster Jam collaboration featuring four people wearing themed sunglasses and uniforms.\",\n      \"issues\": [],\n      \"reason\": \"The passage mentions the introduction of Zunnies™ Cycling sunglasses in a collaboration.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Zenni hosted over 250 vision screenings (including innovative VR-based evaluations)",
+        "issues": [],
+        "reason": "The passage explicitly states that Zenni hosted over 250 vision screenings."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "Zenni partnered with Community Goods in Chicago, delivering free vision screenings, and EyeQLenz glasses to local children.",
+        "issues": [],
+        "reason": "The passage directly states this partnership and its activities."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Zenni’s “I Run For…” campaign led by Chase Stokes and in partnership with Bring Change to Mind.",
+        "issues": [],
+        "reason": "The passage confirms the launch of the campaign and its key partners and leader."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "Our social media campaigns are designed to engage, inspire, and inform customers.",
+        "issues": [],
+        "reason": "The passage directly states the purpose of Zenni's social media campaigns."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "Zenni won the 2024 Brand Experience Award for Mobile & Social Optimization.",
+        "issues": [],
+        "reason": "The passage explicitly states Zenni's award win."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "Zenni x Monster Jam collaboration featuring four people wearing themed sunglasses and uniforms.",
+        "issues": [],
+        "reason": "The passage mentions the introduction of Zunnies™ Cycling sunglasses in a collaboration."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [
+    "C4: reviewer quote does not occur in the referenced passage(s)"
+  ],
+  "status": "unresolved",
+  "reasons": [
+    "reviewer response invalid or incomplete",
+    "C4: reviewer quote does not occur in the referenced passage(s)"
+  ],
+  "created_at": "2026-11-23T00:28:43+00:00",
+  "audit_sha256": "f69d33815015aba54949c2bc1e2b740ca60368bd0fdca580f260ebb056ddd359",
+  "dismissed_reviewer_flags": []
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "coterie",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "ae74eccf408faad342ed985e562aee22953af876eada6d1b22c61fc5988bda17",
+    "prompt_sha256": "18f32ccdc88aee2c8021a221d47888e54ccd06079780dcab211d09715fd497db",
+    "completion_sha256": "89cb16f8a0d6d9468cd85ad639d0c8ef06ce019202d8056644cc276acfc8ed5f",
+    "audit_sha256": "eff4eeaed4a0b8dd1d5a2bb3855e8a95f79b1295c6aeb396e5b6cca743b3abf3"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 6,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T00:28:45+00:00",
+  "record_sha256": "09bb86f353f008d028697ef923919a55d4d64b8f8ef7f6ab4293708d46566e22"
+}
