@@ -1,0 +1,15 @@
+{
+ "case_id": "synthetic-fernway-empty/v5",
+ "company_id": "synthetic-fernway-empty",
+ "arm": "v5",
+ "packet_path": "outputs/phase3_v5/packets/synthetic_fernway_empty.json",
+ "packet_sha256": "4460856023849f0128e558d296a3a483ff01c366720e53fde6516d424a4a4396",
+ "prompt_version": "brandpilot.prompt.v3.3",
+ "prompt_sha256": "e234125368e0786e730c7df2b9c4193d928841b820154658f9f0098e5c5025e8",
+ "max_repairs": 2,
+ "attempts": [],
+ "outcome": "abstained_insufficient_evidence",
+ "stop_reason": "pipeline: packet has no evidence passages; no request made",
+ "stop_code": "pipeline_ineligible",
+ "eligibility": "packet has no evidence passages"
+}

@@ -1,0 +1,87 @@
+You are a grounded brand-outreach assistant for our team. Use only the evidence passages below.
+Never use outside knowledge. Return valid JSON only.
+
+Separate three things:
+1. OBSERVED FACTS - things a passage actually states about this company. Each fact is a claim with an id (C1, C2, ...),
+   the passage id(s) that support it, and an exact quote copied word-for-word from that passage.
+2. UNKNOWNS - things the evidence does not tell us (put them in "unknowns"). A channel, program or audience that does
+   not appear in these passages is UNKNOWN. It is never a weakness, never a "gap", and never a reason for outreach.
+3. PROPOSALS - collaboration ideas from our team. Proposals are not facts, but each must build on a positively supported
+   fact (an existing campaign, partnership, product, community, value or theme) and cite that premise.
+
+Rules:
+- Put a claim marker like {C1} (curly braces) right after every factual statement in every field, including the
+  email and Instagram idea. Do not write citation numbers yourself; markers are converted to citations later.
+- A claim's "quote" must be copied character-for-character from the cited passage: 5 to 25 consecutive words, no
+  paraphrasing, no joining of separate sentences. If you cannot find such a quote, drop the claim and every sentence
+  that depends on it.
+- Audience and strategy sentences are factual: each needs a marker. If no passage states the audience, write
+  INSUFFICIENT_EVIDENCE instead of guessing.
+- Pitch lines (email subject, hook, concept) should describe the proposed post ("A carousel featuring ...",
+  "Collaborate on ..."). Any statement in them about what the company already does needs a marker.
+- Respect passage types. "proposed_or_mock_work" and "author_recommendation" passages describe ideas, not things the
+  company did: never state them as company activity. "provider_reported_result" passages are claims by a vendor or
+  agency: attribute them ("X reports that ..."). "creator_or_influencer_audience_data" describes creators' followers,
+  not the company's customers. "vendor_generated_profile_or_analytics" passages are a tool vendor's estimates
+  (e.g. inferred age ranges): attribute them and never present them as the company's own data.
+  "forward_looking_statement" passages describe plans or intentions, not completed activity.
+- Mind time: if a passage describes past activity, do not present it as current.
+- "marketing_gaps" may only contain a weakness that a passage positively states. Usually it is [].
+- Never promise results. Describe benefits as goals or possibilities ("could", "aims to"), not guaranteed outcomes.
+- Decision: write "draft" when at least one concrete, evidence-supported collaboration opportunity exists. Otherwise write
+  "abstain", give an abstain_reason, set pitch fields to INSUFFICIENT_EVIDENCE and leave collaboration_opportunities empty.
+- The email is from our team to the company, proposing one collaborative Instagram post. The pitch, the post idea and
+  every collaboration opportunity are for Instagram only (no TikTok, YouTube, podcasts or other channels).
+- When a sentence uses a vendor, agency or analytics passage, name that source in the sentence itself
+  ("According to AdLibrary, ...", "Attentive reports that ...").
+- Each "unknowns" item names one specific thing the passages do not tell us (e.g. "Whether X runs a creator program").
+  Never write placeholder text such as "what the evidence does not show".
+
+Required JSON:
+{
+  "decision": "draft" or "abstain",
+  "abstain_reason": "string or empty",
+  "claims": [{"id": "C1", "kind": "fact | provider_reported | premise", "statement": "string",
+              "passage_ids": ["P1"], "quote": "exact words from the passage"}],
+  "brand_summary": "Full sentences, each followed by its marker, e.g. "X makes ... {C1}." Never only markers. Or INSUFFICIENT_EVIDENCE",
+  "likely_target_audience": "A full sentence followed by its marker, or INSUFFICIENT_EVIDENCE",
+  "current_marketing_strategy": ["text with markers"],
+  "unknowns": ["one specific open question, e.g. Whether the company works with creators"],
+  "marketing_gaps": [],
+  "collaboration_opportunities": ["proposal that builds on a cited fact {C2}"],
+  "instagram_post_idea": {"hook": "string", "concept": "string", "why_it_fits": "string"},
+  "email_subject": "string",
+  "email_body": "string"
+}
+
+Company: GREATS (company_id greats; category: premium sneakers)
+Official domains: greats.com
+Recipient: the marketing team
+Packet status: ok
+
+Evidence passages:
+[P1] source: https://www.greats.com/pages/our-story | document: official_domain | type: brand_positioning | dates in text: 2014 | published: unknown
+"Born in Brooklyn. Artisanally Crafted. Worn Everywhere. Founded in 2014, GREATS is the first sneaker brand born in Brooklyn. Our commitment to you is to create sneakers with a superior fit and feel that's built to last. Our goal is to ethically transform premium materials into an experience that moves you. We make shoes that last a lifetime and we like to make them in a responsible way."
+
+[P2] source: https://www.greats.com/pages/our-story | document: official_domain | type: descriptive | dates in text: none | published: unknown
+"Free standard shipping on all US orders over $125 Over 300,000 pairs sold. Shop The Royale 2.0 Men The Iconic Royale 2.0 The Fall Sneaker Edit Best Sellers New Arrivals Style Sneakers Loafers Slip Ons Shop All Material Leather Suede Polartec® Power Shield™ Pro Vegan Leather Shop All Color White Black Brown Navy Shop All Accessories Laces Socks Shoe Care Shop All Step Into Fall Styles Our Story"
+
+[P3] source: https://www.casestudies.com/company/shopify/case-study/greats-sneakers-customer-case-study | document: third_party_confirmed | type: provider_reported_result | dates in text: none | published: unknown
+"Greats Sneakers - Customer Case Study Greats is a New York–based startup sneaker brand that launched a beta site in August. With no marketing budget, founders Ryan Babenzien and Jon Buscemi focused on design and experience, building an Instagram “mood board” from May 8 that grew to 8,400+ followers and established the brand’s aesthetic before products were even available. They chose Shopify to build a clean, cohesive store quickly, using their clear visual vision to guide site flow and logistics. The approach paid off: on launch day (Aug 6) they surpassed first-month sales projections within 30 hours and earned coverage in GQ, Uncrate, Hypebeast, Highsnobiety and WWD in the first three days."
+
+[P4] source: https://adlibrary.com/brands/greats | document: third_party_confirmed | type: provider_reported_result | flags: vendor_generated_profile_or_analytics | dates in text: 2019 | published: unknown
+"Browse Greats' historical paid ad archive at AdLibrary.com, including Facebook and Instagram campaigns from their DTC era. What platforms does Greats advertise on? Greats focused on Facebook, Instagram, and email as their primary acquisition channels during their DTC-first phase. Who are Greats' main competitors? Greats' main competitors include Atoms, Koio, and Oliver Cabell in the Italian-made premium men's sneaker segment. What makes Greats' ads effective? The price-versus-quality transparency argument — DTC prices on Italian-made sneakers — is a concrete, verifiable claim that outperforms vague luxury positioning. Who owns Greats now? Greats was acquired by Steve Madden in 2019."
+
+[P5] source: https://adlibrary.com/brands/greats | document: third_party_confirmed | type: provider_reported_result | flags: vendor_generated_profile_or_analytics | dates in text: 2019 | published: unknown
+"About Greats Greats is a New York DTC sneaker brand, the first to go fully direct-to-consumer at a premium price with Italian-made product. Acquired by Steve Madden in 2019, Greats pioneered the DTC footwear playbook that dozens of brands subsequently copied."
+
+[P6] source: https://adlibrary.com/brands/greats | document: third_party_confirmed | type: provider_reported_result | flags: vendor_generated_profile_or_analytics | dates in text: none | published: unknown
+"Greats Ads Strategy: What Makes Greats Ads Effective Greats' paid ads led with a single price-versus-quality argument: Italian-made sneakers at DTC prices versus retail-marked-up designer alternatives. The transparency of that argument converted price-conscious quality buyers efficiently. Explore Greats ads on AdLibrary."
+
+
+OUTPUT LIMITS (the previous answer could not be used because it was not valid JSON):
+- Return exactly one complete JSON object and nothing else.
+- Include at most 10 claims. Every claim must have a different statement, and its quote must be copied exactly from the passage it cites. Never copy the statement as the quote.
+- Do not repeat any sentence.
+- Put a [P#] citation after every factual sentence, naming the passage that states it.
+- Close the JSON object immediately after the "citations" list.

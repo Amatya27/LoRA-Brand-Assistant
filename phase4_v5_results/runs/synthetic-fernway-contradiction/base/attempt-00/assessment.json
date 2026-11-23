@@ -1,0 +1,961 @@
+{
+ "checks_version": "phase4-v5-checks-2",
+ "structure": {
+  "strict_json": false,
+  "truncated": true,
+  "parse_error": {
+   "error_type": "truncated_output",
+   "truncated": true,
+   "finish_reason": "length",
+   "unbalanced_braces": true,
+   "message": "Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 121 column 20 (char 13427)"
+  },
+  "schema_errors": [
+   "truncated_output: Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 121 column 20 (char 13427)"
+  ],
+  "parse_mode": "diagnostic_prefix",
+  "prompt_schema_valid": false,
+  "training_schema_valid": false,
+  "raw_format": {
+   "starts_with_brace": false,
+   "code_fenced": true,
+   "text_outside_json": null
+  }
+ },
+ "decision": null,
+ "repetition": {
+  "method": "exact match after whitespace/quote/case normalisation; no semantic similarity",
+  "claim_count": 16,
+  "duplicate_claim_ids": [],
+  "duplicate_claim_statements": 10,
+  "distinct_claim_statements": 6,
+  "duplicate_claim_quotes": 11,
+  "repeated_prose_sentences": {},
+  "max_8gram_repeats_in_raw": 25,
+  "looping": true
+ },
+ "citation_mechanics": {
+  "inline_passage_refs": [],
+  "unknown_refs": [],
+  "claim_quotes": [
+   {
+    "index": 0,
+    "claim_id": "C1",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": true,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 1,
+    "claim_id": "C2",
+    "passage_ids": [
+     "P2"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": true,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 2,
+    "claim_id": "C3",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [
+     "P2"
+    ],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 3,
+    "claim_id": "C4",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": true,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 4,
+    "claim_id": "C5",
+    "passage_ids": [
+     "P2"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": true,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 5,
+    "claim_id": "C6",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 6,
+    "claim_id": "C7",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": true,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 7,
+    "claim_id": "C8",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 8,
+    "claim_id": "C9",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 9,
+    "claim_id": "C10",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 10,
+    "claim_id": "C11",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 11,
+    "claim_id": "C12",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 12,
+    "claim_id": "C13",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 13,
+    "claim_id": "C14",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 14,
+    "claim_id": "C15",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 15,
+    "claim_id": "C16",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   }
+  ]
+ },
+ "assertions": [
+  {
+   "review_id": "R-4efad8bbd33db52a",
+   "location": "claims[0].statement",
+   "text": "Fernway makes merino hiking socks for long-distance walkers and trail runners.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "supported",
+   "reviewer_verdict": "supported",
+   "citation_status": "cited",
+   "flags": [],
+   "reason": "The passage directly states that Fernway makes merino hiking socks for long-distance walkers and trail runners, which matches the statement.",
+   "guard": {
+    "coverage": 1.0,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": []
+   },
+   "reviewer_reason": "The passage directly states that Fernway makes merino hiking socks for long-distance walkers and trail runners, which matches the statement.",
+   "evidence_passage_id": "P1",
+   "evidence_quote": "Fernway makes merino hiking socks for long-distance walkers and trail runners. Our mission is to keep walkers comfortable on every trail.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "6dd67bb9fb2afb751b233ab7e33d47f03d7b993cabb0563a605976a5c0bf7a58",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-4efad8bbd33db52a\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P1\",\n  \"evidence_quote\": \"Fernway makes merino hiking socks for long-distance walkers and trail runners. Our mission is to keep walkers comfortable on every trail.\",\n  \"reason\": \"The passage directly states that Fernway makes merino hiking socks for long-distance walkers and trail runners, which matches the statement.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 565,
+       "completion_tokens": 112,
+       "total_tokens": 677,
+       "prompt_tokens_details": {
+        "cached_tokens": 31
+       }
+      },
+      "latency_s": 13.035,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "6916a49bb33fa82b7745732f35e36f177464df583a3ce6bc8a84f00afef8925a",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-395414940466a80b",
+   "location": "claims[1].statement",
+   "text": "Fernway partnered with the Ridge Trail Conservancy in 2025 to fund volunteer trail maintenance days, and the brand donates one percent of sock sales to the Conservancy.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P2"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "supported",
+   "reviewer_verdict": "supported",
+   "citation_status": "miscited_supported_elsewhere",
+   "flags": [],
+   "reason": "The passage directly states that Fernway partnered with the Ridge Trail Conservancy in 2025 to fund volunteer trail maintenance days, which aligns with the statement that the brand donates one percent of sock sales to the Conservancy.",
+   "guard": {
+    "coverage": 1.0,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": []
+   },
+   "reviewer_reason": "The passage directly states that Fernway partnered with the Ridge Trail Conservancy in 2025 to fund volunteer trail maintenance days, which aligns with the statement that the brand donates one percent of sock sales to the Conservancy.",
+   "evidence_passage_id": "P1",
+   "evidence_quote": "Fernway partnered with the Ridge Trail Conservancy in 2025 to fund volunteer trail maintenance days, and the brand donates one percent of sock sales to the Conservancy.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "6c2bdfc9930e00415333c83e1a1ea6f334456a31a4091015c6901f85a7571483",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-395414940466a80b\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P1\",\n  \"evidence_quote\": \"Fernway partnered with the Ridge Trail Conservancy in 2025 to fund volunteer trail maintenance days, and the brand donates one percent of sock sales to the Conservancy.\",\n  \"reason\": \"The passage directly states that Fernway partnered with the Ridge Trail Conservancy in 2025 to fund volunteer trail maintenance days, which aligns with the statement that the brand donates one percent of sock sales to the Conservancy.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 591,
+       "completion_tokens": 150,
+       "total_tokens": 741,
+       "prompt_tokens_details": {
+        "cached_tokens": 157
+       }
+      },
+      "latency_s": 13.177,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "e6b1a58f16eb2506aa136bd69e2b62bccb274c32af697bd8448e2bbd041ee52a",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-d8f617911cedb890",
+   "location": "claims[2].statement",
+   "text": "Outdoor brand roundup. Fernway, the merino hiking sock brand, debuted a limited-edition sock collaboration with illustrator Ana Ruiz in September 2026. The socks feature Ruiz's drawings of alpine wildflowers and sold through Fernway's own store.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": "miscited_supported_elsewhere",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "reason": "reviewer said supported, but deterministic check(s) failed: recommendation_as_fact",
+   "guard": {
+    "coverage": 1.0,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": []
+   },
+   "reviewer_reason": "The passage P2 directly states that Fernway debuted a limited-edition sock collaboration with illustrator Ana Ruiz in September 2026, which matches the statement.",
+   "evidence_passage_id": "P2",
+   "evidence_quote": "Outdoor brand roundup. Fernway, the merino hiking sock brand, debuted a limited-edition sock collaboration with illustrator Ana Ruiz in September 2026. The socks feature Ruiz's drawings of alpine wildflowers and sold through Fernway's own store.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "a5dab3f03af42fb38e5df2bda7a5a9b3ecb692848430eeb52d244f5ab4f389e3",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-d8f617911cedb890\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P2\",\n  \"evidence_quote\": \"Outdoor brand roundup. Fernway, the merino hiking sock brand, debuted a limited-edition sock collaboration with illustrator Ana Ruiz in September 2026. The socks feature Ruiz's drawings of alpine wildflowers and sold through Fernway's own store.\",\n  \"reason\": \"The passage P2 directly states that Fernway debuted a limited-edition sock collaboration with illustrator Ana Ruiz in September 2026, which matches the statement.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 603,
+       "completion_tokens": 147,
+       "total_tokens": 750,
+       "prompt_tokens_details": {
+        "cached_tokens": 156
+       }
+      },
+      "latency_s": 13.274,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "4ba8d3593405ddf65788a39e81cc5702b56d0b3c8f94e1b79fc8f9d169e53f32",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-a01b85967455f2c0",
+   "location": "claims[3].statement",
+   "text": "Brands like Fernway should consider a referral program for hiking customers. You can use trail creators to reach new walkers, and it's worth testing a newsletter series about merino sock care. \n We recommend that sock brands such as Fernway should post weekly trail content on Instagram. Brands can also partner with hiking clubs, and it is worth trying giveaways for merino socks.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": "cited",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "reason": "reviewer said supported, but deterministic check(s) failed: recommendation_as_fact",
+   "guard": {
+    "coverage": 1.0,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": []
+   },
+   "reviewer_reason": "The evidence passage P3 directly supports the statement by recommending that brands like Fernway should consider a referral program for hiking customers and suggest various ways to reach new walkers, including using trail creators and newsletters.",
+   "evidence_passage_id": "P3",
+   "evidence_quote": "Brands like Fernway should consider a referral program for hiking customers. You can use trail creators to reach new walkers, and it's worth testing a newsletter series about merino sock care. \n We recommend that sock brands such as Fernway should post weekly trail content on Instagram. Brands can also partner with hiking clubs, and it is worth trying giveaways for merino socks.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "2fb838f5059fffd769e102f3899884d4b6729404d3a1b224b851c27e521bfedb",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-a01b85967455f2c0\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P3\",\n  \"evidence_quote\": \"Brands like Fernway should consider a referral program for hiking customers. You can use trail creators to reach new walkers, and it's worth testing a newsletter series about merino sock care. \\n We recommend that sock brands such as Fernway should post weekly trail content on Instagram. Brands can also partner with hiking clubs, and it is worth trying giveaways for merino socks.\",\n  \"reason\": \"The evidence passage P3 directly supports the statement by recommending that brands like Fernway should consider a referral program for hiking customers and suggest various ways to reach new walkers, including using trail creators and newsletters.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 628,
+       "completion_tokens": 179,
+       "total_tokens": 807,
+       "prompt_tokens_details": {
+        "cached_tokens": 156
+       }
+      },
+      "latency_s": 15.276,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "b3151457717db77c3ff04d53f9775285e4540a9797367b3973598e14b8149906",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-395414940466a80b",
+   "location": "claims[4].statement",
+   "text": "Fernway partnered with the Ridge Trail Conservancy in 2025 to fund volunteer trail maintenance days, and the brand donates one percent of sock sales to the Conservancy.",
+   "duplicate_of": "R-395414940466a80b",
+   "flags": [],
+   "verdict": "supported",
+   "citation_status": "miscited_supported_elsewhere",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P2"
+   ]
+  },
+  {
+   "review_id": "R-5eb0eeeca54827f2",
+   "location": "claims[5].statement",
+   "text": "Fernway's marketing gaps are a potential weakness that a passage positively states. You can use trail creators to reach new walkers, and it's worth testing a newsletter series about merino sock care. \n We recommend that sock brands such as Fernway should post weekly trail content on Instagram. Brands can also partner with hiking clubs, and it is worth trying giveaways for merino socks.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": "cited",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "reason": "reviewer said supported, but deterministic check(s) failed: recommendation_as_fact",
+   "guard": {
+    "coverage": 0.778,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": []
+   },
+   "reviewer_reason": "The passage directly supports the statement by mentioning that Fernway should consider a referral program and use trail creators to reach new walkers, which aligns with the recommendation in the statement.",
+   "evidence_passage_id": "P3",
+   "evidence_quote": "Brands like Fernway should consider a referral program for hiking customers. You can use trail creators to reach new walkers, and it's worth testing a newsletter series about merino sock care. \n We recommend that sock brands such as Fernway should post weekly trail content on Instagram. Brands can also partner with hiking clubs, and it is worth trying giveaways for merino socks.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "fcf7961f3e830d0f7a0f3fdeb39e8690ebd2724260fb4fc73f191f9d90f98072",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-5eb0eeeca54827f2\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P3\",\n  \"evidence_quote\": \"Brands like Fernway should consider a referral program for hiking customers. You can use trail creators to reach new walkers, and it's worth testing a newsletter series about merino sock care. \\n We recommend that sock brands such as Fernway should post weekly trail content on Instagram. Brands can also partner with hiking clubs, and it is worth trying giveaways for merino socks.\",\n  \"reason\": \"The passage directly supports the statement by mentioning that Fernway should consider a referral program and use trail creators to reach new walkers, which aligns with the recommendation in the statement.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 627,
+       "completion_tokens": 171,
+       "total_tokens": 798,
+       "prompt_tokens_details": {
+        "cached_tokens": 157
+       }
+      },
+      "latency_s": 13.822,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "acc2d5f9f1ce00ca882f378f6bba9859fea6e1d8f00b0ceeef454209b99006fe",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-a01b85967455f2c0",
+   "location": "claims[6].statement",
+   "text": "Brands like Fernway should consider a referral program for hiking customers. You can use trail creators to reach new walkers, and it's worth testing a newsletter series about merino sock care. \n We recommend that sock brands such as Fernway should post weekly trail content on Instagram. Brands can also partner with hiking clubs, and it is worth trying giveaways for merino socks.",
+   "duplicate_of": "R-a01b85967455f2c0",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unsupported",
+   "citation_status": "cited",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-5eb0eeeca54827f2",
+   "location": "claims[7].statement",
+   "text": "Fernway's marketing gaps are a potential weakness that a passage positively states. You can use trail creators to reach new walkers, and it's worth testing a newsletter series about merino sock care. \n We recommend that sock brands such as Fernway should post weekly trail content on Instagram. Brands can also partner with hiking clubs, and it is worth trying giveaways for merino socks.",
+   "duplicate_of": "R-5eb0eeeca54827f2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unsupported",
+   "citation_status": "cited",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-5eb0eeeca54827f2",
+   "location": "claims[8].statement",
+   "text": "Fernway's marketing gaps are a potential weakness that a passage positively states. You can use trail creators to reach new walkers, and it's worth testing a newsletter series about merino sock care. \n We recommend that sock brands such as Fernway should post weekly trail content on Instagram. Brands can also partner with hiking clubs, and it is worth trying giveaways for merino socks.",
+   "duplicate_of": "R-5eb0eeeca54827f2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unsupported",
+   "citation_status": "cited",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-5eb0eeeca54827f2",
+   "location": "claims[9].statement",
+   "text": "Fernway's marketing gaps are a potential weakness that a passage positively states. You can use trail creators to reach new walkers, and it's worth testing a newsletter series about merino sock care. \n We recommend that sock brands such as Fernway should post weekly trail content on Instagram. Brands can also partner with hiking clubs, and it is worth trying giveaways for merino socks.",
+   "duplicate_of": "R-5eb0eeeca54827f2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unsupported",
+   "citation_status": "cited",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e88f74aaa011973a",
+   "location": "claims[10].statement",
+   "text": "Fernway's marketing gaps are a potential weakness that a passage positively states. You can use trail creators to reach new walkers, and it's worth testing a newsletter series about merino sock care. \n We recommend that sock brands such like Fernway should post weekly trail content on Instagram. Brands can also partner with hiking clubs, and it is worth trying giveaways for merino socks.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": "cited",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "reason": "reviewer said supported, but deterministic check(s) failed: recommendation_as_fact",
+   "guard": {
+    "coverage": 0.784,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": []
+   },
+   "reviewer_reason": "The passage directly supports the statement by recommending that Fernway should consider a referral program and post weekly trail content on Instagram, which aligns with the idea of reaching new walkers and testing a newsletter series about merino sock care.",
+   "evidence_passage_id": "P3",
+   "evidence_quote": "Brands like Fernway should consider a referral program for hiking customers. You can use trail creators to reach new walkers, and it's worth testing a newsletter series about merino sock care. \n We recommend that sock brands such as Fernway should post weekly trail content on Instagram. Brands can also partner with hiking clubs, and it is worth trying giveaways for merino socks.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "c45b9cc4dc6e0c405ca030aef388e1d101ed6c06edf9f226cbf957a73482506a",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-e88f74aaa011973a\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P3\",\n  \"evidence_quote\": \"Brands like Fernway should consider a referral program for hiking customers. You can use trail creators to reach new walkers, and it's worth testing a newsletter series about merino sock care. \\n We recommend that sock brands such as Fernway should post weekly trail content on Instagram. Brands can also partner with hiking clubs, and it is worth trying giveaways for merino socks.\",\n  \"reason\": \"The passage directly supports the statement by recommending that Fernway should consider a referral program and post weekly trail content on Instagram, which aligns with the idea of reaching new walkers and testing a newsletter series about merino sock care.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 628,
+       "completion_tokens": 182,
+       "total_tokens": 810,
+       "prompt_tokens_details": {
+        "cached_tokens": 156
+       }
+      },
+      "latency_s": 14.204,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "ce0382a1179254a5079428765d7d614600905a4c41d0a63ec5fd0697b3c2476e",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-e88f74aaa011973a",
+   "location": "claims[11].statement",
+   "text": "Fernway's marketing gaps are a potential weakness that a passage positively states. You can use trail creators to reach new walkers, and it's worth testing a newsletter series about merino sock care. \n We recommend that sock brands such like Fernway should post weekly trail content on Instagram. Brands can also partner with hiking clubs, and it is worth trying giveaways for merino socks.",
+   "duplicate_of": "R-e88f74aaa011973a",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unsupported",
+   "citation_status": "cited",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e88f74aaa011973a",
+   "location": "claims[12].statement",
+   "text": "Fernway's marketing gaps are a potential weakness that a passage positively states. You can use trail creators to reach new walkers, and it's worth testing a newsletter series about merino sock care. \n We recommend that sock brands such like Fernway should post weekly trail content on Instagram. Brands can also partner with hiking clubs, and it is worth trying giveaways for merino socks.",
+   "duplicate_of": "R-e88f74aaa011973a",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unsupported",
+   "citation_status": "cited",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e88f74aaa011973a",
+   "location": "claims[13].statement",
+   "text": "Fernway's marketing gaps are a potential weakness that a passage positively states. You can use trail creators to reach new walkers, and it's worth testing a newsletter series about merino sock care. \n We recommend that sock brands such like Fernway should post weekly trail content on Instagram. Brands can also partner with hiking clubs, and it is worth trying giveaways for merino socks.",
+   "duplicate_of": "R-e88f74aaa011973a",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unsupported",
+   "citation_status": "cited",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e88f74aaa011973a",
+   "location": "claims[14].statement",
+   "text": "Fernway's marketing gaps are a potential weakness that a passage positively states. You can use trail creators to reach new walkers, and it's worth testing a newsletter series about merino sock care. \n We recommend that sock brands such like Fernway should post weekly trail content on Instagram. Brands can also partner with hiking clubs, and it is worth trying giveaways for merino socks.",
+   "duplicate_of": "R-e88f74aaa011973a",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unsupported",
+   "citation_status": "cited",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e88f74aaa011973a",
+   "location": "claims[15].statement",
+   "text": "Fernway's marketing gaps are a potential weakness that a passage positively states. You can use trail creators to reach new walkers, and it's worth testing a newsletter series about merino sock care. \n We recommend that sock brands such like Fernway should post weekly trail content on Instagram. Brands can also partner with hiking clubs, and it is worth trying giveaways for merino socks.",
+   "duplicate_of": "R-e88f74aaa011973a",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unsupported",
+   "citation_status": "cited",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  }
+ ],
+ "skipped_sentences": {
+  "proposal": [],
+  "non_assertion": []
+ },
+ "unknown_issues": [],
+ "outreach": {
+  "recipient": "no_email",
+  "sender": "no_email",
+  "instagram_mentioned": false,
+  "other_platforms_in_pitch": [],
+  "instagram_compliant": false,
+  "promises": [],
+  "email_subject": ""
+ },
+ "failures": [
+  {
+   "check": "structure",
+   "detail": [
+    "truncated_output: Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 121 column 20 (char 13427)"
+   ]
+  },
+  {
+   "check": "duplicate_claims",
+   "detail": [
+    [],
+    10
+   ]
+  },
+  {
+   "check": "repetition",
+   "detail": [
+    25
+   ]
+  },
+  {
+   "check": "claim_quotes",
+   "detail": [
+    {
+     "claim_id": "C3",
+     "self_quote": false,
+     "other_passage": [
+      "P2"
+     ]
+    },
+    {
+     "claim_id": "C6",
+     "self_quote": true,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C8",
+     "self_quote": true,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C9",
+     "self_quote": true,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C10",
+     "self_quote": false,
+     "other_passage": []
+    }
+   ]
+  },
+  {
+   "check": "citation_mapping",
+   "review_id": "R-395414940466a80b",
+   "location": "claims[1].statement",
+   "text": "Fernway partnered with the Ridge Trail Conservancy in 2025 to fund volunteer trail maintenance days, and the brand donates one percent of sock sales to the Conservancy.",
+   "citation_status": "miscited_supported_elsewhere",
+   "evidence_passage_id": "P1"
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-d8f617911cedb890",
+   "location": "claims[2].statement",
+   "text": "Outdoor brand roundup. Fernway, the merino hiking sock brand, debuted a limited-edition sock collaboration with illustrator Ana Ruiz in September 2026. The socks feature Ruiz's drawings of alpine wildflowers and sold through Fernway's own store.",
+   "verdict": "unsupported",
+   "reason": "reviewer said supported, but deterministic check(s) failed: recommendation_as_fact",
+   "evidence_passage_id": "P2",
+   "evidence_quote": "Outdoor brand roundup. Fernway, the merino hiking sock brand, debuted a limited-edition sock collaboration with illustrator Ana Ruiz in September 2026. The socks feature Ruiz's drawings of alpine wildflowers and sold through Fernway's own store."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-a01b85967455f2c0",
+   "location": "claims[3].statement",
+   "text": "Brands like Fernway should consider a referral program for hiking customers. You can use trail creators to reach new walkers, and it's worth testing a newsletter series about merino sock care. \n We recommend that sock brands such as Fernway should post weekly trail content on Instagram. Brands can also partner with hiking clubs, and it is worth trying giveaways for merino socks.",
+   "verdict": "unsupported",
+   "reason": "reviewer said supported, but deterministic check(s) failed: recommendation_as_fact",
+   "evidence_passage_id": "P3",
+   "evidence_quote": "Brands like Fernway should consider a referral program for hiking customers. You can use trail creators to reach new walkers, and it's worth testing a newsletter series about merino sock care. \n We recommend that sock brands such as Fernway should post weekly trail content on Instagram. Brands can also partner with hiking clubs, and it is worth trying giveaways for merino socks."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-5eb0eeeca54827f2",
+   "location": "claims[5].statement",
+   "text": "Fernway's marketing gaps are a potential weakness that a passage positively states. You can use trail creators to reach new walkers, and it's worth testing a newsletter series about merino sock care. \n We recommend that sock brands such as Fernway should post weekly trail content on Instagram. Brands can also partner with hiking clubs, and it is worth trying giveaways for merino socks.",
+   "verdict": "unsupported",
+   "reason": "reviewer said supported, but deterministic check(s) failed: recommendation_as_fact",
+   "evidence_passage_id": "P3",
+   "evidence_quote": "Brands like Fernway should consider a referral program for hiking customers. You can use trail creators to reach new walkers, and it's worth testing a newsletter series about merino sock care. \n We recommend that sock brands such as Fernway should post weekly trail content on Instagram. Brands can also partner with hiking clubs, and it is worth trying giveaways for merino socks."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-e88f74aaa011973a",
+   "location": "claims[10].statement",
+   "text": "Fernway's marketing gaps are a potential weakness that a passage positively states. You can use trail creators to reach new walkers, and it's worth testing a newsletter series about merino sock care. \n We recommend that sock brands such like Fernway should post weekly trail content on Instagram. Brands can also partner with hiking clubs, and it is worth trying giveaways for merino socks.",
+   "verdict": "unsupported",
+   "reason": "reviewer said supported, but deterministic check(s) failed: recommendation_as_fact",
+   "evidence_passage_id": "P3",
+   "evidence_quote": "Brands like Fernway should consider a referral program for hiking customers. You can use trail creators to reach new walkers, and it's worth testing a newsletter series about merino sock care. \n We recommend that sock brands such as Fernway should post weekly trail content on Instagram. Brands can also partner with hiking clubs, and it is worth trying giveaways for merino socks."
+  },
+  {
+   "check": "sender_recipient",
+   "detail": [
+    "no_email",
+    "no_email"
+   ]
+  },
+  {
+   "check": "instagram",
+   "detail": []
+  }
+ ],
+ "unresolved": [],
+ "passes": false,
+ "failure_signature": "a683b29e06da48eacd3384e6210c9c392cd45d391c7d6f81f6d49b226ae9caf9",
+ "review_wall_s": 82.854,
+ "attempt": {
+  "index": 0,
+  "kind": "initial"
+ }
+}

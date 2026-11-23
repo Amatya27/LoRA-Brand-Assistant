@@ -1,0 +1,1409 @@
+{
+ "checks_version": "phase4-v5-checks-2",
+ "structure": {
+  "strict_json": false,
+  "truncated": true,
+  "parse_error": {
+   "error_type": "truncated_output",
+   "truncated": true,
+   "finish_reason": "length",
+   "unbalanced_braces": true,
+   "message": "Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 1 column 10417 (char 10416)"
+  },
+  "schema_errors": [
+   "truncated_output: Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 1 column 10417 (char 10416)"
+  ],
+  "parse_mode": "diagnostic_prefix",
+  "prompt_schema_valid": false,
+  "training_schema_valid": false,
+  "raw_format": {
+   "starts_with_brace": true,
+   "code_fenced": false,
+   "text_outside_json": null
+  }
+ },
+ "decision": null,
+ "repetition": {
+  "method": "exact match after whitespace/quote/case normalisation; no semantic similarity",
+  "claim_count": 34,
+  "duplicate_claim_ids": [],
+  "duplicate_claim_statements": 32,
+  "distinct_claim_statements": 2,
+  "duplicate_claim_quotes": 33,
+  "repeated_prose_sentences": {
+   "graza has a strategic product roadmap, including refill beer-can campaigns.": [
+    "current_marketing_strategy[0]",
+    "collaboration_opportunities[0]"
+   ]
+  },
+  "max_8gram_repeats_in_raw": 38,
+  "looping": true
+ },
+ "citation_mechanics": {
+  "inline_passage_refs": [
+   "P9",
+   "P9",
+   "P9",
+   "P9",
+   "P9",
+   "P9",
+   "P9",
+   "P9",
+   "P9",
+   "P9",
+   "P9",
+   "P9"
+  ],
+  "unknown_refs": [],
+  "claim_quotes": [
+   {
+    "index": 0,
+    "claim_id": "C1",
+    "passage_ids": [
+     "P9"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 1,
+    "claim_id": "C2",
+    "passage_ids": [
+     "P9"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 2,
+    "claim_id": "C3",
+    "passage_ids": [
+     "P9"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 3,
+    "claim_id": "C4",
+    "passage_ids": [
+     "P9"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 4,
+    "claim_id": "C5",
+    "passage_ids": [
+     "P9"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 5,
+    "claim_id": "C6",
+    "passage_ids": [
+     "P9"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 6,
+    "claim_id": "C7",
+    "passage_ids": [
+     "P9"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 7,
+    "claim_id": "C8",
+    "passage_ids": [
+     "P9"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 8,
+    "claim_id": "C9",
+    "passage_ids": [
+     "P9"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 9,
+    "claim_id": "C10",
+    "passage_ids": [
+     "P9"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 10,
+    "claim_id": "C11",
+    "passage_ids": [
+     "P9"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 11,
+    "claim_id": "C12",
+    "passage_ids": [
+     "P9"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 12,
+    "claim_id": "C13",
+    "passage_ids": [
+     "P9"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 13,
+    "claim_id": "C14",
+    "passage_ids": [
+     "P9"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 14,
+    "claim_id": "C15",
+    "passage_ids": [
+     "P9"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 15,
+    "claim_id": "C16",
+    "passage_ids": [
+     "P9"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 16,
+    "claim_id": "C17",
+    "passage_ids": [
+     "P9"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 17,
+    "claim_id": "C18",
+    "passage_ids": [
+     "P9"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 18,
+    "claim_id": "C19",
+    "passage_ids": [
+     "P9"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 19,
+    "claim_id": "C20",
+    "passage_ids": [
+     "P9"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 20,
+    "claim_id": "C21",
+    "passage_ids": [
+     "P9"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 21,
+    "claim_id": "C22",
+    "passage_ids": [
+     "P9"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 22,
+    "claim_id": "C23",
+    "passage_ids": [
+     "P9"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 23,
+    "claim_id": "C24",
+    "passage_ids": [
+     "P9"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 24,
+    "claim_id": "C25",
+    "passage_ids": [
+     "P9"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 25,
+    "claim_id": "C26",
+    "passage_ids": [
+     "P9"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 26,
+    "claim_id": "C27",
+    "passage_ids": [
+     "P9"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 27,
+    "claim_id": "C28",
+    "passage_ids": [
+     "P9"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 28,
+    "claim_id": "C29",
+    "passage_ids": [
+     "P9"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 29,
+    "claim_id": "C30",
+    "passage_ids": [
+     "P9"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 30,
+    "claim_id": "C31",
+    "passage_ids": [
+     "P9"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 31,
+    "claim_id": "C32",
+    "passage_ids": [
+     "P9"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 32,
+    "claim_id": "C33",
+    "passage_ids": [
+     "P9"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 33,
+    "claim_id": "C34",
+    "passage_ids": [
+     "P9"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   }
+  ]
+ },
+ "assertions": [
+  {
+   "review_id": "R-4b3dcacba27311c1",
+   "location": "brand_summary#s0",
+   "text": "Graza is a premium olive oil brand that has built a strong following through influencer marketing and user-generated content [P9].",
+   "kind": "factual",
+   "cited_passages": [
+    "P9"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-d8994cebf738c5ee",
+   "location": "likely_target_audience#s0",
+   "text": "Graza's target audience includes foodies, olive oil enthusiasts, and Instagram influencers [P9].",
+   "kind": "factual",
+   "cited_passages": [
+    "P9"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-8aa8561487c8827a",
+   "location": "current_marketing_strategy[0]#s0",
+   "text": "Graza has a strategic product roadmap, including refill beer-can campaigns [P9].",
+   "kind": "factual",
+   "cited_passages": [
+    "P9"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-113ef05f09b72fd5",
+   "location": "current_marketing_strategy[1]#s0",
+   "text": "Graza has a dedicated Instagram and TikTok following, which they use to drive engagement and product promotion [P9].",
+   "kind": "factual",
+   "cited_passages": [
+    "P9"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-8aa8561487c8827a",
+   "location": "collaboration_opportunities[0]#s0",
+   "text": "Graza has a strategic product roadmap, including refill beer-can campaigns [P9].",
+   "duplicate_of": "R-8aa8561487c8827a",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P9"
+   ]
+  },
+  {
+   "review_id": "R-0c550b9ef714a707",
+   "location": "instagram_post_idea.hook#s0",
+   "text": "A carousel featuring Graza's Drizzle and Sizzle, paired with a recipe for onion rings, building on the 'Cracking Cans' campaign [P9].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P9"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-d04d5f65c26f92de",
+   "location": "instagram_post_idea.concept#s0",
+   "text": "A carousel of Graza's Drizzle and Sizzle, paired with a recipe for onion rings, building on the 'Cracking Cans' campaign [P9].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P9"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-aa2b83004c44d913",
+   "location": "instagram_post_idea.why_it_fits#s0",
+   "text": "Graza's Drizzle and Sizzle, paired with a recipe for onion rings, building on the 'Cracking Cans' campaign [P9].",
+   "kind": "factual",
+   "cited_passages": [
+    "P9"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-7d4ac476cf085beb",
+   "location": "email_subject#s0",
+   "text": "Collaboration Opportunity: Feature Graza's Drizzle and Sizzle with a recipe for onion rings, building on the 'Cracking Cans' campaign [P9].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P9"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-a9e7c18af3ef3ecb",
+   "location": "email_body#s1",
+   "text": "We're excited to propose a collaboration that brings the Graza Drizzle and Sizzle to your audience [P9].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P9"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-b2de876384ca8c8b",
+   "location": "email_body#s2",
+   "text": "This would be a fun way to showcase your products and engage your followers [P9].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P9"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-6fd4f4483bb12ccd",
+   "location": "email_body#s3",
+   "text": "We'd love to work with you to create a campaign that builds on your existing content and brings your audience together through a fun, interactive experience [P9].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P9"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-3b8386a404f17e24",
+   "location": "claims[0].statement",
+   "text": "Graza's Drizzle and Sizzle are a premium olive oil product that is sold in squeeze bottles.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P9"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-1db38b498cdaaa1f",
+   "location": "claims[1].statement",
+   "text": "Graza's Drizzle and Sizzle are sold in squeeze bottles.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P9"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-1db38b498cdaaa1f",
+   "location": "claims[2].statement",
+   "text": "Graza's Drizzle and Sizzle are sold in squeeze bottles.",
+   "duplicate_of": "R-1db38b498cdaaa1f",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P9"
+   ]
+  },
+  {
+   "review_id": "R-1db38b498cdaaa1f",
+   "location": "claims[3].statement",
+   "text": "Graza's Drizzle and Sizzle are sold in squeeze bottles.",
+   "duplicate_of": "R-1db38b498cdaaa1f",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P9"
+   ]
+  },
+  {
+   "review_id": "R-1db38b498cdaaa1f",
+   "location": "claims[4].statement",
+   "text": "Graza's Drizzle and Sizzle are sold in squeeze bottles.",
+   "duplicate_of": "R-1db38b498cdaaa1f",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P9"
+   ]
+  },
+  {
+   "review_id": "R-1db38b498cdaaa1f",
+   "location": "claims[5].statement",
+   "text": "Graza's Drizzle and Sizzle are sold in squeeze bottles.",
+   "duplicate_of": "R-1db38b498cdaaa1f",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P9"
+   ]
+  },
+  {
+   "review_id": "R-1db38b498cdaaa1f",
+   "location": "claims[6].statement",
+   "text": "Graza's Drizzle and Sizzle are sold in squeeze bottles.",
+   "duplicate_of": "R-1db38b498cdaaa1f",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P9"
+   ]
+  },
+  {
+   "review_id": "R-1db38b498cdaaa1f",
+   "location": "claims[7].statement",
+   "text": "Graza's Drizzle and Sizzle are sold in squeeze bottles.",
+   "duplicate_of": "R-1db38b498cdaaa1f",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P9"
+   ]
+  },
+  {
+   "review_id": "R-1db38b498cdaaa1f",
+   "location": "claims[8].statement",
+   "text": "Graza's Drizzle and Sizzle are sold in squeeze bottles.",
+   "duplicate_of": "R-1db38b498cdaaa1f",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P9"
+   ]
+  },
+  {
+   "review_id": "R-1db38b498cdaaa1f",
+   "location": "claims[9].statement",
+   "text": "Graza's Drizzle and Sizzle are sold in squeeze bottles.",
+   "duplicate_of": "R-1db38b498cdaaa1f",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P9"
+   ]
+  },
+  {
+   "review_id": "R-1db38b498cdaaa1f",
+   "location": "claims[10].statement",
+   "text": "Graza's Drizzle and Sizzle are sold in squeeze bottles.",
+   "duplicate_of": "R-1db38b498cdaaa1f",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P9"
+   ]
+  },
+  {
+   "review_id": "R-1db38b498cdaaa1f",
+   "location": "claims[11].statement",
+   "text": "Graza's Drizzle and Sizzle are sold in squeeze bottles.",
+   "duplicate_of": "R-1db38b498cdaaa1f",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P9"
+   ]
+  },
+  {
+   "review_id": "R-1db38b498cdaaa1f",
+   "location": "claims[12].statement",
+   "text": "Graza's Drizzle and Sizzle are sold in squeeze bottles.",
+   "duplicate_of": "R-1db38b498cdaaa1f",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P9"
+   ]
+  },
+  {
+   "review_id": "R-1db38b498cdaaa1f",
+   "location": "claims[13].statement",
+   "text": "Graza's Drizzle and Sizzle are sold in squeeze bottles.",
+   "duplicate_of": "R-1db38b498cdaaa1f",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P9"
+   ]
+  },
+  {
+   "review_id": "R-1db38b498cdaaa1f",
+   "location": "claims[14].statement",
+   "text": "Graza's Drizzle and Sizzle are sold in squeeze bottles.",
+   "duplicate_of": "R-1db38b498cdaaa1f",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P9"
+   ]
+  },
+  {
+   "review_id": "R-1db38b498cdaaa1f",
+   "location": "claims[15].statement",
+   "text": "Graza's Drizzle and Sizzle are sold in squeeze bottles.",
+   "duplicate_of": "R-1db38b498cdaaa1f",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P9"
+   ]
+  },
+  {
+   "review_id": "R-1db38b498cdaaa1f",
+   "location": "claims[16].statement",
+   "text": "Graza's Drizzle and Sizzle are sold in squeeze bottles.",
+   "duplicate_of": "R-1db38b498cdaaa1f",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P9"
+   ]
+  },
+  {
+   "review_id": "R-1db38b498cdaaa1f",
+   "location": "claims[17].statement",
+   "text": "Graza's Drizzle and Sizzle are sold in squeeze bottles.",
+   "duplicate_of": "R-1db38b498cdaaa1f",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P9"
+   ]
+  },
+  {
+   "review_id": "R-1db38b498cdaaa1f",
+   "location": "claims[18].statement",
+   "text": "Graza's Drizzle and Sizzle are sold in squeeze bottles.",
+   "duplicate_of": "R-1db38b498cdaaa1f",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P9"
+   ]
+  },
+  {
+   "review_id": "R-1db38b498cdaaa1f",
+   "location": "claims[19].statement",
+   "text": "Graza's Drizzle and Sizzle are sold in squeeze bottles.",
+   "duplicate_of": "R-1db38b498cdaaa1f",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P9"
+   ]
+  },
+  {
+   "review_id": "R-1db38b498cdaaa1f",
+   "location": "claims[20].statement",
+   "text": "Graza's Drizzle and Sizzle are sold in squeeze bottles.",
+   "duplicate_of": "R-1db38b498cdaaa1f",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P9"
+   ]
+  },
+  {
+   "review_id": "R-1db38b498cdaaa1f",
+   "location": "claims[21].statement",
+   "text": "Graza's Drizzle and Sizzle are sold in squeeze bottles.",
+   "duplicate_of": "R-1db38b498cdaaa1f",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P9"
+   ]
+  },
+  {
+   "review_id": "R-1db38b498cdaaa1f",
+   "location": "claims[22].statement",
+   "text": "Graza's Drizzle and Sizzle are sold in squeeze bottles.",
+   "duplicate_of": "R-1db38b498cdaaa1f",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P9"
+   ]
+  },
+  {
+   "review_id": "R-1db38b498cdaaa1f",
+   "location": "claims[23].statement",
+   "text": "Graza's Drizzle and Sizzle are sold in squeeze bottles.",
+   "duplicate_of": "R-1db38b498cdaaa1f",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P9"
+   ]
+  },
+  {
+   "review_id": "R-1db38b498cdaaa1f",
+   "location": "claims[24].statement",
+   "text": "Graza's Drizzle and Sizzle are sold in squeeze bottles.",
+   "duplicate_of": "R-1db38b498cdaaa1f",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P9"
+   ]
+  },
+  {
+   "review_id": "R-1db38b498cdaaa1f",
+   "location": "claims[25].statement",
+   "text": "Graza's Drizzle and Sizzle are sold in squeeze bottles.",
+   "duplicate_of": "R-1db38b498cdaaa1f",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P9"
+   ]
+  },
+  {
+   "review_id": "R-1db38b498cdaaa1f",
+   "location": "claims[26].statement",
+   "text": "Graza's Drizzle and Sizzle are sold in squeeze bottles.",
+   "duplicate_of": "R-1db38b498cdaaa1f",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P9"
+   ]
+  },
+  {
+   "review_id": "R-1db38b498cdaaa1f",
+   "location": "claims[27].statement",
+   "text": "Graza's Drizzle and Sizzle are sold in squeeze bottles.",
+   "duplicate_of": "R-1db38b498cdaaa1f",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P9"
+   ]
+  },
+  {
+   "review_id": "R-1db38b498cdaaa1f",
+   "location": "claims[28].statement",
+   "text": "Graza's Drizzle and Sizzle are sold in squeeze bottles.",
+   "duplicate_of": "R-1db38b498cdaaa1f",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P9"
+   ]
+  },
+  {
+   "review_id": "R-1db38b498cdaaa1f",
+   "location": "claims[29].statement",
+   "text": "Graza's Drizzle and Sizzle are sold in squeeze bottles.",
+   "duplicate_of": "R-1db38b498cdaaa1f",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P9"
+   ]
+  },
+  {
+   "review_id": "R-1db38b498cdaaa1f",
+   "location": "claims[30].statement",
+   "text": "Graza's Drizzle and Sizzle are sold in squeeze bottles.",
+   "duplicate_of": "R-1db38b498cdaaa1f",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P9"
+   ]
+  },
+  {
+   "review_id": "R-1db38b498cdaaa1f",
+   "location": "claims[31].statement",
+   "text": "Graza's Drizzle and Sizzle are sold in squeeze bottles.",
+   "duplicate_of": "R-1db38b498cdaaa1f",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P9"
+   ]
+  },
+  {
+   "review_id": "R-1db38b498cdaaa1f",
+   "location": "claims[32].statement",
+   "text": "Graza's Drizzle and Sizzle are sold in squeeze bottles.",
+   "duplicate_of": "R-1db38b498cdaaa1f",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P9"
+   ]
+  },
+  {
+   "review_id": "R-1db38b498cdaaa1f",
+   "location": "claims[33].statement",
+   "text": "Graza's Drizzle and Sizzle are sold in squeeze bottles.",
+   "duplicate_of": "R-1db38b498cdaaa1f",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P9"
+   ]
+  }
+ ],
+ "skipped_sentences": {
+  "proposal": [
+   {
+    "location": "email_body#s4",
+    "text": "If you're interested in exploring this opportunity, we'd be happy to share a draft."
+   }
+  ],
+  "non_assertion": [
+   {
+    "location": "email_body#s0",
+    "text": "Dear Graza Marketing Team,"
+   },
+   {
+    "location": "email_body#s5",
+    "text": "Best regards,"
+   },
+   {
+    "location": "email_body#s6",
+    "text": "[Your Name]"
+   }
+  ]
+ },
+ "unknown_issues": [],
+ "outreach": {
+  "recipient": "correct",
+  "sender": "correct",
+  "instagram_mentioned": false,
+  "other_platforms_in_pitch": [],
+  "instagram_compliant": false,
+  "promises": [],
+  "email_subject": "Collaboration Opportunity: Feature Graza's Drizzle and Sizzle with a recipe for onion rings, building on the 'Cracking Cans' campaign [P9]."
+ },
+ "failures": [
+  {
+   "check": "structure",
+   "detail": [
+    "truncated_output: Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 1 column 10417 (char 10416)"
+   ]
+  },
+  {
+   "check": "duplicate_claims",
+   "detail": [
+    [],
+    32
+   ]
+  },
+  {
+   "check": "repetition",
+   "detail": [
+    38
+   ]
+  },
+  {
+   "check": "claim_quotes",
+   "detail": [
+    {
+     "claim_id": "C1",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C2",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C3",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C4",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C5",
+     "self_quote": false,
+     "other_passage": []
+    }
+   ]
+  },
+  {
+   "check": "instagram",
+   "detail": []
+  }
+ ],
+ "unresolved": [],
+ "unreviewed": [
+  "R-4b3dcacba27311c1",
+  "R-d8994cebf738c5ee",
+  "R-8aa8561487c8827a",
+  "R-113ef05f09b72fd5",
+  "R-0c550b9ef714a707",
+  "R-d04d5f65c26f92de",
+  "R-aa2b83004c44d913",
+  "R-7d4ac476cf085beb",
+  "R-a9e7c18af3ef3ecb",
+  "R-b2de876384ca8c8b",
+  "R-6fd4f4483bb12ccd",
+  "R-3b8386a404f17e24",
+  "R-1db38b498cdaaa1f"
+ ],
+ "review_scope": "structurally_valid_only",
+ "passes": false,
+ "failure_signature": "4f60411a18ee0b7accf5d55c445df856b102b6b426152b0ac24f7dfb581075f0",
+ "review_wall_s": 0.013,
+ "attempt": {
+  "index": 1,
+  "kind": "regenerate_bounded"
+ }
+}

@@ -34,6 +34,7 @@ CONTROLLER_VERSION = "phase4-v5-controller-1"
 MAX_REPAIRS = 2
 MAX_REVIEW_RETRIES = 1
 CLAIM_CAP = 10
+ABSTAIN_BLOCKERS = {"structure", "schema", "decision_consistency_errors", "template_placeholder_copies"}
 OUTCOMES = ("verified_pending_human_review", "abstained_insufficient_evidence", "withheld_failed_checks",
             "unresolved_review", "execution_failure")
 
@@ -197,6 +198,7 @@ class CaseState:
     attempts: list[dict] = field(default_factory=list)
     outcome: str | None = None
     stop_reason: str | None = None
+    stop_code: str | None = None
     eligibility: str | None = None
 
     def to_record(self) -> dict:
@@ -215,25 +217,38 @@ def next_action(state: CaseState) -> tuple[str, Any]:
         return "generate", "initial"
     last = state.attempts[-1]
     if not last.get("generation_ok"):
-        return "stop", ("execution_failure", f"generation failed: {last.get('generation_error')}")
+        return "stop", ("execution_failure", f"generation failed: {last.get('generation_error')}", "execution_failure")
     if not last.get("runtime_verified"):
-        return "stop", ("execution_failure", "runtime adapter/base load could not be verified for this request")
+        return "stop", ("execution_failure", "runtime adapter/base load could not be verified for this request",
+                        "execution_failure")
     if "passes" not in last:
         return "assess", None
     if last["passes"]:
-        return "stop", ("verified_pending_human_review", "all structural, citation, semantic and outreach checks passed")
+        return "stop", ("verified_pending_human_review", "all structural, citation, semantic and outreach checks passed",
+                        "verified")
     if last.get("model_abstained"):
-        return "stop", ("abstained_insufficient_evidence", "model returned a valid abstention")
+        return "stop", ("abstained_insufficient_evidence", "model returned a valid abstention", "model_abstained")
     has_failures = bool(last.get("failure_count"))
     if not has_failures and last.get("unresolved_count"):
-        return "stop", ("unresolved_review", "no failed checks, but some assertions could not be reviewed")
+        return "stop", ("unresolved_review", "no failed checks, but some assertions could not be reviewed",
+                        "unresolved_review")
     repairs_used = len(state.attempts) - 1
     if len(state.attempts) >= 2:
         prev = state.attempts[-2]
         if last.get("raw_sha256") == prev.get("raw_sha256") or last.get("failure_signature") == prev.get("failure_signature"):
-            return "stop", ("withheld_failed_checks", "no progress: repair repeated the previous output or failures")
+            return "stop", ("withheld_failed_checks", "no progress: repair repeated the previous output or failures",
+                            "withheld_no_progress")
+        # Amendment 4: the same structural failure class again (not strict JSON and again truncated
+        # or again looping) is no progress; two repairs are a maximum, not a requirement.
+        same_trunc = last.get("truncated") and prev.get("truncated")
+        same_loop = last.get("looping") and prev.get("looping")
+        if not last.get("strict_ok") and not prev.get("strict_ok") and (same_trunc or same_loop):
+            what = "truncation" if same_trunc else "repetition"
+            return "stop", ("withheld_failed_checks", f"no progress: the repair repeated the same {what} failure",
+                            "withheld_no_progress")
     if repairs_used >= state.max_repairs:
-        return "stop", ("withheld_failed_checks", f"repair budget exhausted ({state.max_repairs})")
+        return "stop", ("withheld_failed_checks", f"repair budget exhausted ({state.max_repairs})",
+                        "withheld_budget_exhausted")
     return "generate", "regenerate_bounded" if not last.get("strict_ok") else "targeted_fix"
 
 
@@ -242,8 +257,12 @@ def summarise_assessment(assessment: dict) -> dict:
     return {
         "passes": assessment["passes"],
         "strict_ok": s["strict_json"] and not s["truncated"],
+        # A valid abstention: strict, schema-valid, decision-consistent and no copied template text.
         "model_abstained": bool(s["strict_json"] and not s["truncated"] and not s["schema_errors"]
-                                and assessment.get("decision") == "abstain"),
+                                and assessment.get("decision") == "abstain"
+                                and not {f["check"] for f in assessment["failures"]} & ABSTAIN_BLOCKERS),
+        "truncated": bool(s["truncated"]),
+        "looping": bool(assessment["repetition"]["looping"]),
         "failure_count": len(assessment["failures"]),
         "unresolved_count": len(assessment["unresolved"]),
         "failure_signature": assessment["failure_signature"],
@@ -270,8 +289,10 @@ def assess_attempt(state: CaseState, packet: dict, reviewer: ReviewerBackend | N
         prev = json.loads((Path(state.attempts[-2]["dir"]) / "assessment.json").read_text())
         prev_ids = {a["review_id"] for a in prev["assertions"]}
     t0 = time.perf_counter()
+    # Amendment 4: initial outputs keep their diagnostic review of recoverable assertions;
+    # repair attempts are semantically reviewed only when structurally valid.
     assessment = assess_output(raw, last.get("finish_reason"), packet, reviewer=reviewer, cache=cache,
-                               previous_review_ids=prev_ids)
+                               previous_review_ids=prev_ids, review_malformed=last["index"] == 0)
     assessment["review_wall_s"] = round(time.perf_counter() - t0, 3)
     assessment["attempt"] = {"index": last["index"], "kind": last["kind"]}
     (Path(last["dir"]) / "assessment.json").write_text(json.dumps(assessment, indent=1, ensure_ascii=False))
@@ -294,12 +315,13 @@ def advance(state: CaseState, packet: dict, original_prompt: str, case_dir: Path
         state.eligibility = why
         if not ok:
             state.outcome, state.stop_reason = "abstained_insufficient_evidence", f"pipeline: {why}; no request made"
+            state.stop_code = "pipeline_ineligible"
     while True:
         action, arg = next_action(state)
         if action in ("done",):
             break
         if action == "stop":
-            state.outcome, state.stop_reason = arg
+            state.outcome, state.stop_reason, state.stop_code = arg
             break
         if action == "assess":
             if not can_review:

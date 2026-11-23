@@ -1,0 +1,349 @@
+{
+ "checks_version": "phase4-v5-checks-2",
+ "structure": {
+  "strict_json": false,
+  "truncated": true,
+  "parse_error": {
+   "error_type": "truncated_output",
+   "truncated": true,
+   "finish_reason": "length",
+   "unbalanced_braces": true,
+   "message": "Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 45 column 16 (char 2190)"
+  },
+  "schema_errors": [
+   "truncated_output: Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 45 column 16 (char 2190)"
+  ],
+  "parse_mode": "diagnostic_prefix",
+  "prompt_schema_valid": false,
+  "training_schema_valid": false,
+  "raw_format": {
+   "starts_with_brace": false,
+   "code_fenced": true,
+   "text_outside_json": null
+  }
+ },
+ "decision": null,
+ "repetition": {
+  "method": "exact match after whitespace/quote/case normalisation; no semantic similarity",
+  "claim_count": 5,
+  "duplicate_claim_ids": [],
+  "duplicate_claim_statements": 1,
+  "distinct_claim_statements": 4,
+  "duplicate_claim_quotes": 0,
+  "repeated_prose_sentences": {},
+  "max_8gram_repeats_in_raw": 199,
+  "looping": true
+ },
+ "citation_mechanics": {
+  "inline_passage_refs": [],
+  "unknown_refs": [],
+  "claim_quotes": [
+   {
+    "index": 0,
+    "claim_id": "C1",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": true,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 1,
+    "claim_id": "C2",
+    "passage_ids": [
+     "P2"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 2,
+    "claim_id": "C3",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [
+     "P5"
+    ],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 3,
+    "claim_id": "C4",
+    "passage_ids": [
+     "P4"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [
+     "P6"
+    ],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 4,
+    "claim_id": "C5",
+    "passage_ids": [
+     "P5"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [
+     "P7"
+    ],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   }
+  ]
+ },
+ "assertions": [
+  {
+   "review_id": "R-3edc234e5ddf6349",
+   "location": "claims[0].statement",
+   "text": "Graza's organic olive oil is a premium product.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-421be954e603328c",
+   "location": "claims[1].statement",
+   "text": "Graza's Drizzle and Sizzle are a staple in kitchens.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P2"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-a864db7ca28d6001",
+   "location": "claims[2].statement",
+   "text": "Graza's social media strategy is a key part of the brand's identity.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-664b71e5a4c033e3",
+   "location": "claims[3].statement",
+   "text": "Graza's packaging was designed for visibility.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P4"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-e294b72b6ff79610",
+   "location": "claims[4].statement",
+   "text": "Graza's social media strategy is a key part of the brand's identity.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P5"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  }
+ ],
+ "skipped_sentences": {
+  "proposal": [],
+  "non_assertion": []
+ },
+ "unknown_issues": [],
+ "outreach": {
+  "recipient": "no_email",
+  "sender": "no_email",
+  "instagram_mentioned": false,
+  "other_platforms_in_pitch": [],
+  "instagram_compliant": false,
+  "promises": [],
+  "email_subject": ""
+ },
+ "failures": [
+  {
+   "check": "structure",
+   "detail": [
+    "truncated_output: Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 45 column 16 (char 2190)"
+   ]
+  },
+  {
+   "check": "duplicate_claims",
+   "detail": [
+    [],
+    1
+   ]
+  },
+  {
+   "check": "repetition",
+   "detail": [
+    199
+   ]
+  },
+  {
+   "check": "claim_quotes",
+   "detail": [
+    {
+     "claim_id": "C2",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C3",
+     "self_quote": false,
+     "other_passage": [
+      "P5"
+     ]
+    },
+    {
+     "claim_id": "C4",
+     "self_quote": false,
+     "other_passage": [
+      "P6"
+     ]
+    },
+    {
+     "claim_id": "C5",
+     "self_quote": false,
+     "other_passage": [
+      "P7"
+     ]
+    }
+   ]
+  },
+  {
+   "check": "sender_recipient",
+   "detail": [
+    "no_email",
+    "no_email"
+   ]
+  },
+  {
+   "check": "instagram",
+   "detail": []
+  }
+ ],
+ "unresolved": [],
+ "unreviewed": [
+  "R-3edc234e5ddf6349",
+  "R-421be954e603328c",
+  "R-a864db7ca28d6001",
+  "R-664b71e5a4c033e3",
+  "R-e294b72b6ff79610"
+ ],
+ "review_scope": "structurally_valid_only",
+ "passes": false,
+ "failure_signature": "f7bcc7993ff61f6468cff2eb65d377c1b523e7cdd14042e1abca051b2089f5eb",
+ "review_wall_s": 0.004,
+ "attempt": {
+  "index": 1,
+  "kind": "regenerate_bounded"
+ }
+}

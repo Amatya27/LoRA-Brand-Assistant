@@ -1,0 +1,106 @@
+{
+ "case_id": "gymshark/base",
+ "company_id": "gymshark",
+ "arm": "base",
+ "packet_path": "outputs/phase3_v5/packets/gymshark.json",
+ "packet_sha256": "baf2f85c805b22fb151e604697fef5da66c61b3b7a3f5c004f9342313cc4e20c",
+ "prompt_version": "brandpilot.prompt.v3.3",
+ "prompt_sha256": "28d0f8916f60325598791cbeb70ef7abe25e549dc701ea730c692530362d4125",
+ "max_repairs": 2,
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "dir": "phase4_v5_results/runs/gymshark/base/attempt-00",
+   "prompt_sha256": "28d0f8916f60325598791cbeb70ef7abe25e549dc701ea730c692530362d4125",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "stop",
+   "usage": {
+    "prompt_tokens": 2771,
+    "completion_tokens": 332,
+    "total_tokens": 3103,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 16.397,
+   "runtime_verified": true,
+   "raw_sha256": "4405e3b393ab4db996bf445a9cb553ea2b41b5b533826050e2498100f7fa69b3",
+   "reused_from": "outputs/phase3_v5/runs/20261123T035032180689Z-gymshark-fixed-generation-0577b1",
+   "passes": false,
+   "strict_ok": true,
+   "model_abstained": false,
+   "failure_count": 16,
+   "unresolved_count": 1,
+   "failure_signature": "fbe999c33bb01edde1de4c23ee1c5b191c81f61a4411cdcccc75b9a6aeefd403",
+   "review_wall_s": 172.395,
+   "truncated": false,
+   "looping": false
+  },
+  {
+   "index": 1,
+   "kind": "targeted_fix",
+   "dir": "phase4_v5_results/runs/gymshark/base/attempt-01",
+   "prompt_sha256": "d29e4d4011aaec440af517fc7564e70d159dd79482bea69e591955f879da3775",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "stop",
+   "usage": {
+    "prompt_tokens": 3824,
+    "completion_tokens": 269,
+    "total_tokens": 4093,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 13.496,
+   "runtime_verified": true,
+   "raw_sha256": "33dc1dfb07852289d4f8865976859e7b05466279b9ca46ac1c7eccf5e82c7f48",
+   "reused_from": null,
+   "passes": false,
+   "strict_ok": false,
+   "model_abstained": false,
+   "truncated": false,
+   "looping": false,
+   "failure_count": 4,
+   "unresolved_count": 0,
+   "failure_signature": "45ca8c5b744e0c01d73c3c208e13b8ccd8e9d494857b0f124ea8ddd9dd19d51b",
+   "review_wall_s": 0.001
+  },
+  {
+   "index": 2,
+   "kind": "regenerate_bounded",
+   "dir": "phase4_v5_results/runs/gymshark/base/attempt-02",
+   "prompt_sha256": "c4ab27d99e563a352d77eb582ff7762eb90b66f03ab45f08b86f9035939717b6",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "stop",
+   "usage": {
+    "prompt_tokens": 2884,
+    "completion_tokens": 2402,
+    "total_tokens": 5286,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 53.638,
+   "runtime_verified": true,
+   "raw_sha256": "7fdd4e2fd628314127f22de298a651e642156a271f8cb30c3a379cfe8cf71f2a",
+   "reused_from": null,
+   "passes": false,
+   "strict_ok": true,
+   "model_abstained": false,
+   "truncated": false,
+   "looping": false,
+   "failure_count": 8,
+   "unresolved_count": 0,
+   "failure_signature": "3c6e074f6287e98a801ddc995b9115523a932b4434a12375b56965a061e86b56",
+   "review_wall_s": 0.008
+  }
+ ],
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "repair budget exhausted (2)",
+ "stop_code": "withheld_budget_exhausted",
+ "eligibility": "eligible"
+}

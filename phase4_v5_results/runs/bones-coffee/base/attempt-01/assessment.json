@@ -1,0 +1,414 @@
+{
+ "checks_version": "phase4-v5-checks-2",
+ "structure": {
+  "strict_json": true,
+  "truncated": false,
+  "parse_error": null,
+  "schema_errors": [
+   "claims[0].kind 'fact | provider_reported | premise' not in ('fact', 'provider_reported', 'premise')"
+  ],
+  "parse_mode": "strict",
+  "prompt_schema_valid": false,
+  "training_schema_valid": false,
+  "raw_format": {
+   "starts_with_brace": false,
+   "code_fenced": true,
+   "text_outside_json": true
+  }
+ },
+ "decision": "abstain",
+ "repetition": {
+  "method": "exact match after whitespace/quote/case normalisation; no semantic similarity",
+  "claim_count": 1,
+  "duplicate_claim_ids": [],
+  "duplicate_claim_statements": 0,
+  "distinct_claim_statements": 1,
+  "duplicate_claim_quotes": 0,
+  "repeated_prose_sentences": {},
+  "max_8gram_repeats_in_raw": 1,
+  "looping": false
+ },
+ "citation_mechanics": {
+  "inline_passage_refs": [],
+  "unknown_refs": [
+   "C2"
+  ],
+  "claim_quotes": [
+   {
+    "index": 0,
+    "claim_id": "C1",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": true,
+    "cites_non_factual_type": []
+   }
+  ]
+ },
+ "assertions": [
+  {
+   "review_id": "R-4baa7ada6d4477c0",
+   "location": "brand_summary#s0",
+   "text": "Full sentences, each followed by its marker, e.g.",
+   "kind": "factual",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": false,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-3c24c885d842b711",
+   "location": "brand_summary#s1",
+   "text": "\"X makes ... {C1}.\" Never only markers.",
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "marker_{C#}_via_claims",
+   "marker_mapping": {
+    "C1": [
+     "P1"
+    ]
+   },
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": false,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-cfccaeae97834d3b",
+   "location": "brand_summary#s2",
+   "text": "Or INSUFFICIENT_EVIDENCE",
+   "kind": "factual",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": false,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-f4ceda06b2ec0b65",
+   "location": "likely_target_audience#s0",
+   "text": "A full sentence followed by its marker, or INSUFFICIENT_EVIDENCE",
+   "kind": "factual",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": false,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-add05909736d0787",
+   "location": "current_marketing_strategy[0]#s0",
+   "text": "text with markers",
+   "kind": "factual",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": false,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-ed68343690c1842c",
+   "location": "collaboration_opportunities[0]#s0",
+   "text": "proposal that builds on a cited fact {C2}",
+   "kind": "factual",
+   "cited_passages": [],
+   "citation_source": "marker_{C#}_via_claims",
+   "marker_mapping": {},
+   "unknown_citations": [
+    "C2"
+   ],
+   "introduced_by_repair": true,
+   "diagnostic_only": false,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [
+    "nonexistent_citation"
+   ],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-ea135e89f2556576",
+   "location": "instagram_post_idea.hook#s0",
+   "text": "string",
+   "kind": "factual",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": false,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-ea135e89f2556576",
+   "location": "instagram_post_idea.concept#s0",
+   "text": "string",
+   "duplicate_of": "R-ea135e89f2556576",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-ea135e89f2556576",
+   "location": "instagram_post_idea.why_it_fits#s0",
+   "text": "string",
+   "duplicate_of": "R-ea135e89f2556576",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-ea135e89f2556576",
+   "location": "email_subject#s0",
+   "text": "string",
+   "duplicate_of": "R-ea135e89f2556576",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-ea135e89f2556576",
+   "location": "email_body#s0",
+   "text": "string",
+   "duplicate_of": "R-ea135e89f2556576",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-a972a1150d2395fc",
+   "location": "claims[0].statement",
+   "text": "string",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": false,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  }
+ ],
+ "skipped_sentences": {
+  "proposal": [],
+  "non_assertion": []
+ },
+ "unknown_issues": [
+  {
+   "location": "unknowns[0]",
+   "issue": "placeholder_unknown",
+   "text": "one specific open question, e.g. Whether the company works with creators"
+  }
+ ],
+ "outreach": {
+  "recipient": "unclear",
+  "sender": "unclear",
+  "instagram_mentioned": false,
+  "other_platforms_in_pitch": [],
+  "instagram_compliant": false,
+  "promises": [],
+  "email_subject": "string"
+ },
+ "failures": [
+  {
+   "check": "schema",
+   "detail": [
+    "claims[0].kind 'fact | provider_reported | premise' not in ('fact', 'provider_reported', 'premise')"
+   ]
+  },
+  {
+   "check": "decision_consistency_errors",
+   "detail": [
+    "abstain but collaboration_opportunities is not empty",
+    "abstain but pitch fields are not INSUFFICIENT_EVIDENCE"
+   ]
+  },
+  {
+   "check": "template_placeholder_copies",
+   "detail": [
+    "output.abstain_reason",
+    "output.claims[0].kind",
+    "output.claims[0].statement",
+    "output.claims[0].quote",
+    "output.current_marketing_strategy[0]"
+   ]
+  },
+  {
+   "check": "citation_ids",
+   "detail": [
+    "claim markers without a matching claim: ['C2']"
+   ]
+  },
+  {
+   "check": "claim_quotes",
+   "detail": [
+    {
+     "claim_id": "C1",
+     "self_quote": false,
+     "other_passage": []
+    }
+   ]
+  },
+  {
+   "check": "placeholder_unknown",
+   "location": "unknowns[0]",
+   "text": "one specific open question, e.g. Whether the company works with creators"
+  },
+  {
+   "check": "sender_recipient",
+   "detail": [
+    "unclear",
+    "unclear"
+   ]
+  },
+  {
+   "check": "instagram",
+   "detail": []
+  }
+ ],
+ "unresolved": [],
+ "unreviewed": [
+  "R-4baa7ada6d4477c0",
+  "R-3c24c885d842b711",
+  "R-cfccaeae97834d3b",
+  "R-f4ceda06b2ec0b65",
+  "R-add05909736d0787",
+  "R-ed68343690c1842c",
+  "R-ea135e89f2556576",
+  "R-a972a1150d2395fc"
+ ],
+ "review_scope": "structurally_valid_only",
+ "passes": false,
+ "failure_signature": "28919b1c3c01776b8018b0ae271b6e120fe1e55d0abfa8f70140d6d0f1bd515b",
+ "review_wall_s": 0.002,
+ "attempt": {
+  "index": 1,
+  "kind": "regenerate_bounded"
+ }
+}

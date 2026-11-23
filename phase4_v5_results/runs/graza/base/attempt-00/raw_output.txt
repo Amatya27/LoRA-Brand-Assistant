@@ -1,0 +1,17 @@
+```json
+{
+  "decision": "draft",
+  "abstain": "false",
+  "abstain_reason": "string or empty",
+  "claims": [{"id": "C1", "kind": "fact | provider_reported | premise", "statement": "string", "passage_ids": ["P1"], "quote": "exact words from the passage"}],
+  "brand_summary": "Graza is a premium olive oil brand known for its vibrant flavors and commitment to sustainable practices. They leverage influencer marketing and UGC to build a strong online community.",
+  "likely_target_audience": "Food enthusiasts, culinary creators, and consumers seeking high-quality, authentic ingredients.",
+  "current_marketing_strategy": ["Social media campaigns, influencer collaborations, content marketing, email marketing"],
+  "unknowns": ["What are the specific benefits of using Graza olive oil compared to other brands?"],
+  "marketing_gaps": [],
+  "collaboration_opportunities": ["Instagram carousel featuring...", "Collaborate on a video series showcasing...", "Create a series of recipe tutorials using Graza olive oil"],
+  "instagram_post_idea": {"hook": "A carousel featuring...", "concept": "A visually stunning photo of a dripping olive oil in a glass," "why_it_fits": "It's a chance to showcase the product's vibrant colors and create a sense of luxury."},
+  "email_subject": "Graza Olive Oil - A Taste of Spain",
+  "email_body": "Hey there, fellow food lovers! Get ready for a burst of flavor. We're excited to share our favorite olive oil with you. Check out our latest Instagram post for a quick look at how to use it! [Link to Instagram post]"
+}
+```

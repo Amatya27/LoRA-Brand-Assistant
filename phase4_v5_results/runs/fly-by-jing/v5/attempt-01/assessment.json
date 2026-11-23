@@ -1,0 +1,1162 @@
+{
+ "checks_version": "phase4-v5-checks-2",
+ "structure": {
+  "strict_json": false,
+  "truncated": true,
+  "parse_error": {
+   "error_type": "truncated_output",
+   "truncated": true,
+   "finish_reason": "length",
+   "unbalanced_braces": true,
+   "message": "Outermost JSON object is malformed or incomplete: Expecting ',' delimiter: line 1 column 754 (char 753)"
+  },
+  "schema_errors": [
+   "truncated_output: Outermost JSON object is malformed or incomplete: Expecting ',' delimiter: line 1 column 754 (char 753)"
+  ],
+  "parse_mode": "diagnostic_prefix",
+  "prompt_schema_valid": false,
+  "training_schema_valid": false,
+  "raw_format": {
+   "starts_with_brace": true,
+   "code_fenced": false,
+   "text_outside_json": null
+  }
+ },
+ "decision": null,
+ "repetition": {
+  "method": "exact match after whitespace/quote/case normalisation; no semantic similarity",
+  "claim_count": 39,
+  "duplicate_claim_ids": [],
+  "duplicate_claim_statements": 38,
+  "distinct_claim_statements": 1,
+  "duplicate_claim_quotes": 38,
+  "repeated_prose_sentences": {},
+  "max_8gram_repeats_in_raw": 78,
+  "looping": true
+ },
+ "citation_mechanics": {
+  "inline_passage_refs": [],
+  "unknown_refs": [],
+  "claim_quotes": [
+   {
+    "index": 0,
+    "claim_id": "C1",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 1,
+    "claim_id": "C2",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 2,
+    "claim_id": "C3",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 3,
+    "claim_id": "C4",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 4,
+    "claim_id": "C5",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 5,
+    "claim_id": "C6",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 6,
+    "claim_id": "C7",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 7,
+    "claim_id": "C8",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 8,
+    "claim_id": "C9",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 9,
+    "claim_id": "C10",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 10,
+    "claim_id": "C11",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 11,
+    "claim_id": "C12",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 12,
+    "claim_id": "C13",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 13,
+    "claim_id": "C14",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 14,
+    "claim_id": "C15",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 15,
+    "claim_id": "C16",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 16,
+    "claim_id": "C17",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 17,
+    "claim_id": "C18",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 18,
+    "claim_id": "C19",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 19,
+    "claim_id": "C20",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 20,
+    "claim_id": "C21",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 21,
+    "claim_id": "C22",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 22,
+    "claim_id": "C23",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 23,
+    "claim_id": "C24",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 24,
+    "claim_id": "C25",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 25,
+    "claim_id": "C26",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 26,
+    "claim_id": "C27",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 27,
+    "claim_id": "C28",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 28,
+    "claim_id": "C29",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 29,
+    "claim_id": "C30",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 30,
+    "claim_id": "C31",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 31,
+    "claim_id": "C32",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 32,
+    "claim_id": "C33",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 33,
+    "claim_id": "C34",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 34,
+    "claim_id": "C35",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 35,
+    "claim_id": "C36",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 36,
+    "claim_id": "C37",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 37,
+    "claim_id": "C38",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 38,
+    "claim_id": "C39",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   }
+  ]
+ },
+ "assertions": [
+  {
+   "review_id": "R-47af504e56c9dd2d",
+   "location": "claims[0].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers on Instagram.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-47af504e56c9dd2d",
+   "location": "claims[1].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers on Instagram.",
+   "duplicate_of": "R-47af504e56c9dd2d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-47af504e56c9dd2d",
+   "location": "claims[2].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers on Instagram.",
+   "duplicate_of": "R-47af504e56c9dd2d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-47af504e56c9dd2d",
+   "location": "claims[3].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers on Instagram.",
+   "duplicate_of": "R-47af504e56c9dd2d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-47af504e56c9dd2d",
+   "location": "claims[4].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers on Instagram.",
+   "duplicate_of": "R-47af504e56c9dd2d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-47af504e56c9dd2d",
+   "location": "claims[5].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers on Instagram.",
+   "duplicate_of": "R-47af504e56c9dd2d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-47af504e56c9dd2d",
+   "location": "claims[6].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers on Instagram.",
+   "duplicate_of": "R-47af504e56c9dd2d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-47af504e56c9dd2d",
+   "location": "claims[7].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers on Instagram.",
+   "duplicate_of": "R-47af504e56c9dd2d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-47af504e56c9dd2d",
+   "location": "claims[8].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers on Instagram.",
+   "duplicate_of": "R-47af504e56c9dd2d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-47af504e56c9dd2d",
+   "location": "claims[9].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers on Instagram.",
+   "duplicate_of": "R-47af504e56c9dd2d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-47af504e56c9dd2d",
+   "location": "claims[10].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers on Instagram.",
+   "duplicate_of": "R-47af504e56c9dd2d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-47af504e56c9dd2d",
+   "location": "claims[11].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers on Instagram.",
+   "duplicate_of": "R-47af504e56c9dd2d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-47af504e56c9dd2d",
+   "location": "claims[12].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers on Instagram.",
+   "duplicate_of": "R-47af504e56c9dd2d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-47af504e56c9dd2d",
+   "location": "claims[13].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers on Instagram.",
+   "duplicate_of": "R-47af504e56c9dd2d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-47af504e56c9dd2d",
+   "location": "claims[14].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers on Instagram.",
+   "duplicate_of": "R-47af504e56c9dd2d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-47af504e56c9dd2d",
+   "location": "claims[15].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers on Instagram.",
+   "duplicate_of": "R-47af504e56c9dd2d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-47af504e56c9dd2d",
+   "location": "claims[16].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers on Instagram.",
+   "duplicate_of": "R-47af504e56c9dd2d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-47af504e56c9dd2d",
+   "location": "claims[17].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers on Instagram.",
+   "duplicate_of": "R-47af504e56c9dd2d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-47af504e56c9dd2d",
+   "location": "claims[18].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers on Instagram.",
+   "duplicate_of": "R-47af504e56c9dd2d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-47af504e56c9dd2d",
+   "location": "claims[19].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers on Instagram.",
+   "duplicate_of": "R-47af504e56c9dd2d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-47af504e56c9dd2d",
+   "location": "claims[20].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers on Instagram.",
+   "duplicate_of": "R-47af504e56c9dd2d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-47af504e56c9dd2d",
+   "location": "claims[21].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers on Instagram.",
+   "duplicate_of": "R-47af504e56c9dd2d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-47af504e56c9dd2d",
+   "location": "claims[22].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers on Instagram.",
+   "duplicate_of": "R-47af504e56c9dd2d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-47af504e56c9dd2d",
+   "location": "claims[23].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers on Instagram.",
+   "duplicate_of": "R-47af504e56c9dd2d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-47af504e56c9dd2d",
+   "location": "claims[24].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers on Instagram.",
+   "duplicate_of": "R-47af504e56c9dd2d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-47af504e56c9dd2d",
+   "location": "claims[25].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers on Instagram.",
+   "duplicate_of": "R-47af504e56c9dd2d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-47af504e56c9dd2d",
+   "location": "claims[26].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers on Instagram.",
+   "duplicate_of": "R-47af504e56c9dd2d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-47af504e56c9dd2d",
+   "location": "claims[27].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers on Instagram.",
+   "duplicate_of": "R-47af504e56c9dd2d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-47af504e56c9dd2d",
+   "location": "claims[28].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers on Instagram.",
+   "duplicate_of": "R-47af504e56c9dd2d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-47af504e56c9dd2d",
+   "location": "claims[29].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers on Instagram.",
+   "duplicate_of": "R-47af504e56c9dd2d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-47af504e56c9dd2d",
+   "location": "claims[30].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers on Instagram.",
+   "duplicate_of": "R-47af504e56c9dd2d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-47af504e56c9dd2d",
+   "location": "claims[31].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers on Instagram.",
+   "duplicate_of": "R-47af504e56c9dd2d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-47af504e56c9dd2d",
+   "location": "claims[32].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers on Instagram.",
+   "duplicate_of": "R-47af504e56c9dd2d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-47af504e56c9dd2d",
+   "location": "claims[33].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers on Instagram.",
+   "duplicate_of": "R-47af504e56c9dd2d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-47af504e56c9dd2d",
+   "location": "claims[34].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers on Instagram.",
+   "duplicate_of": "R-47af504e56c9dd2d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-47af504e56c9dd2d",
+   "location": "claims[35].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers on Instagram.",
+   "duplicate_of": "R-47af504e56c9dd2d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-47af504e56c9dd2d",
+   "location": "claims[36].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers on Instagram.",
+   "duplicate_of": "R-47af504e56c9dd2d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-47af504e56c9dd2d",
+   "location": "claims[37].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers on Instagram.",
+   "duplicate_of": "R-47af504e56c9dd2d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-47af504e56c9dd2d",
+   "location": "claims[38].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers on Instagram.",
+   "duplicate_of": "R-47af504e56c9dd2d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  }
+ ],
+ "skipped_sentences": {
+  "proposal": [],
+  "non_assertion": []
+ },
+ "unknown_issues": [],
+ "outreach": {
+  "recipient": "no_email",
+  "sender": "no_email",
+  "instagram_mentioned": false,
+  "other_platforms_in_pitch": [],
+  "instagram_compliant": false,
+  "promises": [],
+  "email_subject": ""
+ },
+ "failures": [
+  {
+   "check": "structure",
+   "detail": [
+    "truncated_output: Outermost JSON object is malformed or incomplete: Expecting ',' delimiter: line 1 column 754 (char 753)"
+   ]
+  },
+  {
+   "check": "duplicate_claims",
+   "detail": [
+    [],
+    38
+   ]
+  },
+  {
+   "check": "repetition",
+   "detail": [
+    78
+   ]
+  },
+  {
+   "check": "claim_quotes",
+   "detail": [
+    {
+     "claim_id": "C1",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C2",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C3",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C4",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C5",
+     "self_quote": false,
+     "other_passage": []
+    }
+   ]
+  },
+  {
+   "check": "sender_recipient",
+   "detail": [
+    "no_email",
+    "no_email"
+   ]
+  },
+  {
+   "check": "instagram",
+   "detail": []
+  }
+ ],
+ "unresolved": [],
+ "unreviewed": [
+  "R-47af504e56c9dd2d"
+ ],
+ "review_scope": "structurally_valid_only",
+ "passes": false,
+ "failure_signature": "f7bcc7993ff61f6468cff2eb65d377c1b523e7cdd14042e1abca051b2089f5eb",
+ "review_wall_s": 0.014,
+ "attempt": {
+  "index": 1,
+  "kind": "regenerate_bounded"
+ }
+}

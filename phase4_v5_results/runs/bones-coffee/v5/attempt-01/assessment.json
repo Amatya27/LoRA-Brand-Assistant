@@ -1,0 +1,1415 @@
+{
+ "checks_version": "phase4-v5-checks-2",
+ "structure": {
+  "strict_json": false,
+  "truncated": true,
+  "parse_error": {
+   "error_type": "truncated_output",
+   "truncated": true,
+   "finish_reason": "length",
+   "unbalanced_braces": true,
+   "message": "Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 1 column 13222 (char 13221)"
+  },
+  "schema_errors": [
+   "truncated_output: Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 1 column 13222 (char 13221)"
+  ],
+  "parse_mode": "diagnostic_prefix",
+  "prompt_schema_valid": false,
+  "training_schema_valid": false,
+  "raw_format": {
+   "starts_with_brace": true,
+   "code_fenced": false,
+   "text_outside_json": null
+  }
+ },
+ "decision": null,
+ "repetition": {
+  "method": "exact match after whitespace/quote/case normalisation; no semantic similarity",
+  "claim_count": 38,
+  "duplicate_claim_ids": [],
+  "duplicate_claim_statements": 37,
+  "distinct_claim_statements": 1,
+  "duplicate_claim_quotes": 37,
+  "repeated_prose_sentences": {},
+  "max_8gram_repeats_in_raw": 78,
+  "looping": true
+ },
+ "citation_mechanics": {
+  "inline_passage_refs": [
+   "P1",
+   "P1",
+   "P1",
+   "P1",
+   "P1",
+   "P1",
+   "P1",
+   "P1"
+  ],
+  "unknown_refs": [],
+  "claim_quotes": [
+   {
+    "index": 0,
+    "claim_id": "C1",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 1,
+    "claim_id": "C2",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 2,
+    "claim_id": "C3",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 3,
+    "claim_id": "C4",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 4,
+    "claim_id": "C5",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 5,
+    "claim_id": "C6",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 6,
+    "claim_id": "C7",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 7,
+    "claim_id": "C8",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 8,
+    "claim_id": "C9",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 9,
+    "claim_id": "C10",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 10,
+    "claim_id": "C11",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 11,
+    "claim_id": "C12",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 12,
+    "claim_id": "C13",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 13,
+    "claim_id": "C14",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 14,
+    "claim_id": "C15",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 15,
+    "claim_id": "C16",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 16,
+    "claim_id": "C17",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 17,
+    "claim_id": "C18",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 18,
+    "claim_id": "C19",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 19,
+    "claim_id": "C20",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 20,
+    "claim_id": "C21",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 21,
+    "claim_id": "C22",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 22,
+    "claim_id": "C23",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 23,
+    "claim_id": "C24",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 24,
+    "claim_id": "C25",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 25,
+    "claim_id": "C26",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 26,
+    "claim_id": "C27",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 27,
+    "claim_id": "C28",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 28,
+    "claim_id": "C29",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 29,
+    "claim_id": "C30",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 30,
+    "claim_id": "C31",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 31,
+    "claim_id": "C32",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 32,
+    "claim_id": "C33",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 33,
+    "claim_id": "C34",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 34,
+    "claim_id": "C35",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 35,
+    "claim_id": "C36",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 36,
+    "claim_id": "C37",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 37,
+    "claim_id": "C38",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   }
+  ]
+ },
+ "assertions": [
+  {
+   "review_id": "R-4d51e5b2599a77a9",
+   "location": "brand_summary#s0",
+   "text": "Bones Coffee Company: A family-owned coffee company with a playful and imaginative twist on the classic holiday tradition [P1].",
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-6d7a0c82149f7a12",
+   "location": "current_marketing_strategy[0]#s0",
+   "text": "Bones Coffee Company reports that its holiday marketing strategy includes a focus on Instagram content [P1].",
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-d16b4b4e1b6a4ee5",
+   "location": "collaboration_opportunities[0]#s0",
+   "text": "Collaborate on a holiday-themed Instagram post that highlights the brand's playful and imaginative approach [P1].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-cd2a77cd54f41afd",
+   "location": "instagram_post_idea.hook#s0",
+   "text": "A carousel post featuring a playful holiday design with a skeleton and a werewolf, including a story about a campfire and a werewolf and bigfoot around a campfire [P1].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-c1978327c42fcc05",
+   "location": "instagram_post_idea.concept#s0",
+   "text": "A carousel post that features a playful holiday design with a skeleton and a werewolf, including a story about a campfire and a werewolf and bigfoot around a campfire [P1].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-5f83f29859f4fb18",
+   "location": "instagram_post_idea.why_it_fits#s0",
+   "text": "This post would align with Bones Coffee Company's playful and imaginative holiday marketing strategy [P1].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-46b738ceb3cfca9a",
+   "location": "email_body#s1",
+   "text": "We propose a collaboration for an Instagram post that builds on the brand's playful holiday design concept [P1].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-8edacc849c75bdd8",
+   "location": "email_body#s2",
+   "text": "The post would feature a carousel of images that tell a story of a campfire and a werewolf, including a skeleton and a werewolf and bigfoot around a campfire [P1].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-9976513933266dac",
+   "location": "email_body#s3",
+   "text": "This concept would align with your playful holiday marketing strategy and would be a great way to engage your audience with a fun and creative holiday post.",
+   "kind": "proposal_premise",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-0fb48bff2e94648c",
+   "location": "claims[0].statement",
+   "text": "Bones Coffee Company reports that its holiday marketing strategy includes a focus on Instagram content {C1}.",
+   "duplicate_of": "R-6d7a0c82149f7a12",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-0fb48bff2e94648c",
+   "location": "claims[1].statement",
+   "text": "Bones Coffee Company reports that its holiday marketing strategy includes a focus on Instagram content {C2}.",
+   "duplicate_of": "R-6d7a0c82149f7a12",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-0fb48bff2e94648c",
+   "location": "claims[2].statement",
+   "text": "Bones Coffee Company reports that its holiday marketing strategy includes a focus on Instagram content {C3}.",
+   "duplicate_of": "R-6d7a0c82149f7a12",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-0fb48bff2e94648c",
+   "location": "claims[3].statement",
+   "text": "Bones Coffee Company reports that its holiday marketing strategy includes a focus on Instagram content {C4}.",
+   "duplicate_of": "R-6d7a0c82149f7a12",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-0fb48bff2e94648c",
+   "location": "claims[4].statement",
+   "text": "Bones Coffee Company reports that its holiday marketing strategy includes a focus on Instagram content {C5}.",
+   "duplicate_of": "R-6d7a0c82149f7a12",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-0fb48bff2e94648c",
+   "location": "claims[5].statement",
+   "text": "Bones Coffee Company reports that its holiday marketing strategy includes a focus on Instagram content {C6}.",
+   "duplicate_of": "R-6d7a0c82149f7a12",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-0fb48bff2e94648c",
+   "location": "claims[6].statement",
+   "text": "Bones Coffee Company reports that its holiday marketing strategy includes a focus on Instagram content {C7}.",
+   "duplicate_of": "R-6d7a0c82149f7a12",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-0fb48bff2e94648c",
+   "location": "claims[7].statement",
+   "text": "Bones Coffee Company reports that its holiday marketing strategy includes a focus on Instagram content {C8}.",
+   "duplicate_of": "R-6d7a0c82149f7a12",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-0fb48bff2e94648c",
+   "location": "claims[8].statement",
+   "text": "Bones Coffee Company reports that its holiday marketing strategy includes a focus on Instagram content {C9}.",
+   "duplicate_of": "R-6d7a0c82149f7a12",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-0fb48bff2e94648c",
+   "location": "claims[9].statement",
+   "text": "Bones Coffee Company reports that its holiday marketing strategy includes a focus on Instagram content {C10}.",
+   "duplicate_of": "R-6d7a0c82149f7a12",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-0fb48bff2e94648c",
+   "location": "claims[10].statement",
+   "text": "Bones Coffee Company reports that its holiday marketing strategy includes a focus on Instagram content {C11}.",
+   "duplicate_of": "R-6d7a0c82149f7a12",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-0fb48bff2e94648c",
+   "location": "claims[11].statement",
+   "text": "Bones Coffee Company reports that its holiday marketing strategy includes a focus on Instagram content {C12}.",
+   "duplicate_of": "R-6d7a0c82149f7a12",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-0fb48bff2e94648c",
+   "location": "claims[12].statement",
+   "text": "Bones Coffee Company reports that its holiday marketing strategy includes a focus on Instagram content {C13}.",
+   "duplicate_of": "R-6d7a0c82149f7a12",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-0fb48bff2e94648c",
+   "location": "claims[13].statement",
+   "text": "Bones Coffee Company reports that its holiday marketing strategy includes a focus on Instagram content {C14}.",
+   "duplicate_of": "R-6d7a0c82149f7a12",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-0fb48bff2e94648c",
+   "location": "claims[14].statement",
+   "text": "Bones Coffee Company reports that its holiday marketing strategy includes a focus on Instagram content {C15}.",
+   "duplicate_of": "R-6d7a0c82149f7a12",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-0fb48bff2e94648c",
+   "location": "claims[15].statement",
+   "text": "Bones Coffee Company reports that its holiday marketing strategy includes a focus on Instagram content {C16}.",
+   "duplicate_of": "R-6d7a0c82149f7a12",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-0fb48bff2e94648c",
+   "location": "claims[16].statement",
+   "text": "Bones Coffee Company reports that its holiday marketing strategy includes a focus on Instagram content {C17}.",
+   "duplicate_of": "R-6d7a0c82149f7a12",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-0fb48bff2e94648c",
+   "location": "claims[17].statement",
+   "text": "Bones Coffee Company reports that its holiday marketing strategy includes a focus on Instagram content {C18}.",
+   "duplicate_of": "R-6d7a0c82149f7a12",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-0fb48bff2e94648c",
+   "location": "claims[18].statement",
+   "text": "Bones Coffee Company reports that its holiday marketing strategy includes a focus on Instagram content {C19}.",
+   "duplicate_of": "R-6d7a0c82149f7a12",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-0fb48bff2e94648c",
+   "location": "claims[19].statement",
+   "text": "Bones Coffee Company reports that its holiday marketing strategy includes a focus on Instagram content {C20}.",
+   "duplicate_of": "R-6d7a0c82149f7a12",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-0fb48bff2e94648c",
+   "location": "claims[20].statement",
+   "text": "Bones Coffee Company reports that its holiday marketing strategy includes a focus on Instagram content {C21}.",
+   "duplicate_of": "R-6d7a0c82149f7a12",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-0fb48bff2e94648c",
+   "location": "claims[21].statement",
+   "text": "Bones Coffee Company reports that its holiday marketing strategy includes a focus on Instagram content {C22}.",
+   "duplicate_of": "R-6d7a0c82149f7a12",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-0fb48bff2e94648c",
+   "location": "claims[22].statement",
+   "text": "Bones Coffee Company reports that its holiday marketing strategy includes a focus on Instagram content {C23}.",
+   "duplicate_of": "R-6d7a0c82149f7a12",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-0fb48bff2e94648c",
+   "location": "claims[23].statement",
+   "text": "Bones Coffee Company reports that its holiday marketing strategy includes a focus on Instagram content {C24}.",
+   "duplicate_of": "R-6d7a0c82149f7a12",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-0fb48bff2e94648c",
+   "location": "claims[24].statement",
+   "text": "Bones Coffee Company reports that its holiday marketing strategy includes a focus on Instagram content {C25}.",
+   "duplicate_of": "R-6d7a0c82149f7a12",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-0fb48bff2e94648c",
+   "location": "claims[25].statement",
+   "text": "Bones Coffee Company reports that its holiday marketing strategy includes a focus on Instagram content {C26}.",
+   "duplicate_of": "R-6d7a0c82149f7a12",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-0fb48bff2e94648c",
+   "location": "claims[26].statement",
+   "text": "Bones Coffee Company reports that its holiday marketing strategy includes a focus on Instagram content {C27}.",
+   "duplicate_of": "R-6d7a0c82149f7a12",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-0fb48bff2e94648c",
+   "location": "claims[27].statement",
+   "text": "Bones Coffee Company reports that its holiday marketing strategy includes a focus on Instagram content {C28}.",
+   "duplicate_of": "R-6d7a0c82149f7a12",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-0fb48bff2e94648c",
+   "location": "claims[28].statement",
+   "text": "Bones Coffee Company reports that its holiday marketing strategy includes a focus on Instagram content {C29}.",
+   "duplicate_of": "R-6d7a0c82149f7a12",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-0fb48bff2e94648c",
+   "location": "claims[29].statement",
+   "text": "Bones Coffee Company reports that its holiday marketing strategy includes a focus on Instagram content {C30}.",
+   "duplicate_of": "R-6d7a0c82149f7a12",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-0fb48bff2e94648c",
+   "location": "claims[30].statement",
+   "text": "Bones Coffee Company reports that its holiday marketing strategy includes a focus on Instagram content {C31}.",
+   "duplicate_of": "R-6d7a0c82149f7a12",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-0fb48bff2e94648c",
+   "location": "claims[31].statement",
+   "text": "Bones Coffee Company reports that its holiday marketing strategy includes a focus on Instagram content {C32}.",
+   "duplicate_of": "R-6d7a0c82149f7a12",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-0fb48bff2e94648c",
+   "location": "claims[32].statement",
+   "text": "Bones Coffee Company reports that its holiday marketing strategy includes a focus on Instagram content {C33}.",
+   "duplicate_of": "R-6d7a0c82149f7a12",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-0fb48bff2e94648c",
+   "location": "claims[33].statement",
+   "text": "Bones Coffee Company reports that its holiday marketing strategy includes a focus on Instagram content {C34}.",
+   "duplicate_of": "R-6d7a0c82149f7a12",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-0fb48bff2e94648c",
+   "location": "claims[34].statement",
+   "text": "Bones Coffee Company reports that its holiday marketing strategy includes a focus on Instagram content {C35}.",
+   "duplicate_of": "R-6d7a0c82149f7a12",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-0fb48bff2e94648c",
+   "location": "claims[35].statement",
+   "text": "Bones Coffee Company reports that its holiday marketing strategy includes a focus on Instagram content {C36}.",
+   "duplicate_of": "R-6d7a0c82149f7a12",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-0fb48bff2e94648c",
+   "location": "claims[36].statement",
+   "text": "Bones Coffee Company reports that its holiday marketing strategy includes a focus on Instagram content {C37}.",
+   "duplicate_of": "R-6d7a0c82149f7a12",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-989c8b5a966c6d8a",
+   "location": "claims[37].statement",
+   "text": "Bones Coffee Company reports that its holiday marketing strategy includes a focus on Instagram content {C38}.",
+   "kind": "claim_statement",
+   "cited_passages": [],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  }
+ ],
+ "skipped_sentences": {
+  "proposal": [
+   {
+    "location": "email_subject#s0",
+    "text": "Collaboration Opportunity: A Holiday Instagram Post Idea"
+   },
+   {
+    "location": "email_body#s4",
+    "text": "If you have a specific idea for the post, we'd love to hear it."
+   }
+  ],
+  "non_assertion": [
+   {
+    "location": "likely_target_audience#s0",
+    "text": "INSUFFICIENT_EVIDENCE"
+   },
+   {
+    "location": "email_body#s0",
+    "text": "Hi Bones Coffee Marketing Team,"
+   },
+   {
+    "location": "email_body#s5",
+    "text": "Best regards,"
+   },
+   {
+    "location": "email_body#s6",
+    "text": "[Your Name]"
+   }
+  ]
+ },
+ "unknown_issues": [],
+ "outreach": {
+  "recipient": "correct",
+  "sender": "correct",
+  "instagram_mentioned": true,
+  "other_platforms_in_pitch": [],
+  "instagram_compliant": true,
+  "promises": [],
+  "email_subject": "Collaboration Opportunity: A Holiday Instagram Post Idea"
+ },
+ "failures": [
+  {
+   "check": "structure",
+   "detail": [
+    "truncated_output: Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 1 column 13222 (char 13221)"
+   ]
+  },
+  {
+   "check": "duplicate_claims",
+   "detail": [
+    [],
+    37
+   ]
+  },
+  {
+   "check": "repetition",
+   "detail": [
+    78
+   ]
+  },
+  {
+   "check": "claim_quotes",
+   "detail": [
+    {
+     "claim_id": "C1",
+     "self_quote": true,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C2",
+     "self_quote": true,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C3",
+     "self_quote": true,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C4",
+     "self_quote": true,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C5",
+     "self_quote": true,
+     "other_passage": []
+    }
+   ]
+  }
+ ],
+ "unresolved": [],
+ "unreviewed": [
+  "R-4d51e5b2599a77a9",
+  "R-6d7a0c82149f7a12",
+  "R-d16b4b4e1b6a4ee5",
+  "R-cd2a77cd54f41afd",
+  "R-c1978327c42fcc05",
+  "R-5f83f29859f4fb18",
+  "R-46b738ceb3cfca9a",
+  "R-8edacc849c75bdd8",
+  "R-9976513933266dac",
+  "R-989c8b5a966c6d8a"
+ ],
+ "review_scope": "structurally_valid_only",
+ "passes": false,
+ "failure_signature": "1e20b67a5ff5e8d08c62929ce7c9b05c6f35ec4ca3a8327d4d8ac537d8eacb81",
+ "review_wall_s": 0.01,
+ "attempt": {
+  "index": 1,
+  "kind": "regenerate_bounded"
+ }
+}

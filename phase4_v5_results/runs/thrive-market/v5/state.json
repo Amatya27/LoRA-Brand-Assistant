@@ -1,0 +1,76 @@
+{
+ "case_id": "thrive-market/v5",
+ "company_id": "thrive-market",
+ "arm": "v5",
+ "packet_path": "outputs/phase3_v5/handoff_6efa346/data/v3_pilot/packets/thrive-market.json",
+ "packet_sha256": "ed5bf926801b01e5f73b9daf8c07d8b6c7867569f338f689df590ac50ee72f2d",
+ "prompt_version": "brandpilot.prompt.v3.3",
+ "prompt_sha256": "4cc47093e419563867779fad552aa6d9d660bc6773c0de31d88746c757cd90e7",
+ "max_repairs": 2,
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "dir": "phase4_v5_results/runs/thrive-market/v5/attempt-00",
+   "prompt_sha256": "4cc47093e419563867779fad552aa6d9d660bc6773c0de31d88746c757cd90e7",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "length",
+   "usage": {
+    "prompt_tokens": 2565,
+    "completion_tokens": 3072,
+    "total_tokens": 5637,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 72.729,
+   "runtime_verified": true,
+   "raw_sha256": "25e15454375cbc3140d858123a4569f903e7fc1624aecb3e40b3d1860c5c8f8b",
+   "reused_from": null,
+   "passes": false,
+   "strict_ok": false,
+   "model_abstained": false,
+   "failure_count": 7,
+   "unresolved_count": 1,
+   "failure_signature": "488939c42653a529b0882419056472add6a0e6cbeaa6a8b3caa49025f1caa682",
+   "review_wall_s": 39.654,
+   "truncated": true,
+   "looping": true
+  },
+  {
+   "index": 1,
+   "kind": "regenerate_bounded",
+   "dir": "phase4_v5_results/runs/thrive-market/v5/attempt-01",
+   "prompt_sha256": "ed1a269ba7773c27c26bfed6b8b5f4488b66a31e4ced561b6531451a14777ea8",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "length",
+   "usage": {
+    "prompt_tokens": 2683,
+    "completion_tokens": 3072,
+    "total_tokens": 5755,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 86.166,
+   "runtime_verified": true,
+   "raw_sha256": "2c8e5b027947f8b33a568ee778823b43c5f0c5d631a5907d6f47c0738f8fd9d2",
+   "reused_from": null,
+   "passes": false,
+   "strict_ok": false,
+   "model_abstained": false,
+   "truncated": true,
+   "looping": true,
+   "failure_count": 5,
+   "unresolved_count": 0,
+   "failure_signature": "4f60411a18ee0b7accf5d55c445df856b102b6b426152b0ac24f7dfb581075f0",
+   "review_wall_s": 0.012
+  }
+ ],
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "no progress: the repair repeated the same truncation failure",
+ "stop_code": "withheld_no_progress",
+ "eligibility": "eligible"
+}

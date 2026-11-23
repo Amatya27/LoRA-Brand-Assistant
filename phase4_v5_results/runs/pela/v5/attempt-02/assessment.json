@@ -1,0 +1,92 @@
+{
+ "checks_version": "phase4-v5-checks-2",
+ "structure": {
+  "strict_json": false,
+  "truncated": true,
+  "parse_error": {
+   "error_type": "truncated_output",
+   "truncated": true,
+   "finish_reason": "length",
+   "unbalanced_braces": true,
+   "message": "Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 1 column 137 (char 136)"
+  },
+  "schema_errors": [
+   "truncated_output: Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 1 column 137 (char 136)"
+  ],
+  "parse_mode": "diagnostic_unparsed",
+  "prompt_schema_valid": false,
+  "training_schema_valid": false,
+  "raw_format": {
+   "starts_with_brace": true,
+   "code_fenced": false,
+   "text_outside_json": null
+  }
+ },
+ "decision": null,
+ "repetition": {
+  "method": "exact match after whitespace/quote/case normalisation; no semantic similarity",
+  "claim_count": 0,
+  "duplicate_claim_ids": [],
+  "duplicate_claim_statements": 0,
+  "distinct_claim_statements": 0,
+  "duplicate_claim_quotes": 0,
+  "repeated_prose_sentences": {},
+  "max_8gram_repeats_in_raw": 81,
+  "looping": true
+ },
+ "citation_mechanics": {
+  "inline_passage_refs": [],
+  "unknown_refs": [],
+  "claim_quotes": []
+ },
+ "assertions": [],
+ "skipped_sentences": {
+  "proposal": [],
+  "non_assertion": []
+ },
+ "unknown_issues": [],
+ "outreach": {
+  "recipient": "no_email",
+  "sender": "no_email",
+  "instagram_mentioned": false,
+  "other_platforms_in_pitch": [],
+  "instagram_compliant": false,
+  "promises": [],
+  "email_subject": ""
+ },
+ "failures": [
+  {
+   "check": "structure",
+   "detail": [
+    "truncated_output: Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 1 column 137 (char 136)"
+   ]
+  },
+  {
+   "check": "repetition",
+   "detail": [
+    81
+   ]
+  },
+  {
+   "check": "sender_recipient",
+   "detail": [
+    "no_email",
+    "no_email"
+   ]
+  },
+  {
+   "check": "instagram",
+   "detail": []
+  }
+ ],
+ "unresolved": [],
+ "unreviewed": [],
+ "review_scope": "structurally_valid_only",
+ "passes": false,
+ "failure_signature": "67e0addb7b5cd326e60a7bb350c88d6a1b0b76226616a462b6719d34635828b7",
+ "review_wall_s": 0.001,
+ "attempt": {
+  "index": 2,
+  "kind": "regenerate_bounded"
+ }
+}

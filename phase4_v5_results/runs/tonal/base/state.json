@@ -1,0 +1,106 @@
+{
+ "case_id": "tonal/base",
+ "company_id": "tonal",
+ "arm": "base",
+ "packet_path": "outputs/phase3_v5/handoff_6efa346/data/v3_pilot/packets/tonal.json",
+ "packet_sha256": "d00bcfb37c669099e3b7a0da6b6526131ec5e635dfc1048b8fa68620b08b341d",
+ "prompt_version": "brandpilot.prompt.v3.3",
+ "prompt_sha256": "d1cd15bcb01e5a77af71201c4821a2e3f861e2e284e9640a64d1d92fca094990",
+ "max_repairs": 2,
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "dir": "phase4_v5_results/runs/tonal/base/attempt-00",
+   "prompt_sha256": "d1cd15bcb01e5a77af71201c4821a2e3f861e2e284e9640a64d1d92fca094990",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "stop",
+   "usage": {
+    "prompt_tokens": 2379,
+    "completion_tokens": 279,
+    "total_tokens": 2658,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 11.408,
+   "runtime_verified": true,
+   "raw_sha256": "3f0ca65c73b2e356811557cd550385c2658c5601be8799e44d71d69e5993a99e",
+   "reused_from": null,
+   "passes": false,
+   "strict_ok": true,
+   "model_abstained": false,
+   "failure_count": 12,
+   "unresolved_count": 3,
+   "failure_signature": "4ff641f17a8df497db0d616b8d3be458966f0bde1d275346472b51a27c209184",
+   "review_wall_s": 98.531,
+   "truncated": false,
+   "looping": false
+  },
+  {
+   "index": 1,
+   "kind": "targeted_fix",
+   "dir": "phase4_v5_results/runs/tonal/base/attempt-01",
+   "prompt_sha256": "a7c9dd387fbb389a0587aff90b57a967b92e7c226e03dc4ba297acb4591aba7c",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "length",
+   "usage": {
+    "prompt_tokens": 2991,
+    "completion_tokens": 3072,
+    "total_tokens": 6063,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 86.129,
+   "runtime_verified": true,
+   "raw_sha256": "70d27a8bcaff9e426320efcf81f943bde5abc6338523bf7aa40be49e52a5ddb8",
+   "reused_from": null,
+   "passes": false,
+   "strict_ok": false,
+   "model_abstained": false,
+   "truncated": true,
+   "looping": false,
+   "failure_count": 4,
+   "unresolved_count": 0,
+   "failure_signature": "45ca8c5b744e0c01d73c3c208e13b8ccd8e9d494857b0f124ea8ddd9dd19d51b",
+   "review_wall_s": 0.004
+  },
+  {
+   "index": 2,
+   "kind": "regenerate_bounded",
+   "dir": "phase4_v5_results/runs/tonal/base/attempt-02",
+   "prompt_sha256": "f9c4da053670c5ef25e726a31fd8e9d4c60deae5c1126d4be9a5d2bd925a32a7",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "length",
+   "usage": {
+    "prompt_tokens": 2494,
+    "completion_tokens": 3072,
+    "total_tokens": 5566,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 63.336,
+   "runtime_verified": true,
+   "raw_sha256": "0f5e8b72e6444754bf413233511fbe2354d94bccfcef9be91d5fa2e80bd06480",
+   "reused_from": null,
+   "passes": false,
+   "strict_ok": false,
+   "model_abstained": false,
+   "truncated": true,
+   "looping": true,
+   "failure_count": 5,
+   "unresolved_count": 0,
+   "failure_signature": "4c9d2a19c2e58cd2da0005543abb29bb2b0ac487b8e7bd812d37e3ef8590e1f6",
+   "review_wall_s": 0.007
+  }
+ ],
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "no progress: the repair repeated the same truncation failure",
+ "stop_code": "withheld_no_progress",
+ "eligibility": "eligible"
+}

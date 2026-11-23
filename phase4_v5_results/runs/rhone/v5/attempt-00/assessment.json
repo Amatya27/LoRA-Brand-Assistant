@@ -1,0 +1,2717 @@
+{
+ "checks_version": "phase4-v5-checks-2",
+ "structure": {
+  "strict_json": false,
+  "truncated": true,
+  "parse_error": {
+   "error_type": "truncated_output",
+   "truncated": true,
+   "finish_reason": "length",
+   "unbalanced_braces": true,
+   "message": "Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 1 column 11057 (char 11056)"
+  },
+  "schema_errors": [
+   "truncated_output: Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 1 column 11057 (char 11056)"
+  ],
+  "parse_mode": "diagnostic_prefix",
+  "prompt_schema_valid": false,
+  "training_schema_valid": false,
+  "raw_format": {
+   "starts_with_brace": true,
+   "code_fenced": false,
+   "text_outside_json": null
+  }
+ },
+ "decision": null,
+ "repetition": {
+  "method": "exact match after whitespace/quote/case normalisation; no semantic similarity",
+  "claim_count": 43,
+  "duplicate_claim_ids": [],
+  "duplicate_claim_statements": 39,
+  "distinct_claim_statements": 4,
+  "duplicate_claim_quotes": 39,
+  "repeated_prose_sentences": {},
+  "max_8gram_repeats_in_raw": 82,
+  "looping": true
+ },
+ "citation_mechanics": {
+  "inline_passage_refs": [
+   "P10",
+   "P10",
+   "P10",
+   "P10",
+   "P10",
+   "P10",
+   "P10",
+   "P10"
+  ],
+  "unknown_refs": [],
+  "claim_quotes": [
+   {
+    "index": 0,
+    "claim_id": "C1",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 1,
+    "claim_id": "C2",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 2,
+    "claim_id": "C3",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 3,
+    "claim_id": "C4",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 4,
+    "claim_id": "C5",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 5,
+    "claim_id": "C6",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 6,
+    "claim_id": "C7",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 7,
+    "claim_id": "C8",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 8,
+    "claim_id": "C9",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 9,
+    "claim_id": "C10",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 10,
+    "claim_id": "C11",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 11,
+    "claim_id": "C12",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 12,
+    "claim_id": "C13",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 13,
+    "claim_id": "C14",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 14,
+    "claim_id": "C15",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 15,
+    "claim_id": "C16",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 16,
+    "claim_id": "C17",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 17,
+    "claim_id": "C18",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 18,
+    "claim_id": "C19",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 19,
+    "claim_id": "C20",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 20,
+    "claim_id": "C21",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 21,
+    "claim_id": "C22",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 22,
+    "claim_id": "C23",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 23,
+    "claim_id": "C24",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 24,
+    "claim_id": "C25",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 25,
+    "claim_id": "C26",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 26,
+    "claim_id": "C27",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 27,
+    "claim_id": "C28",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 28,
+    "claim_id": "C29",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 29,
+    "claim_id": "C30",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 30,
+    "claim_id": "C31",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 31,
+    "claim_id": "C32",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 32,
+    "claim_id": "C33",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 33,
+    "claim_id": "C34",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 34,
+    "claim_id": "C35",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 35,
+    "claim_id": "C36",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 36,
+    "claim_id": "C37",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 37,
+    "claim_id": "C38",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 38,
+    "claim_id": "C39",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 39,
+    "claim_id": "C40",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 40,
+    "claim_id": "C41",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 41,
+    "claim_id": "C42",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 42,
+    "claim_id": "C43",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   }
+  ]
+ },
+ "assertions": [
+  {
+   "review_id": "R-eeed65bf06a1fd48",
+   "location": "brand_summary#s0",
+   "text": "Rhone is a premium activewear brand that has expanded its marketing efforts to include a campaign that highlights its commitment to mental health, particularly through partnerships with athletes and influencers [P10].",
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.312,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.31 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.31 < 0.6",
+   "reviewer_reason": "The passage explicitly states that Rhone has been addressing mental health in its marketing since its founding, which aligns with the statement that Rhone has been doing it since the company was founded in 2014.",
+   "evidence_passage_id": "P5",
+   "evidence_quote": "Rhone has been doing it since the company was founded in 2014, according to Checketts.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "72b88c857ed8035c539db2e9ade33f16894891b76bfd61e1fd081fbff0ee056c",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-eeed65bf06a1fd48\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P5\",\n  \"evidence_quote\": \"Rhone has been doing it since the company was founded in 2014, according to Checketts.\",\n  \"reason\": \"The passage explicitly states that Rhone has been addressing mental health in its marketing since its founding, which aligns with the statement that Rhone has been doing it since the company was founded in 2014.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 651,
+       "completion_tokens": 128,
+       "total_tokens": 779,
+       "prompt_tokens_details": {
+        "cached_tokens": 155
+       }
+      },
+      "latency_s": 10.152,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "0cab3dd2df478b81a86353276e45d03b41ba656a249c4afc7e70447a040d2594",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-e3e8b931236f28f8",
+   "location": "current_marketing_strategy[0]#s0",
+   "text": "Rhone has launched a new women's line in May [P10].",
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "unsupported",
+   "citation_status": "cited",
+   "flags": [],
+   "reason": "The statements about Rhone's women's line launch in May are not supported by any of the given passages. The passages do not mention any new women's line launch in May. They discuss different aspects of Rhone's brand and marketing activities, but none of them directly address the launch of a new women's line in May. Therefore, the statement is unsupported by the provided evidence.",
+   "guard": null,
+   "reviewer_reason": "The statements about Rhone's women's line launch in May are not supported by any of the given passages. The passages do not mention any new women's line launch in May. They discuss different aspects of Rhone's brand and marketing activities, but none of them directly address the launch of a new women's line in May. Therefore, the statement is unsupported by the provided evidence.",
+   "evidence_passage_id": null,
+   "evidence_quote": "",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "ffcc7283b9d9a35f0f4eefe1a499a9b3381d0498f2e077f0dde746780b1fe2cd",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-e3e8b931236f28f8\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P10\",\n  \"evidence_quote\": \"Rhone has launched its first complete women’s line in May.\",\n  \"reason\": \"The passage directly states that Rhone has launched a new women's line in May, which matches the statement.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 504,
+       "completion_tokens": 99,
+       "total_tokens": 603,
+       "prompt_tokens_details": {
+        "cached_tokens": 155
+       }
+      },
+      "latency_s": 7.572,
+      "error": null,
+      "validation_errors": [
+       "evidence_quote is not traceable to the named passage (>= 4 consecutive words required)"
+      ]
+     },
+     {
+      "attempt": 1,
+      "prompt_sha256": "9463f1cd44c53a4208072139bcd4de541ae2bf4e95599cc86eb3486e28a07169",
+      "raw_text": "```json\n{\"review_id\": \"R-e3e8b931236f28f8\", \"verdict\": \"unsupported\", \"evidence_passage_id\": \"null\", \"evidence_quote\": null, \"reason\": \"The statements about Rhone's women's line launch in May are not supported by any of the given passages. The passages do not mention any new women's line launch in May. They discuss different aspects of Rhone's brand and marketing activities, but none of them directly address the launch of a new women's line in May. Therefore, the statement is unsupported by the provided evidence.\"}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 534,
+       "completion_tokens": 134,
+       "total_tokens": 668,
+       "prompt_tokens_details": {
+        "cached_tokens": 498
+       }
+      },
+      "latency_s": 9.822,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "bf5b162d241109f4ee60e3a9838f701379afe6e4ee1e63b649c530cff642d383",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-6d7fe5335419688c",
+   "location": "collaboration_opportunities[0]#s0",
+   "text": "Collaborate on an Instagram post that highlights the campaign's message [P10].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.0,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.00 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.00 < 0.6",
+   "reviewer_reason": "The passage mentions that Rhone has launched a national campaign with high-impact NYC activations, which aligns with the statement about collaborating on an Instagram post that highlights the campaign's message.",
+   "evidence_passage_id": "P2",
+   "evidence_quote": "Rhone Expands Commuter Push With National Campaign, NYC Activations Rhone has launched its most ambitious campaign to date, bringing the versatility of the Commuter® Collection to life through high-impact NYC activations.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "9a8bd773d6a41909f7bf332e531710bd846cc4a34bcc75c0df4b4500aa5500d7",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-6d7fe5335419688c\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P2\",\n  \"evidence_quote\": \"Rhone Expands Commuter Push With National Campaign, NYC Activations Rhone has launched its most ambitious campaign to date, bringing the versatility of the Commuter® Collection to life through high-impact NYC activations.\",\n  \"reason\": \"The passage mentions that Rhone has launched a national campaign with high-impact NYC activations, which aligns with the statement about collaborating on an Instagram post that highlights the campaign's message.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 555,
+       "completion_tokens": 143,
+       "total_tokens": 698,
+       "prompt_tokens_details": {
+        "cached_tokens": 156
+       }
+      },
+      "latency_s": 11.059,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "b1939ef3bec7d11cc042cfe24c4ceb6005698bf14630d3a305f8ac571f3261aa",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-4752595d2009c3be",
+   "location": "instagram_post_idea.hook#s0",
+   "text": "A carousel post featuring athletes and influencers discussing mental health and fitness [P10].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.333,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.33 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.33 < 0.6",
+   "reviewer_reason": "The evidence passage directly states that Rhone has been addressing mental health since its founding in 2014, which aligns with the statement that a carousel post featuring athletes and influencers discussing mental health and fitness.",
+   "evidence_passage_id": "P5",
+   "evidence_quote": "Track record It’s become fairly common to see athletic brands address mental health in their marketing, but Rhone has been doing it since the company was founded in 2014, according to Checketts. In the earlier days of the brand, Rhone began hosting an event series called Mind & Muscle that gathered men for workout sessions in Rhone stores, followed by what was “essentially group therapy,” Checketts said. More than 1,000 people have participated over the years, he said, and the company has hosted more than 50 Mind & Muscle events so far in 2024. Rhone now intends to include women in the series, which features upcoming events tied to the NBA and LPGA partnerships.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "b54a730ac9859fbb9c1e101b5c952a5a3c85d2a791886e0e053ac25a5ef1e125",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-4752595d2009c3be\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P5\",\n  \"evidence_quote\": \"Track record It’s become fairly common to see athletic brands address mental health in their marketing, but Rhone has been doing it since the company was founded in 2014, according to Checketts. In the earlier days of the brand, Rhone began hosting an event series called Mind & Muscle that gathered men for workout sessions in Rhone stores, followed by what was “essentially group therapy,” Checketts said. More than 1,000 people have participated over the years, he said, and the company has hosted more than 50 Mind & Muscle events so far in 2024. Rhone now intends to include women in the series, which features upcoming events tied to the NBA and LPGA partnerships.\",\n  \"reason\": \"The evidence passage directly states that Rhone has been addressing mental health since its founding in 2014, which aligns with the statement that a carousel post featuring athletes and influencers discussing mental health and fitness.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 633,
+       "completion_tokens": 259,
+       "total_tokens": 892,
+       "prompt_tokens_details": {
+        "cached_tokens": 156
+       }
+      },
+      "latency_s": 19.833,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "dae5a06879aa3adb23e9b82b9e86a8c9a57d2b7a0f9fa4ec9d27ea1bc0a1c59c",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-f54580e5e554d3c2",
+   "location": "instagram_post_idea.concept#s0",
+   "text": "A carousel post that features athletes and influencers discussing mental health and fitness, with a focus on Rhone's campaign and its commitment to wellness [P10].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.2,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.20 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.20 < 0.6",
+   "reviewer_reason": "The evidence passage P5 directly supports the statement by providing historical context of Rhone's commitment to mental health, which aligns with the statement about Rhone's campaign and its focus on wellness.",
+   "evidence_passage_id": "P5",
+   "evidence_quote": "Track record It’s become fairly common to see athletic brands address mental health in their marketing, but Rhone has been doing it since the company was founded in 2014, according to Checketts. In the earlier days of the brand, Rhone began hosting an event series called Mind & Muscle that gathered men for workout sessions in Rhone stores, followed by what was “essentially group therapy,” Checketts said. More than 1,000 people have participated over the years, he said, and the company has hosted more than 50 Mind & Muscle events so far in 2024. Rhone now intends to include women in the series, which features upcoming events tied to the NBA and LPGA partnerships.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "9c241c1f7686865a96bb6debde39757a15f14550e9cd322ea56d398c9894fd22",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-f54580e5e554d3c2\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P5\",\n  \"evidence_quote\": \"Track record It’s become fairly common to see athletic brands address mental health in their marketing, but Rhone has been doing it since the company was founded in 2014, according to Checketts. In the earlier days of the brand, Rhone began hosting an event series called Mind & Muscle that gathered men for workout sessions in Rhone stores, followed by what was “essentially group therapy,” Checketts said. More than 1,000 people have participated over the years, he said, and the company has hosted more than 50 Mind & Muscle events so far in 2024. Rhone now intends to include women in the series, which features upcoming events tied to the NBA and LPGA partnerships.\",\n  \"reason\": \"The evidence passage P5 directly supports the statement by providing historical context of Rhone's commitment to mental health, which aligns with the statement about Rhone's campaign and its focus on wellness.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 648,
+       "completion_tokens": 255,
+       "total_tokens": 903,
+       "prompt_tokens_details": {
+        "cached_tokens": 155
+       }
+      },
+      "latency_s": 20.081,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "ee5af8be9aba4843db53a92eb880323ae6756031846db2d78c552164da868bf4",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-37f75ec532089f11",
+   "location": "instagram_post_idea.why_it_fits#s0",
+   "text": "This aligns with Rhone's marketing strategy of highlighting its commitment to wellness and mental health [P10].",
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.333,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.33 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.33 < 0.6",
+   "reviewer_reason": "The evidence passage directly states that Rhone has been highlighting its commitment to wellness and mental health since its founding in 2014, which aligns with the statement.",
+   "evidence_passage_id": "P5",
+   "evidence_quote": "Rhone has been doing it since the company was founded in 2014, according to Checketts.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "ea61443c931709ffa4854414694f2e36ec92d1961230b15c71f3a8a76b4a3366",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-37f75ec532089f11\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P5\",\n  \"evidence_quote\": \"Rhone has been doing it since the company was founded in 2014, according to Checketts.\",\n  \"reason\": \"The evidence passage directly states that Rhone has been highlighting its commitment to wellness and mental health since its founding in 2014, which aligns with the statement.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 639,
+       "completion_tokens": 122,
+       "total_tokens": 761,
+       "prompt_tokens_details": {
+        "cached_tokens": 156
+       }
+      },
+      "latency_s": 9.716,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "b7362631c5b89de3f17107a4f2541f4fb34b9faa58588094e90ad0b18f214714",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-b6aedff86787978a",
+   "location": "email_body#s1",
+   "text": "We're reaching out to propose a collaboration for an Instagram post that highlights your new women's line [P10].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.4,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.40 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.40 < 0.6",
+   "reviewer_reason": "The passage directly mentions that Rhone signed deals with Vu and Hartlage, which is consistent with the statement that they are reaching out to propose a collaboration for an Instagram post that highlights their new women's line.",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "Rhone signed deals with Vu and Hartlage over the summer also due to their track records with mental health advocacy, Checketts said. On top of that, both women are “rising stars,” making them ideal partners for Rhone, he said, especially considering the brand debuted its first complete women’s line in May. “Our attitude really is to, in the majority of cases, make stars instead of finding them,” Checketts said.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "066504b9e82d390ced92c60c682da4632e8759f7e6c8ffa1de7771c47dd6e429",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-b6aedff86787978a\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P10\",\n  \"evidence_quote\": \"Rhone signed deals with Vu and Hartlage over the summer also due to their track records with mental health advocacy, Checketts said. On top of that, both women are “rising stars,” making them ideal partners for Rhone, he said, especially considering the brand debuted its first complete women’s line in May. “Our attitude really is to, in the majority of cases, make stars instead of finding them,” Checketts said.\",\n  \"reason\": \"The passage directly mentions that Rhone signed deals with Vu and Hartlage, which is consistent with the statement that they are reaching out to propose a collaboration for an Instagram post that highlights their new women's line.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 509,
+       "completion_tokens": 193,
+       "total_tokens": 702,
+       "prompt_tokens_details": {
+        "cached_tokens": 155
+       }
+      },
+      "latency_s": 15.035,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "83110aab9e408d11fa3f7e3688c755faa3aab4f31ea91e8e9c79d303947feaf1",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-bb0804445e13b85d",
+   "location": "email_body#s2",
+   "text": "This post would feature athletes and influencers discussing mental health and fitness, with a focus on Rhone's campaign and its commitment to wellness [P10].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "unsupported",
+   "citation_status": "cited",
+   "flags": [],
+   "reason": "The evidence passages do not contain any information related to athletes, influencers, mental health, fitness, Rhone's campaign, or its commitment to wellness. They discuss Rhone's track record and past activities in mental health advocacy, but do not support or contradict the given statement. The statement is not verifiable from the provided passages.",
+   "guard": null,
+   "reviewer_reason": "The evidence passages do not contain any information related to athletes, influencers, mental health, fitness, Rhone's campaign, or its commitment to wellness. They discuss Rhone's track record and past activities in mental health advocacy, but do not support or contradict the given statement. The statement is not verifiable from the provided passages.",
+   "evidence_passage_id": null,
+   "evidence_quote": "null",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "8e5e410ab20422658ee7172b73212bec977a7d517c1f0fe7f9dc9f46418eacc2",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-bb0804445e13b85d\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P9\",\n  \"evidence_quote\": \"Between the reach of both leagues, events, ads, and user-generated content, Checketts said he hopes the campaign boosts brand awareness and further solidifies Rhone’s dedication to mental health. ‘We want to be sticking out in a good way, and so we are really putting our money where our mouth is,’ he said. ‘All of these partnerships are not necessarily to sell more stuff, [they’re] to use as a platform so that we can speak to this message, which we really do take to heart.’\",\n  \"reason\": \"The passage directly supports the statement by mentioning Rhone's commitment to mental health and wellness, aligning with the idea of athletes and influencers discussing mental health and fitness.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 647,
+       "completion_tokens": 203,
+       "total_tokens": 850,
+       "prompt_tokens_details": {
+        "cached_tokens": 156
+       }
+      },
+      "latency_s": 15.884,
+      "error": null,
+      "validation_errors": [
+       "evidence_quote is not traceable to the named passage (>= 4 consecutive words required)"
+      ]
+     },
+     {
+      "attempt": 1,
+      "prompt_sha256": "668152231936afccced9023857ddb2f812fd62bba2b6120969e4b55ea3e595ff",
+      "raw_text": "```json\n{\"review_id\": \"R-bb0804445e13b85d\", \"verdict\": \"unsupported\", \"evidence_passage_id\": \"null\", \"evidence_quote\": \"null\", \"reason\": \"The evidence passages do not contain any information related to athletes, influencers, mental health, fitness, Rhone's campaign, or its commitment to wellness. They discuss Rhone's track record and past activities in mental health advocacy, but do not support or contradict the given statement. The statement is not verifiable from the provided passages.\"}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 677,
+       "completion_tokens": 124,
+       "total_tokens": 801,
+       "prompt_tokens_details": {
+        "cached_tokens": 641
+       }
+      },
+      "latency_s": 9.251,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "194f96ad4b1c11620d8aeececb9bc329d8e7d4f3a3c7bf496d11698c184f78ff",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-21b2cee88ab458fa",
+   "location": "email_body#s3",
+   "text": "We believe this would resonate with your audience and further reinforce your commitment to wellness.",
+   "kind": "proposal_premise",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.143,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.14 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.14 < 0.6",
+   "reviewer_reason": "The evidence passage directly supports the statement by mentioning that the campaign is being used as a platform to speak to the message, which aligns with the idea of reinforcing the commitment to wellness.",
+   "evidence_passage_id": "P9",
+   "evidence_quote": "We want to be sticking out in a good way, and so we are really putting our money where our mouth is,” he said. “All of these partnerships are not necessarily to sell more stuff, [they’re] to use as a platform so that we can speak to this message, which we really do take to heart.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "0b1651d6e65763cdc532859e7eae06a94ff3d74f11388c215585600e85fc28cd",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-21b2cee88ab458fa\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P9\",\n  \"evidence_quote\": \"We want to be sticking out in a good way, and so we are really putting our money where our mouth is,” he said. “All of these partnerships are not necessarily to sell more stuff, [they’re] to use as a platform so that we can speak to this message, which we really do take to heart.\",\n  \"reason\": \"The evidence passage directly supports the statement by mentioning that the campaign is being used as a platform to speak to the message, which aligns with the idea of reinforcing the commitment to wellness.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 369,
+       "completion_tokens": 163,
+       "total_tokens": 532,
+       "prompt_tokens_details": {
+        "cached_tokens": 156
+       }
+      },
+      "latency_s": 12.49,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "00f23ed2d3dd78c70f5da9a2b681a849931c307bf16c48ac38a121398c81f94f",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-81658ad0210aeede",
+   "location": "claims[0].statement",
+   "text": "Rhone has launched a new women's line in May {P10}.",
+   "duplicate_of": "R-e3e8b931236f28f8",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": "cited",
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-eb6c04902c5bd18f",
+   "location": "claims[1].statement",
+   "text": "Rhone has partnered with Vu and Hartlage over the summer {P10}.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "supported",
+   "reviewer_verdict": "supported",
+   "citation_status": "cited",
+   "flags": [],
+   "reason": "The evidence passage directly supports the statement by mentioning that Rhone signed deals with Vu and Hartlage over the summer, which aligns with the claim that they have partnered with these companies.",
+   "guard": {
+    "coverage": 0.667,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": []
+   },
+   "reviewer_reason": "The evidence passage directly supports the statement by mentioning that Rhone signed deals with Vu and Hartlage over the summer, which aligns with the claim that they have partnered with these companies.",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "Rhone signed deals with Vu and Hartlage over the summer also due to their track records with mental health advocacy, Checketts said.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "5b1a740fd136a419bf51dc884f6bd9d1c7671eaf6a523f35c1e459cfec15931f",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-eb6c04902c5bd18f\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P10\",\n  \"evidence_quote\": \"Rhone signed deals with Vu and Hartlage over the summer also due to their track records with mental health advocacy, Checketts said.\",\n  \"reason\": \"The evidence passage directly supports the statement by mentioning that Rhone signed deals with Vu and Hartlage over the summer, which aligns with the claim that they have partnered with these companies.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 508,
+       "completion_tokens": 128,
+       "total_tokens": 636,
+       "prompt_tokens_details": {
+        "cached_tokens": 156
+       }
+      },
+      "latency_s": 10.052,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "2e41d8a3d7ec8c94f833e9894430790e09db193c5cf673fb9100cf91f0976710",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-b660b132576dddbd",
+   "location": "claims[2].statement",
+   "text": "Rhone signed deals with Vu and Hartlage over the summer also due to their track records with mental health advocacy {P10}.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "supported",
+   "reviewer_verdict": "supported",
+   "citation_status": "cited",
+   "flags": [],
+   "reason": "The evidence passage directly supports the statement by mentioning that Rhone signed deals with Vu and Hartlage due to their track records with mental health advocacy.",
+   "guard": {
+    "coverage": 1.0,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": []
+   },
+   "reviewer_reason": "The evidence passage directly supports the statement by mentioning that Rhone signed deals with Vu and Hartlage due to their track records with mental health advocacy.",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "Rhone signed deals with Vu and Hartlage over the summer also due to their track records with mental health advocacy, Checketts said.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "957f7d172e57e1937a6022c4611f46168739bbcb0aa25ca8910b8b14464a7bc9",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-b660b132576dddbd\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P10\",\n  \"evidence_quote\": \"Rhone signed deals with Vu and Hartlage over the summer also due to their track records with mental health advocacy, Checketts said.\",\n  \"reason\": \"The evidence passage directly supports the statement by mentioning that Rhone signed deals with Vu and Hartlage due to their track records with mental health advocacy.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 641,
+       "completion_tokens": 119,
+       "total_tokens": 760,
+       "prompt_tokens_details": {
+        "cached_tokens": 157
+       }
+      },
+      "latency_s": 9.498,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "c973aee1a224d07227986f55c76bddc91492f6dbc376876713e447373fe64907",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[3].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.4,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.40 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.40 < 0.6",
+   "reviewer_reason": "The passage explicitly states that Rhone has been addressing mental health since its founding in 2014, which directly supports the statement that Rhone has a specific mental health program for its athletes.",
+   "evidence_passage_id": "P5",
+   "evidence_quote": "Rhone has been doing it since the company was founded in 2014, according to Checketts.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "938ed118a9a7f3e2b9feb294afb448bef14fc8782fcf6be9b0f6e8e165c33197",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-faab53454f9ae569\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P5\",\n  \"evidence_quote\": \"Rhone has been doing it since the company was founded in 2014, according to Checketts.\",\n  \"reason\": \"The passage explicitly states that Rhone has been addressing mental health since its founding in 2014, which directly supports the statement that Rhone has a specific mental health program for its athletes.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 629,
+       "completion_tokens": 124,
+       "total_tokens": 753,
+       "prompt_tokens_details": {
+        "cached_tokens": 156
+       }
+      },
+      "latency_s": 9.755,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "5a3291e6e94176c4e2b34f2db373c01129d239b8a8164ddad14ca7d8b4111bcf",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[4].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "duplicate_of": "R-faab53454f9ae569",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[5].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "duplicate_of": "R-faab53454f9ae569",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[6].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "duplicate_of": "R-faab53454f9ae569",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[7].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "duplicate_of": "R-faab53454f9ae569",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[8].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "duplicate_of": "R-faab53454f9ae569",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[9].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "duplicate_of": "R-faab53454f9ae569",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[10].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "duplicate_of": "R-faab53454f9ae569",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[11].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "duplicate_of": "R-faab53454f9ae569",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[12].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "duplicate_of": "R-faab53454f9ae569",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[13].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "duplicate_of": "R-faab53454f9ae569",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[14].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "duplicate_of": "R-faab53454f9ae569",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[15].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "duplicate_of": "R-faab53454f9ae569",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[16].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "duplicate_of": "R-faab53454f9ae569",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[17].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "duplicate_of": "R-faab53454f9ae569",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[18].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "duplicate_of": "R-faab53454f9ae569",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[19].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "duplicate_of": "R-faab53454f9ae569",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[20].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "duplicate_of": "R-faab53454f9ae569",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[21].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "duplicate_of": "R-faab53454f9ae569",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[22].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "duplicate_of": "R-faab53454f9ae569",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[23].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "duplicate_of": "R-faab53454f9ae569",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[24].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "duplicate_of": "R-faab53454f9ae569",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[25].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "duplicate_of": "R-faab53454f9ae569",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[26].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "duplicate_of": "R-faab53454f9ae569",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[27].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "duplicate_of": "R-faab53454f9ae569",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[28].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "duplicate_of": "R-faab53454f9ae569",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[29].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "duplicate_of": "R-faab53454f9ae569",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[30].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "duplicate_of": "R-faab53454f9ae569",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[31].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "duplicate_of": "R-faab53454f9ae569",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[32].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "duplicate_of": "R-faab53454f9ae569",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[33].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "duplicate_of": "R-faab53454f9ae569",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[34].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "duplicate_of": "R-faab53454f9ae569",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[35].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "duplicate_of": "R-faab53454f9ae569",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[36].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "duplicate_of": "R-faab53454f9ae569",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[37].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "duplicate_of": "R-faab53454f9ae569",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[38].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "duplicate_of": "R-faab53454f9ae569",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[39].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "duplicate_of": "R-faab53454f9ae569",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[40].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "duplicate_of": "R-faab53454f9ae569",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[41].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "duplicate_of": "R-faab53454f9ae569",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[42].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "duplicate_of": "R-faab53454f9ae569",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  }
+ ],
+ "skipped_sentences": {
+  "proposal": [
+   {
+    "location": "email_subject#s0",
+    "text": "Collaboration Opportunity: Highlighting Rhone's New Women's Line on Instagram"
+   },
+   {
+    "location": "email_body#s4",
+    "text": "If you're interested, we'd be happy to share a draft."
+   }
+  ],
+  "non_assertion": [
+   {
+    "location": "likely_target_audience#s0",
+    "text": "INSUFFICIENT_EVIDENCE"
+   },
+   {
+    "location": "email_body#s0",
+    "text": "Hi Rhone Marketing Team,"
+   },
+   {
+    "location": "email_body#s5",
+    "text": "Best regards,"
+   },
+   {
+    "location": "email_body#s6",
+    "text": "[Your Name]"
+   }
+  ]
+ },
+ "unknown_issues": [
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[3].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[4].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[5].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[6].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[7].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[8].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[9].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[10].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[11].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[12].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[13].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[14].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[15].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[16].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[17].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[18].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[19].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[20].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[21].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[22].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[23].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[24].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[25].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[26].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[27].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[28].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[29].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[30].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[31].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[32].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[33].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[34].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[35].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[36].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[37].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[38].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[39].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[40].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[41].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[42].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  }
+ ],
+ "outreach": {
+  "recipient": "correct",
+  "sender": "correct",
+  "instagram_mentioned": true,
+  "other_platforms_in_pitch": [],
+  "instagram_compliant": true,
+  "promises": [],
+  "email_subject": "Collaboration Opportunity: Highlighting Rhone's New Women's Line on Instagram"
+ },
+ "failures": [
+  {
+   "check": "structure",
+   "detail": [
+    "truncated_output: Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 1 column 11057 (char 11056)"
+   ]
+  },
+  {
+   "check": "duplicate_claims",
+   "detail": [
+    [],
+    39
+   ]
+  },
+  {
+   "check": "repetition",
+   "detail": [
+    82
+   ]
+  },
+  {
+   "check": "claim_quotes",
+   "detail": [
+    {
+     "claim_id": "C1",
+     "self_quote": true,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C2",
+     "self_quote": true,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C3",
+     "self_quote": true,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C4",
+     "self_quote": true,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C5",
+     "self_quote": true,
+     "other_passage": []
+    }
+   ]
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-eeed65bf06a1fd48",
+   "location": "brand_summary#s0",
+   "text": "Rhone is a premium activewear brand that has expanded its marketing efforts to include a campaign that highlights its commitment to mental health, particularly through partnerships with athletes and influencers [P10].",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.31 < 0.6",
+   "evidence_passage_id": "P5",
+   "evidence_quote": "Rhone has been doing it since the company was founded in 2014, according to Checketts."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-e3e8b931236f28f8",
+   "location": "current_marketing_strategy[0]#s0",
+   "text": "Rhone has launched a new women's line in May [P10].",
+   "verdict": "unsupported",
+   "reason": "The statements about Rhone's women's line launch in May are not supported by any of the given passages. The passages do not mention any new women's line launch in May. They discuss different aspects of Rhone's brand and marketing activities, but none of them directly address the launch of a new women's line in May. Therefore, the statement is unsupported by the provided evidence.",
+   "evidence_passage_id": null,
+   "evidence_quote": ""
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-6d7fe5335419688c",
+   "location": "collaboration_opportunities[0]#s0",
+   "text": "Collaborate on an Instagram post that highlights the campaign's message [P10].",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.00 < 0.6",
+   "evidence_passage_id": "P2",
+   "evidence_quote": "Rhone Expands Commuter Push With National Campaign, NYC Activations Rhone has launched its most ambitious campaign to date, bringing the versatility of the Commuter® Collection to life through high-impact NYC activations."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-4752595d2009c3be",
+   "location": "instagram_post_idea.hook#s0",
+   "text": "A carousel post featuring athletes and influencers discussing mental health and fitness [P10].",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.33 < 0.6",
+   "evidence_passage_id": "P5",
+   "evidence_quote": "Track record It’s become fairly common to see athletic brands address mental health in their marketing, but Rhone has been doing it since the company was founded in 2014, according to Checketts. In the earlier days of the brand, Rhone began hosting an event series called Mind & Muscle that gathered men for workout sessions in Rhone stores, followed by what was “essentially group therapy,” Checketts said. More than 1,000 people have participated over the years, he said, and the company has hosted more than 50 Mind & Muscle events so far in 2024. Rhone now intends to include women in the series, which features upcoming events tied to the NBA and LPGA partnerships."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-f54580e5e554d3c2",
+   "location": "instagram_post_idea.concept#s0",
+   "text": "A carousel post that features athletes and influencers discussing mental health and fitness, with a focus on Rhone's campaign and its commitment to wellness [P10].",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.20 < 0.6",
+   "evidence_passage_id": "P5",
+   "evidence_quote": "Track record It’s become fairly common to see athletic brands address mental health in their marketing, but Rhone has been doing it since the company was founded in 2014, according to Checketts. In the earlier days of the brand, Rhone began hosting an event series called Mind & Muscle that gathered men for workout sessions in Rhone stores, followed by what was “essentially group therapy,” Checketts said. More than 1,000 people have participated over the years, he said, and the company has hosted more than 50 Mind & Muscle events so far in 2024. Rhone now intends to include women in the series, which features upcoming events tied to the NBA and LPGA partnerships."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-37f75ec532089f11",
+   "location": "instagram_post_idea.why_it_fits#s0",
+   "text": "This aligns with Rhone's marketing strategy of highlighting its commitment to wellness and mental health [P10].",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.33 < 0.6",
+   "evidence_passage_id": "P5",
+   "evidence_quote": "Rhone has been doing it since the company was founded in 2014, according to Checketts."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-b6aedff86787978a",
+   "location": "email_body#s1",
+   "text": "We're reaching out to propose a collaboration for an Instagram post that highlights your new women's line [P10].",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.40 < 0.6",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "Rhone signed deals with Vu and Hartlage over the summer also due to their track records with mental health advocacy, Checketts said. On top of that, both women are “rising stars,” making them ideal partners for Rhone, he said, especially considering the brand debuted its first complete women’s line in May. “Our attitude really is to, in the majority of cases, make stars instead of finding them,” Checketts said."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-bb0804445e13b85d",
+   "location": "email_body#s2",
+   "text": "This post would feature athletes and influencers discussing mental health and fitness, with a focus on Rhone's campaign and its commitment to wellness [P10].",
+   "verdict": "unsupported",
+   "reason": "The evidence passages do not contain any information related to athletes, influencers, mental health, fitness, Rhone's campaign, or its commitment to wellness. They discuss Rhone's track record and past activities in mental health advocacy, but do not support or contradict the given statement. The statement is not verifiable from the provided passages.",
+   "evidence_passage_id": null,
+   "evidence_quote": "null"
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-21b2cee88ab458fa",
+   "location": "email_body#s3",
+   "text": "We believe this would resonate with your audience and further reinforce your commitment to wellness.",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.14 < 0.6",
+   "evidence_passage_id": "P9",
+   "evidence_quote": "We want to be sticking out in a good way, and so we are really putting our money where our mouth is,” he said. “All of these partnerships are not necessarily to sell more stuff, [they’re] to use as a platform so that we can speak to this message, which we really do take to heart."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-faab53454f9ae569",
+   "location": "claims[3].statement",
+   "text": "Rhone has a specific mental health program for its athletes {P10}.",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.40 < 0.6",
+   "evidence_passage_id": "P5",
+   "evidence_quote": "Rhone has been doing it since the company was founded in 2014, according to Checketts."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[3].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[4].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[5].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[6].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[7].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[8].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[9].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[10].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[11].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[12].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[13].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[14].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[15].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[16].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[17].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[18].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[19].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[20].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[21].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[22].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[23].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[24].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[25].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[26].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[27].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[28].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[29].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[30].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[31].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[32].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[33].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[34].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[35].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[36].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[37].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[38].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[39].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[40].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[41].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Rhone has a specific mental health program for its athletes.",
+   "assertion": "claims[42].statement",
+   "assertion_text": "Rhone has a specific mental health program for its athletes {P10}."
+  }
+ ],
+ "unresolved": [],
+ "passes": false,
+ "failure_signature": "6d3cf03130376fdef24422ac787aa9d78b6acbb6b273e1ea88084686d1eb8453",
+ "review_wall_s": 170.27,
+ "attempt": {
+  "index": 0,
+  "kind": "initial"
+ }
+}

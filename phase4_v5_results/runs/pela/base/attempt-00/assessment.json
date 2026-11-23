@@ -1,0 +1,179 @@
+{
+ "checks_version": "phase4-v5-checks-2",
+ "structure": {
+  "strict_json": false,
+  "truncated": false,
+  "parse_error": {
+   "error_type": "malformed_json",
+   "truncated": false,
+   "finish_reason": "stop",
+   "unbalanced_braces": false,
+   "message": "Outermost JSON object is malformed or incomplete: Expecting ',' delimiter: line 7 column 72 (char 332)"
+  },
+  "schema_errors": [
+   "malformed_json: Outermost JSON object is malformed or incomplete: Expecting ',' delimiter: line 7 column 72 (char 332)"
+  ],
+  "parse_mode": "diagnostic_prefix",
+  "prompt_schema_valid": false,
+  "training_schema_valid": false,
+  "raw_format": {
+   "starts_with_brace": false,
+   "code_fenced": true,
+   "text_outside_json": null
+  }
+ },
+ "decision": null,
+ "repetition": {
+  "method": "exact match after whitespace/quote/case normalisation; no semantic similarity",
+  "claim_count": 1,
+  "duplicate_claim_ids": [],
+  "duplicate_claim_statements": 0,
+  "distinct_claim_statements": 1,
+  "duplicate_claim_quotes": 0,
+  "repeated_prose_sentences": {},
+  "max_8gram_repeats_in_raw": 1,
+  "looping": false
+ },
+ "citation_mechanics": {
+  "inline_passage_refs": [],
+  "unknown_refs": [],
+  "claim_quotes": [
+   {
+    "index": 0,
+    "claim_id": "C1",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": true,
+    "cites_non_factual_type": []
+   }
+  ]
+ },
+ "assertions": [
+  {
+   "review_id": "R-a972a1150d2395fc",
+   "location": "claims[0].statement",
+   "text": "string",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "unsupported",
+   "citation_status": "cited",
+   "flags": [],
+   "reason": "The passage does not mention Pela or any of its activities.",
+   "guard": null,
+   "reviewer_reason": "The passage does not mention Pela or any of its activities.",
+   "evidence_passage_id": "P1",
+   "evidence_quote": "Our Values It’s one thing to have a strong mission and purpose, it is another thing entirely to create and nurture the team and community required to make this waste free future a reality. This is why we created our core values. To help us and our community stay the course. These are the 4 “C’s” we’ve curated. We hope they mean as much to you as they do to us.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "d3b06aca212b6f2d88efcefda096eef5299bbfae57f6c7a12671843a366ef480",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-a972a1150d2395fc\",\n  \"verdict\": \"unsupported\",\n  \"evidence_passage_id\": \"P1\",\n  \"evidence_quote\": \"Our Values It’s one thing to have a strong mission and purpose, it is another thing entirely to create and nurture the team and community required to make this waste free future a reality. This is why we created our core values. To help us and our community stay the course. These are the 4 “C’s” we’ve curated. We hope they mean as much to you as they do to us.\",\n  \"reason\": \"The passage does not mention Pela or any of its activities.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 338,
+       "completion_tokens": 158,
+       "total_tokens": 496,
+       "prompt_tokens_details": {
+        "cached_tokens": 31
+       }
+      },
+      "latency_s": 12.186,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "da511f49c4f5653add7c55bf6f4d3bd91a411a41d3320ea50692e5abe1aeedd7",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  }
+ ],
+ "skipped_sentences": {
+  "proposal": [],
+  "non_assertion": []
+ },
+ "unknown_issues": [],
+ "outreach": {
+  "recipient": "no_email",
+  "sender": "no_email",
+  "instagram_mentioned": false,
+  "other_platforms_in_pitch": [],
+  "instagram_compliant": false,
+  "promises": [],
+  "email_subject": ""
+ },
+ "failures": [
+  {
+   "check": "structure",
+   "detail": [
+    "malformed_json: Outermost JSON object is malformed or incomplete: Expecting ',' delimiter: line 7 column 72 (char 332)"
+   ]
+  },
+  {
+   "check": "claim_quotes",
+   "detail": [
+    {
+     "claim_id": "C1",
+     "self_quote": false,
+     "other_passage": []
+    }
+   ]
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-a972a1150d2395fc",
+   "location": "claims[0].statement",
+   "text": "string",
+   "verdict": "unsupported",
+   "reason": "The passage does not mention Pela or any of its activities.",
+   "evidence_passage_id": "P1",
+   "evidence_quote": "Our Values It’s one thing to have a strong mission and purpose, it is another thing entirely to create and nurture the team and community required to make this waste free future a reality. This is why we created our core values. To help us and our community stay the course. These are the 4 “C’s” we’ve curated. We hope they mean as much to you as they do to us."
+  },
+  {
+   "check": "sender_recipient",
+   "detail": [
+    "no_email",
+    "no_email"
+   ]
+  },
+  {
+   "check": "instagram",
+   "detail": []
+  }
+ ],
+ "unresolved": [],
+ "passes": false,
+ "failure_signature": "04be7f1e3f6288f1cb802aa35b112b3821871a07c40784f5815978ed2fdd3d24",
+ "review_wall_s": 12.19,
+ "attempt": {
+  "index": 0,
+  "kind": "initial"
+ }
+}

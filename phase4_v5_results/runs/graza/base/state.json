@@ -1,0 +1,106 @@
+{
+ "case_id": "graza/base",
+ "company_id": "graza",
+ "arm": "base",
+ "packet_path": "outputs/phase3_v5/handoff_6efa346/data/v3_pilot/packets/graza.json",
+ "packet_sha256": "90fc71b07ba6c1187fbcacc9fd4e9cf66b948d1c0e45f62dc877017037d2aaab",
+ "prompt_version": "brandpilot.prompt.v3.3",
+ "prompt_sha256": "611ccdc548cc67e2fef4ce4c01baada7ab7ab6b4aa8dbad9a710eac5677dcd67",
+ "max_repairs": 2,
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "dir": "phase4_v5_results/runs/graza/base/attempt-00",
+   "prompt_sha256": "611ccdc548cc67e2fef4ce4c01baada7ab7ab6b4aa8dbad9a710eac5677dcd67",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "stop",
+   "usage": {
+    "prompt_tokens": 2840,
+    "completion_tokens": 385,
+    "total_tokens": 3225,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 14.93,
+   "runtime_verified": true,
+   "raw_sha256": "3613696f10e4eb64af3da6b151b2db4c470400253a73ef55e42fe7bbdd0b9d41",
+   "reused_from": "outputs/phase3_v5/runs/20261123T034523300234Z-graza-fixed-generation-0f1e26",
+   "passes": false,
+   "strict_ok": false,
+   "model_abstained": false,
+   "failure_count": 5,
+   "unresolved_count": 0,
+   "failure_signature": "04be7f1e3f6288f1cb802aa35b112b3821871a07c40784f5815978ed2fdd3d24",
+   "review_wall_s": 9.483,
+   "truncated": false,
+   "looping": false
+  },
+  {
+   "index": 1,
+   "kind": "regenerate_bounded",
+   "dir": "phase4_v5_results/runs/graza/base/attempt-01",
+   "prompt_sha256": "f4caf217a02fdd1e728fb37f593aaf5eddac7e06c509d2c2ab03f350135c1a98",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "length",
+   "usage": {
+    "prompt_tokens": 2953,
+    "completion_tokens": 3072,
+    "total_tokens": 6025,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 67.986,
+   "runtime_verified": true,
+   "raw_sha256": "aa6421753526ea0727e21df93341771a3cad706c41790acb3b58a101dacf5cd0",
+   "reused_from": null,
+   "passes": false,
+   "strict_ok": false,
+   "model_abstained": false,
+   "truncated": true,
+   "looping": true,
+   "failure_count": 6,
+   "unresolved_count": 0,
+   "failure_signature": "f7bcc7993ff61f6468cff2eb65d377c1b523e7cdd14042e1abca051b2089f5eb",
+   "review_wall_s": 0.004
+  },
+  {
+   "index": 2,
+   "kind": "regenerate_bounded",
+   "dir": "phase4_v5_results/runs/graza/base/attempt-02",
+   "prompt_sha256": "82340b3a5d4d10d6f68b12c11c04b761ded356075ed11e8fa5aed3ff4fa9e72f",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "length",
+   "usage": {
+    "prompt_tokens": 2958,
+    "completion_tokens": 3072,
+    "total_tokens": 6030,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 64.687,
+   "runtime_verified": true,
+   "raw_sha256": "193361f7e2cfca8ec04a9ead952a07055cc09c909608f16946c29f4023fa89c2",
+   "reused_from": null,
+   "passes": false,
+   "strict_ok": false,
+   "model_abstained": false,
+   "truncated": true,
+   "looping": false,
+   "failure_count": 4,
+   "unresolved_count": 0,
+   "failure_signature": "45ca8c5b744e0c01d73c3c208e13b8ccd8e9d494857b0f124ea8ddd9dd19d51b",
+   "review_wall_s": 0.001
+  }
+ ],
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "no progress: the repair repeated the same truncation failure",
+ "stop_code": "withheld_no_progress",
+ "eligibility": "eligible"
+}

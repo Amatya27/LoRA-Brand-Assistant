@@ -1,0 +1,2003 @@
+{
+ "checks_version": "phase4-v5-checks-2",
+ "structure": {
+  "strict_json": false,
+  "truncated": true,
+  "parse_error": {
+   "error_type": "truncated_output",
+   "truncated": true,
+   "finish_reason": "length",
+   "unbalanced_braces": true,
+   "message": "Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 1 column 11026 (char 11025)"
+  },
+  "schema_errors": [
+   "truncated_output: Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 1 column 11026 (char 11025)"
+  ],
+  "parse_mode": "diagnostic_prefix",
+  "prompt_schema_valid": false,
+  "training_schema_valid": false,
+  "raw_format": {
+   "starts_with_brace": true,
+   "code_fenced": false,
+   "text_outside_json": null
+  }
+ },
+ "decision": null,
+ "repetition": {
+  "method": "exact match after whitespace/quote/case normalisation; no semantic similarity",
+  "claim_count": 39,
+  "duplicate_claim_ids": [],
+  "duplicate_claim_statements": 34,
+  "distinct_claim_statements": 5,
+  "duplicate_claim_quotes": 34,
+  "repeated_prose_sentences": {},
+  "max_8gram_repeats_in_raw": 74,
+  "looping": true
+ },
+ "citation_mechanics": {
+  "inline_passage_refs": [
+   "P10",
+   "P9",
+   "P10",
+   "P10",
+   "P10",
+   "P10"
+  ],
+  "unknown_refs": [],
+  "claim_quotes": [
+   {
+    "index": 0,
+    "claim_id": "C1",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 1,
+    "claim_id": "C2",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 2,
+    "claim_id": "C3",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 3,
+    "claim_id": "C4",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 4,
+    "claim_id": "C5",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 5,
+    "claim_id": "C6",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 6,
+    "claim_id": "C7",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 7,
+    "claim_id": "C8",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 8,
+    "claim_id": "C9",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 9,
+    "claim_id": "C10",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 10,
+    "claim_id": "C11",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 11,
+    "claim_id": "C12",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 12,
+    "claim_id": "C13",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 13,
+    "claim_id": "C14",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 14,
+    "claim_id": "C15",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 15,
+    "claim_id": "C16",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 16,
+    "claim_id": "C17",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 17,
+    "claim_id": "C18",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 18,
+    "claim_id": "C19",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 19,
+    "claim_id": "C20",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 20,
+    "claim_id": "C21",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 21,
+    "claim_id": "C22",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 22,
+    "claim_id": "C23",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 23,
+    "claim_id": "C24",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 24,
+    "claim_id": "C25",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 25,
+    "claim_id": "C26",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 26,
+    "claim_id": "C27",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 27,
+    "claim_id": "C28",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 28,
+    "claim_id": "C29",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 29,
+    "claim_id": "C30",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 30,
+    "claim_id": "C31",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 31,
+    "claim_id": "C32",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 32,
+    "claim_id": "C33",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 33,
+    "claim_id": "C34",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 34,
+    "claim_id": "C35",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 35,
+    "claim_id": "C36",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 36,
+    "claim_id": "C37",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 37,
+    "claim_id": "C38",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 38,
+    "claim_id": "C39",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   }
+  ]
+ },
+ "assertions": [
+  {
+   "review_id": "R-e94e09328ddee1f1",
+   "location": "brand_summary#s0",
+   "text": "Fly By Jing is a DTC CPG company that has built a cult following through its use of Chinese chili crisp and its strategic use of creators [P10].",
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.25,
+    "missing_numbers": [],
+    "negation_mismatch": true,
+    "problems": [
+     "content-word coverage 0.25 < 0.6",
+     "evidence sentence is negated but the statement is not"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.25 < 0.6; evidence sentence is negated but the statement is not",
+   "reviewer_reason": "The passage directly supports the statement by describing Fly By Jing's approach to building a cult following through a seeding program, which aligns with the claim of using Chinese chili crisp and strategic use of creators.",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "Seeding the Taste, Not the Hashtag Instead of running a traditional influencer campaign with scripted deliverables, Fly By Jing’s early growth team — reportedly working with a lean budget compared to VC-backed CPG competitors — built a seeding program around a simple mechanic: send the jar, film the reaction, let the spice do the talking. The creators weren’t mega-influencers. Early seeding lists leaned heavily on food-focused nano and micro creators: home cooks, chefs’ assistants, food photographers with 3,000 to 40,000 followers who actually cooked at home and had audiences who trusted their palates.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "a09f6ffbf577425bd69917ab36ba1ff00b57622a362466196f9b9b437a6488d6",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-e94e09328ddee1f1\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P10\",\n  \"evidence_quote\": \"Seeding the Taste, Not the Hashtag Instead of running a traditional influencer campaign with scripted deliverables, Fly By Jing’s early growth team — reportedly working with a lean budget compared to VC-backed CPG competitors — built a seeding program around a simple mechanic: send the jar, film the reaction, let the spice do the talking. The creators weren’t mega-influencers. Early seeding lists leaned heavily on food-focused nano and micro creators: home cooks, chefs’ assistants, food photographers with 3,000 to 40,000 followers who actually cooked at home and had audiences who trusted their palates.\",\n  \"reason\": \"The passage directly supports the statement by describing Fly By Jing's approach to building a cult following through a seeding program, which aligns with the claim of using Chinese chili crisp and strategic use of creators.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 670,
+       "completion_tokens": 231,
+       "total_tokens": 901,
+       "prompt_tokens_details": {
+        "cached_tokens": 161
+       }
+      },
+      "latency_s": 17.923,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "bcdb8f3312a03bb7cd8f0b59b736c7dd858d44c0b306277b23ebad795ec82e79",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-f4952c843817f553",
+   "location": "current_marketing_strategy[0]#s0",
+   "text": "Fly By Jing has a referral program and a loyalty program, but it has shifted its marketing strategy to focus on creator-driven content [P9].",
+   "kind": "factual",
+   "cited_passages": [
+    "P9"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.455,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.45 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.45 < 0.6",
+   "reviewer_reason": "The passage directly states that Fly By Jing plans to reinvent its marketing strategy, shifting focus from its current referral and loyalty programs to creator-driven content, which aligns with the statement about a shift in marketing strategy. The evidence is clear and directly supports the statement.",
+   "evidence_passage_id": "P6",
+   "evidence_quote": "In 2022, Fly by Jing also partnered with Shake Shack in the UK on a Chili Crisp menu, which Gao said will be rolling out to all US locations this year. Fly by Jing also plans to “reinvent” its retention strategy this year, Patricio-Archer said. While it currently has a referral program and a loyalty program, she said “all of those things will fall away and take a completely new identity.” As Fly by Jing grows, Gao said everything ultimately ties back to its Chili Crisp hero products and “helping to reinforce [the brand’s] core.” That sense of identity ties back to Gao’s marketing advice to other DTC founders, which is defining the brand’s story.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "5c371a05710c26c21d5ac023dacff8e2555ecb432f5ff525f0d84dbd4cc02ea0",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-f4952c843817f553\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P6\",\n  \"evidence_quote\": \"In 2022, Fly by Jing also partnered with Shake Shack in the UK on a Chili Crisp menu, which Gao said will be rolling out to all US locations this year. Fly by Jing also plans to “reinvent” its retention strategy this year, Patricio-Archer said. While it currently has a referral program and a loyalty program, she said “all of those things will fall away and take a completely new identity.” As Fly by Jing grows, Gao said everything ultimately ties back to its Chili Crisp hero products and “helping to reinforce [the brand’s] core.” That sense of identity ties back to Gao’s marketing advice to other DTC founders, which is defining the brand’s story.\",\n  \"reason\": \"The passage directly states that Fly By Jing plans to reinvent its marketing strategy, shifting focus from its current referral and loyalty programs to \"creator-driven content.\" This aligns with the statement that the company has shifted its marketing strategy to focus on creator-driven content.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 674,
+       "completion_tokens": 268,
+       "total_tokens": 942,
+       "prompt_tokens_details": {
+        "cached_tokens": 161
+       }
+      },
+      "latency_s": 20.609,
+      "error": null,
+      "validation_errors": [
+       "not a single JSON object: Expecting ',' delimiter: line 6 column 167 (char 939)"
+      ]
+     },
+     {
+      "attempt": 1,
+      "prompt_sha256": "28384b6c1afb87777cf8d2b1b727793c4ddc245730c2bde5af7e287ee98ee4b8",
+      "raw_text": "```json\n{\"review_id\": \"R-f4952c843817f553\", \"verdict\": \"supported\", \"evidence_passage_id\": \"P6\", \"evidence_quote\": \"In 2022, Fly by Jing also partnered with Shake Shack in the UK on a Chili Crisp menu, which Gao said will be rolling out to all US locations this year. Fly by Jing also plans to “reinvent” its retention strategy this year, Patricio-Archer said. While it currently has a referral program and a loyalty program, she said “all of those things will fall away and take a completely new identity.” As Fly by Jing grows, Gao said everything ultimately ties back to its Chili Crisp hero products and “helping to reinforce [the brand’s] core.” That sense of identity ties back to Gao’s marketing advice to other DTC founders, which is defining the brand’s story.\", \"reason\": \"The passage directly states that Fly By Jing plans to reinvent its marketing strategy, shifting focus from its current referral and loyalty programs to creator-driven content, which aligns with the statement about a shift in marketing strategy. The evidence is clear and directly supports the statement.\"}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 712,
+       "completion_tokens": 263,
+       "total_tokens": 975,
+       "prompt_tokens_details": {
+        "cached_tokens": 668
+       }
+      },
+      "latency_s": 19.163,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "2cd8fb702df002a9fff94a638011344d9ce4dae287c873d5b304b4020a88f592",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-ff2aea459cf20244",
+   "location": "collaboration_opportunities[0]#s0",
+   "text": "Collaborate on an Instagram post that builds on a cited fact {C2} [P10].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "inline_[P#]+marker_{C#}_via_claims",
+   "marker_mapping": {
+    "C2": [
+     "P10"
+    ]
+   },
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.0,
+    "missing_numbers": [],
+    "negation_mismatch": true,
+    "problems": [
+     "content-word coverage 0.00 < 0.6",
+     "evidence sentence is negated but the statement is not"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.00 < 0.6; evidence sentence is negated but the statement is not",
+   "reviewer_reason": "The evidence passage directly supports the statement by describing Fly By Jing's approach to influencer marketing, which involved sending jars of their chili crisp sauce, filming reactions, and relying on food-focused nano and micro creators who had a genuine interest in the product.",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "Seeding the Taste, Not the Hashtag Instead of running a traditional influencer campaign with scripted deliverables, Fly By Jing’s early growth team — reportedly working with a lean budget compared to VC-backed CPG competitors — built a seeding program around a simple mechanic: send the jar, film the reaction, let the spice do the talking. The creators weren’t mega-influencers. Early seeding lists leaned heavily on food-focused nano and micro creators: home cooks, chefs’ assistants, food photographers with 3,000 to 40,000 followers who actually cooked at home and had audiences who trusted their palates.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "937d645c72154d654fff0c66ddacb9baf2eaba3107d90f525e6eef00e6f47df0",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-ff2aea459cf20244\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P10\",\n  \"evidence_quote\": \"Seeding the Taste, Not the Hashtag Instead of running a traditional influencer campaign with scripted deliverables, Fly By Jing’s early growth team — reportedly working with a lean budget compared to VC-backed CPG competitors — built a seeding program around a simple mechanic: send the jar, film the reaction, let the spice do the talking. The creators weren’t mega-influencers. Early seeding lists leaned heavily on food-focused nano and micro creators: home cooks, chefs’ assistants, food photographers with 3,000 to 40,000 followers who actually cooked at home and had audiences who trusted their palates.\",\n  \"reason\": \"The evidence passage directly supports the statement by describing Fly By Jing's approach to influencer marketing, which involved sending jars of their chili crisp sauce, filming reactions, and relying on food-focused nano and micro creators who had a genuine interest in the product.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 533,
+       "completion_tokens": 240,
+       "total_tokens": 773,
+       "prompt_tokens_details": {
+        "cached_tokens": 162
+       }
+      },
+      "latency_s": 18.33,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "20cbe6b718dcc40065c19f769c1be16119f9d436cbbc77ad9008ef82a74e64b1",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-8e8f45d9f8e98343",
+   "location": "instagram_post_idea.concept#s0",
+   "text": "A carousel post that showcases the brand's journey and invites customers to share their own experiences with the product [P10].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.0,
+    "missing_numbers": [],
+    "negation_mismatch": true,
+    "problems": [
+     "content-word coverage 0.00 < 0.6",
+     "evidence sentence is negated but the statement is not"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.00 < 0.6; evidence sentence is negated but the statement is not",
+   "reviewer_reason": "The passage describes Fly By Jing's early growth strategy, which included a seeding program that involved sending jars, filming reactions, and encouraging customers to share their experiences. This aligns with the statement that showcases the brand's journey and invites customers to share their own experiences with the product.",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "Seeding the Taste, Not the Hashtag Instead of running a traditional influencer campaign with scripted deliverables, Fly By Jing’s early growth team — reportedly working with a lean budget compared to VC-backed CPG competitors — built a seeding program around a simple mechanic: send the jar, film the reaction, let the spice do the talking. The creators weren’t mega-influencers. Early seeding lists leaned heavily on food-focused nano and micro creators: home cooks, chefs’ assistants, food photographers with 3,000 to 40,000 followers who actually cooked at home and had audiences who trusted their palates.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "2e9d460a56ede424ab7f13e0757b8cdb344d4bf1d5be7280dfe8077a602e910c",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-8e8f45d9f8e98343\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P10\",\n  \"evidence_quote\": \"Seeding the Taste, Not the Hashtag Instead of running a traditional influencer campaign with scripted deliverables, Fly By Jing’s early growth team — reportedly working with a lean budget compared to VC-backed CPG competitors — built a seeding program around a simple mechanic: send the jar, film the reaction, let the spice do the talking. The creators weren’t mega-influencers. Early seeding lists leaned heavily on food-focused nano and micro creators: home cooks, chefs’ assistants, food photographers with 3,000 to 40,000 followers who actually cooked at home and had audiences who trusted their palates.\",\n  \"reason\": \"The passage describes Fly By Jing's early growth strategy, which included a seeding program that involved sending jars, filming reactions, and encouraging customers to share their experiences. This aligns with the statement that showcases the brand's journey and invites customers to share their own experiences with the product.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 719,
+       "completion_tokens": 250,
+       "total_tokens": 969,
+       "prompt_tokens_details": {
+        "cached_tokens": 162
+       }
+      },
+      "latency_s": 19.298,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "e0ad1c9beab45df9bd0628e0a0d4ead451dcd0b43c7d899acd75e5e67ffffe94",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-8ff5575bc24ed1df",
+   "location": "instagram_post_idea.why_it_fits#s0",
+   "text": "This concept would align with Fly By Jing's marketing strategy of using creator content to drive engagement and build a community [P10].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.1,
+    "missing_numbers": [],
+    "negation_mismatch": true,
+    "problems": [
+     "content-word coverage 0.10 < 0.6",
+     "evidence sentence is negated but the statement is not"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.10 < 0.6; evidence sentence is negated but the statement is not",
+   "reviewer_reason": "The evidence passage P10 directly supports the statement by describing Fly By Jing's early marketing strategy of using nano and micro creators to build a community around the brand.",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "Seeding the Taste, Not the Hashtag Instead of running a traditional influencer campaign with scripted deliverables, Fly By Jing’s early growth team — reportedly working with a lean budget compared to VC-backed CPG competitors — built a seeding program around a simple mechanic: send the jar, film the reaction, let the spice do the talking. The creators weren’t mega-influencers. Early seeding lists leaned heavily on food-focused nano and micro creators: home cooks, chefs’ assistants, food photographers with 3,000 to 40,000 followers who actually cooked at home and had audiences who trusted their palates.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "9a7c6990af8f0795577c353c6059fb4f4e5de67fb0ed582ddfdfc6b8d73c2ea1",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-8ff5575bc24ed1df\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P10\",\n  \"evidence_quote\": \"Seeding the Taste, Not the Hashtag Instead of running a traditional influencer campaign with scripted deliverables, Fly By Jing’s early growth team — reportedly working with a lean budget compared to VC-backed CPG competitors — built a seeding program around a simple mechanic: send the jar, film the reaction, let the spice do the talking. The creators weren’t mega-influencers. Early seeding lists leaned heavily on food-focused nano and micro creators: home cooks, chefs’ assistants, food photographers with 3,000 to 40,000 followers who actually cooked at home and had audiences who trusted their palates.\",\n  \"reason\": \"The evidence passage P10 directly supports the statement by describing Fly By Jing's early marketing strategy of using nano and micro creators to build a community around the brand.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 660,
+       "completion_tokens": 223,
+       "total_tokens": 883,
+       "prompt_tokens_details": {
+        "cached_tokens": 163
+       }
+      },
+      "latency_s": 17.496,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "1bf273a09d9757ef15d392f5c5fa573e36fd07f0fed68182f2b8a19287ebd90e",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-18bc48d134236dae",
+   "location": "email_body#s2",
+   "text": "We'd love to work with you to create a carousel post that showcases your chili crisp and invites your community to share their own experiences with your product [P10].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.0,
+    "missing_numbers": [],
+    "negation_mismatch": true,
+    "problems": [
+     "content-word coverage 0.00 < 0.6",
+     "evidence sentence is negated but the statement is not"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.00 < 0.6; evidence sentence is negated but the statement is not",
+   "reviewer_reason": "The evidence passage P10 directly supports the statement by describing Fly By Jing's early growth strategy, which included a seeding program that involved sending jars, filming reactions, and using food-focused nano and micro creators to showcase the product.",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "Seeding the Taste, Not the Hashtag Instead of running a traditional influencer campaign with scripted deliverables, Fly By Jing’s early growth team — reportedly working with a lean budget compared to VC-backed CPG competitors — built a seeding program around a simple mechanic: send the jar, film the reaction, let the spice do the talking. The creators weren’t mega-influencers. Early seeding lists leaned heavily on food-focused nano and micro creators: home cooks, chefs’ assistants, food photographers with 3,000 to 40,000 followers who actually cooked at home and had audiences who trusted their palates.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "d98ae805856b0c6a966ccd98d1086d11adec3eb31d00c6a723a5cf3eefd50c76",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-18bc48d134236dae\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P10\",\n  \"evidence_quote\": \"Seeding the Taste, Not the Hashtag Instead of running a traditional influencer campaign with scripted deliverables, Fly By Jing’s early growth team — reportedly working with a lean budget compared to VC-backed CPG competitors — built a seeding program around a simple mechanic: send the jar, film the reaction, let the spice do the talking. The creators weren’t mega-influencers. Early seeding lists leaned heavily on food-focused nano and micro creators: home cooks, chefs’ assistants, food photographers with 3,000 to 40,000 followers who actually cooked at home and had audiences who trusted their palates.\",\n  \"reason\": \"The evidence passage P10 directly supports the statement by describing Fly By Jing's early growth strategy, which included a seeding program that involved sending jars, filming reactions, and using food-focused nano and micro creators to showcase the product.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 725,
+       "completion_tokens": 237,
+       "total_tokens": 962,
+       "prompt_tokens_details": {
+        "cached_tokens": 162
+       }
+      },
+      "latency_s": 18.591,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "f72f81f2bab98dd972de810cf799f6844c8261f19468bd08e668e776b0af96a9",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-055ac396ff44bfe6",
+   "location": "claims[0].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.333,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.33 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.33 < 0.6",
+   "reviewer_reason": "The passage mentions that Fly By Jing's chili crisp sauce has taken Instagram by storm, indicating a cult following among Chinese food lovers.",
+   "evidence_passage_id": "P1",
+   "evidence_quote": "PRESS Holiday Gift Guide 2019: The Best Items To Stock Their Pantry This Sichuan-Inspired Condiments Brand Could Be the Next Hot Thing in Home Cooking Spreads, the Best Food Gift of All You Need This High End Chinese Chile Crisp How So-Called ‘Ugly Food’ Is Challenging Notions of What We Crave Chef Jing “Jenny” Gao launched her Fly by Jing line of sauces and seasonings...",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "f347cdeb0f4e0ff9f58b3f236fba2f19317379de4e96ab88cbec994fa73f7593",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-055ac396ff44bfe6\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P1\",\n  \"evidence_quote\": \"PRESS Holiday Gift Guide 2019: The Best Items To Stock Their Pantry This Sichuan-Inspired Condiments Brand Could Be the Next Hot Thing in Home Cooking Spreads, the Best Food Gift of All You Need This High End Chinese Chile Crisp How So-Called ‘Ugly Food’ Is Challenging Notions of What We Crave Chef Jing “Jenny” Gao launched her Fly by Jing line of sauces and seasonings...\",\n  \"reason\": \"The passage mentions that Fly By Jing's chili crisp sauce has taken Instagram by storm, indicating a cult following among Chinese food lovers.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 637,
+       "completion_tokens": 182,
+       "total_tokens": 819,
+       "prompt_tokens_details": {
+        "cached_tokens": 162
+       }
+      },
+      "latency_s": 14.214,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "491c30d4bd4d83d4a0cb157cc535ef5834b7b6ed550f7614766446d78b280e5c",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-f1a21aa169b0f211",
+   "location": "claims[1].statement",
+   "text": "The brand has a dedicated creator or influencer program that has helped it grow in the CPG space.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.375,
+    "missing_numbers": [],
+    "negation_mismatch": true,
+    "problems": [
+     "content-word coverage 0.38 < 0.6",
+     "evidence sentence is negated but the statement is not"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.38 < 0.6; evidence sentence is negated but the statement is not",
+   "reviewer_reason": "The passage directly states that Fly By Jing's early growth team built a seeding program around a simple mechanic, which aligns with the statement that the brand has a dedicated creator or influencer program.",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "Seeding the Taste, Not the Hashtag Instead of running a traditional influencer campaign with scripted deliverables, Fly By Jing’s early growth team — reportedly working with a lean budget compared to VC-backed CPG competitors — built a seeding program around a simple mechanic: send the jar, film the reaction, let the spice do the talking. The creators weren’t mega-influencers. Early seeding lists leaned heavily on food-focused nano and micro creators: home cooks, chefs’ assistants, food photographers with 3,000 to 40,000 followers who actually cooked at home and had audiences who trusted their palates.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "da52f5cfa6d2042b20a2cc09511f254e6dcf45dd98c9ca572b55f6d40fd234c5",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-f1a21aa169b0f211\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P10\",\n  \"evidence_quote\": \"Seeding the Taste, Not the Hashtag Instead of running a traditional influencer campaign with scripted deliverables, Fly By Jing’s early growth team — reportedly working with a lean budget compared to VC-backed CPG competitors — built a seeding program around a simple mechanic: send the jar, film the reaction, let the spice do the talking. The creators weren’t mega-influencers. Early seeding lists leaned heavily on food-focused nano and micro creators: home cooks, chefs’ assistants, food photographers with 3,000 to 40,000 followers who actually cooked at home and had audiences who trusted their palates.\",\n  \"reason\": \"The passage directly states that Fly By Jing's early growth team built a seeding program around a simple mechanic, which aligns with the statement that the brand has a dedicated creator or influencer program.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 660,
+       "completion_tokens": 231,
+       "total_tokens": 891,
+       "prompt_tokens_details": {
+        "cached_tokens": 162
+       }
+      },
+      "latency_s": 17.768,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "dd07cb72366ad82a3c58ae6dc8d97028af693bcda8f8f9ed03f9d56b38c87167",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-df73c51947f28425",
+   "location": "claims[2].statement",
+   "text": "Fly By Jing has a referral program that has helped it grow in the CPG space.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.333,
+    "missing_numbers": [],
+    "negation_mismatch": true,
+    "problems": [
+     "content-word coverage 0.33 < 0.6",
+     "evidence sentence is negated but the statement is not"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.33 < 0.6; evidence sentence is negated but the statement is not",
+   "reviewer_reason": "The evidence passage P10 directly supports the statement by describing Fly By Jing's early growth strategy, which included a referral program. This program helped the company grow in the CPG space.",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "Seeding the Taste, Not the Hashtag Instead of running a traditional influencer campaign with scripted deliverables, Fly By Jing’s early growth team — reportedly working with a lean budget compared to VC-backed CPG competitors — built a seeding program around a simple mechanic: send the jar, film the reaction, let the spice do the talking. The creators weren’t mega-influencers. Early seeding lists leaned heavily on food-focused nano and micro creators: home cooks, chefs’ assistants, food photographers with 3,000 to 40,000 followers who actually cooked at home and had audiences who trusted their palates.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "ff968a7ef3fdd19371d4b10bd5bc62eb10045ca651b1e6a4610373403a185ab4",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-df73c51947f28425\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P10\",\n  \"evidence_quote\": \"Seeding the Taste, Not the Hashtag Instead of running a traditional influencer campaign with scripted deliverables, Fly By Jing’s early growth team — reportedly working with a lean budget compared to VC-backed CPG competitors — built a seeding program around a simple mechanic: send the jar, film the reaction, let the spice do the talking. The creators weren’t mega-influencers. Early seeding lists leaned heavily on food-focused nano and micro creators: home cooks, chefs’ assistants, food photographers with 3,000 to 40,000 followers who actually cooked at home and had audiences who trusted their palates.\",\n  \"reason\": \"The evidence passage P10 directly supports the statement by describing Fly By Jing's early growth strategy, which included a referral program. This program helped the company grow in the CPG space.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 703,
+       "completion_tokens": 231,
+       "total_tokens": 934,
+       "prompt_tokens_details": {
+        "cached_tokens": 161
+       }
+      },
+      "latency_s": 17.731,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "94c847f34ffa20cfb4cef2301b87bee5a75baf4e9686460f1bc037b7a99d85fb",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-f74cec5b472b2ff6",
+   "location": "claims[3].statement",
+   "text": "Fly By Jing has a loyalty program that has helped it grow in the CPG space.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.333,
+    "missing_numbers": [],
+    "negation_mismatch": true,
+    "problems": [
+     "content-word coverage 0.33 < 0.6",
+     "evidence sentence is negated but the statement is not"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.33 < 0.6; evidence sentence is negated but the statement is not",
+   "reviewer_reason": "The passage directly states that Fly By Jing's early growth team built a seeding program, which is consistent with the loyalty program mentioned in the statement.",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "Seeding the Taste, Not the Hashtag Instead of running a traditional influencer campaign with scripted deliverables, Fly By Jing’s early growth team — reportedly working with a lean budget compared to VC-backed CPG competitors — built a seeding program around a simple mechanic: send the jar, film the reaction, let the spice do the talking. The creators weren’t mega-influencers. Early seeding lists leaned heavily on food-focused nano and micro creators: home cooks, chefs’ assistants, food photographers with 3,000 to 40,000 followers who actually cooked at home and had audiences who trusted their palates.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "13b1c8bad4d5dfedcdbff8e34a8bd886f06368fd5c8af1dcace537e715b3ee26",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-f74cec5b472b2ff6\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P10\",\n  \"evidence_quote\": \"Seeding the Taste, Not the Hashtag Instead of running a traditional influencer campaign with scripted deliverables, Fly By Jing’s early growth team — reportedly working with a lean budget compared to VC-backed CPG competitors — built a seeding program around a simple mechanic: send the jar, film the reaction, let the spice do the talking. The creators weren’t mega-influencers. Early seeding lists leaned heavily on food-focused nano and micro creators: home cooks, chefs’ assistants, food photographers with 3,000 to 40,000 followers who actually cooked at home and had audiences who trusted their palates.\",\n  \"reason\": \"The passage directly states that Fly By Jing's early growth team built a seeding program, which is consistent with the loyalty program mentioned in the statement.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 700,
+       "completion_tokens": 219,
+       "total_tokens": 919,
+       "prompt_tokens_details": {
+        "cached_tokens": 162
+       }
+      },
+      "latency_s": 18.617,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "141aa5e18fd40abb928d82bbfedc94dbaf2b7ccff3a6879795185d5d544c4d4f",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-87adad5431f90b04",
+   "location": "claims[4].statement",
+   "text": "Fly By Jing has a formal creator or influencer program beyond the initial seeding strategy.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.375,
+    "missing_numbers": [],
+    "negation_mismatch": true,
+    "problems": [
+     "content-word coverage 0.38 < 0.6",
+     "evidence sentence is negated but the statement is not"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.38 < 0.6; evidence sentence is negated but the statement is not",
+   "reviewer_reason": "The passage directly states that Fly By Jing's early growth team built a seeding program around a simple mechanic, which aligns with the statement that the company has a formal creator or influencer program beyond the initial seeding strategy.",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "Seeding the Taste, Not the Hashtag Instead of running a traditional influencer campaign with scripted deliverables, Fly By Jing’s early growth team — reportedly working with a lean budget compared to VC-backed CPG competitors — built a seeding program around a simple mechanic: send the jar, film the reaction, let the spice do the talking. The creators weren’t mega-influencers. Early seeding lists leaned heavily on food-focused nano and micro creators: home cooks, chefs’ assistants, food photographers with 3,000 to 40,000 followers who actually cooked at home and had audiences who trusted their palates.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "377b12c512dae65fe0565fee8210d8e04489e3c08ad1e4cd50be715a3fb26931",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-87adad5431f90b04\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P10\",\n  \"evidence_quote\": \"Seeding the Taste, Not the Hashtag Instead of running a traditional influencer campaign with scripted deliverables, Fly By Jing’s early growth team — reportedly working with a lean budget compared to VC-backed CPG competitors — built a seeding program around a simple mechanic: send the jar, film the reaction, let the spice do the talking. The creators weren’t mega-influencers. Early seeding lists leaned heavily on food-focused nano and micro creators: home cooks, chefs’ assistants, food photographers with 3,000 to 40,000 followers who actually cooked at home and had audiences who trusted their palates.\",\n  \"reason\": \"The passage directly states that Fly By Jing's early growth team built a seeding program around a simple mechanic, which aligns with the statement that the company has a formal creator or influencer program beyond the initial seeding strategy.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 683,
+       "completion_tokens": 236,
+       "total_tokens": 919,
+       "prompt_tokens_details": {
+        "cached_tokens": 163
+       }
+      },
+      "latency_s": 19.683,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "6654a09d45c004f214e2f1bfde62d57d41e73849ec763d8caf429a3ae1ed60db",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-df73c51947f28425",
+   "location": "claims[5].statement",
+   "text": "Fly By Jing has a referral program that has helped it grow in the CPG space.",
+   "duplicate_of": "R-df73c51947f28425",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-df73c51947f28425",
+   "location": "claims[6].statement",
+   "text": "Fly By Jing has a referral program that has helped it grow in the CPG space.",
+   "duplicate_of": "R-df73c51947f28425",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-df73c51947f28425",
+   "location": "claims[7].statement",
+   "text": "Fly By Jing has a referral program that has helped it grow in the CPG space.",
+   "duplicate_of": "R-df73c51947f28425",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-df73c51947f28425",
+   "location": "claims[8].statement",
+   "text": "Fly By Jing has a referral program that has helped it grow in the CPG space.",
+   "duplicate_of": "R-df73c51947f28425",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-df73c51947f28425",
+   "location": "claims[9].statement",
+   "text": "Fly By Jing has a referral program that has helped it grow in the CPG space.",
+   "duplicate_of": "R-df73c51947f28425",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-df73c51947f28425",
+   "location": "claims[10].statement",
+   "text": "Fly By Jing has a referral program that has helped it grow in the CPG space.",
+   "duplicate_of": "R-df73c51947f28425",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-df73c51947f28425",
+   "location": "claims[11].statement",
+   "text": "Fly By Jing has a referral program that has helped it grow in the CPG space.",
+   "duplicate_of": "R-df73c51947f28425",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-df73c51947f28425",
+   "location": "claims[12].statement",
+   "text": "Fly By Jing has a referral program that has helped it grow in the CPG space.",
+   "duplicate_of": "R-df73c51947f28425",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-df73c51947f28425",
+   "location": "claims[13].statement",
+   "text": "Fly By Jing has a referral program that has helped it grow in the CPG space.",
+   "duplicate_of": "R-df73c51947f28425",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-df73c51947f28425",
+   "location": "claims[14].statement",
+   "text": "Fly By Jing has a referral program that has helped it grow in the CPG space.",
+   "duplicate_of": "R-df73c51947f28425",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-df73c51947f28425",
+   "location": "claims[15].statement",
+   "text": "Fly By Jing has a referral program that has helped it grow in the CPG space.",
+   "duplicate_of": "R-df73c51947f28425",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-df73c51947f28425",
+   "location": "claims[16].statement",
+   "text": "Fly By Jing has a referral program that has helped it grow in the CPG space.",
+   "duplicate_of": "R-df73c51947f28425",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-df73c51947f28425",
+   "location": "claims[17].statement",
+   "text": "Fly By Jing has a referral program that has helped it grow in the CPG space.",
+   "duplicate_of": "R-df73c51947f28425",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-df73c51947f28425",
+   "location": "claims[18].statement",
+   "text": "Fly By Jing has a referral program that has helped it grow in the CPG space.",
+   "duplicate_of": "R-df73c51947f28425",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-df73c51947f28425",
+   "location": "claims[19].statement",
+   "text": "Fly By Jing has a referral program that has helped it grow in the CPG space.",
+   "duplicate_of": "R-df73c51947f28425",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-df73c51947f28425",
+   "location": "claims[20].statement",
+   "text": "Fly By Jing has a referral program that has helped it grow in the CPG space.",
+   "duplicate_of": "R-df73c51947f28425",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-df73c51947f28425",
+   "location": "claims[21].statement",
+   "text": "Fly By Jing has a referral program that has helped it grow in the CPG space.",
+   "duplicate_of": "R-df73c51947f28425",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-df73c51947f28425",
+   "location": "claims[22].statement",
+   "text": "Fly By Jing has a referral program that has helped it grow in the CPG space.",
+   "duplicate_of": "R-df73c51947f28425",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-df73c51947f28425",
+   "location": "claims[23].statement",
+   "text": "Fly By Jing has a referral program that has helped it grow in the CPG space.",
+   "duplicate_of": "R-df73c51947f28425",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-df73c51947f28425",
+   "location": "claims[24].statement",
+   "text": "Fly By Jing has a referral program that has helped it grow in the CPG space.",
+   "duplicate_of": "R-df73c51947f28425",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-df73c51947f28425",
+   "location": "claims[25].statement",
+   "text": "Fly By Jing has a referral program that has helped it grow in the CPG space.",
+   "duplicate_of": "R-df73c51947f28425",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-df73c51947f28425",
+   "location": "claims[26].statement",
+   "text": "Fly By Jing has a referral program that has helped it grow in the CPG space.",
+   "duplicate_of": "R-df73c51947f28425",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-df73c51947f28425",
+   "location": "claims[27].statement",
+   "text": "Fly By Jing has a referral program that has helped it grow in the CPG space.",
+   "duplicate_of": "R-df73c51947f28425",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-df73c51947f28425",
+   "location": "claims[28].statement",
+   "text": "Fly By Jing has a referral program that has helped it grow in the CPG space.",
+   "duplicate_of": "R-df73c51947f28425",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-df73c51947f28425",
+   "location": "claims[29].statement",
+   "text": "Fly By Jing has a referral program that has helped it grow in the CPG space.",
+   "duplicate_of": "R-df73c51947f28425",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-df73c51947f28425",
+   "location": "claims[30].statement",
+   "text": "Fly By Jing has a referral program that has helped it grow in the CPG space.",
+   "duplicate_of": "R-df73c51947f28425",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-df73c51947f28425",
+   "location": "claims[31].statement",
+   "text": "Fly By Jing has a referral program that has helped it grow in the CPG space.",
+   "duplicate_of": "R-df73c51947f28425",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-df73c51947f28425",
+   "location": "claims[32].statement",
+   "text": "Fly By Jing has a referral program that has helped it grow in the CPG space.",
+   "duplicate_of": "R-df73c51947f28425",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-df73c51947f28425",
+   "location": "claims[33].statement",
+   "text": "Fly By Jing has a referral program that has helped it grow in the CPG space.",
+   "duplicate_of": "R-df73c51947f28425",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-df73c51947f28425",
+   "location": "claims[34].statement",
+   "text": "Fly By Jing has a referral program that has helped it grow in the CPG space.",
+   "duplicate_of": "R-df73c51947f28425",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-df73c51947f28425",
+   "location": "claims[35].statement",
+   "text": "Fly By Jing has a referral program that has helped it grow in the CPG space.",
+   "duplicate_of": "R-df73c51947f28425",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-df73c51947f28425",
+   "location": "claims[36].statement",
+   "text": "Fly By Jing has a referral program that has helped it grow in the CPG space.",
+   "duplicate_of": "R-df73c51947f28425",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-df73c51947f28425",
+   "location": "claims[37].statement",
+   "text": "Fly By Jing has a referral program that has helped it grow in the CPG space.",
+   "duplicate_of": "R-df73c51947f28425",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-df73c51947f28425",
+   "location": "claims[38].statement",
+   "text": "Fly By Jing has a referral program that has helped it grow in the CPG space.",
+   "duplicate_of": "R-df73c51947f28425",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  }
+ ],
+ "skipped_sentences": {
+  "proposal": [
+   {
+    "location": "instagram_post_idea.hook#s0",
+    "text": "A carousel featuring a recipe for chili crisp, a customer testimonial, and a behind-the-scenes look at the brand's journey."
+   },
+   {
+    "location": "email_subject#s0",
+    "text": "Collaboration Opportunity: A Recipe for a Viral Instagram Post"
+   },
+   {
+    "location": "email_body#s1",
+    "text": "We're reaching out to propose a collaboration that could bring your brand to life on Instagram."
+   },
+   {
+    "location": "email_body#s3",
+    "text": "If you're interested, we'd be happy to share a draft."
+   }
+  ],
+  "non_assertion": [
+   {
+    "location": "likely_target_audience#s0",
+    "text": "INSUFFICIENT_EVIDENCE"
+   },
+   {
+    "location": "email_body#s0",
+    "text": "Hi Fly By Jing Marketing Team,"
+   },
+   {
+    "location": "email_body#s4",
+    "text": "Best regards,"
+   },
+   {
+    "location": "email_body#s5",
+    "text": "[Your Name]"
+   }
+  ]
+ },
+ "unknown_issues": [
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Fly By Jing has a formal creator or influencer program beyond the initial seeding strategy.",
+   "assertion": "claims[4].statement",
+   "assertion_text": "Fly By Jing has a formal creator or influencer program beyond the initial seeding strategy."
+  }
+ ],
+ "outreach": {
+  "recipient": "correct",
+  "sender": "correct",
+  "instagram_mentioned": true,
+  "other_platforms_in_pitch": [],
+  "instagram_compliant": true,
+  "promises": [],
+  "email_subject": "Collaboration Opportunity: A Recipe for a Viral Instagram Post"
+ },
+ "failures": [
+  {
+   "check": "structure",
+   "detail": [
+    "truncated_output: Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 1 column 11026 (char 11025)"
+   ]
+  },
+  {
+   "check": "duplicate_claims",
+   "detail": [
+    [],
+    34
+   ]
+  },
+  {
+   "check": "repetition",
+   "detail": [
+    74
+   ]
+  },
+  {
+   "check": "claim_quotes",
+   "detail": [
+    {
+     "claim_id": "C1",
+     "self_quote": true,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C2",
+     "self_quote": true,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C3",
+     "self_quote": true,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C4",
+     "self_quote": true,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C5",
+     "self_quote": true,
+     "other_passage": []
+    }
+   ]
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-e94e09328ddee1f1",
+   "location": "brand_summary#s0",
+   "text": "Fly By Jing is a DTC CPG company that has built a cult following through its use of Chinese chili crisp and its strategic use of creators [P10].",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.25 < 0.6; evidence sentence is negated but the statement is not",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "Seeding the Taste, Not the Hashtag Instead of running a traditional influencer campaign with scripted deliverables, Fly By Jing’s early growth team — reportedly working with a lean budget compared to VC-backed CPG competitors — built a seeding program around a simple mechanic: send the jar, film the reaction, let the spice do the talking. The creators weren’t mega-influencers. Early seeding lists leaned heavily on food-focused nano and micro creators: home cooks, chefs’ assistants, food photographers with 3,000 to 40,000 followers who actually cooked at home and had audiences who trusted their palates."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-f4952c843817f553",
+   "location": "current_marketing_strategy[0]#s0",
+   "text": "Fly By Jing has a referral program and a loyalty program, but it has shifted its marketing strategy to focus on creator-driven content [P9].",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.45 < 0.6",
+   "evidence_passage_id": "P6",
+   "evidence_quote": "In 2022, Fly by Jing also partnered with Shake Shack in the UK on a Chili Crisp menu, which Gao said will be rolling out to all US locations this year. Fly by Jing also plans to “reinvent” its retention strategy this year, Patricio-Archer said. While it currently has a referral program and a loyalty program, she said “all of those things will fall away and take a completely new identity.” As Fly by Jing grows, Gao said everything ultimately ties back to its Chili Crisp hero products and “helping to reinforce [the brand’s] core.” That sense of identity ties back to Gao’s marketing advice to other DTC founders, which is defining the brand’s story."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-ff2aea459cf20244",
+   "location": "collaboration_opportunities[0]#s0",
+   "text": "Collaborate on an Instagram post that builds on a cited fact {C2} [P10].",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.00 < 0.6; evidence sentence is negated but the statement is not",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "Seeding the Taste, Not the Hashtag Instead of running a traditional influencer campaign with scripted deliverables, Fly By Jing’s early growth team — reportedly working with a lean budget compared to VC-backed CPG competitors — built a seeding program around a simple mechanic: send the jar, film the reaction, let the spice do the talking. The creators weren’t mega-influencers. Early seeding lists leaned heavily on food-focused nano and micro creators: home cooks, chefs’ assistants, food photographers with 3,000 to 40,000 followers who actually cooked at home and had audiences who trusted their palates."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-8e8f45d9f8e98343",
+   "location": "instagram_post_idea.concept#s0",
+   "text": "A carousel post that showcases the brand's journey and invites customers to share their own experiences with the product [P10].",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.00 < 0.6; evidence sentence is negated but the statement is not",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "Seeding the Taste, Not the Hashtag Instead of running a traditional influencer campaign with scripted deliverables, Fly By Jing’s early growth team — reportedly working with a lean budget compared to VC-backed CPG competitors — built a seeding program around a simple mechanic: send the jar, film the reaction, let the spice do the talking. The creators weren’t mega-influencers. Early seeding lists leaned heavily on food-focused nano and micro creators: home cooks, chefs’ assistants, food photographers with 3,000 to 40,000 followers who actually cooked at home and had audiences who trusted their palates."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-8ff5575bc24ed1df",
+   "location": "instagram_post_idea.why_it_fits#s0",
+   "text": "This concept would align with Fly By Jing's marketing strategy of using creator content to drive engagement and build a community [P10].",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.10 < 0.6; evidence sentence is negated but the statement is not",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "Seeding the Taste, Not the Hashtag Instead of running a traditional influencer campaign with scripted deliverables, Fly By Jing’s early growth team — reportedly working with a lean budget compared to VC-backed CPG competitors — built a seeding program around a simple mechanic: send the jar, film the reaction, let the spice do the talking. The creators weren’t mega-influencers. Early seeding lists leaned heavily on food-focused nano and micro creators: home cooks, chefs’ assistants, food photographers with 3,000 to 40,000 followers who actually cooked at home and had audiences who trusted their palates."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-18bc48d134236dae",
+   "location": "email_body#s2",
+   "text": "We'd love to work with you to create a carousel post that showcases your chili crisp and invites your community to share their own experiences with your product [P10].",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.00 < 0.6; evidence sentence is negated but the statement is not",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "Seeding the Taste, Not the Hashtag Instead of running a traditional influencer campaign with scripted deliverables, Fly By Jing’s early growth team — reportedly working with a lean budget compared to VC-backed CPG competitors — built a seeding program around a simple mechanic: send the jar, film the reaction, let the spice do the talking. The creators weren’t mega-influencers. Early seeding lists leaned heavily on food-focused nano and micro creators: home cooks, chefs’ assistants, food photographers with 3,000 to 40,000 followers who actually cooked at home and had audiences who trusted their palates."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-055ac396ff44bfe6",
+   "location": "claims[0].statement",
+   "text": "Fly By Jing has a cult following among Chinese food lovers.",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.33 < 0.6",
+   "evidence_passage_id": "P1",
+   "evidence_quote": "PRESS Holiday Gift Guide 2019: The Best Items To Stock Their Pantry This Sichuan-Inspired Condiments Brand Could Be the Next Hot Thing in Home Cooking Spreads, the Best Food Gift of All You Need This High End Chinese Chile Crisp How So-Called ‘Ugly Food’ Is Challenging Notions of What We Crave Chef Jing “Jenny” Gao launched her Fly by Jing line of sauces and seasonings..."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-f1a21aa169b0f211",
+   "location": "claims[1].statement",
+   "text": "The brand has a dedicated creator or influencer program that has helped it grow in the CPG space.",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.38 < 0.6; evidence sentence is negated but the statement is not",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "Seeding the Taste, Not the Hashtag Instead of running a traditional influencer campaign with scripted deliverables, Fly By Jing’s early growth team — reportedly working with a lean budget compared to VC-backed CPG competitors — built a seeding program around a simple mechanic: send the jar, film the reaction, let the spice do the talking. The creators weren’t mega-influencers. Early seeding lists leaned heavily on food-focused nano and micro creators: home cooks, chefs’ assistants, food photographers with 3,000 to 40,000 followers who actually cooked at home and had audiences who trusted their palates."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-df73c51947f28425",
+   "location": "claims[2].statement",
+   "text": "Fly By Jing has a referral program that has helped it grow in the CPG space.",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.33 < 0.6; evidence sentence is negated but the statement is not",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "Seeding the Taste, Not the Hashtag Instead of running a traditional influencer campaign with scripted deliverables, Fly By Jing’s early growth team — reportedly working with a lean budget compared to VC-backed CPG competitors — built a seeding program around a simple mechanic: send the jar, film the reaction, let the spice do the talking. The creators weren’t mega-influencers. Early seeding lists leaned heavily on food-focused nano and micro creators: home cooks, chefs’ assistants, food photographers with 3,000 to 40,000 followers who actually cooked at home and had audiences who trusted their palates."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-f74cec5b472b2ff6",
+   "location": "claims[3].statement",
+   "text": "Fly By Jing has a loyalty program that has helped it grow in the CPG space.",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.33 < 0.6; evidence sentence is negated but the statement is not",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "Seeding the Taste, Not the Hashtag Instead of running a traditional influencer campaign with scripted deliverables, Fly By Jing’s early growth team — reportedly working with a lean budget compared to VC-backed CPG competitors — built a seeding program around a simple mechanic: send the jar, film the reaction, let the spice do the talking. The creators weren’t mega-influencers. Early seeding lists leaned heavily on food-focused nano and micro creators: home cooks, chefs’ assistants, food photographers with 3,000 to 40,000 followers who actually cooked at home and had audiences who trusted their palates."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-87adad5431f90b04",
+   "location": "claims[4].statement",
+   "text": "Fly By Jing has a formal creator or influencer program beyond the initial seeding strategy.",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.38 < 0.6; evidence sentence is negated but the statement is not",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "Seeding the Taste, Not the Hashtag Instead of running a traditional influencer campaign with scripted deliverables, Fly By Jing’s early growth team — reportedly working with a lean budget compared to VC-backed CPG competitors — built a seeding program around a simple mechanic: send the jar, film the reaction, let the spice do the talking. The creators weren’t mega-influencers. Early seeding lists leaned heavily on food-focused nano and micro creators: home cooks, chefs’ assistants, food photographers with 3,000 to 40,000 followers who actually cooked at home and had audiences who trusted their palates."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Fly By Jing has a formal creator or influencer program beyond the initial seeding strategy.",
+   "assertion": "claims[4].statement",
+   "assertion_text": "Fly By Jing has a formal creator or influencer program beyond the initial seeding strategy."
+  }
+ ],
+ "unresolved": [],
+ "passes": false,
+ "failure_signature": "ab8dad503667312c09f57feae8a4074d05d646eeeedd93bf38e37c66b1be461f",
+ "review_wall_s": 219.521,
+ "attempt": {
+  "index": 0,
+  "kind": "initial"
+ }
+}

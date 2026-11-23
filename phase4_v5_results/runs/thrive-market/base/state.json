@@ -1,0 +1,106 @@
+{
+ "case_id": "thrive-market/base",
+ "company_id": "thrive-market",
+ "arm": "base",
+ "packet_path": "outputs/phase3_v5/handoff_6efa346/data/v3_pilot/packets/thrive-market.json",
+ "packet_sha256": "ed5bf926801b01e5f73b9daf8c07d8b6c7867569f338f689df590ac50ee72f2d",
+ "prompt_version": "brandpilot.prompt.v3.3",
+ "prompt_sha256": "4cc47093e419563867779fad552aa6d9d660bc6773c0de31d88746c757cd90e7",
+ "max_repairs": 2,
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "dir": "phase4_v5_results/runs/thrive-market/base/attempt-00",
+   "prompt_sha256": "4cc47093e419563867779fad552aa6d9d660bc6773c0de31d88746c757cd90e7",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "stop",
+   "usage": {
+    "prompt_tokens": 2565,
+    "completion_tokens": 279,
+    "total_tokens": 2844,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 11.707,
+   "runtime_verified": true,
+   "raw_sha256": "fb1f67b60a5ca9354d59a25f5ca4a93705938aac590278825a19a5cf0b22fcd5",
+   "reused_from": null,
+   "passes": false,
+   "strict_ok": false,
+   "model_abstained": false,
+   "failure_count": 5,
+   "unresolved_count": 0,
+   "failure_signature": "04be7f1e3f6288f1cb802aa35b112b3821871a07c40784f5815978ed2fdd3d24",
+   "review_wall_s": 10.144,
+   "truncated": false,
+   "looping": false
+  },
+  {
+   "index": 1,
+   "kind": "regenerate_bounded",
+   "dir": "phase4_v5_results/runs/thrive-market/base/attempt-01",
+   "prompt_sha256": "44f53f57c7250b89b3e952d63eb801b15ff09ff794ae2ee94584942b09dba884",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "stop",
+   "usage": {
+    "prompt_tokens": 2678,
+    "completion_tokens": 2502,
+    "total_tokens": 5180,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 66.653,
+   "runtime_verified": true,
+   "raw_sha256": "e92fadb7a9165b08d64aa54f99c3c97aba31c2df8172add39e8d8da235b5665c",
+   "reused_from": null,
+   "passes": false,
+   "strict_ok": false,
+   "model_abstained": false,
+   "truncated": true,
+   "looping": false,
+   "failure_count": 3,
+   "unresolved_count": 0,
+   "failure_signature": "0365fa43ffca1b545721e086e7fa9cdd7055a9f52390c170b118dbea2e746f0f",
+   "review_wall_s": 0.003
+  },
+  {
+   "index": 2,
+   "kind": "regenerate_bounded",
+   "dir": "phase4_v5_results/runs/thrive-market/base/attempt-02",
+   "prompt_sha256": "aa89857338b51a5d099b00cbfd789153a5ac437180ac95d9039d86a623ff83a5",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "length",
+   "usage": {
+    "prompt_tokens": 2680,
+    "completion_tokens": 3072,
+    "total_tokens": 5752,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 64.407,
+   "runtime_verified": true,
+   "raw_sha256": "466e03d75e2571c3b16dfeaa1d2c366ec2411c58710848ccc2ac3ccc7cd03e12",
+   "reused_from": null,
+   "passes": false,
+   "strict_ok": false,
+   "model_abstained": false,
+   "truncated": true,
+   "looping": false,
+   "failure_count": 5,
+   "unresolved_count": 0,
+   "failure_signature": "29147fe7d32a2098e3923b76a66dbb7a2cbc7ec9198fcdcb1eaed27c52f7cd2b",
+   "review_wall_s": 0.01
+  }
+ ],
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "no progress: the repair repeated the same truncation failure",
+ "stop_code": "withheld_no_progress",
+ "eligibility": "eligible"
+}

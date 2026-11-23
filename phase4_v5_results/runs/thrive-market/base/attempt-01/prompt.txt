@@ -1,0 +1,99 @@
+You are a grounded brand-outreach assistant for our team. Use only the evidence passages below.
+Never use outside knowledge. Return valid JSON only.
+
+Separate three things:
+1. OBSERVED FACTS - things a passage actually states about this company. Each fact is a claim with an id (C1, C2, ...),
+   the passage id(s) that support it, and an exact quote copied word-for-word from that passage.
+2. UNKNOWNS - things the evidence does not tell us (put them in "unknowns"). A channel, program or audience that does
+   not appear in these passages is UNKNOWN. It is never a weakness, never a "gap", and never a reason for outreach.
+3. PROPOSALS - collaboration ideas from our team. Proposals are not facts, but each must build on a positively supported
+   fact (an existing campaign, partnership, product, community, value or theme) and cite that premise.
+
+Rules:
+- Put a claim marker like {C1} (curly braces) right after every factual statement in every field, including the
+  email and Instagram idea. Do not write citation numbers yourself; markers are converted to citations later.
+- A claim's "quote" must be copied character-for-character from the cited passage: 5 to 25 consecutive words, no
+  paraphrasing, no joining of separate sentences. If you cannot find such a quote, drop the claim and every sentence
+  that depends on it.
+- Audience and strategy sentences are factual: each needs a marker. If no passage states the audience, write
+  INSUFFICIENT_EVIDENCE instead of guessing.
+- Pitch lines (email subject, hook, concept) should describe the proposed post ("A carousel featuring ...",
+  "Collaborate on ..."). Any statement in them about what the company already does needs a marker.
+- Respect passage types. "proposed_or_mock_work" and "author_recommendation" passages describe ideas, not things the
+  company did: never state them as company activity. "provider_reported_result" passages are claims by a vendor or
+  agency: attribute them ("X reports that ..."). "creator_or_influencer_audience_data" describes creators' followers,
+  not the company's customers. "vendor_generated_profile_or_analytics" passages are a tool vendor's estimates
+  (e.g. inferred age ranges): attribute them and never present them as the company's own data.
+  "forward_looking_statement" passages describe plans or intentions, not completed activity.
+- Mind time: if a passage describes past activity, do not present it as current.
+- "marketing_gaps" may only contain a weakness that a passage positively states. Usually it is [].
+- Never promise results. Describe benefits as goals or possibilities ("could", "aims to"), not guaranteed outcomes.
+- Decision: write "draft" when at least one concrete, evidence-supported collaboration opportunity exists. Otherwise write
+  "abstain", give an abstain_reason, set pitch fields to INSUFFICIENT_EVIDENCE and leave collaboration_opportunities empty.
+- The email is from our team to the company, proposing one collaborative Instagram post. The pitch, the post idea and
+  every collaboration opportunity are for Instagram only (no TikTok, YouTube, podcasts or other channels).
+- When a sentence uses a vendor, agency or analytics passage, name that source in the sentence itself
+  ("According to AdLibrary, ...", "Attentive reports that ...").
+- Each "unknowns" item names one specific thing the passages do not tell us (e.g. "Whether X runs a creator program").
+  Never write placeholder text such as "what the evidence does not show".
+
+Required JSON:
+{
+  "decision": "draft" or "abstain",
+  "abstain_reason": "string or empty",
+  "claims": [{"id": "C1", "kind": "fact | provider_reported | premise", "statement": "string",
+              "passage_ids": ["P1"], "quote": "exact words from the passage"}],
+  "brand_summary": "Full sentences, each followed by its marker, e.g. "X makes ... {C1}." Never only markers. Or INSUFFICIENT_EVIDENCE",
+  "likely_target_audience": "A full sentence followed by its marker, or INSUFFICIENT_EVIDENCE",
+  "current_marketing_strategy": ["text with markers"],
+  "unknowns": ["one specific open question, e.g. Whether the company works with creators"],
+  "marketing_gaps": [],
+  "collaboration_opportunities": ["proposal that builds on a cited fact {C2}"],
+  "instagram_post_idea": {"hook": "string", "concept": "string", "why_it_fits": "string"},
+  "email_subject": "string",
+  "email_body": "string"
+}
+
+Company: Thrive Market (company_id thrive-market; category: membership online organic grocery)
+Official domains: thrivemarket.com
+Recipient: the marketing team
+Packet status: ok
+
+Evidence passages:
+[P1] source: https://thrivemarket.com/about-us | document: official_domain | type: actual_activity | dates in text: none | published: unknown
+"Access for All Thrive Gives has been our promise since day one: every annual membership sponsors a free membership for a family in need."
+
+[P2] source: https://thrivemarket.com/about-us | document: official_domain | type: descriptive | dates in text: none | published: unknown
+"Planet First For a healthier planet, we’re committed to sustainable practices in three key areas of our business: science-aligned carbon emission reductions, zero-waste warehouses, and plastic-neutral packaging for Thrive Market brands and shipping materials for all member orders."
+
+[P3] source: https://research.contrary.com/company/thrive-market | document: third_party_confirmed | type: historical_activity | dates in text: 2012, 2024 | published: unknown
+"Instacart also offers a subscription, Instacart+, which provides unlimited delivery and reduced fees. Grove Collaborative: Founded in 2012, Grove Collaborative is a subscription-based ecommerce platform where customers can find and place one-time or recurring orders of sustainably made household, beauty, and personal care items and have them delivered straight to their doors. Grove Collaborative, like Thrive Market, ships to the contiguous United States and produces its own private label brand called Grove Co., with over 300 private label products in 2024. Like Thrive Market, it also partners with third-party brands to list their products on its site."
+
+[P4] source: https://research.contrary.com/company/thrive-market | document: third_party_confirmed | type: descriptive | dates in text: December 2024, March 2025 | published: unknown
+"Traction As of March 2025, Thrive Market was doing over $700 million in annual sales, carried over 750 brands, and had over 1.6 million paying members. In December 2024, Thrive Market began accepting SNAP EBT as a form of payment, opening up another revenue stream by offering healthier food options to low-income households who might otherwise not have access to organic groceries. In the first two months after its launch, Thrive Market generated over $1 million in revenue from SNAP EBT payments. Even before raising for the first time, Thrive Market built up a network of influencers across social channels such as blogs, Instagram, and YouTube to promote its product and mission."
+
+[P5] source: https://research.contrary.com/company/thrive-market | document: third_party_confirmed | type: historical_activity | dates in text: 2014, July 2025 | published: unknown
+"Cofounders Nick Green and Gunnar Lovelace ultimately opened up and raised Thrive Market’s 2014 seed round from their network of over 150 influencers at the time. Presently, Thrive Market maintains an affiliate program through which partners can promote the platform and its products to earn commission. As of July 2025, it had over 500 affiliate partners, including prominent wellness figures Melissa Urban, founder of the Whole30 diet, and Mark Sisson, founder of the health-focused food brand Primal Kitchen."
+
+[P6] source: https://www.reforge.com/blog/thrive-market-content-growth | document: third_party_confirmed | type: actual_activity | dates in text: none | published: unknown
+"2. Thrive Market's Multi-channel Content Machine Thrive Market is a subscription e-commerce business that specializes in delivering natural and organic foods, but at wholesale prices. They recently closed at $111 million dollar series B, and have just passed the $120 million dollar annual revenue mark. Thrive has over 300k paying members on a $60 monthly membership and it's unique because it’s also a mission-driven business that launched with a stable of strategic health celebrity investors ranging from Deepak Chopra to Jillian Michaels to Molly Sims, all the way to influential bloggers like Wellness Mama."
+
+[P7] source: https://thrivemarket.com/about-us | document: official_domain | type: descriptive | dates in text: none | published: unknown
+"For full functionality of this site it is necessary to enable JavaScript. Here are the instructions how to enable JavaScript in your web browser. Menu Categories Diets Brands Deals Shopping Lists Blog About Us How It Works Our Quality Standards Environmental Impact Thrive Gives FAQ Back View All Brands View All Diets Deals"
+
+[P8] source: https://www.reforge.com/blog/thrive-market-content-growth | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown
+"Content created and distributed by people who already have a strong existing relationship with their audiences -- not by a still unknown and faceless \"Brand\" -- is much more compelling and converting than company-generated content alone. Thus, Steps 1 through 3 in the Direct Response loop are what make the subsequent conversion steps significantly more effective than in a brand-only loop. While Thrive Market has mastered these critical early steps in their content loop, this area is exactly where many businesses doing \"content marketing\" struggle the most."
+
+[P9] source: https://www.codeandtheory.com/work/thrive-market | document: third_party_confirmed | type: provider_reported_result | dates in text: none | published: unknown
+"How Thrive Market improved sign-ups and first purchases Thrive Market is an online membership-based market on a mission to make healthy living easy and affordable for everyone. As the brand scaled, it needed an experience that could clearly communicate the value of membership, reduce friction for new shoppers, and guide people from curiosity to confidence. The challenge was to balance a purpose-driven story with the practical details customers need to start shopping. In this case study, you’ll learn how Code and Theory partnered with Thrive Market to refine the end-to-end journey—from first visit through sign-up and into the initial shopping experience."
+
+[P10] source: https://thrivemarket.com/all-values | document: official_domain | type: descriptive | dates in text: none | published: unknown
+"All Values Whether you're looking for gluten-free snacks, hypoallergenic cleaning products, or organic baby food, we have something for every dietary need and lifestyle. Shop by what matters to you with more than 90 values. Less - DietsCertifications & AwardsHealth & IngredientsEnvironmental & SocialBy Concern"
+
+
+OUTPUT LIMITS (the previous answer could not be used because it was not valid JSON):
+- Return exactly one complete JSON object and nothing else.
+- Include at most 10 claims. Every claim must have a different statement, and its quote must be copied exactly from the passage it cites. Never copy the statement as the quote.
+- Do not repeat any sentence.
+- Put a [P#] citation after every factual sentence, naming the passage that states it.
+- Close the JSON object immediately after the "citations" list.

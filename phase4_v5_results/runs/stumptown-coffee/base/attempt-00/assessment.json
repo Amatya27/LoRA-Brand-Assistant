@@ -1,0 +1,536 @@
+{
+ "checks_version": "phase4-v5-checks-2",
+ "structure": {
+  "strict_json": true,
+  "truncated": false,
+  "parse_error": null,
+  "schema_errors": [
+   "claims[0].kind 'fact | provider_reported | premise' not in ('fact', 'provider_reported', 'premise')"
+  ],
+  "parse_mode": "strict",
+  "prompt_schema_valid": false,
+  "training_schema_valid": false,
+  "raw_format": {
+   "starts_with_brace": false,
+   "code_fenced": true,
+   "text_outside_json": true
+  }
+ },
+ "decision": "draft",
+ "repetition": {
+  "method": "exact match after whitespace/quote/case normalisation; no semantic similarity",
+  "claim_count": 1,
+  "duplicate_claim_ids": [],
+  "duplicate_claim_statements": 0,
+  "distinct_claim_statements": 1,
+  "duplicate_claim_quotes": 0,
+  "repeated_prose_sentences": {},
+  "max_8gram_repeats_in_raw": 1,
+  "looping": false
+ },
+ "citation_mechanics": {
+  "inline_passage_refs": [],
+  "unknown_refs": [
+   "C2"
+  ],
+  "claim_quotes": [
+   {
+    "index": 0,
+    "claim_id": "C1",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": true,
+    "cites_non_factual_type": []
+   }
+  ]
+ },
+ "assertions": [
+  {
+   "review_id": "R-74870d1ab95c4856",
+   "location": "brand_summary#s0",
+   "text": "Full transparency — we work with producers we know, so both sides of the supply chain stay visible to each other. * Long-term partnership — we sustain these relationships over many years to build truly collaborative partnerships.",
+   "kind": "factual",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": false,
+   "verdict": "supported",
+   "reviewer_verdict": "supported",
+   "citation_status": "uncited",
+   "flags": [],
+   "reason": "The evidence passage P1 directly supports the statement by reiterating the company's commitment to transparency and long-term partnerships with producers.",
+   "guard": {
+    "coverage": 1.0,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": []
+   },
+   "reviewer_reason": "The evidence passage P1 directly supports the statement by reiterating the company's commitment to transparency and long-term partnerships with producers.",
+   "evidence_passage_id": "P1",
+   "evidence_quote": "Full transparency — we work with producers we know, so both sides of the supply chain stay visible to each other. * Long-term partnership — we sustain these relationships over many years to build truly collaborative partnerships.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "cfffe11523f2a563db873eb1cd237b7f0885e8d0465c554d2c6506a5bd349eab",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-74870d1ab95c4856\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P1\",\n  \"evidence_quote\": \"Full transparency — we work with producers we know, so both sides of the supply chain stay visible to each other. * Long-term partnership — we sustain these relationships over many years to build truly collaborative partnerships.\",\n  \"reason\": \"The evidence passage P1 directly supports the statement by reiterating the company's commitment to transparency and long-term partnerships with producers.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 396,
+       "completion_tokens": 130,
+       "total_tokens": 526,
+       "prompt_tokens_details": {
+        "cached_tokens": 31
+       }
+      },
+      "latency_s": 9.932,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "096ee410c252a841a0a27c3b2c7b8dedece2e05fd5078d12b19d35f5e09ac88a",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-5dd7db4c0620cc96",
+   "location": "current_marketing_strategy[0]#s0",
+   "text": "Instagram",
+   "kind": "factual",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": false,
+   "verdict": "supported",
+   "reviewer_verdict": "supported",
+   "citation_status": "uncited",
+   "flags": [],
+   "reason": "The passage explicitly mentions Instagram as one of the platforms Stumptown Coffee advertises on.",
+   "guard": {
+    "coverage": 1.0,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": []
+   },
+   "reviewer_reason": "The passage explicitly mentions Instagram as one of the platforms Stumptown Coffee advertises on.",
+   "evidence_passage_id": "P8",
+   "evidence_quote": "Instagram, Facebook, and in-store trade marketing through grocery retail channels.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "c3ccf3c063494b58946cac62a83bf5554386cca2db31344605977dd9a2aa254b",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-5dd7db4c0620cc96\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P8\",\n  \"evidence_quote\": \"Instagram, Facebook, and in-store trade marketing through grocery retail channels.\",\n  \"reason\": \"The passage explicitly mentions Instagram as one of the platforms Stumptown Coffee advertises on.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 401,
+       "completion_tokens": 93,
+       "total_tokens": 494,
+       "prompt_tokens_details": {
+        "cached_tokens": 162
+       }
+      },
+      "latency_s": 7.062,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "192db51d34a0554e95f0b84972423ecc688bfe82c8d3598cd08d2cdf6a0a44ae",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-ed68343690c1842c",
+   "location": "collaboration_opportunities[0]#s0",
+   "text": "proposal that builds on a cited fact {C2}",
+   "kind": "factual",
+   "cited_passages": [],
+   "citation_source": "marker_{C#}_via_claims",
+   "marker_mapping": {},
+   "unknown_citations": [
+    "C2"
+   ],
+   "introduced_by_repair": false,
+   "diagnostic_only": false,
+   "verdict": "unresolved",
+   "citation_status": null,
+   "reason": "reviewer response missing, invalid or untraceable after retries",
+   "reviewer_reason": "reviewer response missing, invalid or untraceable after retries",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unresolved",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "20793623c7827fbee844fc07f97e31bc6143db0eb218e163badc2073a94f72b8",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-ed68343690c1842c\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P-1\",\n  \"evidence_quote\": \"The proposal builds on a cited fact.\",\n  \"reason\": \"The evidence passage directly states that the proposal is based on a cited fact, which aligns with the statement.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 254,
+       "completion_tokens": 93,
+       "total_tokens": 347,
+       "prompt_tokens_details": {
+        "cached_tokens": 161
+       }
+      },
+      "latency_s": 7.28,
+      "error": null,
+      "validation_errors": [
+       "evidence_passage_id 'P-1' was not shown to the reviewer"
+      ]
+     },
+     {
+      "attempt": 1,
+      "prompt_sha256": "3cd1ee7a4510cb95a2d7a1f1a526d136233934e71255c94dbe4752131b53e994",
+      "raw_text": "```json\n{\"review_id\": \"R-ed68343690c1842c\", \"verdict\": \"supported\", \"evidence_passage_id\": \"P-1\", \"evidence_quote\": \"The proposal builds on a cited fact.\", \"reason\": \"The evidence passage directly states that the proposal is based on a cited fact, which aligns with the statement. The evidence is clear and unambiguous, supporting the statement without any additional interpretation or inference. The evidence does not contradict the statement and does not require any additional context to be considered valid. The evidence is specific and directly related to the company's activities, making it a strong support for the statement. The evidence is not a vendor or agency result, and it does not mention any past activity. Therefore, the statement is supported by the evidence.\"}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 282,
+       "completion_tokens": 175,
+       "total_tokens": 457,
+       "prompt_tokens_details": {
+        "cached_tokens": 248
+       }
+      },
+      "latency_s": 12.983,
+      "error": null,
+      "validation_errors": [
+       "evidence_passage_id 'P-1' was not shown to the reviewer"
+      ]
+     }
+    ],
+    "request_sha256": "8ca5a1f231a20d9d2d7a3b641afe7a3227b7b49417708c267d1d1f4f69fedc68",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-ea135e89f2556576",
+   "location": "instagram_post_idea.hook#s0",
+   "text": "string",
+   "kind": "factual",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": false,
+   "verdict": "unsupported",
+   "reviewer_verdict": "unsupported",
+   "citation_status": "uncited",
+   "flags": [],
+   "reason": "The statement 'string' is not supported by any evidence passages provided.",
+   "guard": null,
+   "reviewer_reason": "The statement 'string' is not supported by any evidence passages provided.",
+   "evidence_passage_id": null,
+   "evidence_quote": "",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "46902ef859750f2ad6494d34f1c65a4699a0950405883fc6d947b575a68a0baf",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-ea135e89f2556576\",\n  \"verdict\": \"unsupported\",\n  \"evidence_passage_id\": null,\n  \"evidence_quote\": null,\n  \"reason\": \"The statement 'string' is not supported by any evidence passages provided.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 249,
+       "completion_tokens": 76,
+       "total_tokens": 325,
+       "prompt_tokens_details": {
+        "cached_tokens": 161
+       }
+      },
+      "latency_s": 5.569,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "2ff221b496a504f48fc218ed1b2b3b8f8d27af252ead1442747a1fc3f8493b10",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-ea135e89f2556576",
+   "location": "instagram_post_idea.concept#s0",
+   "text": "string",
+   "duplicate_of": "R-ea135e89f2556576",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": "uncited",
+   "kind": "factual",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-ea135e89f2556576",
+   "location": "instagram_post_idea.why_it_fits#s0",
+   "text": "string",
+   "duplicate_of": "R-ea135e89f2556576",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": "uncited",
+   "kind": "factual",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-ea135e89f2556576",
+   "location": "email_subject#s0",
+   "text": "string",
+   "duplicate_of": "R-ea135e89f2556576",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": "uncited",
+   "kind": "factual",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-ea135e89f2556576",
+   "location": "email_body#s0",
+   "text": "string",
+   "duplicate_of": "R-ea135e89f2556576",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": "uncited",
+   "kind": "factual",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-a972a1150d2395fc",
+   "location": "claims[0].statement",
+   "text": "string",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": false,
+   "verdict": "unsupported",
+   "reviewer_verdict": "unsupported",
+   "citation_status": "cited",
+   "flags": [],
+   "reason": "The statement 'string' does not match any part of the evidence passages provided.",
+   "guard": null,
+   "reviewer_reason": "The statement 'string' does not match any part of the evidence passages provided.",
+   "evidence_passage_id": "P1",
+   "evidence_quote": "Full transparency — we work with producers we know, so both sides of the supply chain stay visible to each other. * Long-term partnership — we sustain these relationships over many years to build truly collaborative partnerships.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "6a75efb8edf4f0bca4b1b7e6f964ca81d4ff97bd438618aa75d9faad55c1e8d4",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-a972a1150d2395fc\",\n  \"verdict\": \"unsupported\",\n  \"evidence_passage_id\": \"P1\",\n  \"evidence_quote\": \"Full transparency — we work with producers we know, so both sides of the supply chain stay visible to each other. * Long-term partnership — we sustain these relationships over many years to build truly collaborative partnerships.\",\n  \"reason\": \"The statement 'string' does not match any part of the evidence passages provided.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 298,
+       "completion_tokens": 119,
+       "total_tokens": 417,
+       "prompt_tokens_details": {
+        "cached_tokens": 161
+       }
+      },
+      "latency_s": 8.782,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "b6dba45599973c9980c4bc01746a941be89bd0cda7bdddb95bc9e1dbd599f29f",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  }
+ ],
+ "skipped_sentences": {
+  "proposal": [
+   {
+    "location": "current_marketing_strategy[1]#s0",
+    "text": "Collaboration on"
+   }
+  ],
+  "non_assertion": [
+   {
+    "location": "likely_target_audience#s0",
+    "text": "The marketing team"
+   }
+  ]
+ },
+ "unknown_issues": [],
+ "outreach": {
+  "recipient": "unclear",
+  "sender": "unclear",
+  "instagram_mentioned": false,
+  "other_platforms_in_pitch": [],
+  "instagram_compliant": false,
+  "promises": [],
+  "email_subject": "string"
+ },
+ "failures": [
+  {
+   "check": "schema",
+   "detail": [
+    "claims[0].kind 'fact | provider_reported | premise' not in ('fact', 'provider_reported', 'premise')"
+   ]
+  },
+  {
+   "check": "template_placeholder_copies",
+   "detail": [
+    "output.claims[0].kind",
+    "output.claims[0].statement",
+    "output.claims[0].quote",
+    "output.collaboration_opportunities[0]",
+    "output.instagram_post_idea.hook"
+   ]
+  },
+  {
+   "check": "citation_ids",
+   "detail": [
+    "claim markers without a matching claim: ['C2']"
+   ]
+  },
+  {
+   "check": "claim_quotes",
+   "detail": [
+    {
+     "claim_id": "C1",
+     "self_quote": false,
+     "other_passage": []
+    }
+   ]
+  },
+  {
+   "check": "citation_mapping",
+   "review_id": "R-74870d1ab95c4856",
+   "location": "brand_summary#s0",
+   "text": "Full transparency — we work with producers we know, so both sides of the supply chain stay visible to each other. * Long-term partnership — we sustain these relationships over many years to build truly collaborative partnerships.",
+   "citation_status": "uncited",
+   "evidence_passage_id": "P1"
+  },
+  {
+   "check": "citation_mapping",
+   "review_id": "R-5dd7db4c0620cc96",
+   "location": "current_marketing_strategy[0]#s0",
+   "text": "Instagram",
+   "citation_status": "uncited",
+   "evidence_passage_id": "P8"
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-ea135e89f2556576",
+   "location": "instagram_post_idea.hook#s0",
+   "text": "string",
+   "verdict": "unsupported",
+   "reason": "The statement 'string' is not supported by any evidence passages provided.",
+   "evidence_passage_id": null,
+   "evidence_quote": ""
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-a972a1150d2395fc",
+   "location": "claims[0].statement",
+   "text": "string",
+   "verdict": "unsupported",
+   "reason": "The statement 'string' does not match any part of the evidence passages provided.",
+   "evidence_passage_id": "P1",
+   "evidence_quote": "Full transparency — we work with producers we know, so both sides of the supply chain stay visible to each other. * Long-term partnership — we sustain these relationships over many years to build truly collaborative partnerships."
+  },
+  {
+   "check": "sender_recipient",
+   "detail": [
+    "unclear",
+    "unclear"
+   ]
+  },
+  {
+   "check": "instagram",
+   "detail": []
+  }
+ ],
+ "unresolved": [
+  "R-ed68343690c1842c"
+ ],
+ "passes": false,
+ "failure_signature": "a1dcd8a5c44106f5646701e9148d34abde03a4b2f1281f16e407eded11441466",
+ "review_wall_s": 51.63,
+ "attempt": {
+  "index": 0,
+  "kind": "initial"
+ }
+}

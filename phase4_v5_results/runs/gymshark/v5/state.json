@@ -1,0 +1,76 @@
+{
+ "case_id": "gymshark/v5",
+ "company_id": "gymshark",
+ "arm": "v5",
+ "packet_path": "outputs/phase3_v5/packets/gymshark.json",
+ "packet_sha256": "baf2f85c805b22fb151e604697fef5da66c61b3b7a3f5c004f9342313cc4e20c",
+ "prompt_version": "brandpilot.prompt.v3.3",
+ "prompt_sha256": "28d0f8916f60325598791cbeb70ef7abe25e549dc701ea730c692530362d4125",
+ "max_repairs": 2,
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "dir": "phase4_v5_results/runs/gymshark/v5/attempt-00",
+   "prompt_sha256": "28d0f8916f60325598791cbeb70ef7abe25e549dc701ea730c692530362d4125",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "length",
+   "usage": {
+    "prompt_tokens": 2771,
+    "completion_tokens": 3072,
+    "total_tokens": 5843,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 93.37,
+   "runtime_verified": true,
+   "raw_sha256": "8691526f71072c92c1664ee7f93b35cbf1a11e8774f0cf34b241c78186e1a668",
+   "reused_from": "outputs/phase3_v5/runs/20261123T035048993302Z-gymshark-adapter-generation-dde101",
+   "passes": false,
+   "strict_ok": false,
+   "model_abstained": false,
+   "failure_count": 60,
+   "unresolved_count": 1,
+   "failure_signature": "6f0c0a4f9079265bf30e861f3a7e8997d9fd5f77c9f12a706811194e52a11dec",
+   "review_wall_s": 162.814,
+   "truncated": true,
+   "looping": true
+  },
+  {
+   "index": 1,
+   "kind": "regenerate_bounded",
+   "dir": "phase4_v5_results/runs/gymshark/v5/attempt-01",
+   "prompt_sha256": "0a4c5e022bea364c2a5726a849857a9364008454b8d2518009800fcaa7a5cb83",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "length",
+   "usage": {
+    "prompt_tokens": 2889,
+    "completion_tokens": 3072,
+    "total_tokens": 5961,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 113.335,
+   "runtime_verified": true,
+   "raw_sha256": "1cd7a037823893d6a57173082593906731ba52d0368542020d4dddfec4c7f511",
+   "reused_from": null,
+   "passes": false,
+   "strict_ok": false,
+   "model_abstained": false,
+   "truncated": true,
+   "looping": true,
+   "failure_count": 37,
+   "unresolved_count": 0,
+   "failure_signature": "3e18a1fbc9c51788c61604b422cc37a5af7b62323e18797e24aa161fa98b491c",
+   "review_wall_s": 0.014
+  }
+ ],
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "no progress: the repair repeated the same truncation failure",
+ "stop_code": "withheld_no_progress",
+ "eligibility": "eligible"
+}

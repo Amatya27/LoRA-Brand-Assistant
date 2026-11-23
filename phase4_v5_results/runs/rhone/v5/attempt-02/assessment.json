@@ -1,0 +1,96 @@
+{
+ "checks_version": "phase4-v5-checks-2",
+ "structure": {
+  "strict_json": true,
+  "truncated": false,
+  "parse_error": null,
+  "schema_errors": [
+   "missing key: decision",
+   "missing key: abstain_reason",
+   "missing key: claims",
+   "missing key: brand_summary",
+   "missing key: likely_target_audience",
+   "missing key: current_marketing_strategy",
+   "missing key: unknowns",
+   "missing key: marketing_gaps",
+   "missing key: collaboration_opportunities",
+   "missing key: instagram_post_idea",
+   "missing key: email_subject",
+   "missing key: email_body",
+   "decision must be 'draft' or 'abstain', got None"
+  ],
+  "parse_mode": "strict",
+  "prompt_schema_valid": false,
+  "training_schema_valid": false,
+  "raw_format": {
+   "starts_with_brace": true,
+   "code_fenced": false,
+   "text_outside_json": false
+  }
+ },
+ "decision": null,
+ "repetition": {
+  "method": "exact match after whitespace/quote/case normalisation; no semantic similarity",
+  "claim_count": 0,
+  "duplicate_claim_ids": [],
+  "duplicate_claim_statements": 0,
+  "distinct_claim_statements": 0,
+  "duplicate_claim_quotes": 0,
+  "repeated_prose_sentences": {},
+  "max_8gram_repeats_in_raw": 1,
+  "looping": false
+ },
+ "citation_mechanics": {
+  "inline_passage_refs": [],
+  "unknown_refs": [],
+  "claim_quotes": []
+ },
+ "assertions": [],
+ "skipped_sentences": {
+  "proposal": [],
+  "non_assertion": []
+ },
+ "unknown_issues": [],
+ "outreach": {
+  "recipient": "no_email",
+  "sender": "no_email",
+  "instagram_mentioned": false,
+  "other_platforms_in_pitch": [],
+  "instagram_compliant": false,
+  "promises": [],
+  "email_subject": ""
+ },
+ "failures": [
+  {
+   "check": "schema",
+   "detail": [
+    "missing key: decision",
+    "missing key: abstain_reason",
+    "missing key: claims",
+    "missing key: brand_summary",
+    "missing key: likely_target_audience"
+   ]
+  },
+  {
+   "check": "sender_recipient",
+   "detail": [
+    "no_email",
+    "no_email"
+   ]
+  },
+  {
+   "check": "instagram",
+   "detail": []
+  }
+ ],
+ "unresolved": [],
+ "unreviewed": [],
+ "review_scope": "structurally_valid_only",
+ "passes": false,
+ "failure_signature": "17647ce6b7a10100489a85fbae627dc56e54403ac83d9441c513f6b68ce362c0",
+ "review_wall_s": 0.0,
+ "attempt": {
+  "index": 2,
+  "kind": "targeted_fix"
+ }
+}

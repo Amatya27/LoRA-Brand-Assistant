@@ -1,0 +1,9 @@
+{
+ "amendment": 2,
+ "applies_to": "evaluation_config.json",
+ "made_after": "stage 1 initial generations; before any validation review",
+ "change": "run_phase4_v5.py: runtime_ledger_excerpt.jsonl now filters ledger events by messages hash AND requested adapter, and records ledger_source.txt; added the refresh-excerpts command and rebuilt every excerpt.",
+ "reason": "Base and v5 receive byte-identical messages, so the first excerpts mixed both arms' request events. Per-request runtime verification (run.json / generation.json) was unaffected; it already checks the served adapter and file hash.",
+ "evaluation_logic_changed": false,
+ "run_phase4_v5_sha256": "bce16bdd523c113abddc519458536ac3f222e4a88e4f5218c7258b4906ac9ca2"
+}

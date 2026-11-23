@@ -502,3 +502,63 @@ def test_guard_marks_negated_evidence_unresolved():
     g = support_guard("Larkspur Tea sells its teas in grocery stores.",
                       "Larkspur Tea sells only through its own website and does not sell in grocery stores.", "Larkspur Tea")
     assert g["negation_mismatch"] is True and g["problems"]
+
+
+def test_template_copy_with_abstain_decision_is_not_a_valid_abstention():
+    from brand_assistant_recovery import summarise_assessment
+    from brand_assistant_v3 import teacher_rules
+
+    template = teacher_rules("brandpilot.prompt.v3.3").split("Required JSON:\n", 1)[1]
+    template = template.replace('"draft" or "abstain"', '"abstain"').replace('"string or empty"', '"string or empty"')
+    template = template.replace('"fact | provider_reported | premise"', '"fact | provider_reported | premise"')
+    a = assess(template)
+    assert summarise_assessment(a)["model_abstained"] is False
+
+
+def test_clean_model_abstention_is_recognised():
+    from brand_assistant_recovery import summarise_assessment
+
+    out = good_output() | {"decision": "abstain", "evidence_status": "insufficient", "abstain_reason": "No usable premise.",
+                           "brand_summary": "INSUFFICIENT_EVIDENCE", "current_marketing_strategy": [],
+                           "collaboration_opportunities": [], "claims": [], "citations": [],
+                           "instagram_post_idea": {k: "INSUFFICIENT_EVIDENCE" for k in ("hook", "concept", "why_it_fits")},
+                           "email_subject": "INSUFFICIENT_EVIDENCE", "email_body": "INSUFFICIENT_EVIDENCE"}
+    assert summarise_assessment(assess(out))["model_abstained"] is True
+
+
+# --- amendment 4: review scope and structural no-progress ------------------------------------
+
+def test_malformed_repair_assertions_are_unreviewed_not_unresolved():
+    reviewer = MockReviewer()
+    text = json.dumps(good_output())[:-30] + "]}}"
+    a = assess(text, reviewer=reviewer, review_malformed=False)
+    assert reviewer.calls == 0 and a["unreviewed"] and not a["unresolved"]
+    assert all(r["verdict"] == "unreviewed" for r in a["assertions"] if "duplicate_of" not in r)
+    assert a["review_scope"] == "structurally_valid_only" and a["passes"] is False
+
+
+def test_same_truncation_after_repair_stops_with_no_progress(tmp_path):
+    loop = '{"decision": "draft", "brand_summary": "' + "Fernway makes socks [P1]. " * 40
+    loop2 = '{"decision": "draft", "brand_summary": "' + "Fernway sells socks [P1]. " * 40
+    gen = MockGenerator(loop, loop2, json.dumps(good_output()))
+    pk = packet()
+    state = CaseState("c1", "fernway", "mock", str(FIXTURE), pk["packet_sha256"], "v3.3", "x")
+    gen_finish = MockGenerator.generate
+
+    def truncated(self, prompt, out_dir):
+        rec = gen_finish(self, prompt, out_dir)
+        return {**rec, "finish_reason": "length"}
+
+    gen.generate = truncated.__get__(gen)
+    advance(state, pk, "PROMPT", tmp_path / "case", generator=gen, reviewer=MockReviewer(), cache=ReviewCache(tmp_path / "c"))
+    assert len(state.attempts) == 2 and len(gen.prompts) == 2
+    assert state.outcome == "withheld_failed_checks" and state.stop_code == "withheld_no_progress"
+
+
+def test_repair_that_fixes_structure_may_use_the_second_repair(tmp_path):
+    bad = good_output()
+    bad["brand_summary"] = "Fernway sells socks in 400 stores [P1]."
+    gen = MockGenerator('{"decision": "draft", "claims": [' + '{"id": "C1"}, ' * 50, json.dumps(bad), json.dumps(good_output()))
+    state = run_case(tmp_path, gen, MockReviewer(rules=[("400 stores", "unsupported", None, "")]))
+    assert [a["kind"] for a in state.attempts] == ["initial", "regenerate_bounded", "targeted_fix"]
+    assert state.outcome == "verified_pending_human_review" and state.stop_code == "verified"

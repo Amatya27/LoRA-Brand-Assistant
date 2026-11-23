@@ -1,0 +1,450 @@
+{
+ "checks_version": "phase4-v5-checks-2",
+ "structure": {
+  "strict_json": true,
+  "truncated": false,
+  "parse_error": null,
+  "schema_errors": [
+   "missing key: brand_summary",
+   "missing key: likely_target_audience",
+   "missing key: current_marketing_strategy",
+   "missing key: unknowns",
+   "missing key: marketing_gaps",
+   "missing key: collaboration_opportunities",
+   "missing key: instagram_post_idea",
+   "missing key: email_subject",
+   "missing key: email_body",
+   "claims[0].kind 'fact | provider_reported | premise' not in ('fact', 'provider_reported', 'premise')",
+   "claims[1].kind 'fact | provider_reported | premise' not in ('fact', 'provider_reported', 'premise')",
+   "claims[2].kind 'fact | provider_reported | premise' not in ('fact', 'provider_reported', 'premise')",
+   "claims[3].kind 'fact | provider_reported | premise' not in ('fact', 'provider_reported', 'premise')",
+   "claims[4].kind 'fact | provider_reported | premise' not in ('fact', 'provider_reported', 'premise')",
+   "claims[5].kind 'fact | provider_reported | premise' not in ('fact', 'provider_reported', 'premise')",
+   "claims[6].kind 'fact | provider_reported | premise' not in ('fact', 'provider_reported', 'premise')",
+   "claims[7].kind 'fact | provider_reported | premise' not in ('fact', 'provider_reported', 'premise')",
+   "claims[8].kind 'fact | provider_reported | premise' not in ('fact', 'provider_reported', 'premise')",
+   "claims[9].kind 'fact | provider_reported | premise' not in ('fact', 'provider_reported', 'premise')"
+  ],
+  "parse_mode": "strict",
+  "prompt_schema_valid": false,
+  "training_schema_valid": false,
+  "raw_format": {
+   "starts_with_brace": false,
+   "code_fenced": true,
+   "text_outside_json": true
+  }
+ },
+ "decision": "abstain",
+ "repetition": {
+  "method": "exact match after whitespace/quote/case normalisation; no semantic similarity",
+  "claim_count": 10,
+  "duplicate_claim_ids": [],
+  "duplicate_claim_statements": 8,
+  "distinct_claim_statements": 2,
+  "duplicate_claim_quotes": 8,
+  "repeated_prose_sentences": {},
+  "max_8gram_repeats_in_raw": 10,
+  "looping": true
+ },
+ "citation_mechanics": {
+  "inline_passage_refs": [],
+  "unknown_refs": [],
+  "claim_quotes": [
+   {
+    "index": 0,
+    "claim_id": "C1",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 1,
+    "claim_id": "C2",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 2,
+    "claim_id": "C3",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 3,
+    "claim_id": "C4",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 4,
+    "claim_id": "C5",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 5,
+    "claim_id": "C6",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 6,
+    "claim_id": "C7",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 7,
+    "claim_id": "C8",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 8,
+    "claim_id": "C9",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 9,
+    "claim_id": "C10",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   }
+  ]
+ },
+ "assertions": [
+  {
+   "review_id": "R-8fc35b7b56a86d1d",
+   "location": "claims[0].statement",
+   "text": "Outdoor Voices was founded in 2013 by Ty Haney.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": false,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-d188b2214852fe68",
+   "location": "claims[1].statement",
+   "text": "The company's mission is to \"Get The World Moving,\" celebrating sweat and maximizing happiness through movement because Endorphins Make You Happy.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": false,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-8fc35b7b56a86d1d",
+   "location": "claims[2].statement",
+   "text": "Outdoor Voices was founded in 2013 by Ty Haney.",
+   "duplicate_of": "R-8fc35b7b56a86d1d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-d188b2214852fe68",
+   "location": "claims[3].statement",
+   "text": "The company's mission is to \"Get The World Moving,\" celebrating sweat and maximizing happiness through movement because Endorphins Make You Happy.",
+   "duplicate_of": "R-d188b2214852fe68",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-8fc35b7b56a86d1d",
+   "location": "claims[4].statement",
+   "text": "Outdoor Voices was founded in 2013 by Ty Haney.",
+   "duplicate_of": "R-8fc35b7b56a86d1d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-d188b2214852fe68",
+   "location": "claims[5].statement",
+   "text": "The company's mission is to \"Get The World Moving,\" celebrating sweat and maximizing happiness through movement because Endorphins Make You Happy.",
+   "duplicate_of": "R-d188b2214852fe68",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-8fc35b7b56a86d1d",
+   "location": "claims[6].statement",
+   "text": "Outdoor Voices was founded in 2013 by Ty Haney.",
+   "duplicate_of": "R-8fc35b7b56a86d1d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-d188b2214852fe68",
+   "location": "claims[7].statement",
+   "text": "The company's mission is to \"Get The World Moving,\" celebrating sweat and maximizing happiness through movement because Endorphins Make You Happy.",
+   "duplicate_of": "R-d188b2214852fe68",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-8fc35b7b56a86d1d",
+   "location": "claims[8].statement",
+   "text": "Outdoor Voices was founded in 2013 by Ty Haney.",
+   "duplicate_of": "R-8fc35b7b56a86d1d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-d188b2214852fe68",
+   "location": "claims[9].statement",
+   "text": "The company's mission is to \"Get The World Moving,\" celebrating sweat and maximizing happiness through movement because Endorphins Make You Happy.",
+   "duplicate_of": "R-d188b2214852fe68",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  }
+ ],
+ "skipped_sentences": {
+  "proposal": [],
+  "non_assertion": []
+ },
+ "unknown_issues": [],
+ "outreach": {
+  "recipient": "no_email",
+  "sender": "no_email",
+  "instagram_mentioned": false,
+  "other_platforms_in_pitch": [],
+  "instagram_compliant": false,
+  "promises": [],
+  "email_subject": ""
+ },
+ "failures": [
+  {
+   "check": "schema",
+   "detail": [
+    "missing key: brand_summary",
+    "missing key: likely_target_audience",
+    "missing key: current_marketing_strategy",
+    "missing key: unknowns",
+    "missing key: marketing_gaps"
+   ]
+  },
+  {
+   "check": "template_placeholder_copies",
+   "detail": [
+    "output.abstain_reason",
+    "output.claims[0].kind",
+    "output.claims[1].kind",
+    "output.claims[2].kind",
+    "output.claims[3].kind"
+   ]
+  },
+  {
+   "check": "duplicate_claims",
+   "detail": [
+    [],
+    8
+   ]
+  },
+  {
+   "check": "repetition",
+   "detail": [
+    10
+   ]
+  },
+  {
+   "check": "claim_quotes",
+   "detail": [
+    {
+     "claim_id": "C1",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C2",
+     "self_quote": true,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C3",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C4",
+     "self_quote": true,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C5",
+     "self_quote": false,
+     "other_passage": []
+    }
+   ]
+  },
+  {
+   "check": "sender_recipient",
+   "detail": [
+    "no_email",
+    "no_email"
+   ]
+  },
+  {
+   "check": "instagram",
+   "detail": []
+  }
+ ],
+ "unresolved": [],
+ "unreviewed": [
+  "R-8fc35b7b56a86d1d",
+  "R-d188b2214852fe68"
+ ],
+ "review_scope": "structurally_valid_only",
+ "passes": false,
+ "failure_signature": "2ae21605d97a1c344601084252d29e155922e79fe84a341c8afcb9d5219fbb9c",
+ "review_wall_s": 0.005,
+ "attempt": {
+  "index": 1,
+  "kind": "regenerate_bounded"
+ }
+}

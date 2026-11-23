@@ -1,0 +1,106 @@
+{
+ "case_id": "outdoor-voices/base",
+ "company_id": "outdoor-voices",
+ "arm": "base",
+ "packet_path": "outputs/phase3_v5/handoff_6efa346/data/v3_pilot/packets/outdoor-voices.json",
+ "packet_sha256": "fb3e615c99b46c771dbad20e22c50265924457d570787815464636572221af43",
+ "prompt_version": "brandpilot.prompt.v3.3",
+ "prompt_sha256": "c3012daeb989515469b795c2dcc033d396d065cce0c00bb2b6ab430ee33806f7",
+ "max_repairs": 2,
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "dir": "phase4_v5_results/runs/outdoor-voices/base/attempt-00",
+   "prompt_sha256": "c3012daeb989515469b795c2dcc033d396d065cce0c00bb2b6ab430ee33806f7",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "stop",
+   "usage": {
+    "prompt_tokens": 3448,
+    "completion_tokens": 269,
+    "total_tokens": 3717,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 12.398,
+   "runtime_verified": true,
+   "raw_sha256": "33dc1dfb07852289d4f8865976859e7b05466279b9ca46ac1c7eccf5e82c7f48",
+   "reused_from": null,
+   "passes": false,
+   "strict_ok": false,
+   "model_abstained": false,
+   "failure_count": 5,
+   "unresolved_count": 0,
+   "failure_signature": "04be7f1e3f6288f1cb802aa35b112b3821871a07c40784f5815978ed2fdd3d24",
+   "review_wall_s": 18.862,
+   "truncated": false,
+   "looping": false
+  },
+  {
+   "index": 1,
+   "kind": "regenerate_bounded",
+   "dir": "phase4_v5_results/runs/outdoor-voices/base/attempt-01",
+   "prompt_sha256": "8e7af23180a3001e90826cc15c9bf0557cd2f73a5b0f8b9ca0a0af87c392b09d",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "stop",
+   "usage": {
+    "prompt_tokens": 3561,
+    "completion_tokens": 991,
+    "total_tokens": 4552,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 28.823,
+   "runtime_verified": true,
+   "raw_sha256": "b1be9173f660a6e09630afee2b1eadd42edbca74ca4076f4e7ad277251f2535e",
+   "reused_from": null,
+   "passes": false,
+   "strict_ok": true,
+   "model_abstained": false,
+   "truncated": false,
+   "looping": true,
+   "failure_count": 7,
+   "unresolved_count": 0,
+   "failure_signature": "2ae21605d97a1c344601084252d29e155922e79fe84a341c8afcb9d5219fbb9c",
+   "review_wall_s": 0.005
+  },
+  {
+   "index": 2,
+   "kind": "targeted_fix",
+   "dir": "phase4_v5_results/runs/outdoor-voices/base/attempt-02",
+   "prompt_sha256": "9737fd3e2860d9757fe129fc8ea4ac13c594f11f05b8d7f00da978fec3170ea7",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "length",
+   "usage": {
+    "prompt_tokens": 3705,
+    "completion_tokens": 3072,
+    "total_tokens": 6777,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 66.901,
+   "runtime_verified": true,
+   "raw_sha256": "6b2511c96439de019058641a939f0351e41f71b09eff0b1444e28168fa53fa29",
+   "reused_from": null,
+   "passes": false,
+   "strict_ok": false,
+   "model_abstained": false,
+   "truncated": true,
+   "looping": true,
+   "failure_count": 6,
+   "unresolved_count": 0,
+   "failure_signature": "f7bcc7993ff61f6468cff2eb65d377c1b523e7cdd14042e1abca051b2089f5eb",
+   "review_wall_s": 0.01
+  }
+ ],
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "repair budget exhausted (2)",
+ "stop_code": "withheld_budget_exhausted",
+ "eligibility": "eligible"
+}

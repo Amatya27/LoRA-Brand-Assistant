@@ -1,0 +1,636 @@
+{
+ "checks_version": "phase4-v5-checks-2",
+ "structure": {
+  "strict_json": false,
+  "truncated": true,
+  "parse_error": {
+   "error_type": "truncated_output",
+   "truncated": true,
+   "finish_reason": "length",
+   "unbalanced_braces": true,
+   "message": "Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 100 column 20 (char 13712)"
+  },
+  "schema_errors": [
+   "truncated_output: Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 100 column 20 (char 13712)"
+  ],
+  "parse_mode": "diagnostic_prefix",
+  "prompt_schema_valid": false,
+  "training_schema_valid": false,
+  "raw_format": {
+   "starts_with_brace": false,
+   "code_fenced": true,
+   "text_outside_json": null
+  }
+ },
+ "decision": null,
+ "repetition": {
+  "method": "exact match after whitespace/quote/case normalisation; no semantic similarity",
+  "claim_count": 13,
+  "duplicate_claim_ids": [],
+  "duplicate_claim_statements": 6,
+  "distinct_claim_statements": 7,
+  "duplicate_claim_quotes": 7,
+  "repeated_prose_sentences": {},
+  "max_8gram_repeats_in_raw": 9,
+  "looping": false
+ },
+ "citation_mechanics": {
+  "inline_passage_refs": [],
+  "unknown_refs": [],
+  "claim_quotes": [
+   {
+    "index": 0,
+    "claim_id": "C1",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": true,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 1,
+    "claim_id": "C2",
+    "passage_ids": [
+     "P2"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": true,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 2,
+    "claim_id": "C3",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 3,
+    "claim_id": "C4",
+    "passage_ids": [
+     "P5"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 4,
+    "claim_id": "C5",
+    "passage_ids": [
+     "P6"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [
+     "P9"
+    ],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 5,
+    "claim_id": "C6",
+    "passage_ids": [
+     "P7"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [
+     "P10"
+    ],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 6,
+    "claim_id": "C7",
+    "passage_ids": [
+     "P8"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 7,
+    "claim_id": "C8",
+    "passage_ids": [
+     "P9"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": true,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 8,
+    "claim_id": "C9",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": true,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 9,
+    "claim_id": "C10",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 10,
+    "claim_id": "C11",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [
+     "P9"
+    ],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 11,
+    "claim_id": "C12",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": true,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 12,
+    "claim_id": "C13",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   }
+  ]
+ },
+ "assertions": [
+  {
+   "review_id": "R-d4dc66659a0e280b",
+   "location": "claims[0].statement",
+   "text": "Access for All Thrive Gives has been our promise since day one: every annual membership sponsors a free membership for a family in need.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-0f19ad485d3706de",
+   "location": "claims[1].statement",
+   "text": "Planet First For a healthier planet, we’re committed to sustainable practices in three key areas of our business: science-aligned carbon emission reductions, zero-waste warehouses, and plastic-neutral packaging for Thrive Market brands and shipping materials for all member orders.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P2"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-e3046e039f155f98",
+   "location": "claims[2].statement",
+   "text": "Instacart also offers a subscription, Instacart+, which provides unlimited delivery and reduced fees. Grove Collaborative: Founded in 2012, Grove Collaborative is a subscription-based ecommerce platform where customers can find and place one-time or recurring orders of sustainably made household, beauty, and personal care items and have them delivered straight to their doors. Grove Collaborative, like Thrive Market, ships to the contiguous United States and produces its own private label brand called Grove Co., with over 300 private label products in 2024. Like Thrive Market, it also partners with third-party brands to list their products on its site.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-4cc04a070a77c9c8",
+   "location": "claims[3].statement",
+   "text": "Counder As of July 2025, Thrive Market was doing over $700 million in annual sales, carried over 750 brands, and had over 1.6 million paying members. In December 2024, Thrive Market began accepting SNAP EBT as a form of payment, opening up another revenue stream by offering healthier food options to low-income households who might otherwise have access to organic groceries. In the first two months after its launch, Thrive Market generated over $1 million in revenue from SNAP EBT payments. Even before raising for the first time, Thrive Market built up a network of influencers across social channels such as blogs, Instagram, and YouTube to promote its product and mission.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P5"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-601859afe2144ff7",
+   "location": "claims[4].statement",
+   "text": "The challenge was to balance a purpose-driven story with the practical details customers need to start shopping. The decision was to focus on the benefits of Thrive Market's offerings, rather than the complexities of the subscription model. While Thrive Market has mastered these critical early steps in their content loop, this area is exactly where many businesses doing \"content marketing\" struggle the most.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P6"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-f8208b10d147cdca",
+   "location": "claims[5].statement",
+   "text": "All Values Whether you’re looking for gluten-free snacks, hypoallergenic cleaning products, or organic baby food, we have something for every dietary need and lifestyle. Shop by what matters to you with more than 90 values. Less - DietsCertifications & AwardsHealth & IngredientsEnvironmental & SocialBy Concern",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P7"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-eb571fa27e34ce8e",
+   "location": "claims[6].statement",
+   "text": "The decision was to focus on the benefits of Thrive Market's offerings, rather than the complexities of the subscription model. While Thrive Market has mastered these critical early steps in their content loop, this area is exactly where many businesses doing \"content marketing\" struggle the most.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P8"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-56bff6691930db61",
+   "location": "claims[7].statement",
+   "text": "The challenge was to balance a purpose-driven story with the practical details customers need to start shopping. The decision was to focus on the benefits of Thrive Market’s offerings, rather than the complexities of the subscription model. While Thrive Market has mastered these critical early steps in their content loop, this area is exactly where many businesses doing \"content marketing\" struggle the most.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P9"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [
+    "provider_result_unattributed"
+   ],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-d6e6193dd026edf1",
+   "location": "claims[8].statement",
+   "text": "The decision was to focus on the benefits of Thrive Market’s offerings, rather than the complexities of the subscription model. While Thrive Market has mastered these critical early steps in their content loop, this area is exactly where many businesses doing \"content marketing\" struggle the most.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-d6e6193dd026edf1",
+   "location": "claims[9].statement",
+   "text": "The decision was to focus on the benefits of Thrive Market’s offerings, rather than the complexities of the subscription model. While Thrive Market has mastered these critical early steps in their content loop, this area is exactly where many businesses doing \"content marketing\" struggle the most.",
+   "duplicate_of": "R-d6e6193dd026edf1",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-883ccef97c5d281f",
+   "location": "claims[10].statement",
+   "text": "The challenge was to balance a purpose-driven story with the practical details customers need to start shopping. The decision was to focus on the benefits of Thrive Market’s offerings, rather than the complexities of the subscription model. While Thrive Market has mastered these critical early steps in their content loop, this area is exactly where many businesses doing \"content marketing\" struggle the most.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-d6e6193dd026edf1",
+   "location": "claims[11].statement",
+   "text": "The decision was to focus on the benefits of Thrive Market’s offerings, rather than the complexities of the subscription model. While Thrive Market has mastered these critical early steps in their content loop, this area is exactly where many businesses doing \"content marketing\" struggle the most.",
+   "duplicate_of": "R-d6e6193dd026edf1",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-d6e6193dd026edf1",
+   "location": "claims[12].statement",
+   "text": "The decision was to focus on the benefits of Thrive Market’s offerings, rather than the complexities of the subscription model. While Thrive Market has mastered these critical early steps in their content loop, this area is exactly where many businesses doing \"content marketing\" struggle the most.",
+   "duplicate_of": "R-d6e6193dd026edf1",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  }
+ ],
+ "skipped_sentences": {
+  "proposal": [],
+  "non_assertion": []
+ },
+ "unknown_issues": [],
+ "outreach": {
+  "recipient": "no_email",
+  "sender": "no_email",
+  "instagram_mentioned": false,
+  "other_platforms_in_pitch": [],
+  "instagram_compliant": false,
+  "promises": [],
+  "email_subject": ""
+ },
+ "failures": [
+  {
+   "check": "structure",
+   "detail": [
+    "truncated_output: Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 100 column 20 (char 13712)"
+   ]
+  },
+  {
+   "check": "duplicate_claims",
+   "detail": [
+    [],
+    6
+   ]
+  },
+  {
+   "check": "claim_quotes",
+   "detail": [
+    {
+     "claim_id": "C3",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C4",
+     "self_quote": true,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C5",
+     "self_quote": false,
+     "other_passage": [
+      "P9"
+     ]
+    },
+    {
+     "claim_id": "C6",
+     "self_quote": false,
+     "other_passage": [
+      "P10"
+     ]
+    },
+    {
+     "claim_id": "C7",
+     "self_quote": false,
+     "other_passage": []
+    }
+   ]
+  },
+  {
+   "check": "sender_recipient",
+   "detail": [
+    "no_email",
+    "no_email"
+   ]
+  },
+  {
+   "check": "instagram",
+   "detail": []
+  }
+ ],
+ "unresolved": [],
+ "unreviewed": [
+  "R-d4dc66659a0e280b",
+  "R-0f19ad485d3706de",
+  "R-e3046e039f155f98",
+  "R-4cc04a070a77c9c8",
+  "R-601859afe2144ff7",
+  "R-f8208b10d147cdca",
+  "R-eb571fa27e34ce8e",
+  "R-56bff6691930db61",
+  "R-d6e6193dd026edf1",
+  "R-883ccef97c5d281f"
+ ],
+ "review_scope": "structurally_valid_only",
+ "passes": false,
+ "failure_signature": "29147fe7d32a2098e3923b76a66dbb7a2cbc7ec9198fcdcb1eaed27c52f7cd2b",
+ "review_wall_s": 0.01,
+ "attempt": {
+  "index": 2,
+  "kind": "regenerate_bounded"
+ }
+}

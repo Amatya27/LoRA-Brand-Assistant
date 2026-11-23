@@ -1,0 +1,693 @@
+{
+ "checks_version": "phase4-v5-checks-2",
+ "structure": {
+  "strict_json": true,
+  "truncated": true,
+  "parse_error": null,
+  "schema_errors": [
+   "truncated_output: server reported finish_reason=length",
+   "missing key: brand_summary",
+   "missing key: likely_target_audience",
+   "missing key: current_marketing_strategy",
+   "missing key: unknowns",
+   "missing key: marketing_gaps",
+   "missing key: collaboration_opportunities",
+   "missing key: instagram_post_idea",
+   "missing key: email_subject",
+   "missing key: email_body",
+   "claims[0].kind 'fact | provider_reported | premise' not in ('fact', 'provider_reported', 'premise')",
+   "claims[1].kind 'fact | provider_reported | premise' not in ('fact', 'provider_reported', 'premise')",
+   "claims[2].kind 'fact | provider_reported | premise' not in ('fact', 'provider_reported', 'premise')",
+   "claims[3].kind 'fact | provider_reported | premise' not in ('fact', 'provider_reported', 'premise')",
+   "claims[4].kind 'fact | provider_reported | premise' not in ('fact', 'provider_reported', 'premise')",
+   "claims[5].kind 'fact | brand_description | premise' not in ('fact', 'provider_reported', 'premise')",
+   "claims[6].kind 'fact | brand_description | premise' not in ('fact', 'provider_reported', 'premise')",
+   "claims[7].kind 'fact | brand_description | premise' not in ('fact', 'provider_reported', 'premise')",
+   "claims[8].kind 'fact | brand_description | premise' not in ('fact', 'provider_reported', 'premise')",
+   "claims[9].kind 'fact | brand_description | premise' not in ('fact', 'provider_reported', 'premise')",
+   "claims[10].kind 'fact | brand_description | premise' not in ('fact', 'provider_reported', 'premise')",
+   "claims[11].kind 'fact | brand_description | premise' not in ('fact', 'provider_reported', 'premise')",
+   "claims[12].kind 'fact | brand_description | premise' not in ('fact', 'provider_reported', 'premise')",
+   "claims[13].kind 'fact | brand_description | premise' not in ('fact', 'provider_reported', 'premise')",
+   "claims[14].kind 'fact | brand_description | premise' not in ('fact', 'provider_reported', 'premise')",
+   "claims[15].kind 'fact | brand_description | premise' not in ('fact', 'provider_reported', 'premise')",
+   "claims[16].kind 'fact | brand_description | premise' not in ('fact', 'provider_reported', 'premise')",
+   "claims[17].kind 'fact | brand_description | premise' not in ('fact', 'provider_reported', 'premise')",
+   "claims[18].kind 'fact | brand_description | premise' not in ('fact', 'provider_reported', 'premise')",
+   "claims[19].kind 'fact | brand_description | premise' not in ('fact', 'provider_reported', 'premise')"
+  ],
+  "parse_mode": "diagnostic_full_object",
+  "prompt_schema_valid": false,
+  "training_schema_valid": false,
+  "raw_format": {
+   "starts_with_brace": false,
+   "code_fenced": true,
+   "text_outside_json": true
+  }
+ },
+ "decision": null,
+ "repetition": {
+  "method": "exact match after whitespace/quote/case normalisation; no semantic similarity",
+  "claim_count": 20,
+  "duplicate_claim_ids": [],
+  "duplicate_claim_statements": 19,
+  "distinct_claim_statements": 1,
+  "duplicate_claim_quotes": 19,
+  "repeated_prose_sentences": {},
+  "max_8gram_repeats_in_raw": 33,
+  "looping": true
+ },
+ "citation_mechanics": {
+  "inline_passage_refs": [],
+  "unknown_refs": [],
+  "claim_quotes": [
+   {
+    "index": 0,
+    "claim_id": "C1",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 1,
+    "claim_id": "C2",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 2,
+    "claim_id": "C3",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 3,
+    "claim_id": "C4",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 4,
+    "claim_id": "C5",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 5,
+    "claim_id": "C6",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 6,
+    "claim_id": "C7",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 7,
+    "claim_id": "C8",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 8,
+    "claim_id": "C9",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 9,
+    "claim_id": "C10",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 10,
+    "claim_id": "C11",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 11,
+    "claim_id": "C12",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 12,
+    "claim_id": "C13",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 13,
+    "claim_id": "C14",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 14,
+    "claim_id": "C15",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 15,
+    "claim_id": "C16",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 16,
+    "claim_id": "C17",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 17,
+    "claim_id": "C18",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 18,
+    "claim_id": "C19",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 19,
+    "claim_id": "C20",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   }
+  ]
+ },
+ "assertions": [
+  {
+   "review_id": "R-8fc35b7b56a86d1d",
+   "location": "claims[0].statement",
+   "text": "Outdoor Voices was founded in 2013 by Ty Haney.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-8fc35b7b56a86d1d",
+   "location": "claims[1].statement",
+   "text": "Outdoor Voices was founded in 2013 by Ty Haney.",
+   "duplicate_of": "R-8fc35b7b56a86d1d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-8fc35b7b56a86d1d",
+   "location": "claims[2].statement",
+   "text": "Outdoor Voices was founded in 2013 by Ty Haney.",
+   "duplicate_of": "R-8fc35b7b56a86d1d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-8fc35b7b56a86d1d",
+   "location": "claims[3].statement",
+   "text": "Outdoor Voices was founded in 2013 by Ty Haney.",
+   "duplicate_of": "R-8fc35b7b56a86d1d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-8fc35b7b56a86d1d",
+   "location": "claims[4].statement",
+   "text": "Outdoor Voices was founded in 2013 by Ty Haney.",
+   "duplicate_of": "R-8fc35b7b56a86d1d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-8fc35b7b56a86d1d",
+   "location": "claims[5].statement",
+   "text": "Outdoor Voices was founded in 2013 by Ty Haney.",
+   "duplicate_of": "R-8fc35b7b56a86d1d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-8fc35b7b56a86d1d",
+   "location": "claims[6].statement",
+   "text": "Outdoor Voices was founded in 2013 by Ty Haney.",
+   "duplicate_of": "R-8fc35b7b56a86d1d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-8fc35b7b56a86d1d",
+   "location": "claims[7].statement",
+   "text": "Outdoor Voices was founded in 2013 by Ty Haney.",
+   "duplicate_of": "R-8fc35b7b56a86d1d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-8fc35b7b56a86d1d",
+   "location": "claims[8].statement",
+   "text": "Outdoor Voices was founded in 2013 by Ty Haney.",
+   "duplicate_of": "R-8fc35b7b56a86d1d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-8fc35b7b56a86d1d",
+   "location": "claims[9].statement",
+   "text": "Outdoor Voices was founded in 2013 by Ty Haney.",
+   "duplicate_of": "R-8fc35b7b56a86d1d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-8fc35b7b56a86d1d",
+   "location": "claims[10].statement",
+   "text": "Outdoor Voices was founded in 2013 by Ty Haney.",
+   "duplicate_of": "R-8fc35b7b56a86d1d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-8fc35b7b56a86d1d",
+   "location": "claims[11].statement",
+   "text": "Outdoor Voices was founded in 2013 by Ty Haney.",
+   "duplicate_of": "R-8fc35b7b56a86d1d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-8fc35b7b56a86d1d",
+   "location": "claims[12].statement",
+   "text": "Outdoor Voices was founded in 2013 by Ty Haney.",
+   "duplicate_of": "R-8fc35b7b56a86d1d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-8fc35b7b56a86d1d",
+   "location": "claims[13].statement",
+   "text": "Outdoor Voices was founded in 2013 by Ty Haney.",
+   "duplicate_of": "R-8fc35b7b56a86d1d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-8fc35b7b56a86d1d",
+   "location": "claims[14].statement",
+   "text": "Outdoor Voices was founded in 2013 by Ty Haney.",
+   "duplicate_of": "R-8fc35b7b56a86d1d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-8fc35b7b56a86d1d",
+   "location": "claims[15].statement",
+   "text": "Outdoor Voices was founded in 2013 by Ty Haney.",
+   "duplicate_of": "R-8fc35b7b56a86d1d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-8fc35b7b56a86d1d",
+   "location": "claims[16].statement",
+   "text": "Outdoor Voices was founded in 2013 by Ty Haney.",
+   "duplicate_of": "R-8fc35b7b56a86d1d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-8fc35b7b56a86d1d",
+   "location": "claims[17].statement",
+   "text": "Outdoor Voices was founded in 2013 by Ty Haney.",
+   "duplicate_of": "R-8fc35b7b56a86d1d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-8fc35b7b56a86d1d",
+   "location": "claims[18].statement",
+   "text": "Outdoor Voices was founded in 2013 by Ty Haney.",
+   "duplicate_of": "R-8fc35b7b56a86d1d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-8fc35b7b56a86d1d",
+   "location": "claims[19].statement",
+   "text": "Outdoor Voices was founded in 2013 by Ty Haney.",
+   "duplicate_of": "R-8fc35b7b56a86d1d",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  }
+ ],
+ "skipped_sentences": {
+  "proposal": [],
+  "non_assertion": []
+ },
+ "unknown_issues": [],
+ "outreach": {
+  "recipient": "no_email",
+  "sender": "no_email",
+  "instagram_mentioned": false,
+  "other_platforms_in_pitch": [],
+  "instagram_compliant": false,
+  "promises": [],
+  "email_subject": ""
+ },
+ "failures": [
+  {
+   "check": "structure",
+   "detail": [
+    "truncated_output: server reported finish_reason=length",
+    "missing key: brand_summary",
+    "missing key: likely_target_audience"
+   ]
+  },
+  {
+   "check": "duplicate_claims",
+   "detail": [
+    [],
+    19
+   ]
+  },
+  {
+   "check": "repetition",
+   "detail": [
+    33
+   ]
+  },
+  {
+   "check": "claim_quotes",
+   "detail": [
+    {
+     "claim_id": "C1",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C2",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C3",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C4",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C5",
+     "self_quote": false,
+     "other_passage": []
+    }
+   ]
+  },
+  {
+   "check": "sender_recipient",
+   "detail": [
+    "no_email",
+    "no_email"
+   ]
+  },
+  {
+   "check": "instagram",
+   "detail": []
+  }
+ ],
+ "unresolved": [],
+ "unreviewed": [
+  "R-8fc35b7b56a86d1d"
+ ],
+ "review_scope": "structurally_valid_only",
+ "passes": false,
+ "failure_signature": "f7bcc7993ff61f6468cff2eb65d377c1b523e7cdd14042e1abca051b2089f5eb",
+ "review_wall_s": 0.01,
+ "attempt": {
+  "index": 2,
+  "kind": "targeted_fix"
+ }
+}

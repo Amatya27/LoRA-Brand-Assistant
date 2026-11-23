@@ -1,0 +1,106 @@
+{
+ "case_id": "pela/v5",
+ "company_id": "pela",
+ "arm": "v5",
+ "packet_path": "outputs/phase3_v5/handoff_6efa346/data/v3_pilot/packets/pela.json",
+ "packet_sha256": "8a29de2d7cb594d04380ab8a2de0c9e172e30811b9fa6fa80ce741cadb703fbf",
+ "prompt_version": "brandpilot.prompt.v3.3",
+ "prompt_sha256": "6a93f74b7c6224570615c144fa9c426ea7154944981efd49e528dcee96af0f5d",
+ "max_repairs": 2,
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "dir": "phase4_v5_results/runs/pela/v5/attempt-00",
+   "prompt_sha256": "6a93f74b7c6224570615c144fa9c426ea7154944981efd49e528dcee96af0f5d",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "stop",
+   "usage": {
+    "prompt_tokens": 2545,
+    "completion_tokens": 301,
+    "total_tokens": 2846,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 12.505,
+   "runtime_verified": true,
+   "raw_sha256": "e01ce999ae4984a5f00f6a69860866a06b44115628f65867c3ada092696042f0",
+   "reused_from": null,
+   "passes": false,
+   "strict_ok": true,
+   "model_abstained": false,
+   "failure_count": 10,
+   "unresolved_count": 3,
+   "failure_signature": "ce95702415c7a39e98e4f8e2d550964adabd9ec2e16d879363c8bab79a0baa71",
+   "review_wall_s": 233.902,
+   "truncated": false,
+   "looping": false
+  },
+  {
+   "index": 1,
+   "kind": "targeted_fix",
+   "dir": "phase4_v5_results/runs/pela/v5/attempt-01",
+   "prompt_sha256": "5e132cddda1b6ad3b3846f8a075597f99c7b89aea4deea621876b37079148ed9",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "length",
+   "usage": {
+    "prompt_tokens": 3199,
+    "completion_tokens": 3072,
+    "total_tokens": 6271,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 72.719,
+   "runtime_verified": true,
+   "raw_sha256": "f0fc318f307cd3b092021da5dc298f56471f528477da452ef2ba58687f332cee",
+   "reused_from": null,
+   "passes": false,
+   "strict_ok": false,
+   "model_abstained": false,
+   "truncated": true,
+   "looping": false,
+   "failure_count": 3,
+   "unresolved_count": 0,
+   "failure_signature": "0365fa43ffca1b545721e086e7fa9cdd7055a9f52390c170b118dbea2e746f0f",
+   "review_wall_s": 0.0
+  },
+  {
+   "index": 2,
+   "kind": "regenerate_bounded",
+   "dir": "phase4_v5_results/runs/pela/v5/attempt-02",
+   "prompt_sha256": "9300f1add53c0a8fe90cc34fa6459205f46ddb0a9890d0c24fe3d8e363a127cb",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "length",
+   "usage": {
+    "prompt_tokens": 2660,
+    "completion_tokens": 3072,
+    "total_tokens": 5732,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 76.751,
+   "runtime_verified": true,
+   "raw_sha256": "87033a254dec63101968d70131da10bfa5a20aeda40c6de9d9510b422ebfc7f5",
+   "reused_from": null,
+   "passes": false,
+   "strict_ok": false,
+   "model_abstained": false,
+   "truncated": true,
+   "looping": true,
+   "failure_count": 4,
+   "unresolved_count": 0,
+   "failure_signature": "67e0addb7b5cd326e60a7bb350c88d6a1b0b76226616a462b6719d34635828b7",
+   "review_wall_s": 0.001
+  }
+ ],
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "no progress: the repair repeated the same truncation failure",
+ "stop_code": "withheld_no_progress",
+ "eligibility": "eligible"
+}

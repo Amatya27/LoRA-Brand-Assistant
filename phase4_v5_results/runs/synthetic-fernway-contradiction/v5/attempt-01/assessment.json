@@ -1,0 +1,2077 @@
+{
+ "checks_version": "phase4-v5-checks-2",
+ "structure": {
+  "strict_json": false,
+  "truncated": true,
+  "parse_error": {
+   "error_type": "truncated_output",
+   "truncated": true,
+   "finish_reason": "length",
+   "unbalanced_braces": true,
+   "message": "Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 1 column 11623 (char 11622)"
+  },
+  "schema_errors": [
+   "truncated_output: Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 1 column 11623 (char 11622)"
+  ],
+  "parse_mode": "diagnostic_prefix",
+  "prompt_schema_valid": false,
+  "training_schema_valid": false,
+  "raw_format": {
+   "starts_with_brace": true,
+   "code_fenced": false,
+   "text_outside_json": null
+  }
+ },
+ "decision": null,
+ "repetition": {
+  "method": "exact match after whitespace/quote/case normalisation; no semantic similarity",
+  "claim_count": 50,
+  "duplicate_claim_ids": [],
+  "duplicate_claim_statements": 48,
+  "distinct_claim_statements": 2,
+  "duplicate_claim_quotes": 48,
+  "repeated_prose_sentences": {
+   "fernway has a referral program for hiking customers.": [
+    "brand_summary",
+    "brand_summary",
+    "brand_summary",
+    "brand_summary"
+   ],
+   "fernway has a newsletter series about merino sock care.": [
+    "brand_summary",
+    "brand_summary",
+    "brand_summary",
+    "brand_summary",
+    "brand_summary",
+    "brand_summary"
+   ]
+  },
+  "max_8gram_repeats_in_raw": 49,
+  "looping": true
+ },
+ "citation_mechanics": {
+  "inline_passage_refs": [
+   "P1",
+   "P2",
+   "P3",
+   "P3",
+   "P3",
+   "P3",
+   "P3",
+   "P3",
+   "P3",
+   "P3",
+   "P3",
+   "P3",
+   "P2"
+  ],
+  "unknown_refs": [],
+  "claim_quotes": [
+   {
+    "index": 0,
+    "claim_id": "C1",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": true,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 1,
+    "claim_id": "C2",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 2,
+    "claim_id": "C3",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 3,
+    "claim_id": "C4",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 4,
+    "claim_id": "C5",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 5,
+    "claim_id": "C6",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 6,
+    "claim_id": "C7",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 7,
+    "claim_id": "C8",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 8,
+    "claim_id": "C9",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 9,
+    "claim_id": "C10",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 10,
+    "claim_id": "C11",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 11,
+    "claim_id": "C12",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 12,
+    "claim_id": "C13",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 13,
+    "claim_id": "C14",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 14,
+    "claim_id": "C15",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 15,
+    "claim_id": "C16",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 16,
+    "claim_id": "C17",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 17,
+    "claim_id": "C18",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 18,
+    "claim_id": "C19",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 19,
+    "claim_id": "C20",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 20,
+    "claim_id": "C21",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 21,
+    "claim_id": "C22",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 22,
+    "claim_id": "C23",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 23,
+    "claim_id": "C24",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 24,
+    "claim_id": "C25",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 25,
+    "claim_id": "C26",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 26,
+    "claim_id": "C27",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 27,
+    "claim_id": "C28",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 28,
+    "claim_id": "C29",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 29,
+    "claim_id": "C30",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 30,
+    "claim_id": "C31",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 31,
+    "claim_id": "C32",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 32,
+    "claim_id": "C33",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 33,
+    "claim_id": "C34",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 34,
+    "claim_id": "C35",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 35,
+    "claim_id": "C36",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 36,
+    "claim_id": "C37",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 37,
+    "claim_id": "C38",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 38,
+    "claim_id": "C39",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 39,
+    "claim_id": "C40",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 40,
+    "claim_id": "C41",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 41,
+    "claim_id": "C42",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 42,
+    "claim_id": "C43",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 43,
+    "claim_id": "C44",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 44,
+    "claim_id": "C45",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 45,
+    "claim_id": "C46",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 46,
+    "claim_id": "C47",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 47,
+    "claim_id": "C48",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 48,
+    "claim_id": "C49",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 49,
+    "claim_id": "C50",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   }
+  ]
+ },
+ "assertions": [
+  {
+   "review_id": "R-4310240fdfb28a92",
+   "location": "brand_summary#s0",
+   "text": "Fernway is a merino hiking sock brand that partners with trail creators and conserves hiking trails [P1].",
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-6b6d0c856522afc2",
+   "location": "brand_summary#s1",
+   "text": "Fernway has a Trail Notes program that features weekly Instagram posts from trail creators [P2].",
+   "kind": "factual",
+   "cited_passages": [
+    "P2"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-480fb2c34b4391d2",
+   "location": "brand_summary#s2",
+   "text": "Fernway has a referral program for hiking customers [P3].",
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-7908d14c8c825da6",
+   "location": "brand_summary#s3",
+   "text": "Fernway has a newsletter series about merino sock care [P3].",
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-480fb2c34b4391d2",
+   "location": "brand_summary#s4",
+   "text": "Fernway has a referral program for hiking customers [P3].",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-7908d14c8c825da6",
+   "location": "brand_summary#s5",
+   "text": "Fernway has a newsletter series about merino sock care [P3].",
+   "duplicate_of": "R-7908d14c8c825da6",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-480fb2c34b4391d2",
+   "location": "brand_summary#s6",
+   "text": "Fernway has a referral program for hiking customers [P3].",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-7908d14c8c825da6",
+   "location": "brand_summary#s7",
+   "text": "Fernway has a newsletter series about merino sock care [P3].",
+   "duplicate_of": "R-7908d14c8c825da6",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-480fb2c34b4391d2",
+   "location": "brand_summary#s8",
+   "text": "Fernway has a referral program for hiking customers [P3].",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-7908d14c8c825da6",
+   "location": "brand_summary#s9",
+   "text": "Fernway has a newsletter series about merino sock care [P3].",
+   "duplicate_of": "R-7908d14c8c825da6",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-7908d14c8c825da6",
+   "location": "brand_summary#s10",
+   "text": "Fernway has a newsletter series about merino sock care [P3].",
+   "duplicate_of": "R-7908d14c8c825da6",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-7908d14c8c825da6",
+   "location": "brand_summary#s11",
+   "text": "Fernway has a newsletter series about merino sock care [P3].",
+   "duplicate_of": "R-7908d14c8c825da6",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-49b67cd25f08a313",
+   "location": "instagram_post_idea.hook#s0",
+   "text": "A trail report featuring a local hiker's favorite route",
+   "kind": "factual",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-bf166820507e22e3",
+   "location": "instagram_post_idea.why_it_fits#s0",
+   "text": "This aligns with Fernway's focus on community and trail conservation [P2].",
+   "kind": "factual",
+   "cited_passages": [
+    "P2"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-2eacfd6ff4076d26",
+   "location": "email_body#s1",
+   "text": "We're reaching out to propose a collaboration that highlights your Trail Notes program on Instagram.",
+   "kind": "proposal_premise",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-fd43628819beb292",
+   "location": "email_body#s3",
+   "text": "This would align with your brand's mission of keeping hikers comfortable on every trail and would help grow your community.",
+   "kind": "proposal_premise",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-25f6191612db51ae",
+   "location": "email_body#s4",
+   "text": "We'd be happy to share your Trail Notes program and discuss how we can work together.",
+   "kind": "proposal_premise",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-be777574b5cfcdee",
+   "location": "claims[0].statement",
+   "text": "Fernway partners with trail conservancies in 2025 to fund volunteer trail maintenance days.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[1].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[2].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[3].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[4].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[5].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[6].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[7].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[8].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[9].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[10].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[11].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[12].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[13].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[14].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[15].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[16].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[17].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[18].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[19].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[20].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[21].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[22].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[23].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[24].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[25].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[26].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[27].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[28].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[29].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[30].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[31].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[32].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[33].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[34].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[35].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[36].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[37].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[38].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[39].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[40].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[41].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[42].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[43].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[44].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[45].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[46].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[47].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[48].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1268c1a89853b1fb",
+   "location": "claims[49].statement",
+   "text": "Fernway has a referral program for hiking customers.",
+   "duplicate_of": "R-480fb2c34b4391d2",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  }
+ ],
+ "skipped_sentences": {
+  "proposal": [
+   {
+    "location": "instagram_post_idea.concept#s0",
+    "text": "A post showcasing a hiker's Instagram story with a trail report."
+   },
+   {
+    "location": "email_subject#s0",
+    "text": "Collaboration Opportunity: Feature Trail Creators on Instagram"
+   },
+   {
+    "location": "email_body#s2",
+    "text": "Each week, trail creators share their favorite routes and photos, and Fernway would love to feature their posts in our Instagram feed."
+   }
+  ],
+  "non_assertion": [
+   {
+    "location": "likely_target_audience#s0",
+    "text": "INSUFFICIENT_EVIDENCE"
+   },
+   {
+    "location": "current_marketing_strategy[0]#s0",
+    "text": "INSUFFICIENT_EVIDENCE"
+   },
+   {
+    "location": "collaboration_opportunities[0]#s0",
+    "text": "INSUFFICIENT_EVIDENCE"
+   },
+   {
+    "location": "email_body#s0",
+    "text": "Hi Fernway Marketing Team,"
+   },
+   {
+    "location": "email_body#s5",
+    "text": "Best regards,"
+   },
+   {
+    "location": "email_body#s6",
+    "text": "[Your Name]"
+   }
+  ]
+ },
+ "unknown_issues": [],
+ "outreach": {
+  "recipient": "correct",
+  "sender": "correct",
+  "instagram_mentioned": true,
+  "other_platforms_in_pitch": [],
+  "instagram_compliant": true,
+  "promises": [],
+  "email_subject": "Collaboration Opportunity: Feature Trail Creators on Instagram"
+ },
+ "failures": [
+  {
+   "check": "structure",
+   "detail": [
+    "truncated_output: Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 1 column 11623 (char 11622)"
+   ]
+  },
+  {
+   "check": "duplicate_claims",
+   "detail": [
+    [],
+    48
+   ]
+  },
+  {
+   "check": "repetition",
+   "detail": [
+    49
+   ]
+  },
+  {
+   "check": "claim_quotes",
+   "detail": [
+    {
+     "claim_id": "C2",
+     "self_quote": true,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C3",
+     "self_quote": true,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C4",
+     "self_quote": true,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C5",
+     "self_quote": true,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C6",
+     "self_quote": true,
+     "other_passage": []
+    }
+   ]
+  }
+ ],
+ "unresolved": [],
+ "unreviewed": [
+  "R-4310240fdfb28a92",
+  "R-6b6d0c856522afc2",
+  "R-480fb2c34b4391d2",
+  "R-7908d14c8c825da6",
+  "R-49b67cd25f08a313",
+  "R-bf166820507e22e3",
+  "R-2eacfd6ff4076d26",
+  "R-fd43628819beb292",
+  "R-25f6191612db51ae",
+  "R-be777574b5cfcdee"
+ ],
+ "review_scope": "structurally_valid_only",
+ "passes": false,
+ "failure_signature": "1e20b67a5ff5e8d08c62929ce7c9b05c6f35ec4ca3a8327d4d8ac537d8eacb81",
+ "review_wall_s": 0.008,
+ "attempt": {
+  "index": 1,
+  "kind": "regenerate_bounded"
+ }
+}

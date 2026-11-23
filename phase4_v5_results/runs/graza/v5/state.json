@@ -1,0 +1,76 @@
+{
+ "case_id": "graza/v5",
+ "company_id": "graza",
+ "arm": "v5",
+ "packet_path": "outputs/phase3_v5/handoff_6efa346/data/v3_pilot/packets/graza.json",
+ "packet_sha256": "90fc71b07ba6c1187fbcacc9fd4e9cf66b948d1c0e45f62dc877017037d2aaab",
+ "prompt_version": "brandpilot.prompt.v3.3",
+ "prompt_sha256": "611ccdc548cc67e2fef4ce4c01baada7ab7ab6b4aa8dbad9a710eac5677dcd67",
+ "max_repairs": 2,
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "dir": "phase4_v5_results/runs/graza/v5/attempt-00",
+   "prompt_sha256": "611ccdc548cc67e2fef4ce4c01baada7ab7ab6b4aa8dbad9a710eac5677dcd67",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "length",
+   "usage": {
+    "prompt_tokens": 2840,
+    "completion_tokens": 3072,
+    "total_tokens": 5912,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 80.854,
+   "runtime_verified": true,
+   "raw_sha256": "4d54478cb8b7a43a7013fdd1c42c239593bb0af8d48819b8d28a2c90feb55d96",
+   "reused_from": "outputs/phase3_v5/runs/20261123T034538636328Z-graza-adapter-generation-720ed0",
+   "passes": false,
+   "strict_ok": false,
+   "model_abstained": false,
+   "failure_count": 16,
+   "unresolved_count": 0,
+   "failure_signature": "95fafa766ba9f2f2e7674542a51ad9affeabec8f7e7f6ac9a9cf1570f4165041",
+   "review_wall_s": 182.876,
+   "truncated": true,
+   "looping": true
+  },
+  {
+   "index": 1,
+   "kind": "regenerate_bounded",
+   "dir": "phase4_v5_results/runs/graza/v5/attempt-01",
+   "prompt_sha256": "82340b3a5d4d10d6f68b12c11c04b761ded356075ed11e8fa5aed3ff4fa9e72f",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "length",
+   "usage": {
+    "prompt_tokens": 2958,
+    "completion_tokens": 3072,
+    "total_tokens": 6030,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 88.935,
+   "runtime_verified": true,
+   "raw_sha256": "3435191d1d1d481f447c0138d96866ddf27cd32762733efa9184df2986738f5f",
+   "reused_from": null,
+   "passes": false,
+   "strict_ok": false,
+   "model_abstained": false,
+   "truncated": true,
+   "looping": true,
+   "failure_count": 5,
+   "unresolved_count": 0,
+   "failure_signature": "4f60411a18ee0b7accf5d55c445df856b102b6b426152b0ac24f7dfb581075f0",
+   "review_wall_s": 0.013
+  }
+ ],
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "no progress: the repair repeated the same truncation failure",
+ "stop_code": "withheld_no_progress",
+ "eligibility": "eligible"
+}

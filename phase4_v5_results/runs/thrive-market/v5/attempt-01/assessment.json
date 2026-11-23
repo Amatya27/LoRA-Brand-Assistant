@@ -1,0 +1,1527 @@
+{
+ "checks_version": "phase4-v5-checks-2",
+ "structure": {
+  "strict_json": false,
+  "truncated": true,
+  "parse_error": {
+   "error_type": "truncated_output",
+   "truncated": true,
+   "finish_reason": "length",
+   "unbalanced_braces": true,
+   "message": "Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 1 column 11128 (char 11127)"
+  },
+  "schema_errors": [
+   "truncated_output: Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 1 column 11128 (char 11127)"
+  ],
+  "parse_mode": "diagnostic_prefix",
+  "prompt_schema_valid": false,
+  "training_schema_valid": false,
+  "raw_format": {
+   "starts_with_brace": true,
+   "code_fenced": false,
+   "text_outside_json": null
+  }
+ },
+ "decision": null,
+ "repetition": {
+  "method": "exact match after whitespace/quote/case normalisation; no semantic similarity",
+  "claim_count": 36,
+  "duplicate_claim_ids": [],
+  "duplicate_claim_statements": 34,
+  "distinct_claim_statements": 2,
+  "duplicate_claim_quotes": 33,
+  "repeated_prose_sentences": {
+   "thrive market has a clear marketing strategy that emphasizes its mission-driven approach, sustainability, and affordability.": [
+    "current_marketing_strategy[0]",
+    "current_marketing_strategy[1]"
+   ]
+  },
+  "max_8gram_repeats_in_raw": 37,
+  "looping": true
+ },
+ "citation_mechanics": {
+  "inline_passage_refs": [
+   "P1",
+   "P3",
+   "P8",
+   "P9",
+   "P10",
+   "P9",
+   "P9",
+   "P10",
+   "P10",
+   "P10",
+   "P10",
+   "P10",
+   "P10",
+   "P10"
+  ],
+  "unknown_refs": [],
+  "claim_quotes": [
+   {
+    "index": 0,
+    "claim_id": "C1",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 1,
+    "claim_id": "C2",
+    "passage_ids": [
+     "P8"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 2,
+    "claim_id": "C3",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 3,
+    "claim_id": "C4",
+    "passage_ids": [
+     "P8"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 4,
+    "claim_id": "C5",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 5,
+    "claim_id": "C6",
+    "passage_ids": [
+     "P8"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 6,
+    "claim_id": "C7",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 7,
+    "claim_id": "C8",
+    "passage_ids": [
+     "P8"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 8,
+    "claim_id": "C9",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 9,
+    "claim_id": "C10",
+    "passage_ids": [
+     "P8"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 10,
+    "claim_id": "C11",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 11,
+    "claim_id": "C12",
+    "passage_ids": [
+     "P8"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 12,
+    "claim_id": "C13",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 13,
+    "claim_id": "C14",
+    "passage_ids": [
+     "P8"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 14,
+    "claim_id": "C15",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 15,
+    "claim_id": "C16",
+    "passage_ids": [
+     "P8"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 16,
+    "claim_id": "C17",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 17,
+    "claim_id": "C18",
+    "passage_ids": [
+     "P8"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 18,
+    "claim_id": "C19",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 19,
+    "claim_id": "C20",
+    "passage_ids": [
+     "P8"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 20,
+    "claim_id": "C21",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 21,
+    "claim_id": "C22",
+    "passage_ids": [
+     "P8"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 22,
+    "claim_id": "C23",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 23,
+    "claim_id": "C24",
+    "passage_ids": [
+     "P8"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 24,
+    "claim_id": "C25",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 25,
+    "claim_id": "C26",
+    "passage_ids": [
+     "P8"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 26,
+    "claim_id": "C27",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 27,
+    "claim_id": "C28",
+    "passage_ids": [
+     "P8"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 28,
+    "claim_id": "C29",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 29,
+    "claim_id": "C30",
+    "passage_ids": [
+     "P8"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 30,
+    "claim_id": "C31",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 31,
+    "claim_id": "C32",
+    "passage_ids": [
+     "P8"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 32,
+    "claim_id": "C33",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 33,
+    "claim_id": "C34",
+    "passage_ids": [
+     "P8"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 34,
+    "claim_id": "C35",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 35,
+    "claim_id": "C36",
+    "passage_ids": [
+     "P8"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   }
+  ]
+ },
+ "assertions": [
+  {
+   "review_id": "R-4170082331cad310",
+   "location": "brand_summary#s0",
+   "text": "Thrive Market is a membership-based online grocery company that delivers natural and organic foods through a subscription model [P1].",
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-7c1bf849b352164e",
+   "location": "brand_summary#s1",
+   "text": "It has a mission-driven approach, prioritizing health and sustainability [P3].",
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-69b2c19d95a094f9",
+   "location": "brand_summary#s2",
+   "text": "Thrive Market has over 300k paying members on a $60 monthly membership [P8].",
+   "kind": "factual",
+   "cited_passages": [
+    "P8"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-837ca3091949d4c9",
+   "location": "brand_summary#s3",
+   "text": "It has a clear focus on making healthy living easy and affordable [P9].",
+   "kind": "factual",
+   "cited_passages": [
+    "P9"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [
+    "provider_result_unattributed"
+   ],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-26234ef9a93cae82",
+   "location": "likely_target_audience#s0",
+   "text": "Thrive Market's target audience includes health-conscious individuals, individuals with specific dietary needs, and those seeking organic and sustainable products [P10].",
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-1622f8d4a8b2ed1d",
+   "location": "current_marketing_strategy[0]#s0",
+   "text": "Thrive Market has a clear marketing strategy that emphasizes its mission-driven approach, sustainability, and affordability [P9].",
+   "kind": "factual",
+   "cited_passages": [
+    "P9"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [
+    "provider_result_unattributed"
+   ],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-1622f8d4a8b2ed1d",
+   "location": "current_marketing_strategy[1]#s0",
+   "text": "Thrive Market has a clear marketing strategy that emphasizes its mission-driven approach, sustainability, and affordability [P9].",
+   "duplicate_of": "R-1622f8d4a8b2ed1d",
+   "flags": [
+    "provider_result_unattributed"
+   ],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P9"
+   ]
+  },
+  {
+   "review_id": "R-c82980390b3ed122",
+   "location": "collaboration_opportunities[0]#s0",
+   "text": "Collaborate on a campaign that highlights Thrive Market's mission-driven approach and sustainability efforts [P10].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-596f037e5796d7c2",
+   "location": "instagram_post_idea.hook#s0",
+   "text": "Discover the benefits of Thrive Market's organic selections [P10].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-6c4796758aae9b23",
+   "location": "instagram_post_idea.concept#s0",
+   "text": "A carousel post showcasing Thrive Market's commitment to health and sustainability [P10].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-79915283c9d89cae",
+   "location": "instagram_post_idea.why_it_fits#s0",
+   "text": "This post aligns with Thrive Market's mission-driven approach and sustainability efforts [P10].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-52425ab1c66238dc",
+   "location": "email_subject#s0",
+   "text": "Collaboration Opportunity: Highlighting Thrive Market's mission-driven approach and sustainability efforts [P10]",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-565050edbb53a5a9",
+   "location": "email_body#s1",
+   "text": "We propose a collaboration that highlights Thrive Market's mission-driven approach and sustainability efforts [P10].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-8b4b786e3973ef27",
+   "location": "email_body#s2",
+   "text": "This post would showcase Thrive Market's commitment to health and sustainability, aligning with your brand's values [P10].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-05b7ead2075996fb",
+   "location": "claims[0].statement",
+   "text": "Thrive Market has a mission-driven approach, prioritizing health and sustainability {C1}.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-bfb3f3c8a0325b85",
+   "location": "claims[1].statement",
+   "text": "Thrive Market has over 300k paying members on a $60 monthly membership {C2}.",
+   "duplicate_of": "R-69b2c19d95a094f9",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P8"
+   ]
+  },
+  {
+   "review_id": "R-a1279bf5320ea555",
+   "location": "claims[2].statement",
+   "text": "Thrive Market has a mission-driven approach, prioritizing health and sustainability {C3}.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-bfb3f3c8a0325b85",
+   "location": "claims[3].statement",
+   "text": "Thrive Market has over 300k paying members on a $60 monthly membership {C4}.",
+   "duplicate_of": "R-69b2c19d95a094f9",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P8"
+   ]
+  },
+  {
+   "review_id": "R-a1279bf5320ea555",
+   "location": "claims[4].statement",
+   "text": "Thrive Market has a mission-driven approach, prioritizing health and sustainability {C5}.",
+   "duplicate_of": "R-a1279bf5320ea555",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-bfb3f3c8a0325b85",
+   "location": "claims[5].statement",
+   "text": "Thrive Market has over 300k paying members on a $60 monthly membership {C6}.",
+   "duplicate_of": "R-69b2c19d95a094f9",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P8"
+   ]
+  },
+  {
+   "review_id": "R-a1279bf5320ea555",
+   "location": "claims[6].statement",
+   "text": "Thrive Market has a mission-driven approach, prioritizing health and sustainability {C7}.",
+   "duplicate_of": "R-a1279bf5320ea555",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-bfb3f3c8a0325b85",
+   "location": "claims[7].statement",
+   "text": "Thrive Market has over 300k paying members on a $60 monthly membership {C8}.",
+   "duplicate_of": "R-69b2c19d95a094f9",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P8"
+   ]
+  },
+  {
+   "review_id": "R-a1279bf5320ea555",
+   "location": "claims[8].statement",
+   "text": "Thrive Market has a mission-driven approach, prioritizing health and sustainability {C9}.",
+   "duplicate_of": "R-a1279bf5320ea555",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-bfb3f3c8a0325b85",
+   "location": "claims[9].statement",
+   "text": "Thrive Market has over 300k paying members on a $60 monthly membership {C10}.",
+   "duplicate_of": "R-69b2c19d95a094f9",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P8"
+   ]
+  },
+  {
+   "review_id": "R-a1279bf5320ea555",
+   "location": "claims[10].statement",
+   "text": "Thrive Market has a mission-driven approach, prioritizing health and sustainability {C11}.",
+   "duplicate_of": "R-a1279bf5320ea555",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-bfb3f3c8a0325b85",
+   "location": "claims[11].statement",
+   "text": "Thrive Market has over 300k paying members on a $60 monthly membership {C12}.",
+   "duplicate_of": "R-69b2c19d95a094f9",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P8"
+   ]
+  },
+  {
+   "review_id": "R-a1279bf5320ea555",
+   "location": "claims[12].statement",
+   "text": "Thrive Market has a mission-driven approach, prioritizing health and sustainability {C13}.",
+   "duplicate_of": "R-a1279bf5320ea555",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-bfb3f3c8a0325b85",
+   "location": "claims[13].statement",
+   "text": "Thrive Market has over 300k paying members on a $60 monthly membership {C14}.",
+   "duplicate_of": "R-69b2c19d95a094f9",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P8"
+   ]
+  },
+  {
+   "review_id": "R-a1279bf5320ea555",
+   "location": "claims[14].statement",
+   "text": "Thrive Market has a mission-driven approach, prioritizing health and sustainability {C15}.",
+   "duplicate_of": "R-a1279bf5320ea555",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-bfb3f3c8a0325b85",
+   "location": "claims[15].statement",
+   "text": "Thrive Market has over 300k paying members on a $60 monthly membership {C16}.",
+   "duplicate_of": "R-69b2c19d95a094f9",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P8"
+   ]
+  },
+  {
+   "review_id": "R-a1279bf5320ea555",
+   "location": "claims[16].statement",
+   "text": "Thrive Market has a mission-driven approach, prioritizing health and sustainability {C17}.",
+   "duplicate_of": "R-a1279bf5320ea555",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-bfb3f3c8a0325b85",
+   "location": "claims[17].statement",
+   "text": "Thrive Market has over 300k paying members on a $60 monthly membership {C18}.",
+   "duplicate_of": "R-69b2c19d95a094f9",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P8"
+   ]
+  },
+  {
+   "review_id": "R-a1279bf5320ea555",
+   "location": "claims[18].statement",
+   "text": "Thrive Market has a mission-driven approach, prioritizing health and sustainability {C19}.",
+   "duplicate_of": "R-a1279bf5320ea555",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-bfb3f3c8a0325b85",
+   "location": "claims[19].statement",
+   "text": "Thrive Market has over 300k paying members on a $60 monthly membership {C20}.",
+   "duplicate_of": "R-69b2c19d95a094f9",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P8"
+   ]
+  },
+  {
+   "review_id": "R-a1279bf5320ea555",
+   "location": "claims[20].statement",
+   "text": "Thrive Market has a mission-driven approach, prioritizing health and sustainability {C21}.",
+   "duplicate_of": "R-a1279bf5320ea555",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-bfb3f3c8a0325b85",
+   "location": "claims[21].statement",
+   "text": "Thrive Market has over 300k paying members on a $60 monthly membership {C22}.",
+   "duplicate_of": "R-69b2c19d95a094f9",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P8"
+   ]
+  },
+  {
+   "review_id": "R-a1279bf5320ea555",
+   "location": "claims[22].statement",
+   "text": "Thrive Market has a mission-driven approach, prioritizing health and sustainability {C23}.",
+   "duplicate_of": "R-a1279bf5320ea555",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-bfb3f3c8a0325b85",
+   "location": "claims[23].statement",
+   "text": "Thrive Market has over 300k paying members on a $60 monthly membership {C24}.",
+   "duplicate_of": "R-69b2c19d95a094f9",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P8"
+   ]
+  },
+  {
+   "review_id": "R-a1279bf5320ea555",
+   "location": "claims[24].statement",
+   "text": "Thrive Market has a mission-driven approach, prioritizing health and sustainability {C25}.",
+   "duplicate_of": "R-a1279bf5320ea555",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-bfb3f3c8a0325b85",
+   "location": "claims[25].statement",
+   "text": "Thrive Market has over 300k paying members on a $60 monthly membership {C26}.",
+   "duplicate_of": "R-69b2c19d95a094f9",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P8"
+   ]
+  },
+  {
+   "review_id": "R-a1279bf5320ea555",
+   "location": "claims[26].statement",
+   "text": "Thrive Market has a mission-driven approach, prioritizing health and sustainability {C27}.",
+   "duplicate_of": "R-a1279bf5320ea555",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-bfb3f3c8a0325b85",
+   "location": "claims[27].statement",
+   "text": "Thrive Market has over 300k paying members on a $60 monthly membership {C28}.",
+   "duplicate_of": "R-69b2c19d95a094f9",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P8"
+   ]
+  },
+  {
+   "review_id": "R-a1279bf5320ea555",
+   "location": "claims[28].statement",
+   "text": "Thrive Market has a mission-driven approach, prioritizing health and sustainability {C29}.",
+   "duplicate_of": "R-a1279bf5320ea555",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-bfb3f3c8a0325b85",
+   "location": "claims[29].statement",
+   "text": "Thrive Market has over 300k paying members on a $60 monthly membership {C30}.",
+   "duplicate_of": "R-69b2c19d95a094f9",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P8"
+   ]
+  },
+  {
+   "review_id": "R-a1279bf5320ea555",
+   "location": "claims[30].statement",
+   "text": "Thrive Market has a mission-driven approach, prioritizing health and sustainability {C31}.",
+   "duplicate_of": "R-a1279bf5320ea555",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-bfb3f3c8a0325b85",
+   "location": "claims[31].statement",
+   "text": "Thrive Market has over 300k paying members on a $60 monthly membership {C32}.",
+   "duplicate_of": "R-69b2c19d95a094f9",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P8"
+   ]
+  },
+  {
+   "review_id": "R-a1279bf5320ea555",
+   "location": "claims[32].statement",
+   "text": "Thrive Market has a mission-driven approach, prioritizing health and sustainability {C33}.",
+   "duplicate_of": "R-a1279bf5320ea555",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-bfb3f3c8a0325b85",
+   "location": "claims[33].statement",
+   "text": "Thrive Market has over 300k paying members on a $60 monthly membership {C34}.",
+   "duplicate_of": "R-69b2c19d95a094f9",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P8"
+   ]
+  },
+  {
+   "review_id": "R-a1279bf5320ea555",
+   "location": "claims[34].statement",
+   "text": "Thrive Market has a mission-driven approach, prioritizing health and sustainability {C35}.",
+   "duplicate_of": "R-a1279bf5320ea555",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-bfb3f3c8a0325b85",
+   "location": "claims[35].statement",
+   "text": "Thrive Market has over 300k paying members on a $60 monthly membership {C36}.",
+   "duplicate_of": "R-69b2c19d95a094f9",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P8"
+   ]
+  }
+ ],
+ "skipped_sentences": {
+  "proposal": [
+   {
+    "location": "email_body#s3",
+    "text": "If you'd like to explore this opportunity further, we'd be happy to share a draft."
+   }
+  ],
+  "non_assertion": [
+   {
+    "location": "email_body#s0",
+    "text": "Dear Thrive Market Marketing Team,"
+   },
+   {
+    "location": "email_body#s4",
+    "text": "Best regards,"
+   },
+   {
+    "location": "email_body#s5",
+    "text": "[Your Name]"
+   }
+  ]
+ },
+ "unknown_issues": [],
+ "outreach": {
+  "recipient": "correct",
+  "sender": "correct",
+  "instagram_mentioned": false,
+  "other_platforms_in_pitch": [],
+  "instagram_compliant": false,
+  "promises": [],
+  "email_subject": "Collaboration Opportunity: Highlighting Thrive Market's mission-driven approach and sustainability efforts [P10]"
+ },
+ "failures": [
+  {
+   "check": "structure",
+   "detail": [
+    "truncated_output: Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 1 column 11128 (char 11127)"
+   ]
+  },
+  {
+   "check": "duplicate_claims",
+   "detail": [
+    [],
+    34
+   ]
+  },
+  {
+   "check": "repetition",
+   "detail": [
+    37
+   ]
+  },
+  {
+   "check": "claim_quotes",
+   "detail": [
+    {
+     "claim_id": "C1",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C2",
+     "self_quote": true,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C3",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C4",
+     "self_quote": true,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C5",
+     "self_quote": false,
+     "other_passage": []
+    }
+   ]
+  },
+  {
+   "check": "instagram",
+   "detail": []
+  }
+ ],
+ "unresolved": [],
+ "unreviewed": [
+  "R-4170082331cad310",
+  "R-7c1bf849b352164e",
+  "R-69b2c19d95a094f9",
+  "R-837ca3091949d4c9",
+  "R-26234ef9a93cae82",
+  "R-1622f8d4a8b2ed1d",
+  "R-c82980390b3ed122",
+  "R-596f037e5796d7c2",
+  "R-6c4796758aae9b23",
+  "R-79915283c9d89cae",
+  "R-52425ab1c66238dc",
+  "R-565050edbb53a5a9",
+  "R-8b4b786e3973ef27",
+  "R-05b7ead2075996fb",
+  "R-a1279bf5320ea555"
+ ],
+ "review_scope": "structurally_valid_only",
+ "passes": false,
+ "failure_signature": "4f60411a18ee0b7accf5d55c445df856b102b6b426152b0ac24f7dfb581075f0",
+ "review_wall_s": 0.012,
+ "attempt": {
+  "index": 1,
+  "kind": "regenerate_bounded"
+ }
+}

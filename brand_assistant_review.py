@@ -655,6 +655,8 @@ def support_guard(statement: str, evidence_text: str, company_name: str, kind: s
 def final_verdict(a: Assertion, review: dict, flags: list[str], manifest: dict[str, dict] | None = None,
                   company_name: str = "") -> dict:
     """Combine reviewer verdict, the support guard, deterministic flags and citation status."""
+    if review.get("status") == "unreviewed":
+        return {"verdict": "unreviewed", "citation_status": None, "flags": flags, "reason": review.get("reason")}
     if review.get("status") != "reviewed":
         return {"verdict": "unresolved", "citation_status": None, "reason": review.get("reason")}
     v = review["verdict"]
@@ -696,6 +698,8 @@ def assess_output(raw_text: str | None, finish_reason: str | None, packet: dict,
                   reviewer: ReviewerBackend | None, cache: ReviewCache | None = None,
                   previous_review_ids: set[str] | None = None,
                   review_malformed: bool = True) -> dict:
+    """review_malformed=False (amendment 4): semantic review only for strict, untruncated,
+    schema-valid output; assertions of other outputs are recorded as 'unreviewed'."""
     """All checks for one model output. `passes` is the release gate; nothing here sends or approves."""
     from brand_assistant_v3 import v3_evidence_manifest  # noqa: PLC0415
 
@@ -717,7 +721,8 @@ def assess_output(raw_text: str | None, finish_reason: str | None, packet: dict,
     outreach = outreach_checks(parsed, company["display_name"])
     unknown_issues = unknown_checks(parsed, assertions)
     reviews = []
-    reviewed_now = strict or review_malformed
+    schema_ok = strict and not ev["structural_errors"]
+    reviewed_now = schema_ok or review_malformed
     for a in assertions:
         flags = deterministic_flags(a, manifest)
         if a.duplicate_of is not None:
@@ -725,7 +730,7 @@ def assess_output(raw_text: str | None, finish_reason: str | None, packet: dict,
                             "flags": flags})
             continue
         review = review_assertion(a, company, manifest, reviewer, cache=cache) if reviewed_now else \
-            {"status": "unresolved", "reason": "not reviewed"}
+            {"status": "unreviewed", "reason": "skipped: output not structurally valid (review scope, amendment 4)"}
         fv = final_verdict(a, review, flags, manifest, company["display_name"])
         reviews.append({
             "review_id": a.review_id, "location": a.location, "text": a.text, "kind": a.kind,
@@ -811,6 +816,8 @@ def assess_output(raw_text: str | None, finish_reason: str | None, packet: dict,
         "outreach": outreach,
         "failures": failures,
         "unresolved": [r["review_id"] for r in unresolved],
+        "unreviewed": [r["review_id"] for r in distinct if r["verdict"] == "unreviewed"],
+        "review_scope": "all_recoverable_diagnostic" if review_malformed else "structurally_valid_only",
         "passes": passes,
         "failure_signature": signature,
     }

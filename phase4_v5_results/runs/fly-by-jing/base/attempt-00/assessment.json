@@ -1,0 +1,174 @@
+{
+ "checks_version": "phase4-v5-checks-2",
+ "structure": {
+  "strict_json": false,
+  "truncated": true,
+  "parse_error": {
+   "error_type": "truncated_output",
+   "truncated": true,
+   "finish_reason": "stop",
+   "unbalanced_braces": true,
+   "message": "Outermost JSON object is malformed or incomplete: Invalid control character at: line 15 column 509 (char 1666)"
+  },
+  "schema_errors": [
+   "truncated_output: Outermost JSON object is malformed or incomplete: Invalid control character at: line 15 column 509 (char 1666)"
+  ],
+  "parse_mode": "diagnostic_prefix",
+  "prompt_schema_valid": false,
+  "training_schema_valid": false,
+  "raw_format": {
+   "starts_with_brace": false,
+   "code_fenced": true,
+   "text_outside_json": null
+  }
+ },
+ "decision": null,
+ "repetition": {
+  "method": "exact match after whitespace/quote/case normalisation; no semantic similarity",
+  "claim_count": 1,
+  "duplicate_claim_ids": [],
+  "duplicate_claim_statements": 0,
+  "distinct_claim_statements": 1,
+  "duplicate_claim_quotes": 0,
+  "repeated_prose_sentences": {},
+  "max_8gram_repeats_in_raw": 5,
+  "looping": false
+ },
+ "citation_mechanics": {
+  "inline_passage_refs": [],
+  "unknown_refs": [],
+  "claim_quotes": [
+   {
+    "index": 0,
+    "claim_id": "C1",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   }
+  ]
+ },
+ "assertions": [
+  {
+   "review_id": "R-2e560234ab59bd8e",
+   "location": "claims[0].statement",
+   "text": "PRESS Holiday Gift Guide 2019: The Best Items To Stock Their Pantry This Sichuan-Inspired Condiments Brand Could Be the Next Hot Thing in Home Cooking Spreads, the Best Food Gift of All You Need This High End Chinese Chile Crisp How So-Called ‘Ugly Food’ Is Challenging Notions of What We Crave Chef Jing \"Jenny\" Gao launched her Fly by Jing line of sauces and seasonings.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "supported",
+   "reviewer_verdict": "supported",
+   "citation_status": "cited",
+   "flags": [],
+   "reason": "The evidence passage directly supports the statement by mentioning that Chef Jing Gao launched her Fly by Jing line of sauces and seasonings, which aligns with the claim that Fly By Jing is a Sichuan-inspired condiments brand.",
+   "guard": {
+    "coverage": 1.0,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": []
+   },
+   "reviewer_reason": "The evidence passage directly supports the statement by mentioning that Chef Jing Gao launched her Fly by Jing line of sauces and seasonings, which aligns with the claim that Fly By Jing is a Sichuan-inspired condiments brand.",
+   "evidence_passage_id": "P1",
+   "evidence_quote": "PRESS Holiday Gift Guide 2019: The Best Items To Stock Their Pantry This Sichuan-Inspired Condiments Brand Could Be the Next Hot Thing in Home Cooking Spreads, the Best Food Gift of All You Need This High End Chinese Chile Crisp How So-Called ‘Ugly Food’ Is Challenging Notions of What We Crave Chef Jing “Jenny” Gao launched her Fly by Jing line of sauces and seasonings...",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "645b7dacf233700301c6e9d1d8697d065a0fce01e7cd65739230ba763397eb60",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-2e560234ab59bd8e\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P1\",\n  \"evidence_quote\": \"PRESS Holiday Gift Guide 2019: The Best Items To Stock Their Pantry This Sichuan-Inspired Condiments Brand Could Be the Next Hot Thing in Home Cooking Spreads, the Best Food Gift of All You Need This High End Chinese Chile Crisp How So-Called ‘Ugly Food’ Is Challenging Notions of What We Crave Chef Jing “Jenny” Gao launched her Fly by Jing line of sauces and seasonings...\",\n  \"reason\": \"The evidence passage directly supports the statement by mentioning that Chef Jing Gao launched her Fly by Jing line of sauces and seasonings, which aligns with the claim that Fly By Jing is a Sichuan-inspired condiments brand.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 702,
+       "completion_tokens": 205,
+       "total_tokens": 907,
+       "prompt_tokens_details": {
+        "cached_tokens": 31
+       }
+      },
+      "latency_s": 16.189,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "3ef74821e3e202ae2528f8fa04252d50d4c7e4a4df8e8bc5f0a98cd3f3e98446",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  }
+ ],
+ "skipped_sentences": {
+  "proposal": [],
+  "non_assertion": []
+ },
+ "unknown_issues": [],
+ "outreach": {
+  "recipient": "no_email",
+  "sender": "no_email",
+  "instagram_mentioned": false,
+  "other_platforms_in_pitch": [],
+  "instagram_compliant": false,
+  "promises": [],
+  "email_subject": ""
+ },
+ "failures": [
+  {
+   "check": "structure",
+   "detail": [
+    "truncated_output: Outermost JSON object is malformed or incomplete: Invalid control character at: line 15 column 509 (char 1666)"
+   ]
+  },
+  {
+   "check": "claim_quotes",
+   "detail": [
+    {
+     "claim_id": "C1",
+     "self_quote": false,
+     "other_passage": []
+    }
+   ]
+  },
+  {
+   "check": "sender_recipient",
+   "detail": [
+    "no_email",
+    "no_email"
+   ]
+  },
+  {
+   "check": "instagram",
+   "detail": []
+  }
+ ],
+ "unresolved": [],
+ "passes": false,
+ "failure_signature": "45ca8c5b744e0c01d73c3c208e13b8ccd8e9d494857b0f124ea8ddd9dd19d51b",
+ "review_wall_s": 16.195,
+ "attempt": {
+  "index": 0,
+  "kind": "initial"
+ }
+}

@@ -1,0 +1,76 @@
+{
+ "case_id": "bones-coffee/v5",
+ "company_id": "bones-coffee",
+ "arm": "v5",
+ "packet_path": "outputs/phase3_v5/handoff_6efa346/data/v3_pilot/packets/bones-coffee.json",
+ "packet_sha256": "9c87dae136c352cbc5e29fba931e88653093c9a8e730a0fa7cd2e816bb148814",
+ "prompt_version": "brandpilot.prompt.v3.3",
+ "prompt_sha256": "eae026c88cca6dfc0911515702f05ca0d1911db1ec801c00f2ca3b4a1b2caf55",
+ "max_repairs": 2,
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "dir": "phase4_v5_results/runs/bones-coffee/v5/attempt-00",
+   "prompt_sha256": "eae026c88cca6dfc0911515702f05ca0d1911db1ec801c00f2ca3b4a1b2caf55",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "length",
+   "usage": {
+    "prompt_tokens": 1857,
+    "completion_tokens": 3072,
+    "total_tokens": 4929,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 74.762,
+   "runtime_verified": true,
+   "raw_sha256": "ef99d15291c8c23c6548c682da8874691b7c2032cf1332f03f84423a80044522",
+   "reused_from": "outputs/phase3_v5/runs/20261123T034346615950Z-bones-coffee-adapter-generation-e64f36",
+   "passes": false,
+   "strict_ok": false,
+   "model_abstained": false,
+   "failure_count": 4,
+   "unresolved_count": 0,
+   "failure_signature": "67e0addb7b5cd326e60a7bb350c88d6a1b0b76226616a462b6719d34635828b7",
+   "review_wall_s": 0.001,
+   "truncated": true,
+   "looping": true
+  },
+  {
+   "index": 1,
+   "kind": "regenerate_bounded",
+   "dir": "phase4_v5_results/runs/bones-coffee/v5/attempt-01",
+   "prompt_sha256": "01846d5ba87c17abe1f284110f4c431447a0eeaca1c5f17404a54b8d049f01ad",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "length",
+   "usage": {
+    "prompt_tokens": 1975,
+    "completion_tokens": 3072,
+    "total_tokens": 5047,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 89.782,
+   "runtime_verified": true,
+   "raw_sha256": "24d34f5ec04bdf6686ecbeb28ce74a66e857b1d414e34ffcb8ff9886e3465fdd",
+   "reused_from": null,
+   "passes": false,
+   "strict_ok": false,
+   "model_abstained": false,
+   "truncated": true,
+   "looping": true,
+   "failure_count": 4,
+   "unresolved_count": 0,
+   "failure_signature": "1e20b67a5ff5e8d08c62929ce7c9b05c6f35ec4ca3a8327d4d8ac537d8eacb81",
+   "review_wall_s": 0.01
+  }
+ ],
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "no progress: the repair repeated the same truncation failure",
+ "stop_code": "withheld_no_progress",
+ "eligibility": "eligible"
+}

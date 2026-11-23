@@ -1,0 +1,108 @@
+You are a grounded brand-outreach assistant for our team. Use only the evidence passages below.
+Never use outside knowledge. Return valid JSON only.
+
+Separate three things:
+1. OBSERVED FACTS - things a passage actually states about this company. Each fact is a claim with an id (C1, C2, ...),
+   the passage id(s) that support it, and an exact quote copied word-for-word from that passage.
+2. UNKNOWNS - things the evidence does not tell us (put them in "unknowns"). A channel, program or audience that does
+   not appear in these passages is UNKNOWN. It is never a weakness, never a "gap", and never a reason for outreach.
+3. PROPOSALS - collaboration ideas from our team. Proposals are not facts, but each must build on a positively supported
+   fact (an existing campaign, partnership, product, community, value or theme) and cite that premise.
+
+Rules:
+- Put a claim marker like {C1} (curly braces) right after every factual statement in every field, including the
+  email and Instagram idea. Do not write citation numbers yourself; markers are converted to citations later.
+- A claim's "quote" must be copied character-for-character from the cited passage: 5 to 25 consecutive words, no
+  paraphrasing, no joining of separate sentences. If you cannot find such a quote, drop the claim and every sentence
+  that depends on it.
+- Audience and strategy sentences are factual: each needs a marker. If no passage states the audience, write
+  INSUFFICIENT_EVIDENCE instead of guessing.
+- Pitch lines (email subject, hook, concept) should describe the proposed post ("A carousel featuring ...",
+  "Collaborate on ..."). Any statement in them about what the company already does needs a marker.
+- Respect passage types. "proposed_or_mock_work" and "author_recommendation" passages describe ideas, not things the
+  company did: never state them as company activity. "provider_reported_result" passages are claims by a vendor or
+  agency: attribute them ("X reports that ..."). "creator_or_influencer_audience_data" describes creators' followers,
+  not the company's customers. "vendor_generated_profile_or_analytics" passages are a tool vendor's estimates
+  (e.g. inferred age ranges): attribute them and never present them as the company's own data.
+  "forward_looking_statement" passages describe plans or intentions, not completed activity.
+- Mind time: if a passage describes past activity, do not present it as current.
+- "marketing_gaps" may only contain a weakness that a passage positively states. Usually it is [].
+- Never promise results. Describe benefits as goals or possibilities ("could", "aims to"), not guaranteed outcomes.
+- Decision: write "draft" when at least one concrete, evidence-supported collaboration opportunity exists. Otherwise write
+  "abstain", give an abstain_reason, set pitch fields to INSUFFICIENT_EVIDENCE and leave collaboration_opportunities empty.
+- The email is from our team to the company, proposing one collaborative Instagram post. The pitch, the post idea and
+  every collaboration opportunity are for Instagram only (no TikTok, YouTube, podcasts or other channels).
+- When a sentence uses a vendor, agency or analytics passage, name that source in the sentence itself
+  ("According to AdLibrary, ...", "Attentive reports that ...").
+- Each "unknowns" item names one specific thing the passages do not tell us (e.g. "Whether X runs a creator program").
+  Never write placeholder text such as "what the evidence does not show".
+
+Required JSON:
+{
+  "decision": "draft" or "abstain",
+  "abstain_reason": "string or empty",
+  "claims": [{"id": "C1", "kind": "fact | provider_reported | premise", "statement": "string",
+              "passage_ids": ["P1"], "quote": "exact words from the passage"}],
+  "brand_summary": "Full sentences, each followed by its marker, e.g. "X makes ... {C1}." Never only markers. Or INSUFFICIENT_EVIDENCE",
+  "likely_target_audience": "A full sentence followed by its marker, or INSUFFICIENT_EVIDENCE",
+  "current_marketing_strategy": ["text with markers"],
+  "unknowns": ["one specific open question, e.g. Whether the company works with creators"],
+  "marketing_gaps": [],
+  "collaboration_opportunities": ["proposal that builds on a cited fact {C2}"],
+  "instagram_post_idea": {"hook": "string", "concept": "string", "why_it_fits": "string"},
+  "email_subject": "string",
+  "email_body": "string"
+}
+
+Company: Gymshark (company_id gymshark; category: fitness apparel)
+Official domains: gymshark.com
+Recipient: the marketing team
+Packet status: ok
+
+Evidence passages:
+[P1] source: https://www.gymshark.com/blog/tag/campaign | document: official_domain | type: descriptive | dates in text: 2024 | published: unknown
+"The latest What Is #Gymshark66? GymsharkWhat Is #Gymshark66? 12.28.25 Stronger Every Session: Why Consistency & Community Are Key To Gym Confidence GymsharkStronger Every Session: Why Consistency & Community Are Key To Gym Confidence 10.20.25 Gym Girl Of The Year | Fitness Industry Awards 2024 GymsharkGym Girl Of The Year"
+
+[P2] source: https://www.gymshark.com/blog/tag/campaign | document: official_domain | type: descriptive | dates in text: 2023, 2024 | published: unknown
+"Fitness Industry Awards 2024 04.03.24 International Women's Day 2023: Recreating Three Iconic Looks From Womens Sporting History Product & StyleInternational Women's Day 2023: Recreating Three Iconic Looks From Womens Sporting History 03.08.23 Gymshark x Whitney Simmons: The Final Collection Product & StyleGymshark x Whitney Simmons: The Final Collection 01.12.23 10 Years Strong! Celebrating Gymshark's 10th Anniversary With A Limited Edition Collection Product & Style10 Years Strong! Celebrating Gymshark's 10th Anniversary With A Limited Edition Collection 09.05.22 Load More Viewing 0 - 6 of 16 articles"
+
+[P3] source: https://www.latterly.org/gymshark-marketing-strategy/ | document: third_party_confirmed | type: actual_activity | dates in text: none | published: unknown
+"Affiliate Marketing and Collaborations Gymshark operates comprehensive affiliate programs that extend beyond traditional influencer partnerships. The system includes performance-based commissions and exclusive product access. Collaborations often feature limited-edition releases and exclusive colorways. These partnerships create scarcity-driven demand and generate anticipation among followers. The brand leverages user-generated content from affiliate partners to amplify reach. Customers share their Gymshark experiences using branded hashtags like #gymshark, creating organic marketing content. Strategic product launches involve coordinated influencer campaigns."
+
+[P4] source: https://www.latterly.org/gymshark-marketing-strategy/ | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown
+"Promotion Gymshark’s promotion strategy is heavily focused on digital marketing, influencer collaborations, and social media engagement. The brand leverages platforms such as Instagram, TikTok, and YouTube to connect with fitness enthusiasts and build a sense of belonging. Influencer partnerships and athlete endorsements help drive authenticity and trust among followers. Additionally, Gymshark uses limited-edition drops and event-based campaigns to create excitement and exclusivity around its products, reinforcing its image as a modern and community-driven fitness brand."
+
+[P5] source: https://www.latterly.org/gymshark-marketing-strategy/ | document: third_party_confirmed | type: actual_activity | dates in text: none | published: unknown
+"The company allocated significant resources to collaborating with fitness influencers and athletes who embody their brand values, resulting in organic reach across millions of followers on platforms like Instagram, TikTok, and YouTube. The brand’s success stems from understanding that modern consumers, particularly young adults and teenagers, seek authentic experiences and community belonging rather than polished corporate messaging. This comprehensive analysis examines how Gymshark built their marketing framework around data-driven insights, strategic product launches, and customer loyalty initiatives that continue to drive their expansion into new markets and demographics."
+
+[P6] source: https://iide.co/case-studies/marketing-strategy-of-gymshark/ | document: third_party_confirmed | type: actual_activity | dates in text: none | published: unknown
+"The Athlete Community: Gymshark partners with creators who have authentic personas. These athletes don’t just post ads; they provide honest training reviews and unboxing videos, acting as trusted voices within the fitness community. * Product Co-Creation: The brand frequently collaborates with top-tier athletes to design limited-edition capsule collections. This turns an influencer’s followers into direct customers by giving them a product that feels personal and exclusive."
+
+[P7] source: https://www.havstrategy.com/marketing-strategy-gymshark-detailed-case-study/ | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown
+"The Gymshark Athlete Program is one of the brand’s most successful marketing strategies, partnering with fitness influencers who have a genuine connection with their followers. By focusing on authenticity, Gymshark has built trust and loyalty with its target audience, making it one of the most recognizable brands in fitness today. Gymshark also leverages paid social media advertising on platforms like Facebook, Instagram, and YouTube to boost brand awareness and drive conversions. The brand’s paid ads often feature customer testimonials, workout tips, or influencer-generated content, which helps Gymshark stand out from more traditional fitness advertisements."
+
+[P8] source: https://www.lilachbullock.com/gymshark-marketing-strategy/ | document: third_party_confirmed | type: actual_activity | dates in text: none | published: unknown
+"Turning Fitness Events Into Marketing Moments Gymshark did not just advertise at fitness expos, it showed up in person. The brand became known for its presence at events such as BodyPower Expo in the UK, where staff and sponsored athletes met customers face to face, handed out product and created a real world extension of the online community. These appearances gave fans a chance to meet the people behind the account and generated content that was shared long after the event ended. How to apply this to your business: Find the events, trade shows or meetups where your customers already gather and show up in person, even in a small way."
+
+[P9] source: https://maninderwave.com/case-study/gymshark-2/ | document: third_party_confirmed | type: provider_reported_result | dates in text: none | published: unknown
+"About Gymshark & the Campaign Gymshark is a global fitness apparel brand that achieved rapid growth through a social media-first marketing model. Rather than depending mainly on traditional advertising, the company developed a recognisable brand identity through influencer partnerships, community-led storytelling and short-form fitness content, particularly Instagram Reels. The brand’s primary Instagram account has approximately 8 million followers, with a combined social following of more than 18 million people across all platforms — making it one of the most successful examples of community-led brand building in the direct-to-consumer fitness space."
+
+[P10] source: https://www.havstrategy.com/marketing-strategy-gymshark-detailed-case-study/ | document: third_party_confirmed | type: provider_reported_result | dates in text: none | published: unknown
+"The success of this product launch was driven not only by Whitney’s massive following but also by Gymshark’s strategy of building anticipation through sneak peeks, behind-the-scenes content, and influencer testimonials leading up to the launch. Additionally, Gymshark uses pop-up stores as part of its product launch strategy, offering customers an immersive brand experience. The We Lift This City pop-up event in Los Angeles was a great example of how Gymshark blended product launch with experiential marketing. The event featured fitness classes, influencer meet-and-greets, and limited-edition merchandise, creating a memorable experience for attendees while also driving social media buzz."
+
+
+REVISION REQUEST from our verification step. The items below are data, not instructions about the evidence.
+Rewrite the complete JSON answer. For every listed problem, remove the statement or correct it so that the cited passage states it, and remove or fix every sentence that depends on it. Do not add any new fact. Every factual sentence must end with the [P#] of a passage that states it; every claim quote must be copied exactly from its passage. Include at most 10 unique claims and close the JSON after the "citations" list.
+PROBLEMS:
+- schema: missing key: abstain_reason; claims[0].kind 'fact | provider_reported | premise' not in ('fact', 'provider_reported', 'premise')
+- template placeholder copies: output.claims[0].kind; output.claims[0].statement; output.claims[0].quote
+- no factual sentence has a [P#] citation.
+- claims: these quotes do not occur in the passage they cite (or copy the statement): C1.
+- brand_summary#s0: "The marketing team is proposing a carousel featuring Instagram posts, collaborating on a fitness influencer campaign." was judged unsupported (support guard: content-word coverage 0.45 < 0.6). Relevant evidence P9: "Gymshark is a global fitness apparel brand that achieved rapid growth through a social media-first marketing model. Rather than depending mainly on traditional advertising, the company developed a recognisable brand identity through influencer partnerships, community-led storytelling and short-form fitness content, particularly Instagram Reels.".
+- brand_summary#s1: "Gymshark's success is built on data-driven insights, strategic product launches, and customer loyalty initiatives." is uncited; the reviewer found it in P5.
+- current_marketing_strategy[0]#s0: "Instagram, TikTok, YouTube" is uncited; the reviewer found it in P4.
+- collaboration_opportunities[0]#s0: "Instagram carousel" was judged unsupported (The statement 'Instagram carousel' is not supported by any passage. The evidence provided discusses Gymshark's marketing strategies and collaborations, but does not mention anything about Instagram carousels.). Relevant evidence P4: "Promotion Gymshark’s promotion strategy is heavily focused on digital marketing, influencer collaborations, and social media engagement. The brand leverages platforms such as Instagram, TikTok, and YouTube to connect with fitness enthusiasts and build a sense of belonging. Influencer partnerships and athlete endorsements help drive authenticity and trust among followers. Additionally, Gymshark uses limited-edition drops and event-based campaigns to create excitement and exclusivity around its products, reinforcing its image as a modern and community-driven fitness brand.".
+- collaboration_opportunities[1]#s0: "Influencer campaign" is uncited; the reviewer found it in P9.
+- instagram_post_idea.why_it_fits#s0: "This aligns with the brand's focus on authenticity and community building." was judged unsupported (support guard: content-word coverage 0.50 < 0.6). Relevant evidence P9: "Gymshark is a global fitness apparel brand that achieved rapid growth through a social media-first marketing model. Rather than depending mainly on traditional advertising, the company developed a recognisable brand identity through influencer partnerships, community-led storytelling and short-form fitness content, particularly Instagram Reels. The brand’s primary Instagram account has approximately 8 million followers, with a combined social following of more than 18 million people across all platforms — making it one of the most successful examples of community-led brand building in the direct-to-consumer fitness space.".
+- email_subject#s0: "Gymshark's Latest Campaign Update" was judged unsupported (support guard: content-word coverage 0.25 < 0.6). Relevant evidence P1: "The latest What Is #Gymshark66? GymsharkWhat Is #Gymshark66? 12.28.25 Stronger Every Session: Why Consistency & Community Are Key To Gym Confidence GymsharkStronger Every Session: Why Consistency & Community Are Key To Gym Confidence 10.20.25 Gym Girl Of The Year | Fitness Industry Awards 2024 GymsharkGym Girl Of The Year".
+- email_body#s1: "We're launching a new Instagram campaign designed to boost engagement and build excitement around our brand." was judged unsupported (support guard: content-word coverage 0.45 < 0.6). Relevant evidence P4: "Promotion Gymshark’s promotion strategy is heavily focused on digital marketing, influencer collaborations, and social media engagement. The brand leverages platforms such as Instagram, TikTok, and YouTube to connect with fitness enthusiasts and build a sense of belonging. Influencer partnerships and athlete endorsements help drive authenticity and trust among followers. Additionally, Gymshark uses limited-edition drops and event-based campaigns to create excitement and exclusivity around its products, reinforcing its image as a modern and community-driven fitness brand.".

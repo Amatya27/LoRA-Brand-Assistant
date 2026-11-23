@@ -275,7 +275,16 @@ def state_path(cid: str, arm: str) -> Path:
 def load_state(case: dict, arm: str) -> CaseState:
     p = state_path(case["case_id"], arm)
     if p.exists():
-        return CaseState.from_record(json.loads(p.read_text()))
+        state = CaseState.from_record(json.loads(p.read_text()))
+        for a in state.attempts:  # backfill summary fields added by amendment 4 from saved assessments
+            f = REPO / a["dir"] / "assessment.json"
+            if "passes" in a and "truncated" not in a and f.exists():
+                assessment = json.loads(f.read_text())
+                a["truncated"] = bool(assessment["structure"]["truncated"])
+                a["looping"] = bool(assessment["repetition"]["looping"])
+        if state.outcome and not state.stop_code and (state.stop_reason or "").startswith("pipeline"):
+            state.stop_code = "pipeline_ineligible"
+        return state
     return CaseState(f"{case['case_id']}/{arm}", case["case_id"], arm, case["packet_path"], case["packet_content_sha256"],
                      case["prompt_version"], case["prompt_sha256"])
 
@@ -289,12 +298,14 @@ def save_state(state: CaseState) -> None:
     p.write_text(json.dumps(rec, indent=1, ensure_ascii=False) + "\n")
 
 
-def _ledger_excerpt(ledger: Path, messages: list, out: Path) -> None:
+def _ledger_excerpt(ledger: Path, messages: list, out: Path, adapter: str | None = None) -> None:
+    """The load event and request event(s) for these exact messages AND this arm's adapter (or none)."""
     if not ledger.exists():
         return
     digest = messages_sha256(messages)
     lines = [json.loads(line) for line in ledger.read_text().splitlines() if line.strip()]
-    idx = [i for i, e in enumerate(lines) if e.get("event") == "request_started" and e.get("messages_sha256") == digest]
+    idx = [i for i, e in enumerate(lines) if e.get("event") == "request_started" and e.get("messages_sha256") == digest
+           and (e.get("requested_adapter") or None) == adapter]
     keep = []
     for i in idx:
         loads = [e for e in lines[:i] if e.get("event") in ("model_loaded", "model_load_failed") and e.get("pid") == lines[i].get("pid")]
@@ -336,7 +347,8 @@ def initial_from_run_pipeline(case: dict, arm: str, args):
         assert g.get("prompt_sha256") == case["prompt_sha256"], "prompt hash mismatch"
         assert run_rec["evidence"]["packet_input_sha256"] == case["packet_file_sha256"], "packet hash mismatch"
         messages = json.loads((src / "prompt_messages.json").read_text())["messages"]
-        _ledger_excerpt(ledger, messages, attempt_dir / "runtime_ledger_excerpt.jsonl")
+        _ledger_excerpt(ledger, messages, attempt_dir / "runtime_ledger_excerpt.jsonl", ARMS[arm])
+        (attempt_dir / "ledger_source.txt").write_text(str(ledger.relative_to(REPO)) + "\n")
         verified = (g.get("adapter") or {}).get("adapter_load_verified") if ARMS[arm] else \
             (g.get("base_model_runtime_check") or {}).get("no_adapter_loaded_verified")
         raw = (src / "raw_output.txt").read_text() if (src / "raw_output.txt").exists() else None
@@ -352,7 +364,8 @@ def initial_from_run_pipeline(case: dict, arm: str, args):
 class LedgerExcerptGenerator(LiveGenerator):
     def generate(self, prompt, out_dir):
         rec = super().generate(prompt, out_dir)
-        _ledger_excerpt(self.ledger, build_messages(prompt), out_dir / "runtime_ledger_excerpt.jsonl")
+        _ledger_excerpt(self.ledger, build_messages(prompt), out_dir / "runtime_ledger_excerpt.jsonl", self.config.adapter_path)
+        (out_dir / "ledger_source.txt").write_text(str(Path(self.ledger).resolve().relative_to(REPO)) + "\n")
         return rec
 
 
@@ -409,7 +422,8 @@ def case_metrics(state: dict) -> dict:
     attempts = _load_attempts(state)
     first = attempts[0] if attempts else None
     fa = first["assessment"] if first else None
-    m = {"case": state["company_id"], "arm": state["arm"], "outcome": state["outcome"], "stop_reason": state["stop_reason"],
+    m = {"case": state["company_id"], "arm": state["arm"], "outcome": state["outcome"], "stop_code": state.get("stop_code"),
+         "stop_reason": state["stop_reason"],
          "attempts": len(attempts), "repairs": max(0, len(attempts) - 1)}
     if not fa:
         return m
@@ -443,10 +457,39 @@ def case_metrics(state: dict) -> dict:
         "repair_review_wall_s": round(sum((a["assessment"] or {}).get("review_wall_s") or 0 for a in attempts[1:]), 3),
         "repair_completion_tokens": sum((a.get("usage") or {}).get("completion_tokens") or 0 for a in attempts[1:]),
         "final_attempt_passes": bool(attempts[-1]["assessment"] and attempts[-1]["assessment"]["passes"]),
+        "repairs_structurally_valid": sum(bool(a["assessment"]) and a["assessment"]["structure"]["strict_json"]
+                                          and not a["assessment"]["structure"]["truncated"]
+                                          and not a["assessment"]["structure"]["schema_errors"] for a in attempts[1:]),
+        "repair_assertions_unreviewed": sum(len((a["assessment"] or {}).get("unreviewed") or []) for a in attempts[1:]),
+        "initial_review_scope": fa.get("review_scope", "all_recoverable_diagnostic"),
+        "initial_diagnostic_only": not (s["strict_json"] and not s["truncated"]),
         "reviewer_requests": sum(len((r.get("review") or {}).get("attempts") or []) for a in attempts if a["assessment"]
                                  for r in a["assessment"]["assertions"] if "duplicate_of" not in r),
     })
     return m
+
+
+def cmd_refresh_excerpts(args) -> int:
+    """Rebuild every attempt's ledger excerpt with the arm-aware filter (derived artifact only)."""
+    for st in sorted((RESULTS / "runs").glob("*/*/state.json")):
+        state = json.loads(st.read_text())
+        adapter = ARMS[state["arm"]]
+        for a in state["attempts"]:
+            d = REPO / a["dir"]
+            if a.get("reused_from"):
+                ledger = REPO / "outputs/phase3_v5/server_load_ledger.jsonl"
+            else:
+                ledger = WORK / "server_load_ledger.jsonl"
+            msgs_file = d / "prompt_messages.json"
+            if msgs_file.exists():
+                messages = json.loads(msgs_file.read_text())["messages"]
+            elif (d / "prompt.txt").exists():
+                messages = build_messages((d / "prompt.txt").read_text())
+            else:
+                continue
+            _ledger_excerpt(ledger, messages, d / "runtime_ledger_excerpt.jsonl", adapter)
+            (d / "ledger_source.txt").write_text(str(ledger.relative_to(REPO)) + "\n")
+    return 0
 
 
 def cmd_report(args) -> int:
@@ -521,6 +564,10 @@ def cmd_report(args) -> int:
                 "sent_to_repair": len(sent), "repair_attempts": total("repairs"),
                 "successful_repairs": f"{sum(r['final_attempt_passes'] and not r['initial_passes'] for r in sent)}/{len(sent)}",
                 "final_outcomes": {o: sum(r["outcome"] == o for r in rs) for o in cfg["controller"]["outcomes"]},
+                "stop_codes": {c: sum(r.get("stop_code") == c for r in rs) for c in sorted({r.get("stop_code") or "none" for r in rs})},
+                "repairs_structurally_valid": f"{total('repairs_structurally_valid')}/{total('repairs')}",
+                "repair_assertions_unreviewed": total("repair_assertions_unreviewed"),
+                "initial_outputs_reviewed_diagnostically": sum(r.get("initial_diagnostic_only") is True for r in gen),
                 "median_initial_generation_latency_s": statistics.median(lat) if lat else None, "timed_initial_samples": len(lat),
                 "initial_completion_tokens": total("initial_completion_tokens"),
                 "repair_generation_latency_s": round(total("repair_generation_latency_s"), 3),
@@ -552,8 +599,10 @@ def main(argv=None) -> int:
     a.add_argument("--ledger", default=str(WORK / "server_load_ledger.jsonl"))
     a.add_argument("--reviewer-api-base", default="http://127.0.0.1:8081/v1")
     sub.add_parser("report")
+    sub.add_parser("refresh-excerpts")
     args = ap.parse_args(argv)
-    return {"freeze-config": cmd_freeze_config, "calibrate": cmd_calibrate, "advance": cmd_advance, "report": cmd_report}[args.cmd](args)
+    return {"freeze-config": cmd_freeze_config, "calibrate": cmd_calibrate, "advance": cmd_advance, "report": cmd_report,
+            "refresh-excerpts": cmd_refresh_excerpts}[args.cmd](args)
 
 
 if __name__ == "__main__":

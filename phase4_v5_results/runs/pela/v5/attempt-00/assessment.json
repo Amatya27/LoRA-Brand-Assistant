@@ -1,0 +1,881 @@
+{
+ "checks_version": "phase4-v5-checks-2",
+ "structure": {
+  "strict_json": true,
+  "truncated": false,
+  "parse_error": null,
+  "schema_errors": [
+   "missing key: claims",
+   "missing key: likely_target_audience",
+   "missing key: current_marketing_strategy",
+   "missing key: unknowns",
+   "missing key: marketing_gaps",
+   "missing key: collaboration_opportunities",
+   "missing key: instagram_post_idea",
+   "missing key: email_subject",
+   "missing key: email_body"
+  ],
+  "parse_mode": "strict",
+  "prompt_schema_valid": false,
+  "training_schema_valid": false,
+  "raw_format": {
+   "starts_with_brace": true,
+   "code_fenced": false,
+   "text_outside_json": false
+  }
+ },
+ "decision": "draft",
+ "repetition": {
+  "method": "exact match after whitespace/quote/case normalisation; no semantic similarity",
+  "claim_count": 0,
+  "duplicate_claim_ids": [],
+  "duplicate_claim_statements": 0,
+  "distinct_claim_statements": 0,
+  "duplicate_claim_quotes": 0,
+  "repeated_prose_sentences": {
+   "pela case has a team that is dedicated to making the global campsite a little better than we found it.": [
+    "brand_summary",
+    "brand_summary"
+   ]
+  },
+  "max_8gram_repeats_in_raw": 3,
+  "looping": false
+ },
+ "citation_mechanics": {
+  "inline_passage_refs": [
+   "P1",
+   "P2",
+   "P3",
+   "P4",
+   "P5",
+   "P6",
+   "P7",
+   "P8",
+   "P9",
+   "P10"
+  ],
+  "unknown_refs": [],
+  "claim_quotes": []
+ },
+ "assertions": [
+  {
+   "review_id": "R-ca18de014d3bc6d4",
+   "location": "brand_summary#s0",
+   "text": "Pela Case is a company that creates compostable phone cases [P1].",
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": false,
+   "verdict": "supported",
+   "reviewer_verdict": "supported",
+   "citation_status": "miscited_supported_elsewhere",
+   "flags": [],
+   "reason": "The passage explicitly states that Pela Case is a company that creates compostable phone cases.",
+   "guard": {
+    "coverage": 0.6,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": []
+   },
+   "reviewer_reason": "The passage explicitly states that Pela Case is a company that creates compostable phone cases.",
+   "evidence_passage_id": "P3",
+   "evidence_quote": "Overview Pela Case, creators of the first-ever compostable phone case, is a company with an eco-friendly brand. It was founded in 2010 by Jeremy Lang to create day-to-day products designed for a waste-free future. This goal has brought thousands of students and professors to the Pela Case community as customers and influencers. With the help of this passionate group of like-minded individuals, Pela Case saw the need to spread awareness and reach out to the world. Over time, customer service has continued to receive fans eager to help promote the brand and its products and spread the mission of reducing everyday waste.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "470806a744f25c6635f7fe5ba3d197c1e9a05196e2599212e536b0abf203df51",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-ca18de014d3bc6d4\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P3\",\n  \"evidence_quote\": \"Overview Pela Case, creators of the first-ever compostable phone case, is a company with an eco-friendly brand. It was founded in 2010 by Jeremy Lang to create day-to-day products designed for a waste-free future. This goal has brought thousands of students and professors to the Pela Case community as customers and influencers. With the help of this passionate group of like-minded individuals, Pela Case saw the need to spread awareness and reach out to the world. Over time, customer service has continued to receive fans eager to help promote the brand and its products and spread the mission of reducing everyday waste.\",\n  \"reason\": \"The passage explicitly states that Pela Case is a company that creates compostable phone cases.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 557,
+       "completion_tokens": 203,
+       "total_tokens": 760,
+       "prompt_tokens_details": {
+        "cached_tokens": 157
+       }
+      },
+      "latency_s": 16.342,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "6791728988ac91cb7216d77b26fbf85e1c3ddaba73671a6cf2580f199bec051f",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-60b3ff61d92bf53e",
+   "location": "brand_summary#s1",
+   "text": "Pela Case is founded in 2010 by Jeremy Lang to create day-to-day products designed for a waste-free future [P2].",
+   "kind": "factual",
+   "cited_passages": [
+    "P2"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": false,
+   "verdict": "supported",
+   "reviewer_verdict": "supported",
+   "citation_status": "miscited_supported_elsewhere",
+   "flags": [],
+   "reason": "The evidence passage directly supports the statement by providing information about Pela Case's founding year and its mission to create products designed for a waste-free future.",
+   "guard": {
+    "coverage": 1.0,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": []
+   },
+   "reviewer_reason": "The evidence passage directly supports the statement by providing information about Pela Case's founding year and its mission to create products designed for a waste-free future.",
+   "evidence_passage_id": "P3",
+   "evidence_quote": "Overview Pela Case, creators of the first-ever compostable phone case, is a company with an eco-friendly brand. It was founded in 2010 by Jeremy Lang to create day-to-day products designed for a waste-free future. This goal has brought thousands of students and professors to the Pela Case community as customers and influencers. With the help of this passionate group of like-minded individuals, Pela Case saw the need to spread awareness and reach out to the world. Over time, customer service has continued to receive fans eager to help promote the brand and its products and spread the mission of reducing everyday waste.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "b3c0df6f75fbc4f002641fe2551b80e9443ab8d0cbea0d30afe7d3a0600fc9a9",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-60b3ff61d92bf53e\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P3\",\n  \"evidence_quote\": \"Overview Pela Case, creators of the first-ever compostable phone case, is a company with an eco-friendly brand. It was founded in 2010 by Jeremy Lang to create day-to-day products designed for a waste-free future. This goal has brought thousands of students and professors to the Pela Case community as customers and influencers. With the help of this passionate group of like-minded individuals, Pela Case saw the need to spread awareness and reach out to the world. Over time, customer service has continued to receive fans eager to help promote the brand and its products and spread the mission of reducing everyday waste.\",\n  \"reason\": \"The evidence passage directly supports the statement by providing information about Pela Case's founding year and its mission to create products designed for a waste-free future.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 583,
+       "completion_tokens": 217,
+       "total_tokens": 800,
+       "prompt_tokens_details": {
+        "cached_tokens": 157
+       }
+      },
+      "latency_s": 20.619,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "ed9fd7df906bb02c9e2fddb2e9e19cd61e5894332f3e1f81440087485376bbb4",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-bd72d4d438906378",
+   "location": "brand_summary#s2",
+   "text": "Pela Case has a mission to create a waste-free future [P3].",
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": false,
+   "verdict": "supported",
+   "reviewer_verdict": "supported",
+   "citation_status": "cited",
+   "flags": [],
+   "reason": "The passage directly states that Pela Case was founded with the mission of creating a waste-free future, which aligns with the statement.",
+   "guard": {
+    "coverage": 1.0,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": []
+   },
+   "reviewer_reason": "The passage directly states that Pela Case was founded with the mission of creating a waste-free future, which aligns with the statement.",
+   "evidence_passage_id": "P3",
+   "evidence_quote": "It was founded in 2010 by Jeremy Lang to create day-to-day products designed for a waste-free future.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "040a37f575ba2d1a43059c0143d626dcb3f1e9311f7893996f145a1c1690a58e",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-bd72d4d438906378\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P3\",\n  \"evidence_quote\": \"It was founded in 2010 by Jeremy Lang to create day-to-day products designed for a waste-free future.\",\n  \"reason\": \"The passage directly states that Pela Case was founded with the mission of creating a waste-free future, which aligns with the statement.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 594,
+       "completion_tokens": 115,
+       "total_tokens": 709,
+       "prompt_tokens_details": {
+        "cached_tokens": 157
+       }
+      },
+      "latency_s": 11.663,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "70df490081a8cdae2e7b1ebb5a5522fdc277931cea764dd393941ea0fcb40286",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-05da41f5627f9fce",
+   "location": "brand_summary#s3",
+   "text": "Pela Case has a marketing team that has helped scale the ambassador program from 400 participants to over 1,600 in a few months [P4].",
+   "kind": "factual",
+   "cited_passages": [
+    "P4"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": false,
+   "verdict": "supported",
+   "reviewer_verdict": "supported",
+   "citation_status": "cited",
+   "flags": [],
+   "reason": "The passage directly states that the marketing team at Pela Case has helped scale the ambassador program, which is consistent with the statement.",
+   "guard": {
+    "coverage": 0.917,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": []
+   },
+   "reviewer_reason": "The passage directly states that the marketing team at Pela Case has helped scale the ambassador program, which is consistent with the statement.",
+   "evidence_passage_id": "P4",
+   "evidence_quote": "Impact BrandChamp has simplified Pela Case’s operations and made it possible to scale the ambassador program from 400 participants to over 1,600 in a few months. The marketing team at Pela Case has also benefited from BrandChamp’s activity builder, which allows them to plan out their marketing campaigns and product launches in advance.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "fb72bce36da149c969defc0afe95d42db8d821e3d46d1e4187235e326f2e2fd9",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-05da41f5627f9fce\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P4\",\n  \"evidence_quote\": \"Impact BrandChamp has simplified Pela Case’s operations and made it possible to scale the ambassador program from 400 participants to over 1,600 in a few months. The marketing team at Pela Case has also benefited from BrandChamp’s activity builder, which allows them to plan out their marketing campaigns and product launches in advance.\",\n  \"reason\": \"The passage directly states that the marketing team at Pela Case has helped scale the ambassador program, which is consistent with the statement.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 622,
+       "completion_tokens": 159,
+       "total_tokens": 781,
+       "prompt_tokens_details": {
+        "cached_tokens": 158
+       }
+      },
+      "latency_s": 14.162,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "d265058816685f0089b6005b9f8cd44fdb4bde3ed0b957451a130ff67dbf879e",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-b81ee1d91fd4e30c",
+   "location": "brand_summary#s4",
+   "text": "Pela Case has a dedicated influencer and ambassador program that has helped spread awareness and reach out to the world [P5].",
+   "kind": "factual",
+   "cited_passages": [
+    "P5"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": false,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.364,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.36 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.36 < 0.6",
+   "reviewer_reason": "The evidence passage P5 directly supports the statement by mentioning that Pela Case managed its influencer and ambassador programs on one platform, which aligns with the idea of spreading awareness and reaching out to the world.",
+   "evidence_passage_id": "P5",
+   "evidence_quote": "Moreover, Pela Case was able to manage its influencer and ambassador programs on one platform, sending email updates, creating weekly activities, and improving engagements. Through BrandChamp, Pela Chase has saved hundreds of hours previously wasted on manually managing their programs.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "2794cf8a2a92ef6023fa13c9a914a51696ace36fbfb2be2193eaf020be7826ed",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-b81ee1d91fd4e30c\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P5\",\n  \"evidence_quote\": \"Moreover, Pela Case was able to manage its influencer and ambassador programs on one platform, sending email updates, creating weekly activities, and improving engagements. Through BrandChamp, Pela Chase has saved hundreds of hours previously wasted on manually managing their programs.\",\n  \"reason\": \"The evidence passage P5 directly supports the statement by mentioning that Pela Case managed its influencer and ambassador programs on one platform, which aligns with the idea of spreading awareness and reaching out to the world.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 588,
+       "completion_tokens": 155,
+       "total_tokens": 743,
+       "prompt_tokens_details": {
+        "cached_tokens": 158
+       }
+      },
+      "latency_s": 13.449,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "66906f3541b550ffe9673c3b7b49474e7d46d14aeefedc969136ba41a1f2a5fa",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-41ac378eeb59a1f0",
+   "location": "brand_summary#s5",
+   "text": "Pela Case has a dedicated community engagement program that has helped make the shift towards sustainable plant-based products the new normal [P6].",
+   "kind": "factual",
+   "cited_passages": [
+    "P6"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": false,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.286,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.29 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.29 < 0.6",
+   "reviewer_reason": "The passage directly supports the statement by mentioning Pela's goal to create a waste-free future and their belief that sustainable products will become the new normal, which aligns with the idea of a dedicated community engagement program.",
+   "evidence_passage_id": "P6",
+   "evidence_quote": "Why? Here at Pela we have a big, hairy audacious goal. We want to create a waste free future. We believe that the technology exists to make our BHAG a reality, it just takes the right company with the right community to make these products the new normal. This is why we are developing products made of environmentally sensible materials. To educate and inspire the global community of people who are committed to making a positive impact on our planet. Put simply, we believe in better.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "7577980023136ffc0f963b27cc8828be69b38c8f4d7ae082357b628283ada872",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-41ac378eeb59a1f0\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P6\",\n  \"evidence_quote\": \"Why? Here at Pela we have a big, hairy audacious goal. We want to create a waste free future. We believe that the technology exists to make our BHAG a reality, it just takes the right company with the right community to make these products the new normal. This is why we are developing products made of environmentally sensible materials. To educate and inspire the global community of people who are committed to making a positive impact on our planet. Put simply, we believe in better.\",\n  \"reason\": \"The passage directly supports the statement by mentioning Pela's goal to create a waste-free future and their belief that sustainable products will become the new normal, which aligns with the idea of a dedicated community engagement program.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 629,
+       "completion_tokens": 204,
+       "total_tokens": 833,
+       "prompt_tokens_details": {
+        "cached_tokens": 158
+       }
+      },
+      "latency_s": 19.512,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "9984b5e2cc09724ea4377a41c03754b18703de74ba4b5ba611fde8d9b7d91d60",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-65471b1c3f11ea36",
+   "location": "brand_summary#s6",
+   "text": "Pela Case has a global map that shows where the Pela Case has reached and how the shift to sustainable products is gaining momentum [P7].",
+   "kind": "factual",
+   "cited_passages": [
+    "P7"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": false,
+   "verdict": "unresolved",
+   "citation_status": null,
+   "reason": "reviewer response missing, invalid or untraceable after retries",
+   "reviewer_reason": "reviewer response missing, invalid or untraceable after retries",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unresolved",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "3090bed58c68a4ffaf4c45ebc343ac158240cf01ffa82684fe99eb9d2c1cb186",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-65471b1c3f11ea36\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P8\",\n  \"evidence_quote\": \"Find Us In Store Select site currency: USDCADEURGBP # About Us At Pela, we want to leave the global campsite a little better than we found it. To help make this happen, we create sustainable, plant-based alternatives to conventional plastic products. We know we will all be a little better off when sustainable products become the new standard, and we are excited to see the Pela Community driving the shift towards sustainable plant-based products. The Pela Global map below shows where the Pela Case has reached so far, and how the shift to sustainable products is gaining global momentum.\",\n  \"reason\": \"The evidence passage directly states that Pela has a global map showing where the Pela Case has reached and how the shift to sustainable products is gaining momentum.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 649,
+       "completion_tokens": 213,
+       "total_tokens": 862,
+       "prompt_tokens_details": {
+        "cached_tokens": 159
+       }
+      },
+      "latency_s": 18.964,
+      "error": null,
+      "validation_errors": [
+       "evidence_quote is not traceable to the named passage (>= 4 consecutive words required)"
+      ]
+     },
+     {
+      "attempt": 1,
+      "prompt_sha256": "0fe6aa862edfd9feda9ee21627cde3457c5a12a6da997f69babfb84d79792c4c",
+      "raw_text": "```json\n{\"review_id\": \"R-65471b1c3f11ea36\", \"verdict\": \"supported\", \"evidence_passage_id\": \"P8\", \"evidence_quote\": \"Find Us In Store Select site currency: USDCADEURGBP # About Us At Pela, we want to leave the global campsite a little better than we found it. To help make this happen, we create sustainable, plant-based alternatives to conventional plastic products. We know we will all be a little better off when sustainable products become the new standard, and we are excited to see the Pela Community driving the shift towards sustainable plant-based products. The Pela Global map below shows where the Pela Case has reached so far, and how the shift to sustainable products is gaining global momentum. ───────────────────────────────────────┬────────────────────────────────────────────────────────────\", \"reason\": \"The evidence passage directly supports the statement by providing a global map showing the reach of Pela Case and the momentum of the shift to sustainable products.\"}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 679,
+       "completion_tokens": 223,
+       "total_tokens": 902,
+       "prompt_tokens_details": {
+        "cached_tokens": 643
+       }
+      },
+      "latency_s": 19.962,
+      "error": null,
+      "validation_errors": [
+       "evidence_quote is not traceable to the named passage (>= 4 consecutive words required)"
+      ]
+     }
+    ],
+    "request_sha256": "49b3e43472357ca3ae5b8c90b0d34e8f5c9087266e287c592b3f3feb52cfd4f5",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-b0f9d2aa2dfcadfa",
+   "location": "brand_summary#s7",
+   "text": "Pela Case has a purpose to leave the global campsite a little better than we found it [P8].",
+   "kind": "factual",
+   "cited_passages": [
+    "P8"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": false,
+   "verdict": "unresolved",
+   "citation_status": null,
+   "reason": "reviewer response missing, invalid or untraceable after retries",
+   "reviewer_reason": "reviewer response missing, invalid or untraceable after retries",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unresolved",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "0ab82c9a5e2a6d4cd95304aa4b5080b896dff9a7e9263682902fd7f388759ed1",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-b0f9d2aa2dfcadfa\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P8\",\n  \"evidence_quote\": \"Find Us In Store Select site currency: USDCADEURGBP # About Us At Pela, we want to leave the global campsite a little better than we found it. To help make this happen, we create sustainable, plant-based alternatives to conventional plastic products. We know we will all be a little better off when sustainable products become the new standard, and we are excited to see the Pela Community driving the shift towards sustainable plant-based products. The Pela Global map below shows where the Pela Case has reached so far, and how the shift to sustainable products is gaining global momentum. ───────────────────────────────────────┬────────────────────────────────────────────────────────────\",\n  \"reason\": \"The evidence passage directly states that Pela wants to leave the global campsite a little better than they found it, which aligns with the statement.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 671,
+       "completion_tokens": 225,
+       "total_tokens": 896,
+       "prompt_tokens_details": {
+        "cached_tokens": 158
+       }
+      },
+      "latency_s": 24.581,
+      "error": null,
+      "validation_errors": [
+       "evidence_quote is not traceable to the named passage (>= 4 consecutive words required)"
+      ]
+     },
+     {
+      "attempt": 1,
+      "prompt_sha256": "79389a760a6b45da5b0fff8ca8d178e4f7758ccbcb4a7b08a7e11b0483f56cef",
+      "raw_text": "```json\n{\"review_id\": \"R-b0f9d2aa2dfcadfa\", \"verdict\": \"supported\", \"evidence_passage_id\": \"P8\", \"evidence_quote\": \"Find Us In Store Select site currency: USDCADEURGBP # About Us At Pela, we want to leave the global campsite a little better than we found it. To help make this happen, we create sustainable, plant-based alternatives to conventional plastic products. We know we will all be a little better off when sustainable products become the new standard, and we are excited to see the Pela Community driving the shift towards sustainable plant-based products. The Pela Global map below shows where the Pela Case has reached so far, and how the shift to sustainable products is gaining global momentum. ───────────────────────────────────────┬────────────────────────────────────────────────────────────\", \"reason\": \"The evidence quote directly supports the statement by mentioning Pela's goal to leave the global campsite a little better than they found it, aligning with the company's purpose to create a waste-free future and drive the shift towards sustainable products.\"}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 701,
+       "completion_tokens": 237,
+       "total_tokens": 938,
+       "prompt_tokens_details": {
+        "cached_tokens": 665
+       }
+      },
+      "latency_s": 18.251,
+      "error": null,
+      "validation_errors": [
+       "evidence_quote is not traceable to the named passage (>= 4 consecutive words required)"
+      ]
+     }
+    ],
+    "request_sha256": "4a1ea7967d8e0ef91c5762360bfdfe6390a12dd1e1aea678af5da116aca04fb5",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-e59b3a1d3d4d0829",
+   "location": "brand_summary#s8",
+   "text": "Pela Case has a team that is dedicated to making the global campsite a little better than we found it [P9].",
+   "kind": "factual",
+   "cited_passages": [
+    "P9"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": false,
+   "verdict": "unresolved",
+   "citation_status": null,
+   "reason": "reviewer response missing, invalid or untraceable after retries",
+   "reviewer_reason": "reviewer response missing, invalid or untraceable after retries",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unresolved",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "8e3d9792a58bfb8f4b585cab6e53b8ec55381c18c0188276f68dff0102e3bf18",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-e59b3a1d3d4d0829\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P8\",\n  \"evidence_quote\": \"Find Us In Store Select site currency: USDCADEURGBP # About Us At Pela, we want to leave the global campsite a little better than we found it. To help make this happen, we create sustainable, plant-based alternatives to conventional plastic products. We know we will all be a little better off when sustainable products become the new standard, and we are excited to see the Pela Community driving the shift towards sustainable plant-based products. The Pela Global map below shows where the Pela Case has reached so far, and how the shift to sustainable products is gaining global momentum. ───────────────────────────────────────┬────────────────────────────────────────────────────────────\",\n  \"reason\": \"The evidence passage directly supports the statement by mentioning Pela's goal of leaving the global campsite a little better than they found it, and their commitment to creating sustainable, plant-based alternatives.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 637,
+       "completion_tokens": 238,
+       "total_tokens": 875,
+       "prompt_tokens_details": {
+        "cached_tokens": 157
+       }
+      },
+      "latency_s": 19.033,
+      "error": null,
+      "validation_errors": [
+       "evidence_quote is not traceable to the named passage (>= 4 consecutive words required)"
+      ]
+     },
+     {
+      "attempt": 1,
+      "prompt_sha256": "022f89393a971cb43551c06e0eedecdb8d24b6784c999bd85b5d1821688da3f5",
+      "raw_text": "```json\n{\"review_id\": \"R-59b3a1d3d4d0829\", \"verdict\": \"supported\", \"evidence_passage_id\": \"P8\", \"evidence_quote\": \"Find Us In Store Select site currency: USDCADEURGBP # About Us At Pela, we want to leave the global campsite a little better than we found it. To help make this happen, we create sustainable, plant-based alternatives to conventional plastic products. We know we will all be a little better off when sustainable products become the new standard, and we are excited to see the Pela Community driving the shift towards sustainable plant based products. The Pela Global map below shows where the Pela Case has reached so far, and how the shift to sustainable products is gaining global momentum. ───────────────────────────────────────┬────────────────────────────────────────────────────────────\", \"reason\": \"The evidence passage directly supports the statement by mentioning Pela's goal of leaving the global campsite a little better than they found it, and their commitment to creating sustainable, plant-based alternatives to conventional plastic products. This aligns with the idea of making the global campsite a little better than they found it.\"}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 667,
+       "completion_tokens": 256,
+       "total_tokens": 923,
+       "prompt_tokens_details": {
+        "cached_tokens": 631
+       }
+      },
+      "latency_s": 20.113,
+      "error": null,
+      "validation_errors": [
+       "review_id 'R-59b3a1d3d4d0829' != expected 'R-e59b3a1d3d4d0829'",
+       "evidence_quote is not traceable to the named passage (>= 4 consecutive words required)"
+      ]
+     }
+    ],
+    "request_sha256": "b2ff689ad34909b1fe3a3f344cb8e3dd8a70891e2fe220259c319394580a9800",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-891377f9e8670e0d",
+   "location": "brand_summary#s9",
+   "text": "Pela Case has a team that is dedicated to making the global campsite a little better than we found it [P10].",
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": false,
+   "verdict": "unsupported",
+   "reviewer_verdict": "unsupported",
+   "citation_status": "cited",
+   "flags": [],
+   "reason": "The statements are not directly supported or contradicted by the given passages. The passages do not contain specific information about Pela's team or their dedication to making the global campsite better.",
+   "guard": null,
+   "reviewer_reason": "The statements are not directly supported or contradicted by the given passages. The passages do not contain specific information about Pela's team or their dedication to making the global campsite better.",
+   "evidence_passage_id": null,
+   "evidence_quote": "",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "b02c1e1f49174d1e6c16c78ed3b7687d5b3a1e43b2ca209693cb4526c52393fe",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-891377f9e8670e0d\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P10\",\n  \"evidence_quote\": \"We intently listen to open and honest positive and negative feedback knowing that it makes us better.\",\n  \"reason\": \"The passage directly states that Pela listens to feedback to improve, which aligns with the statement that they are dedicated to making the global campsite a little better than they found it.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 680,
+       "completion_tokens": 121,
+       "total_tokens": 801,
+       "prompt_tokens_details": {
+        "cached_tokens": 158
+       }
+      },
+      "latency_s": 10.138,
+      "error": null,
+      "validation_errors": [
+       "evidence_quote is not traceable to the named passage (>= 4 consecutive words required)"
+      ]
+     },
+     {
+      "attempt": 1,
+      "prompt_sha256": "bd78adc4987743a716254fd680c9ddf7f86519084692a6c20599c85602e402b8",
+      "raw_text": "```json\n{\"review_id\": \"R-891377f9e8670e0d\", \"verdict\": \"unsupported\", \"evidence_passage_id\": null, \"evidence_quote\": null, \"reason\": \"The statements are not directly supported or contradicted by the given passages. The passages do not contain specific information about Pela's team or their dedication to making the global campsite better.\"}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 710,
+       "completion_tokens": 94,
+       "total_tokens": 804,
+       "prompt_tokens_details": {
+        "cached_tokens": 674
+       }
+      },
+      "latency_s": 6.913,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "b147fa2a79cc6c1ab398c6e777cfdb81ff598d92ee832b5ff8235109a2b158d3",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  }
+ ],
+ "skipped_sentences": {
+  "proposal": [],
+  "non_assertion": []
+ },
+ "unknown_issues": [],
+ "outreach": {
+  "recipient": "no_email",
+  "sender": "no_email",
+  "instagram_mentioned": false,
+  "other_platforms_in_pitch": [],
+  "instagram_compliant": false,
+  "promises": [],
+  "email_subject": ""
+ },
+ "failures": [
+  {
+   "check": "schema",
+   "detail": [
+    "missing key: claims",
+    "missing key: likely_target_audience",
+    "missing key: current_marketing_strategy",
+    "missing key: unknowns",
+    "missing key: marketing_gaps"
+   ]
+  },
+  {
+   "check": "decision_consistency_errors",
+   "detail": [
+    "draft with no collaboration_opportunities"
+   ]
+  },
+  {
+   "check": "repetition",
+   "detail": [
+    3
+   ]
+  },
+  {
+   "check": "citation_mapping",
+   "review_id": "R-ca18de014d3bc6d4",
+   "location": "brand_summary#s0",
+   "text": "Pela Case is a company that creates compostable phone cases [P1].",
+   "citation_status": "miscited_supported_elsewhere",
+   "evidence_passage_id": "P3"
+  },
+  {
+   "check": "citation_mapping",
+   "review_id": "R-60b3ff61d92bf53e",
+   "location": "brand_summary#s1",
+   "text": "Pela Case is founded in 2010 by Jeremy Lang to create day-to-day products designed for a waste-free future [P2].",
+   "citation_status": "miscited_supported_elsewhere",
+   "evidence_passage_id": "P3"
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-b81ee1d91fd4e30c",
+   "location": "brand_summary#s4",
+   "text": "Pela Case has a dedicated influencer and ambassador program that has helped spread awareness and reach out to the world [P5].",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.36 < 0.6",
+   "evidence_passage_id": "P5",
+   "evidence_quote": "Moreover, Pela Case was able to manage its influencer and ambassador programs on one platform, sending email updates, creating weekly activities, and improving engagements. Through BrandChamp, Pela Chase has saved hundreds of hours previously wasted on manually managing their programs."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-41ac378eeb59a1f0",
+   "location": "brand_summary#s5",
+   "text": "Pela Case has a dedicated community engagement program that has helped make the shift towards sustainable plant-based products the new normal [P6].",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.29 < 0.6",
+   "evidence_passage_id": "P6",
+   "evidence_quote": "Why? Here at Pela we have a big, hairy audacious goal. We want to create a waste free future. We believe that the technology exists to make our BHAG a reality, it just takes the right company with the right community to make these products the new normal. This is why we are developing products made of environmentally sensible materials. To educate and inspire the global community of people who are committed to making a positive impact on our planet. Put simply, we believe in better."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-891377f9e8670e0d",
+   "location": "brand_summary#s9",
+   "text": "Pela Case has a team that is dedicated to making the global campsite a little better than we found it [P10].",
+   "verdict": "unsupported",
+   "reason": "The statements are not directly supported or contradicted by the given passages. The passages do not contain specific information about Pela's team or their dedication to making the global campsite better.",
+   "evidence_passage_id": null,
+   "evidence_quote": ""
+  },
+  {
+   "check": "sender_recipient",
+   "detail": [
+    "no_email",
+    "no_email"
+   ]
+  },
+  {
+   "check": "instagram",
+   "detail": []
+  }
+ ],
+ "unresolved": [
+  "R-65471b1c3f11ea36",
+  "R-b0f9d2aa2dfcadfa",
+  "R-e59b3a1d3d4d0829"
+ ],
+ "passes": false,
+ "failure_signature": "ce95702415c7a39e98e4f8e2d550964adabd9ec2e16d879363c8bab79a0baa71",
+ "review_wall_s": 233.902,
+ "attempt": {
+  "index": 0,
+  "kind": "initial"
+ }
+}

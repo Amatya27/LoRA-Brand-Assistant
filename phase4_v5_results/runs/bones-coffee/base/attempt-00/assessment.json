@@ -1,0 +1,554 @@
+{
+ "checks_version": "phase4-v5-checks-2",
+ "structure": {
+  "strict_json": false,
+  "truncated": true,
+  "parse_error": {
+   "error_type": "truncated_output",
+   "truncated": true,
+   "finish_reason": "stop",
+   "unbalanced_braces": true,
+   "message": "Outermost JSON object is malformed or incomplete: Expecting ',' delimiter: line 65 column 3 (char 7227)"
+  },
+  "schema_errors": [
+   "truncated_output: Outermost JSON object is malformed or incomplete: Expecting ',' delimiter: line 65 column 3 (char 7227)"
+  ],
+  "parse_mode": "diagnostic_prefix",
+  "prompt_schema_valid": false,
+  "training_schema_valid": false,
+  "raw_format": {
+   "starts_with_brace": false,
+   "code_fenced": true,
+   "text_outside_json": null
+  }
+ },
+ "decision": null,
+ "repetition": {
+  "method": "exact match after whitespace/quote/case normalisation; no semantic similarity",
+  "claim_count": 11,
+  "duplicate_claim_ids": [],
+  "duplicate_claim_statements": 8,
+  "distinct_claim_statements": 3,
+  "duplicate_claim_quotes": 0,
+  "repeated_prose_sentences": {},
+  "max_8gram_repeats_in_raw": 8,
+  "looping": false
+ },
+ "citation_mechanics": {
+  "inline_passage_refs": [],
+  "unknown_refs": [],
+  "claim_quotes": [
+   {
+    "index": 0,
+    "claim_id": "C1",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 1,
+    "claim_id": "C2",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 2,
+    "claim_id": "C3",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 3,
+    "claim_id": "C4",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 4,
+    "claim_id": "C5",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 5,
+    "claim_id": "C6",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 6,
+    "claim_id": "C7",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 7,
+    "claim_id": "C8",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 8,
+    "claim_id": "C9",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 9,
+    "claim_id": "C10",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 10,
+    "claim_id": "C11",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   }
+  ]
+ },
+ "assertions": [
+  {
+   "review_id": "R-e41745af0cca3300",
+   "location": "claims[0].statement",
+   "text": "It is on top of a black surface with coffee beans, chocolate, marshmallows, graham crackers, and roasted marshmallows nearby. The art on the bag has a skeleton telling stories to a werewolf and bigfoot around a campfire. > This one is definitely in my top 3 favorite flavors now. From the minute I opened the bag it > smelled just like I opened a bag of freshly made S’mores! Tastes just like it smells, can’t beat > it. If you haven’t tried this flavor yet do yourself a favor and grab a bag! Evan D. Rated 5 out of 5 The front of a 12 ounce bag of Bones Coffee Company S’morey Time coffee.",
+   "kind": "claim_statement",
+   "cited_passages": [],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "supported",
+   "reviewer_verdict": "supported",
+   "citation_status": "uncited",
+   "flags": [],
+   "reason": "The evidence passage P1 directly supports the statement by describing the appearance and flavor of the Bones Coffee Company S’morey Time coffee, which matches the description in the statement.",
+   "guard": {
+    "coverage": 1.0,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": []
+   },
+   "reviewer_reason": "The evidence passage P1 directly supports the statement by describing the appearance and flavor of the Bones Coffee Company S’morey Time coffee, which matches the description in the statement.",
+   "evidence_passage_id": "P1",
+   "evidence_quote": "It is on top of a black surface with coffee beans, chocolate, marshmallows, graham crackers, and roasted marshmallows nearby. The art on the bag has a skeleton telling stories to a werewolf and bigfoot around a campfire. > This one is definitely in my top 3 favorite flavors now. From the minute I opened the bag it > smelled just like I opened a bag of freshly made S’mores! Tastes just like it smells, can’t beat > it. If you haven’t tried this flavor yet do yourself a favor and grab a bag! Evan D. Rated 5 out of 5 The front of a 12 ounce bag of Bones Coffee Company S’morey Time coffee.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "bd327f700c680a7409f28eefca03d3c40232d58bb31691c25ffcf200f8e4a468",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-e41745af0cca3300\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P1\",\n  \"evidence_quote\": \"It is on top of a black surface with coffee beans, chocolate, marshmallows, graham crackers, and roasted marshmallows nearby. The art on the bag has a skeleton telling stories to a werewolf and bigfoot around a campfire. > This one is definitely in my top 3 favorite flavors now. From the minute I opened the bag it > smelled just like I opened a bag of freshly made S’mores! Tastes just like it smells, can’t beat > it. If you haven’t tried this flavor yet do yourself a favor and grab a bag! Evan D. Rated 5 out of 5 The front of a 12 ounce bag of Bones Coffee Company S’morey Time coffee.\",\n  \"reason\": \"The evidence passage P1 directly supports the statement by describing the appearance and flavor of the Bones Coffee Company S’morey Time coffee, which matches the description in the statement.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 695,
+       "completion_tokens": 243,
+       "total_tokens": 938,
+       "prompt_tokens_details": {
+        "cached_tokens": 0
+       }
+      },
+      "latency_s": 24.73,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "53571b324f95dbbe3ee920c4996b4be092bc90dea3423e390bc9519200bb1388",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-e41745af0cca3300",
+   "location": "claims[1].statement",
+   "text": "It is on top of a black surface with coffee beans, chocolate, marshmallows, graham crackers, and roasted marshmallows nearby. The art on the bag has a skeleton telling stories to a werewolf and bigfoot around a campfire. > This one is definitely in my top 3 favorite flavors now. From the minute I opened the bag it > smelled just like I opened a bag of freshly made S’mores! Tastes just like it smells, can’t beat > it. If you haven’t tried this flavor yet do yourself a favor and grab a bag! Evan D. Rated 5 out of 5 The front of a 12 ounce bag of Bones Coffee Company S’morey Time coffee.",
+   "duplicate_of": "R-e41745af0cca3300",
+   "flags": [],
+   "verdict": "supported",
+   "citation_status": "uncited",
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-e41745af0cca3300",
+   "location": "claims[2].statement",
+   "text": "It is on top of a black surface with coffee beans, chocolate, marshmallows, graham crackers, and roasted marshmallows nearby. The art on the bag has a skeleton telling stories to a werewolf and bigfoot around a campfire. > This one is definitely in my top 3 favorite flavors now. From the minute I opened the bag it > smelled just like I opened a bag of freshly made S’mores! Tastes just like it smells, can’t beat > it. If you haven’t tried this flavor yet do yourself a favor and grab a bag! Evan D. Rated 5 out of 5 The front of a 12 ounce bag of Bones Coffee Company S’morey Time coffee.",
+   "duplicate_of": "R-e41745af0cca3300",
+   "flags": [],
+   "verdict": "supported",
+   "citation_status": "uncited",
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-b99846e98c0fea43",
+   "location": "claims[3].statement",
+   "text": "The Nightmare Before Christmas Collector's Box. There are five four ounce bags of coffee scattered around and they are named Ruff Weather, Mudslide Boogie, Santa Jack, The Pumpkin King, and Frog's Breath. The inside of the box has characters from The Nightmare Before Christmas on it. > This one is definitely in my top 3 favorite flavors now. From the minute I opened the bag it > smelled just like I opened a bag of freshly made S’mores! Tastes just like it smells, can’t beat > it. If you haven’t tried this flavor yet do yourself a favor and grab a bag! Evan D. Rated 5 out of 5 The front of a 12 ounce bag of Bones Coffee Company S’morey Time coffee.",
+   "kind": "claim_statement",
+   "cited_passages": [],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.439,
+    "missing_numbers": [
+     "1",
+     "12",
+     "3"
+    ],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.44 < 0.6",
+     "numbers not in evidence: ['1', '12', '3']"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.44 < 0.6; numbers not in evidence: ['1', '12', '3']",
+   "reviewer_reason": "The evidence passage directly supports the statement by listing the five named bags of coffee and mentioning the characters from The Nightmare Before Christmas on the inside of the box.",
+   "evidence_passage_id": "P4",
+   "evidence_quote": "The Nightmare Before Christmas Collector's Box. There are five four ounce bags of coffee scattered around and they are named Ruff Weather, Mudslide Boogie, Santa Jack, The Pumpkin King, and Frog's Breath. The inside of the box has characters from The Nightmare Before Christmas on it.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "a95934e82f7c519aefa5edf31f9c3ed84ae2b7c71bd0b015e3cee4c4ed3cc62f",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-b99846e98c0fea43\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P4\",\n  \"evidence_quote\": \"The Nightmare Before Christmas Collector's Box. There are five four ounce bags of coffee scattered around and they are named Ruff Weather, Mudslide Boogie, Santa Jack, The Pumpkin King, and Frog's Breath. The inside of the box has characters from The Nightmare Before Christmas on it.\",\n  \"reason\": \"The evidence passage directly supports the statement by listing the five named bags of coffee and mentioning the characters from The Nightmare Before Christmas on the inside of the box.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 623,
+       "completion_tokens": 150,
+       "total_tokens": 773,
+       "prompt_tokens_details": {
+        "cached_tokens": 159
+       }
+      },
+      "latency_s": 11.753,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "c2ff18dccaffaa156d75cc6252bc5fa228a44f39a5909bbfc8f9dcd8db741f50",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-298d50de98e59227",
+   "location": "claims[4].statement",
+   "text": "Their names are Chocolate Raspberry, Bananas Foster, Jacked 'o' Lantern, Highland Grog, Strawberry Cheesecake, French Vanilla, Salted Caramel, and Sinn-o-bun. Two 12 ounce bags of Bones Coffee Company coffee.",
+   "kind": "claim_statement",
+   "cited_passages": [],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "supported",
+   "reviewer_verdict": "supported",
+   "citation_status": "uncited",
+   "flags": [],
+   "reason": "The evidence passage P5 directly states the names of the flavors and the quantity of coffee bags, which matches the statement.",
+   "guard": {
+    "coverage": 1.0,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": []
+   },
+   "reviewer_reason": "The evidence passage P5 directly states the names of the flavors and the quantity of coffee bags, which matches the statement.",
+   "evidence_passage_id": "P5",
+   "evidence_quote": "Their names are Chocolate Raspberry, Bananas Foster, Jacked 'o' Lantern, Highland Grog, Strawberry Cheesecake, French Vanilla, Salted Caramel, and Sinn-o-bun. Two 12 ounce bags of Bones Coffee Company coffee.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "c187176b24798e1071ab3559c05e82ff12dde3a9cc3ca859ae7939c04ef2be9b",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-298d50de98e59227\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P5\",\n  \"evidence_quote\": \"Their names are Chocolate Raspberry, Bananas Foster, Jacked 'o' Lantern, Highland Grog, Strawberry Cheesecake, French Vanilla, Salted Caramel, and Sinn-o-bun. Two 12 ounce bags of Bones Coffee Company coffee.\",\n  \"reason\": \"The evidence passage P5 directly states the names of the flavors and the quantity of coffee bags, which matches the statement.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 516,
+       "completion_tokens": 139,
+       "total_tokens": 655,
+       "prompt_tokens_details": {
+        "cached_tokens": 159
+       }
+      },
+      "latency_s": 11.27,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "b917c91c09afe7f8a166785ee1513ee28fe49a2bacd6bbacefab1480f66a105e",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-b99846e98c0fea43",
+   "location": "claims[5].statement",
+   "text": "The Nightmare Before Christmas Collector's Box. There are five four ounce bags of coffee scattered around and they are named Ruff Weather, Mudslide Boogie, Santa Jack, The Pumpkin King, and Frog's Breath. The inside of the box has characters from The Nightmare Before Christmas on it. > This one is definitely in my top 3 favorite flavors now. From the minute I opened the bag it > smelled just like I opened a bag of freshly made S’mores! Tastes just like it smells, can’t beat > it. If you haven’t tried this flavor yet do yourself a favor and grab a bag! Evan D. Rated 5 out of 5 The front of a 12 ounce bag of Bones Coffee Company S’morey Time coffee.",
+   "duplicate_of": "R-b99846e98c0fea43",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-298d50de98e59227",
+   "location": "claims[6].statement",
+   "text": "Their names are Chocolate Raspberry, Bananas Foster, Jacked 'o' Lantern, Highland Grog, Strawberry Cheesecake, French Vanilla, Salted Caramel, and Sinn-o-bun. Two 12 ounce bags of Bones Coffee Company coffee.",
+   "duplicate_of": "R-298d50de98e59227",
+   "flags": [],
+   "verdict": "supported",
+   "citation_status": "uncited",
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-b99846e98c0fea43",
+   "location": "claims[7].statement",
+   "text": "The Nightmare Before Christmas Collector's Box. There are five four ounce bags of coffee scattered around and they are named Ruff Weather, Mudslide Boogie, Santa Jack, The Pumpkin King, and Frog's Breath. The inside of the box has characters from The Nightmare Before Christmas on it. > This one is definitely in my top 3 favorite flavors now. From the minute I opened the bag it > smelled just like I opened a bag of freshly made S’mores! Tastes just like it smells, can’t beat > it. If you haven’t tried this flavor yet do yourself a favor and grab a bag! Evan D. Rated 5 out of 5 The front of a 12 ounce bag of Bones Coffee Company S’morey Time coffee.",
+   "duplicate_of": "R-b99846e98c0fea43",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-298d50de98e59227",
+   "location": "claims[8].statement",
+   "text": "Their names are Chocolate Raspberry, Bananas Foster, Jacked 'o' Lantern, Highland Grog, Strawberry Cheesecake, French Vanilla, Salted Caramel, and Sinn-o-bun. Two 12 ounce bags of Bones Coffee Company coffee.",
+   "duplicate_of": "R-298d50de98e59227",
+   "flags": [],
+   "verdict": "supported",
+   "citation_status": "uncited",
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-b99846e98c0fea43",
+   "location": "claims[9].statement",
+   "text": "The Nightmare Before Christmas Collector's Box. There are five four ounce bags of coffee scattered around and they are named Ruff Weather, Mudslide Boogie, Santa Jack, The Pumpkin King, and Frog's Breath. The inside of the box has characters from The Nightmare Before Christmas on it. > This one is definitely in my top 3 favorite flavors now. From the minute I opened the bag it > smelled just like I opened a bag of freshly made S’mores! Tastes just like it smells, can’t beat > it. If you haven’t tried this flavor yet do yourself a favor and grab a bag! Evan D. Rated 5 out of 5 The front of a 12 ounce bag of Bones Coffee Company S’morey Time coffee.",
+   "duplicate_of": "R-b99846e98c0fea43",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-298d50de98e59227",
+   "location": "claims[10].statement",
+   "text": "Their names are Chocolate Raspberry, Bananas Foster, Jacked 'o' Lantern, Highland Grog, Strawberry Cheesecake, French Vanilla, Salted Caramel, and Sinn-o-bun. Two 12 ounce bags of Bones Coffee Company coffee.",
+   "duplicate_of": "R-298d50de98e59227",
+   "flags": [],
+   "verdict": "supported",
+   "citation_status": "uncited",
+   "kind": "claim_statement",
+   "cited_passages": []
+  }
+ ],
+ "skipped_sentences": {
+  "proposal": [],
+  "non_assertion": []
+ },
+ "unknown_issues": [],
+ "outreach": {
+  "recipient": "no_email",
+  "sender": "no_email",
+  "instagram_mentioned": false,
+  "other_platforms_in_pitch": [],
+  "instagram_compliant": false,
+  "promises": [],
+  "email_subject": ""
+ },
+ "failures": [
+  {
+   "check": "structure",
+   "detail": [
+    "truncated_output: Outermost JSON object is malformed or incomplete: Expecting ',' delimiter: line 65 column 3 (char 7227)"
+   ]
+  },
+  {
+   "check": "duplicate_claims",
+   "detail": [
+    [],
+    8
+   ]
+  },
+  {
+   "check": "claim_quotes",
+   "detail": [
+    {
+     "claim_id": "C1",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C2",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C3",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C4",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C5",
+     "self_quote": false,
+     "other_passage": []
+    }
+   ]
+  },
+  {
+   "check": "citation_mapping",
+   "review_id": "R-e41745af0cca3300",
+   "location": "claims[0].statement",
+   "text": "It is on top of a black surface with coffee beans, chocolate, marshmallows, graham crackers, and roasted marshmallows nearby. The art on the bag has a skeleton telling stories to a werewolf and bigfoot around a campfire. > This one is definitely in my top 3 favorite flavors now. From the minute I opened the bag it > smelled just like I opened a bag of freshly made S’mores! Tastes just like it smells, can’t beat > it. If you haven’t tried this flavor yet do yourself a favor and grab a bag! Evan D. Rated 5 out of 5 The front of a 12 ounce bag of Bones Coffee Company S’morey Time coffee.",
+   "citation_status": "uncited",
+   "evidence_passage_id": "P1"
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-b99846e98c0fea43",
+   "location": "claims[3].statement",
+   "text": "The Nightmare Before Christmas Collector's Box. There are five four ounce bags of coffee scattered around and they are named Ruff Weather, Mudslide Boogie, Santa Jack, The Pumpkin King, and Frog's Breath. The inside of the box has characters from The Nightmare Before Christmas on it. > This one is definitely in my top 3 favorite flavors now. From the minute I opened the bag it > smelled just like I opened a bag of freshly made S’mores! Tastes just like it smells, can’t beat > it. If you haven’t tried this flavor yet do yourself a favor and grab a bag! Evan D. Rated 5 out of 5 The front of a 12 ounce bag of Bones Coffee Company S’morey Time coffee.",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.44 < 0.6; numbers not in evidence: ['1', '12', '3']",
+   "evidence_passage_id": "P4",
+   "evidence_quote": "The Nightmare Before Christmas Collector's Box. There are five four ounce bags of coffee scattered around and they are named Ruff Weather, Mudslide Boogie, Santa Jack, The Pumpkin King, and Frog's Breath. The inside of the box has characters from The Nightmare Before Christmas on it."
+  },
+  {
+   "check": "citation_mapping",
+   "review_id": "R-298d50de98e59227",
+   "location": "claims[4].statement",
+   "text": "Their names are Chocolate Raspberry, Bananas Foster, Jacked 'o' Lantern, Highland Grog, Strawberry Cheesecake, French Vanilla, Salted Caramel, and Sinn-o-bun. Two 12 ounce bags of Bones Coffee Company coffee.",
+   "citation_status": "uncited",
+   "evidence_passage_id": "P5"
+  },
+  {
+   "check": "sender_recipient",
+   "detail": [
+    "no_email",
+    "no_email"
+   ]
+  },
+  {
+   "check": "instagram",
+   "detail": []
+  }
+ ],
+ "unresolved": [],
+ "passes": false,
+ "failure_signature": "7bdfd2b7ae2bd55c8d159adab29dbc3043922ca53f8770538e90ade608ceb633",
+ "review_wall_s": 47.772,
+ "attempt": {
+  "index": 0,
+  "kind": "initial"
+ }
+}

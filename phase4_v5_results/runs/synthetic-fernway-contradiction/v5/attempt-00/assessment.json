@@ -1,0 +1,1758 @@
+{
+ "checks_version": "phase4-v5-checks-2",
+ "structure": {
+  "strict_json": false,
+  "truncated": true,
+  "parse_error": {
+   "error_type": "truncated_output",
+   "truncated": true,
+   "finish_reason": "length",
+   "unbalanced_braces": true,
+   "message": "Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 1 column 13748 (char 13747)"
+  },
+  "schema_errors": [
+   "truncated_output: Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 1 column 13748 (char 13747)"
+  ],
+  "parse_mode": "diagnostic_prefix",
+  "prompt_schema_valid": false,
+  "training_schema_valid": false,
+  "raw_format": {
+   "starts_with_brace": true,
+   "code_fenced": false,
+   "text_outside_json": null
+  }
+ },
+ "decision": null,
+ "repetition": {
+  "method": "exact match after whitespace/quote/case normalisation; no semantic similarity",
+  "claim_count": 28,
+  "duplicate_claim_ids": [],
+  "duplicate_claim_statements": 23,
+  "distinct_claim_statements": 5,
+  "duplicate_claim_quotes": 24,
+  "repeated_prose_sentences": {},
+  "max_8gram_repeats_in_raw": 51,
+  "looping": true
+ },
+ "citation_mechanics": {
+  "inline_passage_refs": [
+   "P1",
+   "P3",
+   "P3",
+   "P1",
+   "P3",
+   "P1"
+  ],
+  "unknown_refs": [
+   "P4"
+  ],
+  "claim_quotes": [
+   {
+    "index": 0,
+    "claim_id": "C1",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": true,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 1,
+    "claim_id": "C2",
+    "passage_ids": [
+     "P2"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": true,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 2,
+    "claim_id": "C3",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": [
+     "P3"
+    ]
+   },
+   {
+    "index": 3,
+    "claim_id": "C4",
+    "passage_ids": [
+     "P4"
+    ],
+    "unknown_passage_ids": [
+     "P4"
+    ],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 4,
+    "claim_id": "C5",
+    "passage_ids": [
+     "P4"
+    ],
+    "unknown_passage_ids": [
+     "P4"
+    ],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 5,
+    "claim_id": "C6",
+    "passage_ids": [
+     "P4"
+    ],
+    "unknown_passage_ids": [
+     "P4"
+    ],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 6,
+    "claim_id": "C7",
+    "passage_ids": [
+     "P4"
+    ],
+    "unknown_passage_ids": [
+     "P4"
+    ],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 7,
+    "claim_id": "C8",
+    "passage_ids": [
+     "P4"
+    ],
+    "unknown_passage_ids": [
+     "P4"
+    ],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 8,
+    "claim_id": "C9",
+    "passage_ids": [
+     "P4"
+    ],
+    "unknown_passage_ids": [
+     "P4"
+    ],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 9,
+    "claim_id": "C10",
+    "passage_ids": [
+     "P4"
+    ],
+    "unknown_passage_ids": [
+     "P4"
+    ],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 10,
+    "claim_id": "C11",
+    "passage_ids": [
+     "P4"
+    ],
+    "unknown_passage_ids": [
+     "P4"
+    ],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 11,
+    "claim_id": "C12",
+    "passage_ids": [
+     "P4"
+    ],
+    "unknown_passage_ids": [
+     "P4"
+    ],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 12,
+    "claim_id": "C13",
+    "passage_ids": [
+     "P4"
+    ],
+    "unknown_passage_ids": [
+     "P4"
+    ],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 13,
+    "claim_id": "C14",
+    "passage_ids": [
+     "P4"
+    ],
+    "unknown_passage_ids": [
+     "P4"
+    ],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 14,
+    "claim_id": "C15",
+    "passage_ids": [
+     "P4"
+    ],
+    "unknown_passage_ids": [
+     "P4"
+    ],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 15,
+    "claim_id": "C16",
+    "passage_ids": [
+     "P4"
+    ],
+    "unknown_passage_ids": [
+     "P4"
+    ],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 16,
+    "claim_id": "C17",
+    "passage_ids": [
+     "P4"
+    ],
+    "unknown_passage_ids": [
+     "P4"
+    ],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 17,
+    "claim_id": "C18",
+    "passage_ids": [
+     "P4"
+    ],
+    "unknown_passage_ids": [
+     "P4"
+    ],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 18,
+    "claim_id": "C19",
+    "passage_ids": [
+     "P4"
+    ],
+    "unknown_passage_ids": [
+     "P4"
+    ],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 19,
+    "claim_id": "C20",
+    "passage_ids": [
+     "P4"
+    ],
+    "unknown_passage_ids": [
+     "P4"
+    ],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 20,
+    "claim_id": "C21",
+    "passage_ids": [
+     "P4"
+    ],
+    "unknown_passage_ids": [
+     "P4"
+    ],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 21,
+    "claim_id": "C22",
+    "passage_ids": [
+     "P4"
+    ],
+    "unknown_passage_ids": [
+     "P4"
+    ],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 22,
+    "claim_id": "C23",
+    "passage_ids": [
+     "P4"
+    ],
+    "unknown_passage_ids": [
+     "P4"
+    ],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 23,
+    "claim_id": "C24",
+    "passage_ids": [
+     "P4"
+    ],
+    "unknown_passage_ids": [
+     "P4"
+    ],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 24,
+    "claim_id": "C25",
+    "passage_ids": [
+     "P4"
+    ],
+    "unknown_passage_ids": [
+     "P4"
+    ],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 25,
+    "claim_id": "C26",
+    "passage_ids": [
+     "P4"
+    ],
+    "unknown_passage_ids": [
+     "P4"
+    ],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 26,
+    "claim_id": "C27",
+    "passage_ids": [
+     "P4"
+    ],
+    "unknown_passage_ids": [
+     "P4"
+    ],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 27,
+    "claim_id": "C28",
+    "passage_ids": [
+     "P4"
+    ],
+    "unknown_passage_ids": [
+     "P4"
+    ],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   }
+  ]
+ },
+ "assertions": [
+  {
+   "review_id": "R-4b15ebc66fd9cffb",
+   "location": "brand_summary#s0",
+   "text": "Fernway is a merino hiking sock company that has launched a Trail Notes Instagram program and partnered with trail conservancies [P1].",
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "supported",
+   "reviewer_verdict": "supported",
+   "citation_status": "cited",
+   "flags": [],
+   "reason": "The passage directly states that Fernway launched the Trail Notes program, which is consistent with the statement.",
+   "guard": {
+    "coverage": 0.9,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": []
+   },
+   "reviewer_reason": "The passage directly states that Fernway launched the Trail Notes program, which is consistent with the statement.",
+   "evidence_passage_id": "P1",
+   "evidence_quote": "Fernway launched the Trail Notes program, in which members of its community share route reports and photos on Instagram.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "f404b504a13943aedb4abffd5bb04900a03ebcb574da67139195e7e762db17d8",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-4b15ebc66fd9cffb\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P1\",\n  \"evidence_quote\": \"Fernway launched the Trail Notes program, in which members of its community share route reports and photos on Instagram.\",\n  \"reason\": \"The passage directly states that Fernway launched the Trail Notes program, which is consistent with the statement.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 574,
+       "completion_tokens": 103,
+       "total_tokens": 677,
+       "prompt_tokens_details": {
+        "cached_tokens": 158
+       }
+      },
+      "latency_s": 8.231,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "201074c9b62fff8293c24fb4f8fd37b1cf193a3dc3414972979e4c2a2643dfd9",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-bc7a1d8c15dcf0c9",
+   "location": "current_marketing_strategy[0]#s0",
+   "text": "Marketing Gaps: No current marketing gaps identified.",
+   "kind": "factual",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unresolved",
+   "citation_status": null,
+   "reason": "reviewer response missing, invalid or untraceable after retries",
+   "reviewer_reason": "reviewer response missing, invalid or untraceable after retries",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unresolved",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "bf778dbeca8d330b14e21def59761a06fb418c7e9ee5e110adc91d83440f7ea6",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-bc7a1d8c15dcf0c9\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P-1\",\n  \"evidence_quote\": \"No current marketing gaps identified.\",\n  \"reason\": \"The evidence passage directly states that no current marketing gaps have been identified, which supports the statement.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 251,
+       "completion_tokens": 88,
+       "total_tokens": 339,
+       "prompt_tokens_details": {
+        "cached_tokens": 156
+       }
+      },
+      "latency_s": 6.451,
+      "error": null,
+      "validation_errors": [
+       "evidence_passage_id 'P-1' was not shown to the reviewer"
+      ]
+     },
+     {
+      "attempt": 1,
+      "prompt_sha256": "2f1a2293c57197ff31005ad06492776e41d5d43fe8d67465da63975e73e85ff0",
+      "raw_text": "```json\n{\"review_id\": \"R-bc7a1d8c15dcf0c9\", \"verdict\": \"unsupported\", \"evidence_passage_id\": \"P-1\", \"evidence_quote\": \"Marketing Gaps: No current marketing gaps identified.\", \"reason\": \"The evidence passage does not provide any information to support or contradict the statement. It only states the absence of marketing gaps, which does not necessarily mean there are no gaps. The statement is not verifiable based on the given passages.\"}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 279,
+       "completion_tokens": 113,
+       "total_tokens": 392,
+       "prompt_tokens_details": {
+        "cached_tokens": 245
+       }
+      },
+      "latency_s": 8.402,
+      "error": null,
+      "validation_errors": [
+       "evidence_passage_id 'P-1' was not shown to the reviewer"
+      ]
+     }
+    ],
+    "request_sha256": "46bb4e924d533ff9b47f9bb1a27ac4c6a563df2f7232a484c469cb26624bc737",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-60bb1396dccc640b",
+   "location": "current_marketing_strategy[1]#s0",
+   "text": "Collaborations: A potential collaboration with trail creators on Instagram would be a good fit [P3].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P3"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "guard": {
+    "coverage": 0.333,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.33 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.33 < 0.6",
+   "reviewer_reason": "The passage explicitly recommends that Fernway should consider a referral program for hiking customers, which aligns with the statement about potential collaborations with trail creators.",
+   "evidence_passage_id": "P3",
+   "evidence_quote": "Brands like Fernway should consider a referral program for hiking customers. You can use trail creators to reach new walkers, and it's worth testing a newsletter series about merino sock care.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "0ad382c98c455c4ab962333e4ec9192844ffbf589abdf59588378946360055d4",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-60bb1396dccc640b\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P3\",\n  \"evidence_quote\": \"Brands like Fernway should consider a referral program for hiking customers. You can use trail creators to reach new walkers, and it's worth testing a newsletter series about merino sock care.\",\n  \"reason\": \"The passage explicitly recommends that Fernway should consider a referral program for hiking customers, which aligns with the statement about potential collaborations with trail creators.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 568,
+       "completion_tokens": 128,
+       "total_tokens": 696,
+       "prompt_tokens_details": {
+        "cached_tokens": 157
+       }
+      },
+      "latency_s": 10.404,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "1430cb03895f61dd0ab669ed2269d2bf3cb7299d280f0d1063bf41a59bc277c6",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-7a66ccdecb5ec2e0",
+   "location": "collaboration_opportunities[0]#s0",
+   "text": "Collaborate on a trail report Instagram carousel featuring trail creators and their stories [P3].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P3"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "guard": {
+    "coverage": 0.25,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.25 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.25 < 0.6",
+   "reviewer_reason": "The passage mentions that Fernway's mission is to keep walkers comfortable on every trail, which aligns with the statement about collaborating on a trail report Instagram carousel featuring trail creators and their stories.",
+   "evidence_passage_id": "P1",
+   "evidence_quote": "Fernway makes merino hiking socks for long-distance walkers and trail runners. Our mission is to keep walkers comfortable on every trail.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "f720739024f91a09004059ee47245f5bab64e33dd96cd41976c3c3b169fbc994",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-7a66ccdecb5ec2e0\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P1\",\n  \"evidence_quote\": \"Fernway makes merino hiking socks for long-distance walkers and trail runners. Our mission is to keep walkers comfortable on every trail.\",\n  \"reason\": \"The passage mentions that Fernway's mission is to keep walkers comfortable on every trail, which aligns with the statement about collaborating on a trail report Instagram carousel featuring trail creators and their stories.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 565,
+       "completion_tokens": 125,
+       "total_tokens": 690,
+       "prompt_tokens_details": {
+        "cached_tokens": 157
+       }
+      },
+      "latency_s": 9.781,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "9a3854eab0aa33b9856a777a47b22bdf2da14db4df5e3a8cdea78da37201f98b",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-365e7ea29cd21aa2",
+   "location": "instagram_post_idea.why_it_fits#s0",
+   "text": "This aligns with Fernway's mission to keep hikers comfortable on every trail [P1].",
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "supported",
+   "reviewer_verdict": "supported",
+   "citation_status": "cited",
+   "flags": [],
+   "reason": "The passage directly states Fernway's mission to keep hikers comfortable on every trail, which aligns with the statement.",
+   "guard": {
+    "coverage": 0.625,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": []
+   },
+   "reviewer_reason": "The passage directly states Fernway's mission to keep hikers comfortable on every trail, which aligns with the statement.",
+   "evidence_passage_id": "P1",
+   "evidence_quote": "Fernway makes merino hiking socks for long-distance walkers and trail runners. Our mission is to keep walkers comfortable on every trail.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "e6c613ba6d46ec2f96b3da37df5f54d471887baac6715030e3722c46b6d8bd28",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-365e7ea29cd21aa2\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P1\",\n  \"evidence_quote\": \"Fernway makes merino hiking socks for long-distance walkers and trail runners. Our mission is to keep walkers comfortable on every trail.\",\n  \"reason\": \"The passage directly states Fernway's mission to keep hikers comfortable on every trail, which aligns with the statement.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 567,
+       "completion_tokens": 112,
+       "total_tokens": 679,
+       "prompt_tokens_details": {
+        "cached_tokens": 158
+       }
+      },
+      "latency_s": 9.246,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "34cb70e97d026174dafc847551d17194593832bbc3f22b86f318b0e82a69b57f",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-ed6ab5e809902bcb",
+   "location": "email_body#s1",
+   "text": "We propose collaborating with trail creators on Instagram to showcase your Trail Notes program and stories [P3].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P3"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": "cited",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "reason": "reviewer said supported, but deterministic check(s) failed: recommendation_as_fact",
+   "guard": {
+    "coverage": 0.6,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": []
+   },
+   "reviewer_reason": "The passage recommends collaborating with trail creators on Instagram to showcase the Trail Notes program, which aligns with the statement.",
+   "evidence_passage_id": "P3",
+   "evidence_quote": "Brands like Fernway should consider a referral program for hiking customers. You can use trail creators to reach new walkers, and it's worth testing a newsletter series about merino sock care.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "6cfee0f161dac9cbc5287db04d236fcabe471b76a8a93fa0d028bd348fae6915",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-ed6ab5e809902bcb\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P3\",\n  \"evidence_quote\": \"Brands like Fernway should consider a referral program for hiking customers. You can use trail creators to reach new walkers, and it's worth testing a newsletter series about merino sock care.\",\n  \"reason\": \"The passage recommends collaborating with trail creators on Instagram to showcase the Trail Notes program, which aligns with the statement.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 566,
+       "completion_tokens": 121,
+       "total_tokens": 687,
+       "prompt_tokens_details": {
+        "cached_tokens": 156
+       }
+      },
+      "latency_s": 9.58,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "169c2902a264f25e59728d4476a13fa8a24172ad0ffca1521ba86c0be77351aa",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-9099b2d8cca4750c",
+   "location": "email_body#s2",
+   "text": "This would align with your brand's mission to keep hikers comfortable on every trail [P1].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "supported",
+   "reviewer_verdict": "supported",
+   "citation_status": "cited",
+   "flags": [],
+   "reason": "The passage directly states that Fernway's mission is to keep hikers comfortable on every trail, which aligns with the statement.",
+   "guard": {
+    "coverage": 0.625,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": []
+   },
+   "reviewer_reason": "The passage directly states that Fernway's mission is to keep hikers comfortable on every trail, which aligns with the statement.",
+   "evidence_passage_id": "P1",
+   "evidence_quote": "Fernway makes merino hiking socks for long-distance walkers and trail runners. Our mission is to keep walkers comfortable on every trail.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "e543f2ec74e66d8c53a5dff61d47a8f3320cd1c3c5960040d66dba6b66f0b4c8",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-9099b2d8cca4750c\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P1\",\n  \"evidence_quote\": \"Fernway makes merino hiking socks for long-distance walkers and trail runners. Our mission is to keep walkers comfortable on every trail.\",\n  \"reason\": \"The passage directly states that Fernway's mission is to keep hikers comfortable on every trail, which aligns with the statement.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 568,
+       "completion_tokens": 115,
+       "total_tokens": 683,
+       "prompt_tokens_details": {
+        "cached_tokens": 157
+       }
+      },
+      "latency_s": 9.87,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "2d407df98973e433f3e857bfdba3c582dfc163037c30adfe030cdbdc24619b90",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-e94bb5b33335ecb7",
+   "location": "claims[0].statement",
+   "text": "Fernway launched the Trail Notes program, in which members of its community share route reports and photos on Instagram.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "supported",
+   "reviewer_verdict": "supported",
+   "citation_status": "cited",
+   "flags": [],
+   "reason": "The passage P1 directly states that Fernway launched the Trail Notes program in March 2026, which matches the statement about the launch in 2026.",
+   "guard": {
+    "coverage": 1.0,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": []
+   },
+   "reviewer_reason": "The passage P1 directly states that Fernway launched the Trail Notes program in March 2026, which matches the statement about the launch in 2026.",
+   "evidence_passage_id": "P1",
+   "evidence_quote": "Fernway launched the Trail Notes program, in which members of its community share route reports and photos on Instagram.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "53050f4a334197196612c65402b7e6683b5cdae40f598a2c0496c18c2077e0d2",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-e94bb5b33335ecb7\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P1\",\n  \"evidence_quote\": \"Fernway launched the Trail Notes program, in which members of its community share route reports and photos on Instagram.\",\n  \"reason\": \"The passage P1 directly states that Fernway launched the Trail Notes program in March 2026, which matches the statement about the launch in 2026.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 573,
+       "completion_tokens": 120,
+       "total_tokens": 693,
+       "prompt_tokens_details": {
+        "cached_tokens": 157
+       }
+      },
+      "latency_s": 10.272,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "4ff3fb359dd3a4a5c7c1aa5b95c9dada4bea446351821191abcb214dcbe87744",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-395414940466a80b",
+   "location": "claims[1].statement",
+   "text": "Fernway partnered with the Ridge Trail Conservancy in 2025 to fund volunteer trail maintenance days, and the brand donates one percent of sock sales to the Conservancy.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P2"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "supported",
+   "reviewer_verdict": "supported",
+   "citation_status": "miscited_supported_elsewhere",
+   "flags": [],
+   "reason": "The passage directly states that Fernway partnered with the Ridge Trail Conservancy in 2025 to fund volunteer trail maintenance days, which aligns with the statement that the brand donates one percent of sock sales to the Conservancy.",
+   "guard": {
+    "coverage": 1.0,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": []
+   },
+   "reviewer_reason": "The passage directly states that Fernway partnered with the Ridge Trail Conservancy in 2025 to fund volunteer trail maintenance days, which aligns with the statement that the brand donates one percent of sock sales to the Conservancy.",
+   "evidence_passage_id": "P1",
+   "evidence_quote": "Fernway partnered with the Ridge Trail Conservancy in 2025 to fund volunteer trail maintenance days, and the brand donates one percent of sock sales to the Conservancy.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "6c2bdfc9930e00415333c83e1a1ea6f334456a31a4091015c6901f85a7571483",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-395414940466a80b\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P1\",\n  \"evidence_quote\": \"Fernway partnered with the Ridge Trail Conservancy in 2025 to fund volunteer trail maintenance days, and the brand donates one percent of sock sales to the Conservancy.\",\n  \"reason\": \"The passage directly states that Fernway partnered with the Ridge Trail Conservancy in 2025 to fund volunteer trail maintenance days, which aligns with the statement that the brand donates one percent of sock sales to the Conservancy.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 591,
+       "completion_tokens": 150,
+       "total_tokens": 741,
+       "prompt_tokens_details": {
+        "cached_tokens": 157
+       }
+      },
+      "latency_s": 13.177,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "e6b1a58f16eb2506aa136bd69e2b62bccb274c32af697bd8448e2bbd041ee52a",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "hit"
+   }
+  },
+  {
+   "review_id": "R-55a3aa0eac8a9951",
+   "location": "claims[2].statement",
+   "text": "Fernway has a referral program for hiking customers. You can use trail creators to reach new walkers, and it’s worth testing a newsletter series about merino sock care.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": "cited",
+   "flags": [
+    "recommendation_as_fact"
+   ],
+   "reason": "reviewer said supported, but deterministic check(s) failed: recommendation_as_fact",
+   "guard": {
+    "coverage": 1.0,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": []
+   },
+   "reviewer_reason": "The passage from P3 directly supports the statement by recommending a referral program for hiking customers and suggesting the use of trail creators to reach new walkers, which aligns with the statement's content.",
+   "evidence_passage_id": "P3",
+   "evidence_quote": "Brands like Fernway should consider a referral program for hiking customers. You can use trail creators to reach new walkers, and it's worth testing a newsletter series about merino sock care.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "de8998c0d706567f77925729af675ac3e0797dd09c581743535a34b761a057d5",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-55a3aa0eac8a9951\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P3\",\n  \"evidence_quote\": \"Brands like Fernway should consider a referral program for hiking customers. You can use trail creators to reach new walkers, and it's worth testing a newsletter series about merino sock care.\",\n  \"reason\": \"The passage from P3 directly supports the statement by recommending a referral program for hiking customers and suggesting the use of trail creators to reach new walkers, which aligns with the statement's content.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 586,
+       "completion_tokens": 138,
+       "total_tokens": 724,
+       "prompt_tokens_details": {
+        "cached_tokens": 157
+       }
+      },
+      "latency_s": 11.18,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "3352d83f3cc946134d283b9935bd873bd544deae73ab40fd749680cdb91bdf6c",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-1591a3538d6c8bde",
+   "location": "claims[3].statement",
+   "text": "Fernway has a referral program for hiking customers. Brands can also partner with hiking clubs, and it is worth trying giveaways for merino socks.",
+   "kind": "claim_statement",
+   "cited_passages": [],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [
+    "P4"
+   ],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": "uncited",
+   "flags": [
+    "nonexistent_citation"
+   ],
+   "reason": "reviewer said supported, but deterministic check(s) failed: nonexistent_citation",
+   "guard": {
+    "coverage": 1.0,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": []
+   },
+   "reviewer_reason": "The passage directly supports the statement by recommending a referral program for hiking customers and suggesting the use of trail creators to reach new walkers.",
+   "evidence_passage_id": "P3",
+   "evidence_quote": "Brands like Fernway should consider a referral program for hiking customers. You can use trail creators to reach new walkers, and it's worth testing a newsletter series about merino sock care.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "a519091de9aafec59bea9691cf3db87008b3132fd3f3bd078f5ab7cf2eed1598",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-1591a3538d6c8bde\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P3\",\n  \"evidence_quote\": \"Brands like Fernway should consider a referral program for hiking customers. You can use trail creators to reach new walkers, and it's worth testing a newsletter series about merino sock care.\",\n  \"reason\": \"The passage directly supports the statement by recommending a referral program for hiking customers and suggesting the use of trail creators to reach new walkers.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 460,
+       "completion_tokens": 127,
+       "total_tokens": 587,
+       "prompt_tokens_details": {
+        "cached_tokens": 157
+       }
+      },
+      "latency_s": 10.032,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "42fa15312782531ba81e261c5920af561f19431d2579ffd38b0b465ea2cea716",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-266a217174a3534c",
+   "location": "claims[4].statement",
+   "text": "Fernway has a referral program for hiking customers. Brands can also partner with hiking clubs, and it is worth trying a referral program for hiking customers.",
+   "kind": "claim_statement",
+   "cited_passages": [],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [
+    "P4"
+   ],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": "uncited",
+   "flags": [
+    "nonexistent_citation"
+   ],
+   "reason": "reviewer said supported, but deterministic check(s) failed: nonexistent_citation",
+   "guard": {
+    "coverage": 1.0,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": []
+   },
+   "reviewer_reason": "The passage directly supports the statement by recommending a referral program for hiking customers and suggesting the use of trail creators to reach new walkers.",
+   "evidence_passage_id": "P3",
+   "evidence_quote": "Brands like Fernway should consider a referral program for hiking customers. You can use trail creators to reach new walkers, and it's worth testing a newsletter series about merino sock care.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "ba86966e8a8399f4ebfa4ea72fb7e6e2d4ebfff924c967cc2add4c7f1741a11f",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-266a217174a3534c\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P3\",\n  \"evidence_quote\": \"Brands like Fernway should consider a referral program for hiking customers. You can use trail creators to reach new walkers, and it's worth testing a newsletter series about merino sock care.\",\n  \"reason\": \"The passage directly supports the statement by recommending a referral program for hiking customers and suggesting the use of trail creators to reach new walkers.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 462,
+       "completion_tokens": 128,
+       "total_tokens": 590,
+       "prompt_tokens_details": {
+        "cached_tokens": 157
+       }
+      },
+      "latency_s": 9.642,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "e92e1262f5ef2a3d6886b9015df6f58062c38dcedf27c1be8c91dfe089e5f47d",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-266a217174a3534c",
+   "location": "claims[5].statement",
+   "text": "Fernway has a referral program for hiking customers. Brands can also partner with hiking clubs, and it is worth trying a referral program for hiking customers.",
+   "duplicate_of": "R-266a217174a3534c",
+   "flags": [
+    "nonexistent_citation"
+   ],
+   "verdict": "unsupported",
+   "citation_status": "uncited",
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-266a217174a3534c",
+   "location": "claims[6].statement",
+   "text": "Fernway has a referral program for hiking customers. Brands can also partner with hiking clubs, and it is worth trying a referral program for hiking customers.",
+   "duplicate_of": "R-266a217174a3534c",
+   "flags": [
+    "nonexistent_citation"
+   ],
+   "verdict": "unsupported",
+   "citation_status": "uncited",
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-266a217174a3534c",
+   "location": "claims[7].statement",
+   "text": "Fernway has a referral program for hiking customers. Brands can also partner with hiking clubs, and it is worth trying a referral program for hiking customers.",
+   "duplicate_of": "R-266a217174a3534c",
+   "flags": [
+    "nonexistent_citation"
+   ],
+   "verdict": "unsupported",
+   "citation_status": "uncited",
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-266a217174a3534c",
+   "location": "claims[8].statement",
+   "text": "Fernway has a referral program for hiking customers. Brands can also partner with hiking clubs, and it is worth trying a referral program for hiking customers.",
+   "duplicate_of": "R-266a217174a3534c",
+   "flags": [
+    "nonexistent_citation"
+   ],
+   "verdict": "unsupported",
+   "citation_status": "uncited",
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-266a217174a3534c",
+   "location": "claims[9].statement",
+   "text": "Fernway has a referral program for hiking customers. Brands can also partner with hiking clubs, and it is worth trying a referral program for hiking customers.",
+   "duplicate_of": "R-266a217174a3534c",
+   "flags": [
+    "nonexistent_citation"
+   ],
+   "verdict": "unsupported",
+   "citation_status": "uncited",
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-266a217174a3534c",
+   "location": "claims[10].statement",
+   "text": "Fernway has a referral program for hiking customers. Brands can also partner with hiking clubs, and it is worth trying a referral program for hiking customers.",
+   "duplicate_of": "R-266a217174a3534c",
+   "flags": [
+    "nonexistent_citation"
+   ],
+   "verdict": "unsupported",
+   "citation_status": "uncited",
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-266a217174a3534c",
+   "location": "claims[11].statement",
+   "text": "Fernway has a referral program for hiking customers. Brands can also partner with hiking clubs, and it is worth trying a referral program for hiking customers.",
+   "duplicate_of": "R-266a217174a3534c",
+   "flags": [
+    "nonexistent_citation"
+   ],
+   "verdict": "unsupported",
+   "citation_status": "uncited",
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-266a217174a3534c",
+   "location": "claims[12].statement",
+   "text": "Fernway has a referral program for hiking customers. Brands can also partner with hiking clubs, and it is worth trying a referral program for hiking customers.",
+   "duplicate_of": "R-266a217174a3534c",
+   "flags": [
+    "nonexistent_citation"
+   ],
+   "verdict": "unsupported",
+   "citation_status": "uncited",
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-266a217174a3534c",
+   "location": "claims[13].statement",
+   "text": "Fernway has a referral program for hiking customers. Brands can also partner with hiking clubs, and it is worth trying a referral program for hiking customers.",
+   "duplicate_of": "R-266a217174a3534c",
+   "flags": [
+    "nonexistent_citation"
+   ],
+   "verdict": "unsupported",
+   "citation_status": "uncited",
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-266a217174a3534c",
+   "location": "claims[14].statement",
+   "text": "Fernway has a referral program for hiking customers. Brands can also partner with hiking clubs, and it is worth trying a referral program for hiking customers.",
+   "duplicate_of": "R-266a217174a3534c",
+   "flags": [
+    "nonexistent_citation"
+   ],
+   "verdict": "unsupported",
+   "citation_status": "uncited",
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-266a217174a3534c",
+   "location": "claims[15].statement",
+   "text": "Fernway has a referral program for hiking customers. Brands can also partner with hiking clubs, and it is worth trying a referral program for hiking customers.",
+   "duplicate_of": "R-266a217174a3534c",
+   "flags": [
+    "nonexistent_citation"
+   ],
+   "verdict": "unsupported",
+   "citation_status": "uncited",
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-266a217174a3534c",
+   "location": "claims[16].statement",
+   "text": "Fernway has a referral program for hiking customers. Brands can also partner with hiking clubs, and it is worth trying a referral program for hiking customers.",
+   "duplicate_of": "R-266a217174a3534c",
+   "flags": [
+    "nonexistent_citation"
+   ],
+   "verdict": "unsupported",
+   "citation_status": "uncited",
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-266a217174a3534c",
+   "location": "claims[17].statement",
+   "text": "Fernway has a referral program for hiking customers. Brands can also partner with hiking clubs, and it is worth trying a referral program for hiking customers.",
+   "duplicate_of": "R-266a217174a3534c",
+   "flags": [
+    "nonexistent_citation"
+   ],
+   "verdict": "unsupported",
+   "citation_status": "uncited",
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-266a217174a3534c",
+   "location": "claims[18].statement",
+   "text": "Fernway has a referral program for hiking customers. Brands can also partner with hiking clubs, and it is worth trying a referral program for hiking customers.",
+   "duplicate_of": "R-266a217174a3534c",
+   "flags": [
+    "nonexistent_citation"
+   ],
+   "verdict": "unsupported",
+   "citation_status": "uncited",
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-266a217174a3534c",
+   "location": "claims[19].statement",
+   "text": "Fernway has a referral program for hiking customers. Brands can also partner with hiking clubs, and it is worth trying a referral program for hiking customers.",
+   "duplicate_of": "R-266a217174a3534c",
+   "flags": [
+    "nonexistent_citation"
+   ],
+   "verdict": "unsupported",
+   "citation_status": "uncited",
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-266a217174a3534c",
+   "location": "claims[20].statement",
+   "text": "Fernway has a referral program for hiking customers. Brands can also partner with hiking clubs, and it is worth trying a referral program for hiking customers.",
+   "duplicate_of": "R-266a217174a3534c",
+   "flags": [
+    "nonexistent_citation"
+   ],
+   "verdict": "unsupported",
+   "citation_status": "uncited",
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-266a217174a3534c",
+   "location": "claims[21].statement",
+   "text": "Fernway has a referral program for hiking customers. Brands can also partner with hiking clubs, and it is worth trying a referral program for hiking customers.",
+   "duplicate_of": "R-266a217174a3534c",
+   "flags": [
+    "nonexistent_citation"
+   ],
+   "verdict": "unsupported",
+   "citation_status": "uncited",
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-266a217174a3534c",
+   "location": "claims[22].statement",
+   "text": "Fernway has a referral program for hiking customers. Brands can also partner with hiking clubs, and it is worth trying a referral program for hiking customers.",
+   "duplicate_of": "R-266a217174a3534c",
+   "flags": [
+    "nonexistent_citation"
+   ],
+   "verdict": "unsupported",
+   "citation_status": "uncited",
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-266a217174a3534c",
+   "location": "claims[23].statement",
+   "text": "Fernway has a referral program for hiking customers. Brands can also partner with hiking clubs, and it is worth trying a referral program for hiking customers.",
+   "duplicate_of": "R-266a217174a3534c",
+   "flags": [
+    "nonexistent_citation"
+   ],
+   "verdict": "unsupported",
+   "citation_status": "uncited",
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-266a217174a3534c",
+   "location": "claims[24].statement",
+   "text": "Fernway has a referral program for hiking customers. Brands can also partner with hiking clubs, and it is worth trying a referral program for hiking customers.",
+   "duplicate_of": "R-266a217174a3534c",
+   "flags": [
+    "nonexistent_citation"
+   ],
+   "verdict": "unsupported",
+   "citation_status": "uncited",
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-266a217174a3534c",
+   "location": "claims[25].statement",
+   "text": "Fernway has a referral program for hiking customers. Brands can also partner with hiking clubs, and it is worth trying a referral program for hiking customers.",
+   "duplicate_of": "R-266a217174a3534c",
+   "flags": [
+    "nonexistent_citation"
+   ],
+   "verdict": "unsupported",
+   "citation_status": "uncited",
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-266a217174a3534c",
+   "location": "claims[26].statement",
+   "text": "Fernway has a referral program for hiking customers. Brands can also partner with hiking clubs, and it is worth trying a referral program for hiking customers.",
+   "duplicate_of": "R-266a217174a3534c",
+   "flags": [
+    "nonexistent_citation"
+   ],
+   "verdict": "unsupported",
+   "citation_status": "uncited",
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-266a217174a3534c",
+   "location": "claims[27].statement",
+   "text": "Fernway has a referral program for hiking customers. Brands can also partner with hiking clubs, and it is worth trying a referral program for hiking customers.",
+   "duplicate_of": "R-266a217174a3534c",
+   "flags": [
+    "nonexistent_citation"
+   ],
+   "verdict": "unsupported",
+   "citation_status": "uncited",
+   "kind": "claim_statement",
+   "cited_passages": []
+  }
+ ],
+ "skipped_sentences": {
+  "proposal": [
+   {
+    "location": "instagram_post_idea.hook#s0",
+    "text": "Join us for a trail report Instagram carousel, featuring trail creators and their stories."
+   },
+   {
+    "location": "instagram_post_idea.concept#s0",
+    "text": "A carousel post showcasing trail creators and their stories, each with a trail report and a call to action to follow on Instagram."
+   },
+   {
+    "location": "email_subject#s0",
+    "text": "Collaboration Opportunity: Feature Trail Creators on Instagram"
+   },
+   {
+    "location": "email_body#s3",
+    "text": "We suggest a carousel post featuring trail creators and their stories, each with a trail report and a call to action to follow on Instagram."
+   },
+   {
+    "location": "email_body#s4",
+    "text": "If you'd like to explore this further, we'd be happy to share a draft."
+   }
+  ],
+  "non_assertion": [
+   {
+    "location": "likely_target_audience#s0",
+    "text": "INSUFFICIENT_EVIDENCE"
+   },
+   {
+    "location": "email_body#s0",
+    "text": "Hi Fernway Marketing Team,"
+   },
+   {
+    "location": "email_body#s5",
+    "text": "Best regards,"
+   },
+   {
+    "location": "email_body#s6",
+    "text": "[Your Name]"
+   }
+  ]
+ },
+ "unknown_issues": [],
+ "outreach": {
+  "recipient": "correct",
+  "sender": "correct",
+  "instagram_mentioned": true,
+  "other_platforms_in_pitch": [],
+  "instagram_compliant": true,
+  "promises": [],
+  "email_subject": "Collaboration Opportunity: Feature Trail Creators on Instagram"
+ },
+ "failures": [
+  {
+   "check": "structure",
+   "detail": [
+    "truncated_output: Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 1 column 13748 (char 13747)"
+   ]
+  },
+  {
+   "check": "duplicate_claims",
+   "detail": [
+    [],
+    23
+   ]
+  },
+  {
+   "check": "repetition",
+   "detail": [
+    51
+   ]
+  },
+  {
+   "check": "claim_quotes",
+   "detail": [
+    {
+     "claim_id": "C3",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C4",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C5",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C6",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C7",
+     "self_quote": false,
+     "other_passage": []
+    }
+   ]
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-60bb1396dccc640b",
+   "location": "current_marketing_strategy[1]#s0",
+   "text": "Collaborations: A potential collaboration with trail creators on Instagram would be a good fit [P3].",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.33 < 0.6",
+   "evidence_passage_id": "P3",
+   "evidence_quote": "Brands like Fernway should consider a referral program for hiking customers. You can use trail creators to reach new walkers, and it's worth testing a newsletter series about merino sock care."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-7a66ccdecb5ec2e0",
+   "location": "collaboration_opportunities[0]#s0",
+   "text": "Collaborate on a trail report Instagram carousel featuring trail creators and their stories [P3].",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.25 < 0.6",
+   "evidence_passage_id": "P1",
+   "evidence_quote": "Fernway makes merino hiking socks for long-distance walkers and trail runners. Our mission is to keep walkers comfortable on every trail."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-ed6ab5e809902bcb",
+   "location": "email_body#s1",
+   "text": "We propose collaborating with trail creators on Instagram to showcase your Trail Notes program and stories [P3].",
+   "verdict": "unsupported",
+   "reason": "reviewer said supported, but deterministic check(s) failed: recommendation_as_fact",
+   "evidence_passage_id": "P3",
+   "evidence_quote": "Brands like Fernway should consider a referral program for hiking customers. You can use trail creators to reach new walkers, and it's worth testing a newsletter series about merino sock care."
+  },
+  {
+   "check": "citation_mapping",
+   "review_id": "R-395414940466a80b",
+   "location": "claims[1].statement",
+   "text": "Fernway partnered with the Ridge Trail Conservancy in 2025 to fund volunteer trail maintenance days, and the brand donates one percent of sock sales to the Conservancy.",
+   "citation_status": "miscited_supported_elsewhere",
+   "evidence_passage_id": "P1"
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-55a3aa0eac8a9951",
+   "location": "claims[2].statement",
+   "text": "Fernway has a referral program for hiking customers. You can use trail creators to reach new walkers, and it’s worth testing a newsletter series about merino sock care.",
+   "verdict": "unsupported",
+   "reason": "reviewer said supported, but deterministic check(s) failed: recommendation_as_fact",
+   "evidence_passage_id": "P3",
+   "evidence_quote": "Brands like Fernway should consider a referral program for hiking customers. You can use trail creators to reach new walkers, and it's worth testing a newsletter series about merino sock care."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-1591a3538d6c8bde",
+   "location": "claims[3].statement",
+   "text": "Fernway has a referral program for hiking customers. Brands can also partner with hiking clubs, and it is worth trying giveaways for merino socks.",
+   "verdict": "unsupported",
+   "reason": "reviewer said supported, but deterministic check(s) failed: nonexistent_citation",
+   "evidence_passage_id": "P3",
+   "evidence_quote": "Brands like Fernway should consider a referral program for hiking customers. You can use trail creators to reach new walkers, and it's worth testing a newsletter series about merino sock care."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-266a217174a3534c",
+   "location": "claims[4].statement",
+   "text": "Fernway has a referral program for hiking customers. Brands can also partner with hiking clubs, and it is worth trying a referral program for hiking customers.",
+   "verdict": "unsupported",
+   "reason": "reviewer said supported, but deterministic check(s) failed: nonexistent_citation",
+   "evidence_passage_id": "P3",
+   "evidence_quote": "Brands like Fernway should consider a referral program for hiking customers. You can use trail creators to reach new walkers, and it's worth testing a newsletter series about merino sock care."
+  }
+ ],
+ "unresolved": [
+  "R-bc7a1d8c15dcf0c9"
+ ],
+ "passes": false,
+ "failure_signature": "e39c754a2ea875ff26e5e1507c344a668930193ace48420338b7778088ba046f",
+ "review_wall_s": 113.16,
+ "attempt": {
+  "index": 0,
+  "kind": "initial"
+ }
+}

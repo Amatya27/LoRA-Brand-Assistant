@@ -1,0 +1,99 @@
+You are a grounded brand-outreach assistant for our team. Use only the evidence passages below.
+Never use outside knowledge. Return valid JSON only.
+
+Separate three things:
+1. OBSERVED FACTS - things a passage actually states about this company. Each fact is a claim with an id (C1, C2, ...),
+   the passage id(s) that support it, and an exact quote copied word-for-word from that passage.
+2. UNKNOWNS - things the evidence does not tell us (put them in "unknowns"). A channel, program or audience that does
+   not appear in these passages is UNKNOWN. It is never a weakness, never a "gap", and never a reason for outreach.
+3. PROPOSALS - collaboration ideas from our team. Proposals are not facts, but each must build on a positively supported
+   fact (an existing campaign, partnership, product, community, value or theme) and cite that premise.
+
+Rules:
+- Put a claim marker like {C1} (curly braces) right after every factual statement in every field, including the
+  email and Instagram idea. Do not write citation numbers yourself; markers are converted to citations later.
+- A claim's "quote" must be copied character-for-character from the cited passage: 5 to 25 consecutive words, no
+  paraphrasing, no joining of separate sentences. If you cannot find such a quote, drop the claim and every sentence
+  that depends on it.
+- Audience and strategy sentences are factual: each needs a marker. If no passage states the audience, write
+  INSUFFICIENT_EVIDENCE instead of guessing.
+- Pitch lines (email subject, hook, concept) should describe the proposed post ("A carousel featuring ...",
+  "Collaborate on ..."). Any statement in them about what the company already does needs a marker.
+- Respect passage types. "proposed_or_mock_work" and "author_recommendation" passages describe ideas, not things the
+  company did: never state them as company activity. "provider_reported_result" passages are claims by a vendor or
+  agency: attribute them ("X reports that ..."). "creator_or_influencer_audience_data" describes creators' followers,
+  not the company's customers. "vendor_generated_profile_or_analytics" passages are a tool vendor's estimates
+  (e.g. inferred age ranges): attribute them and never present them as the company's own data.
+  "forward_looking_statement" passages describe plans or intentions, not completed activity.
+- Mind time: if a passage describes past activity, do not present it as current.
+- "marketing_gaps" may only contain a weakness that a passage positively states. Usually it is [].
+- Never promise results. Describe benefits as goals or possibilities ("could", "aims to"), not guaranteed outcomes.
+- Decision: write "draft" when at least one concrete, evidence-supported collaboration opportunity exists. Otherwise write
+  "abstain", give an abstain_reason, set pitch fields to INSUFFICIENT_EVIDENCE and leave collaboration_opportunities empty.
+- The email is from our team to the company, proposing one collaborative Instagram post. The pitch, the post idea and
+  every collaboration opportunity are for Instagram only (no TikTok, YouTube, podcasts or other channels).
+- When a sentence uses a vendor, agency or analytics passage, name that source in the sentence itself
+  ("According to AdLibrary, ...", "Attentive reports that ...").
+- Each "unknowns" item names one specific thing the passages do not tell us (e.g. "Whether X runs a creator program").
+  Never write placeholder text such as "what the evidence does not show".
+
+Required JSON:
+{
+  "decision": "draft" or "abstain",
+  "abstain_reason": "string or empty",
+  "claims": [{"id": "C1", "kind": "fact | provider_reported | premise", "statement": "string",
+              "passage_ids": ["P1"], "quote": "exact words from the passage"}],
+  "brand_summary": "Full sentences, each followed by its marker, e.g. "X makes ... {C1}." Never only markers. Or INSUFFICIENT_EVIDENCE",
+  "likely_target_audience": "A full sentence followed by its marker, or INSUFFICIENT_EVIDENCE",
+  "current_marketing_strategy": ["text with markers"],
+  "unknowns": ["one specific open question, e.g. Whether the company works with creators"],
+  "marketing_gaps": [],
+  "collaboration_opportunities": ["proposal that builds on a cited fact {C2}"],
+  "instagram_post_idea": {"hook": "string", "concept": "string", "why_it_fits": "string"},
+  "email_subject": "string",
+  "email_body": "string"
+}
+
+Company: Tonal (company_id tonal; category: smart home gym equipment)
+Official domains: tonal.com
+Recipient: the marketing team
+Packet status: ok
+
+Evidence passages:
+[P1] source: https://tonal.com/pages/about | document: official_domain | type: descriptive | dates in text: 2010, 2016 | published: unknown
+"Derek Mellencamp, Chief Revenue Officer Derek is an omni-channel growth leader with more than 25 years of experience scaling brands across direct-to-consumer, retail, wholesale, marketplace, dealer and B2B channels. Most recently, Derek spent 16 years building A. O. Smith's consumer water treatment business. He joined Aquasana in 2010 as Chief Marketing Officer and General Manager, scaling it from a sub-$5 million internet business into the leading e-commerce water filtration brand in the U.S. and helping drive its 2016 acquisition by A. O. Smith. That acqusition kicked off a category rollup with 7 additional businesses acquired and integrated."
+
+[P2] source: https://tonal.com/pages/about | document: official_domain | type: descriptive | dates in text: none | published: unknown
+"He went on to lead sales and marketing for 14 brands — including Aquasana, A. O. Smith, and WaterBoss — across DTC, retail, Amazon, distributor, wholesale and dealer networks, and served on the Board of Directors of the Water Quality Association. Earlier in his career, Derek spent a decade at Dell in sales and marketing leadership roles across the U.S. and Europe, including Executive Director of Strategy in the Office of the CMO and General Manager of Dell's European consumer online business. He began his career in consulting. Derek holds a BS from Vanderbilt University and an MBA from the University of Michigan's Stephen M. Ross School of Business."
+
+[P3] source: https://tonal.com/pages/about | document: official_domain | type: actual_activity | dates in text: none | published: unknown
+"Meet our partners With the support of our industry-leading investors, we're building systems to make strength training accessible to anyone. Mayfield Logo Dragoneer Investment Group Logo Shasta Logo Sapphire Logo L Catterton Logo Tonal Showroom"
+
+[P4] source: https://jackmorton.com/work/sports-marketing-strategy-strength-made-me-campaign/ | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown
+"Sports Marketing Strategy + Strength Made Me Campaign ## Creating Tonal’s first ever sports marketing strategy while launching a major campaign The connected home gym, Tonal, saw huge growth at the start of Covid-19, but needed to connect more with high-income worth individuals and athletes to build the brand interest and value, in a highly competitive market. Initially, they came to Jack to take strength training out of the basement and build high awareness for this newer brand, which started with creating their first ever sports marketing strategy. However, the train was still moving while we worked on the strategy."
+
+[P5] source: https://tonal.com/pages/press | document: official_domain | type: descriptive | dates in text: none | published: unknown
+"Shop Tonal 2 A complete home gym on your wall. 250 pounds of digital weight. Expert coaching and Smart View form feedback."
+
+[P6] source: https://tonal.com/pages/press | document: official_domain | type: descriptive | dates in text: none | published: unknown
+"Experience Membership Get personalized workouts, adaptive training, progress tracking, and more for the whole household with one membership."
+
+[P7] source: https://tonal.com/pages/press | document: official_domain | type: descriptive | dates in text: none | published: unknown
+"Learn Meet Tonal Say hello to personalized strength training with Tonal 2, the world’s most intelligent strength training system. Explore Tonal: Meet Tonal Installation With Tonal Effortless Install, professionals deliver, mount, and test your Tonal for a fast, stress-free setup."
+
+[P8] source: https://www.adweek.com/brand-marketing/tonals-epic-cinematic-ad-is-a-departure-for-the-fitness-category/ | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown
+"Tonal's Epic, Cinematic Ad Is a Departure for the Fitness Category ## The campaign, from agency Quality Experience, pulls from indie auteurs and urges customers to"
+
+[P9] source: https://www.adweek.com/brand-marketing/tonals-epic-cinematic-ad-is-a-departure-for-the-fitness-category/ | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown
+"ditch archaic workouts This ain’t your ancestor’s workout, Tonal saysTonal Terry Stanley By T.L. Stanley Tonal, a smart home gym looking for a holiday sales boost, has dropped an epic long-form commercial shot entirely in black and white and set in the Victorian era. A major departure for the fitness category—with inspiration coming from classic sports marketing and indie auteurs like Michel Gondry—Tonal’s 2-minute hero ad contrasts its pricey tech-enabled product with the crude kettle bells, battle ropes, and dandy horse bicycles of yore. The message: This ain’t your ancestor’s workout."
+
+[P10] source: https://jackmorton.com/work/sports-marketing-strategy-strength-made-me-campaign/ | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown
+"Sports Marketing Strategy + Strength Made Me Campaign Sports Marketing Strategy + Strength Made Me Campaign Tonal: Sports Marketing Strategy + Strength Made Me Campaign"
+
+
+OUTPUT LIMITS (the previous answer could not be used because it was cut off before it ended):
+- Return exactly one complete JSON object and nothing else.
+- Include at most 10 claims. Every claim must have a different statement, and its quote must be copied exactly from the passage it cites. Never copy the statement as the quote.
+- Do not repeat any sentence.
+- Put a [P#] citation after every factual sentence, naming the passage that states it.
+- Close the JSON object immediately after the "citations" list.

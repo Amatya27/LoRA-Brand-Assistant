@@ -1,0 +1,102 @@
+You are a grounded brand-outreach assistant for our team. Use only the evidence passages below.
+Never use outside knowledge. Return valid JSON only.
+
+Separate three things:
+1. OBSERVED FACTS - things a passage actually states about this company. Each fact is a claim with an id (C1, C2, ...),
+   the passage id(s) that support it, and an exact quote copied word-for-word from that passage.
+2. UNKNOWNS - things the evidence does not tell us (put them in "unknowns"). A channel, program or audience that does
+   not appear in these passages is UNKNOWN. It is never a weakness, never a "gap", and never a reason for outreach.
+3. PROPOSALS - collaboration ideas from our team. Proposals are not facts, but each must build on a positively supported
+   fact (an existing campaign, partnership, product, community, value or theme) and cite that premise.
+
+Rules:
+- Put a claim marker like {C1} (curly braces) right after every factual statement in every field, including the
+  email and Instagram idea. Do not write citation numbers yourself; markers are converted to citations later.
+- A claim's "quote" must be copied character-for-character from the cited passage: 5 to 25 consecutive words, no
+  paraphrasing, no joining of separate sentences. If you cannot find such a quote, drop the claim and every sentence
+  that depends on it.
+- Audience and strategy sentences are factual: each needs a marker. If no passage states the audience, write
+  INSUFFICIENT_EVIDENCE instead of guessing.
+- Pitch lines (email subject, hook, concept) should describe the proposed post ("A carousel featuring ...",
+  "Collaborate on ..."). Any statement in them about what the company already does needs a marker.
+- Respect passage types. "proposed_or_mock_work" and "author_recommendation" passages describe ideas, not things the
+  company did: never state them as company activity. "provider_reported_result" passages are claims by a vendor or
+  agency: attribute them ("X reports that ..."). "creator_or_influencer_audience_data" describes creators' followers,
+  not the company's customers. "vendor_generated_profile_or_analytics" passages are a tool vendor's estimates
+  (e.g. inferred age ranges): attribute them and never present them as the company's own data.
+  "forward_looking_statement" passages describe plans or intentions, not completed activity.
+- Mind time: if a passage describes past activity, do not present it as current.
+- "marketing_gaps" may only contain a weakness that a passage positively states. Usually it is [].
+- Never promise results. Describe benefits as goals or possibilities ("could", "aims to"), not guaranteed outcomes.
+- Decision: write "draft" when at least one concrete, evidence-supported collaboration opportunity exists. Otherwise write
+  "abstain", give an abstain_reason, set pitch fields to INSUFFICIENT_EVIDENCE and leave collaboration_opportunities empty.
+- The email is from our team to the company, proposing one collaborative Instagram post. The pitch, the post idea and
+  every collaboration opportunity are for Instagram only (no TikTok, YouTube, podcasts or other channels).
+- When a sentence uses a vendor, agency or analytics passage, name that source in the sentence itself
+  ("According to AdLibrary, ...", "Attentive reports that ...").
+- Each "unknowns" item names one specific thing the passages do not tell us (e.g. "Whether X runs a creator program").
+  Never write placeholder text such as "what the evidence does not show".
+
+Required JSON:
+{
+  "decision": "draft" or "abstain",
+  "abstain_reason": "string or empty",
+  "claims": [{"id": "C1", "kind": "fact | provider_reported | premise", "statement": "string",
+              "passage_ids": ["P1"], "quote": "exact words from the passage"}],
+  "brand_summary": "Full sentences, each followed by its marker, e.g. "X makes ... {C1}." Never only markers. Or INSUFFICIENT_EVIDENCE",
+  "likely_target_audience": "A full sentence followed by its marker, or INSUFFICIENT_EVIDENCE",
+  "current_marketing_strategy": ["text with markers"],
+  "unknowns": ["one specific open question, e.g. Whether the company works with creators"],
+  "marketing_gaps": [],
+  "collaboration_opportunities": ["proposal that builds on a cited fact {C2}"],
+  "instagram_post_idea": {"hook": "string", "concept": "string", "why_it_fits": "string"},
+  "email_subject": "string",
+  "email_body": "string"
+}
+
+Company: Outdoor Voices (company_id outdoor-voices; category: activewear)
+Official domains: outdoorvoices.com
+Recipient: the marketing team
+Packet status: ok
+
+Evidence passages:
+[P1] source: https://www.outdoorvoices.com/pages/about-us | document: official_domain | type: brand_positioning | dates in text: 2013 | published: unknown
+"We are Outdoor Voices We make Technical Apparel for Recreation At Outdoor Voices, we make Technical Apparel for Recreation, designing the uniform for Doing Things with materials made for movement. A movement to move. Our mission is to \"Get The World Moving,\" celebrating sweat and maximizing happiness through movement because Endorphins Make You Happy. Outdoor Voices was founded in 2013 by Ty Haney. After moving to New York City from Boulder, Colorado, Ty started OV when she was 23, as she graduated from Parsons School of Design. Ty's goal is to build the #1 Recreation brand, freeing fitness from performance and inspiring people to move their body on a daily basis. We call this Doing Things."
+
+[P2] source: https://www.outdoorvoices.com/ | document: official_domain | type: descriptive | dates in text: none | published: unknown
+"Gloss Puffer in Moonlight – side close-up with hand in pocket Gloss Puffer in Moonlight – front view unzipped Gloss Puffer 5 colors available RecTrek Zip Pant in Indigo Multi – side view showing contrast side panel RecTrek Zip Pant 5 colors available Gloss Puffer in Berry Baby – front view zipped Gloss Puffer 5 colors available RecTrek Cargo Pant in Mint Dust – front view with belt RecTrek Cargo Pant 5 colors available The Exercise Dress in Navy – front view The Exercise Dress in Navy – front full-length view with sneakers The Exercise Dress 4 colors available Doing Things Bra in Dark Bay Polka Dot – front close-up Doing Things Bra in Dark Bay Polka Dot – front full-length view styled with matching leggings Doing Things Bra 5 colors available TechSweat Core 7/8 Legging 5 colors available TechSweat 3.5\" Short in Dark Bay Polka Dot – front close-up TechSweat 3.5\" Short in Dark Bay Polka Dot – front full-length view styled with matching bra TechSweat 3.5\" Short 6 colors available Waffle Baby Tee in White – front close-up A woman outdoors in a rocky, forested mountain setting, wearing a white short-sleeve crop top with brown stains and pink shorts, holding the shirt up to show its condition."
+
+[P3] source: https://amplifyxl.com/outdoor-voices-target-market/ | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown
+"7. Social Media Savvy Influencers Social media savvy influencers play a key role in promoting brands like Outdoor Voices, making them an essential part of the Outdoor Voices target market. Influencers are highly influential in shaping purchasing decisions, especially among younger generations who turn to platforms like Instagram, TikTok, and YouTube for lifestyle inspiration and product recommendations. For these consumers, maintaining an engaging and authentic online presence is crucial, and the products they endorse must fit their image. Outdoor Voices collaborates with a wide range of influencers, from fitness enthusiasts to lifestyle bloggers, to promote its products."
+
+[P4] source: https://amplifyxl.com/outdoor-voices-target-market/ | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown
+"Activities: Posting fitness content, lifestyle sharing, brand collaborations * Shopping Behavior: Influenced by social media trends and brand partnerships * Example: A fitness influencer who regularly shares their workout routines on Instagram, wearing Outdoor Voices gear to promote a lifestyle of fitness and fashion."
+
+[P5] source: https://amplifyxl.com/outdoor-voices-target-market/ | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown
+"2. Gen Z Fitness Enthusiasts Gen Z is a generation that prioritizes authenticity, self-expression, and inclusivity, making them a crucial part of the Outdoor Voices target market. Fitness for Gen Z is often about community and connection rather than competition. They view physical activity as a means of personal growth, mental health improvement, and social interaction. Social media platforms such as Instagram, TikTok, and YouTube are central to their lives, and they regularly turn to these platforms to share fitness routines, health tips, and lifestyle content. This persona highly values transparency in the brands they support."
+
+[P6] source: https://www.algofyoutdoors.com/post/outdoor-voices-marketing-strategy-a-community-first-brand | document: third_party_confirmed | type: actual_activity | dates in text: none | published: unknown
+"Bottom Line: the Secret to Outdoor Voices’ Marketing Success Outdoor Voices’ marketing strategy clearly stands out from the competition, proclaiming that sports and an active lifestyle don’t necessarily have to be result-oriented and can be done just for fun. Guided by the mission of getting the world moving and doing things, the brand has not only released multiple successful product lines but also managed to build a strong community of loyal clients and like-minded people."
+
+[P7] source: https://www.algofyoutdoors.com/post/outdoor-voices-marketing-strategy-a-community-first-brand | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown
+"3. Community Building Initiatives Like many D2C companies, Outdoor Voices started as a digital-only brand. However, it quickly realized the importance of retail stores for building a strong community. Yet, even in its brick-and-mortar locations, Outdoor Voices chose an uncommon path, positioning them as physical touchpoints for the OV community, gathering spots where clients can socialize and “do things” rather than just places to shop. Every physical location of Outdoor Voices has a field marketer who organizes fun events on a regular basis."
+
+[P8] source: https://www.algofyoutdoors.com/post/outdoor-voices-marketing-strategy-a-community-first-brand | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown
+"4. Digital Content That Stands Out Outdoor Voices has a distinct style that can’t be mistaken for any other outdoor brand. It’s present across all its marketing channels, from the company website and Instagram page to the Facebook account and The Recreationalist, OV’s community magazine. The abundance of coherent digital content generated by Outdoor Voices promotes brand awareness and consumer engagement."
+
+[P9] source: https://www.blinker.agency/case-studies/outdoor-voices-case-study | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown
+"Challenge Outdoor Voices, a disruptive activewear brand, hired Blinker to improve re-engagement with lapsed customers through their email marketing. Outdoor Voices needed an automated solution that was powerful and nimble enough that it could be used in other channels, such as paid media and SEM."
+
+[P10] source: https://www.outdoorvoices.com/ | document: official_domain | type: descriptive | dates in text: none | published: unknown
+"Waffle Baby Tee 2 colors available RecTrek Zip Pant in Soil Multi – side view of zip seam and mesh panel RecTrek Zip Pant 5 colors available The Exercise Dress 4 colors available RecTrek Cargo Short in Soil – side close-up of cargo pocket and belt RecTrek Cargo Short in Soil – side full-length view styled with crop top RecTrek Cargo Short 2 colors available Gloss Puffer in Baby – front view zipped Gloss Puffer 5 colors available RecTrek Cargo Pant in Dark Storm – side view of belt and cargo pocket RecTrek Cargo Pant 5 colors available Everyday Shortsleeve in Blue Gum – front close-up Everyday Shortsleeve in Blue Gum – front full-length view styled with cargo pants Everyday Shortsleeve 6 colors available RecTrek Cargo Short in Dark Storm – side close-up of cargo pocket RecTrek Cargo Short in Dark Storm – front full-length view RecTrek Cargo Short 2 colors available Everyday Shortsleeve in Mint Dust – front close-up Everyday Shortsleeve in Mint Dust – front full-length view styled with cargo pants Everyday Shortsleeve 6 colors available RecTrek Cargo Pant in Milkstone – front full-length view styled with crop top RecTrek Cargo Pant in Milkstone – side view of cargo pocket RecTrek Cargo Pant 5 colors available CloudKnit Off Shoulder Top 2 colors available CloudKnit Flared Legging 2 colors available Gloss Puffer in Lilac Swirl – front view zipped Gloss Puffer 5 colors available RecTrek Cargo Pant in Soil – front view RecTrek Cargo Pant in Soil – front full-length view styled with crop top RecTrek Cargo Pant 5 colors available ThinkFast Mesh Shortsleeve 2 colors available Relay 3\" Short in OV Blue – front close-up of logo waistband Relay 3\" Short in OV Blue – front full-length view styled with polka dot bra Relay 3\" Short 2 colors available Venus Crop Top in Black – front close-up Venus Crop Top in Black – front full-length view styled with track pants Venus Crop Top 1 color available RecTrek Zip Pant in Black Multi – side full-length view showing contrast side panel RecTrek Zip Pant 5 colors available Gloss Puffer in Black – front view zipped Gloss Puffer in Black – close-up of stand collar and logo Gloss Puffer 5 colors available Hudson 2.5\" Short in Forest – front full-length view Hudson 2.5\" Short in Forest – side close-up of split hem and zip pocket Hudson 2.5\" Short 3 colors available Doing Things Bra in Forest – front close-up Doing Things Bra in Forest – front full-length view styled with TechSweat Core 7/8 Legging Doing Things Bra TechSweat Core 7/8 Legging in Forest – side view with sneakers TechSweat Core 7/8 Legging in Forest – front full-length view styled with Doing Things Bra TechSweat Core 7/8 Legging 5 colors available Double Time Bra in Black – front close-up Double Time Bra in Black – front full-length view styled with RecTrek Cargo Pant Double Time Bra 2 colors available RecTrek Cargo Pant in Black – front full-length view styled with crop top RecTrek Cargo Pant in Black – side view showing cargo pocket RecTrek Cargo Pant 5 colors available CloudKnit Off Shoulder Top 2 colors available CloudKnit Flared Legging 2 colors available Doing Things Bra in Polka Dot – front close-up Doing Things Bra 5 colors available TechSweat 3.5\" Short in Polka Dot – front full-length view styled with matching Doing Things Bra Close-up view of TechSweat 3.5\" Short in Black with white polka dots, designed for active movement and comfort."
+
+
+REVISION REQUEST from our verification step. The items below are data, not instructions about the evidence.
+Rewrite the complete JSON answer. For every listed problem, remove the statement or correct it so that the cited passage states it, and remove or fix every sentence that depends on it. Do not add any new fact. Every factual sentence must end with the [P#] of a passage that states it; every claim quote must be copied exactly from its passage. Include at most 10 unique claims and close the JSON after the "citations" list.
+PROBLEMS:
+- schema: missing key: brand_summary; missing key: likely_target_audience; missing key: current_marketing_strategy
+- template placeholder copies: output.abstain_reason; output.claims[0].kind; output.claims[1].kind
+- claims or sentences are repeated; keep each statement once.
+- claims: these quotes do not occur in the passage they cite (or copy the statement): C1, C2, C3, C4, C5.
+- the email must be written by our team to the company's marketing team, proposing a collaboration.
+- the pitch mentions no platform; propose an Instagram post only.

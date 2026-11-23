@@ -1,0 +1,761 @@
+{
+ "checks_version": "phase4-v5-checks-2",
+ "structure": {
+  "strict_json": true,
+  "truncated": false,
+  "parse_error": null,
+  "schema_errors": [
+   "claims[0].kind 'fact | provider_reported | premise' not in ('fact', 'provider_reported', 'premise')"
+  ],
+  "parse_mode": "strict",
+  "prompt_schema_valid": false,
+  "training_schema_valid": false,
+  "raw_format": {
+   "starts_with_brace": false,
+   "code_fenced": true,
+   "text_outside_json": true
+  }
+ },
+ "decision": "draft",
+ "repetition": {
+  "method": "exact match after whitespace/quote/case normalisation; no semantic similarity",
+  "claim_count": 1,
+  "duplicate_claim_ids": [],
+  "duplicate_claim_statements": 0,
+  "distinct_claim_statements": 1,
+  "duplicate_claim_quotes": 0,
+  "repeated_prose_sentences": {},
+  "max_8gram_repeats_in_raw": 1,
+  "looping": false
+ },
+ "citation_mechanics": {
+  "inline_passage_refs": [],
+  "unknown_refs": [
+   "C2"
+  ],
+  "claim_quotes": [
+   {
+    "index": 0,
+    "claim_id": "C1",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": true,
+    "cites_non_factual_type": []
+   }
+  ]
+ },
+ "assertions": [
+  {
+   "review_id": "R-4baa7ada6d4477c0",
+   "location": "brand_summary#s0",
+   "text": "Full sentences, each followed by its marker, e.g.",
+   "kind": "factual",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": false,
+   "verdict": "unresolved",
+   "citation_status": null,
+   "reason": "reviewer response missing, invalid or untraceable after retries",
+   "reviewer_reason": "reviewer response missing, invalid or untraceable after retries",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unresolved",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "66a46f44fedd1a2960f175a394fa5d53f9614aa8f63674c28eb4e6ddcb1894a8",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-4baa7ada6d4477c0\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P1\",\n  \"evidence_quote\": \"Full sentences, each followed by its marker, e.g.\",\n  \"reason\": \"The evidence passage directly states the format of the sentences.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 252,
+       "completion_tokens": 84,
+       "total_tokens": 336,
+       "prompt_tokens_details": {
+        "cached_tokens": 31
+       }
+      },
+      "latency_s": 6.705,
+      "error": null,
+      "validation_errors": [
+       "evidence_passage_id 'P1' was not shown to the reviewer"
+      ]
+     },
+     {
+      "attempt": 1,
+      "prompt_sha256": "bdbb0a7008164d5aad9b784c5e8e784c4ba018b4cca8b0d898791d6f35fd841d",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-4baa7ada6d4477c0\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P1\",\n  \"evidence_quote\": \"Your previous answer was invalid: evidence_passage_id 'P1' was not shown to the reviewer.\",\n  \"reason\": \"The evidence passage explicitly states 'Full sentences, each followed by its marker, e.g.'\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 279,
+       "completion_tokens": 101,
+       "total_tokens": 380,
+       "prompt_tokens_details": {
+        "cached_tokens": 246
+       }
+      },
+      "latency_s": 7.432,
+      "error": null,
+      "validation_errors": [
+       "evidence_passage_id 'P1' was not shown to the reviewer"
+      ]
+     }
+    ],
+    "request_sha256": "575e82c31eba24b2aacfdf387ff3526b1f098f53100d4db7fe52690806f5b27e",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-3c24c885d842b711",
+   "location": "brand_summary#s1",
+   "text": "\"X makes ... {C1}.\" Never only markers.",
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "marker_{C#}_via_claims",
+   "marker_mapping": {
+    "C1": [
+     "P1"
+    ]
+   },
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": false,
+   "verdict": "unsupported",
+   "reviewer_verdict": "unsupported",
+   "citation_status": "cited",
+   "flags": [],
+   "reason": "The passage does not mention Tonal or any of its products or services.",
+   "guard": null,
+   "reviewer_reason": "The passage does not mention Tonal or any of its products or services.",
+   "evidence_passage_id": "P1",
+   "evidence_quote": "Derek Mellencamp, Chief Revenue Officer Derek is an omni-channel growth leader with more than 25 years of experience scaling brands across direct-to-consumer, retail, wholesale, marketplace, dealer and B2B channels.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "cf7ef6a5240a51a4d3865f088ca266cb388acb5d9c94052f6f52161529fa5861",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-3c24c885d842b711\",\n  \"verdict\": \"unsupported\",\n  \"evidence_passage_id\": \"P1\",\n  \"evidence_quote\": \"Derek Mellencamp, Chief Revenue Officer Derek is an omni-channel growth leader with more than 25 years of experience scaling brands across direct-to-consumer, retail, wholesale, marketplace, dealer and B2B channels.\",\n  \"reason\": \"The passage does not mention Tonal or any of its products or services.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 406,
+       "completion_tokens": 126,
+       "total_tokens": 532,
+       "prompt_tokens_details": {
+        "cached_tokens": 157
+       }
+      },
+      "latency_s": 9.95,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "b69ae113addfb155367da90da5eddea18065f1913ce14c4bf5021db109fc4740",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-cfccaeae97834d3b",
+   "location": "brand_summary#s2",
+   "text": "Or INSUFFICIENT_EVIDENCE",
+   "kind": "factual",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": false,
+   "verdict": "unsupported",
+   "reviewer_verdict": "unsupported",
+   "citation_status": "uncited",
+   "flags": [],
+   "reason": "The provided statement 'Or INSUFFICIENT_EVIDENCE' is not supported or contradicted by the given passages. The passages do not provide any information to either support or contradict this statement.",
+   "guard": null,
+   "reviewer_reason": "The provided statement 'Or INSUFFICIENT_EVIDENCE' is not supported or contradicted by the given passages. The passages do not provide any information to either support or contradict this statement.",
+   "evidence_passage_id": null,
+   "evidence_quote": "",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "be96da56cc259b124bd83d1fe8fd25cc55456ff42b5f4d83e29ff24fb383af69",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-cfccaeae97834d3b\",\n  \"verdict\": \"unsupported\",\n  \"evidence_passage_id\": null,\n  \"evidence_quote\": null,\n  \"reason\": \"The provided statement 'Or INSUFFICIENT_EVIDENCE' is not supported or contradicted by the given passages. The passages do not provide any information to either support or contradict this statement.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 246,
+       "completion_tokens": 96,
+       "total_tokens": 342,
+       "prompt_tokens_details": {
+        "cached_tokens": 156
+       }
+      },
+      "latency_s": 7.541,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "212ea8a3d25cbeddcc24fa94dd2f11dae98f1b1105026bb592937bef6ddb5219",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-f4ceda06b2ec0b65",
+   "location": "likely_target_audience#s0",
+   "text": "A full sentence followed by its marker, or INSUFFICIENT_EVIDENCE",
+   "kind": "factual",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": false,
+   "verdict": "unresolved",
+   "citation_status": null,
+   "reason": "reviewer response missing, invalid or untraceable after retries",
+   "reviewer_reason": "reviewer response missing, invalid or untraceable after retries",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unresolved",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "02c6ffdac604138202fd7852352ba94ef822c3b4ad343502c7b68771650b7860",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-f4ceda06b2ec0b65\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P-1\",\n  \"evidence_quote\": \"A full sentence followed by its marker, or INSUFFICIENT_EVIDENCE\",\n  \"reason\": \"The evidence passage directly states the statement.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 255,
+       "completion_tokens": 85,
+       "total_tokens": 340,
+       "prompt_tokens_details": {
+        "cached_tokens": 156
+       }
+      },
+      "latency_s": 6.279,
+      "error": null,
+      "validation_errors": [
+       "evidence_passage_id 'P-1' was not shown to the reviewer"
+      ]
+     },
+     {
+      "attempt": 1,
+      "prompt_sha256": "860d1c5f862e622ec8e11ff59daab561148aaaceec8f522de16f9902591f4a68",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-f4ceda06b2ec0b65\",\n  \"verdict\": \"unsupported\",\n  \"evidence_passage_id\": \"P-1\",\n  \"evidence_quote\": \"A full sentence followed by its marker, or INSUFFICIENT_EVIDENCE\",\n  \"reason\": \"The evidence passage does not provide a specific statement about the company Tonal or its activities.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 283,
+       "completion_tokens": 95,
+       "total_tokens": 378,
+       "prompt_tokens_details": {
+        "cached_tokens": 249
+       }
+      },
+      "latency_s": 7.074,
+      "error": null,
+      "validation_errors": [
+       "evidence_passage_id 'P-1' was not shown to the reviewer"
+      ]
+     }
+    ],
+    "request_sha256": "2c0a9c3112fd66c040ff6e40ab3e28d470ea0752922de213bc1152e927219503",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-add05909736d0787",
+   "location": "current_marketing_strategy[0]#s0",
+   "text": "text with markers",
+   "kind": "factual",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": false,
+   "verdict": "unsupported",
+   "reviewer_verdict": "unsupported",
+   "citation_status": "uncited",
+   "flags": [],
+   "reason": "The provided statement 'text with markers' is not supported or contradicted by the given passages. The passages do not contain any information related to the company Tonal or its products.",
+   "guard": null,
+   "reviewer_reason": "The provided statement 'text with markers' is not supported or contradicted by the given passages. The passages do not contain any information related to the company Tonal or its products.",
+   "evidence_passage_id": null,
+   "evidence_quote": "",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "458ea43810d3cdf6d814cc4df5d4647c0ed0cb943fa5efbb26d22712ddaa16de",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-add05909736d0787\",\n  \"verdict\": \"unsupported\",\n  \"evidence_passage_id\": null,\n  \"evidence_quote\": null,\n  \"reason\": \"The provided statement 'text with markers' is not supported or contradicted by the given passages. The passages do not contain any information related to the company Tonal or its products.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 244,
+       "completion_tokens": 96,
+       "total_tokens": 340,
+       "prompt_tokens_details": {
+        "cached_tokens": 156
+       }
+      },
+      "latency_s": 7.244,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "9986e93d20596c506d3165ffeecd1e6ac504e726dbd45a0c6b318a6451253e9d",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-ed68343690c1842c",
+   "location": "collaboration_opportunities[0]#s0",
+   "text": "proposal that builds on a cited fact {C2}",
+   "kind": "factual",
+   "cited_passages": [],
+   "citation_source": "marker_{C#}_via_claims",
+   "marker_mapping": {},
+   "unknown_citations": [
+    "C2"
+   ],
+   "introduced_by_repair": false,
+   "diagnostic_only": false,
+   "verdict": "unresolved",
+   "citation_status": null,
+   "reason": "reviewer response missing, invalid or untraceable after retries",
+   "reviewer_reason": "reviewer response missing, invalid or untraceable after retries",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unresolved",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "cda3a74147b193efae82aa99db6f4935f5ebc42cc390ad8f95e536dbd464c2e2",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-ed68343690c1842c\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P-1\",\n  \"evidence_quote\": \"The proposal builds on a cited fact.\",\n  \"reason\": \"The evidence passage directly states that the proposal is based on a cited fact, which aligns with the statement.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 249,
+       "completion_tokens": 93,
+       "total_tokens": 342,
+       "prompt_tokens_details": {
+        "cached_tokens": 156
+       }
+      },
+      "latency_s": 8.089,
+      "error": null,
+      "validation_errors": [
+       "evidence_passage_id 'P-1' was not shown to the reviewer"
+      ]
+     },
+     {
+      "attempt": 1,
+      "prompt_sha256": "3b5b900545ee8e1f754dea4db0b703f1c3dc76e168a85ec27b0d64719f26b1eb",
+      "raw_text": "```json\n{\"review_id\": \"R-ed68343690c1842c\", \"verdict\": \"supported\", \"evidence_passage_id\": \"P-1\", \"evidence_quote\": \"The proposal builds on a cited fact.\", \"reason\": \"The evidence passage directly states that the proposal is based on a cited fact, which aligns with the statement. The evidence is clear and unambiguous, supporting the statement without any additional interpretation or inference. The evidence does not contradict the statement and does not require any additional context to be considered valid. The evidence is specific and directly related to the company Tonal, as it mentions a proposal and a cited fact, which is consistent with the company's activities in the smart home gym equipment market. The evidence is not a vendor or agency result, as it is a direct quote from the evidence passage. The evidence is not past activity, as it is a current statement about the company's proposal. The evidence is not a recommendation or idea, as it is a factual statement about the company's proposal. The evidence is not a vendor or agency result, as it is a direct quote from the evidence passage. The evidence is not a recommendation or idea, as it is a factual statement about the company's proposal. The evidence is not a vendor or agency result, as it is a direct quote from the evidence passage. The evidence is not a recommendation or idea, as it is a factual statement about",
+      "ok": true,
+      "finish_reason": "length",
+      "usage": {
+       "prompt_tokens": 277,
+       "completion_tokens": 300,
+       "total_tokens": 577,
+       "prompt_tokens_details": {
+        "cached_tokens": 243
+       }
+      },
+      "latency_s": 22.236,
+      "error": null,
+      "validation_errors": [
+       "not a single JSON object: Unterminated string starting at: line 1 column 159 (char 158)"
+      ]
+     }
+    ],
+    "request_sha256": "6e7cc1b199a9c8e6bb54d70d839e6544d269d95d0981c2081a2acf1345020ab5",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-ea135e89f2556576",
+   "location": "instagram_post_idea.hook#s0",
+   "text": "string",
+   "kind": "factual",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": false,
+   "verdict": "unsupported",
+   "reviewer_verdict": "unsupported",
+   "citation_status": "uncited",
+   "flags": [],
+   "reason": "The statement 'string' is not supported by any evidence passages provided.",
+   "guard": null,
+   "reviewer_reason": "The statement 'string' is not supported by any evidence passages provided.",
+   "evidence_passage_id": null,
+   "evidence_quote": "",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "bdbd7672a38a3cdd192040b01f4cc3d9a1f1c8e1562ec016aef5d6be380eeb52",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-ea135e89f2556576\",\n  \"verdict\": \"unsupported\",\n  \"evidence_passage_id\": null,\n  \"evidence_quote\": null,\n  \"reason\": \"The statement 'string' is not supported by any evidence passages provided.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 244,
+       "completion_tokens": 76,
+       "total_tokens": 320,
+       "prompt_tokens_details": {
+        "cached_tokens": 156
+       }
+      },
+      "latency_s": 5.594,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "8f945566d3e6c2acdce80b0e7bf6e5baf61b9188d5e9333cad3f31021d6426a0",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-ea135e89f2556576",
+   "location": "instagram_post_idea.concept#s0",
+   "text": "string",
+   "duplicate_of": "R-ea135e89f2556576",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": "uncited",
+   "kind": "factual",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-ea135e89f2556576",
+   "location": "instagram_post_idea.why_it_fits#s0",
+   "text": "string",
+   "duplicate_of": "R-ea135e89f2556576",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": "uncited",
+   "kind": "factual",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-ea135e89f2556576",
+   "location": "email_subject#s0",
+   "text": "string",
+   "duplicate_of": "R-ea135e89f2556576",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": "uncited",
+   "kind": "factual",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-ea135e89f2556576",
+   "location": "email_body#s0",
+   "text": "string",
+   "duplicate_of": "R-ea135e89f2556576",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": "uncited",
+   "kind": "factual",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-a972a1150d2395fc",
+   "location": "claims[0].statement",
+   "text": "string",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": false,
+   "verdict": "unsupported",
+   "reviewer_verdict": "unsupported",
+   "citation_status": "cited",
+   "flags": [],
+   "reason": "The evidence passage does not provide any information about Tonal (smart home gym equipment) or any statement about the company.",
+   "guard": null,
+   "reviewer_reason": "The evidence passage does not provide any information about Tonal (smart home gym equipment) or any statement about the company.",
+   "evidence_passage_id": "P1",
+   "evidence_quote": "Derek Mellencamp, Chief Revenue Officer Derek is an omni-channel growth leader with more than 25 years of experience scaling brands across direct-to-consumer, retail, wholesale, marketplace, dealer and B2B channels.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "574b6111fdee08f14d841a77825c3a5bb0c7ff17188d60fcedd4964b6ae48a0c",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-a972a1150d2395fc\",\n  \"verdict\": \"unsupported\",\n  \"evidence_passage_id\": \"P1\",\n  \"evidence_quote\": \"Derek Mellencamp, Chief Revenue Officer Derek is an omni-channel growth leader with more than 25 years of experience scaling brands across direct-to-consumer, retail, wholesale, marketplace, dealer and B2B channels.\",\n  \"reason\": \"The evidence passage does not provide any information about Tonal (smart home gym equipment) or any statement about the company.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 398,
+       "completion_tokens": 133,
+       "total_tokens": 531,
+       "prompt_tokens_details": {
+        "cached_tokens": 156
+       }
+      },
+      "latency_s": 10.35,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "a4469e8e7538674cb76de721a19d4146c984fbfe38070b4b55c690eb341fdae0",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  }
+ ],
+ "skipped_sentences": {
+  "proposal": [],
+  "non_assertion": []
+ },
+ "unknown_issues": [
+  {
+   "location": "unknowns[0]",
+   "issue": "placeholder_unknown",
+   "text": "one specific open question, e.g. Whether the company works with creators"
+  }
+ ],
+ "outreach": {
+  "recipient": "unclear",
+  "sender": "unclear",
+  "instagram_mentioned": false,
+  "other_platforms_in_pitch": [],
+  "instagram_compliant": false,
+  "promises": [],
+  "email_subject": "string"
+ },
+ "failures": [
+  {
+   "check": "schema",
+   "detail": [
+    "claims[0].kind 'fact | provider_reported | premise' not in ('fact', 'provider_reported', 'premise')"
+   ]
+  },
+  {
+   "check": "template_placeholder_copies",
+   "detail": [
+    "output.abstain_reason",
+    "output.claims[0].kind",
+    "output.claims[0].statement",
+    "output.claims[0].quote",
+    "output.current_marketing_strategy[0]"
+   ]
+  },
+  {
+   "check": "citation_ids",
+   "detail": [
+    "claim markers without a matching claim: ['C2']"
+   ]
+  },
+  {
+   "check": "claim_quotes",
+   "detail": [
+    {
+     "claim_id": "C1",
+     "self_quote": false,
+     "other_passage": []
+    }
+   ]
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-3c24c885d842b711",
+   "location": "brand_summary#s1",
+   "text": "\"X makes ... {C1}.\" Never only markers.",
+   "verdict": "unsupported",
+   "reason": "The passage does not mention Tonal or any of its products or services.",
+   "evidence_passage_id": "P1",
+   "evidence_quote": "Derek Mellencamp, Chief Revenue Officer Derek is an omni-channel growth leader with more than 25 years of experience scaling brands across direct-to-consumer, retail, wholesale, marketplace, dealer and B2B channels."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-cfccaeae97834d3b",
+   "location": "brand_summary#s2",
+   "text": "Or INSUFFICIENT_EVIDENCE",
+   "verdict": "unsupported",
+   "reason": "The provided statement 'Or INSUFFICIENT_EVIDENCE' is not supported or contradicted by the given passages. The passages do not provide any information to either support or contradict this statement.",
+   "evidence_passage_id": null,
+   "evidence_quote": ""
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-add05909736d0787",
+   "location": "current_marketing_strategy[0]#s0",
+   "text": "text with markers",
+   "verdict": "unsupported",
+   "reason": "The provided statement 'text with markers' is not supported or contradicted by the given passages. The passages do not contain any information related to the company Tonal or its products.",
+   "evidence_passage_id": null,
+   "evidence_quote": ""
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-ea135e89f2556576",
+   "location": "instagram_post_idea.hook#s0",
+   "text": "string",
+   "verdict": "unsupported",
+   "reason": "The statement 'string' is not supported by any evidence passages provided.",
+   "evidence_passage_id": null,
+   "evidence_quote": ""
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-a972a1150d2395fc",
+   "location": "claims[0].statement",
+   "text": "string",
+   "verdict": "unsupported",
+   "reason": "The evidence passage does not provide any information about Tonal (smart home gym equipment) or any statement about the company.",
+   "evidence_passage_id": "P1",
+   "evidence_quote": "Derek Mellencamp, Chief Revenue Officer Derek is an omni-channel growth leader with more than 25 years of experience scaling brands across direct-to-consumer, retail, wholesale, marketplace, dealer and B2B channels."
+  },
+  {
+   "check": "placeholder_unknown",
+   "location": "unknowns[0]",
+   "text": "one specific open question, e.g. Whether the company works with creators"
+  },
+  {
+   "check": "sender_recipient",
+   "detail": [
+    "unclear",
+    "unclear"
+   ]
+  },
+  {
+   "check": "instagram",
+   "detail": []
+  }
+ ],
+ "unresolved": [
+  "R-4baa7ada6d4477c0",
+  "R-f4ceda06b2ec0b65",
+  "R-ed68343690c1842c"
+ ],
+ "passes": false,
+ "failure_signature": "4ff641f17a8df497db0d616b8d3be458966f0bde1d275346472b51a27c209184",
+ "review_wall_s": 98.531,
+ "attempt": {
+  "index": 0,
+  "kind": "initial"
+ }
+}

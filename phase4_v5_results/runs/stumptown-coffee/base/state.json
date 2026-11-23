@@ -1,0 +1,106 @@
+{
+ "case_id": "stumptown-coffee/base",
+ "company_id": "stumptown-coffee",
+ "arm": "base",
+ "packet_path": "outputs/phase3_v5/handoff_6efa346/data/v3_pilot/packets/stumptown-coffee.json",
+ "packet_sha256": "546ce43823e5e75d054f71f5ab29323f092a352f38b07d41bc95a8b64116acf6",
+ "prompt_version": "brandpilot.prompt.v3.3",
+ "prompt_sha256": "a5e53720ebdf975c6d0a45abc86f2dd4e0be8ecaf21a6b4a1f009ff701e008b7",
+ "max_repairs": 2,
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "dir": "phase4_v5_results/runs/stumptown-coffee/base/attempt-00",
+   "prompt_sha256": "a5e53720ebdf975c6d0a45abc86f2dd4e0be8ecaf21a6b4a1f009ff701e008b7",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "stop",
+   "usage": {
+    "prompt_tokens": 2541,
+    "completion_tokens": 262,
+    "total_tokens": 2803,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 11.127,
+   "runtime_verified": true,
+   "raw_sha256": "d257f0d8e9ffcf389535feb884a1d0c2bad58b2719841ace80f7cb05af3688fc",
+   "reused_from": null,
+   "passes": false,
+   "strict_ok": true,
+   "model_abstained": false,
+   "failure_count": 10,
+   "unresolved_count": 1,
+   "failure_signature": "a1dcd8a5c44106f5646701e9148d34abde03a4b2f1281f16e407eded11441466",
+   "review_wall_s": 51.63,
+   "truncated": false,
+   "looping": false
+  },
+  {
+   "index": 1,
+   "kind": "targeted_fix",
+   "dir": "phase4_v5_results/runs/stumptown-coffee/base/attempt-01",
+   "prompt_sha256": "d1717ba4f1d6d8d6482ede19ded13809e40fadb34f00a915461e473481092a7e",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "stop",
+   "usage": {
+    "prompt_tokens": 2999,
+    "completion_tokens": 1401,
+    "total_tokens": 4400,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 43.964,
+   "runtime_verified": true,
+   "raw_sha256": "8d1494eca688a04136a98edf6d6d68181da36c517424dd05607293517cb24756",
+   "reused_from": null,
+   "passes": false,
+   "strict_ok": false,
+   "model_abstained": false,
+   "truncated": true,
+   "looping": false,
+   "failure_count": 3,
+   "unresolved_count": 0,
+   "failure_signature": "0365fa43ffca1b545721e086e7fa9cdd7055a9f52390c170b118dbea2e746f0f",
+   "review_wall_s": 0.001
+  },
+  {
+   "index": 2,
+   "kind": "regenerate_bounded",
+   "dir": "phase4_v5_results/runs/stumptown-coffee/base/attempt-02",
+   "prompt_sha256": "dc7704ee02fc41163c195ce5703fce90feec5ede5a303d00598221c31a3e90a2",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "length",
+   "usage": {
+    "prompt_tokens": 2656,
+    "completion_tokens": 3072,
+    "total_tokens": 5728,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 69.2,
+   "runtime_verified": true,
+   "raw_sha256": "54bca01c182eb9e953e2c58665c1023183199aaa7dd274ea78ecaf45f09f6949",
+   "reused_from": null,
+   "passes": false,
+   "strict_ok": false,
+   "model_abstained": false,
+   "truncated": true,
+   "looping": true,
+   "failure_count": 5,
+   "unresolved_count": 0,
+   "failure_signature": "3f0b89ca30293c3ba672c51c8eb5765bc23ab10f8f9f13fa4af9a0425291a16a",
+   "review_wall_s": 0.002
+  }
+ ],
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "no progress: the repair repeated the same truncation failure",
+ "stop_code": "withheld_no_progress",
+ "eligibility": "eligible"
+}

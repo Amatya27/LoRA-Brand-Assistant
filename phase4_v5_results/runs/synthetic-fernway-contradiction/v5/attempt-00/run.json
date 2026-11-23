@@ -1,0 +1,272 @@
+{
+  "run_id": "20261123T035521310900Z-fernway-adapter-generation-fe3454",
+  "run_dir": "outputs/phase3_v5/runs/20261123T035521310900Z-fernway-adapter-generation-fe3454",
+  "started_at": "2026-11-23T03:55:21.310053+00:00",
+  "mode": "adapter-generation",
+  "mode_description": "C: same single-generation interface and evidence, with an explicitly requested LoRA adapter. No base-model fallback.",
+  "backend": "openai-compatible",
+  "identity": {
+    "company": "Fernway",
+    "company_id": "fernway",
+    "person": "",
+    "source": "packet"
+  },
+  "evidence": {
+    "evidence_source": "replayed",
+    "packet_format": "brandpilot.packet.v3",
+    "packet_input_path": "outputs/phase3_v5/packets/synthetic_fernway_contradiction.json",
+    "packet_input_sha256": "cafacd04cd9cdab8d1bb2765e6d3393104c544a929496bd4f8805a72c4c1c50b",
+    "packet_content_sha256": "a0ac4c41ff64bd99d2980297a6f2c3f8a1825b325a5b068795ea62c72d84ee83",
+    "packet_status": "ok",
+    "packet_status_reasons": [],
+    "packet_collection": {
+      "mode": "synthetic_test",
+      "collector_version": "brandpilot-collector-0.3",
+      "created_at": "2026-11-22T21:14:36+00:00",
+      "queries": [],
+      "notes": [
+        "SYNTHETIC FIXTURE - invented company on .example domains; not retrieved from the web"
+      ]
+    },
+    "cache_policy": "No retrieval performed; evidence replayed byte-for-byte from the saved packet.",
+    "provenance_note": "Packet hash, passage text hashes and identity status were checked. Recovering each passage from its stored document needs the Phase 1 evidence store (not checked).",
+    "evidence_passage_count": 3,
+    "source_count": 0,
+    "packet_built_at": null,
+    "publication_dates": "unknown (not collected by retrieval)",
+    "identity_warnings": [],
+    "identity_warning_note": "Heuristic name-mention check only; not a disambiguation verdict.",
+    "evidence_ids_supplied": [
+      "P1",
+      "P2",
+      "P3"
+    ]
+  },
+  "generation": {
+    "requested": true,
+    "generation_requests": 1,
+    "settings": {
+      "api_base": "http://127.0.0.1:8080/v1",
+      "model": "mlx-community/gemma-3-1b-it-qat-4bit",
+      "adapter_path": "adapters/brand_assistant_v5_best",
+      "max_tokens": 3072,
+      "temperature": 0.0,
+      "timeout_s": 300.0
+    },
+    "adapter": {
+      "adapter_requested": "adapters/brand_assistant_v5_best",
+      "forwarded_as": "request field 'adapters' (mlx_lm.server)",
+      "path_resolution": "Server-side filesystem, relative to the server's working directory.",
+      "server_accepted_request": true,
+      "adapter_load_verified": true,
+      "adapter_load_verification_note": "Verified from the serving process's load ledger: this request's messages hash was served with this adapter loaded, the adapter file the server opened has the expected SHA-256, and every adapter tensor matched the loaded model parameters.",
+      "local_validation": {
+        "performed": true,
+        "resolved_path": "<repo>/adapters/brand_assistant_v5_best",
+        "exists": true,
+        "files_present": [
+          "adapter_config.json",
+          "adapters.safetensors"
+        ],
+        "adapter_config.json_sha256": "88ebe11724c9313a718f07634f020937b71f566c039e1492100a02274687c036",
+        "adapters.safetensors_sha256": "84d482c93281680d9393ab595f06054f30e88d4c61e5f083d2c557c03980adf2",
+        "adapter_config": {
+          "model": "mlx-community/gemma-3-1b-it-qat-4bit",
+          "fine_tune_type": "lora",
+          "num_layers": 8,
+          "lora_parameters": {
+            "rank": 8,
+            "dropout": 0.0,
+            "scale": 20.0
+          },
+          "max_seq_length": 6144,
+          "iters_in_training_config": 100,
+          "training_output_path_in_config": "adapters/brand_assistant_v5",
+          "note": "adapter_config.json is the training run's config. Its 'iters' and 'adapter_path' describe the original training output, not necessarily the delivered checkpoint directory."
+        }
+      }
+    },
+    "model_revision": {
+      "value": "15fed4eafb456c6fcb2a1165f19ac609670ed14b",
+      "method": "client_hf_cache_refs_main",
+      "caveat": "Observed in this machine's HF cache; the server does not report its loaded revision."
+    },
+    "prompt_version": "brandpilot.prompt.v3.3",
+    "prompt_sha256": "d9825b433a68413e5d28c89caeb79a9b113b7d13a08c6bbc8f149cbba36f3689",
+    "prompt_source": "v3 training-format prompt rendered from the packet; byte-identical to brandpilot.packet.build_teacher_prompt for this rule version",
+    "baseline_comparable": false,
+    "attempts": 1,
+    "request_url": "http://127.0.0.1:8080/v1/chat/completions",
+    "http_status": 200,
+    "latency_s": 112.427,
+    "usage": {
+      "prompt_tokens": 1550,
+      "completion_tokens": 3072,
+      "total_tokens": 4622,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "stop_reason": "length",
+    "response_model": "mlx-community/gemma-3-1b-it-qat-4bit",
+    "error_type": null,
+    "error_message": null,
+    "runtime_verification": {
+      "verified": true,
+      "checks": {
+        "request_found_in_ledger": true,
+        "single_request_in_flight": true,
+        "requested_model_matches": true,
+        "served_model_matches": true,
+        "served_adapter_matches_request": true,
+        "load_event_found": true,
+        "load_event_model_key_matches": true,
+        "adapter_file_hash_matches_expected": true,
+        "lora_modules_present": true,
+        "all_adapter_tensors_loaded": true
+      },
+      "observations": {
+        "server_pid": 16468,
+        "request_event": {
+          "schema": "phase3-load-ledger-v1",
+          "pid": 16468,
+          "time": 1795406125.957624,
+          "event": "request_started",
+          "messages_sha256": "7994be0a0d91925a4d579a4e9db3d57a1160680dc5fafa21edfa92e93ba8c07e",
+          "requested_model": "mlx-community/gemma-3-1b-it-qat-4bit",
+          "requested_adapter": "adapters/brand_assistant_v5_best",
+          "model_key": [
+            "mlx-community/gemma-3-1b-it-qat-4bit",
+            "adapters/brand_assistant_v5_best",
+            null
+          ],
+          "in_flight": 1
+        },
+        "matching_request_events": 1,
+        "load_event": {
+          "schema": "phase3-load-ledger-v1",
+          "pid": 16468,
+          "time": 1795406125.777835,
+          "event": "model_loaded",
+          "model_key": [
+            "mlx-community/gemma-3-1b-it-qat-4bit",
+            "adapters/brand_assistant_v5_best",
+            null
+          ],
+          "adapter_inspection": {
+            "adapter_path_as_requested": "adapters/brand_assistant_v5_best",
+            "resolved_path": "<repo>/adapters/brand_assistant_v5_best",
+            "server_cwd": "<repo>",
+            "adapters_safetensors_sha256": "84d482c93281680d9393ab595f06054f30e88d4c61e5f083d2c557c03980adf2",
+            "adapter_config_sha256": "88ebe11724c9313a718f07634f020937b71f566c039e1492100a02274687c036",
+            "tensor_comparison": {
+              "file_tensor_count": 112,
+              "matched_tensor_count": 112,
+              "model_lora_param_count": 112,
+              "missing_in_model": [],
+              "shape_mismatch": [],
+              "value_mismatch": [],
+              "lora_params_not_in_file": [],
+              "all_tensors_match": true
+            },
+            "lora_module_count": 56
+          }
+        }
+      },
+      "method": "server_load_ledger",
+      "ledger_path": "outputs/phase3_v5/server_load_ledger.jsonl",
+      "ledger_schema_version": "phase3-load-ledger-v1",
+      "ledger_problems": [],
+      "messages_sha256": "7994be0a0d91925a4d579a4e9db3d57a1160680dc5fafa21edfa92e93ba8c07e"
+    }
+  },
+  "status": {
+    "execution_status": "incomplete",
+    "incomplete_reason": "truncated_output",
+    "structural_validation": "fail",
+    "citation_validation": "not_applicable",
+    "semantic_verification": "not_run",
+    "human_review": "not_applicable",
+    "draft_label": null,
+    "send_ready": false,
+    "send_ready_note": "This system never marks a draft as send-ready; a person must review it."
+  },
+  "validation": {
+    "parse_error": {
+      "error_type": "truncated_output",
+      "truncated": true,
+      "finish_reason": "length",
+      "unbalanced_braces": true,
+      "message": "Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 1 column 13748 (char 13747)"
+    },
+    "truncated": true,
+    "structural_errors": [
+      "truncated_output: Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 1 column 13748 (char 13747)"
+    ],
+    "citation_errors": [],
+    "unknown_citation_ids": [],
+    "claimed_citation_ids": [],
+    "raw_format": {
+      "starts_with_brace": true,
+      "code_fenced": false,
+      "text_outside_json": null
+    },
+    "v3": null,
+    "note": "Structural and citation-ID checks do not establish factual support."
+  },
+  "verification": {
+    "status": "not_run",
+    "verifier_name": "none",
+    "findings": [],
+    "uncertainty": "Factual support of claims has not been assessed.",
+    "suggested_recovery": "none",
+    "notes": "No semantic verifier is available in this contribution (Phase 4 pending).",
+    "is_mock": false
+  },
+  "recovery": {
+    "recovery_enabled": false,
+    "note": "Fixed single-pass run: recovery actions are suggestions for a future controller and were not executed.",
+    "suggested_action": "regenerate_from_existing_packet",
+    "proposed_budget": {
+      "max_retrieval_actions": 8,
+      "max_regeneration_attempts": 2,
+      "status": "proposed, unconfirmed"
+    }
+  },
+  "environment": {
+    "git": {
+      "commit": "6706d8657cb5984d9fdd34701a3bbb7aacf4a920",
+      "branch": "varshini/phase3-v5-inference",
+      "dirty": true,
+      "changed_paths": 2
+    },
+    "python": "3.11.14",
+    "platform": "macOS-26.3-arm64-arm-64bit",
+    "machine": "arm64",
+    "client_package_versions": {
+      "mlx": "0.32.4",
+      "mlx-lm": "0.32.2",
+      "ddgs": "9.16.1",
+      "keras": null,
+      "keras-hub": null,
+      "fastapi": "0.162.0",
+      "huggingface-hub": "2.4.0",
+      "transformers": "5.22.1"
+    },
+    "note": "Package versions describe the client process; the model server may run in another environment."
+  },
+  "errors": [],
+  "finished_at": "2026-11-23T03:57:13.937500+00:00",
+  "duration_s": 112.63,
+  "artifacts": {
+    "evidence_packet": "evidence_packet.json",
+    "evidence_supplied": "evidence_supplied.json",
+    "prompt_messages": "prompt_messages.json",
+    "request_payload": "request_payload.json",
+    "raw_response": "raw_response.json",
+    "raw_output": "raw_output.txt",
+    "verifier_handoff": "verifier_handoff.json",
+    "verification": "verification.json",
+    "run": "run.json"
+  }
+}

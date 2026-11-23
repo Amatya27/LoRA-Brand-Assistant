@@ -1,0 +1,2856 @@
+{
+ "checks_version": "phase4-v5-checks-2",
+ "structure": {
+  "strict_json": false,
+  "truncated": true,
+  "parse_error": {
+   "error_type": "truncated_output",
+   "truncated": true,
+   "finish_reason": "length",
+   "unbalanced_braces": true,
+   "message": "Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 1 column 13399 (char 13398)"
+  },
+  "schema_errors": [
+   "truncated_output: Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 1 column 13399 (char 13398)"
+  ],
+  "parse_mode": "diagnostic_prefix",
+  "prompt_schema_valid": false,
+  "training_schema_valid": false,
+  "raw_format": {
+   "starts_with_brace": true,
+   "code_fenced": false,
+   "text_outside_json": null
+  }
+ },
+ "decision": null,
+ "repetition": {
+  "method": "exact match after whitespace/quote/case normalisation; no semantic similarity",
+  "claim_count": 46,
+  "duplicate_claim_ids": [],
+  "duplicate_claim_statements": 43,
+  "distinct_claim_statements": 3,
+  "duplicate_claim_quotes": 43,
+  "repeated_prose_sentences": {},
+  "max_8gram_repeats_in_raw": 88,
+  "looping": true
+ },
+ "citation_mechanics": {
+  "inline_passage_refs": [
+   "P1",
+   "P3",
+   "P1",
+   "P1"
+  ],
+  "unknown_refs": [],
+  "claim_quotes": [
+   {
+    "index": 0,
+    "claim_id": "C1",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 1,
+    "claim_id": "C2",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 2,
+    "claim_id": "C3",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 3,
+    "claim_id": "C4",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 4,
+    "claim_id": "C5",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 5,
+    "claim_id": "C6",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 6,
+    "claim_id": "C7",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 7,
+    "claim_id": "C8",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 8,
+    "claim_id": "C9",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 9,
+    "claim_id": "C10",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 10,
+    "claim_id": "C11",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 11,
+    "claim_id": "C12",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 12,
+    "claim_id": "C13",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 13,
+    "claim_id": "C14",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 14,
+    "claim_id": "C15",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 15,
+    "claim_id": "C16",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 16,
+    "claim_id": "C17",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 17,
+    "claim_id": "C18",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 18,
+    "claim_id": "C19",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 19,
+    "claim_id": "C20",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 20,
+    "claim_id": "C21",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 21,
+    "claim_id": "C22",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 22,
+    "claim_id": "C23",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 23,
+    "claim_id": "C24",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 24,
+    "claim_id": "C25",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 25,
+    "claim_id": "C26",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 26,
+    "claim_id": "C27",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 27,
+    "claim_id": "C28",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 28,
+    "claim_id": "C29",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 29,
+    "claim_id": "C30",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 30,
+    "claim_id": "C31",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 31,
+    "claim_id": "C32",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 32,
+    "claim_id": "C33",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 33,
+    "claim_id": "C34",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 34,
+    "claim_id": "C35",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 35,
+    "claim_id": "C36",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 36,
+    "claim_id": "C37",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 37,
+    "claim_id": "C38",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 38,
+    "claim_id": "C39",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 39,
+    "claim_id": "C40",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 40,
+    "claim_id": "C41",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 41,
+    "claim_id": "C42",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 42,
+    "claim_id": "C43",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 43,
+    "claim_id": "C44",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 44,
+    "claim_id": "C45",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 45,
+    "claim_id": "C46",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   }
+  ]
+ },
+ "assertions": [
+  {
+   "review_id": "R-c7bcf794179754ac",
+   "location": "brand_summary#s0",
+   "text": "Gymshark is a global fitness apparel and influencer marketing company that has built a massive following through its use of Instagram and TikTok [P1].",
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "supported",
+   "reviewer_verdict": "supported",
+   "citation_status": "miscited_supported_elsewhere",
+   "flags": [],
+   "reason": "The passage explicitly states that Gymshark achieved rapid growth through a social media-first marketing model, which aligns with the statement that it is a global fitness apparel and influencer marketing company.",
+   "guard": {
+    "coverage": 0.667,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": []
+   },
+   "reviewer_reason": "The passage explicitly states that Gymshark achieved rapid growth through a social media-first marketing model, which aligns with the statement that it is a global fitness apparel and influencer marketing company.",
+   "evidence_passage_id": "P9",
+   "evidence_quote": "Gymshark is a global fitness apparel brand that achieved rapid growth through a social media-first marketing model. Rather than depending mainly on traditional advertising, the company developed a recognisable brand identity through influencer partnerships, community-led storytelling and short-form fitness content, particularly Instagram Reels. The brand’s primary Instagram account has approximately 8 million followers, with a combined social following of more than 18 million people across all platforms — making it one of the most successful examples of community-led brand building in the direct-to-consumer fitness space.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "59b9bcd98679d292253ab29b5b79bad30fded67ccf4337e3be17f974f88d31b8",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-c7bcf794179754ac\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P9\",\n  \"evidence_quote\": \"Gymshark is a global fitness apparel brand that achieved rapid growth through a social media-first marketing model. Rather than depending mainly on traditional advertising, the company developed a recognisable brand identity through influencer partnerships, community-led storytelling and short-form fitness content, particularly Instagram Reels. The brand’s primary Instagram account has approximately 8 million followers, with a combined social following of more than 18 million people across all platforms — making it one of the most successful examples of community-led brand building in the direct-to-consumer fitness space.\",\n  \"reason\": \"The passage explicitly states that Gymshark achieved rapid growth through a social media-first marketing model, which aligns with the statement that it is a global fitness apparel and influencer marketing company.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 617,
+       "completion_tokens": 208,
+       "total_tokens": 825,
+       "prompt_tokens_details": {
+        "cached_tokens": 156
+       }
+      },
+      "latency_s": 15.832,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "133b3fe3ba5de4812f66e0fa101e5abd635e0399e3b38aa05cbd2071b4ca7ff5",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-fd7deb367984ba72",
+   "location": "brand_summary#s1",
+   "text": "It has a strong focus on community engagement and user-generated content [P3].",
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unresolved",
+   "citation_status": null,
+   "reason": "reviewer response missing, invalid or untraceable after retries",
+   "reviewer_reason": "reviewer response missing, invalid or untraceable after retries",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unresolved",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "209e9f52ca9228ebfe23c87992abc162edc25bbaef027a1d14f2aeb1b0f33cdd",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-fd7deb367984ba72\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P3\",\n  \"evidence_quote\": \"Gymshark leverages user-generated content from affiliate partners to amplify reach.\",\n  \"reason\": \"The passage explicitly states that Gymshark uses user-generated content from affiliate partners to amplify reach, which aligns with the statement about a strong focus on community engagement and user-generated content.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 607,
+       "completion_tokens": 113,
+       "total_tokens": 720,
+       "prompt_tokens_details": {
+        "cached_tokens": 156
+       }
+      },
+      "latency_s": 8.925,
+      "error": null,
+      "validation_errors": [
+       "evidence_quote is not traceable to the named passage (>= 4 consecutive words required)"
+      ]
+     },
+     {
+      "attempt": 1,
+      "prompt_sha256": "619f27729110f42b55eb9bab91fc5d640bc5883a1f84cfddc254eb08cb1516b6",
+      "raw_text": "```json\n{\"review_id\": \"R-fd7deb367984ba72\", \"verdict\": \"supported\", \"evidence_passage_id\": \"P3\", \"evidence_quote\": \"Gymshark leverages user-generated content from affiliate partners to amplify reach.\", \"reason\": \"The evidence passage directly supports the statement by mentioning that Gymshark uses user-generated content to engage with its community and create marketing content.\"}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 637,
+       "completion_tokens": 97,
+       "total_tokens": 734,
+       "prompt_tokens_details": {
+        "cached_tokens": 601
+       }
+      },
+      "latency_s": 7.105,
+      "error": null,
+      "validation_errors": [
+       "evidence_quote is not traceable to the named passage (>= 4 consecutive words required)"
+      ]
+     }
+    ],
+    "request_sha256": "b57e3bf716adfa618a4b516437fcf4ffcd013d4321e42279c8d58bf17f279952",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-cba26f99431c600e",
+   "location": "current_marketing_strategy[0]#s0",
+   "text": "P1",
+   "kind": "factual",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "unsupported",
+   "citation_status": "uncited",
+   "flags": [],
+   "reason": "The provided statement 'P1' is not present in the given passages. There is no evidence to support or contradict this statement.",
+   "guard": null,
+   "reviewer_reason": "The provided statement 'P1' is not present in the given passages. There is no evidence to support or contradict this statement.",
+   "evidence_passage_id": null,
+   "evidence_quote": "",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "17a21e402863e62089e643fa694f8013d65eb3639ed5b38d5c1657c83bff2eb5",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-cba26f99431c600e\",\n  \"verdict\": \"unsupported\",\n  \"evidence_passage_id\": null,\n  \"evidence_quote\": null,\n  \"reason\": \"The provided statement 'P1' is not present in the given passages. There is no evidence to support or contradict this statement.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 243,
+       "completion_tokens": 87,
+       "total_tokens": 330,
+       "prompt_tokens_details": {
+        "cached_tokens": 156
+       }
+      },
+      "latency_s": 6.294,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "d9f257925ceca01ec62ec0bf20bf1b0bdca940a82aa63a438cbe9e2e52aae1a5",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-ebf42b292b64f733",
+   "location": "current_marketing_strategy[1]#s0",
+   "text": "P3",
+   "kind": "factual",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "unsupported",
+   "citation_status": "uncited",
+   "flags": [],
+   "reason": "The statement 'P3' is not provided in the given passages, and there is no evidence to support or contradict it.",
+   "guard": null,
+   "reviewer_reason": "The statement 'P3' is not provided in the given passages, and there is no evidence to support or contradict it.",
+   "evidence_passage_id": null,
+   "evidence_quote": "",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "6f8ef40a47ba17071ab8ae2acbe62d42d5659161cc886f0e8ff5e229c7eaf271",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-ebf42b292b64f733\",\n  \"verdict\": \"unsupported\",\n  \"evidence_passage_id\": null,\n  \"evidence_quote\": null,\n  \"reason\": \"The statement 'P3' is not provided in the given passages, and there is no evidence to support or contradict it.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 244,
+       "completion_tokens": 87,
+       "total_tokens": 331,
+       "prompt_tokens_details": {
+        "cached_tokens": 156
+       }
+      },
+      "latency_s": 6.334,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "fe14019172595fbe73b0ac4606231d50fc967331a6fdbb508f0c9d11005bd917",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-581654bd8ad7a7fd",
+   "location": "current_marketing_strategy[2]#s0",
+   "text": "P4",
+   "kind": "factual",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "unsupported",
+   "citation_status": "uncited",
+   "flags": [],
+   "reason": "The statement 'P4' is not provided in the given passages, and there is no evidence to support or contradict it.",
+   "guard": null,
+   "reviewer_reason": "The statement 'P4' is not provided in the given passages, and there is no evidence to support or contradict it.",
+   "evidence_passage_id": null,
+   "evidence_quote": "",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "b855e8f4728f2347bff2336312c5202ccc321b87ee423871924a3e162817fe32",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-581654bd8ad7a7fd\",\n  \"verdict\": \"unsupported\",\n  \"evidence_passage_id\": null,\n  \"evidence_quote\": null,\n  \"reason\": \"The statement 'P4' is not provided in the given passages, and there is no evidence to support or contradict it.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 242,
+       "completion_tokens": 85,
+       "total_tokens": 327,
+       "prompt_tokens_details": {
+        "cached_tokens": 156
+       }
+      },
+      "latency_s": 6.261,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "306d879da916201b1704e80fda0837b347d8ea950b3ad3c90cd619f81ce73a2d",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-cba26f99431c600e",
+   "location": "collaboration_opportunities[0]#s0",
+   "text": "P1",
+   "duplicate_of": "R-cba26f99431c600e",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": "uncited",
+   "kind": "factual",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-ebf42b292b64f733",
+   "location": "collaboration_opportunities[1]#s0",
+   "text": "P3",
+   "duplicate_of": "R-ebf42b292b64f733",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": "uncited",
+   "kind": "factual",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-871e20cfd337b0be",
+   "location": "instagram_post_idea.concept#s0",
+   "text": "A carousel post showcasing influencer testimonials and workout routines, building on influencer content and community engagement [P1].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.571,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.57 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.57 < 0.6",
+   "reviewer_reason": "The passage describes Gymshark's marketing strategies, including influencer partnerships and paid social media advertising, which aligns with the statement about a carousel post showcasing influencer testimonials and workout routines.",
+   "evidence_passage_id": "P7",
+   "evidence_quote": "The Gymshark Athlete Program is one of the brand’s most successful marketing strategies, partnering with fitness influencers who have a genuine connection with their followers. By focusing on authenticity, Gymshark has built trust and loyalty with its target audience, making it one of the most recognizable brands in fitness today. Gymshark also leverages paid social media advertising on platforms like Facebook, Instagram, and YouTube to boost brand awareness and drive conversions. The brand’s paid ads often feature customer testimonials, workout tips, or influencer-generated content, which helps Gymshark stand out from more traditional fitness advertisements.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "82f3f5af6d8e08b6473002aa66c9afb3d81d8720abf5415f4d4ebde527b519f8",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-871e20cfd337b0be\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P7\",\n  \"evidence_quote\": \"The Gymshark Athlete Program is one of the brand’s most successful marketing strategies, partnering with fitness influencers who have a genuine connection with their followers. By focusing on authenticity, Gymshark has built trust and loyalty with its target audience, making it one of the most recognizable brands in fitness today. Gymshark also leverages paid social media advertising on platforms like Facebook, Instagram, and YouTube to boost brand awareness and drive conversions. The brand’s paid ads often feature customer testimonials, workout tips, or influencer-generated content, which helps Gymshark stand out from more traditional fitness advertisements.\",\n  \"reason\": \"The passage describes Gymshark's marketing strategies, including influencer partnerships and paid social media advertising, which aligns with the statement about a carousel post showcasing influencer testimonials and workout routines.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 625,
+       "completion_tokens": 220,
+       "total_tokens": 845,
+       "prompt_tokens_details": {
+        "cached_tokens": 156
+       }
+      },
+      "latency_s": 16.765,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "be3f9bd5a5502420c2384f534db0c225e837e3a14c4809c03067fc977eb70e33",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-fcf0f69c7bb58347",
+   "location": "instagram_post_idea.why_it_fits#s0",
+   "text": "This aligns with Gymshark's marketing strategy of using user-generated content and influencer endorsements to drive engagement and brand awareness [P1].",
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.538,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.54 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.54 < 0.6",
+   "reviewer_reason": "The passage directly states that Gymshark's promotion strategy includes influencer collaborations and social media engagement, which aligns with the statement about using user-generated content and influencer endorsements to drive engagement and brand awareness.",
+   "evidence_passage_id": "P4",
+   "evidence_quote": "Promotion Gymshark’s promotion strategy is heavily focused on digital marketing, influencer collaborations, and social media engagement. The brand leverages platforms such as Instagram, TikTok, and YouTube to connect with fitness enthusiasts and build a sense of belonging. Influencer partnerships and athlete endorsements help drive authenticity and trust among followers. Additionally, Gymshark uses limited-edition drops and event-based campaigns to create excitement and exclusivity around its products, reinforcing its image as a modern and community-driven fitness brand.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "55b87300d2c9d0ecf80a799b0137f6bdcb5216212fa54c42b1c38e7c2f973fce",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-fcf0f69c7bb58347\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P4\",\n  \"evidence_quote\": \"Promotion Gymshark’s promotion strategy is heavily focused on digital marketing, influencer collaborations, and social media engagement. The brand leverages platforms such as Instagram, TikTok, and YouTube to connect with fitness enthusiasts and build a sense of belonging. Influencer partnerships and athlete endorsements help drive authenticity and trust among followers. Additionally, Gymshark uses limited-edition drops and event-based campaigns to create excitement and exclusivity around its products, reinforcing its image as a modern and community-driven fitness brand.\",\n  \"reason\": \"The passage directly states that Gymshark's promotion strategy includes influencer collaborations and social media engagement, which aligns with the statement about using user-generated content and influencer endorsements to drive engagement and brand awareness.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 595,
+       "completion_tokens": 203,
+       "total_tokens": 798,
+       "prompt_tokens_details": {
+        "cached_tokens": 156
+       }
+      },
+      "latency_s": 15.595,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "2a1efee61a1fbc818abb4148bd0c0ae8932ea839b9e2ae4a768ec65c42f8380e",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-11ffdd1513dab87a",
+   "location": "email_body#s1",
+   "text": "We're reaching out to propose a collaboration that highlights your community of fitness influencers.",
+   "kind": "proposal_premise",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.5,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.50 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.50 < 0.6",
+   "reviewer_reason": "The passage directly supports the statement by mentioning Gymshark's collaboration with fitness influencers and athletes, which aligns with the idea of highlighting a community of fitness influencers.",
+   "evidence_passage_id": "P5",
+   "evidence_quote": "The company allocated significant resources to collaborating with fitness influencers and athletes who embody their brand values, resulting in organic reach across millions of followers on platforms like Instagram, TikTok, and YouTube. The brand’s success stems from understanding that modern consumers, particularly young adults and teenagers, seek authentic experiences and community belonging rather than polished corporate messaging. This comprehensive analysis examines how Gymshark built their marketing framework around data-driven insights, strategic product launches, and customer loyalty initiatives that continue to drive their expansion into new markets and demographics.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "682f9d21bbf82abe4809e6060aef3c240493a45aee8c930d972e6889e8650a97",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-11ffdd1513dab87a\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P5\",\n  \"evidence_quote\": \"The company allocated significant resources to collaborating with fitness influencers and athletes who embody their brand values, resulting in organic reach across millions of followers on platforms like Instagram, TikTok, and YouTube. The brand’s success stems from understanding that modern consumers, particularly young adults and teenagers, seek authentic experiences and community belonging rather than polished corporate messaging. This comprehensive analysis examines how Gymshark built their marketing framework around data-driven insights, strategic product launches, and customer loyalty initiatives that continue to drive their expansion into new markets and demographics.\",\n  \"reason\": \"The passage directly supports the statement by mentioning Gymshark's collaboration with fitness influencers and athletes, which aligns with the idea of highlighting a community of fitness influencers.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 497,
+       "completion_tokens": 197,
+       "total_tokens": 694,
+       "prompt_tokens_details": {
+        "cached_tokens": 156
+       }
+      },
+      "latency_s": 15.293,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "292ecccf9008fee2df561aec00b898eabfea22afb0ec44d5fbfb5ebfd039f788",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-1aba0c12a83f3954",
+   "location": "email_body#s2",
+   "text": "We'd love to feature their testimonials and workout routines in an Instagram carousel post, building on your existing influencer program and engagement.",
+   "kind": "proposal_premise",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.444,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.44 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.44 < 0.6",
+   "reviewer_reason": "The passage directly supports the statement by mentioning that Gymshark leverages paid social media advertising, which includes customer testimonials, workout tips, or influencer-generated content, thereby building on their existing influencer program and engagement.",
+   "evidence_passage_id": "P7",
+   "evidence_quote": "The Gymshark Athlete Program is one of the brand’s most successful marketing strategies, partnering with fitness influencers who have a genuine connection with their followers. By focusing on authenticity, Gymshark has built trust and loyalty with its target audience, making it one of the most recognizable brands in fitness today. Gymshark also leverages paid social media advertising on platforms like Facebook, Instagram, and YouTube to boost brand awareness and drive conversions. The brand’s paid ads often feature customer testimonials, workout tips, or influencer-generated content, which helps Gymshark stand out from more traditional fitness advertisements.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "0858b718cb6b8c232059e9b123cc3a395292efea6a25a71f37ef34b930a28b74",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-1aba0c12a83f3954\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P7\",\n  \"evidence_quote\": \"The Gymshark Athlete Program is one of the brand’s most successful marketing strategies, partnering with fitness influencers who have a genuine connection with their followers. By focusing on authenticity, Gymshark has built trust and loyalty with its target audience, making it one of the most recognizable brands in fitness today. Gymshark also leverages paid social media advertising on platforms like Facebook, Instagram, and YouTube to boost brand awareness and drive conversions. The brand’s paid ads often feature customer testimonials, workout tips, or influencer-generated content, which helps Gymshark stand out from more traditional fitness advertisements.\",\n  \"reason\": \"The passage directly supports the statement by mentioning that Gymshark leverages paid social media advertising, which includes customer testimonials, workout tips, or influencer-generated content, thereby building on their existing influencer program and engagement.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 504,
+       "completion_tokens": 226,
+       "total_tokens": 730,
+       "prompt_tokens_details": {
+        "cached_tokens": 157
+       }
+      },
+      "latency_s": 19.05,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "f02f0a586e7f4dd4333cfa55a4f37fd526f6fd6dc220c3915e43afe2bbd77b00",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-6429cce751d96540",
+   "location": "claims[0].statement",
+   "text": "Gymshark has a global presence across multiple countries.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.4,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.40 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.40 < 0.6",
+   "reviewer_reason": "The passage explicitly states that Gymshark is a global fitness apparel brand with a significant social media presence, which directly supports the statement that Gymshark has a global presence across multiple countries.",
+   "evidence_passage_id": "P9",
+   "evidence_quote": "Gymshark is a global fitness apparel brand that achieved rapid growth through a social media-first marketing model. Rather than depending mainly on traditional advertising, the company developed a recognisable brand identity through influencer partnerships, community-led storytelling and short-form fitness content, particularly Instagram Reels. The brand’s primary Instagram account has approximately 8 million followers, with a combined social following of more than 18 million people across all platforms — making it one of the most successful examples of community-led brand building in the direct-to-consumer fitness space.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "a88839406cb6a0a5f68de944a8aaf6cd175efccc4a1162057335c8dcd3a86958",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-6429cce751d96540\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P9\",\n  \"evidence_quote\": \"Gymshark is a global fitness apparel brand that achieved rapid growth through a social media-first marketing model. Rather than depending mainly on traditional advertising, the company developed a recognisable brand identity through influencer partnerships, community-led storytelling and short-form fitness content, particularly Instagram Reels. The brand’s primary Instagram account has approximately 8 million followers, with a combined social following of more than 18 million people across all platforms — making it one of the most successful examples of community-led brand building in the direct-to-consumer fitness space.\",\n  \"reason\": \"The passage explicitly states that Gymshark is a global fitness apparel brand with a significant social media presence, which directly supports the statement that Gymshark has a global presence across multiple countries.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 601,
+       "completion_tokens": 209,
+       "total_tokens": 810,
+       "prompt_tokens_details": {
+        "cached_tokens": 156
+       }
+      },
+      "latency_s": 22.113,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "d213b947aadedc119b86ac0fd78726c8d64f00cd87a7cfebeeae7f47dc0cfcc2",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[1].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.429,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.43 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.43 < 0.6",
+   "reviewer_reason": "The passage explicitly states that Gymshark operates comprehensive affiliate programs that extend beyond traditional influencer partnerships, which directly supports the statement.",
+   "evidence_passage_id": "P3",
+   "evidence_quote": "Affiliate Marketing and Collaborations Gymshark operates comprehensive affiliate programs that extend beyond traditional influencer partnerships.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "3f53bc8a3000d036075c25158af690ce08198072db01a33d5cddd71004219a48",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-e469eb976f003817\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P3\",\n  \"evidence_quote\": \"Affiliate Marketing and Collaborations Gymshark operates comprehensive affiliate programs that extend beyond traditional influencer partnerships.\",\n  \"reason\": \"The passage explicitly states that Gymshark operates comprehensive affiliate programs that extend beyond traditional influencer partnerships, which directly supports the statement.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 607,
+       "completion_tokens": 109,
+       "total_tokens": 716,
+       "prompt_tokens_details": {
+        "cached_tokens": 155
+       }
+      },
+      "latency_s": 10.315,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "8476ceba4a2b91dd5532778658d9272858ae1ea42b843719ba19e85923dfdc21",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-dad679850566abbd",
+   "location": "claims[2].statement",
+   "text": "Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.429,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.43 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.43 < 0.6",
+   "reviewer_reason": "The passage explicitly states that Gymshark operates comprehensive affiliate programs that extend beyond traditional influencer partnerships, which directly supports the statement.",
+   "evidence_passage_id": "P3",
+   "evidence_quote": "Affiliate Marketing and Collaborations Gymshark operates comprehensive affiliate programs that extend beyond traditional influencer partnerships.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "25c44956cfcfa438887d754d4f7f1b9ebf06023ba958e288589f80b2f99cbd94",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-dad679850566abbd\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P3\",\n  \"evidence_quote\": \"Affiliate Marketing and Collaborations Gymshark operates comprehensive affiliate programs that extend beyond traditional influencer partnerships.\",\n  \"reason\": \"The passage explicitly states that Gymshark operates comprehensive affiliate programs that extend beyond traditional influencer partnerships, which directly supports the statement.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 605,
+       "completion_tokens": 107,
+       "total_tokens": 712,
+       "prompt_tokens_details": {
+        "cached_tokens": 155
+       }
+      },
+      "latency_s": 12.723,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "3c34fb2bcb08dc3627e4694b41cddcb5acd288f20ac948fbcb9072b4670fbcf1",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[3].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[4].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[5].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[6].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[7].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[8].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[9].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[10].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[11].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[12].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[13].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[14].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[15].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[16].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[17].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[18].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[19].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[20].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[21].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[22].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[23].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[24].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[25].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[26].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[27].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[28].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[29].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[30].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[31].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[32].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[33].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[34].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[35].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[36].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[37].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[38].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[39].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[40].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[41].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[42].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[43].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[44].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[45].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "duplicate_of": "R-e469eb976f003817",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  }
+ ],
+ "skipped_sentences": {
+  "proposal": [
+   {
+    "location": "instagram_post_idea.hook#s0",
+    "text": "A carousel featuring influencer testimonials and workout routines."
+   },
+   {
+    "location": "email_subject#s0",
+    "text": "Collaboration Opportunity: Feature Influencer Testimonials on Instagram"
+   },
+   {
+    "location": "email_body#s3",
+    "text": "If you're interested, we'd be happy to share a draft."
+   }
+  ],
+  "non_assertion": [
+   {
+    "location": "likely_target_audience#s0",
+    "text": "INSUFFICIENT_EVIDENCE"
+   },
+   {
+    "location": "email_body#s0",
+    "text": "Hi Gymshark Marketing Team,"
+   },
+   {
+    "location": "email_body#s4",
+    "text": "Best regards,"
+   },
+   {
+    "location": "email_body#s5",
+    "text": "[Your Name]"
+   }
+  ]
+ },
+ "unknown_issues": [
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[1].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[2].statement",
+   "assertion_text": "Gymshark has a formal creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[3].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[4].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[5].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[6].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[7].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[8].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[9].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[10].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[11].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[12].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[13].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[14].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[15].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[16].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[17].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[18].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[19].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[20].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[21].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[22].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[23].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[24].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[25].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[26].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[27].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[28].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[29].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[30].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[31].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[32].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[33].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[34].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[35].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[36].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[37].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[38].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[39].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[40].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[41].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[42].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[43].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[44].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[45].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  }
+ ],
+ "outreach": {
+  "recipient": "correct",
+  "sender": "correct",
+  "instagram_mentioned": true,
+  "other_platforms_in_pitch": [],
+  "instagram_compliant": true,
+  "promises": [],
+  "email_subject": "Collaboration Opportunity: Feature Influencer Testimonials on Instagram"
+ },
+ "failures": [
+  {
+   "check": "structure",
+   "detail": [
+    "truncated_output: Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 1 column 13399 (char 13398)"
+   ]
+  },
+  {
+   "check": "duplicate_claims",
+   "detail": [
+    [],
+    43
+   ]
+  },
+  {
+   "check": "repetition",
+   "detail": [
+    88
+   ]
+  },
+  {
+   "check": "claim_quotes",
+   "detail": [
+    {
+     "claim_id": "C1",
+     "self_quote": true,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C2",
+     "self_quote": true,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C3",
+     "self_quote": true,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C4",
+     "self_quote": true,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C5",
+     "self_quote": true,
+     "other_passage": []
+    }
+   ]
+  },
+  {
+   "check": "citation_mapping",
+   "review_id": "R-c7bcf794179754ac",
+   "location": "brand_summary#s0",
+   "text": "Gymshark is a global fitness apparel and influencer marketing company that has built a massive following through its use of Instagram and TikTok [P1].",
+   "citation_status": "miscited_supported_elsewhere",
+   "evidence_passage_id": "P9"
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-cba26f99431c600e",
+   "location": "current_marketing_strategy[0]#s0",
+   "text": "P1",
+   "verdict": "unsupported",
+   "reason": "The provided statement 'P1' is not present in the given passages. There is no evidence to support or contradict this statement.",
+   "evidence_passage_id": null,
+   "evidence_quote": ""
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-ebf42b292b64f733",
+   "location": "current_marketing_strategy[1]#s0",
+   "text": "P3",
+   "verdict": "unsupported",
+   "reason": "The statement 'P3' is not provided in the given passages, and there is no evidence to support or contradict it.",
+   "evidence_passage_id": null,
+   "evidence_quote": ""
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-581654bd8ad7a7fd",
+   "location": "current_marketing_strategy[2]#s0",
+   "text": "P4",
+   "verdict": "unsupported",
+   "reason": "The statement 'P4' is not provided in the given passages, and there is no evidence to support or contradict it.",
+   "evidence_passage_id": null,
+   "evidence_quote": ""
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-871e20cfd337b0be",
+   "location": "instagram_post_idea.concept#s0",
+   "text": "A carousel post showcasing influencer testimonials and workout routines, building on influencer content and community engagement [P1].",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.57 < 0.6",
+   "evidence_passage_id": "P7",
+   "evidence_quote": "The Gymshark Athlete Program is one of the brand’s most successful marketing strategies, partnering with fitness influencers who have a genuine connection with their followers. By focusing on authenticity, Gymshark has built trust and loyalty with its target audience, making it one of the most recognizable brands in fitness today. Gymshark also leverages paid social media advertising on platforms like Facebook, Instagram, and YouTube to boost brand awareness and drive conversions. The brand’s paid ads often feature customer testimonials, workout tips, or influencer-generated content, which helps Gymshark stand out from more traditional fitness advertisements."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-fcf0f69c7bb58347",
+   "location": "instagram_post_idea.why_it_fits#s0",
+   "text": "This aligns with Gymshark's marketing strategy of using user-generated content and influencer endorsements to drive engagement and brand awareness [P1].",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.54 < 0.6",
+   "evidence_passage_id": "P4",
+   "evidence_quote": "Promotion Gymshark’s promotion strategy is heavily focused on digital marketing, influencer collaborations, and social media engagement. The brand leverages platforms such as Instagram, TikTok, and YouTube to connect with fitness enthusiasts and build a sense of belonging. Influencer partnerships and athlete endorsements help drive authenticity and trust among followers. Additionally, Gymshark uses limited-edition drops and event-based campaigns to create excitement and exclusivity around its products, reinforcing its image as a modern and community-driven fitness brand."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-11ffdd1513dab87a",
+   "location": "email_body#s1",
+   "text": "We're reaching out to propose a collaboration that highlights your community of fitness influencers.",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.50 < 0.6",
+   "evidence_passage_id": "P5",
+   "evidence_quote": "The company allocated significant resources to collaborating with fitness influencers and athletes who embody their brand values, resulting in organic reach across millions of followers on platforms like Instagram, TikTok, and YouTube. The brand’s success stems from understanding that modern consumers, particularly young adults and teenagers, seek authentic experiences and community belonging rather than polished corporate messaging. This comprehensive analysis examines how Gymshark built their marketing framework around data-driven insights, strategic product launches, and customer loyalty initiatives that continue to drive their expansion into new markets and demographics."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-1aba0c12a83f3954",
+   "location": "email_body#s2",
+   "text": "We'd love to feature their testimonials and workout routines in an Instagram carousel post, building on your existing influencer program and engagement.",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.44 < 0.6",
+   "evidence_passage_id": "P7",
+   "evidence_quote": "The Gymshark Athlete Program is one of the brand’s most successful marketing strategies, partnering with fitness influencers who have a genuine connection with their followers. By focusing on authenticity, Gymshark has built trust and loyalty with its target audience, making it one of the most recognizable brands in fitness today. Gymshark also leverages paid social media advertising on platforms like Facebook, Instagram, and YouTube to boost brand awareness and drive conversions. The brand’s paid ads often feature customer testimonials, workout tips, or influencer-generated content, which helps Gymshark stand out from more traditional fitness advertisements."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-6429cce751d96540",
+   "location": "claims[0].statement",
+   "text": "Gymshark has a global presence across multiple countries.",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.40 < 0.6",
+   "evidence_passage_id": "P9",
+   "evidence_quote": "Gymshark is a global fitness apparel brand that achieved rapid growth through a social media-first marketing model. Rather than depending mainly on traditional advertising, the company developed a recognisable brand identity through influencer partnerships, community-led storytelling and short-form fitness content, particularly Instagram Reels. The brand’s primary Instagram account has approximately 8 million followers, with a combined social following of more than 18 million people across all platforms — making it one of the most successful examples of community-led brand building in the direct-to-consumer fitness space."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-e469eb976f003817",
+   "location": "claims[1].statement",
+   "text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships.",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.43 < 0.6",
+   "evidence_passage_id": "P3",
+   "evidence_quote": "Affiliate Marketing and Collaborations Gymshark operates comprehensive affiliate programs that extend beyond traditional influencer partnerships."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-dad679850566abbd",
+   "location": "claims[2].statement",
+   "text": "Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.43 < 0.6",
+   "evidence_passage_id": "P3",
+   "evidence_quote": "Affiliate Marketing and Collaborations Gymshark operates comprehensive affiliate programs that extend beyond traditional influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[1].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[2].statement",
+   "assertion_text": "Gymshark has a formal creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[3].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[4].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[5].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[6].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[7].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[8].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[9].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[10].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[11].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[12].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[13].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[14].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[15].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[16].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[17].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[18].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[19].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[20].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[21].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[22].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[23].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[24].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[25].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[26].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[27].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[28].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[29].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[30].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[31].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[32].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[33].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[34].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[35].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[36].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[37].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[38].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[39].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[40].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[41].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[42].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[43].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[44].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a formal creator or athlete program beyond the influencer partnerships.",
+   "assertion": "claims[45].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program beyond the influencer partnerships."
+  }
+ ],
+ "unresolved": [
+  "R-fd7deb367984ba72"
+ ],
+ "passes": false,
+ "failure_signature": "6f0c0a4f9079265bf30e861f3a7e8997d9fd5f77c9f12a706811194e52a11dec",
+ "review_wall_s": 162.814,
+ "attempt": {
+  "index": 0,
+  "kind": "initial"
+ }
+}

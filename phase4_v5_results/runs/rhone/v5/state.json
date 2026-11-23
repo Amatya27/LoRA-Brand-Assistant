@@ -1,0 +1,106 @@
+{
+ "case_id": "rhone/v5",
+ "company_id": "rhone",
+ "arm": "v5",
+ "packet_path": "outputs/phase3_v5/packets/rhone.json",
+ "packet_sha256": "51810081ffe9da63b19d58269017f5b749031d1f82dd84050faf3878a2d6c662",
+ "prompt_version": "brandpilot.prompt.v3.3",
+ "prompt_sha256": "f26bc8e51acf635baa541f19262981a406687d01e5629ecab91b304940cebfb1",
+ "max_repairs": 2,
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "dir": "phase4_v5_results/runs/rhone/v5/attempt-00",
+   "prompt_sha256": "f26bc8e51acf635baa541f19262981a406687d01e5629ecab91b304940cebfb1",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "length",
+   "usage": {
+    "prompt_tokens": 2530,
+    "completion_tokens": 3072,
+    "total_tokens": 5602,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 77.458,
+   "runtime_verified": true,
+   "raw_sha256": "41e30aace462575c13548ee5f35ba768c083a1529bf5be6f40de423ba77eb5a4",
+   "reused_from": "outputs/phase3_v5/runs/20261123T034736532319Z-rhone-adapter-generation-76387d",
+   "passes": false,
+   "strict_ok": false,
+   "model_abstained": false,
+   "failure_count": 54,
+   "unresolved_count": 0,
+   "failure_signature": "6d3cf03130376fdef24422ac787aa9d78b6acbb6b273e1ea88084686d1eb8453",
+   "review_wall_s": 170.27,
+   "truncated": true,
+   "looping": true
+  },
+  {
+   "index": 1,
+   "kind": "regenerate_bounded",
+   "dir": "phase4_v5_results/runs/rhone/v5/attempt-01",
+   "prompt_sha256": "d613fc0ecdf2d200a718b0e15ca82a33a2d61a9d916b79753d6fb0b0af19c5cc",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "stop",
+   "usage": {
+    "prompt_tokens": 2648,
+    "completion_tokens": 1359,
+    "total_tokens": 4007,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 38.627,
+   "runtime_verified": true,
+   "raw_sha256": "e880836aaf3cec24948d64df6a9cb0a96fff2c5700496962671d17994b572f5d",
+   "reused_from": null,
+   "passes": false,
+   "strict_ok": true,
+   "model_abstained": false,
+   "truncated": false,
+   "looping": false,
+   "failure_count": 3,
+   "unresolved_count": 0,
+   "failure_signature": "44a656dfe0e0d9d7d46cc335d687a789f3fff12183a659600a98250f96e7416a",
+   "review_wall_s": 0.004
+  },
+  {
+   "index": 2,
+   "kind": "targeted_fix",
+   "dir": "phase4_v5_results/runs/rhone/v5/attempt-02",
+   "prompt_sha256": "10710539e857263780590124fc14ce9f59e7ed5654f5dcf084595ab43c6a71d4",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "stop",
+   "usage": {
+    "prompt_tokens": 2750,
+    "completion_tokens": 52,
+    "total_tokens": 2802,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 7.671,
+   "runtime_verified": true,
+   "raw_sha256": "5f85ae7bea8e2130c3a434241c1de5a11b5d21dd94f3a640cd93f9b8f5fab211",
+   "reused_from": null,
+   "passes": false,
+   "strict_ok": true,
+   "model_abstained": false,
+   "truncated": false,
+   "looping": false,
+   "failure_count": 3,
+   "unresolved_count": 0,
+   "failure_signature": "17647ce6b7a10100489a85fbae627dc56e54403ac83d9441c513f6b68ce362c0",
+   "review_wall_s": 0.0
+  }
+ ],
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "repair budget exhausted (2)",
+ "stop_code": "withheld_budget_exhausted",
+ "eligibility": "eligible"
+}

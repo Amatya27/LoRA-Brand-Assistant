@@ -1,0 +1,1026 @@
+{
+ "checks_version": "phase4-v5-checks-2",
+ "structure": {
+  "strict_json": true,
+  "truncated": false,
+  "parse_error": null,
+  "schema_errors": [
+   "missing key: abstain_reason",
+   "claims[0].kind 'fact | provider_reported | premise' not in ('fact', 'provider_reported', 'premise')"
+  ],
+  "parse_mode": "strict",
+  "prompt_schema_valid": false,
+  "training_schema_valid": false,
+  "raw_format": {
+   "starts_with_brace": false,
+   "code_fenced": true,
+   "text_outside_json": true
+  }
+ },
+ "decision": "draft",
+ "repetition": {
+  "method": "exact match after whitespace/quote/case normalisation; no semantic similarity",
+  "claim_count": 1,
+  "duplicate_claim_ids": [],
+  "duplicate_claim_statements": 0,
+  "distinct_claim_statements": 1,
+  "duplicate_claim_quotes": 0,
+  "repeated_prose_sentences": {},
+  "max_8gram_repeats_in_raw": 1,
+  "looping": false
+ },
+ "citation_mechanics": {
+  "inline_passage_refs": [],
+  "unknown_refs": [],
+  "claim_quotes": [
+   {
+    "index": 0,
+    "claim_id": "C1",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": true,
+    "cites_non_factual_type": []
+   }
+  ]
+ },
+ "assertions": [
+  {
+   "review_id": "R-a6249a81e467516f",
+   "location": "brand_summary#s0",
+   "text": "The marketing team is proposing a carousel featuring Instagram posts, collaborating on a fitness influencer campaign.",
+   "kind": "factual",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": false,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.455,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.45 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.45 < 0.6",
+   "reviewer_reason": "The passage directly states that Gymshark uses Instagram Reels as a part of its social media-first marketing model, which aligns with the statement that the marketing team is proposing a carousel featuring Instagram posts.",
+   "evidence_passage_id": "P9",
+   "evidence_quote": "Gymshark is a global fitness apparel brand that achieved rapid growth through a social media-first marketing model. Rather than depending mainly on traditional advertising, the company developed a recognisable brand identity through influencer partnerships, community-led storytelling and short-form fitness content, particularly Instagram Reels.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "03b327582de77139879185ba892630699641100185367d30dc4510f3160cfd4d",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-a6249a81e467516f\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P9\",\n  \"evidence_quote\": \"Gymshark is a global fitness apparel brand that achieved rapid growth through a social media-first marketing model. Rather than depending mainly on traditional advertising, the company developed a recognisable brand identity through influencer partnerships, community-led storytelling and short-form fitness content, particularly Instagram Reels.\",\n  \"reason\": \"The passage directly states that Gymshark uses Instagram Reels as a part of its social media-first marketing model, which aligns with the statement that the marketing team is proposing a carousel featuring Instagram posts.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 496,
+       "completion_tokens": 161,
+       "total_tokens": 657,
+       "prompt_tokens_details": {
+        "cached_tokens": 31
+       }
+      },
+      "latency_s": 12.543,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "18a6b3695e163c0bbc76ea975974a0034ccaf33fe24192d98d00ee32877af8fc",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-f41ee67b0021664b",
+   "location": "brand_summary#s1",
+   "text": "Gymshark's success is built on data-driven insights, strategic product launches, and customer loyalty initiatives.",
+   "kind": "factual",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": false,
+   "verdict": "supported",
+   "reviewer_verdict": "supported",
+   "citation_status": "uncited",
+   "flags": [],
+   "reason": "The passage directly supports the statement by providing evidence of Gymshark's success being built on data-driven insights, strategic product launches, and customer loyalty initiatives.",
+   "guard": {
+    "coverage": 0.909,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": []
+   },
+   "reviewer_reason": "The passage directly supports the statement by providing evidence of Gymshark's success being built on data-driven insights, strategic product launches, and customer loyalty initiatives.",
+   "evidence_passage_id": "P5",
+   "evidence_quote": "The company allocated significant resources to collaborating with fitness influencers and athletes who embody their brand values, resulting in organic reach across millions of followers on platforms like Instagram, TikTok, and YouTube. The brand’s success stems from understanding that modern consumers, particularly young adults and teenagers, seek authentic experiences and community belonging rather than polished corporate messaging. This comprehensive analysis examines how Gymshark built their marketing framework around data-driven insights, strategic product launches, and customer loyalty initiatives that continue to drive their expansion into new markets and demographics.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "3975eccff684368bba4b0bbb5d39504205bffd299562a0cb0e74e74e687fdf75",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-f41ee67b0021664b\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P5\",\n  \"evidence_quote\": \"The company allocated significant resources to collaborating with fitness influencers and athletes who embody their brand values, resulting in organic reach across millions of followers on platforms like Instagram, TikTok, and YouTube. The brand’s success stems from understanding that modern consumers, particularly young adults and teenagers, seek authentic experiences and community belonging rather than polished corporate messaging. This comprehensive analysis examines how Gymshark built their marketing framework around data-driven insights, strategic product launches, and customer loyalty initiatives that continue to drive their expansion into new markets and demographics.\",\n  \"reason\": \"The passage directly supports the statement by providing evidence of Gymshark's success being built on data-driven insights, strategic product launches, and customer loyalty initiatives.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 487,
+       "completion_tokens": 196,
+       "total_tokens": 683,
+       "prompt_tokens_details": {
+        "cached_tokens": 155
+       }
+      },
+      "latency_s": 15.362,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "9e98343423319eb13667b837b6f775bd74395093d2b6ad3f000a9fe00cbcd72f",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-b6ce0ec9f06bd0cd",
+   "location": "current_marketing_strategy[0]#s0",
+   "text": "Instagram, TikTok, YouTube",
+   "kind": "factual",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": false,
+   "verdict": "supported",
+   "reviewer_verdict": "supported",
+   "citation_status": "uncited",
+   "flags": [],
+   "reason": "The evidence passage directly supports the statement by mentioning Instagram, TikTok, and YouTube as platforms used by Gymshark for promotion and engagement.",
+   "guard": {
+    "coverage": 1.0,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": []
+   },
+   "reviewer_reason": "The evidence passage directly supports the statement by mentioning Instagram, TikTok, and YouTube as platforms used by Gymshark for promotion and engagement.",
+   "evidence_passage_id": "P4",
+   "evidence_quote": "Promotion Gymshark’s promotion strategy is heavily focused on digital marketing, influencer collaborations, and social media engagement. The brand leverages platforms such as Instagram, TikTok, and YouTube to connect with fitness enthusiasts and build a sense of belonging.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "f7df0eb15e2d00a4b66fd2ef98893b5eb3c5048ff915dfb77fe4239af6d2def7",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-b6ce0ec9f06bd0cd\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P4\",\n  \"evidence_quote\": \"Promotion Gymshark’s promotion strategy is heavily focused on digital marketing, influencer collaborations, and social media engagement. The brand leverages platforms such as Instagram, TikTok, and YouTube to connect with fitness enthusiasts and build a sense of belonging.\",\n  \"reason\": \"The evidence passage directly supports the statement by mentioning Instagram, TikTok, and YouTube as platforms used by Gymshark for promotion and engagement.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 466,
+       "completion_tokens": 137,
+       "total_tokens": 603,
+       "prompt_tokens_details": {
+        "cached_tokens": 155
+       }
+      },
+      "latency_s": 10.362,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "f794f2de69d973fb40450537d3a8e033083156e3052668a6543f96b1211e5ea9",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-bb652ff0bf201db9",
+   "location": "collaboration_opportunities[0]#s0",
+   "text": "Instagram carousel",
+   "kind": "factual",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": false,
+   "verdict": "unsupported",
+   "reviewer_verdict": "unsupported",
+   "citation_status": "uncited",
+   "flags": [],
+   "reason": "The statement 'Instagram carousel' is not supported by any passage. The evidence provided discusses Gymshark's marketing strategies and collaborations, but does not mention anything about Instagram carousels.",
+   "guard": null,
+   "reviewer_reason": "The statement 'Instagram carousel' is not supported by any passage. The evidence provided discusses Gymshark's marketing strategies and collaborations, but does not mention anything about Instagram carousels.",
+   "evidence_passage_id": "P4",
+   "evidence_quote": "Promotion Gymshark’s promotion strategy is heavily focused on digital marketing, influencer collaborations, and social media engagement. The brand leverages platforms such as Instagram, TikTok, and YouTube to connect with fitness enthusiasts and build a sense of belonging. Influencer partnerships and athlete endorsements help drive authenticity and trust among followers. Additionally, Gymshark uses limited-edition drops and event-based campaigns to create excitement and exclusivity around its products, reinforcing its image as a modern and community-driven fitness brand.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "511b6c2cc84600f6b85ef61d27c9580aeb9251ca2bb7a01076bfa8e609a604cf",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-bb652ff0bf201db9\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P4\",\n  \"evidence_quote\": \"Gymshark uses Instagram, TikTok, and YouTube to connect with fitness enthusiasts and build a sense of belonging.\",\n  \"reason\": \"The evidence passage directly states that Gymshark uses Instagram, TikTok, and YouTube for digital marketing, influencer collaborations, and social media engagement, which aligns with the statement 'Instagram carousel'.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 463,
+       "completion_tokens": 125,
+       "total_tokens": 588,
+       "prompt_tokens_details": {
+        "cached_tokens": 156
+       }
+      },
+      "latency_s": 9.563,
+      "error": null,
+      "validation_errors": [
+       "evidence_quote is not traceable to the named passage (>= 4 consecutive words required)"
+      ]
+     },
+     {
+      "attempt": 1,
+      "prompt_sha256": "17ae1820f8672282f2b811bc5dc2d8ac0f0a3713e65cf1342fe090a7ac2495ae",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-bb652ff0bf201db9\",\n  \"verdict\": \"unsupported\",\n  \"evidence_passage_id\": \"P4\",\n  \"evidence_quote\": \"Promotion Gymshark’s promotion strategy is heavily focused on digital marketing, influencer collaborations, and social media engagement. The brand leverages platforms such as Instagram, TikTok, and YouTube to connect with fitness enthusiasts and build a sense of belonging. Influencer partnerships and athlete endorsements help drive authenticity and trust among followers. Additionally, Gymshark uses limited-edition drops and event-based campaigns to create excitement and exclusivity around its products, reinforcing its image as a modern and community-driven fitness brand.\",\n  \"reason\": \"The statement 'Instagram carousel' is not supported by any passage. The evidence provided discusses Gymshark's marketing strategies and collaborations, but does not mention anything about Instagram carousels.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 493,
+       "completion_tokens": 197,
+       "total_tokens": 690,
+       "prompt_tokens_details": {
+        "cached_tokens": 457
+       }
+      },
+      "latency_s": 14.446,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "e6d2946ab1a740143ebdc641666c7e5e73160a721a19094b458666b52554530d",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-7a54ab8f2bbd0fea",
+   "location": "collaboration_opportunities[1]#s0",
+   "text": "Influencer campaign",
+   "kind": "factual",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": false,
+   "verdict": "supported",
+   "reviewer_verdict": "supported",
+   "citation_status": "uncited",
+   "flags": [],
+   "reason": "The passage explicitly mentions that Gymshark achieved rapid growth through influencer partnerships, which is consistent with the statement 'Influencer campaign'.",
+   "guard": {
+    "coverage": 1.0,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": []
+   },
+   "reviewer_reason": "The passage explicitly mentions that Gymshark achieved rapid growth through influencer partnerships, which is consistent with the statement 'Influencer campaign'.",
+   "evidence_passage_id": "P9",
+   "evidence_quote": "Gymshark is a global fitness apparel brand that achieved rapid growth through a social media-first marketing model. Rather than depending mainly on traditional advertising, the company developed a recognisable brand identity through influencer partnerships, community-led storytelling and short-form fitness content, particularly Instagram Reels.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "eb86fbc819af8561c8710759f5d93344f7f735a03eb3d36f01de6ac16a2595bf",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-7a54ab8f2bbd0fea\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P9\",\n  \"evidence_quote\": \"Gymshark is a global fitness apparel brand that achieved rapid growth through a social media-first marketing model. Rather than depending mainly on traditional advertising, the company developed a recognisable brand identity through influencer partnerships, community-led storytelling and short-form fitness content, particularly Instagram Reels.\",\n  \"reason\": \"The passage explicitly mentions that Gymshark achieved rapid growth through influencer partnerships, which is consistent with the statement 'Influencer campaign'.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 482,
+       "completion_tokens": 146,
+       "total_tokens": 628,
+       "prompt_tokens_details": {
+        "cached_tokens": 155
+       }
+      },
+      "latency_s": 11.094,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "2373a166ad0c3b5e1a63acd4b2983b1cd5a2dbc33c61b166089c5b02cba70585",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-ade47507d88e7aa8",
+   "location": "instagram_post_idea.why_it_fits#s0",
+   "text": "This aligns with the brand's focus on authenticity and community building.",
+   "kind": "factual",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": false,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.5,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.50 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.50 < 0.6",
+   "reviewer_reason": "The passage directly states that Gymshark achieved rapid growth through a social media-first marketing model, which aligns with the statement that it aligns with the brand's focus on authenticity and community building.",
+   "evidence_passage_id": "P9",
+   "evidence_quote": "Gymshark is a global fitness apparel brand that achieved rapid growth through a social media-first marketing model. Rather than depending mainly on traditional advertising, the company developed a recognisable brand identity through influencer partnerships, community-led storytelling and short-form fitness content, particularly Instagram Reels. The brand’s primary Instagram account has approximately 8 million followers, with a combined social following of more than 18 million people across all platforms — making it one of the most successful examples of community-led brand building in the direct-to-consumer fitness space.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "4cb1c510ab46f2e33fe280edb6d5a493e48f98e4bc04cb0be3a09e5fe5a384e3",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-ade47507d88e7aa8\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P9\",\n  \"evidence_quote\": \"Gymshark is a global fitness apparel brand that achieved rapid growth through a social media-first marketing model. Rather than depending mainly on traditional advertising, the company developed a recognisable brand identity through influencer partnerships, community-led storytelling and short-form fitness content, particularly Instagram Reels. The brand’s primary Instagram account has approximately 8 million followers, with a combined social following of more than 18 million people across all platforms — making it one of the most successful examples of community-led brand building in the direct-to-consumer fitness space.\",\n  \"reason\": \"The passage directly states that Gymshark achieved rapid growth through a social media-first marketing model, which aligns with the statement that it aligns with the brand's focus on authenticity and community building.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 489,
+       "completion_tokens": 210,
+       "total_tokens": 699,
+       "prompt_tokens_details": {
+        "cached_tokens": 156
+       }
+      },
+      "latency_s": 15.768,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "615ee7cc8dbdff58e1cabb00c55daacf42f6d82926164671bf66d93dea673012",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-f8f2c683e288471b",
+   "location": "email_subject#s0",
+   "text": "Gymshark's Latest Campaign Update",
+   "kind": "factual",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": false,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.25,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.25 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.25 < 0.6",
+   "reviewer_reason": "The passage mentions a 'Latest Campaign Update' for Gymshark, which aligns with the statement 'Gymshark's Latest Campaign Update'.",
+   "evidence_passage_id": "P1",
+   "evidence_quote": "The latest What Is #Gymshark66? GymsharkWhat Is #Gymshark66? 12.28.25 Stronger Every Session: Why Consistency & Community Are Key To Gym Confidence GymsharkStronger Every Session: Why Consistency & Community Are Key To Gym Confidence 10.20.25 Gym Girl Of The Year | Fitness Industry Awards 2024 GymsharkGym Girl Of The Year",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "3e2532ff56fe5e9cdda1a90ea92454180bf825fd2b46a3a68d7673f3b22e6b06",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-f8f2c683e288471b\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P1\",\n  \"evidence_quote\": \"The latest What Is #Gymshark66? GymsharkWhat Is #Gymshark66? 12.28.25 Stronger Every Session: Why Consistency & Community Are Key To Gym Confidence GymsharkStronger Every Session: Why Consistency & Community Are Key To Gym Confidence 10.20.25 Gym Girl Of The Year | Fitness Industry Awards 2024 GymsharkGym Girl Of The Year\",\n  \"reason\": \"The passage mentions a 'Latest Campaign Update' for Gymshark, which aligns with the statement 'Gymshark's Latest Campaign Update'.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 539,
+       "completion_tokens": 194,
+       "total_tokens": 733,
+       "prompt_tokens_details": {
+        "cached_tokens": 156
+       }
+      },
+      "latency_s": 14.829,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "6c71d0ea4a45a2c4d17ad9c7113e3123deeb25fe1a1322da4f8db2cdb9325bfd",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-f6ac7e7cf5da4128",
+   "location": "email_body#s0",
+   "text": "Hey Team, Get Ready for a Fresh Update!",
+   "kind": "factual",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": false,
+   "verdict": "unresolved",
+   "citation_status": null,
+   "reason": "reviewer response missing, invalid or untraceable after retries",
+   "reviewer_reason": "reviewer response missing, invalid or untraceable after retries",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unresolved",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "0e5b16dd403a1c7da54816434044c04e83e9fb9471a4ed46d39750ec6432fbd7",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-f6ac7e7cf5da4128\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P-1\",\n  \"evidence_quote\": \"Hey Team, Get Ready for a Fresh Update!\",\n  \"reason\": \"The evidence passage directly states the company's announcement of a fresh update.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 248,
+       "completion_tokens": 85,
+       "total_tokens": 333,
+       "prompt_tokens_details": {
+        "cached_tokens": 156
+       }
+      },
+      "latency_s": 6.205,
+      "error": null,
+      "validation_errors": [
+       "evidence_passage_id 'P-1' was not shown to the reviewer"
+      ]
+     },
+     {
+      "attempt": 1,
+      "prompt_sha256": "fad265c3d8d17bf629c3f405d110707d8d5e0972e338491c82b035bee1b4006c",
+      "raw_text": "```json\n{\"review_id\": \"R-f6ac7e7cf5da4128\", \"verdict\": \"supported\", \"evidence_passage_id\": \"P-1\", \"evidence_quote\": \"Hey Team, Get Ready for a Fresh Update!\", \"reason\": \"The evidence passage directly states the company's announcement of a fresh update, which aligns with the statement. The company Gymshark is known for its fitness apparel, and such announcements are common in the industry. The evidence supports the statement without naming the company explicitly.\"}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 276,
+       "completion_tokens": 118,
+       "total_tokens": 394,
+       "prompt_tokens_details": {
+        "cached_tokens": 242
+       }
+      },
+      "latency_s": 8.625,
+      "error": null,
+      "validation_errors": [
+       "evidence_passage_id 'P-1' was not shown to the reviewer"
+      ]
+     }
+    ],
+    "request_sha256": "878329e7e46ef0c8953f5dbcde6204af7187283fa90c165bfcaf1c6ed2d64a37",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-68c971f806ebec46",
+   "location": "email_body#s1",
+   "text": "We're launching a new Instagram campaign designed to boost engagement and build excitement around our brand.",
+   "kind": "factual",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": false,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.455,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.45 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.45 < 0.6",
+   "reviewer_reason": "The passage explicitly mentions that Gymshark is launching a new Instagram campaign to boost engagement and build excitement around their brand, which aligns with the statement.",
+   "evidence_passage_id": "P4",
+   "evidence_quote": "Promotion Gymshark’s promotion strategy is heavily focused on digital marketing, influencer collaborations, and social media engagement. The brand leverages platforms such as Instagram, TikTok, and YouTube to connect with fitness enthusiasts and build a sense of belonging. Influencer partnerships and athlete endorsements help drive authenticity and trust among followers. Additionally, Gymshark uses limited-edition drops and event-based campaigns to create excitement and exclusivity around its products, reinforcing its image as a modern and community-driven fitness brand.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "f33c20bcdd5755d9d634ffdfaa2303a41489b4a8af6755762d1e712a6d8fb1cc",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-68c971f806ebec46\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P4\",\n  \"evidence_quote\": \"Promotion Gymshark’s promotion strategy is heavily focused on digital marketing, influencer collaborations, and social media engagement. The brand leverages platforms such as Instagram, TikTok, and YouTube to connect with fitness enthusiasts and build a sense of belonging. Influencer partnerships and athlete endorsements help drive authenticity and trust among followers. Additionally, Gymshark uses limited-edition drops and event-based campaigns to create excitement and exclusivity around its products, reinforcing its image as a modern and community-driven fitness brand.\",\n  \"reason\": \"The passage explicitly mentions that Gymshark is launching a new Instagram campaign to boost engagement and build excitement around their brand, which aligns with the statement.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 480,
+       "completion_tokens": 193,
+       "total_tokens": 673,
+       "prompt_tokens_details": {
+        "cached_tokens": 156
+       }
+      },
+      "latency_s": 14.637,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "10cdae6b1d29d2695140649f30a9de743bb34486785c27407b257e77372f0079",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-c3f782d834ad3861",
+   "location": "email_body#s2",
+   "text": "Swipe through to see the details!",
+   "kind": "factual",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": false,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.25,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.25 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.25 < 0.6",
+   "reviewer_reason": "The evidence passage supports the statement by providing details about Gymshark's marketing strategy and the success of their product launch, which includes the use of social media and influencer partnerships.",
+   "evidence_passage_id": "P9",
+   "evidence_quote": "About Gymshark & the Campaign Gymshark is a global fitness apparel brand that achieved rapid growth through a social media-first marketing model. Rather than depending mainly on traditional advertising, the company developed a recognisable brand identity through influencer partnerships, community-led storytelling and short-form fitness content, particularly Instagram Reels. The brand’s primary Instagram account has approximately 8 million followers, with a combined social following of more than 18 million people across all platforms — making it one of the most successful examples of community-led brand building in the direct-to-consumer fitness space.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "a4f3e7ecc038ed14a177e2d5d77eeba8e16b9d0ea89c754f3f71e601e1d44b3f",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-c3f782d834ad3861\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P9\",\n  \"evidence_quote\": \"About Gymshark & the Campaign Gymshark is a global fitness apparel brand that achieved rapid growth through a social media-first marketing model. Rather than depending mainly on traditional advertising, the company developed a recognisable brand identity through influencer partnerships, community-led storytelling and short-form fitness content, particularly Instagram Reels. The brand’s primary Instagram account has approximately 8 million followers, with a combined social following of more than 18 million people across all platforms — making it one of the most successful examples of community-led brand building in the direct-to-consumer fitness space.\",\n  \"reason\": \"The evidence passage supports the statement by providing details about Gymshark's marketing strategy and the success of their product launch, which includes the use of social media and influencer partnerships.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 519,
+       "completion_tokens": 213,
+       "total_tokens": 732,
+       "prompt_tokens_details": {
+        "cached_tokens": 155
+       }
+      },
+      "latency_s": 16.684,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "6bfa79113909aeb7e99c18ddf317228593ca6588f2cd05ecbd2f9383b91e131d",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-2f99d47f50a99f08",
+   "location": "email_body#s3",
+   "text": "[Link to campaign details]",
+   "kind": "factual",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": false,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.333,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.33 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.33 < 0.6",
+   "reviewer_reason": "The passage directly states that Gymshark achieved rapid growth through a social media-first marketing model, which aligns with the statement '[Link to campaign details]'.",
+   "evidence_passage_id": "P9",
+   "evidence_quote": "Gymshark is a global fitness apparel brand that achieved rapid growth through a social media-first marketing model.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "f2e355a097342438b33eacf3c4ed81592f7678f7d27118b62fbdf6651f9f7d5a",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-2f99d47f50a99f08\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P9\",\n  \"evidence_quote\": \"Gymshark is a global fitness apparel brand that achieved rapid growth through a social media-first marketing model.\",\n  \"reason\": \"The passage directly states that Gymshark achieved rapid growth through a social media-first marketing model, which aligns with the statement '[Link to campaign details]'.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 375,
+       "completion_tokens": 119,
+       "total_tokens": 494,
+       "prompt_tokens_details": {
+        "cached_tokens": 156
+       }
+      },
+      "latency_s": 8.978,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "6478a28f7f95b266f210f55b6e63a160fb483ed64559d507552a0dffde3972b3",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-a972a1150d2395fc",
+   "location": "claims[0].statement",
+   "text": "string",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": false,
+   "verdict": "unsupported",
+   "reviewer_verdict": "unsupported",
+   "citation_status": "cited",
+   "flags": [],
+   "reason": "The statement 'string' is not supported by any evidence in the passages provided.",
+   "guard": null,
+   "reviewer_reason": "The statement 'string' is not supported by any evidence in the passages provided.",
+   "evidence_passage_id": "P1",
+   "evidence_quote": "The latest What Is #Gymshark66? GymsharkWhat Is #Gymshark66? 12.28.25 Stronger Every Session: Why Consistency & Community Are Key To Gym Confidence GymsharkStronger Every Session: Why Consistency & Community Are Key To Gym Confidence 10.20.25 Gym Girl Of The Year | Fitness Industry Awards 2024 GymsharkGym Girl Of The Year",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "5c0e281ae3f47fd229a96f5492d863bed1e279cccce672ab04fd6715921cf362",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-a972a1150d2395fc\",\n  \"verdict\": \"unsupported\",\n  \"evidence_passage_id\": \"P1\",\n  \"evidence_quote\": \"The latest What Is #Gymshark66? GymsharkWhat Is #Gymshark66? 12.28.25 Stronger Every Session: Why Consistency & Community Are Key To Gym Confidence GymsharkStronger Every Session: Why Consistency & Community Are Key To Gym Confidence 10.20.25 Gym Girl Of The Year | Fitness Industry Awards 2024 GymsharkGym Girl Of The Year\",\n  \"reason\": \"The statement 'string' is not supported by any evidence in the passages provided.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 351,
+       "completion_tokens": 178,
+       "total_tokens": 529,
+       "prompt_tokens_details": {
+        "cached_tokens": 155
+       }
+      },
+      "latency_s": 13.254,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "039d9de6b71fdb5405eaa66a4bbf1a5230ee420d3ab4a76d304fdbe4bcaa6fc7",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  }
+ ],
+ "skipped_sentences": {
+  "proposal": [
+   {
+    "location": "likely_target_audience#s0",
+    "text": "Young adults and teenagers interested in fitness."
+   },
+   {
+    "location": "instagram_post_idea.hook#s0",
+    "text": "A carousel featuring workout routines and motivational quotes"
+   },
+   {
+    "location": "instagram_post_idea.concept#s0",
+    "text": "A visually engaging series of short-form videos showcasing different fitness styles and encouraging community participation."
+   }
+  ],
+  "non_assertion": []
+ },
+ "unknown_issues": [],
+ "outreach": {
+  "recipient": "correct",
+  "sender": "incorrect",
+  "instagram_mentioned": true,
+  "other_platforms_in_pitch": [],
+  "instagram_compliant": true,
+  "promises": [],
+  "email_subject": "Gymshark's Latest Campaign Update"
+ },
+ "failures": [
+  {
+   "check": "schema",
+   "detail": [
+    "missing key: abstain_reason",
+    "claims[0].kind 'fact | provider_reported | premise' not in ('fact', 'provider_reported', 'premise')"
+   ]
+  },
+  {
+   "check": "template_placeholder_copies",
+   "detail": [
+    "output.claims[0].kind",
+    "output.claims[0].statement",
+    "output.claims[0].quote"
+   ]
+  },
+  {
+   "check": "no_inline_citations",
+   "detail": []
+  },
+  {
+   "check": "claim_quotes",
+   "detail": [
+    {
+     "claim_id": "C1",
+     "self_quote": false,
+     "other_passage": []
+    }
+   ]
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-a6249a81e467516f",
+   "location": "brand_summary#s0",
+   "text": "The marketing team is proposing a carousel featuring Instagram posts, collaborating on a fitness influencer campaign.",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.45 < 0.6",
+   "evidence_passage_id": "P9",
+   "evidence_quote": "Gymshark is a global fitness apparel brand that achieved rapid growth through a social media-first marketing model. Rather than depending mainly on traditional advertising, the company developed a recognisable brand identity through influencer partnerships, community-led storytelling and short-form fitness content, particularly Instagram Reels."
+  },
+  {
+   "check": "citation_mapping",
+   "review_id": "R-f41ee67b0021664b",
+   "location": "brand_summary#s1",
+   "text": "Gymshark's success is built on data-driven insights, strategic product launches, and customer loyalty initiatives.",
+   "citation_status": "uncited",
+   "evidence_passage_id": "P5"
+  },
+  {
+   "check": "citation_mapping",
+   "review_id": "R-b6ce0ec9f06bd0cd",
+   "location": "current_marketing_strategy[0]#s0",
+   "text": "Instagram, TikTok, YouTube",
+   "citation_status": "uncited",
+   "evidence_passage_id": "P4"
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-bb652ff0bf201db9",
+   "location": "collaboration_opportunities[0]#s0",
+   "text": "Instagram carousel",
+   "verdict": "unsupported",
+   "reason": "The statement 'Instagram carousel' is not supported by any passage. The evidence provided discusses Gymshark's marketing strategies and collaborations, but does not mention anything about Instagram carousels.",
+   "evidence_passage_id": "P4",
+   "evidence_quote": "Promotion Gymshark’s promotion strategy is heavily focused on digital marketing, influencer collaborations, and social media engagement. The brand leverages platforms such as Instagram, TikTok, and YouTube to connect with fitness enthusiasts and build a sense of belonging. Influencer partnerships and athlete endorsements help drive authenticity and trust among followers. Additionally, Gymshark uses limited-edition drops and event-based campaigns to create excitement and exclusivity around its products, reinforcing its image as a modern and community-driven fitness brand."
+  },
+  {
+   "check": "citation_mapping",
+   "review_id": "R-7a54ab8f2bbd0fea",
+   "location": "collaboration_opportunities[1]#s0",
+   "text": "Influencer campaign",
+   "citation_status": "uncited",
+   "evidence_passage_id": "P9"
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-ade47507d88e7aa8",
+   "location": "instagram_post_idea.why_it_fits#s0",
+   "text": "This aligns with the brand's focus on authenticity and community building.",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.50 < 0.6",
+   "evidence_passage_id": "P9",
+   "evidence_quote": "Gymshark is a global fitness apparel brand that achieved rapid growth through a social media-first marketing model. Rather than depending mainly on traditional advertising, the company developed a recognisable brand identity through influencer partnerships, community-led storytelling and short-form fitness content, particularly Instagram Reels. The brand’s primary Instagram account has approximately 8 million followers, with a combined social following of more than 18 million people across all platforms — making it one of the most successful examples of community-led brand building in the direct-to-consumer fitness space."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-f8f2c683e288471b",
+   "location": "email_subject#s0",
+   "text": "Gymshark's Latest Campaign Update",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.25 < 0.6",
+   "evidence_passage_id": "P1",
+   "evidence_quote": "The latest What Is #Gymshark66? GymsharkWhat Is #Gymshark66? 12.28.25 Stronger Every Session: Why Consistency & Community Are Key To Gym Confidence GymsharkStronger Every Session: Why Consistency & Community Are Key To Gym Confidence 10.20.25 Gym Girl Of The Year | Fitness Industry Awards 2024 GymsharkGym Girl Of The Year"
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-68c971f806ebec46",
+   "location": "email_body#s1",
+   "text": "We're launching a new Instagram campaign designed to boost engagement and build excitement around our brand.",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.45 < 0.6",
+   "evidence_passage_id": "P4",
+   "evidence_quote": "Promotion Gymshark’s promotion strategy is heavily focused on digital marketing, influencer collaborations, and social media engagement. The brand leverages platforms such as Instagram, TikTok, and YouTube to connect with fitness enthusiasts and build a sense of belonging. Influencer partnerships and athlete endorsements help drive authenticity and trust among followers. Additionally, Gymshark uses limited-edition drops and event-based campaigns to create excitement and exclusivity around its products, reinforcing its image as a modern and community-driven fitness brand."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-c3f782d834ad3861",
+   "location": "email_body#s2",
+   "text": "Swipe through to see the details!",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.25 < 0.6",
+   "evidence_passage_id": "P9",
+   "evidence_quote": "About Gymshark & the Campaign Gymshark is a global fitness apparel brand that achieved rapid growth through a social media-first marketing model. Rather than depending mainly on traditional advertising, the company developed a recognisable brand identity through influencer partnerships, community-led storytelling and short-form fitness content, particularly Instagram Reels. The brand’s primary Instagram account has approximately 8 million followers, with a combined social following of more than 18 million people across all platforms — making it one of the most successful examples of community-led brand building in the direct-to-consumer fitness space."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-2f99d47f50a99f08",
+   "location": "email_body#s3",
+   "text": "[Link to campaign details]",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.33 < 0.6",
+   "evidence_passage_id": "P9",
+   "evidence_quote": "Gymshark is a global fitness apparel brand that achieved rapid growth through a social media-first marketing model."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-a972a1150d2395fc",
+   "location": "claims[0].statement",
+   "text": "string",
+   "verdict": "unsupported",
+   "reason": "The statement 'string' is not supported by any evidence in the passages provided.",
+   "evidence_passage_id": "P1",
+   "evidence_quote": "The latest What Is #Gymshark66? GymsharkWhat Is #Gymshark66? 12.28.25 Stronger Every Session: Why Consistency & Community Are Key To Gym Confidence GymsharkStronger Every Session: Why Consistency & Community Are Key To Gym Confidence 10.20.25 Gym Girl Of The Year | Fitness Industry Awards 2024 GymsharkGym Girl Of The Year"
+  },
+  {
+   "check": "sender_recipient",
+   "detail": [
+    "incorrect",
+    "correct"
+   ]
+  }
+ ],
+ "unresolved": [
+  "R-f6ac7e7cf5da4128"
+ ],
+ "passes": false,
+ "failure_signature": "fbe999c33bb01edde1de4c23ee1c5b191c81f61a4411cdcccc75b9a6aeefd403",
+ "review_wall_s": 172.395,
+ "attempt": {
+  "index": 0,
+  "kind": "initial"
+ }
+}

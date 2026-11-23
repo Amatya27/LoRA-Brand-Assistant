@@ -1,0 +1,76 @@
+{
+ "case_id": "fly-by-jing/v5",
+ "company_id": "fly-by-jing",
+ "arm": "v5",
+ "packet_path": "outputs/phase3_v5/handoff_6efa346/data/v3_pilot/packets/fly-by-jing.json",
+ "packet_sha256": "c974a43b16e102e870046f0fbbb1e63d54bd1f356426177dfbdd948911ce7eea",
+ "prompt_version": "brandpilot.prompt.v3.3",
+ "prompt_sha256": "c43b9ebb40431d87b00daad7b2a05cf5778f1876ca8970cff60694bb034ba9df",
+ "max_repairs": 2,
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "dir": "phase4_v5_results/runs/fly-by-jing/v5/attempt-00",
+   "prompt_sha256": "c43b9ebb40431d87b00daad7b2a05cf5778f1876ca8970cff60694bb034ba9df",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "length",
+   "usage": {
+    "prompt_tokens": 3083,
+    "completion_tokens": 3072,
+    "total_tokens": 6155,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 73.092,
+   "runtime_verified": true,
+   "raw_sha256": "0b1ce8f95651a0aea665ab2e7b68c47a1abf9f72d83333a1b0dd3b4ea4f0725e",
+   "reused_from": null,
+   "passes": false,
+   "strict_ok": false,
+   "model_abstained": false,
+   "failure_count": 16,
+   "unresolved_count": 0,
+   "failure_signature": "ab8dad503667312c09f57feae8a4074d05d646eeeedd93bf38e37c66b1be461f",
+   "review_wall_s": 219.521,
+   "truncated": true,
+   "looping": true
+  },
+  {
+   "index": 1,
+   "kind": "regenerate_bounded",
+   "dir": "phase4_v5_results/runs/fly-by-jing/v5/attempt-01",
+   "prompt_sha256": "bb89b44459e37f9886911c4d346c6484fc1a802ab9af9541fe379e49e9691173",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "length",
+   "usage": {
+    "prompt_tokens": 3201,
+    "completion_tokens": 3072,
+    "total_tokens": 6273,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 73.758,
+   "runtime_verified": true,
+   "raw_sha256": "3a8a57ca9f1af0bc4245835a31e7e20ed7e36bf0a1e6cef166e9231838b02b10",
+   "reused_from": null,
+   "passes": false,
+   "strict_ok": false,
+   "model_abstained": false,
+   "truncated": true,
+   "looping": true,
+   "failure_count": 6,
+   "unresolved_count": 0,
+   "failure_signature": "f7bcc7993ff61f6468cff2eb65d377c1b523e7cdd14042e1abca051b2089f5eb",
+   "review_wall_s": 0.014
+  }
+ ],
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "no progress: the repair repeated the same truncation failure",
+ "stop_code": "withheld_no_progress",
+ "eligibility": "eligible"
+}

@@ -1,0 +1,2005 @@
+{
+ "checks_version": "phase4-v5-checks-2",
+ "structure": {
+  "strict_json": false,
+  "truncated": true,
+  "parse_error": {
+   "error_type": "truncated_output",
+   "truncated": true,
+   "finish_reason": "length",
+   "unbalanced_braces": true,
+   "message": "Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 1 column 12656 (char 12655)"
+  },
+  "schema_errors": [
+   "truncated_output: Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 1 column 12656 (char 12655)"
+  ],
+  "parse_mode": "diagnostic_prefix",
+  "prompt_schema_valid": false,
+  "training_schema_valid": false,
+  "raw_format": {
+   "starts_with_brace": true,
+   "code_fenced": false,
+   "text_outside_json": null
+  }
+ },
+ "decision": null,
+ "repetition": {
+  "method": "exact match after whitespace/quote/case normalisation; no semantic similarity",
+  "claim_count": 36,
+  "duplicate_claim_ids": [],
+  "duplicate_claim_statements": 34,
+  "distinct_claim_statements": 2,
+  "duplicate_claim_quotes": 34,
+  "repeated_prose_sentences": {},
+  "max_8gram_repeats_in_raw": 71,
+  "looping": true
+ },
+ "citation_mechanics": {
+  "inline_passage_refs": [
+   "P10",
+   "P10",
+   "P10",
+   "P10",
+   "P10",
+   "P10",
+   "P10",
+   "P7",
+   "P10",
+   "P10",
+   "P10",
+   "P10"
+  ],
+  "unknown_refs": [],
+  "claim_quotes": [
+   {
+    "index": 0,
+    "claim_id": "C1",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 1,
+    "claim_id": "C2",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 2,
+    "claim_id": "C3",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 3,
+    "claim_id": "C4",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 4,
+    "claim_id": "C5",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 5,
+    "claim_id": "C6",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 6,
+    "claim_id": "C7",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 7,
+    "claim_id": "C8",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 8,
+    "claim_id": "C9",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 9,
+    "claim_id": "C10",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 10,
+    "claim_id": "C11",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 11,
+    "claim_id": "C12",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 12,
+    "claim_id": "C13",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 13,
+    "claim_id": "C14",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 14,
+    "claim_id": "C15",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 15,
+    "claim_id": "C16",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 16,
+    "claim_id": "C17",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 17,
+    "claim_id": "C18",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 18,
+    "claim_id": "C19",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 19,
+    "claim_id": "C20",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 20,
+    "claim_id": "C21",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 21,
+    "claim_id": "C22",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 22,
+    "claim_id": "C23",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 23,
+    "claim_id": "C24",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 24,
+    "claim_id": "C25",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 25,
+    "claim_id": "C26",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 26,
+    "claim_id": "C27",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 27,
+    "claim_id": "C28",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 28,
+    "claim_id": "C29",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 29,
+    "claim_id": "C30",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 30,
+    "claim_id": "C31",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 31,
+    "claim_id": "C32",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 32,
+    "claim_id": "C33",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 33,
+    "claim_id": "C34",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 34,
+    "claim_id": "C35",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 35,
+    "claim_id": "C36",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   }
+  ]
+ },
+ "assertions": [
+  {
+   "review_id": "R-e9807bc166d78e2c",
+   "location": "brand_summary#s0",
+   "text": "Graza is a premium olive oil brand that has successfully leveraged influencer marketing and user-generated content to drive growth [P10].",
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.333,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.33 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.33 < 0.6",
+   "reviewer_reason": "The evidence passage P10 directly supports the statement by mentioning that Graza has popularized squeeze bottles filled with olive oil, which aligns with the claim that the brand has successfully leveraged influencer marketing.",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "Graza has popularized squeeze bottles filled with olive oil that appear in seemingly every food influencer's social videos.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "537236798094ca0e73103d7b60a7dd6e040fe93ecc837355c72c62feedf2cfce",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-e9807bc166d78e2c\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P10\",\n  \"evidence_quote\": \"Graza has popularized squeeze bottles filled with olive oil that appear in seemingly every food influencer's social videos.\",\n  \"reason\": \"The evidence passage P10 directly supports the statement by mentioning that Graza has popularized squeeze bottles filled with olive oil, which aligns with the claim that the brand has successfully leveraged influencer marketing.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 703,
+       "completion_tokens": 129,
+       "total_tokens": 832,
+       "prompt_tokens_details": {
+        "cached_tokens": 159
+       }
+      },
+      "latency_s": 12.31,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "e920ce6fb843ee366d04bbf7b3ed0976e33d55e999b8f46f9346fb68622b857a",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-c382f06282b6fdac",
+   "location": "likely_target_audience#s0",
+   "text": "Graza's target audience includes Instagram and TikTok content creators, as well as consumers interested in high-quality olive oils and sustainable products [P10].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.2,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.20 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.20 < 0.6",
+   "reviewer_reason": "The evidence passage directly supports the statement by mentioning that Graza has popularized squeeze bottles filled with olive oil that appear in seemingly every food influencer's social videos, including beer cans of olive oil.",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "Graza rolled out beer cans of olive oil, sending the new product to about 300 creators, said Kendall Dickieson, head of social and influencer marketing for Graza.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "e0fb96987f88d418d84892655d850acf9f88c286f106088101ede39f5b27d4a2",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-c382f06282b6fdac\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P10\",\n  \"evidence_quote\": \"Graza rolled out beer cans of olive oil, sending the new product to about 300 creators, said Kendall Dickieson, head of social and influencer marketing for Graza.\",\n  \"reason\": \"The evidence passage directly supports the statement by mentioning that Graza has popularized squeeze bottles filled with olive oil that appear in seemingly every food influencer's social videos, including beer cans of olive oil.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 698,
+       "completion_tokens": 142,
+       "total_tokens": 840,
+       "prompt_tokens_details": {
+        "cached_tokens": 159
+       }
+      },
+      "latency_s": 14.208,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "aacfbf2d7182f3e4dd3b99ad9197d049811054f3e2017dc285dbbe15519b60b9",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-a994905ad7c57144",
+   "location": "current_marketing_strategy[0]#s0",
+   "text": "Graza has a clear Instagram and TikTok strategy, including influencer collaborations and user-generated content campaigns [P10].",
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.1,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.10 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.10 < 0.6",
+   "reviewer_reason": "The evidence passage directly supports the statement by mentioning influencer collaborations and user-generated content campaigns.",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "Graza rolled out beer cans of olive oil, sending the new product to about 300 creators, said Kendall Dickieson, head of social and influencer marketing for Graza.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "7e21ac14aef2224729cd7215a5c259e4923d3ffbd15f3a0d707fcac3e65be44e",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-a994905ad7c57144\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P10\",\n  \"evidence_quote\": \"Graza rolled out beer cans of olive oil, sending the new product to about 300 creators, said Kendall Dickieson, head of social and influencer marketing for Graza.\",\n  \"reason\": \"The evidence passage directly supports the statement by mentioning influencer collaborations and user-generated content campaigns.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 702,
+       "completion_tokens": 121,
+       "total_tokens": 823,
+       "prompt_tokens_details": {
+        "cached_tokens": 161
+       }
+      },
+      "latency_s": 11.066,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "850e3e29ce276d7c73760e6f123e711039e6b4f0cc4fac23a3367efbe5994188",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-7ea58a19abaa5599",
+   "location": "current_marketing_strategy[1]#s0",
+   "text": "Graza has a clear marketing strategy built around user-generated content and influencer marketing [P10].",
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.222,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.22 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.22 < 0.6",
+   "reviewer_reason": "The evidence passage directly supports the statement by mentioning that Graza rolled out beer cans of olive oil, which is a clear marketing strategy involving influencer marketing.",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "Graza rolled out beer cans of olive oil, sending the new product to about 300 creators, said Kendall Dickieson, head of social and influencer marketing for Graza.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "2ae769722028f84c26b189f74bc57c8a7e40b0b956a44dc98dc2f590eff7c258",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-7ea58a19abaa5599\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P10\",\n  \"evidence_quote\": \"Graza rolled out beer cans of olive oil, sending the new product to about 300 creators, said Kendall Dickieson, head of social and influencer marketing for Graza.\",\n  \"reason\": \"The evidence passage directly supports the statement by mentioning that Graza rolled out beer cans of olive oil, which is a clear marketing strategy involving influencer marketing.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 649,
+       "completion_tokens": 133,
+       "total_tokens": 782,
+       "prompt_tokens_details": {
+        "cached_tokens": 159
+       }
+      },
+      "latency_s": 12.556,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "b7b863e8a30c01fd4c985f1d3fdda58249f81b48b476e05bc81fc393927bcb40",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-bd37de4c701a037c",
+   "location": "collaboration_opportunities[0]#s0",
+   "text": "Collaborate on a new Instagram post that showcases the use of Graza in creative ways, such as a recipe or a cooking demonstration [P10].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.286,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.29 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.29 < 0.6",
+   "reviewer_reason": "The evidence passage P4 directly supports the statement by describing how Graza used social media to showcase the use of their product in creative ways, such as through influencer outreach and user-generated content.",
+   "evidence_passage_id": "P4",
+   "evidence_quote": "4. Use social as a scalable distribution engine Before launch, they skipped the influencer deals, the creative briefs, and the polished brand assets. Instead, they DM’d food creators, sent them the product, and let the bottle do the work. No scripting. No contracts. Just: “here’s something useful, show us how you actually use it”. It worked. The product landed in kitchens that already had an audience and because it looked different, it stood out. Graza ran with it. Their Instagram and TikTok feeds became pure UGC:",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "df97ae7711fe9436c1bde3835cd2ea40c4a8bf72023649a97dd6f2166876d69a",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-bd37de4c701a037c\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P4\",\n  \"evidence_quote\": \"4. Use social as a scalable distribution engine Before launch, they skipped the influencer deals, the creative briefs, and the polished brand assets. Instead, they DM’d food creators, sent them the product, and let the bottle do the work. No scripting. No contracts. Just: “here’s something useful, show us how you actually use it”. It worked. The product landed in kitchens that already had an audience and because it looked different, it stood out. Graza ran with it. Their Instagram and TikTok feeds became pure UGC:\",\n  \"reason\": \"The evidence passage P4 directly supports the statement by describing how Graza used social media to showcase the use of their product in creative ways, such as through influencer outreach and user-generated content.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 678,
+       "completion_tokens": 214,
+       "total_tokens": 892,
+       "prompt_tokens_details": {
+        "cached_tokens": 159
+       }
+      },
+      "latency_s": 22.926,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "c54ca6cc979928fe5a94436813b2c731820f561f20eeecbb03380e7469222e67",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-a4958de491a27b31",
+   "location": "instagram_post_idea.hook#s0",
+   "text": "A carousel post featuring Graza's Drizzle and Sizzle in creative ways, such as a recipe or a cooking demonstration [P10].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.0,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.00 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.00 < 0.6",
+   "reviewer_reason": "The evidence passage directly supports the statement by mentioning that Graza rolled out beer cans of olive oil, which aligns with the idea of creative ways to feature their products.",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "Graza rolled out beer cans of olive oil, sending the new product to about 300 creators, said Kendall Dickieson, head of social and influencer marketing for Graza.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "140a09694c86b47763d9a032521da476fa7da30cf227cc30e41652e96a4b0486",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-a4958de491a27b31\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P10\",\n  \"evidence_quote\": \"Graza rolled out beer cans of olive oil, sending the new product to about 300 creators, said Kendall Dickieson, head of social and influencer marketing for Graza.\",\n  \"reason\": \"The evidence passage directly supports the statement by mentioning that Graza rolled out beer cans of olive oil, which aligns with the idea of creative ways to feature their products.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 687,
+       "completion_tokens": 137,
+       "total_tokens": 824,
+       "prompt_tokens_details": {
+        "cached_tokens": 160
+       }
+      },
+      "latency_s": 12.023,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "90f1b22b9a5d4606c2773bfa03fe2788649e12c839bac687ef70fdac8cf8f1f4",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-b2c0b1460a572208",
+   "location": "instagram_post_idea.concept#s0",
+   "text": "A carousel post that showcases Graza's Drizzle and Sizzle in creative ways, such as a recipe or a cooking demonstration [P10].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.0,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.00 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.00 < 0.6",
+   "reviewer_reason": "The passage directly states that Graza rolled out beer cans of olive oil, which aligns with the statement about showcasing Drizzle and Sizzle in creative ways, such as a recipe or a cooking demonstration.",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "On May 9, Graza rolled out beer cans of olive oil, sending the new product to about 300 creators, said Kendall Dickieson, head of social and influencer marketing for Graza.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "ecbc8be9c9415c5ca8a68fb2498ea7644cf766ff7d6fbb7ad2ad478ef58feeb5",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-b2c0b1460a572208\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P10\",\n  \"evidence_quote\": \"On May 9, Graza rolled out beer cans of olive oil, sending the new product to about 300 creators, said Kendall Dickieson, head of social and influencer marketing for Graza.\",\n  \"reason\": \"The passage directly states that Graza rolled out beer cans of olive oil, which aligns with the statement about showcasing Drizzle and Sizzle in creative ways, such as a recipe or a cooking demonstration.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 689,
+       "completion_tokens": 149,
+       "total_tokens": 838,
+       "prompt_tokens_details": {
+        "cached_tokens": 160
+       }
+      },
+      "latency_s": 12.367,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "0e1bdb9708325b770adb0c8431424a9f2bed2282be25301620faead830403598",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-898228be4de37a22",
+   "location": "instagram_post_idea.why_it_fits#s0",
+   "text": "Graza's visual system for scroll, not just shelf presence Graza understood where brand discovery actually happens: in feeds, not aisles [P7].",
+   "kind": "factual",
+   "cited_passages": [
+    "P7"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "supported",
+   "reviewer_verdict": "supported",
+   "citation_status": "miscited_supported_elsewhere",
+   "flags": [],
+   "reason": "The evidence passage directly supports the statement by explaining that Graza understood brand discovery happens in feeds rather than aisles, and that their packaging was designed for visibility and performance online.",
+   "guard": {
+    "coverage": 1.0,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": []
+   },
+   "reviewer_reason": "The evidence passage directly supports the statement by explaining that Graza understood brand discovery happens in feeds rather than aisles, and that their packaging was designed for visibility and performance online.",
+   "evidence_passage_id": "P6",
+   "evidence_quote": "## 3. Build your visual system for scroll, not just shelf presence Graza understood where brand discovery actually happens: in feeds, not aisles. Their packaging wasn’t designed for elegance. It was designed for visibility. The squeeze bottle format, bold color palette, oversized type—it all reads instantly in a TikTok pantry tour or an Instagram Story. It looks great on a shelf, but it really performs online. This is where Graza’s social media strategy becomes visible. Most legacy brands optimize for retail first, then try to retrofit the brand for content. Graza flipped that.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "a4f204ff33ebcd98f9bfd15de78bf8b405a377830dec8d46908e27851303123d",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-898228be4de37a22\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P6\",\n  \"evidence_quote\": \"## 3. Build your visual system for scroll, not just shelf presence Graza understood where brand discovery actually happens: in feeds, not aisles. Their packaging wasn’t designed for elegance. It was designed for visibility. The squeeze bottle format, bold color palette, oversized type—it all reads instantly in a TikTok pantry tour or an Instagram Story. It looks great on a shelf, but it really performs online. This is where Graza’s social media strategy becomes visible. Most legacy brands optimize for retail first, then try to retrofit the brand for content. Graza flipped that.\",\n  \"reason\": \"The evidence passage directly supports the statement by explaining that Graza understood brand discovery happens in feeds rather than aisles, and that their packaging was designed for visibility and performance online.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 688,
+       "completion_tokens": 215,
+       "total_tokens": 903,
+       "prompt_tokens_details": {
+        "cached_tokens": 160
+       }
+      },
+      "latency_s": 16.946,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "20edf5949344e140f9e38ce38f5090bb083a93d434c6e4858f87d888e3f6f5b7",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-258c8a607af55579",
+   "location": "email_subject#s0",
+   "text": "Collaboration Opportunity: Feature Graza's Drizzle and Sizzle in a new Instagram carousel post, showcasing how it's used in creative ways [P10].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.333,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.33 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.33 < 0.6",
+   "reviewer_reason": "The passage describes Graza's strategy for introducing the beer-can refills, including the use of influencer outreach and social media education, which aligns with the statement about collaborating with influencers to showcase the product in creative ways.",
+   "evidence_passage_id": "P8",
+   "evidence_quote": "Strategic Product Roadmap & Innovation They began with two core oils (“Drizzle” finishing oil, “Sizzle” cooking oil), then introduced refill beer-cans (for sustainability and novelty) and more formats (sprays, jugs) to meet different use cases. 5. Retail Expansion Balanced with DTC Graza started Direct-to-Consumer (DTC) but also made sure to get into grocers like Whole Foods, Target, etc. For new product launches (like the cans), they used creator outreach + social education + email to prepare demand before actual store rollout. 6. Selective Paid Marketing & Budget Discipline Even as growth took off, Graza kept paid ad spend modest.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "624a2ac14e4af56e6648faa8d696b975ebdc93b7657d8bf6ca38a3b895268ba4",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-258c8a607af55579\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P8\",\n  \"evidence_quote\": \"Strategic Product Roadmap & Innovation They began with two core oils (“Drizzle” finishing oil, “Sizzle” cooking oil), then introduced refill beer-cans (for sustainability and novelty) and more formats (sprays, jugs) to meet different use cases. 5. Retail Expansion Balanced with DTC Graza started Direct-to-Consumer (DTC) but also made sure to get into grocers like Whole Foods, Target, etc. For new product launches (like the cans), they used creator outreach + social education + email to prepare demand before actual store rollout. 6. Selective Paid Marketing & Budget Discipline Even as growth took off, Graza kept paid ad spend modest.\",\n  \"reason\": \"The passage describes Graza's strategy for introducing the beer-can refills, including the use of influencer outreach and social media education, which aligns with the statement about collaborating with influencers to showcase the product in creative ways.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 709,
+       "completion_tokens": 250,
+       "total_tokens": 959,
+       "prompt_tokens_details": {
+        "cached_tokens": 160
+       }
+      },
+      "latency_s": 23.026,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "f846dc5363ebbff509f4967ee493cd4bcdffb8467ed0dd84c5249484c0c67931",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-b413b3e5e032324f",
+   "location": "email_body#s1",
+   "text": "We propose collaborating on a new Instagram carousel post that showcases Graza's Drizzle and Sizzle in creative ways [P10].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.0,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.00 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.00 < 0.6",
+   "reviewer_reason": "The evidence passage directly supports the statement by mentioning that Graza rolled out beer cans of olive oil, which aligns with the proposal to collaborate on a new Instagram carousel post showcasing Graza's Drizzle and Sizzle in creative ways.",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "Graza rolled out beer cans of olive oil, sending the new product to about 300 creators, said Kendall Dickieson, head of social and influencer marketing for Graza.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "a4e3bbf312307dd566ecb6adea03c976603ab1d215cb9a171ec593b73c9ca374",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-b413b3e5e032324f\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P10\",\n  \"evidence_quote\": \"Graza rolled out beer cans of olive oil, sending the new product to about 300 creators, said Kendall Dickieson, head of social and influencer marketing for Graza.\",\n  \"reason\": \"The evidence passage directly supports the statement by mentioning that Graza rolled out beer cans of olive oil, which aligns with the proposal to collaborate on a new Instagram carousel post showcasing Graza's Drizzle and Sizzle in creative ways.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 702,
+       "completion_tokens": 151,
+       "total_tokens": 853,
+       "prompt_tokens_details": {
+        "cached_tokens": 160
+       }
+      },
+      "latency_s": 13.757,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "b3072da191322bddf45180785de19e02f7d687b73118fa9cf3b2919ac825b20c",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-e427385417fc8898",
+   "location": "email_body#s2",
+   "text": "This post would feature a carousel of images, recipes, and cooking demonstrations, highlighting Graza's premium quality and sustainability [P10].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.0,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.00 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.00 < 0.6",
+   "reviewer_reason": "The passage directly mentions that Graza rolled out beer cans of olive oil, which aligns with the statement that the post would feature a carousel of images, recipes, and cooking demonstrations, highlighting Graza's premium quality and sustainability.",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "Graza rolled out beer cans of olive oil, sending the new product to about 300 creators, said Kendall Dickieson, head of social and influencer marketing for Graza.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "7a75c84ccb8776e3e84affad4c2ea1d24afcac12603a9c420367ea917ae104f6",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-e427385417fc8898\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P10\",\n  \"evidence_quote\": \"Graza rolled out beer cans of olive oil, sending the new product to about 300 creators, said Kendall Dickieson, head of social and influencer marketing for Graza.\",\n  \"reason\": \"The passage directly mentions that Graza rolled out beer cans of olive oil, which aligns with the statement that the post would feature a carousel of images, recipes, and cooking demonstrations, highlighting Graza's premium quality and sustainability.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 691,
+       "completion_tokens": 149,
+       "total_tokens": 840,
+       "prompt_tokens_details": {
+        "cached_tokens": 160
+       }
+      },
+      "latency_s": 17.0,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "39127f98302a1dbfd0889f3483b6a3b472290317ff5f2d643e8006b7aa2816b7",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-d82ba1957b649954",
+   "location": "email_body#s3",
+   "text": "This collaboration would align with Graza's current marketing strategy of using user-generated content and influencer marketing [P10].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.2,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.20 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.20 < 0.6",
+   "reviewer_reason": "The evidence passage P10 directly supports the statement by mentioning that Graza rolled out beer cans of olive oil, which aligns with the strategy of using user-generated content and influencer marketing.",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "Graza rolled out beer cans of olive oil, sending the new product to about 300 creators, said Kendall Dickieson, head of social and influencer marketing for Graza.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "612aa79da62f7ca91c2c65687c9276bfa838ed79246a19561d8a25c81ef38f78",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-d82ba1957b649954\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P10\",\n  \"evidence_quote\": \"Graza rolled out beer cans of olive oil, sending the new product to about 300 creators, said Kendall Dickieson, head of social and influencer marketing for Graza.\",\n  \"reason\": \"The evidence passage P10 directly supports the statement by mentioning that Graza rolled out beer cans of olive oil, which aligns with the strategy of using user-generated content and influencer marketing.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 653,
+       "completion_tokens": 142,
+       "total_tokens": 795,
+       "prompt_tokens_details": {
+        "cached_tokens": 159
+       }
+      },
+      "latency_s": 14.276,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "b69de94a2a698900e88f3d9e19baf282182c3fa987467b55e26416574106b5c3",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-55cd9e3f30c2bd04",
+   "location": "claims[0].statement",
+   "text": "Graza is a premium olive oil brand that has successfully leveraged influencer marketing and user-generated content to drive growth {P10}.",
+   "duplicate_of": "R-e9807bc166d78e2c",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-7aeef8484e3d80da",
+   "location": "claims[1].statement",
+   "text": "Graza has a clear marketing strategy built around user-generated content and influencer marketing {P10}.",
+   "duplicate_of": "R-7ea58a19abaa5599",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-7aeef8484e3d80da",
+   "location": "claims[2].statement",
+   "text": "Graza has a clear marketing strategy built around user-generated content and influencer marketing {P10}.",
+   "duplicate_of": "R-7ea58a19abaa5599",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-7aeef8484e3d80da",
+   "location": "claims[3].statement",
+   "text": "Graza has a clear marketing strategy built around user-generated content and influencer marketing {P10}.",
+   "duplicate_of": "R-7ea58a19abaa5599",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-7aeef8484e3d80da",
+   "location": "claims[4].statement",
+   "text": "Graza has a clear marketing strategy built around user-generated content and influencer marketing {P10}.",
+   "duplicate_of": "R-7ea58a19abaa5599",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-7aeef8484e3d80da",
+   "location": "claims[5].statement",
+   "text": "Graza has a clear marketing strategy built around user-generated content and influencer marketing {P10}.",
+   "duplicate_of": "R-7ea58a19abaa5599",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-7aeef8484e3d80da",
+   "location": "claims[6].statement",
+   "text": "Graza has a clear marketing strategy built around user-generated content and influencer marketing {P10}.",
+   "duplicate_of": "R-7ea58a19abaa5599",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-7aeef8484e3d80da",
+   "location": "claims[7].statement",
+   "text": "Graza has a clear marketing strategy built around user-generated content and influencer marketing {P10}.",
+   "duplicate_of": "R-7ea58a19abaa5599",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-7aeef8484e3d80da",
+   "location": "claims[8].statement",
+   "text": "Graza has a clear marketing strategy built around user-generated content and influencer marketing {P10}.",
+   "duplicate_of": "R-7ea58a19abaa5599",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-7aeef8484e3d80da",
+   "location": "claims[9].statement",
+   "text": "Graza has a clear marketing strategy built around user-generated content and influencer marketing {P10}.",
+   "duplicate_of": "R-7ea58a19abaa5599",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-7aeef8484e3d80da",
+   "location": "claims[10].statement",
+   "text": "Graza has a clear marketing strategy built around user-generated content and influencer marketing {P10}.",
+   "duplicate_of": "R-7ea58a19abaa5599",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-7aeef8484e3d80da",
+   "location": "claims[11].statement",
+   "text": "Graza has a clear marketing strategy built around user-generated content and influencer marketing {P10}.",
+   "duplicate_of": "R-7ea58a19abaa5599",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-7aeef8484e3d80da",
+   "location": "claims[12].statement",
+   "text": "Graza has a clear marketing strategy built around user-generated content and influencer marketing {P10}.",
+   "duplicate_of": "R-7ea58a19abaa5599",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-7aeef8484e3d80da",
+   "location": "claims[13].statement",
+   "text": "Graza has a clear marketing strategy built around user-generated content and influencer marketing {P10}.",
+   "duplicate_of": "R-7ea58a19abaa5599",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-7aeef8484e3d80da",
+   "location": "claims[14].statement",
+   "text": "Graza has a clear marketing strategy built around user-generated content and influencer marketing {P10}.",
+   "duplicate_of": "R-7ea58a19abaa5599",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-7aeef8484e3d80da",
+   "location": "claims[15].statement",
+   "text": "Graza has a clear marketing strategy built around user-generated content and influencer marketing {P10}.",
+   "duplicate_of": "R-7ea58a19abaa5599",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-7aeef8484e3d80da",
+   "location": "claims[16].statement",
+   "text": "Graza has a clear marketing strategy built around user-generated content and influencer marketing {P10}.",
+   "duplicate_of": "R-7ea58a19abaa5599",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-7aeef8484e3d80da",
+   "location": "claims[17].statement",
+   "text": "Graza has a clear marketing strategy built around user-generated content and influencer marketing {P10}.",
+   "duplicate_of": "R-7ea58a19abaa5599",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-7aeef8484e3d80da",
+   "location": "claims[18].statement",
+   "text": "Graza has a clear marketing strategy built around user-generated content and influencer marketing {P10}.",
+   "duplicate_of": "R-7ea58a19abaa5599",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-7aeef8484e3d80da",
+   "location": "claims[19].statement",
+   "text": "Graza has a clear marketing strategy built around user-generated content and influencer marketing {P10}.",
+   "duplicate_of": "R-7ea58a19abaa5599",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-7aeef8484e3d80da",
+   "location": "claims[20].statement",
+   "text": "Graza has a clear marketing strategy built around user-generated content and influencer marketing {P10}.",
+   "duplicate_of": "R-7ea58a19abaa5599",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-7aeef8484e3d80da",
+   "location": "claims[21].statement",
+   "text": "Graza has a clear marketing strategy built around user-generated content and influencer marketing {P10}.",
+   "duplicate_of": "R-7ea58a19abaa5599",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-7aeef8484e3d80da",
+   "location": "claims[22].statement",
+   "text": "Graza has a clear marketing strategy built around user-generated content and influencer marketing {P10}.",
+   "duplicate_of": "R-7ea58a19abaa5599",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-7aeef8484e3d80da",
+   "location": "claims[23].statement",
+   "text": "Graza has a clear marketing strategy built around user-generated content and influencer marketing {P10}.",
+   "duplicate_of": "R-7ea58a19abaa5599",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-7aeef8484e3d80da",
+   "location": "claims[24].statement",
+   "text": "Graza has a clear marketing strategy built around user-generated content and influencer marketing {P10}.",
+   "duplicate_of": "R-7ea58a19abaa5599",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-7aeef8484e3d80da",
+   "location": "claims[25].statement",
+   "text": "Graza has a clear marketing strategy built around user-generated content and influencer marketing {P10}.",
+   "duplicate_of": "R-7ea58a19abaa5599",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-7aeef8484e3d80da",
+   "location": "claims[26].statement",
+   "text": "Graza has a clear marketing strategy built around user-generated content and influencer marketing {P10}.",
+   "duplicate_of": "R-7ea58a19abaa5599",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-7aeef8484e3d80da",
+   "location": "claims[27].statement",
+   "text": "Graza has a clear marketing strategy built around user-generated content and influencer marketing {P10}.",
+   "duplicate_of": "R-7ea58a19abaa5599",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-7aeef8484e3d80da",
+   "location": "claims[28].statement",
+   "text": "Graza has a clear marketing strategy built around user-generated content and influencer marketing {P10}.",
+   "duplicate_of": "R-7ea58a19abaa5599",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-7aeef8484e3d80da",
+   "location": "claims[29].statement",
+   "text": "Graza has a clear marketing strategy built around user-generated content and influencer marketing {P10}.",
+   "duplicate_of": "R-7ea58a19abaa5599",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-7aeef8484e3d80da",
+   "location": "claims[30].statement",
+   "text": "Graza has a clear marketing strategy built around user-generated content and influencer marketing {P10}.",
+   "duplicate_of": "R-7ea58a19abaa5599",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-7aeef8484e3d80da",
+   "location": "claims[31].statement",
+   "text": "Graza has a clear marketing strategy built around user-generated content and influencer marketing {P10}.",
+   "duplicate_of": "R-7ea58a19abaa5599",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-7aeef8484e3d80da",
+   "location": "claims[32].statement",
+   "text": "Graza has a clear marketing strategy built around user-generated content and influencer marketing {P10}.",
+   "duplicate_of": "R-7ea58a19abaa5599",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-7aeef8484e3d80da",
+   "location": "claims[33].statement",
+   "text": "Graza has a clear marketing strategy built around user-generated content and influencer marketing {P10}.",
+   "duplicate_of": "R-7ea58a19abaa5599",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-7aeef8484e3d80da",
+   "location": "claims[34].statement",
+   "text": "Graza has a clear marketing strategy built around user-generated content and influencer marketing {P10}.",
+   "duplicate_of": "R-7ea58a19abaa5599",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-7aeef8484e3d80da",
+   "location": "claims[35].statement",
+   "text": "Graza has a clear marketing strategy built around user-generated content and influencer marketing {P10}.",
+   "duplicate_of": "R-7ea58a19abaa5599",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P10"
+   ]
+  }
+ ],
+ "skipped_sentences": {
+  "proposal": [
+   {
+    "location": "email_body#s4",
+    "text": "If you're interested, we'd be happy to share a draft."
+   }
+  ],
+  "non_assertion": [
+   {
+    "location": "email_body#s0",
+    "text": "Dear Graza Marketing Team,"
+   },
+   {
+    "location": "email_body#s5",
+    "text": "Best regards,"
+   },
+   {
+    "location": "email_body#s6",
+    "text": "[Your Name]"
+   }
+  ]
+ },
+ "unknown_issues": [],
+ "outreach": {
+  "recipient": "correct",
+  "sender": "correct",
+  "instagram_mentioned": true,
+  "other_platforms_in_pitch": [],
+  "instagram_compliant": true,
+  "promises": [],
+  "email_subject": "Collaboration Opportunity: Feature Graza's Drizzle and Sizzle in a new Instagram carousel post, showcasing how it's used in creative ways [P10]."
+ },
+ "failures": [
+  {
+   "check": "structure",
+   "detail": [
+    "truncated_output: Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 1 column 12656 (char 12655)"
+   ]
+  },
+  {
+   "check": "duplicate_claims",
+   "detail": [
+    [],
+    34
+   ]
+  },
+  {
+   "check": "repetition",
+   "detail": [
+    71
+   ]
+  },
+  {
+   "check": "claim_quotes",
+   "detail": [
+    {
+     "claim_id": "C1",
+     "self_quote": true,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C2",
+     "self_quote": true,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C3",
+     "self_quote": true,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C4",
+     "self_quote": true,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C5",
+     "self_quote": true,
+     "other_passage": []
+    }
+   ]
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-e9807bc166d78e2c",
+   "location": "brand_summary#s0",
+   "text": "Graza is a premium olive oil brand that has successfully leveraged influencer marketing and user-generated content to drive growth [P10].",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.33 < 0.6",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "Graza has popularized squeeze bottles filled with olive oil that appear in seemingly every food influencer's social videos."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-c382f06282b6fdac",
+   "location": "likely_target_audience#s0",
+   "text": "Graza's target audience includes Instagram and TikTok content creators, as well as consumers interested in high-quality olive oils and sustainable products [P10].",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.20 < 0.6",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "Graza rolled out beer cans of olive oil, sending the new product to about 300 creators, said Kendall Dickieson, head of social and influencer marketing for Graza."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-a994905ad7c57144",
+   "location": "current_marketing_strategy[0]#s0",
+   "text": "Graza has a clear Instagram and TikTok strategy, including influencer collaborations and user-generated content campaigns [P10].",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.10 < 0.6",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "Graza rolled out beer cans of olive oil, sending the new product to about 300 creators, said Kendall Dickieson, head of social and influencer marketing for Graza."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-7ea58a19abaa5599",
+   "location": "current_marketing_strategy[1]#s0",
+   "text": "Graza has a clear marketing strategy built around user-generated content and influencer marketing [P10].",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.22 < 0.6",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "Graza rolled out beer cans of olive oil, sending the new product to about 300 creators, said Kendall Dickieson, head of social and influencer marketing for Graza."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-bd37de4c701a037c",
+   "location": "collaboration_opportunities[0]#s0",
+   "text": "Collaborate on a new Instagram post that showcases the use of Graza in creative ways, such as a recipe or a cooking demonstration [P10].",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.29 < 0.6",
+   "evidence_passage_id": "P4",
+   "evidence_quote": "4. Use social as a scalable distribution engine Before launch, they skipped the influencer deals, the creative briefs, and the polished brand assets. Instead, they DM’d food creators, sent them the product, and let the bottle do the work. No scripting. No contracts. Just: “here’s something useful, show us how you actually use it”. It worked. The product landed in kitchens that already had an audience and because it looked different, it stood out. Graza ran with it. Their Instagram and TikTok feeds became pure UGC:"
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-a4958de491a27b31",
+   "location": "instagram_post_idea.hook#s0",
+   "text": "A carousel post featuring Graza's Drizzle and Sizzle in creative ways, such as a recipe or a cooking demonstration [P10].",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.00 < 0.6",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "Graza rolled out beer cans of olive oil, sending the new product to about 300 creators, said Kendall Dickieson, head of social and influencer marketing for Graza."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-b2c0b1460a572208",
+   "location": "instagram_post_idea.concept#s0",
+   "text": "A carousel post that showcases Graza's Drizzle and Sizzle in creative ways, such as a recipe or a cooking demonstration [P10].",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.00 < 0.6",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "On May 9, Graza rolled out beer cans of olive oil, sending the new product to about 300 creators, said Kendall Dickieson, head of social and influencer marketing for Graza."
+  },
+  {
+   "check": "citation_mapping",
+   "review_id": "R-898228be4de37a22",
+   "location": "instagram_post_idea.why_it_fits#s0",
+   "text": "Graza's visual system for scroll, not just shelf presence Graza understood where brand discovery actually happens: in feeds, not aisles [P7].",
+   "citation_status": "miscited_supported_elsewhere",
+   "evidence_passage_id": "P6"
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-258c8a607af55579",
+   "location": "email_subject#s0",
+   "text": "Collaboration Opportunity: Feature Graza's Drizzle and Sizzle in a new Instagram carousel post, showcasing how it's used in creative ways [P10].",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.33 < 0.6",
+   "evidence_passage_id": "P8",
+   "evidence_quote": "Strategic Product Roadmap & Innovation They began with two core oils (“Drizzle” finishing oil, “Sizzle” cooking oil), then introduced refill beer-cans (for sustainability and novelty) and more formats (sprays, jugs) to meet different use cases. 5. Retail Expansion Balanced with DTC Graza started Direct-to-Consumer (DTC) but also made sure to get into grocers like Whole Foods, Target, etc. For new product launches (like the cans), they used creator outreach + social education + email to prepare demand before actual store rollout. 6. Selective Paid Marketing & Budget Discipline Even as growth took off, Graza kept paid ad spend modest."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-b413b3e5e032324f",
+   "location": "email_body#s1",
+   "text": "We propose collaborating on a new Instagram carousel post that showcases Graza's Drizzle and Sizzle in creative ways [P10].",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.00 < 0.6",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "Graza rolled out beer cans of olive oil, sending the new product to about 300 creators, said Kendall Dickieson, head of social and influencer marketing for Graza."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-e427385417fc8898",
+   "location": "email_body#s2",
+   "text": "This post would feature a carousel of images, recipes, and cooking demonstrations, highlighting Graza's premium quality and sustainability [P10].",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.00 < 0.6",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "Graza rolled out beer cans of olive oil, sending the new product to about 300 creators, said Kendall Dickieson, head of social and influencer marketing for Graza."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-d82ba1957b649954",
+   "location": "email_body#s3",
+   "text": "This collaboration would align with Graza's current marketing strategy of using user-generated content and influencer marketing [P10].",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.20 < 0.6",
+   "evidence_passage_id": "P10",
+   "evidence_quote": "Graza rolled out beer cans of olive oil, sending the new product to about 300 creators, said Kendall Dickieson, head of social and influencer marketing for Graza."
+  }
+ ],
+ "unresolved": [],
+ "passes": false,
+ "failure_signature": "95fafa766ba9f2f2e7674542a51ad9affeabec8f7e7f6ac9a9cf1570f4165041",
+ "review_wall_s": 182.876,
+ "attempt": {
+  "index": 0,
+  "kind": "initial"
+ }
+}

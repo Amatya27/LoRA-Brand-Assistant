@@ -1,0 +1,106 @@
+{
+ "case_id": "bones-coffee/base",
+ "company_id": "bones-coffee",
+ "arm": "base",
+ "packet_path": "outputs/phase3_v5/handoff_6efa346/data/v3_pilot/packets/bones-coffee.json",
+ "packet_sha256": "9c87dae136c352cbc5e29fba931e88653093c9a8e730a0fa7cd2e816bb148814",
+ "prompt_version": "brandpilot.prompt.v3.3",
+ "prompt_sha256": "eae026c88cca6dfc0911515702f05ca0d1911db1ec801c00f2ca3b4a1b2caf55",
+ "max_repairs": 2,
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "dir": "phase4_v5_results/runs/bones-coffee/base/attempt-00",
+   "prompt_sha256": "eae026c88cca6dfc0911515702f05ca0d1911db1ec801c00f2ca3b4a1b2caf55",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "stop",
+   "usage": {
+    "prompt_tokens": 1857,
+    "completion_tokens": 1880,
+    "total_tokens": 3737,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 61.761,
+   "runtime_verified": true,
+   "raw_sha256": "0fdc228df0934ea3f7ccb2a7296b8ab634da066f896bef3a07c573c0fd87eb9b",
+   "reused_from": "outputs/phase3_v5/runs/20261123T034244511275Z-bones-coffee-fixed-generation-59371d",
+   "passes": false,
+   "strict_ok": false,
+   "model_abstained": false,
+   "failure_count": 8,
+   "unresolved_count": 0,
+   "failure_signature": "7bdfd2b7ae2bd55c8d159adab29dbc3043922ca53f8770538e90ade608ceb633",
+   "review_wall_s": 47.772,
+   "truncated": true,
+   "looping": false
+  },
+  {
+   "index": 1,
+   "kind": "regenerate_bounded",
+   "dir": "phase4_v5_results/runs/bones-coffee/base/attempt-01",
+   "prompt_sha256": "34933760a0aa01b5eddc977c10b5a11b80c4f14243bba4db33c93452f4faf107",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "stop",
+   "usage": {
+    "prompt_tokens": 1972,
+    "completion_tokens": 271,
+    "total_tokens": 2243,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 7.345,
+   "runtime_verified": true,
+   "raw_sha256": "20527c6c3cfa24cbd818b429c5bb589ab7a202ca78c095d03879602780486c58",
+   "reused_from": null,
+   "passes": false,
+   "strict_ok": true,
+   "model_abstained": false,
+   "truncated": false,
+   "looping": false,
+   "failure_count": 8,
+   "unresolved_count": 0,
+   "failure_signature": "28919b1c3c01776b8018b0ae271b6e120fe1e55d0abfa8f70140d6d0f1bd515b",
+   "review_wall_s": 0.002
+  },
+  {
+   "index": 2,
+   "kind": "targeted_fix",
+   "dir": "phase4_v5_results/runs/bones-coffee/base/attempt-02",
+   "prompt_sha256": "af48f7a3e5eab72a5834ca77fb3239c6dc7ac7f6910ee1131446b61666113b1e",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "stop",
+   "usage": {
+    "prompt_tokens": 2157,
+    "completion_tokens": 1496,
+    "total_tokens": 3653,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 42.416,
+   "runtime_verified": true,
+   "raw_sha256": "311ca1cc937d033d964df0dcfe911c2df54634834f9cc4ae90c718d2cbb44aaf",
+   "reused_from": null,
+   "passes": false,
+   "strict_ok": false,
+   "model_abstained": false,
+   "truncated": false,
+   "looping": false,
+   "failure_count": 5,
+   "unresolved_count": 0,
+   "failure_signature": "29147fe7d32a2098e3923b76a66dbb7a2cbc7ec9198fcdcb1eaed27c52f7cd2b",
+   "review_wall_s": 0.003
+  }
+ ],
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "repair budget exhausted (2)",
+ "stop_code": "withheld_budget_exhausted",
+ "eligibility": "eligible"
+}

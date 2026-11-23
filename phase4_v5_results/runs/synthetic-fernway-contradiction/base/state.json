@@ -1,0 +1,76 @@
+{
+ "case_id": "synthetic-fernway-contradiction/base",
+ "company_id": "synthetic-fernway-contradiction",
+ "arm": "base",
+ "packet_path": "outputs/phase3_v5/packets/synthetic_fernway_contradiction.json",
+ "packet_sha256": "a0ac4c41ff64bd99d2980297a6f2c3f8a1825b325a5b068795ea62c72d84ee83",
+ "prompt_version": "brandpilot.prompt.v3.3",
+ "prompt_sha256": "d9825b433a68413e5d28c89caeb79a9b113b7d13a08c6bbc8f149cbba36f3689",
+ "max_repairs": 2,
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "dir": "phase4_v5_results/runs/synthetic-fernway-contradiction/base/attempt-00",
+   "prompt_sha256": "d9825b433a68413e5d28c89caeb79a9b113b7d13a08c6bbc8f149cbba36f3689",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "length",
+   "usage": {
+    "prompt_tokens": 1550,
+    "completion_tokens": 3072,
+    "total_tokens": 4622,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 74.851,
+   "runtime_verified": true,
+   "raw_sha256": "3015ebbe6570692eec4490de3856f2b9c9b51ca4461783e05d9eedc129eff43e",
+   "reused_from": "outputs/phase3_v5/runs/20261123T035406032039Z-fernway-fixed-generation-a12f7b",
+   "passes": false,
+   "strict_ok": false,
+   "model_abstained": false,
+   "failure_count": 11,
+   "unresolved_count": 0,
+   "failure_signature": "a683b29e06da48eacd3384e6210c9c392cd45d391c7d6f81f6d49b226ae9caf9",
+   "review_wall_s": 82.854,
+   "truncated": true,
+   "looping": true
+  },
+  {
+   "index": 1,
+   "kind": "regenerate_bounded",
+   "dir": "phase4_v5_results/runs/synthetic-fernway-contradiction/base/attempt-01",
+   "prompt_sha256": "7d579f584bd41e0327cf3e4a459d8b7b1bf1296fd6646990d7dffd9588ac5520",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "stop",
+   "usage": {
+    "prompt_tokens": 1668,
+    "completion_tokens": 2332,
+    "total_tokens": 4000,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 54.896,
+   "runtime_verified": true,
+   "raw_sha256": "9324a2c26fd1c8d5db78a5c8fcf602797405d80acbfaf214291abd5714810293",
+   "reused_from": null,
+   "passes": false,
+   "strict_ok": false,
+   "model_abstained": false,
+   "truncated": true,
+   "looping": true,
+   "failure_count": 6,
+   "unresolved_count": 0,
+   "failure_signature": "f7bcc7993ff61f6468cff2eb65d377c1b523e7cdd14042e1abca051b2089f5eb",
+   "review_wall_s": 0.003
+  }
+ ],
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "no progress: the repair repeated the same truncation failure",
+ "stop_code": "withheld_no_progress",
+ "eligibility": "eligible"
+}

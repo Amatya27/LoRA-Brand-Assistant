@@ -1,0 +1,17 @@
+{
+ "ok": true,
+ "finish_reason": "length",
+ "usage": {
+  "prompt_tokens": 1550,
+  "completion_tokens": 3072,
+  "total_tokens": 4622,
+  "prompt_tokens_details": {
+   "cached_tokens": 0
+  }
+ },
+ "latency_s": 112.427,
+ "error": null,
+ "runtime_verified": true,
+ "reused_from": "outputs/phase3_v5/runs/20261123T035521310900Z-fernway-adapter-generation-fe3454",
+ "phase3_bundle_sha256": "9b05064a78d8efa97ba9221d719a6abff054fe57f910eec6b62e18364b48b8e1"
+}

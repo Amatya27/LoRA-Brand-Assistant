@@ -1,0 +1,76 @@
+{
+ "case_id": "stumptown-coffee/v5",
+ "company_id": "stumptown-coffee",
+ "arm": "v5",
+ "packet_path": "outputs/phase3_v5/handoff_6efa346/data/v3_pilot/packets/stumptown-coffee.json",
+ "packet_sha256": "546ce43823e5e75d054f71f5ab29323f092a352f38b07d41bc95a8b64116acf6",
+ "prompt_version": "brandpilot.prompt.v3.3",
+ "prompt_sha256": "a5e53720ebdf975c6d0a45abc86f2dd4e0be8ecaf21a6b4a1f009ff701e008b7",
+ "max_repairs": 2,
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "dir": "phase4_v5_results/runs/stumptown-coffee/v5/attempt-00",
+   "prompt_sha256": "a5e53720ebdf975c6d0a45abc86f2dd4e0be8ecaf21a6b4a1f009ff701e008b7",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "length",
+   "usage": {
+    "prompt_tokens": 2541,
+    "completion_tokens": 3072,
+    "total_tokens": 5613,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 72.858,
+   "runtime_verified": true,
+   "raw_sha256": "dbf08d30c52cec52237a860fb861d8dcfbdf324db1753b9caca80db181610118",
+   "reused_from": null,
+   "passes": false,
+   "strict_ok": false,
+   "model_abstained": false,
+   "failure_count": 6,
+   "unresolved_count": 1,
+   "failure_signature": "cb20551d73665c1d44b0fba52b30e10f5d8f418addd10dab130053f9281059cb",
+   "review_wall_s": 94.193,
+   "truncated": true,
+   "looping": true
+  },
+  {
+   "index": 1,
+   "kind": "regenerate_bounded",
+   "dir": "phase4_v5_results/runs/stumptown-coffee/v5/attempt-01",
+   "prompt_sha256": "fb0f3cf57a4612d8088812f4dd4f294ca34b5ca9b332ac41b0366922a4a2b325",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "length",
+   "usage": {
+    "prompt_tokens": 2659,
+    "completion_tokens": 3072,
+    "total_tokens": 5731,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 79.425,
+   "runtime_verified": true,
+   "raw_sha256": "86b55183c80be79b9ec75b34c3ace2c79f240b5f8f68d92f342cc1a41abde21a",
+   "reused_from": null,
+   "passes": false,
+   "strict_ok": false,
+   "model_abstained": false,
+   "truncated": true,
+   "looping": true,
+   "failure_count": 4,
+   "unresolved_count": 0,
+   "failure_signature": "67e0addb7b5cd326e60a7bb350c88d6a1b0b76226616a462b6719d34635828b7",
+   "review_wall_s": 0.001
+  }
+ ],
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "no progress: the repair repeated the same truncation failure",
+ "stop_code": "withheld_no_progress",
+ "eligibility": "eligible"
+}

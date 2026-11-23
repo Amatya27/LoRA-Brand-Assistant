@@ -1,0 +1,1106 @@
+{
+ "checks_version": "phase4-v5-checks-2",
+ "structure": {
+  "strict_json": false,
+  "truncated": true,
+  "parse_error": {
+   "error_type": "truncated_output",
+   "truncated": true,
+   "finish_reason": "length",
+   "unbalanced_braces": true,
+   "message": "Outermost JSON object is malformed or incomplete: Expecting ',' delimiter: line 1 column 795 (char 794)"
+  },
+  "schema_errors": [
+   "truncated_output: Outermost JSON object is malformed or incomplete: Expecting ',' delimiter: line 1 column 795 (char 794)"
+  ],
+  "parse_mode": "diagnostic_prefix",
+  "prompt_schema_valid": false,
+  "training_schema_valid": false,
+  "raw_format": {
+   "starts_with_brace": true,
+   "code_fenced": false,
+   "text_outside_json": null
+  }
+ },
+ "decision": null,
+ "repetition": {
+  "method": "exact match after whitespace/quote/case normalisation; no semantic similarity",
+  "claim_count": 33,
+  "duplicate_claim_ids": [],
+  "duplicate_claim_statements": 27,
+  "distinct_claim_statements": 6,
+  "duplicate_claim_quotes": 28,
+  "repeated_prose_sentences": {},
+  "max_8gram_repeats_in_raw": 54,
+  "looping": true
+ },
+ "citation_mechanics": {
+  "inline_passage_refs": [],
+  "unknown_refs": [],
+  "claim_quotes": [
+   {
+    "index": 0,
+    "claim_id": "C1",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": true,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 1,
+    "claim_id": "C2",
+    "passage_ids": [
+     "P2"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [
+     "P1"
+    ],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 2,
+    "claim_id": "C3",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 3,
+    "claim_id": "C4",
+    "passage_ids": [
+     "P4"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 4,
+    "claim_id": "C5",
+    "passage_ids": [
+     "P5"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 5,
+    "claim_id": "C6",
+    "passage_ids": [
+     "P6"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 6,
+    "claim_id": "C7",
+    "passage_ids": [
+     "P5"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 7,
+    "claim_id": "C8",
+    "passage_ids": [
+     "P6"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 8,
+    "claim_id": "C9",
+    "passage_ids": [
+     "P5"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 9,
+    "claim_id": "C10",
+    "passage_ids": [
+     "P5"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 10,
+    "claim_id": "C11",
+    "passage_ids": [
+     "P5"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 11,
+    "claim_id": "C12",
+    "passage_ids": [
+     "P5"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 12,
+    "claim_id": "C13",
+    "passage_ids": [
+     "P5"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 13,
+    "claim_id": "C14",
+    "passage_ids": [
+     "P5"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 14,
+    "claim_id": "C15",
+    "passage_ids": [
+     "P5"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 15,
+    "claim_id": "C16",
+    "passage_ids": [
+     "P5"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 16,
+    "claim_id": "C17",
+    "passage_ids": [
+     "P5"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 17,
+    "claim_id": "C18",
+    "passage_ids": [
+     "P5"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 18,
+    "claim_id": "C19",
+    "passage_ids": [
+     "P5"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 19,
+    "claim_id": "C20",
+    "passage_ids": [
+     "P5"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 20,
+    "claim_id": "C21",
+    "passage_ids": [
+     "P5"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 21,
+    "claim_id": "C22",
+    "passage_ids": [
+     "P5"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 22,
+    "claim_id": "C23",
+    "passage_ids": [
+     "P5"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 23,
+    "claim_id": "C24",
+    "passage_ids": [
+     "P5"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 24,
+    "claim_id": "C25",
+    "passage_ids": [
+     "P5"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 25,
+    "claim_id": "C26",
+    "passage_ids": [
+     "P5"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 26,
+    "claim_id": "C27",
+    "passage_ids": [
+     "P5"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 27,
+    "claim_id": "C28",
+    "passage_ids": [
+     "P5"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 28,
+    "claim_id": "C29",
+    "passage_ids": [
+     "P5"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 29,
+    "claim_id": "C30",
+    "passage_ids": [
+     "P5"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 30,
+    "claim_id": "C31",
+    "passage_ids": [
+     "P5"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 31,
+    "claim_id": "C32",
+    "passage_ids": [
+     "P5"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 32,
+    "claim_id": "C33",
+    "passage_ids": [
+     "P5"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   }
+  ]
+ },
+ "assertions": [
+  {
+   "review_id": "R-5c166337a66eaccb",
+   "location": "claims[0].statement",
+   "text": "Tonal creates personalized strength training systems {C1}.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-df2b8300fef7758c",
+   "location": "claims[1].statement",
+   "text": "Derek spent 16 years building A. O. Smith's consumer water treatment business {C2}.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P2"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-19aff8189a15f33a",
+   "location": "claims[2].statement",
+   "text": "Derek went on to lead sales and marketing for 14 brands — including Aquasana, A. O. Smith, and WaterBoss across DTC, retail, Amazon, distributor, wholesale, and dealer networks {C3}.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-b300369e48d50ff9",
+   "location": "claims[3].statement",
+   "text": "Derek began his career in consulting {C4}.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P4"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-6561f3befda71c40",
+   "location": "claims[4].statement",
+   "text": "Derek held a BS from Vanderbilt University and an MBA from the University of Michigan’s Stephen M. Ross School of Business {C5}.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P5"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-284d30ec54096bb6",
+   "location": "claims[5].statement",
+   "text": "Derek began his career in consulting {C6}.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P6"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-6a851acf2427966a",
+   "location": "claims[6].statement",
+   "text": "Derek holds a BS from Vanderbilt University and an MBA from the University of Michigan’s Stephen M. Ross School of Business {C7}.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P5"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-284d30ec54096bb6",
+   "location": "claims[7].statement",
+   "text": "Derek began his career in consulting {C8}.",
+   "duplicate_of": "R-284d30ec54096bb6",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P6"
+   ]
+  },
+  {
+   "review_id": "R-6a851acf2427966a",
+   "location": "claims[8].statement",
+   "text": "Derek holds a BS from Vanderbilt University and an MBA from the University of Michigan’s Stephen M. Ross School of Business {C9}.",
+   "duplicate_of": "R-6a851acf2427966a",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P5"
+   ]
+  },
+  {
+   "review_id": "R-6a851acf2427966a",
+   "location": "claims[9].statement",
+   "text": "Derek holds a BS from Vanderbilt University and an MBA from the University of Michigan’s Stephen M. Ross School of Business {C10}.",
+   "duplicate_of": "R-6a851acf2427966a",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P5"
+   ]
+  },
+  {
+   "review_id": "R-6a851acf2427966a",
+   "location": "claims[10].statement",
+   "text": "Derek holds a BS from Vanderbilt University and an MBA from the University of Michigan’s Stephen M. Ross School of Business {C11}.",
+   "duplicate_of": "R-6a851acf2427966a",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P5"
+   ]
+  },
+  {
+   "review_id": "R-6a851acf2427966a",
+   "location": "claims[11].statement",
+   "text": "Derek holds a BS from Vanderbilt University and an MBA from the University of Michigan’s Stephen M. Ross School of Business {C12}.",
+   "duplicate_of": "R-6a851acf2427966a",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P5"
+   ]
+  },
+  {
+   "review_id": "R-6a851acf2427966a",
+   "location": "claims[12].statement",
+   "text": "Derek holds a BS from Vanderbilt University and an MBA from the University of Michigan’s Stephen M. Ross School of Business {C13}.",
+   "duplicate_of": "R-6a851acf2427966a",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P5"
+   ]
+  },
+  {
+   "review_id": "R-6a851acf2427966a",
+   "location": "claims[13].statement",
+   "text": "Derek holds a BS from Vanderbilt University and an MBA from the University of Michigan’s Stephen M. Ross School of Business {C14}.",
+   "duplicate_of": "R-6a851acf2427966a",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P5"
+   ]
+  },
+  {
+   "review_id": "R-6a851acf2427966a",
+   "location": "claims[14].statement",
+   "text": "Derek holds a BS from Vanderbilt University and an MBA from the University of Michigan’s Stephen M. Ross School of Business {C15}.",
+   "duplicate_of": "R-6a851acf2427966a",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P5"
+   ]
+  },
+  {
+   "review_id": "R-6a851acf2427966a",
+   "location": "claims[15].statement",
+   "text": "Derek holds a BS from Vanderbilt University and an MBA from the University of Michigan’s Stephen M. Ross School of Business {C16}.",
+   "duplicate_of": "R-6a851acf2427966a",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P5"
+   ]
+  },
+  {
+   "review_id": "R-6a851acf2427966a",
+   "location": "claims[16].statement",
+   "text": "Derek holds a BS from Vanderbilt University and an MBA from the University of Michigan’s Stephen M. Ross School of Business {C17}.",
+   "duplicate_of": "R-6a851acf2427966a",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P5"
+   ]
+  },
+  {
+   "review_id": "R-6a851acf2427966a",
+   "location": "claims[17].statement",
+   "text": "Derek holds a BS from Vanderbilt University and an MBA from the University of Michigan’s Stephen M. Ross School of Business {C18}.",
+   "duplicate_of": "R-6a851acf2427966a",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P5"
+   ]
+  },
+  {
+   "review_id": "R-6a851acf2427966a",
+   "location": "claims[18].statement",
+   "text": "Derek holds a BS from Vanderbilt University and an MBA from the University of Michigan’s Stephen M. Ross School of Business {C19}.",
+   "duplicate_of": "R-6a851acf2427966a",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P5"
+   ]
+  },
+  {
+   "review_id": "R-6a851acf2427966a",
+   "location": "claims[19].statement",
+   "text": "Derek holds a BS from Vanderbilt University and an MBA from the University of Michigan’s Stephen M. Ross School of Business {C20}.",
+   "duplicate_of": "R-6a851acf2427966a",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P5"
+   ]
+  },
+  {
+   "review_id": "R-6a851acf2427966a",
+   "location": "claims[20].statement",
+   "text": "Derek holds a BS from Vanderbilt University and an MBA from the University of Michigan’s Stephen M. Ross School of Business {C21}.",
+   "duplicate_of": "R-6a851acf2427966a",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P5"
+   ]
+  },
+  {
+   "review_id": "R-6a851acf2427966a",
+   "location": "claims[21].statement",
+   "text": "Derek holds a BS from Vanderbilt University and an MBA from the University of Michigan’s Stephen M. Ross School of Business {C22}.",
+   "duplicate_of": "R-6a851acf2427966a",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P5"
+   ]
+  },
+  {
+   "review_id": "R-6a851acf2427966a",
+   "location": "claims[22].statement",
+   "text": "Derek holds a BS from Vanderbilt University and an MBA from the University of Michigan’s Stephen M. Ross School of Business {C23}.",
+   "duplicate_of": "R-6a851acf2427966a",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P5"
+   ]
+  },
+  {
+   "review_id": "R-6a851acf2427966a",
+   "location": "claims[23].statement",
+   "text": "Derek holds a BS from Vanderbilt University and an MBA from the University of Michigan’s Stephen M. Ross School of Business {C24}.",
+   "duplicate_of": "R-6a851acf2427966a",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P5"
+   ]
+  },
+  {
+   "review_id": "R-6a851acf2427966a",
+   "location": "claims[24].statement",
+   "text": "Derek holds a BS from Vanderbilt University and an MBA from the University of Michigan’s Stephen M. Ross School of Business {C25}.",
+   "duplicate_of": "R-6a851acf2427966a",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P5"
+   ]
+  },
+  {
+   "review_id": "R-6a851acf2427966a",
+   "location": "claims[25].statement",
+   "text": "Derek holds a BS from Vanderbilt University and an MBA from the University of Michigan’s Stephen M. Ross School of Business {C26}.",
+   "duplicate_of": "R-6a851acf2427966a",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P5"
+   ]
+  },
+  {
+   "review_id": "R-6a851acf2427966a",
+   "location": "claims[26].statement",
+   "text": "Derek holds a BS from Vanderbilt University and an MBA from the University of Michigan’s Stephen M. Ross School of Business {C27}.",
+   "duplicate_of": "R-6a851acf2427966a",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P5"
+   ]
+  },
+  {
+   "review_id": "R-6a851acf2427966a",
+   "location": "claims[27].statement",
+   "text": "Derek holds a BS from Vanderbilt University and an MBA from the University of Michigan’s Stephen M. Ross School of Business {C28}.",
+   "duplicate_of": "R-6a851acf2427966a",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P5"
+   ]
+  },
+  {
+   "review_id": "R-6a851acf2427966a",
+   "location": "claims[28].statement",
+   "text": "Derek holds a BS from Vanderbilt University and an MBA from the University of Michigan’s Stephen M. Ross School of Business {C29}.",
+   "duplicate_of": "R-6a851acf2427966a",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P5"
+   ]
+  },
+  {
+   "review_id": "R-6a851acf2427966a",
+   "location": "claims[29].statement",
+   "text": "Derek holds a BS from Vanderbilt University and an MBA from the University of Michigan’s Stephen M. Ross School of Business {C30}.",
+   "duplicate_of": "R-6a851acf2427966a",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P5"
+   ]
+  },
+  {
+   "review_id": "R-6a851acf2427966a",
+   "location": "claims[30].statement",
+   "text": "Derek holds a BS from Vanderbilt University and an MBA from the University of Michigan’s Stephen M. Ross School of Business {C31}.",
+   "duplicate_of": "R-6a851acf2427966a",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P5"
+   ]
+  },
+  {
+   "review_id": "R-6a851acf2427966a",
+   "location": "claims[31].statement",
+   "text": "Derek holds a BS from Vanderbilt University and an MBA from the University of Michigan’s Stephen M. Ross School of Business {C32}.",
+   "duplicate_of": "R-6a851acf2427966a",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P5"
+   ]
+  },
+  {
+   "review_id": "R-6a851acf2427966a",
+   "location": "claims[32].statement",
+   "text": "Derek holds a BS from Vanderbilt University and an MBA from the University of Michigan’s Stephen M. Ross School of Business {C33}.",
+   "duplicate_of": "R-6a851acf2427966a",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P5"
+   ]
+  }
+ ],
+ "skipped_sentences": {
+  "proposal": [],
+  "non_assertion": []
+ },
+ "unknown_issues": [],
+ "outreach": {
+  "recipient": "no_email",
+  "sender": "no_email",
+  "instagram_mentioned": false,
+  "other_platforms_in_pitch": [],
+  "instagram_compliant": false,
+  "promises": [],
+  "email_subject": ""
+ },
+ "failures": [
+  {
+   "check": "structure",
+   "detail": [
+    "truncated_output: Outermost JSON object is malformed or incomplete: Expecting ',' delimiter: line 1 column 795 (char 794)"
+   ]
+  },
+  {
+   "check": "duplicate_claims",
+   "detail": [
+    [],
+    27
+   ]
+  },
+  {
+   "check": "repetition",
+   "detail": [
+    54
+   ]
+  },
+  {
+   "check": "claim_quotes",
+   "detail": [
+    {
+     "claim_id": "C2",
+     "self_quote": false,
+     "other_passage": [
+      "P1"
+     ]
+    },
+    {
+     "claim_id": "C3",
+     "self_quote": true,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C4",
+     "self_quote": true,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C5",
+     "self_quote": true,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C6",
+     "self_quote": true,
+     "other_passage": []
+    }
+   ]
+  },
+  {
+   "check": "sender_recipient",
+   "detail": [
+    "no_email",
+    "no_email"
+   ]
+  },
+  {
+   "check": "instagram",
+   "detail": []
+  }
+ ],
+ "unresolved": [],
+ "unreviewed": [
+  "R-5c166337a66eaccb",
+  "R-df2b8300fef7758c",
+  "R-19aff8189a15f33a",
+  "R-b300369e48d50ff9",
+  "R-6561f3befda71c40",
+  "R-284d30ec54096bb6",
+  "R-6a851acf2427966a"
+ ],
+ "review_scope": "structurally_valid_only",
+ "passes": false,
+ "failure_signature": "f7bcc7993ff61f6468cff2eb65d377c1b523e7cdd14042e1abca051b2089f5eb",
+ "review_wall_s": 0.01,
+ "attempt": {
+  "index": 1,
+  "kind": "regenerate_bounded"
+ }
+}

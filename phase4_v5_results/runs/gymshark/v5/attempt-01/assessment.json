@@ -1,0 +1,1790 @@
+{
+ "checks_version": "phase4-v5-checks-2",
+ "structure": {
+  "strict_json": false,
+  "truncated": true,
+  "parse_error": {
+   "error_type": "truncated_output",
+   "truncated": true,
+   "finish_reason": "length",
+   "unbalanced_braces": true,
+   "message": "Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 1 column 12520 (char 12519)"
+  },
+  "schema_errors": [
+   "truncated_output: Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 1 column 12520 (char 12519)"
+  ],
+  "parse_mode": "diagnostic_prefix",
+  "prompt_schema_valid": false,
+  "training_schema_valid": false,
+  "raw_format": {
+   "starts_with_brace": true,
+   "code_fenced": false,
+   "text_outside_json": null
+  }
+ },
+ "decision": null,
+ "repetition": {
+  "method": "exact match after whitespace/quote/case normalisation; no semantic similarity",
+  "claim_count": 32,
+  "duplicate_claim_ids": [],
+  "duplicate_claim_statements": 31,
+  "distinct_claim_statements": 1,
+  "duplicate_claim_quotes": 30,
+  "repeated_prose_sentences": {},
+  "max_8gram_repeats_in_raw": 33,
+  "looping": true
+ },
+ "citation_mechanics": {
+  "inline_passage_refs": [
+   "P1",
+   "P3",
+   "P3",
+   "P3",
+   "P3",
+   "P3"
+  ],
+  "unknown_refs": [],
+  "claim_quotes": [
+   {
+    "index": 0,
+    "claim_id": "C1",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 1,
+    "claim_id": "C2",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 2,
+    "claim_id": "C3",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 3,
+    "claim_id": "C4",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 4,
+    "claim_id": "C5",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 5,
+    "claim_id": "C6",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 6,
+    "claim_id": "C7",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 7,
+    "claim_id": "C8",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 8,
+    "claim_id": "C9",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 9,
+    "claim_id": "C10",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 10,
+    "claim_id": "C11",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 11,
+    "claim_id": "C12",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 12,
+    "claim_id": "C13",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 13,
+    "claim_id": "C14",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 14,
+    "claim_id": "C15",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 15,
+    "claim_id": "C16",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 16,
+    "claim_id": "C17",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 17,
+    "claim_id": "C18",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 18,
+    "claim_id": "C19",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 19,
+    "claim_id": "C20",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 20,
+    "claim_id": "C21",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 21,
+    "claim_id": "C22",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 22,
+    "claim_id": "C23",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 23,
+    "claim_id": "C24",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 24,
+    "claim_id": "C25",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 25,
+    "claim_id": "C26",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 26,
+    "claim_id": "C27",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 27,
+    "claim_id": "C28",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 28,
+    "claim_id": "C29",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 29,
+    "claim_id": "C30",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 30,
+    "claim_id": "C31",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 31,
+    "claim_id": "C32",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   }
+  ]
+ },
+ "assertions": [
+  {
+   "review_id": "R-c7bcf794179754ac",
+   "location": "brand_summary#s0",
+   "text": "Gymshark is a global fitness apparel and influencer marketing company that has built a massive following through its use of Instagram and TikTok [P1].",
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-cba26f99431c600e",
+   "location": "current_marketing_strategy[0]#s0",
+   "text": "P1",
+   "kind": "factual",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-ebf42b292b64f733",
+   "location": "current_marketing_strategy[1]#s0",
+   "text": "P3",
+   "kind": "factual",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-581654bd8ad7a7fd",
+   "location": "current_marketing_strategy[2]#s0",
+   "text": "P4",
+   "kind": "factual",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-a0653a81cf73ecda",
+   "location": "current_marketing_strategy[3]#s0",
+   "text": "P7",
+   "kind": "factual",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-ebf42b292b64f733",
+   "location": "collaboration_opportunities[0]#s0",
+   "text": "P3",
+   "duplicate_of": "R-ebf42b292b64f733",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-a0653a81cf73ecda",
+   "location": "collaboration_opportunities[1]#s0",
+   "text": "P7",
+   "duplicate_of": "R-a0653a81cf73ecda",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-0f7d049f9b049fef",
+   "location": "instagram_post_idea.concept#s0",
+   "text": "Influencer testimonials and workout routines",
+   "kind": "factual",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-dcca1c4c0ebfb367",
+   "location": "instagram_post_idea.why_it_fits#s0",
+   "text": "This builds on the previous influencer partnerships and creates a sense of community and authenticity [P3]",
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-6b4f517659dfe997",
+   "location": "email_body#s1",
+   "text": "We're reaching out to propose a collaboration that aligns with your current marketing strategy [P3].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P3"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-7a671fe2cc721713",
+   "location": "email_body#s2",
+   "text": "We believe that partnering with top-tier influencers would further amplify your brand's reach and engagement [P3].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P3"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-5dc2c66d75d3980d",
+   "location": "email_body#s3",
+   "text": "We propose a campaign that features influencer testimonials, workout routines, and behind-the-scenes content, building on your existing influencer partnerships [P3].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P3"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-6d2e8f2f745a651d",
+   "location": "email_body#s4",
+   "text": "This would be a great opportunity to showcase your community and drive engagement with your audience [P3].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P3"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-fa46b39075fc6344",
+   "location": "claims[0].statement",
+   "text": "Gymshark has a dedicated creator or athlete program {C1}.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-fa46b39075fc6344",
+   "location": "claims[1].statement",
+   "text": "Gymshark has a dedicated creator or athlete program {C2}.",
+   "duplicate_of": "R-fa46b39075fc6344",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-fa46b39075fc6344",
+   "location": "claims[2].statement",
+   "text": "Gymshark has a dedicated creator or athlete program {C3}.",
+   "duplicate_of": "R-fa46b39075fc6344",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-fa46b39075fc6344",
+   "location": "claims[3].statement",
+   "text": "Gymshark has a dedicated creator or athlete program {C4}.",
+   "duplicate_of": "R-fa46b39075fc6344",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-fa46b39075fc6344",
+   "location": "claims[4].statement",
+   "text": "Gymshark has a dedicated creator or athlete program {C5}.",
+   "duplicate_of": "R-fa46b39075fc6344",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-fa46b39075fc6344",
+   "location": "claims[5].statement",
+   "text": "Gymshark has a dedicated creator or athlete program {C6}.",
+   "duplicate_of": "R-fa46b39075fc6344",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-fa46b39075fc6344",
+   "location": "claims[6].statement",
+   "text": "Gymshark has a dedicated creator or athlete program {C7}.",
+   "duplicate_of": "R-fa46b39075fc6344",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-fa46b39075fc6344",
+   "location": "claims[7].statement",
+   "text": "Gymshark has a dedicated creator or athlete program {C8}.",
+   "duplicate_of": "R-fa46b39075fc6344",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-fa46b39075fc6344",
+   "location": "claims[8].statement",
+   "text": "Gymshark has a dedicated creator or athlete program {C9}.",
+   "duplicate_of": "R-fa46b39075fc6344",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-fa46b39075fc6344",
+   "location": "claims[9].statement",
+   "text": "Gymshark has a dedicated creator or athlete program {C10}.",
+   "duplicate_of": "R-fa46b39075fc6344",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-fa46b39075fc6344",
+   "location": "claims[10].statement",
+   "text": "Gymshark has a dedicated creator or athlete program {C11}.",
+   "duplicate_of": "R-fa46b39075fc6344",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-fa46b39075fc6344",
+   "location": "claims[11].statement",
+   "text": "Gymshark has a dedicated creator or athlete program {C12}.",
+   "duplicate_of": "R-fa46b39075fc6344",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-fa46b39075fc6344",
+   "location": "claims[12].statement",
+   "text": "Gymshark has a dedicated creator or athlete program {C13}.",
+   "duplicate_of": "R-fa46b39075fc6344",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-fa46b39075fc6344",
+   "location": "claims[13].statement",
+   "text": "Gymshark has a dedicated creator or athlete program {C14}.",
+   "duplicate_of": "R-fa46b39075fc6344",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-fa46b39075fc6344",
+   "location": "claims[14].statement",
+   "text": "Gymshark has a dedicated creator or athlete program {C15}.",
+   "duplicate_of": "R-fa46b39075fc6344",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-fa46b39075fc6344",
+   "location": "claims[15].statement",
+   "text": "Gymshark has a dedicated creator or athlete program {C16}.",
+   "duplicate_of": "R-fa46b39075fc6344",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-fa46b39075fc6344",
+   "location": "claims[16].statement",
+   "text": "Gymshark has a dedicated creator or athlete program {C17}.",
+   "duplicate_of": "R-fa46b39075fc6344",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-fa46b39075fc6344",
+   "location": "claims[17].statement",
+   "text": "Gymshark has a dedicated creator or athlete program {C18}.",
+   "duplicate_of": "R-fa46b39075fc6344",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-fa46b39075fc6344",
+   "location": "claims[18].statement",
+   "text": "Gymshark has a dedicated creator or athlete program {C19}.",
+   "duplicate_of": "R-fa46b39075fc6344",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-fa46b39075fc6344",
+   "location": "claims[19].statement",
+   "text": "Gymshark has a dedicated creator or athlete program {C20}.",
+   "duplicate_of": "R-fa46b39075fc6344",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-fa46b39075fc6344",
+   "location": "claims[20].statement",
+   "text": "Gymshark has a dedicated creator or athlete program {C21}.",
+   "duplicate_of": "R-fa46b39075fc6344",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-fa46b39075fc6344",
+   "location": "claims[21].statement",
+   "text": "Gymshark has a dedicated creator or athlete program {C22}.",
+   "duplicate_of": "R-fa46b39075fc6344",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-fa46b39075fc6344",
+   "location": "claims[22].statement",
+   "text": "Gymshark has a dedicated creator or athlete program {C23}.",
+   "duplicate_of": "R-fa46b39075fc6344",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-fa46b39075fc6344",
+   "location": "claims[23].statement",
+   "text": "Gymshark has a dedicated creator or athlete program {C24}.",
+   "duplicate_of": "R-fa46b39075fc6344",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-fa46b39075fc6344",
+   "location": "claims[24].statement",
+   "text": "Gymshark has a dedicated creator or athlete program {C25}.",
+   "duplicate_of": "R-fa46b39075fc6344",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-fa46b39075fc6344",
+   "location": "claims[25].statement",
+   "text": "Gymshark has a dedicated creator or athlete program {C26}.",
+   "duplicate_of": "R-fa46b39075fc6344",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-fa46b39075fc6344",
+   "location": "claims[26].statement",
+   "text": "Gymshark has a dedicated creator or athlete program {C27}.",
+   "duplicate_of": "R-fa46b39075fc6344",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-fa46b39075fc6344",
+   "location": "claims[27].statement",
+   "text": "Gymshark has a dedicated creator or athlete program {C28}.",
+   "duplicate_of": "R-fa46b39075fc6344",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-fa46b39075fc6344",
+   "location": "claims[28].statement",
+   "text": "Gymshark has a dedicated creator or athlete program {C29}.",
+   "duplicate_of": "R-fa46b39075fc6344",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-fa46b39075fc6344",
+   "location": "claims[29].statement",
+   "text": "Gymshark has a dedicated creator or athlete program {C30}.",
+   "duplicate_of": "R-fa46b39075fc6344",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-fa46b39075fc6344",
+   "location": "claims[30].statement",
+   "text": "Gymshark has a dedicated creator or athlete program {C31}.",
+   "duplicate_of": "R-fa46b39075fc6344",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-fa46b39075fc6344",
+   "location": "claims[31].statement",
+   "text": "Gymshark has a dedicated creator or athlete program {C32}.",
+   "duplicate_of": "R-fa46b39075fc6344",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P3"
+   ]
+  }
+ ],
+ "skipped_sentences": {
+  "proposal": [
+   {
+    "location": "instagram_post_idea.hook#s0",
+    "text": "A carousel featuring influencer testimonials and workout routines"
+   },
+   {
+    "location": "email_subject#s0",
+    "text": "Collaboration Opportunity: Highlighting Influencer-Created Content"
+   },
+   {
+    "location": "email_body#s5",
+    "text": "If this sounds interesting, we'd be happy to share a more detailed proposal."
+   }
+  ],
+  "non_assertion": [
+   {
+    "location": "likely_target_audience#s0",
+    "text": "INSUFFICIENT_EVIDENCE"
+   },
+   {
+    "location": "email_body#s0",
+    "text": "Hi Gymshark Marketing Team,"
+   },
+   {
+    "location": "email_body#s6",
+    "text": "Best regards,"
+   },
+   {
+    "location": "email_body#s7",
+    "text": "[Your Name]"
+   }
+  ]
+ },
+ "unknown_issues": [
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[0].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C1}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[1].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C2}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[2].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C3}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[3].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C4}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[4].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C5}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[5].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C6}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[6].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C7}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[7].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C8}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[8].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C9}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[9].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C10}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[10].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C11}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[11].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C12}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[12].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C13}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[13].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C14}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[14].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C15}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[15].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C16}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[16].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C17}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[17].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C18}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[18].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C19}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[19].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C20}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[20].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C21}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[21].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C22}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[22].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C23}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[23].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C24}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[24].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C25}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[25].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C26}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[26].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C27}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[27].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C28}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[28].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C29}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[29].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C30}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[30].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C31}."
+  },
+  {
+   "location": "unknowns[0]",
+   "issue": "unknown_contradicted_by_assertion",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[31].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C32}."
+  }
+ ],
+ "outreach": {
+  "recipient": "correct",
+  "sender": "correct",
+  "instagram_mentioned": false,
+  "other_platforms_in_pitch": [],
+  "instagram_compliant": false,
+  "promises": [],
+  "email_subject": "Collaboration Opportunity: Highlighting Influencer-Created Content"
+ },
+ "failures": [
+  {
+   "check": "structure",
+   "detail": [
+    "truncated_output: Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 1 column 12520 (char 12519)"
+   ]
+  },
+  {
+   "check": "duplicate_claims",
+   "detail": [
+    [],
+    31
+   ]
+  },
+  {
+   "check": "repetition",
+   "detail": [
+    33
+   ]
+  },
+  {
+   "check": "claim_quotes",
+   "detail": [
+    {
+     "claim_id": "C1",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C2",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C3",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C4",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C5",
+     "self_quote": false,
+     "other_passage": []
+    }
+   ]
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[0].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C1}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[1].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C2}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[2].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C3}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[3].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C4}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[4].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C5}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[5].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C6}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[6].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C7}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[7].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C8}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[8].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C9}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[9].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C10}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[10].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C11}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[11].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C12}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[12].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C13}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[13].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C14}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[14].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C15}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[15].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C16}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[16].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C17}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[17].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C18}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[18].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C19}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[19].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C20}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[20].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C21}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[21].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C22}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[22].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C23}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[23].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C24}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[24].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C25}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[25].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C26}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[26].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C27}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[27].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C28}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[28].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C29}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[29].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C30}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[30].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C31}."
+  },
+  {
+   "check": "unknown_contradicted_by_assertion",
+   "location": "unknowns[0]",
+   "text": "Whether Gymshark has a dedicated creator or athlete program",
+   "assertion": "claims[31].statement",
+   "assertion_text": "Gymshark has a dedicated creator or athlete program {C32}."
+  },
+  {
+   "check": "instagram",
+   "detail": []
+  }
+ ],
+ "unresolved": [],
+ "unreviewed": [
+  "R-c7bcf794179754ac",
+  "R-cba26f99431c600e",
+  "R-ebf42b292b64f733",
+  "R-581654bd8ad7a7fd",
+  "R-a0653a81cf73ecda",
+  "R-0f7d049f9b049fef",
+  "R-dcca1c4c0ebfb367",
+  "R-6b4f517659dfe997",
+  "R-7a671fe2cc721713",
+  "R-5dc2c66d75d3980d",
+  "R-6d2e8f2f745a651d",
+  "R-fa46b39075fc6344"
+ ],
+ "review_scope": "structurally_valid_only",
+ "passes": false,
+ "failure_signature": "3e18a1fbc9c51788c61604b422cc37a5af7b62323e18797e24aa161fa98b491c",
+ "review_wall_s": 0.014,
+ "attempt": {
+  "index": 1,
+  "kind": "regenerate_bounded"
+ }
+}

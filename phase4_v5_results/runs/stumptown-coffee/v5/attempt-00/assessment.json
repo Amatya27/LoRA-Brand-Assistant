@@ -1,0 +1,524 @@
+{
+ "checks_version": "phase4-v5-checks-2",
+ "structure": {
+  "strict_json": true,
+  "truncated": true,
+  "parse_error": null,
+  "schema_errors": [
+   "truncated_output: server reported finish_reason=length",
+   "missing key: claims"
+  ],
+  "parse_mode": "diagnostic_full_object",
+  "prompt_schema_valid": false,
+  "training_schema_valid": false,
+  "raw_format": {
+   "starts_with_brace": true,
+   "code_fenced": false,
+   "text_outside_json": true
+  }
+ },
+ "decision": null,
+ "repetition": {
+  "method": "exact match after whitespace/quote/case normalisation; no semantic similarity",
+  "claim_count": 0,
+  "duplicate_claim_ids": [],
+  "duplicate_claim_statements": 0,
+  "distinct_claim_statements": 0,
+  "duplicate_claim_quotes": 0,
+  "repeated_prose_sentences": {
+   "stumptown coffee roasters is a specialty coffee roaster and retailer founded in portland, oregon, in 1999.": [
+    "brand_summary",
+    "current_marketing_strategy[0]",
+    "current_marketing_strategy[1]"
+   ],
+   "a carousel post that showcases stumptown coffee roasters' signature blends, their direct trade partnerships, and the stories of producers in guatemala.": [
+    "instagram_post_idea.concept",
+    "email_subject"
+   ]
+  },
+  "max_8gram_repeats_in_raw": 22,
+  "looping": true
+ },
+ "citation_mechanics": {
+  "inline_passage_refs": [
+   "P1",
+   "P3",
+   "P7",
+   "P1",
+   "P1",
+   "P7"
+  ],
+  "unknown_refs": [],
+  "claim_quotes": []
+ },
+ "assertions": [
+  {
+   "review_id": "R-72607059cf2e6eff",
+   "location": "brand_summary#s0",
+   "text": "Stumptown Coffee Roasters is a specialty coffee roaster and retailer founded in Portland, Oregon, in 1999 [P1].",
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "supported",
+   "reviewer_verdict": "supported",
+   "citation_status": "miscited_supported_elsewhere",
+   "flags": [],
+   "reason": "The passage P3 directly supports the statement by providing information about Stumptown Coffee Roasters' founding in 1999 and its history, including the name of its first cafe and its current operations.",
+   "guard": {
+    "coverage": 1.0,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": []
+   },
+   "reviewer_reason": "The passage P3 directly supports the statement by providing information about Stumptown Coffee Roasters' founding in 1999 and its history, including the name of its first cafe and its current operations.",
+   "evidence_passage_id": "P3",
+   "evidence_quote": "Coffee is about pleasure. It’s that moment when your hand is warmed by the mug, you raise it to your nose, inhale deeply, and then take a sip. That sip is the culmination of years of work, three-thousand-mile journeys, and passion. These are the steps we take to ensure that each sip is perfect. Stumptown Coffee Roasters is a specialty coffee roaster and retailer founded in Portland, Oregon, in 1999. The first cafe opened on Southeast Division Street in a former beauty parlor called \"Hair Bender,\" which became the name of Stumptown's signature espresso blend. Stumptown now operates cafes in select cities across the US and as far away as Kyoto, Japan.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "72da10aa6ba64814e843310be5724edda31684aa68018a0dbf61d5eb104a555f",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-72607059cf2e6eff\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P3\",\n  \"evidence_quote\": \"Coffee is about pleasure. It’s that moment when your hand is warmed by the mug, you raise it to your nose, inhale deeply, and then take a sip. That sip is the culmination of years of work, three-thousand-mile journeys, and passion. These are the steps we take to ensure that each sip is perfect. Stumptown Coffee Roasters is a specialty coffee roaster and retailer founded in Portland, Oregon, in 1999. The first cafe opened on Southeast Division Street in a former beauty parlor called \\\"Hair Bender,\\\" which became the name of Stumptown's signature espresso blend. Stumptown now operates cafes in select cities across the US and as far away as Kyoto, Japan.\",\n  \"reason\": \"The passage P3 directly supports the statement by providing information about Stumptown Coffee Roasters' founding in 1999 and its history, including the name of its first cafe and its current operations.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 579,
+       "completion_tokens": 251,
+       "total_tokens": 830,
+       "prompt_tokens_details": {
+        "cached_tokens": 163
+       }
+      },
+      "latency_s": 19.017,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "25d86b0e2411a3cfed12d1e64f5e47e155604e785826a52105ba3004b35b6032",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-dfaef096d8138b1a",
+   "location": "brand_summary#s1",
+   "text": "The company has a long-standing partnership with producers in Guatemala, building a Direct Trade model that continues to shape its operations [P3].",
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.0,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.00 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.00 < 0.6",
+   "reviewer_reason": "The passage [P3] directly supports the statement by mentioning Stumptown Coffee Roasters' long-standing partnership with producers in Guatemala and their Direct Trade model, which aligns with the statement's content.",
+   "evidence_passage_id": "P3",
+   "evidence_quote": "Coffee is about pleasure. It’s that moment when your hand is warmed by the mug, you raise it to your nose, inhale deeply, and then take a sip. That sip is the culmination of years of work, three-thousand-mile journeys, and passion. These are the steps we take to ensure that each sip is perfect. Stumptown Coffee Roasters is a specialty coffee roaster and retailer founded in Portland, Oregon, in 1999.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "ce3817bf79ee20a88c4b16996340902f43f2c288792f5aa007b94d616ba7a939",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-dfaef096d8138b1a\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P3\",\n  \"evidence_quote\": \"Coffee is about pleasure. It’s that moment when your hand is warmed by the mug, you raise it to your nose, inhale deeply, and then take a sip. That sip is the culmination of years of work, three-thousand-mile journeys, and passion. These are the steps we take to ensure that each sip is perfect. Stumptown Coffee Roasters is a specialty coffee roaster and retailer founded in Portland, Oregon, in 1999.\",\n  \"reason\": \"The passage [P3] directly supports the statement by mentioning Stumptown Coffee Roasters' long-standing partnership with producers in Guatemala and their Direct Trade model, which aligns with the statement's content.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 614,
+       "completion_tokens": 197,
+       "total_tokens": 811,
+       "prompt_tokens_details": {
+        "cached_tokens": 161
+       }
+      },
+      "latency_s": 15.287,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "cc4316eb9e7b2b16e63a8bb8cc21f6971adfeb0ba8b35d1b0589df0c4b47cb2b",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-f63eb8e01fed013c",
+   "location": "brand_summary#s2",
+   "text": "It has a dedicated Instagram and email marketing strategy, including a campaign called 'Huye Mountain' that highlights its commitment to organic coffee [P7].",
+   "kind": "factual",
+   "cited_passages": [
+    "P7"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.167,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.17 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.17 < 0.6",
+   "reviewer_reason": "The evidence passage P8 directly supports the statement by mentioning Stumptown Coffee's Instagram and email marketing strategies, including the 'Huye Mountain' campaign, which highlights the company's commitment to organic coffee.",
+   "evidence_passage_id": "P8",
+   "evidence_quote": "Browse Stumptown Coffee's ads on AdLibrary at adlibrary.com. What platforms does Stumptown Coffee advertise on? Instagram, Facebook, and in-store trade marketing through grocery retail channels. Who are Stumptown Coffee's main competitors? Blue Bottle Coffee, Chameleon Cold Brew, and La Colombe in the premium RTD coffee segment. What makes Stumptown Coffee's ads effective? Heritage and specificity — the Hair Bender blend, Portland origin, and direct trade sourcing give copy concrete details that generic coffee brands cannot match. Who owns Stumptown Coffee? Peet's Coffee, itself owned by JAB Holding Company, acquired Stumptown Coffee Roasters in 2015.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "9d003f40b032cfc54806a40bd7dc3bebc2c70a9484d7703006763a70e18c6e32",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-f63eb8e01fed013c\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P8\",\n  \"evidence_quote\": \"Browse Stumptown Coffee's ads on AdLibrary at adlibrary.com. What platforms does Stumptown Coffee advertise on? Instagram, Facebook, and in-store trade marketing through grocery retail channels. Who are Stumptown Coffee's main competitors? Blue Bottle Coffee, Chameleon Cold Brew, and La Colombe in the premium RTD coffee segment. What makes Stumptown Coffee's ads effective? Heritage and specificity — the Hair Bender blend, Portland origin, and direct trade sourcing give copy concrete details that generic coffee brands cannot match. Who owns Stumptown Coffee? Peet's Coffee, itself owned by JAB Holding Company, acquired Stumptown Coffee Roasters in 2015.\",\n  \"reason\": \"The evidence passage P8 directly supports the statement by mentioning Stumptown Coffee's Instagram and email marketing strategies, including the 'Huye Mountain' campaign, which highlights the company's commitment to organic coffee.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 557,
+       "completion_tokens": 243,
+       "total_tokens": 800,
+       "prompt_tokens_details": {
+        "cached_tokens": 161
+       }
+      },
+      "latency_s": 21.136,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "f365ec2737de79ee2f6702ea65073c08591f1ea83ba12aba80e8cc3e1b9f01f1",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-72607059cf2e6eff",
+   "location": "current_marketing_strategy[0]#s0",
+   "text": "Stumptown Coffee Roasters is a specialty coffee roaster and retailer founded in Portland, Oregon, in 1999 [P1].",
+   "duplicate_of": "R-72607059cf2e6eff",
+   "flags": [],
+   "verdict": "supported",
+   "citation_status": "miscited_supported_elsewhere",
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-72607059cf2e6eff",
+   "location": "current_marketing_strategy[1]#s0",
+   "text": "Stumptown Coffee Roasters is a specialty coffee roaster and retailer founded in Portland, Oregon, in 1999 [P1].",
+   "duplicate_of": "R-72607059cf2e6eff",
+   "flags": [],
+   "verdict": "supported",
+   "citation_status": "miscited_supported_elsewhere",
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-ee21646bc0f79779",
+   "location": "instagram_post_idea.why_it_fits#s0",
+   "text": "Stumptown Coffee Roasters' signature blends, their Direct Trade partnerships, and the stories of producers in Guatemala give copy concrete details that generic coffee brands cannot match.",
+   "kind": "factual",
+   "cited_passages": [],
+   "citation_source": "none",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unresolved",
+   "citation_status": null,
+   "reason": "reviewer response missing, invalid or untraceable after retries",
+   "reviewer_reason": "reviewer response missing, invalid or untraceable after retries",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unresolved",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "bd3b5efd3aedb92c0e9cba2f87847df5199959312d0084bf75a5fa4f281d6238",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-ee21646bc0f79779\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P8\",\n  \"evidence_quote\": \"Stumptown Coffee's ads are effective because they give copy concrete details that generic coffee brands cannot match.\",\n  \"reason\": \"The evidence passage directly supports the statement by explaining how Stumptown Coffee's ads are effective, citing the use of heritage and specificity in their branding.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 507,
+       "completion_tokens": 113,
+       "total_tokens": 620,
+       "prompt_tokens_details": {
+        "cached_tokens": 162
+       }
+      },
+      "latency_s": 10.016,
+      "error": null,
+      "validation_errors": [
+       "evidence_quote is not traceable to the named passage (>= 4 consecutive words required)"
+      ]
+     },
+     {
+      "attempt": 1,
+      "prompt_sha256": "fdd06f451eee8fe6e3f9c208e2bc23e9d76df8c39db0ecfa539fc2a62feca1d8",
+      "raw_text": "```json\n{\"review_id\": \"R-ee21646bc0f79779\", \"verdict\": \"supported\", \"evidence_passage_id\": \"P8\", \"evidence_quote\": \"Stumptown Coffee's ads give copy concrete details that generic coffee brands cannot match.\", \"reason\": \"The evidence passage directly supports the statement by mentioning that Stumptown Coffee's ads give concrete details that generic coffee brands cannot match, which aligns with the statement about their signature blends, Direct Trade partnerships, and the stories of producers in Guatemala. The passage also mentions that Stumptown Coffee's ads are effective due to heritage and specificity, which further supports the statement about their unique selling points.\"}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 537,
+       "completion_tokens": 152,
+       "total_tokens": 689,
+       "prompt_tokens_details": {
+        "cached_tokens": 501
+       }
+      },
+      "latency_s": 14.205,
+      "error": null,
+      "validation_errors": [
+       "evidence_quote is not traceable to the named passage (>= 4 consecutive words required)"
+      ]
+     }
+    ],
+    "request_sha256": "478ead29865b26dc54e081e3b772362127f95b4acd1e898f422e4c8923dd6537",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-165134520128436d",
+   "location": "email_body#s0",
+   "text": "A carousel post that showcases Stumptown Coffee Roasters' signature blends, their Direct Trade partnerships, and the stories of producers in Guatemala, building on the previous Instagram carousel idea [P7].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P7"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.364,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.36 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.36 < 0.6",
+   "reviewer_reason": "The passage explicitly mentions Stumptown's first Direct Trade partnership with the Aguirre Family's El Injerto farm in Guatemala, which aligns with the statement about showcasing their Direct Trade partnerships.",
+   "evidence_passage_id": "P2",
+   "evidence_quote": "1999 STUMPTOWN OPENS ITS DOORS Stumptown launches Holler Mountain, our signature organic coffee blend ### 2003 FIRST DIRECT TRADE RELATIONSHIP First Direct trade sourcing relationship with the Aguirre Family's El Injerto farm in Huehuetenango, Guatemala",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "b7296ef2f1c759e8596b6a9e327aa2bd4d336a1fa0328a1275a392c77c030c62",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-165134520128436d\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P2\",\n  \"evidence_quote\": \"1999 STUMPTOWN OPENS ITS DOORS Stumptown launches Holler Mountain, our signature organic coffee blend ### 2003 FIRST DIRECT TRADE RELATIONSHIP First Direct trade sourcing relationship with the Aguirre Family's El Injerto farm in Huehuetenango, Guatemala\",\n  \"reason\": \"The passage explicitly mentions Stumptown's first Direct Trade partnership with the Aguirre Family's El Injerto farm in Guatemala, which aligns with the statement about showcasing their Direct Trade partnerships.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 570,
+       "completion_tokens": 168,
+       "total_tokens": 738,
+       "prompt_tokens_details": {
+        "cached_tokens": 162
+       }
+      },
+      "latency_s": 14.454,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "5958cb3747e604ef1ecf94bac994c05ca4a982f99747b282d8657c2fa3edabee",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  }
+ ],
+ "skipped_sentences": {
+  "proposal": [
+   {
+    "location": "collaboration_opportunities[0]#s0",
+    "text": "Collaborate on a campaign that highlights the impact of Direct Trade sourcing."
+   },
+   {
+    "location": "instagram_post_idea.hook#s0",
+    "text": "A carousel featuring Stumptown Coffee Roasters' signature blends, their Direct Trade partnerships, and the stories of producers in Guatemala."
+   },
+   {
+    "location": "instagram_post_idea.concept#s0",
+    "text": "A carousel post that showcases Stumptown Coffee Roasters' signature blends, their Direct Trade partnerships, and the stories of producers in Guatemala."
+   },
+   {
+    "location": "email_subject#s0",
+    "text": "A carousel post that showcases Stumptown Coffee Roasters' signature blends, their Direct Trade partnerships, and the stories of producers in Guatemala."
+   }
+  ],
+  "non_assertion": [
+   {
+    "location": "likely_target_audience#s0",
+    "text": "INSUFFICIENT_EVIDENCE"
+   }
+  ]
+ },
+ "unknown_issues": [],
+ "outreach": {
+  "recipient": "correct",
+  "sender": "correct",
+  "instagram_mentioned": true,
+  "other_platforms_in_pitch": [],
+  "instagram_compliant": true,
+  "promises": [],
+  "email_subject": "A carousel post that showcases Stumptown Coffee Roasters' signature blends, their Direct Trade partnerships, and the stories of producers in Guatemala."
+ },
+ "failures": [
+  {
+   "check": "structure",
+   "detail": [
+    "truncated_output: server reported finish_reason=length",
+    "missing key: claims"
+   ]
+  },
+  {
+   "check": "repetition",
+   "detail": [
+    22
+   ]
+  },
+  {
+   "check": "citation_mapping",
+   "review_id": "R-72607059cf2e6eff",
+   "location": "brand_summary#s0",
+   "text": "Stumptown Coffee Roasters is a specialty coffee roaster and retailer founded in Portland, Oregon, in 1999 [P1].",
+   "citation_status": "miscited_supported_elsewhere",
+   "evidence_passage_id": "P3"
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-dfaef096d8138b1a",
+   "location": "brand_summary#s1",
+   "text": "The company has a long-standing partnership with producers in Guatemala, building a Direct Trade model that continues to shape its operations [P3].",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.00 < 0.6",
+   "evidence_passage_id": "P3",
+   "evidence_quote": "Coffee is about pleasure. It’s that moment when your hand is warmed by the mug, you raise it to your nose, inhale deeply, and then take a sip. That sip is the culmination of years of work, three-thousand-mile journeys, and passion. These are the steps we take to ensure that each sip is perfect. Stumptown Coffee Roasters is a specialty coffee roaster and retailer founded in Portland, Oregon, in 1999."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-f63eb8e01fed013c",
+   "location": "brand_summary#s2",
+   "text": "It has a dedicated Instagram and email marketing strategy, including a campaign called 'Huye Mountain' that highlights its commitment to organic coffee [P7].",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.17 < 0.6",
+   "evidence_passage_id": "P8",
+   "evidence_quote": "Browse Stumptown Coffee's ads on AdLibrary at adlibrary.com. What platforms does Stumptown Coffee advertise on? Instagram, Facebook, and in-store trade marketing through grocery retail channels. Who are Stumptown Coffee's main competitors? Blue Bottle Coffee, Chameleon Cold Brew, and La Colombe in the premium RTD coffee segment. What makes Stumptown Coffee's ads effective? Heritage and specificity — the Hair Bender blend, Portland origin, and direct trade sourcing give copy concrete details that generic coffee brands cannot match. Who owns Stumptown Coffee? Peet's Coffee, itself owned by JAB Holding Company, acquired Stumptown Coffee Roasters in 2015."
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-165134520128436d",
+   "location": "email_body#s0",
+   "text": "A carousel post that showcases Stumptown Coffee Roasters' signature blends, their Direct Trade partnerships, and the stories of producers in Guatemala, building on the previous Instagram carousel idea [P7].",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.36 < 0.6",
+   "evidence_passage_id": "P2",
+   "evidence_quote": "1999 STUMPTOWN OPENS ITS DOORS Stumptown launches Holler Mountain, our signature organic coffee blend ### 2003 FIRST DIRECT TRADE RELATIONSHIP First Direct trade sourcing relationship with the Aguirre Family's El Injerto farm in Huehuetenango, Guatemala"
+  }
+ ],
+ "unresolved": [
+  "R-ee21646bc0f79779"
+ ],
+ "passes": false,
+ "failure_signature": "cb20551d73665c1d44b0fba52b30e10f5d8f418addd10dab130053f9281059cb",
+ "review_wall_s": 94.193,
+ "attempt": {
+  "index": 0,
+  "kind": "initial"
+ }
+}

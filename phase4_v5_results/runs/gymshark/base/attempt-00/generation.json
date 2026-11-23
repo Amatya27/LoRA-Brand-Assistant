@@ -1,0 +1,17 @@
+{
+ "ok": true,
+ "finish_reason": "stop",
+ "usage": {
+  "prompt_tokens": 2771,
+  "completion_tokens": 332,
+  "total_tokens": 3103,
+  "prompt_tokens_details": {
+   "cached_tokens": 0
+  }
+ },
+ "latency_s": 16.397,
+ "error": null,
+ "runtime_verified": true,
+ "reused_from": "outputs/phase3_v5/runs/20261123T035032180689Z-gymshark-fixed-generation-0577b1",
+ "phase3_bundle_sha256": "9b05064a78d8efa97ba9221d719a6abff054fe57f910eec6b62e18364b48b8e1"
+}

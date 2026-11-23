@@ -1,0 +1,394 @@
+{
+ "checks_version": "phase4-v5-checks-2",
+ "structure": {
+  "strict_json": false,
+  "truncated": false,
+  "parse_error": {
+   "error_type": "malformed_json",
+   "truncated": false,
+   "finish_reason": "stop",
+   "unbalanced_braces": false,
+   "message": "Outermost JSON object is malformed or incomplete: Expecting ',' delimiter: line 59 column 3 (char 4885)"
+  },
+  "schema_errors": [
+   "malformed_json: Outermost JSON object is malformed or incomplete: Expecting ',' delimiter: line 59 column 3 (char 4885)"
+  ],
+  "parse_mode": "diagnostic_prefix",
+  "prompt_schema_valid": false,
+  "training_schema_valid": false,
+  "raw_format": {
+   "starts_with_brace": false,
+   "code_fenced": true,
+   "text_outside_json": null
+  }
+ },
+ "decision": null,
+ "repetition": {
+  "method": "exact match after whitespace/quote/case normalisation; no semantic similarity",
+  "claim_count": 10,
+  "duplicate_claim_ids": [],
+  "duplicate_claim_statements": 7,
+  "distinct_claim_statements": 3,
+  "duplicate_claim_quotes": 0,
+  "repeated_prose_sentences": {},
+  "max_8gram_repeats_in_raw": 8,
+  "looping": false
+ },
+ "citation_mechanics": {
+  "inline_passage_refs": [],
+  "unknown_refs": [],
+  "claim_quotes": [
+   {
+    "index": 0,
+    "claim_id": "C1",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 1,
+    "claim_id": "C2",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 2,
+    "claim_id": "C3",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 3,
+    "claim_id": "C4",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 4,
+    "claim_id": "C5",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 5,
+    "claim_id": "C6",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 6,
+    "claim_id": "C7",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 7,
+    "claim_id": "C8",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 8,
+    "claim_id": "C9",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 9,
+    "claim_id": "C10",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   }
+  ]
+ },
+ "assertions": [
+  {
+   "review_id": "R-e41745af0cca3300",
+   "location": "claims[0].statement",
+   "text": "It is on top of a black surface with coffee beans, chocolate, marshmallows, graham crackers, and roasted marshmallows nearby. The art on the bag has a skeleton telling stories to a werewolf and bigfoot around a campfire. > This one is definitely in my top 3 favorite flavors now. From the minute I opened the bag it > smelled just like I opened a bag of freshly made S’mores! Tastes just like it smells, can’t beat > it. If you haven’t tried this flavor yet do yourself a favor and grab a bag! Evan D. Rated 5 out of 5 The front of a 12 ounce bag of Bones Coffee Company S’morey Time coffee.",
+   "kind": "claim_statement",
+   "cited_passages": [],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-4787f8236437a260",
+   "location": "claims[1].statement",
+   "text": "The Nightmare Before Christmas Collector's Box. There are five four ounce bags of coffee scattered around and they are named Ruff Weather, Mudslide Boogie, Santa Jack, The Pumpkin King, and Frog's Breath. The inside of the box has characters from The Nightmare Before Christmas on it.",
+   "kind": "claim_statement",
+   "cited_passages": [],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-1614b814d687c13d",
+   "location": "claims[2].statement",
+   "text": "Five four ounce bags of coffee are in front of a box. The box has the Bones Coffee Company logo on it. The bags of coffee are named Guatemala, Ethiopia, Sumatra, Colombia, and Costa Rica.",
+   "kind": "claim_statement",
+   "cited_passages": [],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-4787f8236437a260",
+   "location": "claims[3].statement",
+   "text": "The Nightmare Before Christmas Collector's Box. There are five four ounce bags of coffee scattered around and they are named Ruff Weather, Mudslide Boogie, Santa Jack, The Pumpkin King, and Frog's Breath. The inside of the box has characters from The Nightmare Before Christmas on it.",
+   "duplicate_of": "R-4787f8236437a260",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-4787f8236437a260",
+   "location": "claims[4].statement",
+   "text": "The Nightmare Before Christmas Collector's Box. There are five four ounce bags of coffee scattered around and they are named Ruff Weather, Mudslide Boogie, Santa Jack, The Pumpkin King, and Frog's Breath. The inside of the box has characters from The Nightmare Before Christmas on it.",
+   "duplicate_of": "R-4787f8236437a260",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-4787f8236437a260",
+   "location": "claims[5].statement",
+   "text": "The Nightmare Before Christmas Collector's Box. There are five four ounce bags of coffee scattered around and they are named Ruff Weather, Mudslide Boogie, Santa Jack, The Pumpkin King, and Frog's Breath. The inside of the box has characters from The Nightmare Before Christmas on it.",
+   "duplicate_of": "R-4787f8236437a260",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-4787f8236437a260",
+   "location": "claims[6].statement",
+   "text": "The Nightmare Before Christmas Collector's Box. There are five four ounce bags of coffee scattered around and they are named Ruff Weather, Mudslide Boogie, Santa Jack, The Pumpkin King, and Frog's Breath. The inside of the box has characters from The Nightmare Before Christmas on it.",
+   "duplicate_of": "R-4787f8236437a260",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-4787f8236437a260",
+   "location": "claims[7].statement",
+   "text": "The Nightmare Before Christmas Collector's Box. There are five four ounce bags of coffee scattered around and they are named Ruff Weather, Mudslide Boogie, Santa Jack, The Pumpkin King, and Frog's Breath. The inside of the box has characters from The Nightmare Before Christmas on it.",
+   "duplicate_of": "R-4787f8236437a260",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-4787f8236437a260",
+   "location": "claims[8].statement",
+   "text": "The Nightmare Before Christmas Collector's Box. There are five four ounce bags of coffee scattered around and they are named Ruff Weather, Mudslide Boogie, Santa Jack, The Pumpkin King, and Frog's Breath. The inside of the box has characters from The Nightmare Before Christmas on it.",
+   "duplicate_of": "R-4787f8236437a260",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-4787f8236437a260",
+   "location": "claims[9].statement",
+   "text": "The Nightmare Before Christmas Collector's Box. There are five four ounce bags of coffee scattered around and they are named Ruff Weather, Mudslide Boogie, Santa Jack, The Pumpkin King, and Frog's Breath. The inside of the box has characters from The Nightmare Before Christmas on it.",
+   "duplicate_of": "R-4787f8236437a260",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": []
+  }
+ ],
+ "skipped_sentences": {
+  "proposal": [],
+  "non_assertion": []
+ },
+ "unknown_issues": [],
+ "outreach": {
+  "recipient": "no_email",
+  "sender": "no_email",
+  "instagram_mentioned": false,
+  "other_platforms_in_pitch": [],
+  "instagram_compliant": false,
+  "promises": [],
+  "email_subject": ""
+ },
+ "failures": [
+  {
+   "check": "structure",
+   "detail": [
+    "malformed_json: Outermost JSON object is malformed or incomplete: Expecting ',' delimiter: line 59 column 3 (char 4885)"
+   ]
+  },
+  {
+   "check": "duplicate_claims",
+   "detail": [
+    [],
+    7
+   ]
+  },
+  {
+   "check": "claim_quotes",
+   "detail": [
+    {
+     "claim_id": "C1",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C2",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C3",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C4",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C5",
+     "self_quote": false,
+     "other_passage": []
+    }
+   ]
+  },
+  {
+   "check": "sender_recipient",
+   "detail": [
+    "no_email",
+    "no_email"
+   ]
+  },
+  {
+   "check": "instagram",
+   "detail": []
+  }
+ ],
+ "unresolved": [],
+ "unreviewed": [
+  "R-e41745af0cca3300",
+  "R-4787f8236437a260",
+  "R-1614b814d687c13d"
+ ],
+ "review_scope": "structurally_valid_only",
+ "passes": false,
+ "failure_signature": "29147fe7d32a2098e3923b76a66dbb7a2cbc7ec9198fcdcb1eaed27c52f7cd2b",
+ "review_wall_s": 0.003,
+ "attempt": {
+  "index": 2,
+  "kind": "targeted_fix"
+ }
+}

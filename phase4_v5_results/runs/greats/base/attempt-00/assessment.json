@@ -1,0 +1,186 @@
+{
+ "checks_version": "phase4-v5-checks-2",
+ "structure": {
+  "strict_json": false,
+  "truncated": false,
+  "parse_error": {
+   "error_type": "malformed_json",
+   "truncated": false,
+   "finish_reason": "stop",
+   "unbalanced_braces": false,
+   "message": "Outermost JSON object is malformed or incomplete: Expecting ',' delimiter: line 13 column 353 (char 1479)"
+  },
+  "schema_errors": [
+   "malformed_json: Outermost JSON object is malformed or incomplete: Expecting ',' delimiter: line 13 column 353 (char 1479)"
+  ],
+  "parse_mode": "diagnostic_prefix",
+  "prompt_schema_valid": false,
+  "training_schema_valid": false,
+  "raw_format": {
+   "starts_with_brace": false,
+   "code_fenced": true,
+   "text_outside_json": null
+  }
+ },
+ "decision": null,
+ "repetition": {
+  "method": "exact match after whitespace/quote/case normalisation; no semantic similarity",
+  "claim_count": 1,
+  "duplicate_claim_ids": [],
+  "duplicate_claim_statements": 0,
+  "distinct_claim_statements": 1,
+  "duplicate_claim_quotes": 0,
+  "repeated_prose_sentences": {},
+  "max_8gram_repeats_in_raw": 1,
+  "looping": false
+ },
+ "citation_mechanics": {
+  "inline_passage_refs": [],
+  "unknown_refs": [],
+  "claim_quotes": [
+   {
+    "index": 0,
+    "claim_id": "C1",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": true,
+    "cites_non_factual_type": []
+   }
+  ]
+ },
+ "assertions": [
+  {
+   "review_id": "R-a972a1150d2395fc",
+   "location": "claims[0].statement",
+   "text": "string",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "supported",
+   "citation_status": null,
+   "flags": [],
+   "guard": {
+    "coverage": 0.0,
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "problems": [
+     "content-word coverage 0.00 < 0.6"
+    ]
+   },
+   "reason": "support guard: content-word coverage 0.00 < 0.6",
+   "reviewer_reason": "The evidence passage directly supports the statement 'string' by providing information about the company GREATS, including its founding location and its commitment to creating high-quality, durable sneakers.",
+   "evidence_passage_id": "P1",
+   "evidence_quote": "Born in Brooklyn. Artisanally Crafted. Worn Everywhere. Founded in 2014, GREATS is the first sneaker brand born in Brooklyn. Our commitment to you is to create sneakers with a superior fit and feel that's built to last. Our goal is to ethically transform premium materials into an experience that moves you. We make shoes that last a lifetime and we like to make them in a responsible way.",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "1954f588997edbd4ae0813773684e0bb2b940c13d3512f4990f7c497b6323a48",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-a972a1150d2395fc\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P1\",\n  \"evidence_quote\": \"Born in Brooklyn. Artisanally Crafted. Worn Everywhere. Founded in 2014, GREATS is the first sneaker brand born in Brooklyn. Our commitment to you is to create sneakers with a superior fit and feel that's built to last. Our goal is to ethically transform premium materials into an experience that moves you. We make shoes that last a lifetime and we like to make them in a responsible way.\",\n  \"reason\": \"The evidence passage directly supports the statement 'string' by providing information about the company GREATS, including its founding location and its commitment to creating high-quality, durable sneakers.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 340,
+       "completion_tokens": 184,
+       "total_tokens": 524,
+       "prompt_tokens_details": {
+        "cached_tokens": 31
+       }
+      },
+      "latency_s": 15.115,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "9e8b09588366f04b4eb21d0d9b228d381e6276bef7788650027bea8af13d0195",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  }
+ ],
+ "skipped_sentences": {
+  "proposal": [],
+  "non_assertion": []
+ },
+ "unknown_issues": [],
+ "outreach": {
+  "recipient": "no_email",
+  "sender": "no_email",
+  "instagram_mentioned": false,
+  "other_platforms_in_pitch": [],
+  "instagram_compliant": false,
+  "promises": [],
+  "email_subject": ""
+ },
+ "failures": [
+  {
+   "check": "structure",
+   "detail": [
+    "malformed_json: Outermost JSON object is malformed or incomplete: Expecting ',' delimiter: line 13 column 353 (char 1479)"
+   ]
+  },
+  {
+   "check": "claim_quotes",
+   "detail": [
+    {
+     "claim_id": "C1",
+     "self_quote": false,
+     "other_passage": []
+    }
+   ]
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-a972a1150d2395fc",
+   "location": "claims[0].statement",
+   "text": "string",
+   "verdict": "unsupported",
+   "reason": "support guard: content-word coverage 0.00 < 0.6",
+   "evidence_passage_id": "P1",
+   "evidence_quote": "Born in Brooklyn. Artisanally Crafted. Worn Everywhere. Founded in 2014, GREATS is the first sneaker brand born in Brooklyn. Our commitment to you is to create sneakers with a superior fit and feel that's built to last. Our goal is to ethically transform premium materials into an experience that moves you. We make shoes that last a lifetime and we like to make them in a responsible way."
+  },
+  {
+   "check": "sender_recipient",
+   "detail": [
+    "no_email",
+    "no_email"
+   ]
+  },
+  {
+   "check": "instagram",
+   "detail": []
+  }
+ ],
+ "unresolved": [],
+ "passes": false,
+ "failure_signature": "04be7f1e3f6288f1cb802aa35b112b3821871a07c40784f5815978ed2fdd3d24",
+ "review_wall_s": 15.119,
+ "attempt": {
+  "index": 0,
+  "kind": "initial"
+ }
+}

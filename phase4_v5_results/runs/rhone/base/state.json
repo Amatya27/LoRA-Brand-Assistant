@@ -1,0 +1,106 @@
+{
+ "case_id": "rhone/base",
+ "company_id": "rhone",
+ "arm": "base",
+ "packet_path": "outputs/phase3_v5/packets/rhone.json",
+ "packet_sha256": "51810081ffe9da63b19d58269017f5b749031d1f82dd84050faf3878a2d6c662",
+ "prompt_version": "brandpilot.prompt.v3.3",
+ "prompt_sha256": "f26bc8e51acf635baa541f19262981a406687d01e5629ecab91b304940cebfb1",
+ "max_repairs": 2,
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "dir": "phase4_v5_results/runs/rhone/base/attempt-00",
+   "prompt_sha256": "f26bc8e51acf635baa541f19262981a406687d01e5629ecab91b304940cebfb1",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "stop",
+   "usage": {
+    "prompt_tokens": 2530,
+    "completion_tokens": 279,
+    "total_tokens": 2809,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 13.643,
+   "runtime_verified": true,
+   "raw_sha256": "fb1f67b60a5ca9354d59a25f5ca4a93705938aac590278825a19a5cf0b22fcd5",
+   "reused_from": "outputs/phase3_v5/runs/20261123T034722509704Z-rhone-fixed-generation-7c3372",
+   "passes": false,
+   "strict_ok": false,
+   "model_abstained": false,
+   "failure_count": 5,
+   "unresolved_count": 0,
+   "failure_signature": "04be7f1e3f6288f1cb802aa35b112b3821871a07c40784f5815978ed2fdd3d24",
+   "review_wall_s": 12.246,
+   "truncated": false,
+   "looping": false
+  },
+  {
+   "index": 1,
+   "kind": "regenerate_bounded",
+   "dir": "phase4_v5_results/runs/rhone/base/attempt-01",
+   "prompt_sha256": "107267fc85447e80e2207e02a07e9f714d03f70a5412901b796c51ed232abc6b",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "length",
+   "usage": {
+    "prompt_tokens": 2643,
+    "completion_tokens": 3072,
+    "total_tokens": 5715,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 71.276,
+   "runtime_verified": true,
+   "raw_sha256": "cba47afb9f28a2738433e394db2b05d2a860bcacd5b497b81a33d9df4a2671b9",
+   "reused_from": null,
+   "passes": false,
+   "strict_ok": false,
+   "model_abstained": false,
+   "truncated": true,
+   "looping": true,
+   "failure_count": 5,
+   "unresolved_count": 0,
+   "failure_signature": "3f0b89ca30293c3ba672c51c8eb5765bc23ab10f8f9f13fa4af9a0425291a16a",
+   "review_wall_s": 0.005
+  },
+  {
+   "index": 2,
+   "kind": "regenerate_bounded",
+   "dir": "phase4_v5_results/runs/rhone/base/attempt-02",
+   "prompt_sha256": "d613fc0ecdf2d200a718b0e15ca82a33a2d61a9d916b79753d6fb0b0af19c5cc",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "length",
+   "usage": {
+    "prompt_tokens": 2648,
+    "completion_tokens": 3072,
+    "total_tokens": 5720,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 62.876,
+   "runtime_verified": true,
+   "raw_sha256": "2b14ae5d18efe5f266979b668ba5d83df4cc140f304e5484a0699f40dd0f0a7f",
+   "reused_from": null,
+   "passes": false,
+   "strict_ok": false,
+   "model_abstained": false,
+   "truncated": true,
+   "looping": true,
+   "failure_count": 6,
+   "unresolved_count": 0,
+   "failure_signature": "f7bcc7993ff61f6468cff2eb65d377c1b523e7cdd14042e1abca051b2089f5eb",
+   "review_wall_s": 0.011
+  }
+ ],
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "no progress: the repair repeated the same truncation failure",
+ "stop_code": "withheld_no_progress",
+ "eligibility": "eligible"
+}

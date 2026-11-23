@@ -1,0 +1,294 @@
+{
+  "run_id": "20261123T092756632854Z-thrive-market-adapter-generation-a1a4ff",
+  "run_dir": "<repo>/outputs/phase4_v5_work/initial_runs/20261123T092756632854Z-thrive-market-adapter-generation-a1a4ff",
+  "started_at": "2026-11-23T09:27:56.631226+00:00",
+  "mode": "adapter-generation",
+  "mode_description": "C: same single-generation interface and evidence, with an explicitly requested LoRA adapter. No base-model fallback.",
+  "backend": "openai-compatible",
+  "identity": {
+    "company": "Thrive Market",
+    "company_id": "thrive-market",
+    "person": "",
+    "source": "packet"
+  },
+  "evidence": {
+    "evidence_source": "replayed",
+    "packet_format": "brandpilot.packet.v3",
+    "packet_input_path": "<repo>/outputs/phase3_v5/handoff_6efa346/data/v3_pilot/packets/thrive-market.json",
+    "packet_input_sha256": "ce835d89120668d3c5724492f7652a9ddfb59f0172c876aa611d737ed732c517",
+    "packet_content_sha256": "ed5bf926801b01e5f73b9daf8c07d8b6c7867569f338f689df590ac50ee72f2d",
+    "packet_status": "ok",
+    "packet_status_reasons": [],
+    "packet_collection": {
+      "mode": "legacy_cache_replay",
+      "collector_version": "brandpilot-collector-0.3",
+      "created_at": "2026-11-22T20:24:27+00:00",
+      "queries": [
+        "\"Thrive Market\" instagram marketing campaign target audience",
+        "\"Thrive Market\" social media strategy brand positioning",
+        "\"Thrive Market\" marketing campaign press release instagram",
+        "\"Thrive Market\" customer audience brand story",
+        "\"Thrive Market\" about us brand values audience",
+        "\"Thrive Market\" newsroom marketing campaign",
+        "\"Thrive Market\" brand campaign case study"
+      ],
+      "notes": [
+        "replayed from legacy packet thrive-market-research-packet.json (sha256 141729ead154df28)",
+        "documents are legacy cached extractions; no new fetches were made"
+      ]
+    },
+    "cache_policy": "No retrieval performed; evidence replayed byte-for-byte from the saved packet.",
+    "provenance_note": "Packet hash, passage text hashes and identity status were checked. Recovering each passage from its stored document needs the Phase 1 evidence store (not checked).",
+    "evidence_passage_count": 10,
+    "source_count": 0,
+    "packet_built_at": null,
+    "publication_dates": "unknown (not collected by retrieval)",
+    "identity_warnings": [
+      "evidence_passages[0] (https://thrivemarket.com/about-us) does not mention 'Thrive Market'",
+      "evidence_passages[6] (https://thrivemarket.com/about-us) does not mention 'Thrive Market'",
+      "evidence_passages[9] (https://thrivemarket.com/all-values) does not mention 'Thrive Market'"
+    ],
+    "identity_warning_note": "Heuristic name-mention check only; not a disambiguation verdict.",
+    "evidence_ids_supplied": [
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "P7",
+      "P8",
+      "P9",
+      "P10"
+    ]
+  },
+  "generation": {
+    "requested": true,
+    "generation_requests": 1,
+    "settings": {
+      "api_base": "http://127.0.0.1:8080/v1",
+      "model": "mlx-community/gemma-3-1b-it-qat-4bit",
+      "adapter_path": "adapters/brand_assistant_v5_best",
+      "max_tokens": 3072,
+      "temperature": 0.0,
+      "timeout_s": 600.0,
+      "repetition_penalty": null,
+      "repetition_context_size": null
+    },
+    "adapter": {
+      "adapter_requested": "adapters/brand_assistant_v5_best",
+      "forwarded_as": "request field 'adapters' (mlx_lm.server)",
+      "path_resolution": "Server-side filesystem, relative to the server's working directory.",
+      "server_accepted_request": true,
+      "adapter_load_verified": true,
+      "adapter_load_verification_note": "Verified from the serving process's load ledger: this request's messages hash was served with this adapter loaded, the adapter file the server opened has the expected SHA-256, and every adapter tensor matched the loaded model parameters.",
+      "local_validation": {
+        "performed": true,
+        "resolved_path": "<repo>/adapters/brand_assistant_v5_best",
+        "exists": true,
+        "files_present": [
+          "adapter_config.json",
+          "adapters.safetensors"
+        ],
+        "adapter_config.json_sha256": "88ebe11724c9313a718f07634f020937b71f566c039e1492100a02274687c036",
+        "adapters.safetensors_sha256": "84d482c93281680d9393ab595f06054f30e88d4c61e5f083d2c557c03980adf2",
+        "adapter_config": {
+          "model": "mlx-community/gemma-3-1b-it-qat-4bit",
+          "fine_tune_type": "lora",
+          "num_layers": 8,
+          "lora_parameters": {
+            "rank": 8,
+            "dropout": 0.0,
+            "scale": 20.0
+          },
+          "max_seq_length": 6144,
+          "iters_in_training_config": 100,
+          "training_output_path_in_config": "adapters/brand_assistant_v5",
+          "note": "adapter_config.json is the training run's config. Its 'iters' and 'adapter_path' describe the original training output, not necessarily the delivered checkpoint directory."
+        }
+      }
+    },
+    "model_revision": {
+      "value": "15fed4eafb456c6fcb2a1165f19ac609670ed14b",
+      "method": "client_hf_cache_refs_main",
+      "caveat": "Observed in this machine's HF cache; the server does not report its loaded revision."
+    },
+    "prompt_version": "brandpilot.prompt.v3.3",
+    "prompt_sha256": "4cc47093e419563867779fad552aa6d9d660bc6773c0de31d88746c757cd90e7",
+    "prompt_source": "v3 training-format prompt rendered from the packet; byte-identical to brandpilot.packet.build_teacher_prompt for this rule version",
+    "baseline_comparable": false,
+    "attempts": 1,
+    "request_url": "http://127.0.0.1:8080/v1/chat/completions",
+    "http_status": 200,
+    "latency_s": 72.729,
+    "usage": {
+      "prompt_tokens": 2565,
+      "completion_tokens": 3072,
+      "total_tokens": 5637,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "stop_reason": "length",
+    "response_model": "mlx-community/gemma-3-1b-it-qat-4bit",
+    "error_type": null,
+    "error_message": null,
+    "runtime_verification": {
+      "verified": true,
+      "checks": {
+        "request_found_in_ledger": true,
+        "single_request_in_flight": true,
+        "requested_model_matches": true,
+        "served_model_matches": true,
+        "served_adapter_matches_request": true,
+        "load_event_found": true,
+        "load_event_model_key_matches": true,
+        "adapter_file_hash_matches_expected": true,
+        "lora_modules_present": true,
+        "all_adapter_tensors_loaded": true
+      },
+      "observations": {
+        "server_pid": 3787,
+        "request_event": {
+          "schema": "phase3-load-ledger-v1",
+          "pid": 3787,
+          "time": 1795426079.7016718,
+          "event": "request_started",
+          "messages_sha256": "4d8bec30a1db035ea0d3f82ce0a7500a3188d48c5950df9fa05e038cd2483af8",
+          "requested_model": "mlx-community/gemma-3-1b-it-qat-4bit",
+          "requested_adapter": "adapters/brand_assistant_v5_best",
+          "model_key": [
+            "mlx-community/gemma-3-1b-it-qat-4bit",
+            "adapters/brand_assistant_v5_best",
+            null
+          ],
+          "in_flight": 1
+        },
+        "matching_request_events": 1,
+        "load_event": {
+          "schema": "phase3-load-ledger-v1",
+          "pid": 3787,
+          "time": 1795426079.607302,
+          "event": "model_loaded",
+          "model_key": [
+            "mlx-community/gemma-3-1b-it-qat-4bit",
+            "adapters/brand_assistant_v5_best",
+            null
+          ],
+          "adapter_inspection": {
+            "adapter_path_as_requested": "adapters/brand_assistant_v5_best",
+            "resolved_path": "<repo>/adapters/brand_assistant_v5_best",
+            "server_cwd": "<repo>",
+            "adapters_safetensors_sha256": "84d482c93281680d9393ab595f06054f30e88d4c61e5f083d2c557c03980adf2",
+            "adapter_config_sha256": "88ebe11724c9313a718f07634f020937b71f566c039e1492100a02274687c036",
+            "tensor_comparison": {
+              "file_tensor_count": 112,
+              "matched_tensor_count": 112,
+              "model_lora_param_count": 112,
+              "missing_in_model": [],
+              "shape_mismatch": [],
+              "value_mismatch": [],
+              "lora_params_not_in_file": [],
+              "all_tensors_match": true
+            },
+            "lora_module_count": 56
+          }
+        }
+      },
+      "method": "server_load_ledger",
+      "ledger_path": "<repo>/outputs/phase4_v5_work/server_load_ledger.jsonl",
+      "ledger_schema_version": "phase3-load-ledger-v1",
+      "ledger_problems": [],
+      "messages_sha256": "4d8bec30a1db035ea0d3f82ce0a7500a3188d48c5950df9fa05e038cd2483af8"
+    }
+  },
+  "status": {
+    "execution_status": "incomplete",
+    "incomplete_reason": "truncated_output",
+    "structural_validation": "fail",
+    "citation_validation": "not_applicable",
+    "semantic_verification": "not_run",
+    "human_review": "not_applicable",
+    "draft_label": null,
+    "send_ready": false,
+    "send_ready_note": "This system never marks a draft as send-ready; a person must review it."
+  },
+  "validation": {
+    "parse_error": {
+      "error_type": "truncated_output",
+      "truncated": true,
+      "finish_reason": "length",
+      "unbalanced_braces": true,
+      "message": "Outermost JSON object is malformed or incomplete: Expecting ',' delimiter: line 1 column 1067 (char 1066)"
+    },
+    "truncated": true,
+    "structural_errors": [
+      "truncated_output: Outermost JSON object is malformed or incomplete: Expecting ',' delimiter: line 1 column 1067 (char 1066)"
+    ],
+    "citation_errors": [],
+    "unknown_citation_ids": [],
+    "claimed_citation_ids": [],
+    "raw_format": {
+      "starts_with_brace": true,
+      "code_fenced": false,
+      "text_outside_json": null
+    },
+    "v3": null,
+    "note": "Structural and citation-ID checks do not establish factual support."
+  },
+  "verification": {
+    "status": "not_run",
+    "verifier_name": "none",
+    "findings": [],
+    "uncertainty": "Factual support of claims has not been assessed.",
+    "suggested_recovery": "none",
+    "notes": "No semantic verifier is available in this contribution (Phase 4 pending).",
+    "is_mock": false
+  },
+  "recovery": {
+    "recovery_enabled": false,
+    "note": "Fixed single-pass run: recovery actions are suggestions for a future controller and were not executed.",
+    "suggested_action": "regenerate_from_existing_packet",
+    "proposed_budget": {
+      "max_retrieval_actions": 8,
+      "max_regeneration_attempts": 2,
+      "status": "proposed, unconfirmed"
+    }
+  },
+  "environment": {
+    "git": {
+      "commit": "9324b142b46bbe684754a37eb8bc6d89701cbeb2",
+      "branch": "varshini/phase4-v5-complete",
+      "dirty": true,
+      "changed_paths": 2
+    },
+    "python": "3.11.14",
+    "platform": "macOS-26.3-arm64-arm-64bit",
+    "machine": "arm64",
+    "client_package_versions": {
+      "mlx": "0.32.4",
+      "mlx-lm": "0.32.2",
+      "ddgs": "9.16.1",
+      "keras": null,
+      "keras-hub": null,
+      "fastapi": "0.162.0",
+      "huggingface-hub": "2.4.0",
+      "transformers": "5.22.1"
+    },
+    "note": "Package versions describe the client process; the model server may run in another environment."
+  },
+  "errors": [],
+  "finished_at": "2026-11-23T09:29:09.464130+00:00",
+  "duration_s": 72.833,
+  "artifacts": {
+    "evidence_packet": "evidence_packet.json",
+    "evidence_supplied": "evidence_supplied.json",
+    "prompt_messages": "prompt_messages.json",
+    "request_payload": "request_payload.json",
+    "raw_response": "raw_response.json",
+    "raw_output": "raw_output.txt",
+    "verifier_handoff": "verifier_handoff.json",
+    "verification": "verification.json",
+    "run": "run.json"
+  }
+}

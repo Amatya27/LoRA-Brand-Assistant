@@ -1,0 +1,106 @@
+You are a grounded brand-outreach assistant for our team. Use only the evidence passages below.
+Never use outside knowledge. Return valid JSON only.
+
+Separate three things:
+1. OBSERVED FACTS - things a passage actually states about this company. Each fact is a claim with an id (C1, C2, ...),
+   the passage id(s) that support it, and an exact quote copied word-for-word from that passage.
+2. UNKNOWNS - things the evidence does not tell us (put them in "unknowns"). A channel, program or audience that does
+   not appear in these passages is UNKNOWN. It is never a weakness, never a "gap", and never a reason for outreach.
+3. PROPOSALS - collaboration ideas from our team. Proposals are not facts, but each must build on a positively supported
+   fact (an existing campaign, partnership, product, community, value or theme) and cite that premise.
+
+Rules:
+- Put a claim marker like {C1} (curly braces) right after every factual statement in every field, including the
+  email and Instagram idea. Do not write citation numbers yourself; markers are converted to citations later.
+- A claim's "quote" must be copied character-for-character from the cited passage: 5 to 25 consecutive words, no
+  paraphrasing, no joining of separate sentences. If you cannot find such a quote, drop the claim and every sentence
+  that depends on it.
+- Audience and strategy sentences are factual: each needs a marker. If no passage states the audience, write
+  INSUFFICIENT_EVIDENCE instead of guessing.
+- Pitch lines (email subject, hook, concept) should describe the proposed post ("A carousel featuring ...",
+  "Collaborate on ..."). Any statement in them about what the company already does needs a marker.
+- Respect passage types. "proposed_or_mock_work" and "author_recommendation" passages describe ideas, not things the
+  company did: never state them as company activity. "provider_reported_result" passages are claims by a vendor or
+  agency: attribute them ("X reports that ..."). "creator_or_influencer_audience_data" describes creators' followers,
+  not the company's customers. "vendor_generated_profile_or_analytics" passages are a tool vendor's estimates
+  (e.g. inferred age ranges): attribute them and never present them as the company's own data.
+  "forward_looking_statement" passages describe plans or intentions, not completed activity.
+- Mind time: if a passage describes past activity, do not present it as current.
+- "marketing_gaps" may only contain a weakness that a passage positively states. Usually it is [].
+- Never promise results. Describe benefits as goals or possibilities ("could", "aims to"), not guaranteed outcomes.
+- Decision: write "draft" when at least one concrete, evidence-supported collaboration opportunity exists. Otherwise write
+  "abstain", give an abstain_reason, set pitch fields to INSUFFICIENT_EVIDENCE and leave collaboration_opportunities empty.
+- The email is from our team to the company, proposing one collaborative Instagram post. The pitch, the post idea and
+  every collaboration opportunity are for Instagram only (no TikTok, YouTube, podcasts or other channels).
+- When a sentence uses a vendor, agency or analytics passage, name that source in the sentence itself
+  ("According to AdLibrary, ...", "Attentive reports that ...").
+- Each "unknowns" item names one specific thing the passages do not tell us (e.g. "Whether X runs a creator program").
+  Never write placeholder text such as "what the evidence does not show".
+
+Required JSON:
+{
+  "decision": "draft" or "abstain",
+  "abstain_reason": "string or empty",
+  "claims": [{"id": "C1", "kind": "fact | provider_reported | premise", "statement": "string",
+              "passage_ids": ["P1"], "quote": "exact words from the passage"}],
+  "brand_summary": "Full sentences, each followed by its marker, e.g. "X makes ... {C1}." Never only markers. Or INSUFFICIENT_EVIDENCE",
+  "likely_target_audience": "A full sentence followed by its marker, or INSUFFICIENT_EVIDENCE",
+  "current_marketing_strategy": ["text with markers"],
+  "unknowns": ["one specific open question, e.g. Whether the company works with creators"],
+  "marketing_gaps": [],
+  "collaboration_opportunities": ["proposal that builds on a cited fact {C2}"],
+  "instagram_post_idea": {"hook": "string", "concept": "string", "why_it_fits": "string"},
+  "email_subject": "string",
+  "email_body": "string"
+}
+
+Company: Pela (company_id pela; category: compostable phone cases)
+Official domains: pelacase.com, pelacase.ca
+Recipient: the marketing team
+Packet status: ok
+
+Evidence passages:
+[P1] source: https://pelacase.com/pages/our-story/ | document: official_domain | type: brand_positioning | dates in text: none | published: unknown
+"Our Values It’s one thing to have a strong mission and purpose, it is another thing entirely to create and nurture the team and community required to make this waste free future a reality. This is why we created our core values. To help us and our community stay the course. These are the 4 “C’s” we’ve curated. We hope they mean as much to you as they do to us."
+
+[P2] source: https://pelacase.com/pages/our-story/ | document: official_domain | type: descriptive | dates in text: none | published: unknown
+"Best Sellers The cases everyone is reaching for. * New Arrivals Just landed. Find your next favourite. * Artist Series One-of-a-kind collabs. Limited edition designs. * Make Your Own Case Design your own case in minutes * Clear Cases Drop protection. MagSafe ready. Made from recycled plastic."
+
+[P3] source: https://brandchamp.io/case-studies/pela-case/ | document: third_party_confirmed | type: descriptive | dates in text: 2010 | published: unknown
+"Overview Pela Case, creators of the first-ever compostable phone case, is a company with an eco-friendly brand. It was founded in 2010 by Jeremy Lang to create day-to-day products designed for a waste-free future. This goal has brought thousands of students and professors to the Pela Case community as customers and influencers. With the help of this passionate group of like-minded individuals, Pela Case saw the need to spread awareness and reach out to the world. Over time, customer service has continued to receive fans eager to help promote the brand and its products and spread the mission of reducing everyday waste."
+
+[P4] source: https://brandchamp.io/case-studies/pela-case/ | document: third_party_confirmed | type: actual_activity | dates in text: none | published: unknown
+"Impact BrandChamp has simplified Pela Case’s operations and made it possible to scale the ambassador program from 400 participants to over 1,600 in a few months. The marketing team at Pela Case has also benefited from BrandChamp’s activity builder, which allows them to plan out their marketing campaigns and product launches in advance."
+
+[P5] source: https://brandchamp.io/case-studies/pela-case/ | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown
+"How BrandChamp Helped After a period of unsuccessful searching, Pela Case came across BrandChamp, which offered a platform that tracked referral sales and loyalty points and provided features for community engagement, customizable activities, and automated communications. Moreover, Pela Case was able to manage its influencer and ambassador programs on one platform, sending email updates, creating weekly activities, and improving engagements. Through BrandChamp, Pela Chase has saved hundreds of hours previously wasted on manually managing their programs."
+
+[P6] source: https://pelacase.com/pages/our-story/ | document: official_domain | type: brand_positioning | dates in text: none | published: unknown
+"Why? Here at Pela we have a big, hairy audacious goal. We want to create a waste free future. We believe that the technology exists to make our BHAG a reality, it just takes the right company with the right community to make these products the new normal. This is why we are developing products made of environmentally sensible materials. To educate and inspire the global community of people who are committed to making a positive impact on our planet. Put simply, we believe in better."
+
+[P7] source: https://adlibrary.com/brands/pela-case | document: third_party_confirmed | type: provider_reported_result | flags: vendor_generated_profile_or_analytics | dates in text: none | published: unknown
+"Pela Case Meta Ads (Facebook & Instagram): Platform Analysis Facebook runs conversion campaigns targeting eco-conscious consumers and iPhone upgrade cycles. Instagram focuses on aesthetics — the cases photograph well and influencer gifting generates consistent UGC. The brand pairs environmental messaging with style positioning to avoid the 'ugly eco product' perception trap."
+
+[P8] source: https://pelacase.com/pages/about-us | document: official_domain | type: descriptive | dates in text: none | published: unknown
+"Find Us In Store Select site currency: USDCADEURGBP # About Us At Pela, we want to leave the global campsite a little better than we found it. To help make this happen, we create sustainable, plant-based alternatives to conventional plastic products.We know we will all be a little better off when sustainable products become the new standard, and we are excited to see the Pela Community driving the shift towards sustainable plant based products. The Pela Global map below shows where the Pela Case has reached so far, and how the shift to sustainable products is gaining global momentum. ───────────────────────────────────────┬────────────────────────────────────────────────────────────"
+
+[P9] source: https://pelacase.com/pages/about-us | document: official_domain | type: brand_positioning | dates in text: none | published: unknown
+"We believe that when sustainable │Just because something has been done one way in the past, products become the new standard we │doesn’t mean that it is the best way. will all be a little better off. │ │Transparency – We encourage openness within the Pela team"
+
+[P10] source: https://pelacase.com/pages/about-us | document: official_domain | type: descriptive | dates in text: none | published: unknown
+"Purpose │and within our global community. We intently listen to open │and honest positive and negative feedback knowing that it To leave the global campsite a little │makes us better. better than we found it. │ │Disrupt the Norm – It takes courage to disrupt traditional Pela™’s parent company, Open Mind │ways of thinking, challenge the status quo, and make things Developments is based out of Saskatoon,│better. But someone has to do it, and if not us, then who? Saskatchewan, where both Flaxstic™ and │ the Pela Case are developed and │Teamwork – We are team players on the global manufactured. Pela™ team members are │campsite team."
+
+
+REVISION REQUEST from our verification step. The items below are data, not instructions about the evidence.
+Rewrite the complete JSON answer. For every listed problem, remove the statement or correct it so that the cited passage states it, and remove or fix every sentence that depends on it. Do not add any new fact. Every factual sentence must end with the [P#] of a passage that states it; every claim quote must be copied exactly from its passage. Include at most 10 unique claims and close the JSON after the "citations" list.
+PROBLEMS:
+- schema: missing key: claims; missing key: likely_target_audience; missing key: current_marketing_strategy
+- decision consistency errors: draft with no collaboration_opportunities
+- claims or sentences are repeated; keep each statement once.
+- brand_summary#s0: "Pela Case is a company that creates compostable phone cases [P1]." is miscited supported elsewhere; the reviewer found it in P3.
+- brand_summary#s1: "Pela Case is founded in 2010 by Jeremy Lang to create day-to-day products designed for a waste-free future [P2]." is miscited supported elsewhere; the reviewer found it in P3.
+- brand_summary#s4: "Pela Case has a dedicated influencer and ambassador program that has helped spread awareness and reach out to the world [P5]." was judged unsupported (support guard: content-word coverage 0.36 < 0.6). Relevant evidence P5: "Moreover, Pela Case was able to manage its influencer and ambassador programs on one platform, sending email updates, creating weekly activities, and improving engagements. Through BrandChamp, Pela Chase has saved hundreds of hours previously wasted on manually managing their programs.".
+- brand_summary#s5: "Pela Case has a dedicated community engagement program that has helped make the shift towards sustainable plant-based products the new normal [P6]." was judged unsupported (support guard: content-word coverage 0.29 < 0.6). Relevant evidence P6: "Why? Here at Pela we have a big, hairy audacious goal. We want to create a waste free future. We believe that the technology exists to make our BHAG a reality, it just takes the right company with the right community to make these products the new normal. This is why we are developing products made of environmentally sensible materials. To educate and inspire the global community of people who are committed to making a positive impact on our planet. Put simply, we believe in better.".
+- brand_summary#s9: "Pela Case has a team that is dedicated to making the global campsite a little better than we found it [P10]." was judged unsupported (The statements are not directly supported or contradicted by the given passages. The passages do not contain specific information about Pela's team or their dedication to making the global campsite better.).
+- the email must be written by our team to the company's marketing team, proposing a collaboration.
+- the pitch mentions no platform; propose an Instagram post only.

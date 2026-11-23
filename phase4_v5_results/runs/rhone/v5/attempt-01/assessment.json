@@ -1,0 +1,680 @@
+{
+ "checks_version": "phase4-v5-checks-2",
+ "structure": {
+  "strict_json": true,
+  "truncated": false,
+  "parse_error": null,
+  "schema_errors": [
+   "claims[10].id None is not C<n>",
+   "claims[10].kind None not in ('fact', 'provider_reported', 'premise')",
+   "claims[10].passage_ids must be a non-empty list of strings"
+  ],
+  "parse_mode": "strict",
+  "prompt_schema_valid": false,
+  "training_schema_valid": false,
+  "raw_format": {
+   "starts_with_brace": true,
+   "code_fenced": false,
+   "text_outside_json": false
+  }
+ },
+ "decision": "draft",
+ "repetition": {
+  "method": "exact match after whitespace/quote/case normalisation; no semantic similarity",
+  "claim_count": 11,
+  "duplicate_claim_ids": [],
+  "duplicate_claim_statements": 8,
+  "distinct_claim_statements": 3,
+  "duplicate_claim_quotes": 0,
+  "repeated_prose_sentences": {},
+  "max_8gram_repeats_in_raw": 8,
+  "looping": false
+ },
+ "citation_mechanics": {
+  "inline_passage_refs": [
+   "P1",
+   "P3",
+   "P3",
+   "P3",
+   "P3",
+   "P3",
+   "P3"
+  ],
+  "unknown_refs": [],
+  "claim_quotes": [
+   {
+    "index": 0,
+    "claim_id": "C1",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [
+     "P9"
+    ],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 1,
+    "claim_id": "C2",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [
+     "P8"
+    ],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 2,
+    "claim_id": "C3",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 3,
+    "claim_id": "C4",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 4,
+    "claim_id": "C5",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 5,
+    "claim_id": "C6",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 6,
+    "claim_id": "C7",
+    "passage_ids": [
+     "P10"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 7,
+    "claim_id": "C8",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 8,
+    "claim_id": "C9",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 9,
+    "claim_id": "C10",
+    "passage_ids": [
+     "P3"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 10,
+    "claim_id": null,
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   }
+  ]
+ },
+ "assertions": [
+  {
+   "review_id": "R-ed02843cbf39189f",
+   "location": "brand_summary#s0",
+   "text": "Rhone is a premium activewear brand that has expanded its marketing efforts to include a campaign that highlights the brand's commitment to mental health and wellness [P1].",
+   "kind": "factual",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": false,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-2fbecb1a11be125e",
+   "location": "current_marketing_strategy[0]#s0",
+   "text": "Rhone has launched its most ambitious campaign to date, bringing the versatility of the Commuter® Collection to life through high-impact NYC activations [P3].",
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": false,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-711c4001275965a8",
+   "location": "collaboration_opportunities[0]#s0",
+   "text": "Collaborate on an Instagram post that highlights Rhone's commitment to mental health and wellness [P3].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P3"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": false,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-97ca5cffc430b344",
+   "location": "instagram_post_idea.concept#s0",
+   "text": "A carousel post featuring Rhone's Commuter® Collection and its impact on mental wellness [P3].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P3"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": false,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-db1f0edf1cccfebb",
+   "location": "instagram_post_idea.why_it_fits#s0",
+   "text": "Join community and get involved with Rhone's mission of making performance apparel worthy of the whole person wearing it [P3].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P3"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": false,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-6ce1f7c7311a57a3",
+   "location": "email_body#s2",
+   "text": "This concept would involve a carousel post on Instagram that showcases Rhone's Commuter® Collection and its impact on mental wellness, building on your recent campaign that highlights the science of the stitch [P3].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P3"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": false,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-e0a8a8e3468b6724",
+   "location": "email_body#s3",
+   "text": "This concept would be perfect for your team, as it would align with your brand's mission of making performance apparel worthy of the whole person wearing it [P3].",
+   "kind": "proposal_premise",
+   "cited_passages": [
+    "P3"
+   ],
+   "citation_source": "inline_[P#]",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": false,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-1202845555f8d9ea",
+   "location": "claims[0].statement",
+   "text": "Rhone has launched its most ambitious campaign to date, bringing the versatility of the Commuter® Collection to life through high-impact NYC activations {P3}.",
+   "duplicate_of": "R-2fbecb1a11be125e",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-d0d2c2c624e375e6",
+   "location": "claims[1].statement",
+   "text": "Rhone has spent over a decade obsessing over the details of how apparel can support a full and active life {P10}.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": false,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-1202845555f8d9ea",
+   "location": "claims[2].statement",
+   "text": "Rhone has launched its most ambitious campaign to date, bringing the versatility of the Commuter® Collection to life through high-impact NYC activations {P3}.",
+   "duplicate_of": "R-2fbecb1a11be125e",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-d0d2c2c624e375e6",
+   "location": "claims[3].statement",
+   "text": "Rhone has spent over a decade obsessing over the details of how apparel can support a full and active life {P10}.",
+   "duplicate_of": "R-d0d2c2c624e375e6",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-1202845555f8d9ea",
+   "location": "claims[4].statement",
+   "text": "Rhone has launched its most ambitious campaign to date, bringing the versatility of the Commuter® Collection to life through high-impact NYC activations {P3}.",
+   "duplicate_of": "R-2fbecb1a11be125e",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1202845555f8d9ea",
+   "location": "claims[5].statement",
+   "text": "Rhone has launched its most ambitious campaign to date, bringing the versatility of the Commuter® Collection to life through high-impact NYC activations {P3}.",
+   "duplicate_of": "R-2fbecb1a11be125e",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-d0d2c2c624e375e6",
+   "location": "claims[6].statement",
+   "text": "Rhone has spent over a decade obsessing over the details of how apparel can support a full and active life {P10}.",
+   "duplicate_of": "R-d0d2c2c624e375e6",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P10"
+   ]
+  },
+  {
+   "review_id": "R-1202845555f8d9ea",
+   "location": "claims[7].statement",
+   "text": "Rhone has launched its most ambitious campaign to date, bringing the versatility of the Commuter® Collection to life through high-impact NYC activations {P3}.",
+   "duplicate_of": "R-2fbecb1a11be125e",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1202845555f8d9ea",
+   "location": "claims[8].statement",
+   "text": "Rhone has launched its most ambitious campaign to date, bringing the versatility of the Commuter® Collection to life through high-impact NYC activations {P3}.",
+   "duplicate_of": "R-2fbecb1a11be125e",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-1202845555f8d9ea",
+   "location": "claims[9].statement",
+   "text": "Rhone has launched its most ambitious campaign to date, bringing the versatility of the Commuter® Collection to life through high-impact NYC activations {P3}.",
+   "duplicate_of": "R-2fbecb1a11be125e",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "factual",
+   "cited_passages": [
+    "P3"
+   ]
+  },
+  {
+   "review_id": "R-45f14440f3cb5502",
+   "location": "claims[10].statement",
+   "text": "",
+   "kind": "claim_statement",
+   "cited_passages": [],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": false,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  }
+ ],
+ "skipped_sentences": {
+  "proposal": [
+   {
+    "location": "instagram_post_idea.hook#s0",
+    "text": "Join community"
+   },
+   {
+    "location": "email_subject#s0",
+    "text": "Join community"
+   },
+   {
+    "location": "email_body#s1",
+    "text": "We're excited to propose a collaboration that aligns with your brand's mission and values."
+   },
+   {
+    "location": "email_body#s4",
+    "text": "If this sounds interesting, we'd be happy to share a draft."
+   }
+  ],
+  "non_assertion": [
+   {
+    "location": "likely_target_audience#s0",
+    "text": "INSUFFICIENT_EVIDENCE"
+   },
+   {
+    "location": "email_body#s0",
+    "text": "Dear Rhone Marketing Team,"
+   },
+   {
+    "location": "email_body#s5",
+    "text": "Best regards,"
+   },
+   {
+    "location": "email_body#s6",
+    "text": "[Your Name]"
+   }
+  ]
+ },
+ "unknown_issues": [],
+ "outreach": {
+  "recipient": "correct",
+  "sender": "correct",
+  "instagram_mentioned": true,
+  "other_platforms_in_pitch": [],
+  "instagram_compliant": true,
+  "promises": [],
+  "email_subject": "Join community"
+ },
+ "failures": [
+  {
+   "check": "schema",
+   "detail": [
+    "claims[10].id None is not C<n>",
+    "claims[10].kind None not in ('fact', 'provider_reported', 'premise')",
+    "claims[10].passage_ids must be a non-empty list of strings"
+   ]
+  },
+  {
+   "check": "duplicate_claims",
+   "detail": [
+    [],
+    8
+   ]
+  },
+  {
+   "check": "claim_quotes",
+   "detail": [
+    {
+     "claim_id": "C1",
+     "self_quote": false,
+     "other_passage": [
+      "P9"
+     ]
+    },
+    {
+     "claim_id": "C2",
+     "self_quote": false,
+     "other_passage": [
+      "P8"
+     ]
+    },
+    {
+     "claim_id": "C3",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C4",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C5",
+     "self_quote": false,
+     "other_passage": []
+    }
+   ]
+  }
+ ],
+ "unresolved": [],
+ "unreviewed": [
+  "R-ed02843cbf39189f",
+  "R-2fbecb1a11be125e",
+  "R-711c4001275965a8",
+  "R-97ca5cffc430b344",
+  "R-db1f0edf1cccfebb",
+  "R-6ce1f7c7311a57a3",
+  "R-e0a8a8e3468b6724",
+  "R-d0d2c2c624e375e6",
+  "R-45f14440f3cb5502"
+ ],
+ "review_scope": "structurally_valid_only",
+ "passes": false,
+ "failure_signature": "44a656dfe0e0d9d7d46cc335d687a789f3fff12183a659600a98250f96e7416a",
+ "review_wall_s": 0.004,
+ "attempt": {
+  "index": 1,
+  "kind": "regenerate_bounded"
+ }
+}

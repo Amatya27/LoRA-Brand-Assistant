@@ -1,0 +1,9 @@
+{
+ "amendment": 3,
+ "applies_to": "evaluation_config.json",
+ "made_after": "stage 2 (initial reviews) and during stage 3 repair generation; before any repair output was assessed",
+ "change": "brand_assistant_recovery.summarise_assessment: model_abstained additionally requires no structure, schema, decision-consistency or template-placeholder failures (ABSTAIN_BLOCKERS).",
+ "reason": "A base repair output copied the prompt's JSON template with decision 'abstain'. Under the previous rule such a copy could have been recorded as a valid model abstention.",
+ "effect_on_initial_outputs": "none: no initial output had decision 'abstain'",
+ "brand_assistant_recovery_sha256": "dbcce28cba90b9d2eeebb099e22ad731eb9b55cb9d0eaff6e3955d0d9775cb9d"
+}

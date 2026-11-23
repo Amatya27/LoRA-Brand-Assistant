@@ -1,0 +1,19 @@
+{
+ "amendment": 4,
+ "applies_to": "evaluation_config.json",
+ "requested_by": "Varshini Akula (project owner), during repair round 1",
+ "made_after": "repair round 1 generation; before any repair output was assessed",
+ "changes": [
+  "Two repairs are a maximum, not a requirement: after a repair, a case whose output is again not strict JSON and again truncated (or again looping) stops with outcome withheld_failed_checks and stop_code withheld_no_progress, instead of receiving repair round 2.",
+  "Semantic review of repair attempts runs only for structurally valid candidates (strict JSON, not truncated, schema-valid). Assertions of other repair attempts are recorded with verdict 'unreviewed' (distinct from 'unresolved') and never count as supported.",
+  "Initial outputs keep the diagnostic review of recoverable assertions already completed in stage 2 (unchanged).",
+  "Exact cached reviews are reused (cache key = request incl. evidence + statement + company, and reviewer configuration).",
+  "Every stop now records a stop_code: verified, model_abstained, pipeline_ineligible, unresolved_review, withheld_no_progress, withheld_budget_exhausted, execution_failure."
+ ],
+ "frozen_limits_unchanged": {"max_repairs": 2, "invalid_reviewer_retries": 1, "claim_cap_in_repair": 10, "temperature": 0.0, "max_tokens": 3072},
+ "module_sha256": {
+  "brand_assistant_recovery.py": "d2625d23edd92420fe6625c08d669af7879befd61c80db3495880976b7b11bff",
+  "brand_assistant_review.py": "b9b1ee2b20622fdf0460a61c241521be0db77c3cfd41bbee08828531f114da68",
+  "run_phase4_v5.py": "ad007ace936d1798a5d0e3a80ba2580c7e34997f0b880b712e64c97db18836e8"
+ }
+}

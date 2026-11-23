@@ -1,0 +1,76 @@
+{
+ "case_id": "outdoor-voices/v5",
+ "company_id": "outdoor-voices",
+ "arm": "v5",
+ "packet_path": "outputs/phase3_v5/handoff_6efa346/data/v3_pilot/packets/outdoor-voices.json",
+ "packet_sha256": "fb3e615c99b46c771dbad20e22c50265924457d570787815464636572221af43",
+ "prompt_version": "brandpilot.prompt.v3.3",
+ "prompt_sha256": "c3012daeb989515469b795c2dcc033d396d065cce0c00bb2b6ab430ee33806f7",
+ "max_repairs": 2,
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "dir": "phase4_v5_results/runs/outdoor-voices/v5/attempt-00",
+   "prompt_sha256": "c3012daeb989515469b795c2dcc033d396d065cce0c00bb2b6ab430ee33806f7",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "length",
+   "usage": {
+    "prompt_tokens": 3448,
+    "completion_tokens": 3072,
+    "total_tokens": 6520,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 74.403,
+   "runtime_verified": true,
+   "raw_sha256": "4c3791b54d227b14022c6daa46e103d5be43e8bda49f5762bed4d5ed2c290127",
+   "reused_from": null,
+   "passes": false,
+   "strict_ok": false,
+   "model_abstained": false,
+   "failure_count": 4,
+   "unresolved_count": 0,
+   "failure_signature": "67e0addb7b5cd326e60a7bb350c88d6a1b0b76226616a462b6719d34635828b7",
+   "review_wall_s": 0.002,
+   "truncated": true,
+   "looping": true
+  },
+  {
+   "index": 1,
+   "kind": "regenerate_bounded",
+   "dir": "phase4_v5_results/runs/outdoor-voices/v5/attempt-01",
+   "prompt_sha256": "40e66bdf132b9f9ba1b35cb236024fc2b3cb6866ccfd5b5a15868d762fc7a9a3",
+   "generation_ok": true,
+   "generation_error": null,
+   "finish_reason": "length",
+   "usage": {
+    "prompt_tokens": 3566,
+    "completion_tokens": 3072,
+    "total_tokens": 6638,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "latency_s": 73.949,
+   "runtime_verified": true,
+   "raw_sha256": "c595ff17009e28fe1305515df49ab0abfd242ab07a53a320bd26350bc8b23313",
+   "reused_from": null,
+   "passes": false,
+   "strict_ok": false,
+   "model_abstained": false,
+   "truncated": true,
+   "looping": true,
+   "failure_count": 4,
+   "unresolved_count": 0,
+   "failure_signature": "67e0addb7b5cd326e60a7bb350c88d6a1b0b76226616a462b6719d34635828b7",
+   "review_wall_s": 0.001
+  }
+ ],
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "no progress: repair repeated the previous output or failures",
+ "stop_code": "withheld_no_progress",
+ "eligibility": "eligible"
+}

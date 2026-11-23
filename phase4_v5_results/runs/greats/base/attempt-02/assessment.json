@@ -1,0 +1,836 @@
+{
+ "checks_version": "phase4-v5-checks-2",
+ "structure": {
+  "strict_json": false,
+  "truncated": true,
+  "parse_error": {
+   "error_type": "truncated_output",
+   "truncated": true,
+   "finish_reason": "length",
+   "unbalanced_braces": true,
+   "message": "Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 153 column 20 (char 12329)"
+  },
+  "schema_errors": [
+   "truncated_output: Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 153 column 20 (char 12329)"
+  ],
+  "parse_mode": "diagnostic_prefix",
+  "prompt_schema_valid": false,
+  "training_schema_valid": false,
+  "raw_format": {
+   "starts_with_brace": false,
+   "code_fenced": true,
+   "text_outside_json": null
+  }
+ },
+ "decision": null,
+ "repetition": {
+  "method": "exact match after whitespace/quote/case normalisation; no semantic similarity",
+  "claim_count": 28,
+  "duplicate_claim_ids": [],
+  "duplicate_claim_statements": 23,
+  "distinct_claim_statements": 5,
+  "duplicate_claim_quotes": 0,
+  "repeated_prose_sentences": {},
+  "max_8gram_repeats_in_raw": 15,
+  "looping": true
+ },
+ "citation_mechanics": {
+  "inline_passage_refs": [],
+  "unknown_refs": [],
+  "claim_quotes": [
+   {
+    "index": 0,
+    "claim_id": "C1",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": true,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 1,
+    "claim_id": "C2",
+    "passage_ids": [
+     "P2"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 2,
+    "claim_id": "C3",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 3,
+    "claim_id": "C4",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 4,
+    "claim_id": "C5",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 5,
+    "claim_id": "C6",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 6,
+    "claim_id": "C7",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 7,
+    "claim_id": "C8",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 8,
+    "claim_id": "C9",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 9,
+    "claim_id": "C10",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 10,
+    "claim_id": "C11",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 11,
+    "claim_id": "C12",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 12,
+    "claim_id": "C13",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 13,
+    "claim_id": "C14",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 14,
+    "claim_id": "C15",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 15,
+    "claim_id": "C16",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 16,
+    "claim_id": "C17",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 17,
+    "claim_id": "C18",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 18,
+    "claim_id": "C19",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 19,
+    "claim_id": "C20",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 20,
+    "claim_id": "C21",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 21,
+    "claim_id": "C22",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 22,
+    "claim_id": "C23",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 23,
+    "claim_id": "C24",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 24,
+    "claim_id": "C25",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 25,
+    "claim_id": "C26",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 26,
+    "claim_id": "C27",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 27,
+    "claim_id": "C28",
+    "passage_ids": [],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   }
+  ]
+ },
+ "assertions": [
+  {
+   "review_id": "R-c10f52760b62b8e3",
+   "location": "claims[0].statement",
+   "text": "Greats is the first sneaker brand born in Brooklyn.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-06340945ab3faa46",
+   "location": "claims[1].statement",
+   "text": "Free standard shipping on all US orders over $125",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P2"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-26c60c7b1b2ceffa",
+   "location": "claims[2].statement",
+   "text": "Greats Sneakers - Customer Case Study Greats is a New York–based startup sneaker brand that launched a beta site in August. With no marketing budget, founders Ryan Babenzien and Jon Buscemi focused on design and experience, building an Instagram “mood board” from May 8 that grew to 8,400+ followers and established the brand’s aesthetic before products were even available. They chose Shopify to build a clean, cohesive store quickly, using their clear visual vision to guide site flow and logistics. The approach paid off: on launch day (Aug 6) they surpassed first-month sales projections within 30 hours and earned coverage in GQ, Uncrate, Hypebeast, Highsnobiety and WWD in the first three days.",
+   "kind": "claim_statement",
+   "cited_passages": [],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-a40553485894498a",
+   "location": "claims[3].statement",
+   "text": "Greats Ads Strategy: What Makes Greats Ads Effective Greats' paid ads led with a single price-versus-quality argument: Italian-made sneakers at DTC prices versus retail-marked-up designer alternatives. The transparency of that argument converted price-conscious quality buyers efficiently. Explore Greats ads on AdLibrary.",
+   "kind": "claim_statement",
+   "cited_passages": [],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-d85dc350a02775de",
+   "location": "claims[4].statement",
+   "text": "About Greats Greats Greats is a New York DTC sneaker brand, the first to go fully direct-to-consumer at a premium price with Italian-made product. Acquired by Steve Madden in 2019, Greats pioneered the DTC footwear playbook that dozens of brands subsequently copied.",
+   "kind": "claim_statement",
+   "cited_passages": [],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": true,
+   "diagnostic_only": true,
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "flags": [],
+   "reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "reviewer_reason": "skipped: output not structurally valid (review scope, amendment 4)",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unreviewed",
+    "attempts": null,
+    "request_sha256": null,
+    "reviewer": null,
+    "cache": null
+   }
+  },
+  {
+   "review_id": "R-a40553485894498a",
+   "location": "claims[5].statement",
+   "text": "Greats Ads Strategy: What Makes Greats Ads Effective Greats' paid ads led with a single price-versus-quality argument: Italian-made sneakers at DTC prices versus retail-marked-up designer alternatives. The transparency of that argument converted price-conscious quality buyers efficiently. Explore Greats ads on AdLibrary.",
+   "duplicate_of": "R-a40553485894498a",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-d85dc350a02775de",
+   "location": "claims[6].statement",
+   "text": "About Greats Greats Greats is a New York DTC sneaker brand, the first to go fully direct-to-consumer at a premium price with Italian-made product. Acquired by Steve Madden in 2019, Greats pioneered the DTC footwear playbook that dozens of brands subsequently copied.",
+   "duplicate_of": "R-d85dc350a02775de",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-a40553485894498a",
+   "location": "claims[7].statement",
+   "text": "Greats Ads Strategy: What Makes Greats Ads Effective Greats' paid ads led with a single price-versus-quality argument: Italian-made sneakers at DTC prices versus retail-marked-up designer alternatives. The transparency of that argument converted price-conscious quality buyers efficiently. Explore Greats ads on AdLibrary.",
+   "duplicate_of": "R-a40553485894498a",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-d85dc350a02775de",
+   "location": "claims[8].statement",
+   "text": "About Greats Greats Greats is a New York DTC sneaker brand, the first to go fully direct-to-consumer at a premium price with Italian-made product. Acquired by Steve Madden in 2019, Greats pioneered the DTC footwear playbook that dozens of brands subsequently copied.",
+   "duplicate_of": "R-d85dc350a02775de",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-a40553485894498a",
+   "location": "claims[9].statement",
+   "text": "Greats Ads Strategy: What Makes Greats Ads Effective Greats' paid ads led with a single price-versus-quality argument: Italian-made sneakers at DTC prices versus retail-marked-up designer alternatives. The transparency of that argument converted price-conscious quality buyers efficiently. Explore Greats ads on AdLibrary.",
+   "duplicate_of": "R-a40553485894498a",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-d85dc350a02775de",
+   "location": "claims[10].statement",
+   "text": "About Greats Greats Greats is a New York DTC sneaker brand, the first to go fully direct-to-consumer at a premium price with Italian-made product. Acquired by Steve Madden in 2019, Greats pioneered the DTC footwear playbook that dozens of brands subsequently copied.",
+   "duplicate_of": "R-d85dc350a02775de",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-a40553485894498a",
+   "location": "claims[11].statement",
+   "text": "Greats Ads Strategy: What Makes Greats Ads Effective Greats' paid ads led with a single price-versus-quality argument: Italian-made sneakers at DTC prices versus retail-marked-up designer alternatives. The transparency of that argument converted price-conscious quality buyers efficiently. Explore Greats ads on AdLibrary.",
+   "duplicate_of": "R-a40553485894498a",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-d85dc350a02775de",
+   "location": "claims[12].statement",
+   "text": "About Greats Greats Greats is a New York DTC sneaker brand, the first to go fully direct-to-consumer at a premium price with Italian-made product. Acquired by Steve Madden in 2019, Greats pioneered the DTC footwear playbook that dozens of brands subsequently copied.",
+   "duplicate_of": "R-d85dc350a02775de",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-a40553485894498a",
+   "location": "claims[13].statement",
+   "text": "Greats Ads Strategy: What Makes Greats Ads Effective Greats' paid ads led with a single price-versus-quality argument: Italian-made sneakers at DTC prices versus retail-marked-up designer alternatives. The transparency of that argument converted price-conscious quality buyers efficiently. Explore Greats ads on AdLibrary.",
+   "duplicate_of": "R-a40553485894498a",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-d85dc350a02775de",
+   "location": "claims[14].statement",
+   "text": "About Greats Greats Greats is a New York DTC sneaker brand, the first to go fully direct-to-consumer at a premium price with Italian-made product. Acquired by Steve Madden in 2019, Greats pioneered the DTC footwear playbook that dozens of brands subsequently copied.",
+   "duplicate_of": "R-d85dc350a02775de",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-a40553485894498a",
+   "location": "claims[15].statement",
+   "text": "Greats Ads Strategy: What Makes Greats Ads Effective Greats' paid ads led with a single price-versus-quality argument: Italian-made sneakers at DTC prices versus retail-marked-up designer alternatives. The transparency of that argument converted price-conscious quality buyers efficiently. Explore Greats ads on AdLibrary.",
+   "duplicate_of": "R-a40553485894498a",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-d85dc350a02775de",
+   "location": "claims[16].statement",
+   "text": "About Greats Greats Greats is a New York DTC sneaker brand, the first to go fully direct-to-consumer at a premium price with Italian-made product. Acquired by Steve Madden in 2019, Greats pioneered the DTC footwear playbook that dozens of brands subsequently copied.",
+   "duplicate_of": "R-d85dc350a02775de",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-a40553485894498a",
+   "location": "claims[17].statement",
+   "text": "Greats Ads Strategy: What Makes Greats Ads Effective Greats' paid ads led with a single price-versus-quality argument: Italian-made sneakers at DTC prices versus retail-marked-up designer alternatives. The transparency of that argument converted price-conscious quality buyers efficiently. Explore Greats ads on AdLibrary.",
+   "duplicate_of": "R-a40553485894498a",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-d85dc350a02775de",
+   "location": "claims[18].statement",
+   "text": "About Greats Greats Greats is a New York DTC sneaker brand, the first to go fully direct-to-consumer at a premium price with Italian-made product. Acquired by Steve Madden in 2019, Greats pioneered the DTC footwear playbook that dozens of brands subsequently copied.",
+   "duplicate_of": "R-d85dc350a02775de",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-a40553485894498a",
+   "location": "claims[19].statement",
+   "text": "Greats Ads Strategy: What Makes Greats Ads Effective Greats' paid ads led with a single price-versus-quality argument: Italian-made sneakers at DTC prices versus retail-marked-up designer alternatives. The transparency of that argument converted price-conscious quality buyers efficiently. Explore Greats ads on AdLibrary.",
+   "duplicate_of": "R-a40553485894498a",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-d85dc350a02775de",
+   "location": "claims[20].statement",
+   "text": "About Greats Greats Greats is a New York DTC sneaker brand, the first to go fully direct-to-consumer at a premium price with Italian-made product. Acquired by Steve Madden in 2019, Greats pioneered the DTC footwear playbook that dozens of brands subsequently copied.",
+   "duplicate_of": "R-d85dc350a02775de",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-a40553485894498a",
+   "location": "claims[21].statement",
+   "text": "Greats Ads Strategy: What Makes Greats Ads Effective Greats' paid ads led with a single price-versus-quality argument: Italian-made sneakers at DTC prices versus retail-marked-up designer alternatives. The transparency of that argument converted price-conscious quality buyers efficiently. Explore Greats ads on AdLibrary.",
+   "duplicate_of": "R-a40553485894498a",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-d85dc350a02775de",
+   "location": "claims[22].statement",
+   "text": "About Greats Greats Greats is a New York DTC sneaker brand, the first to go fully direct-to-consumer at a premium price with Italian-made product. Acquired by Steve Madden in 2019, Greats pioneered the DTC footwear playbook that dozens of brands subsequently copied.",
+   "duplicate_of": "R-d85dc350a02775de",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-a40553485894498a",
+   "location": "claims[23].statement",
+   "text": "Greats Ads Strategy: What Makes Greats Ads Effective Greats' paid ads led with a single price-versus-quality argument: Italian-made sneakers at DTC prices versus retail-marked-up designer alternatives. The transparency of that argument converted price-conscious quality buyers efficiently. Explore Greats ads on AdLibrary.",
+   "duplicate_of": "R-a40553485894498a",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-d85dc350a02775de",
+   "location": "claims[24].statement",
+   "text": "About Greats Greats Greats is a New York DTC sneaker brand, the first to go fully direct-to-consumer at a premium price with Italian-made product. Acquired by Steve Madden in 2019, Greats pioneered the DTC footwear playbook that dozens of brands subsequently copied.",
+   "duplicate_of": "R-d85dc350a02775de",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-a40553485894498a",
+   "location": "claims[25].statement",
+   "text": "Greats Ads Strategy: What Makes Greats Ads Effective Greats' paid ads led with a single price-versus-quality argument: Italian-made sneakers at DTC prices versus retail-marked-up designer alternatives. The transparency of that argument converted price-conscious quality buyers efficiently. Explore Greats ads on AdLibrary.",
+   "duplicate_of": "R-a40553485894498a",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-d85dc350a02775de",
+   "location": "claims[26].statement",
+   "text": "About Greats Greats Greats is a New York DTC sneaker brand, the first to go fully direct-to-consumer at a premium price with Italian-made product. Acquired by Steve Madden in 2019, Greats pioneered the DTC footwear playbook that dozens of brands subsequently copied.",
+   "duplicate_of": "R-d85dc350a02775de",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": []
+  },
+  {
+   "review_id": "R-a40553485894498a",
+   "location": "claims[27].statement",
+   "text": "Greats Ads Strategy: What Makes Greats Ads Effective Greats' paid ads led with a single price-versus-quality argument: Italian-made sneakers at DTC prices versus retail-marked-up designer alternatives. The transparency of that argument converted price-conscious quality buyers efficiently. Explore Greats ads on AdLibrary.",
+   "duplicate_of": "R-a40553485894498a",
+   "flags": [],
+   "verdict": "unreviewed",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": []
+  }
+ ],
+ "skipped_sentences": {
+  "proposal": [],
+  "non_assertion": []
+ },
+ "unknown_issues": [],
+ "outreach": {
+  "recipient": "no_email",
+  "sender": "no_email",
+  "instagram_mentioned": false,
+  "other_platforms_in_pitch": [],
+  "instagram_compliant": false,
+  "promises": [],
+  "email_subject": ""
+ },
+ "failures": [
+  {
+   "check": "structure",
+   "detail": [
+    "truncated_output: Outermost JSON object is malformed or incomplete: Unterminated string starting at: line 153 column 20 (char 12329)"
+   ]
+  },
+  {
+   "check": "duplicate_claims",
+   "detail": [
+    [],
+    23
+   ]
+  },
+  {
+   "check": "repetition",
+   "detail": [
+    15
+   ]
+  },
+  {
+   "check": "claim_quotes",
+   "detail": [
+    {
+     "claim_id": "C2",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C3",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C4",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C5",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C6",
+     "self_quote": false,
+     "other_passage": []
+    }
+   ]
+  },
+  {
+   "check": "sender_recipient",
+   "detail": [
+    "no_email",
+    "no_email"
+   ]
+  },
+  {
+   "check": "instagram",
+   "detail": []
+  }
+ ],
+ "unresolved": [],
+ "unreviewed": [
+  "R-c10f52760b62b8e3",
+  "R-06340945ab3faa46",
+  "R-26c60c7b1b2ceffa",
+  "R-a40553485894498a",
+  "R-d85dc350a02775de"
+ ],
+ "review_scope": "structurally_valid_only",
+ "passes": false,
+ "failure_signature": "f7bcc7993ff61f6468cff2eb65d377c1b523e7cdd14042e1abca051b2089f5eb",
+ "review_wall_s": 0.005,
+ "attempt": {
+  "index": 2,
+  "kind": "regenerate_bounded"
+ }
+}

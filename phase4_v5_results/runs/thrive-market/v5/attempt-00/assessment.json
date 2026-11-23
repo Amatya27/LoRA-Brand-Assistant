@@ -1,0 +1,1158 @@
+{
+ "checks_version": "phase4-v5-checks-2",
+ "structure": {
+  "strict_json": false,
+  "truncated": true,
+  "parse_error": {
+   "error_type": "truncated_output",
+   "truncated": true,
+   "finish_reason": "length",
+   "unbalanced_braces": true,
+   "message": "Outermost JSON object is malformed or incomplete: Expecting ',' delimiter: line 1 column 1067 (char 1066)"
+  },
+  "schema_errors": [
+   "truncated_output: Outermost JSON object is malformed or incomplete: Expecting ',' delimiter: line 1 column 1067 (char 1066)"
+  ],
+  "parse_mode": "diagnostic_prefix",
+  "prompt_schema_valid": false,
+  "training_schema_valid": false,
+  "raw_format": {
+   "starts_with_brace": true,
+   "code_fenced": false,
+   "text_outside_json": null
+  }
+ },
+ "decision": null,
+ "repetition": {
+  "method": "exact match after whitespace/quote/case normalisation; no semantic similarity",
+  "claim_count": 34,
+  "duplicate_claim_ids": [],
+  "duplicate_claim_statements": 32,
+  "distinct_claim_statements": 2,
+  "duplicate_claim_quotes": 32,
+  "repeated_prose_sentences": {},
+  "max_8gram_repeats_in_raw": 36,
+  "looping": true
+ },
+ "citation_mechanics": {
+  "inline_passage_refs": [],
+  "unknown_refs": [],
+  "claim_quotes": [
+   {
+    "index": 0,
+    "claim_id": "C1",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 1,
+    "claim_id": "C2",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 2,
+    "claim_id": "C3",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 3,
+    "claim_id": "C4",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 4,
+    "claim_id": "C5",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 5,
+    "claim_id": "C6",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 6,
+    "claim_id": "C7",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 7,
+    "claim_id": "C8",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 8,
+    "claim_id": "C9",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 9,
+    "claim_id": "C10",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 10,
+    "claim_id": "C11",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 11,
+    "claim_id": "C12",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 12,
+    "claim_id": "C13",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 13,
+    "claim_id": "C14",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 14,
+    "claim_id": "C15",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 15,
+    "claim_id": "C16",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 16,
+    "claim_id": "C17",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 17,
+    "claim_id": "C18",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 18,
+    "claim_id": "C19",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 19,
+    "claim_id": "C20",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 20,
+    "claim_id": "C21",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 21,
+    "claim_id": "C22",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 22,
+    "claim_id": "C23",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 23,
+    "claim_id": "C24",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 24,
+    "claim_id": "C25",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 25,
+    "claim_id": "C26",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 26,
+    "claim_id": "C27",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 27,
+    "claim_id": "C28",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 28,
+    "claim_id": "C29",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 29,
+    "claim_id": "C30",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 30,
+    "claim_id": "C31",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 31,
+    "claim_id": "C32",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 32,
+    "claim_id": "C33",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": false,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   },
+   {
+    "index": 33,
+    "claim_id": "C34",
+    "passage_ids": [
+     "P1"
+    ],
+    "unknown_passage_ids": [],
+    "quote_in_cited_passage": false,
+    "quote_only_in_other_passage": [],
+    "self_quote": true,
+    "placeholder_quote": false,
+    "cites_non_factual_type": []
+   }
+  ]
+ },
+ "assertions": [
+  {
+   "review_id": "R-5fb818b2822d1330",
+   "location": "claims[0].statement",
+   "text": "Thrive Market's mission-driven business launched with a stable of strategic health celebrity investors.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unsupported",
+   "reviewer_verdict": "unsupported",
+   "citation_status": "cited",
+   "flags": [],
+   "reason": "The evidence passages do not provide information about Thrive Market's mission-driven business or its investors.",
+   "guard": null,
+   "reviewer_reason": "The evidence passages do not provide information about Thrive Market's mission-driven business or its investors.",
+   "evidence_passage_id": null,
+   "evidence_quote": "",
+   "review": {
+    "status": "reviewed",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "5c0d63d33c6298da2e660df3aaf4fc7841c600f15a64fdc3efaa9b57c761f73d",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-5fb818b2822d1330\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P6\",\n  \"evidence_quote\": \"Thrive Market is a mission-driven business that launched with a stable of strategic health celebrity investors ranging from Deepak Chopra to Jillian Michaels to Molly Sims, all the way to influential bloggers like Wellness Mama.\",\n  \"reason\": \"The passage directly states that Thrive Market launched with a stable of strategic health celebrity investors, which supports the given statement.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 558,
+       "completion_tokens": 129,
+       "total_tokens": 687,
+       "prompt_tokens_details": {
+        "cached_tokens": 157
+       }
+      },
+      "latency_s": 11.648,
+      "error": null,
+      "validation_errors": [
+       "evidence_quote is not traceable to the named passage (>= 4 consecutive words required)"
+      ]
+     },
+     {
+      "attempt": 1,
+      "prompt_sha256": "fbdaee2f70e99a398a06484dd35198181b1b7c2000b1cfbd7dbc8af094a67db5",
+      "raw_text": "```json\n{\"review_id\": \"R-5fb818b2822d1330\", \"verdict\": \"unsupported\", \"evidence_passage_id\": \"null\", \"evidence_quote\": null, \"reason\": \"The evidence passages do not provide information about Thrive Market's mission-driven business or its investors.\"}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 588,
+       "completion_tokens": 76,
+       "total_tokens": 664,
+       "prompt_tokens_details": {
+        "cached_tokens": 552
+       }
+      },
+      "latency_s": 6.137,
+      "error": null,
+      "validation_errors": []
+     }
+    ],
+    "request_sha256": "7f5a49eb9595a4dedc8952b6187ac9f313c554d06a9786a4c18514bfb080b4ca",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-9196cd9e564b191d",
+   "location": "claims[1].statement",
+   "text": "Thrive Market has over 300k paying members on a $60 monthly membership.",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ],
+   "citation_source": "claims.passage_ids",
+   "marker_mapping": {},
+   "unknown_citations": [],
+   "introduced_by_repair": false,
+   "diagnostic_only": true,
+   "verdict": "unresolved",
+   "citation_status": null,
+   "reason": "reviewer response missing, invalid or untraceable after retries",
+   "reviewer_reason": "reviewer response missing, invalid or untraceable after retries",
+   "evidence_passage_id": null,
+   "evidence_quote": null,
+   "review": {
+    "status": "unresolved",
+    "attempts": [
+     {
+      "attempt": 0,
+      "prompt_sha256": "e808bd0e735f3c52edc85a935bd09156b3cd942ad589a010ebd361d1a12c839c",
+      "raw_text": "```json\n{\n  \"review_id\": \"R-9196cd9e564b191d\",\n  \"verdict\": \"supported\",\n  \"evidence_passage_id\": \"P6\",\n  \"evidence_quote\": \"Thrive Market is a mission-driven business that launched with a stable of strategic health celebrity investors ranging from Deepak Chopra to Jillian Michaels to Molly Sims, all the way to influential bloggers like Wellness Mama.\",\n  \"reason\": \"The passage directly states that Thrive Market has over 300k paying members on a $60 monthly membership.\"\n}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 595,
+       "completion_tokens": 130,
+       "total_tokens": 725,
+       "prompt_tokens_details": {
+        "cached_tokens": 158
+       }
+      },
+      "latency_s": 11.484,
+      "error": null,
+      "validation_errors": [
+       "evidence_quote is not traceable to the named passage (>= 4 consecutive words required)"
+      ]
+     },
+     {
+      "attempt": 1,
+      "prompt_sha256": "3c0c64c02101b7387d6b5bb20a4ac4f03fedb6c67e6eaef1e53065c1f66c9db3",
+      "raw_text": "```json\n{\"review_id\": \"R-9196cd9e564b191d\", \"verdict\": \"supported\", \"evidence_passage_id\": \"P6\", \"evidence_quote\": \"Thrive Market is a mission-driven business that launched with a stable of strategic health celebrity investors ranging from Deepak Chopra to Jillian Michaels to Molly Sims, all the way to influential bloggers like Wellness Mama.\", \"reason\": \"The passage directly states that Thrive Market has over 300k paying members on a $60 monthly membership, which matches the statement in question.\"}\n```",
+      "ok": true,
+      "finish_reason": "stop",
+      "usage": {
+       "prompt_tokens": 625,
+       "completion_tokens": 131,
+       "total_tokens": 756,
+       "prompt_tokens_details": {
+        "cached_tokens": 589
+       }
+      },
+      "latency_s": 10.33,
+      "error": null,
+      "validation_errors": [
+       "evidence_quote is not traceable to the named passage (>= 4 consecutive words required)"
+      ]
+     }
+    ],
+    "request_sha256": "95ff3b04013928a39ff02a242b2ef4f0139799effed42a4e9b20116ad6769aa3",
+    "reviewer": {
+     "backend": "openai_compatible",
+     "api_base": "http://127.0.0.1:8081/v1",
+     "model": "<home>/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "max_tokens": 300,
+     "temperature": 0.0,
+     "timeout_s": 120,
+     "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+     "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+     "prompt_version": "phase4-v5-reviewer-prompt-1",
+     "schema": "phase4-v5-review-1"
+    },
+    "cache": "miss"
+   }
+  },
+  {
+   "review_id": "R-5fb818b2822d1330",
+   "location": "claims[2].statement",
+   "text": "Thrive Market's mission-driven business launched with a stable of strategic health celebrity investors.",
+   "duplicate_of": "R-5fb818b2822d1330",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": "cited",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-9196cd9e564b191d",
+   "location": "claims[3].statement",
+   "text": "Thrive Market has over 300k paying members on a $60 monthly membership.",
+   "duplicate_of": "R-9196cd9e564b191d",
+   "flags": [],
+   "verdict": "unresolved",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-5fb818b2822d1330",
+   "location": "claims[4].statement",
+   "text": "Thrive Market's mission-driven business launched with a stable of strategic health celebrity investors.",
+   "duplicate_of": "R-5fb818b2822d1330",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": "cited",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-9196cd9e564b191d",
+   "location": "claims[5].statement",
+   "text": "Thrive Market has over 300k paying members on a $60 monthly membership.",
+   "duplicate_of": "R-9196cd9e564b191d",
+   "flags": [],
+   "verdict": "unresolved",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-5fb818b2822d1330",
+   "location": "claims[6].statement",
+   "text": "Thrive Market's mission-driven business launched with a stable of strategic health celebrity investors.",
+   "duplicate_of": "R-5fb818b2822d1330",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": "cited",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-9196cd9e564b191d",
+   "location": "claims[7].statement",
+   "text": "Thrive Market has over 300k paying members on a $60 monthly membership.",
+   "duplicate_of": "R-9196cd9e564b191d",
+   "flags": [],
+   "verdict": "unresolved",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-5fb818b2822d1330",
+   "location": "claims[8].statement",
+   "text": "Thrive Market's mission-driven business launched with a stable of strategic health celebrity investors.",
+   "duplicate_of": "R-5fb818b2822d1330",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": "cited",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-9196cd9e564b191d",
+   "location": "claims[9].statement",
+   "text": "Thrive Market has over 300k paying members on a $60 monthly membership.",
+   "duplicate_of": "R-9196cd9e564b191d",
+   "flags": [],
+   "verdict": "unresolved",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-5fb818b2822d1330",
+   "location": "claims[10].statement",
+   "text": "Thrive Market's mission-driven business launched with a stable of strategic health celebrity investors.",
+   "duplicate_of": "R-5fb818b2822d1330",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": "cited",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-9196cd9e564b191d",
+   "location": "claims[11].statement",
+   "text": "Thrive Market has over 300k paying members on a $60 monthly membership.",
+   "duplicate_of": "R-9196cd9e564b191d",
+   "flags": [],
+   "verdict": "unresolved",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-5fb818b2822d1330",
+   "location": "claims[12].statement",
+   "text": "Thrive Market's mission-driven business launched with a stable of strategic health celebrity investors.",
+   "duplicate_of": "R-5fb818b2822d1330",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": "cited",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-9196cd9e564b191d",
+   "location": "claims[13].statement",
+   "text": "Thrive Market has over 300k paying members on a $60 monthly membership.",
+   "duplicate_of": "R-9196cd9e564b191d",
+   "flags": [],
+   "verdict": "unresolved",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-5fb818b2822d1330",
+   "location": "claims[14].statement",
+   "text": "Thrive Market's mission-driven business launched with a stable of strategic health celebrity investors.",
+   "duplicate_of": "R-5fb818b2822d1330",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": "cited",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-9196cd9e564b191d",
+   "location": "claims[15].statement",
+   "text": "Thrive Market has over 300k paying members on a $60 monthly membership.",
+   "duplicate_of": "R-9196cd9e564b191d",
+   "flags": [],
+   "verdict": "unresolved",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-5fb818b2822d1330",
+   "location": "claims[16].statement",
+   "text": "Thrive Market's mission-driven business launched with a stable of strategic health celebrity investors.",
+   "duplicate_of": "R-5fb818b2822d1330",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": "cited",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-9196cd9e564b191d",
+   "location": "claims[17].statement",
+   "text": "Thrive Market has over 300k paying members on a $60 monthly membership.",
+   "duplicate_of": "R-9196cd9e564b191d",
+   "flags": [],
+   "verdict": "unresolved",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-5fb818b2822d1330",
+   "location": "claims[18].statement",
+   "text": "Thrive Market's mission-driven business launched with a stable of strategic health celebrity investors.",
+   "duplicate_of": "R-5fb818b2822d1330",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": "cited",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-9196cd9e564b191d",
+   "location": "claims[19].statement",
+   "text": "Thrive Market has over 300k paying members on a $60 monthly membership.",
+   "duplicate_of": "R-9196cd9e564b191d",
+   "flags": [],
+   "verdict": "unresolved",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-5fb818b2822d1330",
+   "location": "claims[20].statement",
+   "text": "Thrive Market's mission-driven business launched with a stable of strategic health celebrity investors.",
+   "duplicate_of": "R-5fb818b2822d1330",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": "cited",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-9196cd9e564b191d",
+   "location": "claims[21].statement",
+   "text": "Thrive Market has over 300k paying members on a $60 monthly membership.",
+   "duplicate_of": "R-9196cd9e564b191d",
+   "flags": [],
+   "verdict": "unresolved",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-5fb818b2822d1330",
+   "location": "claims[22].statement",
+   "text": "Thrive Market's mission-driven business launched with a stable of strategic health celebrity investors.",
+   "duplicate_of": "R-5fb818b2822d1330",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": "cited",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-9196cd9e564b191d",
+   "location": "claims[23].statement",
+   "text": "Thrive Market has over 300k paying members on a $60 monthly membership.",
+   "duplicate_of": "R-9196cd9e564b191d",
+   "flags": [],
+   "verdict": "unresolved",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-5fb818b2822d1330",
+   "location": "claims[24].statement",
+   "text": "Thrive Market's mission-driven business launched with a stable of strategic health celebrity investors.",
+   "duplicate_of": "R-5fb818b2822d1330",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": "cited",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-9196cd9e564b191d",
+   "location": "claims[25].statement",
+   "text": "Thrive Market has over 300k paying members on a $60 monthly membership.",
+   "duplicate_of": "R-9196cd9e564b191d",
+   "flags": [],
+   "verdict": "unresolved",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-5fb818b2822d1330",
+   "location": "claims[26].statement",
+   "text": "Thrive Market's mission-driven business launched with a stable of strategic health celebrity investors.",
+   "duplicate_of": "R-5fb818b2822d1330",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": "cited",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-9196cd9e564b191d",
+   "location": "claims[27].statement",
+   "text": "Thrive Market has over 300k paying members on a $60 monthly membership.",
+   "duplicate_of": "R-9196cd9e564b191d",
+   "flags": [],
+   "verdict": "unresolved",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-5fb818b2822d1330",
+   "location": "claims[28].statement",
+   "text": "Thrive Market's mission-driven business launched with a stable of strategic health celebrity investors.",
+   "duplicate_of": "R-5fb818b2822d1330",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": "cited",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-9196cd9e564b191d",
+   "location": "claims[29].statement",
+   "text": "Thrive Market has over 300k paying members on a $60 monthly membership.",
+   "duplicate_of": "R-9196cd9e564b191d",
+   "flags": [],
+   "verdict": "unresolved",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-5fb818b2822d1330",
+   "location": "claims[30].statement",
+   "text": "Thrive Market's mission-driven business launched with a stable of strategic health celebrity investors.",
+   "duplicate_of": "R-5fb818b2822d1330",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": "cited",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-9196cd9e564b191d",
+   "location": "claims[31].statement",
+   "text": "Thrive Market has over 300k paying members on a $60 monthly membership.",
+   "duplicate_of": "R-9196cd9e564b191d",
+   "flags": [],
+   "verdict": "unresolved",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-5fb818b2822d1330",
+   "location": "claims[32].statement",
+   "text": "Thrive Market's mission-driven business launched with a stable of strategic health celebrity investors.",
+   "duplicate_of": "R-5fb818b2822d1330",
+   "flags": [],
+   "verdict": "unsupported",
+   "citation_status": "cited",
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  },
+  {
+   "review_id": "R-9196cd9e564b191d",
+   "location": "claims[33].statement",
+   "text": "Thrive Market has over 300k paying members on a $60 monthly membership.",
+   "duplicate_of": "R-9196cd9e564b191d",
+   "flags": [],
+   "verdict": "unresolved",
+   "citation_status": null,
+   "kind": "claim_statement",
+   "cited_passages": [
+    "P1"
+   ]
+  }
+ ],
+ "skipped_sentences": {
+  "proposal": [],
+  "non_assertion": []
+ },
+ "unknown_issues": [],
+ "outreach": {
+  "recipient": "no_email",
+  "sender": "no_email",
+  "instagram_mentioned": false,
+  "other_platforms_in_pitch": [],
+  "instagram_compliant": false,
+  "promises": [],
+  "email_subject": ""
+ },
+ "failures": [
+  {
+   "check": "structure",
+   "detail": [
+    "truncated_output: Outermost JSON object is malformed or incomplete: Expecting ',' delimiter: line 1 column 1067 (char 1066)"
+   ]
+  },
+  {
+   "check": "duplicate_claims",
+   "detail": [
+    [],
+    32
+   ]
+  },
+  {
+   "check": "repetition",
+   "detail": [
+    36
+   ]
+  },
+  {
+   "check": "claim_quotes",
+   "detail": [
+    {
+     "claim_id": "C1",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C2",
+     "self_quote": true,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C3",
+     "self_quote": false,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C4",
+     "self_quote": true,
+     "other_passage": []
+    },
+    {
+     "claim_id": "C5",
+     "self_quote": false,
+     "other_passage": []
+    }
+   ]
+  },
+  {
+   "check": "semantic",
+   "review_id": "R-5fb818b2822d1330",
+   "location": "claims[0].statement",
+   "text": "Thrive Market's mission-driven business launched with a stable of strategic health celebrity investors.",
+   "verdict": "unsupported",
+   "reason": "The evidence passages do not provide information about Thrive Market's mission-driven business or its investors.",
+   "evidence_passage_id": null,
+   "evidence_quote": ""
+  },
+  {
+   "check": "sender_recipient",
+   "detail": [
+    "no_email",
+    "no_email"
+   ]
+  },
+  {
+   "check": "instagram",
+   "detail": []
+  }
+ ],
+ "unresolved": [
+  "R-9196cd9e564b191d"
+ ],
+ "passes": false,
+ "failure_signature": "488939c42653a529b0882419056472add6a0e6cbeaa6a8b3caa49025f1caa682",
+ "review_wall_s": 39.654,
+ "attempt": {
+  "index": 0,
+  "kind": "initial"
+ }
+}
