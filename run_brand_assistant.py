@@ -92,6 +92,18 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         help="Completion budget: max_tokens for the OpenAI-compatible backend; response budget for Keras.",
     )
     parser.add_argument("--temperature", type=float, default=0.0, help="Sampling temperature (OpenAI-compatible).")
+    parser.add_argument(
+        "--repetition-penalty",
+        type=float,
+        default=None,
+        help="DECODING DIAGNOSTIC: mlx_lm.server repetition_penalty. Omitted from the request unless set.",
+    )
+    parser.add_argument(
+        "--repetition-context-size",
+        type=int,
+        default=None,
+        help="DECODING DIAGNOSTIC: tokens considered by the repetition penalty (server default 20).",
+    )
     parser.add_argument("--timeout", type=float, default=300.0, help="Request timeout in seconds (OpenAI-compatible).")
     parser.add_argument(
         "--api-base",
@@ -216,6 +228,8 @@ def main(argv: list[str] | None = None) -> int:
             max_tokens=args.response_token_budget,
             temperature=args.temperature,
             timeout_s=args.timeout,
+            repetition_penalty=args.repetition_penalty,
+            repetition_context_size=args.repetition_context_size,
         ),
         adapter_path_is_local=args.adapter_path_is_local,
         server_load_ledger=args.server_load_ledger,

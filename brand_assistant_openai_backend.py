@@ -42,6 +42,10 @@ class OpenAICompatibleConfig:
     max_tokens: int = 650
     temperature: float = 0.0
     timeout_s: float = 300.0
+    # Optional decoding diagnostics (mlx_lm.server request fields). None = not sent, so
+    # default payloads are unchanged; any value makes the run a separately labelled experiment.
+    repetition_penalty: float | None = None
+    repetition_context_size: int | None = None
 
     def to_record(self) -> dict[str, Any]:
         return asdict(self)
@@ -63,6 +67,10 @@ def build_payload(messages: list[dict[str, str]], config: OpenAICompatibleConfig
         "temperature": config.temperature,
         "max_tokens": config.max_tokens,
     }
+    if config.repetition_penalty is not None:
+        payload["repetition_penalty"] = config.repetition_penalty
+    if config.repetition_context_size is not None:
+        payload["repetition_context_size"] = config.repetition_context_size
     if config.adapter_path:
         if config.model == SERVER_DEFAULT_MODEL_ALIAS:
             raise AdapterConfigurationError(

@@ -630,6 +630,12 @@ def run_pipeline(
             "model_revision": model_revision_hint(config.model),
         }
     )
+    if config.repetition_penalty is not None or config.repetition_context_size is not None:
+        record["generation"]["decoding_experiment"] = {
+            "label": "DECODING DIAGNOSTIC: repetition penalty sent to the server; not the default generation settings",
+            "repetition_penalty": config.repetition_penalty,
+            "repetition_context_size": config.repetition_context_size,
+        }
     if mode == "adapter-generation" and not config.adapter_path:
         return fail("adapter_missing", "adapter-generation requires an adapter path; no base-model fallback.")
     if mode == "fixed-generation" and config.adapter_path:

@@ -40,7 +40,8 @@ PACKET_SCHEMA_V3 = "brandpilot.packet.v3"
 OUTPUT_SCHEMA_V3 = "brandpilot.output.v3"
 PROMPT_V31 = "brandpilot.prompt.v3.1"
 PROMPT_V32 = "brandpilot.prompt.v3.2"
-V3_PROMPT_VERSIONS = (PROMPT_V31, PROMPT_V32)
+PROMPT_V33 = "brandpilot.prompt.v3.3"
+V3_PROMPT_VERSIONS = (PROMPT_V31, PROMPT_V32, PROMPT_V33)
 INSUFF = "INSUFFICIENT_EVIDENCE"
 # validator-1: schema, citation IDs, quote/decision checks reported only.
 # validator-2: a v3 run is "completed" only if those checks also pass (see form_gate_errors).
@@ -83,7 +84,7 @@ Rules:
 - Never promise results. Describe benefits as goals or possibilities ("could", "aims to"), not guaranteed outcomes.
 - Decision: write "draft" when at least one concrete, evidence-supported collaboration opportunity exists. Otherwise write
   "abstain", give an abstain_reason, set pitch fields to INSUFFICIENT_EVIDENCE and leave collaboration_opportunities empty.
-- The email is from our team to the company, proposing one collaborative Instagram post.
+- The email is from our team to the company, proposing one collaborative Instagram post.{extra_rules}
 
 Required JSON:
 {
@@ -104,10 +105,30 @@ _SUMMARY_LINES = {
         '  "likely_target_audience": "A full sentence followed by its marker, or INSUFFICIENT_EVIDENCE",\n'
     ),
 }
+_SUMMARY_LINES[PROMPT_V33] = _SUMMARY_LINES[PROMPT_V32]
 
-_RULES_TAIL = """  "current_marketing_strategy": ["text with markers"],
-  "unknowns": ["what the evidence does not show"],
-  "marketing_gaps": [],
+# v3.3 (Phase 1 commit 75d7452) adds three rules and a concrete "unknowns" example.
+_EXTRA_RULES = {
+    PROMPT_V31: "",
+    PROMPT_V32: "",
+    PROMPT_V33: (
+        " The pitch, the post idea and\n"
+        "  every collaboration opportunity are for Instagram only (no TikTok, YouTube, podcasts or other channels).\n"
+        "- When a sentence uses a vendor, agency or analytics passage, name that source in the sentence itself\n"
+        '  ("According to AdLibrary, ...", "Attentive reports that ...").\n'
+        '- Each "unknowns" item names one specific thing the passages do not tell us (e.g. "Whether X runs a creator program").\n'
+        '  Never write placeholder text such as "what the evidence does not show".'
+    ),
+}
+_UNKNOWNS_LINE = {
+    PROMPT_V31: '  "unknowns": ["what the evidence does not show"],\n',
+    PROMPT_V32: '  "unknowns": ["what the evidence does not show"],\n',
+    PROMPT_V33: '  "unknowns": ["one specific open question, e.g. Whether the company works with creators"],\n',
+}
+
+_RULES_TAIL_A = """  "current_marketing_strategy": ["text with markers"],
+"""
+_RULES_TAIL_B = """  "marketing_gaps": [],
   "collaboration_opportunities": ["proposal that builds on a cited fact {C2}"],
   "instagram_post_idea": {"hook": "string", "concept": "string", "why_it_fits": "string"},
   "email_subject": "string",
@@ -118,7 +139,8 @@ _RULES_TAIL = """  "current_marketing_strategy": ["text with markers"],
 def teacher_rules(version: str) -> str:
     if version not in _SUMMARY_LINES:
         raise ValueError(f"Unknown v3 prompt version {version!r}; expected one of {V3_PROMPT_VERSIONS}.")
-    return _RULES_HEAD + _SUMMARY_LINES[version] + _RULES_TAIL
+    head = _RULES_HEAD.replace("{extra_rules}", _EXTRA_RULES[version])
+    return head + _SUMMARY_LINES[version] + _RULES_TAIL_A + _UNKNOWNS_LINE[version] + _RULES_TAIL_B
 
 
 def render_evidence_block(packet: dict[str, Any]) -> str:
@@ -278,6 +300,7 @@ _SENT = re.compile(r"(?<=[.!?])\s+|\n+")
 # Placeholder strings from the prompt's "Required JSON" block. Copying one verbatim is not an answer.
 TEMPLATE_PLACEHOLDERS = {
     "string", "string or empty", "text with markers", "what the evidence does not show",
+    "one specific open question, e.g. whether the company works with creators",
     "exact words from the passage", "fact | provider_reported | premise", "a carousel featuring ...",
     "collaborate on ...", "proposal that builds on a cited fact {c2}", "text with markers, or insufficient_evidence",
 }
