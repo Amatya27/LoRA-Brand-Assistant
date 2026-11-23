@@ -4,7 +4,7 @@
   "bound_to": {
     "packet_sha256": "2200d12a254d0392d72241f67c6d3d763529a540e78909c9cb1807b2b8e2f308",
     "prompt_sha256": "9d2ecfa80d8f3c591ad869fdf9fbc3afb81ecf2f199fabf4b26b8aa218491c2a",
-    "completion_sha256": "1a397495386c471c8913b0ad5c0b8f95fcf8a6d53f3604a7584035bdcc431ea1",
+    "completion_sha256": "944af9c091c8d103964ddb14046d148370e7032af082d84ae89a0528f8ebd6ca",
     "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
   },
   "reviewer_config": {
@@ -16,17 +16,13 @@
     "max_tokens": 4096
   },
   "deterministic": {
-    "errors": [
-      "likely_target_audience: factual sentence without a claim marker: 'Charlotte Tilbury’s social media relies on real, relatable content.'",
-      "current_marketing_strategy[1]: factual sentence without a claim marker: 'Charlotte Tilbury’s social media relies on real, relatable content.'",
-      "current_marketing_strategy[2]: vendor/provider claim C4 (P8) is not attributed to its source (projectpractical) in the prose: 'Instagram is its main focus, where it’s most active and engaging .'",
-      "current_marketing_strategy[2]: factual sentence without a claim marker: 'According to ProjectPractical, Charlotte Tilbury, a top beauty brand, has a solid social m'",
-      "current_marketing_strategy[2]: factual sentence without a claim marker: 'It connects with fans online, using major platforms.'"
-    ],
-    "warnings": []
+    "errors": [],
+    "warnings": [
+      "claim C4: not referenced by any field"
+    ]
   },
-  "raw_response_sha256": "9c7603f4d41c6893fc156186c91cd5316acccf16c3d91e4e6ab0ec6a35bff14f",
-  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Charlotte Tilbury Beauty is the #1 prestige makeup brand in the UK, with a presence in 57 global markets, more than 5,000 points of distribution worldwide including department stores and travel retail, and over 19 million followers on social media.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states these facts about Charlotte Tilbury Beauty.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Charlotte Tilbury often uses Instagram Collabs with MUAs, celebrities, or skincare creators to co-post new product drops.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that Charlotte Tilbury uses Instagram Collabs.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"Charlotte Tilbury’s social media relies on real, relatable content. It partners with influencers who showcase its products, tutorials, and demos.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms that Charlotte Tilbury uses influencers and relatable content.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"Charlotte Tilbury, a top beauty brand, has a solid social media plan. It connects with fans online, using major platforms. Instagram is its main focus, where it’s most active and engaging.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Charlotte Tilbury has a solid social media plan and focuses on Instagram.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P10\"\n      ],\n      \"quote\": \"Creating video content, such as Instagram Reels and TikTok videos was the most effective method to engaging the audience in the products.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that video content is the most effective method for engagement.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "raw_response_sha256": "cabb851e1caf672d0b2fa06dae1fb3c1536e9f918e320a79136c73e17bdda848",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Charlotte Tilbury Beauty is the #1 prestige makeup brand in the UK, with a presence in 57 global markets, more than 5,000 points of distribution worldwide including department stores and travel retail, and over 19 million followers on social media.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states these facts about Charlotte Tilbury Beauty.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Charlotte Tilbury often uses Instagram Collabs with MUAs, celebrities, or skincare creators to co-post new product drops.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that Charlotte Tilbury uses Instagram Collabs.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"Charlotte Tilbury’s social media relies on real, relatable content. It partners with influencers who showcase its products, tutorials, and demos.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms Charlotte Tilbury partners with influencers.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"Charlotte Tilbury, a top beauty brand, has a solid social media plan. It connects with fans online, using major platforms. Instagram is its main focus, where it’s most active and engaging.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Charlotte Tilbury has a solid social media plan and focuses on Instagram.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P10\"\n      ],\n      \"quote\": \"Creating video content, such as Instagram Reels and TikTok videos was the most effective method to engaging the audience in the products.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that video content is the most effective method for engagement.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
   "review": {
     "identity_ok": true,
     "claims": [
@@ -58,7 +54,7 @@
         ],
         "quote": "Charlotte Tilbury’s social media relies on real, relatable content. It partners with influencers who showcase its products, tutorials, and demos.",
         "issues": [],
-        "reason": "The passage confirms that Charlotte Tilbury uses influencers and relatable content."
+        "reason": "The passage confirms Charlotte Tilbury partners with influencers."
       },
       {
         "claim_id": "C4",
@@ -85,11 +81,9 @@
     "absence_as_weakness": []
   },
   "review_validation_errors": [],
-  "status": "fail",
-  "reasons": [
-    "5 deterministic check error(s)"
-  ],
-  "created_at": "2026-11-22T23:53:00+00:00",
-  "audit_sha256": "b66cf26f2954cec5e08356d4e7002604bb20c296509f0eb7e96c10fb75e86732",
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-23T02:53:12+00:00",
+  "audit_sha256": "4cc1aaa1a3d7cd389ccac83035b27a303e502d15c616ffc36698a50699a55742",
   "dismissed_reviewer_flags": []
 }

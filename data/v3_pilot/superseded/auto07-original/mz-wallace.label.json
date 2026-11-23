@@ -1,0 +1,175 @@
+{
+  "schema_version": "brandpilot.label.v3",
+  "company_id": "mz-wallace",
+  "packet_path": "packets/mz-wallace.json",
+  "packet_sha256": "4255ed95275d6268d7e1b8f50e3dc7b069dc2820bb400cf7cfeccbda9afe77e4",
+  "prompt_version": "brandpilot.prompt.v3.3",
+  "prompt": "You are a grounded brand-outreach assistant for our team. Use only the evidence passages below.\nNever use outside knowledge. Return valid JSON only.\n\nSeparate three things:\n1. OBSERVED FACTS - things a passage actually states about this company. Each fact is a claim with an id (C1, C2, ...),\n   the passage id(s) that support it, and an exact quote copied word-for-word from that passage.\n2. UNKNOWNS - things the evidence does not tell us (put them in \"unknowns\"). A channel, program or audience that does\n   not appear in these passages is UNKNOWN. It is never a weakness, never a \"gap\", and never a reason for outreach.\n3. PROPOSALS - collaboration ideas from our team. Proposals are not facts, but each must build on a positively supported\n   fact (an existing campaign, partnership, product, community, value or theme) and cite that premise.\n\nRules:\n- Put a claim marker like {C1} (curly braces) right after every factual statement in every field, including the\n  email and Instagram idea. Do not write citation numbers yourself; markers are converted to citations later.\n- A claim's \"quote\" must be copied character-for-character from the cited passage: 5 to 25 consecutive words, no\n  paraphrasing, no joining of separate sentences. If you cannot find such a quote, drop the claim and every sentence\n  that depends on it.\n- Audience and strategy sentences are factual: each needs a marker. If no passage states the audience, write\n  INSUFFICIENT_EVIDENCE instead of guessing.\n- Pitch lines (email subject, hook, concept) should describe the proposed post (\"A carousel featuring ...\",\n  \"Collaborate on ...\"). Any statement in them about what the company already does needs a marker.\n- Respect passage types. \"proposed_or_mock_work\" and \"author_recommendation\" passages describe ideas, not things the\n  company did: never state them as company activity. \"provider_reported_result\" passages are claims by a vendor or\n  agency: attribute them (\"X reports that ...\"). \"creator_or_influencer_audience_data\" describes creators' followers,\n  not the company's customers. \"vendor_generated_profile_or_analytics\" passages are a tool vendor's estimates\n  (e.g. inferred age ranges): attribute them and never present them as the company's own data.\n  \"forward_looking_statement\" passages describe plans or intentions, not completed activity.\n- Mind time: if a passage describes past activity, do not present it as current.\n- \"marketing_gaps\" may only contain a weakness that a passage positively states. Usually it is [].\n- Never promise results. Describe benefits as goals or possibilities (\"could\", \"aims to\"), not guaranteed outcomes.\n- Decision: write \"draft\" when at least one concrete, evidence-supported collaboration opportunity exists. Otherwise write\n  \"abstain\", give an abstain_reason, set pitch fields to INSUFFICIENT_EVIDENCE and leave collaboration_opportunities empty.\n- The email is from our team to the company, proposing one collaborative Instagram post. The pitch, the post idea and\n  every collaboration opportunity are for Instagram only (no TikTok, YouTube, podcasts or other channels).\n- When a sentence uses a vendor, agency or analytics passage, name that source in the sentence itself\n  (\"According to AdLibrary, ...\", \"Attentive reports that ...\").\n- Each \"unknowns\" item names one specific thing the passages do not tell us (e.g. \"Whether X runs a creator program\").\n  Never write placeholder text such as \"what the evidence does not show\".\n\nRequired JSON:\n{\n  \"decision\": \"draft\" or \"abstain\",\n  \"abstain_reason\": \"string or empty\",\n  \"claims\": [{\"id\": \"C1\", \"kind\": \"fact | provider_reported | premise\", \"statement\": \"string\",\n              \"passage_ids\": [\"P1\"], \"quote\": \"exact words from the passage\"}],\n  \"brand_summary\": \"Full sentences, each followed by its marker, e.g. \"X makes ... {C1}.\" Never only markers. Or INSUFFICIENT_EVIDENCE\",\n  \"likely_target_audience\": \"A full sentence followed by its marker, or INSUFFICIENT_EVIDENCE\",\n  \"current_marketing_strategy\": [\"text with markers\"],\n  \"unknowns\": [\"one specific open question, e.g. Whether the company works with creators\"],\n  \"marketing_gaps\": [],\n  \"collaboration_opportunities\": [\"proposal that builds on a cited fact {C2}\"],\n  \"instagram_post_idea\": {\"hook\": \"string\", \"concept\": \"string\", \"why_it_fits\": \"string\"},\n  \"email_subject\": \"string\",\n  \"email_body\": \"string\"\n}\n\nCompany: MZ Wallace (company_id mz-wallace; category: nylon bags)\nOfficial domains: mzwallace.com\nRecipient: the marketing team\nPacket status: ok\n\nEvidence passages:\n[P1] source: https://www.mzwallace.com/pages/press | document: official_domain | type: historical_activity | dates in text: November 2019 | published: unknown\n\"Cult Bag Brand MZ Wallace Just Launched Its First Men's Collection “It was a long time coming, but after nearly 20 years in the game, accessories brand MZ Wallace has finally launched a men's collection” November 2019 CNN\"\n\n[P2] source: https://www.mzwallace.com/pages/about-us | document: official_domain | type: descriptive | dates in text: none | published: unknown\n\"OUR IMPACT We’re always working on ways to make a difference. As a B Corp-certified brand, we hold ourselves to the highest standards, ensuring that our design choices and business practices create lasting value for both people and the planet. b corp * MZW Gives Back program supports education, equal opportunity, and environmental stewardship * Packaging made from post-consumer recycled and biodegradable materials * Signature nylon fabrics are bluesign® approved and Global Recycled Standard (GRS) certified * Dedicated to ethical production and people- first practices MZ WALLACE\"\n\n[P3] source: https://www.mzwallace.com/en-na | document: official_domain | type: descriptive | dates in text: none | published: unknown\n\"MZW x MARLA AARON Our limited edition Lock Print Accordion Jewelry Case is back and makes for the perfect gift. Shop the Collab, Click Here to Shop New Arrivals\"\n\n[P4] source: https://www.mzwallace.com/en-na | document: official_domain | type: descriptive | dates in text: none | published: unknown\n\"MZW x MARLA AARON Our limited edition Lock Print Accordion Jewelry Case is back and makes for the perfect gift. Shop the Collab, Click Here to Shop New Arrivals More Meet Wally. Our resident pigeon always seems to know where to be and what’s coming next. He knows the streets. He knows the shortcuts. And he knows where to find the good stuff. He’s a New Yorker with access.\"\n\n[P5] source: https://www.mzwallace.com/pages/press | document: official_domain | type: descriptive | dates in text: none | published: unknown\n\"What’s the Big Deal About Handbags? Call it a high-low vibe. The brand owes its longevity and success to its clever ability to marry practical design with luxury details.\"\n\n[P6] source: https://www.mzwallace.com/pages/press | document: official_domain | type: descriptive | dates in text: 2000 | published: unknown\n\"How MZ Wallace is making department stores work to its advantage “With the launch of MZ Wallace in 2000, Monica Zwirner and Lucy Wallace Eustice were early to the direct-to-consumer game. But now, thanks to strategic relationships with department stores, wholesale makes up a big piece of the pie.\"\n\n[P7] source: https://www.mzwallace.com/pages/about-us | document: official_domain | type: brand_positioning | dates in text: none | published: unknown\n\"MZ Wallace - Designed to Do More # DESIGNED TO DO MORE® We believe in design that does more, so you can do more. From our high quality, sustainable materials to our timeless style and perfectly-placed pockets, our bags equip you to take on your day — for wherever you're going.\"\n\n[P8] source: https://www.mzwallace.com/pages/about-us | document: official_domain | type: descriptive | dates in text: none | published: unknown\n\"LIGHTWEIGHT MATERIALS Our signature and super-light recycled nylon prevents waste and lowers our impact on the environment.\"\n\n[P9] source: https://www.mzwallace.com/en-gb/pages/start-about | document: official_domain | type: descriptive | dates in text: none | published: unknown\n\"Continue shopping Your browser is out of date. Update your browser to use all features of this site safely. JavaScript is off in your browser. Turn it on to use all features of this site. Visit us on the Upper East Side for our Holiday Pop Up! Shop gifts for everyone on your list. Find a store Close Featured Gifts Shop By Collections\"\n\n[P10] source: https://www.mzwallace.com/en-gb/pages/start-about | document: official_domain | type: descriptive | dates in text: none | published: unknown\n\"Party Favors Ask the stylist Open region and language selector United StatesUSD Loading... Search our site Your Basket Total items in cart: 0 0 MZ Wallace\"\n",
+  "prompt_sha256": "8b29d1fb5c5150a2c163ee8800495fca91bd1fdb1983285c072f18c07afffc2b",
+  "generator": {
+    "source": "model",
+    "role": "teacher",
+    "api_base": "http://localhost:8080/v1",
+    "model": "mlx-community/Qwen3-14B-4bit",
+    "temperature": 0.0,
+    "max_tokens": 4096,
+    "system_prompt_sha256": "a434c070378f6a787103cac3ef71971836c5f435d8b5fcbad58e17d38f3ef7f3",
+    "generated_at": "2026-11-22T22:40:49+00:00",
+    "attempts": [
+      {
+        "attempt": 0,
+        "raw_sha256": "6bce9ec45daf41d122066bb9eb44922bdb0be2576a0f4b869c573794c74af918",
+        "deterministic_errors": 1,
+        "quote_repairs": []
+      },
+      {
+        "attempt": 1,
+        "raw_sha256": "f0577b75704e2ffd6d85ee43311cd5f8aafbcc8780cca91e6964c1c57e46d5a4",
+        "deterministic_errors": 1,
+        "quote_repairs": []
+      },
+      {
+        "attempt": 2,
+        "raw_sha256": "450e09fb66b298dba100ae1ba1d69ec9d38af13c5cbe9d89c9911e012427088a",
+        "deterministic_errors": 1,
+        "quote_repairs": []
+      }
+    ],
+    "quote_repair": "claims.repair_quotes (min similarity 0.9; numbers/negations unchanged); see attempts[].quote_repairs",
+    "note": "repair rounds show the teacher only its own draft and the failed check messages"
+  },
+  "raw_response": "{\n  \"decision\": \"draft\",\n  \"abstain_reason\": \"\",\n  \"claims\": [\n    {\n      \"id\": \"C1\",\n      \"kind\": \"fact\",\n      \"statement\": \"MZ Wallace launched its first men's collection in November 2019 {C1}.\",\n      \"passage_ids\": [\"P1\"],\n      \"quote\": \"Cult Bag Brand MZ Wallace Just Launched Its First Men's Collection “It was a long time coming, but after nearly 20 years in the game, accessories brand MZ Wallace has finally launched a men's collection” November 2019 CNN\"\n    },\n    {\n      \"id\": \"C2\",\n      \"kind\": \"fact\",\n      \"statement\": \"MZ Wallace is a B Corp-certified brand that holds itself to high standards of ethical production and people-first practices {C2}.\",\n      \"passage_ids\": [\"P2\"],\n      \"quote\": \"As a B Corp-certified brand, we hold ourselves to the highest standards, ensuring that our design choices and business practices create lasting value for both people and the planet.\"\n    },\n    {\n      \"id\": \"C3\",\n      \"kind\": \"fact\",\n      \"statement\": \"MZ Wallace has a collaboration with MARLA AARON, featuring a limited edition Lock Print Accordion Jewelry Case {C3}.\",\n      \"passage_ids\": [\"P3\", \"P4\"],\n      \"quote\": \"MZW x MARLA AARON Our limited edition Lock Print Accordion Jewelry Case is back and makes for the perfect gift.\"\n    },\n    {\n      \"id\": \"C4\",\n      \"kind\": \"fact\",\n      \"statement\": \"MZ Wallace's signature nylon fabrics are bluesign® approved and Global Recycled Standard (GRS) certified {C4}.\",\n      \"passage_ids\": [\"P2\"],\n      \"quote\": \"Signature nylon fabrics are bluesign® approved and Global Recycled Standard (GRS) certified\"\n    },\n    {\n      \"id\": \"C5\",\n      \"kind\": \"fact\",\n      \"statement\": \"MZ Wallace's design philosophy is to create products that are practical, luxurious, and timeless {C5}.\",\n      \"passage_ids\": [\"P5\"],\n      \"quote\": \"The brand owes its longevity and success to its clever ability to marry practical design with luxury details.\"\n    },\n    {\n      \"id\": \"C6\",\n      \"kind\": \"fact\",\n      \"statement\": \"MZ Wallace is dedicated to using sustainable materials, including post-consumer recycled and biodegradable packaging {C6}.\",\n      \"passage_ids\": [\"P2\"],\n      \"quote\": \"Packaging made from post-consumer recycled and biodegradable materials\"\n    },\n    {\n      \"id\": \"C7\",\n      \"kind\": \"fact\",\n      \"statement\": \"MZ Wallace's brand positioning emphasizes creating products that are designed to do more, enabling users to take on their day {C7}.\",\n      \"passage_ids\": [\"P7\"],\n      \"quote\": \"Designed to Do More # DESIGNED TO DO MORE® We believe in design that does more, so you can do more.\"\n    },\n    {\n      \"id\": \"C8\",\n      \"kind\": \"fact\",\n      \"statement\": \"MZ Wallace has a strategic relationship with department stores, with wholesale making up a significant portion of its business {C8}.\",\n      \"passage_ids\": [\"P6\"],\n      \"quote\": \"thanks to strategic relationships with department stores, wholesale makes up a big piece of the pie.\"\n    },\n    {\n      \"id\": \"C9\",\n      \"kind\": \"fact\",\n      \"statement\": \"MZ Wallace's signature materials are lightweight and made from recycled nylon to reduce environmental impact {C9}.\",\n      \"passage_ids\": [\"P8\"],\n      \"quote\": \"Our signature and super-light recycled nylon prevents waste and lowers our impact on the environment.\"\n    }\n  ],\n  \"brand_summary\": \"MZ Wallace is a B Corp-certified brand that holds itself to high standards of ethical production and people-first practices {C2}. It launched its first men's collection in November 2019 {C1}. The brand is known for its clever ability to marry practical design with luxury details {C5}. MZ Wallace has a collaboration with MARLA AARON, featuring a limited edition Lock Print Accordion Jewelry Case {C3}. Its signature nylon fabrics are bluesign® approved and Global Recycled Standard (GRS) certified {C4}. The brand's design philosophy emphasizes creating products that are practical, luxurious, and timeless {C5}. MZ Wallace uses sustainable materials, including post-consumer recycled and biodegradable packaging {C6}. Its brand positioning emphasizes creating products that are designed to do more, enabling users to take on their day {C7}. The brand has strategic relationships with department stores, with wholesale making up a significant portion of its business {C8}. Its signature materials are lightweight and made from recycled nylon to reduce environmental impact {C9}.\",\n  \"likely_target_audience\": \"Insufficient Evidence\",\n  \"current_marketing_strategy\": [\n    \"MZ Wallace launched its first men's collection in November 2019 {C1}.\",\n    \"The brand is known for its clever ability to marry practical design with luxury details {C5}.\",\n    \"MZ Wallace has a collaboration with MARLA AARON, featuring a limited edition Lock Print Accordion Jewelry Case {C3}.\",\n    \"Its signature nylon fabrics are bluesign® approved and Global Recycled Standard (GRS) certified {C4}.\",\n    \"The brand's design philosophy emphasizes creating products that are practical, luxurious, and timeless {C5}.\",\n    \"MZ Wallace uses sustainable materials, including post-consumer recycled and biodegradable packaging {C6}.\",\n    \"Its brand positioning emphasizes creating products that are designed to do more, enabling users to take on their day {C7}.\",\n    \"The brand has strategic relationships with department stores, with wholesale making up a significant portion of its business {C8}.\",\n    \"Its signature materials are lightweight and made from recycled nylon to reduce environmental impact {C9}.\"\n  ],\n  \"unknowns\": [\n    \"Whether the company works with creators or influencers beyond the MARLA AARON collaboration {C3}.\",\n    \"The specific audience demographics for MZ Wallace's products.\",\n    \"The company's current social media engagement or outreach strategy.\",\n    \"The company's future plans for new product lines or collaborations.\"\n  ],\n  \"marketing_gaps\": [],\n  \"collaboration_opportunities\": [\n    \"Collaborate on an Instagram post featuring the MZ Wallace x MARLA AARON limited edition Lock Print Accordion Jewelry Case {C3}.\",\n    \"Create a post highlighting MZ Wallace's commitment to sustainability, such as its use of post-consumer recycled and biodegradable materials {C6}.\",\n    \"Develop a post showcasing the brand's design philosophy of merging practicality with luxury {C5}.\"\n  ],\n  \"instagram_post_idea\": {\n    \"hook\": \"Discover the perfect blend of style and sustainability with MZ Wallace's latest collaboration {C3}.\",\n    \"concept\": \"A carousel post featuring the MZ Wallace x MARLA AARON limited edition Lock Print Accordion Jewelry Case, highlighting its design, purpose, and the brand's commitment to sustainability {C3}, {C6}.\",\n    \"why_it_fits\": \"This post aligns with MZ Wallace's brand values of sustainability, luxury, and innovation {C3}, {C5}, {C6}.\"\n  },\n  \"email_subject\": \"Collaboration Opportunity: Showcase MZ Wallace's Latest Limited Edition with MARLA AARON\",\n  \"email_body\": \"Hi [Marketing Team],\\n\\nWe're reaching out to explore a potential Instagram collaboration with MZ Wallace. Your recent collaboration with MARLA AARON on the limited edition Lock Print Accordion Jewelry Case {C3} is a perfect fit for a visually engaging post. We'd love to create a carousel post that highlights the design, purpose, and sustainability of this product, aligning with your brand's values of merging practicality with luxury {C5}, {C6}.\\n\\nThis post would not only showcase your latest collection but also reinforce your commitment to sustainability and innovation {C3}, {C6}.\\n\\nWe'd be happy to discuss further and provide creative concepts. Looking forward to your thoughts!\\n\\nBest regards,\\n[Your Name]\"\n}",
+  "raw_response_sha256": "6bce9ec45daf41d122066bb9eb44922bdb0be2576a0f4b869c573794c74af918",
+  "draft": {
+    "decision": "draft",
+    "abstain_reason": "",
+    "claims": [
+      {
+        "id": "C1",
+        "kind": "fact",
+        "statement": "MZ Wallace launched its first men's collection in November 2019 {C1}.",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Cult Bag Brand MZ Wallace Just Launched Its First Men's Collection “It was a long time coming, but after nearly 20 years in the game, accessories brand MZ Wallace has finally launched a men's collection” November 2019 CNN"
+      },
+      {
+        "id": "C2",
+        "kind": "fact",
+        "statement": "MZ Wallace is a B Corp-certified brand that holds itself to high standards of ethical production and people-first practices {C2}.",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "As a B Corp-certified brand, we hold ourselves to the highest standards, ensuring that our design choices and business practices create lasting value for both people and the planet."
+      },
+      {
+        "id": "C3",
+        "kind": "fact",
+        "statement": "MZ Wallace has a collaboration with MARLA AARON, featuring a limited edition Lock Print Accordion Jewelry Case {C3}.",
+        "passage_ids": [
+          "P3",
+          "P4"
+        ],
+        "quote": "MZW x MARLA AARON Our limited edition Lock Print Accordion Jewelry Case is back and makes for the perfect gift."
+      },
+      {
+        "id": "C4",
+        "kind": "fact",
+        "statement": "MZ Wallace's signature nylon fabrics are bluesign® approved and Global Recycled Standard (GRS) certified {C4}.",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "Signature nylon fabrics are bluesign® approved and Global Recycled Standard (GRS) certified"
+      },
+      {
+        "id": "C5",
+        "kind": "fact",
+        "statement": "MZ Wallace's design philosophy is to create products that are practical, luxurious, and timeless {C5}.",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "The brand owes its longevity and success to its clever ability to marry practical design with luxury details."
+      },
+      {
+        "id": "C6",
+        "kind": "fact",
+        "statement": "MZ Wallace is dedicated to using sustainable materials, including post-consumer recycled and biodegradable packaging {C6}.",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "Packaging made from post-consumer recycled and biodegradable materials"
+      },
+      {
+        "id": "C7",
+        "kind": "fact",
+        "statement": "MZ Wallace's brand positioning emphasizes creating products that are designed to do more, enabling users to take on their day {C7}.",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "Designed to Do More # DESIGNED TO DO MORE® We believe in design that does more, so you can do more."
+      },
+      {
+        "id": "C8",
+        "kind": "fact",
+        "statement": "MZ Wallace has a strategic relationship with department stores, with wholesale making up a significant portion of its business {C8}.",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "thanks to strategic relationships with department stores, wholesale makes up a big piece of the pie."
+      },
+      {
+        "id": "C9",
+        "kind": "fact",
+        "statement": "MZ Wallace's signature materials are lightweight and made from recycled nylon to reduce environmental impact {C9}.",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "Our signature and super-light recycled nylon prevents waste and lowers our impact on the environment."
+      }
+    ],
+    "brand_summary": "MZ Wallace is a B Corp-certified brand that holds itself to high standards of ethical production and people-first practices {C2}. It launched its first men's collection in November 2019 {C1}. The brand is known for its clever ability to marry practical design with luxury details {C5}. MZ Wallace has a collaboration with MARLA AARON, featuring a limited edition Lock Print Accordion Jewelry Case {C3}. Its signature nylon fabrics are bluesign® approved and Global Recycled Standard (GRS) certified {C4}. The brand's design philosophy emphasizes creating products that are practical, luxurious, and timeless {C5}. MZ Wallace uses sustainable materials, including post-consumer recycled and biodegradable packaging {C6}. Its brand positioning emphasizes creating products that are designed to do more, enabling users to take on their day {C7}. The brand has strategic relationships with department stores, with wholesale making up a significant portion of its business {C8}. Its signature materials are lightweight and made from recycled nylon to reduce environmental impact {C9}.",
+    "likely_target_audience": "Insufficient Evidence",
+    "current_marketing_strategy": [
+      "MZ Wallace launched its first men's collection in November 2019 {C1}.",
+      "The brand is known for its clever ability to marry practical design with luxury details {C5}.",
+      "MZ Wallace has a collaboration with MARLA AARON, featuring a limited edition Lock Print Accordion Jewelry Case {C3}.",
+      "Its signature nylon fabrics are bluesign® approved and Global Recycled Standard (GRS) certified {C4}.",
+      "The brand's design philosophy emphasizes creating products that are practical, luxurious, and timeless {C5}.",
+      "MZ Wallace uses sustainable materials, including post-consumer recycled and biodegradable packaging {C6}.",
+      "Its brand positioning emphasizes creating products that are designed to do more, enabling users to take on their day {C7}.",
+      "The brand has strategic relationships with department stores, with wholesale making up a significant portion of its business {C8}.",
+      "Its signature materials are lightweight and made from recycled nylon to reduce environmental impact {C9}."
+    ],
+    "unknowns": [
+      "Whether the company works with creators or influencers beyond the MARLA AARON collaboration {C3}.",
+      "The specific audience demographics for MZ Wallace's products.",
+      "The company's current social media engagement or outreach strategy.",
+      "The company's future plans for new product lines or collaborations."
+    ],
+    "marketing_gaps": [],
+    "collaboration_opportunities": [
+      "Collaborate on an Instagram post featuring the MZ Wallace x MARLA AARON limited edition Lock Print Accordion Jewelry Case {C3}.",
+      "Create a post highlighting MZ Wallace's commitment to sustainability, such as its use of post-consumer recycled and biodegradable materials {C6}.",
+      "Develop a post showcasing the brand's design philosophy of merging practicality with luxury {C5}."
+    ],
+    "instagram_post_idea": {
+      "hook": "Discover the perfect blend of style and sustainability with MZ Wallace's latest collaboration {C3}.",
+      "concept": "A carousel post featuring the MZ Wallace x MARLA AARON limited edition Lock Print Accordion Jewelry Case, highlighting its design, purpose, and the brand's commitment to sustainability {C3}, {C6}.",
+      "why_it_fits": "This post aligns with MZ Wallace's brand values of sustainability, luxury, and innovation {C3}, {C5}, {C6}."
+    },
+    "email_subject": "Collaboration Opportunity: Showcase MZ Wallace's Latest Limited Edition with MARLA AARON",
+    "email_body": "Hi [Marketing Team],\n\nWe're reaching out to explore a potential Instagram collaboration with MZ Wallace. Your recent collaboration with MARLA AARON on the limited edition Lock Print Accordion Jewelry Case {C3} is a perfect fit for a visually engaging post. We'd love to create a carousel post that highlights the design, purpose, and sustainability of this product, aligning with your brand's values of merging practicality with luxury {C5}, {C6}.\n\nThis post would not only showcase your latest collection but also reinforce your commitment to sustainability and innovation {C3}, {C6}.\n\nWe'd be happy to discuss further and provide creative concepts. Looking forward to your thoughts!\n\nBest regards,\n[Your Name]"
+  },
+  "completion": "{\"schema_version\": \"brandpilot.output.v3\", \"decision\": \"draft\", \"evidence_status\": \"sufficient\", \"abstain_reason\": \"\", \"brand_summary\": \"MZ Wallace is a B Corp-certified brand that holds itself to high standards of ethical production and people-first practices [P2]. It launched its first men's collection in November 2019 [P1]. The brand is known for its clever ability to marry practical design with luxury details [P5]. MZ Wallace has a collaboration with MARLA AARON, featuring a limited edition Lock Print Accordion Jewelry Case [P3][P4]. Its signature nylon fabrics are bluesign® approved and Global Recycled Standard (GRS) certified [P2]. The brand's design philosophy emphasizes creating products that are practical, luxurious, and timeless [P5]. MZ Wallace uses sustainable materials, including post-consumer recycled and biodegradable packaging [P2]. Its brand positioning emphasizes creating products that are designed to do more, enabling users to take on their day [P7]. The brand has strategic relationships with department stores, with wholesale making up a significant portion of its business [P6]. Its signature materials are lightweight and made from recycled nylon to reduce environmental impact [P8].\", \"likely_target_audience\": \"Insufficient Evidence\", \"current_marketing_strategy\": [\"MZ Wallace launched its first men's collection in November 2019 [P1].\", \"The brand is known for its clever ability to marry practical design with luxury details [P5].\", \"MZ Wallace has a collaboration with MARLA AARON, featuring a limited edition Lock Print Accordion Jewelry Case [P3][P4].\", \"Its signature nylon fabrics are bluesign® approved and Global Recycled Standard (GRS) certified [P2].\", \"The brand's design philosophy emphasizes creating products that are practical, luxurious, and timeless [P5].\", \"MZ Wallace uses sustainable materials, including post-consumer recycled and biodegradable packaging [P2].\", \"Its brand positioning emphasizes creating products that are designed to do more, enabling users to take on their day [P7].\", \"The brand has strategic relationships with department stores, with wholesale making up a significant portion of its business [P6].\", \"Its signature materials are lightweight and made from recycled nylon to reduce environmental impact [P8].\"], \"unknowns\": [\"Whether the company works with creators or influencers beyond the MARLA AARON collaboration [P3][P4].\", \"The specific audience demographics for MZ Wallace's products.\", \"The company's current social media engagement or outreach strategy.\", \"The company's future plans for new product lines or collaborations.\"], \"marketing_gaps\": [], \"collaboration_opportunities\": [\"Collaborate on an Instagram post featuring the MZ Wallace x MARLA AARON limited edition Lock Print Accordion Jewelry Case [P3][P4].\", \"Create a post highlighting MZ Wallace's commitment to sustainability, such as its use of post-consumer recycled and biodegradable materials [P2].\", \"Develop a post showcasing the brand's design philosophy of merging practicality with luxury [P5].\"], \"instagram_post_idea\": {\"hook\": \"Discover the perfect blend of style and sustainability with MZ Wallace's latest collaboration [P3][P4].\", \"concept\": \"A carousel post featuring the MZ Wallace x MARLA AARON limited edition Lock Print Accordion Jewelry Case, highlighting its design, purpose, and the brand's commitment to sustainability [P3][P4], [P2].\", \"why_it_fits\": \"This post aligns with MZ Wallace's brand values of sustainability, luxury, and innovation [P3][P4], [P5], [P2].\"}, \"email_subject\": \"Collaboration Opportunity: Showcase MZ Wallace's Latest Limited Edition with MARLA AARON\", \"email_body\": \"Hi [Marketing Team],\\n\\nWe're reaching out to explore a potential Instagram collaboration with MZ Wallace. Your recent collaboration with MARLA AARON on the limited edition Lock Print Accordion Jewelry Case [P3][P4] is a perfect fit for a visually engaging post. We'd love to create a carousel post that highlights the design, purpose, and sustainability of this product, aligning with your brand's values of merging practicality with luxury [P5], [P2].\\n\\nThis post would not only showcase your latest collection but also reinforce your commitment to sustainability and innovation [P3][P4], [P2].\\n\\nWe'd be happy to discuss further and provide creative concepts. Looking forward to your thoughts!\\n\\nBest regards,\\n[Your Name]\", \"claims\": [{\"id\": \"C1\", \"kind\": \"fact\", \"statement\": \"MZ Wallace launched its first men's collection in November 2019 {C1}.\", \"passage_ids\": [\"P1\"], \"quote\": \"Cult Bag Brand MZ Wallace Just Launched Its First Men's Collection “It was a long time coming, but after nearly 20 years in the game, accessories brand MZ Wallace has finally launched a men's collection” November 2019 CNN\"}, {\"id\": \"C2\", \"kind\": \"fact\", \"statement\": \"MZ Wallace is a B Corp-certified brand that holds itself to high standards of ethical production and people-first practices {C2}.\", \"passage_ids\": [\"P2\"], \"quote\": \"As a B Corp-certified brand, we hold ourselves to the highest standards, ensuring that our design choices and business practices create lasting value for both people and the planet.\"}, {\"id\": \"C3\", \"kind\": \"fact\", \"statement\": \"MZ Wallace has a collaboration with MARLA AARON, featuring a limited edition Lock Print Accordion Jewelry Case {C3}.\", \"passage_ids\": [\"P3\", \"P4\"], \"quote\": \"MZW x MARLA AARON Our limited edition Lock Print Accordion Jewelry Case is back and makes for the perfect gift.\"}, {\"id\": \"C4\", \"kind\": \"fact\", \"statement\": \"MZ Wallace's signature nylon fabrics are bluesign® approved and Global Recycled Standard (GRS) certified {C4}.\", \"passage_ids\": [\"P2\"], \"quote\": \"Signature nylon fabrics are bluesign® approved and Global Recycled Standard (GRS) certified\"}, {\"id\": \"C5\", \"kind\": \"fact\", \"statement\": \"MZ Wallace's design philosophy is to create products that are practical, luxurious, and timeless {C5}.\", \"passage_ids\": [\"P5\"], \"quote\": \"The brand owes its longevity and success to its clever ability to marry practical design with luxury details.\"}, {\"id\": \"C6\", \"kind\": \"fact\", \"statement\": \"MZ Wallace is dedicated to using sustainable materials, including post-consumer recycled and biodegradable packaging {C6}.\", \"passage_ids\": [\"P2\"], \"quote\": \"Packaging made from post-consumer recycled and biodegradable materials\"}, {\"id\": \"C7\", \"kind\": \"fact\", \"statement\": \"MZ Wallace's brand positioning emphasizes creating products that are designed to do more, enabling users to take on their day {C7}.\", \"passage_ids\": [\"P7\"], \"quote\": \"Designed to Do More # DESIGNED TO DO MORE® We believe in design that does more, so you can do more.\"}, {\"id\": \"C8\", \"kind\": \"fact\", \"statement\": \"MZ Wallace has a strategic relationship with department stores, with wholesale making up a significant portion of its business {C8}.\", \"passage_ids\": [\"P6\"], \"quote\": \"thanks to strategic relationships with department stores, wholesale makes up a big piece of the pie.\"}, {\"id\": \"C9\", \"kind\": \"fact\", \"statement\": \"MZ Wallace's signature materials are lightweight and made from recycled nylon to reduce environmental impact {C9}.\", \"passage_ids\": [\"P8\"], \"quote\": \"Our signature and super-light recycled nylon prevents waste and lowers our impact on the environment.\"}], \"citations\": [\"[P1]\", \"[P2]\", \"[P3]\", \"[P4]\", \"[P5]\", \"[P6]\", \"[P7]\", \"[P8]\"]}",
+  "completion_sha256": "6bb0e926234126ff5b436c47e01aed0091dc7ee537c48def9fdfb9afa10543ef",
+  "deterministic": {
+    "errors": [
+      "likely_target_audience: factual sentence without a claim marker: 'Insufficient Evidence'"
+    ],
+    "warnings": [
+      "unknowns[0]: unknowns normally carry no claim markers"
+    ]
+  },
+  "created_at": "2026-11-22T22:40:49+00:00",
+  "approved": false
+}

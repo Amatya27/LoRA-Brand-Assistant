@@ -3,7 +3,7 @@
   "acceptance_basis": "auto_threshold_0.7",
   "decision": "reject",
   "reasons": [
-    "pruned draft fails check_draft: likely_target_audience: marker {C7} has no claim (+4 more)"
+    "removing unsupported claims and ungrounded sentences emptied ['collaboration_opportunities']"
   ],
   "groundedness": 1.0,
   "claim_support": {
@@ -16,6 +16,6 @@
   },
   "removed_claims": [],
   "label_completion_sha256": "eabec1680009a5f68c61b27f1b72e18683a889e39bb659f97b832eecfc16ce14",
-  "audit_sha256": "93a8da959f290d27b4363cd53896da2595ca99c6311045a55d4585f2230e0696",
-  "created_at": "2026-11-23T00:28:46+00:00"
+  "audit_sha256": "ecc4df693384c0eefb33ca795a0175652fe8890c586c4833becff9490616b056",
+  "created_at": "2026-11-23T02:50:55+00:00"
 }

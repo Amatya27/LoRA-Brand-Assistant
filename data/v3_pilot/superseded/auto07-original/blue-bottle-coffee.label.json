@@ -1,0 +1,166 @@
+{
+  "schema_version": "brandpilot.label.v3",
+  "company_id": "blue-bottle-coffee",
+  "packet_path": "packets/blue-bottle-coffee.json",
+  "packet_sha256": "d852ab4ec6e731c43a421176423346566d6fa479cc9915d95e9fc32e12837aa9",
+  "prompt_version": "brandpilot.prompt.v3.3",
+  "prompt": "You are a grounded brand-outreach assistant for our team. Use only the evidence passages below.\nNever use outside knowledge. Return valid JSON only.\n\nSeparate three things:\n1. OBSERVED FACTS - things a passage actually states about this company. Each fact is a claim with an id (C1, C2, ...),\n   the passage id(s) that support it, and an exact quote copied word-for-word from that passage.\n2. UNKNOWNS - things the evidence does not tell us (put them in \"unknowns\"). A channel, program or audience that does\n   not appear in these passages is UNKNOWN. It is never a weakness, never a \"gap\", and never a reason for outreach.\n3. PROPOSALS - collaboration ideas from our team. Proposals are not facts, but each must build on a positively supported\n   fact (an existing campaign, partnership, product, community, value or theme) and cite that premise.\n\nRules:\n- Put a claim marker like {C1} (curly braces) right after every factual statement in every field, including the\n  email and Instagram idea. Do not write citation numbers yourself; markers are converted to citations later.\n- A claim's \"quote\" must be copied character-for-character from the cited passage: 5 to 25 consecutive words, no\n  paraphrasing, no joining of separate sentences. If you cannot find such a quote, drop the claim and every sentence\n  that depends on it.\n- Audience and strategy sentences are factual: each needs a marker. If no passage states the audience, write\n  INSUFFICIENT_EVIDENCE instead of guessing.\n- Pitch lines (email subject, hook, concept) should describe the proposed post (\"A carousel featuring ...\",\n  \"Collaborate on ...\"). Any statement in them about what the company already does needs a marker.\n- Respect passage types. \"proposed_or_mock_work\" and \"author_recommendation\" passages describe ideas, not things the\n  company did: never state them as company activity. \"provider_reported_result\" passages are claims by a vendor or\n  agency: attribute them (\"X reports that ...\"). \"creator_or_influencer_audience_data\" describes creators' followers,\n  not the company's customers. \"vendor_generated_profile_or_analytics\" passages are a tool vendor's estimates\n  (e.g. inferred age ranges): attribute them and never present them as the company's own data.\n  \"forward_looking_statement\" passages describe plans or intentions, not completed activity.\n- Mind time: if a passage describes past activity, do not present it as current.\n- \"marketing_gaps\" may only contain a weakness that a passage positively states. Usually it is [].\n- Never promise results. Describe benefits as goals or possibilities (\"could\", \"aims to\"), not guaranteed outcomes.\n- Decision: write \"draft\" when at least one concrete, evidence-supported collaboration opportunity exists. Otherwise write\n  \"abstain\", give an abstain_reason, set pitch fields to INSUFFICIENT_EVIDENCE and leave collaboration_opportunities empty.\n- The email is from our team to the company, proposing one collaborative Instagram post. The pitch, the post idea and\n  every collaboration opportunity are for Instagram only (no TikTok, YouTube, podcasts or other channels).\n- When a sentence uses a vendor, agency or analytics passage, name that source in the sentence itself\n  (\"According to AdLibrary, ...\", \"Attentive reports that ...\").\n- Each \"unknowns\" item names one specific thing the passages do not tell us (e.g. \"Whether X runs a creator program\").\n  Never write placeholder text such as \"what the evidence does not show\".\n\nRequired JSON:\n{\n  \"decision\": \"draft\" or \"abstain\",\n  \"abstain_reason\": \"string or empty\",\n  \"claims\": [{\"id\": \"C1\", \"kind\": \"fact | provider_reported | premise\", \"statement\": \"string\",\n              \"passage_ids\": [\"P1\"], \"quote\": \"exact words from the passage\"}],\n  \"brand_summary\": \"Full sentences, each followed by its marker, e.g. \"X makes ... {C1}.\" Never only markers. Or INSUFFICIENT_EVIDENCE\",\n  \"likely_target_audience\": \"A full sentence followed by its marker, or INSUFFICIENT_EVIDENCE\",\n  \"current_marketing_strategy\": [\"text with markers\"],\n  \"unknowns\": [\"one specific open question, e.g. Whether the company works with creators\"],\n  \"marketing_gaps\": [],\n  \"collaboration_opportunities\": [\"proposal that builds on a cited fact {C2}\"],\n  \"instagram_post_idea\": {\"hook\": \"string\", \"concept\": \"string\", \"why_it_fits\": \"string\"},\n  \"email_subject\": \"string\",\n  \"email_body\": \"string\"\n}\n\nCompany: Blue Bottle Coffee (company_id blue-bottle-coffee; category: specialty coffee roaster and cafés)\nOfficial domains: bluebottlecoffee.com\nRecipient: the marketing team\nPacket status: ok\n\nEvidence passages:\n[P1] source: https://bluebottlecoffee.com/us/eng/our-story | document: official_domain | type: descriptive | dates in text: none | published: unknown\n\"The Blue Bottle Dripper The pour over is our first and most iconic drink, a hand-brewed ritual that slows time to let every nuance of the coffee shine. To bring this cafe-quality clarity into your home, we spent a year collaborating with engineers on 70 prototypes to perfect the Blue Bottle Dripper. Paired with our custom bamboo filters and elegant Kinto glass carafe, this thoughtful design invites focus, intention, and an exceptional cup every time. Explore the Dripper blue bottle coffee dripper blue bottle coffee subscriptions\"\n\n[P2] source: https://bluebottlecoffee.com/us/eng/our-story | document: official_domain | type: descriptive | dates in text: none | published: unknown\n\"We serve with a selfless, whole-hearted approach to hospitality that is reflected in our baristas around the world. And we design our cafes to foster belonging, community, and the simple pleasure of a delicious cup. This is coffee the Blue Bottle way. Made with intention, served with care, and crafted for moments that matter. blue bottle coffee latte cup\"\n\n[P3] source: https://www.latterly.org/blue-bottle-coffee-marketing-strategy/ | document: third_party_confirmed | type: actual_activity | dates in text: none | published: unknown\n\"Influencer Partnerships and Community Engagement Social proof in specialty coffee often comes from trusted practitioners and design leaders. Blue Bottle partners with credible voices who share its taste standards and visual restraint, then scales impact through community programs. The strategy privileges authenticity and place-based engagement over mass endorsements. Influencers span barista champions, coffee educators, chefs, and design tastemakers who value craftsmanship. Community activations include cuppings, classes, and neighborhood events that convert online interest into in-person loyalty.\"\n\n[P4] source: https://www.latterly.org/blue-bottle-coffee-marketing-strategy/ | document: third_party_confirmed | type: actual_activity | dates in text: none | published: unknown\n\"Content must stay focused to avoid confusing purists and curious newcomers. Blue Bottle simplifies choices and uses short, structured stories to help customers read flavor before they taste it. The brand pairs rare-lot launches with educational snippets that reduce perceived risk on higher-priced items. For clarity on the formats that carry the narrative most effectively, the team prioritizes channels with strong dwell time and purchase adjacency.\"\n\n[P5] source: https://www.latterly.org/blue-bottle-coffee-marketing-strategy/ | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown\n\"Advertising and Communication Channels Premium coffee marketing favors distinct storytelling, consistent design, and precise media choices that protect brand equity. Blue Bottle Coffee aligns communications with a craft image, using clean visuals, restrained typography, and product-first narratives. The brand prioritizes owned channels and selective paid placements, which support efficient reach without diluting positioning. This approach creates familiarity across markets while keeping attention on quality and ritual. Blue Bottle continues to invest in owned media, including email, the mobile app, and localized cafe signage that educates customers.\"\n\n[P6] source: https://bluebottlecoffee.com/us/eng/our-story | document: official_domain | type: descriptive | dates in text: none | published: unknown\n\"Our History Our story begins in Oakland, California, with our founder, James Freeman. What started as a single cart selling roasted coffee beans at the Old Oakland Farmers Market has evolved into a rich, diverse community of cafes that span the globe, from New York to Shanghai. From our earliest days, we’ve drawn inspiration from the richness of coffee cultures around the world — places where patience, precision, and hospitality can transform a simple cup into something profound. Today, this heritage lives on in every aspect of our business as we craft exceptional coffee experiences to share with our communities around the world.\"\n\n[P7] source: https://www.linkedin.com/pulse/case-study-blue-bottle-coffee-crafting-specialty-empire-gerszberg-phbye | document: third_party_confirmed | type: actual_activity | dates in text: none | published: unknown\n\"4. Digital Innovation & Subscription Model Blue Bottle understood the power of digital engagement and launched a direct-to-consumer subscription model, delivering freshly roasted coffee beans straight to customers’ homes.\"\n\n[P8] source: https://www.linkedin.com/pulse/case-study-blue-bottle-coffee-crafting-specialty-empire-gerszberg-phbye | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown\n\"Lessons for Entrepreneurs & Brand Builders > Premium Experiences Can Disrupt Commodities – Blue Bottle proved that even in a saturated market, > a brand can stand out by offering an elevated experience. Slow Growth is Smart Growth – Scaling > with intention preserves brand integrity and customer loyalty. Brand Storytelling Matters – Blue > Bottle’s emphasis on craftsmanship, sourcing, and design has created a loyal fanbase. Omnichannel > Strategies Drive Longevity – A mix of physical retail, digital subscriptions, and > direct-to-consumer sales future-proofs a brand.\"\n\n[P9] source: https://buythedrip.coffee/blue-bottle-coffee-a-case-study-in-specialty-coffee-growth/ | document: third_party_confirmed | type: descriptive | dates in text: 2019, 2025 | published: unknown\n\"You are enthusiastic and motivated to accomplish your running goals Do you meet these criteria? Join the 2025 RunDot Project. Learn more and apply here. this weeks newsletter is brought to you by RunDot! this is a pay per click advertisement; ^ Simply click this advertisement above, and you’ll directly support our content creation @ Buy the Drip. Thanks! a weekly highlight of content that we’re fascinated to share Reading: Bon Appétit’s taste test of 40 instant coffees shows how far the category has come. Blue Bottle helped kickstart the specialty instant wave in 2019, proving convenience doesn’t have to mean compromise.\"\n\n[P10] source: https://www.linkedin.com/pulse/case-study-blue-bottle-coffee-crafting-specialty-empire-gerszberg-phbye | document: third_party_confirmed | type: actual_activity | dates in text: none | published: unknown\n\"Key Strategies That Built Blue Bottle’s Cult-Like Following ### 1. A Relentless Focus on Quality & Freshness Unlike mass-market coffee chains that prioritize volume, Blue Bottle introduced a new standard of coffee freshness: * Every cup of coffee is brewed to order, not sitting in a carafe for hours. * Beans are roasted in small batches and served within 48 hours. * Only ethically sourced, single-origin beans are used to maintain quality and transparency. This obsession with quality created brand evangelists who were willing to wait in long lines and pay premium prices for the perfect cup of coffee.\"\n",
+  "prompt_sha256": "4f6594c7d16672facb22ac45677fbe4373c912d65fd041402e926d248cf26a6b",
+  "generator": {
+    "source": "model",
+    "role": "teacher",
+    "api_base": "http://localhost:8080/v1",
+    "model": "mlx-community/Qwen3-14B-4bit",
+    "temperature": 0.0,
+    "max_tokens": 4096,
+    "system_prompt_sha256": "a434c070378f6a787103cac3ef71971836c5f435d8b5fcbad58e17d38f3ef7f3",
+    "generated_at": "2026-11-23T01:12:45+00:00",
+    "attempts": [
+      {
+        "attempt": 0,
+        "raw_sha256": "244f1ad596a05e51095bae61548b2b2add8efa76b32e022a419a7d34f53e8c6e",
+        "deterministic_errors": 1,
+        "quote_repairs": []
+      },
+      {
+        "attempt": 1,
+        "raw_sha256": "244f1ad596a05e51095bae61548b2b2add8efa76b32e022a419a7d34f53e8c6e",
+        "deterministic_errors": 1,
+        "quote_repairs": []
+      },
+      {
+        "attempt": 2,
+        "raw_sha256": "244f1ad596a05e51095bae61548b2b2add8efa76b32e022a419a7d34f53e8c6e",
+        "deterministic_errors": 1,
+        "quote_repairs": []
+      }
+    ],
+    "quote_repair": "claims.repair_quotes (min similarity 0.9; numbers/negations unchanged); see attempts[].quote_repairs",
+    "note": "repair rounds show the teacher only its own draft and the failed check messages; retry: the first message showed the teacher its previous label and the failed deterministic checks and reviewer verdicts for it (no new evidence)",
+    "retry_seed": {
+      "previous_completion_sha256": "2d9e8cdbdd6187e0e9c8a6dbaccd13653329b4fbfd2fd4ea153f724cb473edd8",
+      "previous_audit_sha256": "5c985fdf855c46e615cbdb0e2f28276762acef3f987d0ff2e7eae08348801b12",
+      "problems_shown": [
+        "claim C8: quote does not occur in cited passage(s) ['P10']",
+        "reviewer: 1 deterministic check error(s)",
+        "reviewer: reviewer response also invalid: C8: reviewer quote does not occur in the referenced passage(s)"
+      ],
+      "hints_shown": [
+        "Copy every quote character-for-character from its cited passage, or delete the claim and every sentence citing it.",
+        "Claims the reviewer did not find supported: delete them and every sentence that cites them, or replace the quote with one that directly states the claim."
+      ]
+    }
+  },
+  "raw_response": "{\n  \"decision\": \"draft\",\n  \"abstain_reason\": \"\",\n  \"claims\": [\n    {\n      \"id\": \"C1\",\n      \"kind\": \"fact\",\n      \"statement\": \"The Blue Bottle Dripper is their first and most iconic drink, a hand-brewed ritual that slows time to let every nuance of the coffee shine.\",\n      \"passage_ids\": [\"P1\"],\n      \"quote\": \"The Blue Bottle Dripper The pour over is our first and most iconic drink, a hand-brewed ritual that slows time to let every nuance of the coffee shine.\"\n    },\n    {\n      \"id\": \"C2\",\n      \"kind\": \"fact\",\n      \"statement\": \"They serve with a selfless, whole-hearted approach to hospitality that is reflected in their baristas around the world.\",\n      \"passage_ids\": [\"P2\"],\n      \"quote\": \"We serve with a selfless, whole-hearted approach to hospitality that is reflected in our baristas around the world.\"\n    },\n    {\n      \"id\": \"C3\",\n      \"kind\": \"fact\",\n      \"statement\": \"They design their cafes to foster belonging, community, and the simple pleasure of a delicious cup.\",\n      \"passage_ids\": [\"P2\"],\n      \"quote\": \"And we design our cafes to foster belonging, community, and the simple pleasure of a delicious cup.\"\n    },\n    {\n      \"id\": \"C4\",\n      \"kind\": \"fact\",\n      \"statement\": \"They partner with credible voices who share their taste standards and visual restraint, then scale impact through community programs.\",\n      \"passage_ids\": [\"P3\"],\n      \"quote\": \"Blue Bottle partners with credible voices who share its taste standards and visual restraint, then scales impact through community programs.\"\n    },\n    {\n      \"id\": \"C5\",\n      \"kind\": \"fact\",\n      \"statement\": \"They prioritize channels with strong dwell time and purchase adjacency for content delivery.\",\n      \"passage_ids\": [\"P4\"],\n      \"quote\": \"The team prioritizes channels with strong dwell time and purchase adjacency.\"\n    },\n    {\n      \"id\": \"C6\",\n      \"kind\": \"fact\",\n      \"statement\": \"They align communications with a craft image, using clean visuals, restrained typography, and product-first narratives.\",\n      \"passage_ids\": [\"P5\"],\n      \"quote\": \"Blue Bottle Coffee aligns communications with a craft image, using clean visuals, restrained typography, and product-first narratives.\"\n    },\n    {\n      \"id\": \"C7\",\n      \"kind\": \"fact\",\n      \"statement\": \"They launched a direct-to-consumer subscription model, delivering freshly roasted coffee beans straight to customers’ homes.\",\n      \"passage_ids\": [\"P7\"],\n      \"quote\": \"Blue Bottle understood the power of digital engagement and launched a direct-to-consumer subscription model, delivering freshly roasted coffee beans straight to customers’ homes.\"\n    },\n    {\n      \"id\": \"C8\",\n      \"kind\": \"fact\",\n      \"statement\": \"They focus on quality and freshness, with every cup of coffee brewed to order, beans roasted in small batches, and ethically sourced, single-origin beans used.\",\n      \"passage_ids\": [\"P10\"],\n      \"quote\": \"Every cup of coffee is brewed to order, not sitting in a carafe for hours. Beans are roasted in small batches and served within 48 hours. Only ethically sourced, single-origin beans are used to maintain quality and transparency.\"\n    }\n  ],\n  \"brand_summary\": \"Blue Bottle Coffee makes hand-brewed coffee that emphasizes quality, freshness, and craftsmanship {C1}. They serve with a selfless, whole-hearted approach to hospitality that is reflected in their baristas around the world {C2}. They design their cafes to foster belonging, community, and the simple pleasure of a delicious cup {C3}.\",\n  \"likely_target_audience\": \"The likely target audience is individuals who value quality, craftsmanship, and a premium coffee experience {C8}.\",\n  \"current_marketing_strategy\": [\n    \"They partner with credible voices who share their taste standards and visual restraint, then scale impact through community programs {C4}.\",\n    \"They prioritize channels with strong dwell time and purchase adjacency for content delivery {C5}.\",\n    \"They align communications with a craft image, using clean visuals, restrained typography, and product-first narratives {C6}.\",\n    \"They launched a direct-to-consumer subscription model, delivering freshly roasted coffee beans straight to customers’ homes {C7}.\"\n  ],\n  \"unknowns\": [\"Whether Blue Bottle Coffee has a formal creator or influencer program beyond the partnerships mentioned in the evidence.\"],\n  \"marketing_gaps\": [],\n  \"collaboration_opportunities\": [\"Collaborate on an Instagram post that highlights the Blue Bottle Dripper and its role in creating exceptional coffee experiences {C1}.\"],\n  \"instagram_post_idea\": {\n    \"hook\": \"Experience the ritual of perfect coffee with Blue Bottle's iconic Dripper {C1}.\",\n    \"concept\": \"A carousel post showcasing the Blue Bottle Dripper, paired with their custom bamboo filters and elegant Kinto glass carafe, emphasizing the focus, intention, and exceptional cup it brings to your home {C1}.\",\n    \"why_it_fits\": \"This post aligns with Blue Bottle's focus on quality, craftsmanship, and the ritual of coffee preparation {C1}.\"\n  },\n  \"email_subject\": \"Collaboration Opportunity: Highlighting the Blue Bottle Dripper on Instagram\",\n  \"email_body\": \"Hi Blue Bottle Coffee Team,\\n\\nWe're reaching out to propose a collaboration for an Instagram post that highlights your iconic Blue Bottle Dripper {C1}. This post would showcase the Dripper paired with your custom bamboo filters and elegant Kinto glass carafe, emphasizing the focus, intention, and exceptional cup it brings to your customers' homes {C1}.\\n\\nThis concept aligns with your brand's emphasis on quality, craftsmanship, and the ritual of coffee preparation {C1}. We believe this post would resonate with your audience and further reinforce your brand's commitment to exceptional coffee experiences.\\n\\nWe'd love to hear your thoughts and explore this opportunity further.\\n\\nBest regards,\\n[Your Name]\"\n}",
+  "raw_response_sha256": "244f1ad596a05e51095bae61548b2b2add8efa76b32e022a419a7d34f53e8c6e",
+  "draft": {
+    "decision": "draft",
+    "abstain_reason": "",
+    "claims": [
+      {
+        "id": "C1",
+        "kind": "fact",
+        "statement": "The Blue Bottle Dripper is their first and most iconic drink, a hand-brewed ritual that slows time to let every nuance of the coffee shine.",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "The Blue Bottle Dripper The pour over is our first and most iconic drink, a hand-brewed ritual that slows time to let every nuance of the coffee shine."
+      },
+      {
+        "id": "C2",
+        "kind": "fact",
+        "statement": "They serve with a selfless, whole-hearted approach to hospitality that is reflected in their baristas around the world.",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "We serve with a selfless, whole-hearted approach to hospitality that is reflected in our baristas around the world."
+      },
+      {
+        "id": "C3",
+        "kind": "fact",
+        "statement": "They design their cafes to foster belonging, community, and the simple pleasure of a delicious cup.",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "And we design our cafes to foster belonging, community, and the simple pleasure of a delicious cup."
+      },
+      {
+        "id": "C4",
+        "kind": "fact",
+        "statement": "They partner with credible voices who share their taste standards and visual restraint, then scale impact through community programs.",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Blue Bottle partners with credible voices who share its taste standards and visual restraint, then scales impact through community programs."
+      },
+      {
+        "id": "C5",
+        "kind": "fact",
+        "statement": "They prioritize channels with strong dwell time and purchase adjacency for content delivery.",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "The team prioritizes channels with strong dwell time and purchase adjacency."
+      },
+      {
+        "id": "C6",
+        "kind": "fact",
+        "statement": "They align communications with a craft image, using clean visuals, restrained typography, and product-first narratives.",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "Blue Bottle Coffee aligns communications with a craft image, using clean visuals, restrained typography, and product-first narratives."
+      },
+      {
+        "id": "C7",
+        "kind": "fact",
+        "statement": "They launched a direct-to-consumer subscription model, delivering freshly roasted coffee beans straight to customers’ homes.",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "Blue Bottle understood the power of digital engagement and launched a direct-to-consumer subscription model, delivering freshly roasted coffee beans straight to customers’ homes."
+      },
+      {
+        "id": "C8",
+        "kind": "fact",
+        "statement": "They focus on quality and freshness, with every cup of coffee brewed to order, beans roasted in small batches, and ethically sourced, single-origin beans used.",
+        "passage_ids": [
+          "P10"
+        ],
+        "quote": "Every cup of coffee is brewed to order, not sitting in a carafe for hours. Beans are roasted in small batches and served within 48 hours. Only ethically sourced, single-origin beans are used to maintain quality and transparency."
+      }
+    ],
+    "brand_summary": "Blue Bottle Coffee makes hand-brewed coffee that emphasizes quality, freshness, and craftsmanship {C1}. They serve with a selfless, whole-hearted approach to hospitality that is reflected in their baristas around the world {C2}. They design their cafes to foster belonging, community, and the simple pleasure of a delicious cup {C3}.",
+    "likely_target_audience": "The likely target audience is individuals who value quality, craftsmanship, and a premium coffee experience {C8}.",
+    "current_marketing_strategy": [
+      "They partner with credible voices who share their taste standards and visual restraint, then scale impact through community programs {C4}.",
+      "They prioritize channels with strong dwell time and purchase adjacency for content delivery {C5}.",
+      "They align communications with a craft image, using clean visuals, restrained typography, and product-first narratives {C6}.",
+      "They launched a direct-to-consumer subscription model, delivering freshly roasted coffee beans straight to customers’ homes {C7}."
+    ],
+    "unknowns": [
+      "Whether Blue Bottle Coffee has a formal creator or influencer program beyond the partnerships mentioned in the evidence."
+    ],
+    "marketing_gaps": [],
+    "collaboration_opportunities": [
+      "Collaborate on an Instagram post that highlights the Blue Bottle Dripper and its role in creating exceptional coffee experiences {C1}."
+    ],
+    "instagram_post_idea": {
+      "hook": "Experience the ritual of perfect coffee with Blue Bottle's iconic Dripper {C1}.",
+      "concept": "A carousel post showcasing the Blue Bottle Dripper, paired with their custom bamboo filters and elegant Kinto glass carafe, emphasizing the focus, intention, and exceptional cup it brings to your home {C1}.",
+      "why_it_fits": "This post aligns with Blue Bottle's focus on quality, craftsmanship, and the ritual of coffee preparation {C1}."
+    },
+    "email_subject": "Collaboration Opportunity: Highlighting the Blue Bottle Dripper on Instagram",
+    "email_body": "Hi Blue Bottle Coffee Team,\n\nWe're reaching out to propose a collaboration for an Instagram post that highlights your iconic Blue Bottle Dripper {C1}. This post would showcase the Dripper paired with your custom bamboo filters and elegant Kinto glass carafe, emphasizing the focus, intention, and exceptional cup it brings to your customers' homes {C1}.\n\nThis concept aligns with your brand's emphasis on quality, craftsmanship, and the ritual of coffee preparation {C1}. We believe this post would resonate with your audience and further reinforce your brand's commitment to exceptional coffee experiences.\n\nWe'd love to hear your thoughts and explore this opportunity further.\n\nBest regards,\n[Your Name]"
+  },
+  "completion": "{\"schema_version\": \"brandpilot.output.v3\", \"decision\": \"draft\", \"evidence_status\": \"sufficient\", \"abstain_reason\": \"\", \"brand_summary\": \"Blue Bottle Coffee makes hand-brewed coffee that emphasizes quality, freshness, and craftsmanship [P1]. They serve with a selfless, whole-hearted approach to hospitality that is reflected in their baristas around the world [P2]. They design their cafes to foster belonging, community, and the simple pleasure of a delicious cup [P2].\", \"likely_target_audience\": \"The likely target audience is individuals who value quality, craftsmanship, and a premium coffee experience [P10].\", \"current_marketing_strategy\": [\"They partner with credible voices who share their taste standards and visual restraint, then scale impact through community programs [P3].\", \"They prioritize channels with strong dwell time and purchase adjacency for content delivery [P4].\", \"They align communications with a craft image, using clean visuals, restrained typography, and product-first narratives [P5].\", \"They launched a direct-to-consumer subscription model, delivering freshly roasted coffee beans straight to customers’ homes [P7].\"], \"unknowns\": [\"Whether Blue Bottle Coffee has a formal creator or influencer program beyond the partnerships mentioned in the evidence.\"], \"marketing_gaps\": [], \"collaboration_opportunities\": [\"Collaborate on an Instagram post that highlights the Blue Bottle Dripper and its role in creating exceptional coffee experiences [P1].\"], \"instagram_post_idea\": {\"hook\": \"Experience the ritual of perfect coffee with Blue Bottle's iconic Dripper [P1].\", \"concept\": \"A carousel post showcasing the Blue Bottle Dripper, paired with their custom bamboo filters and elegant Kinto glass carafe, emphasizing the focus, intention, and exceptional cup it brings to your home [P1].\", \"why_it_fits\": \"This post aligns with Blue Bottle's focus on quality, craftsmanship, and the ritual of coffee preparation [P1].\"}, \"email_subject\": \"Collaboration Opportunity: Highlighting the Blue Bottle Dripper on Instagram\", \"email_body\": \"Hi Blue Bottle Coffee Team,\\n\\nWe're reaching out to propose a collaboration for an Instagram post that highlights your iconic Blue Bottle Dripper [P1]. This post would showcase the Dripper paired with your custom bamboo filters and elegant Kinto glass carafe, emphasizing the focus, intention, and exceptional cup it brings to your customers' homes [P1].\\n\\nThis concept aligns with your brand's emphasis on quality, craftsmanship, and the ritual of coffee preparation [P1]. We believe this post would resonate with your audience and further reinforce your brand's commitment to exceptional coffee experiences.\\n\\nWe'd love to hear your thoughts and explore this opportunity further.\\n\\nBest regards,\\n[Your Name]\", \"claims\": [{\"id\": \"C1\", \"kind\": \"fact\", \"statement\": \"The Blue Bottle Dripper is their first and most iconic drink, a hand-brewed ritual that slows time to let every nuance of the coffee shine.\", \"passage_ids\": [\"P1\"], \"quote\": \"The Blue Bottle Dripper The pour over is our first and most iconic drink, a hand-brewed ritual that slows time to let every nuance of the coffee shine.\"}, {\"id\": \"C2\", \"kind\": \"fact\", \"statement\": \"They serve with a selfless, whole-hearted approach to hospitality that is reflected in their baristas around the world.\", \"passage_ids\": [\"P2\"], \"quote\": \"We serve with a selfless, whole-hearted approach to hospitality that is reflected in our baristas around the world.\"}, {\"id\": \"C3\", \"kind\": \"fact\", \"statement\": \"They design their cafes to foster belonging, community, and the simple pleasure of a delicious cup.\", \"passage_ids\": [\"P2\"], \"quote\": \"And we design our cafes to foster belonging, community, and the simple pleasure of a delicious cup.\"}, {\"id\": \"C4\", \"kind\": \"fact\", \"statement\": \"They partner with credible voices who share their taste standards and visual restraint, then scale impact through community programs.\", \"passage_ids\": [\"P3\"], \"quote\": \"Blue Bottle partners with credible voices who share its taste standards and visual restraint, then scales impact through community programs.\"}, {\"id\": \"C5\", \"kind\": \"fact\", \"statement\": \"They prioritize channels with strong dwell time and purchase adjacency for content delivery.\", \"passage_ids\": [\"P4\"], \"quote\": \"The team prioritizes channels with strong dwell time and purchase adjacency.\"}, {\"id\": \"C6\", \"kind\": \"fact\", \"statement\": \"They align communications with a craft image, using clean visuals, restrained typography, and product-first narratives.\", \"passage_ids\": [\"P5\"], \"quote\": \"Blue Bottle Coffee aligns communications with a craft image, using clean visuals, restrained typography, and product-first narratives.\"}, {\"id\": \"C7\", \"kind\": \"fact\", \"statement\": \"They launched a direct-to-consumer subscription model, delivering freshly roasted coffee beans straight to customers’ homes.\", \"passage_ids\": [\"P7\"], \"quote\": \"Blue Bottle understood the power of digital engagement and launched a direct-to-consumer subscription model, delivering freshly roasted coffee beans straight to customers’ homes.\"}, {\"id\": \"C8\", \"kind\": \"fact\", \"statement\": \"They focus on quality and freshness, with every cup of coffee brewed to order, beans roasted in small batches, and ethically sourced, single-origin beans used.\", \"passage_ids\": [\"P10\"], \"quote\": \"Every cup of coffee is brewed to order, not sitting in a carafe for hours. Beans are roasted in small batches and served within 48 hours. Only ethically sourced, single-origin beans are used to maintain quality and transparency.\"}], \"citations\": [\"[P1]\", \"[P2]\", \"[P3]\", \"[P4]\", \"[P5]\", \"[P7]\", \"[P10]\"]}",
+  "completion_sha256": "2d9e8cdbdd6187e0e9c8a6dbaccd13653329b4fbfd2fd4ea153f724cb473edd8",
+  "deterministic": {
+    "errors": [
+      "claim C8: quote does not occur in cited passage(s) ['P10']"
+    ],
+    "warnings": []
+  },
+  "created_at": "2026-11-23T01:12:45+00:00",
+  "approved": false
+}

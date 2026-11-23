@@ -133,6 +133,8 @@ _MASK = {".": "\x01", "!": "\x02", "?": "\x03"}
 _UNMASK = {v: k for k, v in _MASK.items()}
 # Short quoted spans such as 'Every. Single. Day.' or "Do it!" are names, not sentence breaks.
 _QUOTED_SPAN = re.compile(r"(?:(?<=\s)|^|(?<=\())(?:'(?=\S)[^'\n]{1,60}?(?<=\S)'(?!\w)|\"[^\"\n]{1,60}\"|“[^”\n]{1,60}”|‘[^’\n]{1,60}’)")
+# Abbreviations whose full stop is not a sentence end ("the U.S. Olympic team", "e.g. Glossier").
+_ABBREV = re.compile(r"(?<!\w)(?:[A-Z]\.){2,}|(?<!\w)(?:e\.g|i\.e|etc|vs|Inc|Co|Corp|Ltd|Dr|Mr|Mrs|Ms|St|No|approx)\.(?!\w)")
 GREETING_RX = re.compile(r"^\W*(hi|hello|hey|dear|greetings|good (morning|afternoon|evening))\b[^.?!\n]{0,60}[!,.:]?\s*$", re.I)
 
 
@@ -147,6 +149,7 @@ def sentences(text: str, protect: tuple[str, ...] | list[str] = ()) -> list[str]
     for name in sorted({n for n in protect if n and any(c in n for c in ".!?")}, key=len, reverse=True):
         masked = re.sub(r"(?<!\w)" + re.escape(name), lambda m: _mask(m.group(0)), masked)
     masked = _QUOTED_SPAN.sub(lambda m: _mask(m.group(0)), masked)
+    masked = _ABBREV.sub(lambda m: _mask(m.group(0)), masked)
     out = []
     for part in _SENT.split(masked):
         part = "".join(_UNMASK.get(ch, ch) for ch in part).strip()

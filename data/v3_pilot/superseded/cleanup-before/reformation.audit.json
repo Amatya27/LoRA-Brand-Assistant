@@ -1,0 +1,114 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "reformation",
+  "bound_to": {
+    "packet_sha256": "61fe6bcd04bc4a742ea34dffabca8f10ccad1bec4d298655d05742c9c19a6ab7",
+    "prompt_sha256": "1f83c3f8ee9f9bc29abc7657b241b1e8248043607f3ef100444eb3476c62aa5a",
+    "completion_sha256": "c0a6fd30c5a5284accb82bdfaf23a8f4d663bb17c53c0a8776294914e62e8836",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [
+      "email_body: vendor/provider claim C6 (P9) is not attributed to its source (canvasbusinessmodel) in the prose: 'We believe a campaign that blends cultural relevance with circularity, similar t'",
+      "collaboration_opportunities[0]: vendor/provider claim C6 (P9) is not attributed to its source (canvasbusinessmodel) in the prose: 'Collaborate on a campaign that blends cultural relevance with circularity, simil'"
+    ],
+    "warnings": [
+      "claim C7: not referenced by any field"
+    ]
+  },
+  "raw_response_sha256": "280261893c09c8bb61fe5208f9d40e6fd207cf0c5be6da2635b9bf1968fafc5c",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"We're Reformation, the largest sustainable womenswear brand on the planet.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states Reformation is the largest sustainable womenswear brand.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"We make beautiful, timeless womenswear that inspires confidence and deep brand love from our customer base spanning generations and geographies.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states this about Reformation's products and customer base.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Reformation’s momentum comes from consistent drops and selective collaborations.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states this about Reformation's strategy.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"Reformation’s Instagram posts The brand doesn’t shy away from joining in social media trends and poking fun at themselves, knowing that their target audience of millennials and Gen Z will engage with the brand more.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes Reformation's use of social media trends to engage its audience.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"Reformation's marketing tactics center on a digitally native mix that drives organic engagement and high-conversion social commerce.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states this about Reformation's marketing tactics.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P9\"\n      ],\n      \"quote\": \"Key Campaigns of Reformation have blended cultural relevance with circularity to drive both brand salience and measurable commercial impact.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes Reformation's campaigns as blending cultural relevance and circularity.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P10\"\n      ],\n      \"quote\": \"Media coverage and influencer amplification generated measurable new-customer acquisition at lower-than-average CPA.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Reformation's campaigns have generated measurable new-customer acquisition at lower-than-average CPA.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "We're Reformation, the largest sustainable womenswear brand on the planet.",
+        "issues": [],
+        "reason": "The passage explicitly states Reformation is the largest sustainable womenswear brand."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "We make beautiful, timeless womenswear that inspires confidence and deep brand love from our customer base spanning generations and geographies.",
+        "issues": [],
+        "reason": "The passage directly states this about Reformation's products and customer base."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Reformation’s momentum comes from consistent drops and selective collaborations.",
+        "issues": [],
+        "reason": "The passage directly states this about Reformation's strategy."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "Reformation’s Instagram posts The brand doesn’t shy away from joining in social media trends and poking fun at themselves, knowing that their target audience of millennials and Gen Z will engage with the brand more.",
+        "issues": [],
+        "reason": "The passage describes Reformation's use of social media trends to engage its audience."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "Reformation's marketing tactics center on a digitally native mix that drives organic engagement and high-conversion social commerce.",
+        "issues": [],
+        "reason": "The passage directly states this about Reformation's marketing tactics."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P9"
+        ],
+        "quote": "Key Campaigns of Reformation have blended cultural relevance with circularity to drive both brand salience and measurable commercial impact.",
+        "issues": [],
+        "reason": "The passage describes Reformation's campaigns as blending cultural relevance and circularity."
+      },
+      {
+        "claim_id": "C7",
+        "verdict": "supported",
+        "passage_ids": [
+          "P10"
+        ],
+        "quote": "Media coverage and influencer amplification generated measurable new-customer acquisition at lower-than-average CPA.",
+        "issues": [],
+        "reason": "The passage states that Reformation's campaigns have generated measurable new-customer acquisition at lower-than-average CPA."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "fail",
+  "reasons": [
+    "2 deterministic check error(s)"
+  ],
+  "created_at": "2026-11-23T01:50:57+00:00",
+  "audit_sha256": "e88b056987a2ea762c1cd3f6f3a16c96b10b1a03a0e4a60abebabb68289282c1",
+  "dismissed_reviewer_flags": []
+}

@@ -1,0 +1,91 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "supergoop",
+  "bound_to": {
+    "packet_sha256": "ac1f33e29e17a9896a28deb1a6fe4843e160dd0e3678829ae927d8b8b52d849c",
+    "prompt_sha256": "ad2105bbd2f29c2ced9c1cf28be408068b0d9579aff2c9f1344b2fb90e0743bd",
+    "completion_sha256": "45c2fd816cf5a885e797ebe62af26662bc7cbc280b45d63af35585323211dfa1",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": []
+  },
+  "raw_response_sha256": "e2e694831e6ebe301be22b908d152feab51f8ee72880b0c1b1498455c9efc3d8",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"the best value Curated sets, zero stress. The SPF sets that keep you protected and your skin looking its best long after the holiday season.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states Supergoop! offers curated SPF sets.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Supergoop! partnered with AGENC to launch their \\\"Every. Single. Day.\\\" campaign and new \\\"Every Single Face\\\" sunscreen.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Supergoop! partnered with AGENC for a campaign and sunscreen launch.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"Supergoop! partnered with Envive AI to implement a goal-oriented AI agent that personalized the shopper journey.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms Supergoop! partnered with Envive AI for personalized shopping.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"Supergoop! partners with Attentive to fully automate these messages, allowing for personalization at scale.\",\n      \"issues\": [],\n      \"reason\": \"The passage states Supergoop! partners with Attentive for automated and personalized messages.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"Supergoop!’s text messaging program has delivered 29x+ ROI\",\n      \"issues\": [\n        \"provider_claim_unattributed\"\n      ],\n      \"reason\": \"The passage reports Attentive's claim of 29x+ ROI for Supergoop!'s text messaging.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "the best value Curated sets, zero stress. The SPF sets that keep you protected and your skin looking its best long after the holiday season.",
+        "issues": [],
+        "reason": "The passage explicitly states Supergoop! offers curated SPF sets."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Supergoop! partnered with AGENC to launch their \"Every. Single. Day.\" campaign and new \"Every Single Face\" sunscreen.",
+        "issues": [],
+        "reason": "The passage directly states Supergoop! partnered with AGENC for a campaign and sunscreen launch."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "Supergoop! partnered with Envive AI to implement a goal-oriented AI agent that personalized the shopper journey.",
+        "issues": [],
+        "reason": "The passage confirms Supergoop! partnered with Envive AI for personalized shopping."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "Supergoop! partners with Attentive to fully automate these messages, allowing for personalization at scale.",
+        "issues": [],
+        "reason": "The passage states Supergoop! partners with Attentive for automated and personalized messages."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "Supergoop!’s text messaging program has delivered 29x+ ROI",
+        "issues": [
+          "provider_claim_unattributed"
+        ],
+        "reason": "The passage reports Attentive's claim of 29x+ ROI for Supergoop!'s text messaging."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "fail",
+  "reasons": [
+    "claims not fully supported: ['C5']"
+  ],
+  "created_at": "2026-11-23T01:53:35+00:00",
+  "audit_sha256": "54f0be9a244e748bf8ebca7aa79de0a709c93fc7ac5526d76d543084679a4fcb",
+  "dismissed_reviewer_flags": []
+}

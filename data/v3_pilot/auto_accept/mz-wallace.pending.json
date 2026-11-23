@@ -1,0 +1,30 @@
+{
+  "groundedness": 1.0,
+  "claims_total": 9,
+  "claims_supported": 9,
+  "claim_support": {
+    "C1": "supported",
+    "C2": "supported",
+    "C3": "supported",
+    "C4": "supported",
+    "C5": "supported",
+    "C6": "supported",
+    "C7": "supported",
+    "C8": "supported",
+    "C9": "supported"
+  },
+  "reasons": [],
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "removed_sentences": [
+    {
+      "field": "likely_target_audience",
+      "sentence": "Insufficient Evidence",
+      "reason": "factual sentence without a claim marker: 'Insufficient Evidence'"
+    }
+  ],
+  "decision": "prune",
+  "completion_sha256": "6bb0e926234126ff5b436c47e01aed0091dc7ee537c48def9fdfb9afa10543ef",
+  "audit_sha256": "0fcf9badf73c748a456f318a8e11619934fd11ce371ab7e969b2a0ef727a50ec",
+  "pruned_completion_sha256": "36f58d3de54e9f50cc561eca1b3927c6bab97554660df997603fa62ebaf2574e"
+}

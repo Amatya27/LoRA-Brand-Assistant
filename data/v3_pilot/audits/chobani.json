@@ -16,9 +16,7 @@
     "max_tokens": 4096
   },
   "deterministic": {
-    "errors": [
-      "current_marketing_strategy[8]: factual sentence without a claim marker: 'Chobani partnered with the U.S.'"
-    ],
+    "errors": [],
     "warnings": []
   },
   "raw_response_sha256": "21b30d77b5d21c6f3b0a6ca777cc301683ed851ccc8b95d27db52802eabe40d8",
@@ -161,11 +159,9 @@
     "absence_as_weakness": []
   },
   "review_validation_errors": [],
-  "status": "fail",
-  "reasons": [
-    "1 deterministic check error(s)"
-  ],
-  "created_at": "2026-11-22T23:54:55+00:00",
-  "audit_sha256": "7fd76d782245040fcfecc065cb3cdf3a6a43816db47c893f9a0b3e6484f50772",
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-23T03:00:51+00:00",
+  "audit_sha256": "bb7fddb51cadebb16be74a6c9534317eadf86677a763835401612c1d6740f536",
   "dismissed_reviewer_flags": []
 }

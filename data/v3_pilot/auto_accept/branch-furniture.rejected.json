@@ -3,7 +3,7 @@
   "acceptance_basis": "auto_threshold_0.7",
   "decision": "reject",
   "reasons": [
-    "pruned draft fails check_draft: brand_summary: marker {C7} has no claim"
+    "removing unsupported claims and ungrounded sentences emptied ['instagram_post_idea.why_it_fits']"
   ],
   "groundedness": 0.8,
   "claim_support": {
@@ -14,7 +14,7 @@
     "C5": "supported"
   },
   "removed_claims": [],
-  "label_completion_sha256": "4adb79ae11ef8cf034a38ba000f45370e1b427971d4c93c64ab3818c4dfe09ac",
-  "audit_sha256": "78e9e87de3c50be7a40ef8c9a7f4e666df5e57f34c220d6a45546c5aa0a016b5",
-  "created_at": "2026-11-23T00:28:44+00:00"
+  "label_completion_sha256": "b6124c421fdd4f63f7f245857859d346575e863865ceae79148ec7d64d4c9781",
+  "audit_sha256": "9064908ebc6d50cbe1d8f2a02979e2854a6eba43c4dcd3e393c25baeb19ae824",
+  "created_at": "2026-11-23T02:50:54+00:00"
 }

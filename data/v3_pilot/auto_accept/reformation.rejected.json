@@ -3,7 +3,7 @@
   "acceptance_basis": "auto_threshold_0.7",
   "decision": "reject",
   "reasons": [
-    "pruned draft fails check_draft: email_body: vendor/provider claim C6 (P9) is not attributed to its source (canvasbusinessmodel) in the prose: 'We believe a campaign that blends cultural relevance with circularity, similar t' (+1 more)"
+    "removing unsupported claims and ungrounded sentences emptied ['collaboration_opportunities']"
   ],
   "groundedness": 1.0,
   "claim_support": {
@@ -17,6 +17,6 @@
   },
   "removed_claims": [],
   "label_completion_sha256": "c0a6fd30c5a5284accb82bdfaf23a8f4d663bb17c53c0a8776294914e62e8836",
-  "audit_sha256": "5edc2621d389b0360e4289d758fd739171d242216e02690e227f8432d7f1c2fa",
-  "created_at": "2026-11-23T00:28:47+00:00"
+  "audit_sha256": "e88b056987a2ea762c1cd3f6f3a16c96b10b1a03a0e4a60abebabb68289282c1",
+  "created_at": "2026-11-23T02:50:56+00:00"
 }

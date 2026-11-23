@@ -1,0 +1,32 @@
+{
+  "groundedness": 1.0,
+  "claims_total": 6,
+  "claims_supported": 6,
+  "claim_support": {
+    "C1": "supported",
+    "C2": "supported",
+    "C3": "supported",
+    "C4": "supported",
+    "C5": "supported",
+    "C6": "supported"
+  },
+  "reasons": [],
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "removed_sentences": [
+    {
+      "field": "brand_summary",
+      "sentence": "Away is a travel lifestyle brand that has launched limited edition collections in partnership with Warner Bros.",
+      "reason": "factual sentence without a claim marker: 'Away is a travel lifestyle brand that has launched limited edition collections"
+    },
+    {
+      "field": "current_marketing_strategy[0]",
+      "sentence": "Away has launched limited edition collections in partnership with Warner Bros.",
+      "reason": "factual sentence without a claim marker: 'Away has launched limited edition collections in partnership with Warner Bros."
+    }
+  ],
+  "decision": "prune",
+  "completion_sha256": "dacb79937bc379cf1955e3a0b4d0a855e52f1369e3a7e82bafdaa54002a897fb",
+  "audit_sha256": "482bd1a17e26248d72fdb1ef638de3290165bbcec08d5d4ef10bd7fc4bfc8c68",
+  "pruned_completion_sha256": "6561413369650836219c0bcdf6d9a6c2762d775689c99d7085b398be4df1d11b"
+}

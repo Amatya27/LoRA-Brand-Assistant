@@ -1,0 +1,121 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "july-luggage",
+  "bound_to": {
+    "packet_sha256": "a068d965c36beb5cc7d48d161c8bee77e6f7ad9b178b98c3d530710edae3d6fd",
+    "prompt_sha256": "6d28dc0e40a30b6a384f8587f79789db23b7c562fca8969854a97771f4c54639",
+    "completion_sha256": "2bd0894cb36f1f9f23487497cc261c5a67a5eac46410fb9beab891e0a25df07c",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [
+      "instagram_post_idea.hook: factual-looking sentence without a claim marker: 'Personalize your travel with July Luggage.'"
+    ],
+    "warnings": []
+  },
+  "raw_response_sha256": "eec0abda9d239a314de7033d05171d6265608059293af4252f59b91ad030dcea",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"positioning July as your partner in wander-style.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states July positions itself as a partner in wander-style.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"using Facebook ads, podcasts, and gifted influencers for brand awareness in Australia.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly mentions July Luggage using these marketing channels.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Global ambition — U.S. market focus has accelerated growth dramatically.\",\n      \"issues\": [],\n      \"reason\": \"The passage states July Luggage has a global ambition with a focus on the U.S. market.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"“If it’s genuinely useful and beautiful, marketing becomes storytelling,”\",\n      \"issues\": [],\n      \"reason\": \"The passage quotes July's advice that marketing should focus on storytelling when the product is genuinely useful and beautiful.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"Becoming an extension of July's social team.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes July Luggage working with an external agency as an extension of their social team.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"launched some of our most ambitious product innovations to date, including our smart luggage lock, CaseSafe,\",\n      \"issues\": [],\n      \"reason\": \"The passage mentions July Luggage launching the CaseSafe smart luggage lock.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P10\"\n      ],\n      \"quote\": \"July advertises primarily on Instagram and Facebook,\",\n      \"issues\": [],\n      \"reason\": \"The passage states that July Luggage primarily advertises on Instagram and Facebook.\"\n    },\n    {\n      \"claim_id\": \"C8\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P10\"\n      ],\n      \"quote\": \"Color customization carousels extend ad engagement time and simulate the personalization experience, driving higher CTR than single-product static ads.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that color customization carousels drive higher engagement in July Luggage's ads.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "positioning July as your partner in wander-style.",
+        "issues": [],
+        "reason": "The passage explicitly states July positions itself as a partner in wander-style."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "using Facebook ads, podcasts, and gifted influencers for brand awareness in Australia.",
+        "issues": [],
+        "reason": "The passage directly mentions July Luggage using these marketing channels."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Global ambition — U.S. market focus has accelerated growth dramatically.",
+        "issues": [],
+        "reason": "The passage states July Luggage has a global ambition with a focus on the U.S. market."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "“If it’s genuinely useful and beautiful, marketing becomes storytelling,”",
+        "issues": [],
+        "reason": "The passage quotes July's advice that marketing should focus on storytelling when the product is genuinely useful and beautiful."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "Becoming an extension of July's social team.",
+        "issues": [],
+        "reason": "The passage describes July Luggage working with an external agency as an extension of their social team."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "launched some of our most ambitious product innovations to date, including our smart luggage lock, CaseSafe,",
+        "issues": [],
+        "reason": "The passage mentions July Luggage launching the CaseSafe smart luggage lock."
+      },
+      {
+        "claim_id": "C7",
+        "verdict": "supported",
+        "passage_ids": [
+          "P10"
+        ],
+        "quote": "July advertises primarily on Instagram and Facebook,",
+        "issues": [],
+        "reason": "The passage states that July Luggage primarily advertises on Instagram and Facebook."
+      },
+      {
+        "claim_id": "C8",
+        "verdict": "supported",
+        "passage_ids": [
+          "P10"
+        ],
+        "quote": "Color customization carousels extend ad engagement time and simulate the personalization experience, driving higher CTR than single-product static ads.",
+        "issues": [],
+        "reason": "The passage states that color customization carousels drive higher engagement in July Luggage's ads."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "fail",
+  "reasons": [
+    "1 deterministic check error(s)"
+  ],
+  "created_at": "2026-11-23T01:43:19+00:00",
+  "audit_sha256": "b4339b576afcd4bde96bd9c0164ddc5790076819704439eefea152f573262336",
+  "dismissed_reviewer_flags": []
+}

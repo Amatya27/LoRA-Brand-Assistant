@@ -1,0 +1,174 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "who-gives-a-crap",
+  "bound_to": {
+    "packet_sha256": "964b10ed2050a440fbc2128b16348be67533d07dc780d44177f229169828919f",
+    "prompt_sha256": "7e3b1743077002ca3391227498669351bf7470bd0f026ffbca5c2118b9909f47",
+    "completion_sha256": "0881ab899550c0931f0a552ba2cbd249b3671f8441585bc4deaa290f28ae00bf",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [
+      "likely_target_audience: marker {C6} has no claim",
+      "email_body: marker {C6} has no claim",
+      "instagram_post_idea.hook: vendor/provider claim C2 (P4) is not attributed to its source (alli) in the prose: 'Join the #Uncrapper movement and help change the world, one toilet paper roll at'",
+      "instagram_post_idea.concept: vendor/provider claim C3 (P6) is not attributed to its source (canvasbusinessmodel) in the prose: \"A carousel post featuring the brand's 'Refer a Friend' program, showcasing how e\""
+    ],
+    "warnings": []
+  },
+  "raw_response_sha256": "b6010b3a921368f880a268ce06837560e970ae2eea562cf17d491bd8ef92d152",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"That's why we make our rolls from recycled fibres or bamboo.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that Who Gives A Crap makes toilet paper from recycled fibres or bamboo.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"Who Gives A Crap makes eco-friendly toilet paper and gives 50% of profits to help bring sanitation to the 2.4 billion people without a toilet.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that Who Gives A Crap makes eco-friendly toilet paper and donates 50% of profits.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"In 2025 the brand's 'Refer a Friend' program drove 25% of new signups, while viral Instagram and TikTok unboxing content-often organic-amplified reach without heavy ad spend.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that the 'Refer a Friend' program drove 25% of new signups.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"WGAC saw 54.2 million video views on TikTok alone, with over 609k engagements (and 12k new followers) across the United Kingdom and Australia.\",\n      \"issues\": [],\n      \"reason\": \"The passage reports 54.2 million video views and over 609k engagements on TikTok.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Our media strategy used host-read branded segments with influential podcasters such as The Guilty Feminist, Katherine Ryan, and Off Menu, among others; and 4-6 weeks-long activations across the full digital and print ecosystem of The Guardian, a hugely popular publisher with reach in the U.K. and Australia, to authentically express WGAC's compelling brand values.\",\n      \"issues\": [],\n      \"reason\": \"The passage mentions collaborations with podcasters and media placements with The Guardian.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"Who Gives A Crap makes eco-friendly toilet paper from recycled fibres or bamboo\"\n    },\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"Alli, PMG reports that Who Gives A Crap makes eco-friendly toilet paper and gives 50% of profits to help bring sanitation to the 2.4 billion people without a toilet\"\n    },\n    {\n      \"field\": \"likely_target_audience\",\n      \"text\": \"The brand's target audience is defined as \\\"Uncrappers,\\\" people who want easy ways to do the right thing\"\n    },\n    {\n      \"field\": \"current_marketing_strategy\",\n      \"text\": \"Who Gives A Crap's marketing strategy includes collaborations with influential podcasters and media placements with The Guardian\"\n    },\n    {\n      \"field\": \"current_marketing_strategy\",\n      \"text\": \"CanvasBusinessModel reports that the brand's 'Refer a Friend' program drove 25% of new signups in 2025\"\n    },\n    {\n      \"field\": \"current_marketing_strategy\",\n      \"text\": \"Alli, PMG reports that Who Gives A Crap has a strong presence on TikTok, with 54.2 million video views and over 609k engagements\"\n    },\n    {\n      \"field\": \"instagram_post_idea\",\n      \"text\": \"This post aligns with the brand's mission to inspire change in consumers' attitudes and behaviors\"\n    },\n    {\n      \"field\": \"email_body\",\n      \"text\": \"We're excited to propose a collaboration with Who Gives A Crap for an Instagram post that highlights their 'Refer a Friend' program, as reported by CanvasBusinessModel\"\n    },\n    {\n      \"field\": \"email_body\",\n      \"text\": \"This post would showcase how easy it is to make a difference by referring friends to Who Gives A Crap\"\n    },\n    {\n      \"field\": \"email_body\",\n      \"text\": \"We believe this post would resonate with the brand's target audience of \\\"Uncrappers,\\\" people who want easy ways to do the right thing\"\n    }\n  ],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "That's why we make our rolls from recycled fibres or bamboo.",
+        "issues": [],
+        "reason": "The passage explicitly states that Who Gives A Crap makes toilet paper from recycled fibres or bamboo."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "Who Gives A Crap makes eco-friendly toilet paper and gives 50% of profits to help bring sanitation to the 2.4 billion people without a toilet.",
+        "issues": [],
+        "reason": "The passage directly states that Who Gives A Crap makes eco-friendly toilet paper and donates 50% of profits."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "In 2025 the brand's 'Refer a Friend' program drove 25% of new signups, while viral Instagram and TikTok unboxing content-often organic-amplified reach without heavy ad spend.",
+        "issues": [],
+        "reason": "The passage states that the 'Refer a Friend' program drove 25% of new signups."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "WGAC saw 54.2 million video views on TikTok alone, with over 609k engagements (and 12k new followers) across the United Kingdom and Australia.",
+        "issues": [],
+        "reason": "The passage reports 54.2 million video views and over 609k engagements on TikTok."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Our media strategy used host-read branded segments with influential podcasters such as The Guilty Feminist, Katherine Ryan, and Off Menu, among others; and 4-6 weeks-long activations across the full digital and print ecosystem of The Guardian, a hugely popular publisher with reach in the U.K. and Australia, to authentically express WGAC's compelling brand values.",
+        "issues": [],
+        "reason": "The passage mentions collaborations with podcasters and media placements with The Guardian."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "fail",
+  "reasons": [
+    "4 deterministic check error(s)"
+  ],
+  "created_at": "2026-11-23T01:56:23+00:00",
+  "audit_sha256": "045fb7cc25aa7567809d246236f182883461f1450a0bc6276ebd45e50da20aa8",
+  "dismissed_reviewer_flags": [
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "Who Gives A Crap makes eco-friendly toilet paper from recycled fibres or bamboo"
+      },
+      "reason": "sentence in brand_summary carries a claim marker; judged via its claim",
+      "matched_sentence": "who gives a crap makes eco friendly toilet paper from recycled fibres or bamboo"
+    },
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "Alli, PMG reports that Who Gives A Crap makes eco-friendly toilet paper and gives 50% of profits to help bring sanitation to the 2.4 billion people without a toilet"
+      },
+      "reason": "sentence in brand_summary carries a claim marker; judged via its claim",
+      "matched_sentence": "alli pmg reports that who gives a crap makes eco friendly toilet paper and gives 50 of profits to help bring sanitation to the 2 4 billion people without a toilet"
+    },
+    {
+      "flag": {
+        "field": "likely_target_audience",
+        "text": "The brand's target audience is defined as \"Uncrappers,\" people who want easy ways to do the right thing"
+      },
+      "reason": "sentence in likely_target_audience carries a claim marker; judged via its claim",
+      "matched_sentence": "the brand's target audience is defined as uncrappers people who want easy ways to do the right thing"
+    },
+    {
+      "flag": {
+        "field": "current_marketing_strategy",
+        "text": "Who Gives A Crap's marketing strategy includes collaborations with influential podcasters and media placements with The Guardian"
+      },
+      "reason": "sentence in current_marketing_strategy[0] carries a claim marker; judged via its claim",
+      "matched_sentence": "who gives a crap's marketing strategy includes collaborations with influential podcasters and media placements with the guardian"
+    },
+    {
+      "flag": {
+        "field": "current_marketing_strategy",
+        "text": "CanvasBusinessModel reports that the brand's 'Refer a Friend' program drove 25% of new signups in 2025"
+      },
+      "reason": "sentence in current_marketing_strategy[1] carries a claim marker; judged via its claim",
+      "matched_sentence": "canvasbusinessmodel reports that the brand's 'refer a friend' program drove 25 of new signups in 2025"
+    },
+    {
+      "flag": {
+        "field": "current_marketing_strategy",
+        "text": "Alli, PMG reports that Who Gives A Crap has a strong presence on TikTok, with 54.2 million video views and over 609k engagements"
+      },
+      "reason": "sentence in current_marketing_strategy[2] carries a claim marker; judged via its claim",
+      "matched_sentence": "alli pmg reports that who gives a crap has a strong presence on tiktok with 54 2 million video views and over 609k engagements"
+    },
+    {
+      "flag": {
+        "field": "instagram_post_idea",
+        "text": "This post aligns with the brand's mission to inspire change in consumers' attitudes and behaviors"
+      },
+      "reason": "sentence in instagram_post_idea.why_it_fits carries a claim marker; judged via its claim",
+      "matched_sentence": "this post aligns with the brand's mission to inspire change in consumers' attitudes and behaviors"
+    },
+    {
+      "flag": {
+        "field": "email_body",
+        "text": "We're excited to propose a collaboration with Who Gives A Crap for an Instagram post that highlights their 'Refer a Friend' program, as reported by CanvasBusinessModel"
+      },
+      "reason": "sentence in email_body carries a claim marker; judged via its claim",
+      "matched_sentence": "we're excited to propose a collaboration with who gives a crap for an instagram post that highlights their 'refer a friend' program as reported by canvasbusinessmodel"
+    },
+    {
+      "flag": {
+        "field": "email_body",
+        "text": "This post would showcase how easy it is to make a difference by referring friends to Who Gives A Crap"
+      },
+      "reason": "flagged text does not occur in the label"
+    },
+    {
+      "flag": {
+        "field": "email_body",
+        "text": "We believe this post would resonate with the brand's target audience of \"Uncrappers,\" people who want easy ways to do the right thing"
+      },
+      "reason": "sentence in email_body carries a claim marker; judged via its claim",
+      "matched_sentence": "we believe this post would resonate with the brand's target audience of uncrappers people who want easy ways to do the right thing"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "billie",
+  "bound_to": {
+    "packet_sha256": "8be6d18975eb70c986bc1fab023e592cc95ae126c8a520bb3154c8597a4e12bb",
+    "prompt_sha256": "23a1f4c3973e03feb21a3381cca2a22ab435aaa9095b837de9208f74ebcc3677",
+    "completion_sha256": "721711abc0b35a06033d5e7dcfacc8d841bb23d3146583faa9e572373f41728a",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [
+      "brand_summary: factual sentence without a claim marker: 'Billie aims to challenge societal pressures on women and engage with its audience in surpr'",
+      "likely_target_audience: factual sentence without a claim marker: 'The target audience is likely to be women who are interested in body positivity and inclus'",
+      "email_body: factual-looking sentence without a claim marker: \"This aligns with Billie's aim to challenge societal pressures on women and engage with its\"",
+      "current_marketing_strategy[0]: factual sentence without a claim marker: 'Billie aims to challenge societal pressures on women and engage with its audience in surpr'",
+      "collaboration_opportunities[0]: opportunity does not cite the fact it builds on",
+      "instagram_post_idea.why_it_fits: factual-looking sentence without a claim marker: 'This proposal builds on the fact that Billie aims to challenge societal pressures on women'",
+      "decision: the email must propose an Instagram post"
+    ],
+    "warnings": [
+      "claim C3: not referenced by any field",
+      "claim C4: not referenced by any field"
+    ]
+  },
+  "raw_response_sha256": "3156b34f20495f3b5717d6b742864e574675a15995b40346484de065dfd87e27",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"We’re starting to strategically look at how we are going to engage with our audience next year in completely surprising and different ways – it’s exciting.”\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Billie's intention to engage with its audience in surprising ways.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Billie’s Are We Doing Video? campaign launched in May 2020, which challenges the pressure women feel to look a certain way even in virtual meetings and videos calls.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly mentions a campaign that challenges societal pressures on women.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"I’m excited to move away from some of our classic styles of executions (film and photography) and explore how we can continue to live our mission and make statements executed in totally surprising new ways”, she says.\",\n      \"issues\": [],\n      \"reason\": \"The passage states Billie's intention to explore new ways to execute ideas.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Content creators are the new viral video.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that content creators are the new viral video.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "We’re starting to strategically look at how we are going to engage with our audience next year in completely surprising and different ways – it’s exciting.”",
+        "issues": [],
+        "reason": "The passage directly states Billie's intention to engage with its audience in surprising ways."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Billie’s Are We Doing Video? campaign launched in May 2020, which challenges the pressure women feel to look a certain way even in virtual meetings and videos calls.",
+        "issues": [],
+        "reason": "The passage explicitly mentions a campaign that challenges societal pressures on women."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "I’m excited to move away from some of our classic styles of executions (film and photography) and explore how we can continue to live our mission and make statements executed in totally surprising new ways”, she says.",
+        "issues": [],
+        "reason": "The passage states Billie's intention to explore new ways to execute ideas."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Content creators are the new viral video.",
+        "issues": [],
+        "reason": "The passage directly states that content creators are the new viral video."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [
+    "C3: reviewer quote does not occur in the referenced passage(s)"
+  ],
+  "status": "fail",
+  "reasons": [
+    "7 deterministic check error(s)",
+    "reviewer response also invalid: C3: reviewer quote does not occur in the referenced passage(s)"
+  ],
+  "created_at": "2026-11-23T01:59:22+00:00",
+  "audit_sha256": "f89b70674d7f4e6f69a34102c46d8e4990fbc84450513772652c3ce1b43f516c",
+  "dismissed_reviewer_flags": []
+}

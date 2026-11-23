@@ -3,7 +3,7 @@
   "acceptance_basis": "auto_threshold_0.7",
   "decision": "reject",
   "reasons": [
-    "pruned draft fails check_draft: email_body: vendor/provider claim C2 (P1) is not attributed to its source (adlibrary) in the prose: \"We'd love to create an Instagram post that highlights the Pham sisters' personal\" (+4 more)"
+    "removing unsupported claims and ungrounded sentences emptied ['collaboration_opportunities']"
   ],
   "groundedness": 1.0,
   "claim_support": {
@@ -17,6 +17,6 @@
   },
   "removed_claims": [],
   "label_completion_sha256": "6202c1a1e2fd41209dcef85682a8aeac74b5bc7470ca72d546e86616ee6932a3",
-  "audit_sha256": "f5497cb35cd5c94bc17a495cf10853de3f0661cd24c977edfd04fbbb3a076987",
-  "created_at": "2026-11-23T00:28:43+00:00"
+  "audit_sha256": "9e40b9bce2d6a0235e9eb911eea45f4fd6b30c1c513261a980d413565d12b261",
+  "created_at": "2026-11-23T02:50:55+00:00"
 }

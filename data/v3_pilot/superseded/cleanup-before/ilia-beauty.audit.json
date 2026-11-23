@@ -1,0 +1,140 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "ilia-beauty",
+  "bound_to": {
+    "packet_sha256": "783b317e1da8b510dcb4ba56a67812ce28db9c225ca94e275b0d69b58c790363",
+    "prompt_sha256": "54982c018d6feded3c4fae752760d3292feb94064e2eed26981c8f29c4f0ada7",
+    "completion_sha256": "4805c5a762d3f24ee4851ebfab4384e726884e2e48c10ffeb5936548d374a8a7",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [
+      "likely_target_audience: marker {C6} has no claim"
+    ],
+    "warnings": []
+  },
+  "raw_response_sha256": "df5cddfcaafc2f0e7ab9b7dcd1b56ab3ae4dcfd2f5ff54f5f946bbbd3eacba04",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"Crown Affair and ILIA Beauty Launch Limited-Edition Collaboration For Simplifying Summer Rituals\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states ILIA Beauty launched a collaboration with Crown Affair.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"The ilia beauty marketing strategy demonstrates how a brand can successfully combine purpose-driven values with structured digital execution.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states ILIA Beauty combines purpose-driven values with structured digital execution.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"TikTok influencer marketing is a clear focus for ILIA Beauty.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that TikTok influencer marketing is a clear focus for ILIA Beauty.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"The #ILIASkinChallenge was a popular campaign that invited customers to share their no-makeup or minimal makeup looks using ILIA Beauty products.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms the existence of the #ILIASkinChallenge campaign and its purpose.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"With 49% of partnerships featuring creators averaging <1K views, ILIA Beauty's strategy suggests niche targeting and authenticity\",\n      \"issues\": [],\n      \"reason\": \"The passage states that 49% of ILIA Beauty's partnerships feature creators averaging <1K views.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [\n    {\n      \"field\": \"email_body\",\n      \"text\": \"Hi ILIA Beauty Marketing Team,\"\n    },\n    {\n      \"field\": \"email_body\",\n      \"text\": \"We're reaching out to propose a collaboration that aligns with your brand's purpose-driven values and structured digital execution\"\n    },\n    {\n      \"field\": \"email_body\",\n      \"text\": \"Inspired by your successful #ILIASkinChallenge campaign, we'd like to suggest an Instagram post showcasing real customers using ILIA products in their natural, no-makeup looks.\"\n    },\n    {\n      \"field\": \"email_body\",\n      \"text\": \"This would be a great way to continue building trust with your audience through user-generated content.\"\n    },\n    {\n      \"field\": \"email_body\",\n      \"text\": \"We'd be happy to discuss this further and explore how we can work together to bring this idea to life.\"\n    },\n    {\n      \"field\": \"email_body\",\n      \"text\": \"Best regards,\"\n    },\n    {\n      \"field\": \"email_body\",\n      \"text\": \"[Your Name]\"\n    }\n  ],\n  \"absence_as_weakness\": [\n    {\n      \"field\": \"likely_target_audience\",\n      \"text\": \"The likely target audience for ILIA Beauty is not specified in the evidence\"\n    }\n  ]\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "Crown Affair and ILIA Beauty Launch Limited-Edition Collaboration For Simplifying Summer Rituals",
+        "issues": [],
+        "reason": "The passage explicitly states ILIA Beauty launched a collaboration with Crown Affair."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "The ilia beauty marketing strategy demonstrates how a brand can successfully combine purpose-driven values with structured digital execution.",
+        "issues": [],
+        "reason": "The passage directly states ILIA Beauty combines purpose-driven values with structured digital execution."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "TikTok influencer marketing is a clear focus for ILIA Beauty.",
+        "issues": [],
+        "reason": "The passage states that TikTok influencer marketing is a clear focus for ILIA Beauty."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "The #ILIASkinChallenge was a popular campaign that invited customers to share their no-makeup or minimal makeup looks using ILIA Beauty products.",
+        "issues": [],
+        "reason": "The passage confirms the existence of the #ILIASkinChallenge campaign and its purpose."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "With 49% of partnerships featuring creators averaging <1K views, ILIA Beauty's strategy suggests niche targeting and authenticity",
+        "issues": [],
+        "reason": "The passage states that 49% of ILIA Beauty's partnerships feature creators averaging <1K views."
+      }
+    ],
+    "unmarked_factual_statements": [
+      {
+        "field": "email_body",
+        "text": "Hi ILIA Beauty Marketing Team,"
+      },
+      {
+        "field": "email_body",
+        "text": "This would be a great way to continue building trust with your audience through user-generated content."
+      },
+      {
+        "field": "email_body",
+        "text": "We'd be happy to discuss this further and explore how we can work together to bring this idea to life."
+      }
+    ],
+    "absence_as_weakness": [
+      {
+        "field": "likely_target_audience",
+        "text": "The likely target audience for ILIA Beauty is not specified in the evidence"
+      }
+    ]
+  },
+  "review_validation_errors": [],
+  "status": "fail",
+  "reasons": [
+    "1 deterministic check error(s)"
+  ],
+  "created_at": "2026-11-23T01:42:39+00:00",
+  "audit_sha256": "cc8e81665d031c71d3ca0cc764c4221ebb59ceb2b767c612955524681b3bd882",
+  "dismissed_reviewer_flags": [
+    {
+      "flag": {
+        "field": "email_body",
+        "text": "We're reaching out to propose a collaboration that aligns with your brand's purpose-driven values and structured digital execution"
+      },
+      "reason": "sentence in email_body carries a claim marker; judged via its claim",
+      "matched_sentence": "we're reaching out to propose a collaboration that aligns with your brand's purpose driven values and structured digital execution"
+    },
+    {
+      "flag": {
+        "field": "email_body",
+        "text": "Inspired by your successful #ILIASkinChallenge campaign, we'd like to suggest an Instagram post showcasing real customers using ILIA products in their natural, no-makeup looks."
+      },
+      "reason": "sentence in email_body carries a claim marker; judged via its claim",
+      "matched_sentence": "inspired by your successful iliaskinchallenge campaign we'd like to suggest an instagram post showcasing real customers using ilia products in their natural no makeup looks"
+    },
+    {
+      "flag": {
+        "field": "email_body",
+        "text": "Best regards,"
+      },
+      "reason": "flagged text does not occur in the label"
+    },
+    {
+      "flag": {
+        "field": "email_body",
+        "text": "[Your Name]"
+      },
+      "reason": "flagged text does not occur in the label"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "groundedness": 1.0,
+  "claims_total": 5,
+  "claims_supported": 5,
+  "claim_support": {
+    "C1": "supported",
+    "C2": "supported",
+    "C3": "supported",
+    "C4": "supported",
+    "C5": "supported"
+  },
+  "reasons": [],
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "removed_sentences": [
+    {
+      "field": "likely_target_audience",
+      "sentence": "The likely target audience for ILIA Beauty is not specified in the evidence {C6}.",
+      "reason": "marker {C6} has no claim"
+    }
+  ],
+  "decision": "prune",
+  "completion_sha256": "4805c5a762d3f24ee4851ebfab4384e726884e2e48c10ffeb5936548d374a8a7",
+  "audit_sha256": "cc8e81665d031c71d3ca0cc764c4221ebb59ceb2b767c612955524681b3bd882",
+  "pruned_completion_sha256": "9444728ea4a36a8c73bd7ca3bf4b01387c879296500cc5fb1af8ee26506b8b8f"
+}

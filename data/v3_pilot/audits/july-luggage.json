@@ -4,7 +4,7 @@
   "bound_to": {
     "packet_sha256": "a068d965c36beb5cc7d48d161c8bee77e6f7ad9b178b98c3d530710edae3d6fd",
     "prompt_sha256": "6d28dc0e40a30b6a384f8587f79789db23b7c562fca8969854a97771f4c54639",
-    "completion_sha256": "2bd0894cb36f1f9f23487497cc261c5a67a5eac46410fb9beab891e0a25df07c",
+    "completion_sha256": "1f54c1a99e8b4e589d4f9273fdad3ca701db130e9bb231ac3e6972b2aa2437bb",
     "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
   },
   "reviewer_config": {
@@ -16,9 +16,7 @@
     "max_tokens": 4096
   },
   "deterministic": {
-    "errors": [
-      "instagram_post_idea.hook: factual-looking sentence without a claim marker: 'Personalize your travel with July Luggage.'"
-    ],
+    "errors": [],
     "warnings": []
   },
   "raw_response_sha256": "eec0abda9d239a314de7033d05171d6265608059293af4252f59b91ad030dcea",
@@ -111,11 +109,9 @@
     "absence_as_weakness": []
   },
   "review_validation_errors": [],
-  "status": "fail",
-  "reasons": [
-    "1 deterministic check error(s)"
-  ],
-  "created_at": "2026-11-23T00:04:13+00:00",
-  "audit_sha256": "a3fbbad3f781a6e2431320668e6ff16c72028127007dd0821b1c6d47b292fb32",
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-23T02:56:21+00:00",
+  "audit_sha256": "b2ca05bc2f71326d6564b22f3267588ea2c92444835cac71e2016a4cf83aa22d",
   "dismissed_reviewer_flags": []
 }

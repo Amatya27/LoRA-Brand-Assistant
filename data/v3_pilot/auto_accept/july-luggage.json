@@ -1,0 +1,30 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "july-luggage",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "a068d965c36beb5cc7d48d161c8bee77e6f7ad9b178b98c3d530710edae3d6fd",
+    "prompt_sha256": "6d28dc0e40a30b6a384f8587f79789db23b7c562fca8969854a97771f4c54639",
+    "completion_sha256": "1f54c1a99e8b4e589d4f9273fdad3ca701db130e9bb231ac3e6972b2aa2437bb",
+    "audit_sha256": "b2ca05bc2f71326d6564b22f3267588ea2c92444835cac71e2016a4cf83aa22d"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 8,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "removed_sentences": [
+    {
+      "field": "instagram_post_idea.hook",
+      "sentence": "Personalize your travel with July Luggage.",
+      "reason": "factual-looking sentence without a claim marker: 'Personalize your travel with July Luggage.'"
+    }
+  ],
+  "original_completion_sha256": "2bd0894cb36f1f9f23487497cc261c5a67a5eac46410fb9beab891e0a25df07c",
+  "original_audit_sha256": "b4339b576afcd4bde96bd9c0164ddc5790076819704439eefea152f573262336",
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T03:00:52+00:00",
+  "record_sha256": "f2ce375e15a3d72059ac347f2f4da662e03697e8d4f0aed09e2fe49b205a099d"
+}

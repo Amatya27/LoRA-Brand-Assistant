@@ -1,0 +1,29 @@
+{
+  "groundedness": 1.0,
+  "claims_total": 8,
+  "claims_supported": 8,
+  "claim_support": {
+    "C1": "supported",
+    "C2": "supported",
+    "C3": "supported",
+    "C4": "supported",
+    "C5": "supported",
+    "C6": "supported",
+    "C7": "supported",
+    "C8": "supported"
+  },
+  "reasons": [],
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "removed_sentences": [
+    {
+      "field": "instagram_post_idea.hook",
+      "sentence": "Personalize your travel with July Luggage.",
+      "reason": "factual-looking sentence without a claim marker: 'Personalize your travel with July Luggage.'"
+    }
+  ],
+  "decision": "prune",
+  "completion_sha256": "2bd0894cb36f1f9f23487497cc261c5a67a5eac46410fb9beab891e0a25df07c",
+  "audit_sha256": "b4339b576afcd4bde96bd9c0164ddc5790076819704439eefea152f573262336",
+  "pruned_completion_sha256": "1f54c1a99e8b4e589d4f9273fdad3ca701db130e9bb231ac3e6972b2aa2437bb"
+}

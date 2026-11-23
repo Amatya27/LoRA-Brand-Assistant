@@ -1,0 +1,30 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "ilia-beauty",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "783b317e1da8b510dcb4ba56a67812ce28db9c225ca94e275b0d69b58c790363",
+    "prompt_sha256": "54982c018d6feded3c4fae752760d3292feb94064e2eed26981c8f29c4f0ada7",
+    "completion_sha256": "9444728ea4a36a8c73bd7ca3bf4b01387c879296500cc5fb1af8ee26506b8b8f",
+    "audit_sha256": "ba7afc77074dea54cd5b437af08c2a2859b82c47c20c72d80c6ff5d1990ccc4a"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 5,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "removed_sentences": [
+    {
+      "field": "likely_target_audience",
+      "sentence": "The likely target audience for ILIA Beauty is not specified in the evidence {C6}.",
+      "reason": "marker {C6} has no claim"
+    }
+  ],
+  "original_completion_sha256": "4805c5a762d3f24ee4851ebfab4384e726884e2e48c10ffeb5936548d374a8a7",
+  "original_audit_sha256": "cc8e81665d031c71d3ca0cc764c4221ebb59ceb2b767c612955524681b3bd882",
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T03:00:52+00:00",
+  "record_sha256": "122b7ce3d59c9ebc7a9180a7347b6c167f3f5ff8104758f88fa5890fc073f849"
+}

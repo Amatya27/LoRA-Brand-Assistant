@@ -1,0 +1,140 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "blue-bottle-coffee",
+  "bound_to": {
+    "packet_sha256": "d852ab4ec6e731c43a421176423346566d6fa479cc9915d95e9fc32e12837aa9",
+    "prompt_sha256": "4f6594c7d16672facb22ac45677fbe4373c912d65fd041402e926d248cf26a6b",
+    "completion_sha256": "2d9e8cdbdd6187e0e9c8a6dbaccd13653329b4fbfd2fd4ea153f724cb473edd8",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [
+      "claim C8: quote does not occur in cited passage(s) ['P10']"
+    ],
+    "warnings": []
+  },
+  "raw_response_sha256": "8c135a409b33758807541f8b6b2499af7f3e3b05bee7ea37b9d444778bf13612",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"The Blue Bottle Dripper The pour over is our first and most iconic drink, a hand-brewed ritual that slows time to let every nuance of the coffee shine.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states the Dripper is their first and most iconic drink.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"We serve with a selfless, whole-hearted approach to hospitality that is reflected in our baristas around the world.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states this about their approach to hospitality.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"And we design our cafes to foster belonging, community, and the simple pleasure of a delicious cup.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states this about their cafe design.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Blue Bottle partners with credible voices who share its taste standards and visual restraint, then scales impact through community programs.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms Blue Bottle partners with credible voices and uses community programs.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"The team prioritizes channels with strong dwell time and purchase adjacency.\",\n      \"issues\": [],\n      \"reason\": \"The passage states they prioritize channels with strong dwell time and purchase adjacency.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"Blue Bottle Coffee aligns communications with a craft image, using clean visuals, restrained typography, and product-first narratives.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms their communication style aligns with a craft image.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"Blue Bottle understood the power of digital engagement and launched a direct-to-consumer subscription model, delivering freshly roasted coffee beans straight to customers’ homes.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms the launch of a direct-to-consumer subscription model.\"\n    },\n    {\n      \"claim_id\": \"C8\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P10\"\n      ],\n      \"quote\": \"Every cup of coffee is brewed to order, not sitting in a carafe for hours. Beans are roasted in small batches and served within 48 hours. Only ethically sourced, single-origin beans are used to maintain quality and transparency.\",\n      \"issues\": [],\n      \"reason\": \"The passage details their focus on quality and freshness through brewing, roasting, and sourcing practices.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"Blue Bottle Coffee makes hand-brewed coffee that emphasizes quality, freshness, and craftsmanship\"\n    },\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"What started as a single cart selling roasted coffee beans at the Old Oakland Farmers Market has evolved into a rich, diverse community of cafes that span the globe, from New York to Shanghai.\"\n    }\n  ],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "The Blue Bottle Dripper The pour over is our first and most iconic drink, a hand-brewed ritual that slows time to let every nuance of the coffee shine.",
+        "issues": [],
+        "reason": "The passage explicitly states the Dripper is their first and most iconic drink."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "We serve with a selfless, whole-hearted approach to hospitality that is reflected in our baristas around the world.",
+        "issues": [],
+        "reason": "The passage directly states this about their approach to hospitality."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "And we design our cafes to foster belonging, community, and the simple pleasure of a delicious cup.",
+        "issues": [],
+        "reason": "The passage directly states this about their cafe design."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Blue Bottle partners with credible voices who share its taste standards and visual restraint, then scales impact through community programs.",
+        "issues": [],
+        "reason": "The passage confirms Blue Bottle partners with credible voices and uses community programs."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "The team prioritizes channels with strong dwell time and purchase adjacency.",
+        "issues": [],
+        "reason": "The passage states they prioritize channels with strong dwell time and purchase adjacency."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "Blue Bottle Coffee aligns communications with a craft image, using clean visuals, restrained typography, and product-first narratives.",
+        "issues": [],
+        "reason": "The passage confirms their communication style aligns with a craft image."
+      },
+      {
+        "claim_id": "C7",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "Blue Bottle understood the power of digital engagement and launched a direct-to-consumer subscription model, delivering freshly roasted coffee beans straight to customers’ homes.",
+        "issues": [],
+        "reason": "The passage confirms the launch of a direct-to-consumer subscription model."
+      },
+      {
+        "claim_id": "C8",
+        "verdict": "supported",
+        "passage_ids": [
+          "P10"
+        ],
+        "quote": "Every cup of coffee is brewed to order, not sitting in a carafe for hours. Beans are roasted in small batches and served within 48 hours. Only ethically sourced, single-origin beans are used to maintain quality and transparency.",
+        "issues": [],
+        "reason": "The passage details their focus on quality and freshness through brewing, roasting, and sourcing practices."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [
+    "C8: reviewer quote does not occur in the referenced passage(s)"
+  ],
+  "status": "fail",
+  "reasons": [
+    "1 deterministic check error(s)",
+    "reviewer response also invalid: C8: reviewer quote does not occur in the referenced passage(s)"
+  ],
+  "created_at": "2026-11-22T23:49:05+00:00",
+  "audit_sha256": "5c985fdf855c46e615cbdb0e2f28276762acef3f987d0ff2e7eae08348801b12",
+  "dismissed_reviewer_flags": [
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "Blue Bottle Coffee makes hand-brewed coffee that emphasizes quality, freshness, and craftsmanship"
+      },
+      "reason": "sentence in brand_summary carries a claim marker; judged via its claim",
+      "matched_sentence": "blue bottle coffee makes hand brewed coffee that emphasizes quality freshness and craftsmanship"
+    },
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "What started as a single cart selling roasted coffee beans at the Old Oakland Farmers Market has evolved into a rich, diverse community of cafes that span the globe, from New York to Shanghai."
+      },
+      "reason": "flagged text does not occur in the label"
+    }
+  ]
+}

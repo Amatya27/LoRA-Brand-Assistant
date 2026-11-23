@@ -1,0 +1,152 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "trade-coffee",
+  "bound_to": {
+    "packet_sha256": "96f06349a3b5757d5239dc6c1b654a3955bc5c9f0eadad9202c0b1aadba4254d",
+    "prompt_sha256": "ce57c63cbe0d41dee57bc30fa0cdfdd0fbecb76e7745e78931fb3ab05a989cd4",
+    "completion_sha256": "f4e0cc2daece4dcda964bf2e00b6473fa223d2ba910f59dc6e17fa323c588974",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [
+      "email_subject: vendor/provider claim C1 (P6) is not attributed to its source (adlibrary) in the prose: \"Collaboration Opportunity: Showcase Trade Coffee's Curated Roasters on Instagram\"",
+      "email_body: vendor/provider claim C1 (P6) is not attributed to its source (adlibrary) in the prose: \"Hi Trade Coffee Team,\\n\\nWe're reaching out to propose a collaboration for an Inst\"",
+      "email_body: vendor/provider claim C1 (P6) is not attributed to its source (adlibrary) in the prose: 'We believe this post would resonate with your audience of coffee enthusiasts who'",
+      "collaboration_opportunities[0]: vendor/provider claim C1 (P6) is not attributed to its source (adlibrary) in the prose: \"Collaborate on an Instagram carousel post featuring Trade Coffee's curated roast\"",
+      "instagram_post_idea.concept: vendor/provider claim C1 (P6) is not attributed to its source (adlibrary) in the prose: \"A carousel post showcasing Trade Coffee's curated roasters, their origin stories\""
+    ],
+    "warnings": [
+      "claim C5: not referenced by any field",
+      "claim C6: not referenced by any field",
+      "claim C7: not referenced by any field",
+      "claim C8: not referenced by any field",
+      "claim C9: not referenced by any field",
+      "claim C10: not referenced by any field"
+    ]
+  },
+  "raw_response_sha256": "8674ee88b15705656d7bef5bcf1fe28a33a6a200145e31289d371f55ad1df358",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"Trade Coffee is a personalized coffee subscription marketplace that matches customers to coffees from 50+ independent roasters via a taste-profile quiz\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states this about Trade Coffee.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"The Wirecutter partnership and heavy podcast sponsorship established the brand as the editorial authority on specialty coffee subscriptions\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states this about Trade Coffee.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"Facebook and Instagram ads often feature roaster origin stories and specific coffee tasting notes — leaning into the editorial, discovery-forward positioning\",\n      \"issues\": [],\n      \"reason\": \"The passage describes Trade Coffee's marketing strategy on these platforms.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"The taste quiz CTA reduces commitment friction\",\n      \"issues\": [],\n      \"reason\": \"The passage states this about Trade Coffee's marketing.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"Curated coffee marketplace connecting consumers with independent roasters through subscriptions\",\n      \"issues\": [],\n      \"reason\": \"The passage describes Trade Coffee's function.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"The company offers coffee subscriptions, gifts, and brewing guides, fostering a community of coffee enthusiasts\",\n      \"issues\": [],\n      \"reason\": \"The passage details Trade Coffee's offerings.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"Trade is opening specialty to a broader audience and will propel the category to capture a larger share of the $55B US coffee market\",\n      \"issues\": [],\n      \"reason\": \"The passage quotes Trade's CEO on their mission.\"\n    },\n    {\n      \"claim_id\": \"C8\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"The specialty coffee market is highly fragmented, with amazing independent roasters all over the country serving local customers\",\n      \"issues\": [],\n      \"reason\": \"The passage quotes Madrona Venture Group on the market.\"\n    },\n    {\n      \"claim_id\": \"C9\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P9\"\n      ],\n      \"quote\": \"People are brewing at home more now than at any point in this century, yet the buying experience hasn't changed in decades\",\n      \"issues\": [],\n      \"reason\": \"The passage describes a problem Trade Coffee is solving.\"\n    },\n    {\n      \"claim_id\": \"C10\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P9\"\n      ],\n      \"quote\": \"Our customers are passionate about good coffee, but struggle to find different brands and specialty coffees that meet their expectations for taste, quality and sourcing\",\n      \"issues\": [],\n      \"reason\": \"The passage describes a customer pain point that Trade Coffee addresses.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "Trade Coffee is a personalized coffee subscription marketplace that matches customers to coffees from 50+ independent roasters via a taste-profile quiz",
+        "issues": [],
+        "reason": "The passage explicitly states this about Trade Coffee."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "The Wirecutter partnership and heavy podcast sponsorship established the brand as the editorial authority on specialty coffee subscriptions",
+        "issues": [],
+        "reason": "The passage directly states this about Trade Coffee."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "Facebook and Instagram ads often feature roaster origin stories and specific coffee tasting notes — leaning into the editorial, discovery-forward positioning",
+        "issues": [],
+        "reason": "The passage describes Trade Coffee's marketing strategy on these platforms."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "The taste quiz CTA reduces commitment friction",
+        "issues": [],
+        "reason": "The passage states this about Trade Coffee's marketing."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "Curated coffee marketplace connecting consumers with independent roasters through subscriptions",
+        "issues": [],
+        "reason": "The passage describes Trade Coffee's function."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "The company offers coffee subscriptions, gifts, and brewing guides, fostering a community of coffee enthusiasts",
+        "issues": [],
+        "reason": "The passage details Trade Coffee's offerings."
+      },
+      {
+        "claim_id": "C7",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "Trade is opening specialty to a broader audience and will propel the category to capture a larger share of the $55B US coffee market",
+        "issues": [],
+        "reason": "The passage quotes Trade's CEO on their mission."
+      },
+      {
+        "claim_id": "C8",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "The specialty coffee market is highly fragmented, with amazing independent roasters all over the country serving local customers",
+        "issues": [],
+        "reason": "The passage quotes Madrona Venture Group on the market."
+      },
+      {
+        "claim_id": "C9",
+        "verdict": "supported",
+        "passage_ids": [
+          "P9"
+        ],
+        "quote": "People are brewing at home more now than at any point in this century, yet the buying experience hasn't changed in decades",
+        "issues": [],
+        "reason": "The passage describes a problem Trade Coffee is solving."
+      },
+      {
+        "claim_id": "C10",
+        "verdict": "supported",
+        "passage_ids": [
+          "P9"
+        ],
+        "quote": "Our customers are passionate about good coffee, but struggle to find different brands and specialty coffees that meet their expectations for taste, quality and sourcing",
+        "issues": [],
+        "reason": "The passage describes a customer pain point that Trade Coffee addresses."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "fail",
+  "reasons": [
+    "5 deterministic check error(s)"
+  ],
+  "created_at": "2026-11-23T00:22:58+00:00",
+  "audit_sha256": "30530d353fe5c49e8daf8476cd1ae5f09cdc323651b28fee5f17c4ad8d69d54b",
+  "dismissed_reviewer_flags": []
+}

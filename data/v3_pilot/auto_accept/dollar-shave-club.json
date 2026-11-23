@@ -1,0 +1,30 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "dollar-shave-club",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "619cfdd7cae715d9b6323f0f23f679b003dec33bc555f67a46ed720a8c7ac897",
+    "prompt_sha256": "6957895fe459454f418178dd19ddf2b10a84ba4923f662fa121a2994fe4b8485",
+    "completion_sha256": "a62533bae9b43bf337c4c2eb2f92a375332bb2222ed83bd7a0bb4d4d3207a56d",
+    "audit_sha256": "d225c7c9349ad7a6fff44ac0834e5e7ef61cad0c7f2ebc93c187bf49974eac07"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 8,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "removed_sentences": [
+    {
+      "field": "likely_target_audience",
+      "sentence": "The likely target audience of Dollar Shave Club is not explicitly stated in the evidence.",
+      "reason": "factual sentence without a claim marker: 'The likely target audience of Dollar Shave Club is not explicitly stated in th"
+    }
+  ],
+  "original_completion_sha256": "77375469d9dfc5ef3a7c6c56faf575ee90d2a47b9120b8bf3c243c73511a636e",
+  "original_audit_sha256": "bd179df2198c1a464febcb787a112bd5cf0e0190b57c8dfe96e55b15c52d6a0b",
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T03:00:52+00:00",
+  "record_sha256": "eb0d051d8f3e38add1dac05de796bd8bf20b8e699dca72ecdfff7584a4dc207b"
+}

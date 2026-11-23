@@ -1,0 +1,133 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "gymshark",
+  "bound_to": {
+    "packet_sha256": "baf2f85c805b22fb151e604697fef5da66c61b3b7a3f5c004f9342313cc4e20c",
+    "prompt_sha256": "28d0f8916f60325598791cbeb70ef7abe25e549dc701ea730c692530362d4125",
+    "completion_sha256": "504782db1b170f8ace1077540e117eff69a8d24fffa03695023ee15fbe5b530e",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [
+      "claim C5: kind must be one of ('fact', 'provider_reported', 'premise')",
+      "brand_summary: marker {C9} has no claim"
+    ],
+    "warnings": []
+  },
+  "raw_response_sha256": "42821c9b55a810d7bcfa52f7afb55082aacb7a8920670f087037f7b71605db54",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Affiliate Marketing and Collaborations Gymshark operates comprehensive affiliate programs that extend beyond traditional influencer partnerships. The system includes performance-based commissions and exclusive product access.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states Gymshark has a comprehensive affiliate program with performance-based commissions and exclusive product access.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"The Gymshark Athlete Program is one of the brand’s most successful marketing strategies, partnering with fitness influencers who have a genuine connection with their followers.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Gymshark partners with influencers who have a genuine connection with their followers.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"Gymshark’s promotion strategy is heavily focused on digital marketing, influencer collaborations, and social media engagement. The brand leverages platforms such as Instagram, TikTok, and YouTube to connect with fitness enthusiasts and build a sense of belonging.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms Gymshark uses Instagram, TikTok, and YouTube to connect with enthusiasts.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"The Athlete Community: Gymshark partners with creators who have authentic personas. These athletes don’t just post ads; they provide honest training reviews and unboxing videos, acting as trusted voices within the fitness community.\",\n      \"issues\": [],\n      \"reason\": \"The passage states Gymshark partners with creators who provide honest training reviews and unboxing videos.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P9\"\n      ],\n      \"quote\": \"The brand’s primary Instagram account has approximately 8 million followers, with a combined social following of more than 18 million people across all platforms\",\n      \"issues\": [],\n      \"reason\": \"The passage states Gymshark has approximately 8 million followers on Instagram.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"Gymshark is a global fitness apparel brand that achieved rapid growth through a social media-first marketing model\"\n    },\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"The brand partners with fitness influencers and athletes who have a genuine connection with their followers\"\n    },\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"Gymshark leverages platforms like Instagram, TikTok, and YouTube to connect with fitness enthusiasts and build a sense of belonging\"\n    },\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"The brand partners with creators who have authentic personas and provide honest training reviews and unboxing videos\"\n    },\n    {\n      \"field\": \"likely_target_audience\",\n      \"text\": \"Gymshark's target audience includes young adults and teenagers who seek authentic experiences and community belonging\"\n    }\n  ],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Affiliate Marketing and Collaborations Gymshark operates comprehensive affiliate programs that extend beyond traditional influencer partnerships. The system includes performance-based commissions and exclusive product access.",
+        "issues": [],
+        "reason": "The passage explicitly states Gymshark has a comprehensive affiliate program with performance-based commissions and exclusive product access."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "The Gymshark Athlete Program is one of the brand’s most successful marketing strategies, partnering with fitness influencers who have a genuine connection with their followers.",
+        "issues": [],
+        "reason": "The passage directly states Gymshark partners with influencers who have a genuine connection with their followers."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "Gymshark’s promotion strategy is heavily focused on digital marketing, influencer collaborations, and social media engagement. The brand leverages platforms such as Instagram, TikTok, and YouTube to connect with fitness enthusiasts and build a sense of belonging.",
+        "issues": [],
+        "reason": "The passage confirms Gymshark uses Instagram, TikTok, and YouTube to connect with enthusiasts."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "The Athlete Community: Gymshark partners with creators who have authentic personas. These athletes don’t just post ads; they provide honest training reviews and unboxing videos, acting as trusted voices within the fitness community.",
+        "issues": [],
+        "reason": "The passage states Gymshark partners with creators who provide honest training reviews and unboxing videos."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P9"
+        ],
+        "quote": "The brand’s primary Instagram account has approximately 8 million followers, with a combined social following of more than 18 million people across all platforms",
+        "issues": [],
+        "reason": "The passage states Gymshark has approximately 8 million followers on Instagram."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "fail",
+  "reasons": [
+    "2 deterministic check error(s)"
+  ],
+  "created_at": "2026-11-23T01:41:57+00:00",
+  "audit_sha256": "bb731e90b3bb091496911173e2143ee8b1a796cbf6ec06e973b7304859a6443b",
+  "dismissed_reviewer_flags": [
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "Gymshark is a global fitness apparel brand that achieved rapid growth through a social media-first marketing model"
+      },
+      "reason": "sentence in brand_summary carries a claim marker; judged via its claim",
+      "matched_sentence": "gymshark is a global fitness apparel brand that achieved rapid growth through a social media first marketing model"
+    },
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "The brand partners with fitness influencers and athletes who have a genuine connection with their followers"
+      },
+      "reason": "sentence in brand_summary carries a claim marker; judged via its claim",
+      "matched_sentence": "the brand partners with fitness influencers and athletes who have a genuine connection with their followers"
+    },
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "Gymshark leverages platforms like Instagram, TikTok, and YouTube to connect with fitness enthusiasts and build a sense of belonging"
+      },
+      "reason": "sentence in brand_summary carries a claim marker; judged via its claim",
+      "matched_sentence": "gymshark leverages platforms like instagram tiktok and youtube to connect with fitness enthusiasts and build a sense of belonging"
+    },
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "The brand partners with creators who have authentic personas and provide honest training reviews and unboxing videos"
+      },
+      "reason": "sentence in brand_summary carries a claim marker; judged via its claim",
+      "matched_sentence": "the brand partners with creators who have authentic personas and provide honest training reviews and unboxing videos"
+    },
+    {
+      "flag": {
+        "field": "likely_target_audience",
+        "text": "Gymshark's target audience includes young adults and teenagers who seek authentic experiences and community belonging"
+      },
+      "reason": "sentence in likely_target_audience carries a claim marker; judged via its claim",
+      "matched_sentence": "according to maninderwave gymshark's target audience includes young adults and teenagers who seek authentic experiences and community belonging"
+    }
+  ]
+}

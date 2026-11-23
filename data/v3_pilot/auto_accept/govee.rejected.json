@@ -3,7 +3,7 @@
   "acceptance_basis": "auto_threshold_0.7",
   "decision": "reject",
   "reasons": [
-    "pruned draft fails check_draft: current_marketing_strategy[2]: vendor/provider claim C3 (P3) is not attributed to its source (stride-social) in the prose: 'Stride Social collaborated with product review creators to produce organic-style'"
+    "audit status fail: reviewer found factual statements without claim support"
   ],
   "groundedness": 1.0,
   "claim_support": {
@@ -15,7 +15,7 @@
     "C6": "supported"
   },
   "removed_claims": [],
-  "label_completion_sha256": "c115447314d1515c0f4684e96dbd87b3f2c0f839336a961b66d6aa7beff24bc1",
-  "audit_sha256": "ea01d78e3cf91237d7e69e3db2995bfc52f58434131d74121ef431848c746d0d",
-  "created_at": "2026-11-23T00:28:45+00:00"
+  "label_completion_sha256": "701e998b585d1b13cf54a3ae73c69fa5a46f389006f8340c32175984509c2ec0",
+  "audit_sha256": "3440a786e3d5d11bd060ee40ae3ba888c89162f589a6765ce6e955b4079d26f7",
+  "created_at": "2026-11-23T03:00:52+00:00"
 }

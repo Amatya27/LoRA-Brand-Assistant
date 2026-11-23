@@ -1,0 +1,98 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "olaplex",
+  "bound_to": {
+    "packet_sha256": "24fbbc7735aa156acf6a4862f58cb6fbeb53ba79714715ee36293c1c45d8a8a7",
+    "prompt_sha256": "9b0a9cdef13b63283afd7d754ef8ec291f779bf8506e0adef96c7ff332c53332",
+    "completion_sha256": "d2eae97f507136e37613c7b92ce31eca1c96dd35044aa8a4f12b56b6058cbb96",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [
+      "claim C3: quote does not occur in cited passage(s) ['P8']",
+      "email_body: vendor/provider claim C4 (P9) is not attributed to its source (modash) in the prose: 'This would align with your influencer marketing strategy and the diverse range o'",
+      "collaboration_opportunities[0]: vendor/provider claim C4 (P9) is not attributed to its source (modash) in the prose: 'Collaborate on an Instagram campaign featuring user-generated content from creat'",
+      "instagram_post_idea.why_it_fits: vendor/provider claim C4 (P9) is not attributed to its source (modash) in the prose: \"This concept aligns with Olaplex's influencer marketing strategy and the diverse\""
+    ],
+    "warnings": []
+  },
+  "raw_response_sha256": "1e063cf3f64c5273629ba482ac4b035c38cc681c9f0edcf8fe6b6348a9261205",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Olaplex has strategically partnered with over 400 creators, spanning everyone from TikTok trendsetters to celebrity hairstylists.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states Olaplex partners with over 400 creators.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"Olaplex leverages the power of influencer marketing by collaborating with haircare professionals and influencers.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Olaplex collaborates with influencers.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"TikTokPosts 100%\",\n      \"issues\": [],\n      \"reason\": \"The passage states 100% of Olaplex's sponsored content on TikTok is in the form of posts.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P9\"\n      ],\n      \"quote\": \"OLAPLEX's creator selection appears relatively diversified across size tiers, with no single segment dominating.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Olaplex's creator selection is diversified.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P10\"\n      ],\n      \"quote\": \"This wasn’t just another beauty ad. It was a declaration of identity.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes a campaign focused on human connection and emotional loyalty.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Olaplex has strategically partnered with over 400 creators, spanning everyone from TikTok trendsetters to celebrity hairstylists.",
+        "issues": [],
+        "reason": "The passage explicitly states Olaplex partners with over 400 creators."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "Olaplex leverages the power of influencer marketing by collaborating with haircare professionals and influencers.",
+        "issues": [],
+        "reason": "The passage directly states Olaplex collaborates with influencers."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "TikTokPosts 100%",
+        "issues": [],
+        "reason": "The passage states 100% of Olaplex's sponsored content on TikTok is in the form of posts."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P9"
+        ],
+        "quote": "OLAPLEX's creator selection appears relatively diversified across size tiers, with no single segment dominating.",
+        "issues": [],
+        "reason": "The passage directly states Olaplex's creator selection is diversified."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P10"
+        ],
+        "quote": "This wasn’t just another beauty ad. It was a declaration of identity.",
+        "issues": [],
+        "reason": "The passage describes a campaign focused on human connection and emotional loyalty."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [
+    "C2: reviewer quote does not occur in the referenced passage(s)",
+    "C3: reviewer quote does not occur in the referenced passage(s)"
+  ],
+  "status": "fail",
+  "reasons": [
+    "4 deterministic check error(s)",
+    "reviewer response also invalid: C2: reviewer quote does not occur in the referenced passage(s); C3: reviewer quote does not occur in the referenced passage(s)"
+  ],
+  "created_at": "2026-11-23T01:49:14+00:00",
+  "audit_sha256": "c4a315fc87144e8d7eddf1f15b1681464150d3bb2c56cc3440813fa828686b12",
+  "dismissed_reviewer_flags": []
+}

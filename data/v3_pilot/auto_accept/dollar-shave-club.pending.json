@@ -1,0 +1,29 @@
+{
+  "groundedness": 1.0,
+  "claims_total": 8,
+  "claims_supported": 8,
+  "claim_support": {
+    "C1": "supported",
+    "C2": "supported",
+    "C3": "supported",
+    "C4": "supported",
+    "C5": "supported",
+    "C6": "supported",
+    "C7": "supported",
+    "C8": "supported"
+  },
+  "reasons": [],
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "removed_sentences": [
+    {
+      "field": "likely_target_audience",
+      "sentence": "The likely target audience of Dollar Shave Club is not explicitly stated in the evidence.",
+      "reason": "factual sentence without a claim marker: 'The likely target audience of Dollar Shave Club is not explicitly stated in th"
+    }
+  ],
+  "decision": "prune",
+  "completion_sha256": "77375469d9dfc5ef3a7c6c56faf575ee90d2a47b9120b8bf3c243c73511a636e",
+  "audit_sha256": "bd179df2198c1a464febcb787a112bd5cf0e0190b57c8dfe96e55b15c52d6a0b",
+  "pruned_completion_sha256": "a62533bae9b43bf337c4c2eb2f92a375332bb2222ed83bd7a0bb4d4d3207a56d"
+}

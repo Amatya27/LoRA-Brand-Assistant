@@ -1,0 +1,50 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "charlotte-tilbury",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "2200d12a254d0392d72241f67c6d3d763529a540e78909c9cb1807b2b8e2f308",
+    "prompt_sha256": "9d2ecfa80d8f3c591ad869fdf9fbc3afb81ecf2f199fabf4b26b8aa218491c2a",
+    "completion_sha256": "944af9c091c8d103964ddb14046d148370e7032af082d84ae89a0528f8ebd6ca",
+    "audit_sha256": "4cc1aaa1a3d7cd389ccac83035b27a303e502d15c616ffc36698a50699a55742"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 5,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "removed_sentences": [
+    {
+      "field": "likely_target_audience",
+      "sentence": "Charlotte Tilbury’s social media relies on real, relatable content.",
+      "reason": "factual sentence without a claim marker: 'Charlotte Tilbury’s social media relies on real, relatable content.'"
+    },
+    {
+      "field": "current_marketing_strategy[1]",
+      "sentence": "Charlotte Tilbury’s social media relies on real, relatable content.",
+      "reason": "factual sentence without a claim marker: 'Charlotte Tilbury’s social media relies on real, relatable content.'"
+    },
+    {
+      "field": "current_marketing_strategy[2]",
+      "sentence": "Instagram is its main focus, where it’s most active and engaging {C4}.",
+      "reason": "vendor/provider claim C4 (P8) is not attributed to its source (projectpractical) in the prose: 'Instagram is its main fo"
+    },
+    {
+      "field": "current_marketing_strategy[2]",
+      "sentence": "According to ProjectPractical, Charlotte Tilbury, a top beauty brand, has a solid social media plan.",
+      "reason": "factual sentence without a claim marker: 'According to ProjectPractical, Charlotte Tilbury, a top beauty brand, has a so"
+    },
+    {
+      "field": "current_marketing_strategy[2]",
+      "sentence": "It connects with fans online, using major platforms.",
+      "reason": "factual sentence without a claim marker: 'It connects with fans online, using major platforms.'"
+    }
+  ],
+  "original_completion_sha256": "1a397495386c471c8913b0ad5c0b8f95fcf8a6d53f3604a7584035bdcc431ea1",
+  "original_audit_sha256": "7aa7dd552f0aaa67bacc8622f7f11b206734aa6f21f51aaa4482627bd1d00c8c",
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T03:00:52+00:00",
+  "record_sha256": "4de4fcd8ee73e6e2471a54c6671f13658b0914f147bf0f2372577b0d638887b9"
+}

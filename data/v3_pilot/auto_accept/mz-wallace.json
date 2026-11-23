@@ -1,0 +1,30 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "mz-wallace",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "4255ed95275d6268d7e1b8f50e3dc7b069dc2820bb400cf7cfeccbda9afe77e4",
+    "prompt_sha256": "8b29d1fb5c5150a2c163ee8800495fca91bd1fdb1983285c072f18c07afffc2b",
+    "completion_sha256": "36f58d3de54e9f50cc561eca1b3927c6bab97554660df997603fa62ebaf2574e",
+    "audit_sha256": "94235015f92e428bf2072785cfef1ee4ed07e762261d49be708f34102d806a27"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 9,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "removed_sentences": [
+    {
+      "field": "likely_target_audience",
+      "sentence": "Insufficient Evidence",
+      "reason": "factual sentence without a claim marker: 'Insufficient Evidence'"
+    }
+  ],
+  "original_completion_sha256": "6bb0e926234126ff5b436c47e01aed0091dc7ee537c48def9fdfb9afa10543ef",
+  "original_audit_sha256": "0fcf9badf73c748a456f318a8e11619934fd11ce371ab7e969b2a0ef727a50ec",
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T03:00:52+00:00",
+  "record_sha256": "c00d988dbe6cb961c1aa106a2d3a2a63cca999d6e3be82b6b34598dad66d97a2"
+}

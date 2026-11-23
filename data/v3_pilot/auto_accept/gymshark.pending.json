@@ -1,0 +1,30 @@
+{
+  "groundedness": 0.8,
+  "claims_total": 5,
+  "claims_supported": 4,
+  "claim_support": {
+    "C1": "supported",
+    "C2": "supported",
+    "C3": "supported",
+    "C4": "supported",
+    "C5": "deterministic: claim C5: kind must be one of ('fact', 'provider_reported', 'premise')"
+  },
+  "reasons": [],
+  "removed_claims": [
+    "C5"
+  ],
+  "removed_claim_reasons": {
+    "C5": "deterministic: claim C5: kind must be one of ('fact', 'provider_reported', 'premise')"
+  },
+  "removed_sentences": [
+    {
+      "field": "brand_summary",
+      "sentence": "Gymshark is a global fitness apparel brand that achieved rapid growth through a social media-first marketing model {C9}.",
+      "reason": "marker {C9} has no claim"
+    }
+  ],
+  "decision": "prune",
+  "completion_sha256": "504782db1b170f8ace1077540e117eff69a8d24fffa03695023ee15fbe5b530e",
+  "audit_sha256": "bb731e90b3bb091496911173e2143ee8b1a796cbf6ec06e973b7304859a6443b",
+  "pruned_completion_sha256": "0e1c17dd87a73094ec2aa7b6a62b8ab5198ab3245735359c269320ccf5203b61"
+}

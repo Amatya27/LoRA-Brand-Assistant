@@ -1,0 +1,114 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "frida",
+  "bound_to": {
+    "packet_sha256": "48aa1c2be82c967d5e548f693bdc7a51424d52a248d3fb9b2261591333bb11ea",
+    "prompt_sha256": "23e0d770fae39e990b1dac46963ad21bf8040f754f3faced972915275cbb685a",
+    "completion_sha256": "84a338907162488874f6aa33643572bf4814f9970b5ba9249d24cc0d847b09b6",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [
+      "claim C3: quote does not occur in cited passage(s) ['P8']"
+    ],
+    "warnings": []
+  },
+  "raw_response_sha256": "40152213e821b73e1303f45ece18ebb7694cd00d6b8bf413e8bfd7a3cd80a04b",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Frida Baby, a popular brand that sells postpartum and baby care products\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that Frida sells postpartum and baby care products.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"Frida’s two separate TikTok accounts, @fridababy and @fridamom, have a combined 257k followers\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Frida has two TikTok accounts with a combined follower count.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"Frida has always used humor to discuss the real, raw, and messy parts of parenting that too often go unspoken\",\n      \"issues\": [],\n      \"reason\": \"The passage states Frida uses humor to discuss the messier aspects of parenthood.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Instant Ice Maxi Pads $19.99\",\n      \"issues\": [],\n      \"reason\": \"The passage lists 'Instant Ice Maxi Pads' with a price of $19.99.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Frida Mom Perineal Healing Foam in a lavender pump bottle with a clear cap\",\n      \"issues\": [],\n      \"reason\": \"The passage describes 'Frida Mom Perineal Healing Foam' as being in a lavender pump bottle with a clear cap.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"The first video he worked on with the brand, posted last June, shows a product that helps babies…relieve themselves, and has since gotten more than 2.5 million views\",\n      \"issues\": [],\n      \"reason\": \"The passage describes a video featuring a product that helps babies relieve themselves, with over 2.5 million views.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P10\"\n      ],\n      \"quote\": \"A child wearing a blue hoodie uses a handheld nasal aspirator with a light blue and white handle\",\n      \"issues\": [],\n      \"reason\": \"The passage mentions a 'Cold + Flu Essentials' line including a handheld nasal aspirator.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Frida Baby, a popular brand that sells postpartum and baby care products",
+        "issues": [],
+        "reason": "The passage explicitly states that Frida sells postpartum and baby care products."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "Frida’s two separate TikTok accounts, @fridababy and @fridamom, have a combined 257k followers",
+        "issues": [],
+        "reason": "The passage directly states Frida has two TikTok accounts with a combined follower count."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "Frida has always used humor to discuss the real, raw, and messy parts of parenting that too often go unspoken",
+        "issues": [],
+        "reason": "The passage states Frida uses humor to discuss the messier aspects of parenthood."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Instant Ice Maxi Pads $19.99",
+        "issues": [],
+        "reason": "The passage lists 'Instant Ice Maxi Pads' with a price of $19.99."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Frida Mom Perineal Healing Foam in a lavender pump bottle with a clear cap",
+        "issues": [],
+        "reason": "The passage describes 'Frida Mom Perineal Healing Foam' as being in a lavender pump bottle with a clear cap."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "The first video he worked on with the brand, posted last June, shows a product that helps babies…relieve themselves, and has since gotten more than 2.5 million views",
+        "issues": [],
+        "reason": "The passage describes a video featuring a product that helps babies relieve themselves, with over 2.5 million views."
+      },
+      {
+        "claim_id": "C7",
+        "verdict": "supported",
+        "passage_ids": [
+          "P10"
+        ],
+        "quote": "A child wearing a blue hoodie uses a handheld nasal aspirator with a light blue and white handle",
+        "issues": [],
+        "reason": "The passage mentions a 'Cold + Flu Essentials' line including a handheld nasal aspirator."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [
+    "C3: reviewer quote does not occur in the referenced passage(s)"
+  ],
+  "status": "fail",
+  "reasons": [
+    "1 deterministic check error(s)",
+    "reviewer response also invalid: C3: reviewer quote does not occur in the referenced passage(s)"
+  ],
+  "created_at": "2026-11-23T01:39:14+00:00",
+  "audit_sha256": "912900506b4d27f4fc4ffbdf88d82235189d5a19ce0e8799527afb5fa953897f",
+  "dismissed_reviewer_flags": []
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "thursday-boots",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "791da27d22303d08cedc9d437c855427b75eb8bff068ff2eb025379fac27cc1b",
+    "prompt_sha256": "7ad4921168f68a37119d889769dc3885edf437d344f9d9d4108a1870351b99db",
+    "completion_sha256": "db145b325b9879b55f643f53b34c6a5d5b17ff57ebff9820780fa8a5272be58e",
+    "audit_sha256": "19d41b6f6ba44602e1ed6388eea4fd126d3ea7c29e8ffd3827888864449a4946"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 5,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "removed_sentences": [
+    {
+      "field": "current_marketing_strategy[0]",
+      "sentence": "They don’t play games with their customers in the form of sales and discounts.",
+      "reason": "factual sentence without a claim marker: 'They don’t play games with their customers in the form of sales and discounts."
+    }
+  ],
+  "original_completion_sha256": "e67768957c3ba4a99b558755976314aafe9672009d6bd992d6aaa70792c33bb0",
+  "original_audit_sha256": "fcd4132862fada7ab730fa801b6a7c2dc91f3dd835d87480acce74b3caa604c9",
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T03:00:52+00:00",
+  "record_sha256": "fa2e070639a9e292eeaa2ad87630d56a76c251c8e90ab1962a93560566d85cd9"
+}

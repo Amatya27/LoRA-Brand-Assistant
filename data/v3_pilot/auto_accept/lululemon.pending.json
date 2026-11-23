@@ -1,0 +1,26 @@
+{
+  "groundedness": 1.0,
+  "claims_total": 5,
+  "claims_supported": 5,
+  "claim_support": {
+    "C1": "supported",
+    "C2": "supported",
+    "C3": "supported",
+    "C4": "supported",
+    "C5": "supported"
+  },
+  "reasons": [],
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "removed_sentences": [
+    {
+      "field": "brand_summary",
+      "sentence": "Lululemon is a purpose-driven brand that focuses on community, innovation, and values-driven business practices {C9}.",
+      "reason": "marker {C9} has no claim"
+    }
+  ],
+  "decision": "prune",
+  "completion_sha256": "3a3d91fd01cf6a06be85f9590752b177a074ec057b0b8f3ac759437a6bb1dc10",
+  "audit_sha256": "5decb44e58050d1439fc0f0b43d5989fa37b765213e3ac009d483f4dc6db0d91",
+  "pruned_completion_sha256": "a9914bf141b88d671256dbf38bae279cdf52afb6ff533b9395eb69c9098e307c"
+}

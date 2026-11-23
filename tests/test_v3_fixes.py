@@ -199,3 +199,49 @@ def test_source_name_check_is_a_warning_for_pre_v33_labels(built):
     old = check_draft(draft, p, prompt_version="brandpilot.prompt.v3.2")
     assert any("not attributed" in e for e in new["errors"])
     assert not any("not attributed" in e for e in old["errors"]) and any("pre-v3.3" in w for w in old["warnings"])
+
+
+# ---- 22 Nov 2026 follow-up: abbreviations and sentence clean-up -----------------------------
+
+def test_splitter_does_not_break_on_abbreviations():
+    assert sentences("Chobani partnered with the U.S. Olympic team {C1}. It sells yogurt {C2}.") == [
+        "Chobani partnered with the U.S. Olympic team {C1}.", "It sells yogurt {C2}."]
+    assert len(sentences("They sell bags, e.g. Totes {C1}. Fine.")) == 2
+
+
+def test_cleanup_deletes_unmarked_sentence_and_records_it(built):
+    _, _, packet = built
+    draft = good_draft(packet)
+    draft["brand_summary"] = draft["brand_summary"].rstrip() + " It is the most loved brand in the world."
+    assert check_draft(draft, packet)["errors"]
+    res = assess(draft, packet, _audit(draft, {}))
+    assert res["decision"] == "prune" and res["removed_claims"] == []
+    assert [s["sentence"] for s in res["removed_sentences"]] == ["It is the most loved brand in the world."]
+    assert "most loved" not in res["pruned_draft"]["brand_summary"]
+    assert check_draft(res["pruned_draft"], packet)["errors"] == []
+
+
+def test_cleanup_turns_empty_audience_into_insufficient_evidence(built):
+    _, _, packet = built
+    draft = good_draft(packet)
+    draft["likely_target_audience"] = "The likely target audience is not stated in the evidence."
+    res = assess(draft, packet, _audit(draft, {}))
+    assert res["decision"] == "prune"
+    assert res["pruned_draft"]["likely_target_audience"] == "INSUFFICIENT_EVIDENCE"
+
+
+def test_cleanup_drops_item_with_dangling_marker(built):
+    _, _, packet = built
+    draft = good_draft(packet)
+    draft["current_marketing_strategy"] = list(draft["current_marketing_strategy"]) + ["It runs a podcast {C99}."]
+    res = assess(draft, packet, _audit(draft, {}))
+    assert res["decision"] == "prune"
+    assert not any("{C99}" in x for x in res["pruned_draft"]["current_marketing_strategy"])
+
+
+def test_cleanup_rejects_when_core_field_would_be_emptied(built):
+    _, _, packet = built
+    draft = good_draft(packet)
+    draft["brand_summary"] = "It is the most loved brand in the world."
+    res = assess(draft, packet, _audit(draft, {}))
+    assert res["decision"] == "reject" and any("emptied" in r for r in res["reasons"])

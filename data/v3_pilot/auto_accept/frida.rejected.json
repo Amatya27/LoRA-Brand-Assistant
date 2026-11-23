@@ -3,7 +3,7 @@
   "acceptance_basis": "auto_threshold_0.7",
   "decision": "reject",
   "reasons": [
-    "removing unsupported claims emptied ['instagram_post_idea.why_it_fits']"
+    "removing unsupported claims and ungrounded sentences emptied ['instagram_post_idea.why_it_fits']"
   ],
   "groundedness": 0.8571,
   "claim_support": {
@@ -17,6 +17,6 @@
   },
   "removed_claims": [],
   "label_completion_sha256": "84a338907162488874f6aa33643572bf4814f9970b5ba9249d24cc0d847b09b6",
-  "audit_sha256": "dc55115702560345df497e079404580a2903494d1bb7b3b5fa262cf8f479bd5f",
-  "created_at": "2026-11-23T00:28:45+00:00"
+  "audit_sha256": "912900506b4d27f4fc4ffbdf88d82235189d5a19ce0e8799527afb5fa953897f",
+  "created_at": "2026-11-23T02:50:54+00:00"
 }

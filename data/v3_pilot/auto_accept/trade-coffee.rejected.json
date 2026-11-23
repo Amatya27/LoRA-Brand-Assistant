@@ -3,7 +3,7 @@
   "acceptance_basis": "auto_threshold_0.7",
   "decision": "reject",
   "reasons": [
-    "pruned draft fails check_draft: email_subject: vendor/provider claim C1 (P6) is not attributed to its source (adlibrary) in the prose: \"Collaboration Opportunity: Showcase Trade Coffee's Curated Roasters on Instagram\" (+4 more)"
+    "removing unsupported claims and ungrounded sentences emptied ['email_subject']"
   ],
   "groundedness": 1.0,
   "claim_support": {
@@ -20,6 +20,6 @@
   },
   "removed_claims": [],
   "label_completion_sha256": "f4e0cc2daece4dcda964bf2e00b6473fa223d2ba910f59dc6e17fa323c588974",
-  "audit_sha256": "30530d353fe5c49e8daf8476cd1ae5f09cdc323651b28fee5f17c4ad8d69d54b",
-  "created_at": "2026-11-23T00:28:47+00:00"
+  "audit_sha256": "5a367d8adc5c1063e60f5df07c77ce4db3cbc1355e01b9aad3f1549b80320398",
+  "created_at": "2026-11-23T02:50:56+00:00"
 }

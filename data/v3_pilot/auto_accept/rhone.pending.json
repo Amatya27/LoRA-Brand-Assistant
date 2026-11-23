@@ -1,0 +1,29 @@
+{
+  "groundedness": 1.0,
+  "claims_total": 8,
+  "claims_supported": 8,
+  "claim_support": {
+    "C1": "supported",
+    "C2": "supported",
+    "C3": "supported",
+    "C4": "supported",
+    "C5": "supported",
+    "C6": "supported",
+    "C7": "supported",
+    "C8": "supported"
+  },
+  "reasons": [],
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "removed_sentences": [
+    {
+      "field": "likely_target_audience",
+      "sentence": "The likely target audience is not specified in the evidence {INSUFFICIENT_EVIDENCE}",
+      "reason": "factual sentence without a claim marker: 'The likely target audience is not specified in the evidence {INSUFFICIENT_EVID"
+    }
+  ],
+  "decision": "prune",
+  "completion_sha256": "d34c2a66900d8879efc6e7b5aeb793d2c8e7ca4765f079e3fb316aac0236376d",
+  "audit_sha256": "e056e2d86b635626c671867531b3a14562431029a2ef3bd247a25d5bc70a3ab6",
+  "pruned_completion_sha256": "b690762516f9edb0834ae7dccb665d452f22f35c344a729aafc2238d7e9b7947"
+}

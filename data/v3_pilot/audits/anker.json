@@ -4,7 +4,7 @@
   "bound_to": {
     "packet_sha256": "f2c692121153988ec75afb7207c51f88b472faaaa8a2e6fa68ff901ea60f1af3",
     "prompt_sha256": "1f611349912b21c46d2bd1352429dd3b6348bd8531e1179d39fabb9f97e0cf3e",
-    "completion_sha256": "570a6b7c021cdd38f01e7a76a449b3b1a7e8ad9438f651c43ec37942ce46b8d0",
+    "completion_sha256": "9fbdb00436bcb01cb3dee1547d4131f714c799060173a9b85682edd0abe588c8",
     "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
   },
   "reviewer_config": {
@@ -17,13 +17,14 @@
   },
   "deterministic": {
     "errors": [
-      "email_body: vendor/provider claim C3 (P10) is not attributed to its source (stride-social) in the prose: 'This post would feature testimonials from creators and influencers who have used'",
+      "email_body: vendor/provider claim C5 (P3) is not attributed to its source (stride-social) in the prose: 'This post would feature testimonials from creators and influencers who have used'",
       "email_body: factual-looking sentence without a claim marker: \"Hi Anker Marketing Team,\\n\\nWe're reaching out to propose a collaboration for an Instagram p\"",
       "current_marketing_strategy[0]: vendor/provider claim C5 (P3) is not attributed to its source (stride-social) in the prose: 'Stride Social reports that Anker collaborated with product review creators speci'",
       "instagram_post_idea.concept: vendor/provider claim C5 (P3) is not attributed to its source (stride-social) in the prose: \"A carousel post showcasing Anker's latest products, including the Anker SOLIX F3\"",
       "instagram_post_idea.why_it_fits: vendor/provider claim C5 (P3) is not attributed to its source (stride-social) in the prose: \"This post would align with Anker's strategy of promoting their products through \""
     ],
     "warnings": [
+      "claim C3: not referenced by any field",
       "claim C4: not referenced by any field"
     ]
   },
@@ -91,7 +92,7 @@
   "reasons": [
     "5 deterministic check error(s)"
   ],
-  "created_at": "2026-11-22T23:44:07+00:00",
-  "audit_sha256": "880b35d3e2eb011492117618cd1425cd34923d84c73e9e5b32e6eef6d4ff40d5",
+  "created_at": "2026-11-23T01:32:18+00:00",
+  "audit_sha256": "24f4990fb08afbb4145ee8f3e1129dd0a151d6164a176e2a3026366a1c087226",
   "dismissed_reviewer_flags": []
 }

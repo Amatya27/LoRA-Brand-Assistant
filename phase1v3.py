@@ -252,6 +252,63 @@ def cmd_explain(args) -> int:
     return 0
 
 
+_RETRY_HINTS = [
+    ("not attributed to its source", "Vendor/agency claims: name the source inside the same sentence, e.g. "
+     "\"According to AdLibrary, ...\". Email subjects and Instagram hooks should not cite vendor claims at all."),
+    ("without a claim marker", "Every factual sentence needs a {C#} marker. Remove opinions or restate them "
+     "with a marker. If a field has no evidence, set the whole field to exactly INSUFFICIENT_EVIDENCE "
+     "(no other words). Greetings in the email need no marker."),
+    ("has no claim", "Every {C#} marker must refer to a claim in the claims list; remove or fix dangling markers."),
+    ("quote does not occur", "Copy every quote character-for-character from its cited passage, or delete the claim "
+     "and every sentence citing it."),
+    ("kind must be one of", "Each claim's kind must be exactly one of: fact, provider_reported, premise."),
+    ("passage, as support for a factual claim", "Do not cite opinion/advice passages (author_recommendation and similar) "
+     "as support for factual claims; cite a descriptive passage or delete the claim."),
+    ("must propose an Instagram post", "The email body must explicitly propose an Instagram post."),
+    ("reviewer", "Claims the reviewer did not find supported: delete them and every sentence that cites them, "
+     "or replace the quote with one that directly states the claim."),
+]
+
+
+def _retry_message(workspace: Path, packet: dict, prompt: str) -> tuple[str | None, Any]:
+    """First message for a retry: the previous label, its failed checks and the reviewer's unsupported claims."""
+    from brandpilot.autoaccept import claim_support
+    cid = packet["company"]["company_id"]
+    prev = _json(workspace / "labels" / f"{cid}.json")
+    if prev is None:
+        return None, "no previous label"
+    if prev.get("packet_sha256") != packet["packet_sha256"]:
+        return None, "previous label was built from a different packet"
+    if (workspace / "approvals" / f"{cid}.json").exists():
+        return None, "company has a human approval record"
+    backup = workspace / "superseded" / "retry1-before"
+    backup.mkdir(parents=True, exist_ok=True)
+    save_json(backup / f"{cid}.label.json", prev)
+    audit = _json(workspace / "audits" / f"{cid}.json")
+    if audit is not None:
+        save_json(backup / f"{cid}.audit.json", audit)
+    draft = prev["draft"]
+    errors = check_draft(draft, packet)["errors"]
+    rev_issues = []
+    if audit is not None and (audit.get("bound_to") or {}).get("completion_sha256") == prev.get("completion_sha256"):
+        for c, why in claim_support(draft, audit, errors).items():
+            if why != "supported" and not why.startswith("deterministic"):
+                rev_issues.append(f"claim {c}: {why}")
+        for r in audit.get("reasons") or []:
+            if "claim" not in r.lower():
+                rev_issues.append(f"reviewer: {r}")
+    problems = errors + rev_issues
+    joined = "\n".join(problems)
+    hints = [h for key, h in _RETRY_HINTS if key in joined]
+    message = (f"{prompt}\n\nYOUR PREVIOUS ANSWER:\n{json.dumps(draft, ensure_ascii=False)}\n\n"
+               "It FAILED these checks:\n" + "\n".join(f"- {e}" for e in problems) +
+               ("\n\nHow to fix them:\n" + "\n".join(f"- {h}" for h in hints) if hints else "") +
+               "\n\nReturn the complete corrected JSON. Do not add facts that are not in the passages.")
+    return message, {"previous_completion_sha256": prev.get("completion_sha256"),
+                     "previous_audit_sha256": (audit or {}).get("audit_sha256"),
+                     "problems_shown": problems, "hints_shown": hints}
+
+
 def cmd_label(args) -> int:
     workspace = Path(args.workspace)
     packet = load_packet(workspace / "packets" / f"{args.company_id}.json")
@@ -274,6 +331,12 @@ def cmd_label(args) -> int:
         attempts: list[dict] = []
         best: tuple[int, dict, str] | None = None
         message = prompt
+        retry_seed = None
+        if getattr(args, "retry_from_label", False):
+            message, retry_seed = _retry_message(workspace, packet, prompt)
+            if message is None:
+                print(f"{args.company_id}: {retry_seed}; not retrying")
+                return 2
         for attempt in range(args.max_repairs + 1):
             try:
                 raw = chat(config, system, message)
@@ -319,6 +382,10 @@ def cmd_label(args) -> int:
                      "generated_at": utc_now(), "attempts": attempts,
                      "quote_repair": "claims.repair_quotes (min similarity 0.9; numbers/negations unchanged); see attempts[].quote_repairs",
                      "note": "repair rounds show the teacher only its own draft and the failed check messages"}
+        if retry_seed:
+            generator["retry_seed"] = retry_seed
+            generator["note"] += ("; retry: the first message showed the teacher its previous label and the failed "
+                                  "deterministic checks and reviewer verdicts for it (no new evidence)")
     label = _write_label(workspace, packet, prompt, draft, generator, raw)
     det = label["deterministic"]
     print(f"{args.company_id}: decision={draft.get('decision')} deterministic_errors={len(det['errors'])} warnings={len(det['warnings'])}")
@@ -587,6 +654,8 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--draft-file", help="import a hand-written draft instead of calling the teacher")
     p.add_argument("--draft-source", default="human_written", choices=["human_written", "model_then_human_edited", "synthetic_fixture"])
     p.add_argument("--max-repairs", type=int, default=2, help="teacher repair rounds after failed deterministic checks")
+    p.add_argument("--retry-from-label", action="store_true",
+                   help="start from the existing label and its failed checks/reviewer verdicts (old label saved to superseded/retry1-before/)")
     p = sub.add_parser("verify"); p.set_defaults(fn=cmd_verify)
     p.add_argument("--company-id", required=True); p.add_argument("--skip-reviewer", action="store_true")
     p.add_argument("--review-response", help="use a saved reviewer JSON response instead of calling the model")

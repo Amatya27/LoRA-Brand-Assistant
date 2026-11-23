@@ -1,0 +1,248 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "wild-one",
+  "bound_to": {
+    "packet_sha256": "e9461cfdb8eca4d5ec629b9afb996123ef7912fdfe5eca72757c0268097777e2",
+    "prompt_sha256": "4e1b71f9543a8f96ac089dc0047d4196b689be2f97d6d63c60c7cac3ec354ffe",
+    "completion_sha256": "e41996b1df3ffee78a5f5022823d5566df5e2380eb85636d2b11f397913a2f54",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [
+      "decision: the email must propose an Instagram post"
+    ],
+    "warnings": [
+      "claim C14: not referenced by any field"
+    ]
+  },
+  "raw_response_sha256": "d1f8713fc815138f52c7b03dd4c34e9a3117f3c77b56fb172c81532ba257d4f1",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Wild One is a pet lifestyle brand that launched in 2018\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that Wild One is a pet lifestyle brand that launched in 2018.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Wild One’s Omnichannel marketing allowed the company to increase brand awareness and achieve wider availability for their customers\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that Wild One's omnichannel marketing increased brand awareness and availability.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"It has won retail partnerships with major retailers like Bloomingdale’s and Nordstrom and two UK department stores, Harrod’s and Selfridges\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms Wild One has partnerships with the listed retailers.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"Wild One’s marketing strategy and techniques have allowed the company to triple its revenue and customer base since its launch in 2018\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Wild One's marketing strategy tripled their revenue and customer base.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"brand aesthetic and functional pet products are designed with a function-first perspective for an affordable price\",\n      \"issues\": [],\n      \"reason\": \"The passage describes Wild One's products as having a function-first perspective and being affordable.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"They create pet necessities like adjustable dog leashes, water-resistant dog beds, and healthier treat options for your pets\",\n      \"issues\": [],\n      \"reason\": \"The passage lists specific pet products that Wild One creates.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P10\"\n      ],\n      \"quote\": \"We’re on a mission to make life with dogs and cats look as good as it feels\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Wild One's mission.\"\n    },\n    {\n      \"claim_id\": \"C8\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P10\"\n      ],\n      \"quote\": \"We create design-forward, innovative products that empower pets and their people to walk, travel, play, and live in style\",\n      \"issues\": [],\n      \"reason\": \"The passage describes Wild One's products as design-forward and innovative.\"\n    },\n    {\n      \"claim_id\": \"C9\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Our community means everything to us, and we’re always looking for ways to give back to our brand\",\n      \"issues\": [],\n      \"reason\": \"The passage indicates that Wild One values its community and seeks to reward brand advocates.\"\n    },\n    {\n      \"claim_id\": \"C10\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"As a member of the Pack, you’ll be rewarded for sharing Wild One with your friends and followers. Plus, you’ll get early access to product launches, exclusive-discounts, social spotlights, campaign opportunities, event invites, and other fun surprises!\",\n      \"issues\": [],\n      \"reason\": \"The passage lists several benefits for community members, including early access and discounts.\"\n    },\n    {\n      \"claim_id\": \"C11\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"Spotlights Opportunities to be featured on our social media pages, email newsletter, and campaigns\",\n      \"issues\": [],\n      \"reason\": \"The passage mentions opportunities for features on social media and in newsletters.\"\n    },\n    {\n      \"claim_id\": \"C12\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"👀 Early Access Get early access to our newest products and launches before anyone else\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that members get early access to new products.\"\n    },\n    {\n      \"claim_id\": \"C13\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"💰 Hard Earned Cash Receive a 10% commission on each sale made using your ambassador link * ### 💲 Discount Code Get a 15% off discount code for friends, followers, or yourself!\",\n      \"issues\": [],\n      \"reason\": \"The passage details a 10% commission for ambassadors.\"\n    },\n    {\n      \"claim_id\": \"C14\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P9\"\n      ],\n      \"quote\": \"We don’t ask for a minimum cadence or commitment—you can share about Wild One when you want, how you want, and as often as you’d like\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Wild One does not require a minimum posting frequency.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"Wild One is a pet lifestyle brand that launched in 2018\"\n    },\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"Wild One’s Omnichannel marketing allowed the company to increase brand awareness and achieve wider availability for their customers\"\n    },\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"Wild One has won retail partnerships with major retailers like Bloomingdale’s and Nordstrom and two UK department stores, Harrod’s and Selfridges\"\n    },\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"Wild One’s marketing strategy and techniques have allowed the company to triple its revenue and customer base since its launch in 2018\"\n    },\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"Wild One’s brand aesthetic and functional pet products are designed with a function-first perspective for an affordable price\"\n    },\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"Wild One creates pet necessities like adjustable dog leashes, water-resistant dog beds, and healthier treat options for your pets\"\n    },\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"Wild One is on a mission to make life with dogs and cats look as good as it feels\"\n    },\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"Wild One creates design-forward, innovative products that empower pets and their people to walk, travel, play, and live in style\"\n    }\n  ],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Wild One is a pet lifestyle brand that launched in 2018",
+        "issues": [],
+        "reason": "The passage explicitly states that Wild One is a pet lifestyle brand that launched in 2018."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Wild One’s Omnichannel marketing allowed the company to increase brand awareness and achieve wider availability for their customers",
+        "issues": [],
+        "reason": "The passage directly states that Wild One's omnichannel marketing increased brand awareness and availability."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "It has won retail partnerships with major retailers like Bloomingdale’s and Nordstrom and two UK department stores, Harrod’s and Selfridges",
+        "issues": [],
+        "reason": "The passage confirms Wild One has partnerships with the listed retailers."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "Wild One’s marketing strategy and techniques have allowed the company to triple its revenue and customer base since its launch in 2018",
+        "issues": [],
+        "reason": "The passage states that Wild One's marketing strategy tripled their revenue and customer base."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "brand aesthetic and functional pet products are designed with a function-first perspective for an affordable price",
+        "issues": [],
+        "reason": "The passage describes Wild One's products as having a function-first perspective and being affordable."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "They create pet necessities like adjustable dog leashes, water-resistant dog beds, and healthier treat options for your pets",
+        "issues": [],
+        "reason": "The passage lists specific pet products that Wild One creates."
+      },
+      {
+        "claim_id": "C7",
+        "verdict": "supported",
+        "passage_ids": [
+          "P10"
+        ],
+        "quote": "We’re on a mission to make life with dogs and cats look as good as it feels",
+        "issues": [],
+        "reason": "The passage directly states Wild One's mission."
+      },
+      {
+        "claim_id": "C8",
+        "verdict": "supported",
+        "passage_ids": [
+          "P10"
+        ],
+        "quote": "We create design-forward, innovative products that empower pets and their people to walk, travel, play, and live in style",
+        "issues": [],
+        "reason": "The passage describes Wild One's products as design-forward and innovative."
+      },
+      {
+        "claim_id": "C9",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Our community means everything to us, and we’re always looking for ways to give back to our brand",
+        "issues": [],
+        "reason": "The passage indicates that Wild One values its community and seeks to reward brand advocates."
+      },
+      {
+        "claim_id": "C10",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "As a member of the Pack, you’ll be rewarded for sharing Wild One with your friends and followers. Plus, you’ll get early access to product launches, exclusive-discounts, social spotlights, campaign opportunities, event invites, and other fun surprises!",
+        "issues": [],
+        "reason": "The passage lists several benefits for community members, including early access and discounts."
+      },
+      {
+        "claim_id": "C11",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "Spotlights Opportunities to be featured on our social media pages, email newsletter, and campaigns",
+        "issues": [],
+        "reason": "The passage mentions opportunities for features on social media and in newsletters."
+      },
+      {
+        "claim_id": "C12",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "👀 Early Access Get early access to our newest products and launches before anyone else",
+        "issues": [],
+        "reason": "The passage explicitly states that members get early access to new products."
+      },
+      {
+        "claim_id": "C13",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "💰 Hard Earned Cash Receive a 10% commission on each sale made using your ambassador link * ### 💲 Discount Code Get a 15% off discount code for friends, followers, or yourself!",
+        "issues": [],
+        "reason": "The passage details a 10% commission for ambassadors."
+      },
+      {
+        "claim_id": "C14",
+        "verdict": "supported",
+        "passage_ids": [
+          "P9"
+        ],
+        "quote": "We don’t ask for a minimum cadence or commitment—you can share about Wild One when you want, how you want, and as often as you’d like",
+        "issues": [],
+        "reason": "The passage states that Wild One does not require a minimum posting frequency."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "fail",
+  "reasons": [
+    "1 deterministic check error(s)"
+  ],
+  "created_at": "2026-11-23T00:27:28+00:00",
+  "audit_sha256": "00fbe01f0b2df9be8ac65f6ed865cf791775f4d96b306d2c0dc0372362d52d07",
+  "dismissed_reviewer_flags": [
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "Wild One is a pet lifestyle brand that launched in 2018"
+      },
+      "reason": "sentence in brand_summary carries a claim marker; judged via its claim",
+      "matched_sentence": "wild one is a pet lifestyle brand that launched in 2018"
+    },
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "Wild One’s Omnichannel marketing allowed the company to increase brand awareness and achieve wider availability for their customers"
+      },
+      "reason": "sentence in brand_summary carries a claim marker; judged via its claim",
+      "matched_sentence": "wild one's omnichannel marketing allowed the company to increase brand awareness and achieve wider availability for their customers"
+    },
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "Wild One has won retail partnerships with major retailers like Bloomingdale’s and Nordstrom and two UK department stores, Harrod’s and Selfridges"
+      },
+      "reason": "sentence in brand_summary carries a claim marker; judged via its claim",
+      "matched_sentence": "wild one has won retail partnerships with major retailers like bloomingdale's and nordstrom and two uk department stores harrod's and selfridges"
+    },
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "Wild One’s marketing strategy and techniques have allowed the company to triple its revenue and customer base since its launch in 2018"
+      },
+      "reason": "sentence in brand_summary carries a claim marker; judged via its claim",
+      "matched_sentence": "wild one's marketing strategy and techniques have allowed the company to triple its revenue and customer base since its launch in 2018"
+    },
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "Wild One’s brand aesthetic and functional pet products are designed with a function-first perspective for an affordable price"
+      },
+      "reason": "sentence in brand_summary carries a claim marker; judged via its claim",
+      "matched_sentence": "wild one's brand aesthetic and functional pet products are designed with a function first perspective for an affordable price"
+    },
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "Wild One creates pet necessities like adjustable dog leashes, water-resistant dog beds, and healthier treat options for your pets"
+      },
+      "reason": "sentence in brand_summary carries a claim marker; judged via its claim",
+      "matched_sentence": "wild one creates pet necessities like adjustable dog leashes water resistant dog beds and healthier treat options for your pets"
+    },
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "Wild One is on a mission to make life with dogs and cats look as good as it feels"
+      },
+      "reason": "sentence in brand_summary carries a claim marker; judged via its claim",
+      "matched_sentence": "wild one is on a mission to make life with dogs and cats look as good as it feels"
+    },
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "Wild One creates design-forward, innovative products that empower pets and their people to walk, travel, play, and live in style"
+      },
+      "reason": "sentence in brand_summary carries a claim marker; judged via its claim",
+      "matched_sentence": "wild one creates design forward innovative products that empower pets and their people to walk travel play and live in style"
+    }
+  ]
+}

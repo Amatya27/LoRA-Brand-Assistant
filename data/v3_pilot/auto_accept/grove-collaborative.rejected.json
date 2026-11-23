@@ -3,7 +3,7 @@
   "acceptance_basis": "auto_threshold_0.7",
   "decision": "reject",
   "reasons": [
-    "pruned draft fails check_draft: email_body: vendor/provider claim C4 (P6) is not attributed to its source (adlibrary) in the prose: \"Hi Grove Collaborative Marketing Team,\\n\\nWe're excited to propose a collaboration\" (+2 more)"
+    "removing unsupported claims and ungrounded sentences emptied ['collaboration_opportunities']"
   ],
   "groundedness": 1.0,
   "claim_support": {
@@ -18,6 +18,6 @@
   },
   "removed_claims": [],
   "label_completion_sha256": "b34ec530e9cb37bd2b42bf4ac6202c420ac199dbf1296f95d8ff6dc5af70f5e7",
-  "audit_sha256": "d6ee54412329b5a4df54e343844c425496787b438ba5aa578d00b4a8d41ea911",
-  "created_at": "2026-11-23T00:28:45+00:00"
+  "audit_sha256": "88488ce84e70ec3b4076cb0e9684cf051efde5a4abfeb1518f47a5c1ec9c3407",
+  "created_at": "2026-11-23T02:50:55+00:00"
 }

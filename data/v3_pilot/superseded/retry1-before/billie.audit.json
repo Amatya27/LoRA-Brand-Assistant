@@ -1,0 +1,93 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "billie",
+  "bound_to": {
+    "packet_sha256": "8be6d18975eb70c986bc1fab023e592cc95ae126c8a520bb3154c8597a4e12bb",
+    "prompt_sha256": "23a1f4c3973e03feb21a3381cca2a22ab435aaa9095b837de9208f74ebcc3677",
+    "completion_sha256": "721711abc0b35a06033d5e7dcfacc8d841bb23d3146583faa9e572373f41728a",
+    "reviewer_config_sha256": "e0473838432913db4e240d3ef8daef4e582365a7dd88de9513a1b131c5bbf90c"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.0",
+    "reviewer_system_sha256": "5ef77c46c0a032fd6b5710f2229bbc94b5ce268f146e7336a7382f0731fec2e7",
+    "model": "mlx-community/Qwen2.5-14B-Instruct-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 2000
+  },
+  "deterministic": {
+    "errors": [
+      "brand_summary: factual sentence without a claim marker: 'Billie aims to challenge societal pressures on women and engage with its audience in surpr'",
+      "likely_target_audience: factual sentence without a claim marker: 'The target audience is likely to be women who are interested in body positivity and inclus'",
+      "email_body: factual-looking sentence without a claim marker: \"This aligns with Billie's aim to challenge societal pressures on women and engage with its\"",
+      "current_marketing_strategy[0]: factual sentence without a claim marker: 'Billie aims to challenge societal pressures on women and engage with its audience in surpr'",
+      "collaboration_opportunities[0]: opportunity does not cite the fact it builds on",
+      "instagram_post_idea.why_it_fits: factual-looking sentence without a claim marker: 'This proposal builds on the fact that Billie aims to challenge societal pressures on women'"
+    ],
+    "warnings": [
+      "claim C3: not referenced by any field",
+      "claim C4: not referenced by any field"
+    ]
+  },
+  "raw_response_sha256": "87ba1ddbced7d883e1b7db8e2818979e470606c620675055de2be14d87de5236",
+  "raw_response": "{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\"P1\"],\n      \"quote\": \"We’re starting to strategically look at how we are going to engage with our audience next year in completely surprising and different ways\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Billie's intention to engage with its audience in surprising and different ways.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\"P1\"],\n      \"quote\": \"Projects that demonstrate this move beyond just body hair positivity include Billie’s Are We Doing Video? campaign launched in May 2020, which challenges the pressure women feel to look a certain way even in virtual meetings and videos calls\",\n      \"issues\": [],\n      \"reason\": \"The passage mentions a specific campaign launched by Billie that challenges societal pressures on women.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\"P2\"],\n      \"quote\": \"I’m excited to move away from some of our classic styles of executions (film and photography) and explore how we can continue to live our mission and make statements executed in totally surprising new ways\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Billie's intention to explore new ways to execute ideas on social media.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\"P3\"],\n      \"quote\": \"Content creators are the new viral video\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that content creators are the new viral video.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [\n    {\n      \"field\": \"email_body\",\n      \"text\": \"This aligns with Billie's aim to challenge societal pressures on women and engage with its audience in surprising and different ways.\"\n    }\n  ],\n  \"absence_as_weakness\": []\n}",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "We’re starting to strategically look at how we are going to engage with our audience next year in completely surprising and different ways",
+        "issues": [],
+        "reason": "The passage directly states Billie's intention to engage with its audience in surprising and different ways."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Projects that demonstrate this move beyond just body hair positivity include Billie’s Are We Doing Video? campaign launched in May 2020, which challenges the pressure women feel to look a certain way even in virtual meetings and videos calls",
+        "issues": [],
+        "reason": "The passage mentions a specific campaign launched by Billie that challenges societal pressures on women."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "I’m excited to move away from some of our classic styles of executions (film and photography) and explore how we can continue to live our mission and make statements executed in totally surprising new ways",
+        "issues": [],
+        "reason": "The passage directly states Billie's intention to explore new ways to execute ideas on social media."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Content creators are the new viral video",
+        "issues": [],
+        "reason": "The passage directly states that content creators are the new viral video."
+      }
+    ],
+    "unmarked_factual_statements": [
+      {
+        "field": "email_body",
+        "text": "This aligns with Billie's aim to challenge societal pressures on women and engage with its audience in surprising and different ways."
+      }
+    ],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "fail",
+  "reasons": [
+    "6 deterministic check error(s)"
+  ],
+  "created_at": "2026-11-22T04:36:19+00:00",
+  "audit_sha256": "658bbc66f9fbb2cb34ef30be2744da929771b69946c2382ede5c323c34d28698"
+}

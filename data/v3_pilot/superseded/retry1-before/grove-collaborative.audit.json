@@ -1,0 +1,127 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "grove-collaborative",
+  "bound_to": {
+    "packet_sha256": "e7932ed162e0b0fc364e65fcf07eefd662207cacc1fa93acd99d5335712be1d2",
+    "prompt_sha256": "32ec3e61e6d2f950eb5b4ef990dc73d23fbcd9088d1092dcf73884e1522dcd17",
+    "completion_sha256": "b34ec530e9cb37bd2b42bf4ac6202c420ac199dbf1296f95d8ff6dc5af70f5e7",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [
+      "email_body: vendor/provider claim C4 (P6) is not attributed to its source (adlibrary) in the prose: \"Hi Grove Collaborative Marketing Team,\\n\\nWe're excited to propose a collaboration\"",
+      "email_body: vendor/provider claim C3 (P6) is not attributed to its source (adlibrary) in the prose: 'We believe this post would resonate with your target audience of 25-45 female ho'",
+      "collaboration_opportunities[0]: vendor/provider claim C4 (P6) is not attributed to its source (adlibrary) in the prose: \"Collaborate on an Instagram carousel post featuring Grove's curated aesthetic an\""
+    ],
+    "warnings": [
+      "claim C2: not referenced by any field",
+      "claim C7: not referenced by any field"
+    ]
+  },
+  "raw_response_sha256": "e0a058165071b7f45d109b767563f2ff674cf154c40e78c0989e388500b36a64",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Grove Collaborative is a B Corp-certified platform for natural home essentials with a flexible monthly delivery model.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states Grove Collaborative is a B Corp-certified platform with a flexible monthly delivery model.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"910 following Grove Collaborative Threads grovecollaborative 💚 Your home, healthier. 🌿 Certified B Corp + 1% for the Planet 👇 The Official Unplastic Shop Link icon www.grove.co/pages/unplastic-shop?utm_source=instagram&utm_medium=organic_social&utm_campaign=unplas tic_shop&utm_term=unplastic_tips&utm_content=ops_partnership&partner=ops\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Grove Collaborative has 910 followers on Instagram.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"Facebook is Grove's primary paid acquisition channel — high-volume carousel and video ads targeting 25-45 female homeowners interested in natural cleaning, sustainability, and family health.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that Facebook is Grove's primary paid acquisition channel and describes their target audience.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"Instagram ads showcase the curated aesthetic of Grove's owned-brand products.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that Grove's Instagram ads showcase the curated aesthetic of their owned-brand products.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"Referral mechanics and gifting promotions are heavily featured in seasonal campaigns.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that referral mechanics and gifting promotions are heavily featured in seasonal campaigns.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"The starter bundle offer with free gifts is the perennial acquisition hook.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that the starter bundle offer with free gifts is the perennial acquisition hook.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"Braze has proven to be an innovative, reliable partner that truly listens to its customers.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Braze has proven to be an innovative, reliable partner.\"\n    },\n    {\n      \"claim_id\": \"C8\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\",\n        \"P3\"\n      ],\n      \"quote\": \"How does a successful natural-home marketplace shift its core revenue from third-party sales to owned brands — with editorial that recasts the company as a CPG innovator?\",\n      \"issues\": [],\n      \"reason\": \"The passage describes Grove's strategy to reposition as a CPG innovator.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Grove Collaborative is a B Corp-certified platform for natural home essentials with a flexible monthly delivery model.",
+        "issues": [],
+        "reason": "The passage explicitly states Grove Collaborative is a B Corp-certified platform with a flexible monthly delivery model."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "910 following Grove Collaborative Threads grovecollaborative 💚 Your home, healthier. 🌿 Certified B Corp + 1% for the Planet 👇 The Official Unplastic Shop Link icon www.grove.co/pages/unplastic-shop?utm_source=instagram&utm_medium=organic_social&utm_campaign=unplas tic_shop&utm_term=unplastic_tips&utm_content=ops_partnership&partner=ops",
+        "issues": [],
+        "reason": "The passage states that Grove Collaborative has 910 followers on Instagram."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "Facebook is Grove's primary paid acquisition channel — high-volume carousel and video ads targeting 25-45 female homeowners interested in natural cleaning, sustainability, and family health.",
+        "issues": [],
+        "reason": "The passage directly states that Facebook is Grove's primary paid acquisition channel and describes their target audience."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "Instagram ads showcase the curated aesthetic of Grove's owned-brand products.",
+        "issues": [],
+        "reason": "The passage explicitly states that Grove's Instagram ads showcase the curated aesthetic of their owned-brand products."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "Referral mechanics and gifting promotions are heavily featured in seasonal campaigns.",
+        "issues": [],
+        "reason": "The passage states that referral mechanics and gifting promotions are heavily featured in seasonal campaigns."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "The starter bundle offer with free gifts is the perennial acquisition hook.",
+        "issues": [],
+        "reason": "The passage states that the starter bundle offer with free gifts is the perennial acquisition hook."
+      },
+      {
+        "claim_id": "C7",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "Braze has proven to be an innovative, reliable partner that truly listens to its customers.",
+        "issues": [],
+        "reason": "The passage states that Braze has proven to be an innovative, reliable partner."
+      },
+      {
+        "claim_id": "C8",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2",
+          "P3"
+        ],
+        "quote": "How does a successful natural-home marketplace shift its core revenue from third-party sales to owned brands — with editorial that recasts the company as a CPG innovator?",
+        "issues": [],
+        "reason": "The passage describes Grove's strategy to reposition as a CPG innovator."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "fail",
+  "reasons": [
+    "3 deterministic check error(s)"
+  ],
+  "created_at": "2026-11-23T00:00:19+00:00",
+  "audit_sha256": "d6ee54412329b5a4df54e343844c425496787b438ba5aa578d00b4a8d41ea911",
+  "dismissed_reviewer_flags": []
+}

@@ -1,0 +1,115 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "ruggable",
+  "bound_to": {
+    "packet_sha256": "e0dd007a635172d7a746581128b0164c0edce6a720fec525d76313370f1f848b",
+    "prompt_sha256": "14792f043708a799a026e73e4c46e2080da5e683f82dcfbf7f33c418773f3050",
+    "completion_sha256": "b70c75d33c34f7b09fbede752f4c945100e762ff15714656162383d91c474b9b",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [
+      "email_body: marker {C10} has no claim",
+      "email_body: marker {C10} has no claim",
+      "collaboration_opportunities[0]: marker {C10} has no claim",
+      "instagram_post_idea.hook: marker {C10} has no claim",
+      "instagram_post_idea.why_it_fits: marker {C10} has no claim"
+    ],
+    "warnings": []
+  },
+  "raw_response_sha256": "f384d7a4582baabcf160e4005d16772037515bd102b5109ddbb80fdad137d7e2",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"the original Ruggable machine-washable rug and its patented two-piece design were born.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that Ruggable makes machine-washable rugs.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Instagram influencer marketing is a clear focus for Ruggable.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that Instagram influencer marketing is a focus for Ruggable.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"Ruggable's influencers average views (Instagram) Based on each influencer's average views per post <1K2.8% 1K-5K15.0% 5K-10K13.0% 10K-50K45.8% 50K-100K8.2% 100K-500K11.9% 500K+3.4%\",\n      \"issues\": [],\n      \"reason\": \"The passage provides data on the range of follower counts of Ruggable's influencer partners.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"Influencers act as brand evangelists in the Ruggable community.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that influencers act as brand evangelists, indicating a focus on community engagement and social proof.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"The photographer sent more than 100 pieces of content that were such high quality that Ruggable repurposed the images on its homepage, paid ads, emails, social accounts, and more.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes content from influencers being high quality enough to be repurposed by Ruggable.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"The brand went from working with 10 influencers each week to working with an average of 45.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes a significant increase in the number of influencers Ruggable works with.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"InstagramReels 71.9% InstagramFeed Posts 28.1% TikTokPosts 100% YouTubeLong-form 96.2% YouTubeShorts 3.8%\",\n      \"issues\": [],\n      \"reason\": \"The passage lists various content formats used in Ruggable's influencer marketing strategy.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "the original Ruggable machine-washable rug and its patented two-piece design were born.",
+        "issues": [],
+        "reason": "The passage explicitly states that Ruggable makes machine-washable rugs."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Instagram influencer marketing is a clear focus for Ruggable.",
+        "issues": [],
+        "reason": "The passage directly states that Instagram influencer marketing is a focus for Ruggable."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "Ruggable's influencers average views (Instagram) Based on each influencer's average views per post <1K2.8% 1K-5K15.0% 5K-10K13.0% 10K-50K45.8% 50K-100K8.2% 100K-500K11.9% 500K+3.4%",
+        "issues": [],
+        "reason": "The passage provides data on the range of follower counts of Ruggable's influencer partners."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "Influencers act as brand evangelists in the Ruggable community.",
+        "issues": [],
+        "reason": "The passage states that influencers act as brand evangelists, indicating a focus on community engagement and social proof."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "The photographer sent more than 100 pieces of content that were such high quality that Ruggable repurposed the images on its homepage, paid ads, emails, social accounts, and more.",
+        "issues": [],
+        "reason": "The passage describes content from influencers being high quality enough to be repurposed by Ruggable."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "The brand went from working with 10 influencers each week to working with an average of 45.",
+        "issues": [],
+        "reason": "The passage describes a significant increase in the number of influencers Ruggable works with."
+      },
+      {
+        "claim_id": "C7",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "InstagramReels 71.9% InstagramFeed Posts 28.1% TikTokPosts 100% YouTubeLong-form 96.2% YouTubeShorts 3.8%",
+        "issues": [],
+        "reason": "The passage lists various content formats used in Ruggable's influencer marketing strategy."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "fail",
+  "reasons": [
+    "5 deterministic check error(s)"
+  ],
+  "created_at": "2026-11-22T23:42:51+00:00",
+  "audit_sha256": "1b64816b9f7abb1b6b4572de7e6db129c9efd752539b8ac8ed210d4b75995780",
+  "dismissed_reviewer_flags": []
+}

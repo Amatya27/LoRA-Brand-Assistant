@@ -33,14 +33,15 @@ The replacement is the **v3 pipeline** (`brandpilot/` + `phase1v3.py`):
 | What | Where |
 |---|---|
 | How to run the v3 pipeline (all commands) | [PHASE1_V3.md](PHASE1_V3.md) |
-| Audit findings, pilot results, recommendations | [PHASE1_V3_PILOT_REPORT.md](PHASE1_V3_PILOT_REPORT.md) (see section 6b onward; §6e for the auto-accepted dataset) |
+| Audit findings, pilot results, recommendations | [PHASE1_V3_PILOT_REPORT.md](PHASE1_V3_PILOT_REPORT.md) (see section 6b onward; §6e–6f for the auto-accepted datasets) |
 | Identity registry (95 companies; domains web-verified, to be spot-checked) | `data/registry/companies.v1.json` |
 | Pilot evidence packets, prompts, labels, audits, approvals | `data/v3_pilot/` |
-| **Training dataset:** `v3-2026-11-22-auto07` (40 train / 9 valid / 0 test; 7 human-approved + 42 auto-accepted at groundedness ≥ 0.7, **not human-reviewed**; see report §6e) | `data/v3_datasets/v3-2026-11-22-auto07/` |
+| **Training dataset:** `v3-2026-11-22-auto07b` (51 train / 10 valid / 0 test; 7 human-approved + 54 auto-accepted at groundedness ≥ 0.7 with ungrounded sentences removed, **not human-reviewed**; see report §6f) | `data/v3_datasets/v3-2026-11-22-auto07b/` |
+| Previous export `v3-2026-11-22-auto07` (40 train / 9 valid; report §6e) | `data/v3_datasets/v3-2026-11-22-auto07/` |
 | Earlier human-only dataset: `v3-pilot-2026-11-22` (7 train / 0 valid / 0 test) | `data/v3_datasets/v3-pilot-2026-11-22/` |
 | Auto-accept records (bound to hashes, `human_reviewed: false`) | `data/v3_pilot/auto_accept/` |
 | Evidence store (page snapshots; not in git) | `artifacts/evidence_store/`; get the tarball from the team drive (see PHASE1_V3.md) |
-| Offline tests (74) | `python -m pytest -q tests` |
+| Offline tests (79) | `python -m pytest -q tests` |
 
 ### Models that work on a 24 GB Mac (run one at a time)
 
@@ -60,10 +61,10 @@ Trial on the 10 pilot companies: **5 of 10 passed every check with no human edit
 2. **Grow the dataset.**
    - Add registry entries for the remaining train and valid companies.
    - Collect, label (Qwen3), verify (Gemma), review and approve in batches.
-   - `v3-2026-11-22-auto07` has 9 valid records (`mlx_lm.lora` needs a non-empty `valid.jsonl`). Its 42 auto-accepted records have not been human-reviewed; spot-check them before relying on results.
-   - About 40 labels were rejected mostly for deterministic check failures (report §6e); a second teacher attempt with the check errors as feedback would recover many.
+   - `v3-2026-11-22-auto07b` has 10 valid records (`mlx_lm.lora` needs a non-empty `valid.jsonl`). Its 54 auto-accepted records have not been human-reviewed; spot-check them before relying on results.
+   - 28 labelled companies are still rejected (report §6f). A teacher retry with check feedback recovered none of 10 tried, and the Qwen server crashed after 10, so the other 31 retries never ran. Human edits are the remaining route.
    - Re-collect Billie, Omsom and Spindrift live.
-3. **Smoke-test training.** Train on `v3-2026-11-22-auto07` first to check that the loop and the v3 JSON output work. This is not a result.
+3. **Smoke-test training.** Train on `v3-2026-11-22-auto07b` first to check that the loop and the v3 JSON output work. This is not a result.
 4. **Connect the app to the v3 output.** `brand_assistant_postprocess.py` and `webapp/` still read the v2 schema. Use `brandpilot.claims.to_legacy_view()` or update the UI.
 5. **Real training run.**
    - Export a reviewed dataset (roughly 60+ train, 10+ valid).

@@ -1,0 +1,166 @@
+{
+  "schema_version": "brandpilot.label.v3",
+  "company_id": "rhone",
+  "packet_path": "packets/rhone.json",
+  "packet_sha256": "51810081ffe9da63b19d58269017f5b749031d1f82dd84050faf3878a2d6c662",
+  "prompt_version": "brandpilot.prompt.v3.3",
+  "prompt": "You are a grounded brand-outreach assistant for our team. Use only the evidence passages below.\nNever use outside knowledge. Return valid JSON only.\n\nSeparate three things:\n1. OBSERVED FACTS - things a passage actually states about this company. Each fact is a claim with an id (C1, C2, ...),\n   the passage id(s) that support it, and an exact quote copied word-for-word from that passage.\n2. UNKNOWNS - things the evidence does not tell us (put them in \"unknowns\"). A channel, program or audience that does\n   not appear in these passages is UNKNOWN. It is never a weakness, never a \"gap\", and never a reason for outreach.\n3. PROPOSALS - collaboration ideas from our team. Proposals are not facts, but each must build on a positively supported\n   fact (an existing campaign, partnership, product, community, value or theme) and cite that premise.\n\nRules:\n- Put a claim marker like {C1} (curly braces) right after every factual statement in every field, including the\n  email and Instagram idea. Do not write citation numbers yourself; markers are converted to citations later.\n- A claim's \"quote\" must be copied character-for-character from the cited passage: 5 to 25 consecutive words, no\n  paraphrasing, no joining of separate sentences. If you cannot find such a quote, drop the claim and every sentence\n  that depends on it.\n- Audience and strategy sentences are factual: each needs a marker. If no passage states the audience, write\n  INSUFFICIENT_EVIDENCE instead of guessing.\n- Pitch lines (email subject, hook, concept) should describe the proposed post (\"A carousel featuring ...\",\n  \"Collaborate on ...\"). Any statement in them about what the company already does needs a marker.\n- Respect passage types. \"proposed_or_mock_work\" and \"author_recommendation\" passages describe ideas, not things the\n  company did: never state them as company activity. \"provider_reported_result\" passages are claims by a vendor or\n  agency: attribute them (\"X reports that ...\"). \"creator_or_influencer_audience_data\" describes creators' followers,\n  not the company's customers. \"vendor_generated_profile_or_analytics\" passages are a tool vendor's estimates\n  (e.g. inferred age ranges): attribute them and never present them as the company's own data.\n  \"forward_looking_statement\" passages describe plans or intentions, not completed activity.\n- Mind time: if a passage describes past activity, do not present it as current.\n- \"marketing_gaps\" may only contain a weakness that a passage positively states. Usually it is [].\n- Never promise results. Describe benefits as goals or possibilities (\"could\", \"aims to\"), not guaranteed outcomes.\n- Decision: write \"draft\" when at least one concrete, evidence-supported collaboration opportunity exists. Otherwise write\n  \"abstain\", give an abstain_reason, set pitch fields to INSUFFICIENT_EVIDENCE and leave collaboration_opportunities empty.\n- The email is from our team to the company, proposing one collaborative Instagram post. The pitch, the post idea and\n  every collaboration opportunity are for Instagram only (no TikTok, YouTube, podcasts or other channels).\n- When a sentence uses a vendor, agency or analytics passage, name that source in the sentence itself\n  (\"According to AdLibrary, ...\", \"Attentive reports that ...\").\n- Each \"unknowns\" item names one specific thing the passages do not tell us (e.g. \"Whether X runs a creator program\").\n  Never write placeholder text such as \"what the evidence does not show\".\n\nRequired JSON:\n{\n  \"decision\": \"draft\" or \"abstain\",\n  \"abstain_reason\": \"string or empty\",\n  \"claims\": [{\"id\": \"C1\", \"kind\": \"fact | provider_reported | premise\", \"statement\": \"string\",\n              \"passage_ids\": [\"P1\"], \"quote\": \"exact words from the passage\"}],\n  \"brand_summary\": \"Full sentences, each followed by its marker, e.g. \"X makes ... {C1}.\" Never only markers. Or INSUFFICIENT_EVIDENCE\",\n  \"likely_target_audience\": \"A full sentence followed by its marker, or INSUFFICIENT_EVIDENCE\",\n  \"current_marketing_strategy\": [\"text with markers\"],\n  \"unknowns\": [\"one specific open question, e.g. Whether the company works with creators\"],\n  \"marketing_gaps\": [],\n  \"collaboration_opportunities\": [\"proposal that builds on a cited fact {C2}\"],\n  \"instagram_post_idea\": {\"hook\": \"string\", \"concept\": \"string\", \"why_it_fits\": \"string\"},\n  \"email_subject\": \"string\",\n  \"email_body\": \"string\"\n}\n\nCompany: Rhone (company_id rhone; category: premium activewear)\nOfficial domains: rhone.com\nRecipient: the marketing team\nPacket status: ok\n\nEvidence passages:\n[P1] source: https://www.rhone.com/pages/press-page/ | document: official_domain | type: descriptive | dates in text: none | published: unknown\n\"Rhone won Most Effective Commerce Media Campaign at The Drum Awards Partnering with Kepler, a unified data strategy fueled a 42% revenue surge by bridging the gap between brand awareness and retail performance. This innovative approach allowed the brand to scale profitably while navigating the year’s most competitive shopping windows.\"\n\n[P2] source: https://www.rhone.com/pages/press-page/ | document: official_domain | type: actual_activity | dates in text: none | published: unknown\n\"Rhone Expands Commuter Push With National Campaign, NYC Activations Rhone has launched its most ambitious campaign to date, bringing the versatility of the Commuter® Collection to life through high-impact NYC activations. Grounded in the \\\"science of the stitch,\\\" the campaign highlights a dedication to engineering technical apparel that transitions seamlessly from the morning transit to the boardroom.\"\n\n[P3] source: https://www.rhone.com/pages/press-page/ | document: official_domain | type: actual_activity | dates in text: none | published: unknown\n\"Rhone Redesigns, Expands Hudson Yards Store Rhone has unveiled a newly redesigned retail experience at Hudson Yards, led by Chief Customer Officer Chrissy Jackson, to showcase the brand's premium men’s and women’s performance lifestyle collections in an elevated, modern environment.\"\n\n[P4] source: https://www.rhone.com/pages/about-us/ | document: official_domain | type: descriptive | dates in text: none | published: unknown\n\"Daily progress, 12 ways Through products, content, events, and stories, Rhone equips our community with what they need to keep moving forward. Online and in person. In the gym and everywhere life takes you. That's the pursuit. And it never really ends.\"\n\n[P5] source: https://www.marketingbrew.com/stories/2024/11/14/rhone-nba-lpga-athletes-mental-health-campaign | document: third_party_confirmed | type: historical_activity | flags: forward_looking_statement | dates in text: 2014, 2024 | published: unknown\n\"Track record It’s become fairly common to see athletic brands address mental health in their marketing, but Rhone has been doing it since the company was founded in 2014, according to Checketts. In the earlier days of the brand, Rhone began hosting an event series called Mind & Muscle that gathered men for workout sessions in Rhone stores, followed by what was “essentially group therapy,” Checketts said. More than 1,000 people have participated over the years, he said, and the company has hosted more than 50 Mind & Muscle events so far in 2024. Rhone now intends to include women in the series, which features upcoming events tied to the NBA and LPGA partnerships.\"\n\n[P6] source: https://www.rhone.com/pages/press/ | document: official_domain | type: descriptive | dates in text: none | published: unknown\n\"12 Pursuits One Pursuit a month. Moving forward, together. Join community Contact us Support Community & Partners Company\"\n\n[P7] source: https://www.rhone.com/pages/about-us/ | document: official_domain | type: descriptive | dates in text: none | published: unknown\n\"Hear from our customers These pants were better than I could have expected. The fit is fantastic and they flexibility in movement is great. They styling of the pleats make them unique and can't compare to other brands. -David N. These pants were better than I could have expected. The fit is fantastic and they flexibility in movement is great. They styling of the pleats make them unique and can't compare to other brands. -David N. So classic, so chic. And, so well made!! I know I'll have this in my wardrobe for years. -Hannah P. The fit is perfect. The fabric is the softest. So easy to care for. Best shirt I have ever owned. -Brett T.\"\n\n[P8] source: https://www.rhone.com/pages/about-us/ | document: official_domain | type: descriptive | dates in text: 2014 | published: unknown\n\"Built since 2014 Founded by brothers Nate and Ben, Rhone has spent over a decade obsessing over the details of how apparel can support a full and active life. Ten years in and counting, the mission hasn't changed: to make performance apparel worthy of the whole person wearing it. Meet The Founders Image Our greatest hits Shop Best sellers PreviousNext Shop Best sellers Return to main content\"\n\n[P9] source: https://www.marketingbrew.com/stories/2024/11/14/rhone-nba-lpga-athletes-mental-health-campaign | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown\n\"Between the reach of both leagues, events, ads, and user-generated content, Checketts said he hopes the campaign boosts brand awareness and further solidifies Rhone’s dedication to mental health. “We want to be sticking out in a good way, and so we are really putting our money where our mouth is,” he said. “All of these partnerships are not necessarily to sell more stuff, [they’re] to use as a platform so that we can speak to this message, which we really do take to heart.\"\n\n[P10] source: https://www.marketingbrew.com/stories/2024/11/14/rhone-nba-lpga-athletes-mental-health-campaign | document: third_party_confirmed | type: actual_activity | dates in text: none | published: unknown\n\"Rhone signed deals with Vu and Hartlage over the summer also due to their track records with mental health advocacy, Checketts said. On top of that, both women are “rising stars,” making them ideal partners for Rhone, he said, especially considering the brand debuted its first complete women’s line in May. “Our attitude really is to, in the majority of cases, make stars instead of finding them,” Checketts said.\"\n",
+  "prompt_sha256": "f26bc8e51acf635baa541f19262981a406687d01e5629ecab91b304940cebfb1",
+  "generator": {
+    "source": "model",
+    "role": "teacher",
+    "api_base": "http://localhost:8080/v1",
+    "model": "mlx-community/Qwen3-14B-4bit",
+    "temperature": 0.0,
+    "max_tokens": 4096,
+    "system_prompt_sha256": "a434c070378f6a787103cac3ef71971836c5f435d8b5fcbad58e17d38f3ef7f3",
+    "generated_at": "2026-11-22T23:01:45+00:00",
+    "attempts": [
+      {
+        "attempt": 0,
+        "raw_sha256": "da73dfa85e307c1f10eaa97696a80d2fb45154ecb578dfece79f039c8b5f5fde",
+        "deterministic_errors": 1,
+        "quote_repairs": [
+          {
+            "claim": "C6",
+            "passage_id": "P5",
+            "similarity": 0.944,
+            "old_quote": "Rhone has hosted more than 50 Mind & Muscle events so far in 2024",
+            "new_quote": "has hosted more than 50 Mind & Muscle events so far in 2024."
+          }
+        ]
+      },
+      {
+        "attempt": 1,
+        "raw_sha256": "ce0ae05daea66f4f1ae8c5bd084d03f9640a1cbb720b6389313bd601e3569aa3",
+        "deterministic_errors": 1,
+        "quote_repairs": []
+      },
+      {
+        "attempt": 2,
+        "raw_sha256": "ce0ae05daea66f4f1ae8c5bd084d03f9640a1cbb720b6389313bd601e3569aa3",
+        "deterministic_errors": 1,
+        "quote_repairs": []
+      }
+    ],
+    "quote_repair": "claims.repair_quotes (min similarity 0.9; numbers/negations unchanged); see attempts[].quote_repairs",
+    "note": "repair rounds show the teacher only its own draft and the failed check messages"
+  },
+  "raw_response": "{\n  \"decision\": \"draft\",\n  \"abstain_reason\": \"\",\n  \"claims\": [\n    {\n      \"id\": \"C1\",\n      \"kind\": \"fact\",\n      \"statement\": \"Rhone won Most Effective Commerce Media Campaign at The Drum Awards\",\n      \"passage_ids\": [\"P1\"],\n      \"quote\": \"Rhone won Most Effective Commerce Media Campaign at The Drum Awards\"\n    },\n    {\n      \"id\": \"C2\",\n      \"kind\": \"fact\",\n      \"statement\": \"A unified data strategy fueled a 42% revenue surge by bridging the gap between brand awareness and retail performance\",\n      \"passage_ids\": [\"P1\"],\n      \"quote\": \"A unified data strategy fueled a 42% revenue surge by bridging the gap between brand awareness and retail performance\"\n    },\n    {\n      \"id\": \"C3\",\n      \"kind\": \"fact\",\n      \"statement\": \"Rhone has launched its most ambitious campaign to date, bringing the versatility of the Commuter® Collection to life through high-impact NYC activations\",\n      \"passage_ids\": [\"P2\"],\n      \"quote\": \"Rhone has launched its most ambitious campaign to date, bringing the versatility of the Commuter® Collection to life through high-impact NYC activations\"\n    },\n    {\n      \"id\": \"C4\",\n      \"kind\": \"fact\",\n      \"statement\": \"Rhone has unveiled a newly redesigned retail experience at Hudson Yards\",\n      \"passage_ids\": [\"P3\"],\n      \"quote\": \"Rhone has unveiled a newly redesigned retail experience at Hudson Yards\"\n    },\n    {\n      \"id\": \"C5\",\n      \"kind\": \"fact\",\n      \"statement\": \"Rhone has spent over a decade obsessing over the details of how apparel can support a full and active life\",\n      \"passage_ids\": [\"P8\"],\n      \"quote\": \"Rhone has spent over a decade obsessing over the details of how apparel can support a full and active life\"\n    },\n    {\n      \"id\": \"C6\",\n      \"kind\": \"fact\",\n      \"statement\": \"Rhone has hosted more than 50 Mind & Muscle events so far in 2024\",\n      \"passage_ids\": [\"P5\"],\n      \"quote\": \"Rhone has hosted more than 50 Mind & Muscle events so far in 2024\"\n    },\n    {\n      \"id\": \"C7\",\n      \"kind\": \"fact\",\n      \"statement\": \"Rhone now intends to include women in the series, which features upcoming events tied to the NBA and LPGA partnerships\",\n      \"passage_ids\": [\"P5\"],\n      \"quote\": \"Rhone now intends to include women in the series, which features upcoming events tied to the NBA and LPGA partnerships\"\n    },\n    {\n      \"id\": \"C8\",\n      \"kind\": \"fact\",\n      \"statement\": \"Rhone signed deals with Vu and Hartlage over the summer also due to their track records with mental health advocacy\",\n      \"passage_ids\": [\"P10\"],\n      \"quote\": \"Rhone signed deals with Vu and Hartlage over the summer also due to their track records with mental health advocacy\"\n    }\n  ],\n  \"brand_summary\": \"Rhone won Most Effective Commerce Media Campaign at The Drum Awards {C1}. A unified data strategy fueled a 42% revenue surge by bridging the gap between brand awareness and retail performance {C2}. Rhone has launched its most ambitious campaign to date, bringing the versatility of the Commuter® Collection to life through high-impact NYC activations {C3}. Rhone has unveiled a newly redesigned retail experience at Hudson Yards {C4}. Rhone has spent over a decade obsessing over the details of how apparel can support a full and active life {C5}.\",\n  \"likely_target_audience\": \"The likely target audience is not specified in the evidence {INSUFFICIENT_EVIDENCE}\",\n  \"current_marketing_strategy\": [\n    \"Rhone has launched its most ambitious campaign to date, bringing the versatility of the Commuter® Collection to life through high-impact NYC activations {C3}.\",\n    \"Rhone has unveiled a newly redesigned retail experience at Hudson Yards {C4}.\",\n    \"Rhone has hosted more than 50 Mind & Muscle events so far in 2024 {C6}.\",\n    \"Rhone now intends to include women in the series, which features upcoming events tied to the NBA and LPGA partnerships {C7}.\",\n    \"Rhone signed deals with Vu and Hartlage over the summer also due to their track records with mental health advocacy {C8}.\"\n  ],\n  \"unknowns\": [\n    \"Whether Rhone has a dedicated creator or influencer program\",\n    \"The exact demographics of Rhone's current customer base\",\n    \"The specific metrics of success for Rhone's mental health advocacy campaigns\"\n  ],\n  \"marketing_gaps\": [],\n  \"collaboration_opportunities\": [\n    \"Collaborate on a mental health advocacy campaign featuring female athletes, building on Rhone's intention to include women in the Mind & Muscle series {C7}.\"\n  ],\n  \"instagram_post_idea\": {\n    \"hook\": \"Join Rhone in supporting mental health with female athletes in our latest campaign {C7}.\",\n    \"concept\": \"A carousel post showcasing the partnership with female athletes and the importance of mental health, featuring quotes from participants and behind-the-scenes moments from the Mind & Muscle events.\",\n    \"why_it_fits\": \"This proposal builds on Rhone's intention to include women in the Mind & Muscle series {C7} and their ongoing mental health advocacy efforts.\"\n  },\n  \"email_subject\": \"Collaborate on a Mental Health Advocacy Campaign with Female Athletes\",\n  \"email_body\": \"Hi Rhone Marketing Team,\\n\\nWe're excited about the opportunity to collaborate on a mental health advocacy campaign featuring female athletes, building on your intention to include women in the Mind & Muscle series {C7}. This campaign would align with your brand's mission to support a full and active life, while also expanding your reach through partnerships with rising stars in the NBA and LPGA {C7}.\\n\\nWe propose a series of Instagram posts that highlight the importance of mental health, featuring quotes from participants and behind-the-scenes moments from the Mind & Muscle events. This would be a great way to continue your commitment to mental health advocacy and engage with a broader audience.\\n\\nWe'd love to discuss this further and explore how we can work together to make this vision a reality.\\n\\nBest regards,\\n[Your Name]\"\n}",
+  "raw_response_sha256": "da73dfa85e307c1f10eaa97696a80d2fb45154ecb578dfece79f039c8b5f5fde",
+  "draft": {
+    "decision": "draft",
+    "abstain_reason": "",
+    "claims": [
+      {
+        "id": "C1",
+        "kind": "fact",
+        "statement": "Rhone won Most Effective Commerce Media Campaign at The Drum Awards",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Rhone won Most Effective Commerce Media Campaign at The Drum Awards"
+      },
+      {
+        "id": "C2",
+        "kind": "fact",
+        "statement": "A unified data strategy fueled a 42% revenue surge by bridging the gap between brand awareness and retail performance",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "A unified data strategy fueled a 42% revenue surge by bridging the gap between brand awareness and retail performance"
+      },
+      {
+        "id": "C3",
+        "kind": "fact",
+        "statement": "Rhone has launched its most ambitious campaign to date, bringing the versatility of the Commuter® Collection to life through high-impact NYC activations",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "Rhone has launched its most ambitious campaign to date, bringing the versatility of the Commuter® Collection to life through high-impact NYC activations"
+      },
+      {
+        "id": "C4",
+        "kind": "fact",
+        "statement": "Rhone has unveiled a newly redesigned retail experience at Hudson Yards",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Rhone has unveiled a newly redesigned retail experience at Hudson Yards"
+      },
+      {
+        "id": "C5",
+        "kind": "fact",
+        "statement": "Rhone has spent over a decade obsessing over the details of how apparel can support a full and active life",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "Rhone has spent over a decade obsessing over the details of how apparel can support a full and active life"
+      },
+      {
+        "id": "C6",
+        "kind": "fact",
+        "statement": "Rhone has hosted more than 50 Mind & Muscle events so far in 2024",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "has hosted more than 50 Mind & Muscle events so far in 2024."
+      },
+      {
+        "id": "C7",
+        "kind": "fact",
+        "statement": "Rhone now intends to include women in the series, which features upcoming events tied to the NBA and LPGA partnerships",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "Rhone now intends to include women in the series, which features upcoming events tied to the NBA and LPGA partnerships"
+      },
+      {
+        "id": "C8",
+        "kind": "fact",
+        "statement": "Rhone signed deals with Vu and Hartlage over the summer also due to their track records with mental health advocacy",
+        "passage_ids": [
+          "P10"
+        ],
+        "quote": "Rhone signed deals with Vu and Hartlage over the summer also due to their track records with mental health advocacy"
+      }
+    ],
+    "brand_summary": "Rhone won Most Effective Commerce Media Campaign at The Drum Awards {C1}. A unified data strategy fueled a 42% revenue surge by bridging the gap between brand awareness and retail performance {C2}. Rhone has launched its most ambitious campaign to date, bringing the versatility of the Commuter® Collection to life through high-impact NYC activations {C3}. Rhone has unveiled a newly redesigned retail experience at Hudson Yards {C4}. Rhone has spent over a decade obsessing over the details of how apparel can support a full and active life {C5}.",
+    "likely_target_audience": "The likely target audience is not specified in the evidence {INSUFFICIENT_EVIDENCE}",
+    "current_marketing_strategy": [
+      "Rhone has launched its most ambitious campaign to date, bringing the versatility of the Commuter® Collection to life through high-impact NYC activations {C3}.",
+      "Rhone has unveiled a newly redesigned retail experience at Hudson Yards {C4}.",
+      "Rhone has hosted more than 50 Mind & Muscle events so far in 2024 {C6}.",
+      "Rhone now intends to include women in the series, which features upcoming events tied to the NBA and LPGA partnerships {C7}.",
+      "Rhone signed deals with Vu and Hartlage over the summer also due to their track records with mental health advocacy {C8}."
+    ],
+    "unknowns": [
+      "Whether Rhone has a dedicated creator or influencer program",
+      "The exact demographics of Rhone's current customer base",
+      "The specific metrics of success for Rhone's mental health advocacy campaigns"
+    ],
+    "marketing_gaps": [],
+    "collaboration_opportunities": [
+      "Collaborate on a mental health advocacy campaign featuring female athletes, building on Rhone's intention to include women in the Mind & Muscle series {C7}."
+    ],
+    "instagram_post_idea": {
+      "hook": "Join Rhone in supporting mental health with female athletes in our latest campaign {C7}.",
+      "concept": "A carousel post showcasing the partnership with female athletes and the importance of mental health, featuring quotes from participants and behind-the-scenes moments from the Mind & Muscle events.",
+      "why_it_fits": "This proposal builds on Rhone's intention to include women in the Mind & Muscle series {C7} and their ongoing mental health advocacy efforts."
+    },
+    "email_subject": "Collaborate on a Mental Health Advocacy Campaign with Female Athletes",
+    "email_body": "Hi Rhone Marketing Team,\n\nWe're excited about the opportunity to collaborate on a mental health advocacy campaign featuring female athletes, building on your intention to include women in the Mind & Muscle series {C7}. This campaign would align with your brand's mission to support a full and active life, while also expanding your reach through partnerships with rising stars in the NBA and LPGA {C7}.\n\nWe propose a series of Instagram posts that highlight the importance of mental health, featuring quotes from participants and behind-the-scenes moments from the Mind & Muscle events. This would be a great way to continue your commitment to mental health advocacy and engage with a broader audience.\n\nWe'd love to discuss this further and explore how we can work together to make this vision a reality.\n\nBest regards,\n[Your Name]"
+  },
+  "completion": "{\"schema_version\": \"brandpilot.output.v3\", \"decision\": \"draft\", \"evidence_status\": \"sufficient\", \"abstain_reason\": \"\", \"brand_summary\": \"Rhone won Most Effective Commerce Media Campaign at The Drum Awards [P1]. A unified data strategy fueled a 42% revenue surge by bridging the gap between brand awareness and retail performance [P1]. Rhone has launched its most ambitious campaign to date, bringing the versatility of the Commuter® Collection to life through high-impact NYC activations [P2]. Rhone has unveiled a newly redesigned retail experience at Hudson Yards [P3]. Rhone has spent over a decade obsessing over the details of how apparel can support a full and active life [P8].\", \"likely_target_audience\": \"The likely target audience is not specified in the evidence {INSUFFICIENT_EVIDENCE}\", \"current_marketing_strategy\": [\"Rhone has launched its most ambitious campaign to date, bringing the versatility of the Commuter® Collection to life through high-impact NYC activations [P2].\", \"Rhone has unveiled a newly redesigned retail experience at Hudson Yards [P3].\", \"Rhone has hosted more than 50 Mind & Muscle events so far in 2024 [P5].\", \"Rhone now intends to include women in the series, which features upcoming events tied to the NBA and LPGA partnerships [P5].\", \"Rhone signed deals with Vu and Hartlage over the summer also due to their track records with mental health advocacy [P10].\"], \"unknowns\": [\"Whether Rhone has a dedicated creator or influencer program\", \"The exact demographics of Rhone's current customer base\", \"The specific metrics of success for Rhone's mental health advocacy campaigns\"], \"marketing_gaps\": [], \"collaboration_opportunities\": [\"Collaborate on a mental health advocacy campaign featuring female athletes, building on Rhone's intention to include women in the Mind & Muscle series [P5].\"], \"instagram_post_idea\": {\"hook\": \"Join Rhone in supporting mental health with female athletes in our latest campaign [P5].\", \"concept\": \"A carousel post showcasing the partnership with female athletes and the importance of mental health, featuring quotes from participants and behind-the-scenes moments from the Mind & Muscle events.\", \"why_it_fits\": \"This proposal builds on Rhone's intention to include women in the Mind & Muscle series [P5] and their ongoing mental health advocacy efforts.\"}, \"email_subject\": \"Collaborate on a Mental Health Advocacy Campaign with Female Athletes\", \"email_body\": \"Hi Rhone Marketing Team,\\n\\nWe're excited about the opportunity to collaborate on a mental health advocacy campaign featuring female athletes, building on your intention to include women in the Mind & Muscle series [P5]. This campaign would align with your brand's mission to support a full and active life, while also expanding your reach through partnerships with rising stars in the NBA and LPGA [P5].\\n\\nWe propose a series of Instagram posts that highlight the importance of mental health, featuring quotes from participants and behind-the-scenes moments from the Mind & Muscle events. This would be a great way to continue your commitment to mental health advocacy and engage with a broader audience.\\n\\nWe'd love to discuss this further and explore how we can work together to make this vision a reality.\\n\\nBest regards,\\n[Your Name]\", \"claims\": [{\"id\": \"C1\", \"kind\": \"fact\", \"statement\": \"Rhone won Most Effective Commerce Media Campaign at The Drum Awards\", \"passage_ids\": [\"P1\"], \"quote\": \"Rhone won Most Effective Commerce Media Campaign at The Drum Awards\"}, {\"id\": \"C2\", \"kind\": \"fact\", \"statement\": \"A unified data strategy fueled a 42% revenue surge by bridging the gap between brand awareness and retail performance\", \"passage_ids\": [\"P1\"], \"quote\": \"A unified data strategy fueled a 42% revenue surge by bridging the gap between brand awareness and retail performance\"}, {\"id\": \"C3\", \"kind\": \"fact\", \"statement\": \"Rhone has launched its most ambitious campaign to date, bringing the versatility of the Commuter® Collection to life through high-impact NYC activations\", \"passage_ids\": [\"P2\"], \"quote\": \"Rhone has launched its most ambitious campaign to date, bringing the versatility of the Commuter® Collection to life through high-impact NYC activations\"}, {\"id\": \"C4\", \"kind\": \"fact\", \"statement\": \"Rhone has unveiled a newly redesigned retail experience at Hudson Yards\", \"passage_ids\": [\"P3\"], \"quote\": \"Rhone has unveiled a newly redesigned retail experience at Hudson Yards\"}, {\"id\": \"C5\", \"kind\": \"fact\", \"statement\": \"Rhone has spent over a decade obsessing over the details of how apparel can support a full and active life\", \"passage_ids\": [\"P8\"], \"quote\": \"Rhone has spent over a decade obsessing over the details of how apparel can support a full and active life\"}, {\"id\": \"C6\", \"kind\": \"fact\", \"statement\": \"Rhone has hosted more than 50 Mind & Muscle events so far in 2024\", \"passage_ids\": [\"P5\"], \"quote\": \"has hosted more than 50 Mind & Muscle events so far in 2024.\"}, {\"id\": \"C7\", \"kind\": \"fact\", \"statement\": \"Rhone now intends to include women in the series, which features upcoming events tied to the NBA and LPGA partnerships\", \"passage_ids\": [\"P5\"], \"quote\": \"Rhone now intends to include women in the series, which features upcoming events tied to the NBA and LPGA partnerships\"}, {\"id\": \"C8\", \"kind\": \"fact\", \"statement\": \"Rhone signed deals with Vu and Hartlage over the summer also due to their track records with mental health advocacy\", \"passage_ids\": [\"P10\"], \"quote\": \"Rhone signed deals with Vu and Hartlage over the summer also due to their track records with mental health advocacy\"}], \"citations\": [\"[P1]\", \"[P2]\", \"[P3]\", \"[P5]\", \"[P8]\", \"[P10]\"]}",
+  "completion_sha256": "d34c2a66900d8879efc6e7b5aeb793d2c8e7ca4765f079e3fb316aac0236376d",
+  "deterministic": {
+    "errors": [
+      "likely_target_audience: factual sentence without a claim marker: 'The likely target audience is not specified in the evidence {INSUFFICIENT_EVIDENCE}'"
+    ],
+    "warnings": [
+      "claim C7: present-tense wording but cited passage dates end in 2024"
+    ]
+  },
+  "created_at": "2026-11-22T23:01:45+00:00",
+  "approved": false
+}

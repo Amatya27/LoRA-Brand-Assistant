@@ -1,0 +1,30 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "merit-beauty",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "34b49d8ec3e59fa0d4b39966b2898f73df0cf2a316652c13ea579e96309ebb03",
+    "prompt_sha256": "78552ff2e90b2627c87792fa7b51544623e488275be34f5c80f22a249996f2d3",
+    "completion_sha256": "6349314ac1cdc2017bf1e4cc88b616016a2525fe87c6b5996473cdd977c9e53c",
+    "audit_sha256": "fb5cc8d89f4b121fe376226c36d0cc9d9400c6c1b72277bba3274c255a0a2de3"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 7,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "removed_sentences": [
+    {
+      "field": "likely_target_audience",
+      "sentence": "The passages do not specify the likely target audience for MERIT. {INSUFFICIENT_EVIDENCE}",
+      "reason": "factual sentence without a claim marker: 'The passages do not specify the likely target audience for MERIT. {INSUFFICIEN"
+    }
+  ],
+  "original_completion_sha256": "3997014aeac8c26c65d82edd645196112a11757e91d658c81b257c986621e26c",
+  "original_audit_sha256": "da70a0609d749740c42ab60cf7c456c3ef779680ca087cb3ce7e648d044484d4",
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T03:00:52+00:00",
+  "record_sha256": "d65e32dd0ca96d8977c648f86ae58a98448fb1653010439f5af8311df0f4c9f9"
+}

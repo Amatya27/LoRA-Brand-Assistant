@@ -3,7 +3,7 @@
   "acceptance_basis": "auto_threshold_0.7",
   "decision": "reject",
   "reasons": [
-    "pruned draft fails check_draft: email_body: vendor/provider claim C3 (P10) is not attributed to its source (stride-social) in the prose: 'This post would feature testimonials from creators and influencers who have used' (+4 more)"
+    "removing unsupported claims and ungrounded sentences emptied ['instagram_post_idea.concept']"
   ],
   "groundedness": 1.0,
   "claim_support": {
@@ -14,7 +14,7 @@
     "C5": "supported"
   },
   "removed_claims": [],
-  "label_completion_sha256": "570a6b7c021cdd38f01e7a76a449b3b1a7e8ad9438f651c43ec37942ce46b8d0",
-  "audit_sha256": "880b35d3e2eb011492117618cd1425cd34923d84c73e9e5b32e6eef6d4ff40d5",
-  "created_at": "2026-11-23T00:28:44+00:00"
+  "label_completion_sha256": "9fbdb00436bcb01cb3dee1547d4131f714c799060173a9b85682edd0abe588c8",
+  "audit_sha256": "24f4990fb08afbb4145ee8f3e1129dd0a151d6164a176e2a3026366a1c087226",
+  "created_at": "2026-11-23T02:50:54+00:00"
 }

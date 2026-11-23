@@ -1,0 +1,117 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "omsom",
+  "bound_to": {
+    "packet_sha256": "8c4576fbdae422b8914f14e02cc5ba9ead1e1c0cdfc28543069d8b4ac272e100",
+    "prompt_sha256": "e84a9cbb27d57ea7eb99276a1bd74f2385aab3bdc6cd252c00a2a99136607d2e",
+    "completion_sha256": "6202c1a1e2fd41209dcef85682a8aeac74b5bc7470ca72d546e86616ee6932a3",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [
+      "email_body: vendor/provider claim C2 (P1) is not attributed to its source (adlibrary) in the prose: \"We'd love to create an Instagram post that highlights the Pham sisters' personal\"",
+      "email_body: vendor/provider claim C4 (P4) is not attributed to its source (adlibrary) in the prose: \"The concept would be a carousel post that showcases the brand's commitment to cu\"",
+      "email_body: vendor/provider claim C4 (P4) is not attributed to its source (adlibrary) in the prose: 'We believe this post would resonate with your target audience of both Asian-Amer'",
+      "collaboration_opportunities[0]: vendor/provider claim C2 (P1) is not attributed to its source (adlibrary) in the prose: \"Collaborate on an Instagram post that highlights the Pham sisters' personal Viet\"",
+      "instagram_post_idea.concept: vendor/provider claim C2 (P1) is not attributed to its source (adlibrary) in the prose: \"A carousel post featuring the Pham sisters' personal Vietnamese-American story, \""
+    ],
+    "warnings": [
+      "claim C5: not referenced by any field"
+    ]
+  },
+  "raw_response_sha256": "e16cf7792e248996f995c303b6f1fd9c2e54204b440fcf56e5f96a3dce78faee",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Omsom's advertising is built on cultural identity as brand substance, not marketing decoration.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states this about Omsom's advertising strategy.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"The Pham sisters' personal Vietnamese-American story, their pride in Asian food culture, and their frustration with inauthentic 'Asian-inspired' products drives every piece of content.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states this as a driver of Omsom's content.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"Omsom advertises primarily on Instagram and TikTok, with significant organic reach from the Pham sisters' personal content and community engagement.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Omsom's primary advertising platforms.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"Omsom's social advertising blends founder storytelling with vibrant food content and cultural commentary.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes Omsom's social advertising approach.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"Omsom means noisy or rambunctious in Vietnamese.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states the meaning of 'Omsom' in Vietnamese.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"Omsom was founded in 2020 by sisters Vanessa and Kim Pham to create bold, authentic Asian starter sauces that make it easy to cook Asian meals at home without compromise.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms the founding year and purpose of Omsom.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"The brand's identity is explicitly Asian-American — the name means 'rambunctious' in Vietnamese — and their marketing embraces cultural pride as the primary brand driver.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes Omsom's identity and marketing approach.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Omsom's advertising is built on cultural identity as brand substance, not marketing decoration.",
+        "issues": [],
+        "reason": "The passage directly states this about Omsom's advertising strategy."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "The Pham sisters' personal Vietnamese-American story, their pride in Asian food culture, and their frustration with inauthentic 'Asian-inspired' products drives every piece of content.",
+        "issues": [],
+        "reason": "The passage explicitly states this as a driver of Omsom's content."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "Omsom advertises primarily on Instagram and TikTok, with significant organic reach from the Pham sisters' personal content and community engagement.",
+        "issues": [],
+        "reason": "The passage directly states Omsom's primary advertising platforms."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "Omsom's social advertising blends founder storytelling with vibrant food content and cultural commentary.",
+        "issues": [],
+        "reason": "The passage describes Omsom's social advertising approach."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "Omsom means noisy or rambunctious in Vietnamese.",
+        "issues": [],
+        "reason": "The passage directly states the meaning of 'Omsom' in Vietnamese."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "Omsom was founded in 2020 by sisters Vanessa and Kim Pham to create bold, authentic Asian starter sauces that make it easy to cook Asian meals at home without compromise.",
+        "issues": [],
+        "reason": "The passage confirms the founding year and purpose of Omsom."
+      },
+      {
+        "claim_id": "C7",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "The brand's identity is explicitly Asian-American — the name means 'rambunctious' in Vietnamese — and their marketing embraces cultural pride as the primary brand driver.",
+        "issues": [],
+        "reason": "The passage describes Omsom's identity and marketing approach."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "fail",
+  "reasons": [
+    "5 deterministic check error(s)"
+  ],
+  "created_at": "2026-11-23T01:50:19+00:00",
+  "audit_sha256": "9e40b9bce2d6a0235e9eb911eea45f4fd6b30c1c513261a980d413565d12b261",
+  "dismissed_reviewer_flags": []
+}

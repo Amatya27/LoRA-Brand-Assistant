@@ -1,0 +1,27 @@
+{
+  "groundedness": 1.0,
+  "claims_total": 6,
+  "claims_supported": 6,
+  "claim_support": {
+    "C1": "supported",
+    "C2": "supported",
+    "C3": "supported",
+    "C4": "supported",
+    "C5": "supported",
+    "C6": "supported"
+  },
+  "reasons": [],
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "removed_sentences": [
+    {
+      "field": "current_marketing_strategy[2]",
+      "sentence": "Stride Social collaborated with product review creators to produce organic-style videos that seamlessly integrated Govee's LED lights into their content {C3}.",
+      "reason": "vendor/provider claim C3 (P3) is not attributed to its source (stride-social) in the prose: 'Stride Social collaborated "
+    }
+  ],
+  "decision": "prune",
+  "completion_sha256": "c115447314d1515c0f4684e96dbd87b3f2c0f839336a961b66d6aa7beff24bc1",
+  "audit_sha256": "9eb985bd19d200ee907d6528bbc9ccb149eb038aee66add9a43e2ae47d77fe10",
+  "pruned_completion_sha256": "701e998b585d1b13cf54a3ae73c69fa5a46f389006f8340c32175984509c2ec0"
+}

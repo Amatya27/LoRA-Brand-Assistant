@@ -1,0 +1,119 @@
+{
+  "schema_version": "brandpilot.label.v3",
+  "company_id": "billie",
+  "packet_path": "packets/billie.json",
+  "packet_sha256": "8be6d18975eb70c986bc1fab023e592cc95ae126c8a520bb3154c8597a4e12bb",
+  "prompt_version": "brandpilot.prompt.v3.1",
+  "prompt": "You are a grounded brand-outreach assistant for our team. Use only the evidence passages below.\nNever use outside knowledge. Return valid JSON only.\n\nSeparate three things:\n1. OBSERVED FACTS - things a passage actually states about this company. Each fact is a claim with an id (C1, C2, ...),\n   the passage id(s) that support it, and an exact quote copied word-for-word from that passage.\n2. UNKNOWNS - things the evidence does not tell us (put them in \"unknowns\"). A channel, program or audience that does\n   not appear in these passages is UNKNOWN. It is never a weakness, never a \"gap\", and never a reason for outreach.\n3. PROPOSALS - collaboration ideas from our team. Proposals are not facts, but each must build on a positively supported\n   fact (an existing campaign, partnership, product, community, value or theme) and cite that premise.\n\nRules:\n- Put a claim marker like {C1} (curly braces) right after every factual statement in every field, including the\n  email and Instagram idea. Do not write citation numbers yourself; markers are converted to citations later.\n- A claim's \"quote\" must be copied character-for-character from the cited passage: 5 to 25 consecutive words, no\n  paraphrasing, no joining of separate sentences. If you cannot find such a quote, drop the claim and every sentence\n  that depends on it.\n- Audience and strategy sentences are factual: each needs a marker. If no passage states the audience, write\n  INSUFFICIENT_EVIDENCE instead of guessing.\n- Pitch lines (email subject, hook, concept) should describe the proposed post (\"A carousel featuring ...\",\n  \"Collaborate on ...\"). Any statement in them about what the company already does needs a marker.\n- Respect passage types. \"proposed_or_mock_work\" and \"author_recommendation\" passages describe ideas, not things the\n  company did: never state them as company activity. \"provider_reported_result\" passages are claims by a vendor or\n  agency: attribute them (\"X reports that ...\"). \"creator_or_influencer_audience_data\" describes creators' followers,\n  not the company's customers. \"vendor_generated_profile_or_analytics\" passages are a tool vendor's estimates\n  (e.g. inferred age ranges): attribute them and never present them as the company's own data.\n  \"forward_looking_statement\" passages describe plans or intentions, not completed activity.\n- Mind time: if a passage describes past activity, do not present it as current.\n- \"marketing_gaps\" may only contain a weakness that a passage positively states. Usually it is [].\n- Never promise results. Describe benefits as goals or possibilities (\"could\", \"aims to\"), not guaranteed outcomes.\n- Decision: write \"draft\" when at least one concrete, evidence-supported collaboration opportunity exists. Otherwise write\n  \"abstain\", give an abstain_reason, set pitch fields to INSUFFICIENT_EVIDENCE and leave collaboration_opportunities empty.\n- The email is from our team to the company, proposing one collaborative Instagram post.\n\nRequired JSON:\n{\n  \"decision\": \"draft\" or \"abstain\",\n  \"abstain_reason\": \"string or empty\",\n  \"claims\": [{\"id\": \"C1\", \"kind\": \"fact | provider_reported | premise\", \"statement\": \"string\",\n              \"passage_ids\": [\"P1\"], \"quote\": \"exact words from the passage\"}],\n  \"brand_summary\": \"text with markers, or INSUFFICIENT_EVIDENCE\",\n  \"likely_target_audience\": \"text with markers, or INSUFFICIENT_EVIDENCE\",\n  \"current_marketing_strategy\": [\"text with markers\"],\n  \"unknowns\": [\"what the evidence does not show\"],\n  \"marketing_gaps\": [],\n  \"collaboration_opportunities\": [\"proposal that builds on a cited fact {C2}\"],\n  \"instagram_post_idea\": {\"hook\": \"string\", \"concept\": \"string\", \"why_it_fits\": \"string\"},\n  \"email_subject\": \"string\",\n  \"email_body\": \"string\"\n}\n\nCompany: Billie (company_id billie; category: women's shave and body care)\nOfficial domains: mybillie.com\nRecipient: the marketing team\nPacket status: ok\n\nEvidence passages:\n[P1] source: https://www.creativereview.co.uk/billie-branding-identity/ | document: third_party_confirmed | type: historical_activity | flags: forward_looking_statement | dates in text: May 2020 | published: unknown\n\"A sense of community in social media is more important than ever, and Gen-Z is particularly looking at brands to show up in lots of different, human and lo-fi ways. We’re starting to strategically look at how we are going to engage with our audience next year in completely surprising and different ways – it’s exciting.” Projects that demonstrate this move beyond just body hair positivity include Billie’s Are We Doing Video? campaign launched in May 2020, which challenges the pressure women feel to look a certain way even in virtual meetings and videos calls.\"\n\n[P2] source: https://www.creativereview.co.uk/billie-branding-identity/ | document: third_party_confirmed | type: brand_positioning | dates in text: 2021 | published: unknown\n\"Billie’s Snow White, Pride 2021 Billie’s Rapunzel, Pride 2021 As a disruptive brand and having already branched out into products in other categories within health and beauty, Shriftman says that for her the future is about finding new ways to execute ideas. “The social media landscape has dramatically shifted – Tiktok and Twitter are setting the trends for what gets reposted on Instagram. I’m excited to move away from some of our classic styles of executions (film and photography) and explore how we can continue to live our mission and make statements executed in totally surprising new ways,” she says.\"\n\n[P3] source: https://www.creativereview.co.uk/billie-branding-identity/ | document: third_party_confirmed | type: descriptive | dates in text: none | published: unknown\n\"For Shriftman, hair removal is really the tip of the iceberg in relation to the continued societal pressures and expectations on women, and while it’s becoming more normalised, one of Billie’s biggest challenges is evolving beyond just that notion and staying fresh with its messaging. “My role has definitely developed since I started. At the time, we were in an era of ‘normalising’ and breaking stigmas. Now, brands have caught up. It seems everyone is not only showcasing body hair, being body positive, and inclusive but also expressing their mission,” says Shriftman. > View this post on Instagram > > A post shared by Billie (@billie) “Content creators are the new viral video.\"\n",
+  "prompt_sha256": "23a1f4c3973e03feb21a3381cca2a22ab435aaa9095b837de9208f74ebcc3677",
+  "generator": {
+    "source": "model",
+    "role": "teacher",
+    "api_base": "http://localhost:8080/v1",
+    "model": "mlx-community/Qwen2.5-14B-Instruct-4bit",
+    "temperature": 0.0,
+    "max_tokens": 2000,
+    "system_prompt_sha256": "b5280bc3d39c2329cd0943cde08bd5558ed94f2ea7fb68a3c1dd517ce0ca52a8",
+    "generated_at": "2026-11-22T04:35:55+00:00",
+    "attempts": [
+      {
+        "attempt": 0,
+        "raw_sha256": "c1844f57f70de18d378976031974844393c638091958cb9c72a3b0825d6c6389",
+        "deterministic_errors": 6
+      },
+      {
+        "attempt": 1,
+        "raw_sha256": "23b848ab490c66f5471269719a5154ffd58187303c410de547accb21e4c87540",
+        "deterministic_errors": 6
+      },
+      {
+        "attempt": 2,
+        "raw_sha256": "23b848ab490c66f5471269719a5154ffd58187303c410de547accb21e4c87540",
+        "deterministic_errors": 6
+      }
+    ],
+    "note": "repair rounds show the teacher only its own draft and the failed check messages"
+  },
+  "raw_response": "{\n  \"decision\": \"draft\",\n  \"abstain_reason\": \"\",\n  \"claims\": [\n    {\n      \"id\": \"C1\",\n      \"kind\": \"fact\",\n      \"statement\": \"Billie aims to engage with its audience in surprising and different ways.\",\n      \"passage_ids\": [\"P1\"],\n      \"quote\": \"We’re starting to strategically look at how we are going to engage with our audience next year in completely surprising and different ways\"\n    },\n    {\n      \"id\": \"C2\",\n      \"kind\": \"fact\",\n      \"statement\": \"Billie has launched campaigns that challenge societal pressures on women.\",\n      \"passage_ids\": [\"P1\"],\n      \"quote\": \"Projects that demonstrate this move beyond just body hair positivity include Billie’s Are We Doing Video? campaign launched in May 2020, which challenges the pressure women feel to look a certain way even in virtual meetings and videos calls\"\n    },\n    {\n      \"id\": \"C3\",\n      \"kind\": \"fact\",\n      \"statement\": \"Billie aims to explore new ways to execute ideas on social media.\",\n      \"passage_ids\": [\"P2\"],\n      \"quote\": \"I’m excited to move away from some of our classic styles of executions (film and photography) and explore how we can continue to live our mission and make statements executed in totally surprising new ways\"\n    },\n    {\n      \"id\": \"C4\",\n      \"kind\": \"fact\",\n      \"statement\": \"Content creators are the new viral video.\",\n      \"passage_ids\": [\"P3\"],\n      \"quote\": \"Content creators are the new viral video\"\n    }\n  ],\n  \"brand_summary\": \"{C1} and {C2}. Billie aims to challenge societal pressures on women and engage with its audience in surprising and different ways.\",\n  \"likely_target_audience\": \"{C1} and {C2}. The target audience is likely to be women who are interested in body positivity and inclusivity.\",\n  \"current_marketing_strategy\": [\"{C1} and {C2}. Billie aims to challenge societal pressures on women and engage with its audience in surprising and different ways.\"],\n  \"unknowns\": [\"Specific social media channels used by Billie\", \"Exact demographics of Billie's audience\"],\n  \"marketing_gaps\": [],\n  \"collaboration_opportunities\": [\"Collaborate with content creators to produce a new video campaign that challenges societal pressures on women and engages the audience in a surprising and different way.\"],\n  \"instagram_post_idea\": {\n    \"hook\": \"A new video campaign featuring content creators challenging societal pressures on women.\",\n    \"concept\": \"A carousel featuring content creators sharing their experiences and challenges related to societal pressures on women, aiming to engage the audience in a surprising and different way.\",\n    \"why_it_fits\": \"This proposal builds on the fact that Billie aims to challenge societal pressures on women and engage with its audience in surprising and different ways.\"\n  },\n  \"email_subject\": \"Collaborate with Billie to challenge societal pressures on women\",\n  \"email_body\": \"Dear Billie Marketing Team,\\n\\nWe propose collaborating on a new video campaign featuring content creators sharing their experiences and challenges related to societal pressures on women. This aligns with Billie's aim to challenge societal pressures on women and engage with its audience in surprising and different ways.\\n\\nBest regards,\\n[Your Team]\"\n}",
+  "raw_response_sha256": "c1844f57f70de18d378976031974844393c638091958cb9c72a3b0825d6c6389",
+  "draft": {
+    "decision": "draft",
+    "abstain_reason": "",
+    "claims": [
+      {
+        "id": "C1",
+        "kind": "fact",
+        "statement": "Billie aims to engage with its audience in surprising and different ways.",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "We’re starting to strategically look at how we are going to engage with our audience next year in completely surprising and different ways"
+      },
+      {
+        "id": "C2",
+        "kind": "fact",
+        "statement": "Billie has launched campaigns that challenge societal pressures on women.",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Projects that demonstrate this move beyond just body hair positivity include Billie’s Are We Doing Video? campaign launched in May 2020, which challenges the pressure women feel to look a certain way even in virtual meetings and videos calls"
+      },
+      {
+        "id": "C3",
+        "kind": "fact",
+        "statement": "Billie aims to explore new ways to execute ideas on social media.",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "I’m excited to move away from some of our classic styles of executions (film and photography) and explore how we can continue to live our mission and make statements executed in totally surprising new ways"
+      },
+      {
+        "id": "C4",
+        "kind": "fact",
+        "statement": "Content creators are the new viral video.",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Content creators are the new viral video"
+      }
+    ],
+    "brand_summary": "{C1} and {C2}. Billie aims to challenge societal pressures on women and engage with its audience in surprising and different ways.",
+    "likely_target_audience": "{C1} and {C2}. The target audience is likely to be women who are interested in body positivity and inclusivity.",
+    "current_marketing_strategy": [
+      "{C1} and {C2}. Billie aims to challenge societal pressures on women and engage with its audience in surprising and different ways."
+    ],
+    "unknowns": [
+      "Specific social media channels used by Billie",
+      "Exact demographics of Billie's audience"
+    ],
+    "marketing_gaps": [],
+    "collaboration_opportunities": [
+      "Collaborate with content creators to produce a new video campaign that challenges societal pressures on women and engages the audience in a surprising and different way."
+    ],
+    "instagram_post_idea": {
+      "hook": "A new video campaign featuring content creators challenging societal pressures on women.",
+      "concept": "A carousel featuring content creators sharing their experiences and challenges related to societal pressures on women, aiming to engage the audience in a surprising and different way.",
+      "why_it_fits": "This proposal builds on the fact that Billie aims to challenge societal pressures on women and engage with its audience in surprising and different ways."
+    },
+    "email_subject": "Collaborate with Billie to challenge societal pressures on women",
+    "email_body": "Dear Billie Marketing Team,\n\nWe propose collaborating on a new video campaign featuring content creators sharing their experiences and challenges related to societal pressures on women. This aligns with Billie's aim to challenge societal pressures on women and engage with its audience in surprising and different ways.\n\nBest regards,\n[Your Team]"
+  },
+  "completion": "{\"schema_version\": \"brandpilot.output.v3\", \"decision\": \"draft\", \"evidence_status\": \"sufficient\", \"abstain_reason\": \"\", \"brand_summary\": \"[P1] and [P1]. Billie aims to challenge societal pressures on women and engage with its audience in surprising and different ways.\", \"likely_target_audience\": \"[P1] and [P1]. The target audience is likely to be women who are interested in body positivity and inclusivity.\", \"current_marketing_strategy\": [\"[P1] and [P1]. Billie aims to challenge societal pressures on women and engage with its audience in surprising and different ways.\"], \"unknowns\": [\"Specific social media channels used by Billie\", \"Exact demographics of Billie's audience\"], \"marketing_gaps\": [], \"collaboration_opportunities\": [\"Collaborate with content creators to produce a new video campaign that challenges societal pressures on women and engages the audience in a surprising and different way.\"], \"instagram_post_idea\": {\"hook\": \"A new video campaign featuring content creators challenging societal pressures on women.\", \"concept\": \"A carousel featuring content creators sharing their experiences and challenges related to societal pressures on women, aiming to engage the audience in a surprising and different way.\", \"why_it_fits\": \"This proposal builds on the fact that Billie aims to challenge societal pressures on women and engage with its audience in surprising and different ways.\"}, \"email_subject\": \"Collaborate with Billie to challenge societal pressures on women\", \"email_body\": \"Dear Billie Marketing Team,\\n\\nWe propose collaborating on a new video campaign featuring content creators sharing their experiences and challenges related to societal pressures on women. This aligns with Billie's aim to challenge societal pressures on women and engage with its audience in surprising and different ways.\\n\\nBest regards,\\n[Your Team]\", \"claims\": [{\"id\": \"C1\", \"kind\": \"fact\", \"statement\": \"Billie aims to engage with its audience in surprising and different ways.\", \"passage_ids\": [\"P1\"], \"quote\": \"We’re starting to strategically look at how we are going to engage with our audience next year in completely surprising and different ways\"}, {\"id\": \"C2\", \"kind\": \"fact\", \"statement\": \"Billie has launched campaigns that challenge societal pressures on women.\", \"passage_ids\": [\"P1\"], \"quote\": \"Projects that demonstrate this move beyond just body hair positivity include Billie’s Are We Doing Video? campaign launched in May 2020, which challenges the pressure women feel to look a certain way even in virtual meetings and videos calls\"}, {\"id\": \"C3\", \"kind\": \"fact\", \"statement\": \"Billie aims to explore new ways to execute ideas on social media.\", \"passage_ids\": [\"P2\"], \"quote\": \"I’m excited to move away from some of our classic styles of executions (film and photography) and explore how we can continue to live our mission and make statements executed in totally surprising new ways\"}, {\"id\": \"C4\", \"kind\": \"fact\", \"statement\": \"Content creators are the new viral video.\", \"passage_ids\": [\"P3\"], \"quote\": \"Content creators are the new viral video\"}], \"citations\": [\"[P1]\", \"[P2]\", \"[P3]\"]}",
+  "completion_sha256": "721711abc0b35a06033d5e7dcfacc8d841bb23d3146583faa9e572373f41728a",
+  "deterministic": {
+    "errors": [
+      "brand_summary: factual sentence without a claim marker: 'Billie aims to challenge societal pressures on women and engage with its audience in surpr'",
+      "likely_target_audience: factual sentence without a claim marker: 'The target audience is likely to be women who are interested in body positivity and inclus'",
+      "email_body: factual-looking sentence without a claim marker: \"This aligns with Billie's aim to challenge societal pressures on women and engage with its\"",
+      "current_marketing_strategy[0]: factual sentence without a claim marker: 'Billie aims to challenge societal pressures on women and engage with its audience in surpr'",
+      "collaboration_opportunities[0]: opportunity does not cite the fact it builds on",
+      "instagram_post_idea.why_it_fits: factual-looking sentence without a claim marker: 'This proposal builds on the fact that Billie aims to challenge societal pressures on women'"
+    ],
+    "warnings": [
+      "claim C3: not referenced by any field",
+      "claim C4: not referenced by any field"
+    ]
+  },
+  "created_at": "2026-11-22T04:35:55+00:00",
+  "approved": false
+}

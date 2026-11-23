@@ -108,9 +108,12 @@ python phase1v3.py auto-accept --company-id graza     # round 2: write data/v3_p
 - groundedness = supported claims / all claims. A claim is supported only if no deterministic error names it, the reviewer's response for it is valid, and its verdict is `supported`.
 - Below 0.7, wrong company (`identity_ok` not true), an abstention, placeholder unknowns, or no reviewer output: rejected (`auto_accept/<id>.rejected.json` records why).
 - Otherwise every unsupported claim is removed, with every sentence, list item and Instagram-idea sentence that cites it. If that empties `brand_summary`, the email, an Instagram field or the opportunities, the label is rejected. The pruned draft must pass `check_draft`; it is written as a new label (`generator.source = model_then_auto_pruned`, original kept in `superseded/auto07-original/`) and must be re-verified. Only one pruning round is allowed.
-- The record is bound to the packet, prompt, completion and audit hashes, says `human_reviewed: false`, and lists the removed claims. Export accepts it as a second, weaker basis and marks each entry's `provenance.acceptance` as `human_approval` or `auto_threshold_0.7`.
+- **Sentence clean-up** (same policy, added later on 22 Nov 2026): after claim pruning, sentences that `check_draft` flags as ungrounded are also deleted. These are factual sentences without a `{C#}` marker, sentences citing a vendor claim without naming the source, and sentences whose marker points to no claim. Nothing is added or reworded. Every deleted sentence is listed in `removed_sentences`. A list item left empty is dropped, and an empty `likely_target_audience` becomes `INSUFFICIENT_EVIDENCE`. Emptying `brand_summary`, the email, an Instagram field or the opportunities still rejects the label.
+- The record is bound to the packet, prompt, completion and audit hashes, says `human_reviewed: false`, and lists the removed claims and sentences. Export accepts it as a second, weaker basis and marks each entry's `provenance.acceptance` as `human_approval` or `auto_threshold_0.7`.
 
 A record with a human approval is never touched by `auto-accept`.
+
+To give the teacher a second try on a rejected label, run `python phase1v3.py label --company-id <id> --retry-from-label`. It starts from the previous label and shows the teacher that label's failed checks and the reviewer's unsupported claims, with a fix-it hint for each kind of error. The old label and audit are saved to `superseded/retry1-before/`. On 22 Nov 2026 this recovered none of the 10 companies tried (see the report, §6f).
 
 ### 5. Export a versioned dataset
 

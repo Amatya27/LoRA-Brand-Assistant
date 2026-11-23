@@ -3,7 +3,7 @@
   "acceptance_basis": "auto_threshold_0.7",
   "decision": "reject",
   "reasons": [
-    "pruned draft fails check_draft: likely_target_audience: marker {C6} has no claim (+3 more)"
+    "removing unsupported claims and ungrounded sentences emptied ['instagram_post_idea.concept']"
   ],
   "groundedness": 1.0,
   "claim_support": {
@@ -15,6 +15,6 @@
   },
   "removed_claims": [],
   "label_completion_sha256": "0881ab899550c0931f0a552ba2cbd249b3671f8441585bc4deaa290f28ae00bf",
-  "audit_sha256": "3ae7f577bd54bf485376a0ae786ebebe60ecaeddeaa1767de926aaf7b9162a48",
-  "created_at": "2026-11-23T00:28:48+00:00"
+  "audit_sha256": "045fb7cc25aa7567809d246236f182883461f1450a0bc6276ebd45e50da20aa8",
+  "created_at": "2026-11-23T02:50:56+00:00"
 }

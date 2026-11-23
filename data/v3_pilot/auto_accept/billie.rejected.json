@@ -1,0 +1,19 @@
+{
+  "company_id": "billie",
+  "acceptance_basis": "auto_threshold_0.7",
+  "decision": "reject",
+  "reasons": [
+    "removing unsupported claims and ungrounded sentences emptied ['instagram_post_idea.why_it_fits']"
+  ],
+  "groundedness": 0.75,
+  "claim_support": {
+    "C1": "supported",
+    "C2": "supported",
+    "C3": "reviewer response invalid for this claim: C3: reviewer quote does not occur in the referenced passage(s)",
+    "C4": "supported"
+  },
+  "removed_claims": [],
+  "label_completion_sha256": "721711abc0b35a06033d5e7dcfacc8d841bb23d3146583faa9e572373f41728a",
+  "audit_sha256": "f89b70674d7f4e6f69a34102c46d8e4990fbc84450513772652c3ce1b43f516c",
+  "created_at": "2026-11-23T02:50:56+00:00"
+}

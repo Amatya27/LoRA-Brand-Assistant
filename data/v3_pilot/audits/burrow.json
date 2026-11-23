@@ -4,7 +4,7 @@
   "bound_to": {
     "packet_sha256": "d792da8d509e1b562e320a5f5981714ff207e52d415a1abc5dbd13dbac0d27bf",
     "prompt_sha256": "5436b4029eafe1e263788a10dcd43594b0550a00a4a4a773dd1b2b366bf7d37c",
-    "completion_sha256": "2b1dcd074738ecc46cd31b1ea307eca8ceb9c14292ece0e7522655a9e4a90680",
+    "completion_sha256": "a778d32d0d869514933535ddca8f3c35cd445e5f787f29f033ee531c06d31ab5",
     "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
   },
   "reviewer_config": {
@@ -24,8 +24,8 @@
     ],
     "warnings": []
   },
-  "raw_response_sha256": "71b5a5f55e44994c18cebfa5aa1f91e693eb1bd309167049a7bed78ac2469811",
-  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\",\n        \"P2\"\n      ],\n      \"quote\": \"So we made it modular, designed it to do more, and got it to your door in days.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that Burrow makes modular furniture and highlights its design.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Burrow assembles the perfect customer acquisition strategy with diversified affiliate approach\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that Burrow uses a diversified affiliate approach for customer acquisition.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"Burrow solved a logistics problem (sofa delivery in apartment buildings) and made that solution the centerpiece of its marketing.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Burrow focuses its marketing on solving customer pain points.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"Burrow advertises on Facebook and Instagram, with YouTube influencer partnerships and Google Shopping supplementing direct-response paid social.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly mentions Burrow's use of Facebook, Instagram, and YouTube influencer partnerships.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"modular product architecture enables upsell ad sequences — existing customers are the highest-converting audience for 'add a piece' campaigns.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Burrow uses modular architecture to enable upsell campaigns.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"Burrow was founded in New York in 2016 by Kabeer Chopra and Stephen Kuhl\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that Burrow was founded in 2016 by Kabeer Chopra and Stephen Kuhl.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"Burrow makes modular furniture designed to be functional and easy to assemble\"\n    },\n    {\n      \"field\": \"likely_target_audience\",\n      \"text\": \"Burrow's likely target audience includes people looking for functional, easy-to-assemble modular furniture\"\n    }\n  ],\n  \"absence_as_weakness\": []\n}\n```",
+  "raw_response_sha256": "d9fdf644bfc5f8a5fcc968cf2fa464a63f91bd8f07f10a525080c77feffd18a6",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\",\n        \"P2\"\n      ],\n      \"quote\": \"So we made it modular, designed it to do more, and got it to your door in days.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that Burrow makes modular furniture and highlights its design focus.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Burrow assembles the perfect customer acquisition strategy with diversified affiliate approach\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that Burrow uses a diversified affiliate approach for customer acquisition.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"Burrow solved a logistics problem (sofa delivery in apartment buildings) and made that solution the centerpiece of its marketing.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Burrow's marketing focuses on solving customer pain points.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"Burrow advertises on Facebook and Instagram, with YouTube influencer partnerships and Google Shopping supplementing direct-response paid social.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly mentions Burrow's use of Facebook, Instagram, and YouTube influencer partnerships in its marketing.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"modular product architecture enables upsell ad sequences — existing customers are the highest-converting audience for 'add a piece' campaigns.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that Burrow uses modular architecture to enable upsell campaigns.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"Burrow was founded in New York in 2016 by Kabeer Chopra and Stephen Kuhl\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms that Burrow was founded in 2016 by Kabeer Chopra and Stephen Kuhl.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"Burrow makes modular furniture designed to be functional and easy to assemble\"\n    }\n  ],\n  \"absence_as_weakness\": []\n}\n```",
   "review": {
     "identity_ok": true,
     "claims": [
@@ -38,7 +38,7 @@
         ],
         "quote": "So we made it modular, designed it to do more, and got it to your door in days.",
         "issues": [],
-        "reason": "The passage explicitly states that Burrow makes modular furniture and highlights its design."
+        "reason": "The passage explicitly states that Burrow makes modular furniture and highlights its design focus."
       },
       {
         "claim_id": "C2",
@@ -58,7 +58,7 @@
         ],
         "quote": "Burrow solved a logistics problem (sofa delivery in apartment buildings) and made that solution the centerpiece of its marketing.",
         "issues": [],
-        "reason": "The passage states that Burrow focuses its marketing on solving customer pain points."
+        "reason": "The passage states that Burrow's marketing focuses on solving customer pain points."
       },
       {
         "claim_id": "C4",
@@ -68,7 +68,7 @@
         ],
         "quote": "Burrow advertises on Facebook and Instagram, with YouTube influencer partnerships and Google Shopping supplementing direct-response paid social.",
         "issues": [],
-        "reason": "The passage explicitly mentions Burrow's use of Facebook, Instagram, and YouTube influencer partnerships."
+        "reason": "The passage explicitly mentions Burrow's use of Facebook, Instagram, and YouTube influencer partnerships in its marketing."
       },
       {
         "claim_id": "C5",
@@ -78,7 +78,7 @@
         ],
         "quote": "modular product architecture enables upsell ad sequences — existing customers are the highest-converting audience for 'add a piece' campaigns.",
         "issues": [],
-        "reason": "The passage states that Burrow uses modular architecture to enable upsell campaigns."
+        "reason": "The passage directly states that Burrow uses modular architecture to enable upsell campaigns."
       },
       {
         "claim_id": "C6",
@@ -88,7 +88,7 @@
         ],
         "quote": "Burrow was founded in New York in 2016 by Kabeer Chopra and Stephen Kuhl",
         "issues": [],
-        "reason": "The passage directly states that Burrow was founded in 2016 by Kabeer Chopra and Stephen Kuhl."
+        "reason": "The passage confirms that Burrow was founded in 2016 by Kabeer Chopra and Stephen Kuhl."
       }
     ],
     "unmarked_factual_statements": [],
@@ -99,8 +99,8 @@
   "reasons": [
     "4 deterministic check error(s)"
   ],
-  "created_at": "2026-11-22T23:51:54+00:00",
-  "audit_sha256": "22de351574470220906ebe59f77bc66de1c896ababade4644aa04f8ff6e1fdc6",
+  "created_at": "2026-11-23T01:35:39+00:00",
+  "audit_sha256": "47c212eca097a92f515ccd6cc927956256500d9df89a18a9cb8ba8b011bb9309",
   "dismissed_reviewer_flags": [
     {
       "flag": {
@@ -109,14 +109,6 @@
       },
       "reason": "sentence in brand_summary carries a claim marker; judged via its claim",
       "matched_sentence": "burrow makes modular furniture designed to be functional and easy to assemble"
-    },
-    {
-      "flag": {
-        "field": "likely_target_audience",
-        "text": "Burrow's likely target audience includes people looking for functional, easy-to-assemble modular furniture"
-      },
-      "reason": "sentence in likely_target_audience carries a claim marker; judged via its claim",
-      "matched_sentence": "burrow's likely target audience includes people looking for functional easy to assemble modular furniture"
     }
   ]
 }

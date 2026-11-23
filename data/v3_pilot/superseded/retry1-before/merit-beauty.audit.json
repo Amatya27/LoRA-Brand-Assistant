@@ -1,0 +1,114 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "merit-beauty",
+  "bound_to": {
+    "packet_sha256": "34b49d8ec3e59fa0d4b39966b2898f73df0cf2a316652c13ea579e96309ebb03",
+    "prompt_sha256": "78552ff2e90b2627c87792fa7b51544623e488275be34f5c80f22a249996f2d3",
+    "completion_sha256": "3997014aeac8c26c65d82edd645196112a11757e91d658c81b257c986621e26c",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [
+      "likely_target_audience: factual sentence without a claim marker: 'The passages do not specify the likely target audience for MERIT. {INSUFFICIENT_EVIDENCE}'"
+    ],
+    "warnings": [
+      "claim C5: not referenced by any field",
+      "claim C7: not referenced by any field"
+    ]
+  },
+  "raw_response_sha256": "fda7282d25d9c49cc0e904d7456aae0443f5851100386cd2f89f89a7cf45c092",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"MERIT is a modern beauty brand that simplifies what it takes to get ready\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that MERIT is a modern beauty brand that simplifies what it takes to get ready.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"MERIT was created as the antidote — a considered collection designed to bring ease to your everyday\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that MERIT was created as the antidote to bring ease to your everyday.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"MERIT is a global brand with teams in New York, Los Angeles, Toronto, London, and Paris\",\n      \"issues\": [],\n      \"reason\": \"The passage states that MERIT has teams in multiple global locations.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"MERIT’s digital marketing strategy is robust, leveraging platforms like Instagram, TikTok, YouTube, and Pinterest to reach a broad audience\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states MERIT's digital marketing strategy is robust and uses several platforms.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"MERIT offers Clean, Vegan, Cruelty-free beauty products\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that MERIT offers clean, vegan, and cruelty-free products.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"the most senior marketing leader in the building is in the room when content gets made\",\n      \"issues\": [],\n      \"reason\": \"The passage states that the CMO still reviews every social post.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"MERIT’s development process (by contrast) takes years rather than months\",\n      \"issues\": [],\n      \"reason\": \"The passage states that MERIT's development process takes years.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "MERIT is a modern beauty brand that simplifies what it takes to get ready",
+        "issues": [],
+        "reason": "The passage explicitly states that MERIT is a modern beauty brand that simplifies what it takes to get ready."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "MERIT was created as the antidote — a considered collection designed to bring ease to your everyday",
+        "issues": [],
+        "reason": "The passage directly states that MERIT was created as the antidote to bring ease to your everyday."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "MERIT is a global brand with teams in New York, Los Angeles, Toronto, London, and Paris",
+        "issues": [],
+        "reason": "The passage states that MERIT has teams in multiple global locations."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "MERIT’s digital marketing strategy is robust, leveraging platforms like Instagram, TikTok, YouTube, and Pinterest to reach a broad audience",
+        "issues": [],
+        "reason": "The passage explicitly states MERIT's digital marketing strategy is robust and uses several platforms."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "MERIT offers Clean, Vegan, Cruelty-free beauty products",
+        "issues": [],
+        "reason": "The passage directly states that MERIT offers clean, vegan, and cruelty-free products."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "the most senior marketing leader in the building is in the room when content gets made",
+        "issues": [],
+        "reason": "The passage states that the CMO still reviews every social post."
+      },
+      {
+        "claim_id": "C7",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "MERIT’s development process (by contrast) takes years rather than months",
+        "issues": [],
+        "reason": "The passage states that MERIT's development process takes years."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "fail",
+  "reasons": [
+    "1 deterministic check error(s)"
+  ],
+  "created_at": "2026-11-23T00:08:43+00:00",
+  "audit_sha256": "b9b733ae786179cc7f5a1a0e1f9314d304c6d2fbdd2fb594efd28aa860752b88",
+  "dismissed_reviewer_flags": []
+}

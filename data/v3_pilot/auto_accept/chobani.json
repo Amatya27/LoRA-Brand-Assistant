@@ -1,0 +1,24 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "chobani",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "93f8ea09dfc242b44619d2ff9025a4f3cd75a0ef05d8c7addf39c60fbb3ee26e",
+    "prompt_sha256": "a9f8f60d8b352e3d2819f85d96e6470884fe60c1e47b7f9003701615b1c18260",
+    "completion_sha256": "3238579be8331f3d08eedc03f4ecd34f04eb07e8365028f6614028e7eea6fec6",
+    "audit_sha256": "bb7fddb51cadebb16be74a6c9534317eadf86677a763835401612c1d6740f536"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 13,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "removed_sentences": [],
+  "original_completion_sha256": null,
+  "original_audit_sha256": null,
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T03:00:52+00:00",
+  "record_sha256": "9bc1a41671f397cc608fa3f8e3320376d9d7737ff25bc6ad0a1d242290643e4c"
+}

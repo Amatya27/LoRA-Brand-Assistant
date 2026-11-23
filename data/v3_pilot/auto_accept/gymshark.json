@@ -1,0 +1,34 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "gymshark",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "baf2f85c805b22fb151e604697fef5da66c61b3b7a3f5c004f9342313cc4e20c",
+    "prompt_sha256": "28d0f8916f60325598791cbeb70ef7abe25e549dc701ea730c692530362d4125",
+    "completion_sha256": "0e1c17dd87a73094ec2aa7b6a62b8ab5198ab3245735359c269320ccf5203b61",
+    "audit_sha256": "e4881871d6f40644301f673d9621663319fcef5080c0770810cb8838d4c33b9a"
+  },
+  "groundedness_before_pruning": 0.8,
+  "claims_total_before_pruning": 5,
+  "removed_claims": [
+    "C5"
+  ],
+  "removed_claim_reasons": {
+    "C5": "deterministic: claim C5: kind must be one of ('fact', 'provider_reported', 'premise')"
+  },
+  "removed_sentences": [
+    {
+      "field": "brand_summary",
+      "sentence": "Gymshark is a global fitness apparel brand that achieved rapid growth through a social media-first marketing model {C9}.",
+      "reason": "marker {C9} has no claim"
+    }
+  ],
+  "original_completion_sha256": "504782db1b170f8ace1077540e117eff69a8d24fffa03695023ee15fbe5b530e",
+  "original_audit_sha256": "bb731e90b3bb091496911173e2143ee8b1a796cbf6ec06e973b7304859a6443b",
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T03:00:52+00:00",
+  "record_sha256": "1e9daa72ef8c333101b110c57ca4edd159cbb4369921f24d5cfeed1ce45e3948"
+}

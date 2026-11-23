@@ -1,0 +1,30 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "lululemon",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "1c2bb9adf64d48caa62ed708ace6b2fe1126bb23de4ec272c2c8b9eb93dc21b0",
+    "prompt_sha256": "77fa4fe87287931a7175ab19525dd40163dc2b8cd466ac0e753c184bbdc2c443",
+    "completion_sha256": "a9914bf141b88d671256dbf38bae279cdf52afb6ff533b9395eb69c9098e307c",
+    "audit_sha256": "029586b8e58bbeb260f3051555019d8ac3261bcd9198cf6c956093c76a4e67d7"
+  },
+  "groundedness_before_pruning": 1.0,
+  "claims_total_before_pruning": 5,
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "removed_sentences": [
+    {
+      "field": "brand_summary",
+      "sentence": "Lululemon is a purpose-driven brand that focuses on community, innovation, and values-driven business practices {C9}.",
+      "reason": "marker {C9} has no claim"
+    }
+  ],
+  "original_completion_sha256": "3a3d91fd01cf6a06be85f9590752b177a074ec057b0b8f3ac759437a6bb1dc10",
+  "original_audit_sha256": "5decb44e58050d1439fc0f0b43d5989fa37b765213e3ac009d483f4dc6db0d91",
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T03:00:52+00:00",
+  "record_sha256": "15b3ed972f37cd17ba4c69030a551ce3c60ac80ef84ed14ce920c7cafec053b6"
+}

@@ -1,0 +1,142 @@
+{
+  "schema_version": "brandpilot.label.v3",
+  "company_id": "burrow",
+  "packet_path": "packets/burrow.json",
+  "packet_sha256": "d792da8d509e1b562e320a5f5981714ff207e52d415a1abc5dbd13dbac0d27bf",
+  "prompt_version": "brandpilot.prompt.v3.3",
+  "prompt": "You are a grounded brand-outreach assistant for our team. Use only the evidence passages below.\nNever use outside knowledge. Return valid JSON only.\n\nSeparate three things:\n1. OBSERVED FACTS - things a passage actually states about this company. Each fact is a claim with an id (C1, C2, ...),\n   the passage id(s) that support it, and an exact quote copied word-for-word from that passage.\n2. UNKNOWNS - things the evidence does not tell us (put them in \"unknowns\"). A channel, program or audience that does\n   not appear in these passages is UNKNOWN. It is never a weakness, never a \"gap\", and never a reason for outreach.\n3. PROPOSALS - collaboration ideas from our team. Proposals are not facts, but each must build on a positively supported\n   fact (an existing campaign, partnership, product, community, value or theme) and cite that premise.\n\nRules:\n- Put a claim marker like {C1} (curly braces) right after every factual statement in every field, including the\n  email and Instagram idea. Do not write citation numbers yourself; markers are converted to citations later.\n- A claim's \"quote\" must be copied character-for-character from the cited passage: 5 to 25 consecutive words, no\n  paraphrasing, no joining of separate sentences. If you cannot find such a quote, drop the claim and every sentence\n  that depends on it.\n- Audience and strategy sentences are factual: each needs a marker. If no passage states the audience, write\n  INSUFFICIENT_EVIDENCE instead of guessing.\n- Pitch lines (email subject, hook, concept) should describe the proposed post (\"A carousel featuring ...\",\n  \"Collaborate on ...\"). Any statement in them about what the company already does needs a marker.\n- Respect passage types. \"proposed_or_mock_work\" and \"author_recommendation\" passages describe ideas, not things the\n  company did: never state them as company activity. \"provider_reported_result\" passages are claims by a vendor or\n  agency: attribute them (\"X reports that ...\"). \"creator_or_influencer_audience_data\" describes creators' followers,\n  not the company's customers. \"vendor_generated_profile_or_analytics\" passages are a tool vendor's estimates\n  (e.g. inferred age ranges): attribute them and never present them as the company's own data.\n  \"forward_looking_statement\" passages describe plans or intentions, not completed activity.\n- Mind time: if a passage describes past activity, do not present it as current.\n- \"marketing_gaps\" may only contain a weakness that a passage positively states. Usually it is [].\n- Never promise results. Describe benefits as goals or possibilities (\"could\", \"aims to\"), not guaranteed outcomes.\n- Decision: write \"draft\" when at least one concrete, evidence-supported collaboration opportunity exists. Otherwise write\n  \"abstain\", give an abstain_reason, set pitch fields to INSUFFICIENT_EVIDENCE and leave collaboration_opportunities empty.\n- The email is from our team to the company, proposing one collaborative Instagram post. The pitch, the post idea and\n  every collaboration opportunity are for Instagram only (no TikTok, YouTube, podcasts or other channels).\n- When a sentence uses a vendor, agency or analytics passage, name that source in the sentence itself\n  (\"According to AdLibrary, ...\", \"Attentive reports that ...\").\n- Each \"unknowns\" item names one specific thing the passages do not tell us (e.g. \"Whether X runs a creator program\").\n  Never write placeholder text such as \"what the evidence does not show\".\n\nRequired JSON:\n{\n  \"decision\": \"draft\" or \"abstain\",\n  \"abstain_reason\": \"string or empty\",\n  \"claims\": [{\"id\": \"C1\", \"kind\": \"fact | provider_reported | premise\", \"statement\": \"string\",\n              \"passage_ids\": [\"P1\"], \"quote\": \"exact words from the passage\"}],\n  \"brand_summary\": \"Full sentences, each followed by its marker, e.g. \"X makes ... {C1}.\" Never only markers. Or INSUFFICIENT_EVIDENCE\",\n  \"likely_target_audience\": \"A full sentence followed by its marker, or INSUFFICIENT_EVIDENCE\",\n  \"current_marketing_strategy\": [\"text with markers\"],\n  \"unknowns\": [\"one specific open question, e.g. Whether the company works with creators\"],\n  \"marketing_gaps\": [],\n  \"collaboration_opportunities\": [\"proposal that builds on a cited fact {C2}\"],\n  \"instagram_post_idea\": {\"hook\": \"string\", \"concept\": \"string\", \"why_it_fits\": \"string\"},\n  \"email_subject\": \"string\",\n  \"email_body\": \"string\"\n}\n\nCompany: Burrow (company_id burrow; category: modular furniture)\nOfficial domains: burrow.com\nRecipient: the marketing team\nPacket status: ok\n\nEvidence passages:\n[P1] source: https://burrow.com/about | document: official_domain | type: brand_positioning | dates in text: none | published: unknown\n\"So we made it modular, designed it to do more, and got it to your door in days. Because we believe great design isn’t just how it looks. It’s how it works. couple relaxing and laughing on a Burrow sofa SMARTER IN EVERY WAY\"\n\n[P2] source: https://burrow.com/about | document: official_domain | type: descriptive | dates in text: none | published: unknown\n\"Innovation you can actually feel We design every piece to work harder and make life easier—from fast delivery and seamless assembly to modular flexibility and thoughtful features like hidden chargers and performance fabrics. The result? Clever solutions for every corner of your home. shipping truck icon SPEED OF DELIVERY Styles that arrive to your home in as little as a week. modular furniture icon ENHANCED FUNCTIONALITY Modular and clever, it’s easier than ever to move. durable icon wine spilling on fabrid DURABLE MATERIALS Strong frames and performance fabrics built to last. plush cushion icon SERIOUSLY COMFORTABLE From supportive to sink-in, cushions for every kind of lounge.\"\n\n[P3] source: https://www.casestudies.com/company/pepperjam/case-study/burrow-assembles-the-perfect-customer-acquisition-strategy-with-diversified-affiliate-approach | document: third_party_confirmed | type: actual_activity | dates in text: none | published: unknown\n\"Burrow assembles the perfect customer acquisition strategy with diversified affiliate approach Burrow, a direct-to-consumer furniture brand, needed to reach new audiences and convert shoppers while avoiding high acquisition costs from paid search, social, and traditional PR. To diversify its marketing mix, Burrow partnered with Pepperjam and used the Pepperjam Ascend™ platform to tap partner distribution through a scalable, pay-for-performance affiliate approach. Using Pepperjam’s Ascend™ (with Discover technology), Burrow identified and recruited right-fit partners, automated lookalike recommendations, and optimized creative assets to converge brand and performance marketing.\"\n\n[P4] source: https://adlibrary.com/brands/burrow | document: third_party_confirmed | type: provider_reported_result | flags: vendor_generated_profile_or_analytics | dates in text: none | published: unknown\n\"Browse Burrow's Facebook and Instagram ad creatives at adlibrary.com?q=Burrow&type=3. What platforms does Burrow advertise on? Burrow advertises on Facebook and Instagram, with YouTube influencer partnerships and Google Shopping supplementing direct-response paid social. Who are Burrow's main competitors? Competitors include Floyd, Joybird, West Elm, and Pottery Barn in the modular and DTC sofa category. What makes Burrow's ads effective? Burrow's assembly demonstration videos directly neutralize the biggest sofa purchase anxiety — delivery and setup complexity — by showing the entire process takes minutes without tools, making the purchase feel risk-free. Does Burrow have physical stores?\"\n\n[P5] source: https://adlibrary.com/brands/burrow | document: third_party_confirmed | type: author_recommendation | flags: vendor_generated_profile_or_analytics | dates in text: none | published: unknown\n\"Burrow Google Ads, YouTube Ads & Cross-Platform Lessons Burrow solved a logistics problem (sofa delivery in apartment buildings) and made that solution the centerpiece of its marketing. The lesson: when a product feature solves a genuine friction point that competitors haven't addressed, that feature should be the ad's hero. Burrow also demonstrates how modular product architecture enables upsell ad sequences — existing customers are the highest-converting audience for 'add a piece' campaigns.\"\n\n[P6] source: https://burrow.com/about | document: official_domain | type: descriptive | dates in text: none | published: unknown\n\"THE SPAN SLEEPER Designed for those who want it all We took a real queen-sized mattress and turned it into the stylish sleeper sofa of your dreams.\"\n\n[P7] source: https://adlibrary.com/brands/burrow | document: third_party_confirmed | type: provider_reported_result | flags: vendor_generated_profile_or_analytics | dates in text: 2016 | published: unknown\n\"About Burrow Burrow was founded in New York in 2016 by Kabeer Chopra and Stephen Kuhl, launching a tool-free modular sofa that ships in regular-sized boxes and assembles in minutes. The configuration system allows buyers to add arms, chaises, and sections over time. Burrow has since expanded into full-room furniture with shelving, coffee tables, and rugs, opening physical showrooms in key markets while maintaining a DTC-first pricing model.\"\n",
+  "prompt_sha256": "5436b4029eafe1e263788a10dcd43594b0550a00a4a4a773dd1b2b366bf7d37c",
+  "generator": {
+    "source": "model",
+    "role": "teacher",
+    "api_base": "http://localhost:8080/v1",
+    "model": "mlx-community/Qwen3-14B-4bit",
+    "temperature": 0.0,
+    "max_tokens": 4096,
+    "system_prompt_sha256": "a434c070378f6a787103cac3ef71971836c5f435d8b5fcbad58e17d38f3ef7f3",
+    "generated_at": "2026-11-22T21:37:41+00:00",
+    "attempts": [
+      {
+        "attempt": 0,
+        "raw_sha256": "f93408f58a6c3def8f06b14ee3c8d80ce18d3b7731eb954befe839c5552a5067",
+        "deterministic_errors": 9,
+        "quote_repairs": []
+      },
+      {
+        "attempt": 1,
+        "raw_sha256": "7b8f1788b4917dac6c0e1a989da1ec51126b22cee405b403d7bc3090d331dedb",
+        "deterministic_errors": 4,
+        "quote_repairs": []
+      },
+      {
+        "attempt": 2,
+        "raw_sha256": "7b8f1788b4917dac6c0e1a989da1ec51126b22cee405b403d7bc3090d331dedb",
+        "deterministic_errors": 4,
+        "quote_repairs": []
+      }
+    ],
+    "quote_repair": "claims.repair_quotes (min similarity 0.9; numbers/negations unchanged); see attempts[].quote_repairs",
+    "note": "repair rounds show the teacher only its own draft and the failed check messages"
+  },
+  "raw_response": "{\n  \"decision\": \"draft\",\n  \"abstain_reason\": \"\",\n  \"claims\": [\n    {\n      \"id\": \"C1\",\n      \"kind\": \"fact\",\n      \"statement\": \"Burrow makes modular furniture designed to be functional and easy to assemble {C1}.\",\n      \"passage_ids\": [\"P1\", \"P2\"],\n      \"quote\": \"So we made it modular, designed it to do more, and got it to your door in days.\"\n    },\n    {\n      \"id\": \"C2\",\n      \"kind\": \"fact\",\n      \"statement\": \"Burrow's marketing strategy includes a diversified affiliate approach to customer acquisition {C2}.\",\n      \"passage_ids\": [\"P3\"],\n      \"quote\": \"Burrow assembles the perfect customer acquisition strategy with diversified affiliate approach\"\n    },\n    {\n      \"id\": \"C3\",\n      \"kind\": \"provider_reported\",\n      \"statement\": \"According to adlibrary.com, Burrow's ads focus on solving real customer pain points, such as delivery and setup complexity {C3}.\",\n      \"passage_ids\": [\"P5\"],\n      \"quote\": \"Burrow solved a logistics problem (sofa delivery in apartment buildings) and made that solution the centerpiece of its marketing.\"\n    },\n    {\n      \"id\": \"C4\",\n      \"kind\": \"provider_reported\",\n      \"statement\": \"According to adlibrary.com, Burrow's marketing includes YouTube influencer partnerships and ads on Facebook and Instagram {C4}.\",\n      \"passage_ids\": [\"P4\"],\n      \"quote\": \"Burrow advertises on Facebook and Instagram, with YouTube influencer partnerships and Google Shopping supplementing direct-response paid social.\"\n    },\n    {\n      \"id\": \"C5\",\n      \"kind\": \"provider_reported\",\n      \"statement\": \"According to adlibrary.com, Burrow's modular furniture allows for upsell campaigns targeting existing customers {C5}.\",\n      \"passage_ids\": [\"P5\"],\n      \"quote\": \"modular product architecture enables upsell ad sequences — existing customers are the highest-converting audience for 'add a piece' campaigns.\"\n    },\n    {\n      \"id\": \"C6\",\n      \"kind\": \"provider_reported\",\n      \"statement\": \"According to adlibrary.com, Burrow was founded in 2016 by Kabeer Chopra and Stephen Kuhl {C6}.\",\n      \"passage_ids\": [\"P7\"],\n      \"quote\": \"Burrow was founded in New York in 2016 by Kabeer Chopra and Stephen Kuhl\"\n    }\n  ],\n  \"brand_summary\": \"Burrow makes modular furniture designed to be functional and easy to assemble {C1}. It was founded in 2016 by Kabeer Chopra and Stephen Kuhl {C6}.\",\n  \"likely_target_audience\": \"Burrow's likely target audience includes people looking for functional, easy-to-assemble modular furniture {C1}.\",\n  \"current_marketing_strategy\": [\n    \"Burrow's marketing strategy includes a diversified affiliate approach to customer acquisition {C2}.\",\n    \"According to adlibrary.com, Burrow's ads focus on solving real customer pain points, such as delivery and setup complexity {C3}.\",\n    \"According to adlibrary.com, Burrow's marketing includes YouTube influencer partnerships and ads on Facebook and Instagram {C4}.\",\n    \"According to adlibrary.com, Burrow's modular furniture allows for upsell campaigns targeting existing customers {C5}.\"\n  ],\n  \"unknowns\": [\n    \"Whether Burrow has a formal creator or influencer program beyond YouTube partnerships\",\n    \"Whether Burrow has a specific strategy for Instagram content beyond what is implied by its broader marketing activities\"\n  ],\n  \"marketing_gaps\": [],\n  \"collaboration_opportunities\": [\n    \"Collaborate on an Instagram post showcasing how Burrow's modular furniture can be customized to fit different spaces {C1}.\",\n    \"Create a carousel post featuring step-by-step assembly of Burrow's furniture, emphasizing the ease of setup {C1}.\",\n    \"Develop a campaign that highlights how Burrow's modular design allows for upsell campaigns targeting existing customers {C5}.\"\n  ],\n  \"instagram_post_idea\": {\n    \"hook\": \"Transform your space with Burrow's modular furniture — designed to be as flexible as your lifestyle {C1}.\",\n    \"concept\": \"A carousel post showing how Burrow's modular furniture can be rearranged to suit different room layouts and needs {C1}.\",\n    \"why_it_fits\": \"This concept aligns with Burrow's brand positioning of functional, easy-to-assemble furniture {C1}.\"\n  },\n  \"email_subject\": \"Collaboration Opportunity: Showcase Burrow's Modular Furniture Flexibility on Instagram\",\n  \"email_body\": \"Hi Burrow Marketing Team,\\n\\nWe're excited about the opportunity to collaborate on an Instagram post that highlights the flexibility of Burrow's modular furniture. The post would showcase how your products can be rearranged to suit different room layouts and needs, emphasizing the ease of assembly and customization that your brand is known for {C1}.\\n\\nThis concept aligns with your brand's focus on functional design and customer-centric solutions {C1}. We believe this would resonate well with your audience and reinforce your brand's unique value proposition.\\n\\nWe'd love to hear your thoughts and explore this further!\\n\\nBest regards,\\n[Your Name]\"\n}",
+  "raw_response_sha256": "7b8f1788b4917dac6c0e1a989da1ec51126b22cee405b403d7bc3090d331dedb",
+  "draft": {
+    "decision": "draft",
+    "abstain_reason": "",
+    "claims": [
+      {
+        "id": "C1",
+        "kind": "fact",
+        "statement": "Burrow makes modular furniture designed to be functional and easy to assemble {C1}.",
+        "passage_ids": [
+          "P1",
+          "P2"
+        ],
+        "quote": "So we made it modular, designed it to do more, and got it to your door in days."
+      },
+      {
+        "id": "C2",
+        "kind": "fact",
+        "statement": "Burrow's marketing strategy includes a diversified affiliate approach to customer acquisition {C2}.",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Burrow assembles the perfect customer acquisition strategy with diversified affiliate approach"
+      },
+      {
+        "id": "C3",
+        "kind": "provider_reported",
+        "statement": "According to adlibrary.com, Burrow's ads focus on solving real customer pain points, such as delivery and setup complexity {C3}.",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "Burrow solved a logistics problem (sofa delivery in apartment buildings) and made that solution the centerpiece of its marketing."
+      },
+      {
+        "id": "C4",
+        "kind": "provider_reported",
+        "statement": "According to adlibrary.com, Burrow's marketing includes YouTube influencer partnerships and ads on Facebook and Instagram {C4}.",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "Burrow advertises on Facebook and Instagram, with YouTube influencer partnerships and Google Shopping supplementing direct-response paid social."
+      },
+      {
+        "id": "C5",
+        "kind": "provider_reported",
+        "statement": "According to adlibrary.com, Burrow's modular furniture allows for upsell campaigns targeting existing customers {C5}.",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "modular product architecture enables upsell ad sequences — existing customers are the highest-converting audience for 'add a piece' campaigns."
+      },
+      {
+        "id": "C6",
+        "kind": "provider_reported",
+        "statement": "According to adlibrary.com, Burrow was founded in 2016 by Kabeer Chopra and Stephen Kuhl {C6}.",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "Burrow was founded in New York in 2016 by Kabeer Chopra and Stephen Kuhl"
+      }
+    ],
+    "brand_summary": "Burrow makes modular furniture designed to be functional and easy to assemble {C1}. It was founded in 2016 by Kabeer Chopra and Stephen Kuhl {C6}.",
+    "likely_target_audience": "Burrow's likely target audience includes people looking for functional, easy-to-assemble modular furniture {C1}.",
+    "current_marketing_strategy": [
+      "Burrow's marketing strategy includes a diversified affiliate approach to customer acquisition {C2}.",
+      "According to adlibrary.com, Burrow's ads focus on solving real customer pain points, such as delivery and setup complexity {C3}.",
+      "According to adlibrary.com, Burrow's marketing includes YouTube influencer partnerships and ads on Facebook and Instagram {C4}.",
+      "According to adlibrary.com, Burrow's modular furniture allows for upsell campaigns targeting existing customers {C5}."
+    ],
+    "unknowns": [
+      "Whether Burrow has a formal creator or influencer program beyond YouTube partnerships",
+      "Whether Burrow has a specific strategy for Instagram content beyond what is implied by its broader marketing activities"
+    ],
+    "marketing_gaps": [],
+    "collaboration_opportunities": [
+      "Collaborate on an Instagram post showcasing how Burrow's modular furniture can be customized to fit different spaces {C1}.",
+      "Create a carousel post featuring step-by-step assembly of Burrow's furniture, emphasizing the ease of setup {C1}.",
+      "Develop a campaign that highlights how Burrow's modular design allows for upsell campaigns targeting existing customers {C5}."
+    ],
+    "instagram_post_idea": {
+      "hook": "Transform your space with Burrow's modular furniture — designed to be as flexible as your lifestyle {C1}.",
+      "concept": "A carousel post showing how Burrow's modular furniture can be rearranged to suit different room layouts and needs {C1}.",
+      "why_it_fits": "This concept aligns with Burrow's brand positioning of functional, easy-to-assemble furniture {C1}."
+    },
+    "email_subject": "Collaboration Opportunity: Showcase Burrow's Modular Furniture Flexibility on Instagram",
+    "email_body": "Hi Burrow Marketing Team,\n\nWe're excited about the opportunity to collaborate on an Instagram post that highlights the flexibility of Burrow's modular furniture. The post would showcase how your products can be rearranged to suit different room layouts and needs, emphasizing the ease of assembly and customization that your brand is known for {C1}.\n\nThis concept aligns with your brand's focus on functional design and customer-centric solutions {C1}. We believe this would resonate well with your audience and reinforce your brand's unique value proposition.\n\nWe'd love to hear your thoughts and explore this further!\n\nBest regards,\n[Your Name]"
+  },
+  "completion": "{\"schema_version\": \"brandpilot.output.v3\", \"decision\": \"draft\", \"evidence_status\": \"sufficient\", \"abstain_reason\": \"\", \"brand_summary\": \"Burrow makes modular furniture designed to be functional and easy to assemble [P1][P2]. It was founded in 2016 by Kabeer Chopra and Stephen Kuhl [P7].\", \"likely_target_audience\": \"Burrow's likely target audience includes people looking for functional, easy-to-assemble modular furniture [P1][P2].\", \"current_marketing_strategy\": [\"Burrow's marketing strategy includes a diversified affiliate approach to customer acquisition [P3].\", \"According to adlibrary.com, Burrow's ads focus on solving real customer pain points, such as delivery and setup complexity [P5].\", \"According to adlibrary.com, Burrow's marketing includes YouTube influencer partnerships and ads on Facebook and Instagram [P4].\", \"According to adlibrary.com, Burrow's modular furniture allows for upsell campaigns targeting existing customers [P5].\"], \"unknowns\": [\"Whether Burrow has a formal creator or influencer program beyond YouTube partnerships\", \"Whether Burrow has a specific strategy for Instagram content beyond what is implied by its broader marketing activities\"], \"marketing_gaps\": [], \"collaboration_opportunities\": [\"Collaborate on an Instagram post showcasing how Burrow's modular furniture can be customized to fit different spaces [P1][P2].\", \"Create a carousel post featuring step-by-step assembly of Burrow's furniture, emphasizing the ease of setup [P1][P2].\", \"Develop a campaign that highlights how Burrow's modular design allows for upsell campaigns targeting existing customers [P5].\"], \"instagram_post_idea\": {\"hook\": \"Transform your space with Burrow's modular furniture — designed to be as flexible as your lifestyle [P1][P2].\", \"concept\": \"A carousel post showing how Burrow's modular furniture can be rearranged to suit different room layouts and needs [P1][P2].\", \"why_it_fits\": \"This concept aligns with Burrow's brand positioning of functional, easy-to-assemble furniture [P1][P2].\"}, \"email_subject\": \"Collaboration Opportunity: Showcase Burrow's Modular Furniture Flexibility on Instagram\", \"email_body\": \"Hi Burrow Marketing Team,\\n\\nWe're excited about the opportunity to collaborate on an Instagram post that highlights the flexibility of Burrow's modular furniture. The post would showcase how your products can be rearranged to suit different room layouts and needs, emphasizing the ease of assembly and customization that your brand is known for [P1][P2].\\n\\nThis concept aligns with your brand's focus on functional design and customer-centric solutions [P1][P2]. We believe this would resonate well with your audience and reinforce your brand's unique value proposition.\\n\\nWe'd love to hear your thoughts and explore this further!\\n\\nBest regards,\\n[Your Name]\", \"claims\": [{\"id\": \"C1\", \"kind\": \"fact\", \"statement\": \"Burrow makes modular furniture designed to be functional and easy to assemble {C1}.\", \"passage_ids\": [\"P1\", \"P2\"], \"quote\": \"So we made it modular, designed it to do more, and got it to your door in days.\"}, {\"id\": \"C2\", \"kind\": \"fact\", \"statement\": \"Burrow's marketing strategy includes a diversified affiliate approach to customer acquisition {C2}.\", \"passage_ids\": [\"P3\"], \"quote\": \"Burrow assembles the perfect customer acquisition strategy with diversified affiliate approach\"}, {\"id\": \"C3\", \"kind\": \"provider_reported\", \"statement\": \"According to adlibrary.com, Burrow's ads focus on solving real customer pain points, such as delivery and setup complexity {C3}.\", \"passage_ids\": [\"P5\"], \"quote\": \"Burrow solved a logistics problem (sofa delivery in apartment buildings) and made that solution the centerpiece of its marketing.\"}, {\"id\": \"C4\", \"kind\": \"provider_reported\", \"statement\": \"According to adlibrary.com, Burrow's marketing includes YouTube influencer partnerships and ads on Facebook and Instagram {C4}.\", \"passage_ids\": [\"P4\"], \"quote\": \"Burrow advertises on Facebook and Instagram, with YouTube influencer partnerships and Google Shopping supplementing direct-response paid social.\"}, {\"id\": \"C5\", \"kind\": \"provider_reported\", \"statement\": \"According to adlibrary.com, Burrow's modular furniture allows for upsell campaigns targeting existing customers {C5}.\", \"passage_ids\": [\"P5\"], \"quote\": \"modular product architecture enables upsell ad sequences — existing customers are the highest-converting audience for 'add a piece' campaigns.\"}, {\"id\": \"C6\", \"kind\": \"provider_reported\", \"statement\": \"According to adlibrary.com, Burrow was founded in 2016 by Kabeer Chopra and Stephen Kuhl {C6}.\", \"passage_ids\": [\"P7\"], \"quote\": \"Burrow was founded in New York in 2016 by Kabeer Chopra and Stephen Kuhl\"}], \"citations\": [\"[P1]\", \"[P2]\", \"[P3]\", \"[P4]\", \"[P5]\", \"[P7]\"]}",
+  "completion_sha256": "2b1dcd074738ecc46cd31b1ea307eca8ceb9c14292ece0e7522655a9e4a90680",
+  "deterministic": {
+    "errors": [
+      "claim C3: cites P5, a author_recommendation passage, as support for a factual claim",
+      "claim C5: cites P5, a author_recommendation passage, as support for a factual claim",
+      "brand_summary: vendor/provider claim C6 (P7) is not attributed to its source (adlibrary) in the prose: 'It was founded in 2016 by Kabeer Chopra and Stephen Kuhl .'",
+      "collaboration_opportunities[2]: vendor/provider claim C5 (P5) is not attributed to its source (adlibrary) in the prose: \"Develop a campaign that highlights how Burrow's modular design allows for upsell\""
+    ],
+    "warnings": []
+  },
+  "created_at": "2026-11-22T21:37:41+00:00",
+  "approved": false
+}

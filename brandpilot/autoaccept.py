@@ -11,12 +11,20 @@ Policy set by the project owner on 22 Nov 2026. This is NOT a human approval:
   cites it; the pruned draft is re-checked (check_draft) and must then be re-verified by the
   reviewer before an auto-accept record can be written;
 * if pruning empties brand_summary, the email or the Instagram idea, the label is rejected.
+* sentence clean-up (added 22 Nov 2026, same owner policy): after claim pruning, sentences that
+  the deterministic checks flag as ungrounded are deleted too: factual sentences without a claim
+  marker, sentences citing a vendor claim without naming the source, and sentences with a marker
+  that points to no claim. Nothing is added or reworded; every deleted sentence is recorded;
+* a non-core field (likely_target_audience, a list) that pruning empties becomes
+  INSUFFICIENT_EVIDENCE / an empty list instead of rejecting the label; emptying brand_summary,
+  the email or any part of the Instagram idea still rejects it.
 
 Auto-accept records live in <workspace>/auto_accept/<company_id>.json and are bound to the
 packet, prompt, completion and audit hashes exactly like human approvals.
 """
 from __future__ import annotations
 
+import ast
 import re
 from typing import Any
 
@@ -65,6 +73,105 @@ def _drop_sentences(text: str, removed: set[str], protect: tuple[str, ...]) -> s
     return re.sub(r"\n{3,}", "\n\n", "\n".join(out_lines)).strip()
 
 
+NON_CORE_TEXT = ("likely_target_audience",)
+
+# check_draft errors that name one ungrounded sentence, which clean-up may delete.
+_CLEANABLE = re.compile(
+    r"^(?P<path>[A-Za-z_]+(?:\[\d+\])?(?:\.[a-z_]+)?): (?:"
+    r"marker \{(?P<marker>C\d+)\} has no claim"
+    r"|vendor/provider claim \S+ \(\S+\) is not attributed to its source \([^)]*\) in the prose: (?P<s1>.+)"
+    r"|factual(?:-looking)? sentence without a claim marker: (?P<s2>.+))$", re.S)
+
+
+def _collapse(s: str) -> str:
+    return re.sub(r"\s+", " ", MARKER.sub("", s)).strip()
+
+
+def _get(draft: dict[str, Any], path: str) -> str | None:
+    m = re.match(r"^([a-z_]+)(?:\[(\d+)\])?(?:\.([a-z_]+))?$", path)
+    if not m:
+        return None
+    f, i, k = m.groups()
+    v = draft.get(f)
+    if i is not None:
+        v = v[int(i)] if isinstance(v, list) and int(i) < len(v) else None
+    if k is not None:
+        v = v.get(k) if isinstance(v, dict) else None
+    return v if isinstance(v, str) else None
+
+
+def _set(draft: dict[str, Any], path: str, value: str) -> None:
+    f, i, k = re.match(r"^([a-z_]+)(?:\[(\d+)\])?(?:\.([a-z_]+))?$", path).groups()
+    if i is not None:
+        draft[f] = list(draft[f]); draft[f][int(i)] = value
+    elif k is not None:
+        draft[f] = {**draft[f], k: value}
+    else:
+        draft[f] = value
+
+
+def clean_sentences(draft: dict[str, Any], packet: dict[str, Any], max_rounds: int = 40) -> tuple[dict[str, Any], list[dict[str, str]], list[str]]:
+    """Delete the sentences check_draft flags as ungrounded. Returns (draft, removed sentences, emptied fields).
+
+    Only deletes; never adds or rewords. A list item left without text is dropped; a non-core text
+    field left empty becomes INSUFFICIENT_EVIDENCE; brand_summary, the email or the Instagram idea
+    left empty is reported in emptied (the caller rejects the label)."""
+    company = packet.get("company", {})
+    protect = tuple(n for n in (company.get("display_name"), company.get("legacy_name"), *(company.get("aliases") or [])) if n)
+    out = {k: (list(v) if isinstance(v, list) else dict(v) if isinstance(v, dict) else v) for k, v in draft.items()}
+    removed: list[dict[str, str]] = []
+    emptied: list[str] = []
+    stuck: set[str] = set()
+    for _ in range(max_rounds):
+        target = None
+        for e in check_draft(out, packet)["errors"]:
+            m = _CLEANABLE.match(e)
+            if m and e not in stuck:
+                target = (e, m)
+                break
+        if target is None:
+            break
+        err, m = target
+        path = m.group("path")
+        text = _get(out, path)
+        if text is None:
+            stuck.add(err); continue
+        if m.group("marker"):
+            hit = lambda s: "{" + m.group("marker") + "}" in s
+        else:
+            try:
+                snip = _collapse(ast.literal_eval((m.group("s1") or m.group("s2")).strip()))
+            except (ValueError, SyntaxError):
+                stuck.add(err); continue
+            def hit(s, snip=snip):
+                c = _collapse(s)
+                return bool(c) and (c.startswith(snip) or snip.startswith(c) or c in snip or (len(c) >= 40 and c[:40] in snip))
+        new_lines, dropped = [], []
+        for line in text.split("\n"):
+            kept = []
+            for s in sentences(line, protect):
+                (dropped if hit(s) else kept).append(s)
+            new_lines.append(" ".join(kept))
+        if not dropped:
+            stuck.add(err); continue
+        new = re.sub(r"\n{3,}", "\n\n", "\n".join(new_lines)).strip()
+        removed.extend({"field": path, "sentence": s, "reason": err.split(": ", 1)[1][:120]} for s in dropped)
+        if re.search(r"[A-Za-z]{2,}", MARKER.sub("", new)):
+            _set(out, path, new)
+            continue
+        base = path.split("[")[0].split(".")[0]
+        if base in LIST_FIELDS:
+            i = int(re.search(r"\[(\d+)\]", path).group(1))
+            out[base] = [x for j, x in enumerate(out[base]) if j != i]
+            if base == "collaboration_opportunities" and not out[base]:
+                emptied.append(base); break
+        elif base in NON_CORE_TEXT:
+            _set(out, path, INSUFF)
+        else:
+            emptied.append(path); break
+    return out, removed, emptied
+
+
 def prune_draft(draft: dict[str, Any], removed: set[str], company: dict[str, Any]) -> tuple[dict[str, Any], list[str]]:
     """Remove the given claims and every sentence / list item citing them. Returns (draft, emptied_fields)."""
     protect = tuple(n for n in (company.get("display_name"), company.get("legacy_name")) if n)
@@ -75,7 +182,10 @@ def prune_draft(draft: dict[str, Any], removed: set[str], company: dict[str, Any
         if isinstance(v, str) and v.strip() != INSUFF and set(MARKER.findall(v)) & removed:
             out[f] = _drop_sentences(v, removed, protect)
             if not re.search(r"[A-Za-z]{2,}", MARKER.sub("", out[f])):
-                emptied.append(f)
+                if f in NON_CORE_TEXT:
+                    out[f] = INSUFF
+                else:
+                    emptied.append(f)
     for f in LIST_FIELDS:
         items = out.get(f) or []
         out[f] = [x for x in items if not (isinstance(x, str) and set(MARKER.findall(x)) & removed)]
@@ -122,8 +232,11 @@ def assess(draft: dict[str, Any], packet: dict[str, Any], audit: dict[str, Any] 
     pruned, emptied = prune_draft(draft, removed, packet.get("company", {})) if removed else (draft, [])
     res["removed_claims"] = sorted(removed, key=lambda c: int(c[1:]))
     res["removed_claim_reasons"] = {c: support[c] for c in res["removed_claims"]}
+    res["removed_sentences"] = []
+    if not emptied:
+        pruned, res["removed_sentences"], emptied = clean_sentences(pruned, packet)
     if emptied:
-        res["reasons"].append(f"removing unsupported claims emptied {emptied}")
+        res["reasons"].append(f"removing unsupported claims and ungrounded sentences emptied {emptied}")
         res["decision"] = "reject"
         return res
     post_errors = check_draft(pruned, packet)["errors"]
@@ -131,7 +244,7 @@ def assess(draft: dict[str, Any], packet: dict[str, Any], audit: dict[str, Any] 
         res["reasons"].append(f"pruned draft fails check_draft: {post_errors[0]}" + (f" (+{len(post_errors) - 1} more)" if len(post_errors) > 1 else ""))
         res["decision"] = "reject"
         return res
-    res["decision"] = "prune" if removed else "accept"
+    res["decision"] = "prune" if (removed or res["removed_sentences"]) else "accept"
     res["pruned_draft"] = pruned
     return res
 
@@ -151,6 +264,7 @@ def build_record(*, company_id: str, packet_sha256: str, prompt_sha256: str, com
         "claims_total_before_pruning": (original or assessment)["claims_total"],
         "removed_claims": (original or {}).get("removed_claims", []),
         "removed_claim_reasons": (original or {}).get("removed_claim_reasons", {}),
+        "removed_sentences": (original or {}).get("removed_sentences", []),
         "original_completion_sha256": (original or {}).get("completion_sha256"),
         "original_audit_sha256": (original or {}).get("audit_sha256"),
         "groundedness_after_pruning": assessment["groundedness"],

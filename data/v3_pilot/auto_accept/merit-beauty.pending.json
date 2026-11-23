@@ -1,0 +1,28 @@
+{
+  "groundedness": 1.0,
+  "claims_total": 7,
+  "claims_supported": 7,
+  "claim_support": {
+    "C1": "supported",
+    "C2": "supported",
+    "C3": "supported",
+    "C4": "supported",
+    "C5": "supported",
+    "C6": "supported",
+    "C7": "supported"
+  },
+  "reasons": [],
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "removed_sentences": [
+    {
+      "field": "likely_target_audience",
+      "sentence": "The passages do not specify the likely target audience for MERIT. {INSUFFICIENT_EVIDENCE}",
+      "reason": "factual sentence without a claim marker: 'The passages do not specify the likely target audience for MERIT. {INSUFFICIEN"
+    }
+  ],
+  "decision": "prune",
+  "completion_sha256": "3997014aeac8c26c65d82edd645196112a11757e91d658c81b257c986621e26c",
+  "audit_sha256": "da70a0609d749740c42ab60cf7c456c3ef779680ca087cb3ce7e648d044484d4",
+  "pruned_completion_sha256": "6349314ac1cdc2017bf1e4cc88b616016a2525fe87c6b5996473cdd977c9e53c"
+}

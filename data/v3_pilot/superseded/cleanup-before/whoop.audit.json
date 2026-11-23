@@ -1,0 +1,125 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "whoop",
+  "bound_to": {
+    "packet_sha256": "fd1eaff4a4426f04d692c3c117de14821fb3535cf63039b14bae05bfb9c75eca",
+    "prompt_sha256": "11f25c380c7f422ff841ed061ff1d1b1c4c8f437a11f12fa26bbc6c147fad6da",
+    "completion_sha256": "1b7316b73e9df0a1da7ff123d6a8d4fc1429885aeea0a1bfefdb295ee9993b93",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [
+      "claim C7: quote does not occur in cited passage(s) ['P8']",
+      "collaboration_opportunities[0]: vendor/provider claim C4 (P3) is not attributed to its source (modash) in the prose: 'Collaborate on an Instagram post featuring a WHOOP influencer who averages 10K-5'"
+    ],
+    "warnings": []
+  },
+  "raw_response_sha256": "3fdfd0fac43f00c89a360c3fe1ce0f9d53e3a7fea0064bdeeaafa8d0641cae42",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"“The Best Obsess” brand campaign from WHOOP was produced in partnership with Mekanism, an award-winning creative agency that intersects technology, design, culture, and brand stories.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states the campaign name and partnership with Mekanism.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Campaign assets will appear globally across TV and paid media, as well as WHOOP marketing channels including social media, email and PR.\",\n      \"issues\": [],\n      \"reason\": \"The passage lists social media, email, and PR as WHOOP's marketing channels.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"“At WHOOP, we’ve always wanted our brand and community to be synonymous with great physical, professional, and personal achievements,”\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states WHOOP's desire for its brand and community to be synonymous with those achievements.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"WHOOP's strategy suggests cost-efficiency and engagement-focused partnerships.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly reports Modash's assessment of WHOOP's strategy.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"WHOOP has built a devoted community through its brand and social media efforts.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that WHOOP has built a devoted community.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"Whoop selects partners whose performance narratives naturally showcase biometrics under pressure.\",\n      \"issues\": [],\n      \"reason\": \"The passage states WHOOP selects partners based on their ability to showcase biometrics.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"WHOOP’s marketing is aimed to create a deep emotional bond with users.\",\n      \"issues\": [],\n      \"reason\": \"The passage states WHOOP's marketing aims to create a deep emotional bond.\"\n    },\n    {\n      \"claim_id\": \"C8\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"In our dataset (which only includes Instagram, YouTube, and TikTok), this is how the volume of WHOOP's sponsored influencer collaborations break down by social platform:\",\n      \"issues\": [],\n      \"reason\": \"The passage reports Modash's data showing WHOOP uses Instagram, YouTube, and TikTok.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "“The Best Obsess” brand campaign from WHOOP was produced in partnership with Mekanism, an award-winning creative agency that intersects technology, design, culture, and brand stories.",
+        "issues": [],
+        "reason": "The passage explicitly states the campaign name and partnership with Mekanism."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Campaign assets will appear globally across TV and paid media, as well as WHOOP marketing channels including social media, email and PR.",
+        "issues": [],
+        "reason": "The passage lists social media, email, and PR as WHOOP's marketing channels."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "“At WHOOP, we’ve always wanted our brand and community to be synonymous with great physical, professional, and personal achievements,”",
+        "issues": [],
+        "reason": "The passage directly states WHOOP's desire for its brand and community to be synonymous with those achievements."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "WHOOP's strategy suggests cost-efficiency and engagement-focused partnerships.",
+        "issues": [],
+        "reason": "The passage directly reports Modash's assessment of WHOOP's strategy."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "WHOOP has built a devoted community through its brand and social media efforts.",
+        "issues": [],
+        "reason": "The passage states that WHOOP has built a devoted community."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "Whoop selects partners whose performance narratives naturally showcase biometrics under pressure.",
+        "issues": [],
+        "reason": "The passage states WHOOP selects partners based on their ability to showcase biometrics."
+      },
+      {
+        "claim_id": "C7",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "WHOOP’s marketing is aimed to create a deep emotional bond with users.",
+        "issues": [],
+        "reason": "The passage states WHOOP's marketing aims to create a deep emotional bond."
+      },
+      {
+        "claim_id": "C8",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "In our dataset (which only includes Instagram, YouTube, and TikTok), this is how the volume of WHOOP's sponsored influencer collaborations break down by social platform:",
+        "issues": [],
+        "reason": "The passage reports Modash's data showing WHOOP uses Instagram, YouTube, and TikTok."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [
+    "C7: reviewer quote does not occur in the referenced passage(s)"
+  ],
+  "status": "fail",
+  "reasons": [
+    "2 deterministic check error(s)",
+    "reviewer response also invalid: C7: reviewer quote does not occur in the referenced passage(s)"
+  ],
+  "created_at": "2026-11-23T01:57:08+00:00",
+  "audit_sha256": "c3e470f7b0f7d64010bff1c9a610ee2820887ae5c1db19910041a4e33a4054aa",
+  "dismissed_reviewer_flags": []
+}

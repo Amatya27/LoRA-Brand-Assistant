@@ -4,7 +4,7 @@
   "bound_to": {
     "packet_sha256": "873acb4d1ecdc709f624684b62cd6b0b3f5bdd837cd64a51e7ccbaace3a617cf",
     "prompt_sha256": "88694495a2109b0b63edbdc47c43584ae0003b04768b47fb680019e4047f09a5",
-    "completion_sha256": "4adb79ae11ef8cf034a38ba000f45370e1b427971d4c93c64ab3818c4dfe09ac",
+    "completion_sha256": "b6124c421fdd4f63f7f245857859d346575e863865ceae79148ec7d64d4c9781",
     "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
   },
   "reviewer_config": {
@@ -22,8 +22,8 @@
     ],
     "warnings": []
   },
-  "raw_response_sha256": "8adec5836ec287a891c49c0bf72b98bd39f675e643a08fd646ece79ccc359e02",
-  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"Branch furniture has now been deployed across multiple Industrious locations, supporting new site launches and expansions throughout 2024–2025.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that Branch Furniture has been deployed across multiple Industrious locations, supporting new site launches and expansions throughout 2024–2025.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"Our Flex program lets corporate customers return furniture for a second use.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that Branch Furniture's Flex program allows corporate customers to return furniture for a second use.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"We use consistent sizes and materials across our products to support endless configurations.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Branch Furniture's products are designed to support endless configurations through consistent sizes and materials.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"We work with the Arbor Day Foundation to plant trees each holiday season. We've planted over 100,000 trees to date\",\n      \"issues\": [],\n      \"reason\": \"The passage mentions planting trees as part of their sustainability initiative.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P9\"\n      ],\n      \"quote\": \"Every year, we set aside a portion of our revenue to donate to charitable organizations that share our ambition of making work better for everyone.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Branch Furniture donates a portion of their revenue to charitable organizations.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"Branch Furniture makes it easy for people and teams to build a beautiful workspace where you can feel and work your best\"\n    },\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"The company has been deployed across multiple Industrious locations, supporting new site launches and expansions throughout 2024–2025\"\n    },\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"Branch Furniture offers a Flex program that allows corporate customers to return furniture for a second use\"\n    },\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"Branch Furniture's products are designed to be flexible, with consistent sizes and materials across products to support endless configurations\"\n    },\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"Branch Furniture has a sustainability initiative that includes planting trees and using recycled materials\"\n    },\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"Branch Furniture has a commitment to making work better for everyone, including setting aside a portion of revenue for charitable organizations\"\n    }\n  ],\n  \"absence_as_weakness\": []\n}\n```",
+  "raw_response_sha256": "28d0a3be2a0d5b99978b029601f50b151e46201fe13b9981dd3b8da853c3a48b",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"Branch furniture has now been deployed across multiple Industrious locations, supporting new site launches and expansions throughout 2024–2025.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that Branch Furniture has been deployed across multiple Industrious locations, supporting new site launches and expansions throughout 2024–2025.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"Our Flex program lets corporate customers return furniture for a second use.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that Branch Furniture's Flex program allows corporate customers to return furniture for a second use.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"We use consistent sizes and materials across our products to support endless configurations.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Branch Furniture's products are designed to support endless configurations through consistent sizes and materials.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"We work with the Arbor Day Foundation to plant trees each holiday season. We've planted over 100,000 trees to date\",\n      \"issues\": [],\n      \"reason\": \"The passage mentions planting trees as part of their sustainability initiative.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P9\"\n      ],\n      \"quote\": \"Every year, we set aside a portion of our revenue to donate to charitable organizations that share our ambition of making work better for everyone.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Branch Furniture donates a portion of their revenue to charitable organizations.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
   "review": {
     "identity_ok": true,
     "claims": [
@@ -89,56 +89,7 @@
     "2 deterministic check error(s)",
     "reviewer response also invalid: C4: reviewer quote does not occur in the referenced passage(s)"
   ],
-  "created_at": "2026-11-22T23:50:28+00:00",
-  "audit_sha256": "78e9e87de3c50be7a40ef8c9a7f4e666df5e57f34c220d6a45546c5aa0a016b5",
-  "dismissed_reviewer_flags": [
-    {
-      "flag": {
-        "field": "brand_summary",
-        "text": "Branch Furniture makes it easy for people and teams to build a beautiful workspace where you can feel and work your best"
-      },
-      "reason": "sentence in brand_summary carries a claim marker; judged via its claim",
-      "matched_sentence": "branch furniture makes it easy for people and teams to build a beautiful workspace where you can feel and work your best"
-    },
-    {
-      "flag": {
-        "field": "brand_summary",
-        "text": "The company has been deployed across multiple Industrious locations, supporting new site launches and expansions throughout 2024–2025"
-      },
-      "reason": "sentence in brand_summary carries a claim marker; judged via its claim",
-      "matched_sentence": "the company has been deployed across multiple industrious locations supporting new site launches and expansions throughout 2024 2025"
-    },
-    {
-      "flag": {
-        "field": "brand_summary",
-        "text": "Branch Furniture offers a Flex program that allows corporate customers to return furniture for a second use"
-      },
-      "reason": "sentence in brand_summary carries a claim marker; judged via its claim",
-      "matched_sentence": "branch furniture offers a flex program that allows corporate customers to return furniture for a second use"
-    },
-    {
-      "flag": {
-        "field": "brand_summary",
-        "text": "Branch Furniture's products are designed to be flexible, with consistent sizes and materials across products to support endless configurations"
-      },
-      "reason": "sentence in current_marketing_strategy[2] carries a claim marker; judged via its claim",
-      "matched_sentence": "branch furniture's products are designed to be flexible with consistent sizes and materials across products to support endless configurations"
-    },
-    {
-      "flag": {
-        "field": "brand_summary",
-        "text": "Branch Furniture has a sustainability initiative that includes planting trees and using recycled materials"
-      },
-      "reason": "sentence in brand_summary carries a claim marker; judged via its claim",
-      "matched_sentence": "branch furniture has a sustainability initiative that includes planting trees and using recycled materials"
-    },
-    {
-      "flag": {
-        "field": "brand_summary",
-        "text": "Branch Furniture has a commitment to making work better for everyone, including setting aside a portion of revenue for charitable organizations"
-      },
-      "reason": "sentence in current_marketing_strategy[4] carries a claim marker; judged via its claim",
-      "matched_sentence": "branch furniture has a commitment to making work better for everyone including setting aside a portion of revenue for charitable organizations"
-    }
-  ]
+  "created_at": "2026-11-23T01:35:06+00:00",
+  "audit_sha256": "9064908ebc6d50cbe1d8f2a02979e2854a6eba43c4dcd3e393c25baeb19ae824",
+  "dismissed_reviewer_flags": []
 }

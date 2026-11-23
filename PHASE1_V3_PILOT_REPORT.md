@@ -372,6 +372,143 @@ Export `v3-2026-11-22-auto07`: **train 40 / valid 9 / test 0** (7 human-approved
 | Youth To The People | None | no split assignment in the legacy manifest (new company: assign a split explicitly) |
 | Zenni Optical | train | removing unsupported claims emptied ['brand_summary', 'likely_target_audience', 'instagram_post_idea.why_it_fits'] |
 
+## 6f. Retry and sentence clean-up: export `v3-2026-11-22-auto07b` (22 Nov 2026, evening)
+
+> **The 54 auto-accepted records in this export were NOT reviewed by a human.** Only the 7 records marked "human approval" were. `v3-2026-11-22-auto07` (§6e) is unchanged and kept as a fallback.
+
+**Teacher retry (no gain).** `label --retry-from-label` gave Qwen3-14B its previous label, the failed checks, the reviewer's unsupported claims and a fix-it hint for each kind of error. The run covered 41 companies: the 40 rejected in §6e plus Billie.
+- The Qwen server crashed after 10 of them (Frida dropped the connection, then every request returned HTTP 404). The other 31 labels were left as they were.
+- **None of the 10 retried labels passed.** Each still had 1–6 deterministic errors.
+- The backups are in `superseded/retry1-before/`.
+
+**Sentence clean-up (owner instruction: choose what gives the most reliable data).** The acceptance step now also deletes sentences that the deterministic checks flag as ungrounded:
+- factual sentences with no `{C#}` marker;
+- sentences citing a vendor claim without naming the source;
+- sentences whose marker points to no claim.
+
+It only deletes, never adds or rewords, and lists every deleted sentence in the record (`removed_sentences`). If `likely_target_audience` ends up empty, it becomes `INSUFFICIENT_EVIDENCE`. Emptying the summary, the email, the Instagram idea or the opportunities still rejects the label. The cleaned label must pass `check_draft` and be re-verified by Gemma.
+
+The sentence splitter also no longer breaks on abbreviations such as "U.S." or "e.g.". This had caused a false error on Chobani.
+
+Tests: 79 passed. Pre-clean-up labels and audits are in `superseded/cleanup-before/`.
+
+**Result:**
+- 14 labels were cleaned or re-checked. 12 passed: Away, Blue Bottle Coffee, Charlotte Tilbury, Chobani, Dollar Shave Club, Gymshark, Ilia Beauty, July Luggage, Lululemon, Merit Beauty, MZ Wallace, Thursday Boots.
+- Govee and Rhone failed Gemma's re-check.
+- Sentences deleted per company:
+
+  | Company | Sentences deleted |
+  |---|---|
+  | Charlotte Tilbury | 5 |
+  | Away | 2 |
+  | Dollar Shave Club, Gymshark, Ilia Beauty, July Luggage, Lululemon, Merit Beauty, MZ Wallace, Thursday Boots | 1 each |
+
+- For Merit Beauty, MZ Wallace and Thursday Boots, the deleted sentence was filler such as "Insufficient Evidence", now replaced by the `INSUFFICIENT_EVIDENCE` value. Gymshark's was a sentence with a dangling `{C9}` marker.
+
+Export `v3-2026-11-22-auto07b`: **train 51 / valid 10 / test 0** (7 human-approved, 54 auto-accepted).
+
+| Company | Split | Basis | Groundedness | Claims removed |
+|---|---|---|---|---|
+| Alo Yoga | train | auto_threshold_0.7 | 1.00 (7 claims) | none |
+| Athletic Brewing | train | human approval (Thanishka Bolisetty) | n/a | n/a |
+| Avocado Green Mattress | train | auto_threshold_0.7 | 1.00 (17 claims) | none |
+| Baboon to the Moon | train | auto_threshold_0.7 | 1.00 (7 claims) | none |
+| Beis | train | auto_threshold_0.7 | 1.00 (6 claims) | none |
+| Bellroy | train | auto_threshold_0.7 | 1.00 (9 claims) | none |
+| Blue Bottle Coffee | train | auto_threshold_0.7 | 0.88 (8 claims) | C8 (deterministic: claim C8: quote does not occur in cited passa) |
+| Blueland | train | auto_threshold_0.7 | 0.80 (5 claims) | C3 (deterministic: claim C3: quote does not occur in cited passa) |
+| Bombas | train | auto_threshold_0.7 | 1.00 (7 claims) | none |
+| Brooklinen | train | auto_threshold_0.7 | 1.00 (7 claims) | none |
+| Buck Mason | train | auto_threshold_0.7 | 1.00 (10 claims) | none |
+| Casper | train | auto_threshold_0.7 | 0.83 (6 claims) | C4 (deterministic: claim C4: quote does not occur in cited passa) |
+| Charlotte Tilbury | train | auto_threshold_0.7 | 1.00 (5 claims) | none |
+| Chewy | train | auto_threshold_0.7 | 1.00 (11 claims) | none |
+| Chobani | train | auto_threshold_0.7 | 1.00 (13 claims) | none |
+| Coterie | train | auto_threshold_0.7 | 1.00 (6 claims) | none |
+| Death Wish Coffee | train | auto_threshold_0.7 | 1.00 (6 claims) | none |
+| Dollar Shave Club | train | auto_threshold_0.7 | 1.00 (8 claims) | none |
+| Faherty | train | auto_threshold_0.7 | 1.00 (7 claims) | none |
+| Glossier | train | human approval (Thanishka Bolisetty) | n/a | n/a |
+| Gymshark | train | auto_threshold_0.7 | 0.80 (5 claims) | C5 (deterministic: claim C5: kind must be one of ('fact', 'provi) |
+| Hu Kitchen | train | auto_threshold_0.7 | 1.00 (7 claims) | none |
+| Ilia Beauty | train | auto_threshold_0.7 | 1.00 (5 claims) | none |
+| Imperfect Foods | train | auto_threshold_0.7 | 1.00 (5 claims) | none |
+| Jones Road Beauty | train | auto_threshold_0.7 | 1.00 (7 claims) | none |
+| July Luggage | train | auto_threshold_0.7 | 1.00 (8 claims) | none |
+| Liquid Death | train | human approval (Thanishka Bolisetty) | n/a | n/a |
+| Lovevery | train | auto_threshold_0.7 | 1.00 (4 claims) | none |
+| Lululemon | train | auto_threshold_0.7 | 1.00 (5 claims) | none |
+| Madewell | train | auto_threshold_0.7 | 1.00 (15 claims) | none |
+| Merit Beauty | train | auto_threshold_0.7 | 1.00 (7 claims) | none |
+| Misfits Market | train | auto_threshold_0.7 | 0.86 (7 claims) | C5 (reviewer response invalid for this claim: C5: reviewer quote) |
+| Momofuku Goods | train | auto_threshold_0.7 | 1.00 (6 claims) | none |
+| Monos | train | auto_threshold_0.7 | 1.00 (5 claims) | none |
+| MZ Wallace | train | auto_threshold_0.7 | 1.00 (9 claims) | none |
+| Native | train | human approval (Thanishka Bolisetty) | n/a | n/a |
+| Native Union | train | auto_threshold_0.7 | 1.00 (5 claims) | none |
+| Parachute Home | train | auto_threshold_0.7 | 1.00 (7 claims) | none |
+| Peloton | train | auto_threshold_0.7 | 1.00 (5 claims) | none |
+| Poppi | train | human approval (Thanishka Bolisetty) | n/a | n/a |
+| Public Goods | train | auto_threshold_0.7 | 1.00 (7 claims) | none |
+| Purple | train | human approval (Thanishka Bolisetty) | n/a | n/a |
+| Rare Beauty | train | auto_threshold_0.7 | 1.00 (14 claims) | none |
+| Siete Foods | train | auto_threshold_0.7 | 1.00 (7 claims) | none |
+| Spindrift | train | auto_threshold_0.7 | 1.00 (5 claims) | none |
+| Tatcha | train | auto_threshold_0.7 | 1.00 (7 claims) | none |
+| Ten Thousand | train | human approval (Thanishka Bolisetty) | n/a | n/a |
+| Thursday Boots | train | auto_threshold_0.7 | 1.00 (5 claims) | none |
+| Tracksmith | train | auto_threshold_0.7 | 1.00 (6 claims) | none |
+| Vuori | train | auto_threshold_0.7 | 1.00 (7 claims) | none |
+| Warby Parker | train | auto_threshold_0.7 | 1.00 (7 claims) | none |
+| Away | valid | auto_threshold_0.7 | 1.00 (6 claims) | none |
+| Bones Coffee | valid | auto_threshold_0.7 | 0.75 (4 claims) | C2 (deterministic: claim C2: quote does not occur in cited passa) |
+| Fly By Jing | valid | auto_threshold_0.7 | 1.00 (6 claims) | none |
+| Graza | valid | auto_threshold_0.7 | 1.00 (5 claims) | none |
+| Greats | valid | auto_threshold_0.7 | 1.00 (7 claims) | none |
+| Outdoor Voices | valid | auto_threshold_0.7 | 1.00 (6 claims) | none |
+| Pela | valid | auto_threshold_0.7 | 1.00 (6 claims) | none |
+| Stumptown Coffee | valid | auto_threshold_0.7 | 1.00 (6 claims) | none |
+| Thrive Market | valid | auto_threshold_0.7 | 1.00 (8 claims) | none |
+| Tonal | valid | auto_threshold_0.7 | 1.00 (5 claims) | none |
+
+**Rejected / excluded**
+
+| Company | Split | Reason |
+|---|---|---|
+| Allbirds | valid | label was generated from a different packet version |
+| Anker | train | removing unsupported claims and ungrounded sentences emptied ['instagram_post_idea.concept'] |
+| Athletic Greens | train | pruned draft fails check_draft: email_body: factual-looking sentence without a claim marker: "We're excited to propose a collaboration with Athletic Greens for an Instagram post that h" |
+| Billie | train | removing unsupported claims and ungrounded sentences emptied ['instagram_post_idea.why_it_fits'] |
+| Branch Furniture | train | removing unsupported claims and ungrounded sentences emptied ['instagram_post_idea.why_it_fits'] |
+| Burrow | train | groundedness 0.67 < 0.7 |
+| Cometeer | train | possible test-split leakage: mentions ['Nothing'] |
+| Dagne Dover | train | removing unsupported claims and ungrounded sentences emptied ['instagram_post_idea.hook'] |
+| Frida | train | removing unsupported claims and ungrounded sentences emptied ['instagram_post_idea.why_it_fits'] |
+| Govee | train | audit status fail: reviewer found factual statements without claim support |
+| Great Jones | valid | removing unsupported claims and ungrounded sentences emptied ['email_subject'] |
+| Grove Collaborative | train | removing unsupported claims and ungrounded sentences emptied ['collaboration_opportunities'] |
+| Koio | train | removing unsupported claims and ungrounded sentences emptied ['collaboration_opportunities'] |
+| Kosas | train | possible test-split leakage: mentions ['Drunk Elephant'] |
+| Marine Layer | train | removing unsupported claims and ungrounded sentences emptied ['collaboration_opportunities'] |
+| MeUndies | valid | groundedness 0.60 < 0.7 |
+| Milk Makeup | train | audit status fail: reviewer found factual statements without claim support |
+| Oatly | train | groundedness 0.40 < 0.7 |
+| Olaplex | train | groundedness 0.60 < 0.7 |
+| Ollie | train | removing unsupported claims and ungrounded sentences emptied ['collaboration_opportunities', 'instagram_post_idea.why_it_fits'] |
+| Omsom | train | removing unsupported claims and ungrounded sentences emptied ['collaboration_opportunities'] |
+| Reformation | train | removing unsupported claims and ungrounded sentences emptied ['collaboration_opportunities'] |
+| Rhone | train | audit status fail: reviewer found factual statements without claim support |
+| Ruggable | train | removing unsupported claims and ungrounded sentences emptied ['collaboration_opportunities'] |
+| Skims | train | removing unsupported claims and ungrounded sentences emptied ['instagram_post_idea.why_it_fits'] |
+| Supergoop | valid | audit status fail: claims not fully supported: ['C5'] |
+| The Ordinary | train | pruned draft fails check_draft: decision: the email must propose an Instagram post |
+| Trade Coffee | train | removing unsupported claims and ungrounded sentences emptied ['email_subject'] |
+| Who Gives A Crap | train | removing unsupported claims and ungrounded sentences emptied ['instagram_post_idea.concept'] |
+| Whoop | train | removing unsupported claims and ungrounded sentences emptied ['collaboration_opportunities'] |
+| Wild One | train | pruned draft fails check_draft: decision: the email must propose an Instagram post |
+| Youth To The People | None | no split assignment in the legacy manifest (new company: assign a split explicitly) |
+| Zenni Optical | train | removing unsupported claims and ungrounded sentences emptied ['brand_summary', 'instagram_post_idea.why_it_fits'] |
+
 ## 7. Still unresolved
 
 - **Billie, Omsom and Spindrift** remain unlabeled for training; see §6b. The other seven are approved (export `v3-pilot-2026-11-22`).
@@ -386,7 +523,7 @@ Export `v3-2026-11-22-auto07`: **train 40 / valid 9 / test 0** (7 human-approved
 
 ## 8. Checks actually run
 
-- `python -m pytest -q tests`: **74 passed** (22 Nov 2026, after the §6e fixes), offline, synthetic fixtures.
+- `python -m pytest -q tests`: **79 passed** (22 Nov 2026, after the §6e/§6f fixes), offline, synthetic fixtures.
 - Reproduction script against the committed v2 data: counts, the export match, the `decide` duplicate-verdict probe, and the absence-gap count.
 - Raw-data comparison of 120 legacy passages for the 10 pilot companies against their cached pages: 14 not recoverable, 13 of those prefixed with search title/snippet.
 - Pilot: `replay-legacy` for 10 companies, `validate_packet` for every packet against a freshly unpacked copy of the evidence-store tarball (69/69 passages verified), and `phase1v3.py prompt` for all 10.

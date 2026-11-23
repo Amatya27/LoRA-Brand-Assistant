@@ -1,0 +1,93 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "meundies",
+  "bound_to": {
+    "packet_sha256": "d25a1c2718018b243e816357057ca907abf61a733fcb7f76d2a8643a60bbd24d",
+    "prompt_sha256": "727cad2f4a418b4d74e802540fa346618aaa5b43d665dbc39a29fdd2a3c2fbaf",
+    "completion_sha256": "7458c5d4b7c88350f3cd8685d1c0ed9f8856666918eaec6e77af3c99350310ef",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [
+      "claim C3: kind must be one of ('fact', 'provider_reported', 'premise')",
+      "claim C4: kind must be one of ('fact', 'provider_reported', 'premise')",
+      "instagram_post_idea.why_it_fits: the pitch must be for Instagram, but proposes another channel: \"This concept aligns with MeUndies's brand mission, according to developers.facebook.com, t\""
+    ],
+    "warnings": []
+  },
+  "raw_response_sha256": "a2c2a8601261775ec54f8576c364f1e04c2dc83c83c0750ab61e2a87548438f5",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"MeUndies partnered with social media management company Sprout Social to test Messenger API for Instagram, a solution that streamlines direct messages, comments, and Story mentions on Instagram into Messenger, making it easier to see, track, and respond to customers contacting a brand via Instagram.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that MeUndies partnered with Sprout Social to test Messenger API for Instagram.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"MeUndies has seen a great boost in productivity, with multiple agents handling large volumes of customer queries on a daily basis.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that MeUndies has seen a boost in productivity.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"underwear and loungewear brand MeUndies aims to fuel “authentic self-expression” with its products, which are designed with comfort, body positivity and creativity in mind.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that MeUndies aims to fuel 'authentic self-expression' with its products.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"MeUndies has grown 1,583% in the last three years, alone, with an estimated annual revenue of $60M.\",\n      \"issues\": [],\n      \"reason\": \"The passage states MeUndies has grown 1,583% with an estimated annual revenue of $60M.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P9\"\n      ],\n      \"quote\": \"At MeUndies, we believe your underwear should be the softest part of your day.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that MeUndies believes underwear should be the softest part of your day.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "MeUndies partnered with social media management company Sprout Social to test Messenger API for Instagram, a solution that streamlines direct messages, comments, and Story mentions on Instagram into Messenger, making it easier to see, track, and respond to customers contacting a brand via Instagram.",
+        "issues": [],
+        "reason": "The passage explicitly states that MeUndies partnered with Sprout Social to test Messenger API for Instagram."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "MeUndies has seen a great boost in productivity, with multiple agents handling large volumes of customer queries on a daily basis.",
+        "issues": [],
+        "reason": "The passage directly states that MeUndies has seen a boost in productivity."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "underwear and loungewear brand MeUndies aims to fuel “authentic self-expression” with its products, which are designed with comfort, body positivity and creativity in mind.",
+        "issues": [],
+        "reason": "The passage states that MeUndies aims to fuel 'authentic self-expression' with its products."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "MeUndies has grown 1,583% in the last three years, alone, with an estimated annual revenue of $60M.",
+        "issues": [],
+        "reason": "The passage states MeUndies has grown 1,583% with an estimated annual revenue of $60M."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P9"
+        ],
+        "quote": "At MeUndies, we believe your underwear should be the softest part of your day.",
+        "issues": [],
+        "reason": "The passage directly states that MeUndies believes underwear should be the softest part of your day."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "fail",
+  "reasons": [
+    "3 deterministic check error(s)"
+  ],
+  "created_at": "2026-11-22T23:33:30+00:00",
+  "audit_sha256": "7aa98124b961d03c10f9c99b976197fd494bf552eabb77bba185bcebf0254c03",
+  "dismissed_reviewer_flags": []
+}

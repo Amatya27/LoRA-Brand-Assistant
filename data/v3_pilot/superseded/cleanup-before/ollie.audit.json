@@ -1,0 +1,92 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "ollie",
+  "bound_to": {
+    "packet_sha256": "e920cbd1b5574d5d76c6ac2426b5ba8375d87eb14a41dee89b6478771f75924a",
+    "prompt_sha256": "f452be5d163e4e974c46ca0c14bb0786cbf3cf633cf017bd2b23c0fdea4b1ac0",
+    "completion_sha256": "62bf3efaa83eb802b971ba749ff3ad79a3379cfce7dd1d3733863a5cb147ca1f",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [],
+    "warnings": []
+  },
+  "raw_response_sha256": "99f53dddf0d38050f187978146ab047faad045c7d7fb058a4bad6e70e844d68e",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"the brand opted to run a charitable social media campaign around the big game called the “Supper Bowl Extravaganza” for a fraction of the cost.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states Ollie ran a charitable social media campaign for a fraction of the cost of a Super Bowl commercial.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\",\n        \"P4\"\n      ],\n      \"quote\": \"Van Leeuwen … has teamed up with fresh, human-grade dog food brand Ollie to launch its first-ever ice cream for dogs.\",\n      \"issues\": [],\n      \"reason\": \"Both passages confirm Ollie partnered with Van Leeuwen to launch ice cream for dogs.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Ollie enabled marketers to create and manage content independently, improved collaboration across engineering, marketing, product, and design, and increased software change velocity while supporting A/B testing and faster campaign launches.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states these benefits as a result of using Storyblok.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"Ollie, the US pet food brand, needed to rebrand and future-proof its website while reducing dependence on developers.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states Ollie's need to rebrand and future-proof its website.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"Ollie is a US pet food brand that makes human-grade meals for pups\"\n    }\n  ],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "the brand opted to run a charitable social media campaign around the big game called the “Supper Bowl Extravaganza” for a fraction of the cost.",
+        "issues": [],
+        "reason": "The passage explicitly states Ollie ran a charitable social media campaign for a fraction of the cost of a Super Bowl commercial."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2",
+          "P4"
+        ],
+        "quote": "Van Leeuwen … has teamed up with fresh, human-grade dog food brand Ollie to launch its first-ever ice cream for dogs.",
+        "issues": [],
+        "reason": "Both passages confirm Ollie partnered with Van Leeuwen to launch ice cream for dogs."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Ollie enabled marketers to create and manage content independently, improved collaboration across engineering, marketing, product, and design, and increased software change velocity while supporting A/B testing and faster campaign launches.",
+        "issues": [],
+        "reason": "The passage directly states these benefits as a result of using Storyblok."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "Ollie, the US pet food brand, needed to rebrand and future-proof its website while reducing dependence on developers.",
+        "issues": [],
+        "reason": "The passage explicitly states Ollie's need to rebrand and future-proof its website."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [
+    "C2: reviewer quote does not occur in the referenced passage(s)"
+  ],
+  "status": "unresolved",
+  "reasons": [
+    "reviewer response invalid or incomplete",
+    "C2: reviewer quote does not occur in the referenced passage(s)"
+  ],
+  "created_at": "2026-11-23T01:49:41+00:00",
+  "audit_sha256": "ce221ddf4df8d7e7c98e8cece7d9690e1c6c5ff2d283519266a7774142b35eb3",
+  "dismissed_reviewer_flags": [
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "Ollie is a US pet food brand that makes human-grade meals for pups"
+      },
+      "reason": "sentence in brand_summary carries a claim marker; judged via its claim",
+      "matched_sentence": "ollie is a us pet food brand that makes human grade meals for pups"
+    }
+  ]
+}

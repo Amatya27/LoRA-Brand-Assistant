@@ -1,0 +1,28 @@
+{
+  "schema_version": "brandpilot.auto_accept.v1",
+  "company_id": "blue-bottle-coffee",
+  "acceptance_basis": "auto_threshold_0.7",
+  "human_reviewed": false,
+  "note": "accepted automatically at groundedness >= 0.7 after removing unsupported claims; NOT a human approval",
+  "threshold": 0.7,
+  "bound_to": {
+    "packet_sha256": "d852ab4ec6e731c43a421176423346566d6fa479cc9915d95e9fc32e12837aa9",
+    "prompt_sha256": "4f6594c7d16672facb22ac45677fbe4373c912d65fd041402e926d248cf26a6b",
+    "completion_sha256": "bcfa9f861956d08d3bb2eeab6fa01f40a705bf71c4337e8bfb33651ea688184d",
+    "audit_sha256": "1d33bbe1397dfafb4a6a1686fa2fe6bbd40ee71a80f81c5ceb061457db3f847d"
+  },
+  "groundedness_before_pruning": 0.875,
+  "claims_total_before_pruning": 8,
+  "removed_claims": [
+    "C8"
+  ],
+  "removed_claim_reasons": {
+    "C8": "deterministic: claim C8: quote does not occur in cited passage(s) ['P10']"
+  },
+  "removed_sentences": [],
+  "original_completion_sha256": "2d9e8cdbdd6187e0e9c8a6dbaccd13653329b4fbfd2fd4ea153f724cb473edd8",
+  "original_audit_sha256": "e7e2f3ab256d44d64ddaaf46f881a6e80a1011f8f849ca5cf39dc5db890f2e95",
+  "groundedness_after_pruning": 1.0,
+  "created_at": "2026-11-23T03:00:51+00:00",
+  "record_sha256": "8473dfb4b8c7d1fccd08e43d73caf587c6572b8a642cadbaa9b97be53fd666fe"
+}

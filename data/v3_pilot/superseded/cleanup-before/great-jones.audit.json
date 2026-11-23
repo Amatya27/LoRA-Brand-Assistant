@@ -1,0 +1,107 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "great-jones",
+  "bound_to": {
+    "packet_sha256": "75f6bf87251ae447644c0e89f001ac825e7094480b82b2853d3e82e3a2d8e9cf",
+    "prompt_sha256": "98eea24a0e907995b5601a81768c14e0c4090507e83f4ca6493f4fab6d016775",
+    "completion_sha256": "a57d4acb5d3a2d6c23e2c6ef7fa348ae8ad3fbf4acd08805cf3b4e64c372b650",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [
+      "email_subject: vendor/provider claim C3 (P4) is not attributed to its source (adlibrary) in the prose: \"Collaboration Opportunity: Showcase Great Jones' Kitchenware with Food Photograp\"",
+      "email_body: vendor/provider claim C5 (P6) is not attributed to its source (motionapp) in the prose: \"The post would feature a carousel of Great Jones' products styled with food phot\"",
+      "collaboration_opportunities[0]: vendor/provider claim C3 (P4) is not attributed to its source (adlibrary) in the prose: \"Collaborate on an Instagram post featuring a carousel of Great Jones' products s\"",
+      "instagram_post_idea.hook: vendor/provider claim C5 (P6) is not attributed to its source (motionapp) in the prose: \"Discover the art of cooking with Great Jones' beautifully designed kitchenware .\"",
+      "instagram_post_idea.concept: vendor/provider claim C3 (P4) is not attributed to its source (adlibrary) in the prose: \"A carousel post showcasing Great Jones' products styled with food photography, h\""
+    ],
+    "warnings": [
+      "claim C4: not referenced by any field"
+    ]
+  },
+  "raw_response_sha256": "5067d27315c31696e8f4028665b6a6cfdce3c9bbdccb5ccd931e008b4e366a0b",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P10\"\n      ],\n      \"quote\": \"Great Jones is a New York-based, women-run kitchenware company founded with the mission to equip and empower home cooking\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that Great Jones is a New York-based, women-run kitchenware company.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Great Jones positions its products as \\\"aspirational millennial home goods,\\\" successfully creating a niche that combines style with functionality\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states Great Jones positions its products as 'aspirational millennial home goods'.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"Great Jones' ads succeed through food media editorial quality — the photography and copy standards of a Bon Appétit shoot, applied to cookware marketing.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that Great Jones' ads succeed through food media editorial quality.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"Great Jones is presented as a kitchenware brand that prioritizes both aesthetics and functionality.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Great Jones prioritizes both aesthetics and functionality.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"Great Jones is positioned as a modern, aesthetically-driven kitchenware brand that emphasizes both functionality and style.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Great Jones is positioned as a modern, aesthetically-driven kitchenware brand.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"Great Jones advertises primarily on Instagram and Facebook\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that Great Jones advertises primarily on Instagram and Facebook.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P10"
+        ],
+        "quote": "Great Jones is a New York-based, women-run kitchenware company founded with the mission to equip and empower home cooking",
+        "issues": [],
+        "reason": "The passage directly states that Great Jones is a New York-based, women-run kitchenware company."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Great Jones positions its products as \"aspirational millennial home goods,\" successfully creating a niche that combines style with functionality",
+        "issues": [],
+        "reason": "The passage explicitly states Great Jones positions its products as 'aspirational millennial home goods'."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "Great Jones' ads succeed through food media editorial quality — the photography and copy standards of a Bon Appétit shoot, applied to cookware marketing.",
+        "issues": [],
+        "reason": "The passage directly states that Great Jones' ads succeed through food media editorial quality."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "Great Jones is presented as a kitchenware brand that prioritizes both aesthetics and functionality.",
+        "issues": [],
+        "reason": "The passage states that Great Jones prioritizes both aesthetics and functionality."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "Great Jones is positioned as a modern, aesthetically-driven kitchenware brand that emphasizes both functionality and style.",
+        "issues": [],
+        "reason": "The passage states that Great Jones is positioned as a modern, aesthetically-driven kitchenware brand."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "Great Jones advertises primarily on Instagram and Facebook",
+        "issues": [],
+        "reason": "The passage directly states that Great Jones advertises primarily on Instagram and Facebook."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "fail",
+  "reasons": [
+    "5 deterministic check error(s)"
+  ],
+  "created_at": "2026-11-23T01:40:31+00:00",
+  "audit_sha256": "4d198b5d4c2de521d2efe3039bb892f3a8661d58079e5fbd905b9f29e1acf112",
+  "dismissed_reviewer_flags": []
+}

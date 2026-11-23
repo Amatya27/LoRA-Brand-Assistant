@@ -1,0 +1,26 @@
+{
+  "groundedness": 1.0,
+  "claims_total": 5,
+  "claims_supported": 5,
+  "claim_support": {
+    "C1": "supported",
+    "C2": "supported",
+    "C3": "supported",
+    "C4": "supported",
+    "C5": "supported"
+  },
+  "reasons": [],
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "removed_sentences": [
+    {
+      "field": "current_marketing_strategy[0]",
+      "sentence": "They don’t play games with their customers in the form of sales and discounts.",
+      "reason": "factual sentence without a claim marker: 'They don’t play games with their customers in the form of sales and discounts."
+    }
+  ],
+  "decision": "prune",
+  "completion_sha256": "e67768957c3ba4a99b558755976314aafe9672009d6bd992d6aaa70792c33bb0",
+  "audit_sha256": "fcd4132862fada7ab730fa801b6a7c2dc91f3dd835d87480acce74b3caa604c9",
+  "pruned_completion_sha256": "db145b325b9879b55f643f53b34c6a5d5b17ff57ebff9820780fa8a5272be58e"
+}

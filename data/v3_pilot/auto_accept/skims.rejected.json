@@ -3,7 +3,7 @@
   "acceptance_basis": "auto_threshold_0.7",
   "decision": "reject",
   "reasons": [
-    "pruned draft fails check_draft: email_body: vendor/provider claim C6 (P8) is not attributed to its source (enrichlabs) in the prose: 'This campaign would align with your existing strategy of pairing evergreen conti' (+3 more)"
+    "removing unsupported claims and ungrounded sentences emptied ['instagram_post_idea.why_it_fits']"
   ],
   "groundedness": 1.0,
   "claim_support": {
@@ -16,6 +16,6 @@
   },
   "removed_claims": [],
   "label_completion_sha256": "1ecfe61f880184ec404e3f273c8eb04dc3350cd8ca9aef99fc344a0bba0170f2",
-  "audit_sha256": "f9095277a97ebf9c54853585728705c06070ebaaf5bc826442182ddcafbac1d9",
-  "created_at": "2026-11-23T00:28:47+00:00"
+  "audit_sha256": "11334eef84fc2fc11c06101a888591e70cc0a87fc794ca71a53e48d533eaee26",
+  "created_at": "2026-11-23T02:50:56+00:00"
 }

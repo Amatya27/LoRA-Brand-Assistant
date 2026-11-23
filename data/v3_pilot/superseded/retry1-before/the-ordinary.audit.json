@@ -1,0 +1,81 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "the-ordinary",
+  "bound_to": {
+    "packet_sha256": "bc6d56328cef74fe5b4ca81cecc9cc6ccf9ee9c5f349313aa63a85007886fc9e",
+    "prompt_sha256": "5e1e9500796bc32c139b1bcbc2457e0a3df532ac2b1ac0cfb0b42f3616b594fc",
+    "completion_sha256": "76fcfab7c1bd370b5821bd4c35d93f4122bdb60e5069f1442706ab5c9154b780",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [
+      "decision: the email must propose an Instagram post"
+    ],
+    "warnings": []
+  },
+  "raw_response_sha256": "8fa35b52e2a0643314275501d350ea7268ec95bbb8c81417c744b1af1af0bae4",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"Our philosophy that quality is not determined by price.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states The Ordinary's philosophy is that quality is not determined by price.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"The Ordinary’s campaigns focus on creating content that resonates with an informed and skincare-savvy audience.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that The Ordinary's campaigns focus on creating content for an informed and skincare-savvy audience.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"Collaboration is a key component of The Ordinary’s marketing strategy. By partnering with like-minded businesses, they extend their reach while maintaining alignment with their core values.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms that The Ordinary collaborates with like-minded brands to extend its reach and maintain its values.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"The Ordinary’s new campaign takes aim at the beauty industry with a pop-up concept, “The Markup Marché”: a conceptual grocery store where everyday items are rebranded and overpriced to mirror how skincare is often marketed as “lifechanging” products and then sold at a very high price.\",\n      \"issues\": [],\n      \"reason\": \"The passage describes a campaign where The Ordinary calls out the beauty industry's marketing tactics.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "Our philosophy that quality is not determined by price.",
+        "issues": [],
+        "reason": "The passage explicitly states The Ordinary's philosophy is that quality is not determined by price."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "The Ordinary’s campaigns focus on creating content that resonates with an informed and skincare-savvy audience.",
+        "issues": [],
+        "reason": "The passage directly states that The Ordinary's campaigns focus on creating content for an informed and skincare-savvy audience."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "Collaboration is a key component of The Ordinary’s marketing strategy. By partnering with like-minded businesses, they extend their reach while maintaining alignment with their core values.",
+        "issues": [],
+        "reason": "The passage confirms that The Ordinary collaborates with like-minded brands to extend its reach and maintain its values."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "The Ordinary’s new campaign takes aim at the beauty industry with a pop-up concept, “The Markup Marché”: a conceptual grocery store where everyday items are rebranded and overpriced to mirror how skincare is often marketed as “lifechanging” products and then sold at a very high price.",
+        "issues": [],
+        "reason": "The passage describes a campaign where The Ordinary calls out the beauty industry's marketing tactics."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "fail",
+  "reasons": [
+    "1 deterministic check error(s)"
+  ],
+  "created_at": "2026-11-23T00:21:00+00:00",
+  "audit_sha256": "62d68436cd95287a6c683ac2dadbdc51daf47ca08f953608f8aa3886ff682a83",
+  "dismissed_reviewer_flags": []
+}

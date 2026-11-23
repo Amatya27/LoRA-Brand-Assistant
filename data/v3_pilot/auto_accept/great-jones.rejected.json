@@ -3,7 +3,7 @@
   "acceptance_basis": "auto_threshold_0.7",
   "decision": "reject",
   "reasons": [
-    "pruned draft fails check_draft: email_subject: vendor/provider claim C3 (P4) is not attributed to its source (adlibrary) in the prose: \"Collaboration Opportunity: Showcase Great Jones' Kitchenware with Food Photograp\" (+4 more)"
+    "removing unsupported claims and ungrounded sentences emptied ['email_subject']"
   ],
   "groundedness": 1.0,
   "claim_support": {
@@ -16,6 +16,6 @@
   },
   "removed_claims": [],
   "label_completion_sha256": "a57d4acb5d3a2d6c23e2c6ef7fa348ae8ad3fbf4acd08805cf3b4e64c372b650",
-  "audit_sha256": "304e3a7f66bd7c8c21ee32acd3c7ab3328838ab9496c6a86231a6ebb07879f79",
-  "created_at": "2026-11-23T00:28:43+00:00"
+  "audit_sha256": "4d198b5d4c2de521d2efe3039bb892f3a8661d58079e5fbd905b9f29e1acf112",
+  "created_at": "2026-11-23T02:50:55+00:00"
 }

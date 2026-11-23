@@ -1,0 +1,111 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "dagne-dover",
+  "bound_to": {
+    "packet_sha256": "154e00824809fd91c64e981bed0eae71fec7f06a34a62602da020fe53a88ae83",
+    "prompt_sha256": "d752800e13104077be7355621e1d538ae3b6a09bc757b85e61e3646b403cf021",
+    "completion_sha256": "ac5e21fc217a0aa65b0f7c103233d46e34fd82960d3e9aed5ae2bcd071f77054",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [
+      "brand_summary: vendor/provider claim C3 (P5) is not attributed to its source (modash) in the prose: 'InstagramReels 77.5% InstagramFeed Posts 22.5% TikTokPosts 100% YouTubeLong-form'",
+      "brand_summary: factual sentence without a claim marker: 'Dagne Dover is a bag brand based in New York City.'",
+      "brand_summary: factual sentence without a claim marker: 'Founded by three women.'",
+      "email_subject: vendor/provider claim C6 (P10) is not attributed to its source (linkedin) in the prose: 'Collaboration Opportunity: Real Customer Stories for Instagram Reels '",
+      "email_body: vendor/provider claim C4 (P6) is not attributed to its source (modash) in the prose: 'This approach has been shown to be effective in driving engagement and organic g'",
+      "instagram_post_idea.hook: vendor/provider claim C6 (P10) is not attributed to its source (linkedin) in the prose: 'Real Stories, Real Style: How Dagne Dover Bags Make Life Easier '",
+      "instagram_post_idea.concept: vendor/provider claim C6 (P10) is not attributed to its source (linkedin) in the prose: 'A carousel post featuring real customer stories and testimonials about how Dagne'",
+      "instagram_post_idea.why_it_fits: the pitch must be for Instagram, but proposes another channel: \"This concept aligns with LinkedIn's report that Dagne Dover's marketing stands out because\""
+    ],
+    "warnings": []
+  },
+  "raw_response_sha256": "10cb90b4f4685293b5aed7b989681b4005e5d4a54951a5c4ab2c4e6cbc6b5b31",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Dagne Dover is a bag brand based in New York City. Founded by three women. We make hyper-functional, perfromance driven bags.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states these facts about Dagne Dover.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Dagne Dover has scaled back paid spend dramatically over the past 18-24 months due to poor ROI.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly reports that Dagne Dover has reduced paid advertising due to ROI.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"Dagne Dover's influencer activity by platform Share of sponsored content by social network ### Content format by platform Share of all sponsored posts. InstagramReels 77.5% InstagramFeed Posts 22.5% TikTokPosts 100% YouTubeLong-form 86.4% YouTubeShorts 13.6%.\",\n      \"issues\": [],\n      \"reason\": \"The passage provides data on Dagne Dover's influencer marketing platform usage.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"Dagne Dover's strategy suggests cost-efficiency and engagement-focused partnerships.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Dagne Dover's strategy focuses on cost-efficiency and engagement.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P10\"\n      ],\n      \"quote\": \"Dagne Dover has also reduced some of its Google and Meta advertising because the returns did not support the level of spending.\",\n      \"issues\": [],\n      \"reason\": \"The passage reports Dagne Dover's reduction in Google and Meta advertising.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P10\"\n      ],\n      \"quote\": \"Its marketing stands out because the company gives customers, retail staff, partners, and communities clear reasons to talk about its products.\",\n      \"issues\": [],\n      \"reason\": \"The passage states Dagne Dover's marketing stands out due to giving customers reasons to talk about their products.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P1"
+        ],
+        "quote": "Dagne Dover is a bag brand based in New York City. Founded by three women. We make hyper-functional, perfromance driven bags.",
+        "issues": [],
+        "reason": "The passage explicitly states these facts about Dagne Dover."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Dagne Dover has scaled back paid spend dramatically over the past 18-24 months due to poor ROI.",
+        "issues": [],
+        "reason": "The passage directly reports that Dagne Dover has reduced paid advertising due to ROI."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "Dagne Dover's influencer activity by platform Share of sponsored content by social network ### Content format by platform Share of all sponsored posts. InstagramReels 77.5% InstagramFeed Posts 22.5% TikTokPosts 100% YouTubeLong-form 86.4% YouTubeShorts 13.6%.",
+        "issues": [],
+        "reason": "The passage provides data on Dagne Dover's influencer marketing platform usage."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "Dagne Dover's strategy suggests cost-efficiency and engagement-focused partnerships.",
+        "issues": [],
+        "reason": "The passage directly states Dagne Dover's strategy focuses on cost-efficiency and engagement."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P10"
+        ],
+        "quote": "Dagne Dover has also reduced some of its Google and Meta advertising because the returns did not support the level of spending.",
+        "issues": [],
+        "reason": "The passage reports Dagne Dover's reduction in Google and Meta advertising."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P10"
+        ],
+        "quote": "Its marketing stands out because the company gives customers, retail staff, partners, and communities clear reasons to talk about its products.",
+        "issues": [],
+        "reason": "The passage states Dagne Dover's marketing stands out due to giving customers reasons to talk about their products."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [
+    "C3: reviewer quote does not occur in the referenced passage(s)"
+  ],
+  "status": "fail",
+  "reasons": [
+    "8 deterministic check error(s)",
+    "reviewer response also invalid: C3: reviewer quote does not occur in the referenced passage(s)"
+  ],
+  "created_at": "2026-11-22T23:56:13+00:00",
+  "audit_sha256": "221875c14c9c15439a3c1aae91ea2acc5d2d4abac0820e01ce6d3eecd9647294",
+  "dismissed_reviewer_flags": []
+}

@@ -1,0 +1,97 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "anker",
+  "bound_to": {
+    "packet_sha256": "f2c692121153988ec75afb7207c51f88b472faaaa8a2e6fa68ff901ea60f1af3",
+    "prompt_sha256": "1f611349912b21c46d2bd1352429dd3b6348bd8531e1179d39fabb9f97e0cf3e",
+    "completion_sha256": "570a6b7c021cdd38f01e7a76a449b3b1a7e8ad9438f651c43ec37942ce46b8d0",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [
+      "email_body: vendor/provider claim C3 (P10) is not attributed to its source (stride-social) in the prose: 'This post would feature testimonials from creators and influencers who have used'",
+      "email_body: factual-looking sentence without a claim marker: \"Hi Anker Marketing Team,\\n\\nWe're reaching out to propose a collaboration for an Instagram p\"",
+      "current_marketing_strategy[0]: vendor/provider claim C5 (P3) is not attributed to its source (stride-social) in the prose: 'Stride Social reports that Anker collaborated with product review creators speci'",
+      "instagram_post_idea.concept: vendor/provider claim C5 (P3) is not attributed to its source (stride-social) in the prose: \"A carousel post showcasing Anker's latest products, including the Anker SOLIX F3\"",
+      "instagram_post_idea.why_it_fits: vendor/provider claim C5 (P3) is not attributed to its source (stride-social) in the prose: \"This post would align with Anker's strategy of promoting their products through \""
+    ],
+    "warnings": [
+      "claim C4: not referenced by any field"
+    ]
+  },
+  "raw_response_sha256": "f3a10c1594dac7b7ff6bc79765f05ae51ce1cd2ea232d0478ec423fc732b405e",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"Anker is the unified consumer brand of Anker Innovations.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that Anker is the unified consumer brand of Anker Innovations.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P6\"\n      ],\n      \"quote\": \"Our products are organized under five categories: Anker Charging, Anker SOLIX, Anker eufy, Anker soundcore, and Anker eufyMake.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Anker's product categories.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P10\"\n      ],\n      \"quote\": \"Anker’s influencer campaign achieved staggering engagement through product review content.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that Anker's influencer campaign achieved staggering engagement.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Generating over 12 million views, 845,000 likes, and 103,000 shares.\",\n      \"issues\": [],\n      \"reason\": \"The passage provides specific numbers for views, likes, and shares.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"we collaborated with product review creators specialising in home and tech sub-niches.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Anker collaborated with product review creators.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "Anker is the unified consumer brand of Anker Innovations.",
+        "issues": [],
+        "reason": "The passage explicitly states that Anker is the unified consumer brand of Anker Innovations."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P6"
+        ],
+        "quote": "Our products are organized under five categories: Anker Charging, Anker SOLIX, Anker eufy, Anker soundcore, and Anker eufyMake.",
+        "issues": [],
+        "reason": "The passage directly states Anker's product categories."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P10"
+        ],
+        "quote": "Anker’s influencer campaign achieved staggering engagement through product review content.",
+        "issues": [],
+        "reason": "The passage directly states that Anker's influencer campaign achieved staggering engagement."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "Generating over 12 million views, 845,000 likes, and 103,000 shares.",
+        "issues": [],
+        "reason": "The passage provides specific numbers for views, likes, and shares."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "we collaborated with product review creators specialising in home and tech sub-niches.",
+        "issues": [],
+        "reason": "The passage states that Anker collaborated with product review creators."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "fail",
+  "reasons": [
+    "5 deterministic check error(s)"
+  ],
+  "created_at": "2026-11-22T23:44:07+00:00",
+  "audit_sha256": "880b35d3e2eb011492117618cd1425cd34923d84c73e9e5b32e6eef6d4ff40d5",
+  "dismissed_reviewer_flags": []
+}

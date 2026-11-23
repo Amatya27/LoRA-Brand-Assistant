@@ -4,7 +4,7 @@
   "bound_to": {
     "packet_sha256": "2c85d8e1f0945ce73988a750150778cf996e8492d0b3001457c17989024afb42",
     "prompt_sha256": "2a6d56512b0959da81ff368d6b38030016f7e769baba339d049f093fdbbb5440",
-    "completion_sha256": "dacb79937bc379cf1955e3a0b4d0a855e52f1369e3a7e82bafdaa54002a897fb",
+    "completion_sha256": "6561413369650836219c0bcdf6d9a6c2762d775689c99d7085b398be4df1d11b",
     "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
   },
   "reviewer_config": {
@@ -16,14 +16,11 @@
     "max_tokens": 4096
   },
   "deterministic": {
-    "errors": [
-      "brand_summary: factual sentence without a claim marker: 'Away is a travel lifestyle brand that has launched limited edition collections in partners'",
-      "current_marketing_strategy[0]: factual sentence without a claim marker: 'Away has launched limited edition collections in partnership with Warner Bros.'"
-    ],
+    "errors": [],
     "warnings": []
   },
-  "raw_response_sha256": "08477398ec57049c3c30ed9d674259f9c0026413ea64c3aa5585988595a3f7ae",
-  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"The White Lotus x Away. Designed in partnership with Warner Bros. Discovery Global Consumer Products, this limited edition collection is inspired by luxury retreats and the bold spirit of the Emmy®-winning HBO Original Series, The White Lotus, bringing its indulgent, transformative energy to a curated assortment of travel essentials.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states Away launched a limited edition collection with Warner Bros. Discovery Global Consumer Products inspired by The White Lotus.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Away also forged celebrity collaborations with notable figures like Karlie Kloss, which helped bring their products to a wider audience.\",\n      \"issues\": [],\n      \"reason\": \"The passage mentions Away's collaborations with celebrities, specifically Karlie Kloss.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"Limited edition colours and collaborations to create ongoing news Rather than relying only on its core range, Away regularly released limited edition colourways and collaborations, giving press and social media something new to cover without needing an entirely new product line.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states Away regularly releases limited edition colorways and collaborations.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"Instagram has been an essential driver in developing the brand's unique identity and fostering a sense of community around it.\",\n      \"issues\": [],\n      \"reason\": \"The passage highlights Instagram's role in building Away's brand identity and community.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"In July 2018, Away launched The Collective, a community of brand ambassadors that actively expand Away's presence on social channels and cultivate awareness and affinity within their networks.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms Away launched The Collective, a community of brand ambassadors.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"After receiving thousands of inquiries on social media from customers asking for tips and recommendations ahead of upcoming trips, Away recognized a whitespace in the travel journalism space and successfully launched Here — a trusted travel source to celebrate the voices and stories of travelers all over the world.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Away launched Here, a travel magazine, due to customer inquiries on social media.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "raw_response_sha256": "21d7bec358ee7344f62a863118891c67903223a97d341b5e80cbbc3a114ac06c",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P1\"\n      ],\n      \"quote\": \"Away Launches a Luxurious Travel Collection to Celebrate Season 3 of the HBO® Original Series The ## White Lotus Feb 04, 2025 Away, the original travel lifestyle brand, is proud to unveil its latest collaboration: The White Lotus x Away. Designed in partnership with Warner Bros. Discovery Global Consumer Products, this limited edition collection is inspired by luxury retreats and the bold spirit of the Emmy®-winning HBO Original Series, The White Lotus, bringing its indulgent, transformative energy to a curated assortment of travel essentials.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states Away launched a limited edition collection with Warner Bros. Discovery Global Consumer Products inspired by The White Lotus.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"Away also forged celebrity collaborations with notable figures like Karlie Kloss, which helped bring their products to a wider audience.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly mentions Away's collaborations with celebrities like Karlie Kloss to expand brand awareness.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"Limited edition colours and collaborations to create ongoing news Rather than relying only on its core range, Away regularly released limited edition colourways and collaborations, giving press and social media something new to cover without needing an entirely new product line.\",\n      \"issues\": [],\n      \"reason\": \"The passage states Away regularly releases limited edition colorways and collaborations.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"Instagram has been an essential driver in developing the brand's unique identity and fostering a sense of community around it.\",\n      \"issues\": [],\n      \"reason\": \"The passage highlights Instagram's role in building Away's brand identity and community.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"In July 2018, Away launched The Collective, a community of brand ambassadors that actively expand Away's presence on social channels and cultivate awareness and affinity within their networks.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms Away launched The Collective, a community of brand ambassadors.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"After receiving thousands of inquiries on social media from customers asking for tips and recommendations ahead of upcoming trips, Away recognized a whitespace in the travel journalism space and successfully launched Here — a trusted travel source to celebrate the voices and stories of travelers all over the world.\",\n      \"issues\": [],\n      \"reason\": \"The passage states that Away launched Here, a magazine, due to customer inquiries on social media.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
   "review": {
     "identity_ok": true,
     "claims": [
@@ -33,7 +30,7 @@
         "passage_ids": [
           "P1"
         ],
-        "quote": "The White Lotus x Away. Designed in partnership with Warner Bros. Discovery Global Consumer Products, this limited edition collection is inspired by luxury retreats and the bold spirit of the Emmy®-winning HBO Original Series, The White Lotus, bringing its indulgent, transformative energy to a curated assortment of travel essentials.",
+        "quote": "Away Launches a Luxurious Travel Collection to Celebrate Season 3 of the HBO® Original Series The ## White Lotus Feb 04, 2025 Away, the original travel lifestyle brand, is proud to unveil its latest collaboration: The White Lotus x Away. Designed in partnership with Warner Bros. Discovery Global Consumer Products, this limited edition collection is inspired by luxury retreats and the bold spirit of the Emmy®-winning HBO Original Series, The White Lotus, bringing its indulgent, transformative energy to a curated assortment of travel essentials.",
         "issues": [],
         "reason": "The passage explicitly states Away launched a limited edition collection with Warner Bros. Discovery Global Consumer Products inspired by The White Lotus."
       },
@@ -45,7 +42,7 @@
         ],
         "quote": "Away also forged celebrity collaborations with notable figures like Karlie Kloss, which helped bring their products to a wider audience.",
         "issues": [],
-        "reason": "The passage mentions Away's collaborations with celebrities, specifically Karlie Kloss."
+        "reason": "The passage directly mentions Away's collaborations with celebrities like Karlie Kloss to expand brand awareness."
       },
       {
         "claim_id": "C3",
@@ -55,7 +52,7 @@
         ],
         "quote": "Limited edition colours and collaborations to create ongoing news Rather than relying only on its core range, Away regularly released limited edition colourways and collaborations, giving press and social media something new to cover without needing an entirely new product line.",
         "issues": [],
-        "reason": "The passage directly states Away regularly releases limited edition colorways and collaborations."
+        "reason": "The passage states Away regularly releases limited edition colorways and collaborations."
       },
       {
         "claim_id": "C4",
@@ -85,18 +82,16 @@
         ],
         "quote": "After receiving thousands of inquiries on social media from customers asking for tips and recommendations ahead of upcoming trips, Away recognized a whitespace in the travel journalism space and successfully launched Here — a trusted travel source to celebrate the voices and stories of travelers all over the world.",
         "issues": [],
-        "reason": "The passage states that Away launched Here, a travel magazine, due to customer inquiries on social media."
+        "reason": "The passage states that Away launched Here, a magazine, due to customer inquiries on social media."
       }
     ],
     "unmarked_factual_statements": [],
     "absence_as_weakness": []
   },
   "review_validation_errors": [],
-  "status": "fail",
-  "reasons": [
-    "2 deterministic check error(s)"
-  ],
-  "created_at": "2026-11-22T23:31:45+00:00",
-  "audit_sha256": "b3de8a0152091198f1d350c33deb92fb3ad53b6c1fd9ec39002f45116ba459d3",
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-23T02:52:02+00:00",
+  "audit_sha256": "8424f8e1acff6e70bf8aeea2182e4b495134a4b61767be65318c868a31cfc2e9",
   "dismissed_reviewer_flags": []
 }

@@ -1,0 +1,46 @@
+{
+  "groundedness": 1.0,
+  "claims_total": 5,
+  "claims_supported": 5,
+  "claim_support": {
+    "C1": "supported",
+    "C2": "supported",
+    "C3": "supported",
+    "C4": "supported",
+    "C5": "supported"
+  },
+  "reasons": [],
+  "removed_claims": [],
+  "removed_claim_reasons": {},
+  "removed_sentences": [
+    {
+      "field": "likely_target_audience",
+      "sentence": "Charlotte Tilbury’s social media relies on real, relatable content.",
+      "reason": "factual sentence without a claim marker: 'Charlotte Tilbury’s social media relies on real, relatable content.'"
+    },
+    {
+      "field": "current_marketing_strategy[1]",
+      "sentence": "Charlotte Tilbury’s social media relies on real, relatable content.",
+      "reason": "factual sentence without a claim marker: 'Charlotte Tilbury’s social media relies on real, relatable content.'"
+    },
+    {
+      "field": "current_marketing_strategy[2]",
+      "sentence": "Instagram is its main focus, where it’s most active and engaging {C4}.",
+      "reason": "vendor/provider claim C4 (P8) is not attributed to its source (projectpractical) in the prose: 'Instagram is its main fo"
+    },
+    {
+      "field": "current_marketing_strategy[2]",
+      "sentence": "According to ProjectPractical, Charlotte Tilbury, a top beauty brand, has a solid social media plan.",
+      "reason": "factual sentence without a claim marker: 'According to ProjectPractical, Charlotte Tilbury, a top beauty brand, has a so"
+    },
+    {
+      "field": "current_marketing_strategy[2]",
+      "sentence": "It connects with fans online, using major platforms.",
+      "reason": "factual sentence without a claim marker: 'It connects with fans online, using major platforms.'"
+    }
+  ],
+  "decision": "prune",
+  "completion_sha256": "1a397495386c471c8913b0ad5c0b8f95fcf8a6d53f3604a7584035bdcc431ea1",
+  "audit_sha256": "7aa7dd552f0aaa67bacc8622f7f11b206734aa6f21f51aaa4482627bd1d00c8c",
+  "pruned_completion_sha256": "944af9c091c8d103964ddb14046d148370e7032af082d84ae89a0528f8ebd6ca"
+}

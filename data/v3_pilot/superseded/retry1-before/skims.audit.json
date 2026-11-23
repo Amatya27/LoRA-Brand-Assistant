@@ -1,0 +1,113 @@
+{
+  "schema_version": "brandpilot.audit.v3",
+  "company_id": "skims",
+  "bound_to": {
+    "packet_sha256": "1d536ade8c42674552240aa693216a06a44a073ad1eadc0ab1b0bdaa782fbdb8",
+    "prompt_sha256": "150413fefd12ca4a1a0ac92e25e4fc50d1c77c6b84014ee0d18c45231da221d0",
+    "completion_sha256": "1ecfe61f880184ec404e3f273c8eb04dc3350cd8ca9aef99fc344a0bba0170f2",
+    "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
+  },
+  "reviewer_config": {
+    "reviewer_prompt_version": "brandpilot.reviewer.v3.1",
+    "reviewer_system_sha256": "80ff2e308939fe6f88f68a80381a72dca71e2a7853d240ee299a9f5bdecdaaea",
+    "model": "mlx-community/gemma-3-12b-it-4bit",
+    "api_base": "http://localhost:8080/v1",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "deterministic": {
+    "errors": [
+      "email_body: vendor/provider claim C6 (P8) is not attributed to its source (enrichlabs) in the prose: 'This campaign would align with your existing strategy of pairing evergreen conti'",
+      "current_marketing_strategy[3]: vendor/provider claim C6 (P8) is not attributed to its source (enrichlabs) in the prose: 'Hashtags like #skimshaul encourage user participation .'",
+      "current_marketing_strategy[3]: factual sentence without a claim marker: 'According to enrichlabs.ai, SKIMS uses TikTok and Instagram to create a community.'",
+      "instagram_post_idea.why_it_fits: vendor/provider claim C6 (P8) is not attributed to its source (enrichlabs) in the prose: \"This aligns with SKIMS' strategy of leveraging seasonal campaigns and influencer\""
+    ],
+    "warnings": []
+  },
+  "raw_response_sha256": "661a140812da13734b92494667e3d3ec3b70db36dfd64565a09e032661fed07e",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"SKIMS is a solutions-oriented brand creating the next generation of underwear, loungewear and\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that SKIMS is a solutions-oriented brand.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"The NBA partnership supports men’s expansion with athlete storytelling, broadcast integrations, and retail displays that anchor comfort and everyday performance credibly.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states this about the NBA partnership.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"SKIMS pairs evergreen continuity with scarcity moments that energize demand and accelerate list growth.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states this about SKIMS' strategy.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"SKIMS scales influence through a portfolio approach that mixes celebrity, athlete, and community voices.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states this about SKIMS' influencer strategy.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"The brand actively engages followers through comments and feedback, cultivating a loyal, authentic community.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states this about SKIMS' community engagement.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P8\"\n      ],\n      \"quote\": \"SKIMS uses TikTok and Instagram to create a community. Hashtags like #skimshaul encourage user participation.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states this about SKIMS' use of social media.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [\n    {\n      \"field\": \"brand_summary\",\n      \"text\": \"SKIMS is a solutions-oriented brand creating the next generation of underwear, loungewear and\"\n    }\n  ],\n  \"absence_as_weakness\": []\n}\n```",
+  "review": {
+    "identity_ok": true,
+    "claims": [
+      {
+        "claim_id": "C1",
+        "verdict": "supported",
+        "passage_ids": [
+          "P2"
+        ],
+        "quote": "SKIMS is a solutions-oriented brand creating the next generation of underwear, loungewear and",
+        "issues": [],
+        "reason": "The passage directly states that SKIMS is a solutions-oriented brand."
+      },
+      {
+        "claim_id": "C2",
+        "verdict": "supported",
+        "passage_ids": [
+          "P3"
+        ],
+        "quote": "The NBA partnership supports men’s expansion with athlete storytelling, broadcast integrations, and retail displays that anchor comfort and everyday performance credibly.",
+        "issues": [],
+        "reason": "The passage explicitly states this about the NBA partnership."
+      },
+      {
+        "claim_id": "C3",
+        "verdict": "supported",
+        "passage_ids": [
+          "P4"
+        ],
+        "quote": "SKIMS pairs evergreen continuity with scarcity moments that energize demand and accelerate list growth.",
+        "issues": [],
+        "reason": "The passage directly states this about SKIMS' strategy."
+      },
+      {
+        "claim_id": "C4",
+        "verdict": "supported",
+        "passage_ids": [
+          "P5"
+        ],
+        "quote": "SKIMS scales influence through a portfolio approach that mixes celebrity, athlete, and community voices.",
+        "issues": [],
+        "reason": "The passage directly states this about SKIMS' influencer strategy."
+      },
+      {
+        "claim_id": "C5",
+        "verdict": "supported",
+        "passage_ids": [
+          "P7"
+        ],
+        "quote": "The brand actively engages followers through comments and feedback, cultivating a loyal, authentic community.",
+        "issues": [],
+        "reason": "The passage directly states this about SKIMS' community engagement."
+      },
+      {
+        "claim_id": "C6",
+        "verdict": "supported",
+        "passage_ids": [
+          "P8"
+        ],
+        "quote": "SKIMS uses TikTok and Instagram to create a community. Hashtags like #skimshaul encourage user participation.",
+        "issues": [],
+        "reason": "The passage directly states this about SKIMS' use of social media."
+      }
+    ],
+    "unmarked_factual_statements": [],
+    "absence_as_weakness": []
+  },
+  "review_validation_errors": [],
+  "status": "fail",
+  "reasons": [
+    "4 deterministic check error(s)"
+  ],
+  "created_at": "2026-11-23T00:19:55+00:00",
+  "audit_sha256": "f9095277a97ebf9c54853585728705c06070ebaaf5bc826442182ddcafbac1d9",
+  "dismissed_reviewer_flags": [
+    {
+      "flag": {
+        "field": "brand_summary",
+        "text": "SKIMS is a solutions-oriented brand creating the next generation of underwear, loungewear and"
+      },
+      "reason": "sentence in brand_summary carries a claim marker; judged via its claim",
+      "matched_sentence": "skims is a solutions oriented brand creating the next generation of underwear loungewear and"
+    }
+  ]
+}

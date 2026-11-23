@@ -4,7 +4,7 @@
   "bound_to": {
     "packet_sha256": "791da27d22303d08cedc9d437c855427b75eb8bff068ff2eb025379fac27cc1b",
     "prompt_sha256": "7ad4921168f68a37119d889769dc3885edf437d344f9d9d4108a1870351b99db",
-    "completion_sha256": "e67768957c3ba4a99b558755976314aafe9672009d6bd992d6aaa70792c33bb0",
+    "completion_sha256": "db145b325b9879b55f643f53b34c6a5d5b17ff57ebff9820780fa8a5272be58e",
     "reviewer_config_sha256": "4a85728c219f1a72b4a916930e5b6bfefc827fdcaaf1155e130e5bd423475eb8"
   },
   "reviewer_config": {
@@ -16,13 +16,11 @@
     "max_tokens": 4096
   },
   "deterministic": {
-    "errors": [
-      "current_marketing_strategy[0]: factual sentence without a claim marker: 'They don’t play games with their customers in the form of sales and discounts.'"
-    ],
+    "errors": [],
     "warnings": []
   },
-  "raw_response_sha256": "3604ccc50d2de69773e40942ab89650c33fb47c45c54fe97827440b725d172ee",
-  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"We only partner with manufacturers and suppliers that uphold the highest ethical standards in a manner that is consistent with our core brand values.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that the company partners with suppliers upholding high ethical standards.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"comfortable and durable footwear with clean designs\",\n      \"issues\": [],\n      \"reason\": \"The passage describes their products as comfortable, durable, and with clean designs.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"We’ve built a special little family, which includes our loyal customers, and we want that sense of community to last forever.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly refers to a 'family' of loyal customers, indicating a community.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"We’re committed to continually improving the environmental and social impact of our business.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states their commitment to improving environmental and social impact.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"Our company has made efforts to accommodate as many of our customers and potential customers as is reasonable given our size, resources, and knowledge of our customers, and potential customer’s needs.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly states that the company has made efforts to accommodate customers.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
+  "raw_response_sha256": "522b79365e62875771ab10f9ecfbc328ec21db8915490be785eaea8b106ecd71",
+  "raw_response": "```json\n{\n  \"identity_ok\": true,\n  \"claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P2\"\n      ],\n      \"quote\": \"We only partner with manufacturers and suppliers that uphold the highest ethical standards in a manner that is consistent with our core brand values.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states that Thursday Boot Company partners with suppliers upholding high ethical standards.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P3\"\n      ],\n      \"quote\": \"comfortable and durable footwear with clean designs\",\n      \"issues\": [],\n      \"reason\": \"The passage describes their products as comfortable, durable, and with clean designs, aligning with the claim.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P4\"\n      ],\n      \"quote\": \"We’ve built a special little family, which includes our loyal customers, and we want that sense of community to last forever.\",\n      \"issues\": [],\n      \"reason\": \"The passage directly refers to a 'family' of loyal customers, indicating a community.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P5\"\n      ],\n      \"quote\": \"We’re committed to continually improving the environmental and social impact of our business.\",\n      \"issues\": [],\n      \"reason\": \"The passage explicitly states their commitment to improving environmental and social impact.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"verdict\": \"supported\",\n      \"passage_ids\": [\n        \"P7\"\n      ],\n      \"quote\": \"Our company has made efforts to accommodate as many of our customers and potential customers as is reasonable given our size, resources, and knowledge of our customers, and potential customer’s needs.\",\n      \"issues\": [],\n      \"reason\": \"The passage confirms that the company has made efforts to accommodate customers.\"\n    }\n  ],\n  \"unmarked_factual_statements\": [],\n  \"absence_as_weakness\": []\n}\n```",
   "review": {
     "identity_ok": true,
     "claims": [
@@ -34,7 +32,7 @@
         ],
         "quote": "We only partner with manufacturers and suppliers that uphold the highest ethical standards in a manner that is consistent with our core brand values.",
         "issues": [],
-        "reason": "The passage explicitly states that the company partners with suppliers upholding high ethical standards."
+        "reason": "The passage explicitly states that Thursday Boot Company partners with suppliers upholding high ethical standards."
       },
       {
         "claim_id": "C2",
@@ -44,7 +42,7 @@
         ],
         "quote": "comfortable and durable footwear with clean designs",
         "issues": [],
-        "reason": "The passage describes their products as comfortable, durable, and with clean designs."
+        "reason": "The passage describes their products as comfortable, durable, and with clean designs, aligning with the claim."
       },
       {
         "claim_id": "C3",
@@ -74,18 +72,16 @@
         ],
         "quote": "Our company has made efforts to accommodate as many of our customers and potential customers as is reasonable given our size, resources, and knowledge of our customers, and potential customer’s needs.",
         "issues": [],
-        "reason": "The passage directly states that the company has made efforts to accommodate customers."
+        "reason": "The passage confirms that the company has made efforts to accommodate customers."
       }
     ],
     "unmarked_factual_statements": [],
     "absence_as_weakness": []
   },
   "review_validation_errors": [],
-  "status": "fail",
-  "reasons": [
-    "1 deterministic check error(s)"
-  ],
-  "created_at": "2026-11-23T00:21:31+00:00",
-  "audit_sha256": "8d683d8aebee1a41fa672775865f8dc2c73bacb1611dfdb106b1e586873f4670",
+  "status": "pass",
+  "reasons": [],
+  "created_at": "2026-11-23T02:59:51+00:00",
+  "audit_sha256": "19d41b6f6ba44602e1ed6388eea4fd126d3ea7c29e8ffd3827888864449a4946",
   "dismissed_reviewer_flags": []
 }
