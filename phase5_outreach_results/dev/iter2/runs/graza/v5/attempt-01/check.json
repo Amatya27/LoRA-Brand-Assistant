@@ -1,0 +1,202 @@
+{
+ "checks_version": "phase5-draft-checks-2",
+ "passes": false,
+ "problems": [
+  "body is 173 words; it must be 100-150",
+  "\"It would also showcase your playful tone, as Dickieson estimates around 2,000 new social f\": proposal refers to company activity without a fact marker",
+  "\"It’s about celebrating your creativity and the joy of olive oil in a fun, visual way.\": states something about the company without a fact marker",
+  "\"We've focused on building on your playful and culinary-inspired approach, as Dickieson est\": states something about the company without a fact marker",
+  "\"It’s about celebrating your creativity and the joy of olive oil in a fun, visual way.\": states something about the company without a fact marker",
+  "no sentence uses a verified fact"
+ ],
+ "word_count": 173,
+ "recipient": "correct",
+ "sender": "correct",
+ "instagram": true,
+ "other_platforms": [],
+ "promises": [],
+ "facts_used": [],
+ "unknown_fact_markers": [],
+ "factual_sentences": 3,
+ "factual_sentences_supported": 0,
+ "sentences": [
+  {
+   "location": "subject",
+   "sentence": "Graza's Instagram Collaboration",
+   "kind": "subject",
+   "cited_facts": [],
+   "guard": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Hi Graza team,",
+   "kind": "non_assertion",
+   "cited_facts": [],
+   "guard": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We’re reaching out to propose a collaborative Instagram post that builds on the information we’ve gathered about your brand.",
+   "kind": "proposal",
+   "cited_facts": [],
+   "guard": {
+    "coverage": 0.0,
+    "uncovered": [
+     "gathered",
+     "information",
+     "out",
+     "reaching",
+     "we're",
+     "we've"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false
+   },
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We believe a post that highlights your playful and culinary-inspired approach would resonate well with your audience.",
+   "kind": "proposal",
+   "cited_facts": [],
+   "guard": {
+    "coverage": 0.333,
+    "uncovered": [
+     "approach",
+     "believe",
+     "resonate",
+     "well"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false
+   },
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "The post would feature Graza’s unique social content, product design, and messaging in a way that feels authentic and engaging.",
+   "kind": "proposal",
+   "cited_facts": [],
+   "guard": {
+    "coverage": 0.444,
+    "uncovered": [
+     "authentic",
+     "engaging",
+     "feels",
+     "unique",
+     "way"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false
+   },
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "It would also showcase your playful tone, as Dickieson estimates around 2,000 new social followers since your launch.",
+   "kind": "proposal",
+   "cited_facts": [],
+   "guard": {
+    "coverage": 0.7,
+    "uncovered": [
+     "estimates",
+     "launch",
+     "tone"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false
+   },
+   "problems": [
+    "proposal refers to company activity without a fact marker"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "This post would be a great way to further amplify your brand’s voice and engagement with your target demographic.",
+   "kind": "proposal",
+   "cited_facts": [],
+   "guard": {
+    "coverage": 0.111,
+    "uncovered": [
+     "amplify",
+     "brand's",
+     "demographic",
+     "engagement",
+     "further",
+     "great",
+     "voice",
+     "way"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false
+   },
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "It’s about celebrating your creativity and the joy of olive oil in a fun, visual way.",
+   "kind": "factual",
+   "cited_facts": [],
+   "guard": null,
+   "problems": [
+    "states something about the company without a fact marker"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "The BrandPilot team",
+   "kind": "non_assertion",
+   "cited_facts": [],
+   "guard": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We've focused on building on your playful and culinary-inspired approach, as Dickieson estimates around 2,000 new social followers since your launch.",
+   "kind": "factual",
+   "cited_facts": [],
+   "guard": null,
+   "problems": [
+    "states something about the company without a fact marker"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "This post would be a great way to further amplify your brand’s voice and engagement with your target demographic.",
+   "kind": "proposal",
+   "cited_facts": [],
+   "guard": {
+    "coverage": 0.111,
+    "uncovered": [
+     "amplify",
+     "brand's",
+     "demographic",
+     "engagement",
+     "further",
+     "great",
+     "voice",
+     "way"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false
+   },
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "It’s about celebrating your creativity and the joy of olive oil in a fun, visual way.",
+   "kind": "factual",
+   "cited_facts": [],
+   "guard": null,
+   "problems": [
+    "states something about the company without a fact marker"
+   ]
+  }
+ ],
+ "rendered": {
+  "subject": "Graza's Instagram Collaboration",
+  "body": "Hi Graza team,\n\nWe’re reaching out to propose a collaborative Instagram post that builds on the information we’ve gathered about your brand. We believe a post that highlights your playful and culinary-inspired approach would resonate well with your audience. The post would feature Graza’s unique social content, product design, and messaging in a way that feels authentic and engaging. It would also showcase your playful tone, as Dickieson estimates around 2,000 new social followers since your launch. This post would be a great way to further amplify your brand’s voice and engagement with your target demographic. It’s about celebrating your creativity and the joy of olive oil in a fun, visual way.\n\nThe BrandPilot team\n\nWe've focused on building on your playful and culinary-inspired approach, as Dickieson estimates around 2,000 new social followers since your launch. This post would be a great way to further amplify your brand’s voice and engagement with your target demographic. It’s about celebrating your creativity and the joy of olive oil in a fun, visual way."
+ }
+}

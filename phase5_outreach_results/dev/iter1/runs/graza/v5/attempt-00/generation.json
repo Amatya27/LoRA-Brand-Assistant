@@ -1,0 +1,95 @@
+{
+ "ok": true,
+ "finish_reason": "stop",
+ "usage": {
+  "prompt_tokens": 383,
+  "completion_tokens": 161,
+  "total_tokens": 544,
+  "prompt_tokens_details": {
+   "cached_tokens": 0
+  }
+ },
+ "latency_s": 8.695,
+ "error": null,
+ "error_type": null,
+ "settings": {
+  "api_base": "http://127.0.0.1:8080/v1",
+  "model": "mlx-community/gemma-3-1b-it-qat-4bit",
+  "adapter_path": "adapters/brand_assistant_v5_best",
+  "max_tokens": 400,
+  "temperature": 0.0,
+  "timeout_s": 300.0,
+  "repetition_penalty": null,
+  "repetition_context_size": null
+ },
+ "prompt_sha256": "b7813e326ca9c3a70bd5d729a1f129e084fe03e59ead6b57e88493cfb284f8c1",
+ "runtime_verification": {
+  "verified": true,
+  "checks": {
+   "request_found_in_ledger": true,
+   "single_request_in_flight": true,
+   "requested_model_matches": true,
+   "served_model_matches": true,
+   "served_adapter_matches_request": true,
+   "load_event_found": true,
+   "load_event_model_key_matches": true,
+   "adapter_file_hash_matches_expected": true,
+   "lora_modules_present": true,
+   "all_adapter_tensors_loaded": true
+  },
+  "observations": {
+   "server_pid": 8607,
+   "request_event": {
+    "schema": "phase3-load-ledger-v1",
+    "pid": 8607,
+    "time": 1795440121.896394,
+    "event": "request_started",
+    "messages_sha256": "c75488d236f9854ac922aff6b10dd00ee96fa47f14220db2fdcc28b769f42002",
+    "requested_model": "mlx-community/gemma-3-1b-it-qat-4bit",
+    "requested_adapter": "adapters/brand_assistant_v5_best",
+    "model_key": [
+     "mlx-community/gemma-3-1b-it-qat-4bit",
+     "adapters/brand_assistant_v5_best",
+     null
+    ],
+    "in_flight": 1
+   },
+   "matching_request_events": 1,
+   "load_event": {
+    "schema": "phase3-load-ledger-v1",
+    "pid": 8607,
+    "time": 1795440121.7978492,
+    "event": "model_loaded",
+    "model_key": [
+     "mlx-community/gemma-3-1b-it-qat-4bit",
+     "adapters/brand_assistant_v5_best",
+     null
+    ],
+    "adapter_inspection": {
+     "adapter_path_as_requested": "adapters/brand_assistant_v5_best",
+     "resolved_path": "<repo>/adapters/brand_assistant_v5_best",
+     "server_cwd": "<repo>",
+     "adapters_safetensors_sha256": "84d482c93281680d9393ab595f06054f30e88d4c61e5f083d2c557c03980adf2",
+     "adapter_config_sha256": "88ebe11724c9313a718f07634f020937b71f566c039e1492100a02274687c036",
+     "tensor_comparison": {
+      "file_tensor_count": 112,
+      "matched_tensor_count": 112,
+      "model_lora_param_count": 112,
+      "missing_in_model": [],
+      "shape_mismatch": [],
+      "value_mismatch": [],
+      "lora_params_not_in_file": [],
+      "all_tensors_match": true
+     },
+     "lora_module_count": 56
+    }
+   }
+  },
+  "method": "server_load_ledger",
+  "ledger_path": "<repo>/outputs/phase5_work/server_load_ledger.jsonl",
+  "ledger_schema_version": "phase3-load-ledger-v1",
+  "ledger_problems": [],
+  "messages_sha256": "c75488d236f9854ac922aff6b10dd00ee96fa47f14220db2fdcc28b769f42002"
+ },
+ "runtime_verified": true
+}

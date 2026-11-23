@@ -1,0 +1,29 @@
+{
+ "workflow_version": "phase5-outreach-1",
+ "fact_selector_version": "phase5-facts-1",
+ "draft_prompt_version": "phase5-draft-prompt-7",
+ "checks_version": "phase5-draft-checks-9",
+ "company_id": "greats",
+ "packet_sha256": "7515c79267cde47867d10ced674d9e82a96d14a1d696c42d760d047d5862edb2",
+ "facts": [
+  {
+   "fact_id": "F1",
+   "passage_id": "P1",
+   "quote": "Founded in 2014, GREATS is the first sneaker brand born in Brooklyn.",
+   "score": 5.6,
+   "statement_type": "brand_positioning",
+   "official_source": true,
+   "source_url": "https://www.greats.com/pages/our-story",
+   "text_sha256": "c6af39b159a9d134110d363f5d0b6076bf1b6c6c983a50dc8975b1c1393cb08c",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  }
+ ],
+ "attempts": [],
+ "outcome": "abstained_insufficient_facts",
+ "stop_reason": "1 selectable fact(s); at least 2 required",
+ "arm": "v5",
+ "group": "secondary",
+ "tag": "frozen"
+}

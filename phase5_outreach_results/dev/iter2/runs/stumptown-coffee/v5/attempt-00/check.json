@@ -1,0 +1,166 @@
+{
+ "checks_version": "phase5-draft-checks-2",
+ "passes": false,
+ "problems": [
+  "\"This post would be a great way to reinforce your mission and further engage your community\": proposal refers to company activity without a fact marker",
+  "no sentence uses a verified fact"
+ ],
+ "word_count": 139,
+ "recipient": "correct",
+ "sender": "correct",
+ "instagram": true,
+ "other_platforms": [],
+ "promises": [],
+ "facts_used": [],
+ "unknown_fact_markers": [],
+ "factual_sentences": 0,
+ "factual_sentences_supported": 0,
+ "sentences": [
+  {
+   "location": "subject",
+   "sentence": "Collaborating on an Instagram Post Idea",
+   "kind": "subject",
+   "cited_facts": [],
+   "guard": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Hi Stumptown Coffee Roasters team,",
+   "kind": "non_assertion",
+   "cited_facts": [],
+   "guard": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We’re reaching out to propose a collaborative Instagram post that builds on the fact that Stumptown Coffee Roasters has a unique and impactful Direct Trade model.",
+   "kind": "proposal",
+   "cited_facts": [],
+   "guard": {
+    "coverage": 0.444,
+    "uncovered": [
+     "fact",
+     "impactful",
+     "out",
+     "reaching",
+     "we're"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false
+   },
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Our team believes that a post that highlights the dedication to producer relationships and the commitment to quality would resonate well with your audience.",
+   "kind": "proposal",
+   "cited_facts": [],
+   "guard": {
+    "coverage": 0.25,
+    "uncovered": [
+     "believes",
+     "commitment",
+     "dedication",
+     "producer",
+     "resonate",
+     "well"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false
+   },
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We envision a post that showcases your dedication to creating a memorable customer experience, such as the campaign that encouraged visits to your cafes and deepened customer engagement.",
+   "kind": "proposal",
+   "cited_facts": [],
+   "guard": {
+    "coverage": 0.583,
+    "uncovered": [
+     "dedication",
+     "deepened",
+     "envision",
+     "memorable",
+     "showcases"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false
+   },
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "This post would be a great way to reinforce your mission and further engage your community.",
+   "kind": "proposal",
+   "cited_facts": [],
+   "guard": {
+    "coverage": 0.143,
+    "uncovered": [
+     "community",
+     "engage",
+     "further",
+     "great",
+     "reinforce",
+     "way"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false
+   },
+   "problems": [
+    "proposal refers to company activity without a fact marker"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "It would be a way to show your commitment to quality and the producers you work with.",
+   "kind": "proposal",
+   "cited_facts": [],
+   "guard": {
+    "coverage": 0.333,
+    "uncovered": [
+     "commitment",
+     "show",
+     "way",
+     "work"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false
+   },
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "The post would be a way to continue to build on your existing marketing efforts and further grow your community.",
+   "kind": "proposal",
+   "cited_facts": [],
+   "guard": {
+    "coverage": 0.25,
+    "uncovered": [
+     "community",
+     "efforts",
+     "existing",
+     "further",
+     "marketing",
+     "way"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false
+   },
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "The BrandPilot team",
+   "kind": "non_assertion",
+   "cited_facts": [],
+   "guard": null,
+   "problems": []
+  }
+ ],
+ "rendered": {
+  "subject": "Collaborating on an Instagram Post Idea",
+  "body": "Hi Stumptown Coffee Roasters team,\n\nWe’re reaching out to propose a collaborative Instagram post that builds on the fact that Stumptown Coffee Roasters has a unique and impactful Direct Trade model. Our team believes that a post that highlights the dedication to producer relationships and the commitment to quality would resonate well with your audience. We envision a post that showcases your dedication to creating a memorable customer experience, such as the campaign that encouraged visits to your cafes and deepened customer engagement. This post would be a great way to reinforce your mission and further engage your community. It would be a way to show your commitment to quality and the producers you work with. The post would be a way to continue to build on your existing marketing efforts and further grow your community.\n\nThe BrandPilot team"
+ }
+}

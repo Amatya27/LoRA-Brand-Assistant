@@ -1,0 +1,11 @@
+{
+ "model": "mlx-community/gemma-3-1b-it-qat-4bit",
+ "messages": [
+  {
+   "role": "user",
+   "content": "You are fixing sentences in an outreach email from our team (a small Instagram content studio) to the Dollar Shave Club team.\n\nVerified facts about Dollar Shave Club:\n- \"This legendary launch video by Dollar Shave Club is a masterclass in how to disrupt a billion-dollar industry through raw, unfiltered storytelling.\" (source: a published article about Dollar Shave Club)\n- \"By studying and applying the key elements of Dollar Shave Club’s marketing strategy, marketers can gain valuable insights into building effective campaigns that connect with their target audience.\" (source: a published article about Dollar Shave Club)\n- \"Through their social media presence, the Dollar Shave Club has been able to establish a personal connection with their customers.\" (source: a published article about Dollar Shave Club)\n\nEach numbered sentence below has a problem. Follow the fix given for it. Write as our team; never use \"our\" for Dollar Shave Club. Do not promise results.\n\n1: \"You’ve highlighted the importance of raw, unfiltered storytelling, and our team believes a shared visual experience would powerfully demonstrate this.\"\n   Problem: factual clause not supported by a verified fact; says Dollar Shave Club stated this, but the source is a third-party article.\n   Fix: Rewrite it to describe only the proposed Instagram post, with no claim about Dollar Shave Club, or write DELETE.\n2: \"Essentially, the post would showcase a curated collection of short, authentic moments capturing the essence of Dollar Shave Club’s unique approach – a glimpse into their world.\"\n   Problem: refers to company activity not in the verified facts: ['collection'].\n   Fix: Rewrite it to describe only the proposed Instagram post, with no claim about Dollar Shave Club, or write DELETE.\n\nReturn one line per sentence and nothing else, in this form:\n1: <replacement sentence or DELETE>\n2: <replacement sentence or DELETE>"
+  }
+ ],
+ "temperature": 0.0,
+ "max_tokens": 400
+}

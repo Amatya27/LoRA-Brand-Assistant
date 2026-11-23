@@ -1,0 +1,192 @@
+{
+ "checks_version": "phase5-draft-checks-4",
+ "passes": false,
+ "problems": [
+  "body is 167 words; it must be 100-150",
+  "\"Graza's playful and creative social content has grown to have around 2,000 new social foll\": factual statement not supported by a verified fact (best fact F3 covers 0.50; unsupported words: approa, authen, conten, creati, engagi, grown, playfu, testam)"
+ ],
+ "word_count": 167,
+ "recipient": "correct",
+ "sender": "correct",
+ "instagram": true,
+ "other_platforms": [],
+ "promises": [],
+ "facts_used": [
+  "F1",
+  "F2"
+ ],
+ "factual_sentences": 3,
+ "factual_sentences_supported": 1,
+ "sentences": [
+  {
+   "location": "subject",
+   "sentence": "Collaboration Opportunity for a Graza Instagram Post",
+   "kind": "subject",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 0
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Hi Graza team,",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We’re a small Instagram content studio dedicated to bringing the joy of culinary experiences to your audience.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.222,
+    "uncovered": [
+     "audien",
+     "bringi",
+     "dedica",
+     "experi",
+     "instag",
+     "joy",
+     "small"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 9
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We’d like to propose a collaborative Instagram post with you, built around the fact that Graza started Direct-to-Consumer (DTC) but also made sure to get into grocers like Whole Foods, Target, etc.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.867,
+    "uncovered": [
+     "around",
+     "built"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 15
+   },
+   "cited_fact": "F1",
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "You’ve described your social content, product design, and messaging as playful and culinary-inspired, rather than overly formal, which aligns with your approach.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.714,
+    "uncovered": [
+     "aligns",
+     "approa",
+     "descri",
+     "you've"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 14
+   },
+   "cited_fact": "F2",
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Graza's playful and creative social content has grown to have around 2,000 new social followers since launching the cans, a testament to your engaging and authentic approach.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F3",
+    "coverage": 0.5,
+    "uncovered": [
+     "approa",
+     "authen",
+     "conten",
+     "creati",
+     "engagi",
+     "grown",
+     "playfu",
+     "testam"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 16
+   },
+   "cited_fact": null,
+   "problems": [
+    "factual statement not supported by a verified fact (best fact F3 covers 0.50; unsupported words: approa, authen, conten, creati, engagi, grown, playfu, testam)"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "We envision a post that showcases your playful and creative approach, building on the first fact by featuring a visually appealing slide or carousel showcasing your playful and culinary-inspired messaging, paired with a call to action that invites your audience to share their own experiences with Graza.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.25,
+    "uncovered": [
+     "action",
+     "approa",
+     "call",
+     "experi",
+     "first",
+     "invite",
+     "own",
+     "paired",
+     "slide"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 12
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "It would be a fun way to continue your storytelling and engage with your community.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [
+     "commun",
+     "contin",
+     "engage",
+     "storyt"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 4
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "The BrandPilot team",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  }
+ ],
+ "rendered": {
+  "subject": "Collaboration Opportunity for a Graza Instagram Post",
+  "body": "Hi Graza team,\n\nWe’re a small Instagram content studio dedicated to bringing the joy of culinary experiences to your audience. We’d like to propose a collaborative Instagram post with you, built around the fact that Graza started Direct-to-Consumer (DTC) but also made sure to get into grocers like Whole Foods, Target, etc [P8]. You’ve described your social content, product design, and messaging as playful and culinary-inspired, rather than overly formal, which aligns with your approach [P7]. Graza's playful and creative social content has grown to have around 2,000 new social followers since launching the cans, a testament to your engaging and authentic approach. We envision a post that showcases your playful and creative approach, building on the first fact by featuring a visually appealing slide or carousel showcasing your playful and culinary-inspired messaging, paired with a call to action that invites your audience to share their own experiences with Graza. It would be a fun way to continue your storytelling and engage with your community.\n\nThe BrandPilot team"
+ },
+ "format_notes": [
+  "BODY label missing; text after the subject line used as the body"
+ ]
+}

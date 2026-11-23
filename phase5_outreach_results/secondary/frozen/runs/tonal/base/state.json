@@ -1,0 +1,523 @@
+{
+ "workflow_version": "phase5-outreach-1",
+ "fact_selector_version": "phase5-facts-1",
+ "draft_prompt_version": "phase5-draft-prompt-7",
+ "checks_version": "phase5-draft-checks-9",
+ "company_id": "tonal",
+ "packet_sha256": "d00bcfb37c669099e3b7a0da6b6526131ec5e635dfc1048b8fa68620b08b341d",
+ "facts": [
+  {
+   "fact_id": "F1",
+   "passage_id": "P7",
+   "quote": "Tonal: Meet Tonal Installation With Tonal Effortless Install, professionals deliver, mount, and test your Tonal for a fast, stress-free setup.",
+   "score": 4.0,
+   "statement_type": "descriptive",
+   "official_source": true,
+   "source_url": "https://tonal.com/pages/press",
+   "text_sha256": "d576ea288b478c58273b20fc75568d3d2a12352e7234033275bce1628142c6c3",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F2",
+   "passage_id": "P4",
+   "quote": "The connected home gym, Tonal, saw huge growth at the start of Covid-19, but needed to connect more with high-income worth individuals and athletes to build the brand interest and value, in a highly competitive market.",
+   "score": 2.2,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://jackmorton.com/work/sports-marketing-strategy-strength-made-me-campaign/",
+   "text_sha256": "fef57bfaf936ca40d6288e581d24991e8af83644d68f28eeab10465bec7901c3",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F3",
+   "passage_id": "P9",
+   "quote": "Stanley Tonal, a smart home gym looking for a holiday sales boost, has dropped an epic long-form commercial shot entirely in black and white and set in the Victorian era.",
+   "score": 0.5,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://www.adweek.com/brand-marketing/tonals-epic-cinematic-ad-is-a-departure-for-the-fitness-category/",
+   "text_sha256": "34223fb2442301c615e14d382b758023d0471d2879c3142af77e30f6bc942fca",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  }
+ ],
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "revision_mode": null,
+   "prompt_sha256": "01cf252b9e251fc58c08c74b1668a679fb2ab81e3465b0ee6fe53e2ced203cee",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 8.454,
+   "usage": {
+    "prompt_tokens": 534,
+    "completion_tokens": 195,
+    "total_tokens": 729,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "Collaboration Proposal",
+    "body": "Hi Tonal team,\n\nWe are a small Instagram content studio dedicated to crafting compelling visual narratives for brands. We’d like to propose a collaborative Instagram post with Tonal, built around the initial fact that Tonal: Meet Tonal Installation With Tonal Effortless Install, professionals deliver, mount, and test your Tonal for a fast, stress-free setup. You’ve built a powerful brand story through this, and we believe a visual piece that captures the essence of that experience would resonate deeply with your audience. The post could showcase a beautifully rendered, minimalist shot of the Tonal installation, emphasizing the feeling of effortless control and the connection to the Victorian era setting. Together, we envision a post that subtly hints at the potential for a captivating holiday sales boost, offering a glimpse into the future of smart home fitness.  We’d love to collaborate on this – reply if you’re interested!\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-9",
+    "passes": false,
+    "problems": [
+     "\"You’ve built a powerful brand story through this, and we believe a visual piece that captu\": factual clause not supported by a verified fact (best fact F1 covers 0.00; unsupported words: built, powerf, story, throug, you've)",
+     "\"You’ve built a powerful brand story through this, and we believe a visual piece that captu\": refers to company activity not in the verified facts: ['built']"
+    ],
+    "word_count": 148,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [
+     "F1"
+    ],
+    "factual_sentences": 1,
+    "factual_sentences_supported": 0,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Collaboration Proposal",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 0
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Tonal team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We are a small Instagram content studio dedicated to crafting compelling visual narratives for brands.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "brands",
+        "compel",
+        "conten",
+        "crafti",
+        "dedica",
+        "instag",
+        "narrat",
+        "small",
+        "visual"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 9
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d like to propose a collaborative Instagram post with Tonal, built around the initial fact that Tonal: Meet Tonal Installation With Tonal Effortless Install, professionals deliver, mount, and test your Tonal for a fast, stress-free setup.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.786,
+       "uncovered": [
+        "around",
+        "built",
+        "initia"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 14
+      },
+      "cited_fact": "F1",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "You’ve built a powerful brand story through this, and we believe a visual piece that captures the essence of that experience would resonate deeply with your audience.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "built",
+        "captur",
+        "deeply",
+        "essenc",
+        "experi",
+        "piece",
+        "powerf",
+        "story",
+        "throug",
+        "you've"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 10
+      },
+      "cited_fact": null,
+      "problems": [
+       "factual clause not supported by a verified fact (best fact F1 covers 0.00; unsupported words: built, powerf, story, throug, you've)",
+       "refers to company activity not in the verified facts: ['built']"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "The post could showcase a beautifully rendered, minimalist shot of the Tonal installation, emphasizing the feeling of effortless control and the connection to the Victorian era setting.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F3",
+       "coverage": 0.231,
+       "uncovered": [
+        "beauti",
+        "connec",
+        "contro",
+        "effort",
+        "emphas",
+        "feelin",
+        "instal",
+        "minima",
+        "render",
+        "settin"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 13
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Together, we envision a post that subtly hints at the potential for a captivating holiday sales boost, offering a glimpse into the future of smart home fitness.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F3",
+       "coverage": 0.417,
+       "uncovered": [
+        "captiv",
+        "fitnes",
+        "future",
+        "glimps",
+        "hints",
+        "offeri",
+        "subtly"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 12
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d love to collaborate on this – reply if you’re interested!",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.333,
+       "uncovered": [
+        "reply",
+        "you're"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 3
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Collaboration Proposal",
+     "body": "Hi Tonal team,\n\nWe are a small Instagram content studio dedicated to crafting compelling visual narratives for brands. We’d like to propose a collaborative Instagram post with Tonal, built around the initial fact that Tonal: Meet Tonal Installation With Tonal Effortless Install, professionals deliver, mount, and test your Tonal for a fast, stress-free setup [P7]. You’ve built a powerful brand story through this, and we believe a visual piece that captures the essence of that experience would resonate deeply with your audience. The post could showcase a beautifully rendered, minimalist shot of the Tonal installation, emphasizing the feeling of effortless control and the connection to the Victorian era setting. Together, we envision a post that subtly hints at the potential for a captivating holiday sales boost, offering a glimpse into the future of smart home fitness. We’d love to collaborate on this – reply if you’re interested!\n\nThe BrandPilot team"
+    },
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   }
+  },
+  {
+   "index": 1,
+   "kind": "targeted_revision",
+   "revision_mode": "sentences",
+   "prompt_sha256": "8a8a27e3c3989a35ec02480248e4625ee0ee869af3a8414bc10cd3235a4594ab",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 2.894,
+   "usage": {
+    "prompt_tokens": 339,
+    "completion_tokens": 126,
+    "total_tokens": 465,
+    "prompt_tokens_details": {
+     "cached_tokens": 24
+    }
+   },
+   "error": null,
+   "sentence_edits": [
+    {
+     "index": 1,
+     "location": "body",
+     "old": "You’ve built a powerful brand story through this, and we believe a visual piece that captures the essence of that experience would resonate deeply with your audience.",
+     "new": "You’ve built a powerful brand story through this, and we believe a visual piece that captures the essence of that experience would resonate deeply with your audience.",
+     "action": "replace"
+    }
+   ],
+   "parsed": {
+    "subject": "Collaboration Proposal",
+    "body": "Hi Tonal team,\n\nWe are a small Instagram content studio dedicated to crafting compelling visual narratives for brands. We’d like to propose a collaborative Instagram post with Tonal, built around the initial fact that Tonal: Meet Tonal Installation With Tonal Effortless Install, professionals deliver, mount, and test your Tonal for a fast, stress-free setup. You’ve built a powerful brand story through this, and we believe a visual piece that captures the essence of that experience would resonate deeply with your audience. The post could showcase a beautifully rendered, minimalist shot of the Tonal installation, emphasizing the feeling of effortless control and the connection to the Victorian era setting. Together, we envision a post that subtly hints at the potential for a captivating holiday sales boost, offering a glimpse into the future of smart home fitness. We’d love to collaborate on this – reply if you’re interested!\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": [
+     "sentence-level revision applied"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-9",
+    "passes": false,
+    "problems": [
+     "\"You’ve built a powerful brand story through this, and we believe a visual piece that captu\": factual clause not supported by a verified fact (best fact F1 covers 0.00; unsupported words: built, powerf, story, throug, you've)",
+     "\"You’ve built a powerful brand story through this, and we believe a visual piece that captu\": refers to company activity not in the verified facts: ['built']"
+    ],
+    "word_count": 148,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [
+     "F1"
+    ],
+    "factual_sentences": 1,
+    "factual_sentences_supported": 0,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Collaboration Proposal",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 0
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Tonal team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We are a small Instagram content studio dedicated to crafting compelling visual narratives for brands.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "brands",
+        "compel",
+        "conten",
+        "crafti",
+        "dedica",
+        "instag",
+        "narrat",
+        "small",
+        "visual"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 9
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d like to propose a collaborative Instagram post with Tonal, built around the initial fact that Tonal: Meet Tonal Installation With Tonal Effortless Install, professionals deliver, mount, and test your Tonal for a fast, stress-free setup.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.786,
+       "uncovered": [
+        "around",
+        "built",
+        "initia"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 14
+      },
+      "cited_fact": "F1",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "You’ve built a powerful brand story through this, and we believe a visual piece that captures the essence of that experience would resonate deeply with your audience.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "built",
+        "captur",
+        "deeply",
+        "essenc",
+        "experi",
+        "piece",
+        "powerf",
+        "story",
+        "throug",
+        "you've"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 10
+      },
+      "cited_fact": null,
+      "problems": [
+       "factual clause not supported by a verified fact (best fact F1 covers 0.00; unsupported words: built, powerf, story, throug, you've)",
+       "refers to company activity not in the verified facts: ['built']"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "The post could showcase a beautifully rendered, minimalist shot of the Tonal installation, emphasizing the feeling of effortless control and the connection to the Victorian era setting.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F3",
+       "coverage": 0.231,
+       "uncovered": [
+        "beauti",
+        "connec",
+        "contro",
+        "effort",
+        "emphas",
+        "feelin",
+        "instal",
+        "minima",
+        "render",
+        "settin"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 13
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Together, we envision a post that subtly hints at the potential for a captivating holiday sales boost, offering a glimpse into the future of smart home fitness.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F3",
+       "coverage": 0.417,
+       "uncovered": [
+        "captiv",
+        "fitnes",
+        "future",
+        "glimps",
+        "hints",
+        "offeri",
+        "subtly"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 12
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d love to collaborate on this – reply if you’re interested!",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.333,
+       "uncovered": [
+        "reply",
+        "you're"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 3
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Collaboration Proposal",
+     "body": "Hi Tonal team,\n\nWe are a small Instagram content studio dedicated to crafting compelling visual narratives for brands. We’d like to propose a collaborative Instagram post with Tonal, built around the initial fact that Tonal: Meet Tonal Installation With Tonal Effortless Install, professionals deliver, mount, and test your Tonal for a fast, stress-free setup [P7]. You’ve built a powerful brand story through this, and we believe a visual piece that captures the essence of that experience would resonate deeply with your audience. The post could showcase a beautifully rendered, minimalist shot of the Tonal installation, emphasizing the feeling of effortless control and the connection to the Victorian era setting. Together, we envision a post that subtly hints at the potential for a captivating holiday sales boost, offering a glimpse into the future of smart home fitness. We’d love to collaborate on this – reply if you’re interested!\n\nThe BrandPilot team"
+    },
+    "format_notes": [
+     "sentence-level revision applied"
+    ]
+   }
+  }
+ ],
+ "opportunity": {
+  "anchor_fact": "F1",
+  "text": "One collaborative Instagram post with Tonal, created together with their team, that builds on the first fact above.",
+  "kind": "template"
+ },
+ "draft_prompt_sha256": "01cf252b9e251fc58c08c74b1668a679fb2ab81e3465b0ee6fe53e2ced203cee",
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "checks still failing after 1 targeted revision",
+ "arm": "base",
+ "group": "secondary",
+ "tag": "frozen"
+}

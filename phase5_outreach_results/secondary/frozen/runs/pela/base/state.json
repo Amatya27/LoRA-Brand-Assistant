@@ -1,0 +1,499 @@
+{
+ "workflow_version": "phase5-outreach-1",
+ "fact_selector_version": "phase5-facts-1",
+ "draft_prompt_version": "phase5-draft-prompt-7",
+ "checks_version": "phase5-draft-checks-9",
+ "company_id": "pela",
+ "packet_sha256": "8a29de2d7cb594d04380ab8a2de0c9e172e30811b9fa6fa80ce741cadb703fbf",
+ "facts": [
+  {
+   "fact_id": "F1",
+   "passage_id": "P6",
+   "quote": "To educate and inspire the global community of people who are committed to making a positive impact on our planet.",
+   "score": 5.0,
+   "statement_type": "brand_positioning",
+   "official_source": true,
+   "source_url": "https://pelacase.com/pages/our-story/",
+   "text_sha256": "4c8e45dda594f5cb16b45664c5d6efcf71b410bec063b659c9f94c3b78e6522f",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F2",
+   "passage_id": "P4",
+   "quote": "Impact BrandChamp has simplified Pela Case’s operations and made it possible to scale the ambassador program from 400 participants to over 1,600 in a few months.",
+   "score": 4.65,
+   "statement_type": "actual_activity",
+   "official_source": false,
+   "source_url": "https://brandchamp.io/case-studies/pela-case/",
+   "text_sha256": "dcd7c52dce60b928b8e48fa1eb4e4df05d3127ba54b579528a955e4603e697f0",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F3",
+   "passage_id": "P1",
+   "quote": "To help us and our community stay the course.",
+   "score": 4.45,
+   "statement_type": "brand_positioning",
+   "official_source": true,
+   "source_url": "https://pelacase.com/pages/our-story/",
+   "text_sha256": "5f69317c0d2bb70dc9202deb62137a5be272fcc16f1ed71d03350812b616d382",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  }
+ ],
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "revision_mode": null,
+   "prompt_sha256": "0fd06036868f5f5623c02f4bd5fca05979661a32eceb032c8cf519361c2f3a40",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 7.94,
+   "usage": {
+    "prompt_tokens": 489,
+    "completion_tokens": 201,
+    "total_tokens": 690,
+    "prompt_tokens_details": {
+     "cached_tokens": 25
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "Collaboration Opportunity",
+    "body": "Hi Pela team,\n\nWe are a small Instagram content studio dedicated to creating engaging content around sustainable living and positive impact. We’d like to propose a collaborative Instagram post with you, built together with your team, that would reinforce the idea that Pela’s mission of educating and inspiring the global community of people committed to making a positive impact on our planet. You’ve highlighted that Pela simplified operations and scaled the ambassador program from 400 participants to over 1,600 in a few months, which is a significant step forward.  We envision a post that visually showcases the impact of this growth, perhaps featuring a compelling image or short video, and would be a wonderful opportunity to build on the initial fact that Pela’s mission is to help people stay on course.  We’d love to collaborate with you on this project, and we’d be happy to share our insights and creative ideas.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-9",
+    "passes": false,
+    "problems": [
+     "body is 155 words; it must be 100-150",
+     "\"You’ve highlighted that Pela simplified operations and scaled the ambassador program from \": says Pela stated this, but the source is a third-party article",
+     "\"We envision a post that visually showcases the impact of this growth, perhaps featuring a \": refers to company activity not in the verified facts: ['growth']",
+     "\"We’d love to collaborate with you on this project, and we’d be happy to share our insights\": factual clause not supported by a verified fact (best fact F1 covers 0.00; unsupported words: collab, projec)"
+    ],
+    "word_count": 155,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [
+     "F1",
+     "F2"
+    ],
+    "factual_sentences": 2,
+    "factual_sentences_supported": 0,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Collaboration Opportunity",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 0
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Pela team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We are a small Instagram content studio dedicated to creating engaging content around sustainable living and positive impact.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.182,
+       "uncovered": [
+        "around",
+        "conten",
+        "creati",
+        "dedica",
+        "engagi",
+        "instag",
+        "living",
+        "small",
+        "sustai"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 11
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d like to propose a collaborative Instagram post with you, built together with your team, that would reinforce the idea that Pela’s mission of educating and inspiring the global community of people committed to making a positive impact on our planet.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.75,
+       "uncovered": [
+        "built",
+        "missio",
+        "reinfo"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 12
+      },
+      "cited_fact": "F1",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "You’ve highlighted that Pela simplified operations and scaled the ambassador program from 400 participants to over 1,600 in a few months, which is a significant step forward.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.6,
+       "uncovered": [
+        "forwar",
+        "highli",
+        "scaled",
+        "signif",
+        "step",
+        "you've"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 15
+      },
+      "cited_fact": "F2",
+      "problems": [
+       "says Pela stated this, but the source is a third-party article"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "We envision a post that visually showcases the impact of this growth, perhaps featuring a compelling image or short video, and would be a wonderful opportunity to build on the initial fact that Pela’s mission is to help people stay on course.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F3",
+       "coverage": 0.214,
+       "uncovered": [
+        "compel",
+        "growth",
+        "image",
+        "impact",
+        "initia",
+        "missio",
+        "people",
+        "perhap",
+        "short",
+        "video",
+        "wonder"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 14
+      },
+      "cited_fact": null,
+      "problems": [
+       "refers to company activity not in the verified facts: ['growth']"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "We’d love to collaborate with you on this project, and we’d be happy to share our insights and creative ideas.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "ideas",
+        "insigh",
+        "projec"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 3
+      },
+      "cited_fact": null,
+      "problems": [
+       "factual clause not supported by a verified fact (best fact F1 covers 0.00; unsupported words: collab, projec)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Collaboration Opportunity",
+     "body": "Hi Pela team,\n\nWe are a small Instagram content studio dedicated to creating engaging content around sustainable living and positive impact. We’d like to propose a collaborative Instagram post with you, built together with your team, that would reinforce the idea that Pela’s mission of educating and inspiring the global community of people committed to making a positive impact on our planet [P6]. You’ve highlighted that Pela simplified operations and scaled the ambassador program from 400 participants to over 1,600 in a few months, which is a significant step forward [P4]. We envision a post that visually showcases the impact of this growth, perhaps featuring a compelling image or short video, and would be a wonderful opportunity to build on the initial fact that Pela’s mission is to help people stay on course. We’d love to collaborate with you on this project, and we’d be happy to share our insights and creative ideas.\n\nThe BrandPilot team"
+    },
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   }
+  },
+  {
+   "index": 1,
+   "kind": "targeted_revision",
+   "revision_mode": "sentences",
+   "prompt_sha256": "278f80932ded56e3c993bb10e45298f37b3e40f3bcc6b5e77d4e67507295c0ed",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 5.984,
+   "usage": {
+    "prompt_tokens": 541,
+    "completion_tokens": 283,
+    "total_tokens": 824,
+    "prompt_tokens_details": {
+     "cached_tokens": 5
+    }
+   },
+   "error": null,
+   "sentence_edits": [
+    {
+     "index": 1,
+     "location": "body",
+     "old": "You’ve highlighted that Pela simplified operations and scaled the ambassador program from 400 participants to over 1,600 in a few months, which is a significant step forward.",
+     "new": "You’ve highlighted that Pela simplified operations and scaled the ambassador program from 400 participants to over 1,600 in a few months, which is a significant step forward.",
+     "action": "replace"
+    },
+    {
+     "index": 2,
+     "location": "body",
+     "old": "We envision a post that visually showcases the impact of this growth, perhaps featuring a compelling image or short video, and would be a wonderful opportunity to build on the initial fact that Pela’s mission is to help people stay on course.",
+     "new": "We envision a post that visually showcases the impact of this growth, perhaps featuring a compelling image or short video, and would be a wonderful opportunity to build on the initial fact that Pela’s mission is to help people stay on course.",
+     "action": "replace"
+    },
+    {
+     "index": 3,
+     "location": "body",
+     "old": "We’d love to collaborate with you on this project, and we’d be happy to share our insights and creative ideas.",
+     "new": "We’d love to collaborate with you on this project, and we’d be happy to share our insights and creative ideas.",
+     "action": "replace"
+    }
+   ],
+   "parsed": {
+    "subject": "Collaboration Opportunity",
+    "body": "Hi Pela team,\n\nWe are a small Instagram content studio dedicated to creating engaging content around sustainable living and positive impact. We’d like to propose a collaborative Instagram post with you, built together with your team, that would reinforce the idea that Pela’s mission of educating and inspiring the global community of people committed to making a positive impact on our planet. You’ve highlighted that Pela simplified operations and scaled the ambassador program from 400 participants to over 1,600 in a few months, which is a significant step forward. We envision a post that visually showcases the impact of this growth, perhaps featuring a compelling image or short video, and would be a wonderful opportunity to build on the initial fact that Pela’s mission is to help people stay on course. We’d love to collaborate with you on this project, and we’d be happy to share our insights and creative ideas.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": [
+     "sentence-level revision applied"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-9",
+    "passes": false,
+    "problems": [
+     "body is 155 words; it must be 100-150",
+     "\"You’ve highlighted that Pela simplified operations and scaled the ambassador program from \": says Pela stated this, but the source is a third-party article",
+     "\"We envision a post that visually showcases the impact of this growth, perhaps featuring a \": refers to company activity not in the verified facts: ['growth']",
+     "\"We’d love to collaborate with you on this project, and we’d be happy to share our insights\": factual clause not supported by a verified fact (best fact F1 covers 0.00; unsupported words: collab, projec)"
+    ],
+    "word_count": 155,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [
+     "F1",
+     "F2"
+    ],
+    "factual_sentences": 2,
+    "factual_sentences_supported": 0,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Collaboration Opportunity",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 0
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Pela team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We are a small Instagram content studio dedicated to creating engaging content around sustainable living and positive impact.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.182,
+       "uncovered": [
+        "around",
+        "conten",
+        "creati",
+        "dedica",
+        "engagi",
+        "instag",
+        "living",
+        "small",
+        "sustai"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 11
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d like to propose a collaborative Instagram post with you, built together with your team, that would reinforce the idea that Pela’s mission of educating and inspiring the global community of people committed to making a positive impact on our planet.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.75,
+       "uncovered": [
+        "built",
+        "missio",
+        "reinfo"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 12
+      },
+      "cited_fact": "F1",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "You’ve highlighted that Pela simplified operations and scaled the ambassador program from 400 participants to over 1,600 in a few months, which is a significant step forward.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.6,
+       "uncovered": [
+        "forwar",
+        "highli",
+        "scaled",
+        "signif",
+        "step",
+        "you've"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 15
+      },
+      "cited_fact": "F2",
+      "problems": [
+       "says Pela stated this, but the source is a third-party article"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "We envision a post that visually showcases the impact of this growth, perhaps featuring a compelling image or short video, and would be a wonderful opportunity to build on the initial fact that Pela’s mission is to help people stay on course.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F3",
+       "coverage": 0.214,
+       "uncovered": [
+        "compel",
+        "growth",
+        "image",
+        "impact",
+        "initia",
+        "missio",
+        "people",
+        "perhap",
+        "short",
+        "video",
+        "wonder"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 14
+      },
+      "cited_fact": null,
+      "problems": [
+       "refers to company activity not in the verified facts: ['growth']"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "We’d love to collaborate with you on this project, and we’d be happy to share our insights and creative ideas.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "ideas",
+        "insigh",
+        "projec"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 3
+      },
+      "cited_fact": null,
+      "problems": [
+       "factual clause not supported by a verified fact (best fact F1 covers 0.00; unsupported words: collab, projec)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Collaboration Opportunity",
+     "body": "Hi Pela team,\n\nWe are a small Instagram content studio dedicated to creating engaging content around sustainable living and positive impact. We’d like to propose a collaborative Instagram post with you, built together with your team, that would reinforce the idea that Pela’s mission of educating and inspiring the global community of people committed to making a positive impact on our planet [P6]. You’ve highlighted that Pela simplified operations and scaled the ambassador program from 400 participants to over 1,600 in a few months, which is a significant step forward [P4]. We envision a post that visually showcases the impact of this growth, perhaps featuring a compelling image or short video, and would be a wonderful opportunity to build on the initial fact that Pela’s mission is to help people stay on course. We’d love to collaborate with you on this project, and we’d be happy to share our insights and creative ideas.\n\nThe BrandPilot team"
+    },
+    "format_notes": [
+     "sentence-level revision applied"
+    ]
+   }
+  }
+ ],
+ "opportunity": {
+  "anchor_fact": "F1",
+  "text": "One collaborative Instagram post with Pela, created together with their team, that builds on the first fact above.",
+  "kind": "template"
+ },
+ "draft_prompt_sha256": "0fd06036868f5f5623c02f4bd5fca05979661a32eceb032c8cf519361c2f3a40",
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "checks still failing after 1 targeted revision",
+ "arm": "base",
+ "group": "secondary",
+ "tag": "frozen"
+}

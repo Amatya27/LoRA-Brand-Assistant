@@ -1,0 +1,11 @@
+{
+ "model": "mlx-community/gemma-3-1b-it-qat-4bit",
+ "messages": [
+  {
+   "role": "user",
+   "content": "You write a short outreach email from our team (a small Instagram content studio) to the marketing team at Away (travel luggage and suitcases).\n\nVerified facts about Away:\n- \"Away's dreamy new 'White Lotus' luggage collab is perfect travel eye candy Away's newest limited-edition collection, launching globally on Feb. 11, is a collaboration between the popular luggage brand and Warner Bros.\" (source: Away's own website)\n- \"Away also forged celebrity collaborations with notable figures like Karlie Kloss, which helped bring their products to a wider audience.\" (source: a published article about Away)\n- \"Away combined a simple, well-designed product with a lifestyle-driven marketing approach, direct online sales and a strong content and community strategy.\" (source: a published article about Away)\n\nOpportunity to propose (our idea, not a fact): One collaborative Instagram post with Away, created together with their team, that builds on the first fact above.\n\nWrite the body in this order:\n1. \"Hi Away team,\"\n2. One sentence saying who we are and that we would like to propose a collaborative Instagram post.\n3. One or two sentences, each restating one fact above closely in your own words.\n4. Two or three sentences describing the proposed post: what it could show and how our teams would make it together.\n5. One sentence inviting them to reply.\n6. \"The BrandPilot team\"\n\nRules:\n- Say nothing about Away except the facts above: no other numbers, dates, audiences, communities, results, products or activities. In the sentences about the post, describe only the post, not Away's past activity.\n- Refer to Away as \"you\" or \"Away\". Never use \"we\" or \"our\" for Away; \"we\" is our team.\n- Never say Away lacks something or has a weakness or gap.\n- Propose Instagram only. Do not mention any other platform.\n- Do not promise results. Say what the post could do, not what it will achieve.\n- The body is about 120 words, never more than 140. Start it with \"Hi Away team,\" and end it with \"The BrandPilot team\".\n\nReturn exactly this format and nothing else:\nSUBJECT: <one line>\nBODY:\n<email body>"
+  }
+ ],
+ "temperature": 0.0,
+ "max_tokens": 400
+}

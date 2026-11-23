@@ -1,0 +1,211 @@
+{
+ "checks_version": "phase5-draft-checks-4",
+ "passes": false,
+ "problems": [
+  "\"You’ve highlighted the fact that Fly By Jing leveraged this insight to build a strong foun\": factual statement not supported by a verified fact (best fact F2 covers 0.22; unsupported words: build, founda, highli, insigh, levera, strong, you've)",
+  "\"Please reply with your initial reactions.\": factual statement not supported by a verified fact (best fact F1 covers 0.00; unsupported words: initia, please, reacti, reply)",
+  "no sentence restates a verified fact"
+ ],
+ "word_count": 127,
+ "recipient": "correct",
+ "sender": "correct",
+ "instagram": true,
+ "other_platforms": [],
+ "promises": [],
+ "facts_used": [],
+ "factual_sentences": 3,
+ "factual_sentences_supported": 0,
+ "sentences": [
+  {
+   "location": "subject",
+   "sentence": "Collaboration Proposal",
+   "kind": "subject",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 0
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Hi Fly By Jing team,",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We are a small team dedicated to crafting engaging Instagram content, and we’d like to propose a collaborative post with you.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [
+     "crafti",
+     "dedica",
+     "small"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 3
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We’re interested in creating a visual piece that directly reflects the importance of understanding pre-existing demand signals when launching a new brand.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.333,
+    "uncovered": [
+     "direct",
+     "import",
+     "intere",
+     "launch",
+     "piece",
+     "reflec",
+     "unders",
+     "when"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 12
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "You’ve highlighted the fact that Fly By Jing leveraged this insight to build a strong foundation for retail partnerships.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.222,
+    "uncovered": [
+     "build",
+     "founda",
+     "highli",
+     "insigh",
+     "levera",
+     "strong",
+     "you've"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 9
+   },
+   "cited_fact": null,
+   "problems": [
+    "factual statement not supported by a verified fact (best fact F2 covers 0.22; unsupported words: build, founda, highli, insigh, levera, strong, you've)"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "Essentially, we envision a post showcasing the initial research that informed the brand’s strategy, presented in a visually compelling way.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.143,
+    "uncovered": [
+     "compel",
+     "essent",
+     "inform",
+     "initia",
+     "presen",
+     "resear"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 7
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Together, we could build a post that subtly demonstrates the value of this early data and subtly encourages exploration of similar insights.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [
+     "data",
+     "demons",
+     "early",
+     "encour",
+     "insigh",
+     "simila",
+     "subtly",
+     "value"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 8
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We’d love to hear your thoughts on this idea.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [
+     "hear",
+     "idea",
+     "though"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 3
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Please reply with your initial reactions.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [
+     "initia",
+     "please",
+     "reacti",
+     "reply"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 4
+   },
+   "cited_fact": null,
+   "problems": [
+    "factual statement not supported by a verified fact (best fact F1 covers 0.00; unsupported words: initia, please, reacti, reply)"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "The BrandPilot team",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  }
+ ],
+ "rendered": {
+  "subject": "Collaboration Proposal",
+  "body": "Hi Fly By Jing team,\n\nWe are a small team dedicated to crafting engaging Instagram content, and we’d like to propose a collaborative post with you. We’re interested in creating a visual piece that directly reflects the importance of understanding pre-existing demand signals when launching a new brand. You’ve highlighted the fact that Fly By Jing leveraged this insight to build a strong foundation for retail partnerships. Essentially, we envision a post showcasing the initial research that informed the brand’s strategy, presented in a visually compelling way. Together, we could build a post that subtly demonstrates the value of this early data and subtly encourages exploration of similar insights.\n\nWe’d love to hear your thoughts on this idea. Please reply with your initial reactions.\n\nThe BrandPilot team"
+ },
+ "format_notes": []
+}

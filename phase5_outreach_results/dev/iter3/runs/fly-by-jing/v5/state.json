@@ -1,0 +1,424 @@
+{
+ "workflow_version": "phase5-outreach-1",
+ "fact_selector_version": "phase5-facts-1",
+ "draft_prompt_version": "phase5-draft-prompt-3",
+ "checks_version": "phase5-draft-checks-3",
+ "company_id": "fly-by-jing",
+ "packet_sha256": "c974a43b16e102e870046f0fbbb1e63d54bd1f356426177dfbdd948911ce7eea",
+ "facts": [
+  {
+   "fact_id": "F1",
+   "passage_id": "P3",
+   "quote": "Another tactic that’s worked well for Fly by Jing as part of its community-building strategy, according to Patricio-Archer, is partnering with other brands.",
+   "score": 4.85,
+   "statement_type": "actual_activity",
+   "official_source": false,
+   "source_url": "https://www.marketingbrew.com/stories/2023/01/13/how-fly-by-jing-went-from-kickstarter-to-shake-shack-partner-in-a-few-years",
+   "text_sha256": "6e3f9df178a2898a1789b91747a0bd6ddbb8cdfd077db25a4100c6a58e96cde7",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F2",
+   "passage_id": "P4",
+   "quote": "By the time Fly By Jing pursued retail partnerships with Whole Foods, Target, and eventually broader grocery distribution, the brand had something most emerging CPG products don’t: pre-existing demand signals.",
+   "score": 2.5,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://www.influencers-time.com/how-fly-by-jing-built-a-cult-brand-with-chili-crisp-seeding/",
+   "text_sha256": "0328c40525a0e8a9816ca5c7afa2971e981c8aa28acd9e2f225df4e8a5a2a37f",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F3",
+   "passage_id": "P8",
+   "quote": "For this week’s Modern Retail Talk, founder and CEO Jing Gao spoke about her trials and tribulations during the coronavirus.",
+   "score": 1.0,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://www.modernretail.co/retailers/modern-retail-talk-how-instagram-darling-fly-by-jing-handled-an-unprecedented-demand-surge/",
+   "text_sha256": "55145375e85229b4fc05696794bab7e388f58693565ab4a274161bdafa0e09e8",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  }
+ ],
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "prompt_sha256": "d4adfea2f1a0499e5708d2c0ca23e9fa2b7ade00eab4617d30ca23e392e8ab85",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 9.461,
+   "usage": {
+    "prompt_tokens": 416,
+    "completion_tokens": 159,
+    "total_tokens": 575,
+    "prompt_tokens_details": {
+     "cached_tokens": 25
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "Collaborating on an Instagram Post for Fly By Jing",
+    "body": "Hi Fly By Jing team,\n\nWe’re reaching out to propose a collaborative Instagram post that builds on your community-building strategy, as you’ve learned from Patricio-Archer and the insights from your sources. Your team has identified that partnering with other brands is a successful tactic for Fly By Jing, and that this approach is a key component of your marketing efforts. This post would be a great opportunity to showcase your partnership and further engage your audience through a shared Instagram experience. It would be a chance to explore how you can bring your unique brand story to a wider audience, and it would be a fantastic way to continue building on the momentum you’ve already achieved.\n\nThe BrandPilot team.",
+    "format_problems": [],
+    "format_notes": []
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-3",
+    "passes": false,
+    "problems": [
+     "\"We’re reaching out to propose a collaborative Instagram post that builds on your community\": proposal states a premise about the company that no verified fact supports (best fact F1 covers 0.44; unsupported words: insigh, learne, source, we're, you've)",
+     "\"Your team has identified that partnering with other brands is a successful tactic for Fly \": factual statement not supported by a verified fact (best fact F1 covers 0.36; unsupported words: approa, compon, effort, identi, key, market, succes)",
+     "\"It would be a chance to explore how you can bring your unique brand story to a wider audie\": proposal states a premise about the company that no verified fact supports (best fact F1 covers 0.00; unsupported words: achiev, alread, bring, can, chance, contin, fantas, how)",
+     "no sentence restates a verified fact"
+    ],
+    "word_count": 119,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [],
+    "factual_sentences": 1,
+    "factual_sentences_supported": 0,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Collaborating on an Instagram Post for Fly By Jing",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 0
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Fly By Jing team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’re reaching out to propose a collaborative Instagram post that builds on your community-building strategy, as you’ve learned from Patricio-Archer and the insights from your sources.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.444,
+       "uncovered": [
+        "insigh",
+        "learne",
+        "source",
+        "we're",
+        "you've"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 9
+      },
+      "cited_fact": null,
+      "problems": [
+       "proposal states a premise about the company that no verified fact supports (best fact F1 covers 0.44; unsupported words: insigh, learne, source, we're, you've)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "Your team has identified that partnering with other brands is a successful tactic for Fly By Jing, and that this approach is a key component of your marketing efforts.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.364,
+       "uncovered": [
+        "approa",
+        "compon",
+        "effort",
+        "identi",
+        "key",
+        "market",
+        "succes"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 11
+      },
+      "cited_fact": null,
+      "problems": [
+       "factual statement not supported by a verified fact (best fact F1 covers 0.36; unsupported words: approa, compon, effort, identi, key, market, succes)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "This post would be a great opportunity to showcase your partnership and further engage your audience through a shared Instagram experience.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "engage",
+        "experi",
+        "furthe",
+        "shared",
+        "throug"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 5
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "It would be a chance to explore how you can bring your unique brand story to a wider audience, and it would be a fantastic way to continue building on the momentum you’ve already achieved.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "achiev",
+        "alread",
+        "bring",
+        "can",
+        "chance",
+        "contin",
+        "fantas",
+        "how",
+        "moment",
+        "story",
+        "unique",
+        "wider",
+        "you've"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 13
+      },
+      "cited_fact": null,
+      "problems": [
+       "proposal states a premise about the company that no verified fact supports (best fact F1 covers 0.00; unsupported words: achiev, alread, bring, can, chance, contin, fantas, how)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team.",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Collaborating on an Instagram Post for Fly By Jing",
+     "body": "Hi Fly By Jing team,\n\nWe’re reaching out to propose a collaborative Instagram post that builds on your community-building strategy, as you’ve learned from Patricio-Archer and the insights from your sources. Your team has identified that partnering with other brands is a successful tactic for Fly By Jing, and that this approach is a key component of your marketing efforts. This post would be a great opportunity to showcase your partnership and further engage your audience through a shared Instagram experience. It would be a chance to explore how you can bring your unique brand story to a wider audience, and it would be a fantastic way to continue building on the momentum you’ve already achieved.\n\nThe BrandPilot team."
+    },
+    "format_notes": []
+   }
+  },
+  {
+   "index": 1,
+   "kind": "targeted_revision",
+   "prompt_sha256": "1035e8b0ea7529ce486c001ad5629bd40337d0d8342c16377445bc1b2444afdd",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 5.198,
+   "usage": {
+    "prompt_tokens": 810,
+    "completion_tokens": 159,
+    "total_tokens": 969,
+    "prompt_tokens_details": {
+     "cached_tokens": 411
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "Collaborating on an Instagram Post for Fly By Jing",
+    "body": "Hi Fly By Jing team,\n\nWe’re reaching out to propose a collaborative Instagram post that builds on your community-building strategy, as you’ve learned from Patricio-Archer and the insights from your sources. Your team has identified that partnering with other brands is a successful tactic for Fly By Jing, and that this approach is a key component of your marketing efforts. This post would be a great opportunity to showcase your partnership and further engage your audience through a shared Instagram experience. It would be a chance to explore how you can bring your unique brand story to a wider audience, and it would be a fantastic way to continue building on the momentum you’ve already achieved.\n\nThe BrandPilot team.",
+    "format_problems": [],
+    "format_notes": []
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-3",
+    "passes": false,
+    "problems": [
+     "\"We’re reaching out to propose a collaborative Instagram post that builds on your community\": proposal states a premise about the company that no verified fact supports (best fact F1 covers 0.44; unsupported words: insigh, learne, source, we're, you've)",
+     "\"Your team has identified that partnering with other brands is a successful tactic for Fly \": factual statement not supported by a verified fact (best fact F1 covers 0.36; unsupported words: approa, compon, effort, identi, key, market, succes)",
+     "\"It would be a chance to explore how you can bring your unique brand story to a wider audie\": proposal states a premise about the company that no verified fact supports (best fact F1 covers 0.00; unsupported words: achiev, alread, bring, can, chance, contin, fantas, how)",
+     "no sentence restates a verified fact"
+    ],
+    "word_count": 119,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [],
+    "factual_sentences": 1,
+    "factual_sentences_supported": 0,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Collaborating on an Instagram Post for Fly By Jing",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 0
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Fly By Jing team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’re reaching out to propose a collaborative Instagram post that builds on your community-building strategy, as you’ve learned from Patricio-Archer and the insights from your sources.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.444,
+       "uncovered": [
+        "insigh",
+        "learne",
+        "source",
+        "we're",
+        "you've"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 9
+      },
+      "cited_fact": null,
+      "problems": [
+       "proposal states a premise about the company that no verified fact supports (best fact F1 covers 0.44; unsupported words: insigh, learne, source, we're, you've)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "Your team has identified that partnering with other brands is a successful tactic for Fly By Jing, and that this approach is a key component of your marketing efforts.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.364,
+       "uncovered": [
+        "approa",
+        "compon",
+        "effort",
+        "identi",
+        "key",
+        "market",
+        "succes"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 11
+      },
+      "cited_fact": null,
+      "problems": [
+       "factual statement not supported by a verified fact (best fact F1 covers 0.36; unsupported words: approa, compon, effort, identi, key, market, succes)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "This post would be a great opportunity to showcase your partnership and further engage your audience through a shared Instagram experience.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "engage",
+        "experi",
+        "furthe",
+        "shared",
+        "throug"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 5
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "It would be a chance to explore how you can bring your unique brand story to a wider audience, and it would be a fantastic way to continue building on the momentum you’ve already achieved.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "achiev",
+        "alread",
+        "bring",
+        "can",
+        "chance",
+        "contin",
+        "fantas",
+        "how",
+        "moment",
+        "story",
+        "unique",
+        "wider",
+        "you've"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 13
+      },
+      "cited_fact": null,
+      "problems": [
+       "proposal states a premise about the company that no verified fact supports (best fact F1 covers 0.00; unsupported words: achiev, alread, bring, can, chance, contin, fantas, how)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team.",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Collaborating on an Instagram Post for Fly By Jing",
+     "body": "Hi Fly By Jing team,\n\nWe’re reaching out to propose a collaborative Instagram post that builds on your community-building strategy, as you’ve learned from Patricio-Archer and the insights from your sources. Your team has identified that partnering with other brands is a successful tactic for Fly By Jing, and that this approach is a key component of your marketing efforts. This post would be a great opportunity to showcase your partnership and further engage your audience through a shared Instagram experience. It would be a chance to explore how you can bring your unique brand story to a wider audience, and it would be a fantastic way to continue building on the momentum you’ve already achieved.\n\nThe BrandPilot team."
+    },
+    "format_notes": []
+   }
+  }
+ ],
+ "opportunity": {
+  "anchor_fact": "F1",
+  "text": "One collaborative Instagram post with Fly By Jing, created together with their team, that builds on the first fact above.",
+  "kind": "template"
+ },
+ "draft_prompt_sha256": "d4adfea2f1a0499e5708d2c0ca23e9fa2b7ade00eab4617d30ca23e392e8ab85",
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "checks still failing after 1 targeted revision",
+ "arm": "v5",
+ "group": "dev",
+ "tag": "iter3"
+}

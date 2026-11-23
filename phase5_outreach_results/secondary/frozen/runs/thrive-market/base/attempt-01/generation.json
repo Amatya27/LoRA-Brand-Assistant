@@ -1,0 +1,75 @@
+{
+ "ok": true,
+ "finish_reason": "stop",
+ "usage": {
+  "prompt_tokens": 367,
+  "completion_tokens": 120,
+  "total_tokens": 487,
+  "prompt_tokens_details": {
+   "cached_tokens": 0
+  }
+ },
+ "latency_s": 2.692,
+ "error": null,
+ "error_type": null,
+ "settings": {
+  "api_base": "http://127.0.0.1:8080/v1",
+  "model": "mlx-community/gemma-3-1b-it-qat-4bit",
+  "adapter_path": null,
+  "max_tokens": 400,
+  "temperature": 0.0,
+  "timeout_s": 300.0,
+  "repetition_penalty": null,
+  "repetition_context_size": null
+ },
+ "prompt_sha256": "044c34eb0b11eb960231b5781248a3ede04e18c0f5f1118d8c2d12b8f5f532ad",
+ "runtime_verification": {
+  "verified": true,
+  "checks": {
+   "request_found_in_ledger": true,
+   "single_request_in_flight": true,
+   "requested_model_matches": true,
+   "served_model_matches": true,
+   "served_adapter_matches_request": true,
+   "load_event_found": true,
+   "load_event_model_key_matches": true,
+   "no_adapter_loaded": true
+  },
+  "observations": {
+   "server_pid": 8607,
+   "request_event": {
+    "schema": "phase3-load-ledger-v1",
+    "pid": 8607,
+    "time": 1795441765.096643,
+    "event": "request_started",
+    "messages_sha256": "6a495b32ddf6138c7ec77a6de8ff92bba8dd7912cd80027afe64d7ca734232eb",
+    "requested_model": "mlx-community/gemma-3-1b-it-qat-4bit",
+    "requested_adapter": null,
+    "model_key": [
+     "mlx-community/gemma-3-1b-it-qat-4bit",
+     null,
+     null
+    ],
+    "in_flight": 1
+   },
+   "matching_request_events": 1,
+   "load_event": {
+    "schema": "phase3-load-ledger-v1",
+    "pid": 8607,
+    "time": 1795441760.887001,
+    "event": "model_loaded",
+    "model_key": [
+     "mlx-community/gemma-3-1b-it-qat-4bit",
+     null,
+     null
+    ]
+   }
+  },
+  "method": "server_load_ledger",
+  "ledger_path": "<repo>/outputs/phase5_work/server_load_ledger.jsonl",
+  "ledger_schema_version": "phase3-load-ledger-v1",
+  "ledger_problems": [],
+  "messages_sha256": "6a495b32ddf6138c7ec77a6de8ff92bba8dd7912cd80027afe64d7ca734232eb"
+ },
+ "runtime_verified": true
+}

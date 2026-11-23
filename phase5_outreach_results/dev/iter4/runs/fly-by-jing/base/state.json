@@ -1,0 +1,536 @@
+{
+ "workflow_version": "phase5-outreach-1",
+ "fact_selector_version": "phase5-facts-1",
+ "draft_prompt_version": "phase5-draft-prompt-4",
+ "checks_version": "phase5-draft-checks-4",
+ "company_id": "fly-by-jing",
+ "packet_sha256": "c974a43b16e102e870046f0fbbb1e63d54bd1f356426177dfbdd948911ce7eea",
+ "facts": [
+  {
+   "fact_id": "F1",
+   "passage_id": "P3",
+   "quote": "Another tactic that’s worked well for Fly by Jing as part of its community-building strategy, according to Patricio-Archer, is partnering with other brands.",
+   "score": 4.85,
+   "statement_type": "actual_activity",
+   "official_source": false,
+   "source_url": "https://www.marketingbrew.com/stories/2023/01/13/how-fly-by-jing-went-from-kickstarter-to-shake-shack-partner-in-a-few-years",
+   "text_sha256": "6e3f9df178a2898a1789b91747a0bd6ddbb8cdfd077db25a4100c6a58e96cde7",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F2",
+   "passage_id": "P4",
+   "quote": "By the time Fly By Jing pursued retail partnerships with Whole Foods, Target, and eventually broader grocery distribution, the brand had something most emerging CPG products don’t: pre-existing demand signals.",
+   "score": 2.5,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://www.influencers-time.com/how-fly-by-jing-built-a-cult-brand-with-chili-crisp-seeding/",
+   "text_sha256": "0328c40525a0e8a9816ca5c7afa2971e981c8aa28acd9e2f225df4e8a5a2a37f",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F3",
+   "passage_id": "P8",
+   "quote": "For this week’s Modern Retail Talk, founder and CEO Jing Gao spoke about her trials and tribulations during the coronavirus.",
+   "score": 1.0,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://www.modernretail.co/retailers/modern-retail-talk-how-instagram-darling-fly-by-jing-handled-an-unprecedented-demand-surge/",
+   "text_sha256": "55145375e85229b4fc05696794bab7e388f58693565ab4a274161bdafa0e09e8",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  }
+ ],
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "prompt_sha256": "e5a4f2ebc52c47e7711d45836c6b05ed1d680de6d674692801af9227fd36ed2f",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 8.288,
+   "usage": {
+    "prompt_tokens": 528,
+    "completion_tokens": 162,
+    "total_tokens": 690,
+    "prompt_tokens_details": {
+     "cached_tokens": 25
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "Collaboration Proposal",
+    "body": "Hi Fly By Jing team,\n\nWe are a small team dedicated to crafting engaging Instagram content, and we’d like to propose a collaborative post with you. We’re interested in creating a visual piece that directly reflects the importance of understanding pre-existing demand signals when launching a new brand. You’ve highlighted the fact that Fly By Jing leveraged this insight to build a strong foundation for retail partnerships. Essentially, we envision a post showcasing the initial research that informed the brand’s strategy, presented in a visually compelling way.  Together, we could build a post that subtly demonstrates the value of this early data and subtly encourages exploration of similar insights.\n\nWe’d love to hear your thoughts on this idea. Please reply with your initial reactions.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-4",
+    "passes": false,
+    "problems": [
+     "\"You’ve highlighted the fact that Fly By Jing leveraged this insight to build a strong foun\": factual statement not supported by a verified fact (best fact F2 covers 0.22; unsupported words: build, founda, highli, insigh, levera, strong, you've)",
+     "\"Please reply with your initial reactions.\": factual statement not supported by a verified fact (best fact F1 covers 0.00; unsupported words: initia, please, reacti, reply)",
+     "no sentence restates a verified fact"
+    ],
+    "word_count": 127,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [],
+    "factual_sentences": 3,
+    "factual_sentences_supported": 0,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Collaboration Proposal",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 0
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Fly By Jing team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We are a small team dedicated to crafting engaging Instagram content, and we’d like to propose a collaborative post with you.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "crafti",
+        "dedica",
+        "small"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 3
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’re interested in creating a visual piece that directly reflects the importance of understanding pre-existing demand signals when launching a new brand.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.333,
+       "uncovered": [
+        "direct",
+        "import",
+        "intere",
+        "launch",
+        "piece",
+        "reflec",
+        "unders",
+        "when"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 12
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "You’ve highlighted the fact that Fly By Jing leveraged this insight to build a strong foundation for retail partnerships.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.222,
+       "uncovered": [
+        "build",
+        "founda",
+        "highli",
+        "insigh",
+        "levera",
+        "strong",
+        "you've"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 9
+      },
+      "cited_fact": null,
+      "problems": [
+       "factual statement not supported by a verified fact (best fact F2 covers 0.22; unsupported words: build, founda, highli, insigh, levera, strong, you've)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "Essentially, we envision a post showcasing the initial research that informed the brand’s strategy, presented in a visually compelling way.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.143,
+       "uncovered": [
+        "compel",
+        "essent",
+        "inform",
+        "initia",
+        "presen",
+        "resear"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 7
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Together, we could build a post that subtly demonstrates the value of this early data and subtly encourages exploration of similar insights.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "data",
+        "demons",
+        "early",
+        "encour",
+        "insigh",
+        "simila",
+        "subtly",
+        "value"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 8
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d love to hear your thoughts on this idea.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "hear",
+        "idea",
+        "though"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 3
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Please reply with your initial reactions.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "initia",
+        "please",
+        "reacti",
+        "reply"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 4
+      },
+      "cited_fact": null,
+      "problems": [
+       "factual statement not supported by a verified fact (best fact F1 covers 0.00; unsupported words: initia, please, reacti, reply)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Collaboration Proposal",
+     "body": "Hi Fly By Jing team,\n\nWe are a small team dedicated to crafting engaging Instagram content, and we’d like to propose a collaborative post with you. We’re interested in creating a visual piece that directly reflects the importance of understanding pre-existing demand signals when launching a new brand. You’ve highlighted the fact that Fly By Jing leveraged this insight to build a strong foundation for retail partnerships. Essentially, we envision a post showcasing the initial research that informed the brand’s strategy, presented in a visually compelling way. Together, we could build a post that subtly demonstrates the value of this early data and subtly encourages exploration of similar insights.\n\nWe’d love to hear your thoughts on this idea. Please reply with your initial reactions.\n\nThe BrandPilot team"
+    },
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   }
+  },
+  {
+   "index": 1,
+   "kind": "targeted_revision",
+   "prompt_sha256": "2511c7f43208b7ab6e1844414f0f4d7647144779f788dad347fc6348466e2183",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 4.677,
+   "usage": {
+    "prompt_tokens": 807,
+    "completion_tokens": 165,
+    "total_tokens": 972,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "Collaboration Proposal",
+    "body": "Hi Fly By Jing team,\n\nWe are a small team dedicated to crafting engaging Instagram content, and we’d like to propose a collaborative post with you. We’re interested in creating a visual piece that directly reflects the importance of understanding pre-existing demand signals when launching a new brand. You’ve highlighted the fact that Fly By Jing leveraged this insight to build a strong foundation for retail partnerships. Essentially, we envision a post showcasing the initial research that informed the brand’s strategy, presented in a visually compelling way. Together, we could build a post that subtly demonstrates the value of this early data and subtly encourages exploration of similar insights.\n\nWe’d love to hear your thoughts on this idea. Please reply with your initial reactions.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": []
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-4",
+    "passes": false,
+    "problems": [
+     "\"You’ve highlighted the fact that Fly By Jing leveraged this insight to build a strong foun\": factual statement not supported by a verified fact (best fact F2 covers 0.22; unsupported words: build, founda, highli, insigh, levera, strong, you've)",
+     "\"Please reply with your initial reactions.\": factual statement not supported by a verified fact (best fact F1 covers 0.00; unsupported words: initia, please, reacti, reply)",
+     "no sentence restates a verified fact"
+    ],
+    "word_count": 127,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [],
+    "factual_sentences": 3,
+    "factual_sentences_supported": 0,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Collaboration Proposal",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 0
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Fly By Jing team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We are a small team dedicated to crafting engaging Instagram content, and we’d like to propose a collaborative post with you.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "crafti",
+        "dedica",
+        "small"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 3
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’re interested in creating a visual piece that directly reflects the importance of understanding pre-existing demand signals when launching a new brand.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.333,
+       "uncovered": [
+        "direct",
+        "import",
+        "intere",
+        "launch",
+        "piece",
+        "reflec",
+        "unders",
+        "when"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 12
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "You’ve highlighted the fact that Fly By Jing leveraged this insight to build a strong foundation for retail partnerships.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.222,
+       "uncovered": [
+        "build",
+        "founda",
+        "highli",
+        "insigh",
+        "levera",
+        "strong",
+        "you've"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 9
+      },
+      "cited_fact": null,
+      "problems": [
+       "factual statement not supported by a verified fact (best fact F2 covers 0.22; unsupported words: build, founda, highli, insigh, levera, strong, you've)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "Essentially, we envision a post showcasing the initial research that informed the brand’s strategy, presented in a visually compelling way.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.143,
+       "uncovered": [
+        "compel",
+        "essent",
+        "inform",
+        "initia",
+        "presen",
+        "resear"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 7
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Together, we could build a post that subtly demonstrates the value of this early data and subtly encourages exploration of similar insights.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "data",
+        "demons",
+        "early",
+        "encour",
+        "insigh",
+        "simila",
+        "subtly",
+        "value"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 8
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d love to hear your thoughts on this idea.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "hear",
+        "idea",
+        "though"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 3
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Please reply with your initial reactions.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "initia",
+        "please",
+        "reacti",
+        "reply"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 4
+      },
+      "cited_fact": null,
+      "problems": [
+       "factual statement not supported by a verified fact (best fact F1 covers 0.00; unsupported words: initia, please, reacti, reply)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Collaboration Proposal",
+     "body": "Hi Fly By Jing team,\n\nWe are a small team dedicated to crafting engaging Instagram content, and we’d like to propose a collaborative post with you. We’re interested in creating a visual piece that directly reflects the importance of understanding pre-existing demand signals when launching a new brand. You’ve highlighted the fact that Fly By Jing leveraged this insight to build a strong foundation for retail partnerships. Essentially, we envision a post showcasing the initial research that informed the brand’s strategy, presented in a visually compelling way. Together, we could build a post that subtly demonstrates the value of this early data and subtly encourages exploration of similar insights.\n\nWe’d love to hear your thoughts on this idea. Please reply with your initial reactions.\n\nThe BrandPilot team"
+    },
+    "format_notes": []
+   }
+  }
+ ],
+ "opportunity": {
+  "anchor_fact": "F1",
+  "text": "One collaborative Instagram post with Fly By Jing, created together with their team, that builds on the first fact above.",
+  "kind": "template"
+ },
+ "draft_prompt_sha256": "e5a4f2ebc52c47e7711d45836c6b05ed1d680de6d674692801af9227fd36ed2f",
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "checks still failing after 1 targeted revision",
+ "arm": "base",
+ "group": "dev",
+ "tag": "iter4"
+}

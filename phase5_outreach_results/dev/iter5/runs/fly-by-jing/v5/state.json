@@ -1,0 +1,557 @@
+{
+ "workflow_version": "phase5-outreach-1",
+ "fact_selector_version": "phase5-facts-1",
+ "draft_prompt_version": "phase5-draft-prompt-5",
+ "checks_version": "phase5-draft-checks-5",
+ "company_id": "fly-by-jing",
+ "packet_sha256": "c974a43b16e102e870046f0fbbb1e63d54bd1f356426177dfbdd948911ce7eea",
+ "facts": [
+  {
+   "fact_id": "F1",
+   "passage_id": "P3",
+   "quote": "Another tactic that’s worked well for Fly by Jing as part of its community-building strategy, according to Patricio-Archer, is partnering with other brands.",
+   "score": 4.85,
+   "statement_type": "actual_activity",
+   "official_source": false,
+   "source_url": "https://www.marketingbrew.com/stories/2023/01/13/how-fly-by-jing-went-from-kickstarter-to-shake-shack-partner-in-a-few-years",
+   "text_sha256": "6e3f9df178a2898a1789b91747a0bd6ddbb8cdfd077db25a4100c6a58e96cde7",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F2",
+   "passage_id": "P4",
+   "quote": "By the time Fly By Jing pursued retail partnerships with Whole Foods, Target, and eventually broader grocery distribution, the brand had something most emerging CPG products don’t: pre-existing demand signals.",
+   "score": 2.5,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://www.influencers-time.com/how-fly-by-jing-built-a-cult-brand-with-chili-crisp-seeding/",
+   "text_sha256": "0328c40525a0e8a9816ca5c7afa2971e981c8aa28acd9e2f225df4e8a5a2a37f",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F3",
+   "passage_id": "P8",
+   "quote": "For this week’s Modern Retail Talk, founder and CEO Jing Gao spoke about her trials and tribulations during the coronavirus.",
+   "score": 1.0,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://www.modernretail.co/retailers/modern-retail-talk-how-instagram-darling-fly-by-jing-handled-an-unprecedented-demand-surge/",
+   "text_sha256": "55145375e85229b4fc05696794bab7e388f58693565ab4a274161bdafa0e09e8",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  }
+ ],
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "revision_mode": null,
+   "prompt_sha256": "4abeff4b8ad6fc2250189f4733dd32b65153de5bbc25fa50cb6633a44c27e2de",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 9.021,
+   "usage": {
+    "prompt_tokens": 532,
+    "completion_tokens": 197,
+    "total_tokens": 729,
+    "prompt_tokens_details": {
+     "cached_tokens": 25
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "Collaboration Opportunity for Instagram",
+    "body": "Hi Fly By Jing team,\n\nWe’re a small team dedicated to crafting engaging Instagram content that helps brands connect with their audiences. We’d like to propose a collaborative Instagram post built on the fact that Fly By Jing has identified the importance of partnering with other brands as a key component of its community-building strategy. You’ve also noted that this approach has provided a significant advantage in the early stages of CPG product launches, specifically through the use of pre-existing demand signals. Furthermore, founder Jing Gao shared that the brand experienced challenges during the coronavirus pandemic, which they learned from and incorporated into its marketing approach. This post would showcase a collaborative Instagram concept that builds on that foundation, featuring a post that highlights the partnership with Fly By Jing and their community-building strategy, inspired by your insights. It would be a way to further demonstrate your commitment to strategic marketing and build on your past successes together.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-5",
+    "passes": false,
+    "problems": [
+     "body is 161 words; it must be 100-150",
+     "\"You’ve also noted that this approach has provided a significant advantage in the early sta\": factual statement not supported by a verified fact (best fact F2 covers 0.29; unsupported words: advant, approa, early, launch, noted, provid, signif, specif)",
+     "\"Furthermore, founder Jing Gao shared that the brand experienced challenges during the coro\": factual statement not supported by a verified fact (best fact F3 covers 0.31; unsupported words: approa, challe, experi, furthe, incorp, learne, market, pandem)"
+    ],
+    "word_count": 161,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [
+     "F1"
+    ],
+    "factual_sentences": 3,
+    "factual_sentences_supported": 0,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Collaboration Opportunity for Instagram",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 0
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Fly By Jing team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’re a small team dedicated to crafting engaging Instagram content that helps brands connect with their audiences.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.1,
+       "uncovered": [
+        "audien",
+        "connec",
+        "conten",
+        "crafti",
+        "dedica",
+        "engagi",
+        "helps",
+        "instag",
+        "small"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 10
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d like to propose a collaborative Instagram post built on the fact that Fly By Jing has identified the importance of partnering with other brands as a key component of its community-building strategy.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.444,
+       "uncovered": [
+        "built",
+        "compon",
+        "identi",
+        "import",
+        "key"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 9
+      },
+      "cited_fact": "F1",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "You’ve also noted that this approach has provided a significant advantage in the early stages of CPG product launches, specifically through the use of pre-existing demand signals.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.294,
+       "uncovered": [
+        "advant",
+        "approa",
+        "early",
+        "launch",
+        "noted",
+        "provid",
+        "signif",
+        "specif",
+        "stages",
+        "throug",
+        "use",
+        "you've"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 17
+      },
+      "cited_fact": null,
+      "problems": [
+       "factual statement not supported by a verified fact (best fact F2 covers 0.29; unsupported words: advant, approa, early, launch, noted, provid, signif, specif)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "Furthermore, founder Jing Gao shared that the brand experienced challenges during the coronavirus pandemic, which they learned from and incorporated into its marketing approach.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F3",
+       "coverage": 0.308,
+       "uncovered": [
+        "approa",
+        "challe",
+        "experi",
+        "furthe",
+        "incorp",
+        "learne",
+        "market",
+        "pandem",
+        "shared"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 13
+      },
+      "cited_fact": null,
+      "problems": [
+       "factual statement not supported by a verified fact (best fact F3 covers 0.31; unsupported words: approa, challe, experi, furthe, incorp, learne, market, pandem)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "This post would showcase a collaborative Instagram concept that builds on that foundation, featuring a post that highlights the partnership with Fly By Jing and their community-building strategy, inspired by your insights.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.5,
+       "uncovered": [
+        "founda",
+        "insigh"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 4
+      },
+      "cited_fact": "F1",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "It would be a way to further demonstrate your commitment to strategic marketing and build on your past successes together.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.143,
+       "uncovered": [
+        "commit",
+        "demons",
+        "furthe",
+        "market",
+        "past",
+        "succes"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 7
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Collaboration Opportunity for Instagram",
+     "body": "Hi Fly By Jing team,\n\nWe’re a small team dedicated to crafting engaging Instagram content that helps brands connect with their audiences. We’d like to propose a collaborative Instagram post built on the fact that Fly By Jing has identified the importance of partnering with other brands as a key component of its community-building strategy [P3]. You’ve also noted that this approach has provided a significant advantage in the early stages of CPG product launches, specifically through the use of pre-existing demand signals. Furthermore, founder Jing Gao shared that the brand experienced challenges during the coronavirus pandemic, which they learned from and incorporated into its marketing approach. This post would showcase a collaborative Instagram concept that builds on that foundation, featuring a post that highlights the partnership with Fly By Jing and their community-building strategy, inspired by your insights [P3]. It would be a way to further demonstrate your commitment to strategic marketing and build on your past successes together.\n\nThe BrandPilot team"
+    },
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   }
+  },
+  {
+   "index": 1,
+   "kind": "targeted_revision",
+   "revision_mode": "sentences",
+   "prompt_sha256": "54ea5d6945852b8b0aa1711391b99b81c2901b78498f1d9206b1f169be533e3f",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 3.974,
+   "usage": {
+    "prompt_tokens": 415,
+    "completion_tokens": 116,
+    "total_tokens": 531,
+    "prompt_tokens_details": {
+     "cached_tokens": 5
+    }
+   },
+   "error": null,
+   "sentence_edits": [
+    {
+     "index": 1,
+     "location": "body",
+     "old": "You’ve also noted that this approach has provided a significant advantage in the early stages of CPG product launches, specifically through the use of pre-existing demand signals.",
+     "new": "You’ve also noted that this approach has provided a significant advantage in the early stages of CPG product launches, specifically through the use of pre-existing demand signals.\" (Revised: \"This strategy has proven effective in identifying and capitalizing on early consumer interest in CPG products.\")",
+     "action": "replace"
+    },
+    {
+     "index": 2,
+     "location": "body",
+     "old": "Furthermore, founder Jing Gao shared that the brand experienced challenges during the coronavirus pandemic, which they learned from and incorporated into its marketing approach.",
+     "new": "Furthermore, founder Jing Gao shared that the brand experienced challenges during the coronavirus pandemic, which they learned from and incorporated into its marketing approach.\" (Revised: \"The brand navigated the coronavirus pandemic by adapting its marketing strategy based on the insights it gained from its consumers.\")",
+     "action": "replace"
+    }
+   ],
+   "parsed": {
+    "subject": "Collaboration Opportunity for Instagram",
+    "body": "Hi Fly By Jing team,\n\nWe’re a small team dedicated to crafting engaging Instagram content that helps brands connect with their audiences. We’d like to propose a collaborative Instagram post built on the fact that Fly By Jing has identified the importance of partnering with other brands as a key component of its community-building strategy. You’ve also noted that this approach has provided a significant advantage in the early stages of CPG product launches, specifically through the use of pre-existing demand signals.\" (Revised: \"This strategy has proven effective in identifying and capitalizing on early consumer interest in CPG products.\") Furthermore, founder Jing Gao shared that the brand experienced challenges during the coronavirus pandemic, which they learned from and incorporated into its marketing approach.\" (Revised: \"The brand navigated the coronavirus pandemic by adapting its marketing strategy based on the insights it gained from its consumers.\") This post would showcase a collaborative Instagram concept that builds on that foundation, featuring a post that highlights the partnership with Fly By Jing and their community-building strategy, inspired by your insights. It would be a way to further demonstrate your commitment to strategic marketing and build on your past successes together.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": [
+     "sentence-level revision applied"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-5",
+    "passes": false,
+    "problems": [
+     "body is 199 words; it must be 100-150",
+     "\"You’ve also noted that this approach has provided a significant advantage in the early sta\": factual statement not supported by a verified fact (best fact F2 covers 0.29; unsupported words: advant, approa, early, launch, noted, provid, signif, specif)",
+     "\"(Revised: \"This strategy has proven effective in identifying and capitalizing on early con\": factual statement not supported by a verified fact (best fact F3 covers 0.17; unsupported words: approa, capita, challe, consum, cpg, early, effect, experi)"
+    ],
+    "word_count": 199,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [
+     "F1"
+    ],
+    "factual_sentences": 3,
+    "factual_sentences_supported": 0,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Collaboration Opportunity for Instagram",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 0
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Fly By Jing team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’re a small team dedicated to crafting engaging Instagram content that helps brands connect with their audiences.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.1,
+       "uncovered": [
+        "audien",
+        "connec",
+        "conten",
+        "crafti",
+        "dedica",
+        "engagi",
+        "helps",
+        "instag",
+        "small"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 10
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d like to propose a collaborative Instagram post built on the fact that Fly By Jing has identified the importance of partnering with other brands as a key component of its community-building strategy.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.444,
+       "uncovered": [
+        "built",
+        "compon",
+        "identi",
+        "import",
+        "key"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 9
+      },
+      "cited_fact": "F1",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "You’ve also noted that this approach has provided a significant advantage in the early stages of CPG product launches, specifically through the use of pre-existing demand signals.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.294,
+       "uncovered": [
+        "advant",
+        "approa",
+        "early",
+        "launch",
+        "noted",
+        "provid",
+        "signif",
+        "specif",
+        "stages",
+        "throug",
+        "use",
+        "you've"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 17
+      },
+      "cited_fact": null,
+      "problems": [
+       "factual statement not supported by a verified fact (best fact F2 covers 0.29; unsupported words: advant, approa, early, launch, noted, provid, signif, specif)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "(Revised: \"This strategy has proven effective in identifying and capitalizing on early consumer interest in CPG products.\") Furthermore, founder Jing Gao shared that the brand experienced challenges during the coronavirus pandemic, which they learned from and incorporated into its marketing approach.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F3",
+       "coverage": 0.174,
+       "uncovered": [
+        "approa",
+        "capita",
+        "challe",
+        "consum",
+        "cpg",
+        "early",
+        "effect",
+        "experi",
+        "furthe",
+        "identi",
+        "incorp",
+        "intere",
+        "learne",
+        "market",
+        "pandem",
+        "proven",
+        "revise",
+        "shared",
+        "strate"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 23
+      },
+      "cited_fact": null,
+      "problems": [
+       "factual statement not supported by a verified fact (best fact F3 covers 0.17; unsupported words: approa, capita, challe, consum, cpg, early, effect, experi)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "(Revised: \"The brand navigated the coronavirus pandemic by adapting its marketing strategy based on the insights it gained from its consumers.\") This post would showcase a collaborative Instagram concept that builds on that foundation, featuring a post that highlights the partnership with Fly By Jing and their community-building strategy, inspired by your insights.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.154,
+       "uncovered": [
+        "adapti",
+        "based",
+        "consum",
+        "corona",
+        "founda",
+        "gained",
+        "insigh",
+        "market",
+        "naviga",
+        "pandem",
+        "revise"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 13
+      },
+      "cited_fact": "F1",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "It would be a way to further demonstrate your commitment to strategic marketing and build on your past successes together.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.143,
+       "uncovered": [
+        "commit",
+        "demons",
+        "furthe",
+        "market",
+        "past",
+        "succes"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 7
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Collaboration Opportunity for Instagram",
+     "body": "Hi Fly By Jing team,\n\nWe’re a small team dedicated to crafting engaging Instagram content that helps brands connect with their audiences. We’d like to propose a collaborative Instagram post built on the fact that Fly By Jing has identified the importance of partnering with other brands as a key component of its community-building strategy [P3]. You’ve also noted that this approach has provided a significant advantage in the early stages of CPG product launches, specifically through the use of pre-existing demand signals. (Revised: \"This strategy has proven effective in identifying and capitalizing on early consumer interest in CPG products.\") Furthermore, founder Jing Gao shared that the brand experienced challenges during the coronavirus pandemic, which they learned from and incorporated into its marketing approach. (Revised: \"The brand navigated the coronavirus pandemic by adapting its marketing strategy based on the insights it gained from its consumers.\") This post would showcase a collaborative Instagram concept that builds on that foundation, featuring a post that highlights the partnership with Fly By Jing and their community-building strategy, inspired by your insights [P3]. It would be a way to further demonstrate your commitment to strategic marketing and build on your past successes together.\n\nThe BrandPilot team"
+    },
+    "format_notes": [
+     "sentence-level revision applied"
+    ]
+   }
+  }
+ ],
+ "opportunity": {
+  "anchor_fact": "F1",
+  "text": "One collaborative Instagram post with Fly By Jing, created together with their team, that builds on the first fact above.",
+  "kind": "template"
+ },
+ "draft_prompt_sha256": "4abeff4b8ad6fc2250189f4733dd32b65153de5bbc25fa50cb6633a44c27e2de",
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "checks still failing after 1 targeted revision",
+ "arm": "v5",
+ "group": "dev",
+ "tag": "iter5"
+}

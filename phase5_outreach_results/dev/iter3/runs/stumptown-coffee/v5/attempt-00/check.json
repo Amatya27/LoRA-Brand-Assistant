@@ -1,0 +1,178 @@
+{
+ "checks_version": "phase5-draft-checks-3",
+ "passes": false,
+ "problems": [
+  "\"We're reaching out to propose a collaborative Instagram post that builds on your recent ca\": proposal states a premise about the company that no verified fact supports (best fact F1 covers 0.50; unsupported words: around, recent, we're)",
+  "\"This post would highlight that dedication and the impact it has on the coffee-making proce\": refers to company activity not in the verified facts: ['partnership']"
+ ],
+ "word_count": 146,
+ "recipient": "correct",
+ "sender": "correct",
+ "instagram": true,
+ "other_platforms": [],
+ "promises": [],
+ "facts_used": [
+  "F1",
+  "F2",
+  "F3"
+ ],
+ "factual_sentences": 1,
+ "factual_sentences_supported": 1,
+ "sentences": [
+  {
+   "location": "subject",
+   "sentence": "Collaborating on an Instagram Post Idea",
+   "kind": "subject",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 0
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Hi Stumptown Coffee Roasters team,",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We're reaching out to propose a collaborative Instagram post that builds on your recent campaign around the Direct Trade model.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.5,
+    "uncovered": [
+     "around",
+     "recent",
+     "we're"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 6
+   },
+   "cited_fact": null,
+   "problems": [
+    "proposal states a premise about the company that no verified fact supports (best fact F1 covers 0.50; unsupported words: around, recent, we're)"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "You mentioned that Stumptown Coffee Roasters has a commitment to honoring their Direct Trade relationships, paying quality premiums for their coffees, and creating multi-year commitments to their producers.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.917,
+    "uncovered": [
+     "mentio"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 12
+   },
+   "cited_fact": "F2",
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "This post would highlight that dedication and the impact it has on the coffee-making process, showcasing the value of your partnership with Stumptown.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.4,
+    "uncovered": [
+     "dedica",
+     "proces",
+     "value"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 5
+   },
+   "cited_fact": null,
+   "problems": [
+    "refers to company activity not in the verified facts: ['partnership']"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "It would also invite your team to share a moment of connection with your customers, further deepening their experience at your cafes.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F3",
+    "coverage": 0.5,
+    "uncovered": [
+     "connec",
+     "furthe",
+     "invite",
+     "moment"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 8
+   },
+   "cited_fact": "F3",
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "The post would focus on the emotional aspect of the partnership, emphasizing the value of the relationships and the commitment to quality.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.375,
+    "uncovered": [
+     "aspect",
+     "emotio",
+     "emphas",
+     "focus",
+     "value"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 8
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "It would be a way to reinforce your dedication to the Direct Trade model and the positive impact it has on the industry.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.625,
+    "uncovered": [
+     "dedica",
+     "indust",
+     "reinfo"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 8
+   },
+   "cited_fact": "F1",
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "The BrandPilot team.",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  }
+ ],
+ "rendered": {
+  "subject": "Collaborating on an Instagram Post Idea",
+  "body": "Hi Stumptown Coffee Roasters team,\n\nWe're reaching out to propose a collaborative Instagram post that builds on your recent campaign around the Direct Trade model. You mentioned that Stumptown Coffee Roasters has a commitment to honoring their Direct Trade relationships, paying quality premiums for their coffees, and creating multi-year commitments to their producers [P9]. This post would highlight that dedication and the impact it has on the coffee-making process, showcasing the value of your partnership with Stumptown. It would also invite your team to share a moment of connection with your customers, further deepening their experience at your cafes [P5]. The post would focus on the emotional aspect of the partnership, emphasizing the value of the relationships and the commitment to quality. It would be a way to reinforce your dedication to the Direct Trade model and the positive impact it has on the industry [P6].\n\nThe BrandPilot team."
+ },
+ "format_notes": []
+}

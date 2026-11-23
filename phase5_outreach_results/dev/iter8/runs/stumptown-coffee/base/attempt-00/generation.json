@@ -1,0 +1,75 @@
+{
+ "ok": true,
+ "finish_reason": "stop",
+ "usage": {
+  "prompt_tokens": 568,
+  "completion_tokens": 163,
+  "total_tokens": 731,
+  "prompt_tokens_details": {
+   "cached_tokens": 0
+  }
+ },
+ "latency_s": 9.578,
+ "error": null,
+ "error_type": null,
+ "settings": {
+  "api_base": "http://127.0.0.1:8080/v1",
+  "model": "mlx-community/gemma-3-1b-it-qat-4bit",
+  "adapter_path": null,
+  "max_tokens": 400,
+  "temperature": 0.0,
+  "timeout_s": 300.0,
+  "repetition_penalty": null,
+  "repetition_context_size": null
+ },
+ "prompt_sha256": "935436512e0c40620080f17013058b55082879a3bbeba6454662657cb12de6af",
+ "runtime_verification": {
+  "verified": true,
+  "checks": {
+   "request_found_in_ledger": true,
+   "single_request_in_flight": true,
+   "requested_model_matches": true,
+   "served_model_matches": true,
+   "served_adapter_matches_request": true,
+   "load_event_found": true,
+   "load_event_model_key_matches": true,
+   "no_adapter_loaded": true
+  },
+  "observations": {
+   "server_pid": 8607,
+   "request_event": {
+    "schema": "phase3-load-ledger-v1",
+    "pid": 8607,
+    "time": 1795441225.0458722,
+    "event": "request_started",
+    "messages_sha256": "993b9c01ecb2a9f4519a8e06540648ca0e03993c5b168fc3b2f848224c14c350",
+    "requested_model": "mlx-community/gemma-3-1b-it-qat-4bit",
+    "requested_adapter": null,
+    "model_key": [
+     "mlx-community/gemma-3-1b-it-qat-4bit",
+     null,
+     null
+    ],
+    "in_flight": 1
+   },
+   "matching_request_events": 1,
+   "load_event": {
+    "schema": "phase3-load-ledger-v1",
+    "pid": 8607,
+    "time": 1795441224.946101,
+    "event": "model_loaded",
+    "model_key": [
+     "mlx-community/gemma-3-1b-it-qat-4bit",
+     null,
+     null
+    ]
+   }
+  },
+  "method": "server_load_ledger",
+  "ledger_path": "<repo>/outputs/phase5_work/server_load_ledger.jsonl",
+  "ledger_schema_version": "phase3-load-ledger-v1",
+  "ledger_problems": [],
+  "messages_sha256": "993b9c01ecb2a9f4519a8e06540648ca0e03993c5b168fc3b2f848224c14c350"
+ },
+ "runtime_verified": true
+}

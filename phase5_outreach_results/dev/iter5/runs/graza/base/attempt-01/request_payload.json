@@ -1,0 +1,11 @@
+{
+ "model": "mlx-community/gemma-3-1b-it-qat-4bit",
+ "messages": [
+  {
+   "role": "user",
+   "content": "You are fixing sentences in an outreach email from our team (a small Instagram content studio) to the Graza team.\n\nVerified facts about Graza:\n- \"Graza started Direct-to-Consumer (DTC) but also made sure to get into grocers like Whole Foods, Target, etc.\" (source: a published article about Graza)\n- \"Graza’s social content, product design, and messaging are playful and culinary-inspired rather than overly formal.\" (source: a published article about Graza)\n- \"Dickieson estimated that Graza has added around 2,000 new social followers since launching the cans.\" (source: a published article about Graza)\n\nEach numbered sentence below has a problem. For each one, write a replacement sentence that fixes it, or write DELETE.\nA replacement may say only what one of the facts says about Graza, in your own words, or describe the proposed Instagram post without claims about Graza. Write as our team; never use \"our\" for Graza. Do not promise results.\nThe email is 151 words and must be at most 150, so write DELETE wherever the sentence is not needed.\n\n1: \"You’ve cultivated a social content strategy that’s distinctly flavorful and culinary-inspired, showcasing your unique design and messaging.\" (problem: factual statement not supported by a verified fact)\n2: \"Together, we’ll craft a post that builds on the initial discovery and showcases the playful nature of Graza's social content.\" (problem: factual statement not supported by a verified fact)\n\nReturn one line per sentence and nothing else, in this form:\n1: <replacement sentence or DELETE>\n2: <replacement sentence or DELETE>"
+  }
+ ],
+ "temperature": 0.0,
+ "max_tokens": 400
+}

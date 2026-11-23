@@ -1,0 +1,642 @@
+{
+ "workflow_version": "phase5-outreach-1",
+ "fact_selector_version": "phase5-facts-1",
+ "draft_prompt_version": "phase5-draft-prompt-2",
+ "checks_version": "phase5-draft-checks-2",
+ "company_id": "fly-by-jing",
+ "packet_sha256": "c974a43b16e102e870046f0fbbb1e63d54bd1f356426177dfbdd948911ce7eea",
+ "facts": [
+  {
+   "fact_id": "F1",
+   "passage_id": "P3",
+   "quote": "Another tactic that’s worked well for Fly by Jing as part of its community-building strategy, according to Patricio-Archer, is partnering with other brands.",
+   "score": 4.85,
+   "statement_type": "actual_activity",
+   "official_source": false,
+   "source_url": "https://www.marketingbrew.com/stories/2023/01/13/how-fly-by-jing-went-from-kickstarter-to-shake-shack-partner-in-a-few-years",
+   "text_sha256": "6e3f9df178a2898a1789b91747a0bd6ddbb8cdfd077db25a4100c6a58e96cde7",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F2",
+   "passage_id": "P4",
+   "quote": "By the time Fly By Jing pursued retail partnerships with Whole Foods, Target, and eventually broader grocery distribution, the brand had something most emerging CPG products don’t: pre-existing demand signals.",
+   "score": 2.5,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://www.influencers-time.com/how-fly-by-jing-built-a-cult-brand-with-chili-crisp-seeding/",
+   "text_sha256": "0328c40525a0e8a9816ca5c7afa2971e981c8aa28acd9e2f225df4e8a5a2a37f",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F3",
+   "passage_id": "P8",
+   "quote": "For this week’s Modern Retail Talk, founder and CEO Jing Gao spoke about her trials and tribulations during the coronavirus.",
+   "score": 1.0,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://www.modernretail.co/retailers/modern-retail-talk-how-instagram-darling-fly-by-jing-handled-an-unprecedented-demand-surge/",
+   "text_sha256": "55145375e85229b4fc05696794bab7e388f58693565ab4a274161bdafa0e09e8",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  }
+ ],
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "prompt_sha256": "f6853ce7a99c4ff7888457c9b06c15d68998756e381730e239e5a07ef736a699",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 7.995,
+   "usage": {
+    "prompt_tokens": 452,
+    "completion_tokens": 190,
+    "total_tokens": 642,
+    "prompt_tokens_details": {
+     "cached_tokens": 25
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "Collaborating on an Instagram Post for Fly By Jing",
+    "body": "Hi Fly By Jing team,\n\nWe’re reaching out to propose a collaborative Instagram post that builds on the fact that Fly By Jing has a strong community-building strategy, as described by Patricio-Archer. We believe a post that highlights their partnership with other brands would resonate well with your audience. This idea would focus on showcasing their community engagement and the value they bring to the market. It would be a great way to further amplify your brand's message and engagement.\n\nWe'd be happy to work with your team to create a post that builds on the fact that Fly By Jing has pre-existing demand signals, as described in F1. This post would be a great way to further engage your audience and explore the potential of this strategy. It would be a chance to showcase your creativity and the value you bring to the industry.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-2",
+    "passes": false,
+    "problems": [
+     "\"We'd be happy to work with your team to create a post that builds on the fact that Fly By \": mentions a fact id in the text; use it only as a [F#] marker",
+     "\"We'd be happy to work with your team to create a post that builds on the fact that Fly By \": numbers not in any fact: ['1']",
+     "\"It would be a chance to showcase your creativity and the value you bring to the industry.\": proposal refers to company activity without a fact marker",
+     "no sentence uses a verified fact"
+    ],
+    "word_count": 148,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [],
+    "unknown_fact_markers": [],
+    "factual_sentences": 0,
+    "factual_sentences_supported": 0,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Collaborating on an Instagram Post for Fly By Jing",
+      "kind": "subject",
+      "cited_facts": [],
+      "guard": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Fly By Jing team,",
+      "kind": "non_assertion",
+      "cited_facts": [],
+      "guard": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’re reaching out to propose a collaborative Instagram post that builds on the fact that Fly By Jing has a strong community-building strategy, as described by Patricio-Archer.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.4,
+       "uncovered": [
+        "described",
+        "fact",
+        "out",
+        "reaching",
+        "strong",
+        "we're"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We believe a post that highlights their partnership with other brands would resonate well with your audience.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.5,
+       "uncovered": [
+        "believe",
+        "partnership",
+        "resonate"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "This idea would focus on showcasing their community engagement and the value they bring to the market.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.167,
+       "uncovered": [
+        "bring",
+        "engagement",
+        "focus",
+        "market",
+        "value"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "It would be a great way to further amplify your brand's message and engagement.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "amplify",
+        "brand's",
+        "engagement",
+        "further",
+        "great",
+        "message",
+        "way"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We'd be happy to work with your team to create a post that builds on the fact that Fly By Jing has pre-existing demand signals, as described in F1.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.444,
+       "uncovered": [
+        "described",
+        "fact",
+        "happy",
+        "we'd",
+        "work"
+       ],
+       "missing_numbers": [
+        "1"
+       ],
+       "negation_mismatch": false
+      },
+      "problems": [
+       "mentions a fact id in the text; use it only as a [F#] marker",
+       "numbers not in any fact: ['1']"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "This post would be a great way to further engage your audience and explore the potential of this strategy.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.143,
+       "uncovered": [
+        "engage",
+        "explore",
+        "further",
+        "great",
+        "potential",
+        "way"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "It would be a chance to showcase your creativity and the value you bring to the industry.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "bring",
+        "chance",
+        "creativity",
+        "industry",
+        "value"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": [
+       "proposal refers to company activity without a fact marker"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "cited_facts": [],
+      "guard": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Collaborating on an Instagram Post for Fly By Jing",
+     "body": "Hi Fly By Jing team,\n\nWe’re reaching out to propose a collaborative Instagram post that builds on the fact that Fly By Jing has a strong community-building strategy, as described by Patricio-Archer. We believe a post that highlights their partnership with other brands would resonate well with your audience. This idea would focus on showcasing their community engagement and the value they bring to the market. It would be a great way to further amplify your brand's message and engagement.\n\nWe'd be happy to work with your team to create a post that builds on the fact that Fly By Jing has pre-existing demand signals, as described in F1. This post would be a great way to further engage your audience and explore the potential of this strategy. It would be a chance to showcase your creativity and the value you bring to the industry.\n\nThe BrandPilot team"
+    }
+   }
+  },
+  {
+   "index": 1,
+   "kind": "targeted_revision",
+   "prompt_sha256": "4e9e547499be51ee4fdd085f4885a7c7c2e49344c13312ba40c5ac139f4ace10",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 7.869,
+   "usage": {
+    "prompt_tokens": 803,
+    "completion_tokens": 350,
+    "total_tokens": 1153,
+    "prompt_tokens_details": {
+     "cached_tokens": 447
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "Collaborating on an Instagram Post for Fly By Jing",
+    "body": "Hi Fly By Jing team,\n\nWe’re reaching out to propose a collaborative Instagram post that builds on the fact that Fly By Jing has a strong community-building strategy, as described by Patricio-Archer. We believe a post that highlights their partnership with other brands would resonate well with your audience. This idea would focus on showcasing their community engagement and the value they bring to the market. It would be a great way to further amplify your brand’s message and engagement.\n\nWe’d be happy to work with your team to create a post that builds on the fact that Fly By Jing has pre-existing demand signals, as described in F1. This post would be a great way to further engage your audience and explore the potential of this strategy. It would be a chance to showcase your creativity and the value you bring to the industry.\n\nThe BrandPilot team\n\nWe'd be happy to work with your team to create a post that builds on the fact that Fly By Jing has pre-existing demand signals, as described in F1. This post would be a great way to further engage your audience and explore the potential of this strategy. It would be a chance to showcase your creativity and the value you bring to the industry.\n\nIf you'd like to explore this further, we propose a collaborative Instagram post built on the fact that Fly By Jing has pre-existing demand signals, as described in F1. This post would be a great way to further engage your audience and explore the potential of this strategy. It would be a chance to showcase your creativity and the value you bring to the industry.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": []
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-2",
+    "passes": false,
+    "problems": [
+     "body is 281 words; it must be 100-150",
+     "\"We’d be happy to work with your team to create a post that builds on the fact that Fly By \": mentions a fact id in the text; use it only as a [F#] marker",
+     "\"We’d be happy to work with your team to create a post that builds on the fact that Fly By \": numbers not in any fact: ['1']",
+     "\"It would be a chance to showcase your creativity and the value you bring to the industry.\": proposal refers to company activity without a fact marker",
+     "\"We'd be happy to work with your team to create a post that builds on the fact that Fly By \": mentions a fact id in the text; use it only as a [F#] marker",
+     "\"We'd be happy to work with your team to create a post that builds on the fact that Fly By \": numbers not in any fact: ['1']",
+     "\"It would be a chance to showcase your creativity and the value you bring to the industry.\": proposal refers to company activity without a fact marker",
+     "\"If you'd like to explore this further, we propose a collaborative Instagram post built on \": mentions a fact id in the text; use it only as a [F#] marker",
+     "\"If you'd like to explore this further, we propose a collaborative Instagram post built on \": numbers not in any fact: ['1']",
+     "\"It would be a chance to showcase your creativity and the value you bring to the industry.\": proposal refers to company activity without a fact marker",
+     "no sentence uses a verified fact"
+    ],
+    "word_count": 281,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [],
+    "unknown_fact_markers": [],
+    "factual_sentences": 0,
+    "factual_sentences_supported": 0,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Collaborating on an Instagram Post for Fly By Jing",
+      "kind": "subject",
+      "cited_facts": [],
+      "guard": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Fly By Jing team,",
+      "kind": "non_assertion",
+      "cited_facts": [],
+      "guard": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’re reaching out to propose a collaborative Instagram post that builds on the fact that Fly By Jing has a strong community-building strategy, as described by Patricio-Archer.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.4,
+       "uncovered": [
+        "described",
+        "fact",
+        "out",
+        "reaching",
+        "strong",
+        "we're"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We believe a post that highlights their partnership with other brands would resonate well with your audience.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.5,
+       "uncovered": [
+        "believe",
+        "partnership",
+        "resonate"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "This idea would focus on showcasing their community engagement and the value they bring to the market.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.167,
+       "uncovered": [
+        "bring",
+        "engagement",
+        "focus",
+        "market",
+        "value"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "It would be a great way to further amplify your brand’s message and engagement.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "amplify",
+        "brand's",
+        "engagement",
+        "further",
+        "great",
+        "message",
+        "way"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d be happy to work with your team to create a post that builds on the fact that Fly By Jing has pre-existing demand signals, as described in F1.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.444,
+       "uncovered": [
+        "described",
+        "fact",
+        "happy",
+        "we'd",
+        "work"
+       ],
+       "missing_numbers": [
+        "1"
+       ],
+       "negation_mismatch": false
+      },
+      "problems": [
+       "mentions a fact id in the text; use it only as a [F#] marker",
+       "numbers not in any fact: ['1']"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "This post would be a great way to further engage your audience and explore the potential of this strategy.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.143,
+       "uncovered": [
+        "engage",
+        "explore",
+        "further",
+        "great",
+        "potential",
+        "way"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "It would be a chance to showcase your creativity and the value you bring to the industry.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "bring",
+        "chance",
+        "creativity",
+        "industry",
+        "value"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": [
+       "proposal refers to company activity without a fact marker"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "cited_facts": [],
+      "guard": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We'd be happy to work with your team to create a post that builds on the fact that Fly By Jing has pre-existing demand signals, as described in F1.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.444,
+       "uncovered": [
+        "described",
+        "fact",
+        "happy",
+        "we'd",
+        "work"
+       ],
+       "missing_numbers": [
+        "1"
+       ],
+       "negation_mismatch": false
+      },
+      "problems": [
+       "mentions a fact id in the text; use it only as a [F#] marker",
+       "numbers not in any fact: ['1']"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "This post would be a great way to further engage your audience and explore the potential of this strategy.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.143,
+       "uncovered": [
+        "engage",
+        "explore",
+        "further",
+        "great",
+        "potential",
+        "way"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "It would be a chance to showcase your creativity and the value you bring to the industry.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "bring",
+        "chance",
+        "creativity",
+        "industry",
+        "value"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": [
+       "proposal refers to company activity without a fact marker"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "If you'd like to explore this further, we propose a collaborative Instagram post built on the fact that Fly By Jing has pre-existing demand signals, as described in F1.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.4,
+       "uncovered": [
+        "built",
+        "described",
+        "explore",
+        "fact",
+        "further",
+        "you'd"
+       ],
+       "missing_numbers": [
+        "1"
+       ],
+       "negation_mismatch": false
+      },
+      "problems": [
+       "mentions a fact id in the text; use it only as a [F#] marker",
+       "numbers not in any fact: ['1']"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "This post would be a great way to further engage your audience and explore the potential of this strategy.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.143,
+       "uncovered": [
+        "engage",
+        "explore",
+        "further",
+        "great",
+        "potential",
+        "way"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "It would be a chance to showcase your creativity and the value you bring to the industry.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "bring",
+        "chance",
+        "creativity",
+        "industry",
+        "value"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": [
+       "proposal refers to company activity without a fact marker"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "cited_facts": [],
+      "guard": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Collaborating on an Instagram Post for Fly By Jing",
+     "body": "Hi Fly By Jing team,\n\nWe’re reaching out to propose a collaborative Instagram post that builds on the fact that Fly By Jing has a strong community-building strategy, as described by Patricio-Archer. We believe a post that highlights their partnership with other brands would resonate well with your audience. This idea would focus on showcasing their community engagement and the value they bring to the market. It would be a great way to further amplify your brand’s message and engagement.\n\nWe’d be happy to work with your team to create a post that builds on the fact that Fly By Jing has pre-existing demand signals, as described in F1. This post would be a great way to further engage your audience and explore the potential of this strategy. It would be a chance to showcase your creativity and the value you bring to the industry.\n\nThe BrandPilot team\n\nWe'd be happy to work with your team to create a post that builds on the fact that Fly By Jing has pre-existing demand signals, as described in F1. This post would be a great way to further engage your audience and explore the potential of this strategy. It would be a chance to showcase your creativity and the value you bring to the industry.\n\nIf you'd like to explore this further, we propose a collaborative Instagram post built on the fact that Fly By Jing has pre-existing demand signals, as described in F1. This post would be a great way to further engage your audience and explore the potential of this strategy. It would be a chance to showcase your creativity and the value you bring to the industry.\n\nThe BrandPilot team"
+    }
+   }
+  }
+ ],
+ "opportunity": {
+  "anchor_fact": "F1",
+  "text": "One collaborative Instagram post with Fly By Jing, created together with their team, that builds on fact F1.",
+  "kind": "template"
+ },
+ "draft_prompt_sha256": "f6853ce7a99c4ff7888457c9b06c15d68998756e381730e239e5a07ef736a699",
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "checks still failing after 1 targeted revision",
+ "arm": "v5",
+ "group": "dev",
+ "tag": "iter2"
+}

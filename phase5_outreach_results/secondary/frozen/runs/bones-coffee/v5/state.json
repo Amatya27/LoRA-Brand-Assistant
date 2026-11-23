@@ -1,0 +1,261 @@
+{
+ "workflow_version": "phase5-outreach-1",
+ "fact_selector_version": "phase5-facts-1",
+ "draft_prompt_version": "phase5-draft-prompt-7",
+ "checks_version": "phase5-draft-checks-9",
+ "company_id": "bones-coffee",
+ "packet_sha256": "9c87dae136c352cbc5e29fba931e88653093c9a8e730a0fa7cd2e816bb148814",
+ "facts": [
+  {
+   "fact_id": "F1",
+   "passage_id": "P1",
+   "quote": "The front of a 12 ounce bag of Bones Coffee Company S’morey Time coffee.",
+   "score": 5.7,
+   "statement_type": "actual_activity",
+   "official_source": true,
+   "source_url": "https://www.bonescoffee.com/",
+   "text_sha256": "805569647148eb1d842e3208487c9fc125f5d57acd0b0c13434615c458d16a00",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F2",
+   "passage_id": "P2",
+   "quote": "We started Bones Coffee Company as a family with a passion for coffee and a mission to inject some flavor into an otherwise boring landscape of coffee companies.",
+   "score": 5.6,
+   "statement_type": "descriptive",
+   "official_source": true,
+   "source_url": "https://www.bonescoffee.com/pages/about-us",
+   "text_sha256": "67929286bb69da1792a96708d0dd3af39a0fc044c90d844b6e2e33a14d37c581",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F3",
+   "passage_id": "P5",
+   "quote": "Two 12 ounce bags of Bones Coffee Company coffee.",
+   "score": 3.45,
+   "statement_type": "descriptive",
+   "official_source": true,
+   "source_url": "https://www.bonescoffee.com/pages/about-us",
+   "text_sha256": "4301d4a6c6057de0fa32d390a498ad6f7932fe961a3f8e19a6b66c5dd5f1874a",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  }
+ ],
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "revision_mode": null,
+   "prompt_sha256": "52b3f35104f6e8f1307f8be742e5526b56ca6ff7121f295b318b4d117c135799",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 8.157,
+   "usage": {
+    "prompt_tokens": 495,
+    "completion_tokens": 181,
+    "total_tokens": 676,
+    "prompt_tokens_details": {
+     "cached_tokens": 25
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "Collaboration Opportunity for a Delicious Instagram Post",
+    "body": "Hi Bones Coffee Company team,\n\nWe’re reaching out to propose a collaborative Instagram post that builds on the first fact: “The front of a 12 ounce bag of Bones Coffee Company S’morey Time coffee.” We’d like to create a post that highlights the delightful aroma and the playful spirit of your brand, inspired by your mission to inject some flavor into an otherwise boring landscape of coffee companies. This post would feature a visually appealing carousel showcasing the bag of coffee with a playful, slightly whimsical design that evokes the feeling of a cozy campfire. The post would be crafted together with your team, emphasizing the fun and creative process of bringing your brand's personality to life through a shared Instagram experience.\n\nWe’d love to hear your thoughts on this idea and invite you to reply with your feedback.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-9",
+    "passes": true,
+    "problems": [],
+    "word_count": 142,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [
+     "F1"
+    ],
+    "factual_sentences": 1,
+    "factual_sentences_supported": 0,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Collaboration Opportunity for a Delicious Instagram Post",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "delici"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 1
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Bones Coffee Company team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’re reaching out to propose a collaborative Instagram post that builds on the first fact: “The front of a 12 ounce bag of Bones Coffee Company S’morey Time coffee.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.833,
+       "uncovered": [
+        "first"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 6
+      },
+      "cited_fact": "F1",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d like to create a post that highlights the delightful aroma and the playful spirit of your brand, inspired by your mission to inject some flavor into an otherwise boring landscape of coffee companies.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.467,
+       "uncovered": [
+        "aroma",
+        "create",
+        "deligh",
+        "highli",
+        "inspir",
+        "playfu",
+        "post",
+        "spirit"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 15
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "This post would feature a visually appealing carousel showcasing the bag of coffee with a playful, slightly whimsical design that evokes the feeling of a cozy campfire.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.111,
+       "uncovered": [
+        "campfi",
+        "cozy",
+        "design",
+        "evokes",
+        "feelin",
+        "playfu",
+        "slight",
+        "whimsi"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 9
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The post would be crafted together with your team, emphasizing the fun and creative process of bringing your brand's personality to life through a shared Instagram experience.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "bringi",
+        "crafte",
+        "emphas",
+        "experi",
+        "life",
+        "person",
+        "proces",
+        "shared",
+        "throug"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 9
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d love to hear your thoughts on this idea and invite you to reply with your feedback.",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Collaboration Opportunity for a Delicious Instagram Post",
+     "body": "Hi Bones Coffee Company team,\n\nWe’re reaching out to propose a collaborative Instagram post that builds on the first fact: “The front of a 12 ounce bag of Bones Coffee Company S’morey Time coffee [P1]. We’d like to create a post that highlights the delightful aroma and the playful spirit of your brand, inspired by your mission to inject some flavor into an otherwise boring landscape of coffee companies. This post would feature a visually appealing carousel showcasing the bag of coffee with a playful, slightly whimsical design that evokes the feeling of a cozy campfire. The post would be crafted together with your team, emphasizing the fun and creative process of bringing your brand's personality to life through a shared Instagram experience.\n\nWe’d love to hear your thoughts on this idea and invite you to reply with your feedback.\n\nThe BrandPilot team"
+    },
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   }
+  }
+ ],
+ "opportunity": {
+  "anchor_fact": "F1",
+  "text": "One collaborative Instagram post with Bones Coffee Company, created together with their team, that builds on the first fact above.",
+  "kind": "template"
+ },
+ "draft_prompt_sha256": "52b3f35104f6e8f1307f8be742e5526b56ca6ff7121f295b318b4d117c135799",
+ "outcome": "passed_checks_pending_human_review",
+ "stop_reason": "all checks passed",
+ "final": {
+  "subject": "Collaboration Opportunity for a Delicious Instagram Post",
+  "body": "Hi Bones Coffee Company team,\n\nWe’re reaching out to propose a collaborative Instagram post that builds on the first fact: “The front of a 12 ounce bag of Bones Coffee Company S’morey Time coffee [P1]. We’d like to create a post that highlights the delightful aroma and the playful spirit of your brand, inspired by your mission to inject some flavor into an otherwise boring landscape of coffee companies. This post would feature a visually appealing carousel showcasing the bag of coffee with a playful, slightly whimsical design that evokes the feeling of a cozy campfire. The post would be crafted together with your team, emphasizing the fun and creative process of bringing your brand's personality to life through a shared Instagram experience.\n\nWe’d love to hear your thoughts on this idea and invite you to reply with your feedback.\n\nThe BrandPilot team",
+  "sources": [
+   {
+    "passage_id": "P1",
+    "fact_id": "F1",
+    "quote": "The front of a 12 ounce bag of Bones Coffee Company S’morey Time coffee.",
+    "source_url": "https://www.bonescoffee.com/"
+   }
+  ],
+  "facts_used": [
+   "F1"
+  ],
+  "fact_verification": "pending_teammate_verification"
+ },
+ "arm": "v5",
+ "group": "secondary",
+ "tag": "frozen"
+}

@@ -1,0 +1,175 @@
+{
+ "checks_version": "phase5-draft-checks-1",
+ "passes": false,
+ "problems": [
+  "\"We’re reaching out to propose a collaborative Instagram post that highlights your communit\": premise not supported by its cited fact(s) (coverage 0.55; unsupported words: archer's, insights, out, reaching, we're)",
+  "\"We’re reaching out to propose a collaborative Instagram post that highlights your communit\": numbers not in any fact: ['1']",
+  "\"This post would celebrate the spirit of Fly By Jing and their impact on the industry, buil\": premise not supported by its cited fact(s) (coverage 0.00; unsupported words: community, conversation, during, engagement, ideas, impact, industry, shared)",
+  "\"This post would celebrate the spirit of Fly By Jing and their impact on the industry, buil\": numbers not in any fact: ['2']",
+  "\"The post would feature a visually appealing slide that showcases your team's creative inte\": premise not supported by its cited fact(s) (coverage 0.00; unsupported words: appealing, conversation, creative, experience, interpretation, shared, showcases, slide)",
+  "\"The post would feature a visually appealing slide that showcases your team's creative inte\": numbers not in any fact: ['3']",
+  "\"It would be a great way to further amplify your message and engage with your community, an\": proposal refers to company activity without a fact marker"
+ ],
+ "word_count": 115,
+ "recipient": "correct",
+ "sender": "correct",
+ "instagram": true,
+ "other_platforms": [],
+ "promises": [],
+ "facts_used": [
+  "F1",
+  "F2",
+  "F3"
+ ],
+ "unknown_fact_markers": [],
+ "factual_sentences": 0,
+ "factual_sentences_supported": 0,
+ "sentences": [
+  {
+   "location": "subject",
+   "sentence": "Celebrating Community with Fly By Jing",
+   "kind": "proposal",
+   "cited_facts": [],
+   "guard": {
+    "coverage": 0.5,
+    "uncovered": [
+     "celebrating"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false
+   },
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Hi Fly By Jing team,",
+   "kind": "non_assertion",
+   "cited_facts": [],
+   "guard": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We’re reaching out to propose a collaborative Instagram post that highlights your community-building strategy, inspired by Patricio-Archer's insights on partnering with other brands [F1].",
+   "kind": "proposal",
+   "cited_facts": [
+    "F1"
+   ],
+   "guard": {
+    "coverage": 0.545,
+    "uncovered": [
+     "archer's",
+     "insights",
+     "out",
+     "reaching",
+     "we're"
+    ],
+    "missing_numbers": [
+     "1"
+    ],
+    "negation_mismatch": false
+   },
+   "problems": [
+    "premise not supported by its cited fact(s) (coverage 0.55; unsupported words: archer's, insights, out, reaching, we're)",
+    "numbers not in any fact: ['1']"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "This post would celebrate the spirit of Fly By Jing and their impact on the industry, building on the ideas shared during a conversation about community engagement [F2].",
+   "kind": "proposal",
+   "cited_facts": [
+    "F2"
+   ],
+   "guard": {
+    "coverage": 0.0,
+    "uncovered": [
+     "community",
+     "conversation",
+     "during",
+     "engagement",
+     "ideas",
+     "impact",
+     "industry",
+     "shared",
+     "spirit"
+    ],
+    "missing_numbers": [
+     "2"
+    ],
+    "negation_mismatch": false
+   },
+   "problems": [
+    "premise not supported by its cited fact(s) (coverage 0.00; unsupported words: community, conversation, during, engagement, ideas, impact, industry, shared)",
+    "numbers not in any fact: ['2']"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "The post would feature a visually appealing slide that showcases your team's creative interpretation of that conversation, which would be a shared Instagram experience for your audience [F3].",
+   "kind": "proposal",
+   "cited_facts": [
+    "F3"
+   ],
+   "guard": {
+    "coverage": 0.0,
+    "uncovered": [
+     "appealing",
+     "conversation",
+     "creative",
+     "experience",
+     "interpretation",
+     "shared",
+     "showcases",
+     "slide",
+     "team's",
+     "visually"
+    ],
+    "missing_numbers": [
+     "3"
+    ],
+    "negation_mismatch": false
+   },
+   "problems": [
+    "premise not supported by its cited fact(s) (coverage 0.00; unsupported words: appealing, conversation, creative, experience, interpretation, shared, showcases, slide)",
+    "numbers not in any fact: ['3']"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "It would be a great way to further amplify your message and engage with your community, and it would be a fun way to share your creativity with your audience.",
+   "kind": "proposal",
+   "cited_facts": [],
+   "guard": {
+    "coverage": 0.111,
+    "uncovered": [
+     "amplify",
+     "creativity",
+     "engage",
+     "fun",
+     "further",
+     "great",
+     "message",
+     "way"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false
+   },
+   "problems": [
+    "proposal refers to company activity without a fact marker"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "The BrandPilot team",
+   "kind": "non_assertion",
+   "cited_facts": [],
+   "guard": null,
+   "problems": []
+  }
+ ],
+ "rendered": {
+  "subject": "Celebrating Community with Fly By Jing",
+  "body": "Hi Fly By Jing team,\n\nWe’re reaching out to propose a collaborative Instagram post that highlights your community-building strategy, inspired by Patricio-Archer's insights on partnering with other brands [P3]. This post would celebrate the spirit of Fly By Jing and their impact on the industry, building on the ideas shared during a conversation about community engagement [P4]. The post would feature a visually appealing slide that showcases your team's creative interpretation of that conversation, which would be a shared Instagram experience for your audience [P8]. It would be a great way to further amplify your message and engage with your community, and it would be a fun way to share your creativity with your audience.\n\nThe BrandPilot team"
+ }
+}

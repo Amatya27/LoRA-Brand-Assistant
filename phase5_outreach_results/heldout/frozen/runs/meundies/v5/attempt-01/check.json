@@ -1,0 +1,235 @@
+{
+ "checks_version": "phase5-draft-checks-9",
+ "passes": false,
+ "problems": [
+  "body is 207 words; it must be 100-150",
+  "\"The post would be designed to encourage engagement and further drive sales, while also cel\": refers to company activity not in the verified facts: ['sales']"
+ ],
+ "word_count": 207,
+ "recipient": "correct",
+ "sender": "correct",
+ "instagram": true,
+ "other_platforms": [],
+ "promises": [],
+ "facts_used": [
+  "F1",
+  "F2",
+  "F3"
+ ],
+ "factual_sentences": 2,
+ "factual_sentences_supported": 1,
+ "sentences": [
+  {
+   "location": "subject",
+   "sentence": "Collaboration Opportunity for an Instagram Post",
+   "kind": "subject",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 0
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Hi MeUndies team,",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We’re a small team dedicated to crafting engaging Instagram content that brings joy to your audience.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F3",
+    "coverage": 0.111,
+    "uncovered": [
+     "audien",
+     "brings",
+     "conten",
+     "crafti",
+     "dedica",
+     "engagi",
+     "joy",
+     "small"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 9
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We’d like to propose a collaborative post built on the fact that MeUndies reminds you of your discount, ever-nudging you to make a purchase.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.857,
+    "uncovered": [
+     "built"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 7
+   },
+   "cited_fact": "F1",
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Using Sprout’s customer relationship management platform and solutions, the MeUndies customer service team could answer people faster and more efficiently, and provide personalized service by viewing the customer’s message history with the brand.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 1.0,
+    "uncovered": [],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 17
+   },
+   "cited_fact": "F2",
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Furthermore, MeUndies “It is crucial for social media-savvy brands such as MeUndies to master customer communications on Instagram” highlights the importance of this approach.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F3",
+    "coverage": 0.692,
+    "uncovered": [
+     "approa",
+     "furthe",
+     "highli",
+     "import"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 13
+   },
+   "cited_fact": "F3",
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "This post would showcase your unique brand story and invite your audience to discover the joy of MeUndies in a new way, building on the first fact above.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [
+     "above",
+     "discov",
+     "first",
+     "invite",
+     "joy",
+     "story",
+     "unique"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 7
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We believe this would resonate well with your audience and further reinforce your commitment to customer-first experiences.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.143,
+    "uncovered": [
+     "commit",
+     "experi",
+     "first",
+     "furthe",
+     "reinfo",
+     "well"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 7
+   },
+   "cited_fact": "F2",
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "This post would feature a carousel of customer-centric content, showcasing how you bring the MeUndies experience to life.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.167,
+    "uncovered": [
+     "bring",
+     "centri",
+     "experi",
+     "how",
+     "life"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 6
+   },
+   "cited_fact": "F2",
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "The post would be designed to encourage engagement and further drive sales, while also celebrating your dedication to customer service.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.2,
+    "uncovered": [
+     "dedica",
+     "design",
+     "drive",
+     "encour",
+     "engage",
+     "furthe",
+     "sales",
+     "while"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 10
+   },
+   "cited_fact": null,
+   "problems": [
+    "refers to company activity not in the verified facts: ['sales']"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "We’d love to hear your thoughts on this idea and suggest how we can work together to bring it to life.",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "The BrandPilot team",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  }
+ ],
+ "rendered": {
+  "subject": "Collaboration Opportunity for an Instagram Post",
+  "body": "Hi MeUndies team,\n\nWe’re a small team dedicated to crafting engaging Instagram content that brings joy to your audience. We’d like to propose a collaborative post built on the fact that MeUndies reminds you of your discount, ever-nudging you to make a purchase [P2]. Using Sprout’s customer relationship management platform and solutions, the MeUndies customer service team could answer people faster and more efficiently, and provide personalized service by viewing the customer’s message history with the brand [P1]. Furthermore, MeUndies “It is crucial for social media-savvy brands such as MeUndies to master customer communications on Instagram” highlights the importance of this approach [P3]. This post would showcase your unique brand story and invite your audience to discover the joy of MeUndies in a new way, building on the first fact above. We believe this would resonate well with your audience and further reinforce your commitment to customer-first experiences [P1]. This post would feature a carousel of customer-centric content, showcasing how you bring the MeUndies experience to life [P1]. The post would be designed to encourage engagement and further drive sales, while also celebrating your dedication to customer service.\n\nWe’d love to hear your thoughts on this idea and suggest how we can work together to bring it to life.\n\nThe BrandPilot team"
+ },
+ "format_notes": []
+}

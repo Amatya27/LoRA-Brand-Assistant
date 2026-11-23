@@ -1,0 +1,11 @@
+{
+ "model": "mlx-community/gemma-3-1b-it-qat-4bit",
+ "messages": [
+  {
+   "role": "user",
+   "content": "You are fixing sentences in an outreach email from our team (a small Instagram content studio) to the Supergoop! team.\n\nVerified facts about Supergoop!:\n- \"Supergoop! drives 40,000 product samples and 10 festival stops with AGENC Supergoop! partnered with AGENC to launch their \"Every.\" (source: a published article about Supergoop!)\n- \"Solution Supergoop! partnered with Envive AI to implement a goal-oriented AI agent that personalized the shopper journey.\" (source: a published article about Supergoop!)\n- \"Supergoop! partners with Attentive to fully automate these messages, allowing for personalization at scale.\" (source: a published article about Supergoop!)\n\nEach numbered sentence below has a problem. Follow the fix given for it. Write as our team; never use \"our\" for Supergoop!. Do not promise results.\n\n1: \"You’ve demonstrated a commitment to personalized shopper journeys through Solution Supergoop! and Envive AI, and we believe a shared Instagram post would be a fantastic way to showcase these advancements.\"\n   Problem: factual clause not supported by a verified fact.\n   Fix: Rewrite it to describe only the proposed Instagram post, with no claim about Supergoop!, or write DELETE.\n\nReturn one line per sentence and nothing else, in this form:\n1: <replacement sentence or DELETE>"
+  }
+ ],
+ "temperature": 0.0,
+ "max_tokens": 400
+}

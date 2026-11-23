@@ -1,0 +1,75 @@
+{
+ "ok": true,
+ "finish_reason": "stop",
+ "usage": {
+  "prompt_tokens": 493,
+  "completion_tokens": 244,
+  "total_tokens": 737,
+  "prompt_tokens_details": {
+   "cached_tokens": 25
+  }
+ },
+ "latency_s": 10.935,
+ "error": null,
+ "error_type": null,
+ "settings": {
+  "api_base": "http://127.0.0.1:8080/v1",
+  "model": "mlx-community/gemma-3-1b-it-qat-4bit",
+  "adapter_path": null,
+  "max_tokens": 400,
+  "temperature": 0.0,
+  "timeout_s": 300.0,
+  "repetition_penalty": null,
+  "repetition_context_size": null
+ },
+ "prompt_sha256": "8db9044712c47bc50e60e0c6e40285773d8d467b2cbd6ecd3c6786ac39de844c",
+ "runtime_verification": {
+  "verified": true,
+  "checks": {
+   "request_found_in_ledger": true,
+   "single_request_in_flight": true,
+   "requested_model_matches": true,
+   "served_model_matches": true,
+   "served_adapter_matches_request": true,
+   "load_event_found": true,
+   "load_event_model_key_matches": true,
+   "no_adapter_loaded": true
+  },
+  "observations": {
+   "server_pid": 8607,
+   "request_event": {
+    "schema": "phase3-load-ledger-v1",
+    "pid": 8607,
+    "time": 1795440597.496021,
+    "event": "request_started",
+    "messages_sha256": "6704ddefc16c138b2c1a84501f65f103ff47e6b17b1a4455b04fcbbd5e5f4f8a",
+    "requested_model": "mlx-community/gemma-3-1b-it-qat-4bit",
+    "requested_adapter": null,
+    "model_key": [
+     "mlx-community/gemma-3-1b-it-qat-4bit",
+     null,
+     null
+    ],
+    "in_flight": 1
+   },
+   "matching_request_events": 1,
+   "load_event": {
+    "schema": "phase3-load-ledger-v1",
+    "pid": 8607,
+    "time": 1795440597.407934,
+    "event": "model_loaded",
+    "model_key": [
+     "mlx-community/gemma-3-1b-it-qat-4bit",
+     null,
+     null
+    ]
+   }
+  },
+  "method": "server_load_ledger",
+  "ledger_path": "<repo>/outputs/phase5_work/server_load_ledger.jsonl",
+  "ledger_schema_version": "phase3-load-ledger-v1",
+  "ledger_problems": [],
+  "messages_sha256": "6704ddefc16c138b2c1a84501f65f103ff47e6b17b1a4455b04fcbbd5e5f4f8a"
+ },
+ "runtime_verified": true
+}

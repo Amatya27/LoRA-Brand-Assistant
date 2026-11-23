@@ -1,0 +1,7 @@
+company_id,arm,outcome,stop_reason,facts_selected,generations,all_runtime_verified,initial_passes,initial_problems,final_problems,revised,initial_words,final_words,final_sender,final_recipient,final_instagram_only,final_promises,final_factual_sentences,final_factual_supported,fact_verification,initial_latency_s
+fly-by-jing,base,withheld_failed_checks,checks still failing after 1 targeted revision,3,2,True,False,1,2,True,112,112,correct,correct,True,0,2,0,,8.524
+fly-by-jing,v5,withheld_failed_checks,checks still failing after 1 targeted revision,3,2,True,False,3,2,True,161,167,correct,correct,True,0,3,1,,10.181
+graza,base,withheld_failed_checks,checks still failing after 1 targeted revision,3,2,True,False,3,3,True,151,151,correct,correct,True,0,5,2,,10.997
+graza,v5,withheld_failed_checks,checks still failing after 1 targeted revision,3,2,True,False,2,1,True,139,130,correct,correct,True,0,1,0,,10.909
+stumptown-coffee,base,passed_checks_pending_human_review,all checks passed,3,1,True,True,0,0,False,124,124,correct,correct,True,0,1,0,all_used_facts_verified,9.039
+stumptown-coffee,v5,withheld_failed_checks,checks still failing after 1 targeted revision,3,2,True,False,4,2,True,141,143,correct,correct,True,0,0,0,,9.607

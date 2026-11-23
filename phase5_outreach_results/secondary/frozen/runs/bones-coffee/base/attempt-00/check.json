@@ -1,0 +1,163 @@
+{
+ "checks_version": "phase5-draft-checks-9",
+ "passes": true,
+ "problems": [],
+ "word_count": 132,
+ "recipient": "correct",
+ "sender": "correct",
+ "instagram": true,
+ "other_platforms": [],
+ "promises": [],
+ "facts_used": [
+  "F1",
+  "F2"
+ ],
+ "factual_sentences": 3,
+ "factual_sentences_supported": 1,
+ "sentences": [
+  {
+   "location": "subject",
+   "sentence": "Collaboration Proposal",
+   "kind": "subject",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 0
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Hi Bones Coffee Company team,",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We are a small Instagram content studio dedicated to crafting visually engaging content for the coffee industry.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [
+     "conten",
+     "crafti",
+     "dedica",
+     "engagi",
+     "indust",
+     "instag",
+     "small",
+     "visual"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 8
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We’d like to propose a collaborative Instagram post with you, designed to build on the first fact – the iconic front of a 12 ounce bag of Bones Coffee Company S’morey Time coffee.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.625,
+    "uncovered": [
+     "design",
+     "first",
+     "iconic"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 8
+   },
+   "cited_fact": "F1",
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "You started Bones Coffee Company as a family with a passion for coffee and a mission to inject some flavor into an otherwise boring landscape of coffee companies.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 1.0,
+    "uncovered": [],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 10
+   },
+   "cited_fact": "F2",
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Essentially, we envision a post that showcases the visual appeal of the coffee and subtly introduces the brand's story, inviting you to share your creative interpretation of the post.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [
+     "essent",
+     "interp",
+     "introd",
+     "inviti",
+     "story",
+     "subtly"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 6
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We’d work together to create a cohesive and visually striking post that captures the essence of the moment.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [
+     "captur",
+     "cohesi",
+     "create",
+     "essenc",
+     "moment",
+     "post",
+     "striki",
+     "togeth",
+     "visual",
+     "work"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 10
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "The BrandPilot team",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  }
+ ],
+ "rendered": {
+  "subject": "Collaboration Proposal",
+  "body": "Hi Bones Coffee Company team,\n\nWe are a small Instagram content studio dedicated to crafting visually engaging content for the coffee industry. We’d like to propose a collaborative Instagram post with you, designed to build on the first fact – the iconic front of a 12 ounce bag of Bones Coffee Company S’morey Time coffee [P1]. You started Bones Coffee Company as a family with a passion for coffee and a mission to inject some flavor into an otherwise boring landscape of coffee companies [P2]. Essentially, we envision a post that showcases the visual appeal of the coffee and subtly introduces the brand's story, inviting you to share your creative interpretation of the post. We’d work together to create a cohesive and visually striking post that captures the essence of the moment.\n\nThe BrandPilot team"
+ },
+ "format_notes": [
+  "BODY label missing; text after the subject line used as the body"
+ ]
+}

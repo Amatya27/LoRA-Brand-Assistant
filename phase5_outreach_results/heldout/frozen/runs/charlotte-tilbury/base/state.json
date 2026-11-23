@@ -1,0 +1,548 @@
+{
+ "workflow_version": "phase5-outreach-1",
+ "fact_selector_version": "phase5-facts-1",
+ "draft_prompt_version": "phase5-draft-prompt-7",
+ "checks_version": "phase5-draft-checks-9",
+ "company_id": "charlotte-tilbury",
+ "packet_sha256": "2200d12a254d0392d72241f67c6d3d763529a540e78909c9cb1807b2b8e2f308",
+ "facts": [
+  {
+   "fact_id": "F1",
+   "passage_id": "P1",
+   "quote": "Charlotte is the British flag bearer overseas with 3,400 of those distribution points being international.",
+   "score": 3.8,
+   "statement_type": "descriptive",
+   "official_source": true,
+   "source_url": "https://www.charlottetilbury.com/us/content/charlottes-story",
+   "text_sha256": "ea33097e78947cf3e6418075f3adcdd1de8e95dfb35ef31562bada19318ae6ce",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F2",
+   "passage_id": "P4",
+   "quote": "By working closely with influencers, Charlotte Tilbury uses their influence to spread its message.",
+   "score": 2.7,
+   "statement_type": "actual_activity",
+   "official_source": false,
+   "source_url": "https://www.projectpractical.com/charlotte-tilbury-marketing-strategy/",
+   "text_sha256": "1aa0f91ac2434777ef25ed274ae66e24c9e0f726a22dd0a395555ef009d92abf",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F3",
+   "passage_id": "P5",
+   "quote": "Influencer partnerships have helped Charlotte Tilbury create a unique brand image.",
+   "score": 2.55,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://www.projectpractical.com/charlotte-tilbury-marketing-strategy/",
+   "text_sha256": "5b0a70dc25506248b5278d69c70ea9c0b5f603516aec909f028b303d3cd7aa2b",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  }
+ ],
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "revision_mode": null,
+   "prompt_sha256": "7e6ab4605ea3e10f44d379b7efb62c271a347c82b2e602d852cf411a04cfb338",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 7.458,
+   "usage": {
+    "prompt_tokens": 483,
+    "completion_tokens": 167,
+    "total_tokens": 650,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "Collaboration Proposal",
+    "body": "Hi Charlotte Tilbury team,\n\nWe are a small Instagram content studio dedicated to crafting compelling visual narratives. We’d like to propose a collaborative Instagram post with you, built on the fact that Charlotte Tilbury is the British flag bearer overseas with a significant international distribution. You’ve skillfully leveraged influencer partnerships to spread the brand’s message, demonstrating how these collaborations have cultivated a unique and recognizable aesthetic.  Specifically, we envision a post showcasing a curated selection of imagery – perhaps a visually striking moment or a captivating detail – that subtly highlights the core elements of your brand.  Together, we’d create a post that subtly reinforces the connection between your visual style and the global reach of Charlotte Tilbury.  We’d work closely to ensure a cohesive and engaging experience.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-9",
+    "passes": false,
+    "problems": [
+     "\"You’ve skillfully leveraged influencer partnerships to spread the brand’s message, demonst\": factual statement not supported by a verified fact (best fact F2 covers 0.20; unsupported words: aesthe, collab, cultiv, demons, how, levera, partne, recogn)",
+     "\"Together, we’d create a post that subtly reinforces the connection between your visual sty\": factual statement not supported by a verified fact (best fact F3 covers 0.09; unsupported words: betwee, connec, global, post, reach, reinfo, style, subtly)"
+    ],
+    "word_count": 129,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [
+     "F1"
+    ],
+    "factual_sentences": 4,
+    "factual_sentences_supported": 0,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Collaboration Proposal",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 0
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Charlotte Tilbury team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We are a small Instagram content studio dedicated to crafting compelling visual narratives.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "compel",
+        "conten",
+        "crafti",
+        "dedica",
+        "instag",
+        "narrat",
+        "small",
+        "visual"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 8
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d like to propose a collaborative Instagram post with you, built on the fact that Charlotte Tilbury is the British flag bearer overseas with a significant international distribution.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.75,
+       "uncovered": [
+        "built",
+        "signif"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 8
+      },
+      "cited_fact": "F1",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "You’ve skillfully leveraged influencer partnerships to spread the brand’s message, demonstrating how these collaborations have cultivated a unique and recognizable aesthetic.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.2,
+       "uncovered": [
+        "aesthe",
+        "collab",
+        "cultiv",
+        "demons",
+        "how",
+        "levera",
+        "partne",
+        "recogn",
+        "skillf",
+        "these",
+        "unique",
+        "you've"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 15
+      },
+      "cited_fact": null,
+      "problems": [
+       "factual statement not supported by a verified fact (best fact F2 covers 0.20; unsupported words: aesthe, collab, cultiv, demons, how, levera, partne, recogn)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "Specifically, we envision a post showcasing a curated selection of imagery – perhaps a visually striking moment or a captivating detail – that subtly highlights the core elements of your brand.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "captiv",
+        "core",
+        "curate",
+        "detail",
+        "elemen",
+        "imager",
+        "moment",
+        "perhap",
+        "select",
+        "specif",
+        "striki",
+        "subtly"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 12
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Together, we’d create a post that subtly reinforces the connection between your visual style and the global reach of Charlotte Tilbury.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F3",
+       "coverage": 0.091,
+       "uncovered": [
+        "betwee",
+        "connec",
+        "global",
+        "post",
+        "reach",
+        "reinfo",
+        "style",
+        "subtly",
+        "togeth",
+        "visual"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 11
+      },
+      "cited_fact": null,
+      "problems": [
+       "factual statement not supported by a verified fact (best fact F3 covers 0.09; unsupported words: betwee, connec, global, post, reach, reinfo, style, subtly)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "We’d work closely to ensure a cohesive and engaging experience.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.167,
+       "uncovered": [
+        "cohesi",
+        "engagi",
+        "ensure",
+        "experi",
+        "work"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 6
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Collaboration Proposal",
+     "body": "Hi Charlotte Tilbury team,\n\nWe are a small Instagram content studio dedicated to crafting compelling visual narratives. We’d like to propose a collaborative Instagram post with you, built on the fact that Charlotte Tilbury is the British flag bearer overseas with a significant international distribution [P1]. You’ve skillfully leveraged influencer partnerships to spread the brand’s message, demonstrating how these collaborations have cultivated a unique and recognizable aesthetic. Specifically, we envision a post showcasing a curated selection of imagery – perhaps a visually striking moment or a captivating detail – that subtly highlights the core elements of your brand. Together, we’d create a post that subtly reinforces the connection between your visual style and the global reach of Charlotte Tilbury. We’d work closely to ensure a cohesive and engaging experience.\n\nThe BrandPilot team"
+    },
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   }
+  },
+  {
+   "index": 1,
+   "kind": "targeted_revision",
+   "revision_mode": "sentences",
+   "prompt_sha256": "b6f2028b791c611271bf3e18138535e4dd20ea90b508855b2a2d7eba54bbb3d4",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 3.012,
+   "usage": {
+    "prompt_tokens": 343,
+    "completion_tokens": 139,
+    "total_tokens": 482,
+    "prompt_tokens_details": {
+     "cached_tokens": 5
+    }
+   },
+   "error": null,
+   "sentence_edits": [
+    {
+     "index": 1,
+     "location": "body",
+     "old": "You’ve skillfully leveraged influencer partnerships to spread the brand’s message, demonstrating how these collaborations have cultivated a unique and recognizable aesthetic.",
+     "new": "You’ve skillfully leveraged influencer partnerships to spread the brand’s message, demonstrating how these collaborations have cultivated a unique and recognizable aesthetic.",
+     "action": "replace"
+    },
+    {
+     "index": 2,
+     "location": "body",
+     "old": "Together, we’d create a post that subtly reinforces the connection between your visual style and the global reach of Charlotte Tilbury.",
+     "new": "Together, we’d create a post that subtly reinforces the connection between your visual style and the global reach of Charlotte Tilbury.",
+     "action": "replace"
+    }
+   ],
+   "parsed": {
+    "subject": "Collaboration Proposal",
+    "body": "Hi Charlotte Tilbury team,\n\nWe are a small Instagram content studio dedicated to crafting compelling visual narratives. We’d like to propose a collaborative Instagram post with you, built on the fact that Charlotte Tilbury is the British flag bearer overseas with a significant international distribution. You’ve skillfully leveraged influencer partnerships to spread the brand’s message, demonstrating how these collaborations have cultivated a unique and recognizable aesthetic. Specifically, we envision a post showcasing a curated selection of imagery – perhaps a visually striking moment or a captivating detail – that subtly highlights the core elements of your brand. Together, we’d create a post that subtly reinforces the connection between your visual style and the global reach of Charlotte Tilbury. We’d work closely to ensure a cohesive and engaging experience.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": [
+     "sentence-level revision applied"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-9",
+    "passes": false,
+    "problems": [
+     "\"You’ve skillfully leveraged influencer partnerships to spread the brand’s message, demonst\": factual statement not supported by a verified fact (best fact F2 covers 0.20; unsupported words: aesthe, collab, cultiv, demons, how, levera, partne, recogn)",
+     "\"Together, we’d create a post that subtly reinforces the connection between your visual sty\": factual statement not supported by a verified fact (best fact F3 covers 0.09; unsupported words: betwee, connec, global, post, reach, reinfo, style, subtly)"
+    ],
+    "word_count": 129,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [
+     "F1"
+    ],
+    "factual_sentences": 4,
+    "factual_sentences_supported": 0,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Collaboration Proposal",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 0
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Charlotte Tilbury team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We are a small Instagram content studio dedicated to crafting compelling visual narratives.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "compel",
+        "conten",
+        "crafti",
+        "dedica",
+        "instag",
+        "narrat",
+        "small",
+        "visual"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 8
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d like to propose a collaborative Instagram post with you, built on the fact that Charlotte Tilbury is the British flag bearer overseas with a significant international distribution.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.75,
+       "uncovered": [
+        "built",
+        "signif"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 8
+      },
+      "cited_fact": "F1",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "You’ve skillfully leveraged influencer partnerships to spread the brand’s message, demonstrating how these collaborations have cultivated a unique and recognizable aesthetic.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.2,
+       "uncovered": [
+        "aesthe",
+        "collab",
+        "cultiv",
+        "demons",
+        "how",
+        "levera",
+        "partne",
+        "recogn",
+        "skillf",
+        "these",
+        "unique",
+        "you've"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 15
+      },
+      "cited_fact": null,
+      "problems": [
+       "factual statement not supported by a verified fact (best fact F2 covers 0.20; unsupported words: aesthe, collab, cultiv, demons, how, levera, partne, recogn)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "Specifically, we envision a post showcasing a curated selection of imagery – perhaps a visually striking moment or a captivating detail – that subtly highlights the core elements of your brand.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "captiv",
+        "core",
+        "curate",
+        "detail",
+        "elemen",
+        "imager",
+        "moment",
+        "perhap",
+        "select",
+        "specif",
+        "striki",
+        "subtly"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 12
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Together, we’d create a post that subtly reinforces the connection between your visual style and the global reach of Charlotte Tilbury.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F3",
+       "coverage": 0.091,
+       "uncovered": [
+        "betwee",
+        "connec",
+        "global",
+        "post",
+        "reach",
+        "reinfo",
+        "style",
+        "subtly",
+        "togeth",
+        "visual"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 11
+      },
+      "cited_fact": null,
+      "problems": [
+       "factual statement not supported by a verified fact (best fact F3 covers 0.09; unsupported words: betwee, connec, global, post, reach, reinfo, style, subtly)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "We’d work closely to ensure a cohesive and engaging experience.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.167,
+       "uncovered": [
+        "cohesi",
+        "engagi",
+        "ensure",
+        "experi",
+        "work"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 6
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Collaboration Proposal",
+     "body": "Hi Charlotte Tilbury team,\n\nWe are a small Instagram content studio dedicated to crafting compelling visual narratives. We’d like to propose a collaborative Instagram post with you, built on the fact that Charlotte Tilbury is the British flag bearer overseas with a significant international distribution [P1]. You’ve skillfully leveraged influencer partnerships to spread the brand’s message, demonstrating how these collaborations have cultivated a unique and recognizable aesthetic. Specifically, we envision a post showcasing a curated selection of imagery – perhaps a visually striking moment or a captivating detail – that subtly highlights the core elements of your brand. Together, we’d create a post that subtly reinforces the connection between your visual style and the global reach of Charlotte Tilbury. We’d work closely to ensure a cohesive and engaging experience.\n\nThe BrandPilot team"
+    },
+    "format_notes": [
+     "sentence-level revision applied"
+    ]
+   }
+  }
+ ],
+ "opportunity": {
+  "anchor_fact": "F1",
+  "text": "One collaborative Instagram post with Charlotte Tilbury, created together with their team, that builds on the first fact above.",
+  "kind": "template"
+ },
+ "draft_prompt_sha256": "7e6ab4605ea3e10f44d379b7efb62c271a347c82b2e602d852cf411a04cfb338",
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "checks still failing after 1 targeted revision",
+ "arm": "base",
+ "group": "heldout",
+ "tag": "frozen"
+}

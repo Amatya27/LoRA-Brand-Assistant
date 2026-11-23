@@ -1,0 +1,12 @@
+{
+ "model": "mlx-community/gemma-3-1b-it-qat-4bit",
+ "messages": [
+  {
+   "role": "user",
+   "content": "You write a short outreach email from our team (a small Instagram content studio) to the marketing team at Pela (compostable phone cases).\n\nVerified facts about Pela:\n- \"To educate and inspire the global community of people who are committed to making a positive impact on our planet.\" (source: Pela's own website)\n- \"Impact BrandChamp has simplified Pela Case’s operations and made it possible to scale the ambassador program from 400 participants to over 1,600 in a few months.\" (source: a published article about Pela)\n- \"To help us and our community stay the course.\" (source: Pela's own website)\n\nOpportunity to propose (our idea, not a fact): One collaborative Instagram post with Pela, created together with their team, that builds on the first fact above.\n\nWrite the body in this order:\n1. \"Hi Pela team,\"\n2. One sentence saying who we are and that we would like to propose a collaborative Instagram post.\n3. One or two sentences, each restating one fact above closely in your own words.\n4. Two or three sentences describing the proposed post: what it could show and how our teams would make it together.\n5. One sentence inviting them to reply.\n6. \"The BrandPilot team\"\n\nRules:\n- Say nothing about Pela except the facts above: no other numbers, dates, audiences, communities, results, products or activities. In the sentences about the post, describe only the post, not Pela's past activity.\n- Refer to Pela as \"you\" or \"Pela\". Never use \"we\" or \"our\" for Pela; \"we\" is our team.\n- Never say Pela lacks something or has a weakness or gap.\n- Propose Instagram only. Do not mention any other platform.\n- Do not promise results. Say what the post could do, not what it will achieve.\n- The body is about 120 words, never more than 140. Start it with \"Hi Pela team,\" and end it with \"The BrandPilot team\".\n\nReturn exactly this format and nothing else:\nSUBJECT: <one line>\nBODY:\n<email body>"
+  }
+ ],
+ "temperature": 0.0,
+ "max_tokens": 400,
+ "adapters": "adapters/brand_assistant_v5_best"
+}

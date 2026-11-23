@@ -1,0 +1,494 @@
+{
+ "workflow_version": "phase5-outreach-1",
+ "fact_selector_version": "phase5-facts-1",
+ "draft_prompt_version": "phase5-draft-prompt-7",
+ "checks_version": "phase5-draft-checks-9",
+ "company_id": "tonal",
+ "packet_sha256": "d00bcfb37c669099e3b7a0da6b6526131ec5e635dfc1048b8fa68620b08b341d",
+ "facts": [
+  {
+   "fact_id": "F1",
+   "passage_id": "P7",
+   "quote": "Tonal: Meet Tonal Installation With Tonal Effortless Install, professionals deliver, mount, and test your Tonal for a fast, stress-free setup.",
+   "score": 4.0,
+   "statement_type": "descriptive",
+   "official_source": true,
+   "source_url": "https://tonal.com/pages/press",
+   "text_sha256": "d576ea288b478c58273b20fc75568d3d2a12352e7234033275bce1628142c6c3",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F2",
+   "passage_id": "P4",
+   "quote": "The connected home gym, Tonal, saw huge growth at the start of Covid-19, but needed to connect more with high-income worth individuals and athletes to build the brand interest and value, in a highly competitive market.",
+   "score": 2.2,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://jackmorton.com/work/sports-marketing-strategy-strength-made-me-campaign/",
+   "text_sha256": "fef57bfaf936ca40d6288e581d24991e8af83644d68f28eeab10465bec7901c3",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F3",
+   "passage_id": "P9",
+   "quote": "Stanley Tonal, a smart home gym looking for a holiday sales boost, has dropped an epic long-form commercial shot entirely in black and white and set in the Victorian era.",
+   "score": 0.5,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://www.adweek.com/brand-marketing/tonals-epic-cinematic-ad-is-a-departure-for-the-fitness-category/",
+   "text_sha256": "34223fb2442301c615e14d382b758023d0471d2879c3142af77e30f6bc942fca",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  }
+ ],
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "revision_mode": null,
+   "prompt_sha256": "01cf252b9e251fc58c08c74b1668a679fb2ab81e3465b0ee6fe53e2ced203cee",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 8.803,
+   "usage": {
+    "prompt_tokens": 534,
+    "completion_tokens": 214,
+    "total_tokens": 748,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "Collaboration Opportunity for a Tonal Instagram Post",
+    "body": "Hi Tonal team,\n\nWe’re a small team of Instagram content creators dedicated to bringing stories to life through visual content. We’d like to propose a collaborative Instagram post with Tonal, built around the fact that Tonal has seen huge growth at the start of Covid-19, but needed to connect more with high-income individuals and athletes to build the brand interest and value, in a highly competitive market. Essentially, you're looking for a way to showcase Tonal's unique approach to home fitness and its appeal to discerning consumers. The post would feature a visually striking, black and white shot of Tonal in a Victorian-era setting, highlighting its design and the idea of a luxurious, immersive experience. It would be a chance for Tonal to share a specific moment of their holiday sales boost with a touch of nostalgia.\n\nWe’d love to hear your thoughts on this idea and suggest how we could work together to bring it to life.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-9",
+    "passes": false,
+    "problems": [
+     "body is 161 words; it must be 100-150",
+     "\"Essentially, you're looking for a way to showcase Tonal's unique approach to home fitness \": factual statement not supported by a verified fact (best fact F3 covers 0.17; unsupported words: appeal, approa, consum, discer, essent, fitnes, showca, unique)"
+    ],
+    "word_count": 161,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [
+     "F2",
+     "F3"
+    ],
+    "factual_sentences": 2,
+    "factual_sentences_supported": 0,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Collaboration Opportunity for a Tonal Instagram Post",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 0
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Tonal team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’re a small team of Instagram content creators dedicated to bringing stories to life through visual content.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "bringi",
+        "conten",
+        "creato",
+        "dedica",
+        "instag",
+        "life",
+        "small",
+        "storie",
+        "throug",
+        "visual"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 10
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d like to propose a collaborative Instagram post with Tonal, built around the fact that Tonal has seen huge growth at the start of Covid-19, but needed to connect more with high-income individuals and athletes to build the brand interest and value, in a highly competitive market.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.842,
+       "uncovered": [
+        "around",
+        "built",
+        "seen"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 19
+      },
+      "cited_fact": "F2",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Essentially, you're looking for a way to showcase Tonal's unique approach to home fitness and its appeal to discerning consumers.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F3",
+       "coverage": 0.167,
+       "uncovered": [
+        "appeal",
+        "approa",
+        "consum",
+        "discer",
+        "essent",
+        "fitnes",
+        "showca",
+        "unique",
+        "way",
+        "you're"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 12
+      },
+      "cited_fact": null,
+      "problems": [
+       "factual statement not supported by a verified fact (best fact F3 covers 0.17; unsupported words: appeal, approa, consum, discer, essent, fitnes, showca, unique)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "The post would feature a visually striking, black and white shot of Tonal in a Victorian-era setting, highlighting its design and the idea of a luxurious, immersive experience.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F3",
+       "coverage": 0.455,
+       "uncovered": [
+        "design",
+        "experi",
+        "immers",
+        "luxuri",
+        "settin",
+        "striki"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 11
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "It would be a chance for Tonal to share a specific moment of their holiday sales boost with a touch of nostalgia.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F3",
+       "coverage": 0.375,
+       "uncovered": [
+        "chance",
+        "moment",
+        "nostal",
+        "specif",
+        "touch"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 8
+      },
+      "cited_fact": "F3",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d love to hear your thoughts on this idea and suggest how we could work together to bring it to life.",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Collaboration Opportunity for a Tonal Instagram Post",
+     "body": "Hi Tonal team,\n\nWe’re a small team of Instagram content creators dedicated to bringing stories to life through visual content. We’d like to propose a collaborative Instagram post with Tonal, built around the fact that Tonal has seen huge growth at the start of Covid-19, but needed to connect more with high-income individuals and athletes to build the brand interest and value, in a highly competitive market [P4]. Essentially, you're looking for a way to showcase Tonal's unique approach to home fitness and its appeal to discerning consumers. The post would feature a visually striking, black and white shot of Tonal in a Victorian-era setting, highlighting its design and the idea of a luxurious, immersive experience. It would be a chance for Tonal to share a specific moment of their holiday sales boost with a touch of nostalgia [P9].\n\nWe’d love to hear your thoughts on this idea and suggest how we could work together to bring it to life.\n\nThe BrandPilot team"
+    },
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   }
+  },
+  {
+   "index": 1,
+   "kind": "targeted_revision",
+   "revision_mode": "sentences",
+   "prompt_sha256": "8ec1ed6fdfe187f5a3c36368f32eae703104110e20394f924b71265919410db9",
+   "ok": true,
+   "finish_reason": "length",
+   "runtime_verified": true,
+   "latency_s": 8.887,
+   "usage": {
+    "prompt_tokens": 351,
+    "completion_tokens": 400,
+    "total_tokens": 751,
+    "prompt_tokens_details": {
+     "cached_tokens": 24
+    }
+   },
+   "error": null,
+   "sentence_edits": [
+    {
+     "index": 1,
+     "location": "body",
+     "old": "Essentially, you're looking for a way to showcase Tonal's unique approach to home fitness and its appeal to discerning consumers.",
+     "new": "Essentially, you’re looking for a way to showcase Tonal’s unique approach to home fitness and its appeal to discerning consumers.",
+     "action": "replace"
+    }
+   ],
+   "parsed": {
+    "subject": "Collaboration Opportunity for a Tonal Instagram Post",
+    "body": "Hi Tonal team,\n\nWe’re a small team of Instagram content creators dedicated to bringing stories to life through visual content. We’d like to propose a collaborative Instagram post with Tonal, built around the fact that Tonal has seen huge growth at the start of Covid-19, but needed to connect more with high-income individuals and athletes to build the brand interest and value, in a highly competitive market. Essentially, you’re looking for a way to showcase Tonal’s unique approach to home fitness and its appeal to discerning consumers. The post would feature a visually striking, black and white shot of Tonal in a Victorian-era setting, highlighting its design and the idea of a luxurious, immersive experience. It would be a chance for Tonal to share a specific moment of their holiday sales boost with a touch of nostalgia.\n\nWe’d love to hear your thoughts on this idea and suggest how we could work together to bring it to life.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": [
+     "sentence-level revision applied"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-9",
+    "passes": false,
+    "problems": [
+     "output was cut off at the token limit",
+     "body is 161 words; it must be 100-150",
+     "\"Essentially, you’re looking for a way to showcase Tonal’s unique approach to home fitness \": factual statement not supported by a verified fact (best fact F3 covers 0.17; unsupported words: appeal, approa, consum, discer, essent, fitnes, showca, unique)"
+    ],
+    "word_count": 161,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [
+     "F2",
+     "F3"
+    ],
+    "factual_sentences": 2,
+    "factual_sentences_supported": 0,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Collaboration Opportunity for a Tonal Instagram Post",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 0
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Tonal team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’re a small team of Instagram content creators dedicated to bringing stories to life through visual content.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "bringi",
+        "conten",
+        "creato",
+        "dedica",
+        "instag",
+        "life",
+        "small",
+        "storie",
+        "throug",
+        "visual"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 10
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d like to propose a collaborative Instagram post with Tonal, built around the fact that Tonal has seen huge growth at the start of Covid-19, but needed to connect more with high-income individuals and athletes to build the brand interest and value, in a highly competitive market.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.842,
+       "uncovered": [
+        "around",
+        "built",
+        "seen"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 19
+      },
+      "cited_fact": "F2",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Essentially, you’re looking for a way to showcase Tonal’s unique approach to home fitness and its appeal to discerning consumers.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F3",
+       "coverage": 0.167,
+       "uncovered": [
+        "appeal",
+        "approa",
+        "consum",
+        "discer",
+        "essent",
+        "fitnes",
+        "showca",
+        "unique",
+        "way",
+        "you're"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 12
+      },
+      "cited_fact": null,
+      "problems": [
+       "factual statement not supported by a verified fact (best fact F3 covers 0.17; unsupported words: appeal, approa, consum, discer, essent, fitnes, showca, unique)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "The post would feature a visually striking, black and white shot of Tonal in a Victorian-era setting, highlighting its design and the idea of a luxurious, immersive experience.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F3",
+       "coverage": 0.455,
+       "uncovered": [
+        "design",
+        "experi",
+        "immers",
+        "luxuri",
+        "settin",
+        "striki"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 11
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "It would be a chance for Tonal to share a specific moment of their holiday sales boost with a touch of nostalgia.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F3",
+       "coverage": 0.375,
+       "uncovered": [
+        "chance",
+        "moment",
+        "nostal",
+        "specif",
+        "touch"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 8
+      },
+      "cited_fact": "F3",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d love to hear your thoughts on this idea and suggest how we could work together to bring it to life.",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Collaboration Opportunity for a Tonal Instagram Post",
+     "body": "Hi Tonal team,\n\nWe’re a small team of Instagram content creators dedicated to bringing stories to life through visual content. We’d like to propose a collaborative Instagram post with Tonal, built around the fact that Tonal has seen huge growth at the start of Covid-19, but needed to connect more with high-income individuals and athletes to build the brand interest and value, in a highly competitive market [P4]. Essentially, you’re looking for a way to showcase Tonal’s unique approach to home fitness and its appeal to discerning consumers. The post would feature a visually striking, black and white shot of Tonal in a Victorian-era setting, highlighting its design and the idea of a luxurious, immersive experience. It would be a chance for Tonal to share a specific moment of their holiday sales boost with a touch of nostalgia [P9].\n\nWe’d love to hear your thoughts on this idea and suggest how we could work together to bring it to life.\n\nThe BrandPilot team"
+    },
+    "format_notes": [
+     "sentence-level revision applied"
+    ]
+   }
+  }
+ ],
+ "opportunity": {
+  "anchor_fact": "F1",
+  "text": "One collaborative Instagram post with Tonal, created together with their team, that builds on the first fact above.",
+  "kind": "template"
+ },
+ "draft_prompt_sha256": "01cf252b9e251fc58c08c74b1668a679fb2ab81e3465b0ee6fe53e2ced203cee",
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "checks still failing after 1 targeted revision",
+ "arm": "v5",
+ "group": "secondary",
+ "tag": "frozen"
+}

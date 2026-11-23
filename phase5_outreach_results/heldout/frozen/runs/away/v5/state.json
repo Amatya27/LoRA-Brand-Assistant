@@ -1,0 +1,271 @@
+{
+ "workflow_version": "phase5-outreach-1",
+ "fact_selector_version": "phase5-facts-1",
+ "draft_prompt_version": "phase5-draft-prompt-7",
+ "checks_version": "phase5-draft-checks-9",
+ "company_id": "away",
+ "packet_sha256": "2c85d8e1f0945ce73988a750150778cf996e8492d0b3001457c17989024afb42",
+ "facts": [
+  {
+   "fact_id": "F1",
+   "passage_id": "P6",
+   "quote": "Away's dreamy new 'White Lotus' luggage collab is perfect travel eye candy Away's newest limited-edition collection, launching globally on Feb. 11, is a collaboration between the popular luggage brand and Warner Bros.",
+   "score": 5.4,
+   "statement_type": "descriptive",
+   "official_source": true,
+   "source_url": "https://www.awaytravel.com/pages/press",
+   "text_sha256": "e5c468d6156a7e1da0d9b8c7eab12d180793f13b686271d293831fc1ad44ab31",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F2",
+   "passage_id": "P3",
+   "quote": "Away also forged celebrity collaborations with notable figures like Karlie Kloss, which helped bring their products to a wider audience.",
+   "score": 5.0,
+   "statement_type": "actual_activity",
+   "official_source": false,
+   "source_url": "https://www.optimonk.com/away-marketing-breakdown",
+   "text_sha256": "a362c5abdba9a210391f93c31dcb0e743c687a89eaef7e01d2eec5c6ee580edb",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F3",
+   "passage_id": "P10",
+   "quote": "Away combined a simple, well-designed product with a lifestyle-driven marketing approach, direct online sales and a strong content and community strategy.",
+   "score": 4.95,
+   "statement_type": "actual_activity",
+   "official_source": false,
+   "source_url": "https://www.lilachbullock.com/away-marketing-strategy/",
+   "text_sha256": "121fda5d427e7dbb888857888a54db72bcd46a45783599e8e08edef75ac31a10",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  }
+ ],
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "revision_mode": null,
+   "prompt_sha256": "8dba5ddde788590831f6401cfb3c6939db8da065728d5266a3ef20bfaa951837",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 8.128,
+   "usage": {
+    "prompt_tokens": 502,
+    "completion_tokens": 162,
+    "total_tokens": 664,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "Hi Away team,",
+    "body": "Hi Away team,\n\nWe're a small Instagram content studio dedicated to bringing creative energy to the travel space. We'd like to propose a collaborative Instagram post that builds on the idea of Away's new 'White Lotus' luggage collab, specifically highlighting the dreamy aesthetic and the limited-edition collection's global launch on February 11th. This post would showcase a visually appealing carousel of images, each building on a different aspect of the collab, such as the design process or the cultural inspiration behind it. Your combined efforts would bring a unique and delightful perspective to the collection, creating a shared experience for your audience. It would be a chance to showcase the beauty of the collection and the creative partnership that brought it to life.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-9",
+    "passes": true,
+    "problems": [],
+    "word_count": 126,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [
+     "F1"
+    ],
+    "factual_sentences": 1,
+    "factual_sentences_supported": 0,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Hi Away team,",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 0
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Away team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We're a small Instagram content studio dedicated to bringing creative energy to the travel space.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.111,
+       "uncovered": [
+        "bringi",
+        "conten",
+        "creati",
+        "dedica",
+        "energy",
+        "instag",
+        "small",
+        "space"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 9
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We'd like to propose a collaborative Instagram post that builds on the idea of Away's new 'White Lotus' luggage collab, specifically highlighting the dreamy aesthetic and the limited-edition collection's global launch on February 11th.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.692,
+       "uncovered": [
+        "11th",
+        "aesthe",
+        "februa",
+        "specif"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 13
+      },
+      "cited_fact": "F1",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "This post would showcase a visually appealing carousel of images, each building on a different aspect of the collab, such as the design process or the cultural inspiration behind it.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F3",
+       "coverage": 0.143,
+       "uncovered": [
+        "aspect",
+        "behind",
+        "cultur",
+        "differ",
+        "images",
+        "proces"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 7
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Your combined efforts would bring a unique and delightful perspective to the collection, creating a shared experience for your audience.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.111,
+       "uncovered": [
+        "bring",
+        "combin",
+        "deligh",
+        "effort",
+        "experi",
+        "perspe",
+        "shared",
+        "unique"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 9
+      },
+      "cited_fact": "F1",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "It would be a chance to showcase the beauty of the collection and the creative partnership that brought it to life.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.2,
+       "uncovered": [
+        "beauty",
+        "brough",
+        "chance",
+        "life"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 5
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Hi Away team,",
+     "body": "Hi Away team,\n\nWe're a small Instagram content studio dedicated to bringing creative energy to the travel space. We'd like to propose a collaborative Instagram post that builds on the idea of Away's new 'White Lotus' luggage collab, specifically highlighting the dreamy aesthetic and the limited-edition collection's global launch on February 11th [P6]. This post would showcase a visually appealing carousel of images, each building on a different aspect of the collab, such as the design process or the cultural inspiration behind it. Your combined efforts would bring a unique and delightful perspective to the collection, creating a shared experience for your audience [P6]. It would be a chance to showcase the beauty of the collection and the creative partnership that brought it to life.\n\nThe BrandPilot team"
+    },
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   }
+  }
+ ],
+ "opportunity": {
+  "anchor_fact": "F1",
+  "text": "One collaborative Instagram post with Away, created together with their team, that builds on the first fact above.",
+  "kind": "template"
+ },
+ "draft_prompt_sha256": "8dba5ddde788590831f6401cfb3c6939db8da065728d5266a3ef20bfaa951837",
+ "outcome": "passed_checks_pending_human_review",
+ "stop_reason": "all checks passed",
+ "final": {
+  "subject": "Hi Away team,",
+  "body": "Hi Away team,\n\nWe're a small Instagram content studio dedicated to bringing creative energy to the travel space. We'd like to propose a collaborative Instagram post that builds on the idea of Away's new 'White Lotus' luggage collab, specifically highlighting the dreamy aesthetic and the limited-edition collection's global launch on February 11th [P6]. This post would showcase a visually appealing carousel of images, each building on a different aspect of the collab, such as the design process or the cultural inspiration behind it. Your combined efforts would bring a unique and delightful perspective to the collection, creating a shared experience for your audience [P6]. It would be a chance to showcase the beauty of the collection and the creative partnership that brought it to life.\n\nThe BrandPilot team",
+  "sources": [
+   {
+    "passage_id": "P6",
+    "fact_id": "F1",
+    "quote": "Away's dreamy new 'White Lotus' luggage collab is perfect travel eye candy Away's newest limited-edition collection, launching globally on Feb. 11, is a collaboration between the popular luggage brand and Warner Bros.",
+    "source_url": "https://www.awaytravel.com/pages/press"
+   }
+  ],
+  "facts_used": [
+   "F1"
+  ],
+  "fact_verification": "pending_teammate_verification"
+ },
+ "arm": "v5",
+ "group": "heldout",
+ "tag": "frozen"
+}

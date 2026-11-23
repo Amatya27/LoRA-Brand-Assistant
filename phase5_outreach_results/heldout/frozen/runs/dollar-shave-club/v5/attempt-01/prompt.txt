@@ -1,0 +1,15 @@
+You are fixing sentences in an outreach email from our team (a small Instagram content studio) to the Dollar Shave Club team.
+
+Verified facts about Dollar Shave Club:
+- "This legendary launch video by Dollar Shave Club is a masterclass in how to disrupt a billion-dollar industry through raw, unfiltered storytelling." (source: a published article about Dollar Shave Club)
+- "By studying and applying the key elements of Dollar Shave Club’s marketing strategy, marketers can gain valuable insights into building effective campaigns that connect with their target audience." (source: a published article about Dollar Shave Club)
+- "Through their social media presence, the Dollar Shave Club has been able to establish a personal connection with their customers." (source: a published article about Dollar Shave Club)
+
+Each numbered sentence below has a problem. Follow the fix given for it. Write as our team; never use "our" for Dollar Shave Club. Do not promise results.
+
+1: "This post would showcase Dollar Shave Club's storytelling approach, inviting your team to collaborate on a post that builds on that foundation and explores the power of unfiltered content in a way that feels authentic and engaging for your followers."
+   Problem: refers to company activity not in the verified facts: ['followers'].
+   Fix: Rewrite it to describe only the proposed Instagram post, with no claim about Dollar Shave Club, or write DELETE.
+
+Return one line per sentence and nothing else, in this form:
+1: <replacement sentence or DELETE>

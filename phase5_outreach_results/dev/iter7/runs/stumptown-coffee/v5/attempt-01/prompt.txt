@@ -1,0 +1,23 @@
+You are fixing sentences in an outreach email from our team (a small Instagram content studio) to the Stumptown Coffee Roasters team.
+
+Verified facts about Stumptown Coffee Roasters:
+- "As our business continues to grow and evolve, so will our Direct Trade model to continue our mission of making the most positive impact where we can." (source: Stumptown Coffee Roasters's own website)
+- "We do this by honoring our Direct Trade relationships, paying quality premiums for our coffees, and creating multi-year commitments to our producers." (source: Stumptown Coffee Roasters's own website)
+- "Additionally, the campaign encouraged visits to Stumptown cafes, showcasing their unique brand experience and deepening customer engagement." (source: a published article about Stumptown Coffee Roasters)
+
+Each numbered sentence below has a problem. Follow the fix given for it. Write as our team; never use "our" for Stumptown Coffee Roasters. Do not promise results.
+
+1: "You’ve highlighted the importance of these values, and we believe a visual post that showcases your dedication to these commitments would resonate with your audience and further deepen their engagement with your brand."
+   Problem: proposal states a premise about the company that no verified fact supports.
+   Fix: Rewrite it to describe only the proposed Instagram post, with no claim about Stumptown Coffee Roasters, or write DELETE.
+2: "This post would feature a curated selection of your favorite coffee blends, paired with a visually appealing quote or statement that reflects your commitment to quality and partnership."
+   Problem: refers to company activity not in the verified facts: ['partnership'].
+   Fix: Rewrite it to describe only the proposed Instagram post, with no claim about Stumptown Coffee Roasters, or write DELETE.
+3: "It would be a chance to further reinforce your mission and showcase your dedication to the Direct Trade model in a way that feels authentic and engaging for your followers."
+   Problem: refers to company activity not in the verified facts: ['followers'].
+   Fix: Rewrite it to describe only the proposed Instagram post, with no claim about Stumptown Coffee Roasters, or write DELETE.
+
+Return one line per sentence and nothing else, in this form:
+1: <replacement sentence or DELETE>
+2: <replacement sentence or DELETE>
+3: <replacement sentence or DELETE>

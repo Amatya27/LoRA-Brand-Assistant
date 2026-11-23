@@ -1,0 +1,174 @@
+{
+ "checks_version": "phase5-draft-checks-9",
+ "passes": false,
+ "problems": [
+  "\"You’ve highlighted the importance of raw, unfiltered storytelling, and our team believes a\": factual clause not supported by a verified fact (best fact F1 covers 0.50; unsupported words: highli, import, you've)",
+  "\"You’ve highlighted the importance of raw, unfiltered storytelling, and our team believes a\": says Dollar Shave Club stated this, but the source is a third-party article",
+  "\"Essentially, the post would showcase a curated collection of short, authentic moments capt\": refers to company activity not in the verified facts: ['collection']"
+ ],
+ "word_count": 107,
+ "recipient": "correct",
+ "sender": "correct",
+ "instagram": true,
+ "other_platforms": [],
+ "promises": [],
+ "facts_used": [
+  "F1"
+ ],
+ "factual_sentences": 1,
+ "factual_sentences_supported": 0,
+ "sentences": [
+  {
+   "location": "subject",
+   "sentence": "Collaboration Proposal",
+   "kind": "subject",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 0
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Hi Dollar Shave Club team,",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We are a small Instagram content studio dedicated to exploring innovative marketing strategies.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.25,
+    "uncovered": [
+     "conten",
+     "dedica",
+     "explor",
+     "innova",
+     "instag",
+     "small"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 8
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We’d like to propose a collaborative Instagram post designed to build on the core concept of Dollar Shave Club’s disruptive launch video.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.6,
+    "uncovered": [
+     "core",
+     "design"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 5
+   },
+   "cited_fact": "F1",
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "You’ve highlighted the importance of raw, unfiltered storytelling, and our team believes a shared visual experience would powerfully demonstrate this.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.333,
+    "uncovered": [
+     "demons",
+     "experi",
+     "import",
+     "powerf",
+     "shared",
+     "you've"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 9
+   },
+   "cited_fact": "F1",
+   "problems": [
+    "factual clause not supported by a verified fact (best fact F1 covers 0.50; unsupported words: highli, import, you've)",
+    "says Dollar Shave Club stated this, but the source is a third-party article"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "Essentially, the post would showcase a curated collection of short, authentic moments capturing the essence of Dollar Shave Club’s unique approach – a glimpse into their world.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [
+     "approa",
+     "authen",
+     "captur",
+     "collec",
+     "curate",
+     "essenc",
+     "essent",
+     "glimps",
+     "moment",
+     "short",
+     "unique",
+     "world"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 12
+   },
+   "cited_fact": null,
+   "problems": [
+    "refers to company activity not in the verified facts: ['collection']"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "Together, we envision creating a visually compelling post that resonates with your audience and fosters a deeper connection.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.25,
+    "uncovered": [
+     "compel",
+     "deeper",
+     "foster"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 4
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "The BrandPilot team",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  }
+ ],
+ "rendered": {
+  "subject": "Collaboration Proposal",
+  "body": "Hi Dollar Shave Club team,\n\nWe are a small Instagram content studio dedicated to exploring innovative marketing strategies. We’d like to propose a collaborative Instagram post designed to build on the core concept of Dollar Shave Club’s disruptive launch video [P10]. You’ve highlighted the importance of raw, unfiltered storytelling, and our team believes a shared visual experience would powerfully demonstrate this [P10]. Essentially, the post would showcase a curated collection of short, authentic moments capturing the essence of Dollar Shave Club’s unique approach – a glimpse into their world. Together, we envision creating a visually compelling post that resonates with your audience and fosters a deeper connection.\n\nThe BrandPilot team"
+ },
+ "format_notes": [
+  "BODY label missing; text after the subject line used as the body"
+ ]
+}

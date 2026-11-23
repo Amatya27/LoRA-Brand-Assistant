@@ -1,0 +1,185 @@
+{
+ "checks_version": "phase5-draft-checks-9",
+ "passes": false,
+ "problems": [
+  "\"We’d like to propose a collaborative Instagram post with you, built together with your tea\": refers to company activity not in the verified facts: ['built']",
+  "\"You’d envision a post showcasing the partnership between innovation and superfood plant ex\": factual statement not supported by a verified fact (best fact F2 covers 0.43; unsupported words: commit, deep, emphas, impact, positi, post, showca, you'd)",
+  "\"The post would feature a visually appealing image or short video, potentially incorporatin\": numbers not in any fact: ['2']",
+  "no sentence restates a verified fact"
+ ],
+ "word_count": 114,
+ "recipient": "correct",
+ "sender": "correct",
+ "instagram": true,
+ "other_platforms": [],
+ "promises": [],
+ "facts_used": [],
+ "factual_sentences": 3,
+ "factual_sentences_supported": 0,
+ "sentences": [
+  {
+   "location": "subject",
+   "sentence": "Collaboration Proposal",
+   "kind": "subject",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 0
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Hi Youth To The People team,",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We are a small Instagram content studio dedicated to crafting compelling visual narratives for brands.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.111,
+    "uncovered": [
+     "brands",
+     "compel",
+     "conten",
+     "crafti",
+     "instag",
+     "narrat",
+     "small",
+     "visual"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 9
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We’d like to propose a collaborative Instagram post with you, built together with your team, that would highlight the core values and vision behind Youth To The People.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.2,
+    "uncovered": [
+     "behind",
+     "built",
+     "core",
+     "vision"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 5
+   },
+   "cited_fact": null,
+   "problems": [
+    "refers to company activity not in the verified facts: ['built']"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "You’d envision a post showcasing the partnership between innovation and superfood plant extracts, emphasizing the deep commitment to positive impact.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.429,
+    "uncovered": [
+     "commit",
+     "deep",
+     "emphas",
+     "impact",
+     "positi",
+     "post",
+     "showca",
+     "you'd"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 14
+   },
+   "cited_fact": null,
+   "problems": [
+    "factual statement not supported by a verified fact (best fact F2 covers 0.43; unsupported words: commit, deep, emphas, impact, positi, post, showca, you'd)"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "The post would feature a visually appealing image or short video, potentially incorporating a shared aesthetic or a brief explanation of the connection between the two brands.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.083,
+    "uncovered": [
+     "aesthe",
+     "brands",
+     "brief",
+     "connec",
+     "explan",
+     "image",
+     "incorp",
+     "shared",
+     "short",
+     "two",
+     "video"
+    ],
+    "missing_numbers": [
+     "2"
+    ],
+    "negation_mismatch": false,
+    "content_words": 12
+   },
+   "cited_fact": null,
+   "problems": [
+    "numbers not in any fact: ['2']"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "We’d work together to create a cohesive and engaging experience that resonates with your audience.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.125,
+    "uncovered": [
+     "audien",
+     "cohesi",
+     "engagi",
+     "experi",
+     "resona",
+     "togeth",
+     "work"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 8
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "The BrandPilot team",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  }
+ ],
+ "rendered": {
+  "subject": "Collaboration Proposal",
+  "body": "Hi Youth To The People team,\n\nWe are a small Instagram content studio dedicated to crafting compelling visual narratives for brands. We’d like to propose a collaborative Instagram post with you, built together with your team, that would highlight the core values and vision behind Youth To The People. You’d envision a post showcasing the partnership between innovation and superfood plant extracts, emphasizing the deep commitment to positive impact. The post would feature a visually appealing image or short video, potentially incorporating a shared aesthetic or a brief explanation of the connection between the two brands. We’d work together to create a cohesive and engaging experience that resonates with your audience.\n\nThe BrandPilot team"
+ },
+ "format_notes": [
+  "BODY label missing; text after the subject line used as the body"
+ ]
+}

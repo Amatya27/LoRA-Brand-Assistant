@@ -1,0 +1,625 @@
+{
+ "workflow_version": "phase5-outreach-1",
+ "fact_selector_version": "phase5-facts-1",
+ "draft_prompt_version": "phase5-draft-prompt-2",
+ "checks_version": "phase5-draft-checks-2",
+ "company_id": "stumptown-coffee",
+ "packet_sha256": "546ce43823e5e75d054f71f5ab29323f092a352f38b07d41bc95a8b64116acf6",
+ "facts": [
+  {
+   "fact_id": "F1",
+   "passage_id": "P6",
+   "quote": "As our business continues to grow and evolve, so will our Direct Trade model to continue our mission of making the most positive impact where we can.",
+   "score": 4.65,
+   "statement_type": "brand_positioning",
+   "official_source": true,
+   "source_url": "https://www.stumptowncoffee.com/pages/sustainability-and-impact",
+   "text_sha256": "780fe201365fc61f14bb017b5933a29ff44d0be57af74adba32890757d2d16b4",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F2",
+   "passage_id": "P9",
+   "quote": "We do this by honoring our Direct Trade relationships, paying quality premiums for our coffees, and creating multi-year commitments to our producers.",
+   "score": 2.9,
+   "statement_type": "descriptive",
+   "official_source": true,
+   "source_url": "https://www.stumptowncoffee.com/pages/sustainability-and-impact",
+   "text_sha256": "decbd27269c2e5b365327abca7820e70f1649d1fea1516c18aaa33cf215ceae1",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F3",
+   "passage_id": "P5",
+   "quote": "Additionally, the campaign encouraged visits to Stumptown cafes, showcasing their unique brand experience and deepening customer engagement.",
+   "score": 2.85,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://www.goodandgold.com/work/stumptown-coffee",
+   "text_sha256": "38837211f862577d1170b7bf886265ed835906992133ad8d5d7c0d2f9a0101aa",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  }
+ ],
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "prompt_sha256": "3734b858441f293ea0b1ade43522841e383ef83d28f848910cc207292bdb79eb",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 8.128,
+   "usage": {
+    "prompt_tokens": 472,
+    "completion_tokens": 227,
+    "total_tokens": 699,
+    "prompt_tokens_details": {
+     "cached_tokens": 25
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "Collaboration Opportunity - Building on Direct Trade",
+    "body": "Hi Stumptown Coffee Roasters team,\n\nWe’re reaching out to propose a collaborative Instagram post designed to deepen our connection with your brand. We believe a shared visual experience will resonate with your audience and reinforce the value of your Direct Trade model.\n\nAs our business continues to grow and evolve, so will our Direct Trade model to continue our mission of making the most positive impact where we can. “We” and “our” inside a quote mean Stumptown Coffee Roasters. “We” do this by honoring our Direct Trade relationships, paying quality premiums for our coffees, and creating multi-year commitments to our producers. Additionally, the campaign encouraged visits to Stumptown cafes, showcasing their unique brand experience and deepening customer engagement.\n\nWe’d love to collaborate with your team to create a post that builds on this foundation, offering a visual representation of the dedication to quality and the importance of the Direct Trade relationship.  We’re open to exploring different creative approaches and are excited to contribute to a meaningful partnership.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-2",
+    "passes": false,
+    "problems": [
+     "body is 170 words; it must be 100-150",
+     "\"We believe a shared visual experience will resonate with your audience and reinforce the v\": proposal refers to company activity without a fact marker",
+     "\"“We” and “our” inside a quote mean Stumptown Coffee Roasters.\": states something about the company without a fact marker",
+     "\"Additionally, the campaign encouraged visits to Stumptown cafes, showcasing their unique b\": states something about the company without a fact marker",
+     "\"We’d love to collaborate with your team to create a post that builds on this foundation, o\": states something about the company without a fact marker",
+     "no sentence uses a verified fact"
+    ],
+    "word_count": 170,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [],
+    "unknown_fact_markers": [],
+    "factual_sentences": 4,
+    "factual_sentences_supported": 1,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Collaboration Opportunity - Building on Direct Trade",
+      "kind": "subject",
+      "cited_facts": [],
+      "guard": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Stumptown Coffee Roasters team,",
+      "kind": "non_assertion",
+      "cited_facts": [],
+      "guard": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’re reaching out to propose a collaborative Instagram post designed to deepen our connection with your brand.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "connection",
+        "deepen",
+        "designed",
+        "out",
+        "reaching",
+        "we're"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We believe a shared visual experience will resonate with your audience and reinforce the value of your Direct Trade model.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.455,
+       "uncovered": [
+        "believe",
+        "reinforce",
+        "resonate",
+        "shared",
+        "value",
+        "visual"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": [
+       "proposal refers to company activity without a fact marker"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "As our business continues to grow and evolve, so will our Direct Trade model to continue our mission of making the most positive impact where we can.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 1.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "“We” and “our” inside a quote mean Stumptown Coffee Roasters.",
+      "kind": "factual",
+      "cited_facts": [],
+      "guard": null,
+      "problems": [
+       "states something about the company without a fact marker"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "“We” do this by honoring our Direct Trade relationships, paying quality premiums for our coffees, and creating multi-year commitments to our producers.",
+      "kind": "factual",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 1.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Additionally, the campaign encouraged visits to Stumptown cafes, showcasing their unique brand experience and deepening customer engagement.",
+      "kind": "factual",
+      "cited_facts": [],
+      "guard": null,
+      "problems": [
+       "states something about the company without a fact marker"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "We’d love to collaborate with your team to create a post that builds on this foundation, offering a visual representation of the dedication to quality and the importance of the Direct Trade relationship.",
+      "kind": "factual",
+      "cited_facts": [],
+      "guard": null,
+      "problems": [
+       "states something about the company without a fact marker"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "We’re open to exploring different creative approaches and are excited to contribute to a meaningful partnership.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "approaches",
+        "contribute",
+        "creative",
+        "different",
+        "exploring",
+        "meaningful",
+        "open",
+        "partnership",
+        "we're"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "cited_facts": [],
+      "guard": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Collaboration Opportunity - Building on Direct Trade",
+     "body": "Hi Stumptown Coffee Roasters team,\n\nWe’re reaching out to propose a collaborative Instagram post designed to deepen our connection with your brand. We believe a shared visual experience will resonate with your audience and reinforce the value of your Direct Trade model.\n\nAs our business continues to grow and evolve, so will our Direct Trade model to continue our mission of making the most positive impact where we can. “We” and “our” inside a quote mean Stumptown Coffee Roasters. “We” do this by honoring our Direct Trade relationships, paying quality premiums for our coffees, and creating multi-year commitments to our producers. Additionally, the campaign encouraged visits to Stumptown cafes, showcasing their unique brand experience and deepening customer engagement.\n\nWe’d love to collaborate with your team to create a post that builds on this foundation, offering a visual representation of the dedication to quality and the importance of the Direct Trade relationship.  We’re open to exploring different creative approaches and are excited to contribute to a meaningful partnership.\n\nThe BrandPilot team"
+    }
+   }
+  },
+  {
+   "index": 1,
+   "kind": "targeted_revision",
+   "prompt_sha256": "1d6212fff234a38a0d9b7afdd73cfd03a60279054225153b0c2bfc3a8f3700f2",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 7.927,
+   "usage": {
+    "prompt_tokens": 894,
+    "completion_tokens": 382,
+    "total_tokens": 1276,
+    "prompt_tokens_details": {
+     "cached_tokens": 467
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "Collaboration Opportunity - Building on Direct Trade",
+    "body": "Hi Stumptown Coffee Roasters team,\n\nWe’re reaching out to propose a collaborative Instagram post designed to deepen our connection with your brand. We believe a shared visual experience will resonate with your audience and reinforce the value of your Direct Trade model.\n\nAs our business continues to grow and evolve, so will our Direct Trade model to continue our mission of making the most positive impact where we can. “We” and “our” inside a quote mean Stumptown Coffee Roasters. “We” do this by honoring our Direct Trade relationships, paying quality premiums for our coffees, and creating multi-year commitments to our producers. Additionally, the campaign encouraged visits to Stumptown cafes, showcasing their unique brand experience and deepening customer engagement.\n\nWe’d love to collaborate with your team to create a post that builds on this foundation, offering a visual representation of the dedication to quality and the importance of the Direct Trade relationship. We’re open to exploring different creative approaches and are excited to contribute to a meaningful partnership.\n\nThe BrandPilot team\n\nIt has these problems:\n- body is 170 words; it must be 100-150\n- “We believe a shared visual experience will resonate with your audience and reinforce the v\": proposal refers to company activity without a fact marker\n- ““We” and “our” inside a quote mean Stumptown Coffee Roasters.\": states something about the company without a fact marker\n- \"Additionally, the campaign encouraged visits to Stumptown cafes, showcasing their unique b\": states something about the company without a fact marker\n- no sentence uses a verified fact\n\nWrite the full corrected draft. Keep what was correct, fix only these problems, and follow every rule above. Use the same format.",
+    "format_problems": [],
+    "format_notes": []
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-2",
+    "passes": false,
+    "problems": [
+     "body is 279 words; it must be 100-150",
+     "\"We believe a shared visual experience will resonate with your audience and reinforce the v\": proposal refers to company activity without a fact marker",
+     "\"“We” and “our” inside a quote mean Stumptown Coffee Roasters.\": states something about the company without a fact marker",
+     "\"Additionally, the campaign encouraged visits to Stumptown cafes, showcasing their unique b\": states something about the company without a fact marker",
+     "\"We’d love to collaborate with your team to create a post that builds on this foundation, o\": states something about the company without a fact marker",
+     "\"- body is 170 words; it must be 100-150\": numbers not in any fact: ['100', '150', '170']",
+     "\"- ““We” and “our” inside a quote mean Stumptown Coffee Roasters.\": states something about \": states something about the company without a fact marker",
+     "\"- \"Additionally, the campaign encouraged visits to Stumptown cafes, showcasing their uniqu\": states something about the company without a fact marker",
+     "no sentence uses a verified fact"
+    ],
+    "word_count": 279,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [],
+    "unknown_fact_markers": [],
+    "factual_sentences": 12,
+    "factual_sentences_supported": 6,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Collaboration Opportunity - Building on Direct Trade",
+      "kind": "subject",
+      "cited_facts": [],
+      "guard": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Stumptown Coffee Roasters team,",
+      "kind": "non_assertion",
+      "cited_facts": [],
+      "guard": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’re reaching out to propose a collaborative Instagram post designed to deepen our connection with your brand.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "connection",
+        "deepen",
+        "designed",
+        "out",
+        "reaching",
+        "we're"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We believe a shared visual experience will resonate with your audience and reinforce the value of your Direct Trade model.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.455,
+       "uncovered": [
+        "believe",
+        "reinforce",
+        "resonate",
+        "shared",
+        "value",
+        "visual"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": [
+       "proposal refers to company activity without a fact marker"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "As our business continues to grow and evolve, so will our Direct Trade model to continue our mission of making the most positive impact where we can.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 1.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "“We” and “our” inside a quote mean Stumptown Coffee Roasters.",
+      "kind": "factual",
+      "cited_facts": [],
+      "guard": null,
+      "problems": [
+       "states something about the company without a fact marker"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "“We” do this by honoring our Direct Trade relationships, paying quality premiums for our coffees, and creating multi-year commitments to our producers.",
+      "kind": "factual",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 1.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Additionally, the campaign encouraged visits to Stumptown cafes, showcasing their unique brand experience and deepening customer engagement.",
+      "kind": "factual",
+      "cited_facts": [],
+      "guard": null,
+      "problems": [
+       "states something about the company without a fact marker"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "We’d love to collaborate with your team to create a post that builds on this foundation, offering a visual representation of the dedication to quality and the importance of the Direct Trade relationship.",
+      "kind": "factual",
+      "cited_facts": [],
+      "guard": null,
+      "problems": [
+       "states something about the company without a fact marker"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "We’re open to exploring different creative approaches and are excited to contribute to a meaningful partnership.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "approaches",
+        "contribute",
+        "creative",
+        "different",
+        "exploring",
+        "meaningful",
+        "open",
+        "partnership",
+        "we're"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "cited_facts": [],
+      "guard": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "It has these problems:",
+      "kind": "factual",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "problems",
+        "these"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "- body is 170 words; it must be 100-150",
+      "kind": "factual",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "100",
+        "150",
+        "170",
+        "body",
+        "must",
+        "words"
+       ],
+       "missing_numbers": [
+        "100",
+        "150",
+        "170"
+       ],
+       "negation_mismatch": false
+      },
+      "problems": [
+       "numbers not in any fact: ['100', '150', '170']"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "- “We believe a shared visual experience will resonate with your audience and reinforce the v\": proposal refers to company activity without a fact marker",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.167,
+       "uncovered": [
+        "activity",
+        "believe",
+        "fact",
+        "marker",
+        "refers",
+        "reinforce",
+        "resonate",
+        "shared",
+        "visual",
+        "without"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "- ““We” and “our” inside a quote mean Stumptown Coffee Roasters.\": states something about the company without a fact marker",
+      "kind": "factual",
+      "cited_facts": [],
+      "guard": null,
+      "problems": [
+       "states something about the company without a fact marker"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "- \"Additionally, the campaign encouraged visits to Stumptown cafes, showcasing their unique b\": states something about the company without a fact marker",
+      "kind": "factual",
+      "cited_facts": [],
+      "guard": null,
+      "problems": [
+       "states something about the company without a fact marker"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "- no sentence uses a verified fact",
+      "kind": "factual",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "fact",
+        "sentence",
+        "uses",
+        "verified"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Write the full corrected draft.",
+      "kind": "factual",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "corrected",
+        "draft",
+        "full",
+        "write"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Keep what was correct, fix only these problems, and follow every rule above.",
+      "kind": "factual",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "above",
+        "correct",
+        "every",
+        "fix",
+        "follow",
+        "keep",
+        "only",
+        "problems",
+        "rule",
+        "these",
+        "what"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Use the same format.",
+      "kind": "factual",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "format",
+        "same",
+        "use"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Collaboration Opportunity - Building on Direct Trade",
+     "body": "Hi Stumptown Coffee Roasters team,\n\nWe’re reaching out to propose a collaborative Instagram post designed to deepen our connection with your brand. We believe a shared visual experience will resonate with your audience and reinforce the value of your Direct Trade model.\n\nAs our business continues to grow and evolve, so will our Direct Trade model to continue our mission of making the most positive impact where we can. “We” and “our” inside a quote mean Stumptown Coffee Roasters. “We” do this by honoring our Direct Trade relationships, paying quality premiums for our coffees, and creating multi-year commitments to our producers. Additionally, the campaign encouraged visits to Stumptown cafes, showcasing their unique brand experience and deepening customer engagement.\n\nWe’d love to collaborate with your team to create a post that builds on this foundation, offering a visual representation of the dedication to quality and the importance of the Direct Trade relationship. We’re open to exploring different creative approaches and are excited to contribute to a meaningful partnership.\n\nThe BrandPilot team\n\nIt has these problems:\n- body is 170 words; it must be 100-150\n- “We believe a shared visual experience will resonate with your audience and reinforce the v\": proposal refers to company activity without a fact marker\n- ““We” and “our” inside a quote mean Stumptown Coffee Roasters.\": states something about the company without a fact marker\n- \"Additionally, the campaign encouraged visits to Stumptown cafes, showcasing their unique b\": states something about the company without a fact marker\n- no sentence uses a verified fact\n\nWrite the full corrected draft. Keep what was correct, fix only these problems, and follow every rule above. Use the same format."
+    }
+   }
+  }
+ ],
+ "opportunity": {
+  "anchor_fact": "F1",
+  "text": "One collaborative Instagram post with Stumptown Coffee Roasters, created together with their team, that builds on fact F1.",
+  "kind": "template"
+ },
+ "draft_prompt_sha256": "3734b858441f293ea0b1ade43522841e383ef83d28f848910cc207292bdb79eb",
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "checks still failing after 1 targeted revision",
+ "arm": "base",
+ "group": "dev",
+ "tag": "iter2"
+}

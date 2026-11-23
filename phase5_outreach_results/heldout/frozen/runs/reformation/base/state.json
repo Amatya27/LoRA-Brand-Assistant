@@ -1,0 +1,288 @@
+{
+ "workflow_version": "phase5-outreach-1",
+ "fact_selector_version": "phase5-facts-1",
+ "draft_prompt_version": "phase5-draft-prompt-7",
+ "checks_version": "phase5-draft-checks-9",
+ "company_id": "reformation",
+ "packet_sha256": "61fe6bcd04bc4a742ea34dffabca8f10ccad1bec4d298655d05742c9c19a6ab7",
+ "facts": [
+  {
+   "fact_id": "F1",
+   "passage_id": "P1",
+   "quote": "We make beautiful, timeless womenswear that inspires confidence and deep brand love from our customer base spanning generations and geographies.",
+   "score": 5.0,
+   "statement_type": "brand_positioning",
+   "official_source": true,
+   "source_url": "https://investors.thereformation.com/",
+   "text_sha256": "fc2c5d7c73fd858457792ce4ef3668d105d6be5a7a97d6864f22c0a0b346d14c",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F2",
+   "passage_id": "P3",
+   "quote": "Reformation’s momentum comes from consistent drops and selective collaborations.",
+   "score": 4.45,
+   "statement_type": "actual_activity",
+   "official_source": false,
+   "source_url": "https://www.brandvm.com/post/reformation-marketing-strategy",
+   "text_sha256": "ca7800f80d960c3a02aa249f956a44e3307d78e8d0ecdc0abf6179a56ef60d91",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F3",
+   "passage_id": "P5",
+   "quote": "Reformation uses these posts to promote new sales, collection drops, and their sustainability reports.",
+   "score": 2.7,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://www.dtcpatterns.com/dtc-patterns-articles/how-reformation-connects-and-educates-with-their-customers-on-social-media",
+   "text_sha256": "1134324ed093d61523f08005b42fdf3a630c7c0937ff29084564398bda66eb5c",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  }
+ ],
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "revision_mode": null,
+   "prompt_sha256": "c2b45984ba015b4b615bd032cd8d77d2584d6283fc6ac617ebd5ce34b08a3b71",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 7.146,
+   "usage": {
+    "prompt_tokens": 457,
+    "completion_tokens": 156,
+    "total_tokens": 613,
+    "prompt_tokens_details": {
+     "cached_tokens": 25
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "Collaboration Proposal",
+    "body": "Hi Reformation team,\n\nWe are a small Instagram content studio dedicated to crafting beautiful, timeless womenswear and inspiring confidence. We’d like to propose a collaborative Instagram post with you, designed to build on the first fact – that you make beautiful, timeless womenswear that inspires confidence and deep brand love from your customer base spanning generations and geographies. You consistently drop new collections and selectively collaborate with influential figures, which are key to your momentum. Essentially, this post would showcase a new collection, highlighting the unique design process and the collaborations that bring it to life. It would visually represent the feeling of timeless elegance and the power of genuine connection with your audience.\n\nPlease reply if you’re interested in exploring this idea further.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-9",
+    "passes": true,
+    "problems": [],
+    "word_count": 126,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [
+     "F1",
+     "F2",
+     "F3"
+    ],
+    "factual_sentences": 2,
+    "factual_sentences_supported": 1,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Collaboration Proposal",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 0
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Reformation team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We are a small Instagram content studio dedicated to crafting beautiful, timeless womenswear and inspiring confidence.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.5,
+       "uncovered": [
+        "conten",
+        "crafti",
+        "dedica",
+        "instag",
+        "small"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 10
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d like to propose a collaborative Instagram post with you, designed to build on the first fact – that you make beautiful, timeless womenswear that inspires confidence and deep brand love from your customer base spanning generations and geographies.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.846,
+       "uncovered": [
+        "design",
+        "first"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 13
+      },
+      "cited_fact": "F1",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "You consistently drop new collections and selectively collaborate with influential figures, which are key to your momentum.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F2+F3",
+       "coverage": 0.6,
+       "uncovered": [
+        "drop",
+        "figure",
+        "influe",
+        "key"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 10
+      },
+      "cited_fact": "F2+F3",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Essentially, this post would showcase a new collection, highlighting the unique design process and the collaborations that bring it to life.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F3",
+       "coverage": 0.143,
+       "uncovered": [
+        "bring",
+        "design",
+        "essent",
+        "life",
+        "proces",
+        "unique"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 7
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "It would visually represent the feeling of timeless elegance and the power of genuine connection with your audience.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.143,
+       "uncovered": [
+        "connec",
+        "elegan",
+        "feelin",
+        "genuin",
+        "power",
+        "repres"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 7
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Please reply if you’re interested in exploring this idea further.",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Collaboration Proposal",
+     "body": "Hi Reformation team,\n\nWe are a small Instagram content studio dedicated to crafting beautiful, timeless womenswear and inspiring confidence. We’d like to propose a collaborative Instagram post with you, designed to build on the first fact – that you make beautiful, timeless womenswear that inspires confidence and deep brand love from your customer base spanning generations and geographies [P1]. You consistently drop new collections and selectively collaborate with influential figures, which are key to your momentum [P3][P5]. Essentially, this post would showcase a new collection, highlighting the unique design process and the collaborations that bring it to life. It would visually represent the feeling of timeless elegance and the power of genuine connection with your audience.\n\nPlease reply if you’re interested in exploring this idea further.\n\nThe BrandPilot team"
+    },
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   }
+  }
+ ],
+ "opportunity": {
+  "anchor_fact": "F1",
+  "text": "One collaborative Instagram post with Reformation, created together with their team, that builds on the first fact above.",
+  "kind": "template"
+ },
+ "draft_prompt_sha256": "c2b45984ba015b4b615bd032cd8d77d2584d6283fc6ac617ebd5ce34b08a3b71",
+ "outcome": "passed_checks_pending_human_review",
+ "stop_reason": "all checks passed",
+ "final": {
+  "subject": "Collaboration Proposal",
+  "body": "Hi Reformation team,\n\nWe are a small Instagram content studio dedicated to crafting beautiful, timeless womenswear and inspiring confidence. We’d like to propose a collaborative Instagram post with you, designed to build on the first fact – that you make beautiful, timeless womenswear that inspires confidence and deep brand love from your customer base spanning generations and geographies [P1]. You consistently drop new collections and selectively collaborate with influential figures, which are key to your momentum [P3][P5]. Essentially, this post would showcase a new collection, highlighting the unique design process and the collaborations that bring it to life. It would visually represent the feeling of timeless elegance and the power of genuine connection with your audience.\n\nPlease reply if you’re interested in exploring this idea further.\n\nThe BrandPilot team",
+  "sources": [
+   {
+    "passage_id": "P1",
+    "fact_id": "F1",
+    "quote": "We make beautiful, timeless womenswear that inspires confidence and deep brand love from our customer base spanning generations and geographies.",
+    "source_url": "https://investors.thereformation.com/"
+   },
+   {
+    "passage_id": "P3",
+    "fact_id": "F2",
+    "quote": "Reformation’s momentum comes from consistent drops and selective collaborations.",
+    "source_url": "https://www.brandvm.com/post/reformation-marketing-strategy"
+   },
+   {
+    "passage_id": "P5",
+    "fact_id": "F3",
+    "quote": "Reformation uses these posts to promote new sales, collection drops, and their sustainability reports.",
+    "source_url": "https://www.dtcpatterns.com/dtc-patterns-articles/how-reformation-connects-and-educates-with-their-customers-on-social-media"
+   }
+  ],
+  "facts_used": [
+   "F1",
+   "F2",
+   "F3"
+  ],
+  "fact_verification": "pending_teammate_verification"
+ },
+ "arm": "base",
+ "group": "heldout",
+ "tag": "frozen"
+}

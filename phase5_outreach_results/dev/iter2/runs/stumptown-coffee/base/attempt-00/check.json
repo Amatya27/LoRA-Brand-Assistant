@@ -1,0 +1,173 @@
+{
+ "checks_version": "phase5-draft-checks-2",
+ "passes": false,
+ "problems": [
+  "body is 170 words; it must be 100-150",
+  "\"We believe a shared visual experience will resonate with your audience and reinforce the v\": proposal refers to company activity without a fact marker",
+  "\"“We” and “our” inside a quote mean Stumptown Coffee Roasters.\": states something about the company without a fact marker",
+  "\"Additionally, the campaign encouraged visits to Stumptown cafes, showcasing their unique b\": states something about the company without a fact marker",
+  "\"We’d love to collaborate with your team to create a post that builds on this foundation, o\": states something about the company without a fact marker",
+  "no sentence uses a verified fact"
+ ],
+ "word_count": 170,
+ "recipient": "correct",
+ "sender": "correct",
+ "instagram": true,
+ "other_platforms": [],
+ "promises": [],
+ "facts_used": [],
+ "unknown_fact_markers": [],
+ "factual_sentences": 4,
+ "factual_sentences_supported": 1,
+ "sentences": [
+  {
+   "location": "subject",
+   "sentence": "Collaboration Opportunity - Building on Direct Trade",
+   "kind": "subject",
+   "cited_facts": [],
+   "guard": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Hi Stumptown Coffee Roasters team,",
+   "kind": "non_assertion",
+   "cited_facts": [],
+   "guard": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We’re reaching out to propose a collaborative Instagram post designed to deepen our connection with your brand.",
+   "kind": "proposal",
+   "cited_facts": [],
+   "guard": {
+    "coverage": 0.0,
+    "uncovered": [
+     "connection",
+     "deepen",
+     "designed",
+     "out",
+     "reaching",
+     "we're"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false
+   },
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We believe a shared visual experience will resonate with your audience and reinforce the value of your Direct Trade model.",
+   "kind": "proposal",
+   "cited_facts": [],
+   "guard": {
+    "coverage": 0.455,
+    "uncovered": [
+     "believe",
+     "reinforce",
+     "resonate",
+     "shared",
+     "value",
+     "visual"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false
+   },
+   "problems": [
+    "proposal refers to company activity without a fact marker"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "As our business continues to grow and evolve, so will our Direct Trade model to continue our mission of making the most positive impact where we can.",
+   "kind": "proposal",
+   "cited_facts": [],
+   "guard": {
+    "coverage": 1.0,
+    "uncovered": [],
+    "missing_numbers": [],
+    "negation_mismatch": false
+   },
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "“We” and “our” inside a quote mean Stumptown Coffee Roasters.",
+   "kind": "factual",
+   "cited_facts": [],
+   "guard": null,
+   "problems": [
+    "states something about the company without a fact marker"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "“We” do this by honoring our Direct Trade relationships, paying quality premiums for our coffees, and creating multi-year commitments to our producers.",
+   "kind": "factual",
+   "cited_facts": [],
+   "guard": {
+    "coverage": 1.0,
+    "uncovered": [],
+    "missing_numbers": [],
+    "negation_mismatch": false
+   },
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Additionally, the campaign encouraged visits to Stumptown cafes, showcasing their unique brand experience and deepening customer engagement.",
+   "kind": "factual",
+   "cited_facts": [],
+   "guard": null,
+   "problems": [
+    "states something about the company without a fact marker"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "We’d love to collaborate with your team to create a post that builds on this foundation, offering a visual representation of the dedication to quality and the importance of the Direct Trade relationship.",
+   "kind": "factual",
+   "cited_facts": [],
+   "guard": null,
+   "problems": [
+    "states something about the company without a fact marker"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "We’re open to exploring different creative approaches and are excited to contribute to a meaningful partnership.",
+   "kind": "proposal",
+   "cited_facts": [],
+   "guard": {
+    "coverage": 0.0,
+    "uncovered": [
+     "approaches",
+     "contribute",
+     "creative",
+     "different",
+     "exploring",
+     "meaningful",
+     "open",
+     "partnership",
+     "we're"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false
+   },
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "The BrandPilot team",
+   "kind": "non_assertion",
+   "cited_facts": [],
+   "guard": null,
+   "problems": []
+  }
+ ],
+ "rendered": {
+  "subject": "Collaboration Opportunity - Building on Direct Trade",
+  "body": "Hi Stumptown Coffee Roasters team,\n\nWe’re reaching out to propose a collaborative Instagram post designed to deepen our connection with your brand. We believe a shared visual experience will resonate with your audience and reinforce the value of your Direct Trade model.\n\nAs our business continues to grow and evolve, so will our Direct Trade model to continue our mission of making the most positive impact where we can. “We” and “our” inside a quote mean Stumptown Coffee Roasters. “We” do this by honoring our Direct Trade relationships, paying quality premiums for our coffees, and creating multi-year commitments to our producers. Additionally, the campaign encouraged visits to Stumptown cafes, showcasing their unique brand experience and deepening customer engagement.\n\nWe’d love to collaborate with your team to create a post that builds on this foundation, offering a visual representation of the dedication to quality and the importance of the Direct Trade relationship.  We’re open to exploring different creative approaches and are excited to contribute to a meaningful partnership.\n\nThe BrandPilot team"
+ }
+}

@@ -1,0 +1,511 @@
+{
+ "workflow_version": "phase5-outreach-1",
+ "fact_selector_version": "phase5-facts-1",
+ "draft_prompt_version": "phase5-draft-prompt-7",
+ "checks_version": "phase5-draft-checks-9",
+ "company_id": "great-jones",
+ "packet_sha256": "75f6bf87251ae447644c0e89f001ac825e7094480b82b2853d3e82e3a2d8e9cf",
+ "facts": [
+  {
+   "fact_id": "F1",
+   "passage_id": "P10",
+   "quote": "Great Jones Great Jones is a New York-based, women-run kitchenware company founded with the mission to equip and empower home cooking GreatjonesgoodsGreatjonesgoodsGrowwithbamboo.",
+   "score": 2.9,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://www.accio.com/business/great-jones",
+   "text_sha256": "f3f207d0370b8f0ad11f19705039dcdaa8e643e0a0711450fe8337d3c910626e",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F2",
+   "passage_id": "P3",
+   "quote": "Great Jones positions its products as \"aspirational millennial home goods,\" successfully creating a niche that combines style with functionality NewyorkerShoplift.",
+   "score": 1.0,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://www.accio.com/business/great-jones",
+   "text_sha256": "c00e0cdea40f4ccee4968b8231a07db95e690aed7852b9cdfc522a7162557a1f",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F3",
+   "passage_id": "P9",
+   "quote": "This report provides a comprehensive analysis of the kitchenware brand Great Jones, including its corporate structure, brand identity, and market strategy.",
+   "score": 0.95,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://www.accio.com/business/great-jones",
+   "text_sha256": "65bb195575030d7e37ef949f86f2c19590a7aa016c8deeef929a5be0cc675362",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  }
+ ],
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "revision_mode": null,
+   "prompt_sha256": "5f1031dc5a3f3fe78290408d2793cc7e5394f3663e1679083090a72b1ba717d6",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 8.545,
+   "usage": {
+    "prompt_tokens": 512,
+    "completion_tokens": 209,
+    "total_tokens": 721,
+    "prompt_tokens_details": {
+     "cached_tokens": 25
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "Collaboration Proposal",
+    "body": "Hi Great Jones team,\n\nWe are a small Instagram content studio dedicated to crafting visually appealing and functional kitchenware. We’d like to propose a collaborative Instagram post with you, built on the fact that Great Jones is a New York-based, women-run kitchenware company founded with the mission to equip and empower home cooking GreatjonesgoodsGreatjonesgoodsGrowwithbamboo. You’ve meticulously analyzed the brand’s corporate structure, brand identity, and market strategy, providing a comprehensive report.  Specifically, this report details the key elements of your company – its aspiration as an aspirational millennial home goods brand, the successful combination of style and functionality in New YorkerShoplift, and the overall strategic approach.  We envision a collaborative Instagram post that would showcase your brand's aesthetic and highlight the unique qualities of your products, fostering a deeper connection with your audience.  We’d love to work together to create a visually compelling post that resonates with your followers.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-9",
+    "passes": false,
+    "problems": [
+     "\"Specifically, this report details the key elements of your company – its aspiration as an \": factual statement not supported by a verified fact (best fact F2 covers 0.44; unsupported words: approa, detail, elemen, key, new, overal, report, specif)"
+    ],
+    "word_count": 150,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [
+     "F1",
+     "F3"
+    ],
+    "factual_sentences": 4,
+    "factual_sentences_supported": 1,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Collaboration Proposal",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 0
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Great Jones team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We are a small Instagram content studio dedicated to crafting visually appealing and functional kitchenware.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.111,
+       "uncovered": [
+        "appeal",
+        "conten",
+        "crafti",
+        "dedica",
+        "functi",
+        "instag",
+        "small",
+        "visual"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 9
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d like to propose a collaborative Instagram post with you, built on the fact that Great Jones is a New York-based, women-run kitchenware company founded with the mission to equip and empower home cooking GreatjonesgoodsGreatjonesgoodsGrowwithbamboo.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.923,
+       "uncovered": [
+        "built"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 13
+      },
+      "cited_fact": "F1",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "You’ve meticulously analyzed the brand’s corporate structure, brand identity, and market strategy, providing a comprehensive report.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F3",
+       "coverage": 0.727,
+       "uncovered": [
+        "analyz",
+        "meticu",
+        "you've"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 11
+      },
+      "cited_fact": "F3",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Specifically, this report details the key elements of your company – its aspiration as an aspirational millennial home goods brand, the successful combination of style and functionality in New YorkerShoplift, and the overall strategic approach.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.444,
+       "uncovered": [
+        "approa",
+        "detail",
+        "elemen",
+        "key",
+        "new",
+        "overal",
+        "report",
+        "specif",
+        "strate",
+        "yorker"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 18
+      },
+      "cited_fact": null,
+      "problems": [
+       "factual statement not supported by a verified fact (best fact F2 covers 0.44; unsupported words: approa, detail, elemen, key, new, overal, report, specif)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "We envision a collaborative Instagram post that would showcase your brand's aesthetic and highlight the unique qualities of your products, fostering a deeper connection with your audience.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "aesthe",
+        "connec",
+        "deeper",
+        "foster",
+        "qualit",
+        "unique"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 6
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d love to work together to create a visually compelling post that resonates with your followers.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "compel",
+        "create",
+        "follow",
+        "post",
+        "resona",
+        "togeth",
+        "visual",
+        "work"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 8
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Collaboration Proposal",
+     "body": "Hi Great Jones team,\n\nWe are a small Instagram content studio dedicated to crafting visually appealing and functional kitchenware. We’d like to propose a collaborative Instagram post with you, built on the fact that Great Jones is a New York-based, women-run kitchenware company founded with the mission to equip and empower home cooking GreatjonesgoodsGreatjonesgoodsGrowwithbamboo [P10]. You’ve meticulously analyzed the brand’s corporate structure, brand identity, and market strategy, providing a comprehensive report [P9]. Specifically, this report details the key elements of your company – its aspiration as an aspirational millennial home goods brand, the successful combination of style and functionality in New YorkerShoplift, and the overall strategic approach. We envision a collaborative Instagram post that would showcase your brand's aesthetic and highlight the unique qualities of your products, fostering a deeper connection with your audience. We’d love to work together to create a visually compelling post that resonates with your followers.\n\nThe BrandPilot team"
+    },
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   }
+  },
+  {
+   "index": 1,
+   "kind": "targeted_revision",
+   "revision_mode": "sentences",
+   "prompt_sha256": "0c320c726246e164e505e033148b4dacb60ea689c0c9d9f3206f88501d00c0da",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 7.978,
+   "usage": {
+    "prompt_tokens": 341,
+    "completion_tokens": 338,
+    "total_tokens": 679,
+    "prompt_tokens_details": {
+     "cached_tokens": 24
+    }
+   },
+   "error": null,
+   "sentence_edits": [
+    {
+     "index": 1,
+     "location": "body",
+     "old": "Specifically, this report details the key elements of your company – its aspiration as an aspirational millennial home goods brand, the successful combination of style and functionality in New YorkerShoplift, and the overall strategic approach.",
+     "new": "Specifically, this report details the key elements of your company – its aspiration as an aspirational millennial home goods brand, the successful combination of style and functionality in New YorkerShoplift, and the overall strategic approach.",
+     "action": "replace"
+    }
+   ],
+   "parsed": {
+    "subject": "Collaboration Proposal",
+    "body": "Hi Great Jones team,\n\nWe are a small Instagram content studio dedicated to crafting visually appealing and functional kitchenware. We’d like to propose a collaborative Instagram post with you, built on the fact that Great Jones is a New York-based, women-run kitchenware company founded with the mission to equip and empower home cooking GreatjonesgoodsGreatjonesgoodsGrowwithbamboo. You’ve meticulously analyzed the brand’s corporate structure, brand identity, and market strategy, providing a comprehensive report. Specifically, this report details the key elements of your company – its aspiration as an aspirational millennial home goods brand, the successful combination of style and functionality in New YorkerShoplift, and the overall strategic approach. We envision a collaborative Instagram post that would showcase your brand's aesthetic and highlight the unique qualities of your products, fostering a deeper connection with your audience. We’d love to work together to create a visually compelling post that resonates with your followers.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": [
+     "sentence-level revision applied"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-9",
+    "passes": false,
+    "problems": [
+     "\"Specifically, this report details the key elements of your company – its aspiration as an \": factual statement not supported by a verified fact (best fact F2 covers 0.44; unsupported words: approa, detail, elemen, key, new, overal, report, specif)"
+    ],
+    "word_count": 150,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [
+     "F1",
+     "F3"
+    ],
+    "factual_sentences": 4,
+    "factual_sentences_supported": 1,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Collaboration Proposal",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 0
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Great Jones team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We are a small Instagram content studio dedicated to crafting visually appealing and functional kitchenware.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.111,
+       "uncovered": [
+        "appeal",
+        "conten",
+        "crafti",
+        "dedica",
+        "functi",
+        "instag",
+        "small",
+        "visual"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 9
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d like to propose a collaborative Instagram post with you, built on the fact that Great Jones is a New York-based, women-run kitchenware company founded with the mission to equip and empower home cooking GreatjonesgoodsGreatjonesgoodsGrowwithbamboo.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.923,
+       "uncovered": [
+        "built"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 13
+      },
+      "cited_fact": "F1",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "You’ve meticulously analyzed the brand’s corporate structure, brand identity, and market strategy, providing a comprehensive report.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F3",
+       "coverage": 0.727,
+       "uncovered": [
+        "analyz",
+        "meticu",
+        "you've"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 11
+      },
+      "cited_fact": "F3",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Specifically, this report details the key elements of your company – its aspiration as an aspirational millennial home goods brand, the successful combination of style and functionality in New YorkerShoplift, and the overall strategic approach.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.444,
+       "uncovered": [
+        "approa",
+        "detail",
+        "elemen",
+        "key",
+        "new",
+        "overal",
+        "report",
+        "specif",
+        "strate",
+        "yorker"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 18
+      },
+      "cited_fact": null,
+      "problems": [
+       "factual statement not supported by a verified fact (best fact F2 covers 0.44; unsupported words: approa, detail, elemen, key, new, overal, report, specif)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "We envision a collaborative Instagram post that would showcase your brand's aesthetic and highlight the unique qualities of your products, fostering a deeper connection with your audience.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "aesthe",
+        "connec",
+        "deeper",
+        "foster",
+        "qualit",
+        "unique"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 6
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d love to work together to create a visually compelling post that resonates with your followers.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "compel",
+        "create",
+        "follow",
+        "post",
+        "resona",
+        "togeth",
+        "visual",
+        "work"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 8
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Collaboration Proposal",
+     "body": "Hi Great Jones team,\n\nWe are a small Instagram content studio dedicated to crafting visually appealing and functional kitchenware. We’d like to propose a collaborative Instagram post with you, built on the fact that Great Jones is a New York-based, women-run kitchenware company founded with the mission to equip and empower home cooking GreatjonesgoodsGreatjonesgoodsGrowwithbamboo [P10]. You’ve meticulously analyzed the brand’s corporate structure, brand identity, and market strategy, providing a comprehensive report [P9]. Specifically, this report details the key elements of your company – its aspiration as an aspirational millennial home goods brand, the successful combination of style and functionality in New YorkerShoplift, and the overall strategic approach. We envision a collaborative Instagram post that would showcase your brand's aesthetic and highlight the unique qualities of your products, fostering a deeper connection with your audience. We’d love to work together to create a visually compelling post that resonates with your followers.\n\nThe BrandPilot team"
+    },
+    "format_notes": [
+     "sentence-level revision applied"
+    ]
+   }
+  }
+ ],
+ "opportunity": {
+  "anchor_fact": "F1",
+  "text": "One collaborative Instagram post with Great Jones, created together with their team, that builds on the first fact above.",
+  "kind": "template"
+ },
+ "draft_prompt_sha256": "5f1031dc5a3f3fe78290408d2793cc7e5394f3663e1679083090a72b1ba717d6",
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "checks still failing after 1 targeted revision",
+ "arm": "base",
+ "group": "heldout",
+ "tag": "frozen"
+}

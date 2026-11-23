@@ -1,0 +1,11 @@
+{
+ "model": "mlx-community/gemma-3-1b-it-qat-4bit",
+ "messages": [
+  {
+   "role": "user",
+   "content": "You are fixing sentences in an outreach email from our team (a small Instagram content studio) to the Tonal team.\n\nVerified facts about Tonal:\n- \"Tonal: Meet Tonal Installation With Tonal Effortless Install, professionals deliver, mount, and test your Tonal for a fast, stress-free setup.\" (source: Tonal's own website)\n- \"The connected home gym, Tonal, saw huge growth at the start of Covid-19, but needed to connect more with high-income worth individuals and athletes to build the brand interest and value, in a highly competitive market.\" (source: a published article about Tonal)\n- \"Stanley Tonal, a smart home gym looking for a holiday sales boost, has dropped an epic long-form commercial shot entirely in black and white and set in the Victorian era.\" (source: a published article about Tonal)\n\nEach numbered sentence below has a problem. Follow the fix given for it. Write as our team; never use \"our\" for Tonal. Do not promise results.\n\n1: \"You’ve built a powerful brand story through this, and we believe a visual piece that captures the essence of that experience would resonate deeply with your audience.\"\n   Problem: factual clause not supported by a verified fact; refers to company activity not in the verified facts: ['built'].\n   Fix: Rewrite it to describe only the proposed Instagram post, with no claim about Tonal, or write DELETE.\n\nReturn one line per sentence and nothing else, in this form:\n1: <replacement sentence or DELETE>"
+  }
+ ],
+ "temperature": 0.0,
+ "max_tokens": 400
+}

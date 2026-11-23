@@ -1,0 +1,21 @@
+company_id,arm,outcome,stop_reason,facts_selected,generations,all_runtime_verified,initial_passes,initial_problems,final_problems,revised,initial_words,final_words,final_sender,final_recipient,final_instagram_only,final_promises,final_factual_sentences,final_factual_supported,fact_verification,initial_latency_s
+away,base,withheld_failed_checks,checks still failing after 1 targeted revision,3,2,True,False,2,3,True,154,154,correct,correct,True,0,3,1,,9.71
+away,v5,passed_checks_pending_human_review,all checks passed,3,1,True,True,0,0,False,126,126,correct,correct,True,0,1,0,all_used_facts_verified,8.128
+charlotte-tilbury,base,withheld_failed_checks,checks still failing after 1 targeted revision,3,2,True,False,2,2,True,129,129,correct,correct,True,0,4,0,,7.458
+charlotte-tilbury,v5,withheld_failed_checks,checks still failing after 1 targeted revision,3,2,True,False,3,3,True,151,151,correct,correct,True,0,2,0,,8.21
+dollar-shave-club,base,withheld_failed_checks,checks still failing after 1 targeted revision,3,2,True,False,3,3,True,107,107,correct,correct,True,0,1,0,,6.802
+dollar-shave-club,v5,withheld_failed_checks,checks still failing after 1 targeted revision,3,2,True,False,1,1,True,142,142,correct,correct,True,0,1,0,,7.416
+great-jones,base,withheld_failed_checks,checks still failing after 1 targeted revision,3,2,True,False,1,1,True,150,150,correct,correct,True,0,4,1,,8.545
+great-jones,v5,withheld_failed_checks,checks still failing after 1 targeted revision,3,2,True,False,1,1,True,113,113,correct,correct,True,0,2,0,,8.168
+ilia-beauty,base,passed_checks_pending_human_review,all checks passed,3,1,True,True,0,0,False,130,130,correct,correct,True,0,4,3,all_used_facts_verified,7.47
+ilia-beauty,v5,withheld_failed_checks,checks still failing after 1 targeted revision,3,2,True,False,3,3,True,157,157,correct,correct,True,0,2,0,,8.424
+koio,base,passed_checks_pending_human_review,all checks passed,3,1,True,True,0,0,False,122,122,correct,correct,True,0,2,1,all_used_facts_verified,7.34
+koio,v5,withheld_failed_checks,checks still failing after 1 targeted revision,3,2,True,False,3,3,True,187,187,correct,correct,True,0,2,0,,8.881
+meundies,base,withheld_failed_checks,checks still failing after 1 targeted revision,3,2,True,False,1,2,True,114,114,correct,correct,True,0,1,0,,7.3
+meundies,v5,withheld_failed_checks,checks still failing after 1 targeted revision,3,2,True,False,1,2,True,152,207,correct,correct,True,0,2,1,,9.175
+reformation,base,passed_checks_pending_human_review,all checks passed,3,1,True,True,0,0,False,126,126,correct,correct,True,0,2,1,all_used_facts_verified,7.146
+reformation,v5,withheld_failed_checks,checks still failing after 1 targeted revision,3,2,True,False,1,1,True,134,134,correct,correct,True,0,2,1,,7.772
+supergoop,base,withheld_failed_checks,checks still failing after 1 targeted revision,3,2,True,False,1,1,True,126,126,correct,correct,True,0,1,0,,7.862
+supergoop,v5,withheld_failed_checks,checks still failing after 1 targeted revision,3,2,True,False,3,1,True,141,136,correct,correct,True,0,2,1,,7.994
+youth-to-the-people,base,withheld_failed_checks,checks still failing after 1 targeted revision,3,2,True,False,4,4,True,114,114,correct,correct,True,0,3,0,,7.053
+youth-to-the-people,v5,passed_checks_pending_human_review,all checks passed after one targeted revision,3,2,True,False,1,0,True,133,112,correct,correct,True,0,0,0,all_used_facts_verified,7.92

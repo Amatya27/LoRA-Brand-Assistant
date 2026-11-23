@@ -1,0 +1,512 @@
+{
+ "workflow_version": "phase5-outreach-1",
+ "fact_selector_version": "phase5-facts-1",
+ "draft_prompt_version": "phase5-draft-prompt-3",
+ "checks_version": "phase5-draft-checks-3",
+ "company_id": "graza",
+ "packet_sha256": "90fc71b07ba6c1187fbcacc9fd4e9cf66b948d1c0e45f62dc877017037d2aaab",
+ "facts": [
+  {
+   "fact_id": "F1",
+   "passage_id": "P8",
+   "quote": "Graza started Direct-to-Consumer (DTC) but also made sure to get into grocers like Whole Foods, Target, etc.",
+   "score": 4.85,
+   "statement_type": "actual_activity",
+   "official_source": false,
+   "source_url": "https://behindthebrandnews.com/p/case-study-graza",
+   "text_sha256": "d3e5795880a3411f423342c22230050a0f1abced53128f251f7c77da047f725b",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F2",
+   "passage_id": "P7",
+   "quote": "Graza’s social content, product design, and messaging are playful and culinary-inspired rather than overly formal.",
+   "score": 4.75,
+   "statement_type": "actual_activity",
+   "official_source": false,
+   "source_url": "https://behindthebrandnews.com/p/case-study-graza",
+   "text_sha256": "30ae4473d4995caa8605f069b3de2924a823dd6f208863556ff88fadfe6b6d11",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F3",
+   "passage_id": "P9",
+   "quote": "Dickieson estimated that Graza has added around 2,000 new social followers since launching the cans.",
+   "score": 2.8,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://www.businessinsider.com/inside-graza-olive-oil-influencer-marketing-strategy-2024-5",
+   "text_sha256": "22642fc0398d0093fb339a1f9de57b7e314644ffb32b9d3a98dacb5f313bece6",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  }
+ ],
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "prompt_sha256": "7f4a5bb2c02c00eb6193ea6102f4601d6624216608a4e23f57a06906bceeecf5",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 8.269,
+   "usage": {
+    "prompt_tokens": 383,
+    "completion_tokens": 157,
+    "total_tokens": 540,
+    "prompt_tokens_details": {
+     "cached_tokens": 25
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "Building a Delicious Story",
+    "body": "Hi Graza team,\n\nWe’ve been following your creative approach to building a strong online presence, and we’re excited about the playful and culinary-inspired style you’ve cultivated. Your social content and product design are truly captivating. We believe a collaborative Instagram post would be a fantastic way to amplify that. Imagine a post that directly reflects the essence of Graza – a moment of shared enjoyment and a celebration of the olive oil's unique character. It could feature a visually appealing image or short video showcasing the product in a relatable setting. The goal isn’t to quantify growth or achieve a specific outcome, but simply to create a shared experience and build a deeper connection with your audience.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": []
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-3",
+    "passes": false,
+    "problems": [
+     "\"The goal isn’t to quantify growth or achieve a specific outcome, but simply to create a sh\": factual statement not supported by a verified fact (best fact F1 covers 0.06; unsupported words: achiev, audien, build, connec, create, deeper, experi, goal)"
+    ],
+    "word_count": 119,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [
+     "F2"
+    ],
+    "factual_sentences": 2,
+    "factual_sentences_supported": 1,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Building a Delicious Story",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "delici",
+        "story"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 2
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Graza team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’ve been following your creative approach to building a strong online presence, and we’re excited about the playful and culinary-inspired style you’ve cultivated.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.167,
+       "uncovered": [
+        "approa",
+        "cultiv",
+        "follow",
+        "online",
+        "presen",
+        "strong",
+        "style",
+        "we're",
+        "we've",
+        "you've"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 12
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Your social content and product design are truly captivating.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.6,
+       "uncovered": [
+        "captiv",
+        "truly"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 5
+      },
+      "cited_fact": "F2",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We believe a collaborative Instagram post would be a fantastic way to amplify that.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "amplif",
+        "fantas"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 2
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Imagine a post that directly reflects the essence of Graza – a moment of shared enjoyment and a celebration of the olive oil's unique character.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.091,
+       "uncovered": [
+        "charac",
+        "enjoym",
+        "essenc",
+        "imagin",
+        "moment",
+        "oil",
+        "olive",
+        "reflec",
+        "shared",
+        "unique"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 11
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "It could feature a visually appealing image or short video showcasing the product in a relatable setting.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "image",
+        "relata",
+        "settin",
+        "short",
+        "video"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 5
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The goal isn’t to quantify growth or achieve a specific outcome, but simply to create a shared experience and build a deeper connection with your audience.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.062,
+       "uncovered": [
+        "achiev",
+        "audien",
+        "build",
+        "connec",
+        "create",
+        "deeper",
+        "experi",
+        "goal",
+        "growth",
+        "isn't",
+        "outcom",
+        "quanti",
+        "shared",
+        "simply",
+        "specif"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 16
+      },
+      "cited_fact": null,
+      "problems": [
+       "factual statement not supported by a verified fact (best fact F1 covers 0.06; unsupported words: achiev, audien, build, connec, create, deeper, experi, goal)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Building a Delicious Story",
+     "body": "Hi Graza team,\n\nWe’ve been following your creative approach to building a strong online presence, and we’re excited about the playful and culinary-inspired style you’ve cultivated. Your social content and product design are truly captivating [P7]. We believe a collaborative Instagram post would be a fantastic way to amplify that. Imagine a post that directly reflects the essence of Graza – a moment of shared enjoyment and a celebration of the olive oil's unique character. It could feature a visually appealing image or short video showcasing the product in a relatable setting. The goal isn’t to quantify growth or achieve a specific outcome, but simply to create a shared experience and build a deeper connection with your audience.\n\nThe BrandPilot team"
+    },
+    "format_notes": []
+   }
+  },
+  {
+   "index": 1,
+   "kind": "targeted_revision",
+   "prompt_sha256": "ddcb2f804baf940eccd82ab8def40252648aab21e003c35e7d6e6d4a0f2ebac9",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 4.67,
+   "usage": {
+    "prompt_tokens": 642,
+    "completion_tokens": 158,
+    "total_tokens": 800,
+    "prompt_tokens_details": {
+     "cached_tokens": 378
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "Building a Delicious Story",
+    "body": "Hi Graza team,\n\nWe’ve been following your creative approach to building a strong online presence, and we’re excited about the playful and culinary-inspired style you’ve cultivated. Your social content and product design are truly captivating. We believe a collaborative Instagram post would be a fantastic way to amplify that. Imagine a post that directly reflects the essence of Graza – a moment of shared enjoyment and a celebration of the olive oil’s unique character. It could feature a visually appealing image or short video showcasing the product in a relatable setting. The goal isn’t to quantify growth or achieve a specific outcome, but simply to create a shared experience and build a deeper connection with your audience.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": []
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-3",
+    "passes": false,
+    "problems": [
+     "\"The goal isn’t to quantify growth or achieve a specific outcome, but simply to create a sh\": factual statement not supported by a verified fact (best fact F1 covers 0.06; unsupported words: achiev, audien, build, connec, create, deeper, experi, goal)"
+    ],
+    "word_count": 119,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [
+     "F2"
+    ],
+    "factual_sentences": 2,
+    "factual_sentences_supported": 1,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Building a Delicious Story",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "delici",
+        "story"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 2
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Graza team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’ve been following your creative approach to building a strong online presence, and we’re excited about the playful and culinary-inspired style you’ve cultivated.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.167,
+       "uncovered": [
+        "approa",
+        "cultiv",
+        "follow",
+        "online",
+        "presen",
+        "strong",
+        "style",
+        "we're",
+        "we've",
+        "you've"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 12
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Your social content and product design are truly captivating.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.6,
+       "uncovered": [
+        "captiv",
+        "truly"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 5
+      },
+      "cited_fact": "F2",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We believe a collaborative Instagram post would be a fantastic way to amplify that.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "amplif",
+        "fantas"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 2
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Imagine a post that directly reflects the essence of Graza – a moment of shared enjoyment and a celebration of the olive oil’s unique character.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.091,
+       "uncovered": [
+        "charac",
+        "enjoym",
+        "essenc",
+        "imagin",
+        "moment",
+        "oil",
+        "olive",
+        "reflec",
+        "shared",
+        "unique"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 11
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "It could feature a visually appealing image or short video showcasing the product in a relatable setting.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "image",
+        "relata",
+        "settin",
+        "short",
+        "video"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 5
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The goal isn’t to quantify growth or achieve a specific outcome, but simply to create a shared experience and build a deeper connection with your audience.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.062,
+       "uncovered": [
+        "achiev",
+        "audien",
+        "build",
+        "connec",
+        "create",
+        "deeper",
+        "experi",
+        "goal",
+        "growth",
+        "isn't",
+        "outcom",
+        "quanti",
+        "shared",
+        "simply",
+        "specif"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 16
+      },
+      "cited_fact": null,
+      "problems": [
+       "factual statement not supported by a verified fact (best fact F1 covers 0.06; unsupported words: achiev, audien, build, connec, create, deeper, experi, goal)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Building a Delicious Story",
+     "body": "Hi Graza team,\n\nWe’ve been following your creative approach to building a strong online presence, and we’re excited about the playful and culinary-inspired style you’ve cultivated. Your social content and product design are truly captivating [P7]. We believe a collaborative Instagram post would be a fantastic way to amplify that. Imagine a post that directly reflects the essence of Graza – a moment of shared enjoyment and a celebration of the olive oil’s unique character. It could feature a visually appealing image or short video showcasing the product in a relatable setting. The goal isn’t to quantify growth or achieve a specific outcome, but simply to create a shared experience and build a deeper connection with your audience.\n\nThe BrandPilot team"
+    },
+    "format_notes": []
+   }
+  }
+ ],
+ "opportunity": {
+  "anchor_fact": "F1",
+  "text": "One collaborative Instagram post with Graza, created together with their team, that builds on the first fact above.",
+  "kind": "template"
+ },
+ "draft_prompt_sha256": "7f4a5bb2c02c00eb6193ea6102f4601d6624216608a4e23f57a06906bceeecf5",
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "checks still failing after 1 targeted revision",
+ "arm": "base",
+ "group": "dev",
+ "tag": "iter3"
+}

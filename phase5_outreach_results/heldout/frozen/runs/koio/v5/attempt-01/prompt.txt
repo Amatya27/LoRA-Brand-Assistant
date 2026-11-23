@@ -1,0 +1,20 @@
+You are fixing sentences in an outreach email from our team (a small Instagram content studio) to the Koio team.
+
+Verified facts about Koio:
+- "In anticipation of the launch of the Tempo style sneaker in July 2019, the Koio team developed a marketing strategy combining social media, e-mail, and IRL in-store engagement." (source: a published article about Koio)
+- "Koio Saw Store Sales Soar for Latest Sneaker Drop Koio, a digitally-native sneaker brand, sought to enhance its retail marketing and customer engagement for a new product launch." (source: a published article about Koio)
+- "As one of Endear's inaugural customers, Koio has augmented their strong digital presence through store-based marketing efforts." (source: a published article about Koio)
+
+Each numbered sentence below has a problem. Follow the fix given for it. Write as our team; never use "our" for Koio. Do not promise results.
+The email is 187 words and must be at most 150, so write DELETE wherever the sentence is not needed.
+
+1: "We’d like to propose a collaborative Instagram post built on the foundation of your marketing strategy, specifically your first fact about the Koio team's approach to launching the Tempo sneaker in July 2019."
+   Problem: refers to company activity not in the verified facts: ['built'].
+   Fix: Rewrite it to describe only the proposed Instagram post, with no claim about Koio, or write DELETE.
+2: "You've described your goal as enhancing your retail marketing and customer engagement for a new product launch, and that your team worked with Endear to create a digitally-native sneaker brand that sought to elevate its retail marketing and customer engagement for a new product launch."
+   Problem: says Koio stated this, but the source is a third-party article.
+   Fix: Rewrite it to say only this fact, in your own words: "Koio Saw Store Sales Soar for Latest Sneaker Drop Koio, a digitally-native sneaker brand, sought to enhance its retail marketing and customer engagement for a new product launch.", or write DELETE.
+
+Return one line per sentence and nothing else, in this form:
+1: <replacement sentence or DELETE>
+2: <replacement sentence or DELETE>

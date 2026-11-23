@@ -1,0 +1,189 @@
+{
+ "checks_version": "phase5-draft-checks-4",
+ "passes": false,
+ "problems": [
+  "\"We’re a small team dedicated to crafting engaging Instagram content for brands, and we’d l\": proposal states a premise about the company that no verified fact supports (best fact F1 covers 0.44; unsupported words: built, crafti, dedica, inform, small)",
+  "\"You’ve noted that this approach is a key element in your growth, and we believe it's worth\": refers to company activity not in the verified facts: ['growth']",
+  "\"Specifically, your sources describe how this strategy has created a foundation of pre-exis\": factual statement not supported by a verified fact (best fact F2 covers 0.22; unsupported words: asset, brands, create, descri, expand, founda, how, lookin)",
+  "no sentence restates a verified fact"
+ ],
+ "word_count": 149,
+ "recipient": "correct",
+ "sender": "correct",
+ "instagram": true,
+ "other_platforms": [],
+ "promises": [],
+ "facts_used": [],
+ "factual_sentences": 1,
+ "factual_sentences_supported": 0,
+ "sentences": [
+  {
+   "location": "subject",
+   "sentence": "Collaboration Opportunity for Instagram Engagement",
+   "kind": "subject",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [
+     "engage"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 1
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Hi Fly By Jing team,",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We’re a small team dedicated to crafting engaging Instagram content for brands, and we’d like to propose a collaborative post built on the fact that your community-building strategy has been informed by partnerships with other brands.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.444,
+    "uncovered": [
+     "built",
+     "crafti",
+     "dedica",
+     "inform",
+     "small"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 9
+   },
+   "cited_fact": null,
+   "problems": [
+    "proposal states a premise about the company that no verified fact supports (best fact F1 covers 0.44; unsupported words: built, crafti, dedica, inform, small)"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "You’ve noted that this approach is a key element in your growth, and we believe it's worth exploring further with your audience.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [
+     "approa",
+     "elemen",
+     "furthe",
+     "growth",
+     "it",
+     "key",
+     "noted",
+     "worth",
+     "you've"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 9
+   },
+   "cited_fact": null,
+   "problems": [
+    "refers to company activity not in the verified facts: ['growth']"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "Specifically, your sources describe how this strategy has created a foundation of pre-existing demand signals, which is a valuable asset for brands looking to expand into new markets.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.222,
+    "uncovered": [
+     "asset",
+     "brands",
+     "create",
+     "descri",
+     "expand",
+     "founda",
+     "how",
+     "lookin",
+     "market",
+     "new",
+     "source",
+     "specif",
+     "strate",
+     "valuab"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 18
+   },
+   "cited_fact": null,
+   "problems": [
+    "factual statement not supported by a verified fact (best fact F2 covers 0.22; unsupported words: asset, brands, create, descri, expand, founda, how, lookin)"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "This post would showcase your partnership with Fly By Jing, highlighting the potential for a collaborative Instagram experience that builds on this foundation and aligns with your marketing goals.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [
+     "aligns",
+     "experi",
+     "founda",
+     "goals",
+     "market"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 5
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "It would be a chance to share your enthusiasm for this approach and explore how your teams might work together to bring this vision to life.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [
+     "approa",
+     "bring",
+     "chance",
+     "enthus",
+     "how",
+     "life",
+     "might",
+     "teams",
+     "vision"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 9
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "The BrandPilot team",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  }
+ ],
+ "rendered": {
+  "subject": "Collaboration Opportunity for Instagram Engagement",
+  "body": "Hi Fly By Jing team,\n\nWe’re a small team dedicated to crafting engaging Instagram content for brands, and we’d like to propose a collaborative post built on the fact that your community-building strategy has been informed by partnerships with other brands. You’ve noted that this approach is a key element in your growth, and we believe it's worth exploring further with your audience. Specifically, your sources describe how this strategy has created a foundation of pre-existing demand signals, which is a valuable asset for brands looking to expand into new markets. This post would showcase your partnership with Fly By Jing, highlighting the potential for a collaborative Instagram experience that builds on this foundation and aligns with your marketing goals. It would be a chance to share your enthusiasm for this approach and explore how your teams might work together to bring this vision to life.\n\nThe BrandPilot team"
+ },
+ "format_notes": [
+  "BODY label missing; text after the subject line used as the body"
+ ]
+}

@@ -1,0 +1,175 @@
+{
+ "checks_version": "phase5-draft-checks-1",
+ "passes": false,
+ "problems": [
+  "\"Celebrating Your Mission\": proposal refers to company activity without a fact marker",
+  "\"As your business continues to grow and evolve, your Direct Trade model will continue to be\": states something about the company without a fact marker",
+  "\"We do this by honoring our Direct Trade relationships, paying quality premiums for our cof\": not supported by its cited fact(s) (coverage 0.15; unsupported words: coffees, commitments, creating, honoring, multi, paying, premiums, producers)",
+  "\"We do this by honoring our Direct Trade relationships, paying quality premiums for our cof\": numbers not in the cited fact: ['1']",
+  "\"Additionally, the campaign encouraged visits to Stumptown cafes, showcasing their unique b\": states something about the company without a fact marker",
+  "\"The post would be a way to celebrate what F1 describes, created together with your team.\": numbers not in any fact: ['1']"
+ ],
+ "word_count": 141,
+ "recipient": "correct",
+ "sender": "correct",
+ "instagram": true,
+ "other_platforms": [],
+ "promises": [],
+ "facts_used": [
+  "F1"
+ ],
+ "unknown_fact_markers": [],
+ "factual_sentences": 3,
+ "factual_sentences_supported": 0,
+ "sentences": [
+  {
+   "location": "subject",
+   "sentence": "Celebrating Your Mission",
+   "kind": "proposal",
+   "cited_facts": [],
+   "guard": {
+    "coverage": 0.5,
+    "uncovered": [
+     "celebrating"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false
+   },
+   "problems": [
+    "proposal refers to company activity without a fact marker"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "Hi Stumptown Coffee Roasters team,",
+   "kind": "non_assertion",
+   "cited_facts": [],
+   "guard": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We’re reaching out to propose a collaborative Instagram post that highlights your commitment to quality and producer relationships.",
+   "kind": "proposal",
+   "cited_facts": [],
+   "guard": {
+    "coverage": 0.286,
+    "uncovered": [
+     "commitment",
+     "out",
+     "producer",
+     "reaching",
+     "we're"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false
+   },
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "As your business continues to grow and evolve, your Direct Trade model will continue to be a cornerstone of your mission of making the most positive impact where you can.",
+   "kind": "factual",
+   "cited_facts": [],
+   "guard": null,
+   "problems": [
+    "states something about the company without a fact marker"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "[F1] We do this by honoring our Direct Trade relationships, paying quality premiums for our coffees, and creating multi-year commitments to our producers.",
+   "kind": "factual",
+   "cited_facts": [
+    "F1"
+   ],
+   "guard": {
+    "coverage": 0.154,
+    "uncovered": [
+     "coffees",
+     "commitments",
+     "creating",
+     "honoring",
+     "multi",
+     "paying",
+     "premiums",
+     "producers",
+     "quality",
+     "relationships",
+     "year"
+    ],
+    "missing_numbers": [
+     "1"
+    ],
+    "negation_mismatch": false
+   },
+   "problems": [
+    "not supported by its cited fact(s) (coverage 0.15; unsupported words: coffees, commitments, creating, honoring, multi, paying, premiums, producers)",
+    "numbers not in the cited fact: ['1']"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "Additionally, the campaign encouraged visits to Stumptown cafes, showcasing their unique brand experience and deepening customer engagement.",
+   "kind": "factual",
+   "cited_facts": [],
+   "guard": null,
+   "problems": [
+    "states something about the company without a fact marker"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "This post would be a great way to share your dedication to quality and the impact of your producers, while also reinforcing your commitment to the Stumptown Coffee Roasters experience.",
+   "kind": "proposal",
+   "cited_facts": [],
+   "guard": {
+    "coverage": 0.4,
+    "uncovered": [
+     "commitment",
+     "dedication",
+     "great",
+     "reinforcing",
+     "way",
+     "while"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false
+   },
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "The post would be a way to celebrate what F1 describes, created together with your team.",
+   "kind": "proposal",
+   "cited_facts": [],
+   "guard": {
+    "coverage": 0.0,
+    "uncovered": [
+     "describes",
+     "way",
+     "what"
+    ],
+    "missing_numbers": [
+     "1"
+    ],
+    "negation_mismatch": false
+   },
+   "problems": [
+    "numbers not in any fact: ['1']"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "The BrandPilot team",
+   "kind": "non_assertion",
+   "cited_facts": [],
+   "guard": null,
+   "problems": []
+  }
+ ],
+ "rendered": {
+  "subject": "Celebrating Your Mission",
+  "body": "Hi Stumptown Coffee Roasters team,\n\nWe’re reaching out to propose a collaborative Instagram post that highlights your commitment to quality and producer relationships. As your business continues to grow and evolve, your Direct Trade model will continue to be a cornerstone of your mission of making the most positive impact where you can. [P6] We do this by honoring our Direct Trade relationships, paying quality premiums for our coffees, and creating multi-year commitments to our producers. Additionally, the campaign encouraged visits to Stumptown cafes, showcasing their unique brand experience and deepening customer engagement. This post would be a great way to share your dedication to quality and the impact of your producers, while also reinforcing your commitment to the Stumptown Coffee Roasters experience. The post would be a way to celebrate what F1 describes, created together with your team.\n\nThe BrandPilot team"
+ }
+}

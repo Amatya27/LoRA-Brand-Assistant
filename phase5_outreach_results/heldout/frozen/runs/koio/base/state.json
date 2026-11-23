@@ -1,0 +1,281 @@
+{
+ "workflow_version": "phase5-outreach-1",
+ "fact_selector_version": "phase5-facts-1",
+ "draft_prompt_version": "phase5-draft-prompt-7",
+ "checks_version": "phase5-draft-checks-9",
+ "company_id": "koio",
+ "packet_sha256": "d00d08e6800c1f4c0deeeac7c2fc1ce56b592a92821e57e6bc6733583e82cfcf",
+ "facts": [
+  {
+   "fact_id": "F1",
+   "passage_id": "P3",
+   "quote": "In anticipation of the launch of the Tempo style sneaker in July 2019, the Koio team developed a marketing strategy combining social media, e-mail, and IRL in-store engagement.",
+   "score": 2.6,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://endearhq.com/blog/koio-case-study",
+   "text_sha256": "013c64dd94b62d405796c92f369536f36fc98e25c7590a34556b6e203b6245ed",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F2",
+   "passage_id": "P4",
+   "quote": "Koio Saw Store Sales Soar for Latest Sneaker Drop Koio, a digitally-native sneaker brand, sought to enhance its retail marketing and customer engagement for a new product launch.",
+   "score": 2.6,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://www.casestudies.com/company/endear/case-study/how-koio-saw-store-sales-soar-for-latest-sneaker-drop",
+   "text_sha256": "a0a968f2a126d1fea76b94291512ecffcc4d359252a288449a85089ba460f78d",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F3",
+   "passage_id": "P6",
+   "quote": "As one of Endear's inaugural customers, Koio has augmented their strong digital presence through store-based marketing efforts.",
+   "score": 0.85,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://endearhq.com/blog/koio-case-study",
+   "text_sha256": "7634eb6b8e67a94c7a0f41e895d4cd62e512573e489c4310e0ef35a937168e13",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  }
+ ],
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "revision_mode": null,
+   "prompt_sha256": "725b8cd0b6ac511f80ace03114b4152118be5a982803592594082be4a8095b77",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 7.34,
+   "usage": {
+    "prompt_tokens": 521,
+    "completion_tokens": 164,
+    "total_tokens": 685,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "Collaboration Opportunity",
+    "body": "Hi Koio team,\n\nWe are a small team dedicated to crafting compelling Instagram content. We’d like to propose a collaborative Instagram post with you, built on the understanding that the Koio team developed a marketing strategy combining social media, e-mail, and IRL in-store engagement. You’ve been one of Endear’s inaugural customers, and as such, have augmented your strong digital presence through store-based marketing efforts. We envision a post that showcases the excitement of the new Tempo sneaker drop, offering a visual and engaging experience that would resonate with your audience. Together, we could create a post that builds on the first fact above, offering a fresh perspective on the partnership.\n\nPlease reply if you’re interested in exploring this further.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-9",
+    "passes": true,
+    "problems": [],
+    "word_count": 122,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [
+     "F1",
+     "F2",
+     "F3"
+    ],
+    "factual_sentences": 2,
+    "factual_sentences_supported": 1,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Collaboration Opportunity",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 0
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Koio team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We are a small team dedicated to crafting compelling Instagram content.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "compel",
+        "conten",
+        "crafti",
+        "dedica",
+        "instag",
+        "small"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 6
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d like to propose a collaborative Instagram post with you, built on the understanding that the Koio team developed a marketing strategy combining social media, e-mail, and IRL in-store engagement.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.833,
+       "uncovered": [
+        "built",
+        "unders"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 12
+      },
+      "cited_fact": "F1",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "You’ve been one of Endear’s inaugural customers, and as such, have augmented your strong digital presence through store-based marketing efforts.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F3",
+       "coverage": 0.929,
+       "uncovered": [
+        "you've"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 14
+      },
+      "cited_fact": "F3",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We envision a post that showcases the excitement of the new Tempo sneaker drop, offering a visual and engaging experience that would resonate with your audience.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1+F2",
+       "coverage": 0.6,
+       "uncovered": [
+        "experi",
+        "offeri"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 5
+      },
+      "cited_fact": "F1+F2",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Together, we could create a post that builds on the first fact above, offering a fresh perspective on the partnership.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "above",
+        "first",
+        "fresh",
+        "offeri",
+        "perspe"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 5
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Please reply if you’re interested in exploring this further.",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Collaboration Opportunity",
+     "body": "Hi Koio team,\n\nWe are a small team dedicated to crafting compelling Instagram content. We’d like to propose a collaborative Instagram post with you, built on the understanding that the Koio team developed a marketing strategy combining social media, e-mail, and IRL in-store engagement [P3]. You’ve been one of Endear’s inaugural customers, and as such, have augmented your strong digital presence through store-based marketing efforts [P6]. We envision a post that showcases the excitement of the new Tempo sneaker drop, offering a visual and engaging experience that would resonate with your audience [P3][P4]. Together, we could create a post that builds on the first fact above, offering a fresh perspective on the partnership.\n\nPlease reply if you’re interested in exploring this further.\n\nThe BrandPilot team"
+    },
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   }
+  }
+ ],
+ "opportunity": {
+  "anchor_fact": "F1",
+  "text": "One collaborative Instagram post with Koio, created together with their team, that builds on the first fact above.",
+  "kind": "template"
+ },
+ "draft_prompt_sha256": "725b8cd0b6ac511f80ace03114b4152118be5a982803592594082be4a8095b77",
+ "outcome": "passed_checks_pending_human_review",
+ "stop_reason": "all checks passed",
+ "final": {
+  "subject": "Collaboration Opportunity",
+  "body": "Hi Koio team,\n\nWe are a small team dedicated to crafting compelling Instagram content. We’d like to propose a collaborative Instagram post with you, built on the understanding that the Koio team developed a marketing strategy combining social media, e-mail, and IRL in-store engagement [P3]. You’ve been one of Endear’s inaugural customers, and as such, have augmented your strong digital presence through store-based marketing efforts [P6]. We envision a post that showcases the excitement of the new Tempo sneaker drop, offering a visual and engaging experience that would resonate with your audience [P3][P4]. Together, we could create a post that builds on the first fact above, offering a fresh perspective on the partnership.\n\nPlease reply if you’re interested in exploring this further.\n\nThe BrandPilot team",
+  "sources": [
+   {
+    "passage_id": "P3",
+    "fact_id": "F1",
+    "quote": "In anticipation of the launch of the Tempo style sneaker in July 2019, the Koio team developed a marketing strategy combining social media, e-mail, and IRL in-store engagement.",
+    "source_url": "https://endearhq.com/blog/koio-case-study"
+   },
+   {
+    "passage_id": "P4",
+    "fact_id": "F2",
+    "quote": "Koio Saw Store Sales Soar for Latest Sneaker Drop Koio, a digitally-native sneaker brand, sought to enhance its retail marketing and customer engagement for a new product launch.",
+    "source_url": "https://www.casestudies.com/company/endear/case-study/how-koio-saw-store-sales-soar-for-latest-sneaker-drop"
+   },
+   {
+    "passage_id": "P6",
+    "fact_id": "F3",
+    "quote": "As one of Endear's inaugural customers, Koio has augmented their strong digital presence through store-based marketing efforts.",
+    "source_url": "https://endearhq.com/blog/koio-case-study"
+   }
+  ],
+  "facts_used": [
+   "F1",
+   "F2",
+   "F3"
+  ],
+  "fact_verification": "pending_teammate_verification"
+ },
+ "arm": "base",
+ "group": "heldout",
+ "tag": "frozen"
+}

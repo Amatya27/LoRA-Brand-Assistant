@@ -1,0 +1,71 @@
+{
+ "frozen_at": "2026-11-23T06:44:17-0700",
+ "git_head_at_freeze": "e242b5ed6170e664cd802db7152aef4e7ac5f901",
+ "note": "Frozen after development iterations iter1-iter9 on graza, fly-by-jing, stumptown-coffee; iter9 ran this exact code.",
+ "workflow_version": "phase5-outreach-1",
+ "fact_selector_version": "phase5-facts-1",
+ "draft_prompt_version": "phase5-draft-prompt-7",
+ "checks_version": "phase5-draft-checks-9",
+ "max_revisions": 1,
+ "max_tokens": 400,
+ "temperature": 0.0,
+ "model": "mlx-community/gemma-3-1b-it-qat-4bit",
+ "arms": {
+  "base": null,
+  "v5": "adapters/brand_assistant_v5_best"
+ },
+ "adapter_sha256": "84d482c93281680d9393ab595f06054f30e88d4c61e5f083d2c557c03980adf2",
+ "file_sha256": {
+  "brand_assistant_outreach.py": "fc7ecdf493d436d1b5ac30cd443f2881351d794996921f5e9692a6bb4b955d45",
+  "run_phase5_outreach.py": "a469e3179599cb3ccc9260a291a345f6d3e3115e80f2b6b3da127ae609702f8c",
+  "brand_assistant_review.py": "b9b1ee2b20622fdf0460a61c241521be0db77c3cfd41bbee08828531f114da68",
+  "brand_assistant_recovery.py": "d2625d23edd92420fe6625c08d669af7879befd61c80db3495880976b7b11bff",
+  "brand_assistant_openai_backend.py": "66fcd1af8ad358952825c8c6d9518dfc1b082c2a5c660ee37154536d4e7334b8",
+  "brand_assistant_load_ledger.py": "60234a664e6801e28b4b74c44ca01e4f9ae65d1250f9f63b6cd7381a1263ac51"
+ },
+ "dev_companies": [
+  "graza",
+  "fly-by-jing",
+  "stumptown-coffee"
+ ],
+ "heldout_rule": "Primary held-out set, fixed before any held-out packet is read.\n\n    1. every validation-split or unsplit company that was excluded from the dataset (never trained on, never\n       used for checkpoint selection), and\n    2. five companies from the excluded part of the train split, ordered by sha256(salt + company_id),\n    restricted to packets with status 'ok' and at least three selected passages, excluding earlier dev cases.",
+ "heldout_salt": "phase5-heldout-v1",
+ "heldout_companies": [
+  "away",
+  "great-jones",
+  "meundies",
+  "supergoop",
+  "youth-to-the-people",
+  "dollar-shave-club",
+  "koio",
+  "charlotte-tilbury",
+  "reformation",
+  "ilia-beauty"
+ ],
+ "secondary_companies": [
+  "bones-coffee",
+  "greats",
+  "outdoor-voices",
+  "pela",
+  "thrive-market",
+  "tonal"
+ ],
+ "packet_sha256": {
+  "away": "2c85d8e1f0945ce73988a750150778cf996e8492d0b3001457c17989024afb42",
+  "great-jones": "75f6bf87251ae447644c0e89f001ac825e7094480b82b2853d3e82e3a2d8e9cf",
+  "meundies": "d25a1c2718018b243e816357057ca907abf61a733fcb7f76d2a8643a60bbd24d",
+  "supergoop": "ac1f33e29e17a9896a28deb1a6fe4843e160dd0e3678829ae927d8b8b52d849c",
+  "youth-to-the-people": "af76c23b4844edcc2ec32b7e0f4ec9c5c77c22dd402abdbc81afe06ca63b0cc1",
+  "dollar-shave-club": "619cfdd7cae715d9b6323f0f23f679b003dec33bc555f67a46ed720a8c7ac897",
+  "koio": "d00d08e6800c1f4c0deeeac7c2fc1ce56b592a92821e57e6bc6733583e82cfcf",
+  "charlotte-tilbury": "2200d12a254d0392d72241f67c6d3d763529a540e78909c9cb1807b2b8e2f308",
+  "reformation": "61fe6bcd04bc4a742ea34dffabca8f10ccad1bec4d298655d05742c9c19a6ab7",
+  "ilia-beauty": "783b317e1da8b510dcb4ba56a67812ce28db9c225ca94e275b0d69b58c790363",
+  "bones-coffee": "9c87dae136c352cbc5e29fba931e88653093c9a8e730a0fa7cd2e816bb148814",
+  "greats": "7515c79267cde47867d10ced674d9e82a96d14a1d696c42d760d047d5862edb2",
+  "outdoor-voices": "fb3e615c99b46c771dbad20e22c50265924457d570787815464636572221af43",
+  "pela": "8a29de2d7cb594d04380ab8a2de0c9e172e30811b9fa6fa80ce741cadb703fbf",
+  "thrive-market": "ed5bf926801b01e5f73b9daf8c07d8b6c7867569f338f689df590ac50ee72f2d",
+  "tonal": "d00bcfb37c669099e3b7a0da6b6526131ec5e635dfc1048b8fa68620b08b341d"
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "model": "mlx-community/gemma-3-1b-it-qat-4bit",
+ "messages": [
+  {
+   "role": "user",
+   "content": "You write a short outreach email from our team (a small Instagram content studio) to the marketing team at Thrive Market (membership online organic grocery).\n\nVerified facts about Thrive Market:\n- \"Access for All Thrive Gives has been our promise since day one: every annual membership sponsors a free membership for a family in need.\" (source: Thrive Market's own website)\n- \"For a healthier planet, we’re committed to sustainable practices in three key areas of our business: science-aligned carbon emission reductions, zero-waste warehouses, and plastic-neutral packaging for Thrive Market brands and shipping materials for all member orders.\" (source: Thrive Market's own website)\n- \"Thrive Market's Multi-channel Content Machine Thrive Market is a subscription e-commerce business that specializes in delivering natural and organic foods, but at wholesale prices.\" (source: a published article about Thrive Market)\n\nOpportunity to propose (our idea, not a fact): One collaborative Instagram post with Thrive Market, created together with their team, that builds on the first fact above.\n\nWrite the body in this order:\n1. \"Hi Thrive Market team,\"\n2. One sentence saying who we are and that we would like to propose a collaborative Instagram post.\n3. One or two sentences, each restating one fact above closely in your own words.\n4. Two or three sentences describing the proposed post: what it could show and how our teams would make it together.\n5. One sentence inviting them to reply.\n6. \"The BrandPilot team\"\n\nRules:\n- Say nothing about Thrive Market except the facts above: no other numbers, dates, audiences, communities, results, products or activities. In the sentences about the post, describe only the post, not Thrive Market's past activity.\n- Refer to Thrive Market as \"you\" or \"Thrive Market\". Never use \"we\" or \"our\" for Thrive Market; \"we\" is our team.\n- Never say Thrive Market lacks something or has a weakness or gap.\n- Propose Instagram only. Do not mention any other platform.\n- Do not promise results. Say what the post could do, not what it will achieve.\n- The body is about 120 words, never more than 140. Start it with \"Hi Thrive Market team,\" and end it with \"The BrandPilot team\".\n\nReturn exactly this format and nothing else:\nSUBJECT: <one line>\nBODY:\n<email body>"
+  }
+ ],
+ "temperature": 0.0,
+ "max_tokens": 400,
+ "adapters": "adapters/brand_assistant_v5_best"
+}

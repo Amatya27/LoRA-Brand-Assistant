@@ -1,0 +1,447 @@
+{
+ "workflow_version": "phase5-outreach-1",
+ "fact_selector_version": "phase5-facts-1",
+ "draft_prompt_version": "phase5-draft-prompt-7",
+ "checks_version": "phase5-draft-checks-9",
+ "company_id": "dollar-shave-club",
+ "packet_sha256": "619cfdd7cae715d9b6323f0f23f679b003dec33bc555f67a46ed720a8c7ac897",
+ "facts": [
+  {
+   "fact_id": "F1",
+   "passage_id": "P10",
+   "quote": "This legendary launch video by Dollar Shave Club is a masterclass in how to disrupt a billion-dollar industry through raw, unfiltered storytelling.",
+   "score": 2.9,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://www.instagram.com/reel/Da0arCpyfvM/",
+   "text_sha256": "091f289b22df2ae6b0dd93021a06fdbd08a6eba71e5b3c1189d4bee1457bf34c",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F2",
+   "passage_id": "P5",
+   "quote": "By studying and applying the key elements of Dollar Shave Club’s marketing strategy, marketers can gain valuable insights into building effective campaigns that connect with their target audience.",
+   "score": 2.6,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://www.projectpractical.com/dollar-shave-club-marketing-strategy/",
+   "text_sha256": "2fb4ffcd43e78d915cf4d08090d37911d4776f9c96a8c3cc0a9b043d696052b6",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F3",
+   "passage_id": "P1",
+   "quote": "Through their social media presence, the Dollar Shave Club has been able to establish a personal connection with their customers.",
+   "score": 1.0,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://www.brandcredential.com/post/the-dollar-shave-club-marketing-strategy-a-comprehensive-analysis",
+   "text_sha256": "7a9ceee30c83121b4d9e976536d11cd0b33269dbc9c4ac70b1a8a787d68ece5c",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  }
+ ],
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "revision_mode": null,
+   "prompt_sha256": "b5f5be899895a6e37e05eb45a1c7648df89492a28f2ec53291991550ec9a5abf",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 7.416,
+   "usage": {
+    "prompt_tokens": 531,
+    "completion_tokens": 172,
+    "total_tokens": 703,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "Hi Dollar Shave Club team,",
+    "body": "We are a small Instagram content studio dedicated to exploring how brands can disrupt industries through authentic storytelling. We propose a collaborative Instagram post built on the idea that Dollar Shave Club has mastered the art of connecting with their audience through raw, unfiltered content. You've identified that Dollar Shave Club's marketing strategy includes a focus on building a personal connection with customers, which we believe could be replicated in a way that resonates with your audience. This post would showcase Dollar Shave Club's storytelling approach, inviting your team to collaborate on a post that builds on that foundation and explores the power of unfiltered content in a way that feels authentic and engaging for your followers. It would be a chance to share a piece of your creative process and potentially spark a new conversation with your audience.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-9",
+    "passes": false,
+    "problems": [
+     "\"This post would showcase Dollar Shave Club's storytelling approach, inviting your team to \": refers to company activity not in the verified facts: ['followers']"
+    ],
+    "word_count": 142,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [
+     "F1",
+     "F2"
+    ],
+    "factual_sentences": 1,
+    "factual_sentences_supported": 0,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Hi Dollar Shave Club team,",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 0
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We are a small Instagram content studio dedicated to exploring how brands can disrupt industries through authentic storytelling.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.385,
+       "uncovered": [
+        "authen",
+        "brands",
+        "can",
+        "conten",
+        "dedica",
+        "explor",
+        "instag",
+        "small"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 13
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We propose a collaborative Instagram post built on the idea that Dollar Shave Club has mastered the art of connecting with their audience through raw, unfiltered content.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1+F2",
+       "coverage": 0.714,
+       "uncovered": [
+        "art",
+        "built"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 7
+      },
+      "cited_fact": "F1+F2",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "You've identified that Dollar Shave Club's marketing strategy includes a focus on building a personal connection with customers, which we believe could be replicated in a way that resonates with your audience.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.333,
+       "uncovered": [
+        "custom",
+        "focus",
+        "identi",
+        "person",
+        "replic",
+        "you've"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 9
+      },
+      "cited_fact": "F2",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "This post would showcase Dollar Shave Club's storytelling approach, inviting your team to collaborate on a post that builds on that foundation and explores the power of unfiltered content in a way that feels authentic and engaging for your followers.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.222,
+       "uncovered": [
+        "approa",
+        "authen",
+        "feels",
+        "follow",
+        "founda",
+        "inviti",
+        "power"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 9
+      },
+      "cited_fact": null,
+      "problems": [
+       "refers to company activity not in the verified facts: ['followers']"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "It would be a chance to share a piece of your creative process and potentially spark a new conversation with your audience.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "chance",
+        "conver",
+        "piece",
+        "proces",
+        "spark"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 5
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Hi Dollar Shave Club team,",
+     "body": "We are a small Instagram content studio dedicated to exploring how brands can disrupt industries through authentic storytelling. We propose a collaborative Instagram post built on the idea that Dollar Shave Club has mastered the art of connecting with their audience through raw, unfiltered content [P10][P5]. You've identified that Dollar Shave Club's marketing strategy includes a focus on building a personal connection with customers, which we believe could be replicated in a way that resonates with your audience [P5]. This post would showcase Dollar Shave Club's storytelling approach, inviting your team to collaborate on a post that builds on that foundation and explores the power of unfiltered content in a way that feels authentic and engaging for your followers. It would be a chance to share a piece of your creative process and potentially spark a new conversation with your audience.\n\nThe BrandPilot team"
+    },
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   }
+  },
+  {
+   "index": 1,
+   "kind": "targeted_revision",
+   "revision_mode": "sentences",
+   "prompt_sha256": "a3b80ad765931bb91f3a86fb1e9033d5510d3038ba9578300c39d3f1984d15c7",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 1.273,
+   "usage": {
+    "prompt_tokens": 326,
+    "completion_tokens": 49,
+    "total_tokens": 375,
+    "prompt_tokens_details": {
+     "cached_tokens": 24
+    }
+   },
+   "error": null,
+   "sentence_edits": [
+    {
+     "index": 1,
+     "location": "body",
+     "old": "This post would showcase Dollar Shave Club's storytelling approach, inviting your team to collaborate on a post that builds on that foundation and explores the power of unfiltered content in a way that feels authentic and engaging for your followers.",
+     "new": "This post would showcase Dollar Shave Club's storytelling approach, inviting your team to collaborate on a post that builds on that foundation and explores the power of unfiltered content in a way that feels authentic and engaging for your followers.",
+     "action": "replace"
+    }
+   ],
+   "parsed": {
+    "subject": "Hi Dollar Shave Club team,",
+    "body": "We are a small Instagram content studio dedicated to exploring how brands can disrupt industries through authentic storytelling. We propose a collaborative Instagram post built on the idea that Dollar Shave Club has mastered the art of connecting with their audience through raw, unfiltered content. You've identified that Dollar Shave Club's marketing strategy includes a focus on building a personal connection with customers, which we believe could be replicated in a way that resonates with your audience. This post would showcase Dollar Shave Club's storytelling approach, inviting your team to collaborate on a post that builds on that foundation and explores the power of unfiltered content in a way that feels authentic and engaging for your followers. It would be a chance to share a piece of your creative process and potentially spark a new conversation with your audience.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": [
+     "sentence-level revision applied"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-9",
+    "passes": false,
+    "problems": [
+     "\"This post would showcase Dollar Shave Club's storytelling approach, inviting your team to \": refers to company activity not in the verified facts: ['followers']"
+    ],
+    "word_count": 142,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [
+     "F1",
+     "F2"
+    ],
+    "factual_sentences": 1,
+    "factual_sentences_supported": 0,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Hi Dollar Shave Club team,",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 0
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We are a small Instagram content studio dedicated to exploring how brands can disrupt industries through authentic storytelling.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.385,
+       "uncovered": [
+        "authen",
+        "brands",
+        "can",
+        "conten",
+        "dedica",
+        "explor",
+        "instag",
+        "small"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 13
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We propose a collaborative Instagram post built on the idea that Dollar Shave Club has mastered the art of connecting with their audience through raw, unfiltered content.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1+F2",
+       "coverage": 0.714,
+       "uncovered": [
+        "art",
+        "built"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 7
+      },
+      "cited_fact": "F1+F2",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "You've identified that Dollar Shave Club's marketing strategy includes a focus on building a personal connection with customers, which we believe could be replicated in a way that resonates with your audience.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.333,
+       "uncovered": [
+        "custom",
+        "focus",
+        "identi",
+        "person",
+        "replic",
+        "you've"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 9
+      },
+      "cited_fact": "F2",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "This post would showcase Dollar Shave Club's storytelling approach, inviting your team to collaborate on a post that builds on that foundation and explores the power of unfiltered content in a way that feels authentic and engaging for your followers.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.222,
+       "uncovered": [
+        "approa",
+        "authen",
+        "feels",
+        "follow",
+        "founda",
+        "inviti",
+        "power"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 9
+      },
+      "cited_fact": null,
+      "problems": [
+       "refers to company activity not in the verified facts: ['followers']"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "It would be a chance to share a piece of your creative process and potentially spark a new conversation with your audience.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "chance",
+        "conver",
+        "piece",
+        "proces",
+        "spark"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 5
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Hi Dollar Shave Club team,",
+     "body": "We are a small Instagram content studio dedicated to exploring how brands can disrupt industries through authentic storytelling. We propose a collaborative Instagram post built on the idea that Dollar Shave Club has mastered the art of connecting with their audience through raw, unfiltered content [P10][P5]. You've identified that Dollar Shave Club's marketing strategy includes a focus on building a personal connection with customers, which we believe could be replicated in a way that resonates with your audience [P5]. This post would showcase Dollar Shave Club's storytelling approach, inviting your team to collaborate on a post that builds on that foundation and explores the power of unfiltered content in a way that feels authentic and engaging for your followers. It would be a chance to share a piece of your creative process and potentially spark a new conversation with your audience.\n\nThe BrandPilot team"
+    },
+    "format_notes": [
+     "sentence-level revision applied"
+    ]
+   }
+  }
+ ],
+ "opportunity": {
+  "anchor_fact": "F1",
+  "text": "One collaborative Instagram post with Dollar Shave Club, created together with their team, that builds on the first fact above.",
+  "kind": "template"
+ },
+ "draft_prompt_sha256": "b5f5be899895a6e37e05eb45a1c7648df89492a28f2ec53291991550ec9a5abf",
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "checks still failing after 1 targeted revision",
+ "arm": "v5",
+ "group": "heldout",
+ "tag": "frozen"
+}

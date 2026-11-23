@@ -1,0 +1,75 @@
+{
+ "ok": true,
+ "finish_reason": "stop",
+ "usage": {
+  "prompt_tokens": 807,
+  "completion_tokens": 165,
+  "total_tokens": 972,
+  "prompt_tokens_details": {
+   "cached_tokens": 0
+  }
+ },
+ "latency_s": 4.677,
+ "error": null,
+ "error_type": null,
+ "settings": {
+  "api_base": "http://127.0.0.1:8080/v1",
+  "model": "mlx-community/gemma-3-1b-it-qat-4bit",
+  "adapter_path": null,
+  "max_tokens": 400,
+  "temperature": 0.0,
+  "timeout_s": 300.0,
+  "repetition_penalty": null,
+  "repetition_context_size": null
+ },
+ "prompt_sha256": "2511c7f43208b7ab6e1844414f0f4d7647144779f788dad347fc6348466e2183",
+ "runtime_verification": {
+  "verified": true,
+  "checks": {
+   "request_found_in_ledger": true,
+   "single_request_in_flight": true,
+   "requested_model_matches": true,
+   "served_model_matches": true,
+   "served_adapter_matches_request": true,
+   "load_event_found": true,
+   "load_event_model_key_matches": true,
+   "no_adapter_loaded": true
+  },
+  "observations": {
+   "server_pid": 8607,
+   "request_event": {
+    "schema": "phase3-load-ledger-v1",
+    "pid": 8607,
+    "time": 1795440639.9319491,
+    "event": "request_started",
+    "messages_sha256": "7899995fcaf267ea2baa6f0525e3451d33df3bfac6a95960174469301fe63c4c",
+    "requested_model": "mlx-community/gemma-3-1b-it-qat-4bit",
+    "requested_adapter": null,
+    "model_key": [
+     "mlx-community/gemma-3-1b-it-qat-4bit",
+     null,
+     null
+    ],
+    "in_flight": 1
+   },
+   "matching_request_events": 1,
+   "load_event": {
+    "schema": "phase3-load-ledger-v1",
+    "pid": 8607,
+    "time": 1795440635.4123259,
+    "event": "model_loaded",
+    "model_key": [
+     "mlx-community/gemma-3-1b-it-qat-4bit",
+     null,
+     null
+    ]
+   }
+  },
+  "method": "server_load_ledger",
+  "ledger_path": "<repo>/outputs/phase5_work/server_load_ledger.jsonl",
+  "ledger_schema_version": "phase3-load-ledger-v1",
+  "ledger_problems": [],
+  "messages_sha256": "7899995fcaf267ea2baa6f0525e3451d33df3bfac6a95960174469301fe63c4c"
+ },
+ "runtime_verified": true
+}

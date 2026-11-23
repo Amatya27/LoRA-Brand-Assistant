@@ -1,0 +1,168 @@
+{
+ "checks_version": "phase5-draft-checks-9",
+ "passes": false,
+ "problems": [
+  "\"Access for All Thrive Gives has been our promise since day one: every annual membership sp\": reuses Thrive Market's own first-person wording, so it speaks as them"
+ ],
+ "word_count": 112,
+ "recipient": "correct",
+ "sender": "incorrect",
+ "instagram": true,
+ "other_platforms": [],
+ "promises": [],
+ "facts_used": [
+  "F1"
+ ],
+ "factual_sentences": 2,
+ "factual_sentences_supported": 0,
+ "sentences": [
+  {
+   "location": "subject",
+   "sentence": "Collaboration Proposal",
+   "kind": "subject",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 0
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Hi Thrive Market team,",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We are a small team dedicated to crafting engaging Instagram content.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F3",
+    "coverage": 0.167,
+    "uncovered": [
+     "crafti",
+     "dedica",
+     "engagi",
+     "instag",
+     "small"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 6
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We’d like to propose a collaborative post designed to highlight your commitment to supporting families in need.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.2,
+    "uncovered": [
+     "commit",
+     "design",
+     "famili",
+     "suppor"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 5
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Access for All Thrive Gives has been our promise since day one: every annual membership sponsors a free membership for a family in need.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 1.0,
+    "uncovered": [],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 14
+   },
+   "cited_fact": "F1",
+   "problems": [
+    "reuses Thrive Market's own first-person wording, so it speaks as them"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "Specifically, we envision a post showcasing the benefits of Thrive Market’s sustainable practices, emphasizing the positive impact on the environment and the value of organic food.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.182,
+    "uncovered": [
+     "benefi",
+     "emphas",
+     "enviro",
+     "food",
+     "impact",
+     "organi",
+     "positi",
+     "specif",
+     "value"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 11
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Together, we could create a visually compelling post that reinforces your brand’s values and resonates with your audience.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [
+     "compel",
+     "reinfo",
+     "values"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 3
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Please reply if you’re interested in exploring this further.",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "The BrandPilot team",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  }
+ ],
+ "rendered": {
+  "subject": "Collaboration Proposal",
+  "body": "Hi Thrive Market team,\n\nWe are a small team dedicated to crafting engaging Instagram content. We’d like to propose a collaborative post designed to highlight your commitment to supporting families in need. Access for All Thrive Gives has been our promise since day one: every annual membership sponsors a free membership for a family in need [P1]. Specifically, we envision a post showcasing the benefits of Thrive Market’s sustainable practices, emphasizing the positive impact on the environment and the value of organic food. Together, we could create a visually compelling post that reinforces your brand’s values and resonates with your audience.\n\nPlease reply if you’re interested in exploring this further.\n\nThe BrandPilot team"
+ },
+ "format_notes": [
+  "sentence-level revision applied"
+ ]
+}

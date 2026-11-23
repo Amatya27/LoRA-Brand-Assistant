@@ -1,0 +1,195 @@
+{
+ "checks_version": "phase5-draft-checks-4",
+ "passes": false,
+ "problems": [
+  "\"We envision creating a visually appealing post that subtly reinforces the value of your pa\": refers to company activity not in the verified facts: ['partnership']"
+ ],
+ "word_count": 133,
+ "recipient": "correct",
+ "sender": "correct",
+ "instagram": true,
+ "other_platforms": [],
+ "promises": [],
+ "facts_used": [
+  "F2",
+  "F3"
+ ],
+ "factual_sentences": 1,
+ "factual_sentences_supported": 0,
+ "sentences": [
+  {
+   "location": "subject",
+   "sentence": "Collaboration Proposal",
+   "kind": "subject",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 0
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Hi Stumptown Coffee Roasters team,",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We are a small Instagram content studio dedicated to crafting compelling visual narratives for brands.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [
+     "brands",
+     "compel",
+     "conten",
+     "crafti",
+     "dedica",
+     "instag",
+     "narrat",
+     "small",
+     "visual"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 9
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We’d like to propose a collaborative Instagram post with you and Stumptown Coffee Roasters, designed to highlight the importance of your Direct Trade relationships.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.6,
+    "uncovered": [
+     "design",
+     "import"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 5
+   },
+   "cited_fact": "F2",
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "You’ve mentioned that honoring these relationships, paying quality premiums, and creating multi-year commitments are key to your mission, and we believe a shared visual experience would powerfully underscore this.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.471,
+    "uncovered": [
+     "experi",
+     "key",
+     "mentio",
+     "missio",
+     "powerf",
+     "shared",
+     "these",
+     "unders",
+     "you've"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 17
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Essentially, the post would showcase the beauty of your coffee and the dedication behind it, inviting viewers to connect with the experience of visiting Stumptown cafes.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F3",
+    "coverage": 0.2,
+    "uncovered": [
+     "beauty",
+     "behind",
+     "connec",
+     "dedica",
+     "essent",
+     "inviti",
+     "viewer",
+     "visiti"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 10
+   },
+   "cited_fact": "F3",
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We envision creating a visually appealing post that subtly reinforces the value of your partnership and encourages engagement.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F3",
+    "coverage": 0.4,
+    "uncovered": [
+     "reinfo",
+     "subtly",
+     "value"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 5
+   },
+   "cited_fact": null,
+   "problems": [
+    "refers to company activity not in the verified facts: ['partnership']"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "Please reply to let us know if you’re interested in exploring this further.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [
+     "furthe",
+     "intere",
+     "know",
+     "let",
+     "please",
+     "reply",
+     "you're"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 7
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "The BrandPilot team",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  }
+ ],
+ "rendered": {
+  "subject": "Collaboration Proposal",
+  "body": "Hi Stumptown Coffee Roasters team,\n\nWe are a small Instagram content studio dedicated to crafting compelling visual narratives for brands. We’d like to propose a collaborative Instagram post with you and Stumptown Coffee Roasters, designed to highlight the importance of your Direct Trade relationships [P9]. You’ve mentioned that honoring these relationships, paying quality premiums, and creating multi-year commitments are key to your mission, and we believe a shared visual experience would powerfully underscore this. Essentially, the post would showcase the beauty of your coffee and the dedication behind it, inviting viewers to connect with the experience of visiting Stumptown cafes [P5]. We envision creating a visually appealing post that subtly reinforces the value of your partnership and encourages engagement.\n\nPlease reply to let us know if you’re interested in exploring this further.\n\nThe BrandPilot team"
+ },
+ "format_notes": [
+  "BODY label missing; text after the subject line used as the body"
+ ]
+}

@@ -1,0 +1,159 @@
+{
+ "checks_version": "phase5-draft-checks-8",
+ "passes": false,
+ "problems": [
+  "\"This post would feature a curated selection of your favorite coffee blends, paired with a \": refers to company activity not in the verified facts: ['partnership']",
+  "\"It would be a chance to further reinforce your mission and showcase your dedication to the\": refers to company activity not in the verified facts: ['followers']"
+ ],
+ "word_count": 143,
+ "recipient": "correct",
+ "sender": "correct",
+ "instagram": true,
+ "other_platforms": [],
+ "promises": [],
+ "facts_used": [
+  "F1",
+  "F2"
+ ],
+ "factual_sentences": 0,
+ "factual_sentences_supported": 0,
+ "sentences": [
+  {
+   "location": "subject",
+   "sentence": "Collaboration Opportunity for a Stumptown Coffee Roasters Instagram Post",
+   "kind": "subject",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 0
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Hi Stumptown Coffee Roasters team,",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We’re reaching out to propose a collaborative Instagram post that builds on your recent mission to honor your Direct Trade relationships, pay quality premiums for your coffees, and create multi-year commitments to your producers.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.667,
+    "uncovered": [
+     "honor",
+     "missio",
+     "pay",
+     "recent"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 12
+   },
+   "cited_fact": "F2",
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We believe a post that highlights the impact of your Direct Trade relationships would be a great way to show your audience how your commitment to quality is woven into the fabric of your business.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1+F2",
+    "coverage": 0.6,
+    "uncovered": [
+     "fabric",
+     "how",
+     "show",
+     "woven"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 10
+   },
+   "cited_fact": "F1+F2",
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "This post would feature a curated selection of your favorite coffee blends, paired with a visually appealing quote or statement that reflects your commitment to quality and partnership.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.2,
+    "uncovered": [
+     "blends",
+     "curate",
+     "favori",
+     "paired",
+     "quote",
+     "reflec",
+     "select",
+     "statem"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 10
+   },
+   "cited_fact": null,
+   "problems": [
+    "refers to company activity not in the verified facts: ['partnership']"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "It would be a chance to further reinforce your mission and showcase your dedication to the Direct Trade model in a way that feels authentic and engaging for your followers.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.364,
+    "uncovered": [
+     "authen",
+     "chance",
+     "dedica",
+     "feels",
+     "follow",
+     "furthe",
+     "reinfo"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 11
+   },
+   "cited_fact": null,
+   "problems": [
+    "refers to company activity not in the verified facts: ['followers']"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "Reply if you’re interested in exploring this further.",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "The BrandPilot team",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  }
+ ],
+ "rendered": {
+  "subject": "Collaboration Opportunity for a Stumptown Coffee Roasters Instagram Post",
+  "body": "Hi Stumptown Coffee Roasters team,\n\nWe’re reaching out to propose a collaborative Instagram post that builds on your recent mission to honor your Direct Trade relationships, pay quality premiums for your coffees, and create multi-year commitments to your producers [P9]. We believe a post that highlights the impact of your Direct Trade relationships would be a great way to show your audience how your commitment to quality is woven into the fabric of your business [P6][P9]. This post would feature a curated selection of your favorite coffee blends, paired with a visually appealing quote or statement that reflects your commitment to quality and partnership. It would be a chance to further reinforce your mission and showcase your dedication to the Direct Trade model in a way that feels authentic and engaging for your followers.\n\nReply if you’re interested in exploring this further.\n\nThe BrandPilot team"
+ },
+ "format_notes": [
+  "sentence-level revision applied"
+ ]
+}

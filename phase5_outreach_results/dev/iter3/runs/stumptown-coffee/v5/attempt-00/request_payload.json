@@ -1,0 +1,12 @@
+{
+ "model": "mlx-community/gemma-3-1b-it-qat-4bit",
+ "messages": [
+  {
+   "role": "user",
+   "content": "You write a short outreach email from our team (a small Instagram content studio) to the marketing team at Stumptown Coffee Roasters (specialty coffee roaster).\n\nVerified facts about Stumptown Coffee Roasters:\n- \"As our business continues to grow and evolve, so will our Direct Trade model to continue our mission of making the most positive impact where we can.\" (source: Stumptown Coffee Roasters's own website)\n- \"We do this by honoring our Direct Trade relationships, paying quality premiums for our coffees, and creating multi-year commitments to our producers.\" (source: Stumptown Coffee Roasters's own website)\n- \"Additionally, the campaign encouraged visits to Stumptown cafes, showcasing their unique brand experience and deepening customer engagement.\" (source: a published article about Stumptown Coffee Roasters)\n\nOpportunity to propose (our idea, not a fact): One collaborative Instagram post with Stumptown Coffee Roasters, created together with their team, that builds on the first fact above.\n\nRules:\n- Mention one or two of the facts, each restated closely in your own words. Say nothing else about Stumptown Coffee Roasters: no other numbers, dates, audiences, results, products or activities.\n- Refer to Stumptown Coffee Roasters as \"you\" or \"Stumptown Coffee Roasters\". Never use \"we\" or \"our\" for Stumptown Coffee Roasters; \"we\" is our team.\n- Never say Stumptown Coffee Roasters lacks something or has a weakness or gap.\n- Propose Instagram only. Do not mention any other platform.\n- Do not promise results. Say what the post could do, not what it will achieve.\n- The body is 100 to 150 words. Start it with \"Hi Stumptown Coffee Roasters team,\" and end it with \"The BrandPilot team\".\n\nReturn exactly this format and nothing else:\nSUBJECT: <one line>\nBODY:\n<email body>"
+  }
+ ],
+ "temperature": 0.0,
+ "max_tokens": 400,
+ "adapters": "adapters/brand_assistant_v5_best"
+}

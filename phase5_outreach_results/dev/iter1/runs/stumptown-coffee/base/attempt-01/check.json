@@ -1,0 +1,214 @@
+{
+ "checks_version": "phase5-draft-checks-1",
+ "passes": false,
+ "problems": [
+  "body is 190 words; it must be 100-150",
+  "\"As our team, we believe that sharing these insights with your audience will deepen their a\": states something about the company without a fact marker",
+  "\"“As our business continues to evolve, so will our Direct Trade model to continue our missi\": numbers not in any fact: ['1']",
+  "\"“We do this by honoring our Direct Trade relationships, paying quality premiums for our co\": numbers not in the cited fact: ['2']",
+  "\"“Additionally, the campaign encouraged visits to Stumptown cafes, showcasing their unique \": numbers not in the cited fact: ['3']",
+  "\"“The post will highlight the importance of these relationships and the positive impact the\": cites a fact that does not exist: ['F4']",
+  "\"“The post will highlight the importance of these relationships and the positive impact the\": numbers not in any fact: ['4']",
+  "\"We envision a visually compelling post that captures the essence of your brand – a moment \": states something about the company without a fact marker",
+  "\"We believe this collaboration will strengthen your relationship with our audience and furt\": states something about the company without a fact marker"
+ ],
+ "word_count": 190,
+ "recipient": "correct",
+ "sender": "correct",
+ "instagram": true,
+ "other_platforms": [],
+ "promises": [],
+ "facts_used": [
+  "F1",
+  "F2",
+  "F3"
+ ],
+ "unknown_fact_markers": [
+  "F4"
+ ],
+ "factual_sentences": 5,
+ "factual_sentences_supported": 0,
+ "sentences": [
+  {
+   "location": "subject",
+   "sentence": "Collaboration Opportunity",
+   "kind": "proposal",
+   "cited_facts": [],
+   "guard": {
+    "coverage": 0.0,
+    "uncovered": [
+     "opportunity"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false
+   },
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Hi Stumptown Coffee Roasters team,",
+   "kind": "non_assertion",
+   "cited_facts": [],
+   "guard": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We’re excited to propose a collaborative Instagram post designed to celebrate the core values of your Direct Trade model.",
+   "kind": "proposal",
+   "cited_facts": [],
+   "guard": {
+    "coverage": 0.429,
+    "uncovered": [
+     "core",
+     "designed",
+     "values",
+     "we're"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false
+   },
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "As our team, we believe that sharing these insights with your audience will deepen their appreciation for the commitment to quality and producer relationships.",
+   "kind": "factual",
+   "cited_facts": [],
+   "guard": null,
+   "problems": [
+    "states something about the company without a fact marker"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "[F1] “As our business continues to evolve, so will our Direct Trade model to continue our mission of making the most positive impact where we can.",
+   "kind": "proposal",
+   "cited_facts": [
+    "F1"
+   ],
+   "guard": {
+    "coverage": 1.0,
+    "uncovered": [],
+    "missing_numbers": [
+     "1"
+    ],
+    "negation_mismatch": false
+   },
+   "problems": [
+    "numbers not in any fact: ['1']"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "[F2] “We do this by honoring our Direct Trade relationships, paying quality premiums for our coffees, and creating multi-year commitments to our producers.",
+   "kind": "factual",
+   "cited_facts": [
+    "F2"
+   ],
+   "guard": {
+    "coverage": 1.0,
+    "uncovered": [],
+    "missing_numbers": [
+     "2"
+    ],
+    "negation_mismatch": false
+   },
+   "problems": [
+    "numbers not in the cited fact: ['2']"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "[F3] “Additionally, the campaign encouraged visits to Stumptown cafes, showcasing their unique brand experience and deepening customer engagement.",
+   "kind": "factual",
+   "cited_facts": [
+    "F3"
+   ],
+   "guard": {
+    "coverage": 1.0,
+    "uncovered": [],
+    "missing_numbers": [
+     "3"
+    ],
+    "negation_mismatch": false
+   },
+   "problems": [
+    "numbers not in the cited fact: ['3']"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "[F4] “The post will highlight the importance of these relationships and the positive impact they have on the producers.",
+   "kind": "proposal",
+   "cited_facts": [
+    "F4"
+   ],
+   "guard": {
+    "coverage": 0.714,
+    "uncovered": [
+     "importance",
+     "these"
+    ],
+    "missing_numbers": [
+     "4"
+    ],
+    "negation_mismatch": false
+   },
+   "problems": [
+    "cites a fact that does not exist: ['F4']",
+    "numbers not in any fact: ['4']"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "We envision a visually compelling post that captures the essence of your brand – a moment of connection and appreciation.",
+   "kind": "factual",
+   "cited_facts": [],
+   "guard": null,
+   "problems": [
+    "states something about the company without a fact marker"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "We believe this collaboration will strengthen your relationship with our audience and further solidify your position as a leader in the specialty coffee industry.",
+   "kind": "factual",
+   "cited_facts": [],
+   "guard": null,
+   "problems": [
+    "states something about the company without a fact marker"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "The post will encourage viewers to engage with the Stumptown Coffee Roasters Instagram feed.",
+   "kind": "proposal",
+   "cited_facts": [],
+   "guard": {
+    "coverage": 0.2,
+    "uncovered": [
+     "encourage",
+     "engage",
+     "feed",
+     "viewers"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false
+   },
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "The BrandPilot team",
+   "kind": "non_assertion",
+   "cited_facts": [],
+   "guard": null,
+   "problems": []
+  }
+ ],
+ "rendered": {
+  "subject": "Collaboration Opportunity",
+  "body": "Hi Stumptown Coffee Roasters team,\n\nWe’re excited to propose a collaborative Instagram post designed to celebrate the core values of your Direct Trade model. As our team, we believe that sharing these insights with your audience will deepen their appreciation for the commitment to quality and producer relationships.  [P6] “As our business continues to evolve, so will our Direct Trade model to continue our mission of making the most positive impact where we can.”  [P9] “We do this by honoring our Direct Trade relationships, paying quality premiums for our coffees, and creating multi-year commitments to our producers.”  [P5] “Additionally, the campaign encouraged visits to Stumptown cafes, showcasing their unique brand experience and deepening customer engagement.”  [F4] “The post will highlight the importance of these relationships and the positive impact they have on the producers.”  We envision a visually compelling post that captures the essence of your brand – a moment of connection and appreciation.  We believe this collaboration will strengthen your relationship with our audience and further solidify your position as a leader in the specialty coffee industry.  The post will encourage viewers to engage with the Stumptown Coffee Roasters Instagram feed.\n\nThe BrandPilot team"
+ }
+}

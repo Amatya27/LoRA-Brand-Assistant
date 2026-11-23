@@ -1,0 +1,526 @@
+{
+ "workflow_version": "phase5-outreach-1",
+ "fact_selector_version": "phase5-facts-1",
+ "draft_prompt_version": "phase5-draft-prompt-7",
+ "checks_version": "phase5-draft-checks-9",
+ "company_id": "ilia-beauty",
+ "packet_sha256": "783b317e1da8b510dcb4ba56a67812ce28db9c225ca94e275b0d69b58c790363",
+ "facts": [
+  {
+   "fact_id": "F1",
+   "passage_id": "P4",
+   "quote": "Your source for the latest on ILIA Beauty product releases, partnerships, company news, and more.",
+   "score": 5.75,
+   "statement_type": "descriptive",
+   "official_source": true,
+   "source_url": "https://iliabeauty.com/blogs/the-ilia-newsrooms",
+   "text_sha256": "cf6a657b56cac5036defa75eb58c7ccb2c46e0249382f3ce17084b3c6e71e3c3",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F2",
+   "passage_id": "P3",
+   "quote": "The ilia beauty marketing strategy demonstrates how a brand can successfully combine purpose-driven values with structured digital execution.",
+   "score": 4.9,
+   "statement_type": "actual_activity",
+   "official_source": false,
+   "source_url": "https://www.havstrategy.com/marketing-strategy-of-ilia-beauty/",
+   "text_sha256": "2377edf2480debafd4a95ea66ab047ae953c516046a51e29a66dd8682160f1bb",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F3",
+   "passage_id": "P5",
+   "quote": "By collaborating with best cosmetics marketing agency London and understanding the strategic decisions that have driven ILIA’s success, it’s clear how the brand has become a leader in the clean beauty space.",
+   "score": 2.4,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://www.havstrategy.com/marketing-strategy-of-ilia-beauty/",
+   "text_sha256": "d60efc4aa2a21329b97fc3ec5d43d9ba73aa522603164e015182295f207a92af",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  }
+ ],
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "revision_mode": null,
+   "prompt_sha256": "b60e33c65233bd96cfce6c227843642cb02e1d4a154518c25d41608868a1c281",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 8.424,
+   "usage": {
+    "prompt_tokens": 498,
+    "completion_tokens": 204,
+    "total_tokens": 702,
+    "prompt_tokens_details": {
+     "cached_tokens": 25
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "Collaboration Opportunity for a New Instagram Post",
+    "body": "Hi ILIA team,\n\nWe are a small Instagram content studio dedicated to bringing together brands and creators in the beauty space. We’d like to propose a collaborative Instagram post built on the fact that your source for the latest on ILIA Beauty product releases, partnerships, company news, and more. You've highlighted how a brand can successfully combine purpose-driven values with structured digital execution, which is a key element in your marketing strategy. Furthermore, we believe that by collaborating with best cosmetics marketing agencies in London and understanding the strategic decisions that have driven ILIA's success, it's clear how the brand has become a leader in the clean beauty space. This post would showcase your latest ILIA Beauty product launches, paired with a curated selection of your best-selling skincare items, all while aligning with your brand's values and mission. It would be a great way to further amplify your storytelling and engagement with your audience.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-9",
+    "passes": false,
+    "problems": [
+     "body is 157 words; it must be 100-150",
+     "\"You've highlighted how a brand can successfully combine purpose-driven values with structu\": says ILIA stated this, but the source is a third-party article",
+     "\"This post would showcase your latest ILIA Beauty product launches, paired with a curated s\": proposal states a premise about the company that no verified fact supports (best fact F1 covers 0.11; unsupported words: aligni, all, best, curate, items, launch, missio, paired)"
+    ],
+    "word_count": 157,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [
+     "F1",
+     "F2",
+     "F3"
+    ],
+    "factual_sentences": 2,
+    "factual_sentences_supported": 0,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Collaboration Opportunity for a New Instagram Post",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 0
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi ILIA team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We are a small Instagram content studio dedicated to bringing together brands and creators in the beauty space.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F3",
+       "coverage": 0.2,
+       "uncovered": [
+        "brands",
+        "bringi",
+        "conten",
+        "creato",
+        "dedica",
+        "instag",
+        "small",
+        "togeth"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 10
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d like to propose a collaborative Instagram post built on the fact that your source for the latest on ILIA Beauty product releases, partnerships, company news, and more.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.833,
+       "uncovered": [
+        "built"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 6
+      },
+      "cited_fact": "F1",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "You've highlighted how a brand can successfully combine purpose-driven values with structured digital execution, which is a key element in your marketing strategy.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.75,
+       "uncovered": [
+        "elemen",
+        "highli",
+        "key",
+        "you've"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 16
+      },
+      "cited_fact": "F2",
+      "problems": [
+       "says ILIA stated this, but the source is a third-party article"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "Furthermore, we believe that by collaborating with best cosmetics marketing agencies in London and understanding the strategic decisions that have driven ILIA's success, it's clear how the brand has become a leader in the clean beauty space.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F3",
+       "coverage": 0.895,
+       "uncovered": [
+        "agenci",
+        "furthe"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 19
+      },
+      "cited_fact": "F3",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "This post would showcase your latest ILIA Beauty product launches, paired with a curated selection of your best-selling skincare items, all while aligning with your brand's values and mission.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.111,
+       "uncovered": [
+        "aligni",
+        "all",
+        "best",
+        "curate",
+        "items",
+        "launch",
+        "missio",
+        "paired",
+        "post",
+        "select",
+        "sellin",
+        "showca",
+        "skinca",
+        "values",
+        "while",
+        "would"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 18
+      },
+      "cited_fact": null,
+      "problems": [
+       "proposal states a premise about the company that no verified fact supports (best fact F1 covers 0.11; unsupported words: aligni, all, best, curate, items, launch, missio, paired)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "It would be a great way to further amplify your storytelling and engagement with your audience.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "amplif",
+        "engage",
+        "furthe",
+        "storyt"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 4
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Collaboration Opportunity for a New Instagram Post",
+     "body": "Hi ILIA team,\n\nWe are a small Instagram content studio dedicated to bringing together brands and creators in the beauty space. We’d like to propose a collaborative Instagram post built on the fact that your source for the latest on ILIA Beauty product releases, partnerships, company news, and more [P4]. You've highlighted how a brand can successfully combine purpose-driven values with structured digital execution, which is a key element in your marketing strategy [P3]. Furthermore, we believe that by collaborating with best cosmetics marketing agencies in London and understanding the strategic decisions that have driven ILIA's success, it's clear how the brand has become a leader in the clean beauty space [P5]. This post would showcase your latest ILIA Beauty product launches, paired with a curated selection of your best-selling skincare items, all while aligning with your brand's values and mission. It would be a great way to further amplify your storytelling and engagement with your audience.\n\nThe BrandPilot team"
+    },
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   }
+  },
+  {
+   "index": 1,
+   "kind": "targeted_revision",
+   "revision_mode": "sentences",
+   "prompt_sha256": "d83c3e3e304781fade7c8ca3d5fb7b4b2ed3934eb0ae0ed9dd982d3837f6ffc4",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 4.442,
+   "usage": {
+    "prompt_tokens": 436,
+    "completion_tokens": 188,
+    "total_tokens": 624,
+    "prompt_tokens_details": {
+     "cached_tokens": 24
+    }
+   },
+   "error": null,
+   "sentence_edits": [
+    {
+     "index": 1,
+     "location": "body",
+     "old": "You've highlighted how a brand can successfully combine purpose-driven values with structured digital execution, which is a key element in your marketing strategy.",
+     "new": "You've highlighted how a brand can successfully combine purpose-driven values with structured digital execution, which is a key element in your marketing strategy.",
+     "action": "replace"
+    },
+    {
+     "index": 2,
+     "location": "body",
+     "old": "This post would showcase your latest ILIA Beauty product launches, paired with a curated selection of your best-selling skincare items, all while aligning with your brand's values and mission.",
+     "new": "This post would showcase your latest ILIA Beauty product launches, paired with a curated selection of your best-selling skincare items, all while aligning with your brand's values and mission.",
+     "action": "replace"
+    }
+   ],
+   "parsed": {
+    "subject": "Collaboration Opportunity for a New Instagram Post",
+    "body": "Hi ILIA team,\n\nWe are a small Instagram content studio dedicated to bringing together brands and creators in the beauty space. We’d like to propose a collaborative Instagram post built on the fact that your source for the latest on ILIA Beauty product releases, partnerships, company news, and more. You've highlighted how a brand can successfully combine purpose-driven values with structured digital execution, which is a key element in your marketing strategy. Furthermore, we believe that by collaborating with best cosmetics marketing agencies in London and understanding the strategic decisions that have driven ILIA's success, it's clear how the brand has become a leader in the clean beauty space. This post would showcase your latest ILIA Beauty product launches, paired with a curated selection of your best-selling skincare items, all while aligning with your brand's values and mission. It would be a great way to further amplify your storytelling and engagement with your audience.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": [
+     "sentence-level revision applied"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-9",
+    "passes": false,
+    "problems": [
+     "body is 157 words; it must be 100-150",
+     "\"You've highlighted how a brand can successfully combine purpose-driven values with structu\": says ILIA stated this, but the source is a third-party article",
+     "\"This post would showcase your latest ILIA Beauty product launches, paired with a curated s\": proposal states a premise about the company that no verified fact supports (best fact F1 covers 0.11; unsupported words: aligni, all, best, curate, items, launch, missio, paired)"
+    ],
+    "word_count": 157,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [
+     "F1",
+     "F2",
+     "F3"
+    ],
+    "factual_sentences": 2,
+    "factual_sentences_supported": 0,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Collaboration Opportunity for a New Instagram Post",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 0
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi ILIA team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We are a small Instagram content studio dedicated to bringing together brands and creators in the beauty space.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F3",
+       "coverage": 0.2,
+       "uncovered": [
+        "brands",
+        "bringi",
+        "conten",
+        "creato",
+        "dedica",
+        "instag",
+        "small",
+        "togeth"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 10
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d like to propose a collaborative Instagram post built on the fact that your source for the latest on ILIA Beauty product releases, partnerships, company news, and more.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.833,
+       "uncovered": [
+        "built"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 6
+      },
+      "cited_fact": "F1",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "You've highlighted how a brand can successfully combine purpose-driven values with structured digital execution, which is a key element in your marketing strategy.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.75,
+       "uncovered": [
+        "elemen",
+        "highli",
+        "key",
+        "you've"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 16
+      },
+      "cited_fact": "F2",
+      "problems": [
+       "says ILIA stated this, but the source is a third-party article"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "Furthermore, we believe that by collaborating with best cosmetics marketing agencies in London and understanding the strategic decisions that have driven ILIA's success, it's clear how the brand has become a leader in the clean beauty space.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F3",
+       "coverage": 0.895,
+       "uncovered": [
+        "agenci",
+        "furthe"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 19
+      },
+      "cited_fact": "F3",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "This post would showcase your latest ILIA Beauty product launches, paired with a curated selection of your best-selling skincare items, all while aligning with your brand's values and mission.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.111,
+       "uncovered": [
+        "aligni",
+        "all",
+        "best",
+        "curate",
+        "items",
+        "launch",
+        "missio",
+        "paired",
+        "post",
+        "select",
+        "sellin",
+        "showca",
+        "skinca",
+        "values",
+        "while",
+        "would"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 18
+      },
+      "cited_fact": null,
+      "problems": [
+       "proposal states a premise about the company that no verified fact supports (best fact F1 covers 0.11; unsupported words: aligni, all, best, curate, items, launch, missio, paired)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "It would be a great way to further amplify your storytelling and engagement with your audience.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "amplif",
+        "engage",
+        "furthe",
+        "storyt"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 4
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Collaboration Opportunity for a New Instagram Post",
+     "body": "Hi ILIA team,\n\nWe are a small Instagram content studio dedicated to bringing together brands and creators in the beauty space. We’d like to propose a collaborative Instagram post built on the fact that your source for the latest on ILIA Beauty product releases, partnerships, company news, and more [P4]. You've highlighted how a brand can successfully combine purpose-driven values with structured digital execution, which is a key element in your marketing strategy [P3]. Furthermore, we believe that by collaborating with best cosmetics marketing agencies in London and understanding the strategic decisions that have driven ILIA's success, it's clear how the brand has become a leader in the clean beauty space [P5]. This post would showcase your latest ILIA Beauty product launches, paired with a curated selection of your best-selling skincare items, all while aligning with your brand's values and mission. It would be a great way to further amplify your storytelling and engagement with your audience.\n\nThe BrandPilot team"
+    },
+    "format_notes": [
+     "sentence-level revision applied"
+    ]
+   }
+  }
+ ],
+ "opportunity": {
+  "anchor_fact": "F1",
+  "text": "One collaborative Instagram post with ILIA, created together with their team, that builds on the first fact above.",
+  "kind": "template"
+ },
+ "draft_prompt_sha256": "b60e33c65233bd96cfce6c227843642cb02e1d4a154518c25d41608868a1c281",
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "checks still failing after 1 targeted revision",
+ "arm": "v5",
+ "group": "heldout",
+ "tag": "frozen"
+}

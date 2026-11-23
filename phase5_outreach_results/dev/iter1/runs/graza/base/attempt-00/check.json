@@ -1,0 +1,42 @@
+{
+ "checks_version": "phase5-draft-checks-1",
+ "passes": false,
+ "problems": [
+  "missing 'BODY:' section",
+  "recipient is no_email: address the Graza team in the first line",
+  "sender direction is no_email: propose the collaboration as our team",
+  "does not propose an Instagram post"
+ ],
+ "word_count": 0,
+ "recipient": "no_email",
+ "sender": "no_email",
+ "instagram": false,
+ "other_platforms": [],
+ "promises": [],
+ "facts_used": [],
+ "unknown_fact_markers": [],
+ "factual_sentences": 0,
+ "factual_sentences_supported": 0,
+ "sentences": [
+  {
+   "location": "subject",
+   "sentence": "Exploring a Delicious Collaboration",
+   "kind": "proposal",
+   "cited_facts": [],
+   "guard": {
+    "coverage": 0.0,
+    "uncovered": [
+     "delicious",
+     "exploring"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false
+   },
+   "problems": []
+  }
+ ],
+ "rendered": {
+  "subject": "Exploring a Delicious Collaboration",
+  "body": ""
+ }
+}

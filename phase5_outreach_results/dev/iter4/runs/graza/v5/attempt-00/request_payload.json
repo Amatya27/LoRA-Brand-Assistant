@@ -1,0 +1,12 @@
+{
+ "model": "mlx-community/gemma-3-1b-it-qat-4bit",
+ "messages": [
+  {
+   "role": "user",
+   "content": "You write a short outreach email from our team (a small Instagram content studio) to the marketing team at Graza (single-origin olive oil in squeeze bottles).\n\nVerified facts about Graza:\n- \"Graza started Direct-to-Consumer (DTC) but also made sure to get into grocers like Whole Foods, Target, etc.\" (source: a published article about Graza)\n- \"Graza’s social content, product design, and messaging are playful and culinary-inspired rather than overly formal.\" (source: a published article about Graza)\n- \"Dickieson estimated that Graza has added around 2,000 new social followers since launching the cans.\" (source: a published article about Graza)\n\nOpportunity to propose (our idea, not a fact): One collaborative Instagram post with Graza, created together with their team, that builds on the first fact above.\n\nWrite the body in this order:\n1. \"Hi Graza team,\"\n2. One sentence saying who we are and that we would like to propose a collaborative Instagram post.\n3. One or two sentences, each restating one fact above closely in your own words.\n4. Two or three sentences describing the proposed post: what it could show and how our teams would make it together.\n5. One sentence inviting them to reply.\n6. \"The BrandPilot team\"\n\nRules:\n- Say nothing about Graza except the facts above: no other numbers, dates, audiences, communities, results, products or activities. In the sentences about the post, describe only the post, not Graza's past activity.\n- Refer to Graza as \"you\" or \"Graza\". Never use \"we\" or \"our\" for Graza; \"we\" is our team.\n- Never say Graza lacks something or has a weakness or gap.\n- Propose Instagram only. Do not mention any other platform.\n- Do not promise results. Say what the post could do, not what it will achieve.\n- The body is 100 to 150 words. Start it with \"Hi Graza team,\" and end it with \"The BrandPilot team\".\n\nReturn exactly this format and nothing else:\nSUBJECT: <one line>\nBODY:\n<email body>"
+  }
+ ],
+ "temperature": 0.0,
+ "max_tokens": 400,
+ "adapters": "adapters/brand_assistant_v5_best"
+}

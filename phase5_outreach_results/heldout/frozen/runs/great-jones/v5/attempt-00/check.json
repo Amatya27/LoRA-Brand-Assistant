@@ -1,0 +1,175 @@
+{
+ "checks_version": "phase5-draft-checks-9",
+ "passes": false,
+ "problems": [
+  "\"Essentially, you’re the experts, and we’d love to co-create a post that highlights your mi\": factual statement not supported by a verified fact (best fact F1 covers 0.29; unsupported words: aligni, approa, create, driven, essent, ethos, expert, goods)"
+ ],
+ "word_count": 113,
+ "recipient": "correct",
+ "sender": "correct",
+ "instagram": true,
+ "other_platforms": [],
+ "promises": [],
+ "facts_used": [
+  "F3"
+ ],
+ "factual_sentences": 2,
+ "factual_sentences_supported": 0,
+ "sentences": [
+  {
+   "location": "subject",
+   "sentence": "Collaboration Opportunity for an Instagram Post",
+   "kind": "subject",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 0
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Hi Great Jones team,",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We’re a small team of Instagram content creators dedicated to bringing a fresh perspective to home goods.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.2,
+    "uncovered": [
+     "bringi",
+     "conten",
+     "creato",
+     "dedica",
+     "fresh",
+     "instag",
+     "perspe",
+     "small"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 10
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We’d like to propose a collaborative Instagram post built around your report, which details your company’s structure, brand identity, and market strategy.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F3",
+    "coverage": 0.625,
+    "uncovered": [
+     "around",
+     "built",
+     "detail"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 8
+   },
+   "cited_fact": "F3",
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Essentially, you’re the experts, and we’d love to co-create a post that highlights your mission-driven approach to kitchenware, aligning with your millennial home goods ethos and your successful New York-based market presence.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.286,
+    "uncovered": [
+     "aligni",
+     "approa",
+     "create",
+     "driven",
+     "essent",
+     "ethos",
+     "expert",
+     "goods",
+     "highli",
+     "market",
+     "millen",
+     "post",
+     "presen",
+     "succes",
+     "you're"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 21
+   },
+   "cited_fact": null,
+   "problems": [
+    "factual statement not supported by a verified fact (best fact F1 covers 0.29; unsupported words: aligni, approa, create, driven, essent, ethos, expert, goods)"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "This post would showcase your company's unique story and invite your audience to explore your world through a visually engaging Instagram experience.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [
+     "experi",
+     "invite",
+     "story",
+     "throug",
+     "unique",
+     "world"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 6
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We’d be thrilled if you could reply with your thoughts on this idea.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [
+     "reply",
+     "though",
+     "thrill"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 3
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "The BrandPilot team",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  }
+ ],
+ "rendered": {
+  "subject": "Collaboration Opportunity for an Instagram Post",
+  "body": "Hi Great Jones team,\n\nWe’re a small team of Instagram content creators dedicated to bringing a fresh perspective to home goods. We’d like to propose a collaborative Instagram post built around your report, which details your company’s structure, brand identity, and market strategy [P9]. Essentially, you’re the experts, and we’d love to co-create a post that highlights your mission-driven approach to kitchenware, aligning with your millennial home goods ethos and your successful New York-based market presence. This post would showcase your company's unique story and invite your audience to explore your world through a visually engaging Instagram experience.\n\nWe’d be thrilled if you could reply with your thoughts on this idea.\n\nThe BrandPilot team"
+ },
+ "format_notes": [
+  "BODY label missing; text after the subject line used as the body"
+ ]
+}

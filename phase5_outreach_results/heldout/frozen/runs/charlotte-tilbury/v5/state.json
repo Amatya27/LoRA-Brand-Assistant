@@ -1,0 +1,560 @@
+{
+ "workflow_version": "phase5-outreach-1",
+ "fact_selector_version": "phase5-facts-1",
+ "draft_prompt_version": "phase5-draft-prompt-7",
+ "checks_version": "phase5-draft-checks-9",
+ "company_id": "charlotte-tilbury",
+ "packet_sha256": "2200d12a254d0392d72241f67c6d3d763529a540e78909c9cb1807b2b8e2f308",
+ "facts": [
+  {
+   "fact_id": "F1",
+   "passage_id": "P1",
+   "quote": "Charlotte is the British flag bearer overseas with 3,400 of those distribution points being international.",
+   "score": 3.8,
+   "statement_type": "descriptive",
+   "official_source": true,
+   "source_url": "https://www.charlottetilbury.com/us/content/charlottes-story",
+   "text_sha256": "ea33097e78947cf3e6418075f3adcdd1de8e95dfb35ef31562bada19318ae6ce",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F2",
+   "passage_id": "P4",
+   "quote": "By working closely with influencers, Charlotte Tilbury uses their influence to spread its message.",
+   "score": 2.7,
+   "statement_type": "actual_activity",
+   "official_source": false,
+   "source_url": "https://www.projectpractical.com/charlotte-tilbury-marketing-strategy/",
+   "text_sha256": "1aa0f91ac2434777ef25ed274ae66e24c9e0f726a22dd0a395555ef009d92abf",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F3",
+   "passage_id": "P5",
+   "quote": "Influencer partnerships have helped Charlotte Tilbury create a unique brand image.",
+   "score": 2.55,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://www.projectpractical.com/charlotte-tilbury-marketing-strategy/",
+   "text_sha256": "5b0a70dc25506248b5278d69c70ea9c0b5f603516aec909f028b303d3cd7aa2b",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  }
+ ],
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "revision_mode": null,
+   "prompt_sha256": "7e6ab4605ea3e10f44d379b7efb62c271a347c82b2e602d852cf411a04cfb338",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 8.21,
+   "usage": {
+    "prompt_tokens": 483,
+    "completion_tokens": 191,
+    "total_tokens": 674,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "Collaboration Opportunity for a New Instagram Post",
+    "body": "Hi Charlotte Tilbury team,\n\nWe are a small Instagram content studio dedicated to bringing creative energy to your brand. We’d like to propose a collaborative Instagram post built on the fact that Charlotte Tilbury has a significant international following, with over 3,400 distribution points. You've described how influencers play a crucial role in shaping your message, and how these partnerships have helped create a unique and recognizable brand identity. Essentially, we envision a post that highlights the power of influencer collaborations and their impact on your marketing strategy, focusing on the idea of a shared creative vision that builds on the first point. The post would feature a curated selection of your favorite imagery, paired with a complementary, yet artistic, element that reflects your brand's tone. It would be a way to showcase the potential of a collaborative Instagram post that builds on your existing marketing efforts.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-9",
+    "passes": false,
+    "problems": [
+     "body is 151 words; it must be 100-150",
+     "\"You've described how influencers play a crucial role in shaping your message, and how thes\": factual statement not supported by a verified fact (best fact F3 covers 0.31; unsupported words: crucia, descri, how, identi, messag, play, recogn, role)",
+     "\"It would be a way to showcase the potential of a collaborative Instagram post that builds \": proposal states a premise about the company that no verified fact supports (best fact F1 covers 0.00; unsupported words: builds, collab, effort, existi, instag, market, post, potent)"
+    ],
+    "word_count": 151,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [
+     "F1",
+     "F2"
+    ],
+    "factual_sentences": 2,
+    "factual_sentences_supported": 0,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Collaboration Opportunity for a New Instagram Post",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 0
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Charlotte Tilbury team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We are a small Instagram content studio dedicated to bringing creative energy to your brand.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "bringi",
+        "conten",
+        "creati",
+        "dedica",
+        "energy",
+        "instag",
+        "small"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 7
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d like to propose a collaborative Instagram post built on the fact that Charlotte Tilbury has a significant international following, with over 3,400 distribution points.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.571,
+       "uncovered": [
+        "built",
+        "follow",
+        "signif"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 7
+      },
+      "cited_fact": "F1",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "You've described how influencers play a crucial role in shaping your message, and how these partnerships have helped create a unique and recognizable brand identity.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F3",
+       "coverage": 0.312,
+       "uncovered": [
+        "crucia",
+        "descri",
+        "how",
+        "identi",
+        "messag",
+        "play",
+        "recogn",
+        "role",
+        "shapin",
+        "these",
+        "you've"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 16
+      },
+      "cited_fact": null,
+      "problems": [
+       "factual statement not supported by a verified fact (best fact F3 covers 0.31; unsupported words: crucia, descri, how, identi, messag, play, recogn, role)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "Essentially, we envision a post that highlights the power of influencer collaborations and their impact on your marketing strategy, focusing on the idea of a shared creative vision that builds on the first point.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.091,
+       "uncovered": [
+        "essent",
+        "first",
+        "focusi",
+        "impact",
+        "market",
+        "point",
+        "power",
+        "shared",
+        "strate",
+        "vision"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 11
+      },
+      "cited_fact": "F2",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The post would feature a curated selection of your favorite imagery, paired with a complementary, yet artistic, element that reflects your brand's tone.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "artist",
+        "comple",
+        "curate",
+        "elemen",
+        "favori",
+        "imager",
+        "paired",
+        "reflec",
+        "select",
+        "tone",
+        "yet"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 11
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "It would be a way to showcase the potential of a collaborative Instagram post that builds on your existing marketing efforts.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "builds",
+        "collab",
+        "effort",
+        "existi",
+        "instag",
+        "market",
+        "post",
+        "potent",
+        "showca",
+        "way",
+        "would"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 11
+      },
+      "cited_fact": null,
+      "problems": [
+       "proposal states a premise about the company that no verified fact supports (best fact F1 covers 0.00; unsupported words: builds, collab, effort, existi, instag, market, post, potent)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Collaboration Opportunity for a New Instagram Post",
+     "body": "Hi Charlotte Tilbury team,\n\nWe are a small Instagram content studio dedicated to bringing creative energy to your brand. We’d like to propose a collaborative Instagram post built on the fact that Charlotte Tilbury has a significant international following, with over 3,400 distribution points [P1]. You've described how influencers play a crucial role in shaping your message, and how these partnerships have helped create a unique and recognizable brand identity. Essentially, we envision a post that highlights the power of influencer collaborations and their impact on your marketing strategy, focusing on the idea of a shared creative vision that builds on the first point [P4]. The post would feature a curated selection of your favorite imagery, paired with a complementary, yet artistic, element that reflects your brand's tone. It would be a way to showcase the potential of a collaborative Instagram post that builds on your existing marketing efforts.\n\nThe BrandPilot team"
+    },
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   }
+  },
+  {
+   "index": 1,
+   "kind": "targeted_revision",
+   "revision_mode": "sentences",
+   "prompt_sha256": "87ca8dfcc412712cb5d37a55020af63a17e48a281593ce980e6c3044d1ba759a",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 3.716,
+   "usage": {
+    "prompt_tokens": 384,
+    "completion_tokens": 151,
+    "total_tokens": 535,
+    "prompt_tokens_details": {
+     "cached_tokens": 24
+    }
+   },
+   "error": null,
+   "sentence_edits": [
+    {
+     "index": 1,
+     "location": "body",
+     "old": "You've described how influencers play a crucial role in shaping your message, and how these partnerships have helped create a unique and recognizable brand identity.",
+     "new": "You've described how influencers play a crucial role in shaping your message, and how these partnerships have helped create a unique and recognizable brand identity.",
+     "action": "replace"
+    },
+    {
+     "index": 2,
+     "location": "body",
+     "old": "It would be a way to showcase the potential of a collaborative Instagram post that builds on your existing marketing efforts.",
+     "new": "It would be a way to showcase the potential of a collaborative Instagram post that builds on your existing marketing efforts.",
+     "action": "replace"
+    }
+   ],
+   "parsed": {
+    "subject": "Collaboration Opportunity for a New Instagram Post",
+    "body": "Hi Charlotte Tilbury team,\n\nWe are a small Instagram content studio dedicated to bringing creative energy to your brand. We’d like to propose a collaborative Instagram post built on the fact that Charlotte Tilbury has a significant international following, with over 3,400 distribution points. You've described how influencers play a crucial role in shaping your message, and how these partnerships have helped create a unique and recognizable brand identity. Essentially, we envision a post that highlights the power of influencer collaborations and their impact on your marketing strategy, focusing on the idea of a shared creative vision that builds on the first point. The post would feature a curated selection of your favorite imagery, paired with a complementary, yet artistic, element that reflects your brand's tone. It would be a way to showcase the potential of a collaborative Instagram post that builds on your existing marketing efforts.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": [
+     "sentence-level revision applied"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-9",
+    "passes": false,
+    "problems": [
+     "body is 151 words; it must be 100-150",
+     "\"You've described how influencers play a crucial role in shaping your message, and how thes\": factual statement not supported by a verified fact (best fact F3 covers 0.31; unsupported words: crucia, descri, how, identi, messag, play, recogn, role)",
+     "\"It would be a way to showcase the potential of a collaborative Instagram post that builds \": proposal states a premise about the company that no verified fact supports (best fact F1 covers 0.00; unsupported words: builds, collab, effort, existi, instag, market, post, potent)"
+    ],
+    "word_count": 151,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [
+     "F1",
+     "F2"
+    ],
+    "factual_sentences": 2,
+    "factual_sentences_supported": 0,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Collaboration Opportunity for a New Instagram Post",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 0
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Charlotte Tilbury team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We are a small Instagram content studio dedicated to bringing creative energy to your brand.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "bringi",
+        "conten",
+        "creati",
+        "dedica",
+        "energy",
+        "instag",
+        "small"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 7
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d like to propose a collaborative Instagram post built on the fact that Charlotte Tilbury has a significant international following, with over 3,400 distribution points.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.571,
+       "uncovered": [
+        "built",
+        "follow",
+        "signif"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 7
+      },
+      "cited_fact": "F1",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "You've described how influencers play a crucial role in shaping your message, and how these partnerships have helped create a unique and recognizable brand identity.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F3",
+       "coverage": 0.312,
+       "uncovered": [
+        "crucia",
+        "descri",
+        "how",
+        "identi",
+        "messag",
+        "play",
+        "recogn",
+        "role",
+        "shapin",
+        "these",
+        "you've"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 16
+      },
+      "cited_fact": null,
+      "problems": [
+       "factual statement not supported by a verified fact (best fact F3 covers 0.31; unsupported words: crucia, descri, how, identi, messag, play, recogn, role)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "Essentially, we envision a post that highlights the power of influencer collaborations and their impact on your marketing strategy, focusing on the idea of a shared creative vision that builds on the first point.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.091,
+       "uncovered": [
+        "essent",
+        "first",
+        "focusi",
+        "impact",
+        "market",
+        "point",
+        "power",
+        "shared",
+        "strate",
+        "vision"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 11
+      },
+      "cited_fact": "F2",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The post would feature a curated selection of your favorite imagery, paired with a complementary, yet artistic, element that reflects your brand's tone.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "artist",
+        "comple",
+        "curate",
+        "elemen",
+        "favori",
+        "imager",
+        "paired",
+        "reflec",
+        "select",
+        "tone",
+        "yet"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 11
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "It would be a way to showcase the potential of a collaborative Instagram post that builds on your existing marketing efforts.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "builds",
+        "collab",
+        "effort",
+        "existi",
+        "instag",
+        "market",
+        "post",
+        "potent",
+        "showca",
+        "way",
+        "would"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 11
+      },
+      "cited_fact": null,
+      "problems": [
+       "proposal states a premise about the company that no verified fact supports (best fact F1 covers 0.00; unsupported words: builds, collab, effort, existi, instag, market, post, potent)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Collaboration Opportunity for a New Instagram Post",
+     "body": "Hi Charlotte Tilbury team,\n\nWe are a small Instagram content studio dedicated to bringing creative energy to your brand. We’d like to propose a collaborative Instagram post built on the fact that Charlotte Tilbury has a significant international following, with over 3,400 distribution points [P1]. You've described how influencers play a crucial role in shaping your message, and how these partnerships have helped create a unique and recognizable brand identity. Essentially, we envision a post that highlights the power of influencer collaborations and their impact on your marketing strategy, focusing on the idea of a shared creative vision that builds on the first point [P4]. The post would feature a curated selection of your favorite imagery, paired with a complementary, yet artistic, element that reflects your brand's tone. It would be a way to showcase the potential of a collaborative Instagram post that builds on your existing marketing efforts.\n\nThe BrandPilot team"
+    },
+    "format_notes": [
+     "sentence-level revision applied"
+    ]
+   }
+  }
+ ],
+ "opportunity": {
+  "anchor_fact": "F1",
+  "text": "One collaborative Instagram post with Charlotte Tilbury, created together with their team, that builds on the first fact above.",
+  "kind": "template"
+ },
+ "draft_prompt_sha256": "7e6ab4605ea3e10f44d379b7efb62c271a347c82b2e602d852cf411a04cfb338",
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "checks still failing after 1 targeted revision",
+ "arm": "v5",
+ "group": "heldout",
+ "tag": "frozen"
+}

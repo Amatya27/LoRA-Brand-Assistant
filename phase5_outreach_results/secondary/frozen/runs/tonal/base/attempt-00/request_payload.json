@@ -1,0 +1,11 @@
+{
+ "model": "mlx-community/gemma-3-1b-it-qat-4bit",
+ "messages": [
+  {
+   "role": "user",
+   "content": "You write a short outreach email from our team (a small Instagram content studio) to the marketing team at Tonal (smart home gym equipment).\n\nVerified facts about Tonal:\n- \"Tonal: Meet Tonal Installation With Tonal Effortless Install, professionals deliver, mount, and test your Tonal for a fast, stress-free setup.\" (source: Tonal's own website)\n- \"The connected home gym, Tonal, saw huge growth at the start of Covid-19, but needed to connect more with high-income worth individuals and athletes to build the brand interest and value, in a highly competitive market.\" (source: a published article about Tonal)\n- \"Stanley Tonal, a smart home gym looking for a holiday sales boost, has dropped an epic long-form commercial shot entirely in black and white and set in the Victorian era.\" (source: a published article about Tonal)\n\nOpportunity to propose (our idea, not a fact): One collaborative Instagram post with Tonal, created together with their team, that builds on the first fact above.\n\nWrite the body in this order:\n1. \"Hi Tonal team,\"\n2. One sentence saying who we are and that we would like to propose a collaborative Instagram post.\n3. One or two sentences, each restating one fact above closely in your own words.\n4. Two or three sentences describing the proposed post: what it could show and how our teams would make it together.\n5. One sentence inviting them to reply.\n6. \"The BrandPilot team\"\n\nRules:\n- Say nothing about Tonal except the facts above: no other numbers, dates, audiences, communities, results, products or activities. In the sentences about the post, describe only the post, not Tonal's past activity.\n- Refer to Tonal as \"you\" or \"Tonal\". Never use \"we\" or \"our\" for Tonal; \"we\" is our team.\n- Never say Tonal lacks something or has a weakness or gap.\n- Propose Instagram only. Do not mention any other platform.\n- Do not promise results. Say what the post could do, not what it will achieve.\n- The body is about 120 words, never more than 140. Start it with \"Hi Tonal team,\" and end it with \"The BrandPilot team\".\n\nReturn exactly this format and nothing else:\nSUBJECT: <one line>\nBODY:\n<email body>"
+  }
+ ],
+ "temperature": 0.0,
+ "max_tokens": 400
+}

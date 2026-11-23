@@ -1,0 +1,182 @@
+{
+ "checks_version": "phase5-draft-checks-6",
+ "passes": false,
+ "problems": [
+  "body is 182 words; it must be 100-150",
+  "\"We've taken a step back from the idea of a formal Instagram post, but we're open to explor\": refers to company activity not in the verified facts: ['partnership']",
+  "\"This post would feature a curated selection of your favorite coffee blends, paired with a \": refers to company activity not in the verified facts: ['followers', 'partnership']",
+  "\"We'd like to share a few of your favorite coffee blends, paired with a quote or statement \": refers to company activity not in the verified facts: ['followers', 'partnership']"
+ ],
+ "word_count": 182,
+ "recipient": "correct",
+ "sender": "correct",
+ "instagram": true,
+ "other_platforms": [],
+ "promises": [],
+ "facts_used": [
+  "F2"
+ ],
+ "factual_sentences": 0,
+ "factual_sentences_supported": 0,
+ "sentences": [
+  {
+   "location": "subject",
+   "sentence": "Collaboration Opportunity for a Stumptown Coffee Roasters Instagram Post",
+   "kind": "subject",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 0
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Hi Stumptown Coffee Roasters team,",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We’re reaching out to propose a collaborative Instagram post that builds on your recent mission to honor your Direct Trade relationships, pay quality premiums for your coffees, and create multi-year commitments to your producers.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.667,
+    "uncovered": [
+     "honor",
+     "missio",
+     "pay",
+     "recent"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 12
+   },
+   "cited_fact": "F2",
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We've taken a step back from the idea of a formal Instagram post, but we're open to exploring how a curated selection of your favorite coffee blends, paired with a visually appealing quote or statement that reflects your commitment to quality and partnership, could best highlight this dedication.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.111,
+    "uncovered": [
+     "back",
+     "best",
+     "blends",
+     "but",
+     "curate",
+     "dedica",
+     "favori",
+     "formal",
+     "how",
+     "paired",
+     "quote",
+     "reflec",
+     "select",
+     "statem",
+     "step",
+     "taken"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 18
+   },
+   "cited_fact": null,
+   "problems": [
+    "refers to company activity not in the verified facts: ['partnership']"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "This post would feature a curated selection of your favorite coffee blends, paired with a visually appealing quote or statement that reflects your commitment to quality and partnership, that showcases your dedication to the Direct Trade model in a way that feels authentic and engaging for your followers.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.235,
+    "uncovered": [
+     "authen",
+     "blends",
+     "curate",
+     "dedica",
+     "favori",
+     "feels",
+     "follow",
+     "model",
+     "paired",
+     "quote",
+     "reflec",
+     "select",
+     "statem"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 17
+   },
+   "cited_fact": null,
+   "problems": [
+    "refers to company activity not in the verified facts: ['followers', 'partnership']"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "We'd like to share a few of your favorite coffee blends, paired with a quote or statement that reflects your commitment to quality and partnership, in a way that feels authentic and engaging for your followers.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.167,
+    "uncovered": [
+     "authen",
+     "blends",
+     "favori",
+     "feels",
+     "few",
+     "follow",
+     "paired",
+     "quote",
+     "reflec",
+     "statem"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 12
+   },
+   "cited_fact": null,
+   "problems": [
+    "refers to company activity not in the verified facts: ['followers', 'partnership']"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "Reply if you’re interested in exploring this further.",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "The BrandPilot team",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  }
+ ],
+ "rendered": {
+  "subject": "Collaboration Opportunity for a Stumptown Coffee Roasters Instagram Post",
+  "body": "Hi Stumptown Coffee Roasters team,\n\nWe’re reaching out to propose a collaborative Instagram post that builds on your recent mission to honor your Direct Trade relationships, pay quality premiums for your coffees, and create multi-year commitments to your producers [P9]. We've taken a step back from the idea of a formal Instagram post, but we're open to exploring how a curated selection of your favorite coffee blends, paired with a visually appealing quote or statement that reflects your commitment to quality and partnership, could best highlight this dedication. This post would feature a curated selection of your favorite coffee blends, paired with a visually appealing quote or statement that reflects your commitment to quality and partnership, that showcases your dedication to the Direct Trade model in a way that feels authentic and engaging for your followers. We'd like to share a few of your favorite coffee blends, paired with a quote or statement that reflects your commitment to quality and partnership, in a way that feels authentic and engaging for your followers.\n\nReply if you’re interested in exploring this further.\n\nThe BrandPilot team"
+ },
+ "format_notes": [
+  "sentence-level revision applied"
+ ]
+}

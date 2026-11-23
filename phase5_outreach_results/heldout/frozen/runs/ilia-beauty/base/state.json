@@ -1,0 +1,285 @@
+{
+ "workflow_version": "phase5-outreach-1",
+ "fact_selector_version": "phase5-facts-1",
+ "draft_prompt_version": "phase5-draft-prompt-7",
+ "checks_version": "phase5-draft-checks-9",
+ "company_id": "ilia-beauty",
+ "packet_sha256": "783b317e1da8b510dcb4ba56a67812ce28db9c225ca94e275b0d69b58c790363",
+ "facts": [
+  {
+   "fact_id": "F1",
+   "passage_id": "P4",
+   "quote": "Your source for the latest on ILIA Beauty product releases, partnerships, company news, and more.",
+   "score": 5.75,
+   "statement_type": "descriptive",
+   "official_source": true,
+   "source_url": "https://iliabeauty.com/blogs/the-ilia-newsrooms",
+   "text_sha256": "cf6a657b56cac5036defa75eb58c7ccb2c46e0249382f3ce17084b3c6e71e3c3",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F2",
+   "passage_id": "P3",
+   "quote": "The ilia beauty marketing strategy demonstrates how a brand can successfully combine purpose-driven values with structured digital execution.",
+   "score": 4.9,
+   "statement_type": "actual_activity",
+   "official_source": false,
+   "source_url": "https://www.havstrategy.com/marketing-strategy-of-ilia-beauty/",
+   "text_sha256": "2377edf2480debafd4a95ea66ab047ae953c516046a51e29a66dd8682160f1bb",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F3",
+   "passage_id": "P5",
+   "quote": "By collaborating with best cosmetics marketing agency London and understanding the strategic decisions that have driven ILIA’s success, it’s clear how the brand has become a leader in the clean beauty space.",
+   "score": 2.4,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://www.havstrategy.com/marketing-strategy-of-ilia-beauty/",
+   "text_sha256": "d60efc4aa2a21329b97fc3ec5d43d9ba73aa522603164e015182295f207a92af",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  }
+ ],
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "revision_mode": null,
+   "prompt_sha256": "b60e33c65233bd96cfce6c227843642cb02e1d4a154518c25d41608868a1c281",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 7.47,
+   "usage": {
+    "prompt_tokens": 498,
+    "completion_tokens": 177,
+    "total_tokens": 675,
+    "prompt_tokens_details": {
+     "cached_tokens": 25
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "Collaboration Opportunity",
+    "body": "Hi ILIA team,\n\nWe are a small Instagram content studio dedicated to crafting engaging visual content for brands. We’d like to propose a collaborative Instagram post with you and your team, designed to highlight the strategic behind-the-scenes of ILIA Beauty’s marketing. Your source for the latest on ILIA Beauty product releases, partnerships, company news, and more.  The ilia beauty marketing strategy demonstrates how a brand can successfully combine purpose-driven values with structured digital execution. By collaborating with best cosmetics marketing agency London and understanding the strategic decisions that have driven ILIA’s success, it’s clear how the brand has become a leader in the clean beauty space.  We envision a post that visually showcases the collaborative process, offering a fresh perspective on how ILIA’s marketing resonates with audiences.  \n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-9",
+    "passes": true,
+    "problems": [],
+    "word_count": 130,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [
+     "F1",
+     "F2",
+     "F3"
+    ],
+    "factual_sentences": 4,
+    "factual_sentences_supported": 3,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Collaboration Opportunity",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 0
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi ILIA team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We are a small Instagram content studio dedicated to crafting engaging visual content for brands.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "brands",
+        "conten",
+        "crafti",
+        "dedica",
+        "engagi",
+        "instag",
+        "small",
+        "visual"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 8
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d like to propose a collaborative Instagram post with you and your team, designed to highlight the strategic behind-the-scenes of ILIA Beauty’s marketing.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.5,
+       "uncovered": [
+        "behind",
+        "design",
+        "scenes"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 6
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Your source for the latest on ILIA Beauty product releases, partnerships, company news, and more.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 1.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 6
+      },
+      "cited_fact": "F1",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The ilia beauty marketing strategy demonstrates how a brand can successfully combine purpose-driven values with structured digital execution.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 1.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 14
+      },
+      "cited_fact": "F2",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "By collaborating with best cosmetics marketing agency London and understanding the strategic decisions that have driven ILIA’s success, it’s clear how the brand has become a leader in the clean beauty space.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F3",
+       "coverage": 1.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 19
+      },
+      "cited_fact": "F3",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We envision a post that visually showcases the collaborative process, offering a fresh perspective on how ILIA’s marketing resonates with audiences.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.333,
+       "uncovered": [
+        "fresh",
+        "offeri",
+        "perspe",
+        "proces"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 6
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Collaboration Opportunity",
+     "body": "Hi ILIA team,\n\nWe are a small Instagram content studio dedicated to crafting engaging visual content for brands. We’d like to propose a collaborative Instagram post with you and your team, designed to highlight the strategic behind-the-scenes of ILIA Beauty’s marketing. Your source for the latest on ILIA Beauty product releases, partnerships, company news, and more [P4]. The ilia beauty marketing strategy demonstrates how a brand can successfully combine purpose-driven values with structured digital execution [P3]. By collaborating with best cosmetics marketing agency London and understanding the strategic decisions that have driven ILIA’s success, it’s clear how the brand has become a leader in the clean beauty space [P5]. We envision a post that visually showcases the collaborative process, offering a fresh perspective on how ILIA’s marketing resonates with audiences.\n\nThe BrandPilot team"
+    },
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   }
+  }
+ ],
+ "opportunity": {
+  "anchor_fact": "F1",
+  "text": "One collaborative Instagram post with ILIA, created together with their team, that builds on the first fact above.",
+  "kind": "template"
+ },
+ "draft_prompt_sha256": "b60e33c65233bd96cfce6c227843642cb02e1d4a154518c25d41608868a1c281",
+ "outcome": "passed_checks_pending_human_review",
+ "stop_reason": "all checks passed",
+ "final": {
+  "subject": "Collaboration Opportunity",
+  "body": "Hi ILIA team,\n\nWe are a small Instagram content studio dedicated to crafting engaging visual content for brands. We’d like to propose a collaborative Instagram post with you and your team, designed to highlight the strategic behind-the-scenes of ILIA Beauty’s marketing. Your source for the latest on ILIA Beauty product releases, partnerships, company news, and more [P4]. The ilia beauty marketing strategy demonstrates how a brand can successfully combine purpose-driven values with structured digital execution [P3]. By collaborating with best cosmetics marketing agency London and understanding the strategic decisions that have driven ILIA’s success, it’s clear how the brand has become a leader in the clean beauty space [P5]. We envision a post that visually showcases the collaborative process, offering a fresh perspective on how ILIA’s marketing resonates with audiences.\n\nThe BrandPilot team",
+  "sources": [
+   {
+    "passage_id": "P4",
+    "fact_id": "F1",
+    "quote": "Your source for the latest on ILIA Beauty product releases, partnerships, company news, and more.",
+    "source_url": "https://iliabeauty.com/blogs/the-ilia-newsrooms"
+   },
+   {
+    "passage_id": "P3",
+    "fact_id": "F2",
+    "quote": "The ilia beauty marketing strategy demonstrates how a brand can successfully combine purpose-driven values with structured digital execution.",
+    "source_url": "https://www.havstrategy.com/marketing-strategy-of-ilia-beauty/"
+   },
+   {
+    "passage_id": "P5",
+    "fact_id": "F3",
+    "quote": "By collaborating with best cosmetics marketing agency London and understanding the strategic decisions that have driven ILIA’s success, it’s clear how the brand has become a leader in the clean beauty space.",
+    "source_url": "https://www.havstrategy.com/marketing-strategy-of-ilia-beauty/"
+   }
+  ],
+  "facts_used": [
+   "F1",
+   "F2",
+   "F3"
+  ],
+  "fact_verification": "pending_teammate_verification"
+ },
+ "arm": "base",
+ "group": "heldout",
+ "tag": "frozen"
+}

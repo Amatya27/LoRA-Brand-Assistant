@@ -1,0 +1,669 @@
+{
+ "workflow_version": "phase5-outreach-1",
+ "fact_selector_version": "phase5-facts-1",
+ "draft_prompt_version": "phase5-draft-prompt-2",
+ "checks_version": "phase5-draft-checks-2",
+ "company_id": "fly-by-jing",
+ "packet_sha256": "c974a43b16e102e870046f0fbbb1e63d54bd1f356426177dfbdd948911ce7eea",
+ "facts": [
+  {
+   "fact_id": "F1",
+   "passage_id": "P3",
+   "quote": "Another tactic that’s worked well for Fly by Jing as part of its community-building strategy, according to Patricio-Archer, is partnering with other brands.",
+   "score": 4.85,
+   "statement_type": "actual_activity",
+   "official_source": false,
+   "source_url": "https://www.marketingbrew.com/stories/2023/01/13/how-fly-by-jing-went-from-kickstarter-to-shake-shack-partner-in-a-few-years",
+   "text_sha256": "6e3f9df178a2898a1789b91747a0bd6ddbb8cdfd077db25a4100c6a58e96cde7",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F2",
+   "passage_id": "P4",
+   "quote": "By the time Fly By Jing pursued retail partnerships with Whole Foods, Target, and eventually broader grocery distribution, the brand had something most emerging CPG products don’t: pre-existing demand signals.",
+   "score": 2.5,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://www.influencers-time.com/how-fly-by-jing-built-a-cult-brand-with-chili-crisp-seeding/",
+   "text_sha256": "0328c40525a0e8a9816ca5c7afa2971e981c8aa28acd9e2f225df4e8a5a2a37f",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F3",
+   "passage_id": "P8",
+   "quote": "For this week’s Modern Retail Talk, founder and CEO Jing Gao spoke about her trials and tribulations during the coronavirus.",
+   "score": 1.0,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://www.modernretail.co/retailers/modern-retail-talk-how-instagram-darling-fly-by-jing-handled-an-unprecedented-demand-surge/",
+   "text_sha256": "55145375e85229b4fc05696794bab7e388f58693565ab4a274161bdafa0e09e8",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  }
+ ],
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "prompt_sha256": "f6853ce7a99c4ff7888457c9b06c15d68998756e381730e239e5a07ef736a699",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 6.927,
+   "usage": {
+    "prompt_tokens": 452,
+    "completion_tokens": 202,
+    "total_tokens": 654,
+    "prompt_tokens_details": {
+     "cached_tokens": 25
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "Exploring Community Building Strategies",
+    "body": "Hi Fly By Jing team,\n\nWe’re excited to propose a collaborative Instagram post designed to deepen our understanding of your brand. We believe a shared visual experience with Fly By Jing will resonate powerfully with your audience.\n\n“Another tactic that’s worked well for Fly by Jing as part of its community-building strategy, according to Patricio-Archer, is partnering with other brands” suggests a valuable approach.  We envision creating a post that showcases the partnership in a visually engaging way, leveraging the same style and tone as Fly By Jing.  This will build on the foundation of their existing community engagement.\n\nFor this week’s Modern Retail Talk, founder and CEO Jing Gao spoke about her trials and tribulations during the coronavirus.  We’d like to explore how this experience might inform future collaborations.  We’re open to discussing a potential Instagram post that builds on this shared knowledge and fosters a deeper connection with your followers.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-2",
+    "passes": false,
+    "problems": [
+     "body is 155 words; it must be 100-150",
+     "\"“Another tactic that’s worked well for Fly by Jing as part of its community-building strat\": states something about the company without a fact marker",
+     "\"For this week’s Modern Retail Talk, founder and CEO Jing Gao spoke about her trials and tr\": states something about the company without a fact marker",
+     "no sentence uses a verified fact"
+    ],
+    "word_count": 155,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [],
+    "unknown_fact_markers": [],
+    "factual_sentences": 3,
+    "factual_sentences_supported": 1,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Exploring Community Building Strategies",
+      "kind": "subject",
+      "cited_facts": [],
+      "guard": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Fly By Jing team,",
+      "kind": "non_assertion",
+      "cited_facts": [],
+      "guard": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’re excited to propose a collaborative Instagram post designed to deepen our understanding of your brand.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "deepen",
+        "designed",
+        "understanding",
+        "we're"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We believe a shared visual experience with Fly By Jing will resonate powerfully with your audience.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "believe",
+        "experience",
+        "powerfully",
+        "resonate",
+        "shared",
+        "visual",
+        "will"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "“Another tactic that’s worked well for Fly by Jing as part of its community-building strategy, according to Patricio-Archer, is partnering with other brands” suggests a valuable approach.",
+      "kind": "factual",
+      "cited_facts": [],
+      "guard": null,
+      "problems": [
+       "states something about the company without a fact marker"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "We envision creating a post that showcases the partnership in a visually engaging way, leveraging the same style and tone as Fly By Jing.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "creating",
+        "engaging",
+        "envision",
+        "leveraging",
+        "partnership",
+        "same",
+        "showcases",
+        "style",
+        "tone",
+        "visually",
+        "way"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "This will build on the foundation of their existing community engagement.",
+      "kind": "factual",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.333,
+       "uncovered": [
+        "build",
+        "engagement",
+        "foundation",
+        "will"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "For this week’s Modern Retail Talk, founder and CEO Jing Gao spoke about her trials and tribulations during the coronavirus.",
+      "kind": "factual",
+      "cited_facts": [],
+      "guard": null,
+      "problems": [
+       "states something about the company without a fact marker"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "We’d like to explore how this experience might inform future collaborations.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "collaborations",
+        "experience",
+        "explore",
+        "future",
+        "how",
+        "inform",
+        "might",
+        "we'd"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’re open to discussing a potential Instagram post that builds on this shared knowledge and fosters a deeper connection with your followers.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "connection",
+        "deeper",
+        "discussing",
+        "followers",
+        "fosters",
+        "knowledge",
+        "open",
+        "potential",
+        "shared",
+        "we're"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "cited_facts": [],
+      "guard": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Exploring Community Building Strategies",
+     "body": "Hi Fly By Jing team,\n\nWe’re excited to propose a collaborative Instagram post designed to deepen our understanding of your brand. We believe a shared visual experience with Fly By Jing will resonate powerfully with your audience.\n\n“Another tactic that’s worked well for Fly by Jing as part of its community-building strategy, according to Patricio-Archer, is partnering with other brands” suggests a valuable approach.  We envision creating a post that showcases the partnership in a visually engaging way, leveraging the same style and tone as Fly By Jing.  This will build on the foundation of their existing community engagement.\n\nFor this week’s Modern Retail Talk, founder and CEO Jing Gao spoke about her trials and tribulations during the coronavirus.  We’d like to explore how this experience might inform future collaborations.  We’re open to discussing a potential Instagram post that builds on this shared knowledge and fosters a deeper connection with your followers.\n\nThe BrandPilot team"
+    }
+   }
+  },
+  {
+   "index": 1,
+   "kind": "targeted_revision",
+   "prompt_sha256": "94c4ea86e9b2d25bc872a955fe063a9c291177c9b9cb7d2923b86ebb6c34a3a3",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 7.769,
+   "usage": {
+    "prompt_tokens": 792,
+    "completion_tokens": 378,
+    "total_tokens": 1170,
+    "prompt_tokens_details": {
+     "cached_tokens": 447
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "Exploring Community Building Strategies",
+    "body": "Hi Fly By Jing team,\n\nWe’re excited to propose a collaborative Instagram post designed to deepen our understanding of your brand. We believe a shared visual experience with Fly By Jing will resonate powerfully with your audience.\n\n“Another tactic that’s worked well for Fly by Jing as part of its community-building strategy, according to Patricio-Archer, is partnering with other brands” suggests a valuable approach. We envision creating a post that showcases the partnership in a visually engaging way, leveraging the same style and tone as Fly By Jing.  This will build on the foundation of their existing community engagement.\n\nFor this week’s Modern Retail Talk, founder and CEO Jing Gao spoke about her trials and tribulations during the coronavirus.  We’d like to explore how this experience might inform future collaborations.  We’re open to discussing a potential Instagram post that builds on this shared knowledge and fosters a deeper connection with your followers.\n\nThe BrandPilot team\n\nIt has these problems:\n- body is 155 words; it must be 100-150\n- ““Another tactic that’s worked well for Fly by Jing as part of its community-building strat\": states something about the company without a fact marker\n- \"For this week’s Modern Retail Talk, founder and CEO Jing Gao spoke about her trials and tr\": states something about the company without a fact marker\n- no sentence uses a verified fact\n\nThe post could feature a curated selection of Fly By Jing’s products alongside a short, visually compelling story about the partnership.  We’d like to explore how this shared experience might inform future collaborations.  We’re open to discussing a potential Instagram post that builds on this shared knowledge and fosters a deeper connection with your followers.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": []
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-2",
+    "passes": false,
+    "problems": [
+     "body is 285 words; it must be 100-150",
+     "\"“Another tactic that’s worked well for Fly by Jing as part of its community-building strat\": states something about the company without a fact marker",
+     "\"For this week’s Modern Retail Talk, founder and CEO Jing Gao spoke about her trials and tr\": states something about the company without a fact marker",
+     "\"- body is 155 words; it must be 100-150\": numbers not in any fact: ['100', '150', '155']",
+     "\"- ““Another tactic that’s worked well for Fly by Jing as part of its community-building st\": states something about the company without a fact marker",
+     "\"- \"For this week’s Modern Retail Talk, founder and CEO Jing Gao spoke about her trials and\": states something about the company without a fact marker",
+     "no sentence uses a verified fact"
+    ],
+    "word_count": 285,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [],
+    "unknown_fact_markers": [],
+    "factual_sentences": 8,
+    "factual_sentences_supported": 3,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Exploring Community Building Strategies",
+      "kind": "subject",
+      "cited_facts": [],
+      "guard": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Fly By Jing team,",
+      "kind": "non_assertion",
+      "cited_facts": [],
+      "guard": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’re excited to propose a collaborative Instagram post designed to deepen our understanding of your brand.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "deepen",
+        "designed",
+        "understanding",
+        "we're"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We believe a shared visual experience with Fly By Jing will resonate powerfully with your audience.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "believe",
+        "experience",
+        "powerfully",
+        "resonate",
+        "shared",
+        "visual",
+        "will"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "“Another tactic that’s worked well for Fly by Jing as part of its community-building strategy, according to Patricio-Archer, is partnering with other brands” suggests a valuable approach.",
+      "kind": "factual",
+      "cited_facts": [],
+      "guard": null,
+      "problems": [
+       "states something about the company without a fact marker"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "We envision creating a post that showcases the partnership in a visually engaging way, leveraging the same style and tone as Fly By Jing.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "creating",
+        "engaging",
+        "envision",
+        "leveraging",
+        "partnership",
+        "same",
+        "showcases",
+        "style",
+        "tone",
+        "visually",
+        "way"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "This will build on the foundation of their existing community engagement.",
+      "kind": "factual",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.333,
+       "uncovered": [
+        "build",
+        "engagement",
+        "foundation",
+        "will"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "For this week’s Modern Retail Talk, founder and CEO Jing Gao spoke about her trials and tribulations during the coronavirus.",
+      "kind": "factual",
+      "cited_facts": [],
+      "guard": null,
+      "problems": [
+       "states something about the company without a fact marker"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "We’d like to explore how this experience might inform future collaborations.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "collaborations",
+        "experience",
+        "explore",
+        "future",
+        "how",
+        "inform",
+        "might",
+        "we'd"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’re open to discussing a potential Instagram post that builds on this shared knowledge and fosters a deeper connection with your followers.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "connection",
+        "deeper",
+        "discussing",
+        "followers",
+        "fosters",
+        "knowledge",
+        "open",
+        "potential",
+        "shared",
+        "we're"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "cited_facts": [],
+      "guard": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "It has these problems:",
+      "kind": "factual",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "problems",
+        "these"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "- body is 155 words; it must be 100-150",
+      "kind": "factual",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "100",
+        "150",
+        "155",
+        "body",
+        "must",
+        "words"
+       ],
+       "missing_numbers": [
+        "100",
+        "150",
+        "155"
+       ],
+       "negation_mismatch": false
+      },
+      "problems": [
+       "numbers not in any fact: ['100', '150', '155']"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "- ““Another tactic that’s worked well for Fly by Jing as part of its community-building strat\": states something about the company without a fact marker",
+      "kind": "factual",
+      "cited_facts": [],
+      "guard": null,
+      "problems": [
+       "states something about the company without a fact marker"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "- \"For this week’s Modern Retail Talk, founder and CEO Jing Gao spoke about her trials and tr\": states something about the company without a fact marker",
+      "kind": "factual",
+      "cited_facts": [],
+      "guard": null,
+      "problems": [
+       "states something about the company without a fact marker"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "- no sentence uses a verified fact",
+      "kind": "factual",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "fact",
+        "sentence",
+        "uses",
+        "verified"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The post could feature a curated selection of Fly By Jing’s products alongside a short, visually compelling story about the partnership.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "alongside",
+        "compelling",
+        "curated",
+        "jing's",
+        "partnership",
+        "selection",
+        "short",
+        "story",
+        "visually"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d like to explore how this shared experience might inform future collaborations.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "collaborations",
+        "experience",
+        "explore",
+        "future",
+        "how",
+        "inform",
+        "might",
+        "shared",
+        "we'd"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’re open to discussing a potential Instagram post that builds on this shared knowledge and fosters a deeper connection with your followers.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "connection",
+        "deeper",
+        "discussing",
+        "followers",
+        "fosters",
+        "knowledge",
+        "open",
+        "potential",
+        "shared",
+        "we're"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "cited_facts": [],
+      "guard": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Exploring Community Building Strategies",
+     "body": "Hi Fly By Jing team,\n\nWe’re excited to propose a collaborative Instagram post designed to deepen our understanding of your brand. We believe a shared visual experience with Fly By Jing will resonate powerfully with your audience.\n\n“Another tactic that’s worked well for Fly by Jing as part of its community-building strategy, according to Patricio-Archer, is partnering with other brands” suggests a valuable approach. We envision creating a post that showcases the partnership in a visually engaging way, leveraging the same style and tone as Fly By Jing.  This will build on the foundation of their existing community engagement.\n\nFor this week’s Modern Retail Talk, founder and CEO Jing Gao spoke about her trials and tribulations during the coronavirus.  We’d like to explore how this experience might inform future collaborations.  We’re open to discussing a potential Instagram post that builds on this shared knowledge and fosters a deeper connection with your followers.\n\nThe BrandPilot team\n\nIt has these problems:\n- body is 155 words; it must be 100-150\n- ““Another tactic that’s worked well for Fly by Jing as part of its community-building strat\": states something about the company without a fact marker\n- \"For this week’s Modern Retail Talk, founder and CEO Jing Gao spoke about her trials and tr\": states something about the company without a fact marker\n- no sentence uses a verified fact\n\nThe post could feature a curated selection of Fly By Jing’s products alongside a short, visually compelling story about the partnership.  We’d like to explore how this shared experience might inform future collaborations.  We’re open to discussing a potential Instagram post that builds on this shared knowledge and fosters a deeper connection with your followers.\n\nThe BrandPilot team"
+    }
+   }
+  }
+ ],
+ "opportunity": {
+  "anchor_fact": "F1",
+  "text": "One collaborative Instagram post with Fly By Jing, created together with their team, that builds on fact F1.",
+  "kind": "template"
+ },
+ "draft_prompt_sha256": "f6853ce7a99c4ff7888457c9b06c15d68998756e381730e239e5a07ef736a699",
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "checks still failing after 1 targeted revision",
+ "arm": "base",
+ "group": "dev",
+ "tag": "iter2"
+}

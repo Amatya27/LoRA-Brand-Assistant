@@ -1,0 +1,11 @@
+{
+ "model": "mlx-community/gemma-3-1b-it-qat-4bit",
+ "messages": [
+  {
+   "role": "user",
+   "content": "You are fixing sentences in an outreach email from our team (a small Instagram content studio) to the Stumptown Coffee Roasters team.\n\nVerified facts about Stumptown Coffee Roasters:\n- \"As our business continues to grow and evolve, so will our Direct Trade model to continue our mission of making the most positive impact where we can.\" (source: Stumptown Coffee Roasters's own website)\n- \"We do this by honoring our Direct Trade relationships, paying quality premiums for our coffees, and creating multi-year commitments to our producers.\" (source: Stumptown Coffee Roasters's own website)\n- \"Additionally, the campaign encouraged visits to Stumptown cafes, showcasing their unique brand experience and deepening customer engagement.\" (source: a published article about Stumptown Coffee Roasters)\n\nEach numbered sentence below has a problem. For each one, write DELETE, or write a replacement sentence that fixes it.\nA replacement may only restate one of the facts about Stumptown Coffee Roasters closely, or describe the proposed Instagram post without any claim about Stumptown Coffee Roasters. If you are not sure, write DELETE. Write as our team; never use \"our\" for Stumptown Coffee Roasters. Do not promise results.\n\n1: \"You’ve mentioned that honoring these relationships, paying quality premiums, and creating multi-year commitments are key to your mission, and we believe a shared visual experience would powerfully underscore this.\"\n   Problem: proposal states a premise about the company that no verified fact supports.\n\nReturn one line per sentence and nothing else, in this form:\n1: <replacement sentence or DELETE>"
+  }
+ ],
+ "temperature": 0.0,
+ "max_tokens": 400
+}

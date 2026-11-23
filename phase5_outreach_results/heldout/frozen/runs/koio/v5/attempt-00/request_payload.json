@@ -1,0 +1,12 @@
+{
+ "model": "mlx-community/gemma-3-1b-it-qat-4bit",
+ "messages": [
+  {
+   "role": "user",
+   "content": "You write a short outreach email from our team (a small Instagram content studio) to the marketing team at Koio (Italian-made sneakers).\n\nVerified facts about Koio:\n- \"In anticipation of the launch of the Tempo style sneaker in July 2019, the Koio team developed a marketing strategy combining social media, e-mail, and IRL in-store engagement.\" (source: a published article about Koio)\n- \"Koio Saw Store Sales Soar for Latest Sneaker Drop Koio, a digitally-native sneaker brand, sought to enhance its retail marketing and customer engagement for a new product launch.\" (source: a published article about Koio)\n- \"As one of Endear's inaugural customers, Koio has augmented their strong digital presence through store-based marketing efforts.\" (source: a published article about Koio)\n\nOpportunity to propose (our idea, not a fact): One collaborative Instagram post with Koio, created together with their team, that builds on the first fact above.\n\nWrite the body in this order:\n1. \"Hi Koio team,\"\n2. One sentence saying who we are and that we would like to propose a collaborative Instagram post.\n3. One or two sentences, each restating one fact above closely in your own words.\n4. Two or three sentences describing the proposed post: what it could show and how our teams would make it together.\n5. One sentence inviting them to reply.\n6. \"The BrandPilot team\"\n\nRules:\n- Say nothing about Koio except the facts above: no other numbers, dates, audiences, communities, results, products or activities. In the sentences about the post, describe only the post, not Koio's past activity.\n- Refer to Koio as \"you\" or \"Koio\". Never use \"we\" or \"our\" for Koio; \"we\" is our team.\n- Never say Koio lacks something or has a weakness or gap.\n- Propose Instagram only. Do not mention any other platform.\n- Do not promise results. Say what the post could do, not what it will achieve.\n- The body is about 120 words, never more than 140. Start it with \"Hi Koio team,\" and end it with \"The BrandPilot team\".\n\nReturn exactly this format and nothing else:\nSUBJECT: <one line>\nBODY:\n<email body>"
+  }
+ ],
+ "temperature": 0.0,
+ "max_tokens": 400,
+ "adapters": "adapters/brand_assistant_v5_best"
+}

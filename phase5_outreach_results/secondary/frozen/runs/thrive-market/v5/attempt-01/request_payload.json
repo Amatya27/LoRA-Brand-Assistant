@@ -1,0 +1,12 @@
+{
+ "model": "mlx-community/gemma-3-1b-it-qat-4bit",
+ "messages": [
+  {
+   "role": "user",
+   "content": "You are fixing sentences in an outreach email from our team (a small Instagram content studio) to the Thrive Market team.\n\nVerified facts about Thrive Market:\n- \"Access for All Thrive Gives has been our promise since day one: every annual membership sponsors a free membership for a family in need.\" (source: Thrive Market's own website)\n- \"For a healthier planet, we’re committed to sustainable practices in three key areas of our business: science-aligned carbon emission reductions, zero-waste warehouses, and plastic-neutral packaging for Thrive Market brands and shipping materials for all member orders.\" (source: Thrive Market's own website)\n- \"Thrive Market's Multi-channel Content Machine Thrive Market is a subscription e-commerce business that specializes in delivering natural and organic foods, but at wholesale prices.\" (source: a published article about Thrive Market)\n\nEach numbered sentence below has a problem. Follow the fix given for it. Write as our team; never use \"our\" for Thrive Market. Do not promise results.\nThe email is 162 words and must be at most 150, so write DELETE wherever the sentence is not needed.\n\n1: \"We believe a collaborative Instagram post with Thrive Market, built together with your team, would be a great way to reinforce your values and showcase your commitment to sustainability.\"\n   Problem: refers to company activity not in the verified facts: ['built'].\n   Fix: Rewrite it to describe only the proposed Instagram post, with no claim about Thrive Market, or write DELETE.\n2: \"This post would focus on a single, visually appealing slide that invites your audience to share their favorite Thrive Market products and their families who benefit from the program.\"\n   Problem: refers to company activity not in the verified facts: ['products', 'program'].\n   Fix: Rewrite it to describe only the proposed Instagram post, with no claim about Thrive Market, or write DELETE.\n\nReturn one line per sentence and nothing else, in this form:\n1: <replacement sentence or DELETE>\n2: <replacement sentence or DELETE>"
+  }
+ ],
+ "temperature": 0.0,
+ "max_tokens": 400,
+ "adapters": "adapters/brand_assistant_v5_best"
+}

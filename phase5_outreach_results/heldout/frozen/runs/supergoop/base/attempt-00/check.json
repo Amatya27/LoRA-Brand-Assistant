@@ -1,0 +1,168 @@
+{
+ "checks_version": "phase5-draft-checks-9",
+ "passes": false,
+ "problems": [
+  "\"You’ve demonstrated a commitment to personalized shopper journeys through Solution Supergo\": factual clause not supported by a verified fact (best fact F2 covers 0.56; unsupported words: commit, demons, throug, you've)"
+ ],
+ "word_count": 126,
+ "recipient": "correct",
+ "sender": "correct",
+ "instagram": true,
+ "other_platforms": [],
+ "promises": [],
+ "facts_used": [
+  "F1"
+ ],
+ "factual_sentences": 1,
+ "factual_sentences_supported": 0,
+ "sentences": [
+  {
+   "location": "subject",
+   "sentence": "Collaboration Proposal",
+   "kind": "subject",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 0
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Hi Supergoop! team,",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We are a small Instagram content studio eager to collaborate with you on a collaborative Instagram post.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [
+     "collab",
+     "conten",
+     "eager",
+     "instag",
+     "post",
+     "small"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 6
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We’d like to propose a post that builds on the fact that Supergoop! drives 40,000 product samples and 10 festival stops with AGENC Supergoop! partnered with AGENC to launch their “Every.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 1.0,
+    "uncovered": [],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 8
+   },
+   "cited_fact": "F1",
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "You’ve demonstrated a commitment to personalized shopper journeys through Solution Supergoop! and Envive AI, and we believe a shared Instagram post would be a fantastic way to showcase these advancements.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.385,
+    "uncovered": [
+     "advanc",
+     "commit",
+     "demons",
+     "fantas",
+     "shared",
+     "these",
+     "throug",
+     "you've"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 13
+   },
+   "cited_fact": null,
+   "problems": [
+    "factual clause not supported by a verified fact (best fact F2 covers 0.56; unsupported words: commit, demons, throug, you've)"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "This post would feature a visually compelling image or short video showcasing the personalized experience of choosing Supergoop! based on individual shopper data, highlighting the power of AI-driven recommendations.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.143,
+    "uncovered": [
+     "based",
+     "choosi",
+     "compel",
+     "data",
+     "driven",
+     "experi",
+     "image",
+     "indivi",
+     "power",
+     "recomm",
+     "short",
+     "video"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 14
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We envision working together to create a cohesive and engaging visual experience.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [
+     "cohesi",
+     "experi",
+     "workin"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 3
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "The BrandPilot team",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  }
+ ],
+ "rendered": {
+  "subject": "Collaboration Proposal",
+  "body": "Hi Supergoop! team,\n\nWe are a small Instagram content studio eager to collaborate with you on a collaborative Instagram post. We’d like to propose a post that builds on the fact that Supergoop! drives 40,000 product samples and 10 festival stops with AGENC Supergoop! partnered with AGENC to launch their “Every [P3]. You’ve demonstrated a commitment to personalized shopper journeys through Solution Supergoop! and Envive AI, and we believe a shared Instagram post would be a fantastic way to showcase these advancements. This post would feature a visually compelling image or short video showcasing the personalized experience of choosing Supergoop! based on individual shopper data, highlighting the power of AI-driven recommendations. We envision working together to create a cohesive and engaging visual experience.\n\nThe BrandPilot team"
+ },
+ "format_notes": [
+  "BODY label missing; text after the subject line used as the body"
+ ]
+}

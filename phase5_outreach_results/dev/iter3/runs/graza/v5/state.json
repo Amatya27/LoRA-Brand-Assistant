@@ -1,0 +1,459 @@
+{
+ "workflow_version": "phase5-outreach-1",
+ "fact_selector_version": "phase5-facts-1",
+ "draft_prompt_version": "phase5-draft-prompt-3",
+ "checks_version": "phase5-draft-checks-3",
+ "company_id": "graza",
+ "packet_sha256": "90fc71b07ba6c1187fbcacc9fd4e9cf66b948d1c0e45f62dc877017037d2aaab",
+ "facts": [
+  {
+   "fact_id": "F1",
+   "passage_id": "P8",
+   "quote": "Graza started Direct-to-Consumer (DTC) but also made sure to get into grocers like Whole Foods, Target, etc.",
+   "score": 4.85,
+   "statement_type": "actual_activity",
+   "official_source": false,
+   "source_url": "https://behindthebrandnews.com/p/case-study-graza",
+   "text_sha256": "d3e5795880a3411f423342c22230050a0f1abced53128f251f7c77da047f725b",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F2",
+   "passage_id": "P7",
+   "quote": "Graza’s social content, product design, and messaging are playful and culinary-inspired rather than overly formal.",
+   "score": 4.75,
+   "statement_type": "actual_activity",
+   "official_source": false,
+   "source_url": "https://behindthebrandnews.com/p/case-study-graza",
+   "text_sha256": "30ae4473d4995caa8605f069b3de2924a823dd6f208863556ff88fadfe6b6d11",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F3",
+   "passage_id": "P9",
+   "quote": "Dickieson estimated that Graza has added around 2,000 new social followers since launching the cans.",
+   "score": 2.8,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://www.businessinsider.com/inside-graza-olive-oil-influencer-marketing-strategy-2024-5",
+   "text_sha256": "22642fc0398d0093fb339a1f9de57b7e314644ffb32b9d3a98dacb5f313bece6",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  }
+ ],
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "prompt_sha256": "7f4a5bb2c02c00eb6193ea6102f4601d6624216608a4e23f57a06906bceeecf5",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 8.232,
+   "usage": {
+    "prompt_tokens": 383,
+    "completion_tokens": 132,
+    "total_tokens": 515,
+    "prompt_tokens_details": {
+     "cached_tokens": 25
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "A Taste of Playfulness",
+    "body": "Hi Graza team,\n\nWe're reaching out to propose a collaborative Instagram post that builds on the fact that Graza started with a playful, culinary-inspired social presence and has quickly gained a following. Imagine a post that highlights your unique approach to creating a visually appealing and engaging experience for your audience, paired with a bit of playful storytelling. It would be a chance to showcase your dedication to crafting a memorable Instagram experience that resonates with your target demographic. This post would be a great way to further amplify your brand's personality and invite further engagement with your community.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": []
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-3",
+    "passes": false,
+    "problems": [
+     "\"We're reaching out to propose a collaborative Instagram post that builds on the fact that \": proposal states a premise about the company that no verified fact supports (best fact F2 covers 0.30; unsupported words: fact, follow, gained, presen, quickl, starte, we're)",
+     "no sentence restates a verified fact"
+    ],
+    "word_count": 102,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [],
+    "factual_sentences": 0,
+    "factual_sentences_supported": 0,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "A Taste of Playfulness",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.5,
+       "uncovered": [
+        "taste"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 2
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Graza team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We're reaching out to propose a collaborative Instagram post that builds on the fact that Graza started with a playful, culinary-inspired social presence and has quickly gained a following.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.3,
+       "uncovered": [
+        "fact",
+        "follow",
+        "gained",
+        "presen",
+        "quickl",
+        "starte",
+        "we're"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 10
+      },
+      "cited_fact": null,
+      "problems": [
+       "proposal states a premise about the company that no verified fact supports (best fact F2 covers 0.30; unsupported words: fact, follow, gained, presen, quickl, starte, we're)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "Imagine a post that highlights your unique approach to creating a visually appealing and engaging experience for your audience, paired with a bit of playful storytelling.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.125,
+       "uncovered": [
+        "approa",
+        "bit",
+        "experi",
+        "imagin",
+        "paired",
+        "storyt",
+        "unique"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 8
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "It would be a chance to showcase your dedication to crafting a memorable Instagram experience that resonates with your target demographic.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.143,
+       "uncovered": [
+        "chance",
+        "crafti",
+        "dedica",
+        "demogr",
+        "experi",
+        "memora"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 7
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "This post would be a great way to further amplify your brand's personality and invite further engagement with your community.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "amplif",
+        "commun",
+        "engage",
+        "furthe",
+        "invite",
+        "person"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 6
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "A Taste of Playfulness",
+     "body": "Hi Graza team,\n\nWe're reaching out to propose a collaborative Instagram post that builds on the fact that Graza started with a playful, culinary-inspired social presence and has quickly gained a following. Imagine a post that highlights your unique approach to creating a visually appealing and engaging experience for your audience, paired with a bit of playful storytelling. It would be a chance to showcase your dedication to crafting a memorable Instagram experience that resonates with your target demographic. This post would be a great way to further amplify your brand's personality and invite further engagement with your community.\n\nThe BrandPilot team"
+    },
+    "format_notes": []
+   }
+  },
+  {
+   "index": 1,
+   "kind": "targeted_revision",
+   "prompt_sha256": "4faaf1f2e28add9bb67bc012df063cc1920a1ece82ccdfb29fd5f0bd6236f180",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 5.989,
+   "usage": {
+    "prompt_tokens": 627,
+    "completion_tokens": 194,
+    "total_tokens": 821,
+    "prompt_tokens_details": {
+     "cached_tokens": 378
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "A Delightful Visual Moment",
+    "body": "Hi Graza team,\n\nWe're reaching out to propose a collaborative Instagram post that builds on the fact that Graza started with a playful, culinary-inspired social presence and has quickly gained a following. Imagine a post that highlights your unique approach to creating a visually appealing and engaging experience for your audience, paired with a bit of playful storytelling. It would be a chance to showcase your dedication to crafting a memorable Instagram experience that resonates with your target demographic. This post would be a great way to further amplify your brand’s personality and invite further engagement with your community. It would be a chance to share a moment of genuine delight that captures the spirit of your brand, while also showcasing your dedication to creating a memorable Instagram experience that resonates with your target demographic. This post would be a great way to further amplify your brand’s personality and invite further engagement with your community.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": []
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-3",
+    "passes": false,
+    "problems": [
+     "body is 158 words; it must be 100-150",
+     "\"We're reaching out to propose a collaborative Instagram post that builds on the fact that \": proposal states a premise about the company that no verified fact supports (best fact F2 covers 0.30; unsupported words: fact, follow, gained, presen, quickl, starte, we're)",
+     "no sentence restates a verified fact"
+    ],
+    "word_count": 158,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [],
+    "factual_sentences": 0,
+    "factual_sentences_supported": 0,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "A Delightful Visual Moment",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "deligh",
+        "moment"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 2
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Graza team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We're reaching out to propose a collaborative Instagram post that builds on the fact that Graza started with a playful, culinary-inspired social presence and has quickly gained a following.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.3,
+       "uncovered": [
+        "fact",
+        "follow",
+        "gained",
+        "presen",
+        "quickl",
+        "starte",
+        "we're"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 10
+      },
+      "cited_fact": null,
+      "problems": [
+       "proposal states a premise about the company that no verified fact supports (best fact F2 covers 0.30; unsupported words: fact, follow, gained, presen, quickl, starte, we're)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "Imagine a post that highlights your unique approach to creating a visually appealing and engaging experience for your audience, paired with a bit of playful storytelling.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.125,
+       "uncovered": [
+        "approa",
+        "bit",
+        "experi",
+        "imagin",
+        "paired",
+        "storyt",
+        "unique"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 8
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "It would be a chance to showcase your dedication to crafting a memorable Instagram experience that resonates with your target demographic.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.143,
+       "uncovered": [
+        "chance",
+        "crafti",
+        "dedica",
+        "demogr",
+        "experi",
+        "memora"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 7
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "This post would be a great way to further amplify your brand’s personality and invite further engagement with your community.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "amplif",
+        "commun",
+        "engage",
+        "furthe",
+        "invite",
+        "person"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 6
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "It would be a chance to share a moment of genuine delight that captures the spirit of your brand, while also showcasing your dedication to creating a memorable Instagram experience that resonates with your target demographic.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.083,
+       "uncovered": [
+        "captur",
+        "chance",
+        "dedica",
+        "deligh",
+        "demogr",
+        "experi",
+        "genuin",
+        "memora",
+        "moment",
+        "spirit",
+        "while"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 12
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "This post would be a great way to further amplify your brand’s personality and invite further engagement with your community.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "amplif",
+        "commun",
+        "engage",
+        "furthe",
+        "invite",
+        "person"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 6
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "A Delightful Visual Moment",
+     "body": "Hi Graza team,\n\nWe're reaching out to propose a collaborative Instagram post that builds on the fact that Graza started with a playful, culinary-inspired social presence and has quickly gained a following. Imagine a post that highlights your unique approach to creating a visually appealing and engaging experience for your audience, paired with a bit of playful storytelling. It would be a chance to showcase your dedication to crafting a memorable Instagram experience that resonates with your target demographic. This post would be a great way to further amplify your brand’s personality and invite further engagement with your community. It would be a chance to share a moment of genuine delight that captures the spirit of your brand, while also showcasing your dedication to creating a memorable Instagram experience that resonates with your target demographic. This post would be a great way to further amplify your brand’s personality and invite further engagement with your community.\n\nThe BrandPilot team"
+    },
+    "format_notes": []
+   }
+  }
+ ],
+ "opportunity": {
+  "anchor_fact": "F1",
+  "text": "One collaborative Instagram post with Graza, created together with their team, that builds on the first fact above.",
+  "kind": "template"
+ },
+ "draft_prompt_sha256": "7f4a5bb2c02c00eb6193ea6102f4601d6624216608a4e23f57a06906bceeecf5",
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "checks still failing after 1 targeted revision",
+ "arm": "v5",
+ "group": "dev",
+ "tag": "iter3"
+}

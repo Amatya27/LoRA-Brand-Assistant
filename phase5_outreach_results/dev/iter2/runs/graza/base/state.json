@@ -1,0 +1,607 @@
+{
+ "workflow_version": "phase5-outreach-1",
+ "fact_selector_version": "phase5-facts-1",
+ "draft_prompt_version": "phase5-draft-prompt-2",
+ "checks_version": "phase5-draft-checks-2",
+ "company_id": "graza",
+ "packet_sha256": "90fc71b07ba6c1187fbcacc9fd4e9cf66b948d1c0e45f62dc877017037d2aaab",
+ "facts": [
+  {
+   "fact_id": "F1",
+   "passage_id": "P8",
+   "quote": "Graza started Direct-to-Consumer (DTC) but also made sure to get into grocers like Whole Foods, Target, etc.",
+   "score": 4.85,
+   "statement_type": "actual_activity",
+   "official_source": false,
+   "source_url": "https://behindthebrandnews.com/p/case-study-graza",
+   "text_sha256": "d3e5795880a3411f423342c22230050a0f1abced53128f251f7c77da047f725b",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F2",
+   "passage_id": "P7",
+   "quote": "Graza’s social content, product design, and messaging are playful and culinary-inspired rather than overly formal.",
+   "score": 4.75,
+   "statement_type": "actual_activity",
+   "official_source": false,
+   "source_url": "https://behindthebrandnews.com/p/case-study-graza",
+   "text_sha256": "30ae4473d4995caa8605f069b3de2924a823dd6f208863556ff88fadfe6b6d11",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F3",
+   "passage_id": "P9",
+   "quote": "Dickieson estimated that Graza has added around 2,000 new social followers since launching the cans.",
+   "score": 2.8,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://www.businessinsider.com/inside-graza-olive-oil-influencer-marketing-strategy-2024-5",
+   "text_sha256": "22642fc0398d0093fb339a1f9de57b7e314644ffb32b9d3a98dacb5f313bece6",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  }
+ ],
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "prompt_sha256": "bd9bff1e3c40ddf78d981dfff88401a901f7288a868aa92bdc02d6dd18d9004e",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 8.571,
+   "usage": {
+    "prompt_tokens": 421,
+    "completion_tokens": 212,
+    "total_tokens": 633,
+    "prompt_tokens_details": {
+     "cached_tokens": 25
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "Exploring a Collaborative Instagram Post",
+    "body": "Hi Graza team,\n\nWe’ve been analyzing the information available about Graza and believe a collaborative Instagram post could be a really valuable opportunity.  “We” and “our” inside a quote suggest that Graza’s social content, product design, and messaging are intentionally playful and culinary-inspired, rather than overly formal.  Dickieson estimated that Graza has added around 2,000 new social followers since launching the cans.  This suggests a strong and engaged community.  We envision a post that builds on the foundation of F1 – a visual that captures the essence of Graza’s unique style.  We’d like to propose a collaborative Instagram post, created with Graza’s team, that would offer a fresh perspective on the brand.  The post could feature a visually appealing image or short video showcasing the product in a creative way.  We’d like to explore how this collaboration could further enhance the brand’s storytelling.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-2",
+    "passes": false,
+    "problems": [
+     "\"Dickieson estimated that Graza has added around 2,000 new social followers since launching\": states something about the company without a fact marker",
+     "\"We envision a post that builds on the foundation of F1 – a visual that captures the essenc\": mentions a fact id in the text; use it only as a [F#] marker",
+     "\"We envision a post that builds on the foundation of F1 – a visual that captures the essenc\": numbers not in any fact: ['1']",
+     "no sentence uses a verified fact"
+    ],
+    "word_count": 146,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [],
+    "unknown_fact_markers": [],
+    "factual_sentences": 2,
+    "factual_sentences_supported": 1,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Exploring a Collaborative Instagram Post",
+      "kind": "subject",
+      "cited_facts": [],
+      "guard": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Graza team,",
+      "kind": "non_assertion",
+      "cited_facts": [],
+      "guard": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’ve been analyzing the information available about Graza and believe a collaborative Instagram post could be a really valuable opportunity.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "analyzing",
+        "available",
+        "believe",
+        "information",
+        "opportunity",
+        "really",
+        "valuable",
+        "we've"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "“We” and “our” inside a quote suggest that Graza’s social content, product design, and messaging are intentionally playful and culinary-inspired, rather than overly formal.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.692,
+       "uncovered": [
+        "inside",
+        "intentionally",
+        "quote",
+        "suggest"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Dickieson estimated that Graza has added around 2,000 new social followers since launching the cans.",
+      "kind": "factual",
+      "cited_facts": [],
+      "guard": null,
+      "problems": [
+       "states something about the company without a fact marker"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "This suggests a strong and engaged community.",
+      "kind": "factual",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "community",
+        "engaged",
+        "strong",
+        "suggests"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We envision a post that builds on the foundation of F1 – a visual that captures the essence of Graza’s unique style.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.125,
+       "uncovered": [
+        "captures",
+        "envision",
+        "essence",
+        "foundation",
+        "style",
+        "unique",
+        "visual"
+       ],
+       "missing_numbers": [
+        "1"
+       ],
+       "negation_mismatch": false
+      },
+      "problems": [
+       "mentions a fact id in the text; use it only as a [F#] marker",
+       "numbers not in any fact: ['1']"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "We’d like to propose a collaborative Instagram post, created with Graza’s team, that would offer a fresh perspective on the brand.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.2,
+       "uncovered": [
+        "fresh",
+        "offer",
+        "perspective",
+        "we'd"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The post could feature a visually appealing image or short video showcasing the product in a creative way.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "appealing",
+        "creative",
+        "image",
+        "short",
+        "video",
+        "visually",
+        "way"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d like to explore how this collaboration could further enhance the brand’s storytelling.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "brand's",
+        "enhance",
+        "explore",
+        "further",
+        "how",
+        "storytelling",
+        "we'd"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "cited_facts": [],
+      "guard": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Exploring a Collaborative Instagram Post",
+     "body": "Hi Graza team,\n\nWe’ve been analyzing the information available about Graza and believe a collaborative Instagram post could be a really valuable opportunity.  “We” and “our” inside a quote suggest that Graza’s social content, product design, and messaging are intentionally playful and culinary-inspired, rather than overly formal.  Dickieson estimated that Graza has added around 2,000 new social followers since launching the cans.  This suggests a strong and engaged community.  We envision a post that builds on the foundation of F1 – a visual that captures the essence of Graza’s unique style.  We’d like to propose a collaborative Instagram post, created with Graza’s team, that would offer a fresh perspective on the brand.  The post could feature a visually appealing image or short video showcasing the product in a creative way.  We’d like to explore how this collaboration could further enhance the brand’s storytelling.\n\nThe BrandPilot team"
+    }
+   }
+  },
+  {
+   "index": 1,
+   "kind": "targeted_revision",
+   "prompt_sha256": "7cfbb001d1699e536e06b65b61a51cf3a2df5facf59d26c3136338e767f2deaf",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 6.659,
+   "usage": {
+    "prompt_tokens": 792,
+    "completion_tokens": 315,
+    "total_tokens": 1107,
+    "prompt_tokens_details": {
+     "cached_tokens": 416
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "Exploring a Collaborative Instagram Post",
+    "body": "Hi Graza team,\n\nWe’ve been analyzing the information available about Graza and believe a collaborative Instagram post could be a really valuable opportunity. “We” and “our” inside a quote suggest that Graza’s social content, product design, and messaging are intentionally playful and culinary-inspired, rather than overly formal.  Dickieson estimated that Graza has added around 2,000 new social followers since launching the cans. This suggests a strong and engaged community.  We envision a post that builds on the foundation of F1 – a visual that captures the essence of Graza’s unique style.  We’d like to propose a collaborative Instagram post, created with Graza’s team, that would offer a fresh perspective on the brand.  The post could feature a visually appealing image or short video showcasing the product in a creative way.  We’d like to explore how this collaboration could further enhance the brand’s storytelling.\n\nThe BrandPilot team\n\nIt has these problems:\n- \"Dickieson estimated that Graza has added around 2,000 new social followers since launching\": states something about the company without a fact marker\n- \"We envision a post that builds on the foundation of F1 – a visual that captures the essenc\": numbers not in any fact: ['1']\n- \"We envision a post that builds on the foundation of F1 – a visual that captures the essenc\": numbers not in any fact",
+    "format_problems": [],
+    "format_notes": []
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-2",
+    "passes": false,
+    "problems": [
+     "body is 221 words; it must be 100-150",
+     "\"Dickieson estimated that Graza has added around 2,000 new social followers since launching\": states something about the company without a fact marker",
+     "\"We envision a post that builds on the foundation of F1 – a visual that captures the essenc\": mentions a fact id in the text; use it only as a [F#] marker",
+     "\"We envision a post that builds on the foundation of F1 – a visual that captures the essenc\": numbers not in any fact: ['1']",
+     "\"- \"Dickieson estimated that Graza has added around 2,000 new social followers since launch\": states something about the company without a fact marker",
+     "\"- \"We envision a post that builds on the foundation of F1 – a visual that captures the ess\": mentions a fact id in the text; use it only as a [F#] marker",
+     "\"- \"We envision a post that builds on the foundation of F1 – a visual that captures the ess\": numbers not in any fact: ['1']",
+     "\"- \"We envision a post that builds on the foundation of F1 – a visual that captures the ess\": mentions a fact id in the text; use it only as a [F#] marker",
+     "\"- \"We envision a post that builds on the foundation of F1 – a visual that captures the ess\": numbers not in any fact: ['1']",
+     "no sentence uses a verified fact"
+    ],
+    "word_count": 221,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [],
+    "unknown_fact_markers": [],
+    "factual_sentences": 4,
+    "factual_sentences_supported": 2,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Exploring a Collaborative Instagram Post",
+      "kind": "subject",
+      "cited_facts": [],
+      "guard": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Graza team,",
+      "kind": "non_assertion",
+      "cited_facts": [],
+      "guard": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’ve been analyzing the information available about Graza and believe a collaborative Instagram post could be a really valuable opportunity.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "analyzing",
+        "available",
+        "believe",
+        "information",
+        "opportunity",
+        "really",
+        "valuable",
+        "we've"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "“We” and “our” inside a quote suggest that Graza’s social content, product design, and messaging are intentionally playful and culinary-inspired, rather than overly formal.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.692,
+       "uncovered": [
+        "inside",
+        "intentionally",
+        "quote",
+        "suggest"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Dickieson estimated that Graza has added around 2,000 new social followers since launching the cans.",
+      "kind": "factual",
+      "cited_facts": [],
+      "guard": null,
+      "problems": [
+       "states something about the company without a fact marker"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "This suggests a strong and engaged community.",
+      "kind": "factual",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "community",
+        "engaged",
+        "strong",
+        "suggests"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We envision a post that builds on the foundation of F1 – a visual that captures the essence of Graza’s unique style.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.125,
+       "uncovered": [
+        "captures",
+        "envision",
+        "essence",
+        "foundation",
+        "style",
+        "unique",
+        "visual"
+       ],
+       "missing_numbers": [
+        "1"
+       ],
+       "negation_mismatch": false
+      },
+      "problems": [
+       "mentions a fact id in the text; use it only as a [F#] marker",
+       "numbers not in any fact: ['1']"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "We’d like to propose a collaborative Instagram post, created with Graza’s team, that would offer a fresh perspective on the brand.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.2,
+       "uncovered": [
+        "fresh",
+        "offer",
+        "perspective",
+        "we'd"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The post could feature a visually appealing image or short video showcasing the product in a creative way.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "appealing",
+        "creative",
+        "image",
+        "short",
+        "video",
+        "visually",
+        "way"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d like to explore how this collaboration could further enhance the brand’s storytelling.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "brand's",
+        "enhance",
+        "explore",
+        "further",
+        "how",
+        "storytelling",
+        "we'd"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "cited_facts": [],
+      "guard": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "It has these problems:",
+      "kind": "factual",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "problems",
+        "these"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "- \"Dickieson estimated that Graza has added around 2,000 new social followers since launching\": states something about the company without a fact marker",
+      "kind": "factual",
+      "cited_facts": [],
+      "guard": null,
+      "problems": [
+       "states something about the company without a fact marker"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "- \"We envision a post that builds on the foundation of F1 – a visual that captures the essenc\": numbers not in any fact: ['1']",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "'1'",
+        "captures",
+        "envision",
+        "essenc",
+        "fact",
+        "foundation",
+        "not",
+        "numbers",
+        "visual"
+       ],
+       "missing_numbers": [
+        "1"
+       ],
+       "negation_mismatch": false
+      },
+      "problems": [
+       "mentions a fact id in the text; use it only as a [F#] marker",
+       "numbers not in any fact: ['1']"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "- \"We envision a post that builds on the foundation of F1 – a visual that captures the essenc\": numbers not in any fact",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "captures",
+        "envision",
+        "essenc",
+        "fact",
+        "foundation",
+        "not",
+        "numbers",
+        "visual"
+       ],
+       "missing_numbers": [
+        "1"
+       ],
+       "negation_mismatch": false
+      },
+      "problems": [
+       "mentions a fact id in the text; use it only as a [F#] marker",
+       "numbers not in any fact: ['1']"
+      ]
+     }
+    ],
+    "rendered": {
+     "subject": "Exploring a Collaborative Instagram Post",
+     "body": "Hi Graza team,\n\nWe’ve been analyzing the information available about Graza and believe a collaborative Instagram post could be a really valuable opportunity. “We” and “our” inside a quote suggest that Graza’s social content, product design, and messaging are intentionally playful and culinary-inspired, rather than overly formal.  Dickieson estimated that Graza has added around 2,000 new social followers since launching the cans. This suggests a strong and engaged community.  We envision a post that builds on the foundation of F1 – a visual that captures the essence of Graza’s unique style.  We’d like to propose a collaborative Instagram post, created with Graza’s team, that would offer a fresh perspective on the brand.  The post could feature a visually appealing image or short video showcasing the product in a creative way.  We’d like to explore how this collaboration could further enhance the brand’s storytelling.\n\nThe BrandPilot team\n\nIt has these problems:\n- \"Dickieson estimated that Graza has added around 2,000 new social followers since launching\": states something about the company without a fact marker\n- \"We envision a post that builds on the foundation of F1 – a visual that captures the essenc\": numbers not in any fact: ['1']\n- \"We envision a post that builds on the foundation of F1 – a visual that captures the essenc\": numbers not in any fact"
+    }
+   }
+  }
+ ],
+ "opportunity": {
+  "anchor_fact": "F1",
+  "text": "One collaborative Instagram post with Graza, created together with their team, that builds on fact F1.",
+  "kind": "template"
+ },
+ "draft_prompt_sha256": "bd9bff1e3c40ddf78d981dfff88401a901f7288a868aa92bdc02d6dd18d9004e",
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "checks still failing after 1 targeted revision",
+ "arm": "base",
+ "group": "dev",
+ "tag": "iter2"
+}

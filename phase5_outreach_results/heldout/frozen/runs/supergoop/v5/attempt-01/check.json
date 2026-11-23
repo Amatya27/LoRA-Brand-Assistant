@@ -1,0 +1,188 @@
+{
+ "checks_version": "phase5-draft-checks-9",
+ "passes": false,
+ "problems": [
+  "\"We’d like to propose a collaborative Instagram post built around your team’s recent accomp\": refers to company activity not in the verified facts: ['built']"
+ ],
+ "word_count": 136,
+ "recipient": "correct",
+ "sender": "correct",
+ "instagram": true,
+ "other_platforms": [],
+ "promises": [],
+ "facts_used": [
+  "F2"
+ ],
+ "factual_sentences": 2,
+ "factual_sentences_supported": 1,
+ "sentences": [
+  {
+   "location": "subject",
+   "sentence": "Collaboration Opportunity for an Instagram Post",
+   "kind": "subject",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 0
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Hi Supergoop! team,",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We’re a small team dedicated to crafting engaging Instagram content that brings health and wellness to the masses.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [
+     "brings",
+     "conten",
+     "crafti",
+     "dedica",
+     "engagi",
+     "health",
+     "instag",
+     "masses",
+     "small",
+     "wellne"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 10
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We’d like to propose a collaborative Instagram post built around your team’s recent accomplishments, specifically your use of AI and personalized shopping experiences.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.111,
+    "uncovered": [
+     "accomp",
+     "around",
+     "built",
+     "experi",
+     "recent",
+     "shoppi",
+     "specif",
+     "use"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 9
+   },
+   "cited_fact": null,
+   "problems": [
+    "refers to company activity not in the verified facts: ['built']"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "Solution Supergoop! partnered with Envive AI to implement a goal-oriented AI agent that personalized the shopper journey.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 1.0,
+    "uncovered": [],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 10
+   },
+   "cited_fact": "F2",
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "This AI agent allows for a truly personalized shopper journey, and we believe a collaborative post that highlights this would resonate well with your audience.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.571,
+    "uncovered": [
+     "allows",
+     "truly",
+     "well"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 7
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "The post would feature a visually appealing slide showcasing your team's design and a call to action to explore the AI agent further.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.167,
+    "uncovered": [
+     "action",
+     "call",
+     "design",
+     "furthe",
+     "slide"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 6
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "It would build on the idea of a shared experience and a personalized journey, where you both bring a unique perspective to the post.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.222,
+    "uncovered": [
+     "both",
+     "bring",
+     "experi",
+     "perspe",
+     "shared",
+     "unique",
+     "where"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 9
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "The BrandPilot team",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  }
+ ],
+ "rendered": {
+  "subject": "Collaboration Opportunity for an Instagram Post",
+  "body": "Hi Supergoop! team,\n\nWe’re a small team dedicated to crafting engaging Instagram content that brings health and wellness to the masses. We’d like to propose a collaborative Instagram post built around your team’s recent accomplishments, specifically your use of AI and personalized shopping experiences. Solution Supergoop! partnered with Envive AI to implement a goal-oriented AI agent that personalized the shopper journey [P4]. This AI agent allows for a truly personalized shopper journey, and we believe a collaborative post that highlights this would resonate well with your audience. The post would feature a visually appealing slide showcasing your team's design and a call to action to explore the AI agent further. It would build on the idea of a shared experience and a personalized journey, where you both bring a unique perspective to the post.\n\nThe BrandPilot team"
+ },
+ "format_notes": [
+  "sentence-level revision applied"
+ ]
+}

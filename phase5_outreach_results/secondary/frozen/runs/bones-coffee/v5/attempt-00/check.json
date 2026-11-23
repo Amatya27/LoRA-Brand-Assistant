@@ -1,0 +1,156 @@
+{
+ "checks_version": "phase5-draft-checks-9",
+ "passes": true,
+ "problems": [],
+ "word_count": 142,
+ "recipient": "correct",
+ "sender": "correct",
+ "instagram": true,
+ "other_platforms": [],
+ "promises": [],
+ "facts_used": [
+  "F1"
+ ],
+ "factual_sentences": 1,
+ "factual_sentences_supported": 0,
+ "sentences": [
+  {
+   "location": "subject",
+   "sentence": "Collaboration Opportunity for a Delicious Instagram Post",
+   "kind": "subject",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [
+     "delici"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 1
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Hi Bones Coffee Company team,",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We’re reaching out to propose a collaborative Instagram post that builds on the first fact: “The front of a 12 ounce bag of Bones Coffee Company S’morey Time coffee.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.833,
+    "uncovered": [
+     "first"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 6
+   },
+   "cited_fact": "F1",
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We’d like to create a post that highlights the delightful aroma and the playful spirit of your brand, inspired by your mission to inject some flavor into an otherwise boring landscape of coffee companies.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.467,
+    "uncovered": [
+     "aroma",
+     "create",
+     "deligh",
+     "highli",
+     "inspir",
+     "playfu",
+     "post",
+     "spirit"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 15
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "This post would feature a visually appealing carousel showcasing the bag of coffee with a playful, slightly whimsical design that evokes the feeling of a cozy campfire.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.111,
+    "uncovered": [
+     "campfi",
+     "cozy",
+     "design",
+     "evokes",
+     "feelin",
+     "playfu",
+     "slight",
+     "whimsi"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 9
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "The post would be crafted together with your team, emphasizing the fun and creative process of bringing your brand's personality to life through a shared Instagram experience.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [
+     "bringi",
+     "crafte",
+     "emphas",
+     "experi",
+     "life",
+     "person",
+     "proces",
+     "shared",
+     "throug"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 9
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We’d love to hear your thoughts on this idea and invite you to reply with your feedback.",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "The BrandPilot team",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  }
+ ],
+ "rendered": {
+  "subject": "Collaboration Opportunity for a Delicious Instagram Post",
+  "body": "Hi Bones Coffee Company team,\n\nWe’re reaching out to propose a collaborative Instagram post that builds on the first fact: “The front of a 12 ounce bag of Bones Coffee Company S’morey Time coffee [P1]. We’d like to create a post that highlights the delightful aroma and the playful spirit of your brand, inspired by your mission to inject some flavor into an otherwise boring landscape of coffee companies. This post would feature a visually appealing carousel showcasing the bag of coffee with a playful, slightly whimsical design that evokes the feeling of a cozy campfire. The post would be crafted together with your team, emphasizing the fun and creative process of bringing your brand's personality to life through a shared Instagram experience.\n\nWe’d love to hear your thoughts on this idea and invite you to reply with your feedback.\n\nThe BrandPilot team"
+ },
+ "format_notes": [
+  "BODY label missing; text after the subject line used as the body"
+ ]
+}

@@ -1,0 +1,169 @@
+{
+ "checks_version": "phase5-draft-checks-9",
+ "passes": true,
+ "problems": [],
+ "word_count": 126,
+ "recipient": "correct",
+ "sender": "correct",
+ "instagram": true,
+ "other_platforms": [],
+ "promises": [],
+ "facts_used": [
+  "F1",
+  "F2",
+  "F3"
+ ],
+ "factual_sentences": 2,
+ "factual_sentences_supported": 1,
+ "sentences": [
+  {
+   "location": "subject",
+   "sentence": "Collaboration Proposal",
+   "kind": "subject",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 0
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Hi Reformation team,",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We are a small Instagram content studio dedicated to crafting beautiful, timeless womenswear and inspiring confidence.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.5,
+    "uncovered": [
+     "conten",
+     "crafti",
+     "dedica",
+     "instag",
+     "small"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 10
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We’d like to propose a collaborative Instagram post with you, designed to build on the first fact – that you make beautiful, timeless womenswear that inspires confidence and deep brand love from your customer base spanning generations and geographies.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.846,
+    "uncovered": [
+     "design",
+     "first"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 13
+   },
+   "cited_fact": "F1",
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "You consistently drop new collections and selectively collaborate with influential figures, which are key to your momentum.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F2+F3",
+    "coverage": 0.6,
+    "uncovered": [
+     "drop",
+     "figure",
+     "influe",
+     "key"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 10
+   },
+   "cited_fact": "F2+F3",
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Essentially, this post would showcase a new collection, highlighting the unique design process and the collaborations that bring it to life.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F3",
+    "coverage": 0.143,
+    "uncovered": [
+     "bring",
+     "design",
+     "essent",
+     "life",
+     "proces",
+     "unique"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 7
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "It would visually represent the feeling of timeless elegance and the power of genuine connection with your audience.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.143,
+    "uncovered": [
+     "connec",
+     "elegan",
+     "feelin",
+     "genuin",
+     "power",
+     "repres"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 7
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Please reply if you’re interested in exploring this idea further.",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "The BrandPilot team",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  }
+ ],
+ "rendered": {
+  "subject": "Collaboration Proposal",
+  "body": "Hi Reformation team,\n\nWe are a small Instagram content studio dedicated to crafting beautiful, timeless womenswear and inspiring confidence. We’d like to propose a collaborative Instagram post with you, designed to build on the first fact – that you make beautiful, timeless womenswear that inspires confidence and deep brand love from your customer base spanning generations and geographies [P1]. You consistently drop new collections and selectively collaborate with influential figures, which are key to your momentum [P3][P5]. Essentially, this post would showcase a new collection, highlighting the unique design process and the collaborations that bring it to life. It would visually represent the feeling of timeless elegance and the power of genuine connection with your audience.\n\nPlease reply if you’re interested in exploring this idea further.\n\nThe BrandPilot team"
+ },
+ "format_notes": [
+  "BODY label missing; text after the subject line used as the body"
+ ]
+}

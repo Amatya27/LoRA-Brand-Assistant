@@ -1,0 +1,166 @@
+{
+ "checks_version": "phase5-draft-checks-9",
+ "passes": true,
+ "problems": [],
+ "word_count": 126,
+ "recipient": "correct",
+ "sender": "correct",
+ "instagram": true,
+ "other_platforms": [],
+ "promises": [],
+ "facts_used": [
+  "F1"
+ ],
+ "factual_sentences": 1,
+ "factual_sentences_supported": 0,
+ "sentences": [
+  {
+   "location": "subject",
+   "sentence": "Hi Away team,",
+   "kind": "subject",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 0
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Hi Away team,",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We're a small Instagram content studio dedicated to bringing creative energy to the travel space.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.111,
+    "uncovered": [
+     "bringi",
+     "conten",
+     "creati",
+     "dedica",
+     "energy",
+     "instag",
+     "small",
+     "space"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 9
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We'd like to propose a collaborative Instagram post that builds on the idea of Away's new 'White Lotus' luggage collab, specifically highlighting the dreamy aesthetic and the limited-edition collection's global launch on February 11th.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.692,
+    "uncovered": [
+     "11th",
+     "aesthe",
+     "februa",
+     "specif"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 13
+   },
+   "cited_fact": "F1",
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "This post would showcase a visually appealing carousel of images, each building on a different aspect of the collab, such as the design process or the cultural inspiration behind it.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F3",
+    "coverage": 0.143,
+    "uncovered": [
+     "aspect",
+     "behind",
+     "cultur",
+     "differ",
+     "images",
+     "proces"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 7
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Your combined efforts would bring a unique and delightful perspective to the collection, creating a shared experience for your audience.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.111,
+    "uncovered": [
+     "bring",
+     "combin",
+     "deligh",
+     "effort",
+     "experi",
+     "perspe",
+     "shared",
+     "unique"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 9
+   },
+   "cited_fact": "F1",
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "It would be a chance to showcase the beauty of the collection and the creative partnership that brought it to life.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.2,
+    "uncovered": [
+     "beauty",
+     "brough",
+     "chance",
+     "life"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 5
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "The BrandPilot team",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  }
+ ],
+ "rendered": {
+  "subject": "Hi Away team,",
+  "body": "Hi Away team,\n\nWe're a small Instagram content studio dedicated to bringing creative energy to the travel space. We'd like to propose a collaborative Instagram post that builds on the idea of Away's new 'White Lotus' luggage collab, specifically highlighting the dreamy aesthetic and the limited-edition collection's global launch on February 11th [P6]. This post would showcase a visually appealing carousel of images, each building on a different aspect of the collab, such as the design process or the cultural inspiration behind it. Your combined efforts would bring a unique and delightful perspective to the collection, creating a shared experience for your audience [P6]. It would be a chance to showcase the beauty of the collection and the creative partnership that brought it to life.\n\nThe BrandPilot team"
+ },
+ "format_notes": [
+  "BODY label missing; text after the subject line used as the body"
+ ]
+}

@@ -1,0 +1,181 @@
+{
+ "checks_version": "phase5-draft-checks-6",
+ "passes": false,
+ "problems": [
+  "\"You’ve highlighted the importance of pre-existing demand signals, and the founder and CEO \": factual statement not supported by a verified fact (best fact F3 covers 0.31; unsupported words: demand, existi, experi, highli, import, naviga, pandem, pre)"
+ ],
+ "word_count": 112,
+ "recipient": "correct",
+ "sender": "correct",
+ "instagram": true,
+ "other_platforms": [],
+ "promises": [],
+ "facts_used": [
+  "F1"
+ ],
+ "factual_sentences": 2,
+ "factual_sentences_supported": 0,
+ "sentences": [
+  {
+   "location": "subject",
+   "sentence": "Collaboration Proposal",
+   "kind": "subject",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 0
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Hi Fly By Jing team,",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We are a small team dedicated to crafting engaging Instagram content.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [
+     "conten",
+     "crafti",
+     "dedica",
+     "engagi",
+     "instag",
+     "small"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 6
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We’d like to propose a collaborative Instagram post with you and Fly By Jing, built on the fact that partnering with other brands is a key tactic for their community-building strategy.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.714,
+    "uncovered": [
+     "built",
+     "key"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 7
+   },
+   "cited_fact": "F1",
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "You’ve highlighted the importance of pre-existing demand signals, and the founder and CEO Jing Gao shared her experiences navigating the coronavirus pandemic.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F3",
+    "coverage": 0.312,
+    "uncovered": [
+     "demand",
+     "existi",
+     "experi",
+     "highli",
+     "import",
+     "naviga",
+     "pandem",
+     "pre",
+     "shared",
+     "signal",
+     "you've"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 16
+   },
+   "cited_fact": null,
+   "problems": [
+    "factual statement not supported by a verified fact (best fact F3 covers 0.31; unsupported words: demand, existi, experi, highli, import, naviga, pandem, pre)"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "Essentially, this post would showcase a shared visual experience, reflecting the brand’s unique approach to building connections.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [
+     "approa",
+     "connec",
+     "essent",
+     "experi",
+     "reflec",
+     "shared",
+     "unique"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 7
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "It would aim to visually represent the core values of Fly By Jing – a thoughtful and flavorful experience.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [
+     "aim",
+     "core",
+     "experi",
+     "flavor",
+     "repres",
+     "though",
+     "values"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 7
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Please reply with your thoughts.",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "The BrandPilot team",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  }
+ ],
+ "rendered": {
+  "subject": "Collaboration Proposal",
+  "body": "Hi Fly By Jing team,\n\nWe are a small team dedicated to crafting engaging Instagram content. We’d like to propose a collaborative Instagram post with you and Fly By Jing, built on the fact that partnering with other brands is a key tactic for their community-building strategy [P3]. You’ve highlighted the importance of pre-existing demand signals, and the founder and CEO Jing Gao shared her experiences navigating the coronavirus pandemic. Essentially, this post would showcase a shared visual experience, reflecting the brand’s unique approach to building connections. It would aim to visually represent the core values of Fly By Jing – a thoughtful and flavorful experience.\n\nPlease reply with your thoughts.\n\nThe BrandPilot team"
+ },
+ "format_notes": [
+  "sentence-level revision applied"
+ ]
+}

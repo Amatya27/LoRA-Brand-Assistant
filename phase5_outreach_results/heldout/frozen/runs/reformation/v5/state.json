@@ -1,0 +1,461 @@
+{
+ "workflow_version": "phase5-outreach-1",
+ "fact_selector_version": "phase5-facts-1",
+ "draft_prompt_version": "phase5-draft-prompt-7",
+ "checks_version": "phase5-draft-checks-9",
+ "company_id": "reformation",
+ "packet_sha256": "61fe6bcd04bc4a742ea34dffabca8f10ccad1bec4d298655d05742c9c19a6ab7",
+ "facts": [
+  {
+   "fact_id": "F1",
+   "passage_id": "P1",
+   "quote": "We make beautiful, timeless womenswear that inspires confidence and deep brand love from our customer base spanning generations and geographies.",
+   "score": 5.0,
+   "statement_type": "brand_positioning",
+   "official_source": true,
+   "source_url": "https://investors.thereformation.com/",
+   "text_sha256": "fc2c5d7c73fd858457792ce4ef3668d105d6be5a7a97d6864f22c0a0b346d14c",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F2",
+   "passage_id": "P3",
+   "quote": "Reformation’s momentum comes from consistent drops and selective collaborations.",
+   "score": 4.45,
+   "statement_type": "actual_activity",
+   "official_source": false,
+   "source_url": "https://www.brandvm.com/post/reformation-marketing-strategy",
+   "text_sha256": "ca7800f80d960c3a02aa249f956a44e3307d78e8d0ecdc0abf6179a56ef60d91",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F3",
+   "passage_id": "P5",
+   "quote": "Reformation uses these posts to promote new sales, collection drops, and their sustainability reports.",
+   "score": 2.7,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://www.dtcpatterns.com/dtc-patterns-articles/how-reformation-connects-and-educates-with-their-customers-on-social-media",
+   "text_sha256": "1134324ed093d61523f08005b42fdf3a630c7c0937ff29084564398bda66eb5c",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  }
+ ],
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "revision_mode": null,
+   "prompt_sha256": "c2b45984ba015b4b615bd032cd8d77d2584d6283fc6ac617ebd5ce34b08a3b71",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 7.772,
+   "usage": {
+    "prompt_tokens": 457,
+    "completion_tokens": 167,
+    "total_tokens": 624,
+    "prompt_tokens_details": {
+     "cached_tokens": 25
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "Collaboration Opportunity for Instagram Engagement",
+    "body": "Hi Reformation team,\n\nWe're a small Instagram content studio dedicated to bringing beauty and confidence to your audience through timeless women'swear. We'd like to propose a collaborative Instagram post built on the fact that Reformation has a consistent release schedule and carefully selected collaborations that drive engagement. You make beautiful, timeless womenswear that inspires confidence and deep brand love from your customer base spanning generations and geographies, and your posts are a key way you use them to promote new sales, collection drops, and your sustainability reports. This post would showcase a new collection, highlighting the brand's commitment to sustainability and inviting your audience to discover it together. It would be a visually appealing post that builds on the idea of a shared experience and reinforces your commitment to your audience.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-9",
+    "passes": false,
+    "problems": [
+     "\"We'd like to propose a collaborative Instagram post built on the fact that Reformation has\": proposal states a premise about the company that no verified fact supports (best fact F2 covers 0.38; unsupported words: carefu, drive, engage, releas, schedu)"
+    ],
+    "word_count": 134,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [
+     "F1",
+     "F3"
+    ],
+    "factual_sentences": 2,
+    "factual_sentences_supported": 1,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Collaboration Opportunity for Instagram Engagement",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "engage"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 1
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Reformation team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We're a small Instagram content studio dedicated to bringing beauty and confidence to your audience through timeless women'swear.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.182,
+       "uncovered": [
+        "audien",
+        "beauty",
+        "bringi",
+        "conten",
+        "dedica",
+        "instag",
+        "small",
+        "throug",
+        "women'"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 11
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We'd like to propose a collaborative Instagram post built on the fact that Reformation has a consistent release schedule and carefully selected collaborations that drive engagement.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.375,
+       "uncovered": [
+        "carefu",
+        "drive",
+        "engage",
+        "releas",
+        "schedu"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 8
+      },
+      "cited_fact": null,
+      "problems": [
+       "proposal states a premise about the company that no verified fact supports (best fact F2 covers 0.38; unsupported words: carefu, drive, engage, releas, schedu)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "You make beautiful, timeless womenswear that inspires confidence and deep brand love from your customer base spanning generations and geographies, and your posts are a key way you use them to promote new sales, collection drops, and your sustainability reports.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1+F3",
+       "coverage": 0.833,
+       "uncovered": [
+        "key",
+        "them",
+        "use",
+        "way"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 24
+      },
+      "cited_fact": "F1+F3",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "This post would showcase a new collection, highlighting the brand's commitment to sustainability and inviting your audience to discover it together.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F3",
+       "coverage": 0.4,
+       "uncovered": [
+        "commit",
+        "discov",
+        "inviti"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 5
+      },
+      "cited_fact": "F3",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "It would be a visually appealing post that builds on the idea of a shared experience and reinforces your commitment to your audience.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "commit",
+        "experi",
+        "reinfo",
+        "shared"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 4
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Collaboration Opportunity for Instagram Engagement",
+     "body": "Hi Reformation team,\n\nWe're a small Instagram content studio dedicated to bringing beauty and confidence to your audience through timeless women'swear. We'd like to propose a collaborative Instagram post built on the fact that Reformation has a consistent release schedule and carefully selected collaborations that drive engagement. You make beautiful, timeless womenswear that inspires confidence and deep brand love from your customer base spanning generations and geographies, and your posts are a key way you use them to promote new sales, collection drops, and your sustainability reports [P1][P5]. This post would showcase a new collection, highlighting the brand's commitment to sustainability and inviting your audience to discover it together [P5]. It would be a visually appealing post that builds on the idea of a shared experience and reinforces your commitment to your audience.\n\nThe BrandPilot team"
+    },
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   }
+  },
+  {
+   "index": 1,
+   "kind": "targeted_revision",
+   "revision_mode": "sentences",
+   "prompt_sha256": "c0d7fcd183209916fc7746d8bb8e9fa4019876155948b857a8ebc17a3f3201d8",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 1.01,
+   "usage": {
+    "prompt_tokens": 259,
+    "completion_tokens": 33,
+    "total_tokens": 292,
+    "prompt_tokens_details": {
+     "cached_tokens": 24
+    }
+   },
+   "error": null,
+   "sentence_edits": [
+    {
+     "index": 1,
+     "location": "body",
+     "old": "We'd like to propose a collaborative Instagram post built on the fact that Reformation has a consistent release schedule and carefully selected collaborations that drive engagement.",
+     "new": "We'd like to propose a collaborative Instagram post built on the fact that Reformation has a consistent release schedule and carefully selected collaborations that drive engagement.",
+     "action": "replace"
+    }
+   ],
+   "parsed": {
+    "subject": "Collaboration Opportunity for Instagram Engagement",
+    "body": "Hi Reformation team,\n\nWe're a small Instagram content studio dedicated to bringing beauty and confidence to your audience through timeless women'swear. We'd like to propose a collaborative Instagram post built on the fact that Reformation has a consistent release schedule and carefully selected collaborations that drive engagement. You make beautiful, timeless womenswear that inspires confidence and deep brand love from your customer base spanning generations and geographies, and your posts are a key way you use them to promote new sales, collection drops, and your sustainability reports. This post would showcase a new collection, highlighting the brand's commitment to sustainability and inviting your audience to discover it together. It would be a visually appealing post that builds on the idea of a shared experience and reinforces your commitment to your audience.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": [
+     "sentence-level revision applied"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-9",
+    "passes": false,
+    "problems": [
+     "\"We'd like to propose a collaborative Instagram post built on the fact that Reformation has\": proposal states a premise about the company that no verified fact supports (best fact F2 covers 0.38; unsupported words: carefu, drive, engage, releas, schedu)"
+    ],
+    "word_count": 134,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [
+     "F1",
+     "F3"
+    ],
+    "factual_sentences": 2,
+    "factual_sentences_supported": 1,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Collaboration Opportunity for Instagram Engagement",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "engage"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 1
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Reformation team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We're a small Instagram content studio dedicated to bringing beauty and confidence to your audience through timeless women'swear.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.182,
+       "uncovered": [
+        "audien",
+        "beauty",
+        "bringi",
+        "conten",
+        "dedica",
+        "instag",
+        "small",
+        "throug",
+        "women'"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 11
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We'd like to propose a collaborative Instagram post built on the fact that Reformation has a consistent release schedule and carefully selected collaborations that drive engagement.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.375,
+       "uncovered": [
+        "carefu",
+        "drive",
+        "engage",
+        "releas",
+        "schedu"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 8
+      },
+      "cited_fact": null,
+      "problems": [
+       "proposal states a premise about the company that no verified fact supports (best fact F2 covers 0.38; unsupported words: carefu, drive, engage, releas, schedu)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "You make beautiful, timeless womenswear that inspires confidence and deep brand love from your customer base spanning generations and geographies, and your posts are a key way you use them to promote new sales, collection drops, and your sustainability reports.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1+F3",
+       "coverage": 0.833,
+       "uncovered": [
+        "key",
+        "them",
+        "use",
+        "way"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 24
+      },
+      "cited_fact": "F1+F3",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "This post would showcase a new collection, highlighting the brand's commitment to sustainability and inviting your audience to discover it together.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F3",
+       "coverage": 0.4,
+       "uncovered": [
+        "commit",
+        "discov",
+        "inviti"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 5
+      },
+      "cited_fact": "F3",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "It would be a visually appealing post that builds on the idea of a shared experience and reinforces your commitment to your audience.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "commit",
+        "experi",
+        "reinfo",
+        "shared"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 4
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Collaboration Opportunity for Instagram Engagement",
+     "body": "Hi Reformation team,\n\nWe're a small Instagram content studio dedicated to bringing beauty and confidence to your audience through timeless women'swear. We'd like to propose a collaborative Instagram post built on the fact that Reformation has a consistent release schedule and carefully selected collaborations that drive engagement. You make beautiful, timeless womenswear that inspires confidence and deep brand love from your customer base spanning generations and geographies, and your posts are a key way you use them to promote new sales, collection drops, and your sustainability reports [P1][P5]. This post would showcase a new collection, highlighting the brand's commitment to sustainability and inviting your audience to discover it together [P5]. It would be a visually appealing post that builds on the idea of a shared experience and reinforces your commitment to your audience.\n\nThe BrandPilot team"
+    },
+    "format_notes": [
+     "sentence-level revision applied"
+    ]
+   }
+  }
+ ],
+ "opportunity": {
+  "anchor_fact": "F1",
+  "text": "One collaborative Instagram post with Reformation, created together with their team, that builds on the first fact above.",
+  "kind": "template"
+ },
+ "draft_prompt_sha256": "c2b45984ba015b4b615bd032cd8d77d2584d6283fc6ac617ebd5ce34b08a3b71",
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "checks still failing after 1 targeted revision",
+ "arm": "v5",
+ "group": "heldout",
+ "tag": "frozen"
+}

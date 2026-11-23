@@ -1,0 +1,200 @@
+{
+ "checks_version": "phase5-draft-checks-3",
+ "passes": false,
+ "problems": [
+  "body is 158 words; it must be 100-150",
+  "\"We're reaching out to propose a collaborative Instagram post that builds on the fact that \": proposal states a premise about the company that no verified fact supports (best fact F2 covers 0.30; unsupported words: fact, follow, gained, presen, quickl, starte, we're)",
+  "no sentence restates a verified fact"
+ ],
+ "word_count": 158,
+ "recipient": "correct",
+ "sender": "correct",
+ "instagram": true,
+ "other_platforms": [],
+ "promises": [],
+ "facts_used": [],
+ "factual_sentences": 0,
+ "factual_sentences_supported": 0,
+ "sentences": [
+  {
+   "location": "subject",
+   "sentence": "A Delightful Visual Moment",
+   "kind": "subject",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [
+     "deligh",
+     "moment"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 2
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Hi Graza team,",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We're reaching out to propose a collaborative Instagram post that builds on the fact that Graza started with a playful, culinary-inspired social presence and has quickly gained a following.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.3,
+    "uncovered": [
+     "fact",
+     "follow",
+     "gained",
+     "presen",
+     "quickl",
+     "starte",
+     "we're"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 10
+   },
+   "cited_fact": null,
+   "problems": [
+    "proposal states a premise about the company that no verified fact supports (best fact F2 covers 0.30; unsupported words: fact, follow, gained, presen, quickl, starte, we're)"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "Imagine a post that highlights your unique approach to creating a visually appealing and engaging experience for your audience, paired with a bit of playful storytelling.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.125,
+    "uncovered": [
+     "approa",
+     "bit",
+     "experi",
+     "imagin",
+     "paired",
+     "storyt",
+     "unique"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 8
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "It would be a chance to showcase your dedication to crafting a memorable Instagram experience that resonates with your target demographic.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.143,
+    "uncovered": [
+     "chance",
+     "crafti",
+     "dedica",
+     "demogr",
+     "experi",
+     "memora"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 7
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "This post would be a great way to further amplify your brand’s personality and invite further engagement with your community.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [
+     "amplif",
+     "commun",
+     "engage",
+     "furthe",
+     "invite",
+     "person"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 6
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "It would be a chance to share a moment of genuine delight that captures the spirit of your brand, while also showcasing your dedication to creating a memorable Instagram experience that resonates with your target demographic.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.083,
+    "uncovered": [
+     "captur",
+     "chance",
+     "dedica",
+     "deligh",
+     "demogr",
+     "experi",
+     "genuin",
+     "memora",
+     "moment",
+     "spirit",
+     "while"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 12
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "This post would be a great way to further amplify your brand’s personality and invite further engagement with your community.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [
+     "amplif",
+     "commun",
+     "engage",
+     "furthe",
+     "invite",
+     "person"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 6
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "The BrandPilot team",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  }
+ ],
+ "rendered": {
+  "subject": "A Delightful Visual Moment",
+  "body": "Hi Graza team,\n\nWe're reaching out to propose a collaborative Instagram post that builds on the fact that Graza started with a playful, culinary-inspired social presence and has quickly gained a following. Imagine a post that highlights your unique approach to creating a visually appealing and engaging experience for your audience, paired with a bit of playful storytelling. It would be a chance to showcase your dedication to crafting a memorable Instagram experience that resonates with your target demographic. This post would be a great way to further amplify your brand’s personality and invite further engagement with your community. It would be a chance to share a moment of genuine delight that captures the spirit of your brand, while also showcasing your dedication to creating a memorable Instagram experience that resonates with your target demographic. This post would be a great way to further amplify your brand’s personality and invite further engagement with your community.\n\nThe BrandPilot team"
+ },
+ "format_notes": []
+}

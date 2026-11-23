@@ -1,0 +1,596 @@
+{
+ "workflow_version": "phase5-outreach-1",
+ "fact_selector_version": "phase5-facts-1",
+ "draft_prompt_version": "phase5-draft-prompt-5",
+ "checks_version": "phase5-draft-checks-5",
+ "company_id": "graza",
+ "packet_sha256": "90fc71b07ba6c1187fbcacc9fd4e9cf66b948d1c0e45f62dc877017037d2aaab",
+ "facts": [
+  {
+   "fact_id": "F1",
+   "passage_id": "P8",
+   "quote": "Graza started Direct-to-Consumer (DTC) but also made sure to get into grocers like Whole Foods, Target, etc.",
+   "score": 4.85,
+   "statement_type": "actual_activity",
+   "official_source": false,
+   "source_url": "https://behindthebrandnews.com/p/case-study-graza",
+   "text_sha256": "d3e5795880a3411f423342c22230050a0f1abced53128f251f7c77da047f725b",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F2",
+   "passage_id": "P7",
+   "quote": "Graza’s social content, product design, and messaging are playful and culinary-inspired rather than overly formal.",
+   "score": 4.75,
+   "statement_type": "actual_activity",
+   "official_source": false,
+   "source_url": "https://behindthebrandnews.com/p/case-study-graza",
+   "text_sha256": "30ae4473d4995caa8605f069b3de2924a823dd6f208863556ff88fadfe6b6d11",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F3",
+   "passage_id": "P9",
+   "quote": "Dickieson estimated that Graza has added around 2,000 new social followers since launching the cans.",
+   "score": 2.8,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://www.businessinsider.com/inside-graza-olive-oil-influencer-marketing-strategy-2024-5",
+   "text_sha256": "22642fc0398d0093fb339a1f9de57b7e314644ffb32b9d3a98dacb5f313bece6",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  }
+ ],
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "revision_mode": null,
+   "prompt_sha256": "b0ab27972a945eab593483bb2b0335b05e9cdc672922d0b54031538601f61827",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 13.877,
+   "usage": {
+    "prompt_tokens": 497,
+    "completion_tokens": 216,
+    "total_tokens": 713,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "Collaboration Proposal - Instagram Post",
+    "body": "Hi Graza team,\n\nWe are a small Instagram content studio dedicated to crafting authentic and playful experiences for food lovers. We’d like to propose a collaborative Instagram post with you and Graza, built around the fact that Graza started Direct-to-Consumer (DTC) but also secured placement in grocers like Whole Foods, Target, and others. You’ve cultivated a social content strategy that’s distinctly flavorful and culinary-inspired, showcasing your unique design and messaging. Essentially, Graza’s social content, product design, and messaging are playful and culinary-inspired rather than overly formal. Dickieson estimated that Graza has added around 2,000 new social followers since launching the cans.\n\nWe envision a collaborative Instagram post where you and our team create a visual piece that complements the first fact – a shared moment of visual delight. Together, we’ll craft a post that builds on the initial discovery and showcases the playful nature of Graza's social content.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-5",
+    "passes": false,
+    "problems": [
+     "body is 151 words; it must be 100-150",
+     "\"You’ve cultivated a social content strategy that’s distinctly flavorful and culinary-inspi\": factual statement not supported by a verified fact (best fact F2 covers 0.43; unsupported words: cultiv, distin, flavor, showca, strate, that, unique, you've)",
+     "\"Together, we’ll craft a post that builds on the initial discovery and showcases the playfu\": factual statement not supported by a verified fact (best fact F2 covers 0.25; unsupported words: builds, craft, discov, initia, nature, post, showca, togeth)"
+    ],
+    "word_count": 151,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [
+     "F1",
+     "F2",
+     "F3"
+    ],
+    "factual_sentences": 5,
+    "factual_sentences_supported": 2,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Collaboration Proposal - Instagram Post",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 0
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Graza team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We are a small Instagram content studio dedicated to crafting authentic and playful experiences for food lovers.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.2,
+       "uncovered": [
+        "authen",
+        "crafti",
+        "dedica",
+        "experi",
+        "food",
+        "instag",
+        "lovers",
+        "small"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 10
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d like to propose a collaborative Instagram post with you and Graza, built around the fact that Graza started Direct-to-Consumer (DTC) but also secured placement in grocers like Whole Foods, Target, and others.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.643,
+       "uncovered": [
+        "around",
+        "built",
+        "others",
+        "placem",
+        "secure"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 14
+      },
+      "cited_fact": "F1",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "You’ve cultivated a social content strategy that’s distinctly flavorful and culinary-inspired, showcasing your unique design and messaging.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.429,
+       "uncovered": [
+        "cultiv",
+        "distin",
+        "flavor",
+        "showca",
+        "strate",
+        "that",
+        "unique",
+        "you've"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 14
+      },
+      "cited_fact": null,
+      "problems": [
+       "factual statement not supported by a verified fact (best fact F2 covers 0.43; unsupported words: cultiv, distin, flavor, showca, strate, that, unique, you've)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "Essentially, Graza’s social content, product design, and messaging are playful and culinary-inspired rather than overly formal.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.909,
+       "uncovered": [
+        "essent"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 11
+      },
+      "cited_fact": "F2",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Dickieson estimated that Graza has added around 2,000 new social followers since launching the cans.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F3",
+       "coverage": 1.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 11
+      },
+      "cited_fact": "F3",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We envision a collaborative Instagram post where you and our team create a visual piece that complements the first fact – a shared moment of visual delight.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "comple",
+        "deligh",
+        "first",
+        "moment",
+        "piece",
+        "shared",
+        "where"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 7
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Together, we’ll craft a post that builds on the initial discovery and showcases the playful nature of Graza's social content.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.25,
+       "uncovered": [
+        "builds",
+        "craft",
+        "discov",
+        "initia",
+        "nature",
+        "post",
+        "showca",
+        "togeth",
+        "we'll"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 12
+      },
+      "cited_fact": null,
+      "problems": [
+       "factual statement not supported by a verified fact (best fact F2 covers 0.25; unsupported words: builds, craft, discov, initia, nature, post, showca, togeth)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Collaboration Proposal - Instagram Post",
+     "body": "Hi Graza team,\n\nWe are a small Instagram content studio dedicated to crafting authentic and playful experiences for food lovers. We’d like to propose a collaborative Instagram post with you and Graza, built around the fact that Graza started Direct-to-Consumer (DTC) but also secured placement in grocers like Whole Foods, Target, and others [P8]. You’ve cultivated a social content strategy that’s distinctly flavorful and culinary-inspired, showcasing your unique design and messaging. Essentially, Graza’s social content, product design, and messaging are playful and culinary-inspired rather than overly formal [P7]. Dickieson estimated that Graza has added around 2,000 new social followers since launching the cans [P9].\n\nWe envision a collaborative Instagram post where you and our team create a visual piece that complements the first fact – a shared moment of visual delight. Together, we’ll craft a post that builds on the initial discovery and showcases the playful nature of Graza's social content.\n\nThe BrandPilot team"
+    },
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   }
+  },
+  {
+   "index": 1,
+   "kind": "targeted_revision",
+   "revision_mode": "sentences",
+   "prompt_sha256": "59f1fdbebd3ab9bf4f82340ef8d491a901a4e6eeb95989afeafd1b66bcd98946",
+   "ok": true,
+   "finish_reason": "length",
+   "runtime_verified": true,
+   "latency_s": 16.766,
+   "usage": {
+    "prompt_tokens": 376,
+    "completion_tokens": 400,
+    "total_tokens": 776,
+    "prompt_tokens_details": {
+     "cached_tokens": 5
+    }
+   },
+   "error": null,
+   "sentence_edits": [
+    {
+     "index": 1,
+     "location": "body",
+     "old": "You’ve cultivated a social content strategy that’s distinctly flavorful and culinary-inspired, showcasing your unique design and messaging.",
+     "new": "You’ve cultivated a social content strategy that’s distinctly flavorful and culinary-inspired, showcasing your unique design and messaging.” (problem: factual statement not supported by a verified fact)",
+     "action": "replace"
+    },
+    {
+     "index": 2,
+     "location": "body",
+     "old": "Together, we’ll craft a post that builds on the initial discovery and showcases the playful nature of Graza's social content.",
+     "new": "Together, we’ll craft a post that builds on the initial discovery and showcases the playful nature of Graza’s social content.” (problem: factual statement not supported by a verified fact)",
+     "action": "replace"
+    }
+   ],
+   "parsed": {
+    "subject": "Collaboration Proposal - Instagram Post",
+    "body": "Hi Graza team,\n\nWe are a small Instagram content studio dedicated to crafting authentic and playful experiences for food lovers. We’d like to propose a collaborative Instagram post with you and Graza, built around the fact that Graza started Direct-to-Consumer (DTC) but also secured placement in grocers like Whole Foods, Target, and others. You’ve cultivated a social content strategy that’s distinctly flavorful and culinary-inspired, showcasing your unique design and messaging.” (problem: factual statement not supported by a verified fact) Essentially, Graza’s social content, product design, and messaging are playful and culinary-inspired rather than overly formal. Dickieson estimated that Graza has added around 2,000 new social followers since launching the cans.\n\nWe envision a collaborative Instagram post where you and our team create a visual piece that complements the first fact – a shared moment of visual delight. Together, we’ll craft a post that builds on the initial discovery and showcases the playful nature of Graza’s social content.” (problem: factual statement not supported by a verified fact)\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": [
+     "sentence-level revision applied"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-5",
+    "passes": false,
+    "problems": [
+     "output was cut off at the token limit",
+     "body is 169 words; it must be 100-150",
+     "\"You’ve cultivated a social content strategy that’s distinctly flavorful and culinary-inspi\": factual statement not supported by a verified fact (best fact F2 covers 0.43; unsupported words: cultiv, distin, flavor, showca, strate, that, unique, you've)",
+     "\"(problem: factual statement not supported by a verified fact) Essentially, Graza’s social \": factual statement not supported by a verified fact (best fact F2 covers 0.59; unsupported words: essent, factua, not, proble, statem, suppor, verifi)",
+     "\"Together, we’ll craft a post that builds on the initial discovery and showcases the playfu\": factual statement not supported by a verified fact (best fact F2 covers 0.25; unsupported words: builds, craft, discov, initia, nature, post, showca, togeth)",
+     "\"(problem: factual statement not supported by a verified fact)\": factual statement not supported by a verified fact (best fact F1 covers 0.00; unsupported words: factua, not, proble, statem, suppor, verifi)"
+    ],
+    "word_count": 169,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [
+     "F1",
+     "F3"
+    ],
+    "factual_sentences": 6,
+    "factual_sentences_supported": 1,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Collaboration Proposal - Instagram Post",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 0
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Graza team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We are a small Instagram content studio dedicated to crafting authentic and playful experiences for food lovers.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.2,
+       "uncovered": [
+        "authen",
+        "crafti",
+        "dedica",
+        "experi",
+        "food",
+        "instag",
+        "lovers",
+        "small"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 10
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d like to propose a collaborative Instagram post with you and Graza, built around the fact that Graza started Direct-to-Consumer (DTC) but also secured placement in grocers like Whole Foods, Target, and others.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.643,
+       "uncovered": [
+        "around",
+        "built",
+        "others",
+        "placem",
+        "secure"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 14
+      },
+      "cited_fact": "F1",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "You’ve cultivated a social content strategy that’s distinctly flavorful and culinary-inspired, showcasing your unique design and messaging.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.429,
+       "uncovered": [
+        "cultiv",
+        "distin",
+        "flavor",
+        "showca",
+        "strate",
+        "that",
+        "unique",
+        "you've"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 14
+      },
+      "cited_fact": null,
+      "problems": [
+       "factual statement not supported by a verified fact (best fact F2 covers 0.43; unsupported words: cultiv, distin, flavor, showca, strate, that, unique, you've)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "(problem: factual statement not supported by a verified fact) Essentially, Graza’s social content, product design, and messaging are playful and culinary-inspired rather than overly formal.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.588,
+       "uncovered": [
+        "essent",
+        "factua",
+        "not",
+        "proble",
+        "statem",
+        "suppor",
+        "verifi"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 17
+      },
+      "cited_fact": null,
+      "problems": [
+       "factual statement not supported by a verified fact (best fact F2 covers 0.59; unsupported words: essent, factua, not, proble, statem, suppor, verifi)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "Dickieson estimated that Graza has added around 2,000 new social followers since launching the cans.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F3",
+       "coverage": 1.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 11
+      },
+      "cited_fact": "F3",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We envision a collaborative Instagram post where you and our team create a visual piece that complements the first fact – a shared moment of visual delight.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "comple",
+        "deligh",
+        "first",
+        "moment",
+        "piece",
+        "shared",
+        "where"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 7
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Together, we’ll craft a post that builds on the initial discovery and showcases the playful nature of Graza’s social content.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.25,
+       "uncovered": [
+        "builds",
+        "craft",
+        "discov",
+        "initia",
+        "nature",
+        "post",
+        "showca",
+        "togeth",
+        "we'll"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 12
+      },
+      "cited_fact": null,
+      "problems": [
+       "factual statement not supported by a verified fact (best fact F2 covers 0.25; unsupported words: builds, craft, discov, initia, nature, post, showca, togeth)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "(problem: factual statement not supported by a verified fact)",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "factua",
+        "not",
+        "proble",
+        "statem",
+        "suppor",
+        "verifi"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 6
+      },
+      "cited_fact": null,
+      "problems": [
+       "factual statement not supported by a verified fact (best fact F1 covers 0.00; unsupported words: factua, not, proble, statem, suppor, verifi)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Collaboration Proposal - Instagram Post",
+     "body": "Hi Graza team,\n\nWe are a small Instagram content studio dedicated to crafting authentic and playful experiences for food lovers. We’d like to propose a collaborative Instagram post with you and Graza, built around the fact that Graza started Direct-to-Consumer (DTC) but also secured placement in grocers like Whole Foods, Target, and others [P8]. You’ve cultivated a social content strategy that’s distinctly flavorful and culinary-inspired, showcasing your unique design and messaging. (problem: factual statement not supported by a verified fact) Essentially, Graza’s social content, product design, and messaging are playful and culinary-inspired rather than overly formal. Dickieson estimated that Graza has added around 2,000 new social followers since launching the cans [P9].\n\nWe envision a collaborative Instagram post where you and our team create a visual piece that complements the first fact – a shared moment of visual delight. Together, we’ll craft a post that builds on the initial discovery and showcases the playful nature of Graza’s social content. (problem: factual statement not supported by a verified fact)\n\nThe BrandPilot team"
+    },
+    "format_notes": [
+     "sentence-level revision applied"
+    ]
+   }
+  }
+ ],
+ "opportunity": {
+  "anchor_fact": "F1",
+  "text": "One collaborative Instagram post with Graza, created together with their team, that builds on the first fact above.",
+  "kind": "template"
+ },
+ "draft_prompt_sha256": "b0ab27972a945eab593483bb2b0335b05e9cdc672922d0b54031538601f61827",
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "checks still failing after 1 targeted revision",
+ "arm": "base",
+ "group": "dev",
+ "tag": "iter5"
+}

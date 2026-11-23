@@ -1,0 +1,414 @@
+{
+ "workflow_version": "phase5-outreach-1",
+ "fact_selector_version": "phase5-facts-1",
+ "draft_prompt_version": "phase5-draft-prompt-1",
+ "checks_version": "phase5-draft-checks-1",
+ "company_id": "graza",
+ "packet_sha256": "90fc71b07ba6c1187fbcacc9fd4e9cf66b948d1c0e45f62dc877017037d2aaab",
+ "facts": [
+  {
+   "fact_id": "F1",
+   "passage_id": "P8",
+   "quote": "Graza started Direct-to-Consumer (DTC) but also made sure to get into grocers like Whole Foods, Target, etc.",
+   "score": 4.85,
+   "statement_type": "actual_activity",
+   "official_source": false,
+   "source_url": "https://behindthebrandnews.com/p/case-study-graza",
+   "text_sha256": "d3e5795880a3411f423342c22230050a0f1abced53128f251f7c77da047f725b",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F2",
+   "passage_id": "P7",
+   "quote": "Graza’s social content, product design, and messaging are playful and culinary-inspired rather than overly formal.",
+   "score": 4.75,
+   "statement_type": "actual_activity",
+   "official_source": false,
+   "source_url": "https://behindthebrandnews.com/p/case-study-graza",
+   "text_sha256": "30ae4473d4995caa8605f069b3de2924a823dd6f208863556ff88fadfe6b6d11",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F3",
+   "passage_id": "P9",
+   "quote": "Dickieson estimated that Graza has added around 2,000 new social followers since launching the cans.",
+   "score": 2.8,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://www.businessinsider.com/inside-graza-olive-oil-influencer-marketing-strategy-2024-5",
+   "text_sha256": "22642fc0398d0093fb339a1f9de57b7e314644ffb32b9d3a98dacb5f313bece6",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  }
+ ],
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "prompt_sha256": "b7813e326ca9c3a70bd5d729a1f129e084fe03e59ead6b57e88493cfb284f8c1",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 5.387,
+   "usage": {
+    "prompt_tokens": 383,
+    "completion_tokens": 225,
+    "total_tokens": 608,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "Exploring a Delicious Collaboration",
+    "body": null,
+    "format_problems": [
+     "missing 'BODY:' section"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-1",
+    "passes": false,
+    "problems": [
+     "missing 'BODY:' section",
+     "recipient is no_email: address the Graza team in the first line",
+     "sender direction is no_email: propose the collaboration as our team",
+     "does not propose an Instagram post"
+    ],
+    "word_count": 0,
+    "recipient": "no_email",
+    "sender": "no_email",
+    "instagram": false,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [],
+    "unknown_fact_markers": [],
+    "factual_sentences": 0,
+    "factual_sentences_supported": 0,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Exploring a Delicious Collaboration",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "delicious",
+        "exploring"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Exploring a Delicious Collaboration",
+     "body": ""
+    }
+   }
+  },
+  {
+   "index": 1,
+   "kind": "targeted_revision",
+   "prompt_sha256": "a73c392e2905676a6067c9ed14dc103cc944bc69d6008f32d6c9aa9366718436",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 6.283,
+   "usage": {
+    "prompt_tokens": 480,
+    "completion_tokens": 268,
+    "total_tokens": 748,
+    "prompt_tokens_details": {
+     "cached_tokens": 378
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "Exploring a Delicious Collaboration",
+    "body": "Hi Graza team,\n\nWe’re excited to propose a collaborative Instagram post designed to celebrate the playful and culinary-inspired messaging of Graza. We believe this collaboration would be a fantastic way to showcase the unique character of your brand and connect with a new audience.\n\n[F1] “Graza started Direct-to-Consumer (DTC) but also made sure to get into grocers like Whole Foods, Target, etc.” This post could highlight the visual appeal of the cans and the overall brand aesthetic, encouraging engagement and sparking conversations.\n\n[F2] “Graza’s social content, product design, and messaging are playful and culinary-inspired rather than overly formal.” This post could feature a short video showcasing the creative process behind the cans or a series of aesthetically pleasing images.\n\n[F3] “Dickieson estimated that Graza has added around 2,000 new social followers since launching the cans.” This post could feature a visually striking image of the cans with a caption that encourages people to follow the brand.\n\nWe believe this collaboration would be a valuable opportunity to strengthen your brand narrative and expand your reach. The post could be a simple, visually-driven post that celebrates the essence of Graza.\n\nThe BrandPilot team",
+    "format_problems": []
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-1",
+    "passes": false,
+    "problems": [
+     "body is 189 words; it must be 100-150",
+     "\"We believe this collaboration would be a fantastic way to showcase the unique character of\": proposal refers to company activity without a fact marker",
+     "\"“Graza started Direct-to-Consumer (DTC) but also made sure to get into grocers like Whole \": numbers not in the cited fact: ['1']",
+     "\"“Graza’s social content, product design, and messaging are playful and culinary-inspired r\": numbers not in the cited fact: ['2']",
+     "\"“Dickieson estimated that Graza has added around 2,000 new social followers since launchin\": numbers not in the cited fact: ['3']"
+    ],
+    "word_count": 189,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [
+     "F1",
+     "F2",
+     "F3"
+    ],
+    "unknown_fact_markers": [],
+    "factual_sentences": 3,
+    "factual_sentences_supported": 0,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Exploring a Delicious Collaboration",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "delicious",
+        "exploring"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Graza team,",
+      "kind": "non_assertion",
+      "cited_facts": [],
+      "guard": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’re excited to propose a collaborative Instagram post designed to celebrate the playful and culinary-inspired messaging of Graza.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.6,
+       "uncovered": [
+        "designed",
+        "we're"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We believe this collaboration would be a fantastic way to showcase the unique character of your brand and connect with a new audience.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "believe",
+        "character",
+        "connect",
+        "fantastic",
+        "unique",
+        "way"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": [
+       "proposal refers to company activity without a fact marker"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "[F1] “Graza started Direct-to-Consumer (DTC) but also made sure to get into grocers like Whole Foods, Target, etc.",
+      "kind": "factual",
+      "cited_facts": [
+       "F1"
+      ],
+      "guard": {
+       "coverage": 1.0,
+       "uncovered": [],
+       "missing_numbers": [
+        "1"
+       ],
+       "negation_mismatch": false
+      },
+      "problems": [
+       "numbers not in the cited fact: ['1']"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "This post could highlight the visual appeal of the cans and the overall brand aesthetic, encouraging engagement and sparking conversations.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.111,
+       "uncovered": [
+        "aesthetic",
+        "appeal",
+        "conversations",
+        "encouraging",
+        "engagement",
+        "overall",
+        "sparking",
+        "visual"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "[F2] “Graza’s social content, product design, and messaging are playful and culinary-inspired rather than overly formal.",
+      "kind": "factual",
+      "cited_facts": [
+       "F2"
+      ],
+      "guard": {
+       "coverage": 1.0,
+       "uncovered": [],
+       "missing_numbers": [
+        "2"
+       ],
+       "negation_mismatch": false
+      },
+      "problems": [
+       "numbers not in the cited fact: ['2']"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "This post could feature a short video showcasing the creative process behind the cans or a series of aesthetically pleasing images.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.111,
+       "uncovered": [
+        "aesthetically",
+        "behind",
+        "creative",
+        "images",
+        "pleasing",
+        "process",
+        "short",
+        "video"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "[F3] “Dickieson estimated that Graza has added around 2,000 new social followers since launching the cans.",
+      "kind": "factual",
+      "cited_facts": [
+       "F3"
+      ],
+      "guard": {
+       "coverage": 1.0,
+       "uncovered": [],
+       "missing_numbers": [
+        "3"
+       ],
+       "negation_mismatch": false
+      },
+      "problems": [
+       "numbers not in the cited fact: ['3']"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "This post could feature a visually striking image of the cans with a caption that encourages people to follow the brand.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.125,
+       "uncovered": [
+        "caption",
+        "encourages",
+        "follow",
+        "image",
+        "people",
+        "striking",
+        "visually"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We believe this collaboration would be a valuable opportunity to strengthen your brand narrative and expand your reach.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "believe",
+        "expand",
+        "narrative",
+        "opportunity",
+        "reach",
+        "strengthen",
+        "valuable"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The post could be a simple, visually-driven post that celebrates the essence of Graza.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "driven",
+        "essence",
+        "simple",
+        "visually"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "cited_facts": [],
+      "guard": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Exploring a Delicious Collaboration",
+     "body": "Hi Graza team,\n\nWe’re excited to propose a collaborative Instagram post designed to celebrate the playful and culinary-inspired messaging of Graza. We believe this collaboration would be a fantastic way to showcase the unique character of your brand and connect with a new audience.\n\n[P8] “Graza started Direct-to-Consumer (DTC) but also made sure to get into grocers like Whole Foods, Target, etc.” This post could highlight the visual appeal of the cans and the overall brand aesthetic, encouraging engagement and sparking conversations.\n\n[P7] “Graza’s social content, product design, and messaging are playful and culinary-inspired rather than overly formal.” This post could feature a short video showcasing the creative process behind the cans or a series of aesthetically pleasing images.\n\n[P9] “Dickieson estimated that Graza has added around 2,000 new social followers since launching the cans.” This post could feature a visually striking image of the cans with a caption that encourages people to follow the brand.\n\nWe believe this collaboration would be a valuable opportunity to strengthen your brand narrative and expand your reach. The post could be a simple, visually-driven post that celebrates the essence of Graza.\n\nThe BrandPilot team"
+    }
+   }
+  }
+ ],
+ "opportunity": {
+  "anchor_fact": "F1",
+  "text": "One collaborative Instagram post with Graza that celebrates what F1 describes, created together with their team.",
+  "kind": "template"
+ },
+ "draft_prompt_sha256": "b7813e326ca9c3a70bd5d729a1f129e084fe03e59ead6b57e88493cfb284f8c1",
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "checks still failing after 1 targeted revision",
+ "arm": "base",
+ "group": "dev",
+ "tag": "iter1"
+}

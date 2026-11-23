@@ -1,0 +1,11 @@
+{
+ "model": "mlx-community/gemma-3-1b-it-qat-4bit",
+ "messages": [
+  {
+   "role": "user",
+   "content": "You write a short outreach email from our team (a small Instagram content studio) to the marketing team at Graza (single-origin olive oil in squeeze bottles).\n\nVerified facts about Graza. They are quotes from sources; \"we\" and \"our\" inside a quote mean Graza.\nF1: \"Graza started Direct-to-Consumer (DTC) but also made sure to get into grocers like Whole Foods, Target, etc.\"\nF2: \"Graza’s social content, product design, and messaging are playful and culinary-inspired rather than overly formal.\"\nF3: \"Dickieson estimated that Graza has added around 2,000 new social followers since launching the cans.\"\n\nOpportunity to propose (our idea, not a fact): One collaborative Instagram post with Graza, created together with their team, that builds on fact F1.\n\nRules:\n- Use only the facts above for anything you say about Graza. Add no other claims: no numbers, dates, audiences, results or activities that are not in a fact.\n- Say the facts in your own words. Do not paste the quotes.\n- End each sentence that says something about Graza with the id of the fact it uses, in square brackets, before the period. Example: \"... as the source describes [F1].\" Never write a fact id anywhere else.\n- Never say Graza lacks something or has a weakness or gap.\n- Propose Instagram only. Do not mention any other platform.\n- Do not promise results. Say what the post could do, not what it will achieve.\n- Write as our team to the Graza team. Never write as Graza.\n- The body is 100 to 150 words. Start it with \"Hi Graza team,\" and end it with \"The BrandPilot team\".\n\nReturn exactly this format and nothing else:\nSUBJECT: <one line>\nBODY:\n<email body>"
+  }
+ ],
+ "temperature": 0.0,
+ "max_tokens": 400
+}

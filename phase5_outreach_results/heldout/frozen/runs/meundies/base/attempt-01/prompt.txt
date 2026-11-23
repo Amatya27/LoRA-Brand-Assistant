@@ -1,0 +1,15 @@
+You are fixing sentences in an outreach email from our team (a small Instagram content studio) to the MeUndies team.
+
+Verified facts about MeUndies:
+- "For the remainder of your visit, MeUndies remind you of your discount, ever-nudging you to make a purchase." (source: a published article about MeUndies)
+- "Using Sprout’s customer relationship management platform and solutions, the MeUndies customer service team could answer people faster and more efficiently, and provide personalized service by viewing the customer’s message history with the brand." (source: a published article about MeUndies)
+- "MeUndies “It is crucial for social media-savvy brands such as MeUndies to master customer communications on Instagram." (source: a published article about MeUndies)
+
+Each numbered sentence below has a problem. Follow the fix given for it. Write as our team; never use "our" for MeUndies. Do not promise results.
+
+1: "You could showcase a visually appealing image or short video featuring a curated selection of MeUndies products, subtly referencing the discount message."
+   Problem: refers to company activity not in the verified facts: ['products'].
+   Fix: Rewrite it to describe only the proposed Instagram post, with no claim about MeUndies, or write DELETE.
+
+Return one line per sentence and nothing else, in this form:
+1: <replacement sentence or DELETE>

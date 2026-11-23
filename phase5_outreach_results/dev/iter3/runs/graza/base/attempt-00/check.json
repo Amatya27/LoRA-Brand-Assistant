@@ -1,0 +1,201 @@
+{
+ "checks_version": "phase5-draft-checks-3",
+ "passes": false,
+ "problems": [
+  "\"The goal isn’t to quantify growth or achieve a specific outcome, but simply to create a sh\": factual statement not supported by a verified fact (best fact F1 covers 0.06; unsupported words: achiev, audien, build, connec, create, deeper, experi, goal)"
+ ],
+ "word_count": 119,
+ "recipient": "correct",
+ "sender": "correct",
+ "instagram": true,
+ "other_platforms": [],
+ "promises": [],
+ "facts_used": [
+  "F2"
+ ],
+ "factual_sentences": 2,
+ "factual_sentences_supported": 1,
+ "sentences": [
+  {
+   "location": "subject",
+   "sentence": "Building a Delicious Story",
+   "kind": "subject",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [
+     "delici",
+     "story"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 2
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Hi Graza team,",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We’ve been following your creative approach to building a strong online presence, and we’re excited about the playful and culinary-inspired style you’ve cultivated.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.167,
+    "uncovered": [
+     "approa",
+     "cultiv",
+     "follow",
+     "online",
+     "presen",
+     "strong",
+     "style",
+     "we're",
+     "we've",
+     "you've"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 12
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Your social content and product design are truly captivating.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.6,
+    "uncovered": [
+     "captiv",
+     "truly"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 5
+   },
+   "cited_fact": "F2",
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We believe a collaborative Instagram post would be a fantastic way to amplify that.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [
+     "amplif",
+     "fantas"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 2
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Imagine a post that directly reflects the essence of Graza – a moment of shared enjoyment and a celebration of the olive oil's unique character.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.091,
+    "uncovered": [
+     "charac",
+     "enjoym",
+     "essenc",
+     "imagin",
+     "moment",
+     "oil",
+     "olive",
+     "reflec",
+     "shared",
+     "unique"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 11
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "It could feature a visually appealing image or short video showcasing the product in a relatable setting.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [
+     "image",
+     "relata",
+     "settin",
+     "short",
+     "video"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 5
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "The goal isn’t to quantify growth or achieve a specific outcome, but simply to create a shared experience and build a deeper connection with your audience.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.062,
+    "uncovered": [
+     "achiev",
+     "audien",
+     "build",
+     "connec",
+     "create",
+     "deeper",
+     "experi",
+     "goal",
+     "growth",
+     "isn't",
+     "outcom",
+     "quanti",
+     "shared",
+     "simply",
+     "specif"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 16
+   },
+   "cited_fact": null,
+   "problems": [
+    "factual statement not supported by a verified fact (best fact F1 covers 0.06; unsupported words: achiev, audien, build, connec, create, deeper, experi, goal)"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "The BrandPilot team",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  }
+ ],
+ "rendered": {
+  "subject": "Building a Delicious Story",
+  "body": "Hi Graza team,\n\nWe’ve been following your creative approach to building a strong online presence, and we’re excited about the playful and culinary-inspired style you’ve cultivated. Your social content and product design are truly captivating [P7]. We believe a collaborative Instagram post would be a fantastic way to amplify that. Imagine a post that directly reflects the essence of Graza – a moment of shared enjoyment and a celebration of the olive oil's unique character. It could feature a visually appealing image or short video showcasing the product in a relatable setting. The goal isn’t to quantify growth or achieve a specific outcome, but simply to create a shared experience and build a deeper connection with your audience.\n\nThe BrandPilot team"
+ },
+ "format_notes": []
+}

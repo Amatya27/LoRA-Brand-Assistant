@@ -1,0 +1,198 @@
+{
+ "checks_version": "phase5-draft-checks-9",
+ "passes": false,
+ "problems": [
+  "output was cut off at the token limit",
+  "body is 154 words; it must be 100-150",
+  "\"You’ve described Away’s newest limited-edition collection as a collaboration between the b\": says Away stated this, but the source is a third-party article"
+ ],
+ "word_count": 154,
+ "recipient": "correct",
+ "sender": "correct",
+ "instagram": true,
+ "other_platforms": [],
+ "promises": [],
+ "facts_used": [
+  "F1",
+  "F2",
+  "F3"
+ ],
+ "factual_sentences": 3,
+ "factual_sentences_supported": 1,
+ "sentences": [
+  {
+   "location": "subject",
+   "sentence": "Collaboration Proposal",
+   "kind": "subject",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 0
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Hi Away team,",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We are a small Instagram content studio dedicated to crafting visually stunning and engaging content.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F3",
+    "coverage": 0.125,
+    "uncovered": [
+     "crafti",
+     "dedica",
+     "engagi",
+     "instag",
+     "small",
+     "stunni",
+     "visual"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 8
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We’d like to propose a collaborative Instagram post with you and your team, built on the idea that Away’s new ‘White Lotus’ luggage collection is a perfect travel eye candy.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.889,
+    "uncovered": [
+     "built"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 9
+   },
+   "cited_fact": "F1",
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "You’ve described Away’s newest limited-edition collection as a collaboration between the brand and Warner Bros., highlighting the celebrity partnerships with Karlie Kloss.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F1+F2",
+    "coverage": 0.733,
+    "uncovered": [
+     "descri",
+     "highli",
+     "partne",
+     "you've"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 15
+   },
+   "cited_fact": "F1+F2",
+   "problems": [
+    "says Away stated this, but the source is a third-party article"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "Furthermore, you’ve emphasized Away’s simple, well-designed product with a lifestyle-driven marketing approach, direct online sales, and a strong content and community strategy.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F3",
+    "coverage": 0.824,
+    "uncovered": [
+     "emphas",
+     "furthe",
+     "you've"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 17
+   },
+   "cited_fact": "F3",
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We envision a post showcasing the collection's aesthetic, featuring a curated selection of images and a compelling caption that evokes a sense of luxury and wanderlust.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.091,
+    "uncovered": [
+     "aesthe",
+     "captio",
+     "compel",
+     "curate",
+     "evokes",
+     "images",
+     "luxury",
+     "select",
+     "sense",
+     "wander"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 11
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Together, we could create a visually captivating post that resonates with your audience and further strengthens the connection between Away and the world of travel.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.286,
+    "uncovered": [
+     "captiv",
+     "connec",
+     "furthe",
+     "streng",
+     "world"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 7
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Reply if you’re interested in exploring this further.",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "The BrandPilot team",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  }
+ ],
+ "rendered": {
+  "subject": "Collaboration Proposal",
+  "body": "Hi Away team,\n\nWe are a small Instagram content studio dedicated to crafting visually stunning and engaging content. We’d like to propose a collaborative Instagram post with you and your team, built on the idea that Away’s new ‘White Lotus’ luggage collection is a perfect travel eye candy [P6]. You’ve described Away’s newest limited-edition collection as a collaboration between the brand and Warner Bros., highlighting the celebrity partnerships with Karlie Kloss [P6][P3]. Furthermore, you’ve emphasized Away’s simple, well-designed product with a lifestyle-driven marketing approach, direct online sales, and a strong content and community strategy [P10]. We envision a post showcasing the collection's aesthetic, featuring a curated selection of images and a compelling caption that evokes a sense of luxury and wanderlust. Together, we could create a visually captivating post that resonates with your audience and further strengthens the connection between Away and the world of travel. Reply if you’re interested in exploring this further.\n\nThe BrandPilot team"
+ },
+ "format_notes": [
+  "sentence-level revision applied"
+ ]
+}

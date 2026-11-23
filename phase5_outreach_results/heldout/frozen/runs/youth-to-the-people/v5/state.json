@@ -1,0 +1,440 @@
+{
+ "workflow_version": "phase5-outreach-1",
+ "fact_selector_version": "phase5-facts-1",
+ "draft_prompt_version": "phase5-draft-prompt-7",
+ "checks_version": "phase5-draft-checks-9",
+ "company_id": "youth-to-the-people",
+ "packet_sha256": "af76c23b4844edcc2ec32b7e0f4ec9c5c77c22dd402abdbc81afe06ca63b0cc1",
+ "facts": [
+  {
+   "fact_id": "F1",
+   "passage_id": "P4",
+   "quote": "With true values, and a relentless dedication to product, our dream was to build a company that would create a positive impact across the world.",
+   "score": 6.75,
+   "statement_type": "actual_activity",
+   "official_source": true,
+   "source_url": "https://www.youthtothepeople.com/general-pages/about-v1.html",
+   "text_sha256": "fc37e14ee379143f7d513e55dc615c399dfa4992d0ac5637965b72b3fa893227",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F2",
+   "passage_id": "P6",
+   "quote": "Our formula philosophy is a partnership between the latest innovation in skincare technology combined with nutrient-rich superfood plant extracts.",
+   "score": 4.95,
+   "statement_type": "brand_positioning",
+   "official_source": true,
+   "source_url": "https://www.youthtothepeople.com/general-pages/about-v1.html",
+   "text_sha256": "bf43fcc741746d59dc08e942017b33f77254d08821999ef5035f105f8db6dbb2",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F3",
+   "passage_id": "P3",
+   "quote": "With true values and a relentless dedication to product, our dream was to build a company that would create a positive impact across the world.",
+   "score": 4.75,
+   "statement_type": "brand_positioning",
+   "official_source": true,
+   "source_url": "https://www.youthtothepeople.com/",
+   "text_sha256": "9301dc6d896e864e81844cb19edd76fad97f972db0645672af37fc8bc5bf96ff",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  }
+ ],
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "revision_mode": null,
+   "prompt_sha256": "502b8615ddb5ac24ef38ef5f32491ab7ccc29d960a1f07ee6a1601af4e08e641",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 7.92,
+   "usage": {
+    "prompt_tokens": 523,
+    "completion_tokens": 171,
+    "total_tokens": 694,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "Hi Youth To The People team,",
+    "body": "Hi Youth To The People team,\n\nWe’re reaching out to propose a collaborative Instagram post that builds on your first statement: “With true values, and a relentless dedication to product, our dream was to build a company that would create a positive impact across the world.” We believe your team's commitment to authenticity and product quality aligns with your values, and we’d love to bring that vision to life together with your Instagram. This post would showcase your product's unique benefits through a visually appealing and heartfelt way, highlighting the science-backed approach and the commitment to positive impact that you're so passionate about. It would be a chance to share your story and further reinforce your dedication to creating a positive impact, all while celebrating your commitment to your values.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-9",
+    "passes": false,
+    "problems": [
+     "\"We’re reaching out to propose a collaborative Instagram post that builds on your first sta\": reuses Youth To The People's own first-person wording, so it speaks as them"
+    ],
+    "word_count": 133,
+    "recipient": "correct",
+    "sender": "incorrect",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [
+     "F1"
+    ],
+    "factual_sentences": 0,
+    "factual_sentences_supported": 0,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Hi Youth To The People team,",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 0
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Youth To The People team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’re reaching out to propose a collaborative Instagram post that builds on your first statement: “With true values, and a relentless dedication to product, our dream was to build a company that would create a positive impact across the world.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.818,
+       "uncovered": [
+        "first",
+        "statem"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 11
+      },
+      "cited_fact": "F1",
+      "problems": [
+       "reuses Youth To The People's own first-person wording, so it speaks as them"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "We believe your team's commitment to authenticity and product quality aligns with your values, and we’d love to bring that vision to life together with your Instagram.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.125,
+       "uncovered": [
+        "aligns",
+        "authen",
+        "bring",
+        "commit",
+        "life",
+        "qualit",
+        "vision"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 8
+      },
+      "cited_fact": "F1",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "This post would showcase your product's unique benefits through a visually appealing and heartfelt way, highlighting the science-backed approach and the commitment to positive impact that you're so passionate about.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.167,
+       "uncovered": [
+        "approa",
+        "backed",
+        "benefi",
+        "commit",
+        "heartf",
+        "passio",
+        "scienc",
+        "throug",
+        "unique",
+        "you're"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 12
+      },
+      "cited_fact": "F1",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "It would be a chance to share your story and further reinforce your dedication to creating a positive impact, all while celebrating your commitment to your values.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.364,
+       "uncovered": [
+        "all",
+        "chance",
+        "commit",
+        "furthe",
+        "reinfo",
+        "story",
+        "while"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 11
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Hi Youth To The People team,",
+     "body": "Hi Youth To The People team,\n\nWe’re reaching out to propose a collaborative Instagram post that builds on your first statement: “With true values, and a relentless dedication to product, our dream was to build a company that would create a positive impact across the world [P4]. We believe your team's commitment to authenticity and product quality aligns with your values, and we’d love to bring that vision to life together with your Instagram [P4]. This post would showcase your product's unique benefits through a visually appealing and heartfelt way, highlighting the science-backed approach and the commitment to positive impact that you're so passionate about [P4]. It would be a chance to share your story and further reinforce your dedication to creating a positive impact, all while celebrating your commitment to your values.\n\nThe BrandPilot team"
+    },
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   }
+  },
+  {
+   "index": 1,
+   "kind": "targeted_revision",
+   "revision_mode": "sentences",
+   "prompt_sha256": "97819c287a52b8a5b37845661863693544f6c2fffeb187d1d1a2e9b96d70b841",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 0.89,
+   "usage": {
+    "prompt_tokens": 329,
+    "completion_tokens": 27,
+    "total_tokens": 356,
+    "prompt_tokens_details": {
+     "cached_tokens": 24
+    }
+   },
+   "error": null,
+   "sentence_edits": [
+    {
+     "index": 1,
+     "location": "body",
+     "old": "We’re reaching out to propose a collaborative Instagram post that builds on your first statement: “With true values, and a relentless dedication to product, our dream was to build a company that would create a positive impact across the world.",
+     "new": "We propose a collaboration that highlights the impact of skincare technology and plant extracts, aligning with your mission-driven approach.",
+     "action": "replace"
+    }
+   ],
+   "parsed": {
+    "subject": "Hi Youth To The People team,",
+    "body": "Hi Youth To The People team,\n\nWe propose a collaboration that highlights the impact of skincare technology and plant extracts, aligning with your mission-driven approach.” We believe your team's commitment to authenticity and product quality aligns with your values, and we’d love to bring that vision to life together with your Instagram. This post would showcase your product's unique benefits through a visually appealing and heartfelt way, highlighting the science-backed approach and the commitment to positive impact that you're so passionate about. It would be a chance to share your story and further reinforce your dedication to creating a positive impact, all while celebrating your commitment to your values.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": [
+     "sentence-level revision applied"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-9",
+    "passes": true,
+    "problems": [],
+    "word_count": 112,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [
+     "F1"
+    ],
+    "factual_sentences": 0,
+    "factual_sentences_supported": 0,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Hi Youth To The People team,",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 0
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Youth To The People team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We propose a collaboration that highlights the impact of skincare technology and plant extracts, aligning with your mission-driven approach.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.444,
+       "uncovered": [
+        "aligni",
+        "approa",
+        "driven",
+        "impact",
+        "missio"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 9
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We believe your team's commitment to authenticity and product quality aligns with your values, and we’d love to bring that vision to life together with your Instagram.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.125,
+       "uncovered": [
+        "aligns",
+        "authen",
+        "bring",
+        "commit",
+        "life",
+        "qualit",
+        "vision"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 8
+      },
+      "cited_fact": "F1",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "This post would showcase your product's unique benefits through a visually appealing and heartfelt way, highlighting the science-backed approach and the commitment to positive impact that you're so passionate about.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.167,
+       "uncovered": [
+        "approa",
+        "backed",
+        "benefi",
+        "commit",
+        "heartf",
+        "passio",
+        "scienc",
+        "throug",
+        "unique",
+        "you're"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 12
+      },
+      "cited_fact": "F1",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "It would be a chance to share your story and further reinforce your dedication to creating a positive impact, all while celebrating your commitment to your values.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.364,
+       "uncovered": [
+        "all",
+        "chance",
+        "commit",
+        "furthe",
+        "reinfo",
+        "story",
+        "while"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 11
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Hi Youth To The People team,",
+     "body": "Hi Youth To The People team,\n\nWe propose a collaboration that highlights the impact of skincare technology and plant extracts, aligning with your mission-driven approach. We believe your team's commitment to authenticity and product quality aligns with your values, and we’d love to bring that vision to life together with your Instagram [P4]. This post would showcase your product's unique benefits through a visually appealing and heartfelt way, highlighting the science-backed approach and the commitment to positive impact that you're so passionate about [P4]. It would be a chance to share your story and further reinforce your dedication to creating a positive impact, all while celebrating your commitment to your values.\n\nThe BrandPilot team"
+    },
+    "format_notes": [
+     "sentence-level revision applied"
+    ]
+   }
+  }
+ ],
+ "opportunity": {
+  "anchor_fact": "F1",
+  "text": "One collaborative Instagram post with Youth To The People, created together with their team, that builds on the first fact above.",
+  "kind": "template"
+ },
+ "draft_prompt_sha256": "502b8615ddb5ac24ef38ef5f32491ab7ccc29d960a1f07ee6a1601af4e08e641",
+ "outcome": "passed_checks_pending_human_review",
+ "stop_reason": "all checks passed after one targeted revision",
+ "final": {
+  "subject": "Hi Youth To The People team,",
+  "body": "Hi Youth To The People team,\n\nWe propose a collaboration that highlights the impact of skincare technology and plant extracts, aligning with your mission-driven approach. We believe your team's commitment to authenticity and product quality aligns with your values, and we’d love to bring that vision to life together with your Instagram [P4]. This post would showcase your product's unique benefits through a visually appealing and heartfelt way, highlighting the science-backed approach and the commitment to positive impact that you're so passionate about [P4]. It would be a chance to share your story and further reinforce your dedication to creating a positive impact, all while celebrating your commitment to your values.\n\nThe BrandPilot team",
+  "sources": [
+   {
+    "passage_id": "P4",
+    "fact_id": "F1",
+    "quote": "With true values, and a relentless dedication to product, our dream was to build a company that would create a positive impact across the world.",
+    "source_url": "https://www.youthtothepeople.com/general-pages/about-v1.html"
+   }
+  ],
+  "facts_used": [
+   "F1"
+  ],
+  "fact_verification": "pending_teammate_verification"
+ },
+ "arm": "v5",
+ "group": "heldout",
+ "tag": "frozen"
+}

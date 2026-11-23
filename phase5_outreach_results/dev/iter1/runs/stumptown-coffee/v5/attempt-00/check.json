@@ -1,0 +1,44 @@
+{
+ "checks_version": "phase5-draft-checks-1",
+ "passes": false,
+ "problems": [
+  "missing 'BODY:' section",
+  "recipient is no_email: address the Stumptown Coffee Roasters team in the first line",
+  "sender direction is no_email: propose the collaboration as our team",
+  "does not propose an Instagram post",
+  "\"Celebrating Your Mission\": proposal refers to company activity without a fact marker"
+ ],
+ "word_count": 0,
+ "recipient": "no_email",
+ "sender": "no_email",
+ "instagram": false,
+ "other_platforms": [],
+ "promises": [],
+ "facts_used": [],
+ "unknown_fact_markers": [],
+ "factual_sentences": 0,
+ "factual_sentences_supported": 0,
+ "sentences": [
+  {
+   "location": "subject",
+   "sentence": "Celebrating Your Mission",
+   "kind": "proposal",
+   "cited_facts": [],
+   "guard": {
+    "coverage": 0.5,
+    "uncovered": [
+     "celebrating"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false
+   },
+   "problems": [
+    "proposal refers to company activity without a fact marker"
+   ]
+  }
+ ],
+ "rendered": {
+  "subject": "Celebrating Your Mission",
+  "body": ""
+ }
+}

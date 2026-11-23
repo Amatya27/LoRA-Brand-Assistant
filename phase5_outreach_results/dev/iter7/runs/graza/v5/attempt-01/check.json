@@ -1,0 +1,163 @@
+{
+ "checks_version": "phase5-draft-checks-7",
+ "passes": true,
+ "problems": [],
+ "word_count": 124,
+ "recipient": "correct",
+ "sender": "correct",
+ "instagram": true,
+ "other_platforms": [],
+ "promises": [],
+ "facts_used": [
+  "F1",
+  "F2"
+ ],
+ "factual_sentences": 2,
+ "factual_sentences_supported": 1,
+ "sentences": [
+  {
+   "location": "subject",
+   "sentence": "Collaboration Opportunity for a Graza Instagram Post",
+   "kind": "subject",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 0
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Hi Graza team,",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We’re a small Instagram content studio dedicated to bringing the joy of culinary experiences to your audience.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.222,
+    "uncovered": [
+     "audien",
+     "bringi",
+     "dedica",
+     "experi",
+     "instag",
+     "joy",
+     "small"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 9
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We’d like to propose a collaborative Instagram post built around the fact that Graza started with Direct-to-Consumer (DTC) but also has a playful and culinary-inspired social presence.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1+F2",
+    "coverage": 0.727,
+    "uncovered": [
+     "around",
+     "built",
+     "presen"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 11
+   },
+   "cited_fact": "F1+F2",
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Graza's social content, product design, and messaging are intentionally playful and culinary-inspired, rather than overly formal.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.909,
+    "uncovered": [
+     "intent"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 11
+   },
+   "cited_fact": "F2",
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Essentially, Graza has cultivated a community through their playful approach to social media, and we believe a collaborative post with them would be a fantastic way to showcase this aspect of your brand.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.182,
+    "uncovered": [
+     "approa",
+     "aspect",
+     "commun",
+     "cultiv",
+     "essent",
+     "fantas",
+     "media",
+     "them",
+     "throug"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 11
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "This post would feature a visually appealing slide showcasing Graza's playful approach, paired with a call to action to engage with your audience on Instagram.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.143,
+    "uncovered": [
+     "action",
+     "approa",
+     "call",
+     "engage",
+     "paired",
+     "slide"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 7
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "The BrandPilot team",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  }
+ ],
+ "rendered": {
+  "subject": "Collaboration Opportunity for a Graza Instagram Post",
+  "body": "Hi Graza team,\n\nWe’re a small Instagram content studio dedicated to bringing the joy of culinary experiences to your audience. We’d like to propose a collaborative Instagram post built around the fact that Graza started with Direct-to-Consumer (DTC) but also has a playful and culinary-inspired social presence [P8][P7]. Graza's social content, product design, and messaging are intentionally playful and culinary-inspired, rather than overly formal [P7]. Essentially, Graza has cultivated a community through their playful approach to social media, and we believe a collaborative post with them would be a fantastic way to showcase this aspect of your brand. This post would feature a visually appealing slide showcasing Graza's playful approach, paired with a call to action to engage with your audience on Instagram.\n\nThe BrandPilot team"
+ },
+ "format_notes": [
+  "sentence-level revision applied"
+ ]
+}

@@ -1,0 +1,339 @@
+{
+ "workflow_version": "phase5-outreach-1",
+ "fact_selector_version": "phase5-facts-1",
+ "draft_prompt_version": "phase5-draft-prompt-1",
+ "checks_version": "phase5-draft-checks-1",
+ "company_id": "fly-by-jing",
+ "packet_sha256": "c974a43b16e102e870046f0fbbb1e63d54bd1f356426177dfbdd948911ce7eea",
+ "facts": [
+  {
+   "fact_id": "F1",
+   "passage_id": "P3",
+   "quote": "Another tactic that’s worked well for Fly by Jing as part of its community-building strategy, according to Patricio-Archer, is partnering with other brands.",
+   "score": 4.85,
+   "statement_type": "actual_activity",
+   "official_source": false,
+   "source_url": "https://www.marketingbrew.com/stories/2023/01/13/how-fly-by-jing-went-from-kickstarter-to-shake-shack-partner-in-a-few-years",
+   "text_sha256": "6e3f9df178a2898a1789b91747a0bd6ddbb8cdfd077db25a4100c6a58e96cde7",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F2",
+   "passage_id": "P4",
+   "quote": "By the time Fly By Jing pursued retail partnerships with Whole Foods, Target, and eventually broader grocery distribution, the brand had something most emerging CPG products don’t: pre-existing demand signals.",
+   "score": 2.5,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://www.influencers-time.com/how-fly-by-jing-built-a-cult-brand-with-chili-crisp-seeding/",
+   "text_sha256": "0328c40525a0e8a9816ca5c7afa2971e981c8aa28acd9e2f225df4e8a5a2a37f",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F3",
+   "passage_id": "P8",
+   "quote": "For this week’s Modern Retail Talk, founder and CEO Jing Gao spoke about her trials and tribulations during the coronavirus.",
+   "score": 1.0,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://www.modernretail.co/retailers/modern-retail-talk-how-instagram-darling-fly-by-jing-handled-an-unprecedented-demand-surge/",
+   "text_sha256": "55145375e85229b4fc05696794bab7e388f58693565ab4a274161bdafa0e09e8",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  }
+ ],
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "prompt_sha256": "75f5dd52b4cf92ae2b646b67f7812e2f4d1b936511fab23e8310bfefab34b140",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 8.159,
+   "usage": {
+    "prompt_tokens": 414,
+    "completion_tokens": 193,
+    "total_tokens": 607,
+    "prompt_tokens_details": {
+     "cached_tokens": 25
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "Exploring Community Building Strategies",
+    "body": null,
+    "format_problems": [
+     "missing 'BODY:' section"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-1",
+    "passes": false,
+    "problems": [
+     "missing 'BODY:' section",
+     "recipient is no_email: address the Fly By Jing team in the first line",
+     "sender direction is no_email: propose the collaboration as our team",
+     "does not propose an Instagram post"
+    ],
+    "word_count": 0,
+    "recipient": "no_email",
+    "sender": "no_email",
+    "instagram": false,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [],
+    "unknown_fact_markers": [],
+    "factual_sentences": 0,
+    "factual_sentences_supported": 0,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Exploring Community Building Strategies",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.333,
+       "uncovered": [
+        "exploring",
+        "strategies"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Exploring Community Building Strategies",
+     "body": ""
+    }
+   }
+  },
+  {
+   "index": 1,
+   "kind": "targeted_revision",
+   "prompt_sha256": "dca1527c9a5ef58307c0ed15104f621ff343db8fbc823b29b85b66dd7fd825ed",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 3.804,
+   "usage": {
+    "prompt_tokens": 512,
+    "completion_tokens": 173,
+    "total_tokens": 685,
+    "prompt_tokens_details": {
+     "cached_tokens": 409
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "Exploring Community Building Strategies",
+    "body": "Hi Fly By Jing team,\n\nWe’re excited to propose a collaborative Instagram post designed to celebrate the power of community-building strategies. [F1] “Another tactic that’s worked well for Fly By Jing as part of its community-building strategy, according to Patricio-Archer, is partnering with other brands.” This post could showcase the shared values and enthusiasm for building connections with brands. We envision a visually appealing post featuring a curated selection of Fly By Jing’s products alongside complementary imagery. The post could subtly highlight the brand’s commitment to authentic storytelling and engaging with consumers.\n\nWe believe this collaboration would be a valuable opportunity to strengthen your brand narrative and foster deeper connections with your audience.  The post could be a simple, heartfelt celebration of the partnership.\n\nThe BrandPilot team",
+    "format_problems": []
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-1",
+    "passes": false,
+    "problems": [
+     "\"“Another tactic that’s worked well for Fly By Jing as part of its community-building strat\": numbers not in the cited fact: ['1']",
+     "\"We envision a visually appealing post featuring a curated selection of Fly By Jing’s produ\": states something about the company without a fact marker",
+     "\"We believe this collaboration would be a valuable opportunity to strengthen your brand nar\": proposal refers to company activity without a fact marker"
+    ],
+    "word_count": 126,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [
+     "F1"
+    ],
+    "unknown_fact_markers": [],
+    "factual_sentences": 2,
+    "factual_sentences_supported": 0,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Exploring Community Building Strategies",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.333,
+       "uncovered": [
+        "exploring",
+        "strategies"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Fly By Jing team,",
+      "kind": "non_assertion",
+      "cited_facts": [],
+      "guard": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’re excited to propose a collaborative Instagram post designed to celebrate the power of community-building strategies.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.2,
+       "uncovered": [
+        "designed",
+        "power",
+        "strategies",
+        "we're"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "[F1] “Another tactic that’s worked well for Fly By Jing as part of its community-building strategy, according to Patricio-Archer, is partnering with other brands.",
+      "kind": "factual",
+      "cited_facts": [
+       "F1"
+      ],
+      "guard": {
+       "coverage": 1.0,
+       "uncovered": [],
+       "missing_numbers": [
+        "1"
+       ],
+       "negation_mismatch": false
+      },
+      "problems": [
+       "numbers not in the cited fact: ['1']"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "This post could showcase the shared values and enthusiasm for building connections with brands.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.2,
+       "uncovered": [
+        "connections",
+        "enthusiasm",
+        "shared",
+        "values"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We envision a visually appealing post featuring a curated selection of Fly By Jing’s products alongside complementary imagery.",
+      "kind": "factual",
+      "cited_facts": [],
+      "guard": null,
+      "problems": [
+       "states something about the company without a fact marker"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "The post could subtly highlight the brand’s commitment to authentic storytelling and engaging with consumers.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "authentic",
+        "brand's",
+        "commitment",
+        "consumers",
+        "engaging",
+        "storytelling",
+        "subtly"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We believe this collaboration would be a valuable opportunity to strengthen your brand narrative and foster deeper connections with your audience.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "believe",
+        "connections",
+        "deeper",
+        "foster",
+        "narrative",
+        "opportunity",
+        "strengthen",
+        "valuable"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": [
+       "proposal refers to company activity without a fact marker"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "The post could be a simple, heartfelt celebration of the partnership.",
+      "kind": "proposal",
+      "cited_facts": [],
+      "guard": {
+       "coverage": 0.0,
+       "uncovered": [
+        "celebration",
+        "heartfelt",
+        "partnership",
+        "simple"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false
+      },
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "cited_facts": [],
+      "guard": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Exploring Community Building Strategies",
+     "body": "Hi Fly By Jing team,\n\nWe’re excited to propose a collaborative Instagram post designed to celebrate the power of community-building strategies. [P3] “Another tactic that’s worked well for Fly By Jing as part of its community-building strategy, according to Patricio-Archer, is partnering with other brands.” This post could showcase the shared values and enthusiasm for building connections with brands. We envision a visually appealing post featuring a curated selection of Fly By Jing’s products alongside complementary imagery. The post could subtly highlight the brand’s commitment to authentic storytelling and engaging with consumers.\n\nWe believe this collaboration would be a valuable opportunity to strengthen your brand narrative and foster deeper connections with your audience.  The post could be a simple, heartfelt celebration of the partnership.\n\nThe BrandPilot team"
+    }
+   }
+  }
+ ],
+ "opportunity": {
+  "anchor_fact": "F1",
+  "text": "One collaborative Instagram post with Fly By Jing that celebrates what F1 describes, created together with their team.",
+  "kind": "template"
+ },
+ "draft_prompt_sha256": "75f5dd52b4cf92ae2b646b67f7812e2f4d1b936511fab23e8310bfefab34b140",
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "checks still failing after 1 targeted revision",
+ "arm": "base",
+ "group": "dev",
+ "tag": "iter1"
+}

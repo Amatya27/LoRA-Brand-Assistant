@@ -1,0 +1,19 @@
+You are fixing sentences in an outreach email from our team (a small Instagram content studio) to the Supergoop! team.
+
+Verified facts about Supergoop!:
+- "Supergoop! drives 40,000 product samples and 10 festival stops with AGENC Supergoop! partnered with AGENC to launch their "Every." (source: a published article about Supergoop!)
+- "Solution Supergoop! partnered with Envive AI to implement a goal-oriented AI agent that personalized the shopper journey." (source: a published article about Supergoop!)
+- "Supergoop! partners with Attentive to fully automate these messages, allowing for personalization at scale." (source: a published article about Supergoop!)
+
+Each numbered sentence below has a problem. Follow the fix given for it. Write as our team; never use "our" for Supergoop!. Do not promise results.
+
+1: "We’d like to propose a collaborative post built around your team's recent accomplishments, specifically your use of AI and personalized shopping experiences."
+   Problem: refers to company activity not in the verified facts: ['built'].
+   Fix: Rewrite it to describe only the proposed Instagram post, with no claim about Supergoop!, or write DELETE.
+2: "You’ve described Supergoop!’s partnership with Envive AI and its goal-oriented AI agent, which you've also cited in a published article about Supergoop!."
+   Problem: factual statement not supported by a verified fact.
+   Fix: Rewrite it to say only this fact, in your own words: "Solution Supergoop! partnered with Envive AI to implement a goal-oriented AI agent that personalized the shopper journey.", or write DELETE.
+
+Return one line per sentence and nothing else, in this form:
+1: <replacement sentence or DELETE>
+2: <replacement sentence or DELETE>

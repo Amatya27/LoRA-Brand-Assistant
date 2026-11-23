@@ -1,0 +1,219 @@
+{
+ "checks_version": "phase5-draft-checks-4",
+ "passes": false,
+ "problems": [
+  "body is 178 words; it must be 100-150",
+  "\"We’d like to propose a collaborative Instagram post with you, built around the idea of hon\": reuses Stumptown Coffee Roasters's own first-person wording, so it speaks as them",
+  "\"Essentially, the post would showcase your commitment to quality and the impact of your par\": refers to company activity not in the verified facts: ['partnerships']"
+ ],
+ "word_count": 178,
+ "recipient": "correct",
+ "sender": "incorrect",
+ "instagram": true,
+ "other_platforms": [],
+ "promises": [],
+ "facts_used": [
+  "F2",
+  "F3"
+ ],
+ "factual_sentences": 2,
+ "factual_sentences_supported": 0,
+ "sentences": [
+  {
+   "location": "subject",
+   "sentence": "Collaboration Opportunity for an Instagram Post",
+   "kind": "subject",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 0
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Hi Stumptown Coffee Roasters team,",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We are a small Instagram content studio dedicated to bringing creative energy to your brand.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.143,
+    "uncovered": [
+     "bringi",
+     "conten",
+     "dedica",
+     "energy",
+     "instag",
+     "small"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 7
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We’d like to propose a collaborative Instagram post with you, built around the idea of honoring your Direct Trade relationships, paying quality premiums for your coffees, and creating multi-year commitments to your producers.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.833,
+    "uncovered": [
+     "around",
+     "built"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 12
+   },
+   "cited_fact": "F2",
+   "problems": [
+    "reuses Stumptown Coffee Roasters's own first-person wording, so it speaks as them"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "Essentially, the post would showcase your commitment to quality and the impact of your partnerships, while also highlighting the unique customer experience you foster at your cafes.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F3",
+    "coverage": 0.4,
+    "uncovered": [
+     "commit",
+     "essent",
+     "foster",
+     "impact",
+     "qualit",
+     "while"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 10
+   },
+   "cited_fact": null,
+   "problems": [
+    "refers to company activity not in the verified facts: ['partnerships']"
+   ]
+  },
+  {
+   "location": "body",
+   "sentence": "It would involve a visually appealing post that captures the essence of your mission, paired with a thoughtful message that invites your team to share their perspective and engage with your audience.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.1,
+    "uncovered": [
+     "captur",
+     "engage",
+     "essenc",
+     "invite",
+     "involv",
+     "messag",
+     "paired",
+     "perspe",
+     "though"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 10
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "The post would be a collaborative effort, where we'd work together to craft a post that emphasizes your dedication to quality and the producers you support, while also celebrating the customer experience at your cafes.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F3",
+    "coverage": 0.273,
+    "uncovered": [
+     "craft",
+     "dedica",
+     "effort",
+     "emphas",
+     "qualit",
+     "suppor",
+     "where",
+     "while"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 11
+   },
+   "cited_fact": "F3",
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We'd aim to create a post that resonates with your audience and further reinforces your commitment to your producers.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.125,
+    "uncovered": [
+     "aim",
+     "audien",
+     "create",
+     "furthe",
+     "post",
+     "reinfo",
+     "resona"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 8
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Reply if you're interested in exploring this opportunity further.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [
+     "furthe",
+     "intere",
+     "reply",
+     "you're"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 4
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "The BrandPilot team",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  }
+ ],
+ "rendered": {
+  "subject": "Collaboration Opportunity for an Instagram Post",
+  "body": "Hi Stumptown Coffee Roasters team,\n\nWe are a small Instagram content studio dedicated to bringing creative energy to your brand. We’d like to propose a collaborative Instagram post with you, built around the idea of honoring your Direct Trade relationships, paying quality premiums for your coffees, and creating multi-year commitments to your producers [P9]. Essentially, the post would showcase your commitment to quality and the impact of your partnerships, while also highlighting the unique customer experience you foster at your cafes. It would involve a visually appealing post that captures the essence of your mission, paired with a thoughtful message that invites your team to share their perspective and engage with your audience.\n\nThe post would be a collaborative effort, where we'd work together to craft a post that emphasizes your dedication to quality and the producers you support, while also celebrating the customer experience at your cafes [P5]. We'd aim to create a post that resonates with your audience and further reinforces your commitment to your producers.\n\nReply if you're interested in exploring this opportunity further.\n\nThe BrandPilot team"
+ },
+ "format_notes": [
+  "BODY label missing; text after the subject line used as the body"
+ ]
+}

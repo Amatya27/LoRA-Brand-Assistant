@@ -1,0 +1,166 @@
+{
+ "checks_version": "phase5-draft-checks-7",
+ "passes": true,
+ "problems": [],
+ "word_count": 124,
+ "recipient": "correct",
+ "sender": "correct",
+ "instagram": true,
+ "other_platforms": [],
+ "promises": [],
+ "facts_used": [
+  "F2",
+  "F3"
+ ],
+ "factual_sentences": 1,
+ "factual_sentences_supported": 0,
+ "sentences": [
+  {
+   "location": "subject",
+   "sentence": "Collaboration Proposal",
+   "kind": "subject",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 0
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Hi Stumptown Coffee Roasters team,",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We are a small Instagram content studio dedicated to crafting compelling visual narratives for brands.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [
+     "brands",
+     "compel",
+     "conten",
+     "crafti",
+     "dedica",
+     "instag",
+     "narrat",
+     "small",
+     "visual"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 9
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We’d like to propose a collaborative Instagram post with you and Stumptown Coffee Roasters, designed to highlight the importance of your Direct Trade relationships.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.6,
+    "uncovered": [
+     "design",
+     "import"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 5
+   },
+   "cited_fact": "F2",
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "You’ve mentioned that honoring these relationships, paying quality premiums, and creating multi-year commitments are key to your mission, and we believe a shared visual experience would powerfully underscore this.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 0.471,
+    "uncovered": [
+     "experi",
+     "key",
+     "mentio",
+     "missio",
+     "powerf",
+     "shared",
+     "these",
+     "unders",
+     "you've"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 17
+   },
+   "cited_fact": "F2",
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "The post could showcase a curated selection of your coffee beans and the unique experiences offered at Stumptown cafes, encouraging viewers to deepen their connection with the brand.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F3",
+    "coverage": 0.455,
+    "uncovered": [
+     "beans",
+     "connec",
+     "curate",
+     "offere",
+     "select",
+     "viewer"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 11
+   },
+   "cited_fact": "F3",
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Together, we could create a visually engaging post that reinforces the value of your dedication to the Direct Trade model.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.5,
+    "uncovered": [
+     "dedica",
+     "reinfo",
+     "value"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 6
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "The BrandPilot team",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  }
+ ],
+ "rendered": {
+  "subject": "Collaboration Proposal",
+  "body": "Hi Stumptown Coffee Roasters team,\n\nWe are a small Instagram content studio dedicated to crafting compelling visual narratives for brands. We’d like to propose a collaborative Instagram post with you and Stumptown Coffee Roasters, designed to highlight the importance of your Direct Trade relationships [P9]. You’ve mentioned that honoring these relationships, paying quality premiums, and creating multi-year commitments are key to your mission, and we believe a shared visual experience would powerfully underscore this [P9]. The post could showcase a curated selection of your coffee beans and the unique experiences offered at Stumptown cafes, encouraging viewers to deepen their connection with the brand [P5]. Together, we could create a visually engaging post that reinforces the value of your dedication to the Direct Trade model.\n\nThe BrandPilot team"
+ },
+ "format_notes": [
+  "BODY label missing; text after the subject line used as the body"
+ ]
+}

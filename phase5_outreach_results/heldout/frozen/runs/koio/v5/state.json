@@ -1,0 +1,524 @@
+{
+ "workflow_version": "phase5-outreach-1",
+ "fact_selector_version": "phase5-facts-1",
+ "draft_prompt_version": "phase5-draft-prompt-7",
+ "checks_version": "phase5-draft-checks-9",
+ "company_id": "koio",
+ "packet_sha256": "d00d08e6800c1f4c0deeeac7c2fc1ce56b592a92821e57e6bc6733583e82cfcf",
+ "facts": [
+  {
+   "fact_id": "F1",
+   "passage_id": "P3",
+   "quote": "In anticipation of the launch of the Tempo style sneaker in July 2019, the Koio team developed a marketing strategy combining social media, e-mail, and IRL in-store engagement.",
+   "score": 2.6,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://endearhq.com/blog/koio-case-study",
+   "text_sha256": "013c64dd94b62d405796c92f369536f36fc98e25c7590a34556b6e203b6245ed",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F2",
+   "passage_id": "P4",
+   "quote": "Koio Saw Store Sales Soar for Latest Sneaker Drop Koio, a digitally-native sneaker brand, sought to enhance its retail marketing and customer engagement for a new product launch.",
+   "score": 2.6,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://www.casestudies.com/company/endear/case-study/how-koio-saw-store-sales-soar-for-latest-sneaker-drop",
+   "text_sha256": "a0a968f2a126d1fea76b94291512ecffcc4d359252a288449a85089ba460f78d",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F3",
+   "passage_id": "P6",
+   "quote": "As one of Endear's inaugural customers, Koio has augmented their strong digital presence through store-based marketing efforts.",
+   "score": 0.85,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://endearhq.com/blog/koio-case-study",
+   "text_sha256": "7634eb6b8e67a94c7a0f41e895d4cd62e512573e489c4310e0ef35a937168e13",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  }
+ ],
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "revision_mode": null,
+   "prompt_sha256": "725b8cd0b6ac511f80ace03114b4152118be5a982803592594082be4a8095b77",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 8.881,
+   "usage": {
+    "prompt_tokens": 521,
+    "completion_tokens": 237,
+    "total_tokens": 758,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "Collaboration Opportunity for a New Instagram Post",
+    "body": "Hi Koio team,\n\nWe are a small Instagram content studio dedicated to bringing creative energy to your brand. We’d like to propose a collaborative Instagram post built on the foundation of your marketing strategy, specifically your first fact about the Koio team's approach to launching the Tempo sneaker in July 2019. You've described your goal as enhancing your retail marketing and customer engagement for a new product launch, and that your team worked with Endear to create a digitally-native sneaker brand that sought to elevate its retail marketing and customer engagement for a new product launch. We believe a collaborative Instagram post that highlights your brand's approach to this launch would be a great way to further amplify your marketing efforts and engage your audience. This post would showcase your creative process, building on the first fact and aligning with your brand's digital-native approach. It would be a chance to share your team's perspective on how you brought your marketing strategy to life for the Tempo sneaker, and we'd love to hear your thoughts on how this post could best resonate with your audience.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-9",
+    "passes": false,
+    "problems": [
+     "body is 187 words; it must be 100-150",
+     "\"We’d like to propose a collaborative Instagram post built on the foundation of your market\": refers to company activity not in the verified facts: ['built']",
+     "\"You've described your goal as enhancing your retail marketing and customer engagement for \": says Koio stated this, but the source is a third-party article"
+    ],
+    "word_count": 187,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [
+     "F1",
+     "F2"
+    ],
+    "factual_sentences": 2,
+    "factual_sentences_supported": 0,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Collaboration Opportunity for a New Instagram Post",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 0
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Koio team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We are a small Instagram content studio dedicated to bringing creative energy to your brand.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "bringi",
+        "conten",
+        "creati",
+        "dedica",
+        "energy",
+        "instag",
+        "small"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 7
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d like to propose a collaborative Instagram post built on the foundation of your marketing strategy, specifically your first fact about the Koio team's approach to launching the Tempo sneaker in July 2019.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.583,
+       "uncovered": [
+        "approa",
+        "built",
+        "first",
+        "founda",
+        "specif"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 12
+      },
+      "cited_fact": null,
+      "problems": [
+       "refers to company activity not in the verified facts: ['built']"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "You've described your goal as enhancing your retail marketing and customer engagement for a new product launch, and that your team worked with Endear to create a digitally-native sneaker brand that sought to elevate its retail marketing and customer engagement for a new product launch.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.611,
+       "uncovered": [
+        "create",
+        "descri",
+        "elevat",
+        "endear",
+        "goal",
+        "worked",
+        "you've"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 18
+      },
+      "cited_fact": "F2",
+      "problems": [
+       "says Koio stated this, but the source is a third-party article"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "We believe a collaborative Instagram post that highlights your brand's approach to this launch would be a great way to further amplify your marketing efforts and engage your audience.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.429,
+       "uncovered": [
+        "amplif",
+        "approa",
+        "effort",
+        "furthe"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 7
+      },
+      "cited_fact": "F1",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "This post would showcase your creative process, building on the first fact and aligning with your brand's digital-native approach.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.333,
+       "uncovered": [
+        "aligni",
+        "approa",
+        "first",
+        "proces"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 6
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "It would be a chance to share your team's perspective on how you brought your marketing strategy to life for the Tempo sneaker, and we'd love to hear your thoughts on how this post could best resonate with your audience.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.333,
+       "uncovered": [
+        "best",
+        "brough",
+        "chance",
+        "hear",
+        "how",
+        "life",
+        "perspe",
+        "though"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 12
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Collaboration Opportunity for a New Instagram Post",
+     "body": "Hi Koio team,\n\nWe are a small Instagram content studio dedicated to bringing creative energy to your brand. We’d like to propose a collaborative Instagram post built on the foundation of your marketing strategy, specifically your first fact about the Koio team's approach to launching the Tempo sneaker in July 2019. You've described your goal as enhancing your retail marketing and customer engagement for a new product launch, and that your team worked with Endear to create a digitally-native sneaker brand that sought to elevate its retail marketing and customer engagement for a new product launch [P4]. We believe a collaborative Instagram post that highlights your brand's approach to this launch would be a great way to further amplify your marketing efforts and engage your audience [P3]. This post would showcase your creative process, building on the first fact and aligning with your brand's digital-native approach. It would be a chance to share your team's perspective on how you brought your marketing strategy to life for the Tempo sneaker, and we'd love to hear your thoughts on how this post could best resonate with your audience.\n\nThe BrandPilot team"
+    },
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   }
+  },
+  {
+   "index": 1,
+   "kind": "targeted_revision",
+   "revision_mode": "sentences",
+   "prompt_sha256": "fe0aa3c534b936402e006bd092fb6530b8fe808625a6929b209daaafef30899f",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 3.208,
+   "usage": {
+    "prompt_tokens": 503,
+    "completion_tokens": 120,
+    "total_tokens": 623,
+    "prompt_tokens_details": {
+     "cached_tokens": 24
+    }
+   },
+   "error": null,
+   "sentence_edits": [
+    {
+     "index": 1,
+     "location": "body",
+     "old": "We’d like to propose a collaborative Instagram post built on the foundation of your marketing strategy, specifically your first fact about the Koio team's approach to launching the Tempo sneaker in July 2019.",
+     "new": "We’d like to propose a collaborative Instagram post built on the foundation of your marketing strategy, specifically your first fact about the Koio team’s approach to launching the Tempo sneaker in July 2019.",
+     "action": "replace"
+    },
+    {
+     "index": 2,
+     "location": "body",
+     "old": "You've described your goal as enhancing your retail marketing and customer engagement for a new product launch, and that your team worked with Endear to create a digitally-native sneaker brand that sought to elevate its retail marketing and customer engagement for a new product launch.",
+     "new": "You've described your goal as enhancing your retail marketing and customer engagement for a new product launch, and that your team worked with Endear to create a digitally-native sneaker brand that sought to elevate its retail marketing and customer engagement for a new product launch.",
+     "action": "replace"
+    }
+   ],
+   "parsed": {
+    "subject": "Collaboration Opportunity for a New Instagram Post",
+    "body": "Hi Koio team,\n\nWe are a small Instagram content studio dedicated to bringing creative energy to your brand. We’d like to propose a collaborative Instagram post built on the foundation of your marketing strategy, specifically your first fact about the Koio team’s approach to launching the Tempo sneaker in July 2019. You've described your goal as enhancing your retail marketing and customer engagement for a new product launch, and that your team worked with Endear to create a digitally-native sneaker brand that sought to elevate its retail marketing and customer engagement for a new product launch. We believe a collaborative Instagram post that highlights your brand's approach to this launch would be a great way to further amplify your marketing efforts and engage your audience. This post would showcase your creative process, building on the first fact and aligning with your brand's digital-native approach. It would be a chance to share your team's perspective on how you brought your marketing strategy to life for the Tempo sneaker, and we'd love to hear your thoughts on how this post could best resonate with your audience.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": [
+     "sentence-level revision applied"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-9",
+    "passes": false,
+    "problems": [
+     "body is 187 words; it must be 100-150",
+     "\"We’d like to propose a collaborative Instagram post built on the foundation of your market\": refers to company activity not in the verified facts: ['built']",
+     "\"You've described your goal as enhancing your retail marketing and customer engagement for \": says Koio stated this, but the source is a third-party article"
+    ],
+    "word_count": 187,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [
+     "F1",
+     "F2"
+    ],
+    "factual_sentences": 2,
+    "factual_sentences_supported": 0,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Collaboration Opportunity for a New Instagram Post",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 0
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Koio team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We are a small Instagram content studio dedicated to bringing creative energy to your brand.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "bringi",
+        "conten",
+        "creati",
+        "dedica",
+        "energy",
+        "instag",
+        "small"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 7
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d like to propose a collaborative Instagram post built on the foundation of your marketing strategy, specifically your first fact about the Koio team’s approach to launching the Tempo sneaker in July 2019.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.583,
+       "uncovered": [
+        "approa",
+        "built",
+        "first",
+        "founda",
+        "specif"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 12
+      },
+      "cited_fact": null,
+      "problems": [
+       "refers to company activity not in the verified facts: ['built']"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "You've described your goal as enhancing your retail marketing and customer engagement for a new product launch, and that your team worked with Endear to create a digitally-native sneaker brand that sought to elevate its retail marketing and customer engagement for a new product launch.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.611,
+       "uncovered": [
+        "create",
+        "descri",
+        "elevat",
+        "endear",
+        "goal",
+        "worked",
+        "you've"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 18
+      },
+      "cited_fact": "F2",
+      "problems": [
+       "says Koio stated this, but the source is a third-party article"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "We believe a collaborative Instagram post that highlights your brand's approach to this launch would be a great way to further amplify your marketing efforts and engage your audience.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.429,
+       "uncovered": [
+        "amplif",
+        "approa",
+        "effort",
+        "furthe"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 7
+      },
+      "cited_fact": "F1",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "This post would showcase your creative process, building on the first fact and aligning with your brand's digital-native approach.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.333,
+       "uncovered": [
+        "aligni",
+        "approa",
+        "first",
+        "proces"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 6
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "It would be a chance to share your team's perspective on how you brought your marketing strategy to life for the Tempo sneaker, and we'd love to hear your thoughts on how this post could best resonate with your audience.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.333,
+       "uncovered": [
+        "best",
+        "brough",
+        "chance",
+        "hear",
+        "how",
+        "life",
+        "perspe",
+        "though"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 12
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Collaboration Opportunity for a New Instagram Post",
+     "body": "Hi Koio team,\n\nWe are a small Instagram content studio dedicated to bringing creative energy to your brand. We’d like to propose a collaborative Instagram post built on the foundation of your marketing strategy, specifically your first fact about the Koio team’s approach to launching the Tempo sneaker in July 2019. You've described your goal as enhancing your retail marketing and customer engagement for a new product launch, and that your team worked with Endear to create a digitally-native sneaker brand that sought to elevate its retail marketing and customer engagement for a new product launch [P4]. We believe a collaborative Instagram post that highlights your brand's approach to this launch would be a great way to further amplify your marketing efforts and engage your audience [P3]. This post would showcase your creative process, building on the first fact and aligning with your brand's digital-native approach. It would be a chance to share your team's perspective on how you brought your marketing strategy to life for the Tempo sneaker, and we'd love to hear your thoughts on how this post could best resonate with your audience.\n\nThe BrandPilot team"
+    },
+    "format_notes": [
+     "sentence-level revision applied"
+    ]
+   }
+  }
+ ],
+ "opportunity": {
+  "anchor_fact": "F1",
+  "text": "One collaborative Instagram post with Koio, created together with their team, that builds on the first fact above.",
+  "kind": "template"
+ },
+ "draft_prompt_sha256": "725b8cd0b6ac511f80ace03114b4152118be5a982803592594082be4a8095b77",
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "checks still failing after 1 targeted revision",
+ "arm": "v5",
+ "group": "heldout",
+ "tag": "frozen"
+}

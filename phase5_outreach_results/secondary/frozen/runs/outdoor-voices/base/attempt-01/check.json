@@ -1,0 +1,193 @@
+{
+ "checks_version": "phase5-draft-checks-9",
+ "passes": false,
+ "problems": [
+  "body is 156 words; it must be 100-150"
+ ],
+ "word_count": 156,
+ "recipient": "correct",
+ "sender": "correct",
+ "instagram": true,
+ "other_platforms": [],
+ "promises": [],
+ "facts_used": [
+  "F1",
+  "F2",
+  "F3"
+ ],
+ "factual_sentences": 3,
+ "factual_sentences_supported": 3,
+ "sentences": [
+  {
+   "location": "subject",
+   "sentence": "Collaboration Proposal",
+   "kind": "subject",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 0
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Hi Outdoor Voices team,",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We are a small Instagram content studio and would like to propose a collaborative post with you.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [
+     "small"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 1
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We are Outdoor Voices, a brand that designs technical apparel for recreation, specifically creating the uniform for doing things with materials made for movement.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.833,
+    "uncovered": [
+     "creati",
+     "specif"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 12
+   },
+   "cited_fact": "F1",
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "You collaborate with a wide range of influencers, from fitness enthusiasts to lifestyle bloggers, to promote your products.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F2",
+    "coverage": 1.0,
+    "uncovered": [],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 9
+   },
+   "cited_fact": "F2",
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Outdoor Voices challenges disruptive activewear brands like Challenge Outdoor Voices, hiring Blinker to improve re-engagement with lapsed customers through their email marketing.",
+   "kind": "factual",
+   "match": {
+    "fact_id": "F3",
+    "coverage": 0.846,
+    "uncovered": [
+     "brands",
+     "hiring"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 13
+   },
+   "cited_fact": "F3",
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "The proposed post would be a collaborative Instagram post, created together with your team.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 0
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "It would showcase a visually appealing image or short video featuring a key element of Outdoor Voices’s design philosophy – perhaps a moment of movement or a detail of the apparel.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.25,
+    "uncovered": [
+     "detail",
+     "elemen",
+     "image",
+     "key",
+     "moment",
+     "perhap",
+     "philos",
+     "short",
+     "video"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 12
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "We envision working together to build a shared visual experience that resonates with your audience.",
+   "kind": "proposal",
+   "match": {
+    "fact_id": "F1",
+    "coverage": 0.0,
+    "uncovered": [
+     "experi",
+     "shared",
+     "workin"
+    ],
+    "missing_numbers": [],
+    "negation_mismatch": false,
+    "content_words": 3
+   },
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "Please reply if you’d like to discuss this further.",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  },
+  {
+   "location": "body",
+   "sentence": "The BrandPilot team",
+   "kind": "non_assertion",
+   "match": null,
+   "cited_fact": null,
+   "problems": []
+  }
+ ],
+ "rendered": {
+  "subject": "Collaboration Proposal",
+  "body": "Hi Outdoor Voices team,\n\nWe are a small Instagram content studio and would like to propose a collaborative post with you. We are Outdoor Voices, a brand that designs technical apparel for recreation, specifically creating the uniform for doing things with materials made for movement [P1]. You collaborate with a wide range of influencers, from fitness enthusiasts to lifestyle bloggers, to promote your products [P3]. Outdoor Voices challenges disruptive activewear brands like Challenge Outdoor Voices, hiring Blinker to improve re-engagement with lapsed customers through their email marketing [P9].\n\nThe proposed post would be a collaborative Instagram post, created together with your team. It would showcase a visually appealing image or short video featuring a key element of Outdoor Voices’s design philosophy – perhaps a moment of movement or a detail of the apparel. We envision working together to build a shared visual experience that resonates with your audience.\n\nPlease reply if you’d like to discuss this further.\n\nThe BrandPilot team"
+ },
+ "format_notes": []
+}

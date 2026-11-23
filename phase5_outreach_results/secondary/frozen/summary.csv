@@ -1,0 +1,13 @@
+company_id,arm,outcome,stop_reason,facts_selected,generations,all_runtime_verified,initial_passes,initial_problems,final_problems,revised,initial_words,final_words,final_sender,final_recipient,final_instagram_only,final_promises,final_factual_sentences,final_factual_supported,fact_verification,initial_latency_s
+bones-coffee,base,passed_checks_pending_human_review,all checks passed,3,1,True,True,0,0,False,132,132,correct,correct,True,0,3,1,uses_rejected_fact,7.322
+bones-coffee,v5,passed_checks_pending_human_review,all checks passed,3,1,True,True,0,0,False,142,142,correct,correct,True,0,1,0,uses_rejected_fact,8.157
+greats,base,abstained_insufficient_facts,1 selectable fact(s); at least 2 required,1,0,True,,,,False,,,,,False,0,,,,
+greats,v5,abstained_insufficient_facts,1 selectable fact(s); at least 2 required,1,0,True,,,,False,,,,,False,0,,,,
+outdoor-voices,base,withheld_failed_checks,checks still failing after 1 targeted revision,3,2,True,False,1,1,True,156,156,correct,correct,True,0,3,3,,7.216
+outdoor-voices,v5,passed_checks_pending_human_review,all checks passed,3,1,True,True,0,0,False,147,147,correct,correct,True,0,1,1,all_used_facts_verified,8.103
+pela,base,withheld_failed_checks,checks still failing after 1 targeted revision,3,2,True,False,4,4,True,155,155,correct,correct,True,0,2,0,,7.94
+pela,v5,withheld_failed_checks,checks still failing after 1 targeted revision,3,2,True,False,1,1,True,148,148,correct,correct,True,0,2,0,,8.111
+thrive-market,base,withheld_failed_checks,checks still failing after 1 targeted revision,3,2,True,False,1,1,True,123,112,incorrect,correct,True,0,2,0,,7.418
+thrive-market,v5,withheld_failed_checks,checks still failing after 1 targeted revision,3,2,True,False,3,3,True,162,162,correct,correct,True,0,3,2,,8.608
+tonal,base,withheld_failed_checks,checks still failing after 1 targeted revision,3,2,True,False,2,2,True,148,148,correct,correct,True,0,1,0,,8.454
+tonal,v5,withheld_failed_checks,checks still failing after 1 targeted revision,3,2,True,False,2,3,True,161,161,correct,correct,True,0,2,0,,8.803

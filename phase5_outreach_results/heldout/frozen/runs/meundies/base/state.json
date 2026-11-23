@@ -1,0 +1,498 @@
+{
+ "workflow_version": "phase5-outreach-1",
+ "fact_selector_version": "phase5-facts-1",
+ "draft_prompt_version": "phase5-draft-prompt-7",
+ "checks_version": "phase5-draft-checks-9",
+ "company_id": "meundies",
+ "packet_sha256": "d25a1c2718018b243e816357057ca907abf61a733fcb7f76d2a8643a60bbd24d",
+ "facts": [
+  {
+   "fact_id": "F1",
+   "passage_id": "P2",
+   "quote": "For the remainder of your visit, MeUndies remind you of your discount, ever-nudging you to make a purchase.",
+   "score": 4.9,
+   "statement_type": "actual_activity",
+   "official_source": false,
+   "source_url": "https://www.drip.com/blog/meundies-marketing",
+   "text_sha256": "28c48190345a54d66dfdb988189c3c4a55e79821c9f09fc2b6e63f027dbf9402",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F2",
+   "passage_id": "P1",
+   "quote": "Using Sprout’s customer relationship management platform and solutions, the MeUndies customer service team could answer people faster and more efficiently, and provide personalized service by viewing the customer’s message history with the brand.",
+   "score": 2.35,
+   "statement_type": "actual_activity",
+   "official_source": false,
+   "source_url": "https://developers.facebook.com/success-stories/meundies/",
+   "text_sha256": "37905db16a6daacab3e7dc2ee54681a3729a2f51c1181aa7ce9cdab79ce39cf2",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F3",
+   "passage_id": "P3",
+   "quote": "MeUndies “It is crucial for social media-savvy brands such as MeUndies to master customer communications on Instagram.",
+   "score": 0.85,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://developers.facebook.com/success-stories/meundies/",
+   "text_sha256": "21f3f5195c9e8466494b190da93d3db945db5a9c31f25ce03fc5f5c62557d6cb",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  }
+ ],
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "revision_mode": null,
+   "prompt_sha256": "27c4d13d5f68d4940860a208ae8340ed2be93187c3defad10f3c18e688dc5f50",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 7.3,
+   "usage": {
+    "prompt_tokens": 527,
+    "completion_tokens": 141,
+    "total_tokens": 668,
+    "prompt_tokens_details": {
+     "cached_tokens": 25
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "Collaboration Opportunity",
+    "body": "Hi MeUndies team,\n\nWe are a small team dedicated to crafting engaging Instagram content. We’d like to propose a collaborative Instagram post designed to subtly reinforce the key points outlined in your published articles. Essentially, we envision a post that highlights the value of personalized customer service and the power of leveraging customer data to build stronger connections with your audience. You could showcase a visually appealing image or short video featuring a curated selection of MeUndies products, subtly referencing the discount message.  The post would focus on creating a feeling of warmth and connection, encouraging viewers to engage with the brand through a shared experience.\n\nPlease reply with your thoughts.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-9",
+    "passes": false,
+    "problems": [
+     "\"You could showcase a visually appealing image or short video featuring a curated selection\": refers to company activity not in the verified facts: ['products']"
+    ],
+    "word_count": 114,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [
+     "F2"
+    ],
+    "factual_sentences": 1,
+    "factual_sentences_supported": 0,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Collaboration Opportunity",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 0
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi MeUndies team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We are a small team dedicated to crafting engaging Instagram content.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F3",
+       "coverage": 0.167,
+       "uncovered": [
+        "conten",
+        "crafti",
+        "dedica",
+        "engagi",
+        "small"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 6
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d like to propose a collaborative Instagram post designed to subtly reinforce the key points outlined in your published articles.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "articl",
+        "design",
+        "key",
+        "outlin",
+        "points",
+        "publis",
+        "reinfo",
+        "subtly"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 8
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Essentially, we envision a post that highlights the value of personalized customer service and the power of leveraging customer data to build stronger connections with your audience.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.3,
+       "uncovered": [
+        "connec",
+        "data",
+        "essent",
+        "levera",
+        "power",
+        "strong",
+        "value"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 10
+      },
+      "cited_fact": "F2",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "You could showcase a visually appealing image or short video featuring a curated selection of MeUndies products, subtly referencing the discount message.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.111,
+       "uncovered": [
+        "curate",
+        "image",
+        "messag",
+        "refere",
+        "select",
+        "short",
+        "subtly",
+        "video"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 9
+      },
+      "cited_fact": null,
+      "problems": [
+       "refers to company activity not in the verified facts: ['products']"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "The post would focus on creating a feeling of warmth and connection, encouraging viewers to engage with the brand through a shared experience.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "connec",
+        "encour",
+        "engage",
+        "experi",
+        "feelin",
+        "focus",
+        "shared",
+        "throug",
+        "viewer",
+        "warmth"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 10
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Please reply with your thoughts.",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Collaboration Opportunity",
+     "body": "Hi MeUndies team,\n\nWe are a small team dedicated to crafting engaging Instagram content. We’d like to propose a collaborative Instagram post designed to subtly reinforce the key points outlined in your published articles. Essentially, we envision a post that highlights the value of personalized customer service and the power of leveraging customer data to build stronger connections with your audience [P1]. You could showcase a visually appealing image or short video featuring a curated selection of MeUndies products, subtly referencing the discount message. The post would focus on creating a feeling of warmth and connection, encouraging viewers to engage with the brand through a shared experience.\n\nPlease reply with your thoughts.\n\nThe BrandPilot team"
+    },
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   }
+  },
+  {
+   "index": 1,
+   "kind": "targeted_revision",
+   "revision_mode": "sentences",
+   "prompt_sha256": "b540a8d33f44d8c335d39238ff98e7bcad933840b2011ead4c7e2531ea3ec5a1",
+   "ok": true,
+   "finish_reason": "length",
+   "runtime_verified": true,
+   "latency_s": 8.547,
+   "usage": {
+    "prompt_tokens": 310,
+    "completion_tokens": 400,
+    "total_tokens": 710,
+    "prompt_tokens_details": {
+     "cached_tokens": 24
+    }
+   },
+   "error": null,
+   "sentence_edits": [
+    {
+     "index": 1,
+     "location": "body",
+     "old": "You could showcase a visually appealing image or short video featuring a curated selection of MeUndies products, subtly referencing the discount message.",
+     "new": "You could showcase a visually appealing image or short video featuring a curated selection of MeUndies products, subtly referencing the discount message.",
+     "action": "replace"
+    }
+   ],
+   "parsed": {
+    "subject": "Collaboration Opportunity",
+    "body": "Hi MeUndies team,\n\nWe are a small team dedicated to crafting engaging Instagram content. We’d like to propose a collaborative Instagram post designed to subtly reinforce the key points outlined in your published articles. Essentially, we envision a post that highlights the value of personalized customer service and the power of leveraging customer data to build stronger connections with your audience. You could showcase a visually appealing image or short video featuring a curated selection of MeUndies products, subtly referencing the discount message. The post would focus on creating a feeling of warmth and connection, encouraging viewers to engage with the brand through a shared experience.\n\nPlease reply with your thoughts.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": [
+     "sentence-level revision applied"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-9",
+    "passes": false,
+    "problems": [
+     "output was cut off at the token limit",
+     "\"You could showcase a visually appealing image or short video featuring a curated selection\": refers to company activity not in the verified facts: ['products']"
+    ],
+    "word_count": 114,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [
+     "F2"
+    ],
+    "factual_sentences": 1,
+    "factual_sentences_supported": 0,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Collaboration Opportunity",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 0
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi MeUndies team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We are a small team dedicated to crafting engaging Instagram content.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F3",
+       "coverage": 0.167,
+       "uncovered": [
+        "conten",
+        "crafti",
+        "dedica",
+        "engagi",
+        "small"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 6
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d like to propose a collaborative Instagram post designed to subtly reinforce the key points outlined in your published articles.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "articl",
+        "design",
+        "key",
+        "outlin",
+        "points",
+        "publis",
+        "reinfo",
+        "subtly"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 8
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Essentially, we envision a post that highlights the value of personalized customer service and the power of leveraging customer data to build stronger connections with your audience.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.3,
+       "uncovered": [
+        "connec",
+        "data",
+        "essent",
+        "levera",
+        "power",
+        "strong",
+        "value"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 10
+      },
+      "cited_fact": "F2",
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "You could showcase a visually appealing image or short video featuring a curated selection of MeUndies products, subtly referencing the discount message.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.111,
+       "uncovered": [
+        "curate",
+        "image",
+        "messag",
+        "refere",
+        "select",
+        "short",
+        "subtly",
+        "video"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 9
+      },
+      "cited_fact": null,
+      "problems": [
+       "refers to company activity not in the verified facts: ['products']"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "The post would focus on creating a feeling of warmth and connection, encouraging viewers to engage with the brand through a shared experience.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "connec",
+        "encour",
+        "engage",
+        "experi",
+        "feelin",
+        "focus",
+        "shared",
+        "throug",
+        "viewer",
+        "warmth"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 10
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Please reply with your thoughts.",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Collaboration Opportunity",
+     "body": "Hi MeUndies team,\n\nWe are a small team dedicated to crafting engaging Instagram content. We’d like to propose a collaborative Instagram post designed to subtly reinforce the key points outlined in your published articles. Essentially, we envision a post that highlights the value of personalized customer service and the power of leveraging customer data to build stronger connections with your audience [P1]. You could showcase a visually appealing image or short video featuring a curated selection of MeUndies products, subtly referencing the discount message. The post would focus on creating a feeling of warmth and connection, encouraging viewers to engage with the brand through a shared experience.\n\nPlease reply with your thoughts.\n\nThe BrandPilot team"
+    },
+    "format_notes": [
+     "sentence-level revision applied"
+    ]
+   }
+  }
+ ],
+ "opportunity": {
+  "anchor_fact": "F1",
+  "text": "One collaborative Instagram post with MeUndies, created together with their team, that builds on the first fact above.",
+  "kind": "template"
+ },
+ "draft_prompt_sha256": "27c4d13d5f68d4940860a208ae8340ed2be93187c3defad10f3c18e688dc5f50",
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "checks still failing after 1 targeted revision",
+ "arm": "base",
+ "group": "heldout",
+ "tag": "frozen"
+}

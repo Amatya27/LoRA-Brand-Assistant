@@ -1,0 +1,496 @@
+{
+ "workflow_version": "phase5-outreach-1",
+ "fact_selector_version": "phase5-facts-1",
+ "draft_prompt_version": "phase5-draft-prompt-3",
+ "checks_version": "phase5-draft-checks-3",
+ "company_id": "fly-by-jing",
+ "packet_sha256": "c974a43b16e102e870046f0fbbb1e63d54bd1f356426177dfbdd948911ce7eea",
+ "facts": [
+  {
+   "fact_id": "F1",
+   "passage_id": "P3",
+   "quote": "Another tactic that’s worked well for Fly by Jing as part of its community-building strategy, according to Patricio-Archer, is partnering with other brands.",
+   "score": 4.85,
+   "statement_type": "actual_activity",
+   "official_source": false,
+   "source_url": "https://www.marketingbrew.com/stories/2023/01/13/how-fly-by-jing-went-from-kickstarter-to-shake-shack-partner-in-a-few-years",
+   "text_sha256": "6e3f9df178a2898a1789b91747a0bd6ddbb8cdfd077db25a4100c6a58e96cde7",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F2",
+   "passage_id": "P4",
+   "quote": "By the time Fly By Jing pursued retail partnerships with Whole Foods, Target, and eventually broader grocery distribution, the brand had something most emerging CPG products don’t: pre-existing demand signals.",
+   "score": 2.5,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://www.influencers-time.com/how-fly-by-jing-built-a-cult-brand-with-chili-crisp-seeding/",
+   "text_sha256": "0328c40525a0e8a9816ca5c7afa2971e981c8aa28acd9e2f225df4e8a5a2a37f",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  },
+  {
+   "fact_id": "F3",
+   "passage_id": "P8",
+   "quote": "For this week’s Modern Retail Talk, founder and CEO Jing Gao spoke about her trials and tribulations during the coronavirus.",
+   "score": 1.0,
+   "statement_type": "descriptive",
+   "official_source": false,
+   "source_url": "https://www.modernretail.co/retailers/modern-retail-talk-how-instagram-darling-fly-by-jing-handled-an-unprecedented-demand-surge/",
+   "text_sha256": "55145375e85229b4fc05696794bab7e388f58693565ab4a274161bdafa0e09e8",
+   "verification": {
+    "status": "pending_teammate_verification"
+   }
+  }
+ ],
+ "attempts": [
+  {
+   "index": 0,
+   "kind": "initial",
+   "prompt_sha256": "d4adfea2f1a0499e5708d2c0ca23e9fa2b7ade00eab4617d30ca23e392e8ab85",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 8.092,
+   "usage": {
+    "prompt_tokens": 416,
+    "completion_tokens": 142,
+    "total_tokens": 558,
+    "prompt_tokens_details": {
+     "cached_tokens": 25
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "Building a Connection",
+    "body": "Hi Fly By Jing team,\n\nWe’ve been learning a lot about how you’ve cultivated a strong community through strategic partnerships. Your insights into the power of pre-existing demand signals are particularly compelling. We believe a collaborative Instagram post, created with your team, could powerfully amplify that sentiment. Imagine a post that subtly showcases the excitement surrounding Fly By Jing’s journey – a shared moment of discovery and appreciation. It could offer a glimpse into the creative process behind your brand, fostering a deeper connection with your audience.  \n\nWe’d love to explore this idea further and would be happy to discuss how we can best support your efforts.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-3",
+    "passes": false,
+    "problems": [
+     "\"Your insights into the power of pre-existing demand signals are particularly compelling.\": factual statement not supported by a verified fact (best fact F2 covers 0.50; unsupported words: compel, insigh, partic, power)",
+     "no sentence restates a verified fact"
+    ],
+    "word_count": 109,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [],
+    "factual_sentences": 2,
+    "factual_sentences_supported": 0,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Building a Connection",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "connec"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 1
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Fly By Jing team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’ve been learning a lot about how you’ve cultivated a strong community through strategic partnerships.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.273,
+       "uncovered": [
+        "cultiv",
+        "how",
+        "learni",
+        "lot",
+        "strong",
+        "throug",
+        "we've",
+        "you've"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 11
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Your insights into the power of pre-existing demand signals are particularly compelling.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.5,
+       "uncovered": [
+        "compel",
+        "insigh",
+        "partic",
+        "power"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 8
+      },
+      "cited_fact": null,
+      "problems": [
+       "factual statement not supported by a verified fact (best fact F2 covers 0.50; unsupported words: compel, insigh, partic, power)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "We believe a collaborative Instagram post, created with your team, could powerfully amplify that sentiment.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "amplif",
+        "powerf",
+        "sentim"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 3
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Imagine a post that subtly showcases the excitement surrounding Fly By Jing’s journey – a shared moment of discovery and appreciation.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "apprec",
+        "discov",
+        "imagin",
+        "journe",
+        "moment",
+        "shared",
+        "subtly",
+        "surrou"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 8
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "It could offer a glimpse into the creative process behind your brand, fostering a deeper connection with your audience.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "behind",
+        "connec",
+        "deeper",
+        "foster",
+        "glimps",
+        "offer",
+        "proces"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 7
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d love to explore this idea further and would be happy to discuss how we can best support your efforts.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "best",
+        "can",
+        "effort",
+        "furthe",
+        "how",
+        "suppor",
+        "we'd"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 7
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Building a Connection",
+     "body": "Hi Fly By Jing team,\n\nWe’ve been learning a lot about how you’ve cultivated a strong community through strategic partnerships. Your insights into the power of pre-existing demand signals are particularly compelling. We believe a collaborative Instagram post, created with your team, could powerfully amplify that sentiment. Imagine a post that subtly showcases the excitement surrounding Fly By Jing’s journey – a shared moment of discovery and appreciation. It could offer a glimpse into the creative process behind your brand, fostering a deeper connection with your audience.\n\nWe’d love to explore this idea further and would be happy to discuss how we can best support your efforts.\n\nThe BrandPilot team"
+    },
+    "format_notes": [
+     "BODY label missing; text after the subject line used as the body"
+    ]
+   }
+  },
+  {
+   "index": 1,
+   "kind": "targeted_revision",
+   "prompt_sha256": "82c0571a44260f34c7b3c25993bac8eea3522df3811f45d066ffd1ed46a97317",
+   "ok": true,
+   "finish_reason": "stop",
+   "runtime_verified": true,
+   "latency_s": 4.094,
+   "usage": {
+    "prompt_tokens": 657,
+    "completion_tokens": 143,
+    "total_tokens": 800,
+    "prompt_tokens_details": {
+     "cached_tokens": 411
+    }
+   },
+   "error": null,
+   "parsed": {
+    "subject": "Instagram Collaboration",
+    "body": "Hi Fly By Jing team,\n\nWe’ve been learning a lot about how you’ve cultivated a strong community through strategic partnerships. Your insights into the power of pre-existing demand signals are particularly compelling. We believe a collaborative Instagram post, created with your team, could powerfully amplify that sentiment. Imagine a post that subtly showcases the excitement surrounding Fly By Jing’s journey – a shared moment of discovery and appreciation. It could offer a glimpse into the creative process behind your brand, fostering a deeper connection with your audience.\n\nWe’d love to explore this idea further and would be happy to discuss how we can best support your efforts.\n\nThe BrandPilot team",
+    "format_problems": [],
+    "format_notes": []
+   },
+   "check": {
+    "checks_version": "phase5-draft-checks-3",
+    "passes": false,
+    "problems": [
+     "\"Your insights into the power of pre-existing demand signals are particularly compelling.\": factual statement not supported by a verified fact (best fact F2 covers 0.50; unsupported words: compel, insigh, partic, power)",
+     "no sentence restates a verified fact"
+    ],
+    "word_count": 109,
+    "recipient": "correct",
+    "sender": "correct",
+    "instagram": true,
+    "other_platforms": [],
+    "promises": [],
+    "facts_used": [],
+    "factual_sentences": 2,
+    "factual_sentences_supported": 0,
+    "sentences": [
+     {
+      "location": "subject",
+      "sentence": "Instagram Collaboration",
+      "kind": "subject",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 0
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Hi Fly By Jing team,",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’ve been learning a lot about how you’ve cultivated a strong community through strategic partnerships.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.273,
+       "uncovered": [
+        "cultiv",
+        "how",
+        "learni",
+        "lot",
+        "strong",
+        "throug",
+        "we've",
+        "you've"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 11
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Your insights into the power of pre-existing demand signals are particularly compelling.",
+      "kind": "factual",
+      "match": {
+       "fact_id": "F2",
+       "coverage": 0.5,
+       "uncovered": [
+        "compel",
+        "insigh",
+        "partic",
+        "power"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 8
+      },
+      "cited_fact": null,
+      "problems": [
+       "factual statement not supported by a verified fact (best fact F2 covers 0.50; unsupported words: compel, insigh, partic, power)"
+      ]
+     },
+     {
+      "location": "body",
+      "sentence": "We believe a collaborative Instagram post, created with your team, could powerfully amplify that sentiment.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "amplif",
+        "powerf",
+        "sentim"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 3
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "Imagine a post that subtly showcases the excitement surrounding Fly By Jing’s journey – a shared moment of discovery and appreciation.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "apprec",
+        "discov",
+        "imagin",
+        "journe",
+        "moment",
+        "shared",
+        "subtly",
+        "surrou"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 8
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "It could offer a glimpse into the creative process behind your brand, fostering a deeper connection with your audience.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "behind",
+        "connec",
+        "deeper",
+        "foster",
+        "glimps",
+        "offer",
+        "proces"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 7
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "We’d love to explore this idea further and would be happy to discuss how we can best support your efforts.",
+      "kind": "proposal",
+      "match": {
+       "fact_id": "F1",
+       "coverage": 0.0,
+       "uncovered": [
+        "best",
+        "can",
+        "effort",
+        "furthe",
+        "how",
+        "suppor",
+        "we'd"
+       ],
+       "missing_numbers": [],
+       "negation_mismatch": false,
+       "content_words": 7
+      },
+      "cited_fact": null,
+      "problems": []
+     },
+     {
+      "location": "body",
+      "sentence": "The BrandPilot team",
+      "kind": "non_assertion",
+      "match": null,
+      "cited_fact": null,
+      "problems": []
+     }
+    ],
+    "rendered": {
+     "subject": "Instagram Collaboration",
+     "body": "Hi Fly By Jing team,\n\nWe’ve been learning a lot about how you’ve cultivated a strong community through strategic partnerships. Your insights into the power of pre-existing demand signals are particularly compelling. We believe a collaborative Instagram post, created with your team, could powerfully amplify that sentiment. Imagine a post that subtly showcases the excitement surrounding Fly By Jing’s journey – a shared moment of discovery and appreciation. It could offer a glimpse into the creative process behind your brand, fostering a deeper connection with your audience.\n\nWe’d love to explore this idea further and would be happy to discuss how we can best support your efforts.\n\nThe BrandPilot team"
+    },
+    "format_notes": []
+   }
+  }
+ ],
+ "opportunity": {
+  "anchor_fact": "F1",
+  "text": "One collaborative Instagram post with Fly By Jing, created together with their team, that builds on the first fact above.",
+  "kind": "template"
+ },
+ "draft_prompt_sha256": "d4adfea2f1a0499e5708d2c0ca23e9fa2b7ade00eab4617d30ca23e392e8ab85",
+ "outcome": "withheld_failed_checks",
+ "stop_reason": "checks still failing after 1 targeted revision",
+ "arm": "base",
+ "group": "dev",
+ "tag": "iter3"
+}

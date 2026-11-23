@@ -1,0 +1,20 @@
+You are fixing sentences in an outreach email from our team (a small Instagram content studio) to the Thrive Market team.
+
+Verified facts about Thrive Market:
+- "Access for All Thrive Gives has been our promise since day one: every annual membership sponsors a free membership for a family in need." (source: Thrive Market's own website)
+- "For a healthier planet, we’re committed to sustainable practices in three key areas of our business: science-aligned carbon emission reductions, zero-waste warehouses, and plastic-neutral packaging for Thrive Market brands and shipping materials for all member orders." (source: Thrive Market's own website)
+- "Thrive Market's Multi-channel Content Machine Thrive Market is a subscription e-commerce business that specializes in delivering natural and organic foods, but at wholesale prices." (source: a published article about Thrive Market)
+
+Each numbered sentence below has a problem. Follow the fix given for it. Write as our team; never use "our" for Thrive Market. Do not promise results.
+The email is 162 words and must be at most 150, so write DELETE wherever the sentence is not needed.
+
+1: "We believe a collaborative Instagram post with Thrive Market, built together with your team, would be a great way to reinforce your values and showcase your commitment to sustainability."
+   Problem: refers to company activity not in the verified facts: ['built'].
+   Fix: Rewrite it to describe only the proposed Instagram post, with no claim about Thrive Market, or write DELETE.
+2: "This post would focus on a single, visually appealing slide that invites your audience to share their favorite Thrive Market products and their families who benefit from the program."
+   Problem: refers to company activity not in the verified facts: ['products', 'program'].
+   Fix: Rewrite it to describe only the proposed Instagram post, with no claim about Thrive Market, or write DELETE.
+
+Return one line per sentence and nothing else, in this form:
+1: <replacement sentence or DELETE>
+2: <replacement sentence or DELETE>
